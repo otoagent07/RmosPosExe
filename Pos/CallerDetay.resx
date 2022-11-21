@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_Tel.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 10pt</value>
+  </data>
+  <data name="lbl_Tel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="lbl_Tel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_Tel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbl_Tel.Name" xml:space="preserve">
+    <value>lbl_Tel</value>
+  </data>
+  <data name="&gt;&gt;lbl_Tel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lbl_Tel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_Tel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 35</value>
+  </data>
+  <data name="gridView1.Appearance.ViewCaption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="gridColumn1.Caption" xml:space="preserve">
+    <value>Kod</value>
+  </data>
+  <data name="gridColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn1.Width" type="System.Int32, mscorlib">
+    <value>248</value>
+  </data>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn2.Width" type="System.Int32, mscorlib">
+    <value>292</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn3.Width" type="System.Int32, mscorlib">
+    <value>290</value>
+  </data>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn4.Width" type="System.Int32, mscorlib">
+    <value>904</value>
+  </data>
+  <data name="gridView1.ViewCaption" xml:space="preserve">
+    <value>Cari Hesaplar</value>
+  </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 217</value>
+  </data>
+  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txt_Tarif.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 140</value>
+  </data>
+  <data name="txt_Tarif.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 72</value>
+  </data>
+  <data name="txt_Tarif.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txt_Tarif.Name" xml:space="preserve">
+    <value>txt_Tarif</value>
+  </data>
+  <data name="&gt;&gt;txt_Tarif.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Tarif.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;txt_Tarif.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textEdit12.EditValue" xml:space="preserve">
+    <value>Tarif</value>
+  </data>
+  <data name="textEdit12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 140</value>
+  </data>
+  <data name="textEdit12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="textEdit12.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textEdit12.Name" xml:space="preserve">
+    <value>textEdit12</value>
+  </data>
+  <data name="&gt;&gt;textEdit12.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit12.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit12.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_Adres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 117</value>
+  </data>
+  <data name="txt_Adres.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="txt_Adres.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres.Name" xml:space="preserve">
+    <value>txt_Adres</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textEdit10.EditValue" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="textEdit10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 117</value>
+  </data>
+  <data name="textEdit10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="textEdit10.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textEdit10.Name" xml:space="preserve">
+    <value>textEdit10</value>
+  </data>
+  <data name="&gt;&gt;textEdit10.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit10.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txt_Tel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 94</value>
+  </data>
+  <data name="txt_Tel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="txt_Tel2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel2.Name" xml:space="preserve">
+    <value>txt_Tel2</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel2.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textEdit8.EditValue" xml:space="preserve">
+    <value>Tel 2</value>
+  </data>
+  <data name="textEdit8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 94</value>
+  </data>
+  <data name="textEdit8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="textEdit8.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textEdit8.Name" xml:space="preserve">
+    <value>textEdit8</value>
+  </data>
+  <data name="&gt;&gt;textEdit8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit8.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_Tel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 71</value>
+  </data>
+  <data name="txt_Tel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="txt_Tel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel1.Name" xml:space="preserve">
+    <value>txt_Tel1</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel1.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textEdit6.EditValue" xml:space="preserve">
+    <value>Tel 1</value>
+  </data>
+  <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 71</value>
+  </data>
+  <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="textEdit6.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Name" xml:space="preserve">
+    <value>textEdit6</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txt_Soyad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 48</value>
+  </data>
+  <data name="txt_Soyad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="txt_Soyad.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txt_Soyad.Name" xml:space="preserve">
+    <value>txt_Soyad</value>
+  </data>
+  <data name="&gt;&gt;txt_Soyad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Soyad.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;txt_Soyad.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="textEdit4.EditValue" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 48</value>
+  </data>
+  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
+    <value>textEdit4</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txt_Ad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 25</value>
+  </data>
+  <data name="txt_Ad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="txt_Ad.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_Ad.Name" xml:space="preserve">
+    <value>txt_Ad</value>
+  </data>
+  <data name="&gt;&gt;txt_Ad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Ad.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;txt_Ad.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textEdit1.EditValue" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 25</value>
+  </data>
+  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
+    <value>textEdit1</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 35</value>
+  </data>
+  <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 217</value>
+  </data>
+  <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupControl1.Text" xml:space="preserve">
+    <value>Fihrist</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_Satis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Satis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsRAAALEQF/ZF+RAAAAGHRF
+        WHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuMzE3g3eGAAADMklEQVRIS+2Ua0hTYRjH3815N2VeSt3m1OZt
+        pWJOTSuISGaZSB+im4H5RRLNLhZWZh2NSj+UmHkrldBAxyyvEGaKzu3k1DTUNF2WqHkrK+xDX/TpPfMY
+        03kL8kPgD/6cvc95z37nfZ4xtAGFrQxxcPbTy/XBthE5ezdzp7EokC79e6xfIXfyewMEtAh+rpuIkjR+
+        qwXljybwb3H8uxPhzWa+Sv6RkI6AxAPtPsSeVhfCq9mWcFGYEY5yQ8KuiUXgPQRuV5Z0vBBqvlZC/dQL
+        8GtxWF2EN+gEd/hdTlDFTGUMpYBk7AmUjBVA/kgGZAzdhdRPiUAMXIR4VRRc6ItQJ3c4DQo/50DhaC5U
+        T5aCj5K/fOs4MobB6e5QaRHeXPOlAoieOPB8bQ3OClMI6zoICaqzcG8wCe4PJi8KVZtLGl6XjheBSMnT
+        FuECI+Ld4YKyiWJ4OVoNu6XbYEsFAlwHXhMLxG+84UzPMbiqioZrqpgVc10VC09HHwFu70LR3jahGPd2
+        Vj5ZD6JsJ7DMQX8kVHyV9nC0M1Atiuo9sWqie8Pg8Ug6FtkM4+d11JLbA/GSt9OtkC5PBfYtpCXBA4eg
+        dm843imGk11Ba8qprmBIUsVNc2v0WGqJuNmHjO+Pgu15nNmlJFQEChPwUzrAvjZ3LBTBoY6dOP5aCaGv
+        4jYRCCRWKcxYxFBLdilcyPDuUBDkWMwsJ9EM/pGoZ+UgNwAnLKdO6kayQUiaq+OqYAO3xOQBFjDVAgov
+        GZek3oyfvWlNkhXTiMC8GGXrnKdnMY9rgzkZ0OIE3CzDBRKbOvy5DE1YPkMfeeXGH9wqrfs9qnjvPars
+        ejyr7LqF1dZ9mgKOjAmbJax8LJibgyb29QakQG4MVpnMOUk2AnYeKtcnkA+KxEeOxH3VDI2FFLlRb04J
+        uDId4EiNCpkxSwgo8H8QSW20fMiYYSczfpncYYRrftlyzEv4TXqw9bm5BD+jS9/SZl5ilcmYMU1khtPl
+        VaEklEBYaVPNPIf06fLSCOssFTsUPODmGalYlxYNbAXwgF2xoJYVh4zo0vLo3UBu+jeRn+4VxKdLayMS
+        9z8SGdCrDf4bEPoNrBYnXrk99gwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btn_Satis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 259</value>
+  </data>
+  <data name="btn_Satis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 44</value>
+  </data>
+  <data name="btn_Satis.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_Satis.Text" xml:space="preserve">
+    <value>Satis</value>
+  </data>
+  <data name="&gt;&gt;btn_Satis.Name" xml:space="preserve">
+    <value>btn_Satis</value>
+  </data>
+  <data name="&gt;&gt;btn_Satis.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Satis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Satis.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Cikis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 259</value>
+  </data>
+  <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 44</value>
+  </data>
+  <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_Cikis.Text" xml:space="preserve">
+    <value>Cikis</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Name" xml:space="preserve">
+    <value>btn_Cikis</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_CariEkle.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_CariEkle.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAB2
+        oAAAdqABgrpKUAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAAAvxJREFUOE+lknlI
+        k3EYx4fbWwmtuUvSDs155NGhplKZdih2eJSpoanT9J22ZiubW/48StO0kqhA+8cK7SKxWiZYzSKsQLoM
+        pRRFI6VTuiEKat9+7zD/HKw98OGF94EPz/P9PTxrJT86hQ3ocDWHdnoh9JYX/K65mmU1DDvRtr2okJAv
+        arSamyzsHd8OaQ1DJtq2l6yOIaWfC3AV59D6pwn693mQVtsjPMyQko8atPw+jeafDdCOKSGttEdYyxDd
+        u1yc+nEM9d9qoRpOgWS/HUJuPc1YOk58rcbhj2XIHEiApMwe4QGG5I4ko2acYP/bQmzpWwtxicC6UHaI
+        YWVHGEK/hHtB6UFKFUMkNCtJBWPKGIhH6Rst9KN52PR0FcTFApNYLyBOOkohZbeAiLSUAj4Rqfksz9/o
+        YjaM56PovQq73mRDPZoGbirlUALS+jegYCQTu1/mQD2Ujq19sVhzLxgRdxdheac/wm54I7hdgUVGN/i3
+        zoK8YqqZx/1o+lVPgz9uCb7u0z5UfTCgjJtqLB/akSzkD6Yi+0UitvbGIulJNOIfRmLdg6WI6lqCiNsL
+        sfSmr0XsXOkIXqDRHQ3fD00GX/FOB/Jagz2vWGiGM8EOpED5fCNSn63D5idrENsdjpj7YVh1NxDhnQEI
+        6/BB0HUPLLgyB/LyaeB5X5CDHU7GtsFEZPTHYUtvDBJ7ViP+cQTWdy9D0tMopPTEYOOjlYjuCkFIuycC
+        jfOw4PIc+F1yhfd5ZyiapHBvdIJYz5h5kn2MirstSbmAiEsphFJMMdDAiwSm8NsBiOteYZkqqM0DIg3f
+        JNrBJzO2U/IoKkounwi3UZT0UawV94KhN3wQfS8EkXcW06nmQkRFE23bS6Tlk6C2eZPB+150ATfVRNv2
+        ousRLqt/wXs2yzGDtUeo5pP5F2dO3hkXvDDHDiG3nqJZCt8WF3jRa5h9Ughhlj1Cup5bowiKszK4nXHC
+        zGOOmJ7h8P9CegqsuIgxSwwMxDoBRDv55ulpDlZOg8f7CyWDkIm3zhUGAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btn_CariEkle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 258</value>
+  </data>
+  <data name="btn_CariEkle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 44</value>
+  </data>
+  <data name="btn_CariEkle.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_CariEkle.Text" xml:space="preserve">
+    <value>Cari Ekle</value>
+  </data>
+  <data name="&gt;&gt;btn_CariEkle.Name" xml:space="preserve">
+    <value>btn_CariEkle</value>
+  </data>
+  <data name="&gt;&gt;btn_CariEkle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_CariEkle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_CariEkle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Print.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Print.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAABh0RVh0U29m
+        dHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAABFxJREFUSEvllHtQVGUYh1kWYqVlQRggisDACzVAWcil
+        C5gJKStmAWrpKggEQYAgMHabnKkZzRkqpxBygGiUpmGUkjFrawwLTAQFDJbLtuwusDcXlssYGBK8/b7D
+        LuSlQvvP3plnZvc73/k9+777nWP1/6jxKxNCEFj08UHvleERQvPyfy+E8sBikAaOgHOHD1fWRkVGFawT
+        x/DM226vOpUa3tDob0+Pjf9ejmAFGAKTgBQ9KoqP2yiLjY1bat5+W2UbGBAYWn386wbT8Og0C76esvKK
+        se0JO/amvZJha77nlsvZ636vkq2S7VMd3YobBIzOLjm99vqbjc+sjoryXbIkpOLzKrFab4roNQy5gnmN
+        kS8SiVLDwyMGqo4dJ4zsGsHQ8Ch9862UNr/40mVXV7cLIpHjL+L1G0yFB4p6Tv/cVAxZNESO5qy/Lx6P
+        5xcQ+HB9XsFuGjCNcCKFQokxfUoSyTbyDwggoYMDYSsH9tN9np60Vhxz9YOPiuUXO3tKIWKd/WNXNgsX
+        Ou/bslUyXnKojNLTM8jf359cXFzIxsZmNvx6+Ljm5uZOWyQJE42tMg0kH4JFuHZt9epN9hfauh4Rxzz3
+        vpu7+2Us3TTw31j+WBC1yVXTkDSDlYCP9ZlSao3hQP7j2aapnLwC8vL25n4hLs0bNj6BnR0dqzlJCJ8C
+        R8FcR91q7apfe/X9Ku0Adfb000GMa9XqSBIKhTcN/Css3N7enpYt86OExGRqbpczCWMQxIGZbvAghgEZ
+        ZKTUGEmlNZK0to7SMjLJw+NeLsgSaoGtOTo6UlDQCtqVv5uqqmuoRTYrYLCxFQAB9nOS5aABUJdKS4o+
+        A/UZBqmtS0lFJaUUHBxKAoGAC7e2tiYnJycKDQ2j/YUH6Kez57nu1brBWQGOtOXzu2DmnYfwpUDKJBa6
+        1TrqN5hIaxymdrmayiqO0Btv7aG397xDXxz9ittjCWWw4B5MQaboIxznP/Bdi/V4YGOReIBSMMFutsC6
+        6tMPkgYipcFI3Vo16erqSHu+mXAiuWAVOmDhHQivrT9HxYfKad/+wuGT359+74T0lDsnYIVAW/Ak+AyM
+        MIGFboi0xiGS6RT0nbKGtNITpKs/QyoEK/ovUQdG9YM5PCc3nzZt3ExJSSlXsnbmntmemJS/JlrsbNZw
+        Ih7wBClAxQQWevoNpLykpxZNO379ANeBvFdP9Y2tXHge/vjklFR6OTWNsrJzKCMzm+LiN42GhIZ94vfg
+        Q65mxVwh9C4QDL4EV5mEoUE3lvkzQWVVNbFXUPqrWVxods4udJJHkm0JkyuCQ+p8fHxj8SZw5/P51ubo
+        GwvBd4NE0AIm1LoBJpgEhqaLHdKY9RuaEpNSxjKzdjLJdMKO5JHHn3iqacEC+xdwu91MyjwK4dbgUVCK
+        Y90KQSV4HohwlN18fRfvXRu9riHy2TWnFj3gk2tnJ7jHfOutFyQOcrUuDOFzfyIKD6QdCIDQB19njuod
+        XFZWfwKt+aR8F3ZKvQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btn_Print.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 259</value>
+  </data>
+  <data name="btn_Print.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 44</value>
+  </data>
+  <data name="btn_Print.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_Print.Text" xml:space="preserve">
+    <value>Fihrist Print</value>
+  </data>
+  <data name="&gt;&gt;btn_Print.Name" xml:space="preserve">
+    <value>btn_Print</value>
+  </data>
+  <data name="&gt;&gt;btn_Print.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Print.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Print.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_Print2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Print2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAABh0RVh0U29m
+        dHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAABFxJREFUSEvllHtQVGUYh1kWYqVlQRggisDACzVAWcil
+        C5gJKStmAWrpKggEQYAgMHabnKkZzRkqpxBygGiUpmGUkjFrawwLTAQFDJbLtuwusDcXlssYGBK8/b7D
+        LuSlQvvP3plnZvc73/k9+777nWP1/6jxKxNCEFj08UHvleERQvPyfy+E8sBikAaOgHOHD1fWRkVGFawT
+        x/DM226vOpUa3tDob0+Pjf9ejmAFGAKTgBQ9KoqP2yiLjY1bat5+W2UbGBAYWn386wbT8Og0C76esvKK
+        se0JO/amvZJha77nlsvZ636vkq2S7VMd3YobBIzOLjm99vqbjc+sjoryXbIkpOLzKrFab4roNQy5gnmN
+        kS8SiVLDwyMGqo4dJ4zsGsHQ8Ch9862UNr/40mVXV7cLIpHjL+L1G0yFB4p6Tv/cVAxZNESO5qy/Lx6P
+        5xcQ+HB9XsFuGjCNcCKFQokxfUoSyTbyDwggoYMDYSsH9tN9np60Vhxz9YOPiuUXO3tKIWKd/WNXNgsX
+        Ou/bslUyXnKojNLTM8jf359cXFzIxsZmNvx6+Ljm5uZOWyQJE42tMg0kH4JFuHZt9epN9hfauh4Rxzz3
+        vpu7+2Us3TTw31j+WBC1yVXTkDSDlYCP9ZlSao3hQP7j2aapnLwC8vL25n4hLs0bNj6BnR0dqzlJCJ8C
+        R8FcR91q7apfe/X9Ku0Adfb000GMa9XqSBIKhTcN/Css3N7enpYt86OExGRqbpczCWMQxIGZbvAghgEZ
+        ZKTUGEmlNZK0to7SMjLJw+NeLsgSaoGtOTo6UlDQCtqVv5uqqmuoRTYrYLCxFQAB9nOS5aABUJdKS4o+
+        A/UZBqmtS0lFJaUUHBxKAoGAC7e2tiYnJycKDQ2j/YUH6Kez57nu1brBWQGOtOXzu2DmnYfwpUDKJBa6
+        1TrqN5hIaxymdrmayiqO0Btv7aG397xDXxz9ittjCWWw4B5MQaboIxznP/Bdi/V4YGOReIBSMMFutsC6
+        6tMPkgYipcFI3Vo16erqSHu+mXAiuWAVOmDhHQivrT9HxYfKad/+wuGT359+74T0lDsnYIVAW/Ak+AyM
+        MIGFboi0xiGS6RT0nbKGtNITpKs/QyoEK/ovUQdG9YM5PCc3nzZt3ExJSSlXsnbmntmemJS/JlrsbNZw
+        Ih7wBClAxQQWevoNpLykpxZNO379ANeBvFdP9Y2tXHge/vjklFR6OTWNsrJzKCMzm+LiN42GhIZ94vfg
+        Q65mxVwh9C4QDL4EV5mEoUE3lvkzQWVVNbFXUPqrWVxods4udJJHkm0JkyuCQ+p8fHxj8SZw5/P51ubo
+        GwvBd4NE0AIm1LoBJpgEhqaLHdKY9RuaEpNSxjKzdjLJdMKO5JHHn3iqacEC+xdwu91MyjwK4dbgUVCK
+        Y90KQSV4HohwlN18fRfvXRu9riHy2TWnFj3gk2tnJ7jHfOutFyQOcrUuDOFzfyIKD6QdCIDQB19njuod
+        XFZWfwKt+aR8F3ZKvQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btn_Print2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 259</value>
+  </data>
+  <data name="btn_Print2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 44</value>
+  </data>
+  <data name="btn_Print2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_Print2.Text" xml:space="preserve">
+    <value>Cari Print</value>
+  </data>
+  <data name="&gt;&gt;btn_Print2.Name" xml:space="preserve">
+    <value>btn_Print2</value>
+  </data>
+  <data name="&gt;&gt;btn_Print2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Print2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Print2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>684, 315</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
+    <value>gridColumn1</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
+    <value>gridColumn2</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
+    <value>gridColumn3</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
+    <value>gridColumn4</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CallerDetay</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

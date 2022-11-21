@@ -1,0 +1,1716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chk_Faturun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 92</value>
+  </data>
+  <data name="chk_Faturun.Properties.Caption" xml:space="preserve">
+    <value>Faturada Ürün Çıksın</value>
+  </data>
+  <data name="chk_Faturun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chk_Faturun.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="&gt;&gt;chk_Faturun.Name" xml:space="preserve">
+    <value>chk_Faturun</value>
+  </data>
+  <data name="&gt;&gt;chk_Faturun.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_Faturun.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chk_Faturun.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="txt_Fatno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 33</value>
+  </data>
+  <data name="txt_Fatno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="txt_Fatno.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_Fatno.Name" xml:space="preserve">
+    <value>txt_Fatno</value>
+  </data>
+  <data name="&gt;&gt;txt_Fatno.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Fatno.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Fatno.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="textEdit11.EditValue" xml:space="preserve">
+    <value>Fatura No</value>
+  </data>
+  <data name="textEdit11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 33</value>
+  </data>
+  <data name="textEdit11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit11.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="&gt;&gt;textEdit11.Name" xml:space="preserve">
+    <value>textEdit11</value>
+  </data>
+  <data name="&gt;&gt;textEdit11.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit11.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="btn_Ara.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Ara.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 88</value>
+  </data>
+  <data name="btn_Ara.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 23</value>
+  </data>
+  <data name="btn_Ara.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="btn_Ara.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;btn_Ara.Name" xml:space="preserve">
+    <value>btn_Ara</value>
+  </data>
+  <data name="&gt;&gt;btn_Ara.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Ara.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Ara.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="btn_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="btn_Cikis.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAAMCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkNsZWFySGVh
+        ZGVyQW5kRm9vdGVyIj4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5SZWR7ZmlsbDojRDExQzFD
+        O30KPC9zdHlsZT4NCiAgPHBhdGggZD0iTTI3LDRINUM0LjUsNCw0LDQuNSw0LDV2MjJjMCwwLjUsMC41
+        LDEsMSwxaDIyYzAuNSwwLDEtMC41LDEtMVY1QzI4LDQuNSwyNy41LDQsMjcsNHogTTIyLDIwbC0yLDJs
+        LTQtNGwtNCw0ICBsLTItMmw0LTRsLTQtNGwyLTJsNCw0bDQtNGwyLDJsLTQsNEwyMiwyMHoiIGZpbGw9
+        IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 33</value>
+  </data>
+  <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 50</value>
+  </data>
+  <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="btn_Cikis.Text" xml:space="preserve">
+    <value>Cıkıs</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Name" xml:space="preserve">
+    <value>btn_Cikis</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="btn_Yazdir.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Yazdir.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAFACAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IlF1aWNrX1By
+        aW50Ij4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5CbGFja3tmaWxsOiM3MjcyNzI7fQo8L3N0
+        eWxlPg0KICA8cGF0aCBkPSJNMTAsMmgxMnY4aDJWMEg4djEwaDJWMnogTTI4LDhoLTJ2M2MwLDAuNi0w
+        LjQsMS0xLDFIN2MtMC42LDAtMS0wLjQtMS0xVjhINGMtMS4xLDAtMiwwLjktMiwydjEyICBjMCwxLjEs
+        MC45LDIsMiwyaDR2NmgxNnYtNmg0YzEuMSwwLDItMC45LDItMlYxMEMzMCw4LjksMjkuMSw4LDI4LDh6
+        IE0yMiwyMnYydjRIMTB2LTR2LTJ2LTRoMTJWMjJ6IE0yMCwyNGgtOHYyaDhWMjR6IE0yMCwyMGgtOHYy
+        ICBoOFYyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="btn_Yazdir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 33</value>
+  </data>
+  <data name="btn_Yazdir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 50</value>
+  </data>
+  <data name="btn_Yazdir.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="btn_Yazdir.Text" xml:space="preserve">
+    <value>Yazdır</value>
+  </data>
+  <data name="&gt;&gt;btn_Yazdir.Name" xml:space="preserve">
+    <value>btn_Yazdir</value>
+  </data>
+  <data name="&gt;&gt;btn_Yazdir.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Yazdir.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Yazdir.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="txt_Vergidaire.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 257</value>
+  </data>
+  <data name="txt_Vergidaire.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="txt_Vergidaire.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txt_Vergidaire.Name" xml:space="preserve">
+    <value>txt_Vergidaire</value>
+  </data>
+  <data name="&gt;&gt;txt_Vergidaire.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Vergidaire.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Vergidaire.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="txt_Adres3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 229</value>
+  </data>
+  <data name="txt_Adres3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="txt_Adres3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres3.Name" xml:space="preserve">
+    <value>txt_Adres3</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres3.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="txt_Adres2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 201</value>
+  </data>
+  <data name="txt_Adres2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="txt_Adres2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres2.Name" xml:space="preserve">
+    <value>txt_Adres2</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres2.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="txt_Adres1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 173</value>
+  </data>
+  <data name="txt_Adres1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 22</value>
+  </data>
+  <data name="txt_Adres1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres1.Name" xml:space="preserve">
+    <value>txt_Adres1</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Adres1.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="PFat_Ad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 89</value>
+  </data>
+  <data name="PFat_Ad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="PFat_Ad.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PFat_Ad.Name" xml:space="preserve">
+    <value>PFat_Ad</value>
+  </data>
+  <data name="&gt;&gt;PFat_Ad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PFat_Ad.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PFat_Ad.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="date_Tarih.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="date_Tarih.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 61</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="date_Tarih.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="date_Tarih.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="date_Tarih.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;date_Tarih.Name" xml:space="preserve">
+    <value>date_Tarih</value>
+  </data>
+  <data name="&gt;&gt;date_Tarih.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;date_Tarih.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;date_Tarih.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="textEdit7.EditValue" xml:space="preserve">
+    <value>Vergi No</value>
+  </data>
+  <data name="textEdit7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 257</value>
+  </data>
+  <data name="textEdit7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit7.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;textEdit7.Name" xml:space="preserve">
+    <value>textEdit7</value>
+  </data>
+  <data name="&gt;&gt;textEdit7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit7.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="textEdit6.EditValue" xml:space="preserve">
+    <value>Vergi Daire</value>
+  </data>
+  <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 257</value>
+  </data>
+  <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit6.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Name" xml:space="preserve">
+    <value>textEdit6</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="textEdit5.EditValue" xml:space="preserve">
+    <value>Adres 3</value>
+  </data>
+  <data name="textEdit5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 229</value>
+  </data>
+  <data name="textEdit5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit5.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Name" xml:space="preserve">
+    <value>textEdit5</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="textEdit4.EditValue" xml:space="preserve">
+    <value>Adres 2</value>
+  </data>
+  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 201</value>
+  </data>
+  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
+    <value>textEdit4</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="textEdit3.EditValue" xml:space="preserve">
+    <value>Adres 1</value>
+  </data>
+  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 173</value>
+  </data>
+  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
+    <value>textEdit3</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="textEdit1.EditValue" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 89</value>
+  </data>
+  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
+    <value>textEdit1</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="textEdit8.EditValue" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="textEdit8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 61</value>
+  </data>
+  <data name="textEdit8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit8.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="&gt;&gt;textEdit8.Name" xml:space="preserve">
+    <value>textEdit8</value>
+  </data>
+  <data name="&gt;&gt;textEdit8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit8.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 365</value>
+  </data>
+  <data name="gridColumn1.Caption" xml:space="preserve">
+    <value>Aciklama</value>
+  </data>
+  <data name="gridColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn1.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>Kdv</value>
+  </data>
+  <data name="repo_Tutar.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn2.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>Net</value>
+  </data>
+  <data name="gridColumn3.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn3.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn3.Summary2" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>Kdv Tutar</value>
+  </data>
+  <data name="gridColumn4.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn4.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn4.Summary2" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn5.Caption" xml:space="preserve">
+    <value>Tutar</value>
+  </data>
+  <data name="gridColumn5.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn5.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn5.Summary2" xml:space="preserve">
+    <value>{0:n2}</value>
+  </data>
+  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="gridColumn6.Caption" xml:space="preserve">
+    <value>Onburo</value>
+  </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 175</value>
+  </data>
+  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="txt_Indtoplam.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Indtoplam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 546</value>
+  </data>
+  <data name="txt_Indtoplam.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="txt_Indtoplam.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Indtoplam.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Indtoplam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Indtoplam.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="&gt;&gt;txt_Indtoplam.Name" xml:space="preserve">
+    <value>txt_Indtoplam</value>
+  </data>
+  <data name="&gt;&gt;txt_Indtoplam.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Indtoplam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Indtoplam.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="textEdit9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 546</value>
+  </data>
+  <data name="textEdit9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 22</value>
+  </data>
+  <data name="textEdit9.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="&gt;&gt;textEdit9.Name" xml:space="preserve">
+    <value>textEdit9</value>
+  </data>
+  <data name="&gt;&gt;textEdit9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit9.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textEdit44.EditValue" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="textEdit44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 674</value>
+  </data>
+  <data name="textEdit44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit44.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="&gt;&gt;textEdit44.Name" xml:space="preserve">
+    <value>textEdit44</value>
+  </data>
+  <data name="&gt;&gt;textEdit44.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit44.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit44.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="textEdit43.EditValue" xml:space="preserve">
+    <value>% 1</value>
+  </data>
+  <data name="textEdit43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 651</value>
+  </data>
+  <data name="textEdit43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit43.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="&gt;&gt;textEdit43.Name" xml:space="preserve">
+    <value>textEdit43</value>
+  </data>
+  <data name="&gt;&gt;textEdit43.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit43.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit43.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="textEdit42.EditValue" xml:space="preserve">
+    <value>% 8</value>
+  </data>
+  <data name="textEdit42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 628</value>
+  </data>
+  <data name="textEdit42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit42.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="&gt;&gt;textEdit42.Name" xml:space="preserve">
+    <value>textEdit42</value>
+  </data>
+  <data name="&gt;&gt;textEdit42.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit42.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit42.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="textEdit41.EditValue" xml:space="preserve">
+    <value>% 18</value>
+  </data>
+  <data name="textEdit41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 605</value>
+  </data>
+  <data name="textEdit41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit41.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;textEdit41.Name" xml:space="preserve">
+    <value>textEdit41</value>
+  </data>
+  <data name="&gt;&gt;textEdit41.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit41.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit41.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="txt_TutarGenel.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_TutarGenel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 674</value>
+  </data>
+  <data name="txt_TutarGenel.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_TutarGenel.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_TutarGenel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_TutarGenel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_TutarGenel.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="&gt;&gt;txt_TutarGenel.Name" xml:space="preserve">
+    <value>txt_TutarGenel</value>
+  </data>
+  <data name="&gt;&gt;txt_TutarGenel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_TutarGenel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_TutarGenel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txt_KdvGenel.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_KdvGenel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 674</value>
+  </data>
+  <data name="txt_KdvGenel.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_KdvGenel.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_KdvGenel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_KdvGenel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_KdvGenel.TabIndex" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="&gt;&gt;txt_KdvGenel.Name" xml:space="preserve">
+    <value>txt_KdvGenel</value>
+  </data>
+  <data name="&gt;&gt;txt_KdvGenel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_KdvGenel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_KdvGenel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txt_MatrahGenel.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_MatrahGenel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 674</value>
+  </data>
+  <data name="txt_MatrahGenel.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_MatrahGenel.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_MatrahGenel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_MatrahGenel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_MatrahGenel.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="&gt;&gt;txt_MatrahGenel.Name" xml:space="preserve">
+    <value>txt_MatrahGenel</value>
+  </data>
+  <data name="&gt;&gt;txt_MatrahGenel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_MatrahGenel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_MatrahGenel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txt_Tutar1.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Tutar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 651</value>
+  </data>
+  <data name="txt_Tutar1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Tutar1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Tutar1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Tutar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Tutar1.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar1.Name" xml:space="preserve">
+    <value>txt_Tutar1</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txt_Kdv1.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Kdv1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 651</value>
+  </data>
+  <data name="txt_Kdv1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Kdv1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Kdv1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Kdv1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Kdv1.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv1.Name" xml:space="preserve">
+    <value>txt_Kdv1</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv1.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="txt_Matrah1.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Matrah1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 651</value>
+  </data>
+  <data name="txt_Matrah1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Matrah1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Matrah1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Matrah1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Matrah1.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah1.Name" xml:space="preserve">
+    <value>txt_Matrah1</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah1.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="txt_Tutar8.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Tutar8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 628</value>
+  </data>
+  <data name="txt_Tutar8.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Tutar8.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Tutar8.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Tutar8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Tutar8.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar8.Name" xml:space="preserve">
+    <value>txt_Tutar8</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar8.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="txt_Kdv8.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Kdv8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 628</value>
+  </data>
+  <data name="txt_Kdv8.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Kdv8.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Kdv8.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Kdv8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Kdv8.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv8.Name" xml:space="preserve">
+    <value>txt_Kdv8</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv8.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="txt_Matrah8.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Matrah8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 628</value>
+  </data>
+  <data name="txt_Matrah8.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Matrah8.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Matrah8.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Matrah8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Matrah8.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah8.Name" xml:space="preserve">
+    <value>txt_Matrah8</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah8.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="txt_Tutar18.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Tutar18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 605</value>
+  </data>
+  <data name="txt_Tutar18.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Tutar18.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Tutar18.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Tutar18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Tutar18.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar18.Name" xml:space="preserve">
+    <value>txt_Tutar18</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar18.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar18.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Tutar18.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="txt_Kdv18.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Kdv18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 605</value>
+  </data>
+  <data name="txt_Kdv18.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Kdv18.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Kdv18.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Kdv18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Kdv18.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv18.Name" xml:space="preserve">
+    <value>txt_Kdv18</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv18.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv18.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Kdv18.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="txt_Matrah18.EditValue" type="System.Decimal, mscorlib">
+    <value>0.00</value>
+  </data>
+  <data name="txt_Matrah18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 605</value>
+  </data>
+  <data name="txt_Matrah18.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txt_Matrah18.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>Numeric</value>
+  </data>
+  <data name="txt_Matrah18.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txt_Matrah18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="txt_Matrah18.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah18.Name" xml:space="preserve">
+    <value>txt_Matrah18</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah18.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah18.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Matrah18.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="textEdit28.EditValue" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="textEdit28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 576</value>
+  </data>
+  <data name="textEdit28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit28.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="&gt;&gt;textEdit28.Name" xml:space="preserve">
+    <value>textEdit28</value>
+  </data>
+  <data name="&gt;&gt;textEdit28.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit28.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit28.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="txt_Aciklama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 576</value>
+  </data>
+  <data name="txt_Aciklama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 22</value>
+  </data>
+  <data name="txt_Aciklama.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;txt_Aciklama.Name" xml:space="preserve">
+    <value>txt_Aciklama</value>
+  </data>
+  <data name="&gt;&gt;txt_Aciklama.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Aciklama.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Aciklama.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="btn_Satirsil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 365</value>
+  </data>
+  <data name="btn_Satirsil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 27</value>
+  </data>
+  <data name="btn_Satirsil.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="&gt;&gt;btn_Satirsil.Name" xml:space="preserve">
+    <value>btn_Satirsil</value>
+  </data>
+  <data name="&gt;&gt;btn_Satirsil.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Satirsil.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Satirsil.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textEdit2.EditValue" xml:space="preserve">
+    <value>Soyadı</value>
+  </data>
+  <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 117</value>
+  </data>
+  <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Name" xml:space="preserve">
+    <value>textEdit2</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="PFat_Soyad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 117</value>
+  </data>
+  <data name="PFat_Soyad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="PFat_Soyad.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PFat_Soyad.Name" xml:space="preserve">
+    <value>PFat_Soyad</value>
+  </data>
+  <data name="&gt;&gt;PFat_Soyad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PFat_Soyad.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PFat_Soyad.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PFat_Mail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 145</value>
+  </data>
+  <data name="PFat_Mail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="PFat_Mail.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PFat_Mail.Name" xml:space="preserve">
+    <value>PFat_Mail</value>
+  </data>
+  <data name="&gt;&gt;PFat_Mail.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PFat_Mail.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PFat_Mail.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textEdit13.EditValue" xml:space="preserve">
+    <value>e-Mail</value>
+  </data>
+  <data name="textEdit13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 145</value>
+  </data>
+  <data name="textEdit13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit13.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;textEdit13.Name" xml:space="preserve">
+    <value>textEdit13</value>
+  </data>
+  <data name="&gt;&gt;textEdit13.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit13.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PFat_Senaryo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 325</value>
+  </data>
+  <data name="PFat_Senaryo.Properties.Items" xml:space="preserve">
+    <value>TEMELFATURA</value>
+  </data>
+  <data name="PFat_Senaryo.Properties.Items1" xml:space="preserve">
+    <value>TEMEL FATURA</value>
+  </data>
+  <data name="PFat_Senaryo.Properties.Items2" xml:space="preserve">
+    <value>TICARIFATURA</value>
+  </data>
+  <data name="PFat_Senaryo.Properties.Items3" xml:space="preserve">
+    <value>TICARI FATURA</value>
+  </data>
+  <data name="PFat_Senaryo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 34</value>
+  </data>
+  <data name="PFat_Senaryo.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;PFat_Senaryo.Name" xml:space="preserve">
+    <value>PFat_Senaryo</value>
+  </data>
+  <data name="&gt;&gt;PFat_Senaryo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PFat_Senaryo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PFat_Senaryo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PFat_Efatura.EditValue" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PFat_Efatura.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 285</value>
+  </data>
+  <data name="PFat_Efatura.Properties.Items" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PFat_Efatura.Properties.Items1" xml:space="preserve">
+    <value>Kağıt</value>
+  </data>
+  <data name="PFat_Efatura.Properties.Items2" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PFat_Efatura.Properties.Items3" xml:space="preserve">
+    <value>e-Fatura</value>
+  </data>
+  <data name="PFat_Efatura.Properties.Items4" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="PFat_Efatura.Properties.Items5" xml:space="preserve">
+    <value>e-Arşiv</value>
+  </data>
+  <data name="PFat_Efatura.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 34</value>
+  </data>
+  <data name="PFat_Efatura.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;PFat_Efatura.Name" xml:space="preserve">
+    <value>PFat_Efatura</value>
+  </data>
+  <data name="&gt;&gt;PFat_Efatura.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PFat_Efatura.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PFat_Efatura.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textEdit10.EditValue" xml:space="preserve">
+    <value>İlçe</value>
+  </data>
+  <data name="textEdit10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 201</value>
+  </data>
+  <data name="textEdit10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit10.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="&gt;&gt;textEdit10.Name" xml:space="preserve">
+    <value>textEdit10</value>
+  </data>
+  <data name="&gt;&gt;textEdit10.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PFat_Ilce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 201</value>
+  </data>
+  <data name="PFat_Ilce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 22</value>
+  </data>
+  <data name="PFat_Ilce.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;PFat_Ilce.Name" xml:space="preserve">
+    <value>PFat_Ilce</value>
+  </data>
+  <data name="&gt;&gt;PFat_Ilce.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PFat_Ilce.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PFat_Ilce.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textEdit14.EditValue" xml:space="preserve">
+    <value>İl</value>
+  </data>
+  <data name="textEdit14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 229</value>
+  </data>
+  <data name="textEdit14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="textEdit14.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="&gt;&gt;textEdit14.Name" xml:space="preserve">
+    <value>textEdit14</value>
+  </data>
+  <data name="&gt;&gt;textEdit14.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEdit14.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PFat_Sehir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 229</value>
+  </data>
+  <data name="PFat_Sehir.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="PFat_Sehir.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PFat_Sehir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 22</value>
+  </data>
+  <data name="PFat_Sehir.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PFat_Sehir.Name" xml:space="preserve">
+    <value>PFat_Sehir</value>
+  </data>
+  <data name="&gt;&gt;PFat_Sehir.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PFat_Sehir.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PFat_Sehir.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="PFat_Sk.EditValue" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PFat_Sk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 285</value>
+  </data>
+  <data name="PFat_Sk.Properties.Items" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="PFat_Sk.Properties.Items1" xml:space="preserve">
+    <value>Şirket</value>
+  </data>
+  <data name="PFat_Sk.Properties.Items2" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="PFat_Sk.Properties.Items3" xml:space="preserve">
+    <value>Kişi</value>
+  </data>
+  <data name="PFat_Sk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 74</value>
+  </data>
+  <data name="PFat_Sk.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;PFat_Sk.Name" xml:space="preserve">
+    <value>PFat_Sk</value>
+  </data>
+  <data name="&gt;&gt;PFat_Sk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PFat_Sk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PFat_Sk.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_Vergino.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 257</value>
+  </data>
+  <data name="txt_Vergino.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 22</value>
+  </data>
+  <data name="txt_Vergino.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txt_Vergino.Name" xml:space="preserve">
+    <value>txt_Vergino</value>
+  </data>
+  <data name="&gt;&gt;txt_Vergino.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Vergino.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Vergino.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>522, 702</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Fatura</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
+    <value>gridColumn1</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
+    <value>gridColumn2</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repo_Tutar.Name" xml:space="preserve">
+    <value>repo_Tutar</value>
+  </data>
+  <data name="&gt;&gt;repo_Tutar.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
+    <value>gridColumn3</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
+    <value>gridColumn4</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
+    <value>gridColumn5</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Name" xml:space="preserve">
+    <value>gridColumn6</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Fatura</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

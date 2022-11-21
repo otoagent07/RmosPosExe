@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Ad Boş Geçilemez..." xml:space="preserve">
+    <value>Имя не может быть пустым...</value>
+  </data>
+  <data name="Ad ve Soyad Boş Geçilemez..." xml:space="preserve">
+    <value>Имя не может быть пустым...</value>
+  </data>
+  <data name="Adisyon Dökülecek... Devam Etmek İstiyor Musunuz ?" xml:space="preserve">
+    <value>Выписка бланка счет-заказа... Вы хотите продолжить ?</value>
+  </data>
+  <data name="Adisyon için Bir Printer Seçimi Yapılmamış..." xml:space="preserve">
+    <value>Не выбран принтер для бланка счет-заказа...</value>
+  </data>
+  <data name="Aktarim Bitmistir \r\n Kod Sinifları \r\n 91:Odeme Sekilleri \r\n 92:Departman Kısımları \r\n 93:Bankalar \r\n 94:Yemek Cekleri" xml:space="preserve">
+    <value>Передача завершена \r\n Классы кода \r\n 91:Способы оплаты \r\n 92:Части отдела \r\n 93:Банки \r\n 94:Продовольственные чеки</value>
+  </data>
+  <data name="Aktarım Yapmadan Once Eslestirme Yapılması Gerekir" xml:space="preserve">
+    <value>Перед передачей требуется сопряжение</value>
+  </data>
+  <data name="Alacak Satırı üzerinde İşlem Yapamazsınız..." xml:space="preserve">
+    <value>Вы не можете совершать операции над строкой дебиторской задолженности…</value>
+  </data>
+  <data name="Ana Grup Boş Geçilemez..." xml:space="preserve">
+    <value>Основная группа не может быть пустой...</value>
+  </data>
+  <data name="Ayarlarınızda Sorun Var..." xml:space="preserve">
+    <value>Проблема с настройками...</value>
+  </data>
+  <data name="Aynı Kart Numarası Başka Kullanıcıda Tanımlı. Kart Numarasını Değiştiriniz..." xml:space="preserve">
+    <value>Тот же номер карты определен у другого пользователя. Измените номер карты...</value>
+  </data>
+  <data name="Açmıştır.Başkası Satış Yapamaz...!!!" xml:space="preserve">
+    <value>Открыт. Другой не может продать...!!!</value>
+  </data>
+  <data name="Açık Masa Kişi Sayısı :" xml:space="preserve">
+    <value>Количество людей за открытым столом :</value>
+  </data>
+  <data name="Açık Masayı Masayı Geri Alamazsınız..." xml:space="preserve">
+    <value>Вы не можете вернуть открытый стол...</value>
+  </data>
+  <data name="Açılış Saati :" xml:space="preserve">
+    <value>Openning Time :</value>
+  </data>
+  <data name="Bakiye Yüklemek için Ödeme Departmanını Seçiniz..." xml:space="preserve">
+    <value>Чтобы загрузить баланс, выберите платежный отдел...</value>
+  </data>
+  <data name="Bakiye Yüklenmiştir..." xml:space="preserve">
+    <value>Баланс загружен...</value>
+  </data>
+  <data name="Baslangıc ve Bitis Değerlerini Giriniz..." xml:space="preserve">
+    <value>Введите начальные и конечные значения...</value>
+  </data>
+  <data name="Başlangıc Bitiş Değerleri Sayısal Olmalıdır...!!!" xml:space="preserve">
+    <value>Начальные и конечные значения должны быть числовыми...!!!</value>
+  </data>
+  <data name="Bilgilendirme" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="Boş Paket Masanız Bulunmamaktadır." xml:space="preserve">
+    <value>Не найден стол для сервиса на вынос.</value>
+  </data>
+  <data name="Bu Departmana Ait Yazıcı Ayarlarını Kontrol Ediniz..." xml:space="preserve">
+    <value>Проверьте настройки принтера этого отдела...</value>
+  </data>
+  <data name="Bu isimde zaten bir rapor var..." xml:space="preserve">
+    <value>Уже есть отчет с таким названием...</value>
+  </data>
+  <data name="Bu İşlemi Yapmaya Yetkiniz Yoktur." xml:space="preserve">
+    <value>Вы не уполномочены выполнять эту операцию.</value>
+  </data>
+  <data name="Cari Ad" xml:space="preserve">
+    <value>Current Name</value>
+  </data>
+  <data name="Cari Adres1" xml:space="preserve">
+    <value>Current Address1</value>
+  </data>
+  <data name="Cari Adres2" xml:space="preserve">
+    <value>Current Address2</value>
+  </data>
+  <data name="Cari Adres3" xml:space="preserve">
+    <value>Current Address3</value>
+  </data>
+  <data name="Cari hareket Görmüş Silinemez!" xml:space="preserve">
+    <value>Cannot Delete Current Motion!</value>
+  </data>
+  <data name="Cari Kart" xml:space="preserve">
+    <value>Current Card</value>
+  </data>
+  <data name="Cari Kod" xml:space="preserve">
+    <value>Current Code</value>
+  </data>
+  <data name="Cari Kodu Boş Geçilemez..." xml:space="preserve">
+    <value>Account Code Cannot Be Empty ...</value>
+  </data>
+  <data name="Cari Kodu Boş Geçilemez...\nSistem Yeni Kod Versin mi?" xml:space="preserve">
+    <value>Account Code Cannot Be Empty ... \n Does The System Automatically Create A New Code?</value>
+  </data>
+  <data name="Cari Kodu Giriniz..." xml:space="preserve">
+    <value>Enter account code</value>
+  </data>
+  <data name="Cari kodu tanımlı değil." xml:space="preserve">
+    <value>Account code is not defined.</value>
+  </data>
+  <data name="Cari Soyad" xml:space="preserve">
+    <value>Current Surname</value>
+  </data>
+  <data name="Cari Tel" xml:space="preserve">
+    <value>Current Phone</value>
+  </data>
+  <data name="Departman Bos Geçilemez..." xml:space="preserve">
+    <value>Отдел не может быть пустым...</value>
+  </data>
+  <data name="Departman Parametreleri Yüklenemedi..." xml:space="preserve">
+    <value>Не удалось загрузить параметры отдела...</value>
+  </data>
+  <data name="Devam etmek İstiyor musunuz ?" xml:space="preserve">
+    <value>Вы хотите продолжить?</value>
+  </data>
+  <data name="Devam Etmek İstiyor Musunuz...?" xml:space="preserve">
+    <value>Вы хотите продолжить?</value>
+  </data>
+  <data name="Dizany Yüklenemedi..." xml:space="preserve">
+    <value>Не удалось загрузить оформление...</value>
+  </data>
+  <data name="Düzeltilecek Kaydı Seçiniz..." xml:space="preserve">
+    <value>Выберите запись для редактирования...</value>
+  </data>
+  <data name="Exe Güncellenemedi. Sebebi:" xml:space="preserve">
+    <value>Не удалось обновить Exe. Причина:</value>
+  </data>
+  <data name="Farklı Tarihler için Mahsup Oluşturulamaz..." xml:space="preserve">
+    <value>Невозможно создать оборотную ведомость (Mahsup) для разных дат...</value>
+  </data>
+  <data name="Farklı Tarihteki Fişi İptal Edemezsiniz..." xml:space="preserve">
+    <value>Вы не можете отменить квитанцию c другой датой...</value>
+  </data>
+  <data name="Farklı Tarihteki Masayı Geri Alamazsınız..." xml:space="preserve">
+    <value>Вы не можете вернуть стол с другой датой...</value>
+  </data>
+  <data name="Fatura Dizaynı Yapılmamış..." xml:space="preserve">
+    <value>Дизайн счета-фактуры не выполнен…</value>
+  </data>
+  <data name="Faturayı İptal Etmek İstiyormusunuz?" xml:space="preserve">
+    <value>Вы хотите отменить счет-фактуру?</value>
+  </data>
+  <data name="Folio Bulunamadı...\nLütfen Hesabı Tekrar Kapatın..." xml:space="preserve">
+    <value>Фолио не найдено...\nПожалуйста, снова закройте счет...</value>
+  </data>
+  <data name="Folio Numarasını Check Out Yapmak İstediğinize Eminmisiniz ?" xml:space="preserve">
+    <value>Вы уверены, что хотите сделать Check Out?</value>
+  </data>
+  <data name="Folio Numarasını Silmek İstediğinize Eminmisiniz ?" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить номер фолио ?</value>
+  </data>
+  <data name="Garson Seçiniz..." xml:space="preserve">
+    <value>Выберите официанта...</value>
+  </data>
+  <data name="Gelir Hesaplar için Mahsup Kesmek İstiyor Musunuz ?" xml:space="preserve">
+    <value>Вы хотите выписать счета для оборотных ведомостей (Mahsup)</value>
+  </data>
+  <data name="Gelir Hesapları için Fis Oluştu.... Fis No :" xml:space="preserve">
+    <value>Квитанция была сформирована для счетов доходов.... № Квитанции:</value>
+  </data>
+  <data name="GRAM Giriniz..." xml:space="preserve">
+    <value>Enter GRAMS...</value>
+  </data>
+  <data name="Grup İsmi Boş Geçilemez." xml:space="preserve">
+    <value>Имя группы не может быть пустым.</value>
+  </data>
+  <data name="Güncelleme için FTP server a bağlantı kurulamadı." xml:space="preserve">
+    <value>Не удалось установить соединение с FTP-сервером для обновления.</value>
+  </data>
+  <data name="Günsonu Işlemi Tamamlandı..." xml:space="preserve">
+    <value>Процесс завершения дня готов...</value>
+  </data>
+  <data name="Günsonu Şifreniz Yanlış..." xml:space="preserve">
+    <value>Ваш пароль для завершения дня неверен...</value>
+  </data>
+  <data name="Hareket Görmüş, Silinemez." xml:space="preserve">
+    <value>Движение замечено, невозможно удалить.</value>
+  </data>
+  <data name="Hata" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Hatalı giriş..." xml:space="preserve">
+    <value>Ошибка входа...</value>
+  </data>
+  <data name="Hesap Bulunamadı..." xml:space="preserve">
+    <value>Счет не найден...</value>
+  </data>
+  <data name="Işlem Gecersiz." xml:space="preserve">
+    <value>Транзакция недействительна.</value>
+  </data>
+  <data name="Kalan Bakiye :" xml:space="preserve">
+    <value>Оставшийся баланс :</value>
+  </data>
+  <data name="Kapalı Masa Kişi Sayısı :" xml:space="preserve">
+    <value>Количество людей за закрытым столом :</value>
+  </data>
+  <data name="Kapanış Açılış, yapıldı." xml:space="preserve">
+    <value>Закрытие Открытие сделано.</value>
+  </data>
+  <data name="Kapatılmamış Çekler Bulunuyor. Lütfen Bütün Çeklerin Kapalı Olduğuna Emin Olun..." xml:space="preserve">
+    <value>Есть незакрытые чеки. Пожалуйста, убедитесь, что все чеки закрыты...</value>
+  </data>
+  <data name="Kart Kayıtlıdır. Yeni Kart Deneyiniz.." xml:space="preserve">
+    <value>Карта зарегистрирована. Попробуйте новую карту..</value>
+  </data>
+  <data name="Kart limit Iadesi Yapılamaz.." xml:space="preserve">
+    <value>Возврат лимита карты не может быть произведен..</value>
+  </data>
+  <data name="Kart Okutunuz..." xml:space="preserve">
+    <value>Считайте карту...</value>
+  </data>
+  <data name="Kartlara Check Out İşlemi Uygulandı." xml:space="preserve">
+    <value>К картам был применен процесс Check Out.</value>
+  </data>
+  <data name="Kasa Giriş Hareketi" xml:space="preserve">
+    <value>CASE ENTRY MOVEMENT</value>
+  </data>
+  <data name="Kasa Çıkış Hareketi" xml:space="preserve">
+    <value>CASE EXIT MOVEMENT</value>
+  </data>
+  <data name="Kayıt Edildi.." xml:space="preserve">
+    <value>Запись произведена..</value>
+  </data>
+  <data name="Kayıtlı Restoran Bilgileri Bulunamadı.." xml:space="preserve">
+    <value>Зарегистрированная информация о ресторане не найдена..</value>
+  </data>
+  <data name="Kişi Bilgisi Bulunamadı.." xml:space="preserve">
+    <value>Контактная информация не найдена..</value>
+  </data>
+  <data name="Kişi Sayısı Giriniz..." xml:space="preserve">
+    <value>Enter Number of Persons...</value>
+  </data>
+  <data name="Kişi Sayısını 10nun üzerindendir. Devam Etmek İstiyormusunuz?" xml:space="preserve">
+    <value>Количество людей превышает 10 человек. Вы хотите продолжить?</value>
+  </data>
+  <data name="KK Hesaplar için Fis Oluştu.... Fis No :" xml:space="preserve">
+    <value>Для КК счетов квитанция создана.... Квитанция №:</value>
+  </data>
+  <data name="KK Hesaplar için Mahsup Kesmek İstiyor Musunuz ?" xml:space="preserve">
+    <value>Вы хотите  выписать оборотную ведомость (Mahsup) для КК счетов?</value>
+  </data>
+  <data name="Kod Bos Gecilemez..." xml:space="preserve">
+    <value>Код пустым не может быть...</value>
+  </data>
+  <data name="Konum Kod Boş Geçilemez..." xml:space="preserve">
+    <value>Расположение не может быть пустым...</value>
+  </data>
+  <data name="Kredi Kartları İşlendi." xml:space="preserve">
+    <value>Кредитные карты обработаны.</value>
+  </data>
+  <data name="KrediKarti Kontrol" xml:space="preserve">
+    <value>Проверка кредитной карты</value>
+  </data>
+  <data name="KrediKartı Odeme Uygulaması Bulunamadı." xml:space="preserve">
+    <value>Приложение для оплаты кредитной картой не найдено.</value>
+  </data>
+  <data name="Kullanıcı Kodu Bos Geçilemez...!!!" xml:space="preserve">
+    <value>Код пользователя не может быть пустым...!!!</value>
+  </data>
+  <data name="Kullanıcı Şifreniz Yanlış..." xml:space="preserve">
+    <value>Пароль пользователя неверен...</value>
+  </data>
+  <data name="KİŞİ veya ŞİRKET Olarak Belirtiniz.." xml:space="preserve">
+    <value>Укажите как ЛИЦО или КОМПАНИЮ..</value>
+  </data>
+  <data name="Listeden Müşteriyi Seçiniz..." xml:space="preserve">
+    <value>Выберите клиента из списка...</value>
+  </data>
+  <data name="Listeneden Kişi Seçiniz..." xml:space="preserve">
+    <value>Выберите человека из списка...</value>
+  </data>
+  <data name="Lüften Resepsiyon ile Görüşün..." xml:space="preserve">
+    <value>Пожалуйста, свяжитесь со стойкой регистрации...</value>
+  </data>
+  <data name="Lütfen Alt Grup Seçiniz..." xml:space="preserve">
+    <value>Пожалуйста, выберите подгруппу...</value>
+  </data>
+  <data name="Lütfen Ana Grup Seçiniz..." xml:space="preserve">
+    <value>Выберите основную группу...</value>
+  </data>
+  <data name="Lütfen Bekleyiniz..." xml:space="preserve">
+    <value>Please Wait...</value>
+  </data>
+  <data name="Lütfen Hesabı Tekrar Kapatın..." xml:space="preserve">
+    <value>Пожалуйста, закройте счет еще раз...</value>
+  </data>
+  <data name="Lütfen Hesap Seçiniz..." xml:space="preserve">
+    <value>Пожалуйста, выберите счет...</value>
+  </data>
+  <data name="Lütfen Kapatma Hesabı Tanıtınız.." xml:space="preserve">
+    <value>Пожалуйста, создайте счет закрытия..</value>
+  </data>
+  <data name="Lütfen Kapatma Kodu Tanıtınız.." xml:space="preserve">
+    <value>Пожалуйста, создайте код закрытия..</value>
+  </data>
+  <data name="Lütfen Kullanıcı Kodlarından PR Tanımlayınız..." xml:space="preserve">
+    <value>Пожалуйста, создайте PR из кодов пользователей...</value>
+  </data>
+  <data name="Lütfen Şube Seçiniz.." xml:space="preserve">
+    <value>Пожалуйста, выберите отделение..</value>
+  </data>
+  <data name="Mail Başarıyla Gönderildi." xml:space="preserve">
+    <value>Почта успешно отправлена.</value>
+  </data>
+  <data name="Mail Gönderilemedi..." xml:space="preserve">
+    <value>Не удалось отправить письмо...</value>
+  </data>
+  <data name="Masa Bilgisi Bulunamadı..." xml:space="preserve">
+    <value>Информация о столе не найдена...</value>
+  </data>
+  <data name="Masa Numarı Boş Geçilemez..." xml:space="preserve">
+    <value>Номер стола не может быть пустым...</value>
+  </data>
+  <data name="Masa Satışa Kapalı..." xml:space="preserve">
+    <value>Стол закрыт для продажи...</value>
+  </data>
+  <data name="Masa Seçiniz..." xml:space="preserve">
+    <value>Пожалуйста, выберите стол...</value>
+  </data>
+  <data name="Masa İzinleri Açıldı.." xml:space="preserve">
+    <value>Разрешения на стол открыты..</value>
+  </data>
+  <data name="Masayı" xml:space="preserve">
+    <value>Стол</value>
+  </data>
+  <data name="Max Miktarı Geçtiniz..." xml:space="preserve">
+    <value>Вы превысили максимальную сумму...</value>
+  </data>
+  <data name="Maximum Miktarı Geçtiniz..." xml:space="preserve">
+    <value>Вы превысили максимальную сумму...</value>
+  </data>
+  <data name="Menu Getirilmeden Önce Eski Veriler Silinecektir. Emin misiniz ?" xml:space="preserve">
+    <value>Старые данные будут удалены до того, как появится меню. Вы уверены ?</value>
+  </data>
+  <data name="Mevcut Cari için Açık çek bulunmaktadır. Açık çek üzerinde devam etmek istiyor musunuz?" xml:space="preserve">
+    <value>Найден открытый чек для текущего выбранного. Хотите продолжить с открытым чеком?</value>
+  </data>
+  <data name="Miktar Giriniz..." xml:space="preserve">
+    <value>Enter Quantity...</value>
+  </data>
+  <data name="Miktar Sıfırdan Büyük Olmalıdır..!" xml:space="preserve">
+    <value>Amount Must Be Greater Than Zero..!</value>
+  </data>
+  <data name="Nakit Hesaplar için Fis Oluştu.... Fis No :" xml:space="preserve">
+    <value>Квитанция для наличного счета сформирована.... Квитанция №:</value>
+  </data>
+  <data name="Nakit Hesaplar için Mahsup Kesmek İstiyor Musunuz ?" xml:space="preserve">
+    <value>Вы хотите выписать оборотную ведомость (Mahsup) для наличного счета?</value>
+  </data>
+  <data name="Nakitler İşlendi." xml:space="preserve">
+    <value>Наличные денежные средства обработаны.</value>
+  </data>
+  <data name="NL Hesap Bakiye Yetersizdir." xml:space="preserve">
+    <value>Баланс счета NL недостаточен</value>
+  </data>
+  <data name="NL Hesap Bakiye Yetersizdir..Kalan Bakiye :" xml:space="preserve">
+    <value>Баланс счета NL недостаточен...Оставшийся баланс :</value>
+  </data>
+  <data name="NL Masa Şuan Dolu Masa Geri Alınamıyor..." xml:space="preserve">
+    <value>NL стол в настоящее время заполнен. Стол не может быть возвращен...</value>
+  </data>
+  <data name="Nolu Fisin Fatura Numarası Değişti..." xml:space="preserve">
+    <value>№ фактуры квитанции изменен...</value>
+  </data>
+  <data name="Oda Check-Out Olmuştur.Kayıt İşlemi İptal Edilmiştir." xml:space="preserve">
+    <value>Check-Out из номера совершен. Регистрация отменена.</value>
+  </data>
+  <data name="Oda In-House Değildir." xml:space="preserve">
+    <value>Комната пуста (not In-House)</value>
+  </data>
+  <data name="Odeme Tutarını Giriniz..." xml:space="preserve">
+    <value>Enter the Payment Amount...</value>
+  </data>
+  <data name="PosTar:" xml:space="preserve">
+    <value>Pos Date:</value>
+  </data>
+  <data name="Programı Kapatıp" xml:space="preserve">
+    <value>Close the Program</value>
+  </data>
+  <data name="Programı Kapatıp\nYeniden Programa Giriş Yapmanız Gerekmektedir..." xml:space="preserve">
+    <value>Вы должны закрыть программу и снова войти в нее...</value>
+  </data>
+  <data name="Rapor Adı Girmelisiniz..." xml:space="preserve">
+    <value>Вы должны ввести имя отчета…</value>
+  </data>
+  <data name="Rapor Dataya Kaydedilsin mi...?" xml:space="preserve">
+    <value>Сохранить отчет в базу данных...?</value>
+  </data>
+  <data name="Rapor kayıt işlemi basarısız, Lütfen tekrar deneyiniz..." xml:space="preserve">
+    <value>Сбой в записи отчета. Пожалуйста,попробуйте еще раз...</value>
+  </data>
+  <data name="Remote Satın Alma Talebi" xml:space="preserve">
+    <value>Remote Purchase Request</value>
+  </data>
+  <data name="Remote Stok Sayım" xml:space="preserve">
+    <value>Far Stock Count</value>
+  </data>
+  <data name="Remote Urun Iade" xml:space="preserve">
+    <value>Remote Product Returns</value>
+  </data>
+  <data name="Rezervasyon Silmek İstiyor Musunuz...?" xml:space="preserve">
+    <value>Вы хотите удалить бронирование...?</value>
+  </data>
+  <data name="Sadece Genel Çek Raporundan Fişi Detayına Gidebilirsiniz..." xml:space="preserve">
+    <value>Sadece Genel Çek Raporundan Fişi Detayına Gidebilirsiniz...
+59/5000
+You can only go to the Voucher Detail from the General Check Report ...
+Send feedback
+History
+Saved
+Community</value>
+  </data>
+  <data name="Sadece Genel Çek Raporundan Fişi İptal Edebilirsiniz..." xml:space="preserve">
+    <value>Вы можете перейти к деталям квитанции только из общего отчета о чеке...</value>
+  </data>
+  <data name="Sadece Genel Çek Raporundan Masa Geri Alabilirsiniz..." xml:space="preserve">
+    <value>Вы можете вернуть стол только из общего отчета о чеке...</value>
+  </data>
+  <data name="Satış yapmadan önce Adisyon Numarasını giriniz..." xml:space="preserve">
+    <value>Введите номер бланка счет-заказа перед продажей...</value>
+  </data>
+  <data name="Satış İşlemi Gerçekleşecektir." xml:space="preserve">
+    <value>Операция по продаже состоится.</value>
+  </data>
+  <data name="Seçilen Hesap Harcamaya Kapatılmıştır." xml:space="preserve">
+    <value>Выбранный счет закрыт для расходов.</value>
+  </data>
+  <data name="Seçilen Hesap Harcamaya Kapatılmıştır.\nSatış İşlemi Gerçekleşecektir." xml:space="preserve">
+    <value>Выбранный счет закрыт для расходов.\nОперация по продаже состоится.</value>
+  </data>
+  <data name="Seçilen Hesap Kapatılmıştır." xml:space="preserve">
+    <value>Выбранный счет закрыт.</value>
+  </data>
+  <data name="Seçili Hesap Limit Tutarını Aşmıştır." xml:space="preserve">
+    <value>Выбранный счет превысил лимитную сумму.</value>
+  </data>
+  <data name="Seçili Kaydı Silmek İstediğinize Emin misiniz...?" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить выбранную запись...?</value>
+  </data>
+  <data name="Seçili Kaydı Zayi Yapmak İstediğinize Emin Misiniz...?" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить выбранную запись...?</value>
+  </data>
+  <data name="Seçili Masaları Silmek İstediğinize Emin Misiniz...?" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить выбранные столы...?</value>
+  </data>
+  <data name="Seçili Masayı Geri Almak İstiyor Musunuz?" xml:space="preserve">
+    <value>Вы хотите вернуть выбранные столы?</value>
+  </data>
+  <data name="Silinecek Kaydı Seçiniz..." xml:space="preserve">
+    <value>Выберите запись для удаления...</value>
+  </data>
+  <data name="Silmek İstediğinize Emin misiniz ?" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить ?</value>
+  </data>
+  <data name="Sipariş Yazıcıya Gönderilsin Mi...?" xml:space="preserve">
+    <value>Отправить заказ на печать...?</value>
+  </data>
+  <data name="Siparişiniz Gönderildi." xml:space="preserve">
+    <value>Ваш заказ отправлен.</value>
+  </data>
+  <data name="Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!" xml:space="preserve">
+    <value>System Date and Shipment Date Are Not The Same Please Check!!!</value>
+  </data>
+  <data name="Sistemden Çıkıp Yeniden Giriniz..." xml:space="preserve">
+    <value>Выйдите и снова войдите в систему...</value>
+  </data>
+  <data name="SistemTar:" xml:space="preserve">
+    <value>System Date:</value>
+  </data>
+  <data name="Son Ürün Eksiltilemez..." xml:space="preserve">
+    <value>Конечный продукт нельзя уменьшить...</value>
+  </data>
+  <data name="SQL kodunda hataya rastlandı" xml:space="preserve">
+    <value>Обнаружена ошибка в коде SQL</value>
+  </data>
+  <data name="Sql'e Aktarim Yapılırken Hata Olustu:" xml:space="preserve">
+    <value>Ошибка при передаче в Sql:</value>
+  </data>
+  <data name="Sube Boş Geçilemez." xml:space="preserve">
+    <value>Филиал не может быть пустым.</value>
+  </data>
+  <data name="Tarih Alanı Boş Geçilemez." xml:space="preserve">
+    <value>Поле даты не может быть пустым.</value>
+  </data>
+  <data name="Tarihindeki Günü Birlik Kartlara Check Out Uygulansın mı ?" xml:space="preserve">
+    <value>Создать ежедневную карту Check Out на эту дату?</value>
+  </data>
+  <data name="Tarihindeki Toplu Gelir İade Kapatma Uygulansın mı ?" xml:space="preserve">
+    <value>Создать общий возврат дохода на эту дату?</value>
+  </data>
+  <data name="Tarihli Kurlar Yoktur.Kur Girişinden Günlük Kurları Tanımlayabilirisiniz." xml:space="preserve">
+    <value>Отсутствуют курсы валют на эту дату...Вы можете определить курс самомтоятельно в окне курса.</value>
+  </data>
+  <data name="Temassız Kartla Çalışan Tesisler İçin Geçerlidir." xml:space="preserve">
+    <value>Применимо к установкам, работающим с бесконтактной картой.</value>
+  </data>
+  <data name="TEMEL FATURA veya TICARI FATURA Olarak Belirtiniz.." xml:space="preserve">
+    <value>Выберите физическую фактуру или юридическую фактуру</value>
+  </data>
+  <data name="Test Maili Gönderildi..." xml:space="preserve">
+    <value>Отправлено тестовое письмо...</value>
+  </data>
+  <data name="Toplam Masa Kişi Sayısı :" xml:space="preserve">
+    <value>Общее количество людей за столом :</value>
+  </data>
+  <data name="Tutar Giriniz..." xml:space="preserve">
+    <value>Enter Amount...</value>
+  </data>
+  <data name="Tüm Alanları Doldurunuz...!" xml:space="preserve">
+    <value>Пожалуйста, заполните все поля...!</value>
+  </data>
+  <data name="Urun Grubu Bos Geçilemez..." xml:space="preserve">
+    <value>Группа продуктов не может быть пустой...</value>
+  </data>
+  <data name="Uyarı" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="Vergi Daire ve Vergi No Alanlarını Doldurunuz.." xml:space="preserve">
+    <value>Заполните поля «Налоговая инспекция» и «Налоговый номер».</value>
+  </data>
+  <data name="Yazarkasa Eslestirmesiyle Gelen Departman(Kısım) VB. Bilgileri RMOS ULTIMATE POS'a Aktarılacaktır \r\n Devam Etmek Istiyor musunuz" xml:space="preserve">
+    <value>Информация будет передана в RMOS ULTIMATE POS \r\n Вы хотите продолжить?</value>
+  </data>
+  <data name="Yazdırılmış Satır Silme Yetkiniz Yoktur...!" xml:space="preserve">
+    <value>У вас нет полномочий удалять напечатанные строки...!</value>
+  </data>
+  <data name="Yazılacak Alanı Seçiniz..." xml:space="preserve">
+    <value>Выберите область для печати...</value>
+  </data>
+  <data name="YemekSepeti Siparişleri için kullanılabilir." xml:space="preserve">
+    <value>Можно использовать для заказов YemekSepeti.</value>
+  </data>
+  <data name="Yeni tarih Sistem Server tarihinden Büyük Olamaz!!!!\nDevam etmek İstiyor Musunuz?" xml:space="preserve">
+    <value>Новая дата не может быть больше даты системного сервера!!!!</value>
+  </data>
+  <data name="Yeniden Programa Giriş Yapmanız Gerekmektedir..." xml:space="preserve">
+    <value>You have to re-enter the program...</value>
+  </data>
+  <data name="Yönetim İşlemleri" xml:space="preserve">
+    <value>Management Operations</value>
+  </data>
+  <data name="Yüklenecek Limit Tutarını Giriniz..." xml:space="preserve">
+    <value>Введите сумму для загрузки...</value>
+  </data>
+  <data name="Yükleniyor..." xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="Çıkış" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Ödeme Alındı Fakat Hesap Kapanmadı..." xml:space="preserve">
+    <value>Платеж получен, но счет не закрыт...</value>
+  </data>
+  <data name="Ödeme Kodu Boş Geçilemez..." xml:space="preserve">
+    <value>Код оплаты не может быть пустым...</value>
+  </data>
+  <data name="Ödeme Kodu Satırını Seçiniz.." xml:space="preserve">
+    <value>Выберите строку кода оплаты..</value>
+  </data>
+  <data name="Ödeme Tutarlarında Bir Yanlışlık Var." xml:space="preserve">
+    <value>Ошибка в сумме платежа.</value>
+  </data>
+  <data name="Ödeme Tutarını Kontrol ediniz." xml:space="preserve">
+    <value>Проверьте сумму платежа.</value>
+  </data>
+  <data name="Ödemeler veya İndirimler Silinemez.." xml:space="preserve">
+    <value>Платежи или скидки не могут быть удалены.</value>
+  </data>
+  <data name="Ödemelere veya İndirimlere Açıklama Girilemez.." xml:space="preserve">
+    <value>Нельзя вводить описания по платежам или скидкам..</value>
+  </data>
+  <data name="ÖKC Üzerinde Yemek Ceki Ödeme Uygulanaması Bulunamadı" xml:space="preserve">
+    <value>На ÖKC не найдено приложение для оплаты чека на питание</value>
+  </data>
+  <data name="Önbüro Çalışma Tarihi ile Sistem tarihi Farklı." xml:space="preserve">
+    <value>Дата работы фронт-офиса и системная дата отличаются.</value>
+  </data>
+  <data name="Önbüro Çalışma Tarihi ile Sistem tarihi Farklı.Sistemden Çıkıp Yeniden Giriniz..." xml:space="preserve">
+    <value>Дата работы фронт-офиса и системная дата отличаются.\nВыйдите  и снова войдите в систему...</value>
+  </data>
+  <data name="Ürün Kodu Bulunamadı..." xml:space="preserve">
+    <value>Код продукта не найден...</value>
+  </data>
+  <data name="İlgili Alanları Doldurunuz...!" xml:space="preserve">
+    <value>Заполните соответствующие поля...!</value>
+  </data>
+  <data name="İlgili Server Bilgileri Yoktur." xml:space="preserve">
+    <value>Соответствующая информация о сервере отсутствует.</value>
+  </data>
+  <data name="İPTAL NEDENİNİ GİRİNİZ..." xml:space="preserve">
+    <value>ENTER REASON FOR CANCELLATION...</value>
+  </data>
+  <data name="İşlem Başarısız." xml:space="preserve">
+    <value>Операция не удалась.</value>
+  </data>
+  <data name="İşlem Tamamlandı." xml:space="preserve">
+    <value>Операция завершена.</value>
+  </data>
+  <data name="Şube Seçiniz.." xml:space="preserve">
+    <value>Выберите филиал..</value>
+  </data>
+  <data name="Şube Verileri Transfer edilecek. Eminmisiniz?" xml:space="preserve">
+    <value>Данные филиала будут переданы. Вы уверены?</value>
+  </data>
+  <data name="Şubeden - Merkeze Satışlar Aktarıldı." xml:space="preserve">
+    <value>Продажи были переведены из филиала в центр</value>
+  </data>
+</root>

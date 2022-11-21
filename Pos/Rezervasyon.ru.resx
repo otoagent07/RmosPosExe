@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="gridColumn5.Caption" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="gridColumn6.Caption" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="gridColumn7.Caption" xml:space="preserve">
+    <value>Человек</value>
+  </data>
+  <data name="gridColumn8.Caption" xml:space="preserve">
+    <value>Количество столов</value>
+  </data>
+  <data name="gridColumn9.Caption" xml:space="preserve">
+    <value>Стол №</value>
+  </data>
+  <data name="gridColumn10.Caption" xml:space="preserve">
+    <value>Тел.</value>
+  </data>
+  <data name="gridColumn12.Caption" xml:space="preserve">
+    <value>Заметки</value>
+  </data>
+  <data name="gridColumn25.Caption" xml:space="preserve">
+    <value>Филиал</value>
+  </data>
+  <data name="btn_Sil.Text" xml:space="preserve">
+    <value>&amp;Удалить</value>
+  </data>
+  <data name="btn_Duzelt.Text" xml:space="preserve">
+    <value>&amp;Исправить</value>
+  </data>
+  <data name="btn_Kaydet.Text" xml:space="preserve">
+    <value>&amp;Сохранить</value>
+  </data>
+  <data name="textEdit10.EditValue" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="textEdit9.EditValue" xml:space="preserve">
+    <value>Заметки</value>
+  </data>
+  <data name="textEdit8.EditValue" xml:space="preserve">
+    <value>Стол №  *</value>
+  </data>
+  <data name="textEdit7.EditValue" xml:space="preserve">
+    <value>Количество столов</value>
+  </data>
+  <data name="textEdit6.EditValue" xml:space="preserve">
+    <value>Количество человек</value>
+  </data>
+  <data name="textEdit5.EditValue" xml:space="preserve">
+    <value>Фамилия  *</value>
+  </data>
+  <data name="textEdit4.EditValue" xml:space="preserve">
+    <value>Имя  *</value>
+  </data>
+  <data name="textEdit3.EditValue" xml:space="preserve">
+    <value>Филиал  *</value>
+  </data>
+  <data name="textEdit2.EditValue" xml:space="preserve">
+    <value>Время  *</value>
+  </data>
+  <data name="textEdit1.EditValue" xml:space="preserve">
+    <value>Дата *</value>
+  </data>
+  <data name="groupControl1.Text" xml:space="preserve">
+    <value>Бронировние Вход</value>
+  </data>
+  <data name="tab_Rezgiris.Text" xml:space="preserve">
+    <value>Бронир. Вход</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_Excel.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        /SMfDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btn_Print.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAABh0RVh0U29m
+        dHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAABFxJREFUSEvllHtQVGUYh1kWYqVlQRggisDACzVAWcil
+        C5gJKStmAWrpKggEQYAgMHabnKkZzRkqpxBygGiUpmGUkjFrawwLTAQFDJbLtuwusDcXlssYGBK8/b7D
+        LuSlQvvP3plnZvc73/k9+777nWP1/6jxKxNCEFj08UHvleERQvPyfy+E8sBikAaOgHOHD1fWRkVGFawT
+        x/DM226vOpUa3tDob0+Pjf9ejmAFGAKTgBQ9KoqP2yiLjY1bat5+W2UbGBAYWn386wbT8Og0C76esvKK
+        se0JO/amvZJha77nlsvZ636vkq2S7VMd3YobBIzOLjm99vqbjc+sjoryXbIkpOLzKrFab4roNQy5gnmN
+        kS8SiVLDwyMGqo4dJ4zsGsHQ8Ch9862UNr/40mVXV7cLIpHjL+L1G0yFB4p6Tv/cVAxZNESO5qy/Lx6P
+        5xcQ+HB9XsFuGjCNcCKFQokxfUoSyTbyDwggoYMDYSsH9tN9np60Vhxz9YOPiuUXO3tKIWKd/WNXNgsX
+        Ou/bslUyXnKojNLTM8jf359cXFzIxsZmNvx6+Ljm5uZOWyQJE42tMg0kH4JFuHZt9epN9hfauh4Rxzz3
+        vpu7+2Us3TTw31j+WBC1yVXTkDSDlYCP9ZlSao3hQP7j2aapnLwC8vL25n4hLs0bNj6BnR0dqzlJCJ8C
+        R8FcR91q7apfe/X9Ku0Adfb000GMa9XqSBIKhTcN/Css3N7enpYt86OExGRqbpczCWMQxIGZbvAghgEZ
+        ZKTUGEmlNZK0to7SMjLJw+NeLsgSaoGtOTo6UlDQCtqVv5uqqmuoRTYrYLCxFQAB9nOS5aABUJdKS4o+
+        A/UZBqmtS0lFJaUUHBxKAoGAC7e2tiYnJycKDQ2j/YUH6Kez57nu1brBWQGOtOXzu2DmnYfwpUDKJBa6
+        1TrqN5hIaxymdrmayiqO0Btv7aG397xDXxz9ittjCWWw4B5MQaboIxznP/Bdi/V4YGOReIBSMMFutsC6
+        6tMPkgYipcFI3Vo16erqSHu+mXAiuWAVOmDhHQivrT9HxYfKad/+wuGT359+74T0lDsnYIVAW/Ak+AyM
+        MIGFboi0xiGS6RT0nbKGtNITpKs/QyoEK/ovUQdG9YM5PCc3nzZt3ExJSSlXsnbmntmemJS/JlrsbNZw
+        Ih7wBClAxQQWevoNpLykpxZNO379ANeBvFdP9Y2tXHge/vjklFR6OTWNsrJzKCMzm+LiN42GhIZ94vfg
+        Q65mxVwh9C4QDL4EV5mEoUE3lvkzQWVVNbFXUPqrWVxods4udJJHkm0JkyuCQ+p8fHxj8SZw5/P51ubo
+        GwvBd4NE0AIm1LoBJpgEhqaLHdKY9RuaEpNSxjKzdjLJdMKO5JHHn3iqacEC+xdwu91MyjwK4dbgUVCK
+        Y90KQSV4HohwlN18fRfvXRu9riHy2TWnFj3gk2tnJ7jHfOutFyQOcrUuDOFzfyIKD6QdCIDQB19njuod
+        XFZWfwKt+aR8F3ZKvQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btn_Listele.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWludC5ORVQg
+        djMuMzE3g3eGAAAEjUlEQVRIS62Ua0xbZRjHYTgu2mkQZMywRBYg4mVUwgcI8kEIkpElEkKmJFwF8YN+
+        wkSNccUPRjFx8QMjQZdxU26FBBhQJi0gt7ICHb1QSymlB0pbKKVrYb3Scx6fl519lMHSf/LLad/3ef7P
+        eZ/znBP0f/L5fMF+v/8qTdN1iAD5B+lDvsT1S2zY88vtdsd5PJ5+r9dLI4C/AdeOr+Q/4sLfP+NaOJty
+        NjkcjuTDw0MDAi6XG0x2J8xvWOBvhR4EkhUQLy2D2WwGso+IMP4lNvV0slqtnP39fZXNZoMt6wFMmBhG
+        YWOYPTdDI16NnXYKKZerY2aFkavUQOIw/i6bfjrt7Ox8hYDKsAf3KL/XRrpDg991BEd7bnCtH4B9YQ8s
+        AgNtahJvetRrOsB4Gk/2HmtxsiiKOmcwGOSbWwZoUbncq3ZwmJzgtHrAY3GDm8LuKGxgmzTDTq8eNm8p
+        6fXGGb0XcwD5jbU5WTqd7gLinlMbmLY1xiyxgHXlEdg1DjhQY8HlfbBNmcHST8H2H6uw8e0iqD4VPabW
+        dTrAvGnW5mStrq5GIvSIbMuJJtTgJphERthF471JE1hGDbDTswHGJjVD/bjMaG+MM7Lr92mZUq0BtVqt
+        ZG1O1uzsbKRcLqcnHmpcN6Wgva0C6q4GDO1a2G5dg+3f1czWr3Ka+n7BrysW+f7NGjySfSTwKFEgkUhO
+        V2RoaIgzPz//eEkqZaqEh5rPZ0H93SKs85YY3c1FRvf1A1r32dTRWu6QT8XlexTcHreSJ9wySaVSGB4e
+        nmBtTtbIyEjw1NTUAxT0TCsO3+b7H17tY5YzBmhFer9fye31KRI7vfKEDo8i4S+XMqvbqp2YW/DPzc1B
+        Y2PjT6zNszU9PV0tFosBr3BHKHO80+lUXmo/Wo5t88liW73y2FaPIrbFpfyg06wbmJj3krj29nYfj8d7
+        i7V4tvh8fphMJhOT04yPj8OIcNLPG5Rbi7r1m3kdBn1Jj9Z4a2jxYEw0zohEIujq6oK6uromTI144nA6
+        hbS1tV3R6/UrWq32+ESjo6PH3GevBHwGQG7EaDT6i4qKrmPemb5h55AXa2pqrmxsbDTjl9i9u7sLOHUw
+        MzMDY2NjMDAwAM3NzYCDAr29vVBSUrIQExNzpiLByAvIK8jlysrK9/Guf0Dz7r6+vuGGhgZ+VVXVL/n5
+        +S05OTnMtWv5UFFRARkZGTySfBY9LXQBeR15E0lDspBs5MPg4OBPIiMjpcnJyYDtIni5XG467p1ZpHXn
+        EfIpj0RikItILMINCQn5Ijo62p6Wlgbl5eWQl5enSUpKehn3nkvkZARS9CnELD0sLOx2XFwck52dDdha
+        yMzMvBMREUH2AyJi9CqSy+FwphMTE6GgoACKi4tpbNsNXCc3FRCFIBfx+XwcFRVlTk1NhbKyMigsLNzF
+        EyXiXsAKkQG5jG37BtvmKy0tBXyZQSAQCHEwOE9CAiMyHAnx8fF/1tfXQ21tLVRXVz/Com/gesBOQxSG
+        D/xdHABJbm7uekpKSg2ukXct4DofHh7+WmhoKHm3SKvYKQsK+g//Rv8FAzIV5gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="tab_Rezrapor.Text" xml:space="preserve">
+    <value>Отчет бронир.</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Бронирование</value>
+  </data>
+  <data name="btn_Listele.Text" xml:space="preserve">
+    <value>В список</value>
+  </data>
+  <data name="gridColumn13.Caption" xml:space="preserve">
+    <value>Бронир_ID</value>
+  </data>
+  <data name="gridColumn14.Caption" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="gridColumn15.Caption" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="gridColumn16.Caption" xml:space="preserve">
+    <value>Филиал</value>
+  </data>
+  <data name="gridColumn17.Caption" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="gridColumn18.Caption" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="gridColumn19.Caption" xml:space="preserve">
+    <value>Человек</value>
+  </data>
+  <data name="gridColumn20.Caption" xml:space="preserve">
+    <value>Количество столов</value>
+  </data>
+  <data name="gridColumn21.Caption" xml:space="preserve">
+    <value>Стол №</value>
+  </data>
+  <data name="gridColumn22.Caption" xml:space="preserve">
+    <value>Тел.</value>
+  </data>
+  <data name="gridColumn23.Caption" xml:space="preserve">
+    <value>Почта</value>
+  </data>
+  <data name="gridColumn24.Caption" xml:space="preserve">
+    <value>Заметки</value>
+  </data>
+  <data name="gridColumn26.Caption" xml:space="preserve">
+    <value>Филиал</value>
+  </data>
+  <data name="groupControl2.Text" xml:space="preserve">
+    <value>Фильтр отчета</value>
+  </data>
+  <data name="textEdit12.Text" xml:space="preserve">
+    <value>Дата1</value>
+  </data>
+  <data name="textEdit13.Text" xml:space="preserve">
+    <value>Дата2</value>
+  </data>
+</root>

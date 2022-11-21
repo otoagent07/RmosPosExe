@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Acik Çekler Sayısı ve Tutarı" xml:space="preserve">
+    <value>Acik Çekler Sayısı ve Tutarı</value>
+  </data>
+  <data name="Ad Bos Gecilemez..." xml:space="preserve">
+    <value>Ad Bos Gecilemez...</value>
+  </data>
+  <data name="Ad Boş Geçilemez..." xml:space="preserve">
+    <value>Ad Boş Geçilemez...</value>
+  </data>
+  <data name="Ad ve Soyad Boş Geçilemez..." xml:space="preserve">
+    <value>Ad ve Soyad Boş Geçilemez...</value>
+  </data>
+  <data name="Adisyon Dökülecek... Devam Etmek İstiyor Musunuz ?" xml:space="preserve">
+    <value>Adisyon Dökülecek... Devam Etmek İstiyor Musunuz ?</value>
+  </data>
+  <data name="Adisyon Dökülecek... Devam Etmek İstiyor Musunuz...?" xml:space="preserve">
+    <value>Adisyon Dökülecek... Devam Etmek İstiyor Musunuz...?</value>
+  </data>
+  <data name="Adisyon için Bir Printer Seçimi Yapılmamış..." xml:space="preserve">
+    <value>Adisyon için Bir Printer Seçimi Yapılmamış...</value>
+  </data>
+  <data name="Aktarim Bitmistir \r\n Kod Sinifları \r\n 91:Odeme Sekilleri \r\n 92:Departman Kısımları \r\n 93:Bankalar \r\n 94:Yemek Cekleri" xml:space="preserve">
+    <value>Aktarim Bitmistir \r\n Kod Sinifları \r\n 91:Odeme Sekilleri \r\n 92:Departman Kısımları \r\n 93:Bankalar \r\n 94:Yemek Cekleri</value>
+  </data>
+  <data name="Aktarım Yapmadan Once Eslestirme Yapılması Gerekir" xml:space="preserve">
+    <value>Aktarım Yapmadan Once Eslestirme Yapılması Gerekir</value>
+  </data>
+  <data name="Alacak Satırı üzerinde İşlem Yapamazsınız..." xml:space="preserve">
+    <value>Alacak Satırı üzerinde İşlem Yapamazsınız...</value>
+  </data>
+  <data name="Ana Grup Boş Geçilemez..." xml:space="preserve">
+    <value>Ana Grup Boş Geçilemez...</value>
+  </data>
+  <data name="Ayarlarınızda Sorun Var..." xml:space="preserve">
+    <value>Ayarlarınızda Sorun Var...</value>
+  </data>
+  <data name="Aynı Kart Numarası Başka Kullanıcıda Tanımlı. Kart Numarasını Değiştiriniz..." xml:space="preserve">
+    <value>Aynı Kart Numarası Başka Kullanıcıda Tanımlı. Kart Numarasını Değiştiriniz...</value>
+  </data>
+  <data name="Açmıştır.Başkası Satış Yapamaz...!!!" xml:space="preserve">
+    <value>Açmıştır.Başkası Satış Yapamaz...!!!</value>
+  </data>
+  <data name="Açık Masa Kişi Sayısı :" xml:space="preserve">
+    <value>Açık Masa Kişi Sayısı :</value>
+  </data>
+  <data name="Açık Masayı Masayı Geri Alamazsınız..." xml:space="preserve">
+    <value>Açık Masayı Masayı Geri Alamazsınız...</value>
+  </data>
+  <data name="Bakiye Yüklemek için Ödeme Departmanını Seçiniz..." xml:space="preserve">
+    <value>Bakiye Yüklemek için Ödeme Departmanını Seçiniz...</value>
+  </data>
+  <data name="Bakiye Yüklenmiştir..." xml:space="preserve">
+    <value>Bakiye Yüklenmiştir...</value>
+  </data>
+  <data name="Baslangıc ve Bitis Değerlerini Giriniz..." xml:space="preserve">
+    <value>Baslangıc ve Bitis Değerlerini Giriniz...</value>
+  </data>
+  <data name="Başlangıc Bitiş Değerleri Sayısal Olmalıdır...!!!" xml:space="preserve">
+    <value>Başlangıc Bitiş Değerleri Sayısal Olmalıdır...!!!</value>
+  </data>
+  <data name="Bilgilendirme" xml:space="preserve">
+    <value>Bilgilendirme</value>
+  </data>
+  <data name="Boş Paket Masanız Bulunmamaktadır." xml:space="preserve">
+    <value>Boş Paket Masanız Bulunmamaktadır.</value>
+  </data>
+  <data name="Bu Departmana Ait Yazıcı Ayarlarını Kontrol Ediniz..." xml:space="preserve">
+    <value>Bu Departmana Ait Yazıcı Ayarlarını Kontrol Ediniz...</value>
+  </data>
+  <data name="Bu isimde zaten bir rapor var..." xml:space="preserve">
+    <value>Bu isimde zaten bir rapor var...</value>
+  </data>
+  <data name="Bu İşlemi Yapmaya Yetkiniz Yoktur." xml:space="preserve">
+    <value>Bu İşlemi Yapmaya Yetkiniz Yoktur.</value>
+  </data>
+  <data name="Cari hareket Görmüş Silinemez!" xml:space="preserve">
+    <value>Cari hareket Görmüş Silinemez!</value>
+  </data>
+  <data name="Cari Kodu Boş Geçilemez..." xml:space="preserve">
+    <value>Cari Kodu Boş Geçilemez...</value>
+  </data>
+  <data name="Cari Kodu Boş Geçilemez...\nSistem Yeni Kod Versin mi?" xml:space="preserve">
+    <value>Cari Kodu Boş Geçilemez...\nSistem Yeni Kod Versin mi?</value>
+  </data>
+  <data name="Cari Kodu Giriniz..." xml:space="preserve">
+    <value>Cari Kodu Giriniz...</value>
+  </data>
+  <data name="Cari kodu tanımlı değil." xml:space="preserve">
+    <value>Cari kodu tanımlı değil.</value>
+  </data>
+  <data name="Departman Bos Geçilemez..." xml:space="preserve">
+    <value>Departman Bos Geçilemez...</value>
+  </data>
+  <data name="Departman Parametreleri Yüklenemedi..." xml:space="preserve">
+    <value>Departman Parametreleri Yüklenemedi...</value>
+  </data>
+  <data name="Devam etmek İstiyor musunuz ?" xml:space="preserve">
+    <value>Devam etmek İstiyor musunuz ? </value>
+  </data>
+  <data name="Devam Etmek İstiyor Musunuz...?" xml:space="preserve">
+    <value>Devam Etmek İstiyor Musunuz...?</value>
+  </data>
+  <data name="Dizany Yüklenemedi..." xml:space="preserve">
+    <value>Dizany Yüklenemedi...</value>
+  </data>
+  <data name="Düzeltilecek Kaydı Seçiniz..." xml:space="preserve">
+    <value>Düzeltilecek Kaydı Seçiniz...</value>
+  </data>
+  <data name="Exe Güncellenemedi. Sebebi:" xml:space="preserve">
+    <value>Exe Güncellenemedi. Sebebi:</value>
+  </data>
+  <data name="Farklı Tarihler için Mahsup Oluşturulamaz..." xml:space="preserve">
+    <value>Farklı Tarihler için Mahsup Oluşturulamaz...</value>
+  </data>
+  <data name="Farklı Tarihteki Fişi İptal Edemezsiniz..." xml:space="preserve">
+    <value>Farklı Tarihteki Fişi İptal Edemezsiniz...</value>
+  </data>
+  <data name="Farklı Tarihteki Masayı Geri Alamazsınız..." xml:space="preserve">
+    <value>Farklı Tarihteki Masayı Geri Alamazsınız...</value>
+  </data>
+  <data name="Fatura Dizaynı Yapılmamış..." xml:space="preserve">
+    <value>Fatura Dizaynı Yapılmamış...</value>
+  </data>
+  <data name="Fatura Dizaynı Yapılmamış...!" xml:space="preserve">
+    <value>Fatura Dizaynı Yapılmamış...!</value>
+  </data>
+  <data name="Faturayı İptal Etmek İstiyormusunuz?" xml:space="preserve">
+    <value>Faturayı İptal Etmek İstiyormusunuz?</value>
+  </data>
+  <data name="Folio Bulunamadı...\nLütfen Hesabı Tekrar Kapatın..." xml:space="preserve">
+    <value>Folio Bulunamadı...\nLütfen Hesabı Tekrar Kapatın...</value>
+  </data>
+  <data name="Folio Numarasını Check Out Yapmak İstediğinize Eminmisiniz ?" xml:space="preserve">
+    <value>Folio Numarasını Check Out Yapmak İstediğinize Eminmisiniz ?</value>
+  </data>
+  <data name="Folio Numarasını Silmek İstediğinize Eminmisiniz ?" xml:space="preserve">
+    <value>Folio Numarasını Silmek İstediğinize Eminmisiniz ?</value>
+  </data>
+  <data name="FİŞ LİMİTİ AŞILDI...FİŞ İPTAL EDİLİYOR..." xml:space="preserve">
+    <value>FİŞ LİMİTİ AŞILDI...FİŞ İPTAL EDİLİYOR...</value>
+  </data>
+  <data name="Garson Seçiniz..." xml:space="preserve">
+    <value>Garson Seçiniz...</value>
+  </data>
+  <data name="Gelir Hesaplar için Mahsup Kesmek İstiyor Musunuz ?" xml:space="preserve">
+    <value>Gelir Hesaplar için Mahsup Kesmek İstiyor Musunuz ?</value>
+  </data>
+  <data name="Gelir Hesapları için Fis Oluştu.... Fis No :" xml:space="preserve">
+    <value>Gelir Hesapları için Fis Oluştu.... Fis No :</value>
+  </data>
+  <data name="Geçmiş Tarihe Ait Ödeme Bilgileri Değiştirilemez..." xml:space="preserve">
+    <value>Geçmiş Tarihe Ait Ödeme Bilgileri Değiştirilemez...</value>
+  </data>
+  <data name="Giriş-Çıkış Kodunu,Tutarı yada Adı yanlış girdiniz..." xml:space="preserve">
+    <value>Giriş-Çıkış Kodunu,Tutarı yada Adı yanlış girdiniz...</value>
+  </data>
+  <data name="Grup İsmi Boş Geçilemez." xml:space="preserve">
+    <value>Grup İsmi Boş Geçilemez.</value>
+  </data>
+  <data name="Güncelleme için FTP server a bağlantı kurulamadı." xml:space="preserve">
+    <value>Güncelleme için FTP server a bağlantı kurulamadı.</value>
+  </data>
+  <data name="Güncelleme Tamamlandı. Program Kapatılacak." xml:space="preserve">
+    <value>Güncelleme Tamamlandı. Program Kapatılacak.</value>
+  </data>
+  <data name="Günsonu Işlemi Tamamlandı..." xml:space="preserve">
+    <value>Günsonu Işlemi Tamamlandı...</value>
+  </data>
+  <data name="Günsonu Işlemi Tamamlandı...\nProgramı Kapatıp Yeniden Programa Giriş Yapmanız Gerekmektedir...." xml:space="preserve">
+    <value>Programı Kapatıp\nYeniden Programa Giriş Yapmanız Gerekmektedir...</value>
+  </data>
+  <data name="Günsonu Şifreniz Yanlış..." xml:space="preserve">
+    <value>Günsonu Şifreniz Yanlış...</value>
+  </data>
+  <data name="Hareket Görmüş, Silinemez." xml:space="preserve">
+    <value>Hareket Görmüş, Silinemez.</value>
+  </data>
+  <data name="Hata" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="Hatalı giriş..." xml:space="preserve">
+    <value>Hatalı giriş...</value>
+  </data>
+  <data name="Hesap Bulunamadı..." xml:space="preserve">
+    <value>Hesap Bulunamadı...</value>
+  </data>
+  <data name="Işlem Gecersiz." xml:space="preserve">
+    <value>Işlem Gecersiz.</value>
+  </data>
+  <data name="Kalan Bakiye :" xml:space="preserve">
+    <value>Kalan Bakiye :</value>
+  </data>
+  <data name="Kapalı Masa Kişi Sayısı :" xml:space="preserve">
+    <value>Kapalı Masa Kişi Sayısı :</value>
+  </data>
+  <data name="Kapalı Çekler Sayısı ve Tutarı" xml:space="preserve">
+    <value>Kapalı Çekler Sayısı ve Tutarı</value>
+  </data>
+  <data name="Kapanış Açılış, yapıldı." xml:space="preserve">
+    <value>Kapanış Açılış, yapıldı.</value>
+  </data>
+  <data name="Kapatma Hesabını Seciniz..." xml:space="preserve">
+    <value>Kapatma Hesabını Seciniz...</value>
+  </data>
+  <data name="Kapatma Kodunu Seçiniz..." xml:space="preserve">
+    <value>Kapatma Kodunu Seçiniz...</value>
+  </data>
+  <data name="Kapatılmamış Çekler Bulunuyor. Lütfen Bütün Çeklerin Kapalı Olduğuna Emin Olun..." xml:space="preserve">
+    <value>Kapatılmamış Çekler Bulunuyor. Lütfen Bütün Çeklerin Kapalı Olduğuna Emin Olun...</value>
+  </data>
+  <data name="Kart Kayıtlıdır. Yeni Kart Deneyiniz.." xml:space="preserve">
+    <value>Kart Kayıtlıdır. Yeni Kart Deneyiniz..</value>
+  </data>
+  <data name="Kart limit Iadesi Yapılamaz.." xml:space="preserve">
+    <value>Kart limit Iadesi Yapılamaz..</value>
+  </data>
+  <data name="Kart Okutunuz..." xml:space="preserve">
+    <value>Kart Okutunuz...</value>
+  </data>
+  <data name="Kartlara Check Out İşlemi Uygulandı." xml:space="preserve">
+    <value>Kartlara Check Out İşlemi Uygulandı.</value>
+  </data>
+  <data name="Kayıt Edildi.." xml:space="preserve">
+    <value>Kayıt Edildi..</value>
+  </data>
+  <data name="Kayıtlı Restoran Bilgileri Bulunamadı.." xml:space="preserve">
+    <value>Kayıtlı Restoran Bilgileri Bulunamadı..</value>
+  </data>
+  <data name="Kişi Bilgisi Bulunamadı.." xml:space="preserve">
+    <value>Kişi Bilgisi Bulunamadı..</value>
+  </data>
+  <data name="Kişi Sayısını 10nun üzerindendir. Devam Etmek İstiyormusunuz?" xml:space="preserve">
+    <value>Kişi Sayısını 10nun üzerindendir. Devam Etmek İstiyormusunuz?</value>
+  </data>
+  <data name="KK Hesaplar için Fis Oluştu.... Fis No :" xml:space="preserve">
+    <value>KK Hesaplar için Fis Oluştu.... Fis No :</value>
+  </data>
+  <data name="KK Hesaplar için Mahsup Kesmek İstiyor Musunuz ?" xml:space="preserve">
+    <value>KK Hesaplar için Mahsup Kesmek İstiyor Musunuz ?</value>
+  </data>
+  <data name="Kod Bos Gecilemez..." xml:space="preserve">
+    <value>Kod Bos Gecilemez...</value>
+  </data>
+  <data name="Kontrol ediniz..." xml:space="preserve">
+    <value>Kontrol ediniz...</value>
+  </data>
+  <data name="Konum Kod Boş Geçilemez..." xml:space="preserve">
+    <value>Konum Kod Boş Geçilemez...</value>
+  </data>
+  <data name="Kredi Kartları İşlendi." xml:space="preserve">
+    <value>Kredi Kartları İşlendi.</value>
+  </data>
+  <data name="KrediKarti Kontrol" xml:space="preserve">
+    <value>KrediKarti Kontrol</value>
+  </data>
+  <data name="KrediKartı Odeme Uygulaması Bulunamadı." xml:space="preserve">
+    <value>KrediKartı Odeme Uygulaması Bulunamadı.</value>
+  </data>
+  <data name="KREDİ KARTI ÇEKİMİ GERÇEKLEŞTİRİLEMEDİ..HATA :" xml:space="preserve">
+    <value>KREDİ KARTI ÇEKİMİ GERÇEKLEŞTİRİLEMEDİ..HATA :</value>
+  </data>
+  <data name="Kullanıcı Kodu Bos Geçilemez...!!!" xml:space="preserve">
+    <value>Kullanıcı Kodu Bos Geçilemez...!!!</value>
+  </data>
+  <data name="Kullanıcı Şifreniz Yanlış..." xml:space="preserve">
+    <value>Kullanıcı Şifreniz Yanlış...</value>
+  </data>
+  <data name="Kurlar Kaydedildi..." xml:space="preserve">
+    <value>Kurlar Kaydedildi...</value>
+  </data>
+  <data name="KİŞİ veya ŞİRKET Olarak Belirtiniz.." xml:space="preserve">
+    <value>KİŞİ veya ŞİRKET Olarak Belirtiniz..</value>
+  </data>
+  <data name="Listeden Müşteriyi Seçiniz..." xml:space="preserve">
+    <value>Listeden Müşteriyi Seçiniz...</value>
+  </data>
+  <data name="Listeneden Kişi Seçiniz..." xml:space="preserve">
+    <value>Listeneden Kişi Seçiniz...</value>
+  </data>
+  <data name="Lüften Resepsiyon ile Görüşün..." xml:space="preserve">
+    <value>Lüften Resepsiyon ile Görüşün...</value>
+  </data>
+  <data name="Lütfen Alt Grup Seçiniz..." xml:space="preserve">
+    <value>Lütfen Alt Grup Seçiniz...</value>
+  </data>
+  <data name="Lütfen Ana Grup Seçiniz..." xml:space="preserve">
+    <value>Lütfen Ana Grup Seçiniz...</value>
+  </data>
+  <data name="Lütfen Hesabı Tekrar Kapatın..." xml:space="preserve">
+    <value>Lütfen Hesabı Tekrar Kapatın...</value>
+  </data>
+  <data name="Lütfen Hesap Seçiniz..." xml:space="preserve">
+    <value>Lütfen Hesap Seçiniz...</value>
+  </data>
+  <data name="Lütfen Kapatma Hesabı Tanıtınız.." xml:space="preserve">
+    <value>Lütfen Kapatma Hesabı Tanıtınız..</value>
+  </data>
+  <data name="Lütfen Kapatma Kodu Tanıtınız.." xml:space="preserve">
+    <value>Lütfen Kapatma Kodu Tanıtınız..</value>
+  </data>
+  <data name="Lütfen Kullanıcı Kodlarından PR Tanımlayınız..." xml:space="preserve">
+    <value>Lütfen Kullanıcı Kodlarından PR Tanımlayınız...</value>
+  </data>
+  <data name="Lütfen Şube Seçiniz.." xml:space="preserve">
+    <value>Lütfen Şube Seçiniz..</value>
+  </data>
+  <data name="Mail Başarıyla Gönderildi." xml:space="preserve">
+    <value>Mail Başarıyla Gönderildi.</value>
+  </data>
+  <data name="Mail Gönderilemedi..." xml:space="preserve">
+    <value>Mail Gönderilemedi...</value>
+  </data>
+  <data name="Masa Bilgisi Bulunamadı..." xml:space="preserve">
+    <value>Masa Bilgisi Bulunamadı...</value>
+  </data>
+  <data name="Masa Numarı Boş Geçilemez..." xml:space="preserve">
+    <value>Masa Numarı Boş Geçilemez...</value>
+  </data>
+  <data name="Masa Satışa Kapalı..." xml:space="preserve">
+    <value>Masa Satışa Kapalı...</value>
+  </data>
+  <data name="Masa Seçiniz..." xml:space="preserve">
+    <value>Masa Seçiniz...</value>
+  </data>
+  <data name="Masa İzinleri Açıldı.." xml:space="preserve">
+    <value>Masa İzinleri Açıldı..</value>
+  </data>
+  <data name="Masayı" xml:space="preserve">
+    <value>Masayı</value>
+  </data>
+  <data name="Max Indirim Yuzdesini Aştınız..." xml:space="preserve">
+    <value>Max Indirim Yuzdesini Aştınız...</value>
+  </data>
+  <data name="Max İndirim Yüzdeniz : %" xml:space="preserve">
+    <value>Max İndirim Yüzdeniz : %</value>
+  </data>
+  <data name="Maximum Miktarı Geçtiniz..." xml:space="preserve">
+    <value>Maximum Miktarı Geçtiniz...</value>
+  </data>
+  <data name="Menu Getirilmeden Önce Eski Veriler Silinecektir. Emin misiniz ?" xml:space="preserve">
+    <value>Menu Getirilmeden Önce Eski Veriler Silinecektir. Emin misiniz ?</value>
+  </data>
+  <data name="Mevcut Cari için Açık çek bulunmaktadır. Açık çek üzerinde devam etmek istiyor musunuz?" xml:space="preserve">
+    <value>Mevcut Cari için Açık çek bulunmaktadır. Açık çek üzerinde devam etmek istiyor musunuz?</value>
+  </data>
+  <data name="Nakit Hesaplar için Fis Oluştu.... Fis No :" xml:space="preserve">
+    <value>Nakit Hesaplar için Fis Oluştu.... Fis No :</value>
+  </data>
+  <data name="Nakit Hesaplar için Mahsup Kesmek İstiyor Musunuz ?" xml:space="preserve">
+    <value>Nakit Hesaplar için Mahsup Kesmek İstiyor Musunuz ?</value>
+  </data>
+  <data name="Nakitler İşlendi." xml:space="preserve">
+    <value>Nakitler İşlendi.</value>
+  </data>
+  <data name="NL Hesap Bakiye Yetersizdir" xml:space="preserve">
+    <value>NL Hesap Bakiye Yetersizdir</value>
+  </data>
+  <data name="NL Hesap Bakiye Yetersizdir." xml:space="preserve">
+    <value>NL Hesap Bakiye Yetersizdir.</value>
+  </data>
+  <data name="NL Hesap Bakiye Yetersizdir..Kalan Bakiye :" xml:space="preserve">
+    <value>NL Hesap Bakiye Yetersizdir..Kalan Bakiye :</value>
+  </data>
+  <data name="NL Masa Şuan Dolu Masa Geri Alınamıyor..." xml:space="preserve">
+    <value>NL Masa Şuan Dolu Masa Geri Alınamıyor...</value>
+  </data>
+  <data name="Nolu Fisin Fatura Numarası Değişti..." xml:space="preserve">
+    <value>Nolu Fisin Fatura Numarası Değişti...</value>
+  </data>
+  <data name="Oda Check-Out Olmuştur.Kayıt İşlemi İptal Edilmiştir." xml:space="preserve">
+    <value>Oda Check-Out Olmuştur.Kayıt İşlemi İptal Edilmiştir.</value>
+  </data>
+  <data name="Oda In-House Değildir." xml:space="preserve">
+    <value>Oda In-House Değildir.</value>
+  </data>
+  <data name="ODEME GERÇEKLEŞTİRİLEMEDİ... Tekrar Deneyiniz" xml:space="preserve">
+    <value>ODEME GERÇEKLEŞTİRİLEMEDİ... Tekrar Deneyiniz</value>
+  </data>
+  <data name="Programı Kapatıp" xml:space="preserve">
+    <value>Programı Kapatıp</value>
+  </data>
+  <data name="Programı Kapatıp\nYeniden Programa Giriş Yapmanız Gerekmektedir..." xml:space="preserve">
+    <value>Programı Kapatıp\nYeniden Programa Giriş Yapmanız Gerekmektedir...</value>
+  </data>
+  <data name="Rapor Adı Girmelisiniz..." xml:space="preserve">
+    <value>Rapor Adı Girmelisiniz...</value>
+  </data>
+  <data name="Rapor Dataya Kaydedilsin mi...?" xml:space="preserve">
+    <value>Rapor Dataya Kaydedilsin mi...?</value>
+  </data>
+  <data name="Rapor kayıt işlemi basarısız, Lütfen tekrar deneyiniz..." xml:space="preserve">
+    <value>Rapor kayıt işlemi basarısız, Lütfen tekrar deneyiniz...</value>
+  </data>
+  <data name="Rezervasyon Silmek İstiyor Musunuz...?" xml:space="preserve">
+    <value>Rezervasyon Silmek İstiyor Musunuz...?</value>
+  </data>
+  <data name="Sadece Genel Çek Raporundan Fişi Detayına Gidebilirsiniz..." xml:space="preserve">
+    <value>Sadece Genel Çek Raporundan Fişi Detayına Gidebilirsiniz...</value>
+  </data>
+  <data name="Sadece Genel Çek Raporundan Fişi İptal Edebilirsiniz..." xml:space="preserve">
+    <value>Sadece Genel Çek Raporundan Fişi İptal Edebilirsiniz...</value>
+  </data>
+  <data name="Sadece Genel Çek Raporundan Masa Geri Alabilirsiniz..." xml:space="preserve">
+    <value>Sadece Genel Çek Raporundan Masa Geri Alabilirsiniz...</value>
+  </data>
+  <data name="Sadece Ödeme Satırı Silinebilir..." xml:space="preserve">
+    <value>Sadece Ödeme Satırı Silinebilir...</value>
+  </data>
+  <data name="Satış yapmadan önce Adisyon Numarasını giriniz..." xml:space="preserve">
+    <value>Satış yapmadan önce Adisyon Numarasını giriniz...</value>
+  </data>
+  <data name="Satış İşlemi Gerçekleşecektir." xml:space="preserve">
+    <value>Satış İşlemi Gerçekleşecektir.</value>
+  </data>
+  <data name="Secili Satırı Silmek İstediğineze Emin misiniz...?" xml:space="preserve">
+    <value>Secili Satırı Silmek İstediğineze Emin misiniz...?</value>
+  </data>
+  <data name="Servis Payı Sayısı ve Tutarı" xml:space="preserve">
+    <value>Servis Payı Sayısı ve Tutarı</value>
+  </data>
+  <data name="Servis Zamanı Minumum 30DK , Maximum 75DK arasında olmalıdır.." xml:space="preserve">
+    <value>Servis Zamanı Minumum 30DK , Maximum 75DK arasında olmalıdır..</value>
+  </data>
+  <data name="Seçilen Hesap Harcamaya Kapatılmıştır." xml:space="preserve">
+    <value>Seçilen Hesap Harcamaya Kapatılmıştır.</value>
+  </data>
+  <data name="Seçilen Hesap Harcamaya Kapatılmıştır.\nSatış İşlemi Gerçekleşecektir." xml:space="preserve">
+    <value>Seçilen Hesap Harcamaya Kapatılmıştır.\nSatış İşlemi Gerçekleşecektir.</value>
+  </data>
+  <data name="Seçilen Hesap Kapatılmıştır." xml:space="preserve">
+    <value>Seçilen Hesap Kapatılmıştır.</value>
+  </data>
+  <data name="Seçili Hesap Limit Tutarını Aşmıştır." xml:space="preserve">
+    <value>Seçili Hesap Limit Tutarını Aşmıştır.</value>
+  </data>
+  <data name="Seçili Kaydı Silmek İstediğinize Emin misiniz...?" xml:space="preserve">
+    <value>Seçili Kaydı Silmek İstediğinize Emin misiniz...?</value>
+  </data>
+  <data name="Seçili Kaydı Zayi Yapmak İstediğinize Emin Misiniz...?" xml:space="preserve">
+    <value>Seçili Kaydı Zayi Yapmak İstediğinize Emin Misiniz...?</value>
+  </data>
+  <data name="Seçili Masaları Silmek İstediğinize Emin Misiniz...?" xml:space="preserve">
+    <value>Seçili Masaları Silmek İstediğinize Emin Misiniz...?</value>
+  </data>
+  <data name="Seçili Masayı Geri Almak İstiyor Musunuz?" xml:space="preserve">
+    <value>Seçili Masayı Geri Almak İstiyor Musunuz?</value>
+  </data>
+  <data name="Silinecek Kaydı Seçiniz..." xml:space="preserve">
+    <value>Silinecek Kaydı Seçiniz...</value>
+  </data>
+  <data name="Silmek İstediğinize Emin misiniz ?" xml:space="preserve">
+    <value>Silmek İstediğinize Emin misiniz ?</value>
+  </data>
+  <data name="Sipariş Yazıcıya Gönderilsin Mi...?" xml:space="preserve">
+    <value>Sipariş Yazıcıya Gönderilsin Mi...?</value>
+  </data>
+  <data name="Siparişiniz Gönderildi." xml:space="preserve">
+    <value>Siparişiniz Gönderildi.</value>
+  </data>
+  <data name="Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!" xml:space="preserve">
+    <value>Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!</value>
+  </data>
+  <data name="Sistem Yeni Kod Versin mi?" xml:space="preserve">
+    <value>Sistem Yeni Kod Versin mi?</value>
+  </data>
+  <data name="Sistemden Çıkıp Yeniden Giriniz..." xml:space="preserve">
+    <value>Sistemden Çıkıp Yeniden Giriniz...</value>
+  </data>
+  <data name="Son Ürün Eksiltilemez..." xml:space="preserve">
+    <value>Son Ürün Eksiltilemez...</value>
+  </data>
+  <data name="SQL kodunda hataya rastlandı" xml:space="preserve">
+    <value>SQL kodunda hataya rastlandı</value>
+  </data>
+  <data name="Sql'e Aktarim Yapılırken Hata Olustu:" xml:space="preserve">
+    <value>Sql'e Aktarim Yapılırken Hata Olustu:</value>
+  </data>
+  <data name="Sube Boş Geçilemez." xml:space="preserve">
+    <value>Sube Boş Geçilemez.</value>
+  </data>
+  <data name="Tarih Alanı Boş Geçilemez." xml:space="preserve">
+    <value>Tarih Alanı Boş Geçilemez.</value>
+  </data>
+  <data name="Tarihindeki Günü Birlik Kartlara Check Out Uygulansın mı ?" xml:space="preserve">
+    <value>Tarihindeki Günü Birlik Kartlara Check Out Uygulansın mı ?</value>
+  </data>
+  <data name="Tarihindeki Toplu Gelir İade Kapatma Uygulansın mı ?" xml:space="preserve">
+    <value>Tarihindeki Toplu Gelir İade Kapatma Uygulansın mı ?</value>
+  </data>
+  <data name="Tarihli Kurlar Yoktur...Kur Girişinden Günlük Kurları Tanımlayabilirisiniz." xml:space="preserve">
+    <value>Tarihli Kurlar Yoktur...Kur Girişinden Günlük Kurları Tanımlayabilirisiniz.</value>
+  </data>
+  <data name="Tarihli Pos Satış Raporu Ektedir." xml:space="preserve">
+    <value>Tarihli Pos Satış Raporu Ektedir.</value>
+  </data>
+  <data name="Temassız Kartla Çalışan Tesisler İçin Geçerlidir." xml:space="preserve">
+    <value>Temassız Kartla Çalışan Tesisler İçin Geçerlidir.</value>
+  </data>
+  <data name="TEMEL FATURA veya TICARI FATURA Olarak Belirtiniz.." xml:space="preserve">
+    <value>TEMEL FATURA veya TICARI FATURA Olarak Belirtiniz..</value>
+  </data>
+  <data name="Test Maili Gönderildi..." xml:space="preserve">
+    <value>Test Maili Gönderildi...</value>
+  </data>
+  <data name="Toplam :" xml:space="preserve">
+    <value>Toplam :</value>
+  </data>
+  <data name="Toplam Masa Kişi Sayısı :" xml:space="preserve">
+    <value>Toplam Masa Kişi Sayısı :</value>
+  </data>
+  <data name="Toplam Çekler Sayısı ve Tutarı" xml:space="preserve">
+    <value>Toplam Çekler Sayısı ve Tutarı</value>
+  </data>
+  <data name="Tüm Alanları Doldurunuz...!" xml:space="preserve">
+    <value>Tüm Alanları Doldurunuz...!</value>
+  </data>
+  <data name="Urun Grubu Bos Geçilemez..." xml:space="preserve">
+    <value>Urun Grubu Bos Geçilemez...</value>
+  </data>
+  <data name="Uyarı" xml:space="preserve">
+    <value>Uyarı</value>
+  </data>
+  <data name="Vergi Daire ve Vergi No Alanlarını Doldurunuz.." xml:space="preserve">
+    <value>Vergi Daire ve Vergi No Alanlarını Doldurunuz..</value>
+  </data>
+  <data name="Yazarkasa Eslestirmesiyle Gelen Departman(Kısım) VB. Bilgileri RMOS ULTIMATE POS'a Aktarılacaktır \r\n Devam Etmek Istiyor musunuz" xml:space="preserve">
+    <value>Yazarkasa Eslestirmesiyle Gelen Departman(Kısım) VB. Bilgileri RMOS ULTIMATE POS'a Aktarılacaktır \r\n Devam Etmek Istiyor musunuz</value>
+  </data>
+  <data name="Yazdırılmış Satır Silme Yetkiniz Yoktur...!" xml:space="preserve">
+    <value>Yazdırılmış Satır Silme Yetkiniz Yoktur...!</value>
+  </data>
+  <data name="Yazılacak Alanı Seçiniz..." xml:space="preserve">
+    <value>Yazılacak Alanı Seçiniz...</value>
+  </data>
+  <data name="YemekSepeti Siparişleri için kullanılabilir." xml:space="preserve">
+    <value>YemekSepeti Siparişleri için kullanılabilir.</value>
+  </data>
+  <data name="Yeni tarih Sistem Server tarihinden Büyük Olamaz!!!!" xml:space="preserve">
+    <value>Yeni tarih Sistem Server tarihinden Büyük Olamaz!!!!</value>
+  </data>
+  <data name="Yeniden Programa Giriş Yapmanız Gerekmektedir..." xml:space="preserve">
+    <value>Yeniden Programa Giriş Yapmanız Gerekmektedir...</value>
+  </data>
+  <data name="Yuvarlama Recetesi Tanımlı Değil..." xml:space="preserve">
+    <value>Yuvarlama Recetesi Tanımlı Değil...</value>
+  </data>
+  <data name="Yüklenecek Limit Tutarını Giriniz..." xml:space="preserve">
+    <value>Yüklenecek Limit Tutarını Giriniz...</value>
+  </data>
+  <data name="Ödeme Alındı Fakat Hesap Kapanmadı..." xml:space="preserve">
+    <value>Ödeme Alındı Fakat Hesap Kapanmadı...</value>
+  </data>
+  <data name="Ödeme Kodu Boş Geçilemez..." xml:space="preserve">
+    <value>Ödeme Kodu Boş Geçilemez...</value>
+  </data>
+  <data name="Ödeme Kodu Satırını Seçiniz.." xml:space="preserve">
+    <value>Ödeme Kodu Satırını Seçiniz..</value>
+  </data>
+  <data name="Ödeme Tutarlarında Bir Yanlışlık Var." xml:space="preserve">
+    <value>Ödeme Tutarlarında Bir Yanlışlık Var.</value>
+  </data>
+  <data name="Ödeme Tutarını Kontrol ediniz." xml:space="preserve">
+    <value>Ödeme Tutarını Kontrol ediniz.</value>
+  </data>
+  <data name="Ödemeler veya İndirimler Silinemez.." xml:space="preserve">
+    <value>Ödemeler veya İndirimler Silinemez..</value>
+  </data>
+  <data name="Ödemelere veya İndirimlere Açıklama Girilemez.." xml:space="preserve">
+    <value>Ödemelere veya İndirimlere Açıklama Girilemez..</value>
+  </data>
+  <data name="ÖDEMEYİ TEKRARDAN GERÇEKLEŞTİRMEK İSTİYORMUSUNUZ ?" xml:space="preserve">
+    <value>ÖDEMEYİ TEKRARDAN GERÇEKLEŞTİRMEK İSTİYORMUSUNUZ ?</value>
+  </data>
+  <data name="ÖKC Üzerinde Yemek Ceki Ödeme Uygulanaması Bulunamadı" xml:space="preserve">
+    <value>ÖKC Üzerinde Yemek Ceki Ödeme Uygulanaması Bulunamadı</value>
+  </data>
+  <data name="Önbüro Çalışma Tarihi ile Sistem tarihi Farklı." xml:space="preserve">
+    <value>Önbüro Çalışma Tarihi ile Sistem tarihi Farklı.</value>
+  </data>
+  <data name="Önbüro Çalışma Tarihi ile Sistem tarihi Farklı.Sistemden Çıkıp Yeniden Giriniz..." xml:space="preserve">
+    <value>Önbüro Çalışma Tarihi ile Sistem tarihi Farklı.Sistemden Çıkıp Yeniden Giriniz...</value>
+  </data>
+  <data name="Önbüro Çalışma Tarihi ile Sistem tarihi Farklı.\nSistemden Çıkıp Yeniden Giriniz..." xml:space="preserve">
+    <value>Önbüro Çalışma Tarihi ile Sistem tarihi Farklı.\nSistemden Çıkıp Yeniden Giriniz...</value>
+  </data>
+  <data name="Ürün Kodu Bulunamadı..." xml:space="preserve">
+    <value>Ürün Kodu Bulunamadı...</value>
+  </data>
+  <data name="İlgili Alanları Doldurunuz...!" xml:space="preserve">
+    <value>İlgili Alanları Doldurunuz...!</value>
+  </data>
+  <data name="İlgili Server Bilgileri Yoktur." xml:space="preserve">
+    <value>İlgili Server Bilgileri Yoktur.</value>
+  </data>
+  <data name="İşlem Başarısız." xml:space="preserve">
+    <value>İşlem Başarısız.</value>
+  </data>
+  <data name="İşlem Tamamlandı." xml:space="preserve">
+    <value>İşlem Tamamlandı.</value>
+  </data>
+  <data name="Şube Seçiniz.." xml:space="preserve">
+    <value>Şube Seçiniz..</value>
+  </data>
+  <data name="Şube Verileri Transfer edilecek. Eminmisiniz?" xml:space="preserve">
+    <value>Şube Verileri Transfer edilecek. Eminmisiniz?</value>
+  </data>
+  <data name="Şubeden - Merkeze Satışlar Aktarıldı." xml:space="preserve">
+    <value>Şubeden - Merkeze Satışlar Aktarıldı.</value>
+  </data>
+</root>

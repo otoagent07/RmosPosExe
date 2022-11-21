@@ -1,0 +1,12 @@
+11 --> Ödeme Kodlarý
+12 --> Önbüro Entegre
+13 --> Cost Entegre
+14 --> Masa Konumlarý
+15 --> Printer Grup Ayarlarý
+16 --> Print Ayarlarý
+17 --> Fis Font Ayarlarý
+18 --> Posta Konumlarý
+19 --> Printer Tanýmlarý
+20 --> Happy Hour Saatleri
+21 --> MAC Printer Ayarlarý
+22 --> Kasa Girþ Çýkýþ Kodlarý

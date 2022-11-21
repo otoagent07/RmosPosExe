@@ -1,0 +1,2249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chk_OdaHesap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_OdaHesap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 31</value>
+  </data>
+  <data name="chk_OdaHesap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 36</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chk_OdaHesap.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chk_OdaHesap.Text" xml:space="preserve">
+    <value>Oda Hesabı</value>
+  </data>
+  <data name="&gt;&gt;chk_OdaHesap.Name" xml:space="preserve">
+    <value>chk_OdaHesap</value>
+  </data>
+  <data name="&gt;&gt;chk_OdaHesap.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_OdaHesap.Parent" xml:space="preserve">
+    <value>groupControl2</value>
+  </data>
+  <data name="&gt;&gt;chk_OdaHesap.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chk_UyeHesap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_UyeHesap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 31</value>
+  </data>
+  <data name="chk_UyeHesap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 36</value>
+  </data>
+  <data name="chk_UyeHesap.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chk_UyeHesap.Text" xml:space="preserve">
+    <value>Üye</value>
+  </data>
+  <data name="&gt;&gt;chk_UyeHesap.Name" xml:space="preserve">
+    <value>chk_UyeHesap</value>
+  </data>
+  <data name="&gt;&gt;chk_UyeHesap.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_UyeHesap.Parent" xml:space="preserve">
+    <value>groupControl2</value>
+  </data>
+  <data name="&gt;&gt;chk_UyeHesap.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chk_CariHesap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_CariHesap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 32</value>
+  </data>
+  <data name="chk_CariHesap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 36</value>
+  </data>
+  <data name="chk_CariHesap.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chk_CariHesap.Text" xml:space="preserve">
+    <value>Cari Hesap</value>
+  </data>
+  <data name="&gt;&gt;chk_CariHesap.Name" xml:space="preserve">
+    <value>chk_CariHesap</value>
+  </data>
+  <data name="&gt;&gt;chk_CariHesap.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_CariHesap.Parent" xml:space="preserve">
+    <value>groupControl2</value>
+  </data>
+  <data name="&gt;&gt;chk_CariHesap.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chk_Ad.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_Ad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 32</value>
+  </data>
+  <data name="chk_Ad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 36</value>
+  </data>
+  <data name="chk_Ad.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chk_Ad.Text" xml:space="preserve">
+    <value>Ada Göre</value>
+  </data>
+  <data name="&gt;&gt;chk_Ad.Name" xml:space="preserve">
+    <value>chk_Ad</value>
+  </data>
+  <data name="&gt;&gt;chk_Ad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_Ad.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;chk_Ad.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="groupControl1.AppearanceCaption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupControl1.CaptionImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="chk_Soyad.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_Soyad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 32</value>
+  </data>
+  <data name="chk_Soyad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 36</value>
+  </data>
+  <data name="chk_Soyad.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chk_Soyad.Text" xml:space="preserve">
+    <value>Soyad Arama</value>
+  </data>
+  <data name="&gt;&gt;chk_Soyad.Name" xml:space="preserve">
+    <value>chk_Soyad</value>
+  </data>
+  <data name="&gt;&gt;chk_Soyad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_Soyad.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;chk_Soyad.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chk_KartNo.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_KartNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 32</value>
+  </data>
+  <data name="chk_KartNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 36</value>
+  </data>
+  <data name="chk_KartNo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="chk_KartNo.Text" xml:space="preserve">
+    <value>Kart No</value>
+  </data>
+  <data name="&gt;&gt;chk_KartNo.Name" xml:space="preserve">
+    <value>chk_KartNo</value>
+  </data>
+  <data name="&gt;&gt;chk_KartNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_KartNo.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;chk_KartNo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chk_OdaNo.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_OdaNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 32</value>
+  </data>
+  <data name="chk_OdaNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 36</value>
+  </data>
+  <data name="chk_OdaNo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chk_OdaNo.Text" xml:space="preserve">
+    <value>Oda No</value>
+  </data>
+  <data name="&gt;&gt;chk_OdaNo.Name" xml:space="preserve">
+    <value>chk_OdaNo</value>
+  </data>
+  <data name="&gt;&gt;chk_OdaNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_OdaNo.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;chk_OdaNo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 91</value>
+  </data>
+  <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>768, 75</value>
+  </data>
+  <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupControl1.Text" xml:space="preserve">
+    <value>   Filtre</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="Space.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Space.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 654</value>
+  </data>
+  <data name="Space.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Space.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 53</value>
+  </data>
+  <data name="Space.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="Space.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;Space.Name" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="&gt;&gt;Space.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Space.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Space.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Nokta.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Nokta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>747, 597</value>
+  </data>
+  <data name="Nokta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Nokta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Nokta.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="Nokta.Text" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="&gt;&gt;Nokta.Name" xml:space="preserve">
+    <value>Nokta</value>
+  </data>
+  <data name="&gt;&gt;Nokta.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Nokta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Nokta.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Btn_Ç.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_Ç.Location" type="System.Drawing.Point, System.Drawing">
+    <value>677, 597</value>
+  </data>
+  <data name="Btn_Ç.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_Ç.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_Ç.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="Btn_Ç.Text" xml:space="preserve">
+    <value>Ç</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ç.Name" xml:space="preserve">
+    <value>Btn_Ç</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ç.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ç.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ç.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Btn_Ö.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_Ö.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 597</value>
+  </data>
+  <data name="Btn_Ö.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_Ö.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_Ö.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="Btn_Ö.Text" xml:space="preserve">
+    <value>Ö</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ö.Name" xml:space="preserve">
+    <value>Btn_Ö</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ö.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ö.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ö.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Btn_M.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_M.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 597</value>
+  </data>
+  <data name="Btn_M.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_M.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_M.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="Btn_M.Text" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="&gt;&gt;Btn_M.Name" xml:space="preserve">
+    <value>Btn_M</value>
+  </data>
+  <data name="&gt;&gt;Btn_M.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_M.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_M.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Btn_N.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_N.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 597</value>
+  </data>
+  <data name="Btn_N.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_N.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_N.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="Btn_N.Text" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="&gt;&gt;Btn_N.Name" xml:space="preserve">
+    <value>Btn_N</value>
+  </data>
+  <data name="&gt;&gt;Btn_N.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_N.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_N.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Btn_B.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 597</value>
+  </data>
+  <data name="Btn_B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_B.TabIndex" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="Btn_B.Text" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="&gt;&gt;Btn_B.Name" xml:space="preserve">
+    <value>Btn_B</value>
+  </data>
+  <data name="&gt;&gt;Btn_B.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_B.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_B.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Btn_V.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_V.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 597</value>
+  </data>
+  <data name="Btn_V.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_V.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_V.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="Btn_V.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="&gt;&gt;Btn_V.Name" xml:space="preserve">
+    <value>Btn_V</value>
+  </data>
+  <data name="&gt;&gt;Btn_V.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_V.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_V.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Btn_C.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_C.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 597</value>
+  </data>
+  <data name="Btn_C.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_C.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_C.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="Btn_C.Text" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="&gt;&gt;Btn_C.Name" xml:space="preserve">
+    <value>Btn_C</value>
+  </data>
+  <data name="&gt;&gt;Btn_C.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_C.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_C.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="Btn_X.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_X.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 597</value>
+  </data>
+  <data name="Btn_X.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_X.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_X.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="Btn_X.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="&gt;&gt;Btn_X.Name" xml:space="preserve">
+    <value>Btn_X</value>
+  </data>
+  <data name="&gt;&gt;Btn_X.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_X.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_X.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Btn_Z.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_Z.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 597</value>
+  </data>
+  <data name="Btn_Z.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_Z.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_Z.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="Btn_Z.Text" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="&gt;&gt;Btn_Z.Name" xml:space="preserve">
+    <value>Btn_Z</value>
+  </data>
+  <data name="&gt;&gt;Btn_Z.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_Z.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_Z.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="Btn_İ.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_İ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>783, 540</value>
+  </data>
+  <data name="Btn_İ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_İ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_İ.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="Btn_İ.Text" xml:space="preserve">
+    <value>İ</value>
+  </data>
+  <data name="&gt;&gt;Btn_İ.Name" xml:space="preserve">
+    <value>Btn_İ</value>
+  </data>
+  <data name="&gt;&gt;Btn_İ.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_İ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_İ.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="Btn_Ş.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_Ş.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 540</value>
+  </data>
+  <data name="Btn_Ş.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_Ş.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_Ş.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="Btn_Ş.Text" xml:space="preserve">
+    <value>Ş</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ş.Name" xml:space="preserve">
+    <value>Btn_Ş</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ş.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ş.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ş.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="Btn_L.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_L.Location" type="System.Drawing.Point, System.Drawing">
+    <value>643, 540</value>
+  </data>
+  <data name="Btn_L.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_L.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_L.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="Btn_L.Text" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="&gt;&gt;Btn_L.Name" xml:space="preserve">
+    <value>Btn_L</value>
+  </data>
+  <data name="&gt;&gt;Btn_L.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_L.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_L.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="Btn_K.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_K.Location" type="System.Drawing.Point, System.Drawing">
+    <value>573, 540</value>
+  </data>
+  <data name="Btn_K.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_K.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_K.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="Btn_K.Text" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="&gt;&gt;Btn_K.Name" xml:space="preserve">
+    <value>Btn_K</value>
+  </data>
+  <data name="&gt;&gt;Btn_K.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_K.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_K.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Btn_J.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_J.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 540</value>
+  </data>
+  <data name="Btn_J.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_J.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_J.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="Btn_J.Text" xml:space="preserve">
+    <value>J</value>
+  </data>
+  <data name="&gt;&gt;Btn_J.Name" xml:space="preserve">
+    <value>Btn_J</value>
+  </data>
+  <data name="&gt;&gt;Btn_J.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_J.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_J.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="Btn_H.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_H.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 540</value>
+  </data>
+  <data name="Btn_H.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_H.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_H.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="Btn_H.Text" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="&gt;&gt;Btn_H.Name" xml:space="preserve">
+    <value>Btn_H</value>
+  </data>
+  <data name="&gt;&gt;Btn_H.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_H.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_H.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="Btn_G.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_G.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 540</value>
+  </data>
+  <data name="Btn_G.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_G.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_G.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="Btn_G.Text" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="&gt;&gt;Btn_G.Name" xml:space="preserve">
+    <value>Btn_G</value>
+  </data>
+  <data name="&gt;&gt;Btn_G.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_G.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_G.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="Btn_F.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_F.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 540</value>
+  </data>
+  <data name="Btn_F.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_F.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_F.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="Btn_F.Text" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="&gt;&gt;Btn_F.Name" xml:space="preserve">
+    <value>Btn_F</value>
+  </data>
+  <data name="&gt;&gt;Btn_F.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_F.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_F.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="Btn_D.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_D.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 540</value>
+  </data>
+  <data name="Btn_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_D.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_D.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="Btn_D.Text" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="&gt;&gt;Btn_D.Name" xml:space="preserve">
+    <value>Btn_D</value>
+  </data>
+  <data name="&gt;&gt;Btn_D.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_D.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_D.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="Btn_S.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_S.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 540</value>
+  </data>
+  <data name="Btn_S.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_S.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_S.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="Btn_S.Text" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="&gt;&gt;Btn_S.Name" xml:space="preserve">
+    <value>Btn_S</value>
+  </data>
+  <data name="&gt;&gt;Btn_S.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_S.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_S.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="Btn_A.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 540</value>
+  </data>
+  <data name="Btn_A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_A.TabIndex" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="Btn_A.Text" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="&gt;&gt;Btn_A.Name" xml:space="preserve">
+    <value>Btn_A</value>
+  </data>
+  <data name="&gt;&gt;Btn_A.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_A.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_A.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="Btn_Ü.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_Ü.Location" type="System.Drawing.Point, System.Drawing">
+    <value>817, 483</value>
+  </data>
+  <data name="Btn_Ü.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_Ü.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_Ü.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="Btn_Ü.Text" xml:space="preserve">
+    <value>Ü</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ü.Name" xml:space="preserve">
+    <value>Btn_Ü</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ü.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ü.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ü.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="Btn_Ğ.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_Ğ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>747, 483</value>
+  </data>
+  <data name="Btn_Ğ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_Ğ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_Ğ.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="Btn_Ğ.Text" xml:space="preserve">
+    <value>Ğ</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ğ.Name" xml:space="preserve">
+    <value>Btn_Ğ</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ğ.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ğ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_Ğ.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="Btn_P.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_P.Location" type="System.Drawing.Point, System.Drawing">
+    <value>677, 483</value>
+  </data>
+  <data name="Btn_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_P.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_P.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="Btn_P.Text" xml:space="preserve">
+    <value>P</value>
+  </data>
+  <data name="&gt;&gt;Btn_P.Name" xml:space="preserve">
+    <value>Btn_P</value>
+  </data>
+  <data name="&gt;&gt;Btn_P.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_P.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_P.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="Btn_O.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_O.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 483</value>
+  </data>
+  <data name="Btn_O.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_O.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_O.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="Btn_O.Text" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="&gt;&gt;Btn_O.Name" xml:space="preserve">
+    <value>Btn_O</value>
+  </data>
+  <data name="&gt;&gt;Btn_O.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_O.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_O.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="Btn_I.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_I.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 483</value>
+  </data>
+  <data name="Btn_I.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_I.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_I.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="Btn_I.Text" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="&gt;&gt;Btn_I.Name" xml:space="preserve">
+    <value>Btn_I</value>
+  </data>
+  <data name="&gt;&gt;Btn_I.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_I.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_I.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="Btn_U.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_U.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 483</value>
+  </data>
+  <data name="Btn_U.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_U.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_U.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="Btn_U.Text" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="&gt;&gt;Btn_U.Name" xml:space="preserve">
+    <value>Btn_U</value>
+  </data>
+  <data name="&gt;&gt;Btn_U.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_U.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_U.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="Btn_Y.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_Y.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 483</value>
+  </data>
+  <data name="Btn_Y.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_Y.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_Y.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="Btn_Y.Text" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="&gt;&gt;Btn_Y.Name" xml:space="preserve">
+    <value>Btn_Y</value>
+  </data>
+  <data name="&gt;&gt;Btn_Y.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_Y.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_Y.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="Btn_T.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_T.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 483</value>
+  </data>
+  <data name="Btn_T.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_T.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_T.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="Btn_T.Text" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="&gt;&gt;Btn_T.Name" xml:space="preserve">
+    <value>Btn_T</value>
+  </data>
+  <data name="&gt;&gt;Btn_T.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_T.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_T.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="Btn_R.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_R.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 483</value>
+  </data>
+  <data name="Btn_R.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_R.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_R.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="Btn_R.Text" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="&gt;&gt;Btn_R.Name" xml:space="preserve">
+    <value>Btn_R</value>
+  </data>
+  <data name="&gt;&gt;Btn_R.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_R.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_R.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="Btn_E.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_E.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 483</value>
+  </data>
+  <data name="Btn_E.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_E.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_E.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="Btn_E.Text" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="&gt;&gt;Btn_E.Name" xml:space="preserve">
+    <value>Btn_E</value>
+  </data>
+  <data name="&gt;&gt;Btn_E.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_E.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_E.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="Btn_W.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_W.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 483</value>
+  </data>
+  <data name="Btn_W.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_W.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_W.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="Btn_W.Text" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="&gt;&gt;Btn_W.Name" xml:space="preserve">
+    <value>Btn_W</value>
+  </data>
+  <data name="&gt;&gt;Btn_W.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_W.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_W.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="Btn_Q.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_Q.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 483</value>
+  </data>
+  <data name="Btn_Q.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_Q.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_Q.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="Btn_Q.Text" xml:space="preserve">
+    <value>Q</value>
+  </data>
+  <data name="&gt;&gt;Btn_Q.Name" xml:space="preserve">
+    <value>Btn_Q</value>
+  </data>
+  <data name="&gt;&gt;Btn_Q.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_Q.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_Q.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="Back_Space.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Back_Space.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 426</value>
+  </data>
+  <data name="Back_Space.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Back_Space.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 53</value>
+  </data>
+  <data name="Back_Space.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="Back_Space.Text" xml:space="preserve">
+    <value>Back Space</value>
+  </data>
+  <data name="&gt;&gt;Back_Space.Name" xml:space="preserve">
+    <value>Back_Space</value>
+  </data>
+  <data name="&gt;&gt;Back_Space.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Back_Space.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Back_Space.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="Btn_0.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>643, 426</value>
+  </data>
+  <data name="Btn_0.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_0.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="Btn_0.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Btn_0.Name" xml:space="preserve">
+    <value>Btn_0</value>
+  </data>
+  <data name="&gt;&gt;Btn_0.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_0.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_0.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="Btn_9.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>573, 426</value>
+  </data>
+  <data name="Btn_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_9.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="Btn_9.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Btn_9.Name" xml:space="preserve">
+    <value>Btn_9</value>
+  </data>
+  <data name="&gt;&gt;Btn_9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_9.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="Btn_8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 426</value>
+  </data>
+  <data name="Btn_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_8.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="Btn_8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Btn_8.Name" xml:space="preserve">
+    <value>Btn_8</value>
+  </data>
+  <data name="&gt;&gt;Btn_8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_8.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="Btn_7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 426</value>
+  </data>
+  <data name="Btn_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_7.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="Btn_7.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Btn_7.Name" xml:space="preserve">
+    <value>Btn_7</value>
+  </data>
+  <data name="&gt;&gt;Btn_7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_7.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="Btn_6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 426</value>
+  </data>
+  <data name="Btn_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_6.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="Btn_6.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Btn_6.Name" xml:space="preserve">
+    <value>Btn_6</value>
+  </data>
+  <data name="&gt;&gt;Btn_6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_6.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="Btn_5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 426</value>
+  </data>
+  <data name="Btn_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_5.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="Btn_5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Btn_5.Name" xml:space="preserve">
+    <value>Btn_5</value>
+  </data>
+  <data name="&gt;&gt;Btn_5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_5.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="Btn_4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 426</value>
+  </data>
+  <data name="Btn_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_4.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="Btn_4.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Btn_4.Name" xml:space="preserve">
+    <value>Btn_4</value>
+  </data>
+  <data name="&gt;&gt;Btn_4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_4.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="Btn_3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 426</value>
+  </data>
+  <data name="Btn_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_3.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="Btn_3.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Btn_3.Name" xml:space="preserve">
+    <value>Btn_3</value>
+  </data>
+  <data name="&gt;&gt;Btn_3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_3.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="Btn_2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 426</value>
+  </data>
+  <data name="Btn_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_2.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="Btn_2.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Btn_2.Name" xml:space="preserve">
+    <value>Btn_2</value>
+  </data>
+  <data name="&gt;&gt;Btn_2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_2.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="Btn_1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="Btn_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 426</value>
+  </data>
+  <data name="Btn_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Btn_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 53</value>
+  </data>
+  <data name="Btn_1.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="Btn_1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Btn_1.Name" xml:space="preserve">
+    <value>Btn_1</value>
+  </data>
+  <data name="&gt;&gt;Btn_1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Btn_1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Btn_1.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>True</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>None</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>Application</value>
+  </data>
+  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 172</value>
+  </data>
+  <data name="gridColumn1.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn1.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn2.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn3.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn4.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn5.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn5.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn6.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn6.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn6.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridColumn7.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn7.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn7.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn7.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="gridColumn8.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn8.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn8.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn8.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gridColumn9.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn9.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn9.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="gridColumn10.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn10.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn10.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn10.VisibleIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="gridColumn11.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn11.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn11.VisibleIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="gridColumn12.Caption" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="gridColumn12.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn12.VisibleIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="gridColumn13.Caption" xml:space="preserve">
+    <value>Odeme Adi</value>
+  </data>
+  <data name="gridColumn13.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn13.VisibleIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>869, 202</value>
+  </data>
+  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_OK.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="btn_OK.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAAA9ZJREFUSEu1VmtM
+        XEUUPvfevY+9+2IXWFxAViRA6QttoGBBoFWRFNS6LS2mD7rCbhUkpEGhrYWgQUpfPooiEZv6qn0kajQi
+        6A/8IdrapK2mPmNqa9TaNPFZ/IGFOc7czm2X2pgA2y/5cmbnnDln5pwzcxeuGUKgCesgCLXg4jNRRAgE
+        4UFhofVR5Qv74xqBVZDJNVFCGBR5vdTh3KKPxu5yoHOLlcBKmMG1UUAYbMrDloPunTbCAszam4yL+28a
+        h0pI4RbTRAgc6gb5A/dTdvQ+6yIrDi8gPRdqMDhcMgK3g4NbTQNhsKot8qDnaTv6X4zHjT/eg30YNlg5
+        kH8a7gCRW04RYRCVJstu95N2kv6yDzt/q7oUgDHQP/9bqJpmEEuj1Byzw0bSX/KRbX+uJC+Q0ARWDuWP
+        0hZO5OaTB23TEto9o/6+OOz64z4SeQKTa48Vo1Qv1vMlk0QIYvU29WTCczG46acl2DtWSyiZnMDmH+5G
+        S4PUzlddgTDE0FS0sXTwmcugl4226h5W6OBnJdg9GmQkXE7gzpHV6G6xXREkBIpYL6zWW5WTrJiODm2E
+        BryRaw2IdUKpq0u/UNw/k2z/axXuOG+QcGmM6TypO15K5rRf/518l1R2cSXtEprjMm2TcoQVkl0mRtrz
+        qD5i2cd2b9iFQKcbOJG624utvwTwiV9XmCTmuPXMUix8PvOcXCA1gGLekTBkqM3ygGurPuZ5xm44z3ot
+        Ce//vATvHZ6PdNdjwgNCITO1NIpNHnrh1hwrws1nApEkTDZ8dSdJbYo/BDfATMO3CZr3Duackvj74smS
+        j3Jx/ffl2HSqgjCZtuc61DYqw/QUCbZ27WzOG2lUV06YnpLZGbbVnxYRb43zIHjBzV1fhtwodfp6YnDh
+        wCxc9+VtWPd1qUnCZICehqWQbuZwQrcL1x4vjrQxuHQob9y1XO+hydG424mQg5aWgn2ZZM3RIsPB1Zj1
+        ahKyd2nB2xn/0VW8P4/oy9RdoILMXV4FIlhpBgNxNY6Pbz0wY7zyk3xcfsgg4RIXD92Mib0e41TmHGPZ
+        e9nEXqX10gL/T4BIiKCKOUIwZXPcz6WDc0nFh/NMIpOLBmeb44u/351NnNX66zRFKvcwCSRDqrPaOpCz
+        N22c1WkRJZPmmLHonSyMfcg+BL7pPOMaWJUyS0dGt++f/LfSMZJ5b6ZjwgbXN/R7N/WH7xJEEMVCoSa5
+        K/bv7P1+zD7gJ5SY1On5XciDXG4VHQgFwjLvY67zma8kkpTuuDGpXKzlquhCuEUIuNvsI1pQ3k//4Eh8
+        +hogFypgzlTqAPAvQXUHtcWmsHMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btn_OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 379</value>
+  </data>
+  <data name="btn_OK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btn_OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 43</value>
+  </data>
+  <data name="btn_OK.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="btn_OK.Text" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="&gt;&gt;btn_OK.Name" xml:space="preserve">
+    <value>btn_OK</value>
+  </data>
+  <data name="&gt;&gt;btn_OK.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_OK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_OK.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupControl2.AppearanceCaption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupControl2.CaptionImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>766, 72</value>
+  </data>
+  <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="groupControl2.Text" xml:space="preserve">
+    <value>    Müşteri Tipi</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Name" xml:space="preserve">
+    <value>groupControl2</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Cikis.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAAMCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkNsZWFySGVh
+        ZGVyQW5kRm9vdGVyIj4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5SZWR7ZmlsbDojRDExQzFD
+        O30KPC9zdHlsZT4NCiAgPHBhdGggZD0iTTI3LDRINUM0LjUsNCw0LDQuNSw0LDV2MjJjMCwwLjUsMC41
+        LDEsMSwxaDIyYzAuNSwwLDEtMC41LDEtMVY1QzI4LDQuNSwyNy41LDQsMjcsNHogTTIyLDIwbC0yLDJs
+        LTQtNGwtNCw0ICBsLTItMmw0LTRsLTQtNGwyLTJsNCw0bDQtNGwyLDJsLTQsNEwyMiwyMHoiIGZpbGw9
+        IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>782, 13</value>
+  </data>
+  <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 45</value>
+  </data>
+  <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_Cikis.Text" xml:space="preserve">
+    <value>Cıkıs</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Name" xml:space="preserve">
+    <value>btn_Cikis</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_Arama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 379</value>
+  </data>
+  <data name="txt_Arama.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 22.25pt, style=Bold</value>
+  </data>
+  <data name="txt_Arama.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_Arama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>696, 42</value>
+  </data>
+  <data name="txt_Arama.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_Arama.Name" xml:space="preserve">
+    <value>txt_Arama</value>
+  </data>
+  <data name="&gt;&gt;txt_Arama.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Arama.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_Arama.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_CariEkle.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_CariEkle.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAB2
+        oAAAdqABgrpKUAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAAAvxJREFUOE+lknlI
+        k3EYx4fbWwmtuUvSDs155NGhplKZdih2eJSpoanT9J22ZiubW/48StO0kqhA+8cK7SKxWiZYzSKsQLoM
+        pRRFI6VTuiEKat9+7zD/HKw98OGF94EPz/P9PTxrJT86hQ3ocDWHdnoh9JYX/K65mmU1DDvRtr2okJAv
+        arSamyzsHd8OaQ1DJtq2l6yOIaWfC3AV59D6pwn693mQVtsjPMyQko8atPw+jeafDdCOKSGttEdYyxDd
+        u1yc+nEM9d9qoRpOgWS/HUJuPc1YOk58rcbhj2XIHEiApMwe4QGG5I4ko2acYP/bQmzpWwtxicC6UHaI
+        YWVHGEK/hHtB6UFKFUMkNCtJBWPKGIhH6Rst9KN52PR0FcTFApNYLyBOOkohZbeAiLSUAj4Rqfksz9/o
+        YjaM56PovQq73mRDPZoGbirlUALS+jegYCQTu1/mQD2Ujq19sVhzLxgRdxdheac/wm54I7hdgUVGN/i3
+        zoK8YqqZx/1o+lVPgz9uCb7u0z5UfTCgjJtqLB/akSzkD6Yi+0UitvbGIulJNOIfRmLdg6WI6lqCiNsL
+        sfSmr0XsXOkIXqDRHQ3fD00GX/FOB/Jagz2vWGiGM8EOpED5fCNSn63D5idrENsdjpj7YVh1NxDhnQEI
+        6/BB0HUPLLgyB/LyaeB5X5CDHU7GtsFEZPTHYUtvDBJ7ViP+cQTWdy9D0tMopPTEYOOjlYjuCkFIuycC
+        jfOw4PIc+F1yhfd5ZyiapHBvdIJYz5h5kn2MirstSbmAiEsphFJMMdDAiwSm8NsBiOteYZkqqM0DIg3f
+        JNrBJzO2U/IoKkounwi3UZT0UawV94KhN3wQfS8EkXcW06nmQkRFE23bS6Tlk6C2eZPB+150ATfVRNv2
+        ousRLqt/wXs2yzGDtUeo5pP5F2dO3hkXvDDHDiG3nqJZCt8WF3jRa5h9Ughhlj1Cup5bowiKszK4nXHC
+        zGOOmJ7h8P9CegqsuIgxSwwMxDoBRDv55ulpDlZOg8f7CyWDkIm3zhUGAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btn_CariEkle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>782, 121</value>
+  </data>
+  <data name="btn_CariEkle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 45</value>
+  </data>
+  <data name="btn_CariEkle.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="btn_CariEkle.Text" xml:space="preserve">
+    <value>Cari Ekle</value>
+  </data>
+  <data name="&gt;&gt;btn_CariEkle.Name" xml:space="preserve">
+    <value>btn_CariEkle</value>
+  </data>
+  <data name="&gt;&gt;btn_CariEkle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_CariEkle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_CariEkle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>903, 723</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Müşteri Arama</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
+    <value>gridColumn1</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
+    <value>gridColumn2</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
+    <value>gridColumn3</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
+    <value>gridColumn4</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
+    <value>gridColumn5</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Name" xml:space="preserve">
+    <value>gridColumn6</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn7.Name" xml:space="preserve">
+    <value>gridColumn7</value>
+  </data>
+  <data name="&gt;&gt;gridColumn7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Name" xml:space="preserve">
+    <value>gridColumn8</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn9.Name" xml:space="preserve">
+    <value>gridColumn9</value>
+  </data>
+  <data name="&gt;&gt;gridColumn9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Name" xml:space="preserve">
+    <value>gridColumn10</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Name" xml:space="preserve">
+    <value>gridColumn11</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn12.Name" xml:space="preserve">
+    <value>gridColumn12</value>
+  </data>
+  <data name="&gt;&gt;gridColumn12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn13.Name" xml:space="preserve">
+    <value>gridColumn13</value>
+  </data>
+  <data name="&gt;&gt;gridColumn13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Arama</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

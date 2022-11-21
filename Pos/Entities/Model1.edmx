@@ -1,0 +1,1362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RmosMerkez21Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cst_Recete">
+          <Key>
+            <PropertyRef Name="Rec_Id" />
+          </Key>
+          <Property Name="Rec_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Rec_Departman" Type="nvarchar" MaxLength="200" />
+          <Property Name="Rec_Grup" Type="int" />
+          <Property Name="Rec_Anagrup" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rec_Altgrup" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rec_Kodu" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rec_Genelkod" Type="nvarchar" MaxLength="30" />
+          <Property Name="Rec_Ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rec_Kisi" Type="int" />
+          <Property Name="Rec_Fiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Kdv" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Net" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Dovizkodu" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rec_Dovifiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Urungrup" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rec_All" Type="bit" />
+          <Property Name="Rec_Ultra" Type="bit" />
+          <Property Name="Rec_HappyHour" Type="bit" />
+          <Property Name="Rec_Pasif" Type="bit" />
+          <Property Name="Rec_FB" Type="bit" />
+          <Property Name="Rec_HB" Type="bit" />
+          <Property Name="Rec_Pdapasif" Type="bit" />
+          <Property Name="Rec_Minibar" Type="bit" />
+          <Property Name="Rec_SiparisCikmasin" Type="bit" />
+          <Property Name="Rec_Miktar_Sor" Type="bit" />
+          <Property Name="Rec_Miktar_Gr" Type="bit" />
+          <Property Name="Rec_Tutar_Sor" Type="bit" />
+          <Property Name="Rec_Ust_Recete" Type="nvarchar" MaxLength="30" />
+          <Property Name="Rec_Yarim" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Birbucuk" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Duble" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Aksam_Yarim" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Aksam_Birbucuk" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Aksam_Duble" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Paket_Yarim" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Paket_Birbucuk" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Paket_Duble" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Santral_Minibar" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rec_Sira" Type="int" />
+          <Property Name="Rec_Barkod" Type="nvarchar" MaxLength="150" />
+          <Property Name="Rec_Terazi" Type="bit" />
+          <Property Name="Rec_SpUygulanmasin" Type="bit" />
+          <Property Name="Rec_HappyHourFiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Aksam_Tam" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Paket_Tam" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_DetayGrup" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rec_Picture" Type="varbinary(max)" />
+          <Property Name="Rec_Ad_Eng" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rec_Ad_Deu" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rec_Ad_Rus" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rec_Ad_Dig" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rec_YkasaBirim" Type="int" />
+          <Property Name="Rec_UretimMiktar" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_UretimBirim" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rec_YS_UrunID" Type="nvarchar" MaxLength="100" />
+          <Property Name="Rec_Update" Type="bit" />
+          <Property Name="Rec_Color" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rec_Printer" Type="nvarchar" MaxLength="200" />
+          <Property Name="Rec_AbuyerPR" Type="nvarchar" MaxLength="200" />
+          <Property Name="Rec_AciklamaAP" Type="bit" />
+          <Property Name="Rec_AciklamaGrup" Type="nvarchar" MaxLength="200" />
+          <Property Name="Rec_GetirMenuID" Type="nvarchar" MaxLength="2500" />
+          <Property Name="Rec_OptionID" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Rec_KategoriFiyat1" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_KategoriFiyat2" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_KategoriFiyat3" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_KategoriFiyat4" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_KategoriFiyat5" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Cst_Recete_Satis">
+          <Key>
+            <PropertyRef Name="Rsat_Id" />
+          </Key>
+          <Property Name="Rsat_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Rsat_Fisno" Type="int" />
+          <Property Name="Rsat_Tarih" Type="datetime" />
+          <Property Name="Rsat_Departman" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rsat_Recete" Type="nvarchar" MaxLength="200" />
+          <Property Name="Rsat_Kdvoran" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Miktar" Type="decimal" Precision="18" Scale="4" />
+          <Property Name="Rsat_Fiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Ind" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Net" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Kdv" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Tutar" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Maliyet" Type="decimal" Precision="18" Scale="4" />
+          <Property Name="Rsat_Dovizkodu" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rsat_Doviztutar" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Satistip" Type="nvarchar" MaxLength="2" />
+          <Property Name="Rsat_Odenmez" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rsat_Odano" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rsat_Folio" Type="int" />
+          <Property Name="Rsat_Ba" Type="nvarchar" MaxLength="1" />
+          <Property Name="Rsat_Kapatma" Type="nvarchar" MaxLength="30" />
+          <Property Name="Rsat_Adisyon" Type="nvarchar" MaxLength="150" />
+          <Property Name="Rsat_Aktiffisno" Type="int" />
+          <Property Name="Rsat_Masa" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_Garson" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_Kisi" Type="int" />
+          <Property Name="Rsat_Acilis" Type="time" Precision="7" />
+          <Property Name="Rsat_Kapanis" Type="time" Precision="7" />
+          <Property Name="Rsat_Durum" Type="nvarchar" MaxLength="1" />
+          <Property Name="Rsat_Cari" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_Split" Type="int" />
+          <Property Name="Rsat_Aciklama" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Rsat_SiparisPr" Type="bit" />
+          <Property Name="Rsat_AdisyonPr" Type="bit" />
+          <Property Name="Rsat_Paketci" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_Emiktar" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_AdisPr" Type="bit" />
+          <Property Name="Rsat_Garson2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_AdisPrSayac" Type="int" />
+          <Property Name="Rsat_Uye_Kart_Turu" Type="nvarchar" MaxLength="20" />
+          <Property Name="Rsat_Satir_Iptal" Type="bit" />
+          <Property Name="Rsat_Pansiyon" Type="nvarchar" MaxLength="20" />
+          <Property Name="Rsat_Happy_Hour" Type="bit" />
+          <Property Name="Rsat_MusTipi" Type="nvarchar" MaxLength="1" />
+          <Property Name="Rsat_Uye_Id" Type="int" />
+          <Property Name="Rsat_Uye_Ad" Type="nvarchar" MaxLength="100" />
+          <Property Name="Rsat_Indkodu" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_Indoran" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Onbdep" Type="nvarchar" MaxLength="20" />
+          <Property Name="Rsat_Indsatirid" Type="int" />
+          <Property Name="Rsat_Satissaat" Type="time" Precision="7" />
+          <Property Name="Rsat_Dovizkur" Type="decimal" Precision="18" Scale="4" />
+          <Property Name="Rsat_Satir_Iptalsaat" Type="time" Precision="7" />
+          <Property Name="Rsat_Indsatirid2" Type="int" />
+          <Property Name="Rsat_Not" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Rsat_Kartno" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_Pda" Type="bit" />
+          <Property Name="Rsat_Mars" Type="bit" />
+          <Property Name="Rsat_Yapildi" Type="bit" />
+          <Property Name="Rsat_Splitad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_Hesap_Kilit" Type="bit" />
+          <Property Name="Rsat_Zayi" Type="bit" />
+          <Property Name="Rsat_Ikram" Type="bit" />
+          <Property Name="Rsat_AbuyerPr" Type="bit" />
+          <Property Name="Rsat_Yapma" Type="bit" />
+          <Property Name="Rsat_ZayiNeden" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Rsat_IkramNeden" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Rsat_Sube" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_SubeDurum" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_OzelMasaAdi" Type="nvarchar" MaxLength="150" />
+          <Property Name="Rsat_SistemDate" Type="datetime" />
+          <Property Name="Rsat_Kart_ID" Type="int" />
+          <Property Name="Rsat_AdisyonTR" Type="bit" />
+          <Property Name="Rsat_AbuyerPr2" Type="bit" />
+          <Property Name="Rsat_AbuyerPr3" Type="bit" />
+          <Property Name="Rsat_AbuyerPr4" Type="bit" />
+          <Property Name="Rsat_Ingenico_Status" Type="int" />
+          <Property Name="Rsat_IWERep" Type="bit" />
+          <Property Name="Rsat_SiraAciklama" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_YSDurum" Type="nvarchar" MaxLength="100" />
+          <Property Name="Rsat_YSOrderID" Type="nvarchar" MaxLength="100" />
+          <Property Name="Rsat_UrunTahsilat" Type="int" />
+          <Property Name="Rsat_YerliYabanci" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_PR" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rsat_UrunBazliHspDokum" Type="int" />
+          <Property Name="Rsat_Joker" Type="nvarchar" MaxLength="250" />
+          <Property Name="Rsat_UrunBazliHspAdet" Type="int" />
+          <Property Name="Rsat_RecAP" Type="int" />
+          <Property Name="Rsat_GetirOrderID" Type="nvarchar" MaxLength="250" />
+          <Property Name="Rsat_GetirDurum" Type="int" />
+          <Property Name="Rsat_EntegreId" Type="nvarchar" MaxLength="500" />
+          <Property Name="Rsat_EntegreDurumKod" Type="int" />
+          <Property Name="Rsat_EntegreAd" Type="nvarchar" MaxLength="500" />
+          <Property Name="Rsat_EntegreToplamFiyat" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="entegreAyarlar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="getirDurum" Type="bit" />
+          <Property Name="trendyolDurum" Type="bit" />
+          <Property Name="getirRestaurantSecretKey" Type="nvarchar(max)" />
+          <Property Name="getirAppSecretKey" Type="nvarchar(max)" />
+          <Property Name="trendyolSupplierId" Type="int" />
+          <Property Name="trendyolStoreId" Type="int" />
+          <Property Name="trendyolApiKey" Type="nvarchar(max)" />
+          <Property Name="trendyolApiSecret" Type="nvarchar(max)" />
+          <Property Name="trendyolApiLink" Type="nvarchar(max)" />
+          <Property Name="trendyolApiTest" Type="bit" />
+          <Property Name="timerSn" Type="int" />
+          <Property Name="eslesmeyenUrunId" Type="nvarchar" MaxLength="150" />
+          <Property Name="eslesmeyenUrunAd" Type="nvarchar" MaxLength="150" />
+          <Property Name="eslesmeyenUrunFiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="recDep" Type="nvarchar" MaxLength="150" />
+          <Property Name="timerCount" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="entegreJson">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="json" Type="nvarchar(max)" />
+          <Property Name="tarih" Type="datetime" />
+          <Property Name="tip" Type="int" />
+          <Property Name="jsonTip" Type="nvarchar" MaxLength="500" />
+          <Property Name="recDep" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="entegreMenu">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tip" Type="int" />
+          <Property Name="entegreId" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreAd" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreMenuMasterId" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreAciklama" Type="nvarchar(max)" />
+          <Property Name="urunSabitFiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="recId" Type="nvarchar" MaxLength="150" />
+          <Property Name="recAd" Type="nvarchar" MaxLength="150" />
+          <Property Name="recFiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="aktif" Type="bit" />
+          <Property Name="masterId" Type="int" />
+          <Property Name="recDep" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreJson" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="entegreOdemeTip">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tip" Type="int" />
+          <Property Name="entegreOdemeType" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreOdemeKod" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreOdemeAd" Type="nvarchar" MaxLength="150" />
+          <Property Name="recOdemeKod" Type="nvarchar" MaxLength="150" />
+          <Property Name="recOdemeAd" Type="nvarchar" MaxLength="150" />
+          <Property Name="recDep" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="entegreSiparis">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tip" Type="int" />
+          <Property Name="siparisId" Type="nvarchar" MaxLength="150" />
+          <Property Name="siparisIdDiger" Type="nvarchar" MaxLength="150" />
+          <Property Name="cariId" Type="nvarchar" MaxLength="500" />
+          <Property Name="ad" Type="nvarchar" MaxLength="150" />
+          <Property Name="soyad" Type="nvarchar" MaxLength="150" />
+          <Property Name="siparisTutar" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="kuryeTip" Type="nvarchar" MaxLength="150" />
+          <Property Name="durumKod" Type="int" />
+          <Property Name="entegreDurum" Type="nvarchar" MaxLength="150" />
+          <Property Name="durumText" Type="nvarchar" MaxLength="150" />
+          <Property Name="odemeTip" Type="nvarchar(max)" />
+          <Property Name="adres" Type="nvarchar(max)" />
+          <Property Name="tel" Type="nvarchar" MaxLength="150" />
+          <Property Name="tel1" Type="nvarchar" MaxLength="150" />
+          <Property Name="tel2" Type="nvarchar" MaxLength="150" />
+          <Property Name="kat" Type="nvarchar" MaxLength="150" />
+          <Property Name="daireno" Type="nvarchar" MaxLength="150" />
+          <Property Name="apartmanno" Type="nvarchar" MaxLength="150" />
+          <Property Name="mahalle" Type="nvarchar" MaxLength="150" />
+          <Property Name="il" Type="nvarchar" MaxLength="150" />
+          <Property Name="ilce" Type="nvarchar" MaxLength="150" />
+          <Property Name="mail" Type="nvarchar" MaxLength="150" />
+          <Property Name="tarih" Type="datetime" />
+          <Property Name="guncellemeTarih" Type="datetime" />
+          <Property Name="siparisNot" Type="nvarchar(max)" />
+          <Property Name="fisno" Type="int" />
+          <Property Name="recDep" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="entegreSiparisUrunler">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tip" Type="int" />
+          <Property Name="siparisId" Type="nvarchar" MaxLength="150" />
+          <Property Name="siparisIdDiger" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreMenuId" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreMenuAd" Type="nvarchar" MaxLength="150" />
+          <Property Name="entegreMenuMasterId" Type="nvarchar(max)" />
+          <Property Name="recId" Type="nvarchar" MaxLength="150" />
+          <Property Name="recAd" Type="nvarchar" MaxLength="150" />
+          <Property Name="recFiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="recDep" Type="nvarchar" MaxLength="150" />
+          <Property Name="fiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ismenu" Type="bit" />
+          <Property Name="urunSabitFiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="adet" Type="int" />
+          <Property Name="packageItemId" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Pos_Cari">
+          <Key>
+            <PropertyRef Name="Cari_Id" />
+          </Key>
+          <Property Name="Cari_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cari_Kod" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cari_Ad" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cari_Soyad" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cari_Tel" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cari_Adres1" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_Adres2" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_Adres3" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_Funvan" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cari_Fadres1" Type="nvarchar" MaxLength="2500" />
+          <Property Name="Cari_Fadres2" Type="nvarchar" MaxLength="2500" />
+          <Property Name="Cari_Vergidarie" Type="nvarchar" MaxLength="2500" />
+          <Property Name="Cari_Vergino" Type="nvarchar" MaxLength="2500" />
+          <Property Name="Cari_Mail" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cari_Kart" Type="nvarchar" MaxLength="2500" />
+          <Property Name="Cari_Tel2" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cari_Email" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cari_Tip" Type="nvarchar" MaxLength="2" />
+          <Property Name="Cari_Limit" Type="bit" />
+          <Property Name="Cari_LimitTutar" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Cari_Il" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_Ilce" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_Mahalle" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_MuhasebeKodu" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_Aktif" Type="bit" />
+          <Property Name="Cari_YS_AddressId" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_YS_CustomerID" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_Funvan2" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_DogumTar" Type="date" />
+          <Property Name="Cari_Getir_ID" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_Getir_AddressId" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Cari_TrendyolId" Type="int" />
+        </EntityType>
+        <EntityType Name="Stok_Kodlar">
+          <Key>
+            <PropertyRef Name="Kodlar_Id" />
+          </Key>
+          <Property Name="Kodlar_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kodlar_Kod" Type="nvarchar" MaxLength="10" />
+          <Property Name="Kodlar_Ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_Sinif" Type="nvarchar" MaxLength="5" />
+          <Property Name="Kodlar_Anagrup" Type="nvarchar" MaxLength="10" />
+          <Property Name="Kodlar_Aragrup" Type="nvarchar" MaxLength="10" />
+          <Property Name="Kodlar_Muhkodu" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_Icki" Type="bit" />
+          <Property Name="Kodlar_Icki2" Type="bit" />
+          <Property Name="Kodlar_Tevkifat" Type="bit" />
+          <Property Name="Kodlar_Tevkifatoran" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Tevkifattutar" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Carpan" Type="decimal" Precision="18" Scale="3" />
+          <Property Name="Kodlar_Anadepo" Type="bit" />
+          <Property Name="Kodlar_YID" Type="nvarchar" MaxLength="2" />
+          <Property Name="Kodlar_Sirket" Type="nvarchar" MaxLength="10" />
+          <Property Name="Kodlar_Butcekodu" Type="nvarchar" MaxLength="10" />
+          <Property Name="Kodlar_Masraf" Type="nvarchar" MaxLength="10" />
+          <Property Name="Kodlar_Satis" Type="bit" />
+          <Property Name="Kodlar_Sorgu" Type="int" />
+          <Property Name="Kodlar_Satishesap" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_Pesin" Type="int" />
+          <Property Name="Kodlar_Hasar" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_Siparis" Type="bit" />
+          <Property Name="Kodlar_Adisyon" Type="bit" />
+          <Property Name="Kodlar_Fatura" Type="bit" />
+          <Property Name="Kodlar_Kdv" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Kisi" Type="bit" />
+          <Property Name="Kodlar_Garson" Type="bit" />
+          <Property Name="Kodlar_IlkSiparis" Type="bit" />
+          <Property Name="Kodlar_Aktif_Kur" Type="bit" />
+          <Property Name="Kodlar_Anadepkodu" Type="nvarchar" MaxLength="10" />
+          <Property Name="Kodlar_Sube" Type="nvarchar" MaxLength="20" />
+          <Property Name="Kodlar_Altgrup" Type="nvarchar" MaxLength="10" />
+          <Property Name="Kodlar_Pda_Satis" Type="bit" />
+          <Property Name="Kodlar_Hesap_Adisyon" Type="bit" />
+          <Property Name="Kodlar_Minibar" Type="bit" />
+          <Property Name="Kodlar_Onb_Atmasin" Type="bit" />
+          <Property Name="Kodlar_Kuver_Sat" Type="bit" />
+          <Property Name="Kodlar_Kuver_Recete" Type="nvarchar" MaxLength="30" />
+          <Property Name="Kodlar_ServisPayi" Type="bit" />
+          <Property Name="Kodlar_Servis_Recete" Type="nvarchar" MaxLength="30" />
+          <Property Name="Kodlar_Servis_Yuzde" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Kdv_Aktif" Type="bit" />
+          <Property Name="Kodlar_Sira" Type="int" />
+          <Property Name="Kodlar_Android" Type="bit" />
+          <Property Name="Kodlar_Size" Type="nvarchar" MaxLength="20" />
+          <Property Name="Kodlar_Font" Type="nvarchar" MaxLength="100" />
+          <Property Name="Kodlar_Backcolor" Type="nvarchar" MaxLength="20" />
+          <Property Name="Kodlar_Mars" Type="bit" />
+          <Property Name="Kodlar_Kisisorma_Pda" Type="bit" />
+          <Property Name="Kodlar_Pr_Posta" Type="bit" />
+          <Property Name="Kodlar_YazSipNedSor" Type="bit" />
+          <Property Name="Kodlar_OnbNakit_Atmasin" Type="bit" />
+          <Property Name="Kodlar_OnbKK_Atmasin" Type="bit" />
+          <Property Name="Kodlar_PosSubeKod" Type="nvarchar" MaxLength="20" />
+          <Property Name="Kodlar_RecBarSis" Type="bit" />
+          <Property Name="Kodlar_GunCstEtkilenmesin" Type="bit" />
+          <Property Name="Kodlar_AndPos_NFC" Type="bit" />
+          <Property Name="Kodlar_PaketFiyat" Type="bit" />
+          <Property Name="Kodlar_NFCKapatma" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_YS_User" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_YS_Pass" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_YS_Aktif" Type="bit" />
+          <Property Name="Kodlar_MenuAktif" Type="bit" />
+          <Property Name="Kodlar_Menu_BasSaat" Type="time" Precision="7" />
+          <Property Name="Kodlar_Menu_BitSaat" Type="time" Precision="7" />
+          <Property Name="Kodlar_YKasaid" Type="int" />
+          <Property Name="Kodlar_Ingenico" Type="bit" />
+          <Property Name="Kodlar_IngenicoKDV" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_IngenicoKDVOran" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_IngenicoCon" Type="int" />
+          <Property Name="Kodlar_Ingenico_IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_Ingenico_Port" Type="int" />
+          <Property Name="Kodlar_Ingenico_IWE" Type="bit" />
+          <Property Name="Kodlar_Satishesap8" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_Satishesap18" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kodlar_GGAktif" Type="bit" />
+          <Property Name="Kodlar_GGFiyat" Type="bit" />
+          <Property Name="Kodlar_YerliYabanci" Type="bit" />
+          <Property Name="Kodlar_PrinterApi" Type="bit" />
+          <Property Name="Kodlar_PRSor" Type="bit" />
+          <Property Name="Kodlar_UrunPrint" Type="bit" />
+          <Property Name="Kodlar_Andro_Signature" Type="bit" />
+          <Property Name="Kodlar_YSMac" Type="nvarchar" MaxLength="150" />
+          <Property Name="Kodlar_SmsAktif" Type="bit" />
+          <Property Name="Kodlar_SmsBaslik" Type="nvarchar" MaxLength="200" />
+          <Property Name="Kodlar_SmsKadi" Type="nvarchar" MaxLength="200" />
+          <Property Name="Kodlar_SmsSifre" Type="nvarchar" MaxLength="200" />
+          <Property Name="Kodlar_Getir_appSecretKey" Type="nvarchar" MaxLength="250" />
+          <Property Name="Kodlar_Getir_restaurantSecretKey" Type="nvarchar" MaxLength="250" />
+          <Property Name="Kodlar_Getir_AP" Type="bit" />
+          <Property Name="Kodlar_IWE_hspDokum" Type="bit" />
+          <Property Name="Kodlar_KategoriFiyatTur" Type="int" />
+          <Property Name="Kodlar_Satishesap0" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="RmosMerkez21ModelStoreContainer">
+          <EntitySet Name="Cst_Recete" EntityType="Self.Cst_Recete" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cst_Recete_Satis" EntityType="Self.Cst_Recete_Satis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="entegreAyarlar" EntityType="Self.entegreAyarlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="entegreJson" EntityType="Self.entegreJson" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="entegreMenu" EntityType="Self.entegreMenu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="entegreOdemeTip" EntityType="Self.entegreOdemeTip" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="entegreSiparis" EntityType="Self.entegreSiparis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="entegreSiparisUrunler" EntityType="Self.entegreSiparisUrunler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pos_Cari" EntityType="Self.Pos_Cari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Stok_Kodlar" EntityType="Self.Stok_Kodlar" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RmosMerkez21Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Stok_Kodlar">
+          <Key>
+            <PropertyRef Name="Kodlar_Id" />
+          </Key>
+          <Property Name="Kodlar_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kodlar_Kod" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Sinif" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Anagrup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Aragrup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Muhkodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Icki" Type="Boolean" />
+          <Property Name="Kodlar_Icki2" Type="Boolean" />
+          <Property Name="Kodlar_Tevkifat" Type="Boolean" />
+          <Property Name="Kodlar_Tevkifatoran" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Tevkifattutar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Carpan" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="Kodlar_Anadepo" Type="Boolean" />
+          <Property Name="Kodlar_YID" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Sirket" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Butcekodu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Masraf" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Satis" Type="Boolean" />
+          <Property Name="Kodlar_Sorgu" Type="Int32" />
+          <Property Name="Kodlar_Satishesap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Pesin" Type="Int32" />
+          <Property Name="Kodlar_Hasar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Siparis" Type="Boolean" />
+          <Property Name="Kodlar_Adisyon" Type="Boolean" />
+          <Property Name="Kodlar_Fatura" Type="Boolean" />
+          <Property Name="Kodlar_Kdv" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Kisi" Type="Boolean" />
+          <Property Name="Kodlar_Garson" Type="Boolean" />
+          <Property Name="Kodlar_IlkSiparis" Type="Boolean" />
+          <Property Name="Kodlar_Aktif_Kur" Type="Boolean" />
+          <Property Name="Kodlar_Anadepkodu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Sube" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Altgrup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Pda_Satis" Type="Boolean" />
+          <Property Name="Kodlar_Hesap_Adisyon" Type="Boolean" />
+          <Property Name="Kodlar_Minibar" Type="Boolean" />
+          <Property Name="Kodlar_Onb_Atmasin" Type="Boolean" />
+          <Property Name="Kodlar_Kuver_Sat" Type="Boolean" />
+          <Property Name="Kodlar_Kuver_Recete" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_ServisPayi" Type="Boolean" />
+          <Property Name="Kodlar_Servis_Recete" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Servis_Yuzde" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Kdv_Aktif" Type="Boolean" />
+          <Property Name="Kodlar_Sira" Type="Int32" />
+          <Property Name="Kodlar_Android" Type="Boolean" />
+          <Property Name="Kodlar_Size" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Font" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Backcolor" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Mars" Type="Boolean" />
+          <Property Name="Kodlar_Kisisorma_Pda" Type="Boolean" />
+          <Property Name="Kodlar_Pr_Posta" Type="Boolean" />
+          <Property Name="Kodlar_YazSipNedSor" Type="Boolean" />
+          <Property Name="Kodlar_OnbNakit_Atmasin" Type="Boolean" />
+          <Property Name="Kodlar_OnbKK_Atmasin" Type="Boolean" />
+          <Property Name="Kodlar_PosSubeKod" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_RecBarSis" Type="Boolean" />
+          <Property Name="Kodlar_GunCstEtkilenmesin" Type="Boolean" />
+          <Property Name="Kodlar_AndPos_NFC" Type="Boolean" />
+          <Property Name="Kodlar_PaketFiyat" Type="Boolean" />
+          <Property Name="Kodlar_NFCKapatma" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_YS_User" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_YS_Pass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_YS_Aktif" Type="Boolean" />
+          <Property Name="Kodlar_MenuAktif" Type="Boolean" />
+          <Property Name="Kodlar_Menu_BasSaat" Type="Time" Precision="7" />
+          <Property Name="Kodlar_Menu_BitSaat" Type="Time" Precision="7" />
+          <Property Name="Kodlar_YKasaid" Type="Int32" />
+          <Property Name="Kodlar_Ingenico" Type="Boolean" />
+          <Property Name="Kodlar_IngenicoKDV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_IngenicoCon" Type="Int32" />
+          <Property Name="Kodlar_Ingenico_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Ingenico_Port" Type="Int32" />
+          <Property Name="Kodlar_Ingenico_IWE" Type="Boolean" />
+          <Property Name="Kodlar_Satishesap8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Satishesap18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_GGAktif" Type="Boolean" />
+          <Property Name="Kodlar_GGFiyat" Type="Boolean" />
+          <Property Name="Kodlar_YerliYabanci" Type="Boolean" />
+          <Property Name="Kodlar_PrinterApi" Type="Boolean" />
+          <Property Name="Kodlar_PRSor" Type="Boolean" />
+          <Property Name="Kodlar_UrunPrint" Type="Boolean" />
+          <Property Name="Kodlar_Andro_Signature" Type="Boolean" />
+          <Property Name="Kodlar_YSMac" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_SmsAktif" Type="Boolean" />
+          <Property Name="Kodlar_SmsBaslik" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_SmsKadi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_SmsSifre" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Getir_appSecretKey" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_Getir_restaurantSecretKey" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Kodlar_IngenicoKDVOran" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Kodlar_Getir_AP" Type="Boolean" />
+          <Property Name="Kodlar_IWE_hspDokum" Type="Boolean" />
+          <Property Name="Kodlar_KategoriFiyatTur" Type="Int32" />
+          <Property Name="Kodlar_Satishesap0" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="RmosMerkez21Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Stok_Kodlar" EntityType="Self.Stok_Kodlar" />
+          <EntitySet Name="Cst_Recete" EntityType="RmosMerkez21Model.Cst_Recete" />
+          <EntitySet Name="Cst_Recete_Satis" EntityType="RmosMerkez21Model.Cst_Recete_Satis" />
+          <EntitySet Name="Pos_Cari" EntityType="RmosMerkez21Model.Pos_Cari" />
+          <EntitySet Name="entegreAyarlar" EntityType="RmosMerkez21Model.entegreAyarlar" />
+          <EntitySet Name="entegreJson" EntityType="RmosMerkez21Model.entegreJson" />
+          <EntitySet Name="entegreOdemeTip" EntityType="RmosMerkez21Model.entegreOdemeTip" />
+          <EntitySet Name="entegreSiparis" EntityType="RmosMerkez21Model.entegreSiparis" />
+          <EntitySet Name="entegreSiparisUrunler" EntityType="RmosMerkez21Model.entegreSiparisUrunler" />
+          <EntitySet Name="entegreMenu" EntityType="RmosMerkez21Model.entegreMenu" />
+        </EntityContainer>
+        <EntityType Name="Cst_Recete">
+          <Key>
+            <PropertyRef Name="Rec_Id" />
+          </Key>
+          <Property Name="Rec_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Rec_Departman" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Grup" Type="Int32" />
+          <Property Name="Rec_Anagrup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Altgrup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Kodu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Genelkod" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Kisi" Type="Int32" />
+          <Property Name="Rec_Fiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Kdv" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Net" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Dovizkodu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Dovifiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Urungrup" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_All" Type="Boolean" />
+          <Property Name="Rec_Ultra" Type="Boolean" />
+          <Property Name="Rec_HappyHour" Type="Boolean" />
+          <Property Name="Rec_Pasif" Type="Boolean" />
+          <Property Name="Rec_FB" Type="Boolean" />
+          <Property Name="Rec_HB" Type="Boolean" />
+          <Property Name="Rec_Pdapasif" Type="Boolean" />
+          <Property Name="Rec_Minibar" Type="Boolean" />
+          <Property Name="Rec_SiparisCikmasin" Type="Boolean" />
+          <Property Name="Rec_Miktar_Sor" Type="Boolean" />
+          <Property Name="Rec_Miktar_Gr" Type="Boolean" />
+          <Property Name="Rec_Tutar_Sor" Type="Boolean" />
+          <Property Name="Rec_Ust_Recete" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Yarim" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Birbucuk" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Duble" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Aksam_Yarim" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Aksam_Birbucuk" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Aksam_Duble" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Paket_Yarim" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Paket_Birbucuk" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Paket_Duble" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Santral_Minibar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Sira" Type="Int32" />
+          <Property Name="Rec_Barkod" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Terazi" Type="Boolean" />
+          <Property Name="Rec_SpUygulanmasin" Type="Boolean" />
+          <Property Name="Rec_HappyHourFiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Aksam_Tam" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_Paket_Tam" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_DetayGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Rec_Ad_Eng" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Ad_Deu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Ad_Rus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Ad_Dig" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_YkasaBirim" Type="Int32" />
+          <Property Name="Rec_UretimMiktar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_UretimBirim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_YS_UrunID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Update" Type="Boolean" />
+          <Property Name="Rec_Color" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_Printer" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_AbuyerPR" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_AciklamaAP" Type="Boolean" />
+          <Property Name="Rec_AciklamaGrup" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_GetirMenuID" Type="String" MaxLength="2500" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_OptionID" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Rec_KategoriFiyat1" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_KategoriFiyat2" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_KategoriFiyat3" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_KategoriFiyat4" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rec_KategoriFiyat5" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Cst_Recete_Satis">
+          <Key>
+            <PropertyRef Name="Rsat_Id" />
+          </Key>
+          <Property Name="Rsat_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Rsat_Fisno" Type="Int32" />
+          <Property Name="Rsat_Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Rsat_Departman" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Recete" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Kdvoran" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Miktar" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="Rsat_Fiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Ind" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Net" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Kdv" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Tutar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Maliyet" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="Rsat_Dovizkodu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Doviztutar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Satistip" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Odenmez" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Odano" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Folio" Type="Int32" />
+          <Property Name="Rsat_Ba" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Kapatma" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Adisyon" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Aktiffisno" Type="Int32" />
+          <Property Name="Rsat_Masa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Garson" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Kisi" Type="Int32" />
+          <Property Name="Rsat_Acilis" Type="Time" Precision="7" />
+          <Property Name="Rsat_Kapanis" Type="Time" Precision="7" />
+          <Property Name="Rsat_Durum" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Cari" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Split" Type="Int32" />
+          <Property Name="Rsat_Aciklama" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_SiparisPr" Type="Boolean" />
+          <Property Name="Rsat_AdisyonPr" Type="Boolean" />
+          <Property Name="Rsat_Paketci" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Emiktar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_AdisPr" Type="Boolean" />
+          <Property Name="Rsat_Garson2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_AdisPrSayac" Type="Int32" />
+          <Property Name="Rsat_Uye_Kart_Turu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Satir_Iptal" Type="Boolean" />
+          <Property Name="Rsat_Pansiyon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Happy_Hour" Type="Boolean" />
+          <Property Name="Rsat_MusTipi" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Uye_Id" Type="Int32" />
+          <Property Name="Rsat_Uye_Ad" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Indkodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Indoran" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rsat_Onbdep" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Indsatirid" Type="Int32" />
+          <Property Name="Rsat_Satissaat" Type="Time" Precision="7" />
+          <Property Name="Rsat_Dovizkur" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="Rsat_Satir_Iptalsaat" Type="Time" Precision="7" />
+          <Property Name="Rsat_Indsatirid2" Type="Int32" />
+          <Property Name="Rsat_Not" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Kartno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Pda" Type="Boolean" />
+          <Property Name="Rsat_Mars" Type="Boolean" />
+          <Property Name="Rsat_Yapildi" Type="Boolean" />
+          <Property Name="Rsat_Splitad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Hesap_Kilit" Type="Boolean" />
+          <Property Name="Rsat_Zayi" Type="Boolean" />
+          <Property Name="Rsat_Ikram" Type="Boolean" />
+          <Property Name="Rsat_AbuyerPr" Type="Boolean" />
+          <Property Name="Rsat_Yapma" Type="Boolean" />
+          <Property Name="Rsat_ZayiNeden" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_IkramNeden" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_Sube" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_SubeDurum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_OzelMasaAdi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_SistemDate" Type="DateTime" Precision="3" />
+          <Property Name="Rsat_Kart_ID" Type="Int32" />
+          <Property Name="Rsat_AdisyonTR" Type="Boolean" />
+          <Property Name="Rsat_AbuyerPr2" Type="Boolean" />
+          <Property Name="Rsat_AbuyerPr3" Type="Boolean" />
+          <Property Name="Rsat_AbuyerPr4" Type="Boolean" />
+          <Property Name="Rsat_Ingenico_Status" Type="Int32" />
+          <Property Name="Rsat_IWERep" Type="Boolean" />
+          <Property Name="Rsat_SiraAciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_YSDurum" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_YSOrderID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_UrunTahsilat" Type="Int32" />
+          <Property Name="Rsat_YerliYabanci" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_PR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_UrunBazliHspDokum" Type="Int32" />
+          <Property Name="Rsat_Joker" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_UrunBazliHspAdet" Type="Int32" />
+          <Property Name="Rsat_RecAP" Type="Int32" />
+          <Property Name="Rsat_GetirOrderID" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_GetirDurum" Type="Int32" />
+          <Property Name="Rsat_EntegreId" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_EntegreDurumKod" Type="Int32" />
+          <Property Name="Rsat_EntegreAd" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Rsat_EntegreToplamFiyat" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Pos_Cari">
+          <Key>
+            <PropertyRef Name="Cari_Id" />
+          </Key>
+          <Property Name="Cari_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cari_Kod" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Ad" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Soyad" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Tel" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Adres1" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Adres2" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Adres3" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Funvan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Fadres1" Type="String" MaxLength="2500" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Fadres2" Type="String" MaxLength="2500" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Vergidarie" Type="String" MaxLength="2500" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Vergino" Type="String" MaxLength="2500" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Mail" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Kart" Type="String" MaxLength="2500" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Tel2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Tip" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Limit" Type="Boolean" />
+          <Property Name="Cari_LimitTutar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Cari_Il" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Ilce" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Mahalle" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_MuhasebeKodu" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Aktif" Type="Boolean" />
+          <Property Name="Cari_YS_AddressId" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_YS_CustomerID" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Funvan2" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_DogumTar" Type="DateTime" Precision="0" />
+          <Property Name="Cari_Getir_ID" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_Getir_AddressId" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Cari_TrendyolId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="entegreAyarlar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="getirDurum" Type="Boolean" />
+          <Property Name="trendyolDurum" Type="Boolean" />
+          <Property Name="getirRestaurantSecretKey" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="getirAppSecretKey" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="trendyolSupplierId" Type="Int32" />
+          <Property Name="trendyolStoreId" Type="Int32" />
+          <Property Name="trendyolApiKey" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="trendyolApiSecret" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="trendyolApiLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="trendyolApiTest" Type="Boolean" />
+          <Property Name="timerSn" Type="Int32" />
+          <Property Name="eslesmeyenUrunId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="eslesmeyenUrunAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="eslesmeyenUrunFiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="recDep" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="timerCount" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="entegreJson">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="json" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="tarih" Type="DateTime" Precision="3" />
+          <Property Name="tip" Type="Int32" />
+          <Property Name="jsonTip" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="recDep" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="entegreOdemeTip">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tip" Type="Int32" />
+          <Property Name="entegreOdemeType" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreOdemeKod" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreOdemeAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="recOdemeKod" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="recOdemeAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="recDep" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="entegreSiparis">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tip" Type="Int32" />
+          <Property Name="siparisId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="siparisIdDiger" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="cariId" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ad" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="soyad" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="siparisTutar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="kuryeTip" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="durumKod" Type="Int32" />
+          <Property Name="entegreDurum" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="durumText" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="odemeTip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="tel" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="tel1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="tel2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="kat" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="daireno" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="apartmanno" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="mahalle" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="il" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ilce" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="mail" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="tarih" Type="DateTime" Precision="3" />
+          <Property Name="guncellemeTarih" Type="DateTime" Precision="3" />
+          <Property Name="siparisNot" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="fisno" Type="Int32" />
+          <Property Name="recDep" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="entegreSiparisUrunler">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tip" Type="Int32" />
+          <Property Name="siparisId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="siparisIdDiger" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreMenuId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreMenuAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreMenuMasterId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="recId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="recAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="recFiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="recDep" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="fiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ismenu" Type="Boolean" />
+          <Property Name="urunSabitFiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="adet" Type="Int32" />
+          <Property Name="packageItemId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="entegreMenu">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tip" Type="Int32" />
+          <Property Name="entegreId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreMenuMasterId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="urunSabitFiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="recId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="recAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="recFiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="aktif" Type="Boolean" />
+          <Property Name="masterId" Type="Int32" />
+          <Property Name="recDep" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="entegreJson" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RmosMerkez21ModelStoreContainer" CdmEntityContainer="RmosMerkez21Entities">
+          <EntitySetMapping Name="Stok_Kodlar">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.Stok_Kodlar">
+              <MappingFragment StoreEntitySet="Stok_Kodlar">
+                <ScalarProperty Name="Kodlar_Satishesap0" ColumnName="Kodlar_Satishesap0" />
+                <ScalarProperty Name="Kodlar_Id" ColumnName="Kodlar_Id" />
+                <ScalarProperty Name="Kodlar_Kod" ColumnName="Kodlar_Kod" />
+                <ScalarProperty Name="Kodlar_Ad" ColumnName="Kodlar_Ad" />
+                <ScalarProperty Name="Kodlar_Sinif" ColumnName="Kodlar_Sinif" />
+                <ScalarProperty Name="Kodlar_Anagrup" ColumnName="Kodlar_Anagrup" />
+                <ScalarProperty Name="Kodlar_Aragrup" ColumnName="Kodlar_Aragrup" />
+                <ScalarProperty Name="Kodlar_Muhkodu" ColumnName="Kodlar_Muhkodu" />
+                <ScalarProperty Name="Kodlar_Icki" ColumnName="Kodlar_Icki" />
+                <ScalarProperty Name="Kodlar_Icki2" ColumnName="Kodlar_Icki2" />
+                <ScalarProperty Name="Kodlar_Tevkifat" ColumnName="Kodlar_Tevkifat" />
+                <ScalarProperty Name="Kodlar_Tevkifatoran" ColumnName="Kodlar_Tevkifatoran" />
+                <ScalarProperty Name="Kodlar_Tevkifattutar" ColumnName="Kodlar_Tevkifattutar" />
+                <ScalarProperty Name="Kodlar_Carpan" ColumnName="Kodlar_Carpan" />
+                <ScalarProperty Name="Kodlar_Anadepo" ColumnName="Kodlar_Anadepo" />
+                <ScalarProperty Name="Kodlar_YID" ColumnName="Kodlar_YID" />
+                <ScalarProperty Name="Kodlar_Sirket" ColumnName="Kodlar_Sirket" />
+                <ScalarProperty Name="Kodlar_Butcekodu" ColumnName="Kodlar_Butcekodu" />
+                <ScalarProperty Name="Kodlar_Masraf" ColumnName="Kodlar_Masraf" />
+                <ScalarProperty Name="Kodlar_Satis" ColumnName="Kodlar_Satis" />
+                <ScalarProperty Name="Kodlar_Sorgu" ColumnName="Kodlar_Sorgu" />
+                <ScalarProperty Name="Kodlar_Satishesap" ColumnName="Kodlar_Satishesap" />
+                <ScalarProperty Name="Kodlar_Pesin" ColumnName="Kodlar_Pesin" />
+                <ScalarProperty Name="Kodlar_Hasar" ColumnName="Kodlar_Hasar" />
+                <ScalarProperty Name="Kodlar_Siparis" ColumnName="Kodlar_Siparis" />
+                <ScalarProperty Name="Kodlar_Adisyon" ColumnName="Kodlar_Adisyon" />
+                <ScalarProperty Name="Kodlar_Fatura" ColumnName="Kodlar_Fatura" />
+                <ScalarProperty Name="Kodlar_Kdv" ColumnName="Kodlar_Kdv" />
+                <ScalarProperty Name="Kodlar_Kisi" ColumnName="Kodlar_Kisi" />
+                <ScalarProperty Name="Kodlar_Garson" ColumnName="Kodlar_Garson" />
+                <ScalarProperty Name="Kodlar_IlkSiparis" ColumnName="Kodlar_IlkSiparis" />
+                <ScalarProperty Name="Kodlar_Aktif_Kur" ColumnName="Kodlar_Aktif_Kur" />
+                <ScalarProperty Name="Kodlar_Anadepkodu" ColumnName="Kodlar_Anadepkodu" />
+                <ScalarProperty Name="Kodlar_Sube" ColumnName="Kodlar_Sube" />
+                <ScalarProperty Name="Kodlar_Altgrup" ColumnName="Kodlar_Altgrup" />
+                <ScalarProperty Name="Kodlar_Pda_Satis" ColumnName="Kodlar_Pda_Satis" />
+                <ScalarProperty Name="Kodlar_Hesap_Adisyon" ColumnName="Kodlar_Hesap_Adisyon" />
+                <ScalarProperty Name="Kodlar_Minibar" ColumnName="Kodlar_Minibar" />
+                <ScalarProperty Name="Kodlar_Onb_Atmasin" ColumnName="Kodlar_Onb_Atmasin" />
+                <ScalarProperty Name="Kodlar_Kuver_Sat" ColumnName="Kodlar_Kuver_Sat" />
+                <ScalarProperty Name="Kodlar_Kuver_Recete" ColumnName="Kodlar_Kuver_Recete" />
+                <ScalarProperty Name="Kodlar_ServisPayi" ColumnName="Kodlar_ServisPayi" />
+                <ScalarProperty Name="Kodlar_Servis_Recete" ColumnName="Kodlar_Servis_Recete" />
+                <ScalarProperty Name="Kodlar_Servis_Yuzde" ColumnName="Kodlar_Servis_Yuzde" />
+                <ScalarProperty Name="Kodlar_Kdv_Aktif" ColumnName="Kodlar_Kdv_Aktif" />
+                <ScalarProperty Name="Kodlar_Sira" ColumnName="Kodlar_Sira" />
+                <ScalarProperty Name="Kodlar_Android" ColumnName="Kodlar_Android" />
+                <ScalarProperty Name="Kodlar_Size" ColumnName="Kodlar_Size" />
+                <ScalarProperty Name="Kodlar_Font" ColumnName="Kodlar_Font" />
+                <ScalarProperty Name="Kodlar_Backcolor" ColumnName="Kodlar_Backcolor" />
+                <ScalarProperty Name="Kodlar_Mars" ColumnName="Kodlar_Mars" />
+                <ScalarProperty Name="Kodlar_Kisisorma_Pda" ColumnName="Kodlar_Kisisorma_Pda" />
+                <ScalarProperty Name="Kodlar_Pr_Posta" ColumnName="Kodlar_Pr_Posta" />
+                <ScalarProperty Name="Kodlar_YazSipNedSor" ColumnName="Kodlar_YazSipNedSor" />
+                <ScalarProperty Name="Kodlar_OnbNakit_Atmasin" ColumnName="Kodlar_OnbNakit_Atmasin" />
+                <ScalarProperty Name="Kodlar_OnbKK_Atmasin" ColumnName="Kodlar_OnbKK_Atmasin" />
+                <ScalarProperty Name="Kodlar_PosSubeKod" ColumnName="Kodlar_PosSubeKod" />
+                <ScalarProperty Name="Kodlar_RecBarSis" ColumnName="Kodlar_RecBarSis" />
+                <ScalarProperty Name="Kodlar_GunCstEtkilenmesin" ColumnName="Kodlar_GunCstEtkilenmesin" />
+                <ScalarProperty Name="Kodlar_AndPos_NFC" ColumnName="Kodlar_AndPos_NFC" />
+                <ScalarProperty Name="Kodlar_PaketFiyat" ColumnName="Kodlar_PaketFiyat" />
+                <ScalarProperty Name="Kodlar_NFCKapatma" ColumnName="Kodlar_NFCKapatma" />
+                <ScalarProperty Name="Kodlar_YS_User" ColumnName="Kodlar_YS_User" />
+                <ScalarProperty Name="Kodlar_YS_Pass" ColumnName="Kodlar_YS_Pass" />
+                <ScalarProperty Name="Kodlar_YS_Aktif" ColumnName="Kodlar_YS_Aktif" />
+                <ScalarProperty Name="Kodlar_MenuAktif" ColumnName="Kodlar_MenuAktif" />
+                <ScalarProperty Name="Kodlar_Menu_BasSaat" ColumnName="Kodlar_Menu_BasSaat" />
+                <ScalarProperty Name="Kodlar_Menu_BitSaat" ColumnName="Kodlar_Menu_BitSaat" />
+                <ScalarProperty Name="Kodlar_YKasaid" ColumnName="Kodlar_YKasaid" />
+                <ScalarProperty Name="Kodlar_Ingenico" ColumnName="Kodlar_Ingenico" />
+                <ScalarProperty Name="Kodlar_IngenicoKDV" ColumnName="Kodlar_IngenicoKDV" />
+                <ScalarProperty Name="Kodlar_IngenicoCon" ColumnName="Kodlar_IngenicoCon" />
+                <ScalarProperty Name="Kodlar_Ingenico_IP" ColumnName="Kodlar_Ingenico_IP" />
+                <ScalarProperty Name="Kodlar_Ingenico_Port" ColumnName="Kodlar_Ingenico_Port" />
+                <ScalarProperty Name="Kodlar_Ingenico_IWE" ColumnName="Kodlar_Ingenico_IWE" />
+                <ScalarProperty Name="Kodlar_Satishesap8" ColumnName="Kodlar_Satishesap8" />
+                <ScalarProperty Name="Kodlar_Satishesap18" ColumnName="Kodlar_Satishesap18" />
+                <ScalarProperty Name="Kodlar_GGAktif" ColumnName="Kodlar_GGAktif" />
+                <ScalarProperty Name="Kodlar_GGFiyat" ColumnName="Kodlar_GGFiyat" />
+                <ScalarProperty Name="Kodlar_YerliYabanci" ColumnName="Kodlar_YerliYabanci" />
+                <ScalarProperty Name="Kodlar_PrinterApi" ColumnName="Kodlar_PrinterApi" />
+                <ScalarProperty Name="Kodlar_PRSor" ColumnName="Kodlar_PRSor" />
+                <ScalarProperty Name="Kodlar_UrunPrint" ColumnName="Kodlar_UrunPrint" />
+                <ScalarProperty Name="Kodlar_Andro_Signature" ColumnName="Kodlar_Andro_Signature" />
+                <ScalarProperty Name="Kodlar_YSMac" ColumnName="Kodlar_YSMac" />
+                <ScalarProperty Name="Kodlar_SmsAktif" ColumnName="Kodlar_SmsAktif" />
+                <ScalarProperty Name="Kodlar_SmsBaslik" ColumnName="Kodlar_SmsBaslik" />
+                <ScalarProperty Name="Kodlar_SmsKadi" ColumnName="Kodlar_SmsKadi" />
+                <ScalarProperty Name="Kodlar_SmsSifre" ColumnName="Kodlar_SmsSifre" />
+                <ScalarProperty Name="Kodlar_Getir_appSecretKey" ColumnName="Kodlar_Getir_appSecretKey" />
+                <ScalarProperty Name="Kodlar_Getir_restaurantSecretKey" ColumnName="Kodlar_Getir_restaurantSecretKey" />
+                <ScalarProperty Name="Kodlar_IngenicoKDVOran" ColumnName="Kodlar_IngenicoKDVOran" />
+                <ScalarProperty Name="Kodlar_Getir_AP" ColumnName="Kodlar_Getir_AP" />
+                <ScalarProperty Name="Kodlar_IWE_hspDokum" ColumnName="Kodlar_IWE_hspDokum" />
+                <ScalarProperty Name="Kodlar_KategoriFiyatTur" ColumnName="Kodlar_KategoriFiyatTur" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cst_Recete">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.Cst_Recete">
+              <MappingFragment StoreEntitySet="Cst_Recete">
+                <ScalarProperty Name="Rec_KategoriFiyat5" ColumnName="Rec_KategoriFiyat5" />
+                <ScalarProperty Name="Rec_KategoriFiyat4" ColumnName="Rec_KategoriFiyat4" />
+                <ScalarProperty Name="Rec_KategoriFiyat3" ColumnName="Rec_KategoriFiyat3" />
+                <ScalarProperty Name="Rec_KategoriFiyat2" ColumnName="Rec_KategoriFiyat2" />
+                <ScalarProperty Name="Rec_KategoriFiyat1" ColumnName="Rec_KategoriFiyat1" />
+                <ScalarProperty Name="Rec_OptionID" ColumnName="Rec_OptionID" />
+                <ScalarProperty Name="Rec_GetirMenuID" ColumnName="Rec_GetirMenuID" />
+                <ScalarProperty Name="Rec_AciklamaGrup" ColumnName="Rec_AciklamaGrup" />
+                <ScalarProperty Name="Rec_AciklamaAP" ColumnName="Rec_AciklamaAP" />
+                <ScalarProperty Name="Rec_AbuyerPR" ColumnName="Rec_AbuyerPR" />
+                <ScalarProperty Name="Rec_Printer" ColumnName="Rec_Printer" />
+                <ScalarProperty Name="Rec_Color" ColumnName="Rec_Color" />
+                <ScalarProperty Name="Rec_Update" ColumnName="Rec_Update" />
+                <ScalarProperty Name="Rec_YS_UrunID" ColumnName="Rec_YS_UrunID" />
+                <ScalarProperty Name="Rec_UretimBirim" ColumnName="Rec_UretimBirim" />
+                <ScalarProperty Name="Rec_UretimMiktar" ColumnName="Rec_UretimMiktar" />
+                <ScalarProperty Name="Rec_YkasaBirim" ColumnName="Rec_YkasaBirim" />
+                <ScalarProperty Name="Rec_Ad_Dig" ColumnName="Rec_Ad_Dig" />
+                <ScalarProperty Name="Rec_Ad_Rus" ColumnName="Rec_Ad_Rus" />
+                <ScalarProperty Name="Rec_Ad_Deu" ColumnName="Rec_Ad_Deu" />
+                <ScalarProperty Name="Rec_Ad_Eng" ColumnName="Rec_Ad_Eng" />
+                <ScalarProperty Name="Rec_Picture" ColumnName="Rec_Picture" />
+                <ScalarProperty Name="Rec_DetayGrup" ColumnName="Rec_DetayGrup" />
+                <ScalarProperty Name="Rec_Paket_Tam" ColumnName="Rec_Paket_Tam" />
+                <ScalarProperty Name="Rec_Aksam_Tam" ColumnName="Rec_Aksam_Tam" />
+                <ScalarProperty Name="Rec_HappyHourFiyat" ColumnName="Rec_HappyHourFiyat" />
+                <ScalarProperty Name="Rec_SpUygulanmasin" ColumnName="Rec_SpUygulanmasin" />
+                <ScalarProperty Name="Rec_Terazi" ColumnName="Rec_Terazi" />
+                <ScalarProperty Name="Rec_Barkod" ColumnName="Rec_Barkod" />
+                <ScalarProperty Name="Rec_Sira" ColumnName="Rec_Sira" />
+                <ScalarProperty Name="Rec_Santral_Minibar" ColumnName="Rec_Santral_Minibar" />
+                <ScalarProperty Name="Rec_Paket_Duble" ColumnName="Rec_Paket_Duble" />
+                <ScalarProperty Name="Rec_Paket_Birbucuk" ColumnName="Rec_Paket_Birbucuk" />
+                <ScalarProperty Name="Rec_Paket_Yarim" ColumnName="Rec_Paket_Yarim" />
+                <ScalarProperty Name="Rec_Aksam_Duble" ColumnName="Rec_Aksam_Duble" />
+                <ScalarProperty Name="Rec_Aksam_Birbucuk" ColumnName="Rec_Aksam_Birbucuk" />
+                <ScalarProperty Name="Rec_Aksam_Yarim" ColumnName="Rec_Aksam_Yarim" />
+                <ScalarProperty Name="Rec_Duble" ColumnName="Rec_Duble" />
+                <ScalarProperty Name="Rec_Birbucuk" ColumnName="Rec_Birbucuk" />
+                <ScalarProperty Name="Rec_Yarim" ColumnName="Rec_Yarim" />
+                <ScalarProperty Name="Rec_Ust_Recete" ColumnName="Rec_Ust_Recete" />
+                <ScalarProperty Name="Rec_Tutar_Sor" ColumnName="Rec_Tutar_Sor" />
+                <ScalarProperty Name="Rec_Miktar_Gr" ColumnName="Rec_Miktar_Gr" />
+                <ScalarProperty Name="Rec_Miktar_Sor" ColumnName="Rec_Miktar_Sor" />
+                <ScalarProperty Name="Rec_SiparisCikmasin" ColumnName="Rec_SiparisCikmasin" />
+                <ScalarProperty Name="Rec_Minibar" ColumnName="Rec_Minibar" />
+                <ScalarProperty Name="Rec_Pdapasif" ColumnName="Rec_Pdapasif" />
+                <ScalarProperty Name="Rec_HB" ColumnName="Rec_HB" />
+                <ScalarProperty Name="Rec_FB" ColumnName="Rec_FB" />
+                <ScalarProperty Name="Rec_Pasif" ColumnName="Rec_Pasif" />
+                <ScalarProperty Name="Rec_HappyHour" ColumnName="Rec_HappyHour" />
+                <ScalarProperty Name="Rec_Ultra" ColumnName="Rec_Ultra" />
+                <ScalarProperty Name="Rec_All" ColumnName="Rec_All" />
+                <ScalarProperty Name="Rec_Urungrup" ColumnName="Rec_Urungrup" />
+                <ScalarProperty Name="Rec_Dovifiyat" ColumnName="Rec_Dovifiyat" />
+                <ScalarProperty Name="Rec_Dovizkodu" ColumnName="Rec_Dovizkodu" />
+                <ScalarProperty Name="Rec_Net" ColumnName="Rec_Net" />
+                <ScalarProperty Name="Rec_Kdv" ColumnName="Rec_Kdv" />
+                <ScalarProperty Name="Rec_Fiyat" ColumnName="Rec_Fiyat" />
+                <ScalarProperty Name="Rec_Kisi" ColumnName="Rec_Kisi" />
+                <ScalarProperty Name="Rec_Ad" ColumnName="Rec_Ad" />
+                <ScalarProperty Name="Rec_Genelkod" ColumnName="Rec_Genelkod" />
+                <ScalarProperty Name="Rec_Kodu" ColumnName="Rec_Kodu" />
+                <ScalarProperty Name="Rec_Altgrup" ColumnName="Rec_Altgrup" />
+                <ScalarProperty Name="Rec_Anagrup" ColumnName="Rec_Anagrup" />
+                <ScalarProperty Name="Rec_Grup" ColumnName="Rec_Grup" />
+                <ScalarProperty Name="Rec_Departman" ColumnName="Rec_Departman" />
+                <ScalarProperty Name="Rec_Id" ColumnName="Rec_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cst_Recete_Satis">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.Cst_Recete_Satis">
+              <MappingFragment StoreEntitySet="Cst_Recete_Satis">
+                <ScalarProperty Name="Rsat_EntegreToplamFiyat" ColumnName="Rsat_EntegreToplamFiyat" />
+                <ScalarProperty Name="Rsat_EntegreAd" ColumnName="Rsat_EntegreAd" />
+                <ScalarProperty Name="Rsat_EntegreDurumKod" ColumnName="Rsat_EntegreDurumKod" />
+                <ScalarProperty Name="Rsat_EntegreId" ColumnName="Rsat_EntegreId" />
+                <ScalarProperty Name="Rsat_GetirDurum" ColumnName="Rsat_GetirDurum" />
+                <ScalarProperty Name="Rsat_GetirOrderID" ColumnName="Rsat_GetirOrderID" />
+                <ScalarProperty Name="Rsat_RecAP" ColumnName="Rsat_RecAP" />
+                <ScalarProperty Name="Rsat_UrunBazliHspAdet" ColumnName="Rsat_UrunBazliHspAdet" />
+                <ScalarProperty Name="Rsat_Joker" ColumnName="Rsat_Joker" />
+                <ScalarProperty Name="Rsat_UrunBazliHspDokum" ColumnName="Rsat_UrunBazliHspDokum" />
+                <ScalarProperty Name="Rsat_PR" ColumnName="Rsat_PR" />
+                <ScalarProperty Name="Rsat_YerliYabanci" ColumnName="Rsat_YerliYabanci" />
+                <ScalarProperty Name="Rsat_UrunTahsilat" ColumnName="Rsat_UrunTahsilat" />
+                <ScalarProperty Name="Rsat_YSOrderID" ColumnName="Rsat_YSOrderID" />
+                <ScalarProperty Name="Rsat_YSDurum" ColumnName="Rsat_YSDurum" />
+                <ScalarProperty Name="Rsat_SiraAciklama" ColumnName="Rsat_SiraAciklama" />
+                <ScalarProperty Name="Rsat_IWERep" ColumnName="Rsat_IWERep" />
+                <ScalarProperty Name="Rsat_Ingenico_Status" ColumnName="Rsat_Ingenico_Status" />
+                <ScalarProperty Name="Rsat_AbuyerPr4" ColumnName="Rsat_AbuyerPr4" />
+                <ScalarProperty Name="Rsat_AbuyerPr3" ColumnName="Rsat_AbuyerPr3" />
+                <ScalarProperty Name="Rsat_AbuyerPr2" ColumnName="Rsat_AbuyerPr2" />
+                <ScalarProperty Name="Rsat_AdisyonTR" ColumnName="Rsat_AdisyonTR" />
+                <ScalarProperty Name="Rsat_Kart_ID" ColumnName="Rsat_Kart_ID" />
+                <ScalarProperty Name="Rsat_SistemDate" ColumnName="Rsat_SistemDate" />
+                <ScalarProperty Name="Rsat_OzelMasaAdi" ColumnName="Rsat_OzelMasaAdi" />
+                <ScalarProperty Name="Rsat_SubeDurum" ColumnName="Rsat_SubeDurum" />
+                <ScalarProperty Name="Rsat_Sube" ColumnName="Rsat_Sube" />
+                <ScalarProperty Name="Rsat_IkramNeden" ColumnName="Rsat_IkramNeden" />
+                <ScalarProperty Name="Rsat_ZayiNeden" ColumnName="Rsat_ZayiNeden" />
+                <ScalarProperty Name="Rsat_Yapma" ColumnName="Rsat_Yapma" />
+                <ScalarProperty Name="Rsat_AbuyerPr" ColumnName="Rsat_AbuyerPr" />
+                <ScalarProperty Name="Rsat_Ikram" ColumnName="Rsat_Ikram" />
+                <ScalarProperty Name="Rsat_Zayi" ColumnName="Rsat_Zayi" />
+                <ScalarProperty Name="Rsat_Hesap_Kilit" ColumnName="Rsat_Hesap_Kilit" />
+                <ScalarProperty Name="Rsat_Splitad" ColumnName="Rsat_Splitad" />
+                <ScalarProperty Name="Rsat_Yapildi" ColumnName="Rsat_Yapildi" />
+                <ScalarProperty Name="Rsat_Mars" ColumnName="Rsat_Mars" />
+                <ScalarProperty Name="Rsat_Pda" ColumnName="Rsat_Pda" />
+                <ScalarProperty Name="Rsat_Kartno" ColumnName="Rsat_Kartno" />
+                <ScalarProperty Name="Rsat_Not" ColumnName="Rsat_Not" />
+                <ScalarProperty Name="Rsat_Indsatirid2" ColumnName="Rsat_Indsatirid2" />
+                <ScalarProperty Name="Rsat_Satir_Iptalsaat" ColumnName="Rsat_Satir_Iptalsaat" />
+                <ScalarProperty Name="Rsat_Dovizkur" ColumnName="Rsat_Dovizkur" />
+                <ScalarProperty Name="Rsat_Satissaat" ColumnName="Rsat_Satissaat" />
+                <ScalarProperty Name="Rsat_Indsatirid" ColumnName="Rsat_Indsatirid" />
+                <ScalarProperty Name="Rsat_Onbdep" ColumnName="Rsat_Onbdep" />
+                <ScalarProperty Name="Rsat_Indoran" ColumnName="Rsat_Indoran" />
+                <ScalarProperty Name="Rsat_Indkodu" ColumnName="Rsat_Indkodu" />
+                <ScalarProperty Name="Rsat_Uye_Ad" ColumnName="Rsat_Uye_Ad" />
+                <ScalarProperty Name="Rsat_Uye_Id" ColumnName="Rsat_Uye_Id" />
+                <ScalarProperty Name="Rsat_MusTipi" ColumnName="Rsat_MusTipi" />
+                <ScalarProperty Name="Rsat_Happy_Hour" ColumnName="Rsat_Happy_Hour" />
+                <ScalarProperty Name="Rsat_Pansiyon" ColumnName="Rsat_Pansiyon" />
+                <ScalarProperty Name="Rsat_Satir_Iptal" ColumnName="Rsat_Satir_Iptal" />
+                <ScalarProperty Name="Rsat_Uye_Kart_Turu" ColumnName="Rsat_Uye_Kart_Turu" />
+                <ScalarProperty Name="Rsat_AdisPrSayac" ColumnName="Rsat_AdisPrSayac" />
+                <ScalarProperty Name="Rsat_Garson2" ColumnName="Rsat_Garson2" />
+                <ScalarProperty Name="Rsat_AdisPr" ColumnName="Rsat_AdisPr" />
+                <ScalarProperty Name="Rsat_Emiktar" ColumnName="Rsat_Emiktar" />
+                <ScalarProperty Name="Rsat_Paketci" ColumnName="Rsat_Paketci" />
+                <ScalarProperty Name="Rsat_AdisyonPr" ColumnName="Rsat_AdisyonPr" />
+                <ScalarProperty Name="Rsat_SiparisPr" ColumnName="Rsat_SiparisPr" />
+                <ScalarProperty Name="Rsat_Aciklama" ColumnName="Rsat_Aciklama" />
+                <ScalarProperty Name="Rsat_Split" ColumnName="Rsat_Split" />
+                <ScalarProperty Name="Rsat_Cari" ColumnName="Rsat_Cari" />
+                <ScalarProperty Name="Rsat_Durum" ColumnName="Rsat_Durum" />
+                <ScalarProperty Name="Rsat_Kapanis" ColumnName="Rsat_Kapanis" />
+                <ScalarProperty Name="Rsat_Acilis" ColumnName="Rsat_Acilis" />
+                <ScalarProperty Name="Rsat_Kisi" ColumnName="Rsat_Kisi" />
+                <ScalarProperty Name="Rsat_Garson" ColumnName="Rsat_Garson" />
+                <ScalarProperty Name="Rsat_Masa" ColumnName="Rsat_Masa" />
+                <ScalarProperty Name="Rsat_Aktiffisno" ColumnName="Rsat_Aktiffisno" />
+                <ScalarProperty Name="Rsat_Adisyon" ColumnName="Rsat_Adisyon" />
+                <ScalarProperty Name="Rsat_Kapatma" ColumnName="Rsat_Kapatma" />
+                <ScalarProperty Name="Rsat_Ba" ColumnName="Rsat_Ba" />
+                <ScalarProperty Name="Rsat_Folio" ColumnName="Rsat_Folio" />
+                <ScalarProperty Name="Rsat_Odano" ColumnName="Rsat_Odano" />
+                <ScalarProperty Name="Rsat_Odenmez" ColumnName="Rsat_Odenmez" />
+                <ScalarProperty Name="Rsat_Satistip" ColumnName="Rsat_Satistip" />
+                <ScalarProperty Name="Rsat_Doviztutar" ColumnName="Rsat_Doviztutar" />
+                <ScalarProperty Name="Rsat_Dovizkodu" ColumnName="Rsat_Dovizkodu" />
+                <ScalarProperty Name="Rsat_Maliyet" ColumnName="Rsat_Maliyet" />
+                <ScalarProperty Name="Rsat_Tutar" ColumnName="Rsat_Tutar" />
+                <ScalarProperty Name="Rsat_Kdv" ColumnName="Rsat_Kdv" />
+                <ScalarProperty Name="Rsat_Net" ColumnName="Rsat_Net" />
+                <ScalarProperty Name="Rsat_Ind" ColumnName="Rsat_Ind" />
+                <ScalarProperty Name="Rsat_Fiyat" ColumnName="Rsat_Fiyat" />
+                <ScalarProperty Name="Rsat_Miktar" ColumnName="Rsat_Miktar" />
+                <ScalarProperty Name="Rsat_Kdvoran" ColumnName="Rsat_Kdvoran" />
+                <ScalarProperty Name="Rsat_Recete" ColumnName="Rsat_Recete" />
+                <ScalarProperty Name="Rsat_Departman" ColumnName="Rsat_Departman" />
+                <ScalarProperty Name="Rsat_Tarih" ColumnName="Rsat_Tarih" />
+                <ScalarProperty Name="Rsat_Fisno" ColumnName="Rsat_Fisno" />
+                <ScalarProperty Name="Rsat_Id" ColumnName="Rsat_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pos_Cari">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.Pos_Cari">
+              <MappingFragment StoreEntitySet="Pos_Cari">
+                <ScalarProperty Name="Cari_TrendyolId" ColumnName="Cari_TrendyolId" />
+                <ScalarProperty Name="Cari_Getir_AddressId" ColumnName="Cari_Getir_AddressId" />
+                <ScalarProperty Name="Cari_Getir_ID" ColumnName="Cari_Getir_ID" />
+                <ScalarProperty Name="Cari_DogumTar" ColumnName="Cari_DogumTar" />
+                <ScalarProperty Name="Cari_Funvan2" ColumnName="Cari_Funvan2" />
+                <ScalarProperty Name="Cari_YS_CustomerID" ColumnName="Cari_YS_CustomerID" />
+                <ScalarProperty Name="Cari_YS_AddressId" ColumnName="Cari_YS_AddressId" />
+                <ScalarProperty Name="Cari_Aktif" ColumnName="Cari_Aktif" />
+                <ScalarProperty Name="Cari_MuhasebeKodu" ColumnName="Cari_MuhasebeKodu" />
+                <ScalarProperty Name="Cari_Mahalle" ColumnName="Cari_Mahalle" />
+                <ScalarProperty Name="Cari_Ilce" ColumnName="Cari_Ilce" />
+                <ScalarProperty Name="Cari_Il" ColumnName="Cari_Il" />
+                <ScalarProperty Name="Cari_LimitTutar" ColumnName="Cari_LimitTutar" />
+                <ScalarProperty Name="Cari_Limit" ColumnName="Cari_Limit" />
+                <ScalarProperty Name="Cari_Tip" ColumnName="Cari_Tip" />
+                <ScalarProperty Name="Cari_Email" ColumnName="Cari_Email" />
+                <ScalarProperty Name="Cari_Tel2" ColumnName="Cari_Tel2" />
+                <ScalarProperty Name="Cari_Kart" ColumnName="Cari_Kart" />
+                <ScalarProperty Name="Cari_Mail" ColumnName="Cari_Mail" />
+                <ScalarProperty Name="Cari_Vergino" ColumnName="Cari_Vergino" />
+                <ScalarProperty Name="Cari_Vergidarie" ColumnName="Cari_Vergidarie" />
+                <ScalarProperty Name="Cari_Fadres2" ColumnName="Cari_Fadres2" />
+                <ScalarProperty Name="Cari_Fadres1" ColumnName="Cari_Fadres1" />
+                <ScalarProperty Name="Cari_Funvan" ColumnName="Cari_Funvan" />
+                <ScalarProperty Name="Cari_Adres3" ColumnName="Cari_Adres3" />
+                <ScalarProperty Name="Cari_Adres2" ColumnName="Cari_Adres2" />
+                <ScalarProperty Name="Cari_Adres1" ColumnName="Cari_Adres1" />
+                <ScalarProperty Name="Cari_Tel" ColumnName="Cari_Tel" />
+                <ScalarProperty Name="Cari_Soyad" ColumnName="Cari_Soyad" />
+                <ScalarProperty Name="Cari_Ad" ColumnName="Cari_Ad" />
+                <ScalarProperty Name="Cari_Kod" ColumnName="Cari_Kod" />
+                <ScalarProperty Name="Cari_Id" ColumnName="Cari_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="entegreAyarlar">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.entegreAyarlar">
+              <MappingFragment StoreEntitySet="entegreAyarlar">
+                <ScalarProperty Name="timerCount" ColumnName="timerCount" />
+                <ScalarProperty Name="recDep" ColumnName="recDep" />
+                <ScalarProperty Name="eslesmeyenUrunFiyat" ColumnName="eslesmeyenUrunFiyat" />
+                <ScalarProperty Name="eslesmeyenUrunAd" ColumnName="eslesmeyenUrunAd" />
+                <ScalarProperty Name="eslesmeyenUrunId" ColumnName="eslesmeyenUrunId" />
+                <ScalarProperty Name="timerSn" ColumnName="timerSn" />
+                <ScalarProperty Name="trendyolApiTest" ColumnName="trendyolApiTest" />
+                <ScalarProperty Name="trendyolApiLink" ColumnName="trendyolApiLink" />
+                <ScalarProperty Name="trendyolApiSecret" ColumnName="trendyolApiSecret" />
+                <ScalarProperty Name="trendyolApiKey" ColumnName="trendyolApiKey" />
+                <ScalarProperty Name="trendyolStoreId" ColumnName="trendyolStoreId" />
+                <ScalarProperty Name="trendyolSupplierId" ColumnName="trendyolSupplierId" />
+                <ScalarProperty Name="getirAppSecretKey" ColumnName="getirAppSecretKey" />
+                <ScalarProperty Name="getirRestaurantSecretKey" ColumnName="getirRestaurantSecretKey" />
+                <ScalarProperty Name="trendyolDurum" ColumnName="trendyolDurum" />
+                <ScalarProperty Name="getirDurum" ColumnName="getirDurum" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="entegreJson">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.entegreJson">
+              <MappingFragment StoreEntitySet="entegreJson">
+                <ScalarProperty Name="recDep" ColumnName="recDep" />
+                <ScalarProperty Name="jsonTip" ColumnName="jsonTip" />
+                <ScalarProperty Name="tip" ColumnName="tip" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+                <ScalarProperty Name="json" ColumnName="json" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="entegreOdemeTip">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.entegreOdemeTip">
+              <MappingFragment StoreEntitySet="entegreOdemeTip">
+                <ScalarProperty Name="recDep" ColumnName="recDep" />
+                <ScalarProperty Name="recOdemeAd" ColumnName="recOdemeAd" />
+                <ScalarProperty Name="recOdemeKod" ColumnName="recOdemeKod" />
+                <ScalarProperty Name="entegreOdemeAd" ColumnName="entegreOdemeAd" />
+                <ScalarProperty Name="entegreOdemeKod" ColumnName="entegreOdemeKod" />
+                <ScalarProperty Name="entegreOdemeType" ColumnName="entegreOdemeType" />
+                <ScalarProperty Name="tip" ColumnName="tip" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="entegreSiparis">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.entegreSiparis">
+              <MappingFragment StoreEntitySet="entegreSiparis">
+                <ScalarProperty Name="recDep" ColumnName="recDep" />
+                <ScalarProperty Name="fisno" ColumnName="fisno" />
+                <ScalarProperty Name="siparisNot" ColumnName="siparisNot" />
+                <ScalarProperty Name="guncellemeTarih" ColumnName="guncellemeTarih" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+                <ScalarProperty Name="mail" ColumnName="mail" />
+                <ScalarProperty Name="ilce" ColumnName="ilce" />
+                <ScalarProperty Name="il" ColumnName="il" />
+                <ScalarProperty Name="mahalle" ColumnName="mahalle" />
+                <ScalarProperty Name="apartmanno" ColumnName="apartmanno" />
+                <ScalarProperty Name="daireno" ColumnName="daireno" />
+                <ScalarProperty Name="kat" ColumnName="kat" />
+                <ScalarProperty Name="tel2" ColumnName="tel2" />
+                <ScalarProperty Name="tel1" ColumnName="tel1" />
+                <ScalarProperty Name="tel" ColumnName="tel" />
+                <ScalarProperty Name="adres" ColumnName="adres" />
+                <ScalarProperty Name="odemeTip" ColumnName="odemeTip" />
+                <ScalarProperty Name="durumText" ColumnName="durumText" />
+                <ScalarProperty Name="entegreDurum" ColumnName="entegreDurum" />
+                <ScalarProperty Name="durumKod" ColumnName="durumKod" />
+                <ScalarProperty Name="kuryeTip" ColumnName="kuryeTip" />
+                <ScalarProperty Name="siparisTutar" ColumnName="siparisTutar" />
+                <ScalarProperty Name="soyad" ColumnName="soyad" />
+                <ScalarProperty Name="ad" ColumnName="ad" />
+                <ScalarProperty Name="cariId" ColumnName="cariId" />
+                <ScalarProperty Name="siparisIdDiger" ColumnName="siparisIdDiger" />
+                <ScalarProperty Name="siparisId" ColumnName="siparisId" />
+                <ScalarProperty Name="tip" ColumnName="tip" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="entegreSiparisUrunler">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.entegreSiparisUrunler">
+              <MappingFragment StoreEntitySet="entegreSiparisUrunler">
+                <ScalarProperty Name="packageItemId" ColumnName="packageItemId" />
+                <ScalarProperty Name="adet" ColumnName="adet" />
+                <ScalarProperty Name="urunSabitFiyat" ColumnName="urunSabitFiyat" />
+                <ScalarProperty Name="ismenu" ColumnName="ismenu" />
+                <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+                <ScalarProperty Name="recDep" ColumnName="recDep" />
+                <ScalarProperty Name="recFiyat" ColumnName="recFiyat" />
+                <ScalarProperty Name="recAd" ColumnName="recAd" />
+                <ScalarProperty Name="recId" ColumnName="recId" />
+                <ScalarProperty Name="entegreMenuMasterId" ColumnName="entegreMenuMasterId" />
+                <ScalarProperty Name="entegreMenuAd" ColumnName="entegreMenuAd" />
+                <ScalarProperty Name="entegreMenuId" ColumnName="entegreMenuId" />
+                <ScalarProperty Name="siparisIdDiger" ColumnName="siparisIdDiger" />
+                <ScalarProperty Name="siparisId" ColumnName="siparisId" />
+                <ScalarProperty Name="tip" ColumnName="tip" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="entegreMenu">
+            <EntityTypeMapping TypeName="RmosMerkez21Model.entegreMenu">
+              <MappingFragment StoreEntitySet="entegreMenu">
+                <ScalarProperty Name="entegreJson" ColumnName="entegreJson" />
+                <ScalarProperty Name="recDep" ColumnName="recDep" />
+                <ScalarProperty Name="masterId" ColumnName="masterId" />
+                <ScalarProperty Name="aktif" ColumnName="aktif" />
+                <ScalarProperty Name="recFiyat" ColumnName="recFiyat" />
+                <ScalarProperty Name="recAd" ColumnName="recAd" />
+                <ScalarProperty Name="recId" ColumnName="recId" />
+                <ScalarProperty Name="urunSabitFiyat" ColumnName="urunSabitFiyat" />
+                <ScalarProperty Name="entegreAciklama" ColumnName="entegreAciklama" />
+                <ScalarProperty Name="entegreMenuMasterId" ColumnName="entegreMenuMasterId" />
+                <ScalarProperty Name="entegreAd" ColumnName="entegreAd" />
+                <ScalarProperty Name="entegreId" ColumnName="entegreId" />
+                <ScalarProperty Name="tip" ColumnName="tip" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

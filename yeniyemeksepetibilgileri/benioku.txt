@@ -1,0 +1,2 @@
+Gpg4win uygulaması ile keyleri oluşturduk. sonra public keyi onlara verdik. bize credential.txt veri. onu aynı uygulama ile çöz dedik
+credential.txt.out içinde tüm bilgilerimiz geldi.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9f75d80fab284ea1946e2b30b8eceea0" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="RmosMerkez21Model.Stok_Kodlar" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.Cst_Recete" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.Cst_Recete_Satis" Width="1.5" PointX="9.375" PointY="10.75" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.Pos_Cari" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.entegreAyarlar" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.entegreJson" Width="1.5" PointX="5.375" PointY="5.75" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.entegreOdemeTip" Width="1.5" PointX="7.375" PointY="5.75" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.entegreSiparis" Width="1.5" PointX="5.375" PointY="9.75" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.entegreSiparisUrunler" Width="1.5" PointX="11.375" PointY="8.75" />
+        <EntityTypeShape EntityType="RmosMerkez21Model.entegreMenu" Width="1.5" PointX="7.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

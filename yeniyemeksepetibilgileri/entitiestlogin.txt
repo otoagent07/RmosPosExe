@@ -1,0 +1,16 @@
+public RmosMerkez21Entities()
+             : base("name=RmosMerkez21Entities")
+        {
+        }
+
+        public RmosMerkez21Entities(string server, string veritab, string user, string sifre)
+                     : base("metadata=res://*;"
+                 + "provider=System.Data.SqlClient;"
+                 + "provider connection string=';"
+               + "Data Source=" + server + ";"
+               + "Initial Catalog=" + veritab + ";"
+               + "Persist Security Info=True;"
+               + "User ID=" + user + ";Password=" + sifre + ";"
+               + "MultipleActiveResultSets=True';")
+        {
+        }

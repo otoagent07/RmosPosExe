@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04DFD5C8-3B7A-4F30-BF9E-222101BE8D3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pda</RootNamespace>
+    <AssemblyName>Pda</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Pos\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alt_Recete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alt_Recete.Designer.cs">
+      <DependentUpon>Alt_Recete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arama.Designer.cs">
+      <DependentUpon>Arama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dep_Secim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dep_Secim.Designer.cs">
+      <DependentUpon>Dep_Secim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hesap.Designer.cs">
+      <DependentUpon>Hesap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Indirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indirim.Designer.cs">
+      <DependentUpon>Indirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kart_Oku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kart_Oku.Designer.cs">
+      <DependentUpon>Kart_Oku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klavye1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klavye1.Designer.cs">
+      <DependentUpon>Klavye1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Malz_Tr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Malz_Tr.Designer.cs">
+      <DependentUpon>Malz_Tr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mars_SatirSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mars_SatirSec.Designer.cs">
+      <DependentUpon>Mars_SatirSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasaTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaTakip.Designer.cs">
+      <DependentUpon>MasaTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masa_Tr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masa_Tr.Designer.cs">
+      <DependentUpon>Masa_Tr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oda_Kontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oda_Kontrol.designer.cs">
+      <DependentUpon>Oda_Kontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masa_Ozel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masa_Ozel.Designer.cs">
+      <DependentUpon>Masa_Ozel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme_Al.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme_Al.Designer.cs">
+      <DependentUpon>Odeme_Al.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme_Tip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme_Tip.Designer.cs">
+      <DependentUpon>Odeme_Tip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Posta_Secim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Posta_Secim.Designer.cs">
+      <DependentUpon>Posta_Secim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satis.Designer.cs">
+      <DependentUpon>Satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatisList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisList.Designer.cs">
+      <DependentUpon>SatisList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urun.Designer.cs">
+      <DependentUpon>Urun.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alt_Recete.resx">
+      <DependentUpon>Alt_Recete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arama.resx">
+      <DependentUpon>Arama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dep_Secim.resx">
+      <DependentUpon>Dep_Secim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hesap.resx">
+      <DependentUpon>Hesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Indirim.resx">
+      <DependentUpon>Indirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kart_Oku.resx">
+      <DependentUpon>Kart_Oku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klavye1.resx">
+      <DependentUpon>Klavye1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Malz_Tr.resx">
+      <DependentUpon>Malz_Tr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mars_SatirSec.resx">
+      <DependentUpon>Mars_SatirSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaTakip.resx">
+      <DependentUpon>MasaTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masa_Tr.resx">
+      <DependentUpon>Masa_Tr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oda_Kontrol.resx">
+      <DependentUpon>Oda_Kontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masa_Ozel.resx">
+      <DependentUpon>Masa_Ozel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme_Al.resx">
+      <DependentUpon>Odeme_Al.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme_Tip.resx">
+      <DependentUpon>Odeme_Tip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posta_Secim.resx">
+      <DependentUpon>Posta_Secim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satis.resx">
+      <DependentUpon>Satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisList.resx">
+      <DependentUpon>SatisList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urun.resx">
+      <DependentUpon>Urun.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pos\Pos.csproj">
+      <Project>{9d8fa365-30eb-4015-96ef-ce4820062965}</Project>
+      <Name>Pos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
