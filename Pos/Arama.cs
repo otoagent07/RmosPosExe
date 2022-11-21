@@ -8,34 +8,30 @@ using System.Windows.Forms;
 
 namespace Pos
 {
-    public partial class Arama : DevExpress.XtraEditors.XtraForm
+    public partial class Arama : XtraForm
     {
+        // naber
         public string KapatmaKodu { get; set; }
         public int Odeme_Ozelkod { get; set; }
-
         CheckButton chk_MusTipi = null;
         CheckButton chk_Filtre = null;
-
-        public bool Cikis = false;
-        public bool HizliSatis = false;
-        public bool FormClose = false;
-
-        public string Mus_tipi;
-        public string Oda_No;
-        public int Folio;
-        public int Master_Folio;
-        public string Pansiyon;
-        public string Odeme_Kodu;
-        public int Uye_Id;
-        public string Uye_Adsoyad;
-        public string Uye_Kartturu;
-        public string Cari_Kod;
-        public string Kart_No;
-
-        public string Ind_Kodu;
-        public decimal Ind_Oran;
-
-        public string Bilgi = String.Empty;
+        public bool Cikis { get; set; } = false;
+        public bool HizliSatis { get; set; } = false;
+        public bool FormClose { get; set; } = false;
+        public string Mus_tipi { get; set; }
+        public string Oda_No { get; set; }
+        public int Folio { get; set; }
+        public int Master_Folio { get; set; }
+        public string Pansiyon { get; set; }
+        public string Odeme_Kodu { get; set; }
+        public int Uye_Id { get; set; }
+        public string Uye_Adsoyad { get; set; }
+        public string Uye_Kartturu { get; set; }
+        public string Cari_Kod { get; set; }
+        public string Kart_No { get; set; }
+        public string Ind_Kodu { get; set; }
+        public decimal Ind_Oran { get; set; }
+        public string Bilgi { get; set; } = string.Empty;
 
         public Arama()
         {
@@ -316,7 +312,7 @@ namespace Pos
 
                 gridControl1.DataSource = null;
 
-                if (Departman.Kodlar_AndPos_NFC == true ) //  && User.ExtraFolio == false
+                if (Departman.Kodlar_AndPos_NFC == true) //  && User.ExtraFolio == false
                 {
                     string sorgu = @"select Rez_Id,
                                     Rez_Odano,
@@ -341,9 +337,9 @@ namespace Pos
                     gridControl1.DataSource = Fronttools.SelectTable(sorgu);
 
                 }
-                else 
+                else
                 {
-                     filtre = "";
+                    filtre = "";
                     if (chk_OdaNo.Checked)
                     {
                         filtre = " and Rez_Odano like N'" + txt_Arama.Text + "%' ";
@@ -387,14 +383,14 @@ namespace Pos
 
                 gridView1.BestFitColumns();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "Oda_Ara", "",ex);
+                RHMesaj.MyMessageError(MyClass, "Oda_Ara", "", ex);
             }
-            
+
         }
 
-        
+
 
         private void Uye_Ara()
         {
