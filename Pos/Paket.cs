@@ -50,6 +50,9 @@ namespace Pos
             }
 
             xtraTabControl1_SelectedPageChanged(null, null);
+
+
+            simpleButton10.Visible = User.G_Odemeal;
         }
 
 
@@ -205,7 +208,7 @@ namespace Pos
 
             //";
 
-            string query = StatikModel.getPaketSqlText(dateTarih1, dateTarih2, Departman.Dep_Kodu,"", "A,K",true); 
+            string query = StatikModel.getPaketSqlText(dateTarih1, dateTarih2, Departman.Dep_Kodu, "", "A,K", true);
 
             gridControl1.DataSource = dbtools.SelectTableR(query);
 

@@ -538,5 +538,20 @@ namespace Pos
                 if (con.State != ConnectionState.Closed) con.Close();
             }
         }
+
+        private void btnEncoksatan_Click(object sender, EventArgs e)
+        {
+            string bastar = dateEdit1.DateTime.ToString("yyyy-MM-dd");
+            string bittar= dateEdit2.DateTime.ToString("yyyy-MM-dd");
+
+            string query = @"select top 25   Recete.Rec_Ad as Ad  , sum(Rsat_Miktar) as   Miktar,sum(Rsat_Tutar) as Tutar  from Cst_Recete_Satis satis
+left join Cst_Recete  Recete on satis.Rsat_Recete=Rec_Genelkod   
+where satis.Rsat_Tarih between '" + bastar + @"' and '"+ bittar + @"'
+group by Recete.Rec_Ad 
+order by (Miktar) desc";
+
+            gridControl1.DataSource = null;
+            gridControl1.DataSource = dbtools.SelectTableR(query); 
+        }
     }
 }

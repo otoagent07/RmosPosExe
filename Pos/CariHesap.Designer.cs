@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CariHesap));
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn61 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn49 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -314,11 +314,13 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btnExcelKaydetCariRapor3 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnCariRap3Listele = new DevExpress.XtraEditors.SimpleButton();
-            this.dateEditRap3BasTar = new DevExpress.XtraEditors.DateEdit();
-            this.textEdit20 = new DevExpress.XtraEditors.TextEdit();
+            this.btnCariBakiyePrint = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit23 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit20 = new DevExpress.XtraEditors.TextEdit();
             this.dateEditRap3BitTar = new DevExpress.XtraEditors.DateEdit();
+            this.dateEditRap3BasTar = new DevExpress.XtraEditors.DateEdit();
+            this.btnCariRap3Listele = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCariBakiyeMail = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Cari_Hesap.SuspendLayout();
@@ -475,12 +477,12 @@
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit23.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn61
@@ -585,14 +587,14 @@
             this.gridColumn59,
             this.gridColumn60,
             this.gridColumn61});
-            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.Options.UseForeColor = true;
-            styleFormatCondition1.ApplyToRow = true;
-            styleFormatCondition1.Column = this.gridColumn61;
-            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition1.Value1 = "A";
+            styleFormatCondition5.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition5.Appearance.Options.UseForeColor = true;
+            styleFormatCondition5.ApplyToRow = true;
+            styleFormatCondition5.Column = this.gridColumn61;
+            styleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition5.Value1 = "A";
             this.gridView7.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1});
+            styleFormatCondition5});
             this.gridView7.GridControl = this.gridControl7;
             this.gridView7.Name = "gridView7";
             this.gridView7.OptionsView.ShowFooter = true;
@@ -877,14 +879,14 @@
             this.gridColumn52,
             this.gridColumn53,
             this.gridColumn74});
-            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition2.Appearance.Options.UseForeColor = true;
-            styleFormatCondition2.ApplyToRow = true;
-            styleFormatCondition2.Column = this.gridColumn49;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Value1 = "0";
+            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.Options.UseForeColor = true;
+            styleFormatCondition1.ApplyToRow = true;
+            styleFormatCondition1.Column = this.gridColumn49;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition1.Value1 = "0";
             this.gridView9.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition2});
+            styleFormatCondition1});
             this.gridView9.GridControl = this.grd_CariHesap;
             this.gridView9.Name = "gridView9";
             this.gridView9.OptionsView.ColumnAutoWidth = false;
@@ -2249,14 +2251,14 @@
             this.gridColumn15,
             this.gridColumn16,
             this.gridColumn17});
-            styleFormatCondition3.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition3.Appearance.Options.UseForeColor = true;
-            styleFormatCondition3.ApplyToRow = true;
-            styleFormatCondition3.Column = this.gridColumn17;
-            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition3.Value1 = "A";
+            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition2.Appearance.Options.UseForeColor = true;
+            styleFormatCondition2.ApplyToRow = true;
+            styleFormatCondition2.Column = this.gridColumn17;
+            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition2.Value1 = "A";
             this.gridView3.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition3});
+            styleFormatCondition2});
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowFooter = true;
@@ -2583,14 +2585,14 @@
             this.gridColumn27,
             this.gridColumn30,
             this.gridColumn31});
-            styleFormatCondition4.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition4.Appearance.Options.UseForeColor = true;
-            styleFormatCondition4.ApplyToRow = true;
-            styleFormatCondition4.Column = this.gridColumn30;
-            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition4.Value1 = "A";
+            styleFormatCondition3.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition3.Appearance.Options.UseForeColor = true;
+            styleFormatCondition3.ApplyToRow = true;
+            styleFormatCondition3.Column = this.gridColumn30;
+            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition3.Value1 = "A";
             this.gridView5.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition4});
+            styleFormatCondition3});
             this.gridView5.GridControl = this.gridControl5;
             this.gridView5.Name = "gridView5";
             this.gridView5.OptionsView.ShowFooter = true;
@@ -3127,6 +3129,8 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnCariBakiyeMail);
+            this.panelControl1.Controls.Add(this.btnCariBakiyePrint);
             this.panelControl1.Controls.Add(this.textEdit23);
             this.panelControl1.Controls.Add(this.textEdit20);
             this.panelControl1.Controls.Add(this.dateEditRap3BitTar);
@@ -3135,32 +3139,14 @@
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
             // 
-            // btnCariRap3Listele
+            // btnCariBakiyePrint
             // 
-            this.btnCariRap3Listele.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCariRap3Listele.Appearance.Font")));
-            this.btnCariRap3Listele.Appearance.Options.UseFont = true;
-            this.btnCariRap3Listele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCariRap3Listele.ImageOptions.Image")));
-            resources.ApplyResources(this.btnCariRap3Listele, "btnCariRap3Listele");
-            this.btnCariRap3Listele.Name = "btnCariRap3Listele";
-            this.btnCariRap3Listele.Click += new System.EventHandler(this.btnCariRap3Listele_Click);
-            // 
-            // dateEditRap3BasTar
-            // 
-            resources.ApplyResources(this.dateEditRap3BasTar, "dateEditRap3BasTar");
-            this.dateEditRap3BasTar.Name = "dateEditRap3BasTar";
-            this.dateEditRap3BasTar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit5.Properties.Buttons"))))});
-            this.dateEditRap3BasTar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit5.Properties.CalendarTimeProperties.Buttons"))))});
-            // 
-            // textEdit20
-            // 
-            resources.ApplyResources(this.textEdit20, "textEdit20");
-            this.textEdit20.Name = "textEdit20";
-            this.textEdit20.Properties.Appearance.Options.UseFont = true;
-            this.textEdit20.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit20.Properties.ReadOnly = true;
-            this.textEdit20.TabStop = false;
+            this.btnCariBakiyePrint.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCariBakiyePrint.Appearance.Font")));
+            this.btnCariBakiyePrint.Appearance.Options.UseFont = true;
+            this.btnCariBakiyePrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCariBakiyePrint.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCariBakiyePrint, "btnCariBakiyePrint");
+            this.btnCariBakiyePrint.Name = "btnCariBakiyePrint";
+            this.btnCariBakiyePrint.Click += new System.EventHandler(this.btnCariBakiyePrint_Click);
             // 
             // textEdit23
             // 
@@ -3171,14 +3157,50 @@
             this.textEdit23.Properties.ReadOnly = true;
             this.textEdit23.TabStop = false;
             // 
+            // textEdit20
+            // 
+            resources.ApplyResources(this.textEdit20, "textEdit20");
+            this.textEdit20.Name = "textEdit20";
+            this.textEdit20.Properties.Appearance.Options.UseFont = true;
+            this.textEdit20.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit20.Properties.ReadOnly = true;
+            this.textEdit20.TabStop = false;
+            // 
             // dateEditRap3BitTar
             // 
             resources.ApplyResources(this.dateEditRap3BitTar, "dateEditRap3BitTar");
             this.dateEditRap3BitTar.Name = "dateEditRap3BitTar";
             this.dateEditRap3BitTar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit6.Properties.Buttons"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditRap3BitTar.Properties.Buttons"))))});
             this.dateEditRap3BitTar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit6.Properties.CalendarTimeProperties.Buttons"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditRap3BitTar.Properties.CalendarTimeProperties.Buttons"))))});
+            // 
+            // dateEditRap3BasTar
+            // 
+            resources.ApplyResources(this.dateEditRap3BasTar, "dateEditRap3BasTar");
+            this.dateEditRap3BasTar.Name = "dateEditRap3BasTar";
+            this.dateEditRap3BasTar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditRap3BasTar.Properties.Buttons"))))});
+            this.dateEditRap3BasTar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditRap3BasTar.Properties.CalendarTimeProperties.Buttons"))))});
+            // 
+            // btnCariRap3Listele
+            // 
+            this.btnCariRap3Listele.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCariRap3Listele.Appearance.Font")));
+            this.btnCariRap3Listele.Appearance.Options.UseFont = true;
+            this.btnCariRap3Listele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCariRap3Listele.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCariRap3Listele, "btnCariRap3Listele");
+            this.btnCariRap3Listele.Name = "btnCariRap3Listele";
+            this.btnCariRap3Listele.Click += new System.EventHandler(this.btnCariRap3Listele_Click);
+            // 
+            // btnCariBakiyeMail
+            // 
+            this.btnCariBakiyeMail.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton21.Appearance.Font")));
+            this.btnCariBakiyeMail.Appearance.Options.UseFont = true;
+            this.btnCariBakiyeMail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton21.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCariBakiyeMail, "btnCariBakiyeMail");
+            this.btnCariBakiyeMail.Name = "btnCariBakiyeMail";
+            this.btnCariBakiyeMail.Click += new System.EventHandler(this.btnCariBakiyeMail_Click);
             // 
             // CariHesap
             // 
@@ -3344,12 +3366,12 @@
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit23.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3641,5 +3663,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit20;
         private DevExpress.XtraEditors.DateEdit dateEditRap3BitTar;
         private DevExpress.XtraEditors.DateEdit dateEditRap3BasTar;
+        private DevExpress.XtraEditors.SimpleButton btnCariBakiyePrint;
+        private DevExpress.XtraEditors.SimpleButton btnCariBakiyeMail;
     }
 }

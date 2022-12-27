@@ -288,47 +288,69 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alt_Recete.cs" />
+    <Compile Include="Alt_Recete.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Alt_Recete.Designer.cs">
       <DependentUpon>Alt_Recete.cs</DependentUpon>
     </Compile>
-    <Compile Include="AnlikDurum.cs" />
+    <Compile Include="AnlikDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AnlikDurum.Designer.cs">
       <DependentUpon>AnlikDurum.cs</DependentUpon>
     </Compile>
-    <Compile Include="Arama.cs" />
+    <Compile Include="Arama.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Arama.Designer.cs">
       <DependentUpon>Arama.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ayarlar.cs" />
+    <Compile Include="Ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ayarlar.Designer.cs">
       <DependentUpon>Ayarlar.cs</DependentUpon>
     </Compile>
-    <Compile Include="CallerCallCenter.cs" />
+    <Compile Include="CallerCallCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CallerCallCenter.Designer.cs">
       <DependentUpon>CallerCallCenter.cs</DependentUpon>
     </Compile>
-    <Compile Include="CallerDetay.cs" />
+    <Compile Include="CallerDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CallerDetay.Designer.cs">
       <DependentUpon>CallerDetay.cs</DependentUpon>
     </Compile>
-    <Compile Include="CallerId.cs" />
+    <Compile Include="CallerId.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CallerId.Designer.cs">
       <DependentUpon>CallerId.cs</DependentUpon>
     </Compile>
-    <Compile Include="CallerSubeSec.cs" />
+    <Compile Include="CallerSubeSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CallerSubeSec.Designer.cs">
       <DependentUpon>CallerSubeSec.cs</DependentUpon>
     </Compile>
-    <Compile Include="CariHesap.cs" />
+    <Compile Include="CariHesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CariHesap.Designer.cs">
       <DependentUpon>CariHesap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cari_Ara.cs" />
+    <Compile Include="Cari_Ara.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cari_Ara.designer.cs">
       <DependentUpon>Cari_Ara.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cari_KartSor.cs" />
+    <Compile Include="Cari_KartSor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cari_KartSor.Designer.cs">
       <DependentUpon>Cari_KartSor.cs</DependentUpon>
     </Compile>
@@ -374,11 +396,21 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\SatisController.cs" />
-    <Compile Include="Forms\UyariForm.cs" />
+    <Compile Include="Forms\UyariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\UyariForm.Designer.cs">
       <DependentUpon>UyariForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\XtraReport1.cs" />
+    <Compile Include="Print\CariBakiyeKontrolRapor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\CariBakiyeKontrolRapor.Designer.cs">
+      <DependentUpon>CariBakiyeKontrolRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\XtraReport1.Designer.cs">
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </Compile>
@@ -432,40 +464,58 @@
     <Compile Include="Entities\Stok_Kodlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Detay_Iptal.cs" />
+    <Compile Include="Detay_Iptal.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Detay_Iptal.Designer.cs">
       <DependentUpon>Detay_Iptal.cs</DependentUpon>
     </Compile>
     <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="Fihrist.cs" />
+    <Compile Include="Fihrist.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Fihrist.Designer.cs">
       <DependentUpon>Fihrist.cs</DependentUpon>
     </Compile>
-    <Compile Include="FisTopluIsleme.cs" />
+    <Compile Include="FisTopluIsleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FisTopluIsleme.Designer.cs">
       <DependentUpon>FisTopluIsleme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fis_Log.cs" />
+    <Compile Include="Fis_Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Fis_Log.Designer.cs">
       <DependentUpon>Fis_Log.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\adminForms.cs" />
+    <Compile Include="Forms\adminForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\adminForms.designer.cs">
       <DependentUpon>adminForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMasa\frmMasaTakip.cs" />
+    <Compile Include="frmMasa\frmMasaTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMasa\frmMasaTakip.Designer.cs">
       <DependentUpon>frmMasaTakip.cs</DependentUpon>
     </Compile>
-    <Compile Include="GarsonDegistir.cs" />
+    <Compile Include="GarsonDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GarsonDegistir.Designer.cs">
       <DependentUpon>GarsonDegistir.cs</DependentUpon>
     </Compile>
@@ -482,33 +532,47 @@
     <Compile Include="Getir\Class\GetirRestaurantResponse.cs" />
     <Compile Include="Getir\Class\GetirStatik.cs" />
     <Compile Include="Getir\Class\GetirToken.cs" />
-    <Compile Include="Getir\Class\Getir_Iptal.cs" />
+    <Compile Include="Getir\Class\Getir_Iptal.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Getir\Class\Getir_Iptal.Designer.cs">
       <DependentUpon>Getir_Iptal.cs</DependentUpon>
     </Compile>
     <Compile Include="Getir\Class\Name.cs" />
     <Compile Include="Getir\Extension\GetirTools.cs" />
-    <Compile Include="Getir\Getir_Durum.cs" />
+    <Compile Include="Getir\Getir_Durum.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Getir\Getir_Durum.Designer.cs">
       <DependentUpon>Getir_Durum.cs</DependentUpon>
     </Compile>
-    <Compile Include="Getir\Getir_Panel.cs" />
+    <Compile Include="Getir\Getir_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Getir\Getir_Panel.Designer.cs">
       <DependentUpon>Getir_Panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Getir\Getir_Resto.cs" />
+    <Compile Include="Getir\Getir_Resto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Getir\Getir_Resto.Designer.cs">
       <DependentUpon>Getir_Resto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Getir\Getir_Siparis.cs" />
+    <Compile Include="Getir\Getir_Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Getir\Getir_Siparis.Designer.cs">
       <DependentUpon>Getir_Siparis.cs</DependentUpon>
     </Compile>
-    <Compile Include="GunduzGece.cs" />
+    <Compile Include="GunduzGece.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GunduzGece.Designer.cs">
       <DependentUpon>GunduzGece.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hesap_Tr.cs" />
+    <Compile Include="Hesap_Tr.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Hesap_Tr.Designer.cs">
       <DependentUpon>Hesap_Tr.cs</DependentUpon>
     </Compile>
@@ -517,40 +581,58 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CSS.resx</DependentUpon>
     </Compile>
-    <Compile Include="Dep_Secim.cs" />
+    <Compile Include="Dep_Secim.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dep_Secim.Designer.cs">
       <DependentUpon>Dep_Secim.cs</DependentUpon>
     </Compile>
-    <Compile Include="Detay.cs" />
+    <Compile Include="Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Detay.Designer.cs">
       <DependentUpon>Detay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fatno_Update.cs" />
+    <Compile Include="Fatno_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Fatno_Update.designer.cs">
       <DependentUpon>Fatno_Update.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fatura.cs" />
+    <Compile Include="Fatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Fatura.Designer.cs">
       <DependentUpon>Fatura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Garson_Sor.cs" />
+    <Compile Include="Garson_Sor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Garson_Sor.Designer.cs">
       <DependentUpon>Garson_Sor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gun_Sonu.cs" />
+    <Compile Include="Gun_Sonu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gun_Sonu.Designer.cs">
       <DependentUpon>Gun_Sonu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hesap.cs" />
+    <Compile Include="Hesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Hesap.Designer.cs">
       <DependentUpon>Hesap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Indirim.cs" />
+    <Compile Include="Indirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Indirim.Designer.cs">
       <DependentUpon>Indirim.cs</DependentUpon>
     </Compile>
     <Compile Include="Ingenico\IngenicoClass.cs" />
-    <Compile Include="Ingenico\IngenicoForm.cs" />
+    <Compile Include="Ingenico\IngenicoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ingenico\IngenicoForm.Designer.cs">
       <DependentUpon>IngenicoForm.cs</DependentUpon>
     </Compile>
@@ -558,7 +640,9 @@
     <Compile Include="Ingenico\ErrorClass.cs" />
     <Compile Include="Ingenico\GMPSmartDLL.cs" />
     <Compile Include="Ingenico\IngenicoConn.cs" />
-    <Compile Include="Ingenico\IngenicoServer.cs" />
+    <Compile Include="Ingenico\IngenicoServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ingenico\IngenicoServer.Designer.cs">
       <DependentUpon>IngenicoServer.cs</DependentUpon>
     </Compile>
@@ -567,27 +651,39 @@
     <Compile Include="Ingenico\ParserClass.cs" />
     <Compile Include="Ingenico\SonucTicket.cs" />
     <Compile Include="Ingenico\Utility.cs" />
-    <Compile Include="Kasa_Islem.cs" />
+    <Compile Include="Kasa_Islem.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Kasa_Islem.Designer.cs">
       <DependentUpon>Kasa_Islem.cs</DependentUpon>
     </Compile>
-    <Compile Include="KisiSayisiDegistir.cs" />
+    <Compile Include="KisiSayisiDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="KisiSayisiDegistir.Designer.cs">
       <DependentUpon>KisiSayisiDegistir.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kisi_Garson.cs" />
+    <Compile Include="Kisi_Garson.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Kisi_Garson.Designer.cs">
       <DependentUpon>Kisi_Garson.cs</DependentUpon>
     </Compile>
-    <Compile Include="Klavye1 .cs" />
+    <Compile Include="Klavye1 .cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Klavye1 .Designer.cs">
       <DependentUpon>Klavye1 .cs</DependentUpon>
     </Compile>
-    <Compile Include="Klavye2.cs" />
+    <Compile Include="Klavye2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Klavye2.Designer.cs">
       <DependentUpon>Klavye2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kurlar.cs" />
+    <Compile Include="Kurlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Kurlar.Designer.cs">
       <DependentUpon>Kurlar.cs</DependentUpon>
     </Compile>
@@ -596,31 +692,45 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Langs.settings</DependentUpon>
     </Compile>
-    <Compile Include="Language.cs" />
+    <Compile Include="Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Language.Designer.cs">
       <DependentUpon>Language.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Malzeme_Tr.cs" />
+    <Compile Include="Malzeme_Tr.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Malzeme_Tr.Designer.cs">
       <DependentUpon>Malzeme_Tr.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mars_SatirSec.cs" />
+    <Compile Include="Mars_SatirSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mars_SatirSec.Designer.cs">
       <DependentUpon>Mars_SatirSec.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasaTakip.cs" />
+    <Compile Include="MasaTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MasaTakip.designer.cs">
       <DependentUpon>MasaTakip.cs</DependentUpon>
     </Compile>
-    <Compile Include="Masa_Islem.cs" />
+    <Compile Include="Masa_Islem.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Masa_Islem.Designer.cs">
       <DependentUpon>Masa_Islem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Masa_Tr.cs" />
+    <Compile Include="Masa_Tr.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Masa_Tr.designer.cs">
       <DependentUpon>Masa_Tr.cs</DependentUpon>
     </Compile>
@@ -628,163 +738,241 @@
     <Compile Include="Models\PromotionModel.cs" />
     <Compile Include="Models\UniqueIdData.cs" />
     <Compile Include="Models\UrunPrintModel.cs" />
-    <Compile Include="Models\WaitForm1.cs" />
+    <Compile Include="Models\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Models\WaitForm1.Designer.cs">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\YuvarlaModel.cs" />
-    <Compile Include="NFC_Detay.cs" />
+    <Compile Include="NFC_Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NFC_Detay.Designer.cs">
       <DependentUpon>NFC_Detay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Oda_Kontrol.cs" />
+    <Compile Include="Oda_Kontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Oda_Kontrol.designer.cs">
       <DependentUpon>Oda_Kontrol.cs</DependentUpon>
     </Compile>
-    <Compile Include="Onb_Fatura.cs" />
+    <Compile Include="Onb_Fatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Onb_Fatura.Designer.cs">
       <DependentUpon>Onb_Fatura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paket.cs" />
+    <Compile Include="Paket.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Paket.Designer.cs">
       <DependentUpon>Paket.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaketCallCenter.cs" />
+    <Compile Include="PaketCallCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PaketCallCenter.Designer.cs">
       <DependentUpon>PaketCallCenter.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaketNot.cs" />
+    <Compile Include="PaketNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PaketNot.Designer.cs">
       <DependentUpon>PaketNot.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paket_Servis.cs" />
+    <Compile Include="Paket_Servis.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Paket_Servis.Designer.cs">
       <DependentUpon>Paket_Servis.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParaUstu.cs" />
+    <Compile Include="ParaUstu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ParaUstu.Designer.cs">
       <DependentUpon>ParaUstu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_CariList.cs" />
+    <Compile Include="Pos_CariList.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_CariList.Designer.cs">
       <DependentUpon>Pos_CariList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_ExtraFolio.cs" />
+    <Compile Include="Pos_ExtraFolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_ExtraFolio.Designer.cs">
       <DependentUpon>Pos_ExtraFolio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_ExtraFolio_BakiyeTRF.cs" />
+    <Compile Include="Pos_ExtraFolio_BakiyeTRF.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_ExtraFolio_BakiyeTRF.Designer.cs">
       <DependentUpon>Pos_ExtraFolio_BakiyeTRF.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_ExtraFolio_HarcamaDetayi.cs" />
+    <Compile Include="Pos_ExtraFolio_HarcamaDetayi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_ExtraFolio_HarcamaDetayi.Designer.cs">
       <DependentUpon>Pos_ExtraFolio_HarcamaDetayi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_Plu_Terazi.cs" />
+    <Compile Include="Pos_Plu_Terazi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_Plu_Terazi.Designer.cs">
       <DependentUpon>Pos_Plu_Terazi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_PR.cs" />
+    <Compile Include="Pos_PR.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_PR.Designer.cs">
       <DependentUpon>Pos_PR.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_SubeMerkez.cs" />
+    <Compile Include="Pos_SubeMerkez.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_SubeMerkez.Designer.cs">
       <DependentUpon>Pos_SubeMerkez.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_TeraziBarkodEkran.cs" />
+    <Compile Include="Pos_TeraziBarkodEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_TeraziBarkodEkran.Designer.cs">
       <DependentUpon>Pos_TeraziBarkodEkran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_TeraziEkran.cs" />
+    <Compile Include="Pos_TeraziEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_TeraziEkran.Designer.cs">
       <DependentUpon>Pos_TeraziEkran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_XtraFolio_OdaTRF.cs" />
+    <Compile Include="Pos_XtraFolio_OdaTRF.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_XtraFolio_OdaTRF.Designer.cs">
       <DependentUpon>Pos_XtraFolio_OdaTRF.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_XtraFolio_OdemeTipi.cs" />
+    <Compile Include="Pos_XtraFolio_OdemeTipi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_XtraFolio_OdemeTipi.Designer.cs">
       <DependentUpon>Pos_XtraFolio_OdemeTipi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_XtraFolio_Rack.cs" />
+    <Compile Include="Pos_XtraFolio_Rack.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_XtraFolio_Rack.Designer.cs">
       <DependentUpon>Pos_XtraFolio_Rack.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Adisyon.cs" />
+    <Compile Include="Print\Adisyon.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Adisyon.designer.cs">
       <DependentUpon>Adisyon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\DynamicReport.cs" />
+    <Compile Include="Print\DynamicReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\DynamicReport.designer.cs">
       <DependentUpon>DynamicReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Fatura.cs" />
+    <Compile Include="Print\Fatura.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Fatura.designer.cs">
       <DependentUpon>Fatura.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Rmosmuh.cs" />
     <Compile Include="Class\dbtools.cs" />
     <Compile Include="Class\Fronttools.cs" />
-    <Compile Include="Print\Hesap.cs" />
+    <Compile Include="Print\Hesap.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Hesap.Designer.cs">
       <DependentUpon>Hesap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\IptalFisi.cs" />
+    <Compile Include="Print\IptalFisi.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\IptalFisi.Designer.cs">
       <DependentUpon>IptalFisi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\GenelKasaPrint.cs" />
+    <Compile Include="Print\GenelKasaPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\GenelKasaPrint.Designer.cs">
       <DependentUpon>GenelKasaPrint.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Paket.cs" />
+    <Compile Include="Print\Paket.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Paket.Designer.cs">
       <DependentUpon>Paket.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Rapor_Gunsonu.cs" />
+    <Compile Include="Print\Rapor_Gunsonu.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Rapor_Gunsonu.Designer.cs">
       <DependentUpon>Rapor_Gunsonu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Rapor_Gunsonu2.cs" />
+    <Compile Include="Print\Rapor_Gunsonu2.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Rapor_Gunsonu2.Designer.cs">
       <DependentUpon>Rapor_Gunsonu2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Rapor_Gunsonu3.cs" />
+    <Compile Include="Print\Rapor_Gunsonu3.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Rapor_Gunsonu3.Designer.cs">
       <DependentUpon>Rapor_Gunsonu3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Rapor_Gunsonu4.cs" />
+    <Compile Include="Print\Rapor_Gunsonu4.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Rapor_Gunsonu4.Designer.cs">
       <DependentUpon>Rapor_Gunsonu4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Rapor_Gunsonu5.cs" />
+    <Compile Include="Print\Rapor_Gunsonu5.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Rapor_Gunsonu5.Designer.cs">
       <DependentUpon>Rapor_Gunsonu5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Rapor_Gunsonu6.cs" />
+    <Compile Include="Print\Rapor_Gunsonu6.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Rapor_Gunsonu6.Designer.cs">
       <DependentUpon>Rapor_Gunsonu6.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Rapor_Gunsonu7.cs" />
+    <Compile Include="Print\Rapor_Gunsonu7.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Rapor_Gunsonu7.Designer.cs">
       <DependentUpon>Rapor_Gunsonu7.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Rapor_Kasa.cs" />
+    <Compile Include="Print\Rapor_Kasa.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Rapor_Kasa.Designer.cs">
       <DependentUpon>Rapor_Kasa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\RaporUrun.cs" />
+    <Compile Include="Print\RaporUrun.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\RaporUrun.Designer.cs">
       <DependentUpon>RaporUrun.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Siparis.cs" />
+    <Compile Include="Print\Siparis.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Siparis.Designer.cs">
       <DependentUpon>Siparis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print\Zayi.cs" />
+    <Compile Include="Print\Zayi.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Zayi.Designer.cs">
       <DependentUpon>Zayi.cs</DependentUpon>
     </Compile>
@@ -801,40 +989,58 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Raporlar.cs" />
+    <Compile Include="Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Raporlar.Designer.cs">
       <DependentUpon>Raporlar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Raporlar2.cs" />
+    <Compile Include="Raporlar2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Raporlar2.Designer.cs">
       <DependentUpon>Raporlar2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rapor_Dizayn.cs" />
+    <Compile Include="Rapor_Dizayn.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Rapor_Dizayn.designer.cs">
       <DependentUpon>Rapor_Dizayn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rapor_Sec.cs" />
+    <Compile Include="Rapor_Sec.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Rapor_Sec.Designer.cs">
       <DependentUpon>Rapor_Sec.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rapor_Tarih.cs" />
+    <Compile Include="Rapor_Tarih.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Rapor_Tarih.Designer.cs">
       <DependentUpon>Rapor_Tarih.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rezervasyon.cs" />
+    <Compile Include="Rezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Rezervasyon.Designer.cs">
       <DependentUpon>Rezervasyon.cs</DependentUpon>
     </Compile>
     <Compile Include="RHMesaj.cs" />
-    <Compile Include="Satis.cs" />
+    <Compile Include="Satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Satis.designer.cs">
       <DependentUpon>Satis.cs</DependentUpon>
     </Compile>
-    <Compile Include="SatisListesiCopy.cs" />
+    <Compile Include="SatisListesiCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SatisListesiCopy.Designer.cs">
       <DependentUpon>SatisListesiCopy.cs</DependentUpon>
     </Compile>
-    <Compile Include="SatisListesi.cs" />
+    <Compile Include="SatisListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SatisListesi.Designer.cs">
       <DependentUpon>SatisListesi.cs</DependentUpon>
     </Compile>
@@ -843,58 +1049,82 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Set_Sube.settings</DependentUpon>
     </Compile>
-    <Compile Include="Siparis_Not.cs" />
+    <Compile Include="Siparis_Not.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Siparis_Not.Designer.cs">
       <DependentUpon>Siparis_Not.cs</DependentUpon>
     </Compile>
-    <Compile Include="Siparis_Tekrar.cs" />
+    <Compile Include="Siparis_Tekrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Siparis_Tekrar.Designer.cs">
       <DependentUpon>Siparis_Tekrar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Split_Bol.cs" />
+    <Compile Include="Split_Bol.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Split_Bol.Designer.cs">
       <DependentUpon>Split_Bol.cs</DependentUpon>
     </Compile>
-    <Compile Include="TarihDegistir.cs" />
+    <Compile Include="TarihDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TarihDegistir.Designer.cs">
       <DependentUpon>TarihDegistir.cs</DependentUpon>
     </Compile>
     <Compile Include="Trendyol\CancelOrderReq.cs" />
-    <Compile Include="Trendyol\EntegreMenu.cs" />
+    <Compile Include="Trendyol\EntegreMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Trendyol\EntegreMenu.Designer.cs">
       <DependentUpon>EntegreMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Trendyol\GenelModel.cs" />
     <Compile Include="Trendyol\OrderReqAccept.cs" />
     <Compile Include="Trendyol\TrendyolApi.cs" />
-    <Compile Include="Trendyol\TrendyoliptalForm.cs" />
+    <Compile Include="Trendyol\TrendyoliptalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Trendyol\TrendyoliptalForm.Designer.cs">
       <DependentUpon>TrendyoliptalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Trendyol\TrendyolOnayForm.cs" />
+    <Compile Include="Trendyol\TrendyolOnayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Trendyol\TrendyolOnayForm.Designer.cs">
       <DependentUpon>TrendyolOnayForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Trendyol\TrendyolUrunPaketIdList.cs" />
     <Compile Include="Trendyol\TumuTrendyolAktifReq.cs" />
     <Compile Include="Trendyol\YemekSepetiGoMenuModel.cs" />
-    <Compile Include="Update\Updater.cs" />
+    <Compile Include="Update\Updater.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Update\Updater.designer.cs">
       <DependentUpon>Updater.cs</DependentUpon>
     </Compile>
-    <Compile Include="UrunAciklama.cs" />
+    <Compile Include="UrunAciklama.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UrunAciklama.Designer.cs">
       <DependentUpon>UrunAciklama.cs</DependentUpon>
     </Compile>
-    <Compile Include="Urun_Detay.cs" />
+    <Compile Include="Urun_Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Urun_Detay.Designer.cs">
       <DependentUpon>Urun_Detay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Uzak.cs" />
+    <Compile Include="Uzak.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Uzak.designer.cs">
       <DependentUpon>Uzak.cs</DependentUpon>
     </Compile>
-    <Compile Include="WaitFormRmos.cs" />
+    <Compile Include="WaitFormRmos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WaitFormRmos.Designer.cs">
       <DependentUpon>WaitFormRmos.cs</DependentUpon>
     </Compile>
@@ -903,44 +1133,64 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
-    <Compile Include="XZ_Raporu.cs" />
+    <Compile Include="XZ_Raporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="XZ_Raporu.designer.cs">
       <DependentUpon>XZ_Raporu.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\ConvertDataTableList.cs" />
     <Compile Include="Class\XMLtoDataSet.cs" />
     <Compile Include="YemekSepeti\YS_AuthHeader.cs" />
-    <Compile Include="YemekSepeti\YS_IptalDurum.cs" />
-    <Compile Include="YemekSepeti\YS_MusteriListesi.cs" />
+    <Compile Include="YemekSepeti\YS_IptalDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YemekSepeti\YS_MusteriListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="YemekSepeti\YS_MusteriListesi.Designer.cs">
       <DependentUpon>YS_MusteriListesi.cs</DependentUpon>
     </Compile>
-    <Compile Include="YemekSepeti\YS_Panel.cs" />
+    <Compile Include="YemekSepeti\YS_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="YemekSepeti\YS_Panel.Designer.cs">
       <DependentUpon>YS_Panel.cs</DependentUpon>
     </Compile>
     <Compile Include="YemekSepeti\YS_RestoInfo.cs" />
-    <Compile Include="YemekSepeti\YS_RestoranDurum.cs" />
+    <Compile Include="YemekSepeti\YS_RestoranDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="YemekSepeti\YS_RestoranDurum.Designer.cs">
       <DependentUpon>YS_RestoranDurum.cs</DependentUpon>
     </Compile>
-    <Compile Include="YemekSepeti\YS_SiparisDurum.cs" />
+    <Compile Include="YemekSepeti\YS_SiparisDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="YemekSepeti\YS_SiparisDurum.Designer.cs">
       <DependentUpon>YS_SiparisDurum.cs</DependentUpon>
     </Compile>
-    <Compile Include="YemekSepeti\YS_SiparisGeldi.cs" />
+    <Compile Include="YemekSepeti\YS_SiparisGeldi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="YemekSepeti\YS_SiparisGeldi.Designer.cs">
       <DependentUpon>YS_SiparisGeldi.cs</DependentUpon>
     </Compile>
-    <Compile Include="YemekSepeti\YS_Yardim.cs" />
+    <Compile Include="YemekSepeti\YS_Yardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="YemekSepeti\YS_Yardim.Designer.cs">
       <DependentUpon>YS_Yardim.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pos_YerliYabanci.cs" />
+    <Compile Include="Pos_YerliYabanci.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pos_YerliYabanci.Designer.cs">
       <DependentUpon>Pos_YerliYabanci.cs</DependentUpon>
     </Compile>
-    <Compile Include="YonetimIslemleri.cs" />
+    <Compile Include="YonetimIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="YonetimIslemleri.Designer.cs">
       <DependentUpon>YonetimIslemleri.cs</DependentUpon>
     </Compile>
@@ -985,6 +1235,9 @@
     <EmbeddedResource Include="Arama.resx">
       <DependentUpon>Arama.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arama.ru.resx">
+      <DependentUpon>Arama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ayarlar.en-US.resx">
       <DependentUpon>Ayarlar.cs</DependentUpon>
@@ -1386,6 +1639,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Adisyon.resx">
       <DependentUpon>Adisyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\CariBakiyeKontrolRapor.resx">
+      <DependentUpon>CariBakiyeKontrolRapor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\DynamicReport.resx">
       <DependentUpon>DynamicReport.cs</DependentUpon>

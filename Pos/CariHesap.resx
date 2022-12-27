@@ -939,12 +939,6 @@
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="özelSilmeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 22</value>
-  </data>
-  <data name="özelSilmeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sil (özel)</value>
-  </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 26</value>
   </data>
@@ -6765,6 +6759,96 @@ Print</value>
   <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="simpleButton21.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="simpleButton21.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAedEVYdFRpdGxlAExldHRlcjtlLW1haWw7ZW1haWw7bWFpbBqRk9oAAAJCSURBVDhPpZP9T1Jh
+        FMefrLWy97+tn/qlzc3yra2WCYJK00Zlo0xXqaXmcoaCLRTfsgRsJZYU2WpOCQmFUN66CPdyuUDfnude
+        xtZirdbdPjvnOefc77nnnj0EwH9RMvgvsKeswN4S7PsDLL+H9BqX7ANmF/pNLvSNLss8GHkrc99IefwG
+        vZTu4SWFISfuDS3idv/CgiykbZ8En5aQz/+AlM0rSHlkqWUUY4Uzq0vyIlR6K/v+/eTaXTuMVjc8vjBy
+        uTyEdBa8kFEQFV8QJAhiRs6vfPZDfWUEbZ3zTOAA0d+x4fuuCPO0G9O2T3KXJC+B280UYWcpm8PgqANX
+        O63YCCSg63jBBA6Sti4bYlwa3i0OM/ZV3Oqdlbsm+QyiMQHJFPNFNLQOoueRHWsbcXg3OTQZ5phAObnc
+        MY8oJ8Lj5/DqXQDG8ffQ3RiDPxCjWwK8X3dQXd+Nrv552Jw+uW7dn4D6+jMmcIg0G54jEk9j0R2Eaeoj
+        EikJ6/R/tN18gpMVBlzUPcTrZQ++hXdhpnnnhyDWfBwu6WeYwGGiaZ/DqjeCPrq2OB2FiTG++GJwrfhl
+        NjbjcozlB2gda3a+dYoJHCEN+lk6twPhGI9tOvN2lEco+qstQvOsztBjw7kWeY1HSUW9CVtBDqEdAcHt
+        FIUvwPzfCUV4uf5U7bAiUNU45qhrmURdsxW1lJqmCdRoJ1CtHUeVRuGsxoIzjRZUqqlVPUWlyoLTF4Zf
+        UoFyCt0lm4WQYyU4XoITBcteLit5w/4ekJ8XzLqmZcuX6gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnCariBakiyeMail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 7</value>
+  </data>
+  <data name="btnCariBakiyeMail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 49</value>
+  </data>
+  <data name="btnCariBakiyeMail.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnCariBakiyeMail.Text" xml:space="preserve">
+    <value>MAİL GÖNDER</value>
+  </data>
+  <data name="&gt;&gt;btnCariBakiyeMail.Name" xml:space="preserve">
+    <value>btnCariBakiyeMail</value>
+  </data>
+  <data name="&gt;&gt;btnCariBakiyeMail.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnCariBakiyeMail.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnCariBakiyeMail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCariBakiyePrint.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnCariBakiyePrint.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAddEVYdFRpdGxlAERlZmF1bHRQcmludGVyO1ByaW50
+        ZXI72mmlAgAAAwhJREFUOE9lkXsw1FEUx09palLSPzXFH/0fMk1p9EclGpkeq6aQ8li7nu0OsUw1Vq3H
+        UqwR6cGWsIqhTEo10gglTUOmP2NSYfVY8ti8FvPt/Ha1menOfObMPfd+v+eecwmAGV5LmGXM8gVW/MUv
+        nzZFVVNVZDUNSO/SwInbVHUwlxx3q/h0kcGybO2bFk3JO2huWyiu+oAn7S2Q16yZj6gihN8jhOoIvvmE
+        owU07JlKmxcbrLisfYvZuXkzpllLvNZyHOIygiiPcPIWIbjIga8DgVrCXhXVCkLh6TbMavX1NsyY5jBo
+        MEL/8zfGfk8jssIewSVCDSC5xtsc5ZUOCCwi7FKSkTJvtu7LK+vqCIi+hIgkLSanZ9H/fRxfv49hdHwa
+        Yq09ThQTZDpLZVm5A/xvcAtXCDsVbKAp6fwxaJjA4aAUhMQWwjhpwpfBUXzWj8IwMgHVfRH8WOB3nRB9
+        xwEBhYRjVwneKsK2GG4hs6gDJtM8/CUqeB1JhJcvI0qEp0iBk9IM5N0qxgG1HUS5XJXn4JvDvSsJW6No
+        eIuEh3jxajv3akJDUycO+CfA3UuCHR5hcPMQY/ueUEhlatwoq4C88BB8lBvgqVgHl1CqdQkjR45E53Ja
+        8e3XBD59G0evGSN69Rz1RnNOoI8H+mNkCsNj06hr7BG+bLUziwUoXt2Ebv0YuroN2L7//ALn/uN99xC6
+        egyIUT4XDOx4npbvl11oRMfHITS970d6YRtPfgYZDQNIfdYPZX2/uWr6tdd40dGHlg+DCD/7VDBYYzUI
+        lOmaT8VWwi+6FBfzWzE0OoUhfq6Bo2FkEj8ZIe8dkAWfwBx4HUttZQNbqwGvlYIjsz4xo/5Vcu5LWGi2
+        xoT0R218vpFZy9gyS60GivTHFJ9WxzlaunBoH5ntqpHlbUWY2lnDe0G0irGRKHQkji83C60GcaqHiL1Q
+        C3nKA8iSa3D6fDXkBe7ogQKR2W6QJlVAkqBDWHw5Qs+UISSulHWLDBZvBCJyXUl62SVLnOmMoAynrFNp
+        Tv/d+QfoD6DBT8IUtckXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnCariBakiyePrint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>639, 7</value>
+  </data>
+  <data name="btnCariBakiyePrint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 49</value>
+  </data>
+  <data name="btnCariBakiyePrint.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnCariBakiyePrint.Text" xml:space="preserve">
+    <value>RULO PRİNT</value>
+  </data>
+  <data name="&gt;&gt;btnCariBakiyePrint.Name" xml:space="preserve">
+    <value>btnCariBakiyePrint</value>
+  </data>
+  <data name="&gt;&gt;btnCariBakiyePrint.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnCariBakiyePrint.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnCariBakiyePrint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="textEdit23.EditValue" xml:space="preserve">
     <value>Başlangıç Tarihi</value>
   </data>
@@ -6787,7 +6871,7 @@ Print</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;textEdit23.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="textEdit20.EditValue" xml:space="preserve">
     <value>Bitiş Tarihi</value>
@@ -6811,7 +6895,7 @@ Print</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;textEdit20.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="dateEditRap3BitTar.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -6819,10 +6903,10 @@ Print</value>
   <data name="dateEditRap3BitTar.Location" type="System.Drawing.Point, System.Drawing">
     <value>869, 35</value>
   </data>
-  <data name="dateEdit6.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+  <data name="dateEditRap3BitTar.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
-  <data name="dateEdit6.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+  <data name="dateEditRap3BitTar.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="dateEditRap3BitTar.Size" type="System.Drawing.Size, System.Drawing">
@@ -6841,7 +6925,7 @@ Print</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;dateEditRap3BitTar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="dateEditRap3BasTar.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -6849,10 +6933,10 @@ Print</value>
   <data name="dateEditRap3BasTar.Location" type="System.Drawing.Point, System.Drawing">
     <value>869, 7</value>
   </data>
-  <data name="dateEdit5.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+  <data name="dateEditRap3BasTar.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
-  <data name="dateEdit5.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+  <data name="dateEditRap3BasTar.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="dateEditRap3BasTar.Size" type="System.Drawing.Size, System.Drawing">
@@ -6871,7 +6955,7 @@ Print</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;dateEditRap3BasTar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btnCariRap3Listele.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
@@ -6895,10 +6979,10 @@ Print</value>
 </value>
   </data>
   <data name="btnCariRap3Listele.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 11</value>
+    <value>7, 7</value>
   </data>
   <data name="btnCariRap3Listele.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 36</value>
+    <value>131, 49</value>
   </data>
   <data name="btnCariRap3Listele.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6916,7 +7000,7 @@ Print</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;btnCariRap3Listele.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -6946,7 +7030,7 @@ Print</value>
     <value>990, 693</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
-    <value>Cari Rapor 3</value>
+    <value>Cari Bakiye Kontrol</value>
   </data>
   <data name="&gt;&gt;xtraTabPage4.Name" xml:space="preserve">
     <value>xtraTabPage4</value>
@@ -6971,6 +7055,12 @@ Print</value>
   </data>
   <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="özelSilmeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="özelSilmeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sil (özel)</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

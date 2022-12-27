@@ -556,7 +556,7 @@
 </value>
   </data>
   <data name="btn_HesapDokumu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 135</value>
+    <value>573, 135</value>
   </data>
   <data name="btn_HesapDokumu.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -629,7 +629,7 @@
 </value>
   </data>
   <data name="btn_Odemeal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 185</value>
+    <value>573, 185</value>
   </data>
   <data name="btn_Odemeal.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -677,7 +677,7 @@
 </value>
   </data>
   <data name="btn_Odemesil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 234</value>
+    <value>573, 234</value>
   </data>
   <data name="btn_Odemesil.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -735,7 +735,7 @@
 </value>
   </data>
   <data name="btn_Indirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 234</value>
+    <value>704, 234</value>
   </data>
   <data name="btn_Indirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -809,7 +809,7 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 537</value>
+    <value>574, 541</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 54</value>
@@ -839,7 +839,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Adisyon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 332</value>
+    <value>573, 332</value>
   </data>
   <data name="chk_Adisyon.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 55</value>
@@ -996,7 +996,7 @@
     <value>YellowGreen</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 361</value>
+    <value>556, 365</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1020,7 +1020,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Hesapdok.Location" type="System.Drawing.Point, System.Drawing">
-    <value>641, 332</value>
+    <value>643, 332</value>
   </data>
   <data name="chk_Hesapdok.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -1074,7 +1074,7 @@
     <value>Bottom, Right</value>
   </data>
   <data name="txt_Not.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 555</value>
+    <value>315, 559</value>
   </data>
   <data name="txt_Not.Properties.NullValuePrompt" xml:space="preserve">
     <value>Adisyon Notu Giriniz...</value>
@@ -1130,7 +1130,7 @@
 </value>
   </data>
   <data name="btn_Bindirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 283</value>
+    <value>704, 283</value>
   </data>
   <data name="btn_Bindirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1191,7 +1191,7 @@
 </value>
   </data>
   <data name="btn_Yuvarla.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 393</value>
+    <value>573, 393</value>
   </data>
   <data name="btn_Yuvarla.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 53</value>
@@ -1311,7 +1311,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 556</value>
+    <value>55, 560</value>
   </data>
   <data name="gridView2.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 7pt, style=Bold</value>
@@ -1371,7 +1371,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_HesabaFatura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>772, 393</value>
+    <value>774, 393</value>
   </data>
   <data name="chk_HesabaFatura.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 53</value>
@@ -1401,7 +1401,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_AdisYaz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>772, 332</value>
+    <value>774, 332</value>
   </data>
   <data name="btn_AdisYaz.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -1590,7 +1590,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdsPr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 332</value>
+    <value>704, 332</value>
   </data>
   <data name="chk_AdsPr.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 55</value>
@@ -1638,7 +1638,7 @@
 </value>
   </data>
   <data name="btnIngenicoKapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 86</value>
+    <value>573, 86</value>
   </data>
   <data name="btnIngenicoKapat.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 43</value>
@@ -1693,7 +1693,7 @@
 </value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>752, 4</value>
+    <value>754, 4</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 24</value>
@@ -1766,7 +1766,7 @@
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 283</value>
+    <value>573, 283</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1841,7 +1841,7 @@
 </value>
   </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 184</value>
+    <value>704, 184</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1890,7 +1890,7 @@
 </value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 135</value>
+    <value>704, 135</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1920,7 +1920,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdisyonGR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>641, 393</value>
+    <value>643, 393</value>
   </data>
   <data name="chk_AdisyonGR.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 53</value>
@@ -1990,7 +1990,7 @@
 </value>
   </data>
   <data name="btnFisIptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 465</value>
+    <value>573, 465</value>
   </data>
   <data name="btnFisIptal.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 54</value>
@@ -2023,7 +2023,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnSpSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 393</value>
+    <value>704, 393</value>
   </data>
   <data name="btnSpSil.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 53</value>
@@ -2053,7 +2053,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>832, 678</value>
+    <value>834, 682</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

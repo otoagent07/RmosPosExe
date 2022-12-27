@@ -16,6 +16,10 @@ using System.Reflection;
 using DevExpress.XtraGrid.Views.Grid;
 using System.IO;
 using System.Diagnostics;
+using Pos.Print;
+using DevExpress.XtraReports.UI;
+using System.Net.Mail;
+using System.Net;
 
 namespace Pos
 {
@@ -1390,7 +1394,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
         }
 
 
-        public void rap3Listele(bool hepsi=false)
+        public DataTable rap3Listele(bool hepsi = false)
         {
             try
             {
@@ -1412,13 +1416,17 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari";
 
                 gridControlCariRap3.DataSource = dataTable;
                 gridviewCountYaz(gridViewCariRap3);
+
+                return dataTable;
             }
             catch (Exception ex)
             {
                 RHMesaj.MyMessageError(MyClass, "btnCariRap3Listele_Click", "", ex);
             }
+
+            return null;
         }
-            
+
         public void gridviewCountYaz(GridView grid)
         {
             if (grid.Columns.Count > 0)
@@ -1479,6 +1487,140 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari";
                         UseShellExecute = true
                     };
                     p.Start();
+                }
+            }
+        }
+
+        private void btnCariBakiyePrint_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable dt3 = dbtools.SelectTable("SELECT Pkod_Ad, Pkod_Satir FROM Pos_Kodlar  where Pkod_Sinif = '16' and Pkod_Ustgrup = 'HES' and Pkod_Kod = '" + Departman.Dep_Kodu + "' ");
+                if (dt3 != null && dt3.Rows.Count > 0)
+                {
+                    string printerName = dt3.Rows[0]["Pkod_Ad"].ToString();
+
+                    DataTable dataTable = gridControlCariRap3.DataSource as DataTable;
+
+                    string toplamBakiye = gridViewCariRap3.Columns["Bakiye"].SummaryItem.SummaryValue.ToString();
+                    // txtToplamBakiye
+
+                    CariBakiyeKontrolRapor rapor = new CariBakiyeKontrolRapor();
+                    rapor.txtToplamBakiye.Text = toplamBakiye;
+                    rapor.DataSource = dataTable;
+                    rapor.PrinterName = printerName;
+
+                    rapor.txtTarih.Text = DateTime.Now.ToString("dd.MM.yyyy");
+                    rapor.txtDepAd.Text = Departman.Dep_Adi;
+                    rapor.Print();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+        }
+
+        private void btnCariBakiyeMail_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string klasor = "CariRapor";
+                if (!Directory.Exists(klasor))
+                {
+                    Directory.CreateDirectory(klasor);
+                }
+
+                string path = klasor+"\\"+DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss")+".pdf";
+
+                gridViewCariRap3.ExportToPdf(path);
+
+                Mail_Gonder(path);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        public void Mail_Gonder(string fileName)
+        {
+            DataTable dt = dbtools.SelectTable("select ISNULL(Mail_Gonder,0) as Mail_Gonder,Mail_Isim,Mail_Adres,Mail_Parola,Mail_Host,Mail_Port,Mail_SSL, "
+                                     + " Mail_Alici1,Mail_Alici2,Mail_Alici3,Mail_Alici4,Mail_Alici5, "
+                                     + " isnull(Mail_Odeme_Tip,0) as Mail_Odeme_Tip,isnull(Mail_Servis_Paylari,0) as Mail_Servis_Paylari,isnull(Mail_Cari_Ozet,0) as Mail_Cari_Ozet, "
+                                     + " isnull(Mail_Odenmez_Ozet,0) as Mail_Odenmez_Ozet,isnull(Mail_Malz_Ozet,0) as Mail_Malz_Ozet,isnull(Mail_Ana_Ozet,0) as Mail_Ana_Ozet, "
+                                     + " isnull(Mail_Alt_Ozet,0) as Mail_Alt_Ozet,isnull(Mail_Iptal_Ozet,0) as Mail_Iptal_Ozet, "
+                                     + " Mail_Alici6,Mail_Alici7,Mail_Alici8,Mail_Alici9,Mail_Alici10 from Pos_Mail WITH(NOLOCK) where Mail_Id = 1");
+            if (dt.Rows.Count > 0)
+            {
+                //bool Mail_Gonder = Convert.ToBoolean(dt.Rows[0]["Mail_Gonder"]);
+                //if (Mail_Gonder == true)
+                {
+
+                    string Mail_Isim = Convert.ToString(dt.Rows[0]["Mail_Isim"]);
+                    string Mail_Adres = Convert.ToString(dt.Rows[0]["Mail_Adres"]);
+                    string Mail_Parola = Convert.ToString(dt.Rows[0]["Mail_Parola"]);
+                    string Mail_Host = Convert.ToString(dt.Rows[0]["Mail_Host"]);
+                    string Mail_Port = Convert.ToString(dt.Rows[0]["Mail_Port"]);
+                    bool Mail_SSL = Convert.ToBoolean(dt.Rows[0]["Mail_SSL"]);
+
+                    string Mail_Alici1 = Convert.ToString(dt.Rows[0]["Mail_Alici1"]);
+                    string Mail_Alici2 = Convert.ToString(dt.Rows[0]["Mail_Alici2"]);
+                    string Mail_Alici3 = Convert.ToString(dt.Rows[0]["Mail_Alici3"]);
+                    string Mail_Alici4 = Convert.ToString(dt.Rows[0]["Mail_Alici4"]);
+                    string Mail_Alici5 = Convert.ToString(dt.Rows[0]["Mail_Alici5"]);
+                    string Mail_Alici6 = Convert.ToString(dt.Rows[0]["Mail_Alici6"]);
+                    string Mail_Alici7 = Convert.ToString(dt.Rows[0]["Mail_Alici7"]);
+                    string Mail_Alici8 = Convert.ToString(dt.Rows[0]["Mail_Alici8"]);
+                    string Mail_Alici9 = Convert.ToString(dt.Rows[0]["Mail_Alici9"]);
+                    string Mail_Alici10 = Convert.ToString(dt.Rows[0]["Mail_Alici10"]);
+
+                    try
+                    {
+
+                        System.Threading.Thread.Sleep(1 * 1000);
+                        Application.DoEvents();
+
+                        MailMessage ePosta = new MailMessage();
+
+                        ePosta.Attachments.Add(new Attachment(fileName));
+
+                        ePosta.From = new MailAddress(Mail_Adres, Mail_Isim);
+                        if (Mail_Alici1.Length > 0) ePosta.To.Add(Mail_Alici1);
+                        if (Mail_Alici2.Length > 0) ePosta.To.Add(Mail_Alici2);
+                        if (Mail_Alici3.Length > 0) ePosta.To.Add(Mail_Alici3);
+                        if (Mail_Alici4.Length > 0) ePosta.To.Add(Mail_Alici4);
+                        if (Mail_Alici5.Length > 0) ePosta.To.Add(Mail_Alici5);
+                        if (Mail_Alici6.Length > 0) ePosta.To.Add(Mail_Alici6);
+                        if (Mail_Alici7.Length > 0) ePosta.To.Add(Mail_Alici7);
+                        if (Mail_Alici8.Length > 0) ePosta.To.Add(Mail_Alici8);
+                        if (Mail_Alici9.Length > 0) ePosta.To.Add(Mail_Alici9);
+                        if (Mail_Alici10.Length > 0) ePosta.To.Add(Mail_Alici10);
+                        ePosta.Priority = MailPriority.Normal;
+                        ePosta.Subject = "CARİ BAKİYE KONTROL RAPOR "+DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
+                        ePosta.IsBodyHtml = true;
+                        ePosta.Body = ePosta.Subject;
+
+
+                        SmtpClient ss = new SmtpClient(Mail_Host, Convert.ToInt32(Mail_Port));
+                        ss.EnableSsl = Mail_SSL;
+                        ss.DeliveryMethod = SmtpDeliveryMethod.Network;
+                        ss.UseDefaultCredentials = false;
+                        ss.Credentials = new NetworkCredential(Mail_Adres, Mail_Parola);
+                        ss.Send(ePosta);
+
+                        MessageBox.Show(res_man.GetString("Mail Başarıyla Gönderildi."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception err)
+                    {
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Gun_Sonu, Log.Log_Islem.Kaydet, DateTime.Now.ToString("dd.MM.yyyy") + " Mail Gönderim Sırasında Hata Oldu...", "", "");
+                        MessageBox.Show(res_man.GetString("Mail Gönderilemedi...") + "\n" + err.Message, res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
                 }
             }
         }
