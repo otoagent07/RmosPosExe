@@ -103,6 +103,16 @@ namespace Pos.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap getir25x25 {
+            get {
+                object obj = ResourceManager.GetObject("getir25x25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_launcher {
             get {
                 object obj = ResourceManager.GetObject("ic_launcher", resourceCulture);
@@ -113,9 +123,29 @@ namespace Pos.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kasa {
+            get {
+                object obj = ResourceManager.GetObject("kasa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock2 {
             get {
                 object obj = ResourceManager.GetObject("lock2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap online {
+            get {
+                object obj = ResourceManager.GetObject("online", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,16 @@ namespace Pos.Properties {
         internal static System.IO.UnmanagedMemoryStream S_Harmonics {
             get {
                 return ResourceManager.GetStream("S_Harmonics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sepet25 {
+            get {
+                object obj = ResourceManager.GetObject("sepet25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -204,6 +244,16 @@ namespace Pos.Properties {
         internal static System.IO.UnmanagedMemoryStream Yemeksepeti {
             get {
                 return ResourceManager.GetStream("Yemeksepeti", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yemeksepeti25x {
+            get {
+                object obj = ResourceManager.GetObject("yemeksepeti25x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

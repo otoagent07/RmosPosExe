@@ -967,6 +967,7 @@
             this.Pos_HesapArti = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_FixMenu = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_SatirSilYetkili = new DevExpress.XtraEditors.CheckEdit();
+            this.Pos_XZdepartman = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_Eksileme = new DevExpress.XtraEditors.CheckEdit();
             this.chk_OdemeTipi = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_YarimDubleAlan = new DevExpress.XtraEditors.CheckEdit();
@@ -1223,7 +1224,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.Pos_XZdepartman = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1847,6 +1847,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pos_HesapArti.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_FixMenu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_SatirSilYetkili.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_XZdepartman.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_Eksileme.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_OdemeTipi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_YarimDubleAlan.Properties)).BeginInit();
@@ -2041,7 +2042,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pos_XZdepartman.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -10221,6 +10221,12 @@
             this.Pos_SatirSilYetkili.Properties.Appearance.Options.UseFont = true;
             this.Pos_SatirSilYetkili.Properties.Caption = resources.GetString("Pos_SatirSilYetkili.Properties.Caption");
             // 
+            // Pos_XZdepartman
+            // 
+            resources.ApplyResources(this.Pos_XZdepartman, "Pos_XZdepartman");
+            this.Pos_XZdepartman.Name = "Pos_XZdepartman";
+            this.Pos_XZdepartman.Properties.Caption = resources.GetString("Pos_XZdepartman.Properties.Caption");
+            // 
             // Pos_Eksileme
             // 
             resources.ApplyResources(this.Pos_Eksileme, "Pos_Eksileme");
@@ -12181,12 +12187,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // Pos_XZdepartman
-            // 
-            resources.ApplyResources(this.Pos_XZdepartman, "Pos_XZdepartman");
-            this.Pos_XZdepartman.Name = "Pos_XZdepartman";
-            this.Pos_XZdepartman.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -12843,6 +12843,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pos_HesapArti.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_FixMenu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_SatirSilYetkili.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_XZdepartman.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_Eksileme.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_OdemeTipi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_YarimDubleAlan.Properties)).EndInit();
@@ -13044,7 +13045,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pos_XZdepartman.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

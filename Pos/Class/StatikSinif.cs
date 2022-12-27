@@ -154,6 +154,7 @@ Select InstanceNames from @GetInstances ";
         public static string getAlterQuery() // scriptgeç scriptbas
         {
             string query = @"
+IF COL_LENGTH('Stok_Kodlar', 'Kodlar_parakasa') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_parakasa nvarchar(200) END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_Eksileme') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_Eksileme bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_XZdepartman') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_XZdepartman bit END;
 ALTER TABLE GetirYemek_Option ALTER COLUMN  GOption_price    decimal(18, 2)

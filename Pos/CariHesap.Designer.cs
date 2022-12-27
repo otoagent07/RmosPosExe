@@ -315,6 +315,10 @@
             this.btnExcelKaydetCariRapor3 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnCariRap3Listele = new DevExpress.XtraEditors.SimpleButton();
+            this.dateEditRap3BasTar = new DevExpress.XtraEditors.DateEdit();
+            this.textEdit20 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit23 = new DevExpress.XtraEditors.TextEdit();
+            this.dateEditRap3BitTar = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Cari_Hesap.SuspendLayout();
@@ -471,6 +475,12 @@
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit23.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn61
@@ -844,6 +854,7 @@
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.özelSilmeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -3116,6 +3127,10 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.textEdit23);
+            this.panelControl1.Controls.Add(this.textEdit20);
+            this.panelControl1.Controls.Add(this.dateEditRap3BitTar);
+            this.panelControl1.Controls.Add(this.dateEditRap3BasTar);
             this.panelControl1.Controls.Add(this.btnCariRap3Listele);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
@@ -3128,6 +3143,42 @@
             resources.ApplyResources(this.btnCariRap3Listele, "btnCariRap3Listele");
             this.btnCariRap3Listele.Name = "btnCariRap3Listele";
             this.btnCariRap3Listele.Click += new System.EventHandler(this.btnCariRap3Listele_Click);
+            // 
+            // dateEditRap3BasTar
+            // 
+            resources.ApplyResources(this.dateEditRap3BasTar, "dateEditRap3BasTar");
+            this.dateEditRap3BasTar.Name = "dateEditRap3BasTar";
+            this.dateEditRap3BasTar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit5.Properties.Buttons"))))});
+            this.dateEditRap3BasTar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit5.Properties.CalendarTimeProperties.Buttons"))))});
+            // 
+            // textEdit20
+            // 
+            resources.ApplyResources(this.textEdit20, "textEdit20");
+            this.textEdit20.Name = "textEdit20";
+            this.textEdit20.Properties.Appearance.Options.UseFont = true;
+            this.textEdit20.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit20.Properties.ReadOnly = true;
+            this.textEdit20.TabStop = false;
+            // 
+            // textEdit23
+            // 
+            resources.ApplyResources(this.textEdit23, "textEdit23");
+            this.textEdit23.Name = "textEdit23";
+            this.textEdit23.Properties.Appearance.Options.UseFont = true;
+            this.textEdit23.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit23.Properties.ReadOnly = true;
+            this.textEdit23.TabStop = false;
+            // 
+            // dateEditRap3BitTar
+            // 
+            resources.ApplyResources(this.dateEditRap3BitTar, "dateEditRap3BitTar");
+            this.dateEditRap3BitTar.Name = "dateEditRap3BitTar";
+            this.dateEditRap3BitTar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit6.Properties.Buttons"))))});
+            this.dateEditRap3BitTar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit6.Properties.CalendarTimeProperties.Buttons"))))});
             // 
             // CariHesap
             // 
@@ -3293,6 +3344,12 @@
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit23.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3580,5 +3637,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn66;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn67;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn68;
+        private DevExpress.XtraEditors.TextEdit textEdit23;
+        private DevExpress.XtraEditors.TextEdit textEdit20;
+        private DevExpress.XtraEditors.DateEdit dateEditRap3BitTar;
+        private DevExpress.XtraEditors.DateEdit dateEditRap3BasTar;
     }
 }

@@ -34,7 +34,12 @@ namespace Pos
 
         private void Cari_Load(object sender, EventArgs e)
         {
+            dateEditRap3BasTar.EditValue = Param.Tarih;
+            dateEditRap3BitTar.EditValue = Param.Tarih;
+
             date_CariHes.DateTime = Param.Tarih;
+
+            rap3Listele(true);
 
             look_CariHes_Odeme.Properties.DataSource = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad,Pkod_Ozelkod from Pos_Kodlar where Pkod_Sinif = '11' and Pkod_Ozelkod <> '5' order by Pkod_Kod");
             look_CariHes_Odeme.Properties.DisplayMember = "Pkod_Ad";
@@ -1381,22 +1386,39 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
         public static string MyClass = "CariHesap";
         private void btnCariRap3Listele_Click(object sender, EventArgs e)
         {
+            rap3Listele();
+        }
+
+
+        public void rap3Listele(bool hepsi=false)
+        {
             try
             {
+                string basTar = Convert.ToDateTime(dateEditRap3BasTar.EditValue).ToString("yyyy-MM-dd");
+                string bitTar = Convert.ToDateTime(dateEditRap3BitTar.EditValue).ToString("yyyy-MM-dd");
+
+                if (hepsi)
+                {
+                    basTar = "2000-01-01";
+                    bitTar = "3000-01-01";
+                }
+
                 string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,sum(Chrk_Borc-Chrk_Alacak) as Bakiye from Pos_Carihrk as hrk 
-left join Pos_Cari as cari on cari.Cari_Id=hrk.Chrk_Cari 
+left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
+where Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
 group by Cari_Ad,Cari_Soyad,Chrk_Cari";
+
                 DataTable dataTable = dbtools.SelectTableR(query);
 
                 gridControlCariRap3.DataSource = dataTable;
                 gridviewCountYaz(gridViewCariRap3);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "btnCariRap3Listele_Click", "",ex);
+                RHMesaj.MyMessageError(MyClass, "btnCariRap3Listele_Click", "", ex);
             }
         }
-
+            
         public void gridviewCountYaz(GridView grid)
         {
             if (grid.Columns.Count > 0)

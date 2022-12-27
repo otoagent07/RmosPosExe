@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraBars.Alerter;
+using DevExpress.XtraReports.UI;
 using Pos.Class;
 using Pos.Controllers;
 using Pos.Entities;
@@ -6,6 +7,7 @@ using Pos.Forms;
 using Pos.Getir;
 using Pos.Getir.Class;
 using Pos.Ingenico;
+using Pos.Print;
 using Pos.Trendyol;
 using Pos.Update;
 using Pos.YemekSepeti;
@@ -15,6 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Management;
@@ -427,7 +430,7 @@ namespace Pos
                 }
 
 
-                this.Text += " [" + dbtools.database + "] v0.0.91";
+                this.Text += " [" + dbtools.database + "] v0.0.95";
 
 
 
@@ -483,9 +486,9 @@ namespace Pos
                 trendyolApi.requestGet(trendyolApi.ayarlar.trendyolApiLink);
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "entegreAyarlarYenile", trendyolApi.ayarlar.trendyolApiLink+"\nLinke ulaşılamıyor", ex);
+                RHMesaj.MyMessageError(MyClass, "entegreAyarlarYenile", trendyolApi.ayarlar.trendyolApiLink + "\nLinke ulaşılamıyor", ex);
             }
         }
 
@@ -1104,6 +1107,32 @@ namespace Pos
             }
         }
 
+
+        /*
+         POPUPDAN ONCE SİLDİKLERİM
+        tg
+
+EntegreMenu trendyolMenu = new EntegreMenu(2);
+            trendyolMenu.ShowDialog();
+
+
+
+yg
+
+EntegreMenu trendyolMenu = new EntegreMenu(0);
+            trendyolMenu.ShowDialog();
+
+
+get
+ Getir_Panel a = new Getir_Panel();
+            a.Show();
+
+
+yemek panel
+YS_Panel a = new YS_Panel();
+            a.ShowDialog();
+
+         */
         private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Getir_Panel a = new Getir_Panel();
@@ -1412,6 +1441,35 @@ namespace Pos
         {
             EntegreMenu trendyolMenu = new EntegreMenu(0);
             trendyolMenu.ShowDialog();
+
+        }
+
+        private void barStaticItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                string yaziciAd = dbtools.DegerGetir("Select isnull(Kodlar_parakasa,'') as Kodlar_parakasa From Stok_Kodlar Where Kodlar_Sinif ='01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+
+                if (yaziciAd=="")
+                {
+                    string mesaj = @"Lütfen Pos Departmandan Yazıcı Seçiniz
+Yazıcı Özellikleri 
+Cash Drawer #1 Before Printing 
+ve
+No Cut Seçili Olsun
+İki Yazıcı İsmi Aynı İp Girebilirsiniz";
+                    MessageBox.Show(mesaj);
+                    return;
+                }
+                XtraReport1 report1 = new XtraReport1();
+                report1.PrinterName = yaziciAd;
+                report1.Print();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
 
         }
     }

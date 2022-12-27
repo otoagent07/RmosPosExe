@@ -274,10 +274,10 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="resource.ExpandedWidth" type="System.Int32, mscorlib">
-    <value>203</value>
+    <value>204</value>
   </data>
   <data name="navBarControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 689</value>
+    <value>204, 693</value>
   </data>
   <data name="navBarControl1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -463,10 +463,10 @@
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 561</value>
+    <value>0, 573</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 34</value>
+    <value>843, 34</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>306</value>
@@ -3544,7 +3544,7 @@
     <value>88</value>
   </data>
   <data name="xtraTabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 526</value>
+    <value>822, 531</value>
   </data>
   <data name="xtraTabPage5.Text" xml:space="preserve">
     <value>Genel Parametreler 1</value>
@@ -6712,7 +6712,7 @@
     <value>2</value>
   </data>
   <data name="tab_Parametre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 595</value>
+    <value>843, 607</value>
   </data>
   <data name="tab_Parametre.Text" xml:space="preserve">
     <value>Parametre</value>
@@ -6733,7 +6733,7 @@
     <value>True</value>
   </data>
   <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>845, 689</value>
+    <value>845, 693</value>
   </data>
   <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -17164,7 +17164,7 @@
     <value>17</value>
   </data>
   <data name="xtraTabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 297</value>
+    <value>288, 302</value>
   </data>
   <data name="xtraTabPage9.Text" xml:space="preserve">
     <value>Masa Tanımları</value>
@@ -21269,7 +21269,7 @@ H13_3
   <data name="Pos_XZdepartman.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 228</value>
   </data>
-  <data name="checkEdit2.Properties.Caption" xml:space="preserve">
+  <data name="Pos_XZdepartman.Properties.Caption" xml:space="preserve">
     <value>XZ Rapor Departman</value>
   </data>
   <data name="Pos_XZdepartman.Size" type="System.Drawing.Size, System.Drawing">
@@ -22731,7 +22731,7 @@ H13_3
     <value>67</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>809, 329</value>
+    <value>813, 334</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Pos Yetkileri</value>
@@ -25171,7 +25171,7 @@ H13_3
     <value>125</value>
   </data>
   <data name="grd_MacPr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>489, 305</value>
+    <value>489, 310</value>
   </data>
   <data name="grd_MacPr.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -25375,7 +25375,7 @@ H13_3
     <value>13</value>
   </data>
   <data name="xtraTabPage11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>663, 477</value>
+    <value>667, 482</value>
   </data>
   <data name="xtraTabPage11.Text" xml:space="preserve">
     <value>MAC PRINTER AYARLARI</value>
@@ -27316,7 +27316,7 @@ H13_3
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1053, 689</value>
+    <value>1055, 693</value>
   </data>
   <data name="splitContainerControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -27346,7 +27346,7 @@ H13_3
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1053, 689</value>
+    <value>1055, 693</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using Pos.Class;
 using Pos.Controllers;
 using Pos.Models;
@@ -65,14 +66,14 @@ namespace Pos
                 btnHesapDokumEski.Enabled = User.G_Hesapdokumu;
 
 
-                
+
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-           
+
 
 
         }
@@ -97,7 +98,7 @@ namespace Pos
 
 
 
-           
+
 
             btn_Satis.Enabled = User.M_Satis;
             btn_MasaTransfer.Enabled = User.M_Masatransfer;
@@ -193,7 +194,7 @@ namespace Pos
 
         void btn_Kapatma_Click(object sender, EventArgs e)
         {
-
+            if (bartxt_FisNo.EditValue == null || bartxt_FisNo.EditValue.ToString() == "0") return;
             if (StatikSinif.masaMusaitmi(Masa_No) == false) return;
 
             if (Masa_No == String.Empty)
@@ -218,6 +219,9 @@ namespace Pos
 
             string kapatmaKod = btn.Tag.ToString();
 
+            string masaDurum = dbtools.DegerGetir("select top 1 Masa_Durum from Pos_Masa where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+
+
             Hesap hes = new Hesap();
             hes.ozelKod2 = 0; // sonradan eklendi rambo
             hes.Tag = bartxt_FisNo.EditValue;
@@ -225,7 +229,7 @@ namespace Pos
             hes.look_Kapatma.EditValue = kapatmaKod;
 
 
-           
+
 
             hes.Split = Split;
             hes.CariKodu = dbtools.DegerGetir("select ISNULL(Rsat_Cari,'') as Rsat_Cari From Cst_Recete_Satis where Rsat_Fisno = '" + bartxt_FisNo.EditValue + "' group by Rsat_Cari");
@@ -242,6 +246,18 @@ namespace Pos
 
             if (Param.Param_Hesap_Disable) hes.look_Kapatma.Enabled = false;
             hes.ShowDialog();
+
+
+
+            if (masaDurum == "2")
+            {
+                string masaDurumYeni = dbtools.DegerGetir("select top 1 Masa_Durum from Pos_Masa where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+                if (masaDurumYeni == "1")
+                {
+                    dbtools.execcmdR("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+                }
+            }
+
             MasaYenile(0);
 
             timer1.Enabled = true;
@@ -377,7 +393,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
@@ -550,7 +566,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
                 if (dtMasa.Rows.Count != flp_Masa.Controls.Count)
                 {
-                    MasaYenileIlkAcilis(Acik,filtre);
+                    MasaYenileIlkAcilis(Acik, filtre);
                     return;
                 }
 
@@ -861,7 +877,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                     query = query.Replace("as Rsat_Tutar", "as Rsat_Doviztutar");
                     query = query.Replace("sum(Rsat_Tutar)", "sum(Rsat_Doviztutar)");
                 }
-                    DataTable dtMasa = dbtools.SelectTableR(query);
+                DataTable dtMasa = dbtools.SelectTableR(query);
 
 
                 if (dtMasa.Rows.Count < 1)
@@ -1497,15 +1513,15 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             {
                 foreach (DataRow item in dt.Rows)
                 {
-                  
-                        toplamTutar += Convert.ToDecimal(item["Rsat_Tutar"].ToString());
 
-                        item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "");
+                    toplamTutar += Convert.ToDecimal(item["Rsat_Tutar"].ToString());
+
+                    item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "");
 
 
-                        item["Rsat_Tutar"] = item["Rsat_Tutar"].ToString().Replace(",00", "");
-                   
-                    
+                    item["Rsat_Tutar"] = item["Rsat_Tutar"].ToString().Replace(",00", "");
+
+
                 }
             }
 
@@ -1723,13 +1739,30 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
             timer1.Enabled = false;
 
+            string masaDurum = dbtools.DegerGetir("select top 1 Masa_Durum from Pos_Masa where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+
             hes = new Hesap();
             hes.Tag = bartxt_FisNo.EditValue;
             hes.Masa_No = Masa_No;
             hes.Split = Split;
             hes.Splitad = Splitad;
             hes.ShowDialog();
+
+            if (masaDurum == "2")
+            {
+                string masaDurumYeni = dbtools.DegerGetir("select top 1 Masa_Durum from Pos_Masa where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+
+                if (masaDurumYeni == "1")
+                {
+                    dbtools.execcmdR("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+                }
+            }
+
+
+
             MasaYenile(0);
+
+
 
             if (User.M_SatisRelogin)
             {
@@ -1854,12 +1887,13 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             timer1.Enabled = true;
         }
 
-        public void satisOzelMasaAdDegistir(string fisno,string ozelMasaAd)
+        public void satisOzelMasaAdDegistir(string fisno, string ozelMasaAd)
         {
             try
             {
-                dbtools.execcmdR("update Cst_Recete_Satis set Rsat_OzelMasaAdi='"+ ozelMasaAd + "' where Rsat_Fisno='"+ fisno + "'");
-            }catch(Exception ex)
+                dbtools.execcmdR("update Cst_Recete_Satis set Rsat_OzelMasaAdi='" + ozelMasaAd + "' where Rsat_Fisno='" + fisno + "'");
+            }
+            catch (Exception ex)
             {
 
             }
@@ -2024,7 +2058,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void MalzemeTransfer()
         {
-            if (StatikSinif.masaMusaitmi(Masa_No)==false) return;
+            if (StatikSinif.masaMusaitmi(Masa_No) == false) return;
 
             if (Convert.ToInt32(bartxt_FisNo.EditValue) > 0 && Masa_No != String.Empty)
             {
@@ -2059,7 +2093,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void MasaTakip_KeyDown(object sender, KeyEventArgs e)
         {
-           
+
             if (e.Control && e.KeyCode == Keys.F)
             {
                 Urun_Detay detay = new Urun_Detay();
@@ -2188,6 +2222,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void barButtonItem2_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            
+
+
+
             HesapBak();
             Main.a.Listele(0);
 
@@ -2324,7 +2362,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                     s.Masa_No = Masa_No;
                     decimal artik = toplamTutar % (model.yuvarlamaFiyat / 100);
                     s.Yuv_Tutar = (model.yuvarlamaFiyat / 100) - artik;
-                    s.Urun_Sat(model.yuvarlamaRecete);
+                    s.Urun_Sat(model.yuvarlamaRecete, siparisPr: true);
                 }
             }
             catch (Exception ex)
@@ -2400,7 +2438,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             try
             {
-                string deger = dbtools.DegerGetir("select count(Rsat_SiparisPr) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "' and Rsat_SiparisPr='0' and Rsat_Ba='B'");
+                string deger = dbtools.DegerGetir("select count(Rsat_SiparisPr) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "' and (Rsat_SiparisPr='0' and isnull(Rsat_Mars,0)=0) and Rsat_Ba='B'");
 
                 if (Convert.ToInt32(deger) > 0)
                 {

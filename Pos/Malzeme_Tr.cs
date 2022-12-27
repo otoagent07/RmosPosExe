@@ -231,7 +231,7 @@ namespace Pos
                     s.Rsat_SiparisPr = true;// Convert.ToBoolean(gridView3.GetFocusedRowCellValue("Rsat_SiparisPr"));
                     s.Rsat_AbuyerPr = true;
 
-                    s.Urun_Sat(Convert.ToString(gridView3.GetRowCellValue(index, "Rsat_Recete")), recFiyat);
+                    s.Urun_Sat(Convert.ToString(gridView3.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat);
 
                     string rsat_id = Convert.ToInt32(gridView3.GetRowCellValue(index, "Rsat_Id")).ToString();
 
@@ -304,7 +304,7 @@ namespace Pos
 
                         decimal recFiyat = Convert.ToDecimal(gridView3.GetRowCellValue(index, "Rsat_Tutar").ToString());
 
-                        s.Urun_Sat(Convert.ToString(gridView3.GetRowCellValue(index, "Rsat_Recete")), recFiyat);
+                        s.Urun_Sat(Convert.ToString(gridView3.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat);
 
                         dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Id = '" + Convert.ToInt32(gridView3.GetRowCellValue(index, "Rsat_Id")).ToString() + "'");
                     }
@@ -394,7 +394,7 @@ namespace Pos
                     s.Masa_No = txt_Masano.Text.ToString();
                     s.Rsat_SiparisPr = true;// Convert.ToBoolean(gridView4.GetFocusedRowCellValue("Rsat_SiparisPr"));
                     s.Rsat_AbuyerPr = true;
-                    s.Urun_Sat(Convert.ToString(gridView4.GetRowCellValue(index, "Rsat_Recete")), recFiyat);
+                    s.Urun_Sat(Convert.ToString(gridView4.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat);
 
 
                     if (deger == Convert.ToDecimal(gridView4.GetRowCellValue(index, "Rsat_Miktar")))
@@ -463,7 +463,7 @@ namespace Pos
                         try { fiyat = gridView3.GetRowCellValue(index, "Rsat_Tutar").ToString(); } catch (Exception ex) { }
                         decimal recFiyat = Convert.ToDecimal(fiyat);
 
-                        s.Urun_Sat(Convert.ToString(gridView4.GetRowCellValue(index, "Rsat_Recete")), recFiyat);
+                        s.Urun_Sat(Convert.ToString(gridView4.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat);
 
 
                         dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Id = '" + Convert.ToInt32(gridView4.GetRowCellValue(index, "Rsat_Id")).ToString() + "'");

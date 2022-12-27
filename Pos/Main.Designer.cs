@@ -41,21 +41,33 @@
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.bartxt_Saat = new DevExpress.XtraBars.BarStaticItem();
-            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.btn_Update = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Fihrist = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.bar_yemekSepeti = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnYemekSepetiGo = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.bar_yemekSepeti = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnYemekSepetiGo = new DevExpress.XtraBars.BarButtonItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTextEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.btnGunSonu = new DevExpress.XtraEditors.SimpleButton();
             this.btn_ExtraTanimlama = new DevExpress.XtraEditors.SimpleButton();
             this.btnCari = new DevExpress.XtraEditors.SimpleButton();
@@ -120,6 +132,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gdc_Anlik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
             this.splitContainerControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
@@ -236,8 +251,20 @@
             this.btn_Update,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.btnYemekSepetiGo});
-            this.barManager1.MaxItemId = 26;
+            this.btnYemekSepetiGo,
+            this.barEditItem1,
+            this.barEditItem2,
+            this.barButtonItem7,
+            this.barButtonItem8,
+            this.barButtonItem9,
+            this.barButtonItem10,
+            this.barButtonItem11,
+            this.barButtonItem12,
+            this.barButtonItem13});
+            this.barManager1.MaxItemId = 35;
+            this.barManager1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTextEdit1,
+            this.repositoryItemTextEdit2});
             this.barManager1.StatusBar = this.bar3;
             // 
             // bar3
@@ -251,17 +278,14 @@
             this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
             this.bar3.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.bartxt_Saat),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem1),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btn_Update, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem4, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btn_Fihrist, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.bar_yemekSepeti, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem5, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem6, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnYemekSepetiGo, true)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem7, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem1)});
             this.bar3.OptionsBar.AllowQuickCustomization = false;
             this.bar3.OptionsBar.DrawDragBorder = false;
             this.bar3.OptionsBar.UseWholeRow = true;
@@ -274,14 +298,6 @@
             this.bartxt_Saat.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("bartxt_Saat.ItemAppearance.Normal.Font")));
             this.bartxt_Saat.ItemAppearance.Normal.Options.UseFont = true;
             this.bartxt_Saat.Name = "bartxt_Saat";
-            // 
-            // barStaticItem1
-            // 
-            resources.ApplyResources(this.barStaticItem1, "barStaticItem1");
-            this.barStaticItem1.Id = 0;
-            this.barStaticItem1.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barStaticItem1.ItemAppearance.Normal.Font")));
-            this.barStaticItem1.ItemAppearance.Normal.Options.UseFont = true;
-            this.barStaticItem1.Name = "barStaticItem1";
             // 
             // btn_Update
             // 
@@ -350,6 +366,93 @@
             this.barButtonItem3.Name = "barButtonItem3";
             this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.ActAsDropDown = true;
+            this.barButtonItem7.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
+            this.barButtonItem7.DropDownControl = this.popupMenu1;
+            this.barButtonItem7.Id = 28;
+            this.barButtonItem7.ImageOptions.Image = global::Pos.Properties.Resources.sepet25;
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // popupMenu1
+            // 
+            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem10),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem11),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem12),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem13)});
+            this.popupMenu1.Manager = this.barManager1;
+            this.popupMenu1.Name = "popupMenu1";
+            // 
+            // barButtonItem10
+            // 
+            resources.ApplyResources(this.barButtonItem10, "barButtonItem10");
+            this.barButtonItem10.Id = 31;
+            this.barButtonItem10.ImageOptions.Image = global::Pos.Properties.Resources.getir25x25;
+            this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
+            // 
+            // barButtonItem11
+            // 
+            resources.ApplyResources(this.barButtonItem11, "barButtonItem11");
+            this.barButtonItem11.Id = 32;
+            this.barButtonItem11.ImageOptions.Image = global::Pos.Properties.Resources.yemeksepeti25x;
+            this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_yemekSepeti_ItemClick);
+            // 
+            // barButtonItem12
+            // 
+            resources.ApplyResources(this.barButtonItem12, "barButtonItem12");
+            this.barButtonItem12.Id = 33;
+            this.barButtonItem12.ImageOptions.Image = global::Pos.Properties.Resources.trendyollogo25x25;
+            this.barButtonItem12.Name = "barButtonItem12";
+            this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
+            // 
+            // barButtonItem13
+            // 
+            resources.ApplyResources(this.barButtonItem13, "barButtonItem13");
+            this.barButtonItem13.Id = 34;
+            this.barButtonItem13.ImageOptions.Image = global::Pos.Properties.Resources.yemeksepetigo25x25;
+            this.barButtonItem13.Name = "barButtonItem13";
+            this.barButtonItem13.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYemekSepetiGo_ItemClick);
+            // 
+            // barStaticItem1
+            // 
+            resources.ApplyResources(this.barStaticItem1, "barStaticItem1");
+            this.barStaticItem1.Id = 0;
+            this.barStaticItem1.ImageOptions.Image = global::Pos.Properties.Resources.kasa;
+            this.barStaticItem1.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barStaticItem1.ItemAppearance.Normal.Font")));
+            this.barStaticItem1.ItemAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem1.Name = "barStaticItem1";
+            this.barStaticItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barStaticItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barStaticItem1_ItemClick);
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
+            this.barDockControlTop.Manager = this.barManager1;
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
+            this.barDockControlBottom.Manager = this.barManager1;
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
+            this.barDockControlLeft.Manager = this.barManager1;
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
+            this.barDockControlRight.Manager = this.barManager1;
+            // 
             // bar_yemekSepeti
             // 
             resources.ApplyResources(this.bar_yemekSepeti, "bar_yemekSepeti");
@@ -389,35 +492,47 @@
             this.btnYemekSepetiGo.Id = 25;
             this.btnYemekSepetiGo.ImageOptions.Image = global::Pos.Properties.Resources.yemeksepetigo25x25;
             this.btnYemekSepetiGo.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.btnYemekSepetiGo.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem7.ItemAppearance.Normal.Font")));
+            this.btnYemekSepetiGo.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("btnYemekSepetiGo.ItemAppearance.Normal.Font")));
             this.btnYemekSepetiGo.ItemAppearance.Normal.Options.UseFont = true;
             this.btnYemekSepetiGo.Name = "btnYemekSepetiGo";
             this.btnYemekSepetiGo.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnYemekSepetiGo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYemekSepetiGo_ItemClick);
             // 
-            // barDockControlTop
+            // barEditItem1
             // 
-            this.barDockControlTop.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
-            this.barDockControlTop.Manager = this.barManager1;
+            resources.ApplyResources(this.barEditItem1, "barEditItem1");
+            this.barEditItem1.Edit = this.repositoryItemTextEdit1;
+            this.barEditItem1.Id = 26;
+            this.barEditItem1.Name = "barEditItem1";
             // 
-            // barDockControlBottom
+            // repositoryItemTextEdit1
             // 
-            this.barDockControlBottom.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
-            this.barDockControlBottom.Manager = this.barManager1;
+            resources.ApplyResources(this.repositoryItemTextEdit1, "repositoryItemTextEdit1");
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
             // 
-            // barDockControlLeft
+            // barEditItem2
             // 
-            this.barDockControlLeft.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
-            this.barDockControlLeft.Manager = this.barManager1;
+            resources.ApplyResources(this.barEditItem2, "barEditItem2");
+            this.barEditItem2.Edit = this.repositoryItemTextEdit2;
+            this.barEditItem2.Id = 27;
+            this.barEditItem2.Name = "barEditItem2";
             // 
-            // barDockControlRight
+            // repositoryItemTextEdit2
             // 
-            this.barDockControlRight.CausesValidation = false;
-            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
-            this.barDockControlRight.Manager = this.barManager1;
+            resources.ApplyResources(this.repositoryItemTextEdit2, "repositoryItemTextEdit2");
+            this.repositoryItemTextEdit2.Name = "repositoryItemTextEdit2";
+            // 
+            // barButtonItem8
+            // 
+            resources.ApplyResources(this.barButtonItem8, "barButtonItem8");
+            this.barButtonItem8.Id = 29;
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
+            // barButtonItem9
+            // 
+            resources.ApplyResources(this.barButtonItem9, "barButtonItem9");
+            this.barButtonItem9.Id = 30;
+            this.barButtonItem9.Name = "barButtonItem9";
             // 
             // btnGunSonu
             // 
@@ -901,6 +1016,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gdc_Anlik)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
             this.splitContainerControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
@@ -1007,5 +1125,17 @@
         public DevExpress.XtraBars.BarButtonItem barButtonItem6;
         public System.Windows.Forms.Timer timerTrendyol;
         public DevExpress.XtraBars.BarButtonItem btnYemekSepetiGo;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private DevExpress.XtraBars.BarEditItem barEditItem2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
     }
 }

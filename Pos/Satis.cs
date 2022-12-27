@@ -1794,7 +1794,9 @@ namespace Pos
         public int Rsat_UrunTahsilat = 0;
         bool Rec_Terazi = false;
         bool Rec_Miktar_Gr = false;
-        public void Urun_Sat(string Urun_Kodu, decimal recFiyat = 0, bool yenilemeYapma = false)
+
+
+        public void Urun_Sat(string Urun_Kodu,bool siparisPr=false, decimal recFiyat = 0, bool yenilemeYapma = false)
         {
             try
             {
@@ -2060,6 +2062,12 @@ namespace Pos
                 {
                     satisFisno = fisnoKontrol;
                     bartxt_FisNo.EditValue = satisFisno;
+                }
+
+
+                if (siparisPr == true)
+                {
+                    Rsat_SiparisPr = true;
                 }
 
                 SqlConnection con = dbtools.conn;
@@ -3172,7 +3180,7 @@ namespace Pos
                 {
                     string urun = Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete"));
                     Rsat_SiparisPr = true;
-                    Urun_Sat(urun, 0, true);
+                    Urun_Sat(urun,false, 0, true);
                 }
 
                 FisPr pr = new FisPr();
@@ -3573,7 +3581,7 @@ namespace Pos
         {
             try
             {
-                string deger = dbtools.DegerGetir("select count(Rsat_SiparisPr) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "' and Rsat_SiparisPr='0'");
+                string deger = dbtools.DegerGetir("select count(Rsat_SiparisPr) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "' and (Rsat_SiparisPr='0' and isnull(Rsat_Mars,0)=0)");
 
                 if (Convert.ToInt32(deger) > 0)
                 {

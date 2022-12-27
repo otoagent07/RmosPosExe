@@ -237,7 +237,7 @@ namespace Pos
                     s.Masa_No = Masa_No;
                     decimal artik = Convert.ToDecimal(txt_Odemetutari.EditValue) % (model.yuvarlamaFiyat / 100);
                     s.Yuv_Tutar = (model.yuvarlamaFiyat / 100) - artik;
-                    s.Urun_Sat(model.yuvarlamaRecete);
+                    s.Urun_Sat(model.yuvarlamaRecete,siparisPr:true);
 
                     gridyenile();
                     Bakiye_Kontrol();

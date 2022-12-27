@@ -151,11 +151,11 @@
             // 
             // lbl_Bilgi
             // 
-            resources.ApplyResources(this.lbl_Bilgi, "lbl_Bilgi");
             this.lbl_Bilgi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Bilgi.Appearance.Font")));
             this.lbl_Bilgi.Appearance.ForeColor = System.Drawing.Color.ForestGreen;
             this.lbl_Bilgi.Appearance.Options.UseFont = true;
             this.lbl_Bilgi.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.lbl_Bilgi, "lbl_Bilgi");
             this.lbl_Bilgi.Name = "lbl_Bilgi";
             // 
             // textEdit1
@@ -217,8 +217,8 @@
             // 
             // look_Kapatma
             // 
-            resources.ApplyResources(this.look_Kapatma, "look_Kapatma");
             this.look_Kapatma.EnterMoveNextControl = true;
+            resources.ApplyResources(this.look_Kapatma, "look_Kapatma");
             this.look_Kapatma.Name = "look_Kapatma";
             this.look_Kapatma.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("look_Kapatma.Properties.Appearance.Font")));
             this.look_Kapatma.Properties.Appearance.Options.UseFont = true;
@@ -237,37 +237,37 @@
             // 
             // btn_Odemetutari
             // 
-            resources.ApplyResources(this.btn_Odemetutari, "btn_Odemetutari");
             this.btn_Odemetutari.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Odemetutari.Appearance.Font")));
             this.btn_Odemetutari.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Odemetutari, "btn_Odemetutari");
             this.btn_Odemetutari.Name = "btn_Odemetutari";
             this.btn_Odemetutari.Click += new System.EventHandler(this.btn_Odemetutari_Click);
             // 
             // btn_Hesapara
             // 
-            resources.ApplyResources(this.btn_Hesapara, "btn_Hesapara");
             this.btn_Hesapara.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Hesapara.Appearance.Font")));
             this.btn_Hesapara.Appearance.Options.UseFont = true;
             this.btn_Hesapara.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Hesapara.ImageOptions.Image")));
             this.btn_Hesapara.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            resources.ApplyResources(this.btn_Hesapara, "btn_Hesapara");
             this.btn_Hesapara.Name = "btn_Hesapara";
             this.btn_Hesapara.Click += new System.EventHandler(this.btn_Hesapara_Click);
             // 
             // btn_Yazdirkapat
             // 
-            resources.ApplyResources(this.btn_Yazdirkapat, "btn_Yazdirkapat");
             this.btn_Yazdirkapat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Yazdirkapat.Appearance.Font")));
             this.btn_Yazdirkapat.Appearance.Options.UseFont = true;
             this.btn_Yazdirkapat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Yazdirkapat.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_Yazdirkapat, "btn_Yazdirkapat");
             this.btn_Yazdirkapat.Name = "btn_Yazdirkapat";
             this.btn_Yazdirkapat.Click += new System.EventHandler(this.btn_Yazdirkapat_Click);
             // 
             // btn_Yazdirmadankapat
             // 
-            resources.ApplyResources(this.btn_Yazdirmadankapat, "btn_Yazdirmadankapat");
             this.btn_Yazdirmadankapat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Yazdirmadankapat.Appearance.Font")));
             this.btn_Yazdirmadankapat.Appearance.Options.UseFont = true;
             this.btn_Yazdirmadankapat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Yazdirmadankapat.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_Yazdirmadankapat, "btn_Yazdirmadankapat");
             this.btn_Yazdirmadankapat.Name = "btn_Yazdirmadankapat";
             this.btn_Yazdirmadankapat.Click += new System.EventHandler(this.btn_Yazdirmadankapat_Click);
             // 
@@ -332,19 +332,7 @@
             // gridControl1
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
-            this.gridControl1.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl1.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl1.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl1.EmbeddedNavigator.AccessibleName");
-            this.gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl1.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl1.EmbeddedNavigator.Anchor")));
-            this.gridControl1.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl1.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl1.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl1.EmbeddedNavigator.ImeMode")));
             this.gridControl1.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl1.EmbeddedNavigator.Margin")));
-            this.gridControl1.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl1.EmbeddedNavigator.MaximumSize")));
-            this.gridControl1.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl1.EmbeddedNavigator.TextLocation")));
-            this.gridControl1.EmbeddedNavigator.ToolTip = resources.GetString("gridControl1.EmbeddedNavigator.ToolTip");
-            this.gridControl1.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl1.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl1.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl1.EmbeddedNavigator.ToolTipTitle");
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -355,7 +343,6 @@
             // 
             // gridView1
             // 
-            resources.ApplyResources(this.gridView1, "gridView1");
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -545,9 +532,9 @@
             // 
             // btn_Fisupdate
             // 
-            resources.ApplyResources(this.btn_Fisupdate, "btn_Fisupdate");
             this.btn_Fisupdate.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Fisupdate.Appearance.Font")));
             this.btn_Fisupdate.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Fisupdate, "btn_Fisupdate");
             this.btn_Fisupdate.Name = "btn_Fisupdate";
             this.btn_Fisupdate.Click += new System.EventHandler(this.btn_Fisupdate_Click);
             // 
@@ -579,8 +566,8 @@
             // 
             // look_DovizKod
             // 
-            resources.ApplyResources(this.look_DovizKod, "look_DovizKod");
             this.look_DovizKod.EnterMoveNextControl = true;
+            resources.ApplyResources(this.look_DovizKod, "look_DovizKod");
             this.look_DovizKod.Name = "look_DovizKod";
             this.look_DovizKod.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("look_DovizKod.Properties.Appearance.Font")));
             this.look_DovizKod.Properties.Appearance.Options.UseFont = true;
@@ -601,19 +588,7 @@
             // gridControl2
             // 
             resources.ApplyResources(this.gridControl2, "gridControl2");
-            this.gridControl2.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl2.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl2.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl2.EmbeddedNavigator.AccessibleName");
-            this.gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl2.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl2.EmbeddedNavigator.Anchor")));
-            this.gridControl2.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl2.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl2.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl2.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl2.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl2.EmbeddedNavigator.ImeMode")));
             this.gridControl2.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl2.EmbeddedNavigator.Margin")));
-            this.gridControl2.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl2.EmbeddedNavigator.MaximumSize")));
-            this.gridControl2.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl2.EmbeddedNavigator.TextLocation")));
-            this.gridControl2.EmbeddedNavigator.ToolTip = resources.GetString("gridControl2.EmbeddedNavigator.ToolTip");
-            this.gridControl2.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl2.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl2.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl2.EmbeddedNavigator.ToolTipTitle");
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -623,7 +598,6 @@
             // 
             this.gridView2.Appearance.Row.Font = ((System.Drawing.Font)(resources.GetObject("gridView2.Appearance.Row.Font")));
             this.gridView2.Appearance.Row.Options.UseFont = true;
-            resources.ApplyResources(this.gridView2, "gridView2");
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn8,
             this.gridColumn9,
@@ -695,56 +669,56 @@
             // 
             // lbl_Split
             // 
-            resources.ApplyResources(this.lbl_Split, "lbl_Split");
             this.lbl_Split.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Split.Appearance.Font")));
             this.lbl_Split.Appearance.ForeColor = System.Drawing.Color.ForestGreen;
             this.lbl_Split.Appearance.Options.UseFont = true;
             this.lbl_Split.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.lbl_Split, "lbl_Split");
             this.lbl_Split.Name = "lbl_Split";
             // 
             // lbl_CariAdi
             // 
-            resources.ApplyResources(this.lbl_CariAdi, "lbl_CariAdi");
             this.lbl_CariAdi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_CariAdi.Appearance.Font")));
             this.lbl_CariAdi.Appearance.ForeColor = System.Drawing.Color.ForestGreen;
             this.lbl_CariAdi.Appearance.Options.UseFont = true;
             this.lbl_CariAdi.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.lbl_CariAdi, "lbl_CariAdi");
             this.lbl_CariAdi.Name = "lbl_CariAdi";
             // 
             // labelControl1
             // 
-            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
             // 
             // lbl_KisiSayisi
             // 
-            resources.ApplyResources(this.lbl_KisiSayisi, "lbl_KisiSayisi");
             this.lbl_KisiSayisi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_KisiSayisi.Appearance.Font")));
             this.lbl_KisiSayisi.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
             this.lbl_KisiSayisi.Appearance.Options.UseFont = true;
             this.lbl_KisiSayisi.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.lbl_KisiSayisi, "lbl_KisiSayisi");
             this.lbl_KisiSayisi.Name = "lbl_KisiSayisi";
             // 
             // lbl_Masaadi
             // 
-            resources.ApplyResources(this.lbl_Masaadi, "lbl_Masaadi");
             this.lbl_Masaadi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Masaadi.Appearance.Font")));
             this.lbl_Masaadi.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbl_Masaadi.Appearance.Options.UseFont = true;
             this.lbl_Masaadi.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.lbl_Masaadi, "lbl_Masaadi");
             this.lbl_Masaadi.Name = "lbl_Masaadi";
             // 
             // labelControl4
             // 
-            resources.ApplyResources(this.labelControl4, "labelControl4");
             this.labelControl4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl4.Appearance.Font")));
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.labelControl4, "labelControl4");
             this.labelControl4.Name = "labelControl4";
             // 
             // chk_AdsPr

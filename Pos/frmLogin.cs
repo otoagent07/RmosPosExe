@@ -108,10 +108,13 @@ namespace Pos
             }
         }
 
+
+        bool yeniCikis = false;
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
             Cikis = true;
             xCikis = false;
+            yeniCikis = true; // 28.11.2022 de eklendi
             this.Close();
         }
 
@@ -142,6 +145,7 @@ namespace Pos
 
 
                                 xCikis = true;
+                                yeniCikis = true;
                                 this.Close();
                             }
                         }
@@ -199,6 +203,7 @@ namespace Pos
                                     User.Yetki_Yukle();
 
                                     xCikis = true;
+                                    yeniCikis = true;
                                     this.Close();
                                 }
                                 else
@@ -233,6 +238,7 @@ namespace Pos
                         }
 
                         xCikis = true;
+                        yeniCikis = true;
                         this.Close();
                     }
                 }
@@ -254,13 +260,14 @@ namespace Pos
                         }
 
                         xCikis = true;
+                        yeniCikis = true;
                         this.Close();
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "btn_Giris_Click", "",ex);
+                RHMesaj.MyMessageError(MyClass, "btn_Giris_Click", "", ex);
             }
 
             StatikSinif.dilDegis("tr-TR");
@@ -360,6 +367,11 @@ namespace Pos
                 if (e.CloseReason == CloseReason.UserClosing)
                     e.Cancel = true;
                 _altF4Pressed = false;
+            }
+
+            if (yeniCikis == false)
+            {
+                e.Cancel = true;
             }
         }
 
