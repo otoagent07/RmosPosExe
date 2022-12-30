@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraCharts;
+using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraReports.UI;
 using DevExpress.XtraSplashScreen;
 using Newtonsoft.Json;
@@ -121,11 +122,11 @@ namespace Pos
                 return;
             }
 
-            gunsonuAl(dt2,r);
+            gunsonuAl(dt2, r);
 
         }
 
-        public void gunsonuAl(DataTable dt2,Rapor_Tarih r)
+        public void gunsonuAl(DataTable dt2, Rapor_Tarih r)
         {
             try
             {
@@ -175,8 +176,10 @@ namespace Pos
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Gun_Sonu, Log.Log_Islem.Kaydet, "GUN SONU... YENI TARIH : " + dateTarih.DateTime.AddDays(1).ToString("dd.MM.yyyy"), "", "");
 
+
+                string cariBakiyeKontrolPath = cariRapGoster(true);
                 //Mail Gönder
-                Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue));
+                Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: cariBakiyeKontrolPath);
 
                 StatikSinif.shrinkData();
 
@@ -202,7 +205,81 @@ namespace Pos
             loadingKapat();
         }
 
+        public string cariRapGoster(bool mailGitsin = true)
+        {
+            try
+            {
 
+                string basTar = "2000-01-01";
+                string bitTar = "3000-01-01";
+
+                string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,isnull(sum(Chrk_Borc-Chrk_Alacak),0) as Bakiye,10 as topHepsi from Pos_Carihrk as hrk 
+left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
+where Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
+group by Cari_Ad,Cari_Soyad,Chrk_Cari";
+
+                DataTable dataTable = dbtools.SelectTableR(query);
+
+                decimal toplam = 0;
+                if (dataTable != null && dataTable.Rows.Count > 0)
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        toplam += Convert.ToDecimal(row["Bakiye"].ToString());
+                    }
+
+                CariBakiyeKontrolRapor rapor = new CariBakiyeKontrolRapor();
+                rapor.txtToplamBakiye.Text = "";
+                rapor.DataSource = dataTable;
+                rapor.txtTarih.Text = DateTime.Now.ToString("dd.MM.yyyy");
+                rapor.txtDepAd.Text = Departman.Dep_Adi;
+                rapor.txtToplamBakiye.Text = toplam.ToString();
+
+
+
+                string klasor = "CariRapor";
+                if (!Directory.Exists(klasor))
+                {
+                    Directory.CreateDirectory(klasor);
+                }
+
+                string path = klasor + "\\" + DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss") + ".pdf";
+
+                gridControlCariRap3.DataSource = dataTable;
+
+                gridviewCountYaz(gridViewCariRap3);
+
+                gridViewCariRap3.ExportToPdf(path);
+
+                if (mailGitsin)
+                {
+                    // Mail_Gonder(path);
+                }
+                else
+                {
+                    rapor.ShowPreview();
+                }
+
+
+                return path;
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError("Rapor_Sec", "btnCariRap3Listele_Click", "", ex);
+            }
+
+            return "";
+        }
+
+        public void gridviewCountYaz(GridView grid)
+        {
+            if (grid.Columns.Count > 0)
+            {
+                grid.Columns[0].SummaryItem.SummaryType = DevExpress.Data.SummaryItemType.Count;
+                grid.Columns[0].SummaryItem.FieldName = grid.Columns[0].FieldName;
+                grid.Columns[0].SummaryItem.DisplayFormat = "{0:n0}";
+                grid.UpdateTotalSummary();
+            }
+        }
         public void dovizKaydet(string Kurlar_Cesit)
         {
             try
@@ -253,8 +330,8 @@ namespace Pos
         }
 
         public string MyClass = "Gun_Sonu";
-       
-        public void Mail_Gonder(DateTime tarih, string Departman, string Sube)
+
+        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "")
         {
 
             try
@@ -387,6 +464,14 @@ namespace Pos
                             ePosta.Attachments.Add(att2);
                             ePosta.Attachments.Add(att3);
                             ePosta.Attachments.Add(attKasa);
+
+                            if (atachmentPath != "")
+                            {
+                                Attachment bakiyeKontrol = new Attachment(atachmentPath);
+                                bakiyeKontrol.Name = "CariBakiyeKontrol.pdf";
+                                ePosta.Attachments.Add(bakiyeKontrol);
+                            }
+
 
                             string mailbody = Mail_Detay(tarih);
 
