@@ -2069,6 +2069,7 @@ namespace Pos
                 {
                     Rsat_SiparisPr = true;
                 }
+                
 
                 SqlConnection con = dbtools.conn;
                 if (con.State == ConnectionState.Closed) con.Open();
@@ -3249,14 +3250,14 @@ namespace Pos
 
 
                     decimal recfiyat = Convert.ToDecimal(dbtools.DegerGetir("select Rec_Fiyat from Cst_Recete where Rec_Genelkod=(select Rsat_Recete from Cst_Recete_Satis where Rsat_Id='" + Id + "')")) * klv.sayi;
-
+                    bool Rsat_SiparisPr =Convert.ToBoolean( dbtools.DegerGetir("select top 1 isnull(Rsat_SiparisPr,0) as Rsat_SiparisPr from Cst_Recete_Satis where Rsat_Id='" + Id + "'"));
 
                     dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Miktar = '" + Convert.ToString(klv.sayi).Replace(",", ".") + "',Rsat_Net = 0,Rsat_Kdv = 0,Rsat_Tutar = 0,Rsat_Fiyat='" + recfiyat.ToString().Replace(",", ".") + "', Rsat_Doviztutar = 0,Rsat_SiparisPr = 1,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
 
                     Miktar = miktar - klv.sayi;
                     if (Miktar > 0)
                     {
-                        Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")));
+                        Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")),siparisPr: Rsat_SiparisPr);
                     }
                 }
                 if (miktar == 1)
