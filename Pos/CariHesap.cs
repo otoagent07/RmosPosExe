@@ -43,7 +43,6 @@ namespace Pos
 
             date_CariHes.DateTime = Param.Tarih;
 
-            rap3Listele(true);
 
             look_CariHes_Odeme.Properties.DataSource = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad,Pkod_Ozelkod from Pos_Kodlar where Pkod_Sinif = '11' and Pkod_Ozelkod <> '5' order by Pkod_Kod");
             look_CariHes_Odeme.Properties.DisplayMember = "Pkod_Ad";
@@ -68,9 +67,17 @@ namespace Pos
             look_Cari_Tip.Properties.ValueMember = "kod";
             look_Cari_Tip.EditValue = "C";
 
+            look_Cari_TipBakiye.Properties.DataSource = dtCariTip;
+            look_Cari_TipBakiye.Properties.DisplayMember = "ad";
+            look_Cari_TipBakiye.Properties.ValueMember = "kod";
+            look_Cari_TipBakiye.EditValue = "C";
+
             look_Cari_Il.Properties.DataSource = dbtools.SelectTable("select * from Pos_Adres where Adres_Sinif = '24' order by Adres_Ad");
             look_Cari_Il.Properties.DisplayMember = "Adres_Ad";
             look_Cari_Il.Properties.ValueMember = "Adres_Kod";
+
+
+            rap3Listele(true);
 
             if (Tel != "")
             {
@@ -1407,9 +1414,11 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
                     bitTar = "3000-01-01";
                 }
 
+                string tip = look_Cari_TipBakiye.EditValue.ToString();
+
                 string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,sum(Chrk_Borc-Chrk_Alacak) as Bakiye from Pos_Carihrk as hrk 
 left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
-where Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
+where isnull(Cari_Tip,'C')='"+ tip + "' and Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
 group by Cari_Ad,Cari_Soyad,Chrk_Cari";
 
                 DataTable dataTable = dbtools.SelectTableR(query);

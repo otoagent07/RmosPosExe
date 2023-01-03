@@ -41,7 +41,7 @@ namespace Pos
             look_TekDep.Properties.DisplayMember = "Kodlar_Ad";
             look_TekDep.Properties.ValueMember = "Kodlar_Kod";
 
-            look_TekGarson.Properties.DataSource = dbtools.SelectTable("select P_Kodu,P_Ad +  ' ' + P_Soyad as AdSoyad from Rmosmuh.dbo.P_Users order by P_Kodu");
+            look_TekGarson.Properties.DataSource = dbtools.SelectTable("select P_Kod as P_Kodu,P_Ad +  ' ' + P_Soyad as AdSoyad from Rmosmuh.dbo.Pos_User order by P_Kodu");
             look_TekGarson.Properties.DisplayMember = "AdSoyad";
             look_TekGarson.Properties.ValueMember = "P_Kodu";
 
