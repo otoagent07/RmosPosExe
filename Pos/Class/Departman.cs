@@ -180,7 +180,7 @@ namespace Pos.Class
         public static bool Dep_OtoSecim()
         {
             DataTable dtMac = dbtools.SelectTable("SELECT isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep  FROM  RmosMuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
-            if (dtMac.Rows.Count > 0)
+            if (dtMac!=null && dtMac.Rows.Count > 0)
             {
                 if (Convert.ToBoolean(dtMac.Rows[0]["P_Tek"]))
                 {

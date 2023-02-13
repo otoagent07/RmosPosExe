@@ -67,13 +67,20 @@ namespace Pos
 
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
 
-
+        bool yazdirilmamisSiparis = false;
         private void Satis_Load(object sender, EventArgs e)
         {
+            AyarlarController ayarlar = new AyarlarController();
+            panelControl2.Width = Convert.ToInt32(ayarlar.satisEkranGenislik);
             this.BringToFront();
 
             StatikSinif.masaKilitle(Masa_No);
 
+            string var = dbtools.DegerGetir("select count(*) as toplam from Pos_Param where ISNULL(yazdirilmamissiparis,0)=1");
+            if (var == "1")
+            {
+                yazdirilmamisSiparis = true;
+            }
 
 
             bar_Cari.Caption = "";
@@ -1796,7 +1803,7 @@ namespace Pos
         bool Rec_Miktar_Gr = false;
 
 
-        public void Urun_Sat(string Urun_Kodu,bool siparisPr=false, decimal recFiyat = 0, bool yenilemeYapma = false)
+        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false)
         {
             try
             {
@@ -2069,7 +2076,7 @@ namespace Pos
                 {
                     Rsat_SiparisPr = true;
                 }
-                
+
 
                 SqlConnection con = dbtools.conn;
                 if (con.State == ConnectionState.Closed) con.Open();
@@ -3181,7 +3188,7 @@ namespace Pos
                 {
                     string urun = Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete"));
                     Rsat_SiparisPr = true;
-                    Urun_Sat(urun,false, 0, true);
+                    Urun_Sat(urun, false, 0, true);
                 }
 
                 FisPr pr = new FisPr();
@@ -3250,14 +3257,14 @@ namespace Pos
 
 
                     decimal recfiyat = Convert.ToDecimal(dbtools.DegerGetir("select Rec_Fiyat from Cst_Recete where Rec_Genelkod=(select Rsat_Recete from Cst_Recete_Satis where Rsat_Id='" + Id + "')")) * klv.sayi;
-                    bool Rsat_SiparisPr =Convert.ToBoolean( dbtools.DegerGetir("select top 1 isnull(Rsat_SiparisPr,0) as Rsat_SiparisPr from Cst_Recete_Satis where Rsat_Id='" + Id + "'"));
+                    bool Rsat_SiparisPr = Convert.ToBoolean(dbtools.DegerGetir("select top 1 isnull(Rsat_SiparisPr,0) as Rsat_SiparisPr from Cst_Recete_Satis where Rsat_Id='" + Id + "'"));
 
                     dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Miktar = '" + Convert.ToString(klv.sayi).Replace(",", ".") + "',Rsat_Net = 0,Rsat_Kdv = 0,Rsat_Tutar = 0,Rsat_Fiyat='" + recfiyat.ToString().Replace(",", ".") + "', Rsat_Doviztutar = 0,Rsat_SiparisPr = 1,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
 
                     Miktar = miktar - klv.sayi;
                     if (Miktar > 0)
                     {
-                        Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")),siparisPr: Rsat_SiparisPr);
+                        Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")), siparisPr: Rsat_SiparisPr);
                     }
                 }
                 if (miktar == 1)
@@ -3582,6 +3589,11 @@ namespace Pos
         {
             try
             {
+                if (yazdirilmamisSiparis == false)
+                {
+                    return false;
+                }
+
                 string deger = dbtools.DegerGetir("select count(Rsat_SiparisPr) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "' and (Rsat_SiparisPr='0' and isnull(Rsat_Mars,0)=0)");
 
                 if (Convert.ToInt32(deger) > 0)

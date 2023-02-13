@@ -154,6 +154,8 @@ Select InstanceNames from @GetInstances ";
         public static string getAlterQuery() // scriptgeç scriptbas
         {
             string query = @"
+IF COL_LENGTH('Pos_Param', 'yazdirilmamissiparis') IS NULL BEGIN ALTER TABLE Pos_Param ADD yazdirilmamissiparis bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'hesapyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [hesapyazici] nvarchar(250) END;
 IF COL_LENGTH('Stok_Kodlar', 'Kodlar_parakasa') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_parakasa nvarchar(200) END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_Eksileme') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_Eksileme bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_XZdepartman') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_XZdepartman bit END;
@@ -257,6 +259,7 @@ IF COL_LENGTH('Pos_Kasahrk', 'Pkasa_dep') IS NULL BEGIN ALTER TABLE Pos_Kasahrk 
 exec [varsayilanParametreOlustur] @ayarlar_key='yuvarlama',@ayarlar_value='',@ayarlar_aciklama='misal 30 kuruşu 50 kuruşa yuvarlar'
 exec [varsayilanParametreOlustur] @ayarlar_key='otomatikIndirim',@ayarlar_value='',@ayarlar_aciklama='8.80 TL olanı 8 TL yapar'
 exec [varsayilanParametreOlustur] @ayarlar_key='onburoFisTekAt',@ayarlar_value='0',@ayarlar_aciklama='Önbüroda folio çiftlememesi için'
+exec [varsayilanParametreOlustur] @ayarlar_key='satisEkranGenislik',@ayarlar_value='288',@ayarlar_aciklama='Satıştaki sipariş ekranının genişliği'
 
                 select 'Başarılı' as basarili
                 end";

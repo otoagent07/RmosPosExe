@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement11 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement12 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement13 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement14 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement15 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement17 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement18 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement19 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement20 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement21 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement22 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement23 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement24 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement25 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement26 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement27 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement28 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement29 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement30 = new DevExpress.XtraEditors.TileItemElement();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tileBar1 = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroup2 = new DevExpress.XtraBars.Navigation.TileBarGroup();
@@ -133,7 +133,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1018, 744);
+            this.splitContainer1.Size = new System.Drawing.Size(1020, 748);
             this.splitContainer1.SplitterDistance = 223;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -152,7 +152,7 @@
             this.tileBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.tileBar1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.tileBar1.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.ScrollButtons;
-            this.tileBar1.Size = new System.Drawing.Size(223, 744);
+            this.tileBar1.Size = new System.Drawing.Size(223, 748);
             this.tileBar1.TabIndex = 0;
             this.tileBar1.Text = "tileBar1";
             this.tileBar1.VerticalContentAlignment = DevExpress.Utils.VertAlignment.Top;
@@ -178,10 +178,10 @@
             this.tileBarItem1.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem1.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            tileItemElement1.Text = "Masa Takip";
-            tileItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem1.Elements.Add(tileItemElement1);
+            tileItemElement16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            tileItemElement16.Text = "Masa Takip";
+            tileItemElement16.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem1.Elements.Add(tileItemElement16);
             this.tileBarItem1.Id = 0;
             this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem1.Name = "tileBarItem1";
@@ -193,12 +193,12 @@
             this.tileBarItem2.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem2.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            tileItemElement2.ImageOptions.ImageToTextIndent = 0;
-            tileItemElement2.ImageOptions.SvgImageSize = new System.Drawing.Size(40, 40);
-            tileItemElement2.Text = "Direk Satış";
-            tileItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem2.Elements.Add(tileItemElement2);
+            tileItemElement17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            tileItemElement17.ImageOptions.ImageToTextIndent = 0;
+            tileItemElement17.ImageOptions.SvgImageSize = new System.Drawing.Size(40, 40);
+            tileItemElement17.Text = "Direk Satış";
+            tileItemElement17.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem2.Elements.Add(tileItemElement17);
             this.tileBarItem2.Id = 1;
             this.tileBarItem2.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem2.Name = "tileBarItem2";
@@ -210,10 +210,10 @@
             this.tileBarItem3.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem3.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            tileItemElement3.Text = "Hızlı Satış";
-            tileItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem3.Elements.Add(tileItemElement3);
+            tileItemElement18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            tileItemElement18.Text = "Hızlı Satış";
+            tileItemElement18.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem3.Elements.Add(tileItemElement18);
             this.tileBarItem3.Id = 2;
             this.tileBarItem3.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem3.Name = "tileBarItem3";
@@ -225,10 +225,10 @@
             this.tileBarItem4.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem4.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem4.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            tileItemElement4.Text = "Raporlar";
-            tileItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem4.Elements.Add(tileItemElement4);
+            tileItemElement19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            tileItemElement19.Text = "Raporlar";
+            tileItemElement19.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem4.Elements.Add(tileItemElement19);
             this.tileBarItem4.Id = 3;
             this.tileBarItem4.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem4.Name = "tileBarItem4";
@@ -240,10 +240,10 @@
             this.tileBarItem5.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem5.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem5.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            tileItemElement5.Text = "Cari İşlemleri";
-            tileItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem5.Elements.Add(tileItemElement5);
+            tileItemElement20.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            tileItemElement20.Text = "Cari İşlemleri";
+            tileItemElement20.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem5.Elements.Add(tileItemElement20);
             this.tileBarItem5.Id = 4;
             this.tileBarItem5.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem5.Name = "tileBarItem5";
@@ -255,10 +255,10 @@
             this.tileBarItem6.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem6.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem6.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
-            tileItemElement6.Text = "Kasa İşlemleri";
-            tileItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem6.Elements.Add(tileItemElement6);
+            tileItemElement21.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage")));
+            tileItemElement21.Text = "Kasa İşlemleri";
+            tileItemElement21.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem6.Elements.Add(tileItemElement21);
             this.tileBarItem6.Id = 5;
             this.tileBarItem6.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem6.Name = "tileBarItem6";
@@ -270,10 +270,10 @@
             this.tileBarItem7.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem7.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem7.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
-            tileItemElement7.Text = "Rezervasyon İşlemleri";
-            tileItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem7.Elements.Add(tileItemElement7);
+            tileItemElement22.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage1")));
+            tileItemElement22.Text = "Rezervasyon İşlemleri";
+            tileItemElement22.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem7.Elements.Add(tileItemElement22);
             this.tileBarItem7.Id = 6;
             this.tileBarItem7.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem7.Name = "tileBarItem7";
@@ -285,11 +285,11 @@
             this.tileBarItem8.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem8.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem8.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage2")));
-            tileItemElement8.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
-            tileItemElement8.Text = "Extra Folio İşlemleri";
-            tileItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem8.Elements.Add(tileItemElement8);
+            tileItemElement23.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage2")));
+            tileItemElement23.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
+            tileItemElement23.Text = "Extra Folio İşlemleri";
+            tileItemElement23.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem8.Elements.Add(tileItemElement23);
             this.tileBarItem8.Id = 7;
             this.tileBarItem8.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem8.Name = "tileBarItem8";
@@ -301,11 +301,11 @@
             this.tileBarItem15.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem15.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem15.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage3")));
-            tileItemElement9.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
-            tileItemElement9.Text = "Gün Sonu";
-            tileItemElement9.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem15.Elements.Add(tileItemElement9);
+            tileItemElement24.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage3")));
+            tileItemElement24.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
+            tileItemElement24.Text = "Gün Sonu";
+            tileItemElement24.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem15.Elements.Add(tileItemElement24);
             this.tileBarItem15.Id = 8;
             this.tileBarItem15.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem15.Name = "tileBarItem15";
@@ -325,8 +325,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.layoutControl2);
-            this.splitContainer2.Size = new System.Drawing.Size(791, 744);
-            this.splitContainer2.SplitterDistance = 559;
+            this.splitContainer2.Size = new System.Drawing.Size(793, 748);
+            this.splitContainer2.SplitterDistance = 561;
             this.splitContainer2.TabIndex = 0;
             // 
             // layoutControl1
@@ -336,7 +336,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(559, 744);
+            this.layoutControl1.Size = new System.Drawing.Size(561, 748);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -348,7 +348,7 @@
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(545, 730);
+            this.pictureEdit1.Size = new System.Drawing.Size(547, 734);
             this.pictureEdit1.StyleController = this.layoutControl1;
             this.pictureEdit1.TabIndex = 4;
             // 
@@ -360,7 +360,7 @@
             this.layoutControlGroup1});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.Root.Size = new System.Drawing.Size(559, 744);
+            this.Root.Size = new System.Drawing.Size(561, 748);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -370,7 +370,7 @@
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(559, 744);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(561, 748);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -378,7 +378,7 @@
             this.layoutControlItem2.Control = this.pictureEdit1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(549, 734);
+            this.layoutControlItem2.Size = new System.Drawing.Size(551, 738);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -391,7 +391,7 @@
             this.layoutControl2.Location = new System.Drawing.Point(0, 0);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup3;
-            this.layoutControl2.Size = new System.Drawing.Size(228, 744);
+            this.layoutControl2.Size = new System.Drawing.Size(228, 748);
             this.layoutControl2.TabIndex = 2;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -409,7 +409,7 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(2, 6);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(220, 129);
+            this.groupControl1.Size = new System.Drawing.Size(220, 130);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Bilgi Paneli";
             // 
@@ -520,9 +520,9 @@
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.gridControl1);
-            this.groupControl2.Location = new System.Drawing.Point(2, 139);
+            this.groupControl2.Location = new System.Drawing.Point(2, 140);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(220, 171);
+            this.groupControl2.Size = new System.Drawing.Size(220, 172);
             this.groupControl2.TabIndex = 6;
             this.groupControl2.Text = "Kur";
             // 
@@ -532,7 +532,7 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 22);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(216, 147);
+            this.gridControl1.Size = new System.Drawing.Size(216, 148);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -584,14 +584,14 @@
             this.tileBar3.Groups.Add(this.tileBarGroup1);
             this.tileBar3.IndentBetweenGroups = 0;
             this.tileBar3.IndentBetweenItems = 5;
-            this.tileBar3.Location = new System.Drawing.Point(2, 314);
+            this.tileBar3.Location = new System.Drawing.Point(2, 316);
             this.tileBar3.Margin = new System.Windows.Forms.Padding(0);
             this.tileBar3.MaxId = 8;
             this.tileBar3.Name = "tileBar3";
             this.tileBar3.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.tileBar3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.tileBar3.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.ScrollButtons;
-            this.tileBar3.Size = new System.Drawing.Size(220, 428);
+            this.tileBar3.Size = new System.Drawing.Size(220, 430);
             this.tileBar3.TabIndex = 1;
             this.tileBar3.Text = "tileBar3";
             this.tileBar3.VerticalContentAlignment = DevExpress.Utils.VertAlignment.Top;
@@ -614,10 +614,10 @@
             this.tileBarItem9.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem9.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem9.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
-            tileItemElement10.Text = "Departman Değiştir";
-            tileItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem9.Elements.Add(tileItemElement10);
+            tileItemElement25.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            tileItemElement25.Text = "Departman Değiştir";
+            tileItemElement25.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem9.Elements.Add(tileItemElement25);
             this.tileBarItem9.Id = 0;
             this.tileBarItem9.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem9.Name = "tileBarItem9";
@@ -629,12 +629,12 @@
             this.tileBarItem10.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem10.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem10.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement11.ImageOptions.ImageSize = new System.Drawing.Size(32, 32);
-            tileItemElement11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage4")));
-            tileItemElement11.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
-            tileItemElement11.Text = "Kur Girişi";
-            tileItemElement11.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem10.Elements.Add(tileItemElement11);
+            tileItemElement26.ImageOptions.ImageSize = new System.Drawing.Size(32, 32);
+            tileItemElement26.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage4")));
+            tileItemElement26.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
+            tileItemElement26.Text = "Kur Girişi";
+            tileItemElement26.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem10.Elements.Add(tileItemElement26);
             this.tileBarItem10.Id = 1;
             this.tileBarItem10.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem10.Name = "tileBarItem10";
@@ -646,10 +646,10 @@
             this.tileBarItem11.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem11.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem11.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
-            tileItemElement12.Text = "Caller ID";
-            tileItemElement12.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem11.Elements.Add(tileItemElement12);
+            tileItemElement27.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            tileItemElement27.Text = "Caller ID";
+            tileItemElement27.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem11.Elements.Add(tileItemElement27);
             this.tileBarItem11.Id = 2;
             this.tileBarItem11.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem11.Name = "tileBarItem11";
@@ -661,10 +661,10 @@
             this.tileBarItem12.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem12.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem12.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage5")));
-            tileItemElement13.Text = "Ayarlar";
-            tileItemElement13.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem12.Elements.Add(tileItemElement13);
+            tileItemElement28.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("resource.SvgImage5")));
+            tileItemElement28.Text = "Ayarlar";
+            tileItemElement28.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem12.Elements.Add(tileItemElement28);
             this.tileBarItem12.Id = 3;
             this.tileBarItem12.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem12.Name = "tileBarItem12";
@@ -676,10 +676,10 @@
             this.tileBarItem13.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem13.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem13.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
-            tileItemElement14.Text = "Re-Login";
-            tileItemElement14.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem13.Elements.Add(tileItemElement14);
+            tileItemElement29.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            tileItemElement29.Text = "Re-Login";
+            tileItemElement29.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem13.Elements.Add(tileItemElement29);
             this.tileBarItem13.Id = 4;
             this.tileBarItem13.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem13.Name = "tileBarItem13";
@@ -691,10 +691,10 @@
             this.tileBarItem14.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBarItem14.AppearanceItem.Normal.Options.UseFont = true;
             this.tileBarItem14.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
-            tileItemElement15.Text = "Uzaktana Yardım";
-            tileItemElement15.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
-            this.tileBarItem14.Elements.Add(tileItemElement15);
+            tileItemElement30.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            tileItemElement30.Text = "Uzaktana Yardım";
+            tileItemElement30.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight;
+            this.tileBarItem14.Elements.Add(tileItemElement30);
             this.tileBarItem14.Id = 5;
             this.tileBarItem14.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tileBarItem14.Name = "tileBarItem14";
@@ -709,15 +709,15 @@
             this.layoutControlItem3});
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 4, 4, 0);
-            this.layoutControlGroup3.Size = new System.Drawing.Size(228, 744);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(228, 748);
             this.layoutControlGroup3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.tileBar3;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 308);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 310);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(224, 432);
+            this.layoutControlItem4.Size = new System.Drawing.Size(224, 434);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -726,16 +726,16 @@
             this.layoutControlItem1.Control = this.groupControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(224, 133);
+            this.layoutControlItem1.Size = new System.Drawing.Size(224, 134);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.groupControl2;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 133);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 134);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(224, 175);
+            this.layoutControlItem3.Size = new System.Drawing.Size(224, 176);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
@@ -743,7 +743,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1018, 744);
+            this.ClientSize = new System.Drawing.Size(1020, 748);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

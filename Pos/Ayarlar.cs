@@ -61,7 +61,28 @@ group by Pkod_Ad";
 
             }
         }
+public void yaziciYukleHesap()
+        {
+            try
+            {
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("Pkod_Ad", typeof(string));
+                foreach (var item in PrinterSettings.InstalledPrinters)
+                {
+                    DataRow dataRow = dataTable.NewRow();
+                    dataRow["Pkod_Ad"] = item;
+                    dataTable.Rows.Add(dataRow);
+                }
 
+                lookUpEditHesapDokYazici.Properties.DataSource = dataTable;
+                lookUpEditHesapDokYazici.Properties.ValueMember = "Pkod_Ad";
+                lookUpEditHesapDokYazici.Properties.DisplayMember = "Pkod_Ad";
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         public void dilYukle()
         {
             try
@@ -90,6 +111,7 @@ group by Pkod_Ad";
         {
             dilYukle();
             yaziciYukle();
+            yaziciYukleHesap();
             panelControl1.Visible = false;
             if (User.P_Kod.Equals("999") || User.P_Kart.Equals("999"))
             {
@@ -267,6 +289,7 @@ group by Pkod_Ad";
                 Param_SatisCikisButton.Checked = Param.Param_SatisCikisButton;
                 Param_nfcBarkodAktif.Checked = Param.Param_nfcBarkodAktif;
                 Param_ParcaliMasaAktif.Checked = Param.Param_ParcaliMasaAktif;
+                yazdirilmamissiparis.Checked = Param.yazdirilmamissiparis;
             }
             catch (Exception ex)
             {
@@ -1081,7 +1104,7 @@ group by Pkod_Ad";
                     + " Param_OzelMasaSiralama,Param_HesapFisiDokum,Param_HspFontAlgilama,Param_AdisyonFolioAdi,Param_FullPos,Param_CikisKapa,Param_DirekAdisyonZor,Param_DirekAdisyonPrSor,Param_KGAlgilama,Param_ExtraFolioAcma,Param_SiparisAna,Param_iadeKontrol,Param_iadeLimit, Pos_HesapDkmRenk, Param_AdisyonDegis, Param_AdisyonIndAd,Param_SiparisTutar,Param_AnaEkranCiro,Param_MasaTakipCiro,Param_AcilisCekSil,Param_CariAdSoyad,Param_OdenmezAc, "
                     + " Param_SatirSil,Param_SatirSilUser,Param_MasaTakipMenu,Param_ParaUstuIngenico,Param_SatisTabloGonderi, Param_SatisTabloID, Param_SatisTabloAktif, Param_AcilistaMenu,Param_IngenicoSPR,Param_SiparisFisFont,Param_HizliSatisCekAc,Param_KartfGBCheckOut, "
                     + " Param_YeniHesapDkm,Param_YeniSiparisDkm,Param_OdaKrediCompOdenmez,Param_KurTransfer,Param_CallCenterPaket, "
-                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif )"
+                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis )"
 
                     + " VALUES ( "
                     + " '1', '" + txt_Prm_Tesis_Adi.Text + "', '" + Convert.ToBoolean(chk_Prm_Onburo.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Cost.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Muh.Checked) + "','" + rdo_Prm_Calisma.SelectedIndex + "','" + rdo_Prm_Tarih_Nereden.SelectedIndex + "', "
@@ -1109,7 +1132,7 @@ group by Pkod_Ad";
                     + " '" + Param_CariAdSoyad.Checked + "','" + Param_OdenmezAc.Checked + "','" + Pos_SatirSil.Checked + "','" + Pos_SatirSilUser.Text + "','" + Param_MasaTakipMenu.Checked + "', "
                     + " '" + Param_ParaUstuIngenico.Checked + "','" + Param_SatisTabloGonderi.EditValue + "','" + Param_SatisTabloID.EditValue + "','" + Param_SatisTabloAktif.Checked + "','" + Param_AcilistaMenu.Checked + "','" + Param_IngenicoSPR.Checked + "','" + Param_SiparisFisFont.Checked + "', "
                     + " '" + Param_HizliSatisCekAc.Checked + "','" + Param_KartfGBCheckOut.Checked + "','" + Param_YeniHesapDkm.Checked + "','" + Param_YeniSiparisDkm.Checked + "','" + Param_OdaKrediCompOdenmez.Checked + "','" + Param_KurTransfer.Checked + "', "
-                    + " '" + Param_CallCenterPaket.Checked + "','" + Param_PaketDipTotal.Checked + "','" + Param_HesapKapamaAds.Checked + "','" + Param_HesapDkmAciklama.Checked + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "','" + Param_AndroGeriYazdir.Checked + "','" + Param_PaketKucukEkran.Checked + "','" + Param_GetirTest.Checked + "','" + Param_GetirOtomatikOnay.Checked + "','" + Param_SatisCikisButton.Checked + "','" + Param_nfcBarkodAktif.Checked + "','" + Param_ParcaliMasaAktif.Checked + "'  )");
+                    + " '" + Param_CallCenterPaket.Checked + "','" + Param_PaketDipTotal.Checked + "','" + Param_HesapKapamaAds.Checked + "','" + Param_HesapDkmAciklama.Checked + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "','" + Param_AndroGeriYazdir.Checked + "','" + Param_PaketKucukEkran.Checked + "','" + Param_GetirTest.Checked + "','" + Param_GetirOtomatikOnay.Checked + "','" + Param_SatisCikisButton.Checked + "','" + Param_nfcBarkodAktif.Checked + "','" + Param_ParcaliMasaAktif.Checked + "','" + yazdirilmamissiparis.Checked + "'  )");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Genel, Log.Log_Islem.Kaydet, "Genel Parametreler Kaydedildi", String.Empty, "1");
             }
@@ -1152,7 +1175,7 @@ group by Pkod_Ad";
                 + " Param_HizliSatisCekAc = '" + Param_HizliSatisCekAc.Checked + "', Param_KartfGBCheckOut = '" + Param_KartfGBCheckOut.Checked + "',Param_YeniHesapDkm = '" + Param_YeniHesapDkm.Checked + "',  "
                 + " Param_YeniSiparisDkm = '" + Param_YeniSiparisDkm.Checked + "', Param_OdaKrediCompOdenmez = '" + Param_OdaKrediCompOdenmez.Checked + "', "
                 + " Param_KurTransfer = '" + Param_KurTransfer.Checked + "',Param_CallCenterPaket = '" + Param_CallCenterPaket.Checked + "', "
-                + " Param_PaketDipTotal = '" + Param_PaketDipTotal.Checked + "', Param_HesapKapamaAds = '" + Param_HesapKapamaAds.Checked + "',Param_HesapDkmAciklama = '" + Param_HesapDkmAciklama.Checked + "',Param_OzelMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "' , Param_RezMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "',Param_AndroGeriYazdir = '" + Param_AndroGeriYazdir.Checked + "',Param_PaketKucukEkran = '" + Param_PaketKucukEkran.Checked + "',Param_GetirTest = '" + Param_GetirTest.Checked + "',Param_GetirOtomatikOnay = '" + Param_GetirOtomatikOnay.Checked + "',Param_SatisCikisButton = '" + Param_SatisCikisButton.Checked + "',Param_nfcBarkodAktif = '" + Param_nfcBarkodAktif.Checked + "',Param_ParcaliMasaAktif = '" + Param_ParcaliMasaAktif.Checked + "'   "
+                + " Param_PaketDipTotal = '" + Param_PaketDipTotal.Checked + "', Param_HesapKapamaAds = '" + Param_HesapKapamaAds.Checked + "',Param_HesapDkmAciklama = '" + Param_HesapDkmAciklama.Checked + "',Param_OzelMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "' , Param_RezMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "',Param_AndroGeriYazdir = '" + Param_AndroGeriYazdir.Checked + "',Param_PaketKucukEkran = '" + Param_PaketKucukEkran.Checked + "',Param_GetirTest = '" + Param_GetirTest.Checked + "',Param_GetirOtomatikOnay = '" + Param_GetirOtomatikOnay.Checked + "',Param_SatisCikisButton = '" + Param_SatisCikisButton.Checked + "',Param_nfcBarkodAktif = '" + Param_nfcBarkodAktif.Checked + "',Param_ParcaliMasaAktif = '" + Param_ParcaliMasaAktif.Checked + "',yazdirilmamissiparis = '" + yazdirilmamissiparis.Checked + "'   "
                 + " where Param_Id = '1' ");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Genel, Log.Log_Islem.Duzelt, "Genel Parametrelerde Duzeltme Islemi Yapıldı", String.Empty, "1");
@@ -2573,220 +2596,233 @@ group by Pkod_Ad";
         #region Kullanıcı Kodları
         private void btn_Kul_Kaydet_Click(object sender, EventArgs e)
         {
-            if (txt_Kul_kod.Text.Length < 1)
-            {
-                MessageBox.Show(res_man.GetString("Kullanıcı Kodu Bos Geçilemez...!!!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txt_Kul_kod.Focus();
-                return;
-            }
 
-            #region XZ Rapor Ayarları
-            DataTable dtXZ = dbtools.SelectTable("select * from Rmosmuh.dbo.Pos_User_XZ with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "'");
-            if (dtXZ.Rows.Count < 1)
+            try
             {
-                dbtools.execcmd("insert into Rmosmuh.dbo.Pos_User_XZ( "
-                   + " P_Kod ,"
-                   + " Odeme ,"
-                   + " Servis ,"
-                   + " Cari ,"
-                   + " Odenmez ,"
-                   + " Malzeme ,"
-                   + " Anagrup ,"
-                   + " Altgrup ,"
-                   + " Iptal ,"
-                   + " PaketServis ,"
-                   + " IndirimMasa ,"
-                   + " YiyecekIcecek ,"
-                   + " MasaKonum ,"
-                   + " GarsonOzet ,"
-                   + " GarsonTahsil ,"
-                   + " SifirTutar ,"
-                   + " OzetKasa ,"
-                   + " ExtKasaRapor ,"
-                   + " ExtKasaDetay ,"
-                   + " SiparisIptal ,"
-                   + " GonderilmemisSiparisIptal ,"
-                   + " SiparisDuzelt,xzraporyazici )"
-                   + " Values( "
-                   + " '" + txt_Kul_kod.Text + "', "
-                   + " '" + chk_Odeme.Checked + "', "
-                   + " '" + chk_Servis.Checked + "', "
-                   + " '" + chk_Cari.Checked + "', "
-                   + " '" + chk_Odenmez.Checked + "', "
-                   + " '" + chk_Malzeme.Checked + "', "
-                   + " '" + chk_Anagrup.Checked + "', "
-                   + " '" + chk_Altgrup.Checked + "', "
-                   + " '" + chk_Iptal.Checked + "', "
-                   + " '" + chk_PaketServis.Checked + "', "
-                   + " '" + chk_IndirimMasa.Checked + "', "
-                   + " '" + chk_YiyecekIcecek.Checked + "', "
-                   + " '" + chk_MasaKonum.Checked + "', "
-                   + " '" + chk_GarsonOzet.Checked + "', "
-                   + " '" + chk_GarsonTahsil.Checked + "', "
-                   + " '" + chk_SifirTutar.Checked + "', "
-                   + " '" + chk_OzetKasa.Checked + "', "
-                   + " '" + chk_ExtKasaRapor.Checked + "', "
-                   + " '" + chk_ExtKasaDetay.Checked + "', "
-                   + " '" + chk_SiparisIptal.Checked + "', "
-                   + " '" + chk_GonderilmemisSiparisIptal.Checked + "', "
-                   + " '" + chk_SiparisDuzelt.Checked + "', "
-                   + " '" + lookUpEditYazici.EditValue.ToString()+ "') ");
-            }
-            else
-            {
-                dbtools.execcmd("update Rmosmuh.dbo.Pos_User_XZ set "
-                   + " Odeme =                            '" + chk_Odeme.Checked + "', "
-                   + " Servis =                           '" + chk_Servis.Checked + "', "
-                   + " Cari =                             '" + chk_Cari.Checked + "', "
-                   + " Odenmez =                          '" + chk_Odenmez.Checked + "', "
-                   + " Malzeme =                          '" + chk_Malzeme.Checked + "', "
-                   + " Anagrup =                          '" + chk_Anagrup.Checked + "', "
-                   + " Altgrup =                          '" + chk_Altgrup.Checked + "', "
-                   + " Iptal =                            '" + chk_Iptal.Checked + "', "
-                   + " PaketServis =                      '" + chk_PaketServis.Checked + "', "
-                   + " IndirimMasa =                      '" + chk_IndirimMasa.Checked + "', "
-                   + " YiyecekIcecek =                    '" + chk_YiyecekIcecek.Checked + "', "
-                   + " MasaKonum =                        '" + chk_MasaKonum.Checked + "', "
-                   + " GarsonOzet =                       '" + chk_GarsonOzet.Checked + "', "
-                   + " GarsonTahsil =                     '" + chk_GarsonTahsil.Checked + "', "
-                   + " SifirTutar =                       '" + chk_SifirTutar.Checked + "', "
-                   + " OzetKasa =                         '" + chk_OzetKasa.Checked + "', "
-                   + " ExtKasaRapor =                     '" + chk_ExtKasaRapor.Checked + "', "
-                   + " ExtKasaDetay =                     '" + chk_ExtKasaDetay.Checked + "', "
-                   + " SiparisIptal =                     '" + chk_SiparisIptal.Checked + "', "
-                   + " GonderilmemisSiparisIptal =        '" + chk_GonderilmemisSiparisIptal.Checked + "', "
-                   + " SiparisDuzelt =                    '" + chk_SiparisDuzelt.Checked + "', "
-                   + " xzraporyazici =                    '" + lookUpEditYazici.EditValue.ToString() + "'  "
-                   + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
-            }
-            #endregion
-
-            if (txt_Kul_Kart.Text.Length > 0)
-            {
-                DataTable dtKart = dbtools.SelectTable("select * from Rmosmuh.dbo.Pos_User with(nolock) where P_Kart = '" + txt_Kul_Kart.Text + "'");
-                if (dtKart.Rows.Count > 1)
+                if (txt_Kul_kod.Text.Length < 1)
                 {
-                    MessageBox.Show(res_man.GetString("Aynı Kart Numarası Başka Kullanıcıda Tanımlı. Kart Numarasını Değiştiriniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show(res_man.GetString("Kullanıcı Kodu Bos Geçilemez...!!!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txt_Kul_kod.Focus();
                     return;
                 }
-            }
 
-            string backUser = "";
-            if (U_BackUser.EditValue != null)
+                #region XZ Rapor Ayarları
+                DataTable dtXZ = dbtools.SelectTable("select * from Rmosmuh.dbo.Pos_User_XZ with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "'");
+                if (dtXZ.Rows.Count < 1)
+                {
+                    dbtools.execcmd("insert into Rmosmuh.dbo.Pos_User_XZ( "
+                       + " P_Kod ,"
+                       + " Odeme ,"
+                       + " Servis ,"
+                       + " Cari ,"
+                       + " Odenmez ,"
+                       + " Malzeme ,"
+                       + " Anagrup ,"
+                       + " Altgrup ,"
+                       + " Iptal ,"
+                       + " PaketServis ,"
+                       + " IndirimMasa ,"
+                       + " YiyecekIcecek ,"
+                       + " MasaKonum ,"
+                       + " GarsonOzet ,"
+                       + " GarsonTahsil ,"
+                       + " SifirTutar ,"
+                       + " OzetKasa ,"
+                       + " ExtKasaRapor ,"
+                       + " ExtKasaDetay ,"
+                       + " SiparisIptal ,"
+                       + " GonderilmemisSiparisIptal ,"
+                       + " SiparisDuzelt,xzraporyazici,hesapyazici )"
+                       + " Values( "
+                       + " '" + txt_Kul_kod.Text + "', "
+                       + " '" + chk_Odeme.Checked + "', "
+                       + " '" + chk_Servis.Checked + "', "
+                       + " '" + chk_Cari.Checked + "', "
+                       + " '" + chk_Odenmez.Checked + "', "
+                       + " '" + chk_Malzeme.Checked + "', "
+                       + " '" + chk_Anagrup.Checked + "', "
+                       + " '" + chk_Altgrup.Checked + "', "
+                       + " '" + chk_Iptal.Checked + "', "
+                       + " '" + chk_PaketServis.Checked + "', "
+                       + " '" + chk_IndirimMasa.Checked + "', "
+                       + " '" + chk_YiyecekIcecek.Checked + "', "
+                       + " '" + chk_MasaKonum.Checked + "', "
+                       + " '" + chk_GarsonOzet.Checked + "', "
+                       + " '" + chk_GarsonTahsil.Checked + "', "
+                       + " '" + chk_SifirTutar.Checked + "', "
+                       + " '" + chk_OzetKasa.Checked + "', "
+                       + " '" + chk_ExtKasaRapor.Checked + "', "
+                       + " '" + chk_ExtKasaDetay.Checked + "', "
+                       + " '" + chk_SiparisIptal.Checked + "', "
+                       + " '" + chk_GonderilmemisSiparisIptal.Checked + "', "
+                       + " '" + chk_SiparisDuzelt.Checked + "', "
+                       + " '" + lookUpEditYazici.EditValue + "', "
+                       + " '" + lookUpEditHesapDokYazici.EditValue + "'" +
+                       ") ");
+                }
+                else
+                {
+
+                    string sorgu = "update Rmosmuh.dbo.Pos_User_XZ set "
+                       + " Odeme =                            '" + chk_Odeme.Checked + "', "
+                       + " Servis =                           '" + chk_Servis.Checked + "', "
+                       + " Cari =                             '" + chk_Cari.Checked + "', "
+                       + " Odenmez =                          '" + chk_Odenmez.Checked + "', "
+                       + " Malzeme =                          '" + chk_Malzeme.Checked + "', "
+                       + " Anagrup =                          '" + chk_Anagrup.Checked + "', "
+                       + " Altgrup =                          '" + chk_Altgrup.Checked + "', "
+                       + " Iptal =                            '" + chk_Iptal.Checked + "', "
+                       + " PaketServis =                      '" + chk_PaketServis.Checked + "', "
+                       + " IndirimMasa =                      '" + chk_IndirimMasa.Checked + "', "
+                       + " YiyecekIcecek =                    '" + chk_YiyecekIcecek.Checked + "', "
+                       + " MasaKonum =                        '" + chk_MasaKonum.Checked + "', "
+                       + " GarsonOzet =                       '" + chk_GarsonOzet.Checked + "', "
+                       + " GarsonTahsil =                     '" + chk_GarsonTahsil.Checked + "', "
+                       + " SifirTutar =                       '" + chk_SifirTutar.Checked + "', "
+                       + " OzetKasa =                         '" + chk_OzetKasa.Checked + "', "
+                       + " ExtKasaRapor =                     '" + chk_ExtKasaRapor.Checked + "', "
+                       + " ExtKasaDetay =                     '" + chk_ExtKasaDetay.Checked + "', "
+                       + " SiparisIptal =                     '" + chk_SiparisIptal.Checked + "', "
+                       + " GonderilmemisSiparisIptal =        '" + chk_GonderilmemisSiparisIptal.Checked + "', "
+                       + " SiparisDuzelt =                    '" + chk_SiparisDuzelt.Checked + "', "
+                       + " xzraporyazici =                    '" + lookUpEditYazici.EditValue + "', "
+                       + " hesapyazici =                    '" + lookUpEditHesapDokYazici.EditValue + "'  "
+                       + " where P_Kod = '" + txt_Kul_kod.Text + "' ";
+                    dbtools.execcmd(sorgu);
+                }
+                #endregion
+
+                if (txt_Kul_Kart.Text.Length > 0)
+                {
+                    DataTable dtKart = dbtools.SelectTable("select * from Rmosmuh.dbo.Pos_User with(nolock) where P_Kart = '" + txt_Kul_Kart.Text + "'");
+                    if (dtKart.Rows.Count > 1)
+                    {
+                        MessageBox.Show(res_man.GetString("Aynı Kart Numarası Başka Kullanıcıda Tanımlı. Kart Numarasını Değiştiriniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        return;
+                    }
+                }
+
+                string backUser = "";
+                if (U_BackUser.EditValue != null)
+                {
+                    backUser = U_BackUser.EditValue.ToString();
+                }
+
+                string dil = "";
+
+                if (Pos_dil.EditValue != null)
+                {
+                    dil = Pos_dil.EditValue.ToString();
+                }
+
+                DataTable dt = dbtools.SelectTable("select * from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "'");
+                if (dt.Rows.Count < 1)
+                {
+                    dbtools.execcmd("INSERT INTO Rmosmuh.dbo.Pos_User (P_Kod,P_Sifre,P_Ad,P_Soyad,P_Kart,P_Kulturu, "
+                        + " G_Miktarduzelt, G_Tutarduzelt, G_Satirsil, G_Indirim_Satis, G_Hesapdokumu, G_Odemeal, G_Odemesil, G_Indirim_Hesap, G_Yazdirkapat, G_Yazdirmadankapat,G_Bindirim, "
+                        + " M_Masatakip, M_Satis, M_Masatransfer, M_Malzemetransfer, M_Ozelmasa,M_Odakontrol, M_Masakilitle, M_Hesapkapatma, M_SatisRelogin, "
+                        + " M_HesapTr, "
+                        + " D_Direksatis, "
+                        + " R_Raporlar, R_Detay, R_XZ, R_Mahsupkes, R_Fisiptal,R_Fisiptalgecmis, "
+                        + " A_Ayarlar, A_Parametre, A_Print, A_Odeme, A_Entegre, A_Masa, A_Cari, A_HH, A_Kullanici,A_Kasa, "
+                        + " P_Gunsonu, P_Departman, "
+                        + " Pda_Masatakip, "
+                        + " Pda_Satis, Pda_Satirsil, Pda_Miktarduzelt, "
+                        + " Pda_Hesap, Pda_Masatr, Pda_Malztr, Pda_Ozelmasa, Pda_Odakontrol, "
+                        + " Pda_Direksatis, "
+                        + " K_Kasa, "
+                        + " And_Satis, And_Satirsil, And_Miktarduzelt, And_Tutarduzelt, "
+                        + " And_Hesap, And_Ozelmasa, And_MasaTr, And_Giris, "
+                        + " P_Posta,P_Indirim_Yuzde,P_Bindirim_Yuzde,P_Sabit_Masa,M_MasaAc,M_BaskaMasa,G_Satirsil_Y,M_GarsonDegistir, "
+                        + " G_Zayi,G_Ikram,M_KisiSayisi,R_MasaGeri,M_SiparisTekrar,Pda_HesapDok,H_HizliSatis,R_TopluIsle,And_HesapDokum,And_HesapOdeme,And_MalzTransfer,S_Sp_Sil,ExtraFolio, "
+                        + " And_Yarim,And_Tam,And_Bucuk,And_Duble,Pos_SubeTrf,Pos_AdisyonPr,Pos_OdemeDegistir,And_SatisSiparisBtn,Pos_ArtiEksi_Aktif,Pos_MasaAnlikDurum,Pos_MasaUrunSil,Pos_IWERep,Pos_KartF_CheckOut,Pos_SatirSilYetkili,Pos_MasaDirekS,Pos_MasaPaketS, "
+                        + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman) VALUES( "
+                        + " '" + txt_Kul_kod.Text + "','" + txt_Kul_sifre.EditValue + "','" + txt_Kul_ad.EditValue + "','" + txt_Kul_soyad.EditValue + "','" + txt_Kul_Kart.EditValue + "','" + cmb_Kulturu.SelectedIndex.ToString() + "', "
+                        + " '" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "','" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "','" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_G_Yazdirkapat.Checked) + "','" + Convert.ToBoolean(chk_G_Yazdirmadankapat.Checked) + "','" + Convert.ToBoolean(chk_G_Bindirim.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_M_Masatakip.Checked) + "','" + Convert.ToBoolean(chk_M_Satis.Checked) + "','" + Convert.ToBoolean(chk_M_MasaTransfer.Checked) + "','" + Convert.ToBoolean(chk_M_MalzemeTransfer.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_M_Ozelmasa.Checked) + "','" + Convert.ToBoolean(chk_M_Odakontrol.Checked) + "','" + Convert.ToBoolean(chk_M_MasaKilitle.Checked) + "','" + Convert.ToBoolean(chk_M_HesapKapatma.Checked) + "','" + Convert.ToBoolean(chk_M_SatisRelogin.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_M_HesapTr.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_D_DirekSatis.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_R_Raporlar.Checked) + "','" + Convert.ToBoolean(chk_R_Detay.Checked) + "','" + Convert.ToBoolean(chk_R_XZ.Checked) + "','" + Convert.ToBoolean(chk_R_MahsupKes.Checked) + "','" + Convert.ToBoolean(chk_R_Fisiptal.Checked) + "','" + Convert.ToBoolean(chk_R_Fisiptalgecmis.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_A_Ayarlar.Checked) + "','" + Convert.ToBoolean(chk_A_Parametreler.Checked) + "','" + Convert.ToBoolean(chk_A_Print.Checked) + "','" + Convert.ToBoolean(chk_A_Odeme.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_A_Entegre.Checked) + "','" + Convert.ToBoolean(chk_A_Masa.Checked) + "','" + Convert.ToBoolean(chk_A_Cari.Checked) + "','" + Convert.ToBoolean(chk_A_HH.Checked) + "','" + Convert.ToBoolean(chk_A_Kullanici.Checked) + "','" + Convert.ToBoolean(chk_A_Kasa.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_GunSonu.Checked) + "', '" + Convert.ToString(chkCmb_Departman.EditValue) + "', "
+                        + " '" + Convert.ToBoolean(chk_Pda_Masatakip.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_Pda_Satis.Checked) + "','" + Convert.ToBoolean(chk_Pda_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_Pda_Miktarduzelt.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_Pda_Hesap.Checked) + "','" + Convert.ToBoolean(chk_Pda_Masatr.Checked) + "','" + Convert.ToBoolean(chk_Pda_Malztr.Checked) + "','" + Convert.ToBoolean(chk_Pda_Ozelmasa.Checked) + "','" + Convert.ToBoolean(chk_Pda_Ozelmasa.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_Pda_Direksatis.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_K_Kasa.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_And_Satis.Checked) + "','" + Convert.ToBoolean(chk_And_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_And_MiktarD.Checked) + "','" + Convert.ToBoolean(chk_And_TutarD.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_And_Hesap.Checked) + "','" + Convert.ToBoolean(chk_And_Ozelmasa.Checked) + "','" + Convert.ToBoolean(chk_And_MasaTr.Checked) + "','" + Convert.ToBoolean(chk_And_Giris.Checked) + "', "
+                        + " '" + Convert.ToString(chkUser_Posta.EditValue) + "','" + Convert.ToInt32(spn_Kul_Indirim.Value) + "','" + Convert.ToInt32(spn_Kul_Bindirim.Value) + "','" + Convert.ToString(txt_Kul_Masa.Text) + "','" + Convert.ToBoolean(chk_Kul_MasaAc.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_M_Baskamasa.Checked) + "','" + Convert.ToBoolean(chk_G_SatirSilY.Checked) + "','" + chk_Kul_GarsonDegistir.Checked + "', "
+                        + " '" + Convert.ToBoolean(chk_Kul_Zayi.Checked) + "','" + Convert.ToBoolean(chk_Kul_Ikram.Checked) + "','" + Convert.ToBoolean(chk_Kul_KisiSayisi.Checked) + "','" + Convert.ToBoolean(chk_Kul_MasaGeri.Checked) + "','" + Convert.ToBoolean(chk_Kul_SiparisTekrar.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_Pda_HesapDok.Checked) + "','" + Convert.ToBoolean(chk_H_HizliSatis.Checked) + "','" + Convert.ToBoolean(chk_R_TopluIsle.Checked) + "','" + Convert.ToBoolean(chk_And_HesapDokum.Checked) + "','" + Convert.ToBoolean(chk_And_HesapOdeme.Checked) + "','" + Convert.ToBoolean(chk_And_MalzTransfer.Checked) + "', "
+                        + " '" + Convert.ToBoolean(chk_SpSil.Checked) + @"','" + chk_ExtraFolio.Checked + @"', "
+                        + " '" + And_Yarim.Checked + "','" + And_Tam.Checked + "','" + And_Bucuk.Checked + "','" + And_Duble.Checked + "','" + Pos_SubeTrf.Checked + "', "
+                        + " '" + Pos_AdisyonPr.Checked + "','" + chk_OdemeTipi.Checked + "','" + And_SatisSiparisBtn.Checked + "','" + Pos_ArtiEksi_Aktif.Checked + "','" + Pos_MasaAnlikDurum.Checked + "','" + Pos_MasaUrunSil.Checked + "','" + Pos_IWERep.Checked + "','" + Pos_KartF_CheckOut.Checked + "','" + Pos_SatirSilYetkili.Checked + "', "
+                        + " '" + Pos_MasaDirekS.Checked + "','" + Pos_MasaPaketS.Checked + "','" + Pos_YS_YetkiReddet.Checked + "','" + Pos_YarimDubleAlan.Checked + "','" + Pos_ReceteTanimlama.Checked + "','" + Pos_FixMenu.Checked + "', "
+                        + " '" + Pos_HesapArti.Checked + "','" + User_AP.Checked + "','" + Pos_OdaKontrol.Checked + "','" + Pos_HesapFisIptal.Checked + "','" + Pos_KartTanimSil.Checked + "','" + backUser + "','" + chk_K_KasaRapor.Checked + "','" + Pos_KartTanimDuzelt.Checked + "','" + Pos_KartTanimTransfer.Checked + "','" + Pos_KartTanimBakiyeTransfer.Checked + "','" + dil + "','" + Pos_Eksileme.Checked + "','" + Pos_XZdepartman.Checked + "' ) ");
+
+
+
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Kullanici, Log.Log_Islem.Kaydet, txt_Kul_kod.Text + " Kodlu " + txt_Kul_ad.EditValue + " " + txt_Kul_soyad.EditValue + "Kullanıcı Kaydedildi", String.Empty, String.Empty);
+                    Kul_temizle();
+                }
+                else
+                {
+                    dbtools.execcmd("update Rmosmuh.dbo.Pos_User set P_Sifre ='" + txt_Kul_sifre.EditValue + "',P_Ad ='" + txt_Kul_ad.EditValue + "',P_Soyad='" + txt_Kul_soyad.EditValue + "',P_Kart='" + txt_Kul_Kart.EditValue + "',P_Kulturu = '" + cmb_Kulturu.SelectedIndex.ToString() + "', "
+                        + " G_Miktarduzelt ='" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "', G_Tutarduzelt ='" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "', G_Satirsil ='" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "', "
+                        + " G_Indirim_Satis ='" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', G_Hesapdokumu ='" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "', G_Odemeal ='" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "', "
+                        + " G_Odemesil ='" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "', G_Indirim_Hesap ='" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', G_Yazdirkapat ='" + Convert.ToBoolean(chk_G_Yazdirkapat.Checked) + "', "
+                        + " G_Yazdirmadankapat ='" + Convert.ToBoolean(chk_G_Yazdirmadankapat.Checked) + "',G_Bindirim = '" + Convert.ToBoolean(chk_G_Bindirim.Checked) + "', "
+                        + " M_Masatakip ='" + Convert.ToBoolean(chk_M_Masatakip.Checked) + "', M_Satis ='" + Convert.ToBoolean(chk_M_Satis.Checked) + "', M_Masatransfer ='" + Convert.ToBoolean(chk_M_MasaTransfer.Checked) + "', "
+                        + " M_Malzemetransfer ='" + Convert.ToBoolean(chk_M_MalzemeTransfer.Checked) + "', M_Ozelmasa ='" + Convert.ToBoolean(chk_M_Ozelmasa.Checked) + "',M_Odakontrol = '" + Convert.ToBoolean(chk_M_Odakontrol.Checked) + "', M_Masakilitle ='" + Convert.ToBoolean(chk_M_MasaKilitle.Checked) + "', "
+                        + " M_Hesapkapatma ='" + Convert.ToBoolean(chk_M_HesapKapatma.Checked) + "',M_SatisRelogin = '" + Convert.ToBoolean(chk_M_SatisRelogin.Checked) + "',M_HesapTr = '" + Convert.ToBoolean(chk_M_HesapTr.Checked) + "', "
+                        + " D_Direksatis ='" + Convert.ToBoolean(chk_D_DirekSatis.Checked) + "', "
+                        + " R_Raporlar ='" + Convert.ToBoolean(chk_R_Raporlar.Checked) + "', R_Detay ='" + Convert.ToBoolean(chk_R_Detay.Checked) + "', R_XZ ='" + Convert.ToBoolean(chk_R_XZ.Checked) + "', "
+                        + " R_Mahsupkes ='" + Convert.ToBoolean(chk_R_MahsupKes.Checked) + "', R_Fisiptal ='" + Convert.ToBoolean(chk_R_Fisiptal.Checked) + "',R_Fisiptalgecmis = '" + Convert.ToBoolean(chk_R_Fisiptalgecmis.Checked) + "', "
+                        + " A_Ayarlar ='" + Convert.ToBoolean(chk_A_Ayarlar.Checked) + "', A_Parametre ='" + Convert.ToBoolean(chk_A_Parametreler.Checked) + "', A_Print ='" + Convert.ToBoolean(chk_A_Print.Checked) + "', "
+                        + " A_Odeme ='" + Convert.ToBoolean(chk_A_Odeme.Checked) + "', A_Entegre ='" + Convert.ToBoolean(chk_A_Entegre.Checked) + "', A_Masa ='" + Convert.ToBoolean(chk_A_Masa.Checked) + "', "
+                        + " A_Cari ='" + Convert.ToBoolean(chk_A_Cari.Checked) + "', A_HH ='" + Convert.ToBoolean(chk_A_HH.Checked) + "', A_Kullanici ='" + Convert.ToBoolean(chk_A_Kullanici.Checked) + "',A_Kasa = '" + Convert.ToBoolean(chk_A_Kasa.Checked) + "', "
+                        + " P_Gunsonu = '" + Convert.ToBoolean(chk_GunSonu.Checked) + "', P_Departman = '" + Convert.ToString(chkCmb_Departman.EditValue) + "', "
+                        + " Pda_Masatakip = '" + Convert.ToBoolean(chk_Pda_Masatakip.Checked) + "', "
+                        + " Pda_Satis = '" + Convert.ToBoolean(chk_Pda_Satis.Checked) + "',Pda_Satirsil = '" + Convert.ToBoolean(chk_Pda_Satirsil.Checked) + "',Pda_Miktarduzelt = '" + Convert.ToBoolean(chk_Pda_Miktarduzelt.Checked) + "', "
+                        + " Pda_Hesap = '" + Convert.ToBoolean(chk_Pda_Hesap.Checked) + "',Pda_Masatr = '" + Convert.ToBoolean(chk_Pda_Masatr.Checked) + "',Pda_Malztr = '" + Convert.ToBoolean(chk_Pda_Malztr.Checked) + "',Pda_Ozelmasa = '" + Convert.ToBoolean(chk_Pda_Ozelmasa.Checked) + "',Pda_Odakontrol = '" + Convert.ToBoolean(chk_Pda_Odakontrol.Checked) + "', "
+                        + " Pda_Direksatis = '" + Convert.ToBoolean(chk_Pda_Direksatis.Checked) + "', "
+                        + " K_Kasa = '" + Convert.ToBoolean(chk_K_Kasa.Checked) + "', "
+                        + " And_Satis = '" + Convert.ToBoolean(chk_And_Satis.Checked) + "',And_Satirsil = '" + Convert.ToBoolean(chk_And_Satirsil.Checked) + "',And_Miktarduzelt = '" + Convert.ToBoolean(chk_And_MiktarD.Checked) + "',And_Tutarduzelt = '" + Convert.ToBoolean(chk_And_TutarD.Checked) + "', "
+                        + " And_Hesap = '" + Convert.ToBoolean(chk_And_Hesap.Checked) + "',And_Ozelmasa = '" + Convert.ToBoolean(chk_And_Ozelmasa.Checked) + "',And_MasaTr = '" + Convert.ToBoolean(chk_And_MasaTr.Checked) + "',And_Giris = '" + Convert.ToBoolean(chk_And_Giris.Checked) + "', "
+                        + " P_Posta = '" + Convert.ToString(chkUser_Posta.EditValue) + "',P_Indirim_Yuzde = '" + Convert.ToInt32(spn_Kul_Indirim.Value) + "',P_Bindirim_Yuzde = '" + Convert.ToInt32(spn_Kul_Bindirim.Value) + "',P_Sabit_Masa = '" + Convert.ToString(txt_Kul_Masa.Text) + "',M_MasaAc = '" + Convert.ToBoolean(chk_Kul_MasaAc.Checked) + "', "
+                        + " M_BaskaMasa = '" + Convert.ToBoolean(chk_M_Baskamasa.Checked) + "',G_Satirsil_Y = '" + Convert.ToBoolean(chk_G_SatirSilY.Checked) + "',M_GarsonDegistir = '" + chk_Kul_GarsonDegistir.Checked + "',G_Zayi = '" + Convert.ToBoolean(chk_Kul_Zayi.Checked) + "',G_Ikram = '" + Convert.ToBoolean(chk_Kul_Ikram.Checked) + "', "
+                        + " M_KisiSayisi = '" + Convert.ToBoolean(chk_Kul_KisiSayisi.Checked) + "',R_MasaGeri = '" + Convert.ToBoolean(chk_Kul_MasaGeri.Checked) + "',M_SiparisTekrar = '" + Convert.ToBoolean(chk_Kul_SiparisTekrar.Checked) + "',Pda_HesapDok = '" + Convert.ToBoolean(chk_Pda_HesapDok.Checked) + "',H_HizliSatis = '" + Convert.ToBoolean(chk_H_HizliSatis.Checked) + "', "
+                        + " R_TopluIsle = '" + Convert.ToBoolean(chk_R_TopluIsle.Checked) + "',And_HesapDokum = '" + Convert.ToBoolean(chk_And_HesapDokum.Checked) + "',And_HesapOdeme = '" + Convert.ToBoolean(chk_And_HesapOdeme.Checked) + "',And_MalzTransfer = '" + Convert.ToBoolean(chk_And_MalzTransfer.Checked) + @"', "
+                        + " S_Sp_Sil = '" + Convert.ToBoolean(chk_SpSil.Checked) + "',ExtraFolio = '" + chk_ExtraFolio.Checked + "', And_Yarim= '" + And_Yarim.Checked + "', And_Tam= '" + And_Tam.Checked + "', "
+                        + " And_Bucuk = '" + And_Bucuk.Checked + "', And_Duble = '" + And_Duble.Checked + "', Pos_SubeTrf = '" + Pos_SubeTrf.Checked + "', Pos_AdisyonPr = '" + Pos_AdisyonPr.Checked + "', "
+                        + " Pos_OdemeDegistir = '" + chk_OdemeTipi.Checked + "',And_SatisSiparisBtn = '" + And_SatisSiparisBtn.Checked + "', Pos_ArtiEksi_Aktif = '" + Pos_ArtiEksi_Aktif.Checked + "', "
+                        + " Pos_MasaAnlikDurum = '" + Pos_MasaAnlikDurum.Checked + "',Pos_MasaUrunSil = '" + Pos_MasaUrunSil.Checked + "', Pos_IWERep= '" + Pos_IWERep.Checked + "', Pos_KartF_CheckOut ='" + Pos_KartF_CheckOut.Checked + "', "
+                        + " Pos_SatirSilYetkili = '" + Pos_SatirSilYetkili.Checked + "', Pos_MasaDirekS ='" + Pos_MasaDirekS.Checked + "', Pos_MasaPaketS = '" + Pos_MasaPaketS.Checked + "', "
+                        + " Pos_YS_YetkiReddet = '" + Pos_YS_YetkiReddet.Checked + "', Pos_YarimDubleAlan ='" + Pos_YarimDubleAlan.Checked + "', Pos_ReceteTanimlama= '" + Pos_ReceteTanimlama.Checked + "', Pos_FixMenu = '" + Pos_FixMenu.Checked + "', "
+                        + " Pos_HesapArti = '" + Pos_HesapArti.Checked + "', User_AP = '" + User_AP.Checked + "',Pos_OdaKontrol = '" + Pos_OdaKontrol.Checked + "',Pos_HesapFisIptal = '" + Pos_HesapFisIptal.Checked + "',Pos_KartTanimSil = '" + Pos_KartTanimSil.Checked + "',U_BackUser = '" + backUser + "',chk_K_KasaRapor = '" + chk_K_KasaRapor.Checked + "',Pos_KartTanimDuzelt = '" + Pos_KartTanimDuzelt.Checked + "',Pos_KartTanimBakiyeTransfer = '" + Pos_KartTanimBakiyeTransfer.Checked + "',Pos_KartTanimTransfer = '" + Pos_KartTanimTransfer.Checked + "',Pos_dil = '" + dil + "',Pos_Eksileme = '" + Pos_Eksileme.Checked + "',Pos_XZdepartman = '" + Pos_XZdepartman.Checked + "' "
+                        + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
+
+
+
+
+
+
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Kullanici, Log.Log_Islem.Duzelt, txt_Kul_kod.Text + " Kodlu " + txt_Kul_ad.EditValue + " " + txt_Kul_soyad.EditValue + "Kullanıcı Duzeltildi", String.Empty, String.Empty);
+                    Kul_temizle();
+                }
+
+                User.Yetki_Yukle();
+            }
+            catch(Exception ex)
             {
-                backUser = U_BackUser.EditValue.ToString();
+                MessageBox.Show(ex.Message);
             }
-
-            string dil = "";
-
-            if (Pos_dil.EditValue != null)
-            {
-                dil = Pos_dil.EditValue.ToString();
-            }
-
-            DataTable dt = dbtools.SelectTable("select * from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "'");
-            if (dt.Rows.Count < 1)
-            {
-                dbtools.execcmd("INSERT INTO Rmosmuh.dbo.Pos_User (P_Kod,P_Sifre,P_Ad,P_Soyad,P_Kart,P_Kulturu, "
-                    + " G_Miktarduzelt, G_Tutarduzelt, G_Satirsil, G_Indirim_Satis, G_Hesapdokumu, G_Odemeal, G_Odemesil, G_Indirim_Hesap, G_Yazdirkapat, G_Yazdirmadankapat,G_Bindirim, "
-                    + " M_Masatakip, M_Satis, M_Masatransfer, M_Malzemetransfer, M_Ozelmasa,M_Odakontrol, M_Masakilitle, M_Hesapkapatma, M_SatisRelogin, "
-                    + " M_HesapTr, "
-                    + " D_Direksatis, "
-                    + " R_Raporlar, R_Detay, R_XZ, R_Mahsupkes, R_Fisiptal,R_Fisiptalgecmis, "
-                    + " A_Ayarlar, A_Parametre, A_Print, A_Odeme, A_Entegre, A_Masa, A_Cari, A_HH, A_Kullanici,A_Kasa, "
-                    + " P_Gunsonu, P_Departman, "
-                    + " Pda_Masatakip, "
-                    + " Pda_Satis, Pda_Satirsil, Pda_Miktarduzelt, "
-                    + " Pda_Hesap, Pda_Masatr, Pda_Malztr, Pda_Ozelmasa, Pda_Odakontrol, "
-                    + " Pda_Direksatis, "
-                    + " K_Kasa, "
-                    + " And_Satis, And_Satirsil, And_Miktarduzelt, And_Tutarduzelt, "
-                    + " And_Hesap, And_Ozelmasa, And_MasaTr, And_Giris, "
-                    + " P_Posta,P_Indirim_Yuzde,P_Bindirim_Yuzde,P_Sabit_Masa,M_MasaAc,M_BaskaMasa,G_Satirsil_Y,M_GarsonDegistir, "
-                    + " G_Zayi,G_Ikram,M_KisiSayisi,R_MasaGeri,M_SiparisTekrar,Pda_HesapDok,H_HizliSatis,R_TopluIsle,And_HesapDokum,And_HesapOdeme,And_MalzTransfer,S_Sp_Sil,ExtraFolio, "
-                    + " And_Yarim,And_Tam,And_Bucuk,And_Duble,Pos_SubeTrf,Pos_AdisyonPr,Pos_OdemeDegistir,And_SatisSiparisBtn,Pos_ArtiEksi_Aktif,Pos_MasaAnlikDurum,Pos_MasaUrunSil,Pos_IWERep,Pos_KartF_CheckOut,Pos_SatirSilYetkili,Pos_MasaDirekS,Pos_MasaPaketS, "
-                    + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman) VALUES( "
-                    + " '" + txt_Kul_kod.Text + "','" + txt_Kul_sifre.EditValue + "','" + txt_Kul_ad.EditValue + "','" + txt_Kul_soyad.EditValue + "','" + txt_Kul_Kart.EditValue + "','" + cmb_Kulturu.SelectedIndex.ToString() + "', "
-                    + " '" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "','" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "','" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_G_Yazdirkapat.Checked) + "','" + Convert.ToBoolean(chk_G_Yazdirmadankapat.Checked) + "','" + Convert.ToBoolean(chk_G_Bindirim.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_M_Masatakip.Checked) + "','" + Convert.ToBoolean(chk_M_Satis.Checked) + "','" + Convert.ToBoolean(chk_M_MasaTransfer.Checked) + "','" + Convert.ToBoolean(chk_M_MalzemeTransfer.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_M_Ozelmasa.Checked) + "','" + Convert.ToBoolean(chk_M_Odakontrol.Checked) + "','" + Convert.ToBoolean(chk_M_MasaKilitle.Checked) + "','" + Convert.ToBoolean(chk_M_HesapKapatma.Checked) + "','" + Convert.ToBoolean(chk_M_SatisRelogin.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_M_HesapTr.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_D_DirekSatis.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_R_Raporlar.Checked) + "','" + Convert.ToBoolean(chk_R_Detay.Checked) + "','" + Convert.ToBoolean(chk_R_XZ.Checked) + "','" + Convert.ToBoolean(chk_R_MahsupKes.Checked) + "','" + Convert.ToBoolean(chk_R_Fisiptal.Checked) + "','" + Convert.ToBoolean(chk_R_Fisiptalgecmis.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_A_Ayarlar.Checked) + "','" + Convert.ToBoolean(chk_A_Parametreler.Checked) + "','" + Convert.ToBoolean(chk_A_Print.Checked) + "','" + Convert.ToBoolean(chk_A_Odeme.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_A_Entegre.Checked) + "','" + Convert.ToBoolean(chk_A_Masa.Checked) + "','" + Convert.ToBoolean(chk_A_Cari.Checked) + "','" + Convert.ToBoolean(chk_A_HH.Checked) + "','" + Convert.ToBoolean(chk_A_Kullanici.Checked) + "','" + Convert.ToBoolean(chk_A_Kasa.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_GunSonu.Checked) + "', '" + Convert.ToString(chkCmb_Departman.EditValue) + "', "
-                    + " '" + Convert.ToBoolean(chk_Pda_Masatakip.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_Pda_Satis.Checked) + "','" + Convert.ToBoolean(chk_Pda_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_Pda_Miktarduzelt.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_Pda_Hesap.Checked) + "','" + Convert.ToBoolean(chk_Pda_Masatr.Checked) + "','" + Convert.ToBoolean(chk_Pda_Malztr.Checked) + "','" + Convert.ToBoolean(chk_Pda_Ozelmasa.Checked) + "','" + Convert.ToBoolean(chk_Pda_Ozelmasa.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_Pda_Direksatis.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_K_Kasa.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_And_Satis.Checked) + "','" + Convert.ToBoolean(chk_And_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_And_MiktarD.Checked) + "','" + Convert.ToBoolean(chk_And_TutarD.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_And_Hesap.Checked) + "','" + Convert.ToBoolean(chk_And_Ozelmasa.Checked) + "','" + Convert.ToBoolean(chk_And_MasaTr.Checked) + "','" + Convert.ToBoolean(chk_And_Giris.Checked) + "', "
-                    + " '" + Convert.ToString(chkUser_Posta.EditValue) + "','" + Convert.ToInt32(spn_Kul_Indirim.Value) + "','" + Convert.ToInt32(spn_Kul_Bindirim.Value) + "','" + Convert.ToString(txt_Kul_Masa.Text) + "','" + Convert.ToBoolean(chk_Kul_MasaAc.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_M_Baskamasa.Checked) + "','" + Convert.ToBoolean(chk_G_SatirSilY.Checked) + "','" + chk_Kul_GarsonDegistir.Checked + "', "
-                    + " '" + Convert.ToBoolean(chk_Kul_Zayi.Checked) + "','" + Convert.ToBoolean(chk_Kul_Ikram.Checked) + "','" + Convert.ToBoolean(chk_Kul_KisiSayisi.Checked) + "','" + Convert.ToBoolean(chk_Kul_MasaGeri.Checked) + "','" + Convert.ToBoolean(chk_Kul_SiparisTekrar.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_Pda_HesapDok.Checked) + "','" + Convert.ToBoolean(chk_H_HizliSatis.Checked) + "','" + Convert.ToBoolean(chk_R_TopluIsle.Checked) + "','" + Convert.ToBoolean(chk_And_HesapDokum.Checked) + "','" + Convert.ToBoolean(chk_And_HesapOdeme.Checked) + "','" + Convert.ToBoolean(chk_And_MalzTransfer.Checked) + "', "
-                    + " '" + Convert.ToBoolean(chk_SpSil.Checked) + @"','" + chk_ExtraFolio.Checked + @"', "
-                    + " '" + And_Yarim.Checked + "','" + And_Tam.Checked + "','" + And_Bucuk.Checked + "','" + And_Duble.Checked + "','" + Pos_SubeTrf.Checked + "', "
-                    + " '" + Pos_AdisyonPr.Checked + "','" + chk_OdemeTipi.Checked + "','" + And_SatisSiparisBtn.Checked + "','" + Pos_ArtiEksi_Aktif.Checked + "','" + Pos_MasaAnlikDurum.Checked + "','" + Pos_MasaUrunSil.Checked + "','" + Pos_IWERep.Checked + "','" + Pos_KartF_CheckOut.Checked + "','" + Pos_SatirSilYetkili.Checked + "', "
-                    + " '" + Pos_MasaDirekS.Checked + "','" + Pos_MasaPaketS.Checked + "','" + Pos_YS_YetkiReddet.Checked + "','" + Pos_YarimDubleAlan.Checked + "','" + Pos_ReceteTanimlama.Checked + "','" + Pos_FixMenu.Checked + "', "
-                    + " '" + Pos_HesapArti.Checked + "','" + User_AP.Checked + "','" + Pos_OdaKontrol.Checked + "','" + Pos_HesapFisIptal.Checked + "','" + Pos_KartTanimSil.Checked + "','" + backUser + "','" + chk_K_KasaRapor.Checked + "','" + Pos_KartTanimDuzelt.Checked + "','" + Pos_KartTanimTransfer.Checked + "','" + Pos_KartTanimBakiyeTransfer.Checked + "','" + dil + "','" + Pos_Eksileme.Checked + "','" + Pos_XZdepartman.Checked + "' ) ");
-
-
-
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Kullanici, Log.Log_Islem.Kaydet, txt_Kul_kod.Text + " Kodlu " + txt_Kul_ad.EditValue + " " + txt_Kul_soyad.EditValue + "Kullanıcı Kaydedildi", String.Empty, String.Empty);
-                Kul_temizle();
-            }
-            else
-            {
-                dbtools.execcmd("update Rmosmuh.dbo.Pos_User set P_Sifre ='" + txt_Kul_sifre.EditValue + "',P_Ad ='" + txt_Kul_ad.EditValue + "',P_Soyad='" + txt_Kul_soyad.EditValue + "',P_Kart='" + txt_Kul_Kart.EditValue + "',P_Kulturu = '" + cmb_Kulturu.SelectedIndex.ToString() + "', "
-                    + " G_Miktarduzelt ='" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "', G_Tutarduzelt ='" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "', G_Satirsil ='" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "', "
-                    + " G_Indirim_Satis ='" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', G_Hesapdokumu ='" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "', G_Odemeal ='" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "', "
-                    + " G_Odemesil ='" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "', G_Indirim_Hesap ='" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', G_Yazdirkapat ='" + Convert.ToBoolean(chk_G_Yazdirkapat.Checked) + "', "
-                    + " G_Yazdirmadankapat ='" + Convert.ToBoolean(chk_G_Yazdirmadankapat.Checked) + "',G_Bindirim = '" + Convert.ToBoolean(chk_G_Bindirim.Checked) + "', "
-                    + " M_Masatakip ='" + Convert.ToBoolean(chk_M_Masatakip.Checked) + "', M_Satis ='" + Convert.ToBoolean(chk_M_Satis.Checked) + "', M_Masatransfer ='" + Convert.ToBoolean(chk_M_MasaTransfer.Checked) + "', "
-                    + " M_Malzemetransfer ='" + Convert.ToBoolean(chk_M_MalzemeTransfer.Checked) + "', M_Ozelmasa ='" + Convert.ToBoolean(chk_M_Ozelmasa.Checked) + "',M_Odakontrol = '" + Convert.ToBoolean(chk_M_Odakontrol.Checked) + "', M_Masakilitle ='" + Convert.ToBoolean(chk_M_MasaKilitle.Checked) + "', "
-                    + " M_Hesapkapatma ='" + Convert.ToBoolean(chk_M_HesapKapatma.Checked) + "',M_SatisRelogin = '" + Convert.ToBoolean(chk_M_SatisRelogin.Checked) + "',M_HesapTr = '" + Convert.ToBoolean(chk_M_HesapTr.Checked) + "', "
-                    + " D_Direksatis ='" + Convert.ToBoolean(chk_D_DirekSatis.Checked) + "', "
-                    + " R_Raporlar ='" + Convert.ToBoolean(chk_R_Raporlar.Checked) + "', R_Detay ='" + Convert.ToBoolean(chk_R_Detay.Checked) + "', R_XZ ='" + Convert.ToBoolean(chk_R_XZ.Checked) + "', "
-                    + " R_Mahsupkes ='" + Convert.ToBoolean(chk_R_MahsupKes.Checked) + "', R_Fisiptal ='" + Convert.ToBoolean(chk_R_Fisiptal.Checked) + "',R_Fisiptalgecmis = '" + Convert.ToBoolean(chk_R_Fisiptalgecmis.Checked) + "', "
-                    + " A_Ayarlar ='" + Convert.ToBoolean(chk_A_Ayarlar.Checked) + "', A_Parametre ='" + Convert.ToBoolean(chk_A_Parametreler.Checked) + "', A_Print ='" + Convert.ToBoolean(chk_A_Print.Checked) + "', "
-                    + " A_Odeme ='" + Convert.ToBoolean(chk_A_Odeme.Checked) + "', A_Entegre ='" + Convert.ToBoolean(chk_A_Entegre.Checked) + "', A_Masa ='" + Convert.ToBoolean(chk_A_Masa.Checked) + "', "
-                    + " A_Cari ='" + Convert.ToBoolean(chk_A_Cari.Checked) + "', A_HH ='" + Convert.ToBoolean(chk_A_HH.Checked) + "', A_Kullanici ='" + Convert.ToBoolean(chk_A_Kullanici.Checked) + "',A_Kasa = '" + Convert.ToBoolean(chk_A_Kasa.Checked) + "', "
-                    + " P_Gunsonu = '" + Convert.ToBoolean(chk_GunSonu.Checked) + "', P_Departman = '" + Convert.ToString(chkCmb_Departman.EditValue) + "', "
-                    + " Pda_Masatakip = '" + Convert.ToBoolean(chk_Pda_Masatakip.Checked) + "', "
-                    + " Pda_Satis = '" + Convert.ToBoolean(chk_Pda_Satis.Checked) + "',Pda_Satirsil = '" + Convert.ToBoolean(chk_Pda_Satirsil.Checked) + "',Pda_Miktarduzelt = '" + Convert.ToBoolean(chk_Pda_Miktarduzelt.Checked) + "', "
-                    + " Pda_Hesap = '" + Convert.ToBoolean(chk_Pda_Hesap.Checked) + "',Pda_Masatr = '" + Convert.ToBoolean(chk_Pda_Masatr.Checked) + "',Pda_Malztr = '" + Convert.ToBoolean(chk_Pda_Malztr.Checked) + "',Pda_Ozelmasa = '" + Convert.ToBoolean(chk_Pda_Ozelmasa.Checked) + "',Pda_Odakontrol = '" + Convert.ToBoolean(chk_Pda_Odakontrol.Checked) + "', "
-                    + " Pda_Direksatis = '" + Convert.ToBoolean(chk_Pda_Direksatis.Checked) + "', "
-                    + " K_Kasa = '" + Convert.ToBoolean(chk_K_Kasa.Checked) + "', "
-                    + " And_Satis = '" + Convert.ToBoolean(chk_And_Satis.Checked) + "',And_Satirsil = '" + Convert.ToBoolean(chk_And_Satirsil.Checked) + "',And_Miktarduzelt = '" + Convert.ToBoolean(chk_And_MiktarD.Checked) + "',And_Tutarduzelt = '" + Convert.ToBoolean(chk_And_TutarD.Checked) + "', "
-                    + " And_Hesap = '" + Convert.ToBoolean(chk_And_Hesap.Checked) + "',And_Ozelmasa = '" + Convert.ToBoolean(chk_And_Ozelmasa.Checked) + "',And_MasaTr = '" + Convert.ToBoolean(chk_And_MasaTr.Checked) + "',And_Giris = '" + Convert.ToBoolean(chk_And_Giris.Checked) + "', "
-                    + " P_Posta = '" + Convert.ToString(chkUser_Posta.EditValue) + "',P_Indirim_Yuzde = '" + Convert.ToInt32(spn_Kul_Indirim.Value) + "',P_Bindirim_Yuzde = '" + Convert.ToInt32(spn_Kul_Bindirim.Value) + "',P_Sabit_Masa = '" + Convert.ToString(txt_Kul_Masa.Text) + "',M_MasaAc = '" + Convert.ToBoolean(chk_Kul_MasaAc.Checked) + "', "
-                    + " M_BaskaMasa = '" + Convert.ToBoolean(chk_M_Baskamasa.Checked) + "',G_Satirsil_Y = '" + Convert.ToBoolean(chk_G_SatirSilY.Checked) + "',M_GarsonDegistir = '" + chk_Kul_GarsonDegistir.Checked + "',G_Zayi = '" + Convert.ToBoolean(chk_Kul_Zayi.Checked) + "',G_Ikram = '" + Convert.ToBoolean(chk_Kul_Ikram.Checked) + "', "
-                    + " M_KisiSayisi = '" + Convert.ToBoolean(chk_Kul_KisiSayisi.Checked) + "',R_MasaGeri = '" + Convert.ToBoolean(chk_Kul_MasaGeri.Checked) + "',M_SiparisTekrar = '" + Convert.ToBoolean(chk_Kul_SiparisTekrar.Checked) + "',Pda_HesapDok = '" + Convert.ToBoolean(chk_Pda_HesapDok.Checked) + "',H_HizliSatis = '" + Convert.ToBoolean(chk_H_HizliSatis.Checked) + "', "
-                    + " R_TopluIsle = '" + Convert.ToBoolean(chk_R_TopluIsle.Checked) + "',And_HesapDokum = '" + Convert.ToBoolean(chk_And_HesapDokum.Checked) + "',And_HesapOdeme = '" + Convert.ToBoolean(chk_And_HesapOdeme.Checked) + "',And_MalzTransfer = '" + Convert.ToBoolean(chk_And_MalzTransfer.Checked) + @"', "
-                    + " S_Sp_Sil = '" + Convert.ToBoolean(chk_SpSil.Checked) + "',ExtraFolio = '" + chk_ExtraFolio.Checked + "', And_Yarim= '" + And_Yarim.Checked + "', And_Tam= '" + And_Tam.Checked + "', "
-                    + " And_Bucuk = '" + And_Bucuk.Checked + "', And_Duble = '" + And_Duble.Checked + "', Pos_SubeTrf = '" + Pos_SubeTrf.Checked + "', Pos_AdisyonPr = '" + Pos_AdisyonPr.Checked + "', "
-                    + " Pos_OdemeDegistir = '" + chk_OdemeTipi.Checked + "',And_SatisSiparisBtn = '" + And_SatisSiparisBtn.Checked + "', Pos_ArtiEksi_Aktif = '" + Pos_ArtiEksi_Aktif.Checked + "', "
-                    + " Pos_MasaAnlikDurum = '" + Pos_MasaAnlikDurum.Checked + "',Pos_MasaUrunSil = '" + Pos_MasaUrunSil.Checked + "', Pos_IWERep= '" + Pos_IWERep.Checked + "', Pos_KartF_CheckOut ='" + Pos_KartF_CheckOut.Checked + "', "
-                    + " Pos_SatirSilYetkili = '" + Pos_SatirSilYetkili.Checked + "', Pos_MasaDirekS ='" + Pos_MasaDirekS.Checked + "', Pos_MasaPaketS = '" + Pos_MasaPaketS.Checked + "', "
-                    + " Pos_YS_YetkiReddet = '" + Pos_YS_YetkiReddet.Checked + "', Pos_YarimDubleAlan ='" + Pos_YarimDubleAlan.Checked + "', Pos_ReceteTanimlama= '" + Pos_ReceteTanimlama.Checked + "', Pos_FixMenu = '" + Pos_FixMenu.Checked + "', "
-                    + " Pos_HesapArti = '" + Pos_HesapArti.Checked + "', User_AP = '" + User_AP.Checked + "',Pos_OdaKontrol = '" + Pos_OdaKontrol.Checked + "',Pos_HesapFisIptal = '" + Pos_HesapFisIptal.Checked + "',Pos_KartTanimSil = '" + Pos_KartTanimSil.Checked + "',U_BackUser = '" + backUser + "',chk_K_KasaRapor = '" + chk_K_KasaRapor.Checked + "',Pos_KartTanimDuzelt = '" + Pos_KartTanimDuzelt.Checked + "',Pos_KartTanimBakiyeTransfer = '" + Pos_KartTanimBakiyeTransfer.Checked + "',Pos_KartTanimTransfer = '" + Pos_KartTanimTransfer.Checked + "',Pos_dil = '" + dil + "',Pos_Eksileme = '" + Pos_Eksileme.Checked + "',Pos_XZdepartman = '" + Pos_XZdepartman.Checked + "' "
-                    + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
-
-
-
-
-
-
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Kullanici, Log.Log_Islem.Duzelt, txt_Kul_kod.Text + " Kodlu " + txt_Kul_ad.EditValue + " " + txt_Kul_soyad.EditValue + "Kullanıcı Duzeltildi", String.Empty, String.Empty);
-                Kul_temizle();
-            }
-
-            User.Yetki_Yukle();
         }
 
         private void btn_Kul_Sil_Click(object sender, EventArgs e)
@@ -3003,7 +3039,7 @@ group by Pkod_Ad";
 
             }
 
-            DataTable dtXZ = dbtools.SelectTable("SELECT 0,Id,P_Kod,ISNULL(Odeme,0) as Odeme,ISNULL(Servis,0) as Servis,ISNULL(Cari,0) as Cari,ISNULL(Odenmez,0) as Odenmez,ISNULL(Malzeme,0) as Malzeme,ISNULL(Anagrup,0) as Anagrup,ISNULL(Altgrup,0) as Altgrup,ISNULL(Iptal,0) as Iptal,ISNULL(PaketServis,0) as PaketServis,ISNULL(IndirimMasa,0) as IndirimMasa,ISNULL(YiyecekIcecek,0) as YiyecekIcecek,ISNULL(MasaKonum,0) as MasaKonum,ISNULL(GarsonOzet,0) as GarsonOzet,ISNULL(GarsonTahsil,0) as GarsonTahsil,ISNULL(SifirTutar,0) as SifirTutar,ISNULL(OzetKasa,0) as OzetKasa,ISNULL(ExtKasaRapor,0) as ExtKasaRapor,ISNULL(ExtKasaDetay,0) as ExtKasaDetay,ISNULL(SiparisIptal,0) as SiparisIptal,ISNULL(GonderilmemisSiparisIptal,0) as GonderilmemisSiparisIptal,ISNULL(SiparisDuzelt,0) as SiparisDuzelt,ISNULL(xzraporyazici,0) as xzraporyazici FROM Rmosmuh.dbo.Pos_User_XZ where P_Kod = '" + txt_Kul_kod.Text + "' ");
+            DataTable dtXZ = dbtools.SelectTable("SELECT 0,Id,P_Kod,ISNULL(Odeme,0) as Odeme,ISNULL(Servis,0) as Servis,ISNULL(Cari,0) as Cari,ISNULL(Odenmez,0) as Odenmez,ISNULL(Malzeme,0) as Malzeme,ISNULL(Anagrup,0) as Anagrup,ISNULL(Altgrup,0) as Altgrup,ISNULL(Iptal,0) as Iptal,ISNULL(PaketServis,0) as PaketServis,ISNULL(IndirimMasa,0) as IndirimMasa,ISNULL(YiyecekIcecek,0) as YiyecekIcecek,ISNULL(MasaKonum,0) as MasaKonum,ISNULL(GarsonOzet,0) as GarsonOzet,ISNULL(GarsonTahsil,0) as GarsonTahsil,ISNULL(SifirTutar,0) as SifirTutar,ISNULL(OzetKasa,0) as OzetKasa,ISNULL(ExtKasaRapor,0) as ExtKasaRapor,ISNULL(ExtKasaDetay,0) as ExtKasaDetay,ISNULL(SiparisIptal,0) as SiparisIptal,ISNULL(GonderilmemisSiparisIptal,0) as GonderilmemisSiparisIptal,ISNULL(SiparisDuzelt,0) as SiparisDuzelt,ISNULL(xzraporyazici,0) as xzraporyazici,hesapyazici FROM Rmosmuh.dbo.Pos_User_XZ where P_Kod = '" + txt_Kul_kod.Text + "' ");
             if (dtXZ.Rows.Count > 0)
             {
                 chk_Odeme.Checked = Convert.ToBoolean(dtXZ.Rows[0]["Odeme"]);
@@ -3033,6 +3069,7 @@ group by Pkod_Ad";
                     lookUpEditYazici.EditValue = dtXZ.Rows[0]["xzraporyazici"].ToString();
 
                 }
+                lookUpEditHesapDokYazici.EditValue = dtXZ.Rows[0]["hesapyazici"].ToString();
             }
         }
 

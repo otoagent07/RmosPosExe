@@ -48,6 +48,8 @@ namespace Pos
 
 
         bool birKere = false;
+        bool yazdirilmamisSiparis = false;
+
         private void MasaTakip_Load(object sender, EventArgs e)
         {
             try
@@ -65,8 +67,11 @@ namespace Pos
                 btnHesapDokum.Enabled = User.G_Hesapdokumu;
                 btnHesapDokumEski.Enabled = User.G_Hesapdokumu;
 
-
-
+                string var = dbtools.DegerGetir("select count(*) as toplam from Pos_Param where ISNULL(yazdirilmamissiparis,0)=1");
+                if (var=="1")
+                {
+                    yazdirilmamisSiparis = true;
+                }
 
             }
             catch (Exception ex)
@@ -663,16 +668,27 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                         btnMasa.Text += "\n" + Convert.ToString(dtMasa.Rows[i]["Garson2"]);
                     }
 
+                    Console.WriteLine("doviz "+Param.Doviz_Kodu);
+
                     string TL = "";
                     if (Param.Param_Masa_Garson == false)
                     {
                         if (Param.Calisma_Sekli == 1)
                         {
                             TL = dtMasa.Rows[i]["Rsat_Doviztutar"].ToString().Trim();
+
                             if (!TL.Equals(""))
                             {
-                                TL = TL + " €"; // €  £
+                                if (Param.Doviz_Kodu.Contains("USD"))
+                                {
+                                    TL = TL + " $";
+                                }else
+                                {
+                                    TL = TL + " €"; // €  £
+                                }
                             }
+
+                           
                         }
                         else
                         {
@@ -1006,7 +1022,14 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                             TL = dtMasa.Rows[i]["Rsat_Doviztutar"].ToString().Trim();
                             if (!TL.Equals(""))
                             {
-                                TL = TL + " €";
+                                if (Param.Doviz_Kodu.Contains("USD"))
+                                {
+                                    TL = TL + " $";
+                                }
+                                else
+                                {
+                                    TL = TL + " €"; // €  £
+                                }
                             }
                         }
                         else
@@ -2438,6 +2461,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             try
             {
+                if (yazdirilmamisSiparis==false)
+                {
+                    return false;
+                }
                 string deger = dbtools.DegerGetir("select count(Rsat_SiparisPr) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "' and (Rsat_SiparisPr='0' and isnull(Rsat_Mars,0)=0) and Rsat_Ba='B'");
 
                 if (Convert.ToInt32(deger) > 0)

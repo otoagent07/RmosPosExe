@@ -284,6 +284,7 @@
             this.yuvarlamaFiyat = new DevExpress.XtraEditors.SpinEdit();
             this.textEdit189 = new DevExpress.XtraEditors.TextEdit();
             this.yuvarlamaDepartman = new DevExpress.XtraEditors.LookUpEdit();
+            this.yazdirilmamissiparis = new DevExpress.XtraEditors.CheckEdit();
             this.Param_ParcaliMasaAktif = new DevExpress.XtraEditors.CheckEdit();
             this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
             this.txtUrunSize = new DevExpress.XtraEditors.TextEdit();
@@ -1081,6 +1082,8 @@
             this.chk_Servis = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
+            this.lookUpEditHesapDokYazici = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit196 = new DevExpress.XtraEditors.TextEdit();
             this.Pos_HesapFisIptal = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_OdaKontrol = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_ReceteTanimlama = new DevExpress.XtraEditors.CheckEdit();
@@ -1424,6 +1427,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.yuvarlamaFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit189.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuvarlamaDepartman.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yazdirilmamissiparis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Param_ParcaliMasaAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).BeginInit();
             this.groupControl10.SuspendLayout();
@@ -1960,6 +1964,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).BeginInit();
             this.xtraTabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditHesapDokYazici.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit196.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_HesapFisIptal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_OdaKontrol.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_ReceteTanimlama.Properties)).BeginInit();
@@ -4051,6 +4057,7 @@
             // 
             this.xtraTabPage8.Controls.Add(this.groupControl12);
             this.xtraTabPage8.Controls.Add(this.groupControl11);
+            this.xtraTabPage8.Controls.Add(this.yazdirilmamissiparis);
             this.xtraTabPage8.Controls.Add(this.Param_ParcaliMasaAktif);
             this.xtraTabPage8.Controls.Add(this.groupControl10);
             this.xtraTabPage8.Controls.Add(this.Param_SatisCikisButton);
@@ -4164,6 +4171,12 @@
             this.yuvarlamaDepartman.Properties.ShowFooter = false;
             this.yuvarlamaDepartman.Properties.ShowHeader = false;
             this.yuvarlamaDepartman.EditValueChanged += new System.EventHandler(this.yuvarlamaDepartman_EditValueChanged);
+            // 
+            // yazdirilmamissiparis
+            // 
+            resources.ApplyResources(this.yazdirilmamissiparis, "yazdirilmamissiparis");
+            this.yazdirilmamissiparis.Name = "yazdirilmamissiparis";
+            this.yazdirilmamissiparis.Properties.Caption = resources.GetString("yazdirilmamissiparis.Properties.Caption");
             // 
             // Param_ParcaliMasaAktif
             // 
@@ -10836,6 +10849,7 @@
             // 
             resources.ApplyResources(this.lookUpEditYazici, "lookUpEditYazici");
             this.lookUpEditYazici.Name = "lookUpEditYazici";
+            this.lookUpEditYazici.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.lookUpEditYazici.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEditYazici.Properties.Buttons"))))});
             this.lookUpEditYazici.Properties.NullText = resources.GetString("lookUpEditYazici.Properties.NullText");
@@ -10977,6 +10991,8 @@
             // 
             // xtraTabPage7
             // 
+            this.xtraTabPage7.Controls.Add(this.lookUpEditHesapDokYazici);
+            this.xtraTabPage7.Controls.Add(this.textEdit196);
             this.xtraTabPage7.Controls.Add(this.Pos_HesapFisIptal);
             this.xtraTabPage7.Controls.Add(this.Pos_OdaKontrol);
             this.xtraTabPage7.Controls.Add(this.Pos_ReceteTanimlama);
@@ -10990,6 +11006,24 @@
             this.xtraTabPage7.Controls.Add(this.Pos_ArtiEksi_Aktif);
             this.xtraTabPage7.Name = "xtraTabPage7";
             resources.ApplyResources(this.xtraTabPage7, "xtraTabPage7");
+            // 
+            // lookUpEditHesapDokYazici
+            // 
+            resources.ApplyResources(this.lookUpEditHesapDokYazici, "lookUpEditHesapDokYazici");
+            this.lookUpEditHesapDokYazici.Name = "lookUpEditHesapDokYazici";
+            this.lookUpEditHesapDokYazici.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.lookUpEditHesapDokYazici.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEditHesapDokYazici.Properties.Buttons"))))});
+            this.lookUpEditHesapDokYazici.Properties.NullText = resources.GetString("lookUpEditHesapDokYazici.Properties.NullText");
+            this.lookUpEditHesapDokYazici.Properties.NullValuePrompt = resources.GetString("lookUpEditHesapDokYazici.Properties.NullValuePrompt");
+            // 
+            // textEdit196
+            // 
+            resources.ApplyResources(this.textEdit196, "textEdit196");
+            this.textEdit196.Name = "textEdit196";
+            this.textEdit196.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit196.Properties.ReadOnly = true;
+            this.textEdit196.TabStop = false;
             // 
             // Pos_HesapFisIptal
             // 
@@ -12399,6 +12433,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.yuvarlamaFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit189.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuvarlamaDepartman.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yazdirilmamissiparis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Param_ParcaliMasaAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).EndInit();
             this.groupControl10.ResumeLayout(false);
@@ -12956,6 +12991,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).EndInit();
             this.xtraTabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditHesapDokYazici.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit196.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_HesapFisIptal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_OdaKontrol.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_ReceteTanimlama.Properties)).EndInit();
@@ -14245,5 +14282,8 @@
         private DevExpress.XtraEditors.LookUpEdit Pos_dil;
         private DevExpress.XtraEditors.CheckEdit Pos_Eksileme;
         private DevExpress.XtraEditors.CheckEdit Pos_XZdepartman;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditHesapDokYazici;
+        private DevExpress.XtraEditors.TextEdit textEdit196;
+        private DevExpress.XtraEditors.CheckEdit yazdirilmamissiparis;
     }
 }

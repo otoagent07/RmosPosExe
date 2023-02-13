@@ -3028,6 +3028,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
             }
 
+            string yazici = dbtools.DegerGetir("select top 1 isnull(hesapyazici,0) as hesapyazici from Rmosmuh.dbo.Pos_User_XZ where P_Kod='" + User.P_Kod + "'");
+
+
             if (dtPrinter.Rows.Count > 0 && dtMacPrinter.Rows.Count == 0)
             {
                 for (int i = 0; i < dtPrinter.Rows.Count; i++)
@@ -3039,6 +3042,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                     printer = Convert.ToString(dtPrinter.Rows[i]["Pkod_Ad"]);
                     hsp.PrinterName = printer;
+
+                    if (yazici.Length > 2)
+                    {
+                        hsp.PrinterName = yazici;
+                    }
 
                     for (int k = 0; k < Hesap_Ciktisayisi; k++)
                     {
@@ -3058,6 +3066,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     }
                     printer = Convert.ToString(dtMacPrinter.Rows[i]["Pkod_Ad"]);
                     hsp.PrinterName = printer;
+
+                    if (yazici.Length > 2)
+                    {
+                        hsp.PrinterName = yazici;
+                    }
 
                     for (int k = 0; k < Hesap_Ciktisayisi; k++)
                     {
@@ -3983,9 +3996,23 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                     Liste = hesap;
 
+
+
+
                     PrintDocument pd = new PrintDocument();
                     pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
                     pd.PrinterSettings.PrinterName = printer;
+
+
+
+                    string yazici = dbtools.DegerGetir("select top 1 isnull(hesapyazici,0) as hesapyazici from Rmosmuh.dbo.Pos_User_XZ where P_Kod='" + User.P_Kod + "'");
+
+
+                    if (yazici.Length > 2)
+                    {
+                        pd.PrinterSettings.PrinterName = yazici;
+                    }
+
                     pd.Print();
 
                     hesap.Clear();

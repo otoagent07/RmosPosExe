@@ -12,7 +12,7 @@ namespace Pos.Controllers
 {
     public class AyarlarController  //değerlere ulaşmak için ->  Main.ayarlar.paketOtoKapat
     {
-        public string urun_printer = "",yuvarlama="";
+        public string urun_printer = "",yuvarlama="", satisEkranGenislik="228";
         public bool paketOtoKapat = false;
 
         public string otomatikIndirim = "";
@@ -54,6 +54,9 @@ namespace Pos.Controllers
                         break;
                     case "otomatikIndirim":
                         otomatikIndirim = item["ayarlar_value"].ToString();
+                        break;
+                    case "satisEkranGenislik":
+                        satisEkranGenislik = item["ayarlar_value"].ToString();
                         break;
 
                 }
