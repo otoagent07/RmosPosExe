@@ -287,25 +287,33 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
         public static void Onburo_At(int Fisno, string KartNo, int KartId)
         {
+            try
+            {
+                // Satis Hesaba Atılıyor
+                SqlConnection con = dbtools.conn;
+                if (con.State == ConnectionState.Closed) con.Open();
+                SqlCommand com = new SqlCommand();
+                com.Connection = con;
+                com.CommandType = CommandType.StoredProcedure;
+                com.CommandTimeout = 0;
+                com.CommandText = "Pos_Satis_Onburo";
+                com.Parameters.AddWithValue("@Tarih", Param.Tarih.Date);
+                com.Parameters.AddWithValue("@Fisno", Fisno.ToString());
+                com.Parameters.AddWithValue("@FolioKartNo", KartNo);// ==null?"":KartNo
+                com.Parameters.AddWithValue("@FolioKartId", KartId);
+                com.ExecuteNonQuery();
+                if (con.State == ConnectionState.Open) con.Close();
 
-            // Satis Hesaba Atılıyor
-            SqlConnection con = dbtools.conn;
-            if (con.State == ConnectionState.Closed) con.Open();
-            SqlCommand com = new SqlCommand();
-            com.Connection = con;
-            com.CommandType = CommandType.StoredProcedure;
-            com.CommandTimeout = 0;
-            com.CommandText = "Pos_Satis_Onburo";
-            com.Parameters.AddWithValue("@Tarih", Param.Tarih.Date);
-            com.Parameters.AddWithValue("@Fisno", Fisno.ToString());
-            com.Parameters.AddWithValue("@FolioKartNo", KartNo);
-            com.Parameters.AddWithValue("@FolioKartId", KartId);
-            com.ExecuteNonQuery();
-            if (con.State == ConnectionState.Open) con.Close();
+                dbtools.execcmd("update Cst_Recete_Satis set Rsat_Durum = 'K' where Rsat_Fisno = '" + Fisno.ToString() + "'");
 
-            dbtools.execcmd("update Cst_Recete_Satis set Rsat_Durum = 'K' where Rsat_Fisno = '" + Fisno.ToString() + "'");
+            }
+            catch(Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "Onburo_At", "",ex);
+            }
+            
         }
-
+        public static string MyClass = "Fis_Islem";
         public static void Satir_Sil(int Id, decimal Miktar)
         {
             SqlConnection con = dbtools.conn;

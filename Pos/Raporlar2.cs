@@ -125,6 +125,9 @@ namespace Pos
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
+
+                gridColumnMaliyet.Visible = false;
+
                 gridControl1.DataSource = dt;
             }
             catch (Exception err)
@@ -550,8 +553,26 @@ where satis.Rsat_Tarih between '" + bastar + @"' and '"+ bittar + @"'
 group by Recete.Rec_Ad 
 order by (Miktar) desc";
 
+            gridColumnMaliyet.Visible = false;
+
             gridControl1.DataSource = null;
             gridControl1.DataSource = dbtools.SelectTableR(query); 
+        }
+
+        private void btnMaliyetSatis_Click(object sender, EventArgs e)
+        {
+            string bastar = dateEdit1.DateTime.ToString("yyyy-MM-dd");
+            string bittar = dateEdit2.DateTime.ToString("yyyy-MM-dd");
+
+            string query = @"select top 25   Recete.Rec_Ad as Ad  , sum(Rsat_Miktar) as   Miktar,sum(Rsat_Tutar) as Tutar,Rsat_Maliyet  from Cst_Recete_Satis satis
+left join Cst_Recete  Recete on satis.Rsat_Recete=Rec_Genelkod   
+where satis.Rsat_Tarih between '" + bastar + @"' and '" + bittar + @"'
+group by Recete.Rec_Ad ,Rsat_Maliyet
+order by (Miktar) desc";
+
+            gridColumnMaliyet.Visible = true;
+            gridControl1.DataSource = null;
+            gridControl1.DataSource = dbtools.SelectTableR(query);
         }
     }
 }

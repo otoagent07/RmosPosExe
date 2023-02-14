@@ -34,6 +34,7 @@
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn61 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn49 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -304,6 +305,7 @@
             this.gridControl11 = new DevExpress.XtraGrid.GridControl();
             this.gridView13 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.gridControlCariRap3 = new DevExpress.XtraGrid.GridControl();
             this.gridViewCariRap3 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -311,9 +313,25 @@
             this.gridColumn66 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn67 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn68 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.gridControlCariRap3Detay = new DevExpress.XtraGrid.GridControl();
+            this.gridViewCariRap3Detay = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn71 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn75 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn72 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn76 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn69 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn70 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn73 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn77 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn78 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn79 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btnExcelKaydetCariRapor3 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnCariRap3ListeleHepsi = new DevExpress.XtraEditors.SimpleButton();
+            this.look_Cari_TipBakiye = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit24 = new DevExpress.XtraEditors.TextEdit();
             this.btnCariBakiyeMail = new DevExpress.XtraEditors.SimpleButton();
             this.btnCariBakiyePrint = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit23 = new DevExpress.XtraEditors.TextEdit();
@@ -321,8 +339,6 @@
             this.dateEditRap3BitTar = new DevExpress.XtraEditors.DateEdit();
             this.dateEditRap3BasTar = new DevExpress.XtraEditors.DateEdit();
             this.btnCariRap3Listele = new DevExpress.XtraEditors.SimpleButton();
-            this.look_Cari_TipBakiye = new DevExpress.XtraEditors.LookUpEdit();
-            this.textEdit24 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Cari_Hesap.SuspendLayout();
@@ -471,22 +487,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView13)).BeginInit();
             this.xtraTabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
+            this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlCariRap3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCariRap3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCariRap3Detay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCariRap3Detay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.look_Cari_TipBakiye.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit24.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit23.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.look_Cari_TipBakiye.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit24.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn61
@@ -3056,11 +3078,18 @@
             // 
             // xtraTabPage4
             // 
-            this.xtraTabPage4.Controls.Add(this.panelControl2);
+            this.xtraTabPage4.Controls.Add(this.panelControl5);
             this.xtraTabPage4.Controls.Add(this.panelControl3);
             this.xtraTabPage4.Controls.Add(this.panelControl1);
             this.xtraTabPage4.Name = "xtraTabPage4";
             resources.ApplyResources(this.xtraTabPage4, "xtraTabPage4");
+            // 
+            // panelControl5
+            // 
+            this.panelControl5.Controls.Add(this.panelControl2);
+            this.panelControl5.Controls.Add(this.panelControl4);
+            resources.ApplyResources(this.panelControl5, "panelControl5");
+            this.panelControl5.Name = "panelControl5";
             // 
             // panelControl2
             // 
@@ -3085,10 +3114,12 @@
             this.gridColumn68});
             this.gridViewCariRap3.GridControl = this.gridControlCariRap3;
             this.gridViewCariRap3.Name = "gridViewCariRap3";
+            this.gridViewCariRap3.OptionsBehavior.Editable = false;
             this.gridViewCariRap3.OptionsView.ColumnAutoWidth = false;
             this.gridViewCariRap3.OptionsView.ShowAutoFilterRow = true;
             this.gridViewCariRap3.OptionsView.ShowFooter = true;
             this.gridViewCariRap3.OptionsView.ShowGroupPanel = false;
+            this.gridViewCariRap3.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewCariRap3_FocusedRowChanged);
             // 
             // gridColumn65
             // 
@@ -3116,6 +3147,113 @@
             this.gridColumn68.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn68.Summary"))), resources.GetString("gridColumn68.Summary1"), resources.GetString("gridColumn68.Summary2"))});
             // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.gridControlCariRap3Detay);
+            resources.ApplyResources(this.panelControl4, "panelControl4");
+            this.panelControl4.Name = "panelControl4";
+            // 
+            // gridControlCariRap3Detay
+            // 
+            resources.ApplyResources(this.gridControlCariRap3Detay, "gridControlCariRap3Detay");
+            this.gridControlCariRap3Detay.MainView = this.gridViewCariRap3Detay;
+            this.gridControlCariRap3Detay.Name = "gridControlCariRap3Detay";
+            this.gridControlCariRap3Detay.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewCariRap3Detay});
+            // 
+            // gridViewCariRap3Detay
+            // 
+            this.gridViewCariRap3Detay.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn71,
+            this.gridColumn75,
+            this.gridColumn72,
+            this.gridColumn76,
+            this.gridColumn69,
+            this.gridColumn70,
+            this.gridColumn73,
+            this.gridColumn77,
+            this.gridColumn78,
+            this.gridColumn79});
+            styleFormatCondition5.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition5.Appearance.Options.UseForeColor = true;
+            styleFormatCondition5.ApplyToRow = true;
+            styleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition5.Value1 = "A";
+            this.gridViewCariRap3Detay.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
+            styleFormatCondition5});
+            this.gridViewCariRap3Detay.GridControl = this.gridControlCariRap3Detay;
+            this.gridViewCariRap3Detay.Name = "gridViewCariRap3Detay";
+            this.gridViewCariRap3Detay.OptionsBehavior.Editable = false;
+            this.gridViewCariRap3Detay.OptionsView.ColumnAutoWidth = false;
+            this.gridViewCariRap3Detay.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewCariRap3Detay.OptionsView.ShowFooter = true;
+            this.gridViewCariRap3Detay.OptionsView.ShowGroupPanel = false;
+            this.gridViewCariRap3Detay.OptionsView.ShowViewCaption = true;
+            this.gridViewCariRap3Detay.RowHeight = 25;
+            resources.ApplyResources(this.gridViewCariRap3Detay, "gridViewCariRap3Detay");
+            // 
+            // gridColumn71
+            // 
+            resources.ApplyResources(this.gridColumn71, "gridColumn71");
+            this.gridColumn71.FieldName = "Rsat_Tarih";
+            this.gridColumn71.Name = "gridColumn71";
+            // 
+            // gridColumn75
+            // 
+            resources.ApplyResources(this.gridColumn75, "gridColumn75");
+            this.gridColumn75.FieldName = "Rec_Ad";
+            this.gridColumn75.Name = "gridColumn75";
+            // 
+            // gridColumn72
+            // 
+            resources.ApplyResources(this.gridColumn72, "gridColumn72");
+            this.gridColumn72.FieldName = "Rsat_Miktar";
+            this.gridColumn72.Name = "gridColumn72";
+            // 
+            // gridColumn76
+            // 
+            resources.ApplyResources(this.gridColumn76, "gridColumn76");
+            this.gridColumn76.FieldName = "Rsat_Tutar";
+            this.gridColumn76.Name = "gridColumn76";
+            this.gridColumn76.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn76.Summary"))), resources.GetString("gridColumn76.Summary1"), resources.GetString("gridColumn76.Summary2"))});
+            // 
+            // gridColumn69
+            // 
+            resources.ApplyResources(this.gridColumn69, "gridColumn69");
+            this.gridColumn69.FieldName = "Rsat_Fisno";
+            this.gridColumn69.Name = "gridColumn69";
+            // 
+            // gridColumn70
+            // 
+            resources.ApplyResources(this.gridColumn70, "gridColumn70");
+            this.gridColumn70.FieldName = "Rsat_Masa";
+            this.gridColumn70.Name = "gridColumn70";
+            // 
+            // gridColumn73
+            // 
+            resources.ApplyResources(this.gridColumn73, "gridColumn73");
+            this.gridColumn73.FieldName = "Rsat_Emiktar";
+            this.gridColumn73.Name = "gridColumn73";
+            // 
+            // gridColumn77
+            // 
+            resources.ApplyResources(this.gridColumn77, "gridColumn77");
+            this.gridColumn77.FieldName = "Rsat_Doviztutar";
+            this.gridColumn77.Name = "gridColumn77";
+            // 
+            // gridColumn78
+            // 
+            resources.ApplyResources(this.gridColumn78, "gridColumn78");
+            this.gridColumn78.FieldName = "Rsat_Maliyet";
+            this.gridColumn78.Name = "gridColumn78";
+            // 
+            // gridColumn79
+            // 
+            resources.ApplyResources(this.gridColumn79, "gridColumn79");
+            this.gridColumn79.FieldName = "Rsat_Cari";
+            this.gridColumn79.Name = "gridColumn79";
+            // 
             // panelControl3
             // 
             this.panelControl3.Controls.Add(this.btnExcelKaydetCariRapor3);
@@ -3133,6 +3271,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnCariRap3ListeleHepsi);
             this.panelControl1.Controls.Add(this.look_Cari_TipBakiye);
             this.panelControl1.Controls.Add(this.textEdit24);
             this.panelControl1.Controls.Add(this.btnCariBakiyeMail);
@@ -3144,6 +3283,37 @@
             this.panelControl1.Controls.Add(this.btnCariRap3Listele);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
+            // 
+            // btnCariRap3ListeleHepsi
+            // 
+            this.btnCariRap3ListeleHepsi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCariRap3ListeleHepsi.Appearance.Font")));
+            this.btnCariRap3ListeleHepsi.Appearance.Options.UseFont = true;
+            this.btnCariRap3ListeleHepsi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCariRap3ListeleHepsi.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCariRap3ListeleHepsi, "btnCariRap3ListeleHepsi");
+            this.btnCariRap3ListeleHepsi.Name = "btnCariRap3ListeleHepsi";
+            this.btnCariRap3ListeleHepsi.Click += new System.EventHandler(this.btnCariRap3ListeleHepsi_Click);
+            // 
+            // look_Cari_TipBakiye
+            // 
+            resources.ApplyResources(this.look_Cari_TipBakiye, "look_Cari_TipBakiye");
+            this.look_Cari_TipBakiye.Name = "look_Cari_TipBakiye";
+            this.look_Cari_TipBakiye.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.look_Cari_TipBakiye.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_Cari_TipBakiye.Properties.Buttons"))))});
+            this.look_Cari_TipBakiye.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_Cari_TipBakiye.Properties.Columns"), resources.GetString("look_Cari_TipBakiye.Properties.Columns1")),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_Cari_TipBakiye.Properties.Columns2"), resources.GetString("look_Cari_TipBakiye.Properties.Columns3"), ((int)(resources.GetObject("look_Cari_TipBakiye.Properties.Columns4"))), ((DevExpress.Utils.FormatType)(resources.GetObject("look_Cari_TipBakiye.Properties.Columns5"))), resources.GetString("look_Cari_TipBakiye.Properties.Columns6"), ((bool)(resources.GetObject("look_Cari_TipBakiye.Properties.Columns7"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("look_Cari_TipBakiye.Properties.Columns8"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("look_Cari_TipBakiye.Properties.Columns9"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("look_Cari_TipBakiye.Properties.Columns10"))))});
+            this.look_Cari_TipBakiye.Properties.NullText = resources.GetString("look_Cari_TipBakiye.Properties.NullText");
+            this.look_Cari_TipBakiye.Properties.ShowFooter = false;
+            this.look_Cari_TipBakiye.Properties.ShowHeader = false;
+            // 
+            // textEdit24
+            // 
+            resources.ApplyResources(this.textEdit24, "textEdit24");
+            this.textEdit24.Name = "textEdit24";
+            this.textEdit24.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit24.Properties.ReadOnly = true;
+            this.textEdit24.TabStop = false;
             // 
             // btnCariBakiyeMail
             // 
@@ -3207,28 +3377,6 @@
             resources.ApplyResources(this.btnCariRap3Listele, "btnCariRap3Listele");
             this.btnCariRap3Listele.Name = "btnCariRap3Listele";
             this.btnCariRap3Listele.Click += new System.EventHandler(this.btnCariRap3Listele_Click);
-            // 
-            // look_Cari_TipBakiye
-            // 
-            resources.ApplyResources(this.look_Cari_TipBakiye, "look_Cari_TipBakiye");
-            this.look_Cari_TipBakiye.Name = "look_Cari_TipBakiye";
-            this.look_Cari_TipBakiye.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.look_Cari_TipBakiye.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
-            this.look_Cari_TipBakiye.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns"), resources.GetString("lookUpEdit1.Properties.Columns1")),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns2"), resources.GetString("lookUpEdit1.Properties.Columns3"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns4"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns5"))), resources.GetString("lookUpEdit1.Properties.Columns6"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns7"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns8"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEdit1.Properties.Columns9"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEdit1.Properties.Columns10"))))});
-            this.look_Cari_TipBakiye.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
-            this.look_Cari_TipBakiye.Properties.ShowFooter = false;
-            this.look_Cari_TipBakiye.Properties.ShowHeader = false;
-            // 
-            // textEdit24
-            // 
-            resources.ApplyResources(this.textEdit24, "textEdit24");
-            this.textEdit24.Name = "textEdit24";
-            this.textEdit24.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit24.Properties.ReadOnly = true;
-            this.textEdit24.TabStop = false;
             // 
             // CariHesap
             // 
@@ -3386,22 +3534,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView13)).EndInit();
             this.xtraTabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
+            this.panelControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlCariRap3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCariRap3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCariRap3Detay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCariRap3Detay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.look_Cari_TipBakiye.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit24.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit23.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.look_Cari_TipBakiye.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit24.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3697,5 +3851,20 @@
         private DevExpress.XtraEditors.SimpleButton btnCariBakiyeMail;
         private DevExpress.XtraEditors.LookUpEdit look_Cari_TipBakiye;
         private DevExpress.XtraEditors.TextEdit textEdit24;
+        private DevExpress.XtraEditors.SimpleButton btnCariRap3ListeleHepsi;
+        private DevExpress.XtraEditors.PanelControl panelControl5;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
+        private DevExpress.XtraGrid.GridControl gridControlCariRap3Detay;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewCariRap3Detay;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn69;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn70;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn71;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn72;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn73;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn75;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn76;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn77;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn78;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn79;
     }
 }

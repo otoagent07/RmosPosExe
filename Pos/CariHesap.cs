@@ -1401,7 +1401,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
         }
 
 
-        public DataTable rap3Listele(bool hepsi = false)
+        public DataTable rap3Listele(bool hepsi = false,bool sifirDahil=false)
         {
             try
             {
@@ -1414,18 +1414,30 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
                     bitTar = "3000-01-01";
                 }
 
+                string sifir = "";
+                if (sifirDahil==false)
+                {
+                    sifir = "having sum(Chrk_Borc-Chrk_Alacak)>0";
+                }
+
                 string tip = look_Cari_TipBakiye.EditValue.ToString();
 
                 string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,sum(Chrk_Borc-Chrk_Alacak) as Bakiye from Pos_Carihrk as hrk 
 left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
 where isnull(Cari_Tip,'C')='"+ tip + "' and Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
-group by Cari_Ad,Cari_Soyad,Chrk_Cari";
+group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
 
                 DataTable dataTable = dbtools.SelectTableR(query);
 
                 gridControlCariRap3.DataSource = dataTable;
                 gridviewCountYaz(gridViewCariRap3);
 
+
+                if (gridViewCariRap3.FocusedRowHandle > -1)
+                {
+                    gridViewCariRap3.FocusedRowHandle = -2147483646;
+                    gridViewCariRap3.FocusedRowHandle = 0;
+                }
                 return dataTable;
             }
             catch (Exception ex)
@@ -1634,5 +1646,50 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari";
             }
         }
 
+        private void btnCariRap3ListeleHepsi_Click(object sender, EventArgs e)
+        {
+            rap3Listele(sifirDahil:true);
+        }
+
+        private void gridViewCariRap3_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            if (gridViewCariRap3.FocusedRowHandle<0)
+            {
+                return;
+            }
+            //gridColumn22.FieldName = "Rec_Ad";
+            //gridColumn23.FieldName = "Rsat_Miktar";
+            //gridColumn24.FieldName = "Rsat_Emiktar";
+            //gridColumn26.FieldName = "Rsat_Tutar";
+            //gridColumn27.FieldName = "Rsat_Doviztutar";
+            //gridColumn30.FieldName = "Rsat_Ba";
+            //gridColumn31.FieldName = "Rsat_Maliyet";
+
+            //if (Param.Calisma_Sekli == 1)
+            //{
+            //    gridColumn27.Visible = true;
+            //    gridColumn27.VisibleIndex = 4;
+            //}
+            //else
+            //{
+            //    gridColumn26.Visible = true;
+            //    gridColumn26.VisibleIndex = 4;
+            //}
+
+
+            string query = @"
+select Rsat_Fisno,Rsat_Masa,Rsat_Tarih,
+	sum(Rsat_Miktar) as Rsat_Miktar,case when Rsat_Emiktar = 'T' then '' else Rsat_Emiktar end as Rsat_Emiktar,
+    Rec_Ad,sum(Rsat_Tutar) as Rsat_Tutar,sum(Rsat_Doviztutar) as Rsat_Doviztutar,sum(Rsat_Maliyet) as Rsat_Maliyet,
+	Rsat_Cari
+from Cst_Recete_Satis
+	left join Cst_Recete on Rec_Genelkod = Rsat_Recete
+where Rsat_Fisno in (select Rsat_Fisno from Cst_Recete_Satis where (Rsat_Tarih >= '" + dateEditRap3BasTar.DateTime.Date + "' and Rsat_Tarih <= '" + dateEditRap3BitTar.DateTime.Date + "') and Rsat_Ba = 'A' and Rsat_Cari = '" + Convert.ToString(gridViewCariRap3.GetFocusedRowCellValue("CariId")) + @"') 
+	and Rsat_Ba = 'B'
+group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
+                DataTable dt = dbtools.SelectTable(query);
+
+                gridControlCariRap3Detay.DataSource = dt;
+        }
     }
 }

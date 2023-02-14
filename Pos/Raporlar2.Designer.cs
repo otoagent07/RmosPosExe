@@ -30,9 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Raporlar2));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnEncoksatan = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Kdv = new DevExpress.XtraEditors.CheckEdit();
             this.chk_PR = new DevExpress.XtraEditors.CheckEdit();
             this.chk_MalzemePors = new DevExpress.XtraEditors.CheckEdit();
@@ -85,7 +86,8 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnEncoksatan = new DevExpress.XtraEditors.SimpleButton();
+            this.btnMaliyetSatis = new DevExpress.XtraEditors.SimpleButton();
+            this.gridColumnMaliyet = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Kdv.Properties)).BeginInit();
@@ -136,6 +138,7 @@
             // groupControl1
             // 
             this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
+            this.groupControl1.Controls.Add(this.btnMaliyetSatis);
             this.groupControl1.Controls.Add(this.btnEncoksatan);
             this.groupControl1.Controls.Add(this.chk_Kdv);
             this.groupControl1.Controls.Add(this.chk_PR);
@@ -170,6 +173,13 @@
             this.groupControl1.Controls.Add(this.textEdit1);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // btnEncoksatan
+            // 
+            this.btnEncoksatan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEncoksatan.ImageOptions.Image")));
+            resources.ApplyResources(this.btnEncoksatan, "btnEncoksatan");
+            this.btnEncoksatan.Name = "btnEncoksatan";
+            this.btnEncoksatan.Click += new System.EventHandler(this.btnEncoksatan_Click);
             // 
             // chk_Kdv
             // 
@@ -582,17 +592,18 @@
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn4,
-            this.gridColumn5});
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            styleFormatCondition2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font")));
-            styleFormatCondition2.Appearance.Options.UseBackColor = true;
-            styleFormatCondition2.Appearance.Options.UseFont = true;
-            styleFormatCondition2.ApplyToRow = true;
-            styleFormatCondition2.Column = this.gridColumn1;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Value1 = 0;
+            this.gridColumn5,
+            this.gridColumnMaliyet});
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            styleFormatCondition1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font")));
+            styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Appearance.Options.UseFont = true;
+            styleFormatCondition1.ApplyToRow = true;
+            styleFormatCondition1.Column = this.gridColumn1;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition1.Value1 = 0;
             this.gridView1.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition2});
+            styleFormatCondition1});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -630,12 +641,18 @@
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             // 
-            // btnEncoksatan
+            // btnMaliyetSatis
             // 
-            this.btnEncoksatan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            resources.ApplyResources(this.btnEncoksatan, "btnEncoksatan");
-            this.btnEncoksatan.Name = "btnEncoksatan";
-            this.btnEncoksatan.Click += new System.EventHandler(this.btnEncoksatan_Click);
+            this.btnMaliyetSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            resources.ApplyResources(this.btnMaliyetSatis, "btnMaliyetSatis");
+            this.btnMaliyetSatis.Name = "btnMaliyetSatis";
+            this.btnMaliyetSatis.Click += new System.EventHandler(this.btnMaliyetSatis_Click);
+            // 
+            // gridColumnMaliyet
+            // 
+            resources.ApplyResources(this.gridColumnMaliyet, "gridColumnMaliyet");
+            this.gridColumnMaliyet.FieldName = "Rsat_Maliyet";
+            this.gridColumnMaliyet.Name = "gridColumnMaliyet";
             // 
             // Raporlar2
             // 
@@ -750,5 +767,7 @@
         private DevExpress.XtraEditors.CheckEdit chk_Kdv;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraEditors.SimpleButton btnEncoksatan;
+        private DevExpress.XtraEditors.SimpleButton btnMaliyetSatis;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnMaliyet;
     }
 }
