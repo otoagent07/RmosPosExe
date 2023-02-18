@@ -1462,6 +1462,70 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
         private void btnExcelKaydetCariRapor3_Click(object sender, EventArgs e)
         {
             yazdir(gridControlCariRap3);
+            
+        }
+
+        public void yazdir2(GridControl gridControl)
+        {
+            using (SaveFileDialog saveDialog = new SaveFileDialog())
+            {
+                saveDialog.Filter = "Excel (2010) (.xlsx)|*.xlsx|Excel (2003)(.xls)|*.xls|RichText File (.rtf)|*.rtf |Pdf File (.pdf)|*.pdf |Html File (.html)|*.html";
+                if (saveDialog.ShowDialog() != DialogResult.Cancel)
+                {
+                    string exportFilePath = saveDialog.FileName;
+                    string fileExtenstion = new FileInfo(exportFilePath).Extension;
+                    string dosyaAdi = new FileInfo(exportFilePath).Name.Replace(fileExtenstion,"")+"_detay";
+
+                    //string dosyaKonum = Path.GetDirectoryName(Application.ExecutablePath);
+
+                    string basePath = Path.GetDirectoryName(exportFilePath);
+                    string base2 = basePath + "\\" + dosyaAdi + fileExtenstion;
+
+
+                    switch (fileExtenstion)
+                    {
+                        case ".xls":
+                            gridControl.ExportToXls(exportFilePath);
+                            gridControlCariRap3Detay.ExportToXls(base2);
+
+                            break;
+                        case ".xlsx":
+                            gridControl.ExportToXlsx(exportFilePath);
+                            gridControlCariRap3Detay.ExportToXlsx(base2);
+
+                            break;
+                        case ".rtf":
+                            gridControl.ExportToRtf(exportFilePath);
+                            gridControlCariRap3Detay.ExportToRtf(base2);
+
+                            break;
+                        case ".pdf":
+                            gridControl.ExportToPdf(exportFilePath);
+                            gridControlCariRap3Detay.ExportToPdf(base2);
+
+                            break;
+                        case ".html":
+                            gridControl.ExportToHtml(exportFilePath);
+                            gridControlCariRap3Detay.ExportToHtml(base2);
+
+                            break;
+                        case ".mht":
+                            gridControl.ExportToMht(exportFilePath);
+                            gridControlCariRap3Detay.ExportToMht(base2);
+
+                            break;
+                        default:
+                            break;
+                    }
+                    var p = new Process();
+                    p.StartInfo = new ProcessStartInfo(basePath)
+                    {
+                        UseShellExecute = true
+                    };
+                    p.Start();
+
+                }
+            }
         }
 
         public void yazdir(GridControl gridControl)
@@ -1690,6 +1754,12 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                 DataTable dt = dbtools.SelectTable(query);
 
                 gridControlCariRap3Detay.DataSource = dt;
+        }
+
+        private void btnExcelKaydetCariRapor3Detay_Click(object sender, EventArgs e)
+        {
+            yazdir(gridControlCariRap3Detay);
+
         }
     }
 }

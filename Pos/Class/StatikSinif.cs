@@ -107,6 +107,42 @@ namespace Pos.Class
             return true;
         }
 
+        public static bool sadeceKendiMasanaGir(string fisno)
+        {
+            try
+            {
+
+                if (User.M_BaskaMasa==false)
+                {
+                    string varmi = dbtools.DegerGetir("select top 1 count(Rsat_Garson) as toplam from Cst_Recete_Satis  where Rsat_Fisno='"+ fisno + "'");
+
+                    if (varmi=="0")
+                    {
+                        return true;
+                    }
+
+
+
+                    string query = "select top 1 count(Rsat_Garson) as toplam from Cst_Recete_Satis  where Rsat_Fisno='"+ fisno + "'  and Rsat_Garson='"+User.P_Kod+"' ";
+                    string deger = dbtools.DegerGetir(query);
+                    if (deger=="0")
+                    {
+                        MessageBox.Show("BAŞKASININ MASASINA SATIŞ YAPAMAZSIN !");
+                        return false;
+                    }
+
+                }
+                
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return true;
+        }
+
         public static string getInstanceName()
         {
             string query = @"DECLARE @GetInstances TABLE

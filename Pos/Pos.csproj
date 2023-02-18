@@ -371,6 +371,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>lang_en.resx</DependentUpon>
     </Compile>
+    <Compile Include="Class\lang_ru.Designer.cs" />
     <Compile Include="Class\lang_tr.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -396,6 +397,12 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\SatisController.cs" />
+    <Compile Include="Forms\ConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfirmationForm.Designer.cs">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UyariForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1133,6 +1140,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
     <Compile Include="XZ_Raporu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1247,6 +1260,9 @@
       <DependentUpon>Ayarlar.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ayarlar.ru.resx">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CallerCallCenter.en-US.resx">
       <DependentUpon>CallerCallCenter.cs</DependentUpon>
     </EmbeddedResource>
@@ -1274,6 +1290,9 @@
     <EmbeddedResource Include="CariHesap.resx">
       <DependentUpon>CariHesap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CariHesap.ru.resx">
+      <DependentUpon>CariHesap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cari_Ara.en-US.resx">
       <DependentUpon>Cari_Ara.cs</DependentUpon>
     </EmbeddedResource>
@@ -1291,6 +1310,7 @@
       <LastGenOutput>lang_en.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Class\lang_ru.resx" />
     <EmbeddedResource Include="Class\lang_tr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>lang_tr.Designer.cs</LastGenOutput>
@@ -1299,7 +1319,13 @@
     <EmbeddedResource Include="Dep_Secim.en-US.resx">
       <DependentUpon>Dep_Secim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dep_Secim.ru.resx">
+      <DependentUpon>Dep_Secim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Detay.en-US.resx">
+      <DependentUpon>Detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detay.ru.resx">
       <DependentUpon>Detay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Detay_Iptal.en-US.resx">
@@ -1335,6 +1361,9 @@
     <EmbeddedResource Include="Forms\adminForms.resx">
       <DependentUpon>adminForms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmationForm.resx">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UyariForm.resx">
       <DependentUpon>UyariForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1345,6 +1374,9 @@
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.ru.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
@@ -1446,6 +1478,9 @@
     <EmbeddedResource Include="Kasa_Islem.resx">
       <DependentUpon>Kasa_Islem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kasa_Islem.ru.resx">
+      <DependentUpon>Kasa_Islem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KisiSayisiDegistir.en-US.resx">
       <DependentUpon>KisiSayisiDegistir.cs</DependentUpon>
     </EmbeddedResource>
@@ -1464,15 +1499,22 @@
     <EmbeddedResource Include="Klavye2.resx">
       <DependentUpon>Klavye2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Klavye2.ru.resx">
+      <DependentUpon>Klavye2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kurlar.en-US.resx">
       <DependentUpon>Kurlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kurlar.resx">
       <DependentUpon>Kurlar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kurlar.ru.resx">
+      <DependentUpon>Kurlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Language.resx">
       <DependentUpon>Language.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="lang_ru.resx" />
     <EmbeddedResource Include="Main.en-US.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -1480,10 +1522,16 @@
       <DependentUpon>Main.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main.ru.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Malzeme_Tr.en-US.resx">
       <DependentUpon>Malzeme_Tr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Malzeme_Tr.resx">
+      <DependentUpon>Malzeme_Tr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Malzeme_Tr.ru.resx">
       <DependentUpon>Malzeme_Tr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mars_SatirSec.en-US.resx">
@@ -1491,6 +1539,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mars_SatirSec.resx">
       <DependentUpon>Mars_SatirSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaTakip.en-GB.resx">
+      <DependentUpon>MasaTakip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasaTakip.en-US.resx">
       <DependentUpon>MasaTakip.cs</DependentUpon>
@@ -1505,6 +1556,9 @@
       <DependentUpon>Masa_Islem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Masa_Islem.resx">
+      <DependentUpon>Masa_Islem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masa_Islem.ru.resx">
       <DependentUpon>Masa_Islem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Masa_Tr.en-US.resx">
@@ -1526,6 +1580,9 @@
       <DependentUpon>Oda_Kontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Oda_Kontrol.resx">
+      <DependentUpon>Oda_Kontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oda_Kontrol.ru.resx">
       <DependentUpon>Oda_Kontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Onb_Fatura.resx">
@@ -1712,10 +1769,16 @@
       <DependentUpon>Raporlar.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar.ru.resx">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Raporlar2.en-US.resx">
       <DependentUpon>Raporlar2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Raporlar2.resx">
+      <DependentUpon>Raporlar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar2.ru.resx">
       <DependentUpon>Raporlar2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rapor_Dizayn.en-US.resx">
@@ -1730,6 +1793,9 @@
     <EmbeddedResource Include="Rapor_Sec.resx">
       <DependentUpon>Rapor_Sec.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Rapor_Sec.ru.resx">
+      <DependentUpon>Rapor_Sec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rapor_Tarih.en-US.resx">
       <DependentUpon>Rapor_Tarih.cs</DependentUpon>
     </EmbeddedResource>
@@ -1742,6 +1808,9 @@
     <EmbeddedResource Include="Rezervasyon.resx">
       <DependentUpon>Rezervasyon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Rezervasyon.ru.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Satis.en-GB.resx">
       <DependentUpon>Satis.cs</DependentUpon>
     </EmbeddedResource>
@@ -1749,6 +1818,9 @@
       <DependentUpon>Satis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Satis.resx">
+      <DependentUpon>Satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satis.ru.resx">
       <DependentUpon>Satis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SatisListesiCopy.resx">
@@ -1802,6 +1874,9 @@
     <EmbeddedResource Include="Urun_Detay.resx">
       <DependentUpon>Urun_Detay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Uzak.en-US.resx">
+      <DependentUpon>Uzak.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Uzak.resx">
       <DependentUpon>Uzak.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1809,10 +1884,16 @@
     <EmbeddedResource Include="WaitFormRmos.resx">
       <DependentUpon>WaitFormRmos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XZ_Raporu.en-US.resx">
       <DependentUpon>XZ_Raporu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XZ_Raporu.resx">
+      <DependentUpon>XZ_Raporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XZ_Raporu.ru.resx">
       <DependentUpon>XZ_Raporu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YemekSepeti\YS_IptalDurum.resx">

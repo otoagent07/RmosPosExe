@@ -79,10 +79,12 @@ namespace Pos
             }
         }
 
+       public bool iptal = false;
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
-            sayi = Convert.ToDecimal(txt_Sayi.Text);
+            sayi = 1;//Convert.ToDecimal(txt_Sayi.Text);
             Cikis = true;
+            iptal = true;
             this.Close();
         }
 

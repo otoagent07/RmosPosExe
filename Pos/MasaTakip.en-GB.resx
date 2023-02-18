@@ -117,246 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="gridColumn10.Caption" xml:space="preserve">
-    <value>Описание продукта</value>
-  </data>
-  <data name="bartxt_Kul.Caption" xml:space="preserve">
-    <value>Пользователь:</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bartxt_Kul.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_Kul.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bartxt_Kul.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bartxt_Dep.Caption" xml:space="preserve">
-    <value>Филиал:</value>
-  </data>
-  <data name="bartxt_Dep.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_Dep.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_Dep.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bartxt_FisNo.Caption" xml:space="preserve">
-    <value>Квитанция №:</value>
-  </data>
-  <data name="bartxt_FisNo.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_FisNo.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_FisNo.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
-    <value>Пустой стол:</value>
-  </data>
-  <data name="bartxt_BosMasa.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_BosMasa.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_BosMasa.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
-    <value>Занятый стол:</value>
-  </data>
-  <data name="bartxt_DoluMasa.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_DoluMasa.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bartxt_DoluMasa.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barspn_Refresh.Caption" xml:space="preserve">
-    <value>Оставшийся срок:</value>
-  </data>
-  <data name="barspn_Refresh.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barspn_Refresh.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barspn_Refresh.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barStaticItem1.Caption" xml:space="preserve">
-    <value>Срок</value>
-  </data>
-  <data name="barStaticItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barStaticItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barStaticItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_Sure.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Sure.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Sure.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barStaticItem2.Caption" xml:space="preserve">
-    <value>Сумма кувер (Kuver) :</value>
-  </data>
-  <data name="barStaticItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barStaticItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barStaticItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_KuverTutar.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_KuverTutar.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_KuverTutar.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 698</value>
-  </data>
-  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1052, 89</value>
-  </data>
-  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 698</value>
-  </data>
-  <data name="flp_Masa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 165</value>
-  </data>
-  <data name="flp_Masa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>761, 461</value>
-  </data>
-  <data name="btn_SplitBol.Text" xml:space="preserve">
-    <value>Раздели</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Tile</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridControl2.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
-    <value>Center</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridControl2.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
-    <value>None</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridColumn3.Caption" xml:space="preserve">
-    <value>Продукт</value>
-  </data>
-  <data name="gridColumn9.Caption" xml:space="preserve">
-    <value>Персонал</value>
-  </data>
-  <data name="gridColumn4.Caption" xml:space="preserve">
-    <value>Количество</value>
-  </data>
-  <data name="gridColumn6.Caption" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="gridColumn7.Caption" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 314</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Tile</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
-    <value>Center</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
-    <value>None</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridColumn2.Caption" xml:space="preserve">
-    <value>Имя расположения</value>
-  </data>
   <data name="btnFilterClear.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
@@ -376,15 +137,6 @@
         IWiVbURjggyJru71bOjPGk0ZT5nEonLlaUtCA2HesRppXnOZ01xeWCrfi3ktCURxsBgqzvT03x/iXyRy
         eS40pFZxePVKrrtAyeURBZcnUHCm11PU8ZxpLv8M/j8g3wGtek8hsHHK3gAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="txt_Filtre.Properties.NullValuePrompt" xml:space="preserve">
-    <value>Введите название стола...</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>761, 165</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 622</value>
   </data>
   <data name="btnHesapDokumEski.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -427,12 +179,6 @@
         zr5MCpx8mGQJ72Q4Eu97J2GnLK6CYrG4dUZs4Rv/KPBNS3bMD/M/m6fNcBbD8BBaeMYMJxjW8D1+/qH/
         HfNhGQlLqn4/eNq+jQX/BRbqweZ/Pa0K/+6HvEAAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="btnHesapDokumEski.Location" type="System.Drawing.Point, System.Drawing">
-    <value>836, 22</value>
-  </data>
-  <data name="btnHesapDokumEski.Text" xml:space="preserve">
-    <value>Счет</value>
   </data>
   <data name="simpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -478,15 +224,6 @@
         yfvkPPhE1Ql+k9vzOv3/P/ifoPoeVeUDAqiG6o3/Nb1j0KB/AMYUfCkDw9hpAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1008, 22</value>
-  </data>
-  <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 53</value>
-  </data>
-  <data name="simpleButton3.Text" xml:space="preserve">
-    <value>Выход</value>
-  </data>
   <data name="btn_Yenile.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
@@ -507,15 +244,6 @@
         AyOCTq7XqI/maA/toxzKo3PgYwfgxPr2oBe2sxLdmg2t+2hvI7O3/wGoQRA/ARqPmEXWoIPBAAAAAElF
         TkSuQmCC
 </value>
-  </data>
-  <data name="btn_Yenile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>655, 22</value>
-  </data>
-  <data name="btn_Yenile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 53</value>
-  </data>
-  <data name="btn_Yenile.Text" xml:space="preserve">
-    <value>Обновить</value>
   </data>
   <data name="btn_KisiSayisi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -564,13 +292,6 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_KisiSayisi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>559, 22</value>
-  </data>
-  <data name="btn_KisiSayisi.Text" xml:space="preserve">
-    <value>Изменить 
-количество человек</value>
-  </data>
   <data name="btn_MalzemeTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -603,13 +324,6 @@
         l6hZnqffTbYUvHjO37rC/xgzR2OB5zxZs1eeB3jz7D6PpAs6hybo2pHjHPvPJ+mCbm0qmBQZVGn4/ZcQ
         xJ97ZP9a29WKAwAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="btn_MalzemeTransfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 23</value>
-  </data>
-  <data name="btn_MalzemeTransfer.Text" xml:space="preserve">
-    <value>Продукт 
-Trf.</value>
   </data>
   <data name="btn_Rapor.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -653,12 +367,6 @@ Trf.</value>
         Ky500IJtbxgetQNJ+gV9VIw/2sbYRgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btn_Rapor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>754, 22</value>
-  </data>
-  <data name="btn_Rapor.Text" xml:space="preserve">
-    <value>Отчет</value>
-  </data>
   <data name="btn_HesapBak.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -691,15 +399,6 @@ Trf.</value>
         kR1hhAGhy1Qt1+oQOey/sXbtWnUNDY3tc+d+VLFooeajTesWPWB6r7kmTrTYQg6ZATW13wFVWzLP6yah
         oQAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="btn_HesapBak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 22</value>
-  </data>
-  <data name="btn_HesapBak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 53</value>
-  </data>
-  <data name="btn_HesapBak.Text" xml:space="preserve">
-    <value>Посмотри на счет</value>
   </data>
   <data name="btn_MasaIslem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -735,13 +434,6 @@ Trf.</value>
         ZfO5sKLcA4n+orvP1T48PHx7REREFI00t7YtIt897oDD+QvQPEYM6ufvDAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btn_MasaIslem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>466, 22</value>
-  </data>
-  <data name="btn_MasaIslem.Text" xml:space="preserve">
-    <value>Операции 
-стола</value>
-  </data>
   <data name="btn_Relogin.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
@@ -756,18 +448,6 @@ Trf.</value>
         XuQK+QPiarWagYWL0Vpd4AMeRPs7D/xLtVq9gfd4ixc4wn1cw/ZbxyWK/08O/gB02By57zCc+QAAAABJ
         RU5ErkJggg==
 </value>
-  </data>
-  <data name="btn_Relogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>919, 22</value>
-  </data>
-  <data name="btn_Relogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 53</value>
-  </data>
-  <data name="btn_Relogin.Text" xml:space="preserve">
-    <value>Прольз.выход</value>
-  </data>
-  <data name="btn_OzelMasa.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="btn_OzelMasa.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -797,16 +477,6 @@ Trf.</value>
         fP83pzv7m5mZ/VkrSI070f+GKVN+B1hMDKb+FBxaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_OzelMasa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 22</value>
-  </data>
-  <data name="btn_OzelMasa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 53</value>
-  </data>
-  <data name="btn_OzelMasa.Text" xml:space="preserve">
-    <value>Специальный
-стол</value>
-  </data>
   <data name="btn_Satis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAABc
@@ -832,15 +502,6 @@ Trf.</value>
         yikjlMkUlBPccr9mOg3f0mJhP7mS7uKMd9vMHHm+Vlabg/CMJRLZvFFpL3DLfR7n+9LvHr5W1DazvP/n
         d5dG8ze5wukRFXWgyQAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="btn_Satis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 53</value>
-  </data>
-  <data name="btn_Satis.Text" xml:space="preserve">
-    <value>Продажа</value>
-  </data>
-  <data name="btn_MasaTransfer.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="btn_MasaTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -931,70 +592,6 @@ Trf.</value>
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_MasaTransfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 22</value>
-  </data>
-  <data name="btn_MasaTransfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 53</value>
-  </data>
-  <data name="btn_MasaTransfer.Text" xml:space="preserve">
-    <value>Стол
-Trf.</value>
-  </data>
-  <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 698</value>
-  </data>
-  <data name="barDockControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1052, 89</value>
-  </data>
-  <data name="barDockControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 698</value>
-  </data>
-  <data name="barDockControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControl7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 698</value>
-  </data>
-  <data name="barDockControl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1052, 89</value>
-  </data>
-  <data name="barDockControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 698</value>
-  </data>
-  <data name="barDockControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControl11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 698</value>
-  </data>
-  <data name="barDockControl12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1052, 89</value>
-  </data>
-  <data name="barDockControl12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 698</value>
-  </data>
-  <data name="barDockControl9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControl15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="bar_Satis.Caption" xml:space="preserve">
-    <value>Продажа</value>
-  </data>
   <data name="bar_Satis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1023,18 +620,6 @@ Trf.</value>
         pibDEECm/gMew3NYg7U4hkw9BoXiXyVrZpSVCdCNAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bar_Satis.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Satis.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Satis.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_HesapBak.Caption" xml:space="preserve">
-    <value>Счет</value>
-  </data>
   <data name="bar_HesapBak.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1060,44 +645,15 @@ Trf.</value>
         a4j6N5o0XmMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bar_HesapBak.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_HesapBak.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_HesapBak.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_OzelMasa.Caption" xml:space="preserve">
-    <value>Специальный стол</value>
-  </data>
   <data name="bar_OzelMasa.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAhhJREFUWEft1ktIVGEYxvGxJLosCqqNibps0UIFF2K0UCNTQY28QWWGQssChSB3
-        YkqIpCtvYEGIQovShXihdBeIiaCk0SLCKCJahAuJTP/P+c6Bcfhm1DPM1GIe+OELnuN5z3c7BhJJ5H9K
-        KmrRcAB3cA3HEVXy8BHd6DygcczjMHxnGIWm9JVZXDSlv0zigil3JQmPoNGZQzZsGUGpKf1Fb2Br4B5e
-        4RyK8A1HEZrniEkDL3HJlE4e4LwpdyVmDbSiC4dwFqdhS8waOIZpaOh/ItxD1ECJKf0lXANezuCIKa1R
-        A1dM6S9aaLa309C3YQUzyIIt2iG5pvSXfHzBIHqDTOEd0qEGfyD49zKBN9CWjSpp0DBW4YZrFBoBL7+g
-        47rGVY0CJCM0t6BR0/TqpFxza89V7JmHaDKlE42A7WG2aFquIxP3MebWnn19P1rgp4ETUAOXkYFGvIA+
-        eKdcEadMiy8Fj9GPHNc29AdPIlx0z1do2/7BVtDPv9Ba+4RKWKPuP2AVn/Ebmy41sIx1NMOW1/C2dDme
-        mtLJW9hOUmcL1eE29AYb0I4IR/OpZnR9qCXoCNd1OsT0Mt5936Gp6EMxnNzEe/TgCQagrbcYgR6iodT1
-        oXQoLUDX6fzQl9S7T0Ove1VrV2jHBZ6hQkWco4c70zOEMhVxjhahFrhz4GjIO+JI/8ZpZ2j6neg0uxtH
-        7ahHIon86wQCOyoZq+PxjbTCAAAAAElFTkSuQmCC
+        EwAACxMBAJqcGAAAAQRJREFUWEdjGAX4wOSiBr9JhXW+UC4GICS/tLo4FoShXNLArt5Mv3jfOf9BGMSG
+        CsMBIflVTaX2MHkQGypMPJhXVdUT5zP3PwiD2FBhOKBUniCg1AJC8ljBs2rX2GcVnj0gfDA//nSrd9N/
+        EAaxYeIUywPtgFqHCp43edpf9vb+f9mLxhhoB8guqLUIAHIdVg00wCC7oNYiwKgDRh0w4A64Nt2z83Cv
+        z39S8cMCD5Lxqy73Kqi1CLDtqF9P6/Gw/6Ti//udyMDOIVBrEWDUAaMOGHXAqANGHTDqgF2HfWOxWUAI
+        Y7cAL/73f5+jMdRaVLDvmK89KCRIwSDfkIRxWT5CAQMDAEERLIkUVTE9AAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="bar_OzelMasa.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_OzelMasa.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_OzelMasa.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_OdaKontrol.Caption" xml:space="preserve">
-    <value>Контроль комнаты</value>
   </data>
   <data name="bar_OdaKontrol.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1108,18 +664,6 @@ Trf.</value>
         BT28odRr3ORnubkMX+R1UYvLisEcL6i5Dq9LcZ4PYIY73GLq5qrFZbGmJvzwgrYNfOK3ZYmQZU+3h/Lm
         uG6mDgAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="bar_OdaKontrol.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_OdaKontrol.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_OdaKontrol.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barSubItem2.Caption" xml:space="preserve">
-    <value>Стол Операция</value>
   </data>
   <data name="barSubItem2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1138,18 +682,6 @@ Trf.</value>
         0gA+xnHyiGTEfZbU6yMZGItmwIqkYIwlCS8NhNNGijzOpmGSJfV6/JaPkEC/LEmg9oGHHcDcdR5KBIW4
         Kj0A2p9kvPb+z+hg4fP9BJ0SlnASZtoJAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="barSubItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barSubItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barSubItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_MasaTransfer.Caption" xml:space="preserve">
-    <value>Трансфер стола</value>
   </data>
   <data name="bar_MasaTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1170,18 +702,6 @@ Trf.</value>
         rF7YeXgu9xdYC8kHVXz+FQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bar_MasaTransfer.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_MasaTransfer.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_MasaTransfer.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_MasaIslem.Caption" xml:space="preserve">
-    <value>Операции стола</value>
-  </data>
   <data name="bar_MasaIslem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1198,18 +718,6 @@ Trf.</value>
         YvB/CsAVaTuMqFc+YqZgQMke9ALSdFsURdEf70OJBobtuaQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bar_MasaIslem.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_MasaIslem.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_MasaIslem.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_MalzemeTransfer.Caption" xml:space="preserve">
-    <value>Трансфер продукта</value>
-  </data>
   <data name="bar_MalzemeTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1222,18 +730,6 @@ Trf.</value>
         d8UWFFI/dCm1Vj6VlXkXBL/ZAuoySZSYlAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bar_MalzemeTransfer.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_MalzemeTransfer.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_MalzemeTransfer.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_KisiSayisi.Caption" xml:space="preserve">
-    <value>Изменить количество человек</value>
-  </data>
   <data name="bar_KisiSayisi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1245,42 +741,6 @@ Trf.</value>
         Xw1Bz/YZZqHtuBa5qkMXtCfoyz5hEHk1jXs0h1V+tUL/Ef7awHKm0/lVIG9ISkqKlEp9A1bcR7mllkYX
         AAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="bar_KisiSayisi.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_KisiSayisi.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_KisiSayisi.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnMasaKilitAc.Caption" xml:space="preserve">
-    <value>Открыть замок стола</value>
-  </data>
-  <data name="btnMasaKilitAc.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnMasaKilitAc.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnMasaKilitAc.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnParcaliMasa.Caption" xml:space="preserve">
-    <value>Разделенный стол</value>
-  </data>
-  <data name="btnParcaliMasa.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnParcaliMasa.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnParcaliMasa.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_Rapor.Caption" xml:space="preserve">
-    <value>Отчет</value>
   </data>
   <data name="bar_Rapor.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1302,18 +762,6 @@ Trf.</value>
         TkSuQmCC
 </value>
   </data>
-  <data name="bar_Rapor.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Rapor.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Rapor.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_Relogin.Caption" xml:space="preserve">
-    <value>Польз.выход</value>
-  </data>
   <data name="bar_Relogin.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1328,18 +776,6 @@ Trf.</value>
         uETK9AE74dZ58NL0XaxV4/P5biwE6a23HAfBSAwCUXtBO9+wIfAyzFePKDZgrTazfn8jRa94vMGV9xTD
         rNoJ2lmWj/tY9ibWOXHyP8Tl+guVa50uq94hcgAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="bar_Relogin.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Relogin.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Relogin.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_Direksatis.Caption" xml:space="preserve">
-    <value>Прямая продажа</value>
   </data>
   <data name="bar_Direksatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1359,18 +795,6 @@ Trf.</value>
         eUib2xaf2qkndpUVgMfzF6yqYhajQhNHAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bar_Direksatis.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Direksatis.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Direksatis.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_PaketSatis.Caption" xml:space="preserve">
-    <value>Продажа на вынос</value>
-  </data>
   <data name="bar_PaketSatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1383,18 +807,6 @@ Trf.</value>
         bpmJE/8VTPx/IKuYJbghm2KWkBX1yQ1aEVqYJaJIXbHDFtQtzBJSyjV42EwPW7CplFrFbC/lcjkPL7Kj
         IlW3od6tG5j7B3CcL5iG9diT2CowAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="bar_PaketSatis.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_PaketSatis.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_PaketSatis.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar_Yenile.Caption" xml:space="preserve">
-    <value>Обновить</value>
   </data>
   <data name="bar_Yenile.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1438,30 +850,6 @@ Trf.</value>
         qo7/g9DT+w8vuPxsi/hIcQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bar_Yenile.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Yenile.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="bar_Yenile.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnHesapDokum.Caption" xml:space="preserve">
-    <value>Счет</value>
-  </data>
-  <data name="btnHesapDokum.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnHesapDokum.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnHesapDokum.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barButtonItem11.Caption" xml:space="preserve">
-    <value>Выход</value>
-  </data>
   <data name="barButtonItem11.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAB10RVh0VGl0
@@ -1480,9 +868,6 @@ Trf.</value>
         cF8ohI5QeDtiKNQbI6IAtrMb5J77IXffi2obp78Cs7u2Tm9qdjqjxtYF1bbOqLIhnDawdkSllSMqeBxQ
         YemAckaxhd1bVssfI/2W9EGQzVrPjn9go4cyO0KBwR+nGRqWKfsCHQAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="barButtonItem11.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
   </data>
   <data name="barButtonItem11.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1528,54 +913,6 @@ Trf.</value>
         yfvkPPhE1Ql+k9vzOv3/P/ifoPoeVeUDAqiG6o3/Nb1j0KB/AMYUfCkDw9hpAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barButtonItem11.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem11.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barDockControl13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1052, 89</value>
-  </data>
-  <data name="barDockControl16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1052, 89</value>
-  </data>
-  <data name="barDockControl16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 723</value>
-  </data>
-  <data name="barSubItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barSubItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barSubItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barButtonItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barButtonItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barDockControl15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 723</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Отслеживание стола</value>
-  </data>
   <data name="barButtonItem3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1617,15 +954,6 @@ Trf.</value>
         ygq9jJaHXvwe8s/TSG0yq4+ktSZRyiZtOpoUZXhW4ZlAqaLMkKFfIckUpZFeTJki0jORvqNZUiwJ0k6f
         qo7/g9DT+w8vuPxsi/hIcQAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="barButtonItem3.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem3.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem3.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="barButtonItem4.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1669,15 +997,6 @@ Trf.</value>
         qo7/g9DT+w8vuPxsi/hIcQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barButtonItem4.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem4.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem4.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="barButtonItem5.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1690,15 +1009,6 @@ Trf.</value>
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barButtonItem5.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem5.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem5.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="barButtonItem6.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1710,14 +1020,5 @@ Trf.</value>
         Xw1Bz/YZZqHtuBa5qkMXtCfoyz5hEHk1jXs0h1V+tUL/Ef7awHKm0/lVIG9ISkqKlEp9A1bcR7mllkYX
         AAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="barButtonItem6.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem6.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barButtonItem6.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
 </root>

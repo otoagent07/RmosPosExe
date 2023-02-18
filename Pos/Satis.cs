@@ -2352,8 +2352,16 @@ namespace Pos
             {
                 klavye.ShowDialog();
 
-                if (klavye.sayi == 0) return;
-                Miktar = Convert.ToDecimal(klavye.sayi) - Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                if (klavye.sayi != 0)
+                {
+                    Miktar = Convert.ToDecimal(klavye.sayi) - Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                }
+
+                if (klavye.iptal == true)
+                {
+                    Miktar = 1;
+                    return;
+                }
             }
             else
             {

@@ -64,11 +64,7 @@
             // 
             // txt_Sayi
             // 
-            this.txt_Sayi.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            131072});
+            this.txt_Sayi.EditValue = "1,00";
             this.txt_Sayi.Location = new System.Drawing.Point(12, 74);
             this.txt_Sayi.Name = "txt_Sayi";
             this.txt_Sayi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));

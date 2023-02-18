@@ -229,6 +229,45 @@
   <data name="textEdit14.EditValue" xml:space="preserve">
     <value>Дата начала</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gridControl7.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridControl7.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridControl7.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
   <data name="gridColumn28.Caption" xml:space="preserve">
     <value>Код</value>
   </data>
@@ -240,6 +279,42 @@
   </data>
   <data name="gridView7.ViewCaption" xml:space="preserve">
     <value>Текущий выход из кассы</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn25.Caption" xml:space="preserve">
     <value>Код</value>
@@ -285,6 +360,42 @@
   <data name="textEdit3.EditValue" xml:space="preserve">
     <value>Общий доход кассы</value>
   </data>
+  <data name="gridControl3.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
   <data name="gridColumn9.Caption" xml:space="preserve">
     <value>Код</value>
   </data>
@@ -297,6 +408,42 @@
   <data name="gridView3.ViewCaption" xml:space="preserve">
     <value>Экстра выход из кассы</value>
   </data>
+  <data name="gridControl4.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
   <data name="gridColumn13.Caption" xml:space="preserve">
     <value>Код</value>
   </data>
@@ -308,6 +455,42 @@
   </data>
   <data name="gridView4.ViewCaption" xml:space="preserve">
     <value>Экстра вход в кассу</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn5.Caption" xml:space="preserve">
     <value>Код</value>
@@ -326,6 +509,42 @@
   </data>
   <data name="gridView2.ViewCaption" xml:space="preserve">
     <value>Кто вышел из кассы</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn1.Caption" xml:space="preserve">
     <value>Код</value>
@@ -346,13 +565,49 @@
     <value>Кто зашел в кассу</value>
   </data>
   <data name="tab_Rpr_Genel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 652</value>
+    <value>1010, 642</value>
   </data>
   <data name="tab_Rpr_Genel.Text" xml:space="preserve">
     <value>Главный отчет</value>
   </data>
   <data name="xtraTabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1020, 680</value>
+    <value>1016, 675</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn31.Caption" xml:space="preserve">
     <value>Дата</value>
@@ -374,6 +629,9 @@
   </data>
   <data name="gridColumn37.Caption" xml:space="preserve">
     <value>Кассовая наличная сумма Net</value>
+  </data>
+  <data name="gridControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 570</value>
   </data>
   <data name="simpleButton3.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -418,14 +676,68 @@
   <data name="simpleButton1.Text" xml:space="preserve">
     <value>В список</value>
   </data>
+  <data name="dateTarih2.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateTarih2.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="dateTarih1.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateTarih1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
   <data name="textEdit6.EditValue" xml:space="preserve">
     <value>Дата окончания</value>
   </data>
   <data name="textEdit5.EditValue" xml:space="preserve">
     <value>Дата начала</value>
   </data>
+  <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 77</value>
+  </data>
+  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 647</value>
+  </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Кассовый отчет</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn38.Caption" xml:space="preserve">
     <value>Дата</value>
@@ -453,6 +765,9 @@
   </data>
   <data name="gridColumn46.Caption" xml:space="preserve">
     <value>Описание кассового расхода</value>
+  </data>
+  <data name="gridControl9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 570</value>
   </data>
   <data name="simpleButton4.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -497,17 +812,35 @@
   <data name="simpleButton2.Text" xml:space="preserve">
     <value>В список</value>
   </data>
+  <data name="dateTarih2_2.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateTarih2_2.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="dateTarih1_1.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateTarih1_1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
   <data name="textEdit7.EditValue" xml:space="preserve">
     <value>Дата окончания</value>
   </data>
   <data name="textEdit12.EditValue" xml:space="preserve">
     <value>Дата начала</value>
   </data>
+  <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 77</value>
+  </data>
+  <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 647</value>
+  </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Кассовый отчет 2</value>
   </data>
   <data name="tab_KasaRapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1020, 680</value>
+    <value>1016, 675</value>
   </data>
   <data name="tab_KasaRapor.Text" xml:space="preserve">
     <value>Кассовый отчет</value>
@@ -523,6 +856,42 @@
   </data>
   <data name="btn_Kaydet.Text" xml:space="preserve">
     <value>&amp;Сохранить</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn18.Caption" xml:space="preserve">
     <value>Дата</value>
@@ -551,6 +920,12 @@
   <data name="txt_Ad.Properties.NullValuePrompt" xml:space="preserve">
     <value>Имя</value>
   </data>
+  <data name="date_Tarih.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="date_Tarih.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
   <data name="textEdit11.EditValue" xml:space="preserve">
     <value>Описание</value>
   </data>
@@ -568,6 +943,9 @@
   </data>
   <data name="txt_KasaHrkBaslik.EditValue" xml:space="preserve">
     <value>Case Movement</value>
+  </data>
+  <data name="tab_KasaHareket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1016, 675</value>
   </data>
   <data name="tab_KasaHareket.Text" xml:space="preserve">
     <value>Кассовые движения</value>

@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using Pos.Class;
+using Pos.Forms;
 using System;
 using System.Data;
 using System.Reflection;
@@ -112,10 +113,16 @@ namespace Pos
         bool yeniCikis = false;
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
-            Cikis = true;
-            xCikis = false;
-            yeniCikis = true; // 28.11.2022 de eklendi
-            this.Close();
+            ConfirmationForm confirmationForm = new ConfirmationForm("PROGRAMI KAPATMAK İSTEDİĞİNİZE EMİN MİSİNİZ?");
+            confirmationForm.ShowDialog();
+            if (confirmationForm.onay)
+            {
+                Cikis = true;
+                xCikis = false;
+                yeniCikis = true; // 28.11.2022 de eklendi
+                this.Close();
+            }
+           
         }
 
         public static string MyClass = "frmLogin";

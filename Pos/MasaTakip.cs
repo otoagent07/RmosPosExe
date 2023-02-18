@@ -2263,6 +2263,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         public void satisGit()
         {
             if (StatikSinif.masaMusaitmi(Masa_No) == false) return;
+            if (StatikSinif.sadeceKendiMasanaGir(bartxt_FisNo.EditValue.ToString()) == false) return;
 
             string parcaliAktif = dbtools.DegerGetir("select count(*) as toplam from Pos_Param where ISNULL(Param_ParcaliMasaAktif,0)=1");
 
