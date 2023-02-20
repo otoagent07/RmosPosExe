@@ -1345,6 +1345,15 @@ namespace Pos.Class {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pos Tarih:.
+        /// </summary>
+        internal static string PosTar_ {
+            get {
+                return ResourceManager.GetString("PosTar:", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Programı Kapatıp.
         /// </summary>
         internal static string Programı_Kapatıp {
@@ -1359,6 +1368,15 @@ namespace Pos.Class {
         internal static string Programı_Kapatıp_nYeniden_Programa_Giriş_Yapmanız_Gerekmektedir___ {
             get {
                 return ResourceManager.GetString("Programı Kapatıp\\nYeniden Programa Giriş Yapmanız Gerekmektedir...", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PROGRAMI KAPATMAK İSTEDİĞİNİZE EMİN MİSİNİZ?.
+        /// </summary>
+        internal static string PROGRAMI_KAPATMAK_İSTEDİĞİNİZE_EMİN_MİSİNİZ_ {
+            get {
+                return ResourceManager.GetString("PROGRAMI KAPATMAK İSTEDİĞİNİZE EMİN MİSİNİZ?", resourceCulture);
             }
         }
         
@@ -1611,6 +1629,15 @@ namespace Pos.Class {
         internal static string Sistemden_Çıkıp_Yeniden_Giriniz___ {
             get {
                 return ResourceManager.GetString("Sistemden Çıkıp Yeniden Giriniz...", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sistem Tarih:.
+        /// </summary>
+        internal static string SistemTar_ {
+            get {
+                return ResourceManager.GetString("SistemTar:", resourceCulture);
             }
         }
         

@@ -31,6 +31,9 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
+            this.xr_Urun = new DevExpress.XtraReports.UI.XRLabel();
+            this.xr_Miktar = new DevExpress.XtraReports.UI.XRLabel();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
@@ -51,9 +54,6 @@
             this.xr_Tarih = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
-            this.xr_Urun = new DevExpress.XtraReports.UI.XRLabel();
-            this.xr_Miktar = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -74,6 +74,47 @@
             this.xr_Miktar});
             this.Detail.HeightF = 21.75002F;
             this.Detail.Name = "Detail";
+            // 
+            // xrLine3
+            // 
+            this.xrLine3.BorderColor = System.Drawing.Color.Black;
+            this.xrLine3.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dot;
+            this.xrLine3.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLine3.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(0.01403491F, 16.74999F);
+            this.xrLine3.Name = "xrLine3";
+            this.xrLine3.SizeF = new System.Drawing.SizeF(266.077F, 2.083332F);
+            this.xrLine3.StylePriority.UseBorderColor = false;
+            this.xrLine3.StylePriority.UseBorderDashStyle = false;
+            this.xrLine3.StylePriority.UseBorders = false;
+            // 
+            // xr_Urun
+            // 
+            this.xr_Urun.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xr_Urun.LocationFloat = new DevExpress.Utils.PointFloat(79.21595F, 0F);
+            this.xr_Urun.Multiline = true;
+            this.xr_Urun.Name = "xr_Urun";
+            this.xr_Urun.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xr_Urun.SizeF = new System.Drawing.SizeF(186.8751F, 16.75F);
+            this.xr_Urun.StylePriority.UseFont = false;
+            this.xr_Urun.StylePriority.UseTextAlignment = false;
+            this.xr_Urun.Text = "[urunAd]";
+            this.xr_Urun.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xr_Urun.WordWrap = false;
+            // 
+            // xr_Miktar
+            // 
+            this.xr_Miktar.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xr_Miktar.LocationFloat = new DevExpress.Utils.PointFloat(0.00743866F, 0F);
+            this.xr_Miktar.Multiline = true;
+            this.xr_Miktar.Name = "xr_Miktar";
+            this.xr_Miktar.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xr_Miktar.SizeF = new System.Drawing.SizeF(79.20836F, 16.75F);
+            this.xr_Miktar.StylePriority.UseFont = false;
+            this.xr_Miktar.StylePriority.UseTextAlignment = false;
+            this.xr_Miktar.Text = "[miktar]";
+            this.xr_Miktar.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xr_Miktar.WordWrap = false;
             // 
             // PageHeader
             // 
@@ -342,47 +383,6 @@
             this.xrLabel9.Text = "MİKTAR";
             this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrLabel9.WordWrap = false;
-            // 
-            // xrLine3
-            // 
-            this.xrLine3.BorderColor = System.Drawing.Color.Black;
-            this.xrLine3.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dot;
-            this.xrLine3.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLine3.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(0.01403491F, 16.74999F);
-            this.xrLine3.Name = "xrLine3";
-            this.xrLine3.SizeF = new System.Drawing.SizeF(266.077F, 2.083332F);
-            this.xrLine3.StylePriority.UseBorderColor = false;
-            this.xrLine3.StylePriority.UseBorderDashStyle = false;
-            this.xrLine3.StylePriority.UseBorders = false;
-            // 
-            // xr_Urun
-            // 
-            this.xr_Urun.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xr_Urun.LocationFloat = new DevExpress.Utils.PointFloat(79.21595F, 0F);
-            this.xr_Urun.Multiline = true;
-            this.xr_Urun.Name = "xr_Urun";
-            this.xr_Urun.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xr_Urun.SizeF = new System.Drawing.SizeF(186.8751F, 16.75F);
-            this.xr_Urun.StylePriority.UseFont = false;
-            this.xr_Urun.StylePriority.UseTextAlignment = false;
-            this.xr_Urun.Text = "ÜRÜN";
-            this.xr_Urun.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xr_Urun.WordWrap = false;
-            // 
-            // xr_Miktar
-            // 
-            this.xr_Miktar.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xr_Miktar.LocationFloat = new DevExpress.Utils.PointFloat(0.00743866F, 0F);
-            this.xr_Miktar.Multiline = true;
-            this.xr_Miktar.Name = "xr_Miktar";
-            this.xr_Miktar.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xr_Miktar.SizeF = new System.Drawing.SizeF(79.20836F, 16.75F);
-            this.xr_Miktar.StylePriority.UseFont = false;
-            this.xr_Miktar.StylePriority.UseTextAlignment = false;
-            this.xr_Miktar.Text = "MİKTAR";
-            this.xr_Miktar.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xr_Miktar.WordWrap = false;
             // 
             // IptalFisi
             // 

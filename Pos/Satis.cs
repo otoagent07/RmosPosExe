@@ -2,6 +2,7 @@
 using DevExpress.XtraReports.UI;
 using Pos.Class;
 using Pos.Controllers;
+using Pos.Forms;
 using Pos.Models;
 using Pos.Print;
 using System;
@@ -111,6 +112,7 @@ namespace Pos
             btn_MiktarDuzelt.Enabled = User.G_Miktarduzelt;
             btn_Tutarduzelt.Enabled = User.G_Tutarduzelt;
             btn_SatirSil.Enabled = User.G_Satirsil;
+            btnTopluSil.Enabled = User.G_Satirsil;
             btn_Indirim.Enabled = User.G_Indirim_Satis;
             btn_Zayi.Enabled = User.G_Zayi;
             btnJokerAciklama.Enabled = User.G_Zayi;
@@ -3785,6 +3787,107 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 break;
             }
 
+
+        }
+
+        private void btnTopluSil_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+
+                string odemevarmi = dbtools.DegerGetir(" select top 1 count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='"+ fisno + "' and Rsat_Ba='A'");
+                if (odemevarmi != "0")
+                {
+                    MessageBox.Show(res_man.GetString("Ödemeler veya İndirimler Silinemez.."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
+
+                string yazdirilmamisSiparisVarmi = dbtools.DegerGetir("select top 1 count(Rsat_SiparisPr) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + fisno + "' and Rsat_SiparisPr='1' ");
+
+                if (yazdirilmamisSiparisVarmi != "0" && !User.G_Satirsil_Y)
+                {
+                    MessageBox.Show(res_man.GetString("Yazdırılmış Satır Silme Yetkiniz Yoktur...!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
+
+
+                ConfirmationForm confirmationForm = new ConfirmationForm("Hepsini silmek istediğine emin misin ?");
+                confirmationForm.ShowDialog();
+
+                if (confirmationForm.onay)
+                {
+
+                    string neden = "";
+                    if (Departman.Kodlar_YazSipNedSor)
+                    {
+                        Klavye2 klv = new Klavye2();
+                        klv.ShowDialog();
+
+                        if (klv.yazi == null)
+                        {
+                            MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
+                            return;
+                        }
+
+                        if (klv.yazi.Length == 0)
+                        {
+                            MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
+                            return;
+                        }
+
+                        neden = klv.yazi;
+                    }
+
+
+                   DataTable dataTable= dbtools.SelectTableR(@" select Rsat_Miktar ,Cst_Recete.Rec_Ad ,Rsat_Id,Rsat_Tutar from Cst_Recete_Satis
+ left join cst_recete  on Cst_Recete.Rec_Genelkod=Rsat_Recete
+ where Rsat_Fisno='" + fisno+"' and Rsat_Ba<>'A'");
+
+                    foreach (DataRow item in dataTable.Rows)
+                    {
+                        decimal miktar = Convert.ToDecimal(item["Rsat_Miktar"].ToString());
+                        int Rsat_Id = Convert.ToInt32(item["Rsat_Id"].ToString());
+                        string Rec_Ad = item["Rec_Ad"].ToString();
+                        decimal Rsat_Tutar = Convert.ToDecimal(item["Rsat_Tutar"].ToString());
+                        string yazdirilmissa = "Yazdırılmamış";
+                        if (Departman.Siparis)
+                        {
+                            FisPr fis = new FisPr();
+                            string sonuc = fis.newIptalPr(Rsat_Id, miktar);
+                            if (fis.yazdirilmismi)
+                            {
+                                yazdirilmissa = "Yazdırılmış";
+                            }
+                            if (sonuc != "OK")
+                            {
+                                MessageBox.Show(sonuc);
+                            }
+                        }
+
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Rec_Ad + " Miktar : " + miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Rsat_Id.ToString(), Rec_Ad, miktar, neden, Rsat_Tutar);
+
+                        Fis_Islem.Satir_Sil(Rsat_Id, miktar);
+
+
+                        int satirsay = Convert.ToInt32(dbtools.DegerGetir("select COUNT(*) from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Fisno = '" + bartxt_FisNo.EditValue.ToString() + "' and Rsat_Ba = 'B' "));
+                        if (satirsay == 0)
+                        {
+                            dbtools.execcmd("update Pos_Masa set Masa_Durum = 0, Masa_Ozel = '' where Masa_No = '" + Convert.ToString(bartxt_MasaNo.EditValue) + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+                            dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Fisno = '" + bartxt_FisNo.EditValue.ToString() + "'");
+                        }
+                    }
+
+                    
+                    gridyenile();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnTopluSil_Click", "", ex);
+            }
 
         }
     }

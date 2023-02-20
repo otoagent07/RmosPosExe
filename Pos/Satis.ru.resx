@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="flp_Urun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>761, 246</value>
+  </data>
   <data name="ana_btnUp.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABd0RVh0VGl0
@@ -220,6 +223,18 @@
         +oEotzUUCQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="ana_btnDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 103</value>
+  </data>
+  <data name="splitContainerControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 246</value>
+  </data>
+  <data name="splitContainerControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 246</value>
+  </data>
+  <data name="flp_AltGrup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>775, 152</value>
+  </data>
   <data name="alt_btnUp.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABd0RVh0VGl0
@@ -321,6 +336,15 @@
         /hOoPS+ES8gV4cDvETi7D/rAY75e/L7zKWfR/cS/F5vx/zSVEL6qHJhLyoKYiMFjnuM1tlHZ/48mxK89
         +oEotzUUCQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="alt_btnDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 59</value>
+  </data>
+  <data name="splitContainerControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 152</value>
+  </data>
+  <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>806, 152</value>
   </data>
   <data name="gridColumn6.Caption" xml:space="preserve">
     <value>Описание</value>
@@ -436,21 +460,90 @@
         CXfa6kejLEGJAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1098, 88</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 88</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 644</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1098, 88</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 644</value>
+  </data>
+  <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>689, 69</value>
+  </data>
+  <data name="btnBakiye.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 63</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 69</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 573</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>806, 69</value>
+  </data>
+  <data name="flp_UrunGrup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>679, 63</value>
+  </data>
+  <data name="chk_Yapma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 63</value>
+  </data>
   <data name="chk_Yapma.Text" xml:space="preserve">
     <value>Don't
 Make</value>
   </data>
+  <data name="btn_Aciklama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 63</value>
+  </data>
   <data name="btn_Aciklama.Text" xml:space="preserve">
     <value>Описание</value>
+  </data>
+  <data name="panelControl7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 244</value>
+  </data>
+  <data name="panelControl7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>806, 69</value>
+  </data>
+  <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 66</value>
+  </data>
+  <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 176</value>
   </data>
   <data name="groupControl2.Text" xml:space="preserve">
     <value>Подгруппа</value>
   </data>
+  <data name="flp_AnaGrup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>806, 42</value>
+  </data>
+  <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 66</value>
+  </data>
   <data name="groupControl1.Text" xml:space="preserve">
     <value>Главная группа</value>
   </data>
+  <data name="panelControl8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 317</value>
+  </data>
+  <data name="panelControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>806, 252</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 88</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 644</value>
+  </data>
   <data name="btn_SpSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 56</value>
+    <value>3, 59</value>
   </data>
   <data name="btn_SpSil.Text" xml:space="preserve">
     <value>SP Удалить</value>
@@ -459,7 +552,7 @@ Make</value>
     <value>Разное количество</value>
   </data>
   <data name="chk_Eksi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 6</value>
+    <value>3, 107</value>
   </data>
   <data name="chk_Eksi.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 35</value>
@@ -521,6 +614,9 @@ Make</value>
         +RCNaSxFYiR5V2XEyCLrvFdU8k5VyLyilGuyzTYc9xeklyVVbsX70wAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="panelMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 329</value>
+  </data>
   <data name="simpleButton1.Text" xml:space="preserve">
     <value>Штрих-код весов</value>
   </data>
@@ -560,6 +656,9 @@ Make</value>
   <data name="btn_Tutarduzelt.Text" xml:space="preserve">
     <value>Редактировать сумму</value>
   </data>
+  <data name="panelControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 525</value>
+  </data>
   <data name="btn_Ikram.Text" xml:space="preserve">
     <value>Угощение</value>
   </data>
@@ -568,6 +667,9 @@ Make</value>
   </data>
   <data name="btn_Indirim.Text" xml:space="preserve">
     <value>Скидка</value>
+  </data>
+  <data name="panelControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 600</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rdo_EMiktar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -634,6 +736,9 @@ Make</value>
   <data name="gridColumn12.Caption" xml:space="preserve">
     <value>Имя продукта</value>
   </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 309</value>
+  </data>
   <data name="btn_Cikis.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -675,6 +780,15 @@ Make</value>
   </data>
   <data name="btn_Siparis.Text" xml:space="preserve">
     <value>Заказ</value>
+  </data>
+  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 638</value>
+  </data>
+  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>810, 88</value>
+  </data>
+  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 644</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value> Sales</value>

@@ -409,6 +409,11 @@
     <Compile Include="Forms\UyariForm.Designer.cs">
       <DependentUpon>UyariForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="lang_ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang_ru.resx</DependentUpon>
+    </Compile>
     <Compile Include="Print\CariBakiyeKontrolRapor.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1361,7 +1366,16 @@
     <EmbeddedResource Include="Forms\adminForms.resx">
       <DependentUpon>adminForms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmationForm.bin.resx">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmationForm.en-US.resx">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConfirmationForm.resx">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmationForm.ru.resx">
       <DependentUpon>ConfirmationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UyariForm.resx">
@@ -1514,7 +1528,10 @@
     <EmbeddedResource Include="Language.resx">
       <DependentUpon>Language.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="lang_ru.resx" />
+    <EmbeddedResource Include="lang_ru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>lang_ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.en-US.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>

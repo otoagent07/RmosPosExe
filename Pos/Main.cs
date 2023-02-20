@@ -430,7 +430,7 @@ namespace Pos
                 }
 
 
-                this.Text += " [" + dbtools.database + "] v0.2.0";
+                this.Text += " [" + dbtools.database + "] v0.2.1";
 
 
 
@@ -1346,9 +1346,15 @@ YS_Panel a = new YS_Panel();
             {
                 if (User.P_Kod != "1")
                 {
-                    string en = res_man.GetString("Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!");
-                    MessageBox.Show(en + "\n" + res_man.GetString("SistemTar: ") + tar2 + "\n" + res_man.GetString("PosTar: ") + tar);
+                    tar = Convert.ToDateTime(tar).ToLongDateString();
+                    tar2 = Convert.ToDateTime(tar2).ToLongDateString();
 
+                    string en = res_man.GetString("Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!");
+                    string mesaj = en + System.Environment.NewLine + res_man.GetString("SistemTar:") + tar2 + System.Environment.NewLine + res_man.GetString("PosTar:") + tar;
+
+                    //string mesaj = en + System.Environment.NewLine + res_man.GetString("SistemTar: ") + tar2 + System.Environment.NewLine + res_man.GetString("PosTar: ") + tar;
+                    ConfirmationForm confirmationForm = new ConfirmationForm(mesaj);
+                    confirmationForm.ShowDialog();
                 }
 
             }

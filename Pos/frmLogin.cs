@@ -113,7 +113,7 @@ namespace Pos
         bool yeniCikis = false;
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
-            ConfirmationForm confirmationForm = new ConfirmationForm("PROGRAMI KAPATMAK İSTEDİĞİNİZE EMİN MİSİNİZ?");
+            ConfirmationForm confirmationForm = new ConfirmationForm(res_man.GetString("PROGRAMI KAPATMAK İSTEDİĞİNİZE EMİN MİSİNİZ?"));
             confirmationForm.ShowDialog();
             if (confirmationForm.onay)
             {

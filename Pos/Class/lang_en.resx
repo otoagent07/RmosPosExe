@@ -495,6 +495,9 @@
   <data name="PosTar:" xml:space="preserve">
     <value>Pos Date:</value>
   </data>
+  <data name="PROGRAMI KAPATMAK İSTEDİĞİNİZE EMİN MİSİNİZ?" xml:space="preserve">
+    <value>ARE YOU SURE YOU WANT TO CLOSE THE PROGRAM?</value>
+  </data>
   <data name="Programı Kapatıp" xml:space="preserve">
     <value>Close the Program</value>
   </data>

@@ -62,18 +62,18 @@
             this.repositoryItemGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btn_Satis = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_HesapBak = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_OzelMasa = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_MasaTransfer = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_MalzemeTransfer = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_MasaIslem = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_KisiSayisi = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Yenile = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Rapor = new DevExpress.XtraEditors.SimpleButton();
-            this.btnHesapDokumEski = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Relogin = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Relogin = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHesapDokumEski = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Rapor = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Yenile = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_KisiSayisi = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_MasaIslem = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_MalzemeTransfer = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_MasaTransfer = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_OzelMasa = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_HesapBak = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Satis = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -424,78 +424,66 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.btn_Satis);
-            this.groupControl1.Controls.Add(this.btn_HesapBak);
-            this.groupControl1.Controls.Add(this.btn_OzelMasa);
-            this.groupControl1.Controls.Add(this.btn_MasaTransfer);
-            this.groupControl1.Controls.Add(this.btn_MalzemeTransfer);
-            this.groupControl1.Controls.Add(this.btn_MasaIslem);
-            this.groupControl1.Controls.Add(this.btn_KisiSayisi);
-            this.groupControl1.Controls.Add(this.btn_Yenile);
-            this.groupControl1.Controls.Add(this.btn_Rapor);
-            this.groupControl1.Controls.Add(this.btnHesapDokumEski);
-            this.groupControl1.Controls.Add(this.btn_Relogin);
             this.groupControl1.Controls.Add(this.simpleButton3);
+            this.groupControl1.Controls.Add(this.btn_Relogin);
+            this.groupControl1.Controls.Add(this.btnHesapDokumEski);
+            this.groupControl1.Controls.Add(this.btn_Rapor);
+            this.groupControl1.Controls.Add(this.btn_Yenile);
+            this.groupControl1.Controls.Add(this.btn_KisiSayisi);
+            this.groupControl1.Controls.Add(this.btn_MasaIslem);
+            this.groupControl1.Controls.Add(this.btn_MalzemeTransfer);
+            this.groupControl1.Controls.Add(this.btn_MasaTransfer);
+            this.groupControl1.Controls.Add(this.btn_OzelMasa);
+            this.groupControl1.Controls.Add(this.btn_HesapBak);
+            this.groupControl1.Controls.Add(this.btn_Satis);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
-            // btn_Satis
+            // simpleButton3
             // 
-            this.btn_Satis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Satis.Appearance.Font")));
-            this.btn_Satis.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btn_Satis, "btn_Satis");
-            this.btn_Satis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Satis.ImageOptions.Image")));
-            this.btn_Satis.Name = "btn_Satis";
-            this.btn_Satis.Click += new System.EventHandler(this.btn_Satis_Click);
+            this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton3, "simpleButton3");
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
-            // btn_HesapBak
+            // btn_Relogin
             // 
-            this.btn_HesapBak.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_HesapBak.Appearance.Font")));
-            this.btn_HesapBak.Appearance.Options.UseFont = true;
-            this.btn_HesapBak.Appearance.Options.UseTextOptions = true;
-            this.btn_HesapBak.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            resources.ApplyResources(this.btn_HesapBak, "btn_HesapBak");
-            this.btn_HesapBak.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_HesapBak.ImageOptions.Image")));
-            this.btn_HesapBak.Name = "btn_HesapBak";
-            this.btn_HesapBak.Click += new System.EventHandler(this.btn_HesapBak_Click);
+            this.btn_Relogin.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Relogin.Appearance.Font")));
+            this.btn_Relogin.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Relogin, "btn_Relogin");
+            this.btn_Relogin.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Relogin.ImageOptions.Image")));
+            this.btn_Relogin.Name = "btn_Relogin";
+            this.btn_Relogin.Click += new System.EventHandler(this.btn_Relogin_Click);
             // 
-            // btn_OzelMasa
+            // btnHesapDokumEski
             // 
-            this.btn_OzelMasa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_OzelMasa.Appearance.Font")));
-            this.btn_OzelMasa.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btn_OzelMasa, "btn_OzelMasa");
-            this.btn_OzelMasa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OzelMasa.ImageOptions.Image")));
-            this.btn_OzelMasa.Name = "btn_OzelMasa";
-            this.btn_OzelMasa.Click += new System.EventHandler(this.btn_OzelMasa_Click);
+            this.btnHesapDokumEski.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnHesapDokumEski.Appearance.Font")));
+            this.btnHesapDokumEski.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnHesapDokumEski, "btnHesapDokumEski");
+            this.btnHesapDokumEski.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapDokumEski.ImageOptions.Image")));
+            this.btnHesapDokumEski.Name = "btnHesapDokumEski";
+            this.btnHesapDokumEski.Click += new System.EventHandler(this.btnHesapDokumEski_Click);
             // 
-            // btn_MasaTransfer
+            // btn_Rapor
             // 
-            this.btn_MasaTransfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaTransfer.Appearance.Font")));
-            this.btn_MasaTransfer.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btn_MasaTransfer, "btn_MasaTransfer");
-            this.btn_MasaTransfer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaTransfer.ImageOptions.Image")));
-            this.btn_MasaTransfer.Name = "btn_MasaTransfer";
-            this.btn_MasaTransfer.Click += new System.EventHandler(this.btn_MasaTransfer_Click);
+            this.btn_Rapor.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Rapor.Appearance.Font")));
+            this.btn_Rapor.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Rapor, "btn_Rapor");
+            this.btn_Rapor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Rapor.ImageOptions.Image")));
+            this.btn_Rapor.Name = "btn_Rapor";
+            this.btn_Rapor.Click += new System.EventHandler(this.btn_Rapor_Click);
             // 
-            // btn_MalzemeTransfer
+            // btn_Yenile
             // 
-            this.btn_MalzemeTransfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MalzemeTransfer.Appearance.Font")));
-            this.btn_MalzemeTransfer.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btn_MalzemeTransfer, "btn_MalzemeTransfer");
-            this.btn_MalzemeTransfer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MalzemeTransfer.ImageOptions.Image")));
-            this.btn_MalzemeTransfer.Name = "btn_MalzemeTransfer";
-            this.btn_MalzemeTransfer.Click += new System.EventHandler(this.btn_MalzemeTransfer_Click);
-            // 
-            // btn_MasaIslem
-            // 
-            this.btn_MasaIslem.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaIslem.Appearance.Font")));
-            this.btn_MasaIslem.Appearance.Options.UseFont = true;
-            this.btn_MasaIslem.Appearance.Options.UseTextOptions = true;
-            this.btn_MasaIslem.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            resources.ApplyResources(this.btn_MasaIslem, "btn_MasaIslem");
-            this.btn_MasaIslem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaIslem.ImageOptions.Image")));
-            this.btn_MasaIslem.Name = "btn_MasaIslem";
-            this.btn_MasaIslem.Click += new System.EventHandler(this.btn_MasaIslem_Click);
+            this.btn_Yenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Yenile.Appearance.Font")));
+            this.btn_Yenile.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Yenile, "btn_Yenile");
+            this.btn_Yenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Yenile.ImageOptions.Image")));
+            this.btn_Yenile.Name = "btn_Yenile";
+            this.btn_Yenile.Click += new System.EventHandler(this.btn_Yenile_Click);
+            this.btn_Yenile.DoubleClick += new System.EventHandler(this.btn_Yenile_DoubleClick);
             // 
             // btn_KisiSayisi
             // 
@@ -508,51 +496,63 @@
             this.btn_KisiSayisi.Name = "btn_KisiSayisi";
             this.btn_KisiSayisi.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // btn_Yenile
+            // btn_MasaIslem
             // 
-            this.btn_Yenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Yenile.Appearance.Font")));
-            this.btn_Yenile.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btn_Yenile, "btn_Yenile");
-            this.btn_Yenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Yenile.ImageOptions.Image")));
-            this.btn_Yenile.Name = "btn_Yenile";
-            this.btn_Yenile.Click += new System.EventHandler(this.btn_Yenile_Click);
-            this.btn_Yenile.DoubleClick += new System.EventHandler(this.btn_Yenile_DoubleClick);
+            this.btn_MasaIslem.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaIslem.Appearance.Font")));
+            this.btn_MasaIslem.Appearance.Options.UseFont = true;
+            this.btn_MasaIslem.Appearance.Options.UseTextOptions = true;
+            this.btn_MasaIslem.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            resources.ApplyResources(this.btn_MasaIslem, "btn_MasaIslem");
+            this.btn_MasaIslem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaIslem.ImageOptions.Image")));
+            this.btn_MasaIslem.Name = "btn_MasaIslem";
+            this.btn_MasaIslem.Click += new System.EventHandler(this.btn_MasaIslem_Click);
             // 
-            // btn_Rapor
+            // btn_MalzemeTransfer
             // 
-            this.btn_Rapor.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Rapor.Appearance.Font")));
-            this.btn_Rapor.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btn_Rapor, "btn_Rapor");
-            this.btn_Rapor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Rapor.ImageOptions.Image")));
-            this.btn_Rapor.Name = "btn_Rapor";
-            this.btn_Rapor.Click += new System.EventHandler(this.btn_Rapor_Click);
+            this.btn_MalzemeTransfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MalzemeTransfer.Appearance.Font")));
+            this.btn_MalzemeTransfer.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_MalzemeTransfer, "btn_MalzemeTransfer");
+            this.btn_MalzemeTransfer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MalzemeTransfer.ImageOptions.Image")));
+            this.btn_MalzemeTransfer.Name = "btn_MalzemeTransfer";
+            this.btn_MalzemeTransfer.Click += new System.EventHandler(this.btn_MalzemeTransfer_Click);
             // 
-            // btnHesapDokumEski
+            // btn_MasaTransfer
             // 
-            this.btnHesapDokumEski.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnHesapDokumEski.Appearance.Font")));
-            this.btnHesapDokumEski.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnHesapDokumEski, "btnHesapDokumEski");
-            this.btnHesapDokumEski.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapDokumEski.ImageOptions.Image")));
-            this.btnHesapDokumEski.Name = "btnHesapDokumEski";
-            this.btnHesapDokumEski.Click += new System.EventHandler(this.btnHesapDokumEski_Click);
+            this.btn_MasaTransfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaTransfer.Appearance.Font")));
+            this.btn_MasaTransfer.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_MasaTransfer, "btn_MasaTransfer");
+            this.btn_MasaTransfer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaTransfer.ImageOptions.Image")));
+            this.btn_MasaTransfer.Name = "btn_MasaTransfer";
+            this.btn_MasaTransfer.Click += new System.EventHandler(this.btn_MasaTransfer_Click);
             // 
-            // btn_Relogin
+            // btn_OzelMasa
             // 
-            this.btn_Relogin.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Relogin.Appearance.Font")));
-            this.btn_Relogin.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btn_Relogin, "btn_Relogin");
-            this.btn_Relogin.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Relogin.ImageOptions.Image")));
-            this.btn_Relogin.Name = "btn_Relogin";
-            this.btn_Relogin.Click += new System.EventHandler(this.btn_Relogin_Click);
+            this.btn_OzelMasa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_OzelMasa.Appearance.Font")));
+            this.btn_OzelMasa.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_OzelMasa, "btn_OzelMasa");
+            this.btn_OzelMasa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OzelMasa.ImageOptions.Image")));
+            this.btn_OzelMasa.Name = "btn_OzelMasa";
+            this.btn_OzelMasa.Click += new System.EventHandler(this.btn_OzelMasa_Click);
             // 
-            // simpleButton3
+            // btn_HesapBak
             // 
-            this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.simpleButton3, "simpleButton3");
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            this.btn_HesapBak.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_HesapBak.Appearance.Font")));
+            this.btn_HesapBak.Appearance.Options.UseFont = true;
+            this.btn_HesapBak.Appearance.Options.UseTextOptions = true;
+            this.btn_HesapBak.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            resources.ApplyResources(this.btn_HesapBak, "btn_HesapBak");
+            this.btn_HesapBak.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_HesapBak.ImageOptions.Image")));
+            this.btn_HesapBak.Name = "btn_HesapBak";
+            this.btn_HesapBak.Click += new System.EventHandler(this.btn_HesapBak_Click);
+            // 
+            // btn_Satis
+            // 
+            this.btn_Satis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Satis.Appearance.Font")));
+            this.btn_Satis.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Satis, "btn_Satis");
+            this.btn_Satis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Satis.ImageOptions.Image")));
+            this.btn_Satis.Name = "btn_Satis";
+            this.btn_Satis.Click += new System.EventHandler(this.btn_Satis_Click);
             // 
             // panelControl1
             // 
@@ -900,7 +900,8 @@
             // 
             resources.ApplyResources(this.bar_HesapBak, "bar_HesapBak");
             this.bar_HesapBak.Id = 1;
-            this.bar_HesapBak.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_HesapBak.ImageOptions.Image")));
+            this.bar_HesapBak.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bar_HesapBak.ImageOptions.SvgImage")));
+            this.bar_HesapBak.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
             this.bar_HesapBak.Name = "bar_HesapBak";
             this.bar_HesapBak.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
             // 
@@ -1004,7 +1005,8 @@
             // 
             resources.ApplyResources(this.bar_Rapor, "bar_Rapor");
             this.bar_Rapor.Id = 13;
-            this.bar_Rapor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_Rapor.ImageOptions.Image")));
+            this.bar_Rapor.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bar_Rapor.ImageOptions.SvgImage")));
+            this.bar_Rapor.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
             this.bar_Rapor.Name = "bar_Rapor";
             this.bar_Rapor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
@@ -1032,7 +1034,8 @@
             // 
             resources.ApplyResources(this.bar_PaketSatis, "bar_PaketSatis");
             this.bar_PaketSatis.Id = 23;
-            this.bar_PaketSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_PaketSatis.ImageOptions.Image")));
+            this.bar_PaketSatis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bar_PaketSatis.ImageOptions.SvgImage")));
+            this.bar_PaketSatis.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
             this.bar_PaketSatis.Name = "bar_PaketSatis";
             this.bar_PaketSatis.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_PaketSatis_ItemClick);
             // 
@@ -1060,8 +1063,8 @@
             // 
             resources.ApplyResources(this.barButtonItem11, "barButtonItem11");
             this.barButtonItem11.Id = 15;
-            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
+            this.barButtonItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
+            this.barButtonItem11.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
             this.barButtonItem11.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Firebrick;
             this.barButtonItem11.ItemAppearance.Normal.Options.UseForeColor = true;
             this.barButtonItem11.Name = "barButtonItem11";

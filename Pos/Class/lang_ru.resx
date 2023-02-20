@@ -495,6 +495,9 @@
   <data name="PosTar:" xml:space="preserve">
     <value>Pos Date:</value>
   </data>
+  <data name="PROGRAMI KAPATMAK İSTEDİĞİNİZE EMİN MİSİNİZ?" xml:space="preserve">
+    <value>ВЫ УВЕРЕНЫ, ЧТО ХОТИТЕ ЗАКРЫТЬ ПРОГРАММУ?</value>
+  </data>
   <data name="Programı Kapatıp" xml:space="preserve">
     <value>Close the Program</value>
   </data>
@@ -580,7 +583,7 @@ Community</value>
     <value>Ваш заказ отправлен.</value>
   </data>
   <data name="Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!" xml:space="preserve">
-    <value>System Date and Shipment Date Are Not The Same Please Check!!!</value>
+    <value>Системная дата и дата публикации не совпадают Пожалуйста, проверьте!!!</value>
   </data>
   <data name="Sistemden Çıkıp Yeniden Giriniz..." xml:space="preserve">
     <value>Выйдите и снова войдите в систему...</value>

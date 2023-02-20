@@ -2585,8 +2585,6 @@ namespace Pos
         {
             decimal ToplamtTutar = 0;
 
-
-
             for (int i = 0; i < gridView1.GetSelectedRows().Length; i++)
             {
                 int index = gridView1.GetSelectedRows()[i];
@@ -3190,6 +3188,11 @@ namespace Pos
         private void textEdit4_EditValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridView1_SelectionChanged(object sender, DevExpress.Data.SelectionChangedEventArgs e)
+        {
+            int index = e.ControllerRow;
         }
     }
 }

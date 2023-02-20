@@ -1361,6 +1361,15 @@ namespace Pos.Class {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ARE YOU SURE YOU WANT TO CLOSE THE PROGRAM?.
+        /// </summary>
+        internal static string PROGRAMI_KAPATMAK_İSTEDİĞİNİZE_EMİN_MİSİNİZ_ {
+            get {
+                return ResourceManager.GetString("PROGRAMI KAPATMAK İSTEDİĞİNİZE EMİN MİSİNİZ?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You must enter a Report Name ....
         /// </summary>
         internal static string Rapor_Adı_Girmelisiniz___ {
