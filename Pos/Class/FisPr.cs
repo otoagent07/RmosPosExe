@@ -2673,6 +2673,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             }
 
             hsp.xr_Miktar.Text = String.Format("{0:0.##}", ("[Rsat_Miktar]"));
+            //hsp.xr_Miktar.Text = String.Format("{0:0.##}", ("[Rsat_Miktar]"));
+            //hsp.xr_Miktar.Text = hsp.xr_Miktar.Text.Replace(",0000", "");
 
             hsp.xr_Emiktar.Text = "[Rsat_Emiktar]";
 

@@ -122,6 +122,9 @@
             this.xrLine2 = new DevExpress.XtraReports.UI.XRLine();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrLabel46 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel49 = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtToplamIkram = new DevExpress.XtraReports.UI.XRLabel();
             this.xr_KalanToplamTr = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel47 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel48 = new DevExpress.XtraReports.UI.XRLabel();
@@ -129,9 +132,6 @@
             this.xrLabel45 = new DevExpress.XtraReports.UI.XRLabel();
             this.xr_UrunToplamTr = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.xrLabel46 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel49 = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtToplamIkram = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.table_Odeme)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_UrunGrup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_Doviz)).BeginInit();
@@ -197,6 +197,7 @@
             this.xr_Miktar.Text = "MİKTAR";
             this.xr_Miktar.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xr_Miktar.WordWrap = false;
+            this.xr_Miktar.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xr_Miktar_BeforePrint);
             // 
             // xr_Tutar
             // 
@@ -1329,6 +1330,45 @@
             this.ReportFooter.HeightF = 249.8506F;
             this.ReportFooter.Name = "ReportFooter";
             // 
+            // xrLabel46
+            // 
+            this.xrLabel46.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
+            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(0.01107852F, 86.96569F);
+            this.xrLabel46.Multiline = true;
+            this.xrLabel46.Name = "xrLabel46";
+            this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel46.SizeF = new System.Drawing.SizeF(77.62491F, 13.90908F);
+            this.xrLabel46.StylePriority.UseFont = false;
+            this.xrLabel46.StylePriority.UseTextAlignment = false;
+            this.xrLabel46.Text = "İKRAM TOP.";
+            this.xrLabel46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel49
+            // 
+            this.xrLabel49.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(77.636F, 86.96569F);
+            this.xrLabel49.Multiline = true;
+            this.xrLabel49.Name = "xrLabel49";
+            this.xrLabel49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel49.SizeF = new System.Drawing.SizeF(14.08341F, 13.90908F);
+            this.xrLabel49.StylePriority.UseFont = false;
+            this.xrLabel49.StylePriority.UseTextAlignment = false;
+            this.xrLabel49.Text = ":";
+            this.xrLabel49.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // txtToplamIkram
+            // 
+            this.txtToplamIkram.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
+            this.txtToplamIkram.LocationFloat = new DevExpress.Utils.PointFloat(91.71942F, 86.96569F);
+            this.txtToplamIkram.Multiline = true;
+            this.txtToplamIkram.Name = "txtToplamIkram";
+            this.txtToplamIkram.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.txtToplamIkram.SizeF = new System.Drawing.SizeF(174.3782F, 13.90908F);
+            this.txtToplamIkram.StylePriority.UseFont = false;
+            this.txtToplamIkram.StylePriority.UseTextAlignment = false;
+            this.txtToplamIkram.Text = "0,00";
+            this.txtToplamIkram.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
             // xr_KalanToplamTr
             // 
             this.xr_KalanToplamTr.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
@@ -1411,45 +1451,6 @@
             // 
             this.PageFooter.HeightF = 48.21447F;
             this.PageFooter.Name = "PageFooter";
-            // 
-            // xrLabel46
-            // 
-            this.xrLabel46.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
-            this.xrLabel46.LocationFloat = new DevExpress.Utils.PointFloat(0.01107852F, 86.96569F);
-            this.xrLabel46.Multiline = true;
-            this.xrLabel46.Name = "xrLabel46";
-            this.xrLabel46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel46.SizeF = new System.Drawing.SizeF(77.62491F, 13.90908F);
-            this.xrLabel46.StylePriority.UseFont = false;
-            this.xrLabel46.StylePriority.UseTextAlignment = false;
-            this.xrLabel46.Text = "İKRAM TOP.";
-            this.xrLabel46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel49
-            // 
-            this.xrLabel49.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(77.636F, 86.96569F);
-            this.xrLabel49.Multiline = true;
-            this.xrLabel49.Name = "xrLabel49";
-            this.xrLabel49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel49.SizeF = new System.Drawing.SizeF(14.08341F, 13.90908F);
-            this.xrLabel49.StylePriority.UseFont = false;
-            this.xrLabel49.StylePriority.UseTextAlignment = false;
-            this.xrLabel49.Text = ":";
-            this.xrLabel49.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // txtToplamIkram
-            // 
-            this.txtToplamIkram.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
-            this.txtToplamIkram.LocationFloat = new DevExpress.Utils.PointFloat(91.71942F, 86.96569F);
-            this.txtToplamIkram.Multiline = true;
-            this.txtToplamIkram.Name = "txtToplamIkram";
-            this.txtToplamIkram.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.txtToplamIkram.SizeF = new System.Drawing.SizeF(174.3782F, 13.90908F);
-            this.txtToplamIkram.StylePriority.UseFont = false;
-            this.txtToplamIkram.StylePriority.UseTextAlignment = false;
-            this.txtToplamIkram.Text = "0,00";
-            this.txtToplamIkram.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // Hesap
             // 
