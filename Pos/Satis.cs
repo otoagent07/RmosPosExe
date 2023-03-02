@@ -1243,7 +1243,13 @@ namespace Pos
 
                 }
 
-                if (Departman.Adisyon)
+
+                if (Param.Param_YeniHesapDkm)
+                {
+                    FisPr fis = new FisPr();
+                    fis.newHesapDokum(true, Convert.ToInt32(bartxt_FisNo.EditValue), 0, "* * * HESAP KAPATMA FİŞİ * * *");
+                }
+                else if (Departman.Adisyon)
                 {
                     AdisyonPr ads = new AdisyonPr();
                     ads.Adisyon_Yaz(Convert.ToInt32(bartxt_FisNo.EditValue));
@@ -1254,6 +1260,7 @@ namespace Pos
                     FisPr fis = new FisPr();
                     fis.HesapDokum(false, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
                 }
+
 
                 if (Departman.Fatura)
                 {
@@ -1356,7 +1363,7 @@ namespace Pos
 
         private bool LimitKontrol(decimal odemeTutar)
         {
-            if (Param.Tesis_Tipi == 1)
+                if (Param.Tesis_Tipi == 1)
             {
                 return true;
             }
@@ -3796,7 +3803,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
             {
                 int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
 
-                string odemevarmi = dbtools.DegerGetir(" select top 1 count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='"+ fisno + "' and Rsat_Ba='A'");
+                string odemevarmi = dbtools.DegerGetir(" select top 1 count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + fisno + "' and Rsat_Ba='A'");
                 if (odemevarmi != "0")
                 {
                     MessageBox.Show(res_man.GetString("Ödemeler veya İndirimler Silinemez.."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -3841,9 +3848,9 @@ where  Rsat_Id='" + Rsat_Id + "'";
                     }
 
 
-                   DataTable dataTable= dbtools.SelectTableR(@" select Rsat_Miktar ,Cst_Recete.Rec_Ad ,Rsat_Id,Rsat_Tutar from Cst_Recete_Satis
+                    DataTable dataTable = dbtools.SelectTableR(@" select Rsat_Miktar ,Cst_Recete.Rec_Ad ,Rsat_Id,Rsat_Tutar from Cst_Recete_Satis
  left join cst_recete  on Cst_Recete.Rec_Genelkod=Rsat_Recete
- where Rsat_Fisno='" + fisno+"' and Rsat_Ba<>'A'");
+ where Rsat_Fisno='" + fisno + "' and Rsat_Ba<>'A'");
 
                     foreach (DataRow item in dataTable.Rows)
                     {
@@ -3879,7 +3886,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
                         }
                     }
 
-                    
+
                     gridyenile();
 
                 }

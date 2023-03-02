@@ -569,16 +569,20 @@ namespace Pos
                                                        + " from Cst_Indirim with(nolock) "
                                                        + " where Ind_Kodu in (select FieldValue from StringArray(@Ind,',')) "
                                                        + " ORDER BY Ind_Oran desc");
-                if (dtInd.Rows.Count > 0)
+                if (dtInd != null)
                 {
-                    Ind_Oran = Convert.ToDecimal(dtInd.Rows[0]["Ind_Oran"]);
-                    Ind_Kodu = Convert.ToString(dtInd.Rows[0]["Ind_Kodu"]);
+                    if (dtInd.Rows.Count > 0)
+                    {
+                        Ind_Oran = Convert.ToDecimal(dtInd.Rows[0]["Ind_Oran"]);
+                        Ind_Kodu = Convert.ToString(dtInd.Rows[0]["Ind_Kodu"]);
+                    }
+                    else
+                    {
+                        Ind_Oran = 0;
+                        Ind_Kodu = String.Empty;
+                    }
                 }
-                else
-                {
-                    Ind_Oran = 0;
-                    Ind_Kodu = String.Empty;
-                }
+                
 
                 Bilgi = Oda_No + "  " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Adi_1")) + " " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Adi_2"));
             }
