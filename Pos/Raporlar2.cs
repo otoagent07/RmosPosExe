@@ -564,7 +564,7 @@ order by (Miktar) desc";
             string bastar = dateEdit1.DateTime.ToString("yyyy-MM-dd");
             string bittar = dateEdit2.DateTime.ToString("yyyy-MM-dd");
 
-            string query = @"select Recete.Rec_Ad as Ad  , sum(Rsat_Miktar) as   Miktar,sum(Rsat_Tutar) as Tutar,Rsat_Maliyet  from Cst_Recete_Satis satis
+            string query = @"select Recete.Rec_Ad as Ad  , sum(Rsat_Miktar) as   Miktar,sum(Rsat_Tutar) as Tutar,sum(Rsat_Maliyet) as Rsat_Maliyet  from Cst_Recete_Satis satis
 left join Cst_Recete  Recete on satis.Rsat_Recete=Rec_Genelkod   
 where satis.Rsat_Tarih between '" + bastar + @"' and '" + bittar + @"'
 group by Recete.Rec_Ad ,Rsat_Maliyet

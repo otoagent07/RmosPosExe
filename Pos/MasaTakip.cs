@@ -503,7 +503,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                             + " COUNT(Rez_Id) as RezSayisi, "
-                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi "
+                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi ,(Convert(nvarchar(max),DATEDIFF(MINUTE,MIN(Rsat_Acilis),Convert(time,Getdate()))) + ' DK') as dak"
                             + " from Pos_Masa WITH(NOLOCK) "
                             + " left join Cst_Recete_Satis as satis3 WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                             //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -525,7 +525,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                                  + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                                  + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                                  + " COUNT(Rez_Id) as RezSayisi, "
-                                 + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi "
+                                 + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,(Convert(nvarchar(max),DATEDIFF(MINUTE,MIN(Rsat_Acilis),Convert(time,Getdate()))) + ' DK') as dak "
                                  + " from Pos_Masa WITH(NOLOCK) "
                                  + " left join Cst_Recete_Satis as satis3 WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                                  //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -723,6 +723,8 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
 
                     btnMasa.Appearance.BorderColor = btnMasa.Appearance.BackColor;
+                    btnMasa.Text += "\n" + Convert.ToString(dtMasa.Rows[i]["dak"]);
+
                     //btnMasa.Click += new EventHandler(btnMasa_Click);
                     //btnMasa.DoubleClick += new EventHandler(btnMasa_DoubleClick);
 
@@ -850,7 +852,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                             + " COUNT(Rez_Id) as RezSayisi, "
-                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi "
+                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,(Convert(nvarchar(max),DATEDIFF(MINUTE,MIN(Rsat_Acilis),Convert(time,Getdate()))) + ' DK') as dak "
                             + " from Pos_Masa WITH(NOLOCK) "
                             + " left join Cst_Recete_Satis as satis3 WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                             //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -872,7 +874,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                                  + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                                  + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                                  + " COUNT(Rez_Id) as RezSayisi, "
-                                 + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi "
+                                 + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,(Convert(nvarchar(max),DATEDIFF(MINUTE,MIN(Rsat_Acilis),Convert(time,Getdate()))) + ' DK') as dak "
                                  + " from Pos_Masa WITH(NOLOCK) "
                                  + " left join Cst_Recete_Satis as satis3 WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                                  //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -1064,6 +1066,9 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
 
                     btnMasa.Appearance.BorderColor = btnMasa.Appearance.BackColor;
+
+                    btnMasa.Text += "\n" + Convert.ToString(dtMasa.Rows[i]["dak"]);
+
                     btnMasa.Click += new EventHandler(btnMasa_Click);
                     btnMasa.DoubleClick += new EventHandler(btnMasa_DoubleClick);
 
@@ -1148,7 +1153,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                             + " COUNT(Rez_Id) as RezSayisi, "
-                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi "
+                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,(Convert(nvarchar(max),DATEDIFF(MINUTE,MIN(Rsat_Acilis),Convert(time,Getdate()))) + ' DK') as dak "
                             + " from Pos_Masa WITH(NOLOCK) "
                             + " left join Cst_Recete_Satis WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                             //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -1170,7 +1175,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                              + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                              + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                              + " COUNT(Rez_Id) as RezSayisi, "
-                             + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi "
+                             + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,(Convert(nvarchar(max),DATEDIFF(MINUTE,MIN(Rsat_Acilis),Convert(time,Getdate()))) + ' DK') as dak "
                              + " from Pos_Masa WITH(NOLOCK) "
                              + " left join Cst_Recete_Satis WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                              //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "

@@ -249,9 +249,11 @@
             // 
             // btn_Yazdirkapat
             // 
+            this.btn_Yazdirkapat.Appearance.BackColor = System.Drawing.Color.Lime;
             this.btn_Yazdirkapat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Yazdirkapat.Appearance.Font")));
+            this.btn_Yazdirkapat.Appearance.Options.UseBackColor = true;
             this.btn_Yazdirkapat.Appearance.Options.UseFont = true;
-            this.btn_Yazdirkapat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Yazdirkapat.ImageOptions.SvgImage")));
+            this.btn_Yazdirkapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Yazdirkapat.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Yazdirkapat, "btn_Yazdirkapat");
             this.btn_Yazdirkapat.Name = "btn_Yazdirkapat";
             this.btn_Yazdirkapat.Click += new System.EventHandler(this.btn_Yazdirkapat_Click);
@@ -260,7 +262,7 @@
             // 
             this.btn_Yazdirmadankapat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Yazdirmadankapat.Appearance.Font")));
             this.btn_Yazdirmadankapat.Appearance.Options.UseFont = true;
-            this.btn_Yazdirmadankapat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Yazdirmadankapat.ImageOptions.SvgImage")));
+            this.btn_Yazdirmadankapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Yazdirmadankapat.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Yazdirmadankapat, "btn_Yazdirmadankapat");
             this.btn_Yazdirmadankapat.Name = "btn_Yazdirmadankapat";
             this.btn_Yazdirmadankapat.Click += new System.EventHandler(this.btn_Yazdirmadankapat_Click);
@@ -279,20 +281,24 @@
             // btn_Odemeal
             // 
             resources.ApplyResources(this.btn_Odemeal, "btn_Odemeal");
+            this.btn_Odemeal.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_Odemeal.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Odemeal.Appearance.Font")));
+            this.btn_Odemeal.Appearance.Options.UseBackColor = true;
             this.btn_Odemeal.Appearance.Options.UseFont = true;
             this.btn_Odemeal.Appearance.Options.UseTextOptions = true;
             this.btn_Odemeal.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.btn_Odemeal.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Odemeal.ImageOptions.SvgImage")));
+            this.btn_Odemeal.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Odemeal.ImageOptions.Image")));
             this.btn_Odemeal.Name = "btn_Odemeal";
             this.btn_Odemeal.Click += new System.EventHandler(this.btn_Odemeal_Click);
             // 
             // btn_Odemesil
             // 
             resources.ApplyResources(this.btn_Odemesil, "btn_Odemesil");
+            this.btn_Odemesil.Appearance.BackColor = System.Drawing.Color.Red;
             this.btn_Odemesil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Odemesil.Appearance.Font")));
+            this.btn_Odemesil.Appearance.Options.UseBackColor = true;
             this.btn_Odemesil.Appearance.Options.UseFont = true;
-            this.btn_Odemesil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Odemesil.ImageOptions.SvgImage")));
+            this.btn_Odemesil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Odemesil.ImageOptions.Image")));
             this.btn_Odemesil.Name = "btn_Odemesil";
             this.btn_Odemesil.Click += new System.EventHandler(this.btn_Odemesil_Click);
             // 
