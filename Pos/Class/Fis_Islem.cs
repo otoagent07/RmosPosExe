@@ -9,7 +9,7 @@ namespace Pos.Class
 {
     public class Fis_Islem
     {
-        public static void Manuel_Indirim(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split)
+        public static void Manuel_Indirim(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split,string neden="")
         {
 
             SqlConnection con = dbtools.conn;
@@ -27,6 +27,7 @@ namespace Pos.Class
             com.Parameters.AddWithValue("@Ind_Turu", "MANUEL");
             com.Parameters.AddWithValue("@Split", Split);
             com.Parameters.AddWithValue("@Ind_User", User.P_Kod);
+            com.Parameters.AddWithValue("@aciklama", neden);
             com.ExecuteNonQuery();
             if (con.State == ConnectionState.Open) con.Close();
         }

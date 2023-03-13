@@ -59,17 +59,13 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.rBtnArti = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.rBtnEksi = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.chk_Hesapdok = new DevExpress.XtraEditors.CheckButton();
             this.btn_Fisupdate = new DevExpress.XtraEditors.SimpleButton();
             this.txt_Not = new DevExpress.XtraEditors.MemoEdit();
@@ -107,8 +103,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rBtnArti)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rBtnEksi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Not.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_DovizKod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -335,9 +329,6 @@
             this.gridControl1.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl1.EmbeddedNavigator.Margin")));
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.rBtnArti,
-            this.rBtnEksi});
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -346,6 +337,7 @@
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
+            this.gridColumn18,
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn5,
@@ -354,10 +346,7 @@
             this.gridColumn12,
             this.gridColumn13,
             this.gridColumn14,
-            this.gridColumn15,
-            this.gridColumn16,
-            this.gridColumn17,
-            this.gridColumn18});
+            this.gridColumn15});
             this.gridView1.DetailHeight = 284;
             gridFormatRule1.ApplyToRow = true;
             gridFormatRule1.Column = this.gridColumn13;
@@ -401,7 +390,7 @@
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
-            this.gridView1.RowHeight = 20;
+            this.gridView1.RowHeight = 30;
             this.gridView1.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.gridView1_SelectionChanged);
             // 
             // gridColumn2
@@ -412,6 +401,16 @@
             this.gridColumn2.MinWidth = 17;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn18
+            // 
+            this.gridColumn18.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn18.AppearanceCell.Font")));
+            this.gridColumn18.AppearanceCell.Options.UseFont = true;
+            resources.ApplyResources(this.gridColumn18, "gridColumn18");
+            this.gridColumn18.FieldName = "Rsat_UrunBazliHspAdet";
+            this.gridColumn18.MinWidth = 17;
+            this.gridColumn18.Name = "gridColumn18";
+            this.gridColumn18.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn3
             // 
@@ -474,50 +473,6 @@
             this.gridColumn14.MinWidth = 17;
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowFocus = false;
-            // 
-            // gridColumn16
-            // 
-            resources.ApplyResources(this.gridColumn16, "gridColumn16");
-            this.gridColumn16.ColumnEdit = this.rBtnArti;
-            this.gridColumn16.FieldName = "rBtnArti";
-            this.gridColumn16.MinWidth = 17;
-            this.gridColumn16.Name = "gridColumn16";
-            // 
-            // rBtnArti
-            // 
-            resources.ApplyResources(this.rBtnArti, "rBtnArti");
-            this.rBtnArti.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("rBtnArti.Buttons"))))});
-            this.rBtnArti.Name = "rBtnArti";
-            this.rBtnArti.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.rBtnArti.Click += new System.EventHandler(this.rBtnArti_Click);
-            // 
-            // gridColumn17
-            // 
-            resources.ApplyResources(this.gridColumn17, "gridColumn17");
-            this.gridColumn17.ColumnEdit = this.rBtnEksi;
-            this.gridColumn17.FieldName = "rBtnEksi";
-            this.gridColumn17.MinWidth = 17;
-            this.gridColumn17.Name = "gridColumn17";
-            // 
-            // rBtnEksi
-            // 
-            resources.ApplyResources(this.rBtnEksi, "rBtnEksi");
-            this.rBtnEksi.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("rBtnEksi.Buttons"))))});
-            this.rBtnEksi.Name = "rBtnEksi";
-            this.rBtnEksi.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.rBtnEksi.Click += new System.EventHandler(this.rBtnEksi_Click);
-            // 
-            // gridColumn18
-            // 
-            this.gridColumn18.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn18.AppearanceCell.Font")));
-            this.gridColumn18.AppearanceCell.Options.UseFont = true;
-            resources.ApplyResources(this.gridColumn18, "gridColumn18");
-            this.gridColumn18.FieldName = "Rsat_UrunBazliHspAdet";
-            this.gridColumn18.MinWidth = 17;
-            this.gridColumn18.Name = "gridColumn18";
-            this.gridColumn18.OptionsColumn.AllowFocus = false;
             // 
             // chk_Hesapdok
             // 
@@ -880,8 +835,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rBtnArti)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rBtnEksi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Not.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_DovizKod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
@@ -948,10 +901,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
         private DevExpress.XtraEditors.CheckButton chk_AdisyonGR;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit rBtnArti;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit rBtnEksi;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
         public DevExpress.XtraEditors.LabelControl lbl_Bilgi;
         private DevExpress.XtraEditors.SimpleButton btnFisIptal;

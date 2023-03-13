@@ -71,8 +71,11 @@ namespace Pos
             chk_Sec = null;
         }
 
+        public bool cikisyapti = false;
+
         private void btn_Y_Cikis_Click(object sender, EventArgs e)
         {
+            cikisyapti = true;
             indTipi = String.Empty;
             indSayi = 0;
             this.Close();

@@ -76,7 +76,7 @@ namespace Pos.Class
             Android
         }
 
-        public static void Log_Kaydet(Log_Program Program, Log_Bolum Bolum, Log_Islem Islem, string Aciklama, string Fisno, string Islem_ID)
+        public static void Log_Kaydet(Log_Program Program, Log_Bolum Bolum, Log_Islem Islem, string Aciklama, string Fisno, string Islem_ID,string neden="")
         {
             SqlConnection con = dbtools.conn;
             if (con.State == ConnectionState.Closed) con.Open();
@@ -93,7 +93,7 @@ namespace Pos.Class
             com.Parameters.AddWithValue("@Log_Aciklama", Aciklama);
             com.Parameters.AddWithValue("@Log_FisNo", Fisno);
             com.Parameters.AddWithValue("@Log_IslemId", Islem_ID);
-
+            com.Parameters.AddWithValue("@Log_Neden", neden);
             com.ExecuteNonQuery();
             if (con.State == ConnectionState.Open) con.Close();
         }

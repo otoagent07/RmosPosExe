@@ -168,8 +168,8 @@ namespace Pos
                 btnIngenicoKapat.Visible = Departman.Kodlar_Ingenico;
                 // simpleButton2.Visible = Departman.Kodlar_Ingenico;
                 chk_AdisyonGR.Visible = true;// User.Pos_AdisyonPr;
-                gridColumn16.Visible = User.Pos_HesapArti;
-                gridColumn17.Visible = User.Pos_HesapArti;
+                //gridColumn16.Visible = User.Pos_HesapArti;
+                //gridColumn17.Visible = User.Pos_HesapArti;
                 gridColumn18.Visible = User.Pos_HesapArti;
 
                 if (Departman.Kodlar_Ingenico)
@@ -237,7 +237,7 @@ namespace Pos
                     s.Masa_No = Masa_No;
                     decimal artik = Convert.ToDecimal(txt_Odemetutari.EditValue) % (model.yuvarlamaFiyat / 100);
                     s.Yuv_Tutar = (model.yuvarlamaFiyat / 100) - artik;
-                    s.Urun_Sat(model.yuvarlamaRecete,siparisPr:true);
+                    s.Urun_Sat(model.yuvarlamaRecete, siparisPr: true);
 
                     gridyenile();
                     Bakiye_Kontrol();
@@ -305,11 +305,11 @@ namespace Pos
                 txt_Hesapno.EditValue = odaNo_A;
                 lbl_Bilgi.Text = ara.Bilgi;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                RHMesaj.alertMesajSagUst("Hesap.Hesap_Bul", ""+ex.Message,6);
+                RHMesaj.alertMesajSagUst("Hesap.Hesap_Bul", "" + ex.Message, 6);
             }
-           
+
         }
 
         private void Bakiye_Kontrol()
@@ -1021,7 +1021,7 @@ namespace Pos
             {
                 if (ozelKod2 == -1)
                 {
-                    
+
                     ikramR();
                 }
 
@@ -1123,7 +1123,7 @@ namespace Pos
 
                     Fis_Islem.Odeme_Al(Convert.ToInt32(this.Tag), tutar, doviztutar, Convert.ToString(look_Kapatma.EditValue), musTipi_A, odaNo_A, folio_A, cari_A, Split, Convert.ToString(look_DovizKod.EditValue), chk_AdsPr.Checked, mevcutToplamTutar);
 
-                    
+
 
                     Fis_Islem.Satis_Tip(Convert.ToInt32(this.Tag), Convert.ToString(look_Kapatma.EditValue), pansiyon_A);
 
@@ -1158,10 +1158,10 @@ namespace Pos
             decimal indirim = 0;
             try
             {
-                 indirim = Convert.ToDecimal(Fronttools.DegerGetir("select top 1 Rez_Ext_indirim from rez where Rez_Odano='" + odaNo_A + "' and Rez_R_I_H='I' and Rez_Master_id='" + masterFolio_A + "'"));
+                indirim = Convert.ToDecimal(Fronttools.DegerGetir("select top 1 Rez_Ext_indirim from rez where Rez_Odano='" + odaNo_A + "' and Rez_R_I_H='I' and Rez_Master_id='" + masterFolio_A + "'"));
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
@@ -1286,6 +1286,16 @@ namespace Pos
             ind.tutar = Convert.ToDecimal(gridColumn4.SummaryText);
             ind.ShowDialog();
 
+
+            string neden = "";
+            if (Departman.Kodlar_YazSipNedSor && ind.cikisyapti == false)
+            {
+                Klavye2 klv = new Klavye2();
+                klv.ShowDialog();
+                neden = klv.yazi == null ? "" : klv.yazi; 
+            }
+
+
             decimal tutar = 0, doviztutar = 0, oran = 0;
             if (ind.indTipi == "T")
             {
@@ -1343,19 +1353,19 @@ namespace Pos
             if (oran > 0 || tutar > 0)
             {
                 int fisno = Convert.ToInt32(this.Tag);
-                Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split);
+                Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split,neden:neden);
 
                 decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
 
                 if (oran > 0)
                 {
                     string aciklama = "İNDİRİM UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " İNDİRİM ORANI : " + oran + " İNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "",neden:neden);
                 }
                 else if (tutar > 0)
                 {
                     string aciklama = "İNDİRİM UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " İNDİRİM TUTARI : " + tutar + " İNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "",neden:neden);
                 }
 
                 //gridyenile();
@@ -1447,22 +1457,22 @@ namespace Pos
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "onburoExtraIndrimVarsaUygula", "",ex);
+                RHMesaj.MyMessageError(MyClass, "onburoExtraIndrimVarsaUygula", "", ex);
             }
         }
         public void yazdirmadanKapat()
         {
             try
             {
-                
-                
+
+
                 if (odemeKontrol() == false)
                 {
                     return;
                 }
-                
+
                 FisKontrol();
                 cikis = true;
                 btn_Yazdirkapat.Enabled = false;
@@ -1852,7 +1862,7 @@ namespace Pos
         }
 
 
-       
+
         private void btn_Yazdirkapat_Click(object sender, EventArgs e)
         {
 
@@ -2738,49 +2748,49 @@ namespace Pos
         }
 
 
-        private void rBtnArti_Click(object sender, EventArgs e)
-        {
-            if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Ba")) == "B")
-            {
-                txt_Odemetutari.EditValue = 0;
-                int OdenenMiktar = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_UrunBazliHspAdet"));
-                //int RsatID = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
+        //private void rBtnArti_Click(object sender, EventArgs e)
+        //{
+        //    if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Ba")) == "B")
+        //    {
+        //        txt_Odemetutari.EditValue = 0;
+        //        int OdenenMiktar = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_UrunBazliHspAdet"));
+        //        //int RsatID = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
 
-                if (OdenenMiktar < Convert.ToInt32(gridView1.GetFocusedRowCellValue(gridColumn2)))
-                {
-                    OdenenMiktar++;
-                    gridView1.SetFocusedRowCellValue("Rsat_UrunBazliHspAdet", OdenenMiktar);
-                    //dbtools.execcmd("Update Cst_Recete_Satis set Rsat_UrunBazliHspAdet = '" + OdenenMiktar + "' where Rsat_Id = '" + RsatID + "'");
+        //        if (OdenenMiktar < Convert.ToInt32(gridView1.GetFocusedRowCellValue(gridColumn2)))
+        //        {
+        //            OdenenMiktar++;
+        //            gridView1.SetFocusedRowCellValue("Rsat_UrunBazliHspAdet", OdenenMiktar);
+        //            //dbtools.execcmd("Update Cst_Recete_Satis set Rsat_UrunBazliHspAdet = '" + OdenenMiktar + "' where Rsat_Id = '" + RsatID + "'");
 
-                    OdemeTutari += ((Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")) / Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"))));
+        //            OdemeTutari += ((Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")) / Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"))));
 
-                    txt_Odemetutari.EditValue = OdemeTutari;
-                }
-            }
-        }
+        //            txt_Odemetutari.EditValue = OdemeTutari;
+        //        }
+        //    }
+        //}
 
-        private void rBtnEksi_Click(object sender, EventArgs e)
-        {
-            if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Ba")) == "B")
-            {
-                txt_Odemetutari.EditValue = 0;
-                int OdenenMiktar = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_UrunBazliHspAdet"));
-                //int RsatID = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
+        //private void rBtnEksi_Click(object sender, EventArgs e)
+        //{
+        //    if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Ba")) == "B")
+        //    {
+        //        txt_Odemetutari.EditValue = 0;
+        //        int OdenenMiktar = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_UrunBazliHspAdet"));
+        //        //int RsatID = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
 
-                if (OdenenMiktar <= Convert.ToInt32(gridView1.GetFocusedRowCellValue(gridColumn2)))
-                {
-                    OdenenMiktar--;
-                    OdenenMiktar = (OdenenMiktar < 0 ? 0 : OdenenMiktar);
-                    gridView1.SetFocusedRowCellValue("Rsat_UrunBazliHspAdet", OdenenMiktar);
+        //        if (OdenenMiktar <= Convert.ToInt32(gridView1.GetFocusedRowCellValue(gridColumn2)))
+        //        {
+        //            OdenenMiktar--;
+        //            OdenenMiktar = (OdenenMiktar < 0 ? 0 : OdenenMiktar);
+        //            gridView1.SetFocusedRowCellValue("Rsat_UrunBazliHspAdet", OdenenMiktar);
 
-                    //dbtools.execcmd("Update Cst_Recete_Satis set Rsat_UrunBazliHspAdet = '" + OdenenMiktar + "' where Rsat_Id = '" + RsatID + "'");
+        //            //dbtools.execcmd("Update Cst_Recete_Satis set Rsat_UrunBazliHspAdet = '" + OdenenMiktar + "' where Rsat_Id = '" + RsatID + "'");
 
-                    OdemeTutari -= ((Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")) / Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"))));
+        //            OdemeTutari -= ((Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")) / Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"))));
 
-                    txt_Odemetutari.EditValue = ((OdemeTutari < 0 ? 0 : OdemeTutari));
-                }
-            }
-        }
+        //            txt_Odemetutari.EditValue = ((OdemeTutari < 0 ? 0 : OdemeTutari));
+        //        }
+        //    }
+        //}
 
         private void MiktarDuzelt()
         {
@@ -3178,11 +3188,11 @@ namespace Pos
 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
-           
+
         }
 
         private void textEdit4_EditValueChanged(object sender, EventArgs e)

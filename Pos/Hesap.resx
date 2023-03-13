@@ -139,10 +139,10 @@
     <value>True</value>
   </data>
   <data name="gridColumn1.VisibleIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="gridColumn1.Width" type="System.Int32, mscorlib">
-    <value>156</value>
+    <value>225</value>
   </data>
   <data name="gridColumn6.Caption" xml:space="preserve">
     <value>Ba</value>
@@ -556,7 +556,7 @@
 </value>
   </data>
   <data name="btn_HesapDokumu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 135</value>
+    <value>643, 135</value>
   </data>
   <data name="btn_HesapDokumu.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -629,7 +629,7 @@
 </value>
   </data>
   <data name="btn_Odemeal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 185</value>
+    <value>643, 185</value>
   </data>
   <data name="btn_Odemeal.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -677,7 +677,7 @@
 </value>
   </data>
   <data name="btn_Odemesil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 234</value>
+    <value>643, 234</value>
   </data>
   <data name="btn_Odemesil.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -735,7 +735,7 @@
 </value>
   </data>
   <data name="btn_Indirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 234</value>
+    <value>774, 234</value>
   </data>
   <data name="btn_Indirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -809,7 +809,7 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>574, 541</value>
+    <value>644, 545</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 54</value>
@@ -839,7 +839,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Adisyon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 332</value>
+    <value>643, 332</value>
   </data>
   <data name="chk_Adisyon.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 55</value>
@@ -881,10 +881,25 @@
     <value>True</value>
   </data>
   <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="gridColumn2.Width" type="System.Int32, mscorlib">
-    <value>60</value>
+    <value>98</value>
+  </data>
+  <data name="gridColumn18.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn18.Caption" xml:space="preserve">
+    <value>Odenen Miktar</value>
+  </data>
+  <data name="gridColumn18.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn18.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn18.Width" type="System.Int32, mscorlib">
+    <value>124</value>
   </data>
   <data name="gridColumn3.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -896,10 +911,10 @@
     <value>True</value>
   </data>
   <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="gridColumn3.Width" type="System.Int32, mscorlib">
-    <value>59</value>
+    <value>100</value>
   </data>
   <data name="gridColumn4.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -938,65 +953,11 @@
   <data name="gridColumn14.Caption" xml:space="preserve">
     <value>Reçete Kodu</value>
   </data>
-  <data name="gridColumn16.Caption" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="rBtnArti.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="rBtnArti.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Glyph</value>
-  </data>
-  <data name="gridColumn16.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn16.VisibleIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="gridColumn16.Width" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="gridColumn17.Caption" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="rBtnEksi.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="rBtnEksi.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Glyph</value>
-  </data>
-  <data name="gridColumn17.Fixed" type="DevExpress.XtraGrid.Columns.FixedStyle, DevExpress.XtraGrid.v19.1">
-    <value>Right</value>
-  </data>
-  <data name="gridColumn17.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn17.VisibleIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="gridColumn17.Width" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="gridColumn18.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="gridColumn18.Caption" xml:space="preserve">
-    <value>Odenen Miktar</value>
-  </data>
-  <data name="gridColumn18.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn18.VisibleIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="gridColumn18.Width" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
   <data name="resource.BackColor2" type="System.Drawing.Color, System.Drawing">
     <value>YellowGreen</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>556, 365</value>
+    <value>626, 369</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1020,7 +981,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Hesapdok.Location" type="System.Drawing.Point, System.Drawing">
-    <value>643, 332</value>
+    <value>713, 332</value>
   </data>
   <data name="chk_Hesapdok.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -1074,7 +1035,7 @@
     <value>Bottom, Right</value>
   </data>
   <data name="txt_Not.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 559</value>
+    <value>385, 563</value>
   </data>
   <data name="txt_Not.Properties.NullValuePrompt" xml:space="preserve">
     <value>Adisyon Notu Giriniz...</value>
@@ -1130,7 +1091,7 @@
 </value>
   </data>
   <data name="btn_Bindirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 283</value>
+    <value>774, 283</value>
   </data>
   <data name="btn_Bindirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1191,7 +1152,7 @@
 </value>
   </data>
   <data name="btn_Yuvarla.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 393</value>
+    <value>643, 393</value>
   </data>
   <data name="btn_Yuvarla.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 53</value>
@@ -1311,7 +1272,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 560</value>
+    <value>125, 564</value>
   </data>
   <data name="gridView2.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 7pt, style=Bold</value>
@@ -1371,7 +1332,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_HesabaFatura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 393</value>
+    <value>844, 393</value>
   </data>
   <data name="chk_HesabaFatura.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 53</value>
@@ -1401,7 +1362,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_AdisYaz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 332</value>
+    <value>844, 332</value>
   </data>
   <data name="btn_AdisYaz.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -1590,7 +1551,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdsPr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 332</value>
+    <value>774, 332</value>
   </data>
   <data name="chk_AdsPr.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 55</value>
@@ -1638,7 +1599,7 @@
 </value>
   </data>
   <data name="btnIngenicoKapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 86</value>
+    <value>643, 86</value>
   </data>
   <data name="btnIngenicoKapat.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 43</value>
@@ -1693,7 +1654,7 @@
 </value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>754, 4</value>
+    <value>824, 4</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 24</value>
@@ -1766,7 +1727,7 @@
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 283</value>
+    <value>643, 283</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1841,7 +1802,7 @@
 </value>
   </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 184</value>
+    <value>774, 184</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1890,7 +1851,7 @@
 </value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 135</value>
+    <value>774, 135</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1920,7 +1881,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdisyonGR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>643, 393</value>
+    <value>713, 393</value>
   </data>
   <data name="chk_AdisyonGR.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 53</value>
@@ -1990,7 +1951,7 @@
 </value>
   </data>
   <data name="btnFisIptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 465</value>
+    <value>643, 465</value>
   </data>
   <data name="btnFisIptal.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 54</value>
@@ -2023,7 +1984,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnSpSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 393</value>
+    <value>774, 393</value>
   </data>
   <data name="btnSpSil.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 53</value>
@@ -2053,7 +2014,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>834, 682</value>
+    <value>904, 686</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -2097,6 +2058,12 @@
   <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;gridColumn18.Name" xml:space="preserve">
+    <value>gridColumn18</value>
+  </data>
+  <data name="&gt;&gt;gridColumn18.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
     <value>gridColumn3</value>
   </data>
@@ -2131,36 +2098,6 @@
     <value>gridColumn14</value>
   </data>
   <data name="&gt;&gt;gridColumn14.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn16.Name" xml:space="preserve">
-    <value>gridColumn16</value>
-  </data>
-  <data name="&gt;&gt;gridColumn16.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rBtnArti.Name" xml:space="preserve">
-    <value>rBtnArti</value>
-  </data>
-  <data name="&gt;&gt;rBtnArti.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn17.Name" xml:space="preserve">
-    <value>gridColumn17</value>
-  </data>
-  <data name="&gt;&gt;gridColumn17.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rBtnEksi.Name" xml:space="preserve">
-    <value>rBtnEksi</value>
-  </data>
-  <data name="&gt;&gt;rBtnEksi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn18.Name" xml:space="preserve">
-    <value>gridColumn18</value>
-  </data>
-  <data name="&gt;&gt;gridColumn18.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
