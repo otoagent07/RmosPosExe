@@ -414,6 +414,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>lang_ru.resx</DependentUpon>
     </Compile>
+    <Compile Include="ParcaliOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParcaliOdeme.Designer.cs">
+      <DependentUpon>ParcaliOdeme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Print\CariBakiyeKontrolRapor.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1633,6 +1639,9 @@
     <EmbeddedResource Include="ParaUstu.resx">
       <DependentUpon>ParaUstu.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParcaliOdeme.resx">
+      <DependentUpon>ParcaliOdeme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pos_CariList.en-US.resx">
       <DependentUpon>Pos_CariList.cs</DependentUpon>

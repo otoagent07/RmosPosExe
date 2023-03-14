@@ -336,6 +336,8 @@ namespace Pos
                     return;
                 }
 
+
+
                 Kisi_Garson sor = new Kisi_Garson();
                 sor.Tag = this.Tag;
                 sor.ShowDialog();
@@ -1363,7 +1365,7 @@ namespace Pos
 
         private bool LimitKontrol(decimal odemeTutar)
         {
-                if (Param.Tesis_Tipi == 1)
+            if (Param.Tesis_Tipi == 1)
             {
                 return true;
             }

@@ -3204,6 +3204,12 @@ namespace Pos
         {
             int index = e.ControllerRow;
         }
+
+        private void btnParcaliOde_Click(object sender, EventArgs e)
+        {
+            ParcaliOdeme parcaliOdeme = new ParcaliOdeme(this.Tag.ToString(),Masa_No);
+            parcaliOdeme.ShowDialog();
+        }
     }
 }
 

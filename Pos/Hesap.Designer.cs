@@ -95,6 +95,7 @@
             this.chk_AdisyonGR = new DevExpress.XtraEditors.CheckButton();
             this.btnFisIptal = new DevExpress.XtraEditors.SimpleButton();
             this.btnSpSil = new DevExpress.XtraEditors.SimpleButton();
+            this.btnParcaliOde = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -274,7 +275,7 @@
             this.btn_HesapDokumu.Appearance.Options.UseFont = true;
             this.btn_HesapDokumu.Appearance.Options.UseTextOptions = true;
             this.btn_HesapDokumu.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.btn_HesapDokumu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_HesapDokumu.ImageOptions.SvgImage")));
+            this.btn_HesapDokumu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_HesapDokumu.ImageOptions.Image")));
             this.btn_HesapDokumu.Name = "btn_HesapDokumu";
             this.btn_HesapDokumu.Click += new System.EventHandler(this.btn_HesapDokumu_Click);
             // 
@@ -294,7 +295,7 @@
             // btn_Odemesil
             // 
             resources.ApplyResources(this.btn_Odemesil, "btn_Odemesil");
-            this.btn_Odemesil.Appearance.BackColor = System.Drawing.Color.Red;
+            this.btn_Odemesil.Appearance.BackColor = System.Drawing.Color.Snow;
             this.btn_Odemesil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Odemesil.Appearance.Font")));
             this.btn_Odemesil.Appearance.Options.UseBackColor = true;
             this.btn_Odemesil.Appearance.Options.UseFont = true;
@@ -307,7 +308,7 @@
             resources.ApplyResources(this.btn_Indirim, "btn_Indirim");
             this.btn_Indirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Indirim.Appearance.Font")));
             this.btn_Indirim.Appearance.Options.UseFont = true;
-            this.btn_Indirim.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Indirim.ImageOptions.SvgImage")));
+            this.btn_Indirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Indirim.ImageOptions.Image")));
             this.btn_Indirim.Name = "btn_Indirim";
             this.btn_Indirim.Click += new System.EventHandler(this.btn_Indirim_Click);
             // 
@@ -511,7 +512,7 @@
             resources.ApplyResources(this.btn_Bindirim, "btn_Bindirim");
             this.btn_Bindirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Bindirim.Appearance.Font")));
             this.btn_Bindirim.Appearance.Options.UseFont = true;
-            this.btn_Bindirim.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Bindirim.ImageOptions.SvgImage")));
+            this.btn_Bindirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Bindirim.ImageOptions.Image")));
             this.btn_Bindirim.Name = "btn_Bindirim";
             this.btn_Bindirim.Click += new System.EventHandler(this.btn_Bindirim_Click);
             // 
@@ -780,11 +781,23 @@
             this.btnSpSil.Name = "btnSpSil";
             this.btnSpSil.Click += new System.EventHandler(this.btnSpSil_Click);
             // 
+            // btnParcaliOde
+            // 
+            this.btnParcaliOde.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnParcaliOde.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnParcaliOde.Appearance.Font")));
+            this.btnParcaliOde.Appearance.Options.UseBackColor = true;
+            this.btnParcaliOde.Appearance.Options.UseFont = true;
+            this.btnParcaliOde.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnParcaliOde.ImageOptions.Image")));
+            resources.ApplyResources(this.btnParcaliOde, "btnParcaliOde");
+            this.btnParcaliOde.Name = "btnParcaliOde";
+            this.btnParcaliOde.Click += new System.EventHandler(this.btnParcaliOde_Click);
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btnParcaliOde);
             this.Controls.Add(this.btnSpSil);
             this.Controls.Add(this.btnFisIptal);
             this.Controls.Add(this.chk_AdisyonGR);
@@ -911,5 +924,6 @@
         public DevExpress.XtraEditors.LabelControl lbl_Bilgi;
         private DevExpress.XtraEditors.SimpleButton btnFisIptal;
         private DevExpress.XtraEditors.SimpleButton btnSpSil;
+        private DevExpress.XtraEditors.SimpleButton btnParcaliOde;
     }
 }

@@ -16,7 +16,7 @@ namespace Pos.Entities
     public partial class RmosMerkez21Entities : DbContext
     {
         public RmosMerkez21Entities()
-                 : base("name=RmosMerkez21Entities")
+            : base("name=RmosMerkez21Entities")
         {
         }
 
@@ -31,6 +31,7 @@ namespace Pos.Entities
                + "MultipleActiveResultSets=True';")
         {
         }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

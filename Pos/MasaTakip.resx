@@ -137,6 +137,69 @@
   <data name="bar3.BarAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
+  <data name="bartxt_Kul.Caption" xml:space="preserve">
+    <value>Kullanıcı : </value>
+  </data>
+  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_Dep.Caption" xml:space="preserve">
+    <value>Departman : </value>
+  </data>
+  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_FisNo.Caption" xml:space="preserve">
+    <value>Fis No : </value>
+  </data>
+  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
+    <value>Boş Masa :</value>
+  </data>
+  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_BosMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
+    <value>Dolu Masa : </value>
+  </data>
+  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_DoluMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="barspn_Refresh.Caption" xml:space="preserve">
+    <value>Kalan Süre : </value>
+  </data>
+  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barspn_Refresh.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="barStaticItem1.Caption" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="repositoryItemTextEdit5.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barStaticItem2.Caption" xml:space="preserve">
+    <value>Kuver Tutari :</value>
+  </data>
+  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="bar3.Text" xml:space="preserve">
     <value>Status bar</value>
   </data>
@@ -2217,6 +2280,101 @@ Kontrol</value>
         Kj0A2p9kvPb+z+hg4fP9BJ0SlnASZtoJAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="bar_MasaTransfer.Caption" xml:space="preserve">
+    <value>Masa Transfer</value>
+  </data>
+  <data name="bar_MasaTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAwZJREFUWEfdl91OE1EQxwuIFxo/00isu+dztpVUEW0iELkoRFEvMEbEqBCjJkZs
+        lETkS7zQxGfwwkS58hF8Cp/K/5Sh6Xa3tCw0Jv6SyZ4553R3dmbO7DTnnFNe21WvzPJ+xSmzWXTuZu4g
+        4EavZZgJMlQtWntd1P3Dby/DTHit75LW10SNUSqVTsiwPb0yAPPTxUIxL2p7emGA03qOjBkXdW8O04BK
+        pTIYGfMdybnhlX3WKqTUfMIrh+yBvmFD41brLe992CrDWp/3Sq0XCoVjsv/QDaijlDqDua1qrnpEphqQ
+        so984EnU3hiwC9cYGTZIGEDGbXDssgpZOwu3VuR2HUnzwG8Uo/Ws4rT56Y15LLfrSGoI+A04S13gLst0
+        1+wVgjSSBlj7KjLRmLV2hogmcB0RuQJ5uCuI56TMx8RpN0chebldRxIGMN74O1iYbRac5c8Uum9RaL+y
+        kLa/WveUlJ3P5/Ody20TKFC305KzlYFIm+3I2lUUlmUW/HCb31jWewtK6VODxHKhqzXEuBfIk3ew/pRs
+        6x2kzBcK7b1WlyNf1igMu453ZlA2z7UmGwvevihb/kNQ0WZk+G9Aln/EpW9Hy07mJD2oAT40950xmyjL
+        z1EZa1rrKVnqjgMYMIBy/raktcW4nyd2Psd0lcs0jvNFXKdRZU/yWluyGoDjuYgHOlFj4OGjqCkPUMhG
+        I+VR0KIxWUqSZkBaQ9EM3Gy5/xO1Iy40S3SBAlHjpBnAbkM8J0RNwP8JrLK3RO0Ih4Mc1SRccdCYvMGG
+        06I24PixG8vl8lGZqoMGs8yxr+QqgzLVFS4IIiTrE07WmIf54RHXenS0rUKh/oHvwB+0lpd4L39OYVSt
+        /sOMoNpOtfPeQLM4pSatUovinXqIDI5c4pu+f/rhiSUZp8N/rZAbVVEb8By6qBuiZgLfFg0vLoiaDjed
+        MowxMjR0HGFZSU2mLqg/PNS1tieiG4IgOMvJRNq9hEfe47SsIGE/1HtMbdfqDSvnD04X1raw9okF9QCN
+        rF7YeXgu9xdYC8kHVXz+FQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bar_MasaTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_MasaIslem.Caption" xml:space="preserve">
+    <value>Masa İşlemleri</value>
+  </data>
+  <data name="bar_MasaIslem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAmVJREFUWEfNV02oTVEUPoQoE/Liueestc45+1w6I7rFgFwDA2XACBmYKflJYWT6
+        TMhIZsYyMVDPgKH0MiCUZKSUmFAUIu/5+da+6/Vu17nPfa+zT776uuess9Ze3/5Ze+8b1YSljuValtB3
+        /E6VY+Vqs4dFe7y9ziVyJk/oGRL/nmUust9cwqEsyxVZIg/7E8+Rt5pbWBDRGoh40pf8F0bkY85ypxt1
+        l5lbWPhpYH7uBRDddSJdrIUfsF01l/BI03R9nshLzP0hfcfzURWUk5z2Dk1gU5JsZOaV9qoibkDEjHNu
+        zEzNIY7jVS6h147kppmaRc58AYvxm4iwmZrDZqLxjPkzREyYqRl0Op3lWPknUJZPeyXJ1wuizD6Hhc55
+        RnS/l3iOGcuXQmSXuc0PDNluHTYsnIsLJeImB5PPEpvSuwHfib9EZa2sgPPPweBQxBqZbhOllt73fq9+
+        0M1E93HXcnEIFsxbMC0vNFdB6R5L3yeA+ayZRgLmfUdOdDKn9NT8lGNlHK/VGD09hwuAs5lGAhq7onEj
+        csrHMB/X91oFoIfnsyTbWUVtG8P+Sk9JHxNCAM6ADWaqBE7J29iaP/nnICPAfBk8UEmcjBiBt0FHYBRi
+        wd7zMXUK0LLSO4AStX14GPWOqLulxtQqYDGoVQDiLqGH04id+Qe/wvecxoRZhHodY7lVRX9PxDYPoe99
+        TAgBRRy3zFQJtD8ZtAzRy9JMVVjij+qQAvxfMr0DVhB7wAfvw/zGx9QsAAcLP+pRHg8nP8DtaJ+PqVPA
+        YvB/CsAVaTuMqFc+YqZgQMke9ALSdFsURdEf70OJBobtuaQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bar_MasaIslem.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_MalzemeTransfer.Caption" xml:space="preserve">
+    <value>Ürün Transfer</value>
+  </data>
+  <data name="bar_MalzemeTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAWtJREFUWEft1r8rB3Ecx/HzqzAo5VcxKCklhcXAYFEWE6vJH8CiTEoZGfxYDEab
+        HyW7zSiJTSmlGAwoyoDn65urT9fp+777XHfLPeuRvurzuTf3vR9BWcYN/P0srHfsoavyqYDe8AMNsopm
+        pKoPs5hLSAfWAKFHLKAW5ibwBXcjX9eYhqlNxG3i6wNTqNoW4jbwcYpemNqGu3gDS0ZPcNfeYwaJig4w
+        Cms30JpPrKEJiduBO8AIrF3hDLqKUrcLd4BhWEvy3/q36JdwELk2Dp1DHfwCdci9Towhi4PrFO5jHalv
+        zWmrxzPC06mbXK61ITy4nMCrbugqsdYOd4BjpKoBy9DT7kW/MNYB7wEmcYtwk1dY05fZHeAI5vRWcwB3
+        A/nGnZGeBe7aQ1RNl94i9Je6i7NgGmAIl4jbwJfeF03VYB4PiNtIj92kztGDRDViBdHTkfsdTTcUPabD
+        d8UWFFI/dCm1Vj6VlXkXBL/ZAuoySZSYlAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bar_MalzemeTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_KisiSayisi.Caption" xml:space="preserve">
+    <value>Kişi Sayısı Değiştir</value>
+  </data>
+  <data name="bar_KisiSayisi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAVJJREFUWEft1s0qhGEYh/Gx8FlKySkgkhOQHcXChiykoUiilI84ATshKRSFfGRh
+        L3YWbKTYOAERib0V1/+5Wcz0jDLNPav3ql/dT7N4Z96vZ1JJSUl5VIJx3OLzh+Yx6DP3DnCJNpShHO24
+        wh5c68YddNDsKvCAzrByahOTNkabwbqNPh1hwMZow9i10ac1TNkYbQ5LNvo0gS0bo+1j1EafdAA9grma
+        x7aNPi1g0cZoy9CN6FYTHtEYVpm14BkNYeXYDvTWy04354aNvo3g2MaMTpG20bcavKI+rCxdmhdUh1UR
+        0q/ttTGkl1PsrLh1gn4bQ3oD6hEtSlW4QUdYWT24RmVYFTjtcn1YxQU+oPd9KX7TtnyId5xjBbpEsV3z
+        Xw1Bz/YZZqHtuBa5qkMXtCfoyz5hEHk1jXs0h1V+tUL/Ef7awHKm0/lVIG9ISkqKlEp9A1bcR7mllkYX
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bar_KisiSayisi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnMasaKilitAc.Caption" xml:space="preserve">
+    <value>Masa Kilit Aç</value>
+  </data>
+  <data name="btnMasaKilitAc.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="btnParcaliMasa.Caption" xml:space="preserve">
+    <value>Parçalı Masa</value>
+  </data>
+  <data name="btnParcaliMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
   <data name="bar_Rapor.Caption" xml:space="preserve">
     <value>Rapor</value>
   </data>
@@ -2458,106 +2616,11 @@ Satış</value>
   <data name="barSubItem1.Caption" xml:space="preserve">
     <value>Masa İşlemleri</value>
   </data>
-  <data name="bar_MasaTransfer.Caption" xml:space="preserve">
-    <value>Masa Transfer</value>
-  </data>
-  <data name="bar_MasaTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAwZJREFUWEfdl91OE1EQxwuIFxo/00isu+dztpVUEW0iELkoRFEvMEbEqBCjJkZs
-        lETkS7zQxGfwwkS58hF8Cp/K/5Sh6Xa3tCw0Jv6SyZ4553R3dmbO7DTnnFNe21WvzPJ+xSmzWXTuZu4g
-        4EavZZgJMlQtWntd1P3Dby/DTHit75LW10SNUSqVTsiwPb0yAPPTxUIxL2p7emGA03qOjBkXdW8O04BK
-        pTIYGfMdybnhlX3WKqTUfMIrh+yBvmFD41brLe992CrDWp/3Sq0XCoVjsv/QDaijlDqDua1qrnpEphqQ
-        so984EnU3hiwC9cYGTZIGEDGbXDssgpZOwu3VuR2HUnzwG8Uo/Ws4rT56Y15LLfrSGoI+A04S13gLst0
-        1+wVgjSSBlj7KjLRmLV2hogmcB0RuQJ5uCuI56TMx8RpN0chebldRxIGMN74O1iYbRac5c8Uum9RaL+y
-        kLa/WveUlJ3P5/Ody20TKFC305KzlYFIm+3I2lUUlmUW/HCb31jWewtK6VODxHKhqzXEuBfIk3ew/pRs
-        6x2kzBcK7b1WlyNf1igMu453ZlA2z7UmGwvevihb/kNQ0WZk+G9Aln/EpW9Hy07mJD2oAT40950xmyjL
-        z1EZa1rrKVnqjgMYMIBy/raktcW4nyd2Psd0lcs0jvNFXKdRZU/yWluyGoDjuYgHOlFj4OGjqCkPUMhG
-        I+VR0KIxWUqSZkBaQ9EM3Gy5/xO1Iy40S3SBAlHjpBnAbkM8J0RNwP8JrLK3RO0Ih4Mc1SRccdCYvMGG
-        06I24PixG8vl8lGZqoMGs8yxr+QqgzLVFS4IIiTrE07WmIf54RHXenS0rUKh/oHvwB+0lpd4L39OYVSt
-        /sOMoNpOtfPeQLM4pSatUovinXqIDI5c4pu+f/rhiSUZp8N/rZAbVVEb8By6qBuiZgLfFg0vLoiaDjed
-        MowxMjR0HGFZSU2mLqg/PNS1tieiG4IgOMvJRNq9hEfe47SsIGE/1HtMbdfqDSvnD04X1raw9okF9QCN
-        rF7YeXgu9xdYC8kHVXz+FQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bar_MasaTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_MalzemeTransfer.Caption" xml:space="preserve">
-    <value>Ürün Transfer</value>
-  </data>
-  <data name="bar_MalzemeTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAWtJREFUWEft1r8rB3Ecx/HzqzAo5VcxKCklhcXAYFEWE6vJH8CiTEoZGfxYDEab
-        HyW7zSiJTSmlGAwoyoDn65urT9fp+777XHfLPeuRvurzuTf3vR9BWcYN/P0srHfsoavyqYDe8AMNsopm
-        pKoPs5hLSAfWAKFHLKAW5ibwBXcjX9eYhqlNxG3i6wNTqNoW4jbwcYpemNqGu3gDS0ZPcNfeYwaJig4w
-        Cms30JpPrKEJiduBO8AIrF3hDLqKUrcLd4BhWEvy3/q36JdwELk2Dp1DHfwCdci9Towhi4PrFO5jHalv
-        zWmrxzPC06mbXK61ITy4nMCrbugqsdYOd4BjpKoBy9DT7kW/MNYB7wEmcYtwk1dY05fZHeAI5vRWcwB3
-        A/nGnZGeBe7aQ1RNl94i9Je6i7NgGmAIl4jbwJfeF03VYB4PiNtIj92kztGDRDViBdHTkfsdTTcUPabD
-        d8UWFFI/dCm1Vj6VlXkXBL/ZAuoySZSYlAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bar_MalzemeTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_MasaIslem.Caption" xml:space="preserve">
-    <value>Masa İşlemleri</value>
-  </data>
-  <data name="bar_MasaIslem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAmVJREFUWEfNV02oTVEUPoQoE/Liueestc45+1w6I7rFgFwDA2XACBmYKflJYWT6
-        TMhIZsYyMVDPgKH0MiCUZKSUmFAUIu/5+da+6/Vu17nPfa+zT776uuess9Ze3/5Ze+8b1YSljuValtB3
-        /E6VY+Vqs4dFe7y9ziVyJk/oGRL/nmUust9cwqEsyxVZIg/7E8+Rt5pbWBDRGoh40pf8F0bkY85ypxt1
-        l5lbWPhpYH7uBRDddSJdrIUfsF01l/BI03R9nshLzP0hfcfzURWUk5z2Dk1gU5JsZOaV9qoibkDEjHNu
-        zEzNIY7jVS6h147kppmaRc58AYvxm4iwmZrDZqLxjPkzREyYqRl0Op3lWPknUJZPeyXJ1wuizD6Hhc55
-        RnS/l3iOGcuXQmSXuc0PDNluHTYsnIsLJeImB5PPEpvSuwHfib9EZa2sgPPPweBQxBqZbhOllt73fq9+
-        0M1E93HXcnEIFsxbMC0vNFdB6R5L3yeA+ayZRgLmfUdOdDKn9NT8lGNlHK/VGD09hwuAs5lGAhq7onEj
-        csrHMB/X91oFoIfnsyTbWUVtG8P+Sk9JHxNCAM6ADWaqBE7J29iaP/nnICPAfBk8UEmcjBiBt0FHYBRi
-        wd7zMXUK0LLSO4AStX14GPWOqLulxtQqYDGoVQDiLqGH04id+Qe/wvecxoRZhHodY7lVRX9PxDYPoe99
-        TAgBRRy3zFQJtD8ZtAzRy9JMVVjij+qQAvxfMr0DVhB7wAfvw/zGx9QsAAcLP+pRHg8nP8DtaJ+PqVPA
-        YvB/CsAVaTuMqFc+YqZgQMke9ALSdFsURdEf70OJBobtuaQAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="bar_MasaIslem.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_KisiSayisi.Caption" xml:space="preserve">
-    <value>Kişi Sayısı Değiştir</value>
-  </data>
-  <data name="bar_KisiSayisi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAVJJREFUWEft1s0qhGEYh/Gx8FlKySkgkhOQHcXChiykoUiilI84ATshKRSFfGRh
-        L3YWbKTYOAERib0V1/+5Wcz0jDLNPav3ql/dT7N4Z96vZ1JJSUl5VIJx3OLzh+Yx6DP3DnCJNpShHO24
-        wh5c68YddNDsKvCAzrByahOTNkabwbqNPh1hwMZow9i10ac1TNkYbQ5LNvo0gS0bo+1j1EafdAA9grma
-        x7aNPi1g0cZoy9CN6FYTHtEYVpm14BkNYeXYDvTWy04354aNvo3g2MaMTpG20bcavKI+rCxdmhdUh1UR
-        0q/ttTGkl1PsrLh1gn4bQ3oD6hEtSlW4QUdYWT24RmVYFTjtcn1YxQU+oPd9KX7TtnyId5xjBbpEsV3z
-        Xw1Bz/YZZqHtuBa5qkMXtCfoyz5hEHk1jXs0h1V+tUL/Ef7awHKm0/lVIG9ISkqKlEp9A1bcR7mllkYX
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bar_KisiSayisi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
   <data name="barButtonItem2.Caption" xml:space="preserve">
     <value>Paket CallCenter</value>
   </data>
   <data name="barButtonItem2.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="btnMasaKilitAc.Caption" xml:space="preserve">
-    <value>Masa Kilit Aç</value>
-  </data>
-  <data name="btnMasaKilitAc.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="btnParcaliMasa.Caption" xml:space="preserve">
-    <value>Parçalı Masa</value>
-  </data>
-  <data name="btnParcaliMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
   </data>
   <data name="barDockControl15.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 716</value>
@@ -2963,69 +3026,6 @@ Satış</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="bartxt_Kul.Caption" xml:space="preserve">
-    <value>Kullanıcı : </value>
-  </data>
-  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_Dep.Caption" xml:space="preserve">
-    <value>Departman : </value>
-  </data>
-  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="barspn_Refresh.Caption" xml:space="preserve">
-    <value>Kalan Süre : </value>
-  </data>
-  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barspn_Refresh.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
-    <value>Boş Masa :</value>
-  </data>
-  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_BosMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
-    <value>Dolu Masa : </value>
-  </data>
-  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_DoluMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_FisNo.Caption" xml:space="preserve">
-    <value>Fis No : </value>
-  </data>
-  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="barStaticItem1.Caption" xml:space="preserve">
-    <value>Süre</value>
-  </data>
-  <data name="repositoryItemTextEdit5.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barStaticItem2.Caption" xml:space="preserve">
-    <value>Kuver Tutari :</value>
-  </data>
-  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>

@@ -41,6 +41,9 @@ namespace Pos
             dateEditRap3BasTar.EditValue = Param.Tarih;
             dateEditRap3BitTar.EditValue = Param.Tarih;
 
+            dateEditCariBas.EditValue = Param.Tarih;
+            dateEditCariBit.EditValue = Param.Tarih;
+
             date_CariHes.DateTime = Param.Tarih;
 
 
@@ -484,6 +487,7 @@ namespace Pos
             gridyenile_CariHesap();
         }
 
+        DataTable dtCari1 = new DataTable();
         private void gridyenile_CariHesap()
         {
             Chrk_Id = 0;
@@ -496,9 +500,9 @@ namespace Pos
             gridColumn53.FieldName = "Chrk_Id";
             gridColumn74.FieldName = "Pkod_Kod";
 
-            DataTable dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + txt_CariHes_Kodu.EditValue + "' ");
+            dtCari1 = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + txt_CariHes_Kodu.EditValue + "' ");
 
-            grd_CariHesap.DataSource = dt;
+            grd_CariHesap.DataSource = dtCari1;
 
             Bakiye.Text = Convert.ToString(Convert.ToDecimal(gridColumn51.SummaryText) - Convert.ToDecimal(gridColumn52.SummaryText));
         }
@@ -621,7 +625,7 @@ namespace Pos
             if (gridView9.RowCount > 0)
             {
                 FisPr pr = new FisPr();
-                pr.CariHesapPr(Convert.ToString(txt_CariHes_Kodu.EditValue));
+                pr.CariHesapPr(Convert.ToString(txt_CariHes_Kodu.EditValue),data: grd_CariHesap.DataSource as DataTable);
             }
         }
         #endregion
@@ -1760,6 +1764,28 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
         {
             yazdir(gridControlCariRap3Detay);
 
+        }
+
+        private void btnFiltrele_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //var data = grd_CariHesap.DataSource as DataTable;
+
+
+                //var yazilacaklar = data.Select("Chrk_Tarih between '" + dateEditCariBas.DateTime.ToString("yyyy-MM-dd") + "' and " + dateEditCariBit.DateTime.ToString("yyyy-MM-dd") + "").CopyToDataTable();
+
+
+                var yazilacaklar = dtCari1.Select("Chrk_Tarih >= #"+ dateEditCariBas.DateTime.ToString("yyyy-MM-dd") + "#  and Chrk_Tarih<= #" + dateEditCariBit.DateTime.ToString("yyyy-MM-dd") + "#").CopyToDataTable();
+
+                grd_CariHesap.DataSource = yazilacaklar;
+                Bakiye.Text = Convert.ToString(Convert.ToDecimal(gridColumn51.SummaryText) - Convert.ToDecimal(gridColumn52.SummaryText));
+            }
+            catch(Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnFiltrele_Click", "",ex);
+            }
+           
         }
     }
 }

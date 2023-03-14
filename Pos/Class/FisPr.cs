@@ -6096,7 +6096,7 @@ order by Pkod_Kod";
             return dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 24, @Fisno = '" + Fisno + "', @Split = '" + Split + "', @MacAdres = '" + dbtools.MacAdresi() + "',@SiparisTumYazici = '" + SiparisTumYazici + "' ");
         }
 
-        public string CariHesapPr(string CariKod)
+        public string CariHesapPr(string CariKod,DataTable data=null)
         {
             List<string> cari = new List<string>();
 
@@ -6115,7 +6115,17 @@ order by Pkod_Kod";
                 printer = Convert.ToString(dtMacPrinter.Rows[0]["Pkod_Ad"]);
             }
 
-            DataTable dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + CariKod + "' ");
+            DataTable dt = new DataTable();
+
+            if (data==null)
+            {
+              dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + CariKod + "' ");
+
+            }
+            else
+            {
+                dt = data;
+            }
 
             cari.Add("");
             cari.Add("#" + Param.Tesis_Adi);
