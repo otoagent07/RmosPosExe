@@ -172,7 +172,6 @@ namespace Pos
                 var nesne = db.Cst_Recete_Satis.Where(x => x.Rsat_Id == rsat_id).FirstOrDefault();
                
 
-
                 var hedeffisno= Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
                 var AMiktar = Convert.ToString(gridViewAna.GetFocusedRowCellValue("Rsat_Emiktar"));
                 if (nesne!=null)
