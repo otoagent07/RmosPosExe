@@ -1,11 +1,13 @@
 ﻿using DevExpress.LookAndFeel;
 using DevExpress.XtraEditors;
+using Newtonsoft.Json;
 using Pos.Class;
 using Pos.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -21,8 +23,8 @@ namespace Pos
         public int Split = 0;
         public static string MyClass = "ParcaliOdeme";
         public string fisno = "0";
-        public string anamasano = "1";
-        public string altmasano = "1";
+        public string anamasano = "";
+        public string altmasano = "";
         public ParcaliOdeme(string fisno, string anamasano)
         {
             InitializeComponent();
@@ -141,67 +143,251 @@ namespace Pos
             }
 
         }
+
+
         private void btnAltMasa1_Click(object sender, EventArgs e)
         {
-            foreach (SimpleButton item in buttons)
+            try
             {
-                item.Appearance.BackColor = Color.Transparent; // varsayılan rengi
-                item.Appearance.Options.UseBackColor = true;
+                foreach (SimpleButton item in buttons)
+                {
+                    item.Appearance.BackColor = Color.Transparent; // varsayılan rengi
+                    item.Appearance.Options.UseBackColor = true;
+                }
+
+                SimpleButton tiklanan = (sender as SimpleButton);
+                tiklanan.Appearance.BackColor = Color.Lime;
+
+
+                //groupControlAlt.Text = "Alt Fişno: " + fisno + " - Masa No: " + tiklanan.Text;
+                groupControlAlt.Text = "Alt Masa No: " + tiklanan.Text;
+
+                altmasano = tiklanan.Tag.ToString();
+                altmasayenile();
+
+
+
             }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnAltMasa1_Click", "",ex);
+            }
+        }
 
-            SimpleButton tiklanan = (sender as SimpleButton);
-            tiklanan.Appearance.BackColor = Color.Lime;
-
-
-            //groupControlAlt.Text = "Alt Fişno: " + fisno + " - Masa No: " + tiklanan.Text;
-            groupControlAlt.Text = "Alt Masa No: " + tiklanan.Text;
-
-            altmasano = tiklanan.Tag.ToString();
-
+        public void altmasayenile()
+        {
+            try
+            {
+                string query = @"select Cst_Recete_Satis.*,Cst_Recete.Rec_Ad from Cst_Recete_Satis 
+left join Cst_Recete on Rec_Genelkod=Rsat_Recete
+where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "'";
+                DataTable dataTable = dbtools.SelectTableR(query);
+                gridControlAlt.DataSource = dataTable;
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "altmasayenile", "",ex);
+            }
         }
 
         private void btnAnadanAlta_Click(object sender, EventArgs e)
         {
             try
             {
-                DataRow dataRow = gridViewAna.GetDataRow(gridViewAna.FocusedRowHandle);
+                /*Rsat_Id Rsat_Fisno Rsat_Masa Rsat_Tarih Rsat_Acilis Rsat_Ba Kasiyer Rsat_Miktar Rsat_Emiktar Rec_Ad Rsat_Tutar Rsat_Doviz MasaKonumAdi Rsat_UrunTahsilat Rsat_Recete Rsat_UrunBazliHspAdet*/
 
-                RmosMerkez21Entities db = new RmosMerkez21Entities(dbtools.server, dbtools.database, dbtools.users, dbtools.pwd);
 
-                int rsat_id = Convert.ToInt32(dataRow["Rsat_Id"].ToString());
-                var nesne = db.Cst_Recete_Satis.Where(x => x.Rsat_Id == rsat_id).FirstOrDefault();
-               
-
-                var hedeffisno= Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
-                var AMiktar = Convert.ToString(gridViewAna.GetFocusedRowCellValue("Rsat_Emiktar"));
-                if (nesne!=null)
+                if (altmasano=="")
                 {
-                    nesne.Rsat_Id = 0;
-                    nesne.Rsat_Masa = "";
-                    nesne.Rsat_Fisno = 0;
-                    nesne.Rsat_Miktar = 0;
-                    nesne.Rsat_Tutar = 0;
-                    nesne.Rsat_Net = 0;
-                    nesne.Rsat_Kdv = 0;
-                    nesne.Rsat_Maliyet = 0;
-                    nesne.Rsat_Doviztutar = 0;
-                    nesne.Rsat_Ind = 0;
-                    db.Cst_Recete_Satis.Add(nesne);
-                    db.SaveChanges();
+                    RHMesaj.MyMessageInformation("Lütfen masa seçiniz!");
+                    return;
                 }
+                DataRow neredenRow = gridViewAna.GetDataRow(gridViewAna.FocusedRowHandle);
+
+
+                string neredenMasa = anamasano;
+                string nereyeMasa = altmasano;
+
+
+                aktarim(neredenRow, neredenMasa, nereyeMasa, 0);
+
 
             }
             catch (Exception ex)
             {
 
-                RHMesaj.MyMessageError(MyClass, "btnAnadanAlta_Click", "",ex);
+                RHMesaj.MyMessageError(MyClass, "btnAnadanAlta_Click", "", ex);
+            }
+            finally
+            {
+                anaListele();
+                altmasayenile();
             }
 
         }
 
+
+        public void aktarim(DataRow neredenRow,string neredenMasa,string nereyeMasa,int fisno)
+        {
+            try
+            {
+                RmosMerkez21Entities db = new RmosMerkez21Entities(dbtools.server, dbtools.database, dbtools.users, dbtools.pwd);
+
+                int rsat_id = Convert.ToInt32(neredenRow["Rsat_Id"].ToString());
+
+
+                var nesne = db.Cst_Recete_Satis.Where(x => x.Rsat_Id == rsat_id).FirstOrDefault();
+
+
+
+                var AMiktar = Convert.ToString(gridViewAna.GetFocusedRowCellValue("Rsat_Emiktar"));
+                if (nesne != null)
+                {
+                    decimal rsattutar = Convert.ToDecimal(neredenRow["Rsat_Tutar"].ToString());
+                    decimal rsatmiktar = Convert.ToDecimal(neredenRow["Rsat_Miktar"].ToString());
+                    decimal kdvoran = Convert.ToDecimal(neredenRow["Rsat_Kdvoran"].ToString());
+                    string urunad = neredenRow["Rec_Ad"].ToString();
+                    string recete = neredenRow["Rsat_Recete"].ToString();
+
+
+                    decimal aktarimMiktar = rsatmiktar;
+                    if (rsatmiktar > 1)
+                    {
+                        Klavye1 klv = new Klavye1();
+                        klv.Tag = "MALZEMETR";
+                        klv.txt_Sayi.Text = rsatmiktar.ToString();
+                        klv.UrunAdi = urunad;
+                        klv.ShowDialog();
+                        aktarimMiktar = klv.sayi;
+
+                        if (klv.Cikis)
+                        {
+                            return;
+                        }
+
+                        if (aktarimMiktar <= 0)
+                        {
+                            return;
+                        }
+                    }
+
+                    decimal aktarimmaliyet = Convert.ToDecimal(dbtools.DegerGetir("select top 1 isnull(SUM(Detay_Maliyet),0)*" + aktarimMiktar + " AS Maliyet from Cst_Recete_Detay where Detay_Recete='" + recete + "'"));
+
+                    decimal birimFiyat = rsattutar / rsatmiktar;
+                    decimal aktarimRsattutar = birimFiyat * aktarimMiktar;
+                    decimal kalanmiktar = rsatmiktar - aktarimMiktar;
+
+                    //ana ürün güncelleme
+                    if (kalanmiktar == 0)
+                    {
+                        db.Cst_Recete_Satis.Remove(nesne);
+                        db.SaveChanges();
+                    }
+                    else if (kalanmiktar > 0)
+                    {
+                        decimal anamaliyet = Convert.ToDecimal(dbtools.DegerGetir("select top 1 isnull(SUM(Detay_Maliyet),0)*" + kalanmiktar + " AS Maliyet from Cst_Recete_Detay where Detay_Recete='" + recete + "'"));
+                        decimal aktarimAnaTutar = birimFiyat * kalanmiktar;
+                        nesne.Rsat_Miktar = kalanmiktar;
+                        nesne.Rsat_Tutar = aktarimAnaTutar;
+                        nesne.Rsat_Net = aktarimAnaTutar / ((100 + kdvoran) / 100);
+                        nesne.Rsat_Kdv = (aktarimAnaTutar * kdvoran) / 100;
+                        nesne.Rsat_Maliyet = anamaliyet;
+                        nesne.Rsat_Doviztutar = aktarimAnaTutar;
+                        db.Entry(nesne).State = System.Data.Entity.EntityState.Modified;
+                        db.SaveChanges();
+                    }
+                    else
+                    {
+                        RHMesaj.MyMessageInformation("TOPLAM MİKTARDAN FAZLA SATILAMAZ!");
+                        return;
+                    }
+
+                    //alt ürün güncelleme -> aynı reçete varsa miktarını arttırcaz
+                    var nesne2 = db.Cst_Recete_Satis.Where(x => x.Rsat_Masa == nereyeMasa & x.Rsat_Durum == "A" & x.Rsat_Recete== recete).FirstOrDefault();
+                    if (nesne2==null)
+                    {
+                        //alt ürün ekleme
+                        nesne.Rsat_Masa = nereyeMasa;
+                        nesne.Rsat_Fisno = fisno;
+                        nesne.Rsat_Miktar = aktarimMiktar;
+                        nesne.Rsat_Tutar = aktarimRsattutar;
+                        nesne.Rsat_Net = aktarimRsattutar / ((100 + kdvoran) / 100);
+                        nesne.Rsat_Kdv = (aktarimRsattutar * kdvoran) / 100;
+                        nesne.Rsat_Maliyet = aktarimmaliyet;
+                        nesne.Rsat_Doviztutar = aktarimRsattutar;
+                        nesne.Rsat_Ind = 0;
+                        nesne.Rsat_Durum = "A";
+                        db.Cst_Recete_Satis.Add(nesne);
+                        db.SaveChanges();
+                    }
+                    else
+                    {
+                        aktarimMiktar = aktarimMiktar + Convert.ToDecimal(nesne2.Rsat_Miktar);
+
+
+                         aktarimmaliyet = Convert.ToDecimal(dbtools.DegerGetir("select top 1 isnull(SUM(Detay_Maliyet),0)*" + aktarimMiktar + " AS Maliyet from Cst_Recete_Detay where Detay_Recete='" + recete + "'"));
+
+                         aktarimRsattutar = birimFiyat * aktarimMiktar;
+                         //kalanmiktar = rsatmiktar - aktarimMiktar;
+
+
+                        nesne2.Rsat_Masa = nereyeMasa;
+                        nesne2.Rsat_Fisno = fisno;
+                        nesne2.Rsat_Miktar = aktarimMiktar;
+                        nesne2.Rsat_Tutar = aktarimRsattutar;
+                        nesne2.Rsat_Net = aktarimRsattutar / ((100 + kdvoran) / 100);
+                        nesne2.Rsat_Kdv = (aktarimRsattutar * kdvoran) / 100;
+                        nesne2.Rsat_Maliyet = aktarimmaliyet;
+                        nesne2.Rsat_Doviztutar = aktarimRsattutar;
+                        nesne2.Rsat_Ind = 0;
+                        nesne2.Rsat_Durum = "A";
+                        db.Entry(nesne2).State = System.Data.Entity.EntityState.Modified;
+                        db.SaveChanges();
+
+                    }
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass,"","",ex);
+            }
+        }
+
+
         private void btnAlttanAnaya_Click(object sender, EventArgs e)
         {
+            try
+            {
+                /*Rsat_Id Rsat_Fisno Rsat_Masa Rsat_Tarih Rsat_Acilis Rsat_Ba Kasiyer Rsat_Miktar Rsat_Emiktar Rec_Ad Rsat_Tutar Rsat_Doviz MasaKonumAdi Rsat_UrunTahsilat Rsat_Recete Rsat_UrunBazliHspAdet*/
 
+
+                if (altmasano == "")
+                {
+                    RHMesaj.MyMessageInformation("Lütfen masa seçiniz!");
+                    return;
+                }
+                DataRow neredenRow = gridViewAlt.GetDataRow(gridViewAlt.FocusedRowHandle);
+
+
+                string neredenMasa = altmasano ;
+                string nereyeMasa = anamasano;
+
+                aktarim(neredenRow, neredenMasa, nereyeMasa,Convert.ToInt32(fisno));
+
+
+            }
+            catch (Exception ex)
+            {
+
+                RHMesaj.MyMessageError(MyClass, "btnAlttanAnaya_Click", "", ex);
+            }
+            finally
+            {
+                anaListele();
+                altmasayenile();
+            }
         }
     }
 }

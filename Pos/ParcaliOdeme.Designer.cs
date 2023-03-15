@@ -88,6 +88,8 @@ namespace Pos
             this.txt_Odemetutari = new DevExpress.XtraEditors.TextEdit();
             this.btn_Odemeal = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Yazdirmadankapat = new DevExpress.XtraEditors.SimpleButton();
+            this.gridColumn31 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn32 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAna)).BeginInit();
             this.groupControlAna.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAna)).BeginInit();
@@ -110,6 +112,8 @@ namespace Pos
             // 
             // groupControlAna
             // 
+            this.groupControlAna.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupControlAna.AppearanceCaption.Options.UseFont = true;
             this.groupControlAna.Controls.Add(this.gridControlAna);
             this.groupControlAna.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupControlAna.Location = new System.Drawing.Point(0, 0);
@@ -121,10 +125,10 @@ namespace Pos
             // gridControlAna
             // 
             this.gridControlAna.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlAna.Location = new System.Drawing.Point(2, 20);
+            this.gridControlAna.Location = new System.Drawing.Point(2, 26);
             this.gridControlAna.MainView = this.gridViewAna;
             this.gridControlAna.Name = "gridControlAna";
-            this.gridControlAna.Size = new System.Drawing.Size(348, 588);
+            this.gridControlAna.Size = new System.Drawing.Size(348, 582);
             this.gridControlAna.TabIndex = 0;
             this.gridControlAna.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewAna});
@@ -155,7 +159,8 @@ namespace Pos
             this.gridColumn12,
             this.gridColumn13,
             this.gridColumn14,
-            this.gridColumn15});
+            this.gridColumn15,
+            this.gridColumn31});
             this.gridViewAna.GridControl = this.gridControlAna;
             this.gridViewAna.Name = "gridViewAna";
             this.gridViewAna.OptionsBehavior.Editable = false;
@@ -303,6 +308,8 @@ namespace Pos
             // 
             // groupControl3
             // 
+            this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.Controls.Add(this.btnAltMasa10);
             this.groupControl3.Controls.Add(this.btnAltMasa9);
             this.groupControl3.Controls.Add(this.btnAltMasa8);
@@ -318,13 +325,13 @@ namespace Pos
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(124, 610);
             this.groupControl3.TabIndex = 2;
-            this.groupControl3.Text = "ALT MASALARI";
+            this.groupControl3.Text = "ALT MASA";
             // 
             // btnAltMasa10
             // 
             this.btnAltMasa10.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa10.Appearance.Options.UseFont = true;
-            this.btnAltMasa10.Location = new System.Drawing.Point(2, 443);
+            this.btnAltMasa10.Location = new System.Drawing.Point(2, 448);
             this.btnAltMasa10.Name = "btnAltMasa10";
             this.btnAltMasa10.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa10.TabIndex = 9;
@@ -336,7 +343,7 @@ namespace Pos
             // 
             this.btnAltMasa9.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa9.Appearance.Options.UseFont = true;
-            this.btnAltMasa9.Location = new System.Drawing.Point(2, 396);
+            this.btnAltMasa9.Location = new System.Drawing.Point(2, 401);
             this.btnAltMasa9.Name = "btnAltMasa9";
             this.btnAltMasa9.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa9.TabIndex = 8;
@@ -348,7 +355,7 @@ namespace Pos
             // 
             this.btnAltMasa8.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa8.Appearance.Options.UseFont = true;
-            this.btnAltMasa8.Location = new System.Drawing.Point(2, 349);
+            this.btnAltMasa8.Location = new System.Drawing.Point(2, 354);
             this.btnAltMasa8.Name = "btnAltMasa8";
             this.btnAltMasa8.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa8.TabIndex = 7;
@@ -360,7 +367,7 @@ namespace Pos
             // 
             this.btnAltMasa7.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa7.Appearance.Options.UseFont = true;
-            this.btnAltMasa7.Location = new System.Drawing.Point(2, 302);
+            this.btnAltMasa7.Location = new System.Drawing.Point(2, 307);
             this.btnAltMasa7.Name = "btnAltMasa7";
             this.btnAltMasa7.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa7.TabIndex = 6;
@@ -372,7 +379,7 @@ namespace Pos
             // 
             this.btnAltMasa6.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa6.Appearance.Options.UseFont = true;
-            this.btnAltMasa6.Location = new System.Drawing.Point(2, 255);
+            this.btnAltMasa6.Location = new System.Drawing.Point(2, 260);
             this.btnAltMasa6.Name = "btnAltMasa6";
             this.btnAltMasa6.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa6.TabIndex = 5;
@@ -384,7 +391,7 @@ namespace Pos
             // 
             this.btnAltMasa5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa5.Appearance.Options.UseFont = true;
-            this.btnAltMasa5.Location = new System.Drawing.Point(2, 208);
+            this.btnAltMasa5.Location = new System.Drawing.Point(2, 213);
             this.btnAltMasa5.Name = "btnAltMasa5";
             this.btnAltMasa5.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa5.TabIndex = 4;
@@ -396,7 +403,7 @@ namespace Pos
             // 
             this.btnAltMasa4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa4.Appearance.Options.UseFont = true;
-            this.btnAltMasa4.Location = new System.Drawing.Point(2, 161);
+            this.btnAltMasa4.Location = new System.Drawing.Point(2, 166);
             this.btnAltMasa4.Name = "btnAltMasa4";
             this.btnAltMasa4.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa4.TabIndex = 3;
@@ -408,7 +415,7 @@ namespace Pos
             // 
             this.btnAltMasa3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa3.Appearance.Options.UseFont = true;
-            this.btnAltMasa3.Location = new System.Drawing.Point(2, 114);
+            this.btnAltMasa3.Location = new System.Drawing.Point(2, 119);
             this.btnAltMasa3.Name = "btnAltMasa3";
             this.btnAltMasa3.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa3.TabIndex = 2;
@@ -420,7 +427,7 @@ namespace Pos
             // 
             this.btnAltMasa2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa2.Appearance.Options.UseFont = true;
-            this.btnAltMasa2.Location = new System.Drawing.Point(2, 67);
+            this.btnAltMasa2.Location = new System.Drawing.Point(2, 72);
             this.btnAltMasa2.Name = "btnAltMasa2";
             this.btnAltMasa2.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa2.TabIndex = 1;
@@ -432,7 +439,7 @@ namespace Pos
             // 
             this.btnAltMasa1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAltMasa1.Appearance.Options.UseFont = true;
-            this.btnAltMasa1.Location = new System.Drawing.Point(2, 20);
+            this.btnAltMasa1.Location = new System.Drawing.Point(2, 25);
             this.btnAltMasa1.Name = "btnAltMasa1";
             this.btnAltMasa1.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa1.TabIndex = 0;
@@ -442,6 +449,8 @@ namespace Pos
             // 
             // groupControlAlt
             // 
+            this.groupControlAlt.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupControlAlt.AppearanceCaption.Options.UseFont = true;
             this.groupControlAlt.Controls.Add(this.gridControlAlt);
             this.groupControlAlt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControlAlt.Location = new System.Drawing.Point(521, 0);
@@ -453,10 +462,10 @@ namespace Pos
             // gridControlAlt
             // 
             this.gridControlAlt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlAlt.Location = new System.Drawing.Point(2, 20);
+            this.gridControlAlt.Location = new System.Drawing.Point(2, 26);
             this.gridControlAlt.MainView = this.gridViewAlt;
             this.gridControlAlt.Name = "gridControlAlt";
-            this.gridControlAlt.Size = new System.Drawing.Size(378, 588);
+            this.gridControlAlt.Size = new System.Drawing.Size(378, 582);
             this.gridControlAlt.TabIndex = 1;
             this.gridControlAlt.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewAlt});
@@ -487,7 +496,8 @@ namespace Pos
             this.gridColumn27,
             this.gridColumn28,
             this.gridColumn29,
-            this.gridColumn30});
+            this.gridColumn30,
+            this.gridColumn32});
             this.gridViewAlt.GridControl = this.gridControlAlt;
             this.gridViewAlt.Name = "gridViewAlt";
             this.gridViewAlt.OptionsBehavior.Editable = false;
@@ -606,6 +616,8 @@ namespace Pos
             // 
             // groupControl5
             // 
+            this.groupControl5.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupControl5.AppearanceCaption.Options.UseFont = true;
             this.groupControl5.Controls.Add(this.groupControl6);
             this.groupControl5.Controls.Add(this.btn_Odemetutari);
             this.groupControl5.Controls.Add(this.btn_Yazdirkapat);
@@ -623,7 +635,7 @@ namespace Pos
             // 
             this.groupControl6.Controls.Add(this.look_Kapatma);
             this.groupControl6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl6.Location = new System.Drawing.Point(2, 20);
+            this.groupControl6.Location = new System.Drawing.Point(2, 26);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.Size = new System.Drawing.Size(179, 59);
             this.groupControl6.TabIndex = 20;
@@ -670,7 +682,7 @@ namespace Pos
             this.btn_Yazdirkapat.Appearance.Options.UseBackColor = true;
             this.btn_Yazdirkapat.Appearance.Options.UseFont = true;
             this.btn_Yazdirkapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Yazdirkapat.ImageOptions.Image")));
-            this.btn_Yazdirkapat.Location = new System.Drawing.Point(10, 219);
+            this.btn_Yazdirkapat.Location = new System.Drawing.Point(4, 219);
             this.btn_Yazdirkapat.Name = "btn_Yazdirkapat";
             this.btn_Yazdirkapat.Size = new System.Drawing.Size(169, 43);
             this.btn_Yazdirkapat.TabIndex = 12;
@@ -703,7 +715,7 @@ namespace Pos
             this.btn_Odemeal.Appearance.Options.UseTextOptions = true;
             this.btn_Odemeal.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.btn_Odemeal.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Odemeal.ImageOptions.Image")));
-            this.btn_Odemeal.Location = new System.Drawing.Point(4, 149);
+            this.btn_Odemeal.Location = new System.Drawing.Point(4, 155);
             this.btn_Odemeal.Name = "btn_Odemeal";
             this.btn_Odemeal.Size = new System.Drawing.Size(169, 43);
             this.btn_Odemeal.TabIndex = 15;
@@ -714,11 +726,23 @@ namespace Pos
             this.btn_Yazdirmadankapat.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.btn_Yazdirmadankapat.Appearance.Options.UseFont = true;
             this.btn_Yazdirmadankapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Yazdirmadankapat.ImageOptions.Image")));
-            this.btn_Yazdirmadankapat.Location = new System.Drawing.Point(10, 288);
+            this.btn_Yazdirmadankapat.Location = new System.Drawing.Point(4, 288);
             this.btn_Yazdirmadankapat.Name = "btn_Yazdirmadankapat";
             this.btn_Yazdirmadankapat.Size = new System.Drawing.Size(169, 43);
             this.btn_Yazdirmadankapat.TabIndex = 13;
             this.btn_Yazdirmadankapat.Text = "Yazdırmadan Kapat";
+            // 
+            // gridColumn31
+            // 
+            this.gridColumn31.Caption = "Rsat_Kdvoran";
+            this.gridColumn31.FieldName = "Rsat_Kdvoran";
+            this.gridColumn31.Name = "gridColumn31";
+            // 
+            // gridColumn32
+            // 
+            this.gridColumn32.Caption = "Rsat_Kdvoran";
+            this.gridColumn32.FieldName = "Rsat_Kdvoran";
+            this.gridColumn32.Name = "gridColumn32";
             // 
             // ParcaliOdeme
             // 
@@ -816,5 +840,7 @@ namespace Pos
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn28;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn29;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn30;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn31;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn32;
     }
 }
