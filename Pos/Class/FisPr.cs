@@ -2855,7 +2855,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             }
         }
 
-        public string newHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, bool sifirli = false)
+        public string newHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, bool sifirli = false,bool parcalimi=false,string parcamasano="")
         {
 
             string printer = String.Empty;
@@ -2915,7 +2915,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             com.CommandText = "Pos_Satis";
             com.Parameters.AddWithValue("@Fisno", Fisno);
             com.Parameters.AddWithValue("@Split", Split);
-            com.Parameters.AddWithValue("@Rapor_Tipi", 7);
+            com.Parameters.AddWithValue("@parcalimasano", parcamasano);
+            com.Parameters.AddWithValue("@Rapor_Tipi", parcalimi==true?30: 7);
             SqlDataAdapter da = new SqlDataAdapter(com);
             da.Fill(ds);
 
@@ -2978,9 +2979,6 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             }
             hsp.xr_Kasiyer.Text = Convert.ToString(dtHesap.Rows[0]["Kasiyer"]);
             hsp.xr_Adisyon.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Adisyon"]);
-
-
-
 
 
             if (Param.Param_HesapDkmAciklama)
@@ -3144,7 +3142,6 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         }
                     }
                     cell2.Text += dovizIcon;
-
 
 
                     cell2.WidthF = hsp.table_Odeme.WidthF * 20 / 100;

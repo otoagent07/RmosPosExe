@@ -527,7 +527,11 @@ namespace Pos
             k.Tag = "ODEMETUTAR";
             k.ShowDialog();
 
-            txt_Odemetutari.EditValue = k.sayi;
+            if (k.Cikis == false)
+            {
+                txt_Odemetutari.EditValue = k.sayi;
+            }
+
 
 
         }
@@ -1967,8 +1971,6 @@ namespace Pos
                             {
 
                                 cevap = pr.newHesapDokum2(true, Convert.ToInt32(this.Tag), Split, "* * * HESAP KAPATMA FİŞİ * * *", gridView2);
-
-
                             }
                             else
                             {

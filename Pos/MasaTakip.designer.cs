@@ -123,6 +123,7 @@
             this.bar_PaketSatis = new DevExpress.XtraBars.BarButtonItem();
             this.bar_Yenile = new DevExpress.XtraBars.BarButtonItem();
             this.btnHesapDokum = new DevExpress.XtraBars.BarButtonItem();
+            this.btnParcaliOdeme = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControl13 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl14 = new DevExpress.XtraBars.BarDockControl();
@@ -858,9 +859,10 @@
             this.bar_OdaKontrol,
             this.btnHesapDokum,
             this.btnMasaKilitAc,
-            this.btnParcaliMasa});
+            this.btnParcaliMasa,
+            this.btnParcaliOdeme});
             this.barManager2.MainMenu = this.bar_Menu;
-            this.barManager2.MaxItemId = 31;
+            this.barManager2.MaxItemId = 32;
             // 
             // bar_Menu
             // 
@@ -882,7 +884,8 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.bar_PaketSatis, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.bar_Yenile, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnHesapDokum),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem11, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnParcaliOdeme, true),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem11, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar_Menu.OptionsBar.AllowQuickCustomization = false;
             this.bar_Menu.OptionsBar.MultiLine = true;
             this.bar_Menu.OptionsBar.UseWholeRow = true;
@@ -1058,6 +1061,17 @@
             this.btnHesapDokum.Name = "btnHesapDokum";
             this.btnHesapDokum.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnHesapDokum.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHesapDokum_ItemClick);
+            // 
+            // btnParcaliOdeme
+            // 
+            this.btnParcaliOdeme.Border = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            resources.ApplyResources(this.btnParcaliOdeme, "btnParcaliOdeme");
+            this.btnParcaliOdeme.Id = 31;
+            this.btnParcaliOdeme.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnParcaliOdeme.ImageOptions.SvgImage")));
+            this.btnParcaliOdeme.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
+            this.btnParcaliOdeme.Name = "btnParcaliOdeme";
+            this.btnParcaliOdeme.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnParcaliOdeme.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnParcaliOdeme_ItemClick);
             // 
             // barButtonItem11
             // 
@@ -1475,5 +1489,6 @@
         private DevExpress.XtraBars.BarButtonItem btnParcaliMasa;
         public DevExpress.XtraBars.BarStaticItem bartxt_Kul;
         public DevExpress.XtraBars.BarStaticItem bartxt_Dep;
+        private DevExpress.XtraBars.BarButtonItem btnParcaliOdeme;
     }
 }

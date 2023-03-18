@@ -2675,5 +2675,11 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             return kisiSayisi;
         }
 
+        private void btnParcaliOdeme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ParcaliOdeme parcaliOdeme = new ParcaliOdeme(Convert.ToInt32(bartxt_FisNo.EditValue).ToString(), Masa_No);
+            parcaliOdeme.ShowDialog();
+            MasaYenile(0);
+        }
     }
 }
