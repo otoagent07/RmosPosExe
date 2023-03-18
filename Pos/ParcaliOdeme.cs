@@ -636,7 +636,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "'";
                         return;
                     }
 
-
+                
                     
 
 
@@ -690,8 +690,18 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "'";
                     nesne.Rsat_Onbdep = null;
                     nesne.Rsat_OzelMasaAdi = null;
 
-                    db.Cst_Recete_Satis.Add(nesne);
-                    db.SaveChanges();
+
+
+                    /*
+                 NOT EĞER TUTAR SIFIRSA YAZDIR KAPAT DİYİNCEDE SATIR ATIYOR HALBUKİ ARA ÖDEMELERLE TÜM TUTARI ALMIŞTI
+                 SIFIR İSE SATIR ATMASIN(AŞAĞIDAKİ KOD İLE YAPILDI)
+                 */
+                    if (nesne.Rsat_Fiyat!=0 && nesne.Rsat_Tutar!=0)
+                    {
+                        db.Cst_Recete_Satis.Add(nesne);
+                        db.SaveChanges();
+                    }
+                   
 
 
                     if (araodememi == false)
