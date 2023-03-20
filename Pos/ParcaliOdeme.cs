@@ -13,6 +13,8 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,12 +23,16 @@ namespace Pos
 {
     public partial class ParcaliOdeme : Form
     {
+
+        ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
+
         public int Split = 0;
         public static string MyClass = "ParcaliOdeme";
         public string fisno = "0";
         public string anamasano = "";
         public string altmasano = "";
         public string odemetip = "";
+        public string hesapno = "";
         public ParcaliOdeme(string fisno, string anamasano)
         {
             InitializeComponent();
@@ -127,8 +133,8 @@ namespace Pos
             btnYazdirmadanKapat.Enabled = User.G_Yazdirmadankapat;
             btnAraOdemeAl.Enabled = User.G_Odemeal;
             btnHesapDokum.Enabled = User.G_Hesapdokumu;
-            //btn_Odemesil.Enabled = User.G_Odemesil;
-            //btn_Indirim.Enabled = User.G_Indirim_Hesap;
+            btnOdemeSil.Enabled = User.G_Odemesil;
+            btnIndirim.Enabled = User.G_Indirim_Hesap;
         }
 
         private void gridViewAna_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
@@ -218,7 +224,7 @@ then (select top 1 Pkod_Ad from Pos_Kodlar where Pkod_Sinif = '11'  and Pkod_Kod
 else Cst_Recete.Rec_Ad end as 'Rec_Ad'
 from Cst_Recete_Satis 
 left join Cst_Recete on Rec_Genelkod=Rsat_Recete
-where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "'";
+where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 DataTable dataTable = dbtools.SelectTableR(query);
 
                 foreach (DataRow item in dataTable.Rows)
@@ -717,6 +723,16 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "'";
                         string fisnoyaGoreQuery = @"update Cst_Recete_Satis set Rsat_Kapanis=convert(varchar(10), GETDATE(), 108),Rsat_Durum='K',Rsat_SistemDate = Getdate() where Rsat_Fisno='" + fisno + "'";
 
                         dbtools.SelectTableR(fisnoyaGoreQuery);
+
+
+                        string aciklama = "Fiş Kapatma. Fisno:" + fisno + " Masano:" + altmasano + " Ödeme Şekli:" + odemetip + " Hesap No:" + hesapno;
+
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+
+                    }
+                    else
+                    {
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, "Rsat Id=" + nesne.Rsat_Id + " Fiş Ara Ödeme Alındı. Tutar:" + nesne.Rsat_Tutar.ToString() + " Kod: " + odemetip, nesne.Rsat_Id.ToString(), "");
                     }
 
                     if (yazdirilsinmi)
@@ -820,6 +836,129 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "'";
                         e.Appearance.ForeColor = Color.White;
                     }
                 }
+            }
+        }
+
+        private void btnOdemeSil_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (gridViewAlt.FocusedRowHandle<1)
+                {
+                    MessageBox.Show("Lütfen ödeme satırını seçiniz !");
+                    return;
+                }
+
+                if (Convert.ToString(gridViewAlt.GetFocusedRowCellValue("Rsat_Id")) == String.Empty || Convert.ToString(gridViewAlt.GetFocusedRowCellValue("Rsat_Ba")) == "B")
+                {
+                    MessageBox.Show(res_man.GetString("Sadece Ödeme Satırı Silinebilir..."));
+                    return;
+                }
+
+                string rsatId = Convert.ToString(gridViewAlt.GetFocusedRowCellValue("Rsat_Id"));
+                dbtools.execcmd(@"
+                            delete from Pos_Carihrk
+                            where Chrk_Id in (
+                            select Chrk_Id from
+                            Pos_Carihrk as chrk left join Cst_Recete_Satis as satis on 
+                            chrk.Chrk_Cek = satis.Rsat_Fisno and chrk.Chrk_Cekid = satis.Rsat_Fisno and chrk.Chrk_Tarih = satis.Rsat_Tarih
+                            and satis.Rsat_Departman = chrk.Chrk_Depart and satis.Rsat_Kapatma = Chrk_Odeme 
+                            and satis.Rsat_Tutar = Chrk_Borc
+                            where satis.Rsat_Id = '" + rsatId + "')");
+
+
+                dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Id = '" + rsatId + "'");
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Sil, "Ödeme Silme Fisno : " + Convert.ToString(this.Tag) + " Tutar:" + Convert.ToString(gridViewAlt.GetFocusedRowCellValue("Rsat_Tutar")), Convert.ToString(this.Tag), rsatId);
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnOdemeSil_Click", "",ex);
+
+            }
+            finally
+            {
+                altmasayenile();
+            }
+        }
+
+        private void btnIndirim_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Indirim ind = new Indirim();
+                ind.Tag = "I";
+                ind.tutar = Convert.ToDecimal(gridColumn4.SummaryText);
+                ind.ShowDialog();
+
+
+                string neden = "";
+                if (Departman.Kodlar_YazSipNedSor && ind.cikisyapti == false)
+                {
+                    Klavye2 klv = new Klavye2();
+                    klv.ShowDialog();
+                    neden = klv.yazi == null ? "" : klv.yazi;
+                }
+
+
+                decimal tutar = 0, doviztutar = 0, oran = 0;
+                if (ind.indTipi == "T")
+                {
+                    
+                        tutar = ind.indSayi;
+                        doviztutar = tutar / Param.Doviz_Kuru;
+
+                        decimal toplamTutar23 = Convert.ToDecimal(gridViewAlt.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                        decimal oran23 = (tutar / toplamTutar23) * 100;
+
+                        if (oran23 > User.P_Indirim_Yuzde)
+                        {
+                            MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
+                            return;
+                    }
+                }
+                if (ind.indTipi == "Y")
+                {
+                    oran = ind.indSayi;
+                }
+
+                if (ind.indTipi == "MY")
+                {
+                    oran = ind.indSayi;
+                    ind.indTipi = "Y";
+                }
+
+                if (oran > 0 || tutar > 0)
+                {
+                    int fisno = Convert.ToInt32(this.Tag);
+                    Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split, neden: neden);
+
+                    decimal toplamTutar = Convert.ToDecimal(gridViewAlt.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                    if (oran > 0)
+                    {
+                        string aciklama = "İNDİRİM UYGULANDI . Fisno:" + fisno + " Masano:" + altmasano + " İNDİRİM ORANI : " + oran + " İNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "", neden: neden);
+                    }
+                    else if (tutar > 0)
+                    {
+                        string aciklama = "İNDİRİM UYGULANDI . Fisno:" + fisno + " Masano:" + altmasano + " İNDİRİM TUTARI : " + tutar + " İNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "", neden: neden);
+                    }
+
+                    //gridyenile();
+                    //Bakiye_Kontrol();
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnIndirim_Click", "", ex);
+            }
+            finally
+            {
+                altmasayenile();
             }
         }
     }

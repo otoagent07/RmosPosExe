@@ -103,6 +103,8 @@ namespace Pos
             this.btnOdeme3 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnOdemeSil = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIndirim = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAna)).BeginInit();
             this.groupControlAna.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAna)).BeginInit();
@@ -672,6 +674,8 @@ namespace Pos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnIndirim);
+            this.groupBox1.Controls.Add(this.btnOdemeSil);
             this.groupBox1.Controls.Add(this.btnAraOdemeAl);
             this.groupBox1.Controls.Add(this.btnHesapDokum);
             this.groupBox1.Controls.Add(this.btnYazdirKapat);
@@ -709,7 +713,7 @@ namespace Pos
             this.btnHesapDokum.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapDokum.ImageOptions.Image")));
             this.btnHesapDokum.Location = new System.Drawing.Point(110, 169);
             this.btnHesapDokum.Name = "btnHesapDokum";
-            this.btnHesapDokum.Size = new System.Drawing.Size(107, 60);
+            this.btnHesapDokum.Size = new System.Drawing.Size(103, 43);
             this.btnHesapDokum.TabIndex = 12;
             this.btnHesapDokum.Text = "HESAP\r\nDÖKÜM";
             this.btnHesapDokum.Click += new System.EventHandler(this.btnHesapDokum_Click);
@@ -915,6 +919,34 @@ namespace Pos
             this.btnOdeme1.Visible = false;
             this.btnOdeme1.Click += new System.EventHandler(this.btnOdeme1_Click);
             // 
+            // btnOdemeSil
+            // 
+            this.btnOdemeSil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOdemeSil.Appearance.BackColor = System.Drawing.Color.Snow;
+            this.btnOdemeSil.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeSil.Appearance.Options.UseBackColor = true;
+            this.btnOdemeSil.Appearance.Options.UseFont = true;
+            this.btnOdemeSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Odemesil.ImageOptions.Image")));
+            this.btnOdemeSil.Location = new System.Drawing.Point(6, 169);
+            this.btnOdemeSil.Name = "btnOdemeSil";
+            this.btnOdemeSil.Size = new System.Drawing.Size(103, 43);
+            this.btnOdemeSil.TabIndex = 18;
+            this.btnOdemeSil.Text = "Ödeme\r\nSil";
+            this.btnOdemeSil.Click += new System.EventHandler(this.btnOdemeSil_Click);
+            // 
+            // btnIndirim
+            // 
+            this.btnIndirim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIndirim.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnIndirim.Appearance.Options.UseFont = true;
+            this.btnIndirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Indirim.ImageOptions.Image")));
+            this.btnIndirim.Location = new System.Drawing.Point(6, 214);
+            this.btnIndirim.Name = "btnIndirim";
+            this.btnIndirim.Size = new System.Drawing.Size(103, 43);
+            this.btnIndirim.TabIndex = 19;
+            this.btnIndirim.Text = "İndirim";
+            this.btnIndirim.Click += new System.EventHandler(this.btnIndirim_Click);
+            // 
             // ParcaliOdeme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1024,5 +1056,7 @@ namespace Pos
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.SimpleButton btnHesapDokum;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn33;
+        private DevExpress.XtraEditors.SimpleButton btnOdemeSil;
+        private DevExpress.XtraEditors.SimpleButton btnIndirim;
     }
 }

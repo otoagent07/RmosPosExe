@@ -32,6 +32,29 @@ namespace Pos.Class
             if (con.State == ConnectionState.Open) con.Close();
         }
 
+        public static void Manuel_IndirimParcali(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split, string neden = "")
+        {
+
+            SqlConnection con = dbtools.conn;
+            if (con.State == ConnectionState.Closed) con.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandTimeout = 0;
+            com.CommandText = "Pos_Manuel_Indirim";
+            com.Parameters.AddWithValue("@Fisno", Fisno);
+            com.Parameters.AddWithValue("@Ind_Tip", indTipi);
+            com.Parameters.AddWithValue("@Ind_Tutar", tutar.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Ind_Doviztutar", doviztutar.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Ind_Oran", oran.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Ind_Turu", "MANUEL");
+            com.Parameters.AddWithValue("@Split", Split);
+            com.Parameters.AddWithValue("@Ind_User", User.P_Kod);
+            com.Parameters.AddWithValue("@aciklama", neden);
+            com.ExecuteNonQuery();
+            if (con.State == ConnectionState.Open) con.Close();
+        }
+
         public static void Manuel_Bindirim(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split)
         {
             SqlConnection con = dbtools.conn;
