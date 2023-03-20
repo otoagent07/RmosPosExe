@@ -2677,6 +2677,14 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void btnParcaliOdeme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            if (Masa_No == String.Empty || gridView2.RowCount == 0)
+            {
+                RHMesaj.MyMessageInformation("Dolu Masa Seçiniz...");
+                return;
+            }
+
+         
+
             ParcaliOdeme parcaliOdeme = new ParcaliOdeme(Convert.ToInt32(bartxt_FisNo.EditValue).ToString(), Masa_No);
             parcaliOdeme.ShowDialog();
             MasaYenile(0);

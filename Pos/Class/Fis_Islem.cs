@@ -32,7 +32,7 @@ namespace Pos.Class
             if (con.State == ConnectionState.Open) con.Close();
         }
 
-        public static void Manuel_IndirimParcali(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split, string neden = "")
+        public static void Manuel_IndirimParcali(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split, string neden = "", string masano="")
         {
 
             SqlConnection con = dbtools.conn;
@@ -41,7 +41,7 @@ namespace Pos.Class
             com.Connection = con;
             com.CommandType = CommandType.StoredProcedure;
             com.CommandTimeout = 0;
-            com.CommandText = "Pos_Manuel_Indirim";
+            com.CommandText = "Pos_Manuel_IndirimParcali";
             com.Parameters.AddWithValue("@Fisno", Fisno);
             com.Parameters.AddWithValue("@Ind_Tip", indTipi);
             com.Parameters.AddWithValue("@Ind_Tutar", tutar.ToString().Replace(",", "."));
@@ -51,6 +51,7 @@ namespace Pos.Class
             com.Parameters.AddWithValue("@Split", Split);
             com.Parameters.AddWithValue("@Ind_User", User.P_Kod);
             com.Parameters.AddWithValue("@aciklama", neden);
+            com.Parameters.AddWithValue("@masano", masano);
             com.ExecuteNonQuery();
             if (con.State == ConnectionState.Open) con.Close();
         }
@@ -98,6 +99,34 @@ namespace Pos.Class
             com.Parameters.AddWithValue("@Bindirim_Doviztutar", doviztutar.ToString().Replace(",", "."));
             com.Parameters.AddWithValue("@Bindirim_Oran", oran.ToString().Replace(",", "."));
             com.Parameters.AddWithValue("@Bindirim_User", User.P_Kod);
+
+            com.ExecuteNonQuery();
+            if (con.State == ConnectionState.Open) con.Close();
+        }
+
+        public static void Bindirim_UygulaParcali(int Fisno, string bindTipi, decimal tutar, decimal doviztutar, decimal oran,string masano="")
+        {
+
+            string query = "delete from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and Rsat_Durum='A' and Rsat_Masa='"+ masano + "' and  Rsat_Recete=(select top 1 ISNULL(Param_Bindirim,0) as Param_Bindirim from Pos_Param)";
+            dbtools.execcmd(query);
+
+
+            SqlConnection con = dbtools.conn;
+            if (con.State == ConnectionState.Closed) con.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandTimeout = 0;
+            com.CommandText = "Pos_BindirimParcali";
+            com.Parameters.AddWithValue("@Fisno", Fisno);
+            com.Parameters.AddWithValue("@Bindirim_Recete", Param.Param_Bindirim);
+            com.Parameters.AddWithValue("@Bindirim_Departman", Departman.Dep_Kodu);
+            com.Parameters.AddWithValue("@Bindirim_Tip", bindTipi);
+            com.Parameters.AddWithValue("@Bindirim_Tutar", tutar.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Bindirim_Doviztutar", doviztutar.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Bindirim_Oran", oran.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Bindirim_User", User.P_Kod);
+            com.Parameters.AddWithValue("@masano", masano);
 
             com.ExecuteNonQuery();
             if (con.State == ConnectionState.Open) con.Close();

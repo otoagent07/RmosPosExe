@@ -50,6 +50,7 @@ namespace Pos
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn31 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.btnCikis = new DevExpress.XtraEditors.SimpleButton();
             this.btnAlttanAnaya = new DevExpress.XtraEditors.SimpleButton();
             this.btnAnadanAlta = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -85,12 +86,16 @@ namespace Pos
             this.gridColumn33 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSpSil = new DevExpress.XtraEditors.SimpleButton();
+            this.btnYazdirmadanKapat = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBindirim = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIndirim = new DevExpress.XtraEditors.SimpleButton();
+            this.btnOdemeSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnAraOdemeAl = new DevExpress.XtraEditors.SimpleButton();
             this.btnHesapDokum = new DevExpress.XtraEditors.SimpleButton();
             this.btnYazdirKapat = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdemeTutar = new DevExpress.XtraEditors.SimpleButton();
             this.txtOdemeTutar = new DevExpress.XtraEditors.TextEdit();
-            this.btnYazdirmadanKapat = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme12 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme11 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme10 = new DevExpress.XtraEditors.SimpleButton();
@@ -103,8 +108,6 @@ namespace Pos
             this.btnOdeme3 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnOdemeSil = new DevExpress.XtraEditors.SimpleButton();
-            this.btnIndirim = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAna)).BeginInit();
             this.groupControlAna.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAna)).BeginInit();
@@ -299,29 +302,43 @@ namespace Pos
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.btnCikis);
             this.groupControl2.Controls.Add(this.btnAlttanAnaya);
             this.groupControl2.Controls.Add(this.btnAnadanAlta);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupControl2.Location = new System.Drawing.Point(352, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(45, 697);
+            this.groupControl2.Size = new System.Drawing.Size(80, 697);
             this.groupControl2.TabIndex = 1;
+            // 
+            // btnCikis
+            // 
+            this.btnCikis.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.ImageOptions.Image")));
+            this.btnCikis.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnCikis.Location = new System.Drawing.Point(2, 642);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(76, 53);
+            this.btnCikis.TabIndex = 1;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // btnAlttanAnaya
             // 
             this.btnAlttanAnaya.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAlttanAnaya.ImageOptions.Image")));
-            this.btnAlttanAnaya.Location = new System.Drawing.Point(2, 311);
+            this.btnAlttanAnaya.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnAlttanAnaya.Location = new System.Drawing.Point(2, 313);
             this.btnAlttanAnaya.Name = "btnAlttanAnaya";
-            this.btnAlttanAnaya.Size = new System.Drawing.Size(43, 47);
+            this.btnAlttanAnaya.Size = new System.Drawing.Size(74, 47);
             this.btnAlttanAnaya.TabIndex = 0;
             this.btnAlttanAnaya.Click += new System.EventHandler(this.btnAlttanAnaya_Click);
             // 
             // btnAnadanAlta
             // 
             this.btnAnadanAlta.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAnadanAlta.ImageOptions.Image")));
-            this.btnAnadanAlta.Location = new System.Drawing.Point(2, 180);
+            this.btnAnadanAlta.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnAnadanAlta.Location = new System.Drawing.Point(2, 182);
             this.btnAnadanAlta.Name = "btnAnadanAlta";
-            this.btnAnadanAlta.Size = new System.Drawing.Size(43, 47);
+            this.btnAnadanAlta.Size = new System.Drawing.Size(74, 47);
             this.btnAnadanAlta.TabIndex = 0;
             this.btnAnadanAlta.Click += new System.EventHandler(this.btnAnadanAlta_Click);
             // 
@@ -340,7 +357,7 @@ namespace Pos
             this.groupControl3.Controls.Add(this.btnAltMasa2);
             this.groupControl3.Controls.Add(this.btnAltMasa1);
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupControl3.Location = new System.Drawing.Point(397, 0);
+            this.groupControl3.Location = new System.Drawing.Point(432, 0);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(124, 697);
             this.groupControl3.TabIndex = 2;
@@ -348,9 +365,11 @@ namespace Pos
             // 
             // btnAltMasa10
             // 
+            this.btnAltMasa10.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa10.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa10.Appearance.Options.UseBackColor = true;
             this.btnAltMasa10.Appearance.Options.UseFont = true;
-            this.btnAltMasa10.Location = new System.Drawing.Point(2, 448);
+            this.btnAltMasa10.Location = new System.Drawing.Point(2, 524);
             this.btnAltMasa10.Name = "btnAltMasa10";
             this.btnAltMasa10.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa10.TabIndex = 9;
@@ -360,9 +379,11 @@ namespace Pos
             // 
             // btnAltMasa9
             // 
+            this.btnAltMasa9.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa9.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa9.Appearance.Options.UseBackColor = true;
             this.btnAltMasa9.Appearance.Options.UseFont = true;
-            this.btnAltMasa9.Location = new System.Drawing.Point(2, 401);
+            this.btnAltMasa9.Location = new System.Drawing.Point(2, 470);
             this.btnAltMasa9.Name = "btnAltMasa9";
             this.btnAltMasa9.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa9.TabIndex = 8;
@@ -372,9 +393,11 @@ namespace Pos
             // 
             // btnAltMasa8
             // 
+            this.btnAltMasa8.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa8.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa8.Appearance.Options.UseBackColor = true;
             this.btnAltMasa8.Appearance.Options.UseFont = true;
-            this.btnAltMasa8.Location = new System.Drawing.Point(2, 354);
+            this.btnAltMasa8.Location = new System.Drawing.Point(2, 415);
             this.btnAltMasa8.Name = "btnAltMasa8";
             this.btnAltMasa8.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa8.TabIndex = 7;
@@ -384,9 +407,11 @@ namespace Pos
             // 
             // btnAltMasa7
             // 
+            this.btnAltMasa7.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa7.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa7.Appearance.Options.UseBackColor = true;
             this.btnAltMasa7.Appearance.Options.UseFont = true;
-            this.btnAltMasa7.Location = new System.Drawing.Point(2, 307);
+            this.btnAltMasa7.Location = new System.Drawing.Point(2, 359);
             this.btnAltMasa7.Name = "btnAltMasa7";
             this.btnAltMasa7.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa7.TabIndex = 6;
@@ -396,9 +421,11 @@ namespace Pos
             // 
             // btnAltMasa6
             // 
+            this.btnAltMasa6.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa6.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa6.Appearance.Options.UseBackColor = true;
             this.btnAltMasa6.Appearance.Options.UseFont = true;
-            this.btnAltMasa6.Location = new System.Drawing.Point(2, 260);
+            this.btnAltMasa6.Location = new System.Drawing.Point(2, 303);
             this.btnAltMasa6.Name = "btnAltMasa6";
             this.btnAltMasa6.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa6.TabIndex = 5;
@@ -408,9 +435,11 @@ namespace Pos
             // 
             // btnAltMasa5
             // 
+            this.btnAltMasa5.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa5.Appearance.Options.UseBackColor = true;
             this.btnAltMasa5.Appearance.Options.UseFont = true;
-            this.btnAltMasa5.Location = new System.Drawing.Point(2, 213);
+            this.btnAltMasa5.Location = new System.Drawing.Point(2, 247);
             this.btnAltMasa5.Name = "btnAltMasa5";
             this.btnAltMasa5.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa5.TabIndex = 4;
@@ -420,9 +449,11 @@ namespace Pos
             // 
             // btnAltMasa4
             // 
+            this.btnAltMasa4.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa4.Appearance.Options.UseBackColor = true;
             this.btnAltMasa4.Appearance.Options.UseFont = true;
-            this.btnAltMasa4.Location = new System.Drawing.Point(2, 166);
+            this.btnAltMasa4.Location = new System.Drawing.Point(2, 192);
             this.btnAltMasa4.Name = "btnAltMasa4";
             this.btnAltMasa4.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa4.TabIndex = 3;
@@ -432,9 +463,11 @@ namespace Pos
             // 
             // btnAltMasa3
             // 
+            this.btnAltMasa3.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa3.Appearance.Options.UseBackColor = true;
             this.btnAltMasa3.Appearance.Options.UseFont = true;
-            this.btnAltMasa3.Location = new System.Drawing.Point(2, 119);
+            this.btnAltMasa3.Location = new System.Drawing.Point(2, 138);
             this.btnAltMasa3.Name = "btnAltMasa3";
             this.btnAltMasa3.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa3.TabIndex = 2;
@@ -444,9 +477,11 @@ namespace Pos
             // 
             // btnAltMasa2
             // 
+            this.btnAltMasa2.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa2.Appearance.Options.UseBackColor = true;
             this.btnAltMasa2.Appearance.Options.UseFont = true;
-            this.btnAltMasa2.Location = new System.Drawing.Point(2, 72);
+            this.btnAltMasa2.Location = new System.Drawing.Point(2, 84);
             this.btnAltMasa2.Name = "btnAltMasa2";
             this.btnAltMasa2.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa2.TabIndex = 1;
@@ -456,9 +491,11 @@ namespace Pos
             // 
             // btnAltMasa1
             // 
+            this.btnAltMasa1.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAltMasa1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAltMasa1.Appearance.Options.UseBackColor = true;
             this.btnAltMasa1.Appearance.Options.UseFont = true;
-            this.btnAltMasa1.Location = new System.Drawing.Point(2, 25);
+            this.btnAltMasa1.Location = new System.Drawing.Point(2, 31);
             this.btnAltMasa1.Name = "btnAltMasa1";
             this.btnAltMasa1.Size = new System.Drawing.Size(120, 47);
             this.btnAltMasa1.TabIndex = 0;
@@ -472,9 +509,9 @@ namespace Pos
             this.groupControlAlt.AppearanceCaption.Options.UseFont = true;
             this.groupControlAlt.Controls.Add(this.gridControlAlt);
             this.groupControlAlt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControlAlt.Location = new System.Drawing.Point(521, 0);
+            this.groupControlAlt.Location = new System.Drawing.Point(556, 0);
             this.groupControlAlt.Name = "groupControlAlt";
-            this.groupControlAlt.Size = new System.Drawing.Size(351, 697);
+            this.groupControlAlt.Size = new System.Drawing.Size(341, 697);
             this.groupControlAlt.TabIndex = 3;
             this.groupControlAlt.Text = "ALT MASA NO :";
             // 
@@ -484,7 +521,7 @@ namespace Pos
             this.gridControlAlt.Location = new System.Drawing.Point(2, 26);
             this.gridControlAlt.MainView = this.gridViewAlt;
             this.gridControlAlt.Name = "gridControlAlt";
-            this.gridControlAlt.Size = new System.Drawing.Size(347, 669);
+            this.gridControlAlt.Size = new System.Drawing.Size(337, 669);
             this.gridControlAlt.TabIndex = 1;
             this.gridControlAlt.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewAlt});
@@ -666,7 +703,7 @@ namespace Pos
             this.groupControl5.Controls.Add(this.btnOdeme2);
             this.groupControl5.Controls.Add(this.btnOdeme1);
             this.groupControl5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupControl5.Location = new System.Drawing.Point(872, 0);
+            this.groupControl5.Location = new System.Drawing.Point(897, 0);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Size = new System.Drawing.Size(224, 697);
             this.groupControl5.TabIndex = 4;
@@ -674,6 +711,9 @@ namespace Pos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnSpSil);
+            this.groupBox1.Controls.Add(this.btnYazdirmadanKapat);
+            this.groupBox1.Controls.Add(this.btnBindirim);
             this.groupBox1.Controls.Add(this.btnIndirim);
             this.groupBox1.Controls.Add(this.btnOdemeSil);
             this.groupBox1.Controls.Add(this.btnAraOdemeAl);
@@ -681,7 +721,6 @@ namespace Pos
             this.groupBox1.Controls.Add(this.btnYazdirKapat);
             this.groupBox1.Controls.Add(this.btnOdemeTutar);
             this.groupBox1.Controls.Add(this.txtOdemeTutar);
-            this.groupBox1.Controls.Add(this.btnYazdirmadanKapat);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox1.Location = new System.Drawing.Point(2, 321);
             this.groupBox1.Name = "groupBox1";
@@ -689,6 +728,74 @@ namespace Pos
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "İŞLEMLER";
+            // 
+            // btnSpSil
+            // 
+            this.btnSpSil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSpSil.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnSpSil.Appearance.Options.UseFont = true;
+            this.btnSpSil.Appearance.Options.UseTextOptions = true;
+            this.btnSpSil.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btnSpSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSpSil.ImageOptions.Image")));
+            this.btnSpSil.Location = new System.Drawing.Point(6, 320);
+            this.btnSpSil.Name = "btnSpSil";
+            this.btnSpSil.Size = new System.Drawing.Size(103, 43);
+            this.btnSpSil.TabIndex = 119;
+            this.btnSpSil.Text = "SP Sil";
+            this.btnSpSil.Click += new System.EventHandler(this.btnSpSil_Click);
+            // 
+            // btnYazdirmadanKapat
+            // 
+            this.btnYazdirmadanKapat.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnYazdirmadanKapat.Appearance.Options.UseFont = true;
+            this.btnYazdirmadanKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdirmadanKapat.ImageOptions.Image")));
+            this.btnYazdirmadanKapat.Location = new System.Drawing.Point(4, 123);
+            this.btnYazdirmadanKapat.Name = "btnYazdirmadanKapat";
+            this.btnYazdirmadanKapat.Size = new System.Drawing.Size(213, 44);
+            this.btnYazdirmadanKapat.TabIndex = 13;
+            this.btnYazdirmadanKapat.Text = "Yazdırmadan Kapat";
+            this.btnYazdirmadanKapat.Click += new System.EventHandler(this.btnYazdirmadanKapat_Click);
+            // 
+            // btnBindirim
+            // 
+            this.btnBindirim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBindirim.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnBindirim.Appearance.Options.UseFont = true;
+            this.btnBindirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBindirim.ImageOptions.Image")));
+            this.btnBindirim.Location = new System.Drawing.Point(110, 275);
+            this.btnBindirim.Name = "btnBindirim";
+            this.btnBindirim.Size = new System.Drawing.Size(107, 43);
+            this.btnBindirim.TabIndex = 101;
+            this.btnBindirim.Text = "Servis Payı";
+            this.btnBindirim.Click += new System.EventHandler(this.btnBindirim_Click);
+            // 
+            // btnIndirim
+            // 
+            this.btnIndirim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIndirim.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnIndirim.Appearance.Options.UseFont = true;
+            this.btnIndirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIndirim.ImageOptions.Image")));
+            this.btnIndirim.Location = new System.Drawing.Point(6, 275);
+            this.btnIndirim.Name = "btnIndirim";
+            this.btnIndirim.Size = new System.Drawing.Size(103, 43);
+            this.btnIndirim.TabIndex = 19;
+            this.btnIndirim.Text = "İndirim";
+            this.btnIndirim.Click += new System.EventHandler(this.btnIndirim_Click);
+            // 
+            // btnOdemeSil
+            // 
+            this.btnOdemeSil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOdemeSil.Appearance.BackColor = System.Drawing.Color.Snow;
+            this.btnOdemeSil.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeSil.Appearance.Options.UseBackColor = true;
+            this.btnOdemeSil.Appearance.Options.UseFont = true;
+            this.btnOdemeSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOdemeSil.ImageOptions.Image")));
+            this.btnOdemeSil.Location = new System.Drawing.Point(6, 230);
+            this.btnOdemeSil.Name = "btnOdemeSil";
+            this.btnOdemeSil.Size = new System.Drawing.Size(103, 43);
+            this.btnOdemeSil.TabIndex = 18;
+            this.btnOdemeSil.Text = "Ödeme\r\nSil";
+            this.btnOdemeSil.Click += new System.EventHandler(this.btnOdemeSil_Click);
             // 
             // btnAraOdemeAl
             // 
@@ -699,7 +806,7 @@ namespace Pos
             this.btnAraOdemeAl.Appearance.Options.UseTextOptions = true;
             this.btnAraOdemeAl.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.btnAraOdemeAl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAraOdemeAl.ImageOptions.Image")));
-            this.btnAraOdemeAl.Location = new System.Drawing.Point(4, 120);
+            this.btnAraOdemeAl.Location = new System.Drawing.Point(4, 180);
             this.btnAraOdemeAl.Name = "btnAraOdemeAl";
             this.btnAraOdemeAl.Size = new System.Drawing.Size(213, 43);
             this.btnAraOdemeAl.TabIndex = 15;
@@ -711,9 +818,9 @@ namespace Pos
             this.btnHesapDokum.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnHesapDokum.Appearance.Options.UseFont = true;
             this.btnHesapDokum.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapDokum.ImageOptions.Image")));
-            this.btnHesapDokum.Location = new System.Drawing.Point(110, 169);
+            this.btnHesapDokum.Location = new System.Drawing.Point(110, 230);
             this.btnHesapDokum.Name = "btnHesapDokum";
-            this.btnHesapDokum.Size = new System.Drawing.Size(103, 43);
+            this.btnHesapDokum.Size = new System.Drawing.Size(107, 43);
             this.btnHesapDokum.TabIndex = 12;
             this.btnHesapDokum.Text = "HESAP\r\nDÖKÜM";
             this.btnHesapDokum.Click += new System.EventHandler(this.btnHesapDokum_Click);
@@ -761,19 +868,6 @@ namespace Pos
             this.txtOdemeTutar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtOdemeTutar.Size = new System.Drawing.Size(145, 32);
             this.txtOdemeTutar.TabIndex = 16;
-            // 
-            // btnYazdirmadanKapat
-            // 
-            this.btnYazdirmadanKapat.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnYazdirmadanKapat.Appearance.Options.UseFont = true;
-            this.btnYazdirmadanKapat.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnYazdirmadanKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdirmadanKapat.ImageOptions.Image")));
-            this.btnYazdirmadanKapat.Location = new System.Drawing.Point(3, 321);
-            this.btnYazdirmadanKapat.Name = "btnYazdirmadanKapat";
-            this.btnYazdirmadanKapat.Size = new System.Drawing.Size(214, 50);
-            this.btnYazdirmadanKapat.TabIndex = 13;
-            this.btnYazdirmadanKapat.Text = "Yazdırmadan Kapat";
-            this.btnYazdirmadanKapat.Click += new System.EventHandler(this.btnYazdirmadanKapat_Click);
             // 
             // btnOdeme12
             // 
@@ -919,39 +1013,12 @@ namespace Pos
             this.btnOdeme1.Visible = false;
             this.btnOdeme1.Click += new System.EventHandler(this.btnOdeme1_Click);
             // 
-            // btnOdemeSil
-            // 
-            this.btnOdemeSil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOdemeSil.Appearance.BackColor = System.Drawing.Color.Snow;
-            this.btnOdemeSil.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeSil.Appearance.Options.UseBackColor = true;
-            this.btnOdemeSil.Appearance.Options.UseFont = true;
-            this.btnOdemeSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Odemesil.ImageOptions.Image")));
-            this.btnOdemeSil.Location = new System.Drawing.Point(6, 169);
-            this.btnOdemeSil.Name = "btnOdemeSil";
-            this.btnOdemeSil.Size = new System.Drawing.Size(103, 43);
-            this.btnOdemeSil.TabIndex = 18;
-            this.btnOdemeSil.Text = "Ödeme\r\nSil";
-            this.btnOdemeSil.Click += new System.EventHandler(this.btnOdemeSil_Click);
-            // 
-            // btnIndirim
-            // 
-            this.btnIndirim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnIndirim.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnIndirim.Appearance.Options.UseFont = true;
-            this.btnIndirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Indirim.ImageOptions.Image")));
-            this.btnIndirim.Location = new System.Drawing.Point(6, 214);
-            this.btnIndirim.Name = "btnIndirim";
-            this.btnIndirim.Size = new System.Drawing.Size(103, 43);
-            this.btnIndirim.TabIndex = 19;
-            this.btnIndirim.Text = "İndirim";
-            this.btnIndirim.Click += new System.EventHandler(this.btnIndirim_Click);
-            // 
             // ParcaliOdeme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 697);
+            this.ClientSize = new System.Drawing.Size(1121, 697);
+            this.ControlBox = false;
             this.Controls.Add(this.groupControlAlt);
             this.Controls.Add(this.groupControl5);
             this.Controls.Add(this.groupControl3);
@@ -960,6 +1027,7 @@ namespace Pos
             this.Name = "ParcaliOdeme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Parçalı Ödeme";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ParcaliOdeme_FormClosing);
             this.Load += new System.EventHandler(this.ParcaliOdeme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAna)).EndInit();
             this.groupControlAna.ResumeLayout(false);
@@ -1058,5 +1126,8 @@ namespace Pos
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn33;
         private DevExpress.XtraEditors.SimpleButton btnOdemeSil;
         private DevExpress.XtraEditors.SimpleButton btnIndirim;
+        private DevExpress.XtraEditors.SimpleButton btnBindirim;
+        private DevExpress.XtraEditors.SimpleButton btnSpSil;
+        private DevExpress.XtraEditors.SimpleButton btnCikis;
     }
 }
