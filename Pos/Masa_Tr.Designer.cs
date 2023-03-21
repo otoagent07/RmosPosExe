@@ -41,12 +41,21 @@
             this.btn_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.txt_Masano = new DevExpress.XtraEditors.TextEdit();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Masano.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -133,8 +142,8 @@
             // 
             this.btn_Transfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Transfer.Appearance.Font")));
             this.btn_Transfer.Appearance.Options.UseFont = true;
-            this.btn_Transfer.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Transfer.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btn_Transfer, "btn_Transfer");
+            this.btn_Transfer.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Transfer.ImageOptions.SvgImage")));
             this.btn_Transfer.Name = "btn_Transfer";
             this.btn_Transfer.Click += new System.EventHandler(this.btn_Transfer_Click);
             // 
@@ -142,9 +151,9 @@
             // 
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
             this.btn_Cikis.Appearance.Options.UseFont = true;
-            this.btn_Cikis.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btn_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cikis.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
+            this.btn_Cikis.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btn_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cikis.ImageOptions.SvgImage")));
             this.btn_Cikis.Name = "btn_Cikis";
             this.btn_Cikis.Click += new System.EventHandler(this.btn_Cikis_Click);
             // 
@@ -169,16 +178,34 @@
             this.textEdit8.Properties.ReadOnly = true;
             this.textEdit8.TabStop = false;
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.btn_Transfer);
+            this.panelControl1.Controls.Add(this.btn_Cikis);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
+            this.panelControl1.Name = "panelControl1";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.textEdit8);
+            this.panelControl2.Controls.Add(this.txt_Masano);
+            resources.ApplyResources(this.panelControl2, "panelControl2");
+            this.panelControl2.Name = "panelControl2";
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Controls.Add(this.gridControl1);
+            resources.ApplyResources(this.panelControl3, "panelControl3");
+            this.panelControl3.Name = "panelControl3";
+            // 
             // Masa_Tr
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.txt_Masano);
-            this.Controls.Add(this.textEdit8);
-            this.Controls.Add(this.btn_Cikis);
-            this.Controls.Add(this.btn_Transfer);
             this.Controls.Add(this.gridControl2);
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.panelControl3);
+            this.Controls.Add(this.panelControl2);
+            this.Controls.Add(this.panelControl1);
             this.Name = "Masa_Tr";
             this.Load += new System.EventHandler(this.Masa_Tr_Load);
             this.Shown += new System.EventHandler(this.Masa_Tr_Shown);
@@ -188,6 +215,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Masano.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -206,5 +239,8 @@
         private DevExpress.XtraEditors.SimpleButton btn_Cikis;
         private DevExpress.XtraEditors.TextEdit textEdit8;
         public DevExpress.XtraEditors.TextEdit txt_Masano;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
     }
 }

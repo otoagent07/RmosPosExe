@@ -687,8 +687,10 @@ namespace Pos
             // 
             // groupControl5
             // 
-            this.groupControl5.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupControl5.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupControl5.AppearanceCaption.ForeColor = System.Drawing.Color.Indigo;
             this.groupControl5.AppearanceCaption.Options.UseFont = true;
+            this.groupControl5.AppearanceCaption.Options.UseForeColor = true;
             this.groupControl5.Controls.Add(this.groupBox1);
             this.groupControl5.Controls.Add(this.btnOdeme12);
             this.groupControl5.Controls.Add(this.btnOdeme11);
@@ -707,7 +709,6 @@ namespace Pos
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Size = new System.Drawing.Size(224, 697);
             this.groupControl5.TabIndex = 4;
-            this.groupControl5.Text = "GENEL İŞLEMLER";
             // 
             // groupBox1
             // 

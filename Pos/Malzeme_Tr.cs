@@ -94,7 +94,7 @@ namespace Pos
                 filtre = " and Masa_Konum = '" + Convert.ToString(gridView1.GetFocusedRowCellValue("Kod")) + "' ";
             }
 
-            gridControl2.DataSource = dbtools.SelectTable("select Masa_No, Masa_Ad, Masa_Durum,ISNULL(Masa_Ozel,'') as Masa_Ozel from Pos_Masa with(nolock) where Masa_Paket = 0 and Masa_Depart = '" + Departman.Dep_Kodu + "' " + filtre + " order by Masa_No");
+            gridControl2.DataSource = dbtools.SelectTable("select Masa_No, Masa_Ad, Masa_Durum,ISNULL(Masa_Ozel,'') as Masa_Ozel from Pos_Masa with(nolock) where Masa_Paket = 0 and Masa_Depart = '" + Departman.Dep_Kodu + "' " + filtre + "  and Masa_No not like '%[_]%' order by Masa_No");
         }
 
         private void gridyenile_Konumlar()

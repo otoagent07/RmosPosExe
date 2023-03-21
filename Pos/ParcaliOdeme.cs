@@ -24,6 +24,11 @@ namespace Pos
     public partial class ParcaliOdeme : Form
     {
 
+        /*
+         ÖNEMLİ AÇIKLAMA: 
+         ALTMASANODAKİ FİŞ NO'LAR sıfır oldugu için tüm where şartlarına where fisno=0 and rsat_durum='A' and and Rsat_Masa = @MasaNo eklemek zorundasın
+         */
+
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
 
         public int Split = 0;
@@ -305,6 +310,20 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
 
 
+        public void servisPayiUygula(int fisno, string masano)
+        {
+            try
+            {
+                if (Departman.Kodlar_ServisPayi)
+                {
+                    dbtools.execcmd("Exec Pos_ServisPayiParcali @Fisno = '" + fisno + "', @MasaNo ='" + masano + "'");
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "servisPayiUygula", "", ex);
+            }
+        }
 
         public void aktarim(DataRow neredenRow, string neredenMasa, string nereyeMasa, int fisno)
         {
@@ -428,6 +447,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                     }
 
+                    servisPayiUygula(0, altmasano);
+                    servisPayiUygula(Convert.ToInt32(this.fisno), anamasano);
 
 
                 }
@@ -511,10 +532,95 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
             }
         }
 
+        public void cariyeEkle(int fisno)
+        {
+            try
+            {
+                if (ara == null)
+                {
+                    return;
+                }
+                if (ara.Odeme_Ozelkod == 2 || ara.Odeme_Ozelkod == 5 || ara.Odeme_Ozelkod == 1) // 2 odenmez ,cari 5 , odakredi 1
+                {
+                    decimal fiyat = Convert.ToDecimal(txtOdemeTutar.Text);
+
+
+                    string query = @"INSERT INTO Pos_Carihrk(Chrk_Cek,Chrk_Cekid,Chrk_Cari,Chrk_Tarih,Chrk_Depart,Chrk_Odeme,Chrk_Borc,Chrk_Alacak)
+        Values(" + fisno + "," + fisno + ",'" + ara.Cari_Kod + "',getdate(),'" + Departman.Dep_Kodu + "','" + odemetip + @"'," + fiyat.ToString().Replace(",", ".") + ",0)";
+
+                    dbtools.execcmdR(query);
+
+                }
+
+                groupControl5.Text = "";
+                ara = null;
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "cariyeEkle", "", ex);
+            }
+        }
+
+
+        int Odeme_Ozelkod = -1;
+        Arama ara = null;
+
+
+        public void cariOdenmezAc()
+        {
+            try
+            {
+
+                string query = "select Pkod_Ozelkod from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '11' and Pkod_Kod = '" + odemetip + "' ";
+                Odeme_Ozelkod = Convert.ToInt32(dbtools.DegerGetir(query));
+
+                groupControl5.Text = "";
+                ara = null;
+                if (Odeme_Ozelkod == 2 || Odeme_Ozelkod == 5 || Odeme_Ozelkod == 1) // 2 odenmez ,cari 5 , odakredi 1
+                {
+                    ara = new Arama();
+                    ara.KapatmaKodu = odemetip;
+                    ara.Odeme_Ozelkod = Odeme_Ozelkod;
+                    ara.ShowDialog();
+                    btnAraOdemeAl.Enabled = false;
+                    groupControl5.Text = ara.Uye_Adsoyad + " - " + ara.Cari_Kod;
+
+                    //musTipi_A = ara.Mus_tipi;
+                    //odaNo_A = ara.Oda_No;
+                    //folio_A = ara.Folio;
+                    //masterFolio_A = ara.Master_Folio;
+                    //pansiyon_A = ara.Pansiyon;
+                    //uyeId_A = ara.Uye_Id;
+                    //uyeAdsoyad_A = ara.Uye_Adsoyad;
+                    //uyeKartturu_A = ara.Uye_Kartturu;
+                    //cari_A = ara.Cari_Kod;
+                    //indKodu_A = ara.Ind_Kodu;
+                    //indOran_A = ara.Ind_Oran;
+                    //odemeKodu_A = ara.Odeme_Kodu;
+                    //FolioKart_No = ara.Kart_No;
+                    //FolioKart_ID = Convert.ToString(ara.KartID);
+
+                    //txt_Hesapno.Text = Convert.ToString(odaNo_A) == null ? cari_A : odaNo_A;
+                    //lbl_Bilgi.Text = ara.Bilgi; // burada
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "cariOdenmezAc", "", ex);
+            }
+        }
+
         private void btnOdeme1_Click(object sender, EventArgs e)
         {
             try
             {
+                btnAraOdemeAl.Enabled = true;
+                groupControl5.Text = "";
+                ara = null;
 
                 foreach (SimpleButton item in buttonsOdeme)
                 {
@@ -556,7 +662,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                 odemetip = tiklanan.Tag.ToString();
 
-
+                cariOdenmezAc();
 
             }
             catch (Exception ex)
@@ -615,6 +721,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
             return dtDeger;
 
         }
+
+
 
         public void yazdirKapat(bool yazdirilsinmi, bool araodememi = false)
         {
@@ -765,11 +873,16 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                         Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
 
+
+                        cariyeEkle(fisno);
+
                     }
                     else
                     {
                         Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, "Rsat Id=" + nesne.Rsat_Id + " Fiş Ara Ödeme Alındı. Tutar:" + nesne.Rsat_Tutar.ToString() + " Kod: " + odemetip, nesne.Rsat_Id.ToString(), "");
                     }
+
+
 
                     if (yazdirilsinmi)
                     {
@@ -1201,7 +1314,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
         private void ParcaliOdeme_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (cikisyapabilirmi()==false)
+            if (cikisyapabilirmi() == false)
             {
                 e.Cancel = true;
             }

@@ -54,6 +54,8 @@ namespace Pos
         {
             try
             {
+                btnParcaliOdeme.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                btnParcaliOdemeEski.Visible = false;
                 yaziciKapaliysaAc();
                 masaDurumUpdate();
                 this.BringToFront();
@@ -71,6 +73,18 @@ namespace Pos
                 if (var=="1")
                 {
                     yazdirilmamisSiparis = true;
+                }
+
+                if (Param.Tesis_Tipi==1) // 1 ise posdur 0 ise otel
+                {
+                    btnParcaliOdeme.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+
+
+                    if (!Param.Param_MasaTakipMenu)
+                    {
+                        btnParcaliOdemeEski.Visible = true;
+                    }
+                    
                 }
 
             }
@@ -2146,33 +2160,40 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            KisiSayisiDegistir();
-
-        }
+       
 
         private void KisiSayisiDegistir()
         {
-            timer1.Enabled = false;
-            DataTable dtKisi = dbtools.SelectTable("select Rsat_Kisi from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Fisno = '" + bartxt_FisNo.EditValue + "'");
-            if (dtKisi.Rows.Count <= 0)
+            try
             {
-                return;
+                timer1.Enabled = false;
+                DataTable dtKisi = dbtools.SelectTable("select isnull(Rsat_Kisi,1) as Rsat_Kisi from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Fisno = '" + bartxt_FisNo.EditValue + "'");
+                if (dtKisi.Rows.Count <= 0)
+                {
+                    return;
+                }
+
+                Klavye1 klavye = new Klavye1();
+                klavye.Tag = "KISISAYISI";
+                klavye.txt_Sayi.Text = Convert.ToInt32(dtKisi.Rows[0]["Rsat_Kisi"]).ToString();
+                klavye.ShowDialog();
+                int Kisi_Sayisi = Convert.ToInt32(klavye.sayi);
+
+                Fis_Islem.Kisi_Sayisi(Convert.ToInt32(bartxt_FisNo.EditValue), Kisi_Sayisi);
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Kisi_Sayisi, Log.Log_Islem.Duzelt, "Fis No:" + bartxt_FisNo.EditValue.ToString() + " Kisi Sayısı Duzeltildi.Eski Kisi: " + Convert.ToInt32(dtKisi.Rows[0]["Rsat_Kisi"]).ToString() + " Yeni Kisi: " + Kisi_Sayisi.ToString(), bartxt_FisNo.EditValue.ToString(), "");
+
+                MasaYenile(0);
+                timer1.Enabled = true;
+
+
             }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "KisiSayisiDegistir", "",ex);
+            }
+            //popupControlContainer1.HidePopup();
 
-            Klavye1 klavye = new Klavye1();
-            klavye.Tag = "KISISAYISI";
-            klavye.txt_Sayi.Text = Convert.ToInt32(dtKisi.Rows[0]["Rsat_Kisi"]).ToString();
-            klavye.ShowDialog();
-            int Kisi_Sayisi = Convert.ToInt32(klavye.sayi);
-
-            Fis_Islem.Kisi_Sayisi(Convert.ToInt32(bartxt_FisNo.EditValue), Kisi_Sayisi);
-
-            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Kisi_Sayisi, Log.Log_Islem.Duzelt, "Fis No:" + bartxt_FisNo.EditValue.ToString() + " Kisi Sayısı Duzeltildi.Eski Kisi: " + Convert.ToInt32(dtKisi.Rows[0]["Rsat_Kisi"]).ToString() + " Yeni Kisi: " + Kisi_Sayisi.ToString(), bartxt_FisNo.EditValue.ToString(), "");
-
-            MasaYenile(0);
-            timer1.Enabled = true;
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
@@ -2675,7 +2696,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             return kisiSayisi;
         }
 
-        private void btnParcaliOdeme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        public void parcaliOdemeAc()
         {
             if (Masa_No == String.Empty || gridView2.RowCount == 0)
             {
@@ -2683,11 +2704,31 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 return;
             }
 
-         
+
 
             ParcaliOdeme parcaliOdeme = new ParcaliOdeme(Convert.ToInt32(bartxt_FisNo.EditValue).ToString(), Masa_No);
             parcaliOdeme.ShowDialog();
             MasaYenile(0);
+        }
+        private void btnParcaliOdeme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            parcaliOdemeAc();
+        }
+
+        private void btn_KisiSayisi_Click(object sender, EventArgs e)
+        {
+            KisiSayisiDegistir();
+
+        }
+
+        private void btnParcaliEski_Click(object sender, EventArgs e)
+        {
+            parcaliOdemeAc();
+        }
+
+        private void btnParcaliOdemeEski_Click(object sender, EventArgs e)
+        {
+            parcaliOdemeAc();
         }
     }
 }

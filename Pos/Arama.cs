@@ -27,7 +27,7 @@ namespace Pos
         public int Uye_Id { get; set; }
         public string Uye_Adsoyad { get; set; }
         public string Uye_Kartturu { get; set; }
-        public string Cari_Kod { get; set; }
+        public string Cari_Kod { get; set; } = "";
         public string Kart_No { get; set; }
         public string Ind_Kodu { get; set; }
         public decimal Ind_Oran { get; set; }
@@ -546,71 +546,85 @@ namespace Pos
 
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
 
+
+        public void tamam()
+        {
+            try
+            {
+                if (Mus_tipi == null || Convert.ToString(Mus_tipi) == "" || gridView1.RowCount == 0)
+                {
+                    MessageBox.Show(res_man.GetString("Lütfen Hesap Seçiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    return;
+                }
+
+                if (Mus_tipi == "O")
+                {
+                    Oda_No = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Odano"));
+                    Folio = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rez_Id"));
+                    Pansiyon = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Konaklama"));
+                    Odeme_Kodu = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Odeme"));
+                    Master_Folio = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rez_Master_Id"));
+                    Kart_No = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Kartno"));
+                    KartID = Convert.ToString(gridView1.GetFocusedRowCellValue("ID"));
+
+                    DataTable dtInd = dbtools.SelectTable("declare @Ind nvarchar(200) =(select Rez_Uye_depind_kodu from " + Fronttools.DB_LinkServer + "." + Fronttools.DB_Database + ".dbo.Rez with(nolock) where Rez_Id = '" + Master_Folio.ToString() + "') "
+                                                           + " select Ind_Kodu,Ind_Oran "
+                                                           + " from Cst_Indirim with(nolock) "
+                                                           + " where Ind_Kodu in (select FieldValue from StringArray(@Ind,',')) "
+                                                           + " ORDER BY Ind_Oran desc");
+                    if (dtInd != null)
+                    {
+                        if (dtInd.Rows.Count > 0)
+                        {
+                            Ind_Oran = Convert.ToDecimal(dtInd.Rows[0]["Ind_Oran"]);
+                            Ind_Kodu = Convert.ToString(dtInd.Rows[0]["Ind_Kodu"]);
+                        }
+                        else
+                        {
+                            Ind_Oran = 0;
+                            Ind_Kodu = String.Empty;
+                        }
+                    }
+
+
+                    Bilgi = Oda_No + "  " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Adi_1")) + " " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Adi_2"));
+                }
+
+                if (Mus_tipi == "U")
+                {
+                    Oda_No = "U" + Departman.Dep_Kodu;
+                    Folio = Convert.ToInt32(Fronttools.DegerGetir("select isnull((select isnull(Rez_Id,0) from Rez with(nolock) where Rez_Odano = N'" + Oda_No + "' and Rez_R_I_H = 'I'),0) "));
+                    Uye_Id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Kimlik_Id"));
+                    Uye_Adsoyad = Convert.ToString(Convert.ToString(gridView1.GetFocusedRowCellValue("Kimlik_Ad")) + " " + Convert.ToString(gridView1.GetFocusedRowCellValue("Kimlik_Soyad")));
+                    Uye_Adsoyad = Uye_Adsoyad.Length > 100 ? Uye_Adsoyad.Substring(0, 99) : Uye_Adsoyad;
+                    Uye_Kartturu = Convert.ToString(gridView1.GetFocusedRowCellValue("Kart_Turu"));
+
+                    Ind_Kodu = Convert.ToString(gridView1.GetFocusedRowCellValue("Kart_Turu"));
+                    Ind_Oran = Convert.ToDecimal(dbtools.DegerGetir("select isnull((select Ind_Oran from Cst_Indirim with(nolock)where Ind_Kodu = N'" + Convert.ToString(gridView1.GetFocusedRowCellValue("Kart_Turu")) + "'),0)"));
+
+                    Bilgi = "Uye : " + Uye_Adsoyad;
+                }
+
+                if (Mus_tipi == "C")
+                {
+                    Cari_Kod = Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Kod"));
+                    Bilgi = "Cari : " + Cari_Kod;
+                    Uye_Adsoyad = Convert.ToString(Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Ad")) + " " + Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Soyad")));
+
+                }
+
+                FormClose = true;
+                HizliSatis = true;
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "tamam", "",ex);
+            }
+        }
         public void btn_OK_Click(object sender, EventArgs e)
         {
-            if (Mus_tipi == null || Convert.ToString(Mus_tipi) == "" || gridView1.RowCount == 0)
-            {
-                MessageBox.Show(res_man.GetString("Lütfen Hesap Seçiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                return;
-            }
-
-            if (Mus_tipi == "O")
-            {
-                Oda_No = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Odano"));
-                Folio = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rez_Id"));
-                Pansiyon = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Konaklama"));
-                Odeme_Kodu = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Odeme"));
-                Master_Folio = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rez_Master_Id"));
-                Kart_No = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Kartno"));
-                KartID = Convert.ToString(gridView1.GetFocusedRowCellValue("ID"));
-
-                DataTable dtInd = dbtools.SelectTable("declare @Ind nvarchar(200) =(select Rez_Uye_depind_kodu from " + Fronttools.DB_LinkServer + "." + Fronttools.DB_Database + ".dbo.Rez with(nolock) where Rez_Id = '" + Master_Folio.ToString() + "') "
-                                                       + " select Ind_Kodu,Ind_Oran "
-                                                       + " from Cst_Indirim with(nolock) "
-                                                       + " where Ind_Kodu in (select FieldValue from StringArray(@Ind,',')) "
-                                                       + " ORDER BY Ind_Oran desc");
-                if (dtInd != null)
-                {
-                    if (dtInd.Rows.Count > 0)
-                    {
-                        Ind_Oran = Convert.ToDecimal(dtInd.Rows[0]["Ind_Oran"]);
-                        Ind_Kodu = Convert.ToString(dtInd.Rows[0]["Ind_Kodu"]);
-                    }
-                    else
-                    {
-                        Ind_Oran = 0;
-                        Ind_Kodu = String.Empty;
-                    }
-                }
-                
-
-                Bilgi = Oda_No + "  " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Adi_1")) + " " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Adi_2"));
-            }
-
-            if (Mus_tipi == "U")
-            {
-                Oda_No = "U" + Departman.Dep_Kodu;
-                Folio = Convert.ToInt32(Fronttools.DegerGetir("select isnull((select isnull(Rez_Id,0) from Rez with(nolock) where Rez_Odano = N'" + Oda_No + "' and Rez_R_I_H = 'I'),0) "));
-                Uye_Id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Kimlik_Id"));
-                Uye_Adsoyad = Convert.ToString(Convert.ToString(gridView1.GetFocusedRowCellValue("Kimlik_Ad")) + " " + Convert.ToString(gridView1.GetFocusedRowCellValue("Kimlik_Soyad")));
-                Uye_Adsoyad = Uye_Adsoyad.Length > 100 ? Uye_Adsoyad.Substring(0, 99) : Uye_Adsoyad;
-                Uye_Kartturu = Convert.ToString(gridView1.GetFocusedRowCellValue("Kart_Turu"));
-
-                Ind_Kodu = Convert.ToString(gridView1.GetFocusedRowCellValue("Kart_Turu"));
-                Ind_Oran = Convert.ToDecimal(dbtools.DegerGetir("select isnull((select Ind_Oran from Cst_Indirim with(nolock)where Ind_Kodu = N'" + Convert.ToString(gridView1.GetFocusedRowCellValue("Kart_Turu")) + "'),0)"));
-
-                Bilgi = "Uye : " + Uye_Adsoyad;
-            }
-
-            if (Mus_tipi == "C")
-            {
-                Cari_Kod = Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Kod"));
-                Bilgi = "Cari : " + Cari_Kod;
-            }
-
-            FormClose = true;
-            HizliSatis = true;
-            this.Close();
+            tamam();
         }
 
         private void Arama_FormClosing(object sender, FormClosingEventArgs e)
@@ -643,6 +657,11 @@ namespace Pos
                 string Kart = txt_Arama.Text.Replace(" ", "").Replace(":", "");
                 txt_Arama.Text = Kart;
             }
+        }
+
+        private void gridControl1_DoubleClick(object sender, EventArgs e)
+        {
+            tamam();
         }
     }
 }
