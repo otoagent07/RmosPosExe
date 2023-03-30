@@ -161,7 +161,7 @@ namespace Pos
                     a.GonderSatis();
                     a.IptalGonder();
 
-                    a.satirlariOlustur(dateTarih);
+                    //a.satirlariOlustur(dateTarih);
                 }
 
 
