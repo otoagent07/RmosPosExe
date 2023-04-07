@@ -121,6 +121,11 @@ namespace Pos.Class
                     Hesap_Ciktisayisi = Convert.ToInt32(dtHesap.Rows[0]["Pkod_Ciktisayisi"]);
                 }
 
+                if (Hesap_Ciktisayisi==0)
+                {
+                    RHMesaj.MyMessageInformation("Hesap_Ciktisayisi=0\nFiş font ayarlarından bir kere kaydet tuşuna basın !!");
+                }
+
                 DataTable dtIptal = dbtools.SelectTable("select Pkod_Kod, Pkod_Font,isnull(Pkod_Ciktisayisi,1) as Pkod_Ciktisayisi from Pos_Kodlar with(nolock) where Pkod_Sinif = '17' and Pkod_Kod = 'IPTAL' ");
                 if (dtIptal.Rows.Count > 0)
                 {
@@ -3367,6 +3372,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         hsp.PrinterName = yazici;
                     }
 
+                   
                     for (int k = 0; k < Hesap_Ciktisayisi; k++)
                     {
                         hsp.Print();

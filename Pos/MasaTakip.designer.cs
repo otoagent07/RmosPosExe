@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasaTakip));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -146,11 +146,11 @@
             this.cbtn_0 = new DevExpress.XtraEditors.CheckButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.flp_Kapatma = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnParcaliOdemeEski = new DevExpress.XtraEditors.SimpleButton();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnParcaliOdemeEski = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).BeginInit();
@@ -597,18 +597,18 @@
             this.gridColumn7,
             this.gridColumn8,
             this.gridColumn10});
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Column = this.gridColumn10;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn10;
-            gridFormatRule2.Name = "Format0";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue2.Value1 = "";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            this.gridView2.FormatRules.Add(gridFormatRule2);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn10;
+            gridFormatRule1.ColumnApplyTo = this.gridColumn10;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue1.Value1 = "";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView2.FormatRules.Add(gridFormatRule1);
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowFooter = true;
@@ -1265,6 +1265,15 @@
             resources.ApplyResources(this.flp_Kapatma, "flp_Kapatma");
             this.flp_Kapatma.Name = "flp_Kapatma";
             // 
+            // btnParcaliOdemeEski
+            // 
+            this.btnParcaliOdemeEski.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnParcaliOdemeEski.Appearance.Font")));
+            this.btnParcaliOdemeEski.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnParcaliOdemeEski, "btnParcaliOdemeEski");
+            this.btnParcaliOdemeEski.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnParcaliOdemeEski.ImageOptions.Image")));
+            this.btnParcaliOdemeEski.Name = "btnParcaliOdemeEski";
+            this.btnParcaliOdemeEski.Click += new System.EventHandler(this.btnParcaliOdemeEski_Click);
+            // 
             // barButtonItem3
             // 
             this.barButtonItem3.Id = 12;
@@ -1294,15 +1303,6 @@
             this.barButtonItem6.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem6.ItemAppearance.Normal.Font")));
             this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem6.Name = "barButtonItem6";
-            // 
-            // btnParcaliOdemeEski
-            // 
-            this.btnParcaliOdemeEski.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
-            this.btnParcaliOdemeEski.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnParcaliOdemeEski, "btnParcaliOdemeEski");
-            this.btnParcaliOdemeEski.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnParcaliOdemeEski.Name = "btnParcaliOdemeEski";
-            this.btnParcaliOdemeEski.Click += new System.EventHandler(this.btnParcaliOdemeEski_Click);
             // 
             // MasaTakip
             // 

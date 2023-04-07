@@ -137,6 +137,69 @@
   <data name="bar3.BarAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
+  <data name="bartxt_Kul.Caption" xml:space="preserve">
+    <value>Kullanıcı : </value>
+  </data>
+  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_Dep.Caption" xml:space="preserve">
+    <value>Departman : </value>
+  </data>
+  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_FisNo.Caption" xml:space="preserve">
+    <value>Fis No : </value>
+  </data>
+  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
+    <value>Boş Masa :</value>
+  </data>
+  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_BosMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
+    <value>Dolu Masa : </value>
+  </data>
+  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_DoluMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="barspn_Refresh.Caption" xml:space="preserve">
+    <value>Kalan Süre : </value>
+  </data>
+  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barspn_Refresh.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="barStaticItem1.Caption" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="repositoryItemTextEdit5.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barStaticItem2.Caption" xml:space="preserve">
+    <value>Kuver Tutari :</value>
+  </data>
+  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="bar3.Text" xml:space="preserve">
     <value>Status bar</value>
   </data>
@@ -145,7 +208,7 @@
     <value>Top</value>
   </data>
   <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
     <value>1064, 0</value>
@@ -166,10 +229,10 @@
     <value>Bottom</value>
   </data>
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 809</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 27</value>
+    <value>1064, 29</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -187,10 +250,10 @@
     <value>Left</value>
   </data>
   <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 720</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -208,10 +271,10 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1064, 89</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 720</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
@@ -244,10 +307,10 @@
     <value>Fill</value>
   </data>
   <data name="flp_Masa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 174</value>
+    <value>0, 165</value>
   </data>
   <data name="flp_Masa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 476</value>
+    <value>773, 483</value>
   </data>
   <data name="flp_Masa.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -271,13 +334,13 @@
     <value>Left</value>
   </data>
   <data name="btn_SplitBol.Location" type="System.Drawing.Point, System.Drawing">
-    <value>620, 3</value>
+    <value>619, 2</value>
   </data>
   <data name="btn_SplitBol.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_SplitBol.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 30</value>
+    <value>95, 32</value>
   </data>
   <data name="btn_SplitBol.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -304,13 +367,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 3</value>
+    <value>561, 2</value>
   </data>
   <data name="cbtn_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_9.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -337,13 +400,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 3</value>
+    <value>503, 2</value>
   </data>
   <data name="cbtn_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_8.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -370,13 +433,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 3</value>
+    <value>445, 2</value>
   </data>
   <data name="cbtn_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_7.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -403,13 +466,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>388, 3</value>
+    <value>387, 2</value>
   </data>
   <data name="cbtn_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_6.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -436,13 +499,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 3</value>
+    <value>329, 2</value>
   </data>
   <data name="cbtn_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -469,13 +532,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 3</value>
+    <value>271, 2</value>
   </data>
   <data name="cbtn_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -502,13 +565,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 3</value>
+    <value>213, 2</value>
   </data>
   <data name="cbtn_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -535,13 +598,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 3</value>
+    <value>155, 2</value>
   </data>
   <data name="cbtn_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -568,13 +631,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 3</value>
+    <value>97, 2</value>
   </data>
   <data name="cbtn_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -601,10 +664,10 @@
     <value>Left</value>
   </data>
   <data name="cbtn_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="cbtn_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 30</value>
+    <value>95, 32</value>
   </data>
   <data name="cbtn_0.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -628,7 +691,7 @@
     <value>Bottom</value>
   </data>
   <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 650</value>
+    <value>0, 648</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
     <value>773, 36</value>
@@ -658,10 +721,10 @@
     <value>Fill</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>672, 119</value>
+    <value>674, 121</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -678,67 +741,66 @@
   <data name="&gt;&gt;flp_Kapatma.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnParcaliOdemeEski.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="btnParcaliOdemeEski.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="simpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnParcaliOdemeEski.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
-        BAAAAABJRU5ErkJggg==
+        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
 </value>
   </data>
   <data name="btnParcaliOdemeEski.Location" type="System.Drawing.Point, System.Drawing">
-    <value>675, 3</value>
+    <value>676, 2</value>
   </data>
   <data name="btnParcaliOdemeEski.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 119</value>
+    <value>95, 121</value>
   </data>
   <data name="btnParcaliOdemeEski.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -763,7 +825,7 @@
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 686</value>
+    <value>0, 684</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
     <value>773, 125</value>
@@ -787,7 +849,7 @@
     <value>Fill</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 307</value>
+    <value>2, 306</value>
   </data>
   <data name="gridView2.Appearance.FooterPanel.BackColor2" type="System.Drawing.Color, System.Drawing">
     <value>White</value>
@@ -896,7 +958,7 @@
     <value>Satılan Ürünler</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 327</value>
+    <value>287, 336</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -917,7 +979,7 @@
     <value>Top</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 30</value>
+    <value>2, 29</value>
   </data>
   <data name="gridColumn1.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -938,7 +1000,7 @@
     <value>0</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 277</value>
+    <value>287, 277</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -979,10 +1041,10 @@
 </value>
   </data>
   <data name="btnFilterClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>257, 3</value>
+    <value>260, 2</value>
   </data>
   <data name="btnFilterClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 21</value>
+    <value>25, 23</value>
   </data>
   <data name="btnFilterClear.TabIndex" type="System.Int32, mscorlib">
     <value>160</value>
@@ -1003,7 +1065,7 @@
     <value>Fill</value>
   </data>
   <data name="txt_Filtre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="txt_Filtre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -1015,7 +1077,7 @@
     <value>True</value>
   </data>
   <data name="txt_Filtre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 22</value>
+    <value>283, 22</value>
   </data>
   <data name="txt_Filtre.TabIndex" type="System.Int32, mscorlib">
     <value>159</value>
@@ -1036,10 +1098,10 @@
     <value>Top</value>
   </data>
   <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 27</value>
+    <value>287, 27</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -1060,10 +1122,10 @@
     <value>Right</value>
   </data>
   <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>773, 174</value>
+    <value>773, 165</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 637</value>
+    <value>291, 644</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1131,10 +1193,10 @@
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>956, 22</value>
+    <value>956, 20</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 52</value>
+    <value>77, 54</value>
   </data>
   <data name="simpleButton3.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1176,10 +1238,10 @@
 </value>
   </data>
   <data name="btn_Relogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>877, 22</value>
+    <value>877, 20</value>
   </data>
   <data name="btn_Relogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 52</value>
+    <value>79, 54</value>
   </data>
   <data name="btn_Relogin.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -1249,10 +1311,10 @@
 </value>
   </data>
   <data name="btnHesapDokumEski.Location" type="System.Drawing.Point, System.Drawing">
-    <value>785, 22</value>
+    <value>785, 20</value>
   </data>
   <data name="btnHesapDokumEski.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 52</value>
+    <value>92, 54</value>
   </data>
   <data name="btnHesapDokumEski.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -1321,10 +1383,10 @@
 </value>
   </data>
   <data name="btn_Rapor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 22</value>
+    <value>702, 20</value>
   </data>
   <data name="btn_Rapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 52</value>
+    <value>83, 54</value>
   </data>
   <data name="btn_Rapor.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -1398,10 +1460,10 @@
 </value>
   </data>
   <data name="btn_KisiSayisi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>586, 22</value>
+    <value>586, 20</value>
   </data>
   <data name="btn_KisiSayisi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 52</value>
+    <value>116, 54</value>
   </data>
   <data name="btn_KisiSayisi.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1450,10 +1512,10 @@ DEĞİŞTİR</value>
 </value>
   </data>
   <data name="btn_Yenile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 22</value>
+    <value>508, 20</value>
   </data>
   <data name="btn_Yenile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 52</value>
+    <value>78, 54</value>
   </data>
   <data name="btn_Yenile.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -1514,10 +1576,10 @@ DEĞİŞTİR</value>
 </value>
   </data>
   <data name="btn_MasaIslem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 22</value>
+    <value>417, 20</value>
   </data>
   <data name="btn_MasaIslem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 52</value>
+    <value>91, 54</value>
   </data>
   <data name="btn_MasaIslem.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1577,10 +1639,10 @@ DEĞİŞTİR</value>
 </value>
   </data>
   <data name="btn_MalzemeTransfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 22</value>
+    <value>332, 20</value>
   </data>
   <data name="btn_MalzemeTransfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 52</value>
+    <value>85, 54</value>
   </data>
   <data name="btn_MalzemeTransfer.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -1697,10 +1759,10 @@ Trf.</value>
 </value>
   </data>
   <data name="btn_MasaTransfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 22</value>
+    <value>250, 20</value>
   </data>
   <data name="btn_MasaTransfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 52</value>
+    <value>82, 54</value>
   </data>
   <data name="btn_MasaTransfer.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -1756,10 +1818,10 @@ Trf.</value>
 </value>
   </data>
   <data name="btn_OzelMasa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 22</value>
+    <value>175, 20</value>
   </data>
   <data name="btn_OzelMasa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 52</value>
+    <value>75, 54</value>
   </data>
   <data name="btn_OzelMasa.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -1820,10 +1882,10 @@ Masa</value>
 </value>
   </data>
   <data name="btn_HesapBak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 22</value>
+    <value>93, 20</value>
   </data>
   <data name="btn_HesapBak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 52</value>
+    <value>82, 54</value>
   </data>
   <data name="btn_HesapBak.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -1876,10 +1938,10 @@ Masa</value>
 </value>
   </data>
   <data name="btn_Satis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 22</value>
+    <value>2, 20</value>
   </data>
   <data name="btn_Satis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 52</value>
+    <value>91, 54</value>
   </data>
   <data name="btn_Satis.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -1903,7 +1965,7 @@ Masa</value>
     <value>Top</value>
   </data>
   <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1064, 76</value>
@@ -1930,10 +1992,10 @@ Masa</value>
     <value>Left</value>
   </data>
   <data name="barDockControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="barDockControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 720</value>
   </data>
   <data name="&gt;&gt;barDockControl3.Name" xml:space="preserve">
     <value>barDockControl3</value>
@@ -1951,10 +2013,10 @@ Masa</value>
     <value>Right</value>
   </data>
   <data name="barDockControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1064, 89</value>
   </data>
   <data name="barDockControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 720</value>
   </data>
   <data name="&gt;&gt;barDockControl4.Name" xml:space="preserve">
     <value>barDockControl4</value>
@@ -1972,7 +2034,7 @@ Masa</value>
     <value>Bottom</value>
   </data>
   <data name="barDockControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 809</value>
   </data>
   <data name="barDockControl2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1064, 0</value>
@@ -1993,7 +2055,7 @@ Masa</value>
     <value>Top</value>
   </data>
   <data name="barDockControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="barDockControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1064, 0</value>
@@ -2014,10 +2076,10 @@ Masa</value>
     <value>Left</value>
   </data>
   <data name="barDockControl7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="barDockControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 720</value>
   </data>
   <data name="&gt;&gt;barDockControl7.Name" xml:space="preserve">
     <value>barDockControl7</value>
@@ -2035,10 +2097,10 @@ Masa</value>
     <value>Right</value>
   </data>
   <data name="barDockControl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1064, 89</value>
   </data>
   <data name="barDockControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 720</value>
   </data>
   <data name="&gt;&gt;barDockControl8.Name" xml:space="preserve">
     <value>barDockControl8</value>
@@ -2056,7 +2118,7 @@ Masa</value>
     <value>Bottom</value>
   </data>
   <data name="barDockControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 809</value>
   </data>
   <data name="barDockControl6.Size" type="System.Drawing.Size, System.Drawing">
     <value>1064, 0</value>
@@ -2077,7 +2139,7 @@ Masa</value>
     <value>Top</value>
   </data>
   <data name="barDockControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="barDockControl5.Size" type="System.Drawing.Size, System.Drawing">
     <value>1064, 0</value>
@@ -2098,10 +2160,10 @@ Masa</value>
     <value>Left</value>
   </data>
   <data name="barDockControl11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="barDockControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 720</value>
   </data>
   <data name="&gt;&gt;barDockControl11.Name" xml:space="preserve">
     <value>barDockControl11</value>
@@ -2119,10 +2181,10 @@ Masa</value>
     <value>Right</value>
   </data>
   <data name="barDockControl12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1064, 89</value>
   </data>
   <data name="barDockControl12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 720</value>
   </data>
   <data name="&gt;&gt;barDockControl12.Name" xml:space="preserve">
     <value>barDockControl12</value>
@@ -2140,7 +2202,7 @@ Masa</value>
     <value>Bottom</value>
   </data>
   <data name="barDockControl10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 809</value>
   </data>
   <data name="barDockControl10.Size" type="System.Drawing.Size, System.Drawing">
     <value>1064, 0</value>
@@ -2161,7 +2223,7 @@ Masa</value>
     <value>Top</value>
   </data>
   <data name="barDockControl9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <data name="barDockControl9.Size" type="System.Drawing.Size, System.Drawing">
     <value>1064, 0</value>
@@ -2182,7 +2244,7 @@ Masa</value>
     <value>Left</value>
   </data>
   <data name="barDockControl15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 98</value>
+    <value>0, 89</value>
   </data>
   <metadata name="barManager2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>218, 9</value>
@@ -2298,6 +2360,101 @@ Kontrol</value>
         0gA+xnHyiGTEfZbU6yMZGItmwIqkYIwlCS8NhNNGijzOpmGSJfV6/JaPkEC/LEmg9oGHHcDcdR5KBIW4
         Kj0A2p9kvPb+z+hg4fP9BJ0SlnASZtoJAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="bar_MasaTransfer.Caption" xml:space="preserve">
+    <value>Masa Transfer</value>
+  </data>
+  <data name="bar_MasaTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAwZJREFUWEfdl91OE1EQxwuIFxo/00isu+dztpVUEW0iELkoRFEvMEbEqBCjJkZs
+        lETkS7zQxGfwwkS58hF8Cp/K/5Sh6Xa3tCw0Jv6SyZ4553R3dmbO7DTnnFNe21WvzPJ+xSmzWXTuZu4g
+        4EavZZgJMlQtWntd1P3Dby/DTHit75LW10SNUSqVTsiwPb0yAPPTxUIxL2p7emGA03qOjBkXdW8O04BK
+        pTIYGfMdybnhlX3WKqTUfMIrh+yBvmFD41brLe992CrDWp/3Sq0XCoVjsv/QDaijlDqDua1qrnpEphqQ
+        so984EnU3hiwC9cYGTZIGEDGbXDssgpZOwu3VuR2HUnzwG8Uo/Ws4rT56Y15LLfrSGoI+A04S13gLst0
+        1+wVgjSSBlj7KjLRmLV2hogmcB0RuQJ5uCuI56TMx8RpN0chebldRxIGMN74O1iYbRac5c8Uum9RaL+y
+        kLa/WveUlJ3P5/Ody20TKFC305KzlYFIm+3I2lUUlmUW/HCb31jWewtK6VODxHKhqzXEuBfIk3ew/pRs
+        6x2kzBcK7b1WlyNf1igMu453ZlA2z7UmGwvevihb/kNQ0WZk+G9Aln/EpW9Hy07mJD2oAT40950xmyjL
+        z1EZa1rrKVnqjgMYMIBy/raktcW4nyd2Psd0lcs0jvNFXKdRZU/yWluyGoDjuYgHOlFj4OGjqCkPUMhG
+        I+VR0KIxWUqSZkBaQ9EM3Gy5/xO1Iy40S3SBAlHjpBnAbkM8J0RNwP8JrLK3RO0Ih4Mc1SRccdCYvMGG
+        06I24PixG8vl8lGZqoMGs8yxr+QqgzLVFS4IIiTrE07WmIf54RHXenS0rUKh/oHvwB+0lpd4L39OYVSt
+        /sOMoNpOtfPeQLM4pSatUovinXqIDI5c4pu+f/rhiSUZp8N/rZAbVVEb8By6qBuiZgLfFg0vLoiaDjed
+        MowxMjR0HGFZSU2mLqg/PNS1tieiG4IgOMvJRNq9hEfe47SsIGE/1HtMbdfqDSvnD04X1raw9okF9QCN
+        rF7YeXgu9xdYC8kHVXz+FQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bar_MasaTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_MasaIslem.Caption" xml:space="preserve">
+    <value>Masa İşlemleri</value>
+  </data>
+  <data name="bar_MasaIslem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAmVJREFUWEfNV02oTVEUPoQoE/Liueestc45+1w6I7rFgFwDA2XACBmYKflJYWT6
+        TMhIZsYyMVDPgKH0MiCUZKSUmFAUIu/5+da+6/Vu17nPfa+zT776uuess9Ze3/5Ze+8b1YSljuValtB3
+        /E6VY+Vqs4dFe7y9ziVyJk/oGRL/nmUust9cwqEsyxVZIg/7E8+Rt5pbWBDRGoh40pf8F0bkY85ypxt1
+        l5lbWPhpYH7uBRDddSJdrIUfsF01l/BI03R9nshLzP0hfcfzURWUk5z2Dk1gU5JsZOaV9qoibkDEjHNu
+        zEzNIY7jVS6h147kppmaRc58AYvxm4iwmZrDZqLxjPkzREyYqRl0Op3lWPknUJZPeyXJ1wuizD6Hhc55
+        RnS/l3iOGcuXQmSXuc0PDNluHTYsnIsLJeImB5PPEpvSuwHfib9EZa2sgPPPweBQxBqZbhOllt73fq9+
+        0M1E93HXcnEIFsxbMC0vNFdB6R5L3yeA+ayZRgLmfUdOdDKn9NT8lGNlHK/VGD09hwuAs5lGAhq7onEj
+        csrHMB/X91oFoIfnsyTbWUVtG8P+Sk9JHxNCAM6ADWaqBE7J29iaP/nnICPAfBk8UEmcjBiBt0FHYBRi
+        wd7zMXUK0LLSO4AStX14GPWOqLulxtQqYDGoVQDiLqGH04id+Qe/wvecxoRZhHodY7lVRX9PxDYPoe99
+        TAgBRRy3zFQJtD8ZtAzRy9JMVVjij+qQAvxfMr0DVhB7wAfvw/zGx9QsAAcLP+pRHg8nP8DtaJ+PqVPA
+        YvB/CsAVaTuMqFc+YqZgQMke9ALSdFsURdEf70OJBobtuaQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bar_MasaIslem.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_MalzemeTransfer.Caption" xml:space="preserve">
+    <value>Ürün Transfer</value>
+  </data>
+  <data name="bar_MalzemeTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAWtJREFUWEft1r8rB3Ecx/HzqzAo5VcxKCklhcXAYFEWE6vJH8CiTEoZGfxYDEab
+        HyW7zSiJTSmlGAwoyoDn65urT9fp+777XHfLPeuRvurzuTf3vR9BWcYN/P0srHfsoavyqYDe8AMNsopm
+        pKoPs5hLSAfWAKFHLKAW5ibwBXcjX9eYhqlNxG3i6wNTqNoW4jbwcYpemNqGu3gDS0ZPcNfeYwaJig4w
+        Cms30JpPrKEJiduBO8AIrF3hDLqKUrcLd4BhWEvy3/q36JdwELk2Dp1DHfwCdci9Towhi4PrFO5jHalv
+        zWmrxzPC06mbXK61ITy4nMCrbugqsdYOd4BjpKoBy9DT7kW/MNYB7wEmcYtwk1dY05fZHeAI5vRWcwB3
+        A/nGnZGeBe7aQ1RNl94i9Je6i7NgGmAIl4jbwJfeF03VYB4PiNtIj92kztGDRDViBdHTkfsdTTcUPabD
+        d8UWFFI/dCm1Vj6VlXkXBL/ZAuoySZSYlAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bar_MalzemeTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_KisiSayisi.Caption" xml:space="preserve">
+    <value>Kişi Sayısı Değiştir</value>
+  </data>
+  <data name="bar_KisiSayisi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAVJJREFUWEft1s0qhGEYh/Gx8FlKySkgkhOQHcXChiykoUiilI84ATshKRSFfGRh
+        L3YWbKTYOAERib0V1/+5Wcz0jDLNPav3ql/dT7N4Z96vZ1JJSUl5VIJx3OLzh+Yx6DP3DnCJNpShHO24
+        wh5c68YddNDsKvCAzrByahOTNkabwbqNPh1hwMZow9i10ac1TNkYbQ5LNvo0gS0bo+1j1EafdAA9grma
+        x7aNPi1g0cZoy9CN6FYTHtEYVpm14BkNYeXYDvTWy04354aNvo3g2MaMTpG20bcavKI+rCxdmhdUh1UR
+        0q/ttTGkl1PsrLh1gn4bQ3oD6hEtSlW4QUdYWT24RmVYFTjtcn1YxQU+oPd9KX7TtnyId5xjBbpEsV3z
+        Xw1Bz/YZZqHtuBa5qkMXtCfoyz5hEHk1jXs0h1V+tUL/Ef7awHKm0/lVIG9ISkqKlEp9A1bcR7mllkYX
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bar_KisiSayisi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnMasaKilitAc.Caption" xml:space="preserve">
+    <value>Masa Kilit Aç</value>
+  </data>
+  <data name="btnMasaKilitAc.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="btnParcaliMasa.Caption" xml:space="preserve">
+    <value>Parçalı Masa</value>
+  </data>
+  <data name="btnParcaliMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
   </data>
   <data name="bar_Rapor.Caption" xml:space="preserve">
     <value>Rapor</value>
@@ -2525,7 +2682,7 @@ Satış</value>
     <value>0, 0</value>
   </data>
   <data name="barDockControl13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 98</value>
+    <value>1064, 89</value>
   </data>
   <data name="&gt;&gt;barDockControl13.Name" xml:space="preserve">
     <value>barDockControl13</value>
@@ -2564,10 +2721,10 @@ Satış</value>
     <value>Right</value>
   </data>
   <data name="barDockControl16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1064, 89</value>
   </data>
   <data name="barDockControl16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 740</value>
+    <value>0, 749</value>
   </data>
   <data name="&gt;&gt;barDockControl16.Name" xml:space="preserve">
     <value>barDockControl16</value>
@@ -2584,109 +2741,14 @@ Satış</value>
   <data name="barSubItem1.Caption" xml:space="preserve">
     <value>Masa İşlemleri</value>
   </data>
-  <data name="bar_MasaTransfer.Caption" xml:space="preserve">
-    <value>Masa Transfer</value>
-  </data>
-  <data name="bar_MasaTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAwZJREFUWEfdl91OE1EQxwuIFxo/00isu+dztpVUEW0iELkoRFEvMEbEqBCjJkZs
-        lETkS7zQxGfwwkS58hF8Cp/K/5Sh6Xa3tCw0Jv6SyZ4553R3dmbO7DTnnFNe21WvzPJ+xSmzWXTuZu4g
-        4EavZZgJMlQtWntd1P3Dby/DTHit75LW10SNUSqVTsiwPb0yAPPTxUIxL2p7emGA03qOjBkXdW8O04BK
-        pTIYGfMdybnhlX3WKqTUfMIrh+yBvmFD41brLe992CrDWp/3Sq0XCoVjsv/QDaijlDqDua1qrnpEphqQ
-        so984EnU3hiwC9cYGTZIGEDGbXDssgpZOwu3VuR2HUnzwG8Uo/Ws4rT56Y15LLfrSGoI+A04S13gLst0
-        1+wVgjSSBlj7KjLRmLV2hogmcB0RuQJ5uCuI56TMx8RpN0chebldRxIGMN74O1iYbRac5c8Uum9RaL+y
-        kLa/WveUlJ3P5/Ody20TKFC305KzlYFIm+3I2lUUlmUW/HCb31jWewtK6VODxHKhqzXEuBfIk3ew/pRs
-        6x2kzBcK7b1WlyNf1igMu453ZlA2z7UmGwvevihb/kNQ0WZk+G9Aln/EpW9Hy07mJD2oAT40950xmyjL
-        z1EZa1rrKVnqjgMYMIBy/raktcW4nyd2Psd0lcs0jvNFXKdRZU/yWluyGoDjuYgHOlFj4OGjqCkPUMhG
-        I+VR0KIxWUqSZkBaQ9EM3Gy5/xO1Iy40S3SBAlHjpBnAbkM8J0RNwP8JrLK3RO0Ih4Mc1SRccdCYvMGG
-        06I24PixG8vl8lGZqoMGs8yxr+QqgzLVFS4IIiTrE07WmIf54RHXenS0rUKh/oHvwB+0lpd4L39OYVSt
-        /sOMoNpOtfPeQLM4pSatUovinXqIDI5c4pu+f/rhiSUZp8N/rZAbVVEb8By6qBuiZgLfFg0vLoiaDjed
-        MowxMjR0HGFZSU2mLqg/PNS1tieiG4IgOMvJRNq9hEfe47SsIGE/1HtMbdfqDSvnD04X1raw9okF9QCN
-        rF7YeXgu9xdYC8kHVXz+FQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bar_MasaTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_MalzemeTransfer.Caption" xml:space="preserve">
-    <value>Ürün Transfer</value>
-  </data>
-  <data name="bar_MalzemeTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAWtJREFUWEft1r8rB3Ecx/HzqzAo5VcxKCklhcXAYFEWE6vJH8CiTEoZGfxYDEab
-        HyW7zSiJTSmlGAwoyoDn65urT9fp+777XHfLPeuRvurzuTf3vR9BWcYN/P0srHfsoavyqYDe8AMNsopm
-        pKoPs5hLSAfWAKFHLKAW5ibwBXcjX9eYhqlNxG3i6wNTqNoW4jbwcYpemNqGu3gDS0ZPcNfeYwaJig4w
-        Cms30JpPrKEJiduBO8AIrF3hDLqKUrcLd4BhWEvy3/q36JdwELk2Dp1DHfwCdci9Towhi4PrFO5jHalv
-        zWmrxzPC06mbXK61ITy4nMCrbugqsdYOd4BjpKoBy9DT7kW/MNYB7wEmcYtwk1dY05fZHeAI5vRWcwB3
-        A/nGnZGeBe7aQ1RNl94i9Je6i7NgGmAIl4jbwJfeF03VYB4PiNtIj92kztGDRDViBdHTkfsdTTcUPabD
-        d8UWFFI/dCm1Vj6VlXkXBL/ZAuoySZSYlAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bar_MalzemeTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_MasaIslem.Caption" xml:space="preserve">
-    <value>Masa İşlemleri</value>
-  </data>
-  <data name="bar_MasaIslem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAmVJREFUWEfNV02oTVEUPoQoE/Liueestc45+1w6I7rFgFwDA2XACBmYKflJYWT6
-        TMhIZsYyMVDPgKH0MiCUZKSUmFAUIu/5+da+6/Vu17nPfa+zT776uuess9Ze3/5Ze+8b1YSljuValtB3
-        /E6VY+Vqs4dFe7y9ziVyJk/oGRL/nmUust9cwqEsyxVZIg/7E8+Rt5pbWBDRGoh40pf8F0bkY85ypxt1
-        l5lbWPhpYH7uBRDddSJdrIUfsF01l/BI03R9nshLzP0hfcfzURWUk5z2Dk1gU5JsZOaV9qoibkDEjHNu
-        zEzNIY7jVS6h147kppmaRc58AYvxm4iwmZrDZqLxjPkzREyYqRl0Op3lWPknUJZPeyXJ1wuizD6Hhc55
-        RnS/l3iOGcuXQmSXuc0PDNluHTYsnIsLJeImB5PPEpvSuwHfib9EZa2sgPPPweBQxBqZbhOllt73fq9+
-        0M1E93HXcnEIFsxbMC0vNFdB6R5L3yeA+ayZRgLmfUdOdDKn9NT8lGNlHK/VGD09hwuAs5lGAhq7onEj
-        csrHMB/X91oFoIfnsyTbWUVtG8P+Sk9JHxNCAM6ADWaqBE7J29iaP/nnICPAfBk8UEmcjBiBt0FHYBRi
-        wd7zMXUK0LLSO4AStX14GPWOqLulxtQqYDGoVQDiLqGH04id+Qe/wvecxoRZhHodY7lVRX9PxDYPoe99
-        TAgBRRy3zFQJtD8ZtAzRy9JMVVjij+qQAvxfMr0DVhB7wAfvw/zGx9QsAAcLP+pRHg8nP8DtaJ+PqVPA
-        YvB/CsAVaTuMqFc+YqZgQMke9ALSdFsURdEf70OJBobtuaQAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="bar_MasaIslem.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_KisiSayisi.Caption" xml:space="preserve">
-    <value>Kişi Sayısı Değiştir</value>
-  </data>
-  <data name="bar_KisiSayisi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAVJJREFUWEft1s0qhGEYh/Gx8FlKySkgkhOQHcXChiykoUiilI84ATshKRSFfGRh
-        L3YWbKTYOAERib0V1/+5Wcz0jDLNPav3ql/dT7N4Z96vZ1JJSUl5VIJx3OLzh+Yx6DP3DnCJNpShHO24
-        wh5c68YddNDsKvCAzrByahOTNkabwbqNPh1hwMZow9i10ac1TNkYbQ5LNvo0gS0bo+1j1EafdAA9grma
-        x7aNPi1g0cZoy9CN6FYTHtEYVpm14BkNYeXYDvTWy04354aNvo3g2MaMTpG20bcavKI+rCxdmhdUh1UR
-        0q/ttTGkl1PsrLh1gn4bQ3oD6hEtSlW4QUdYWT24RmVYFTjtcn1YxQU+oPd9KX7TtnyId5xjBbpEsV3z
-        Xw1Bz/YZZqHtuBa5qkMXtCfoyz5hEHk1jXs0h1V+tUL/Ef7awHKm0/lVIG9ISkqKlEp9A1bcR7mllkYX
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bar_KisiSayisi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
   <data name="barButtonItem2.Caption" xml:space="preserve">
     <value>Paket CallCenter</value>
   </data>
   <data name="barButtonItem2.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="btnMasaKilitAc.Caption" xml:space="preserve">
-    <value>Masa Kilit Aç</value>
-  </data>
-  <data name="btnMasaKilitAc.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="btnParcaliMasa.Caption" xml:space="preserve">
-    <value>Parçalı Masa</value>
-  </data>
-  <data name="btnParcaliMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
   <data name="barDockControl15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 740</value>
+    <value>0, 749</value>
   </data>
   <data name="&gt;&gt;barDockControl15.Name" xml:space="preserve">
     <value>barDockControl15</value>
@@ -3095,69 +3157,6 @@ Satış</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="bartxt_Kul.Caption" xml:space="preserve">
-    <value>Kullanıcı : </value>
-  </data>
-  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_Dep.Caption" xml:space="preserve">
-    <value>Departman : </value>
-  </data>
-  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="barspn_Refresh.Caption" xml:space="preserve">
-    <value>Kalan Süre : </value>
-  </data>
-  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barspn_Refresh.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
-    <value>Boş Masa :</value>
-  </data>
-  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_BosMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
-    <value>Dolu Masa : </value>
-  </data>
-  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_DoluMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_FisNo.Caption" xml:space="preserve">
-    <value>Fis No : </value>
-  </data>
-  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="barStaticItem1.Caption" xml:space="preserve">
-    <value>Süre</value>
-  </data>
-  <data name="repositoryItemTextEdit5.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barStaticItem2.Caption" xml:space="preserve">
-    <value>Kuver Tutari :</value>
-  </data>
-  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
