@@ -122,7 +122,7 @@ namespace Pos.Class
                     Hesap_Ciktisayisi = Convert.ToInt32(dtHesap.Rows[0]["Pkod_Ciktisayisi"]);
                 }
 
-                if (Hesap_Ciktisayisi==0)
+                if (Hesap_Ciktisayisi == 0)
                 {
                     RHMesaj.MyMessageInformation("Hesap_Ciktisayisi=0\nFiş font ayarlarından bir kere kaydet tuşuna basın !!");
                 }
@@ -507,17 +507,17 @@ namespace Pos.Class
                     foreach (DataRow boslaridoldur in dtSiparis.Rows)
                     {
                         string yaziciismi = boslaridoldur["urunbazliprinter"].ToString();
-                        if (yaziciismi=="")
+                        if (yaziciismi == "")
                         {
                             boslaridoldur["urunbazliprinter"] = printer;
                         }
                     }
 
 
-                   var yazicilar = dtSiparis.AsEnumerable()
-         .GroupBy(r => new { Col1 = r["urunbazliprinter"] })
-         .Select(g => g.OrderBy(r => r["urunbazliprinter"]).First())
-         .CopyToDataTable();
+                    var yazicilar = dtSiparis.AsEnumerable()
+          .GroupBy(r => new { Col1 = r["urunbazliprinter"] })
+          .Select(g => g.OrderBy(r => r["urunbazliprinter"]).First())
+          .CopyToDataTable();
 
 
 
@@ -527,7 +527,7 @@ namespace Pos.Class
 
 
 
-                        var yazilacaklar = dtSiparis.Select("urunbazliprinter='"+yaziciismi+"'").CopyToDataTable();
+                        var yazilacaklar = dtSiparis.Select("urunbazliprinter='" + yaziciismi + "'").CopyToDataTable();
 
 
                         foreach (DataRow item in dtSiparis.Rows)
@@ -540,7 +540,7 @@ namespace Pos.Class
 
                         Print.Siparis siparis = new Print.Siparis();
                         xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
-                        siparis.PrinterName = yaziciismi==""? printer:yaziciismi;
+                        siparis.PrinterName = yaziciismi == "" ? printer : yaziciismi;
                         siparis.DataSource = yazilacaklar;//dtSiparis;
 
                         if (Param.Param_SiparisAna)
@@ -583,7 +583,7 @@ namespace Pos.Class
                         siparis.Print();
                     }
 
-                    
+
                 }
 
                 AbuyerPr(Fisno, Mars, Split, abuyerBaslik, kartDetay1, kartdetay2, hizliSatis);
@@ -1744,7 +1744,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
 
 
-                       
+
 
                         TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
 
@@ -2861,7 +2861,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             }
         }
 
-        public string newHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, bool sifirli = false,bool parcalimi=false,string parcamasano="")
+        public string newHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, bool sifirli = false, bool parcalimi = false, string parcamasano = "")
         {
 
             string printer = String.Empty;
@@ -2922,7 +2922,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             com.Parameters.AddWithValue("@Fisno", Fisno);
             com.Parameters.AddWithValue("@Split", Split);
             com.Parameters.AddWithValue("@parcalimasano", parcamasano);
-            com.Parameters.AddWithValue("@Rapor_Tipi", parcalimi==true?30: 7);
+            com.Parameters.AddWithValue("@Rapor_Tipi", parcalimi == true ? 30 : 7);
             SqlDataAdapter da = new SqlDataAdapter(com);
             da.Fill(ds);
 
@@ -3373,7 +3373,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         hsp.PrinterName = yazici;
                     }
 
-                   
+
                     for (int k = 0; k < Hesap_Ciktisayisi; k++)
                     {
                         hsp.Print();
@@ -3410,13 +3410,14 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             return "OK";
         }
 
+
         public void SetTextWatermark(XtraReport report)
         {
             Watermark textWatermark = new Watermark();
             textWatermark.Text = "NO PAYMENT";
             textWatermark.TextDirection = DirectionMode.ForwardDiagonal;
-            textWatermark.Font = new Font(textWatermark.Font.Name, 40);
-            textWatermark.ForeColor = Color.DodgerBlue;
+            textWatermark.Font = new Font(textWatermark.Font.Name, 40, FontStyle.Bold);
+            textWatermark.ForeColor = Color.Black;
             textWatermark.TextTransparency = 150;
             textWatermark.ShowBehind = false;
             textWatermark.PageRange = "1,3-5";
@@ -5815,7 +5816,7 @@ order by Pkod_Kod";
 
         }
 
-        public void garsonTahsilatYaz(DataTable dataTable, string bastar, string bittar,string filtreDep)
+        public void garsonTahsilatYaz(DataTable dataTable, string bastar, string bittar, string filtreDep)
         {
 
             try
@@ -5830,7 +5831,7 @@ order by Pkod_Kod";
 		left join Rmosmuh.dbo.Pos_User on Rsat_Garson = P_Kod
 		left join Pos_Kodlar on Pkod_Sinif = '11' and Pkod_Kod = Rsat_Kapatma
 		where 
-		convert(date,Rsat_Tarih) >= '" + bastar + @"' and convert(date,Rsat_Tarih) <= '" + bittar + @"' "+ filtreDep + @" and
+		convert(date,Rsat_Tarih) >= '" + bastar + @"' and convert(date,Rsat_Tarih) <= '" + bittar + @"' " + filtreDep + @" and
 		Rsat_Ba = 'A' and P_Ad is not null
 		group by LEFT(P_Ad,1) + '.' + P_Soyad+ '  ' +Pkod_Ad,Rsat_Dovizkodu,Rsat_Departman order by LEFT(P_Ad,1) + '.' + P_Soyad+ '  ' +Pkod_Ad";
 
@@ -6113,7 +6114,7 @@ order by Pkod_Kod";
             return dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 24, @Fisno = '" + Fisno + "', @Split = '" + Split + "', @MacAdres = '" + dbtools.MacAdresi() + "',@SiparisTumYazici = '" + SiparisTumYazici + "' ");
         }
 
-        public string CariHesapPr(string CariKod,DataTable data=null)
+        public string CariHesapPr(string CariKod, DataTable data = null)
         {
             List<string> cari = new List<string>();
 
@@ -6134,9 +6135,9 @@ order by Pkod_Kod";
 
             DataTable dt = new DataTable();
 
-            if (data==null)
+            if (data == null)
             {
-              dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + CariKod + "' ");
+                dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + CariKod + "' ");
 
             }
             else

@@ -1465,7 +1465,7 @@
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Margins = new System.Drawing.Printing.Margins(5, 1, 17, 10);
             this.PageHeight = 787;
-            this.PageWidth = 393;
+            this.PageWidth = 290;
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
             this.RollPaper = true;
             this.ShowPrintMarginsWarning = false;
