@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraLayout.Utils;
+using DevExpress.XtraPrinting.Drawing;
 using DevExpress.XtraReports.UI;
 using Pos.Print;
 using System;
@@ -3348,7 +3349,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 hsp.txtToplamIkram.Text = "0";
                 hsp.txtToplamIkram.Text = "0";
                 hsp.xr_Tutar.Text = "0";
-
+                SetTextWatermark(hsp);
 
             }
 
@@ -3407,6 +3408,19 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
 
             return "OK";
+        }
+
+        public void SetTextWatermark(XtraReport report)
+        {
+            Watermark textWatermark = new Watermark();
+            textWatermark.Text = "NO PAYMENT";
+            textWatermark.TextDirection = DirectionMode.ForwardDiagonal;
+            textWatermark.Font = new Font(textWatermark.Font.Name, 40);
+            textWatermark.ForeColor = Color.DodgerBlue;
+            textWatermark.TextTransparency = 150;
+            textWatermark.ShowBehind = false;
+            textWatermark.PageRange = "1,3-5";
+            report.Watermark.CopyFrom(textWatermark);
         }
 
         public decimal getKurKarsilik(string dovizKodu, GridView gridView2)
