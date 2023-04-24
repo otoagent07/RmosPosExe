@@ -1227,6 +1227,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.masamusait = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2048,6 +2049,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masamusait.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4055,6 +4057,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.masamusait);
             this.xtraTabPage8.Controls.Add(this.groupControl12);
             this.xtraTabPage8.Controls.Add(this.groupControl11);
             this.xtraTabPage8.Controls.Add(this.yazdirilmamissiparis);
@@ -12221,6 +12224,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // masamusait
+            // 
+            resources.ApplyResources(this.masamusait, "masamusait");
+            this.masamusait.Name = "masamusait";
+            this.masamusait.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13082,6 +13091,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masamusait.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14285,5 +14295,6 @@
         private DevExpress.XtraEditors.LookUpEdit lookUpEditHesapDokYazici;
         private DevExpress.XtraEditors.TextEdit textEdit196;
         private DevExpress.XtraEditors.CheckEdit yazdirilmamissiparis;
+        private DevExpress.XtraEditors.CheckEdit masamusait;
     }
 }

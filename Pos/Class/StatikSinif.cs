@@ -55,6 +55,11 @@ namespace Pos.Class
         {
             try
             {
+                if (Param.masamusait == false)
+                {
+                    return;
+                }
+
                 string kodAd = User.P_Kod + "-" + User.P_Ad + " " + User.P_Soyad;
                 string query = "update Pos_Masa set Masa_Musait='" + kodAd + "' where Masa_No='" + Masa_No + "'";
                 dbtools.execcmd(query);
@@ -69,6 +74,12 @@ namespace Pos.Class
         {
             try
             {
+                // mobil uygulama yapılırsa aşağısını açabilirsin
+                //if (Param.masamusait == false)
+                //{
+                //    return ;
+                //}
+
                 string kodAd = User.P_Kod + "-" + User.P_Ad + " " + User.P_Soyad;
 
                 string query = "update Pos_Masa set Masa_Musait='" + 0 + "' where Masa_Musait='" + kodAd + "'";
@@ -84,6 +95,11 @@ namespace Pos.Class
         {
             try
             {
+                if (Param.masamusait==false)
+                {
+                    return true;
+                }
+
                 string kodAd = User.P_Kod + "-" + User.P_Ad + " " + User.P_Soyad;
 
                 string query = "select top 1 isnull(Masa_Musait,0) as  Masa_Musait from Pos_Masa where Masa_No='" + Masa_No + "'";
@@ -191,6 +207,7 @@ Select InstanceNames from @GetInstances ";
         {
             string query = @"
 IF COL_LENGTH('Pos_Param', 'yazdirilmamissiparis') IS NULL BEGIN ALTER TABLE Pos_Param ADD yazdirilmamissiparis bit END;
+IF COL_LENGTH('Pos_Param', 'masamusait') IS NULL BEGIN ALTER TABLE Pos_Param ADD masamusait bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'hesapyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [hesapyazici] nvarchar(250) END;
 IF COL_LENGTH('Stok_Kodlar', 'Kodlar_parakasa') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_parakasa nvarchar(200) END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_Eksileme') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_Eksileme bit END;

@@ -164,6 +164,7 @@ namespace Pos.Class
         public static bool Param_nfcBarkodAktif { get; set; }
         public static bool Param_ParcaliMasaAktif { get; set; }
         public static bool yazdirilmamissiparis { get; set; }
+        public static bool masamusait { get; set; }
 
 
         public static void Param_Yukle()
@@ -211,6 +212,7 @@ namespace Pos.Class
                         ",ISNULL(Param_nfcBarkodAktif,0) as Param_nfcBarkodAktif  " +
                         ",ISNULL(Param_ParcaliMasaAktif,0) as Param_ParcaliMasaAktif  " +
                         ",ISNULL(yazdirilmamissiparis,0) as yazdirilmamissiparis  " +
+                        ",ISNULL(masamusait,0) as masamusait  " +
                          " from Pos_Param where Param_Id = '1' ");
 
                 DataTable dtMac = dbtools.SelectTable("SELECT  isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep, ISNULL(P_Sabitkonum,0) as P_Sabitkonum, P_Sabitkonumkodu   FROM  Rmosmuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
@@ -400,6 +402,7 @@ namespace Pos.Class
                     Param_nfcBarkodAktif = Convert.ToBoolean(dt.Rows[0]["Param_nfcBarkodAktif"]);
                     Param_ParcaliMasaAktif = Convert.ToBoolean(dt.Rows[0]["Param_ParcaliMasaAktif"]);
                     yazdirilmamissiparis = Convert.ToBoolean(dt.Rows[0]["yazdirilmamissiparis"]);
+                    masamusait = Convert.ToBoolean(dt.Rows[0]["masamusait"]);
 
                 }
                 if (dtMac.Rows.Count > 0)
