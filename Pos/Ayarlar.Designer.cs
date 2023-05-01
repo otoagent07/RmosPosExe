@@ -274,6 +274,8 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.kisivegarsonbirkeresoraktif = new DevExpress.XtraEditors.CheckEdit();
+            this.masatakiphesappasif = new DevExpress.XtraEditors.CheckEdit();
             this.masamusait = new DevExpress.XtraEditors.CheckEdit();
             this.groupControl12 = new DevExpress.XtraEditors.GroupControl();
             this.checkOtoIndirimAktif = new DevExpress.XtraEditors.CheckEdit();
@@ -1228,8 +1230,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.masatakiphesappasif = new DevExpress.XtraEditors.CheckEdit();
-            this.kisivegarsonbirkeresoraktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1418,6 +1418,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kisivegarsonbirkeresoraktif.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masatakiphesappasif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.masamusait.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl12)).BeginInit();
             this.groupControl12.SuspendLayout();
@@ -2052,8 +2054,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masatakiphesappasif.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kisivegarsonbirkeresoraktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4075,6 +4075,18 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // kisivegarsonbirkeresoraktif
+            // 
+            resources.ApplyResources(this.kisivegarsonbirkeresoraktif, "kisivegarsonbirkeresoraktif");
+            this.kisivegarsonbirkeresoraktif.Name = "kisivegarsonbirkeresoraktif";
+            this.kisivegarsonbirkeresoraktif.Properties.Caption = resources.GetString("kisivegarsonbirkeresoraktif.Properties.Caption");
+            // 
+            // masatakiphesappasif
+            // 
+            resources.ApplyResources(this.masatakiphesappasif, "masatakiphesappasif");
+            this.masatakiphesappasif.Name = "masatakiphesappasif";
+            this.masatakiphesappasif.Properties.Caption = resources.GetString("masatakiphesappasif.Properties.Caption");
             // 
             // masamusait
             // 
@@ -12236,18 +12248,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // masatakiphesappasif
-            // 
-            resources.ApplyResources(this.masatakiphesappasif, "masatakiphesappasif");
-            this.masatakiphesappasif.Name = "masatakiphesappasif";
-            this.masatakiphesappasif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
-            // kisivegarsonbirkeresoraktif
-            // 
-            resources.ApplyResources(this.kisivegarsonbirkeresoraktif, "kisivegarsonbirkeresoraktif");
-            this.kisivegarsonbirkeresoraktif.Name = "kisivegarsonbirkeresoraktif";
-            this.kisivegarsonbirkeresoraktif.Properties.Caption = resources.GetString("checkEdit3.Properties.Caption");
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -12448,6 +12448,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kisivegarsonbirkeresoraktif.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masatakiphesappasif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.masamusait.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl12)).EndInit();
             this.groupControl12.ResumeLayout(false);
@@ -13110,8 +13112,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masatakiphesappasif.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kisivegarsonbirkeresoraktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

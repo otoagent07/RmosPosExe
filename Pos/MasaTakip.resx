@@ -211,7 +211,7 @@
     <value>0, 98</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 0</value>
+    <value>1066, 0</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
     <value>barDockControlTop</value>
@@ -229,10 +229,10 @@
     <value>Bottom</value>
   </data>
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 815</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 27</value>
+    <value>1066, 27</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -253,7 +253,7 @@
     <value>0, 98</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 717</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -271,10 +271,10 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1066, 98</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 717</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
@@ -298,7 +298,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 838</value>
+    <value>1066, 842</value>
   </data>
   <data name="flp_Masa.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -310,7 +310,7 @@
     <value>0, 174</value>
   </data>
   <data name="flp_Masa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 476</value>
+    <value>775, 480</value>
   </data>
   <data name="flp_Masa.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -691,10 +691,10 @@
     <value>Bottom</value>
   </data>
   <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 650</value>
+    <value>0, 654</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 36</value>
+    <value>775, 36</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -724,7 +724,7 @@
     <value>3, 3</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>672, 119</value>
+    <value>674, 119</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -797,7 +797,7 @@
 </value>
   </data>
   <data name="btnParcaliOdemeEski.Location" type="System.Drawing.Point, System.Drawing">
-    <value>675, 3</value>
+    <value>677, 3</value>
   </data>
   <data name="btnParcaliOdemeEski.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 119</value>
@@ -825,10 +825,10 @@
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 686</value>
+    <value>0, 690</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 125</value>
+    <value>775, 125</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -958,7 +958,7 @@
     <value>Satılan Ürünler</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 327</value>
+    <value>285, 331</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1122,10 +1122,10 @@
     <value>Right</value>
   </data>
   <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>773, 174</value>
+    <value>775, 174</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 637</value>
+    <value>291, 641</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1968,7 +1968,7 @@ Masa</value>
     <value>0, 98</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 76</value>
+    <value>1066, 76</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -1995,7 +1995,7 @@ Masa</value>
     <value>0, 98</value>
   </data>
   <data name="barDockControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 717</value>
   </data>
   <data name="&gt;&gt;barDockControl3.Name" xml:space="preserve">
     <value>barDockControl3</value>
@@ -2013,10 +2013,10 @@ Masa</value>
     <value>Right</value>
   </data>
   <data name="barDockControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1066, 98</value>
   </data>
   <data name="barDockControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 717</value>
   </data>
   <data name="&gt;&gt;barDockControl4.Name" xml:space="preserve">
     <value>barDockControl4</value>
@@ -2034,10 +2034,10 @@ Masa</value>
     <value>Bottom</value>
   </data>
   <data name="barDockControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 815</value>
   </data>
   <data name="barDockControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 0</value>
+    <value>1066, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl2.Name" xml:space="preserve">
     <value>barDockControl2</value>
@@ -2058,7 +2058,7 @@ Masa</value>
     <value>0, 98</value>
   </data>
   <data name="barDockControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 0</value>
+    <value>1066, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl1.Name" xml:space="preserve">
     <value>barDockControl1</value>
@@ -2079,7 +2079,7 @@ Masa</value>
     <value>0, 98</value>
   </data>
   <data name="barDockControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 717</value>
   </data>
   <data name="&gt;&gt;barDockControl7.Name" xml:space="preserve">
     <value>barDockControl7</value>
@@ -2097,10 +2097,10 @@ Masa</value>
     <value>Right</value>
   </data>
   <data name="barDockControl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1066, 98</value>
   </data>
   <data name="barDockControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 717</value>
   </data>
   <data name="&gt;&gt;barDockControl8.Name" xml:space="preserve">
     <value>barDockControl8</value>
@@ -2118,10 +2118,10 @@ Masa</value>
     <value>Bottom</value>
   </data>
   <data name="barDockControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 815</value>
   </data>
   <data name="barDockControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 0</value>
+    <value>1066, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl6.Name" xml:space="preserve">
     <value>barDockControl6</value>
@@ -2142,7 +2142,7 @@ Masa</value>
     <value>0, 98</value>
   </data>
   <data name="barDockControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 0</value>
+    <value>1066, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl5.Name" xml:space="preserve">
     <value>barDockControl5</value>
@@ -2163,7 +2163,7 @@ Masa</value>
     <value>0, 98</value>
   </data>
   <data name="barDockControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 717</value>
   </data>
   <data name="&gt;&gt;barDockControl11.Name" xml:space="preserve">
     <value>barDockControl11</value>
@@ -2181,10 +2181,10 @@ Masa</value>
     <value>Right</value>
   </data>
   <data name="barDockControl12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1066, 98</value>
   </data>
   <data name="barDockControl12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 713</value>
+    <value>0, 717</value>
   </data>
   <data name="&gt;&gt;barDockControl12.Name" xml:space="preserve">
     <value>barDockControl12</value>
@@ -2202,10 +2202,10 @@ Masa</value>
     <value>Bottom</value>
   </data>
   <data name="barDockControl10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 811</value>
+    <value>0, 815</value>
   </data>
   <data name="barDockControl10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 0</value>
+    <value>1066, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl10.Name" xml:space="preserve">
     <value>barDockControl10</value>
@@ -2226,7 +2226,7 @@ Masa</value>
     <value>0, 98</value>
   </data>
   <data name="barDockControl9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 0</value>
+    <value>1066, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl9.Name" xml:space="preserve">
     <value>barDockControl9</value>
@@ -2682,7 +2682,7 @@ Satış</value>
     <value>0, 0</value>
   </data>
   <data name="barDockControl13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 98</value>
+    <value>1066, 98</value>
   </data>
   <data name="&gt;&gt;barDockControl13.Name" xml:space="preserve">
     <value>barDockControl13</value>
@@ -2700,10 +2700,10 @@ Satış</value>
     <value>Bottom</value>
   </data>
   <data name="barDockControl14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 838</value>
+    <value>0, 842</value>
   </data>
   <data name="barDockControl14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 0</value>
+    <value>1066, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl14.Name" xml:space="preserve">
     <value>barDockControl14</value>
@@ -2721,10 +2721,10 @@ Satış</value>
     <value>Right</value>
   </data>
   <data name="barDockControl16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1064, 98</value>
+    <value>1066, 98</value>
   </data>
   <data name="barDockControl16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 740</value>
+    <value>0, 744</value>
   </data>
   <data name="&gt;&gt;barDockControl16.Name" xml:space="preserve">
     <value>barDockControl16</value>
@@ -2748,7 +2748,7 @@ Satış</value>
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="barDockControl15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 740</value>
+    <value>0, 744</value>
   </data>
   <data name="&gt;&gt;barDockControl15.Name" xml:space="preserve">
     <value>barDockControl15</value>

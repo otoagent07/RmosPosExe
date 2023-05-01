@@ -68,11 +68,15 @@ namespace Pos.Class
                     {
 
                         string emiktar = row["Rsat_Emiktar"].ToString();
-                        if (emiktar.Equals("T"))
+                        if (emiktar.Equals("T") )
                         {
                             continue;
                         }
-                        row["Rec_Ad"] = row["Rec_Ad"] + "[" + row["Rsat_Emiktar"] + "]";
+
+                        if (row["Rsat_Emiktar"]!=null && !row["Rsat_Emiktar"].ToString().Equals(""))
+                        {
+                            row["Rec_Ad"] = row["Rec_Ad"] + "[" + row["Rsat_Emiktar"] + "]";
+                        }
                     }
                 }
 
