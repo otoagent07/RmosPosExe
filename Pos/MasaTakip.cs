@@ -140,6 +140,14 @@ namespace Pos
             }
 
 
+            if (Param.masatakiphesappasif)
+            {
+                btnHesapDokum.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                
+            }
+
+          
+
             if (!User.Pos_MasaPaketS)
             {
                 bar_PaketSatis.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;

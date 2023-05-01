@@ -336,13 +336,24 @@ namespace Pos
                     return;
                 }
 
+                Kisi_Garson sor = null;
+                string text = "select top 1 isnull(Rsat_Kisi,1) as Rsat_Kisi,isnull(Rsat_Garson,'') as Rsat_Garson from cst_recete_satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "'";
 
+                var data = dbtools.SelectTableR(text);
+                if (Param.kisivegarsonbirkeresoraktif && data!=null && data.Rows.Count>0)
+                {
+                    Garson = data.Rows[0]["Rsat_Garson"].ToString();
+                    Kisi_Sayisi =Convert.ToInt32( data.Rows[0]["Rsat_Kisi"].ToString());
+                }
+                else
+                {
+                     sor = new Kisi_Garson();
+                    sor.Tag = this.Tag;
+                    sor.ShowDialog();
+                    Garson = sor.Garson_Kodu;
+                    Kisi_Sayisi = Convert.ToInt32(sor.Kisi);
+                }
 
-                Kisi_Garson sor = new Kisi_Garson();
-                sor.Tag = this.Tag;
-                sor.ShowDialog();
-                Garson = sor.Garson_Kodu;
-                Kisi_Sayisi = Convert.ToInt32(sor.Kisi);
 
                 if (Departman.Kodlar_Kuver_Sat)
                 {
@@ -350,7 +361,7 @@ namespace Pos
                     Urun_Sat(Departman.Kodlar_Kuver_Recete);
                 }
 
-                if (sor.Iptal)
+                if (sor!=null && sor.Iptal)
                 {
                     this.Close();
                 }
