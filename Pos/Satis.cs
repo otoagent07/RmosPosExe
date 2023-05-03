@@ -1489,12 +1489,9 @@ namespace Pos
             {
                 foreach (DataRow item in dt.Rows)
                 {
-
-
                     item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "");
-                    item["Rsat_Tutar"] = item["Rsat_Tutar"].ToString().Replace(",00", "");
-
-
+                    item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",000", "");
+                    //item["Rsat_Tutar"] = item["Rsat_Tutar"].ToString().Replace(",00", "");
                 }
             }
 

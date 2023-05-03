@@ -441,6 +441,9 @@ namespace Pos
             {
                 foreach (DataRow dr in dt.Rows)
                 {
+                  
+
+
                     if (dr != null && dr["Rsat_Ba"].ToString() == "A")
                     {
                         decimal kur = 0;
@@ -459,6 +462,20 @@ namespace Pos
                 }
 
             }
+
+            if (dt!=null && dt.Rows.Count>0)
+            {
+                foreach (DataRow dr in dt.Rows)
+                {
+                    dr["Rsat_Miktar"] = dr["Rsat_Miktar"].ToString().Replace(",0000", "");
+                    dr["Rsat_Miktar"] = dr["Rsat_Miktar"].ToString().Replace(",000", "");
+                    dr["Rsat_Tutar"] = dr["Rsat_Tutar"].ToString().Replace(",00", "");
+                }
+
+            }
+
+
+
 
             gridControl1.DataSource = dt;
 

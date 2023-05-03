@@ -29,7 +29,7 @@ namespace Pos.Class
         {
             try
             {
-                dil =dbtools.DegerGetir("select top 1 isnull(Pos_dil,'tr-TR') as Pos_dil  from Rmosmuh.dbo.Pos_User where P_Kod='" + User.P_Kod + "'");
+                dil = dbtools.DegerGetir("select top 1 isnull(Pos_dil,'tr-TR') as Pos_dil  from Rmosmuh.dbo.Pos_User where P_Kod='" + User.P_Kod + "'");
 
                 Langs.Default.Dil = dil;
                 Langs.Default.Save();
@@ -95,7 +95,7 @@ namespace Pos.Class
         {
             try
             {
-                if (Param.masamusait==false)
+                if (Param.masamusait == false)
                 {
                     return true;
                 }
@@ -128,27 +128,27 @@ namespace Pos.Class
             try
             {
 
-                if (User.M_BaskaMasa==false)
+                if (User.M_BaskaMasa == false)
                 {
-                    string varmi = dbtools.DegerGetir("select top 1 count(Rsat_Garson) as toplam from Cst_Recete_Satis  where Rsat_Fisno='"+ fisno + "'");
+                    string varmi = dbtools.DegerGetir("select top 1 count(Rsat_Garson) as toplam from Cst_Recete_Satis  where Rsat_Fisno='" + fisno + "'");
 
-                    if (varmi=="0")
+                    if (varmi == "0")
                     {
                         return true;
                     }
 
 
 
-                    string query = "select top 1 count(Rsat_Garson) as toplam from Cst_Recete_Satis  where Rsat_Fisno='"+ fisno + "'  and Rsat_Garson='"+User.P_Kod+"' ";
+                    string query = "select top 1 count(Rsat_Garson) as toplam from Cst_Recete_Satis  where Rsat_Fisno='" + fisno + "'  and Rsat_Garson='" + User.P_Kod + "' ";
                     string deger = dbtools.DegerGetir(query);
-                    if (deger=="0")
+                    if (deger == "0")
                     {
                         MessageBox.Show("BAŞKASININ MASASINA SATIŞ YAPAMAZSIN !");
                         return false;
                     }
 
                 }
-                
+
 
             }
             catch (Exception ex)

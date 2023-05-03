@@ -640,7 +640,7 @@ namespace Pos
                 {
                     // Giris_Yap();
                     //  Bilgi_Paneli();
-                    RHMesaj.MyMessageError(MyClass, "Bilgi_Paneli", " Departmanı otomatik seçmeyin !", ex);
+                    //RHMesaj.MyMessageError(MyClass, "Bilgi_Paneli", " Departmanı otomatik seçmeyin !", ex);
                 }
             }
 
