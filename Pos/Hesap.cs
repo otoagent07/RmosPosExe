@@ -772,7 +772,7 @@ namespace Pos
                 if (chk_Hesapdok.Checked)
                 {
                     AdisyonPr adisyon = new AdisyonPr();
-                    string cevap = adisyon.Adisyon_Yaz(Convert.ToInt32(Convert.ToInt32(this.Tag)), true);
+                    string cevap = adisyon.Adisyon_Yaz(Convert.ToInt32(Convert.ToInt32(this.Tag)), false);
                     if (cevap != "OK")
                     {
                         MessageBox.Show(cevap);
