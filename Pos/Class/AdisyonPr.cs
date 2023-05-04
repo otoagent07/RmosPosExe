@@ -10,8 +10,8 @@ namespace Pos.Class
 {
     public class AdisyonPr
     {
-       
-        public string Adisyon_Yaz(int Fisno, bool Detay = false)
+        // 04.05.2023 kodu
+        public string Adisyon_YazYeni(int Fisno, bool Detay = false)
         {
             try
             {
@@ -328,7 +328,7 @@ namespace Pos.Class
         }
 
         // aşağıki metot 30.07.2021 e ait
-        public string Adisyon_YazEski(int Fisno, bool Detay = false, bool Kapat = false)
+        public string Adisyon_Yaz(int Fisno, bool Detay = false)
         {
             //Printer Seçimi
             string printer = String.Empty;
