@@ -2686,6 +2686,8 @@ namespace Pos
             else
             {
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + bartxt_FisNo.EditValue.ToString() + "' ");
+
+                RHMesaj.alertMesaj("Sipariş Yazdırıldı",5);
             }
 
             btn_Cikis.Enabled = true;
