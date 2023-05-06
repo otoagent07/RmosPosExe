@@ -250,7 +250,7 @@
             // 
             // btn_Yazdirkapat
             // 
-            this.btn_Yazdirkapat.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.btn_Yazdirkapat.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btn_Yazdirkapat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Yazdirkapat.Appearance.Font")));
             this.btn_Yazdirkapat.Appearance.Options.UseBackColor = true;
             this.btn_Yazdirkapat.Appearance.Options.UseFont = true;
@@ -343,6 +343,10 @@
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.FooterPanel.Font = ((System.Drawing.Font)(resources.GetObject("gridView1.Appearance.FooterPanel.Font")));
+            this.gridView1.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Red;
+            this.gridView1.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridView1.Appearance.FooterPanel.Options.UseForeColor = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -624,7 +628,9 @@
             // btn_AdisYaz
             // 
             resources.ApplyResources(this.btn_AdisYaz, "btn_AdisYaz");
+            this.btn_AdisYaz.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btn_AdisYaz.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_AdisYaz.Appearance.Font")));
+            this.btn_AdisYaz.Appearance.Options.UseBackColor = true;
             this.btn_AdisYaz.Appearance.Options.UseFont = true;
             this.btn_AdisYaz.Appearance.Options.UseTextOptions = true;
             this.btn_AdisYaz.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;

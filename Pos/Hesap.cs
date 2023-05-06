@@ -967,13 +967,18 @@ namespace Pos
         {
             try
             {
+                if (look_Kapatma.EditValue==null)
+                {
+                    MessageBox.Show("Ödeme Kodu Seçiniz !");
+                    return;
+                }
                 var look_KapatmaSecili = look_Kapatma.EditValue.ToString();
                 var look_DovizKodSecili = look_DovizKod.EditValue.ToString();
                 odemeAl();
 
 
                 look_Kapatma.EditValue = null;
-                look_Kapatma.EditValue = look_KapatmaSecili;
+                //look_Kapatma.EditValue = look_KapatmaSecili;
                 look_DovizKod.EditValue = null;
                 look_DovizKod.EditValue = look_DovizKodSecili;
             }

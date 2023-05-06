@@ -944,6 +944,9 @@
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 185</value>
   </data>
+  <data name="gridView1.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
   <data name="gridColumn2.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>

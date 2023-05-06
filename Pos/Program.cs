@@ -27,6 +27,7 @@ namespace Pos
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
 
+           
                 CultureInfo culture = new CultureInfo(Langs.Default.Dil == "" ? "tr-TR" : Langs.Default.Dil);
                 //culture = new CultureInfo(User.Pos_Culture);
                 //culture.DateTimeFormat.ShortDatePattern = "dd.MM.yyyy";
@@ -36,7 +37,7 @@ namespace Pos
                 System.Threading.Thread.CurrentThread.CurrentCulture = culture;
                 System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
                 Localize.ApplicationLanguage(culture.TwoLetterISOLanguageName);
-
+               
 
                 DevExpress.Skins.SkinManager.EnableFormSkins();
                 DevExpress.UserSkins.OfficeSkins.Register();

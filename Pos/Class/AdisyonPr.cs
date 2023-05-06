@@ -381,7 +381,8 @@ namespace Pos.Class
             if (!Detay)
             {
                 //Toplama Göre Boş Satır
-                for (int i = 0; i < Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"]); i++)
+                int toplam = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"]);
+                for (int i = 0; i < toplam; i++)
                 {
                     DataRow row = dt_Fis.NewRow();
                     dt_Fis.Rows.InsertAt(row, 1);

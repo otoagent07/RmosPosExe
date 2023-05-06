@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -85,13 +85,12 @@
             this.chk_Fix = new DevExpress.XtraEditors.CheckButton();
             this.btn_FarkliMiktar = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Eksi = new DevExpress.XtraEditors.CheckButton();
-            this.btn_Arti = new DevExpress.XtraEditors.SimpleButton();
             this.btnRelogin = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Eksi = new DevExpress.XtraEditors.SimpleButton();
             this.btn_9 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_8 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Arti = new DevExpress.XtraEditors.SimpleButton();
             this.btn_3 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.btnMenuAc = new DevExpress.XtraEditors.SimpleButton();
@@ -100,6 +99,7 @@
             this.btn_SatirSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_MiktarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Tutarduzelt = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Eksi = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Ikram = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Zayi = new DevExpress.XtraEditors.SimpleButton();
@@ -633,6 +633,7 @@
             this.panelControl3.Controls.Add(this.panelMenu);
             this.panelControl3.Controls.Add(this.btn_9);
             this.panelControl3.Controls.Add(this.btn_1);
+            this.panelControl3.Controls.Add(this.btn_FarkliMiktar);
             this.panelControl3.Controls.Add(this.simpleButton1);
             this.panelControl3.Controls.Add(this.btn_8);
             this.panelControl3.Controls.Add(this.btn_Arti);
@@ -663,7 +664,6 @@
             this.panelMenu.Controls.Add(this.btnTopluSil);
             this.panelMenu.Controls.Add(this.btn_SpSil);
             this.panelMenu.Controls.Add(this.chk_Fix);
-            this.panelMenu.Controls.Add(this.btn_FarkliMiktar);
             this.panelMenu.Controls.Add(this.chk_Eksi);
             this.panelMenu.Controls.Add(this.btnRelogin);
             resources.ApplyResources(this.panelMenu, "panelMenu");
@@ -722,16 +722,6 @@
             this.chk_Eksi.LookAndFeel.UseDefaultLookAndFeel = false;
             this.chk_Eksi.Name = "chk_Eksi";
             // 
-            // btn_Arti
-            // 
-            this.btn_Arti.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Arti.Appearance.Font")));
-            this.btn_Arti.Appearance.Options.UseFont = true;
-            this.btn_Arti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Arti.ImageOptions.Image")));
-            this.btn_Arti.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            resources.ApplyResources(this.btn_Arti, "btn_Arti");
-            this.btn_Arti.Name = "btn_Arti";
-            this.btn_Arti.Click += new System.EventHandler(this.btn_Arti_Click);
-            // 
             // btnRelogin
             // 
             this.btnRelogin.Appearance.Options.UseFont = true;
@@ -740,16 +730,6 @@
             resources.ApplyResources(this.btnRelogin, "btnRelogin");
             this.btnRelogin.Name = "btnRelogin";
             this.btnRelogin.Click += new System.EventHandler(this.btnRelogin_Click);
-            // 
-            // btn_Eksi
-            // 
-            this.btn_Eksi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Eksi.Appearance.Font")));
-            this.btn_Eksi.Appearance.Options.UseFont = true;
-            this.btn_Eksi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eksi.ImageOptions.Image")));
-            this.btn_Eksi.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            resources.ApplyResources(this.btn_Eksi, "btn_Eksi");
-            this.btn_Eksi.Name = "btn_Eksi";
-            this.btn_Eksi.Click += new System.EventHandler(this.btn_Eksi_Click);
             // 
             // btn_9
             // 
@@ -788,6 +768,16 @@
             resources.ApplyResources(this.btn_8, "btn_8");
             this.btn_8.Name = "btn_8";
             this.btn_8.Click += new System.EventHandler(this.btn_Miktar_Click);
+            // 
+            // btn_Arti
+            // 
+            this.btn_Arti.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Arti.Appearance.Font")));
+            this.btn_Arti.Appearance.Options.UseFont = true;
+            this.btn_Arti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Arti.ImageOptions.Image")));
+            this.btn_Arti.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            resources.ApplyResources(this.btn_Arti, "btn_Arti");
+            this.btn_Arti.Name = "btn_Arti";
+            this.btn_Arti.Click += new System.EventHandler(this.btn_Arti_Click);
             // 
             // btn_3
             // 
@@ -874,6 +864,16 @@
             resources.ApplyResources(this.btn_Tutarduzelt, "btn_Tutarduzelt");
             this.btn_Tutarduzelt.Name = "btn_Tutarduzelt";
             this.btn_Tutarduzelt.Click += new System.EventHandler(this.btn_Tutarduzelt_Click);
+            // 
+            // btn_Eksi
+            // 
+            this.btn_Eksi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Eksi.Appearance.Font")));
+            this.btn_Eksi.Appearance.Options.UseFont = true;
+            this.btn_Eksi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eksi.ImageOptions.Image")));
+            this.btn_Eksi.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            resources.ApplyResources(this.btn_Eksi, "btn_Eksi");
+            this.btn_Eksi.Name = "btn_Eksi";
+            this.btn_Eksi.Click += new System.EventHandler(this.btn_Eksi_Click);
             // 
             // panelControl5
             // 
@@ -1061,18 +1061,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn6;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn6;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.RowAutoHeight = true;
@@ -1169,7 +1169,7 @@
             // btn_Siparis
             // 
             resources.ApplyResources(this.btn_Siparis, "btn_Siparis");
-            this.btn_Siparis.Appearance.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn_Siparis.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btn_Siparis.Appearance.BackColor2 = ((System.Drawing.Color)(resources.GetObject("btn_Siparis.Appearance.BackColor2")));
             this.btn_Siparis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Siparis.Appearance.Font")));
             this.btn_Siparis.Appearance.Options.UseBackColor = true;
