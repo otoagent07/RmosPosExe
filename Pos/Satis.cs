@@ -2855,7 +2855,7 @@ namespace Pos
                 }
 
                 string yazdirilmissa = "Yazdırılmamış";
-                if (Departman.Siparis)
+                if (Departman.Siparis && Param.satirsilfiscikmasinaktif==false)
                 {
                     FisPr fis = new FisPr();
                     string sonuc = fis.newIptalPr(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), Sil_Miktar);
@@ -3112,12 +3112,15 @@ namespace Pos
                     MessageBox.Show(res_man.GetString("Alacak Satırı üzerinde İşlem Yapamazsınız...."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+
                 decimal eskiMiktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
-                if (eskiMiktar == 1)
-                {
-                    MessageBox.Show(res_man.GetString("Son Ürün Eksiltilemez..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                //if (eskiMiktar == 1)
+                //{
+                //    MessageBox.Show(res_man.GetString("Son Ürün Eksiltilemez..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //    return;
+                //}
+
+
                 Miktar = -1;
 
                 Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")));

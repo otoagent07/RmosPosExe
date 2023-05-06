@@ -167,6 +167,7 @@ namespace Pos.Class
         public static bool masamusait { get; set; }
         public static bool masatakiphesappasif { get; set; }
         public static bool kisivegarsonbirkeresoraktif { get; set; }
+        public static bool satirsilfiscikmasinaktif { get; set; }
 
 
         public static void Param_Yukle()
@@ -217,6 +218,7 @@ namespace Pos.Class
                         ",ISNULL(masamusait,0) as masamusait  " +
                         ",ISNULL(masatakiphesappasif,0) as masatakiphesappasif  " +
                         ",ISNULL(kisivegarsonbirkeresoraktif,0) as kisivegarsonbirkeresoraktif  " +
+                        ",ISNULL(satirsilfiscikmasinaktif,0) as satirsilfiscikmasinaktif  " +
                          " from Pos_Param where Param_Id = '1' ");
 
                 DataTable dtMac = dbtools.SelectTable("SELECT  isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep, ISNULL(P_Sabitkonum,0) as P_Sabitkonum, P_Sabitkonumkodu   FROM  Rmosmuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
@@ -409,6 +411,7 @@ namespace Pos.Class
                     masamusait = Convert.ToBoolean(dt.Rows[0]["masamusait"]);
                     masatakiphesappasif = Convert.ToBoolean(dt.Rows[0]["masatakiphesappasif"]);
                     kisivegarsonbirkeresoraktif = Convert.ToBoolean(dt.Rows[0]["kisivegarsonbirkeresoraktif"]);
+                    satirsilfiscikmasinaktif = Convert.ToBoolean(dt.Rows[0]["satirsilfiscikmasinaktif"]);
 
                 }
                 if (dtMac.Rows.Count > 0)

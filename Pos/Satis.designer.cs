@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -83,11 +83,11 @@
             this.btnTopluSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_SpSil = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Fix = new DevExpress.XtraEditors.CheckButton();
-            this.btn_FarkliMiktar = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Eksi = new DevExpress.XtraEditors.CheckButton();
             this.btnRelogin = new DevExpress.XtraEditors.SimpleButton();
             this.btn_9 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_FarkliMiktar = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_8 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Arti = new DevExpress.XtraEditors.SimpleButton();
@@ -699,18 +699,6 @@
             this.chk_Fix.LookAndFeel.UseDefaultLookAndFeel = false;
             this.chk_Fix.Name = "chk_Fix";
             // 
-            // btn_FarkliMiktar
-            // 
-            this.btn_FarkliMiktar.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_FarkliMiktar.Appearance.Font")));
-            this.btn_FarkliMiktar.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btn_FarkliMiktar.Appearance.Options.UseFont = true;
-            this.btn_FarkliMiktar.Appearance.Options.UseForeColor = true;
-            this.btn_FarkliMiktar.Appearance.Options.UseTextOptions = true;
-            this.btn_FarkliMiktar.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            resources.ApplyResources(this.btn_FarkliMiktar, "btn_FarkliMiktar");
-            this.btn_FarkliMiktar.Name = "btn_FarkliMiktar";
-            this.btn_FarkliMiktar.Click += new System.EventHandler(this.btn_FarkliMiktar_Click);
-            // 
             // chk_Eksi
             // 
             this.chk_Eksi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("chk_Eksi.Appearance.Font")));
@@ -750,6 +738,18 @@
             resources.ApplyResources(this.btn_1, "btn_1");
             this.btn_1.Name = "btn_1";
             this.btn_1.Click += new System.EventHandler(this.btn_Miktar_Click);
+            // 
+            // btn_FarkliMiktar
+            // 
+            this.btn_FarkliMiktar.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_FarkliMiktar.Appearance.Font")));
+            this.btn_FarkliMiktar.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btn_FarkliMiktar.Appearance.Options.UseFont = true;
+            this.btn_FarkliMiktar.Appearance.Options.UseForeColor = true;
+            this.btn_FarkliMiktar.Appearance.Options.UseTextOptions = true;
+            this.btn_FarkliMiktar.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            resources.ApplyResources(this.btn_FarkliMiktar, "btn_FarkliMiktar");
+            this.btn_FarkliMiktar.Name = "btn_FarkliMiktar";
+            this.btn_FarkliMiktar.Click += new System.EventHandler(this.btn_FarkliMiktar_Click);
             // 
             // simpleButton1
             // 
@@ -1061,18 +1061,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Column = this.gridColumn6;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule2.Name = "Format0";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue2.Value1 = "";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            this.gridView1.FormatRules.Add(gridFormatRule2);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn6;
+            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue1.Value1 = "";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView1.FormatRules.Add(gridFormatRule1);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.RowAutoHeight = true;

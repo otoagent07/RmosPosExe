@@ -1230,6 +1230,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.satirsilfiscikmasinaktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2054,6 +2055,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.satirsilfiscikmasinaktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4061,6 +4063,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.satirsilfiscikmasinaktif);
             this.xtraTabPage8.Controls.Add(this.kisivegarsonbirkeresoraktif);
             this.xtraTabPage8.Controls.Add(this.masatakiphesappasif);
             this.xtraTabPage8.Controls.Add(this.masamusait);
@@ -12248,6 +12251,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // satirsilfiscikmasinaktif
+            // 
+            resources.ApplyResources(this.satirsilfiscikmasinaktif, "satirsilfiscikmasinaktif");
+            this.satirsilfiscikmasinaktif.Name = "satirsilfiscikmasinaktif";
+            this.satirsilfiscikmasinaktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13112,6 +13121,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.satirsilfiscikmasinaktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14318,5 +14328,6 @@
         private DevExpress.XtraEditors.CheckEdit masamusait;
         private DevExpress.XtraEditors.CheckEdit kisivegarsonbirkeresoraktif;
         private DevExpress.XtraEditors.CheckEdit masatakiphesappasif;
+        private DevExpress.XtraEditors.CheckEdit satirsilfiscikmasinaktif;
     }
 }
