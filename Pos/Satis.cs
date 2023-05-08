@@ -931,189 +931,340 @@ namespace Pos
         void btn_Kapatma_Click(object sender, EventArgs e)
         {
 
-            siparisToplamTutar = Convert.ToDecimal(gridColumn4.SummaryText);//15,28
-
-            SimpleButton btn_Kapatma = (SimpleButton)sender;
-
-            if (Convert.ToString(this.Tag) == "H")    // Hızlı Satış
+            try
             {
+                siparisToplamTutar = Convert.ToDecimal(gridColumn4.SummaryText);//15,28
 
-                DataTable dtt = dbtools.SelectTable("select Pkod_Ozelkod,isnull(Pkod_Tekoda,0) as Pkod_Tekoda from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Kod  = '" + btn_Kapatma.Tag.ToString() + "'");
-                string ozelKod = Convert.ToString(dtt.Rows[0]["Pkod_Ozelkod"]);
-                bool tekOda = Convert.ToBoolean(dtt.Rows[0]["Pkod_Tekoda"]);
+                SimpleButton btn_Kapatma = (SimpleButton)sender;
 
-
-                if (tekOda)
+                if (Convert.ToString(this.Tag) == "H")    // Hızlı Satış
                 {
-                    Kapatma_Tekoda(btn_Kapatma.Tag.ToString());
+
+                    DataTable dtt = dbtools.SelectTable("select Pkod_Ozelkod,isnull(Pkod_Tekoda,0) as Pkod_Tekoda from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Kod  = '" + btn_Kapatma.Tag.ToString() + "'");
+                    string ozelKod = Convert.ToString(dtt.Rows[0]["Pkod_Ozelkod"]);
+                    bool tekOda = Convert.ToBoolean(dtt.Rows[0]["Pkod_Tekoda"]);
+
+
+                    if (tekOda)
+                    {
+                        Kapatma_Tekoda(btn_Kapatma.Tag.ToString());
+                    }
+                    else
+                    {
+
+                        //else
+                        //{
+                        //string adSoyad = "";
+                        //decimal kartBakiye = 0;
+                        //if (ozelKod == "5")
+                        //{
+                        //    Cari_KartSor k = new Cari_KartSor(tutar);
+                        //    k.ShowDialog();
+
+                        //    if (k.Onay)
+                        //    {
+                        //        this.D_Mus_tipi = "C";
+                        //        this.D_Cari_Kod = k.Cari_Kod;
+                        //        adSoyad = k.Cari_Ad + " " + k.Cari_Soyad;
+                        //        kartBakiye = k.kartBakiye;
+                        //    }
+                        //    else
+                        //    {
+                        //        return;
+                        //    }
+                        //}
+
+
+                        if (Param.Param_HesapSor)
+                        {
+                            Hesap hes = new Hesap();
+                            hes.look_Kapatma.EditValue = btn_Kapatma.Tag;
+
+                            string kod = dbtools.DegerGetir("select Pkod_otoKur from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='" + btn_Kapatma.Tag + "'");
+
+
+                            hes.look_DovizKod.EditValue = kod;
+
+                            hes.Tag = Convert.ToInt32(bartxt_FisNo.EditValue);
+                            hes.ShowDialog();
+                            cikis = hes.cikis;
+                            Fisno = hes.fisno;
+                            gridyenile();
+                            //return;
+                        }
+
+
+                        Arama ara = new Arama();
+
+
+                        if (Param.Param_SatisArama == true)
+                        {
+                            ara.KapatmaKodu = Convert.ToString(btn_Kapatma.Tag);
+                            ara.Odeme_Ozelkod = Convert.ToInt32(ozelKod);
+                            ara.ShowDialog();
+
+                            if (ara.HizliSatis == false)
+                            {
+                                return;
+                            }
+
+                            if (string.IsNullOrEmpty(ara.Oda_No))
+                            {
+                                return;
+                            }
+
+                            D_Mus_tipi = ara.Mus_tipi;
+                            D_Oda_No = ara.Oda_No;
+                            D_Folio = ara.Folio;
+                            D_MasterId = ara.Master_Folio;
+                            D_Pansiyon = ara.Pansiyon;
+                            D_Uye_Id = ara.Uye_Id;
+                            D_Uye_Adsoyad = ara.Uye_Adsoyad;
+                            D_Uye_Kartturu = ara.Uye_Kartturu;
+                            D_Cari_Kod = ara.Cari_Kod;
+                            D_Ind_Kodu = ara.Ind_Kodu;
+                            D_Ind_Oran = ara.Ind_Oran;
+                            D_Odeme = ara.Odeme_Kodu;
+                            Kart_No = ara.Kart_No;
+                            FolioKart_ID = ara.KartID;
+
+                        }
+
+
+                        if (Param.Tesis_Tipi == 0)
+                        {
+                            if (Fronttools.HesapKapali_Kontrol(ara.Folio))
+                            {
+                                MessageBox.Show(res_man.GetString("Seçilen Hesap Harcamaya Kapatılmıştır.") + "\n" + res_man.GetString("Satış İşlemi Gerçekleşecektir."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                    }
+
+                    if ((D_Folio == 0 || D_Oda_No == "") && D_Cari_Kod == "")
+                    {
+                        System.Windows.Forms.MessageBox.Show(res_man.GetString("Folio Bulunamadı...") + "\n" + res_man.GetString("Lütfen Hesabı Tekrar Kapatın..."), res_man.GetString("Uyarı"), System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    if (D_Ind_Kodu != null)
+                    {
+                        Fis_Update();
+                    }
+
+
+                    if (!LimitKontrol())
+                    {
+                        D_Mus_tipi = "";
+                        D_Oda_No = "";
+                        D_Folio = 0;
+                        D_MasterId = 0;
+                        D_Pansiyon = "";
+                        D_Uye_Id = 0;
+                        D_Uye_Adsoyad = "";
+                        D_Uye_Kartturu = "";
+                        D_Cari_Kod = "";
+                        D_Ind_Kodu = "";
+                        D_Ind_Oran = 0;
+                        D_Odeme = "";
+
+                        Fis_Update();
+
+                        gridyenile();
+                        return;
+                    }
+
+                    gridyenile();
+
+
+                    decimal tutar, doviztutar;
+                    if (Param.Calisma_Sekli == 1)       //Döviz
+                    {
+                        doviztutar = Convert.ToDecimal(gridColumn5.SummaryText);
+                        tutar = doviztutar * Param.Doviz_Kuru;
+                    }
+                    else
+                    {
+                        tutar = Convert.ToDecimal(gridColumn4.SummaryText);
+                        doviztutar = tutar;
+                    }
+
+                    if (Departman.Siparis)
+                    {
+                        Siparis_Gonder(false);
+                    }
+
+
+                    Fis_Islem.Odeme_Al(Convert.ToInt32(bartxt_FisNo.EditValue), tutar, doviztutar, btn_Kapatma.Tag.ToString(), D_Mus_tipi, D_Oda_No, D_Folio, D_Cari_Kod, Split, Param.Doviz_Kodu, false);
+                    Fis_Islem.Satis_Tip(Convert.ToInt32(bartxt_FisNo.EditValue), btn_Kapatma.Tag.ToString(), D_Pansiyon);
+                    if (Param.Tesis_Tipi == 0)
+                    {
+                        Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID));
+                    }
+                    decimal folioBakiye = 0;
+
+                    if (Param.Param_SatisArama == true)
+                    {
+                        folioBakiye = Fronttools.BalanceBul(D_MasterId, Kart_No, FolioKart_ID) * (-1);
+
+                        FisPr pr = new FisPr();
+                        string sonuc = "";
+                        if (ozelKod == "1") sonuc = pr.SiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split, "   * * * SATIS FISI * * *   ", D_Oda_No, "Kalan Bakiye :  " + (folioBakiye - tutar).ToString("N2"), true);
+                        else sonuc = pr.SiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split, "   * * * SATIS FISI * * *   ", "", "", true);
+                        if (sonuc != "OK")
+                        {
+                            MessageBox.Show(sonuc);
+                        }
+
+                        if (Departman.Adisyon)
+                        {
+                            AdisyonPr ads = new AdisyonPr();
+                            ads.Adisyon_Yaz(Convert.ToInt32(bartxt_FisNo.EditValue));
+                            ads.Adisyon_Sayac_Arttir(Convert.ToInt32(bartxt_FisNo.EditValue));
+                        }
+                        else
+                        {
+                            //FisPr pr = new FisPr();
+                            if (Param.Param_YeniHesapDkm)
+                            {
+                                pr.newHesapDokum(true, Convert.ToInt32(bartxt_FisNo.EditValue), 0, "* * * HESAP KAPATMA FİŞİ * * *");
+                            }
+                            else
+                            {
+                                pr.HesapDokum(true, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
+                            }
+                        }
+
+                        if (Departman.Fatura)
+                        {
+                            Fis_Islem.Fatura_Kes(Convert.ToInt32(bartxt_FisNo.EditValue), false);
+                        }
+                    }
+
+                    btn_Cikis.Enabled = true;
+
+                    Bilgileri_Doldur();
+
+
+
+
+
+                    return;
                 }
-                else
-                {
 
+                if (Param.Tesis_Tipi == 0)//otel
+                {
+                    // Ödemesi Alınıyor...
+                    decimal tutar, doviztutar;
+                    if (Param.Calisma_Sekli == 1)       //Döviz
+                    {
+                        doviztutar = Convert.ToDecimal(gridColumn5.SummaryText);
+
+
+                        tutar = doviztutar * StatikModel.getOdaGirisKur(D_Oda_No, Param.Doviz_Kuru);
+
+
+                    }
+                    else
+                    {
+                        tutar = Convert.ToDecimal(gridColumn4.SummaryText);
+                        doviztutar = tutar;
+                    }
+
+                    string ozelKod = dbtools.DegerGetir("select Pkod_Ozelkod from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Kod  = '" + btn_Kapatma.Tag.ToString() + "'");
+
+                    if (ozelKod == "5")
+                    {
+                        if (!Direk_Satis())
+                        {
+                            return;
+                        }
+                    }
+
+                    if (!LimitKontrol())
+                    {
+                        return;
+                    }
+
+                    Fis_Islem.Odeme_Al(Convert.ToInt32(bartxt_FisNo.EditValue), tutar, doviztutar, btn_Kapatma.Tag.ToString(), D_Mus_tipi, D_Oda_No, D_Folio, D_Cari_Kod, Split, Param.Doviz_Kodu, false);
+                    Fis_Islem.Satis_Tip(Convert.ToInt32(bartxt_FisNo.EditValue), btn_Kapatma.Tag.ToString(), D_Pansiyon);
+                    Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID));
+
+                    //if (Convert.ToString(this.Tag) ==  "D" && Param.Param_DirekAdisyonPrSor == true)
+                    //{
+                    //    DialogResult c = MessageBox.Show(res_man.GetString("Adisyon Yazdırılsın mı ? ", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    //    if (c == DialogResult.Yes)
+                    //    {
+                    //if (Departman.Adisyon)
+                    //{
+                    //    AdisyonPr ads = new AdisyonPr();
+                    //    ads.Adisyon_Yaz(Convert.ToInt32(bartxt_FisNo.EditValue));
+                    //    ads.Adisyon_Sayac_Arttir(Convert.ToInt32(bartxt_FisNo.EditValue));
+                    //}
                     //else
                     //{
-                    //string adSoyad = "";
-                    //decimal kartBakiye = 0;
-                    //if (ozelKod == "5")
-                    //{
-                    //    Cari_KartSor k = new Cari_KartSor(tutar);
-                    //    k.ShowDialog();
+                    //    FisPr fis = new FisPr();
+                    //    fis.HesapDokum(false, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
+                    //}
 
-                    //    if (k.Onay)
-                    //    {
-                    //        this.D_Mus_tipi = "C";
-                    //        this.D_Cari_Kod = k.Cari_Kod;
-                    //        adSoyad = k.Cari_Ad + " " + k.Cari_Soyad;
-                    //        kartBakiye = k.kartBakiye;
+                    //if (Departman.Fatura)
+                    //{
+                    //    Fis_Islem.Fatura_Kes(Convert.ToInt32(bartxt_FisNo.EditValue), false);
+                    //}
+
+
+
+                    //        return;
                     //    }
                     //    else
                     //    {
+                    //Bilgileri_Doldur();
                     //        return;
                     //    }
                     //}
 
-
-                    if (Param.Param_HesapSor)
+                    if (Departman.Kodlar_AndPos_NFC)
                     {
-                        Hesap hes = new Hesap();
-                        hes.look_Kapatma.EditValue = btn_Kapatma.Tag;
+                        if (D_Ind_Kodu != null)
+                        {
+                            Fis_Update();
+                        }
 
-                        string kod = dbtools.DegerGetir("select Pkod_otoKur from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='" + btn_Kapatma.Tag + "'");
-
-
-                        hes.look_DovizKod.EditValue = kod;
-
-                        hes.Tag = Convert.ToInt32(bartxt_FisNo.EditValue);
-                        hes.ShowDialog();
-                        cikis = hes.cikis;
-                        Fisno = hes.fisno;
                         gridyenile();
-                        //return;
+
+                        //if (!LimitKontrol())
+                        //{
+                        //    D_Mus_tipi = "";
+                        //    D_Oda_No = "";
+                        //    D_Folio = 0;
+                        //    D_MasterId = 0;
+                        //    D_Pansiyon = "";
+                        //    D_Uye_Id = 0;
+                        //    D_Uye_Adsoyad = "";
+                        //    D_Uye_Kartturu = "";
+                        //    D_Cari_Kod = "";
+                        //    D_Ind_Kodu = "";
+                        //    D_Ind_Oran = 0;
+                        //    D_Odeme = "";
+
+                        //    Fis_Update();
+
+                        //    gridyenile();
+                        //    return;
+                        //}
+
+                        dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, "Fiş Kapatma. Fisno:" + Convert.ToInt32(bartxt_FisNo.EditValue.ToString()) + " Masano:" + Masa_No.ToString(), Convert.ToString(bartxt_FisNo.EditValue.ToString()), "");
+
+
                     }
 
 
-                    Arama ara = new Arama();
-
-
-                    if (Param.Param_SatisArama == true)
+                    if (Param.Param_YeniHesapDkm)
                     {
-                        ara.KapatmaKodu = Convert.ToString(btn_Kapatma.Tag);
-                        ara.Odeme_Ozelkod = Convert.ToInt32(ozelKod);
-                        ara.ShowDialog();
-
-                        if (ara.HizliSatis == false)
-                        {
-                            return;
-                        }
-
-                        if (string.IsNullOrEmpty(ara.Oda_No))
-                        {
-                            return;
-                        }
-
-                        D_Mus_tipi = ara.Mus_tipi;
-                        D_Oda_No = ara.Oda_No;
-                        D_Folio = ara.Folio;
-                        D_MasterId = ara.Master_Folio;
-                        D_Pansiyon = ara.Pansiyon;
-                        D_Uye_Id = ara.Uye_Id;
-                        D_Uye_Adsoyad = ara.Uye_Adsoyad;
-                        D_Uye_Kartturu = ara.Uye_Kartturu;
-                        D_Cari_Kod = ara.Cari_Kod;
-                        D_Ind_Kodu = ara.Ind_Kodu;
-                        D_Ind_Oran = ara.Ind_Oran;
-                        D_Odeme = ara.Odeme_Kodu;
-                        Kart_No = ara.Kart_No;
-                        FolioKart_ID = ara.KartID;
-
+                        FisPr fis = new FisPr();
+                        fis.newHesapDokum(true, Convert.ToInt32(bartxt_FisNo.EditValue), 0, "* * * HESAP KAPATMA FİŞİ * * *");
                     }
-
-
-                    if (Param.Tesis_Tipi == 0)
-                    {
-                        if (Fronttools.HesapKapali_Kontrol(ara.Folio))
-                        {
-                            MessageBox.Show(res_man.GetString("Seçilen Hesap Harcamaya Kapatılmıştır.") + "\n" + res_man.GetString("Satış İşlemi Gerçekleşecektir."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                    }
-                }
-
-                if ((D_Folio == 0 || D_Oda_No == "") && D_Cari_Kod == "")
-                {
-                    System.Windows.Forms.MessageBox.Show(res_man.GetString("Folio Bulunamadı...") + "\n" + res_man.GetString("Lütfen Hesabı Tekrar Kapatın..."), res_man.GetString("Uyarı"), System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (D_Ind_Kodu != null)
-                {
-                    Fis_Update();
-                }
-
-
-                if (!LimitKontrol())
-                {
-                    D_Mus_tipi = "";
-                    D_Oda_No = "";
-                    D_Folio = 0;
-                    D_MasterId = 0;
-                    D_Pansiyon = "";
-                    D_Uye_Id = 0;
-                    D_Uye_Adsoyad = "";
-                    D_Uye_Kartturu = "";
-                    D_Cari_Kod = "";
-                    D_Ind_Kodu = "";
-                    D_Ind_Oran = 0;
-                    D_Odeme = "";
-
-                    Fis_Update();
-
-                    gridyenile();
-                    return;
-                }
-
-                gridyenile();
-
-
-                decimal tutar, doviztutar;
-                if (Param.Calisma_Sekli == 1)       //Döviz
-                {
-                    doviztutar = Convert.ToDecimal(gridColumn5.SummaryText);
-                    tutar = doviztutar * Param.Doviz_Kuru;
-                }
-                else
-                {
-                    tutar = Convert.ToDecimal(gridColumn4.SummaryText);
-                    doviztutar = tutar;
-                }
-
-                if (Departman.Siparis)
-                {
-                    Siparis_Gonder(false);
-                }
-
-
-                Fis_Islem.Odeme_Al(Convert.ToInt32(bartxt_FisNo.EditValue), tutar, doviztutar, btn_Kapatma.Tag.ToString(), D_Mus_tipi, D_Oda_No, D_Folio, D_Cari_Kod, Split, Param.Doviz_Kodu, false);
-                Fis_Islem.Satis_Tip(Convert.ToInt32(bartxt_FisNo.EditValue), btn_Kapatma.Tag.ToString(), D_Pansiyon);
-                if (Param.Tesis_Tipi == 0)
-                {
-                    Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID));
-                }
-                decimal folioBakiye = 0;
-
-                if (Param.Param_SatisArama == true)
-                {
-                    folioBakiye = Fronttools.BalanceBul(D_MasterId, Kart_No, FolioKart_ID) * (-1);
-
-                    FisPr pr = new FisPr();
-                    string sonuc = "";
-                    if (ozelKod == "1") sonuc = pr.SiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split, "   * * * SATIS FISI * * *   ", D_Oda_No, "Kalan Bakiye :  " + (folioBakiye - tutar).ToString("N2"), true);
-                    else sonuc = pr.SiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split, "   * * * SATIS FISI * * *   ", "", "", true);
-                    if (sonuc != "OK")
-                    {
-                        MessageBox.Show(sonuc);
-                    }
-
-                    if (Departman.Adisyon)
+                    else if (Departman.Adisyon)
                     {
                         AdisyonPr ads = new AdisyonPr();
                         ads.Adisyon_Yaz(Convert.ToInt32(bartxt_FisNo.EditValue));
@@ -1121,199 +1272,55 @@ namespace Pos
                     }
                     else
                     {
-                        //FisPr pr = new FisPr();
-                        if (Param.Param_YeniHesapDkm)
-                        {
-                            pr.newHesapDokum(true, Convert.ToInt32(bartxt_FisNo.EditValue), 0, "* * * HESAP KAPATMA FİŞİ * * *");
-                        }
-                        else
-                        {
-                            pr.HesapDokum(true, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
-                        }
+                        FisPr fis = new FisPr();
+                        fis.HesapDokum(false, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
                     }
+
 
                     if (Departman.Fatura)
                     {
                         Fis_Islem.Fatura_Kes(Convert.ToInt32(bartxt_FisNo.EditValue), false);
                     }
-                }
 
-                btn_Cikis.Enabled = true;
-
-                Bilgileri_Doldur();
-
-
-
-
-
-                return;
-            }
-
-            if (Param.Tesis_Tipi == 0)//otel
-            {
-                // Ödemesi Alınıyor...
-                decimal tutar, doviztutar;
-                if (Param.Calisma_Sekli == 1)       //Döviz
-                {
-                    doviztutar = Convert.ToDecimal(gridColumn5.SummaryText);
-
-
-                    tutar = doviztutar * StatikModel.getOdaGirisKur(D_Oda_No, Param.Doviz_Kuru);
-
-
+                    if (Departman.Kodlar_AndPos_NFC)
+                    {
+                        this.Close();
+                    }
+                    else
+                    {
+                        Bilgileri_Doldur();
+                    }
                 }
                 else
                 {
-                    tutar = Convert.ToDecimal(gridColumn4.SummaryText);
-                    doviztutar = tutar;
-                }
-
-                string ozelKod = dbtools.DegerGetir("select Pkod_Ozelkod from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Kod  = '" + btn_Kapatma.Tag.ToString() + "'");
-
-                if (ozelKod == "5")
-                {
-                    if (!Direk_Satis())
-                    {
-                        return;
-                    }
-                }
-
-                if (!LimitKontrol())
-                {
-                    return;
-                }
-
-                Fis_Islem.Odeme_Al(Convert.ToInt32(bartxt_FisNo.EditValue), tutar, doviztutar, btn_Kapatma.Tag.ToString(), D_Mus_tipi, D_Oda_No, D_Folio, D_Cari_Kod, Split, Param.Doviz_Kodu, false);
-                Fis_Islem.Satis_Tip(Convert.ToInt32(bartxt_FisNo.EditValue), btn_Kapatma.Tag.ToString(), D_Pansiyon);
-                Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID));
-
-                //if (Convert.ToString(this.Tag) ==  "D" && Param.Param_DirekAdisyonPrSor == true)
-                //{
-                //    DialogResult c = MessageBox.Show(res_man.GetString("Adisyon Yazdırılsın mı ? ", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                //    if (c == DialogResult.Yes)
-                //    {
-                //if (Departman.Adisyon)
-                //{
-                //    AdisyonPr ads = new AdisyonPr();
-                //    ads.Adisyon_Yaz(Convert.ToInt32(bartxt_FisNo.EditValue));
-                //    ads.Adisyon_Sayac_Arttir(Convert.ToInt32(bartxt_FisNo.EditValue));
-                //}
-                //else
-                //{
-                //    FisPr fis = new FisPr();
-                //    fis.HesapDokum(false, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
-                //}
-
-                //if (Departman.Fatura)
-                //{
-                //    Fis_Islem.Fatura_Kes(Convert.ToInt32(bartxt_FisNo.EditValue), false);
-                //}
+                    Hesap hes = new Hesap();
+                    hes.look_Kapatma.EditValue = btn_Kapatma.Tag;
 
 
+                    string kod = dbtools.DegerGetir("select Pkod_otoKur from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='" + btn_Kapatma.Tag + "'");
 
-                //        return;
-                //    }
-                //    else
-                //    {
-                //Bilgileri_Doldur();
-                //        return;
-                //    }
-                //}
+                    hes.look_DovizKod.EditValue = kod;
 
-                if (Departman.Kodlar_AndPos_NFC)
-                {
-                    if (D_Ind_Kodu != null)
-                    {
-                        Fis_Update();
-                    }
-
+                    hes.Tag = Convert.ToInt32(bartxt_FisNo.EditValue);
+                    hes.tip = "D";
+                    hes.ShowDialog();
+                    cikis = hes.cikis;
+                    Fisno = hes.fisno;
                     gridyenile();
 
-                    //if (!LimitKontrol())
-                    //{
-                    //    D_Mus_tipi = "";
-                    //    D_Oda_No = "";
-                    //    D_Folio = 0;
-                    //    D_MasterId = 0;
-                    //    D_Pansiyon = "";
-                    //    D_Uye_Id = 0;
-                    //    D_Uye_Adsoyad = "";
-                    //    D_Uye_Kartturu = "";
-                    //    D_Cari_Kod = "";
-                    //    D_Ind_Kodu = "";
-                    //    D_Ind_Oran = 0;
-                    //    D_Odeme = "";
-
-                    //    Fis_Update();
-
-                    //    gridyenile();
-                    //    return;
-                    //}
-
-                    dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, "Fiş Kapatma. Fisno:" + Convert.ToInt32(bartxt_FisNo.EditValue.ToString()) + " Masano:" + Masa_No.ToString(), Convert.ToString(bartxt_FisNo.EditValue.ToString()), "");
-
-
+                    if (Fisno == -2 || Convert.ToString(dbtools.DegerGetir("select Rsat_Durum from Cst_Recete_Satis where Rsat_Fisno = '" + Convert.ToInt32(bartxt_FisNo.EditValue) + "'")) == "K")
+                    {
+                        Bilgileri_Doldur();
+                    }
                 }
 
-
-                if (Param.Param_YeniHesapDkm)
-                {
-                    FisPr fis = new FisPr();
-                    fis.newHesapDokum(true, Convert.ToInt32(bartxt_FisNo.EditValue), 0, "* * * HESAP KAPATMA FİŞİ * * *");
-                }
-                else if (Departman.Adisyon)
-                {
-                    AdisyonPr ads = new AdisyonPr();
-                    ads.Adisyon_Yaz(Convert.ToInt32(bartxt_FisNo.EditValue));
-                    ads.Adisyon_Sayac_Arttir(Convert.ToInt32(bartxt_FisNo.EditValue));
-                }
-                else
-                {
-                    FisPr fis = new FisPr();
-                    fis.HesapDokum(false, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
-                }
-
-
-                if (Departman.Fatura)
-                {
-                    Fis_Islem.Fatura_Kes(Convert.ToInt32(bartxt_FisNo.EditValue), false);
-                }
-
-                if (Departman.Kodlar_AndPos_NFC)
-                {
-                    this.Close();
-                }
-                else
-                {
-                    Bilgileri_Doldur();
-                }
+                barkodFocuslan();
+                txtAdisyon.EditValue = "";
             }
-            else
+            catch (Exception ex)
             {
-                Hesap hes = new Hesap();
-                hes.look_Kapatma.EditValue = btn_Kapatma.Tag;
-
-
-                string kod = dbtools.DegerGetir("select Pkod_otoKur from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='" + btn_Kapatma.Tag + "'");
-
-                hes.look_DovizKod.EditValue = kod;
-
-                hes.Tag = Convert.ToInt32(bartxt_FisNo.EditValue);
-                hes.tip = "D";
-                hes.ShowDialog();
-                cikis = hes.cikis;
-                Fisno = hes.fisno;
-                gridyenile();
-
-                if (Fisno == -2 || Convert.ToString(dbtools.DegerGetir("select Rsat_Durum from Cst_Recete_Satis where Rsat_Fisno = '" + Convert.ToInt32(bartxt_FisNo.EditValue) + "'")) == "K")
-                {
-                    Bilgileri_Doldur();
-                }
+                RHMesaj.MyMessageError(MyClass, "btn_Kapatma_Click", "",ex);
             }
-
-            barkodFocuslan();
-            txtAdisyon.EditValue = "";
         }
 
         private void Kapatma_Tekoda(string kapatma)

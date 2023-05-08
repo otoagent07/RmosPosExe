@@ -12,6 +12,109 @@ namespace Pos.Class
 {
     public class StatikSinif
     {
+        public static string getAlterQuery() // scriptgeç scriptbas
+        {
+            string query = @"
+IF COL_LENGTH('Pos_Param', 'onburoikramsifiryazaktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD onburoikramsifiryazaktif bit END;
+IF COL_LENGTH('Pos_Param', 'masatakiphesappasif') IS NULL BEGIN ALTER TABLE Pos_Param ADD masatakiphesappasif bit END;
+IF COL_LENGTH('Pos_Param', 'satirsilfiscikmasinaktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD satirsilfiscikmasinaktif bit END;
+IF COL_LENGTH('Pos_Param', 'kisivegarsonbirkeresoraktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD kisivegarsonbirkeresoraktif bit END;
+IF COL_LENGTH('Pos_Param', 'yazdirilmamissiparis') IS NULL BEGIN ALTER TABLE Pos_Param ADD yazdirilmamissiparis bit END;
+IF COL_LENGTH('Pos_Param', 'masamusait') IS NULL BEGIN ALTER TABLE Pos_Param ADD masamusait bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'hesapyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [hesapyazici] nvarchar(250) END;
+IF COL_LENGTH('Stok_Kodlar', 'Kodlar_parakasa') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_parakasa nvarchar(200) END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_Eksileme') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_Eksileme bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_XZdepartman') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_XZdepartman bit END;
+ALTER TABLE GetirYemek_Option ALTER COLUMN  GOption_price    decimal(18, 2)
+ALTER TABLE GetirYemek_Menu_Option ALTER COLUMN Option_price decimal(18, 2)
+ALTER TABLE GetirYemek_Menu_Product ALTER COLUMN Product_price decimal(18, 2)
+ALTER TABLE GetirYemek_Menu_Product ALTER COLUMN Product_stuckPrice decimal(18, 2)
+ALTER TABLE Cst_Recete ALTER COLUMN Rec_GetirMenuID nvarchar(2500)
+ALTER TABLE GetirYemek_Option ALTER COLUMN GOption_price decimal(18, 2)
+ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_price decimal(18, 2)
+ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_optionPrice decimal(18, 2)
+ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_priceWithOption decimal(18, 2)
+ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_totalPrice decimal(18, 2)
+ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_totalOptionPrice decimal(18, 2)
+ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_totalPriceWithOption decimal(18, 2)
+
+ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Recete nvarchar(200);
+ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Kapatma nvarchar(30);
+ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Adisyon nvarchar(150);
+ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Aciklama nvarchar(2000);
+ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_ZayiNeden nvarchar(1000);
+ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_IkramNeden nvarchar(1000);
+ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_OzelMasaAdi nvarchar(150);
+
+
+ALTER TABLE Cst_Satis_Ipt ALTER COLUMN Rsat_Recete nvarchar(200);
+ALTER TABLE Cst_Satis_Ipt ALTER COLUMN Rsat_Aciklama nvarchar(2000);
+ALTER TABLE Cst_Satis_Ipt ALTER COLUMN Rsat_IptalNot nvarchar(1000);
+
+
+
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Adres1 nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Adres2 nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Adres3 nvarchar(2000);
+
+
+ALTER TABLE Pos_Masa ALTER COLUMN Masa_Posta nvarchar(50);
+ALTER TABLE Pos_Masa ALTER COLUMN Masa_Konum nvarchar(50);
+ALTER TABLE Pos_Masa ALTER COLUMN Masa_Depart nvarchar(50);
+
+
+
+ALTER TABLE Pos_Param ALTER COLUMN Param_Fis_Aciklama nvarchar(1000);
+ALTER TABLE Pos_Param ALTER COLUMN Param_Kur decimal(10,6);
+
+
+ALTER TABLE Rapor_Dizayn ALTER COLUMN Rapor_Sekil varbinary(MAX);
+
+ALTER TABLE Ys_Order ALTER COLUMN Address nvarchar(MAX);
+
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_AddressId nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_CustomerID nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Funvan2 nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Getir_ID nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Getir_AddressId nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_MuhasebeKodu nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Mahalle nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Ilce nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_Il nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_AddressId nvarchar(2000);
+ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_AddressId nvarchar(2000);
+
+IF COL_LENGTH('Pos_Param', 'Param_SatisCikisButton') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_SatisCikisButton] bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'U_BackUser') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [U_BackUser] nvarchar(50) END;
+IF COL_LENGTH('Pos_Param', 'Param_nfcBarkodAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_nfcBarkodAktif] bit END;
+
+IF COL_LENGTH('Pos_Param', 'Param_ParcaliMasaAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_ParcaliMasaAktif] bit END;
+IF COL_LENGTH('Pos_Masa', 'Masa_Parcali') IS NULL BEGIN ALTER TABLE Pos_Masa ADD [Masa_Parcali] bit END;
+
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'chk_K_KasaRapor') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [chk_K_KasaRapor] bit END;
+
+IF COL_LENGTH('Pos_Masa', 'Masa_Musait') IS NULL BEGIN ALTER TABLE Pos_Masa ADD Masa_Musait nvarchar(100) END;
+
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimDuzelt] bit END;
+
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimTransfer') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimTransfer] bit END;
+
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimBakiyeTransfer') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimBakiyeTransfer] bit END;
+
+IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'xzraporyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [xzraporyazici] nvarchar(250) END;
+
+IF COL_LENGTH('Pos_Kodlar', 'hesapDokTutarSifir') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD hesapDokTutarSifir bit END;
+IF COL_LENGTH('Pos_Kodlar', 'saatAralikDurdur') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD saatAralikDurdur nvarchar(500) END;
+IF COL_LENGTH('Pos_Cari', 'Cari_TrendyolId') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_TrendyolId int END;
+
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_dil') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_dil nvarchar(50) END;
+
+IF COL_LENGTH('Pos_Kasahrk', 'Pkasa_dep') IS NULL BEGIN ALTER TABLE Pos_Kasahrk ADD Pkasa_dep nvarchar(100) END;
+";
+
+            return query;
+        }
+
         public static void shrinkData()
         {
             try
@@ -202,107 +305,6 @@ Select InstanceNames from @GetInstances ";
                 girilenDeger = mevcutDeger;
             }
             return girilenDeger;
-        }
-        public static string getAlterQuery() // scriptgeç scriptbas
-        {
-            string query = @"
-IF COL_LENGTH('Pos_Param', 'masatakiphesappasif') IS NULL BEGIN ALTER TABLE Pos_Param ADD masatakiphesappasif bit END;
-IF COL_LENGTH('Pos_Param', 'satirsilfiscikmasinaktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD satirsilfiscikmasinaktif bit END;
-IF COL_LENGTH('Pos_Param', 'kisivegarsonbirkeresoraktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD kisivegarsonbirkeresoraktif bit END;
-IF COL_LENGTH('Pos_Param', 'yazdirilmamissiparis') IS NULL BEGIN ALTER TABLE Pos_Param ADD yazdirilmamissiparis bit END;
-IF COL_LENGTH('Pos_Param', 'masamusait') IS NULL BEGIN ALTER TABLE Pos_Param ADD masamusait bit END;
-IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'hesapyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [hesapyazici] nvarchar(250) END;
-IF COL_LENGTH('Stok_Kodlar', 'Kodlar_parakasa') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_parakasa nvarchar(200) END;
-IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_Eksileme') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_Eksileme bit END;
-IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_XZdepartman') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_XZdepartman bit END;
-ALTER TABLE GetirYemek_Option ALTER COLUMN  GOption_price    decimal(18, 2)
-ALTER TABLE GetirYemek_Menu_Option ALTER COLUMN Option_price decimal(18, 2)
-ALTER TABLE GetirYemek_Menu_Product ALTER COLUMN Product_price decimal(18, 2)
-ALTER TABLE GetirYemek_Menu_Product ALTER COLUMN Product_stuckPrice decimal(18, 2)
-ALTER TABLE Cst_Recete ALTER COLUMN Rec_GetirMenuID nvarchar(2500)
-ALTER TABLE GetirYemek_Option ALTER COLUMN GOption_price decimal(18, 2)
-ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_price decimal(18, 2)
-ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_optionPrice decimal(18, 2)
-ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_priceWithOption decimal(18, 2)
-ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_totalPrice decimal(18, 2)
-ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_totalOptionPrice decimal(18, 2)
-ALTER TABLE GetirYemek_Product ALTER COLUMN GProducts_totalPriceWithOption decimal(18, 2)
-
-ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Recete nvarchar(200);
-ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Kapatma nvarchar(30);
-ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Adisyon nvarchar(150);
-ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Aciklama nvarchar(2000);
-ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_ZayiNeden nvarchar(1000);
-ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_IkramNeden nvarchar(1000);
-ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_OzelMasaAdi nvarchar(150);
-
-
-ALTER TABLE Cst_Satis_Ipt ALTER COLUMN Rsat_Recete nvarchar(200);
-ALTER TABLE Cst_Satis_Ipt ALTER COLUMN Rsat_Aciklama nvarchar(2000);
-ALTER TABLE Cst_Satis_Ipt ALTER COLUMN Rsat_IptalNot nvarchar(1000);
-
-
-
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Adres1 nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Adres2 nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Adres3 nvarchar(2000);
-
-
-ALTER TABLE Pos_Masa ALTER COLUMN Masa_Posta nvarchar(50);
-ALTER TABLE Pos_Masa ALTER COLUMN Masa_Konum nvarchar(50);
-ALTER TABLE Pos_Masa ALTER COLUMN Masa_Depart nvarchar(50);
-
-
-
-ALTER TABLE Pos_Param ALTER COLUMN Param_Fis_Aciklama nvarchar(1000);
-ALTER TABLE Pos_Param ALTER COLUMN Param_Kur decimal(10,6);
-
-
-ALTER TABLE Rapor_Dizayn ALTER COLUMN Rapor_Sekil varbinary(MAX);
-
-ALTER TABLE Ys_Order ALTER COLUMN Address nvarchar(MAX);
-
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_AddressId nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_CustomerID nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Funvan2 nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Getir_ID nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Getir_AddressId nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_MuhasebeKodu nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Mahalle nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Ilce nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_Il nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_AddressId nvarchar(2000);
-ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_AddressId nvarchar(2000);
-
-IF COL_LENGTH('Pos_Param', 'Param_SatisCikisButton') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_SatisCikisButton] bit END;
-IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'U_BackUser') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [U_BackUser] nvarchar(50) END;
-IF COL_LENGTH('Pos_Param', 'Param_nfcBarkodAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_nfcBarkodAktif] bit END;
-
-IF COL_LENGTH('Pos_Param', 'Param_ParcaliMasaAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_ParcaliMasaAktif] bit END;
-IF COL_LENGTH('Pos_Masa', 'Masa_Parcali') IS NULL BEGIN ALTER TABLE Pos_Masa ADD [Masa_Parcali] bit END;
-
-IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'chk_K_KasaRapor') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [chk_K_KasaRapor] bit END;
-
-IF COL_LENGTH('Pos_Masa', 'Masa_Musait') IS NULL BEGIN ALTER TABLE Pos_Masa ADD Masa_Musait nvarchar(100) END;
-
-IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimDuzelt] bit END;
-
-IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimTransfer') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimTransfer] bit END;
-
-IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimBakiyeTransfer') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimBakiyeTransfer] bit END;
-
-IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'xzraporyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [xzraporyazici] nvarchar(250) END;
-
-IF COL_LENGTH('Pos_Kodlar', 'hesapDokTutarSifir') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD hesapDokTutarSifir bit END;
-IF COL_LENGTH('Pos_Kodlar', 'saatAralikDurdur') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD saatAralikDurdur nvarchar(500) END;
-IF COL_LENGTH('Pos_Cari', 'Cari_TrendyolId') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_TrendyolId int END;
-
-IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_dil') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_dil nvarchar(50) END;
-
-IF COL_LENGTH('Pos_Kasahrk', 'Pkasa_dep') IS NULL BEGIN ALTER TABLE Pos_Kasahrk ADD Pkasa_dep nvarchar(100) END;
-";
-
-            return query;
         }
 
         public static string defaultParametreCalistir() // scriptgeç scriptbas

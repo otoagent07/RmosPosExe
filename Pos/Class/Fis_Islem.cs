@@ -359,6 +359,11 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Durum = 'K' where Rsat_Fisno = '" + Fisno.ToString() + "'");
 
+
+                if (Param.onburoikramsifiryazaktif)
+                {
+                    Fronttools.execcmd("update Kumhrk set Kumhrk_Doviz_tutar='0',Kumhrk_Tutar='0',Kumhrk_Def_doviz='0',Kumhrk_Aciklama='POS: İKRAM' where Kumhrk_Cekno='" + Fisno + "'");
+                }
             }
             catch(Exception ex)
             {
