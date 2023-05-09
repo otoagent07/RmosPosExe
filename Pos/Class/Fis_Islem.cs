@@ -299,9 +299,10 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
             if (Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1 && mevcutTutar != 0)
             {
-
                 tutar = StatikSinif.getTutarKontrol(tutar, mevcutTutar);
             }
+
+
             SqlConnection con = dbtools.conn;
             if (con.State == ConnectionState.Closed) con.Open();
             SqlCommand com = new SqlCommand();

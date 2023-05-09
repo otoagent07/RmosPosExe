@@ -3693,7 +3693,7 @@ namespace Pos
             string toplam = dbtools.DegerGetir("select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "'");
             if (toplam.Equals("0"))
             {
-                dbtools.execcmd("update Pos_Masa set Masa_Durum='0',Masa_NFC='0',Masa_Ozel=NULL where Masa_No='" + Masa_No + "'");
+                dbtools.execcmd("update Pos_Masa set Masa_Durum='0',Masa_NFC='0',Masa_Ozel=NULL where Masa_No='" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             }
         }
 
