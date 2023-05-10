@@ -274,6 +274,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.onburoikramsifiryazaktif = new DevExpress.XtraEditors.CheckEdit();
             this.satirsilfiscikmasinaktif = new DevExpress.XtraEditors.CheckEdit();
             this.kisivegarsonbirkeresoraktif = new DevExpress.XtraEditors.CheckEdit();
             this.masatakiphesappasif = new DevExpress.XtraEditors.CheckEdit();
@@ -1231,7 +1232,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.onburoikramsifiryazaktif = new DevExpress.XtraEditors.CheckEdit();
+            this.Pos_KartfIndirimAktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1420,6 +1421,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.onburoikramsifiryazaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.satirsilfiscikmasinaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kisivegarsonbirkeresoraktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.masatakiphesappasif.Properties)).BeginInit();
@@ -2057,7 +2059,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onburoikramsifiryazaktif.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4081,6 +4083,12 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // onburoikramsifiryazaktif
+            // 
+            resources.ApplyResources(this.onburoikramsifiryazaktif, "onburoikramsifiryazaktif");
+            this.onburoikramsifiryazaktif.Name = "onburoikramsifiryazaktif";
+            this.onburoikramsifiryazaktif.Properties.Caption = resources.GetString("onburoikramsifiryazaktif.Properties.Caption");
             // 
             // satirsilfiscikmasinaktif
             // 
@@ -10147,6 +10155,7 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.Pos_KartfIndirimAktif);
             this.xtraTabPage1.Controls.Add(this.chk_K_KasaRapor);
             this.xtraTabPage1.Controls.Add(this.Pos_KartTanimBakiyeTransfer);
             this.xtraTabPage1.Controls.Add(this.Pos_KartTanimTransfer);
@@ -12260,11 +12269,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // onburoikramsifiryazaktif
+            // Pos_KartfIndirimAktif
             // 
-            resources.ApplyResources(this.onburoikramsifiryazaktif, "onburoikramsifiryazaktif");
-            this.onburoikramsifiryazaktif.Name = "onburoikramsifiryazaktif";
-            this.onburoikramsifiryazaktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            resources.ApplyResources(this.Pos_KartfIndirimAktif, "Pos_KartfIndirimAktif");
+            this.Pos_KartfIndirimAktif.Name = "Pos_KartfIndirimAktif";
+            this.Pos_KartfIndirimAktif.Properties.Appearance.Options.UseFont = true;
+            this.Pos_KartfIndirimAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -12466,6 +12476,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.onburoikramsifiryazaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.satirsilfiscikmasinaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kisivegarsonbirkeresoraktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.masatakiphesappasif.Properties)).EndInit();
@@ -13131,7 +13142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onburoikramsifiryazaktif.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14340,5 +14351,6 @@
         private DevExpress.XtraEditors.CheckEdit masatakiphesappasif;
         private DevExpress.XtraEditors.CheckEdit satirsilfiscikmasinaktif;
         private DevExpress.XtraEditors.CheckEdit onburoikramsifiryazaktif;
+        private DevExpress.XtraEditors.CheckEdit Pos_KartfIndirimAktif;
     }
 }

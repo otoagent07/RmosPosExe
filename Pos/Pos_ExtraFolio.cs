@@ -1155,7 +1155,11 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                         DataTable dt = new DataTable();
                         da.Fill(dt);
 
-                        xRez_Id = Convert.ToInt32(dt.Rows[0][0]);
+                        if (dt!=null && dt.Rows.Count>0)
+                        {
+                            xRez_Id = Convert.ToInt32(dt.Rows[0][0]);
+
+                        }
 
 
                     }
@@ -1182,6 +1186,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                     cmd.Parameters.AddWithValue("@CardF_MusteriTipi", Convert.ToString(CardF_MusteriTipi.SelectedIndex) == "-1" ? "GB" : Convert.ToString(CardF_MusteriTipi.EditValue));
                     cmd.Parameters.AddWithValue("@CardF_Kullanici", User.P_Kod);
                     cmd.Parameters.AddWithValue("@CardF_Kisi", txtCardF_Kisi.EditValue);
+                    cmd.Parameters.AddWithValue("@CardF_Indirim", txtKartFIndirim.EditValue);
 
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -1322,6 +1327,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             txtCardF_Adi.Text = Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Ad"));
             txtCardF_Soyad.Text = Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Soyad"));
             CardF_MusteriTipi.EditValue = Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_MusteriTipi"));
+            txtKartFIndirim.EditValue = Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Indirim"));
             txtCardF_Kisi.Text = Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Kisi")) == "" ? "1" : Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Kisi"));
             CardF_Limit_Uyari.SelectedIndex = (Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Limit_Uyari")) == "E" ? 0 : 1);
 

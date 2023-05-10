@@ -160,6 +160,7 @@ namespace Pos.Class
         public static bool Pos_HesapArti { get; set; }
         public static bool User_AP { get; set; }
         public static bool Pos_OdaKontrol { get; set; }
+        public static bool Pos_KartfIndirimAktif { get; set; }
         //public static bool MasaTakip_Paket { get; set; }
 
 
@@ -206,6 +207,7 @@ namespace Pos.Class
                     + " ISNULL(Pos_MasaPaketS,0) as Pos_MasaPaketS, ISNULL(Pos_MasaDirekS,0) as Pos_MasaDirekS,ISNULL(Pos_YS_YetkiReddet,0) as Pos_YS_YetkiReddet,ISNULL(Pos_YarimDubleAlan,1) as Pos_YarimDubleAlan, "
                     + " ISNULL(Pos_Culture,'tr-TR') as Pos_Culture, ISNULL(Pos_ReceteTanimlama,1) as Pos_ReceteTanimlama, ISNULL(Pos_FixMenu,0) as Pos_FixMenu, "
                     + " ISNULL(Pos_HesapArti,0) as Pos_HesapArti, ISNULL(User_AP,1) as User_AP, ISNULL(Pos_OdaKontrol,0) as Pos_OdaKontrol,U_BackUser "
+                    + ", ISNULL(Pos_KartfIndirimAktif,0) as Pos_KartfIndirimAktif "
                     + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + P_Kod + "'");
 
             if (dt.Rows.Count > 0)
@@ -321,6 +323,7 @@ namespace Pos.Class
                 User_AP = Convert.ToBoolean(dt.Rows[0]["User_AP"]);
                 Pos_OdaKontrol = Convert.ToBoolean(dt.Rows[0]["Pos_OdaKontrol"]);
                 U_BackUser = Convert.ToString(dt.Rows[0]["U_BackUser"]);
+                Pos_KartfIndirimAktif = Convert.ToBoolean(dt.Rows[0]["Pos_KartfIndirimAktif"]);
                 //MasaTakip_Paket = Convert.ToBoolean(dt.Rows[0]["MasaTakip_Paket"]);
 
 

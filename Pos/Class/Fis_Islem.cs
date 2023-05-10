@@ -9,7 +9,7 @@ namespace Pos.Class
 {
     public class Fis_Islem
     {
-        public static void Manuel_Indirim(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split,string neden="")
+        public static void Manuel_Indirim(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split, string neden = "")
         {
 
             SqlConnection con = dbtools.conn;
@@ -32,7 +32,7 @@ namespace Pos.Class
             if (con.State == ConnectionState.Open) con.Close();
         }
 
-        public static void Manuel_IndirimParcali(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split, string neden = "", string masano="")
+        public static void Manuel_IndirimParcali(int Fisno, string indTipi, decimal tutar, decimal doviztutar, decimal oran, int Split, string neden = "", string masano = "")
         {
 
             SqlConnection con = dbtools.conn;
@@ -104,10 +104,10 @@ namespace Pos.Class
             if (con.State == ConnectionState.Open) con.Close();
         }
 
-        public static void Bindirim_UygulaParcali(int Fisno, string bindTipi, decimal tutar, decimal doviztutar, decimal oran,string masano="")
+        public static void Bindirim_UygulaParcali(int Fisno, string bindTipi, decimal tutar, decimal doviztutar, decimal oran, string masano = "")
         {
 
-            string query = "delete from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and Rsat_Durum='A' and Rsat_Masa='"+ masano + "' and  Rsat_Recete=(select top 1 ISNULL(Param_Bindirim,0) as Param_Bindirim from Pos_Param)";
+            string query = "delete from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and Rsat_Durum='A' and Rsat_Masa='" + masano + "' and  Rsat_Recete=(select top 1 ISNULL(Param_Bindirim,0) as Param_Bindirim from Pos_Param)";
             dbtools.execcmd(query);
 
 
@@ -339,7 +339,7 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
             }
         }
 
-        public static void Onburo_At(int Fisno, string KartNo, int KartId)
+        public static void Onburo_At(int Fisno, string KartNo, int KartId, string ozelKod = "")
         {
             try
             {
@@ -361,16 +361,16 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Durum = 'K' where Rsat_Fisno = '" + Fisno.ToString() + "'");
 
 
-                if (Param.onburoikramsifiryazaktif)
+                if (ozelKod == "3" && Param.onburoikramsifiryazaktif) // 3 ikramdır
                 {
-                    Fronttools.execcmd("update Kumhrk set Kumhrk_Doviz_tutar='0',Kumhrk_Tutar='0',Kumhrk_Def_doviz='0',Kumhrk_Aciklama='POS: İKRAM, Fişno:"+ Fisno + "' where Kumhrk_Cekno='" + Fisno + "'");
+                    Fronttools.execcmd("update Kumhrk set Kumhrk_Doviz_tutar='0',Kumhrk_Tutar='0',Kumhrk_Def_doviz='0',Kumhrk_Aciklama='POS: İKRAM, Fişno:" + Fisno + "' where Kumhrk_Cekno='" + Fisno + "'");
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "Onburo_At", "",ex);
+                RHMesaj.MyMessageError(MyClass, "Onburo_At", "", ex);
             }
-            
+
         }
         public static string MyClass = "Fis_Islem";
         public static void Satir_Sil(int Id, decimal Miktar)

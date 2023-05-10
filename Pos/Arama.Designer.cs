@@ -97,6 +97,7 @@
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_OK = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Cikis = new DevExpress.XtraEditors.SimpleButton();
@@ -585,7 +586,8 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12,
-            this.gridColumn13});
+            this.gridColumn13,
+            this.gridColumn14});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -691,6 +693,12 @@
             this.gridColumn13.FieldName = "Kodlar_Ad";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn14
+            // 
+            resources.ApplyResources(this.gridColumn14, "gridColumn14");
+            this.gridColumn14.Name = "gridColumn14";
+            this.gridColumn14.OptionsColumn.AllowFocus = false;
             // 
             // btn_OK
             // 
@@ -888,5 +896,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_CariEkle;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         public DevExpress.XtraEditors.TextEdit txt_Arama;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
     }
 }

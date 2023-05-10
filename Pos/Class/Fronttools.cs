@@ -376,7 +376,8 @@ namespace Pos.Class
 
         public static string LimitUyarı_Bul(int Folio)
         {
-            return Fronttools.DegerGetir("select ISNULL(Rez_limit_uyari_eh,'H') from Rez WITH(NOLOCK) Where Rez_Id = '" + Folio.ToString() + "'");
+            string deger =Fronttools.DegerGetir("select ISNULL(Rez_limit_uyari_eh,'H') from Rez WITH(NOLOCK) Where Rez_Id = '" + Folio.ToString() + "'");
+            return deger;
         }
 
         public static string CardFLimitUyarı_Bul(string KartID)

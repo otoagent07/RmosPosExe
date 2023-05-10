@@ -340,14 +340,14 @@ namespace Pos
                 string text = "select top 1 isnull(Rsat_Kisi,1) as Rsat_Kisi,isnull(Rsat_Garson,'') as Rsat_Garson from cst_recete_satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "'";
 
                 var data = dbtools.SelectTableR(text);
-                if (Param.kisivegarsonbirkeresoraktif && data!=null && data.Rows.Count>0)
+                if (Param.kisivegarsonbirkeresoraktif && data != null && data.Rows.Count > 0)
                 {
                     Garson = data.Rows[0]["Rsat_Garson"].ToString();
-                    Kisi_Sayisi =Convert.ToInt32( data.Rows[0]["Rsat_Kisi"].ToString());
+                    Kisi_Sayisi = Convert.ToInt32(data.Rows[0]["Rsat_Kisi"].ToString());
                 }
                 else
                 {
-                     sor = new Kisi_Garson();
+                    sor = new Kisi_Garson();
                     sor.Tag = this.Tag;
                     sor.ShowDialog();
                     Garson = sor.Garson_Kodu;
@@ -361,7 +361,7 @@ namespace Pos
                     Urun_Sat(Departman.Kodlar_Kuver_Recete);
                 }
 
-                if (sor!=null && sor.Iptal)
+                if (sor != null && sor.Iptal)
                 {
                     this.Close();
                 }
@@ -369,6 +369,9 @@ namespace Pos
                 bartxt_Garson.EditValue = User.Isim_Getir(Garson);
             }
         }
+
+
+        public decimal CardF_Indirim = 0;
 
         private bool Direk_Satis()
         {
@@ -419,7 +422,7 @@ namespace Pos
 
                 bartxt_OdaNo.EditValue = ara.Oda_No;
 
-
+                CardF_Indirim = ara.CardF_Indirim;
                 try
                 {
                     string comp = Fronttools.DegerGetir("select top 1 CardF_MusteriTipi from kartf where ID='" + ara.KartID + "'");
@@ -585,6 +588,7 @@ namespace Pos
 
                 bartxt_OdaNo.EditValue = ara.Oda_No;
 
+                CardF_Indirim = ara.CardF_Indirim;
                 try
                 {
                     string comp = Fronttools.DegerGetir("select top 1 CardF_MusteriTipi from kartf where ID='" + ara.KartID + "'");
@@ -653,6 +657,7 @@ namespace Pos
                     FolioKart_ID = ara.KartID;
 
                     bartxt_OdaNo.EditValue = ara.Oda_No;
+                    CardF_Indirim = ara.CardF_Indirim;
                 }
             }
 
@@ -1027,7 +1032,7 @@ namespace Pos
                             D_Odeme = ara.Odeme_Kodu;
                             Kart_No = ara.Kart_No;
                             FolioKart_ID = ara.KartID;
-
+                            CardF_Indirim = ara.CardF_Indirim;
                         }
 
 
@@ -1153,7 +1158,11 @@ namespace Pos
 
                 if (Param.Tesis_Tipi == 0)//otel
                 {
+
+
                     // Ödemesi Alınıyor...
+                    bool etiketim = true;
+                etiket:
                     decimal tutar, doviztutar;
                     if (Param.Calisma_Sekli == 1)       //Döviz
                     {
@@ -1180,14 +1189,27 @@ namespace Pos
                         }
                     }
 
+
+                    // indirim uygulama 
+                    if (User.Pos_KartfIndirimAktif && CardF_Indirim != 0 && etiketim == true)
+                    {
+                        etiketim = false;
+                        Fis_Islem.Manuel_Indirim(Convert.ToInt32(bartxt_FisNo.EditValue), "Y", tutar, doviztutar, CardF_Indirim, Split);
+                        gridyenile();
+                        Application.DoEvents();
+                        goto etiket;
+                    }
+
+
                     if (!LimitKontrol())
                     {
                         return;
                     }
 
+
                     Fis_Islem.Odeme_Al(Convert.ToInt32(bartxt_FisNo.EditValue), tutar, doviztutar, btn_Kapatma.Tag.ToString(), D_Mus_tipi, D_Oda_No, D_Folio, D_Cari_Kod, Split, Param.Doviz_Kodu, false);
                     Fis_Islem.Satis_Tip(Convert.ToInt32(bartxt_FisNo.EditValue), btn_Kapatma.Tag.ToString(), D_Pansiyon);
-                    Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID));
+                    Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID), ozelKod: ozelKod);
 
                     //if (Convert.ToString(this.Tag) ==  "D" && Param.Param_DirekAdisyonPrSor == true)
                     //{
@@ -1319,7 +1341,7 @@ namespace Pos
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "btn_Kapatma_Click", "",ex);
+                RHMesaj.MyMessageError(MyClass, "btn_Kapatma_Click", "", ex);
             }
         }
 
@@ -1390,7 +1412,7 @@ namespace Pos
 
 
 
-            if (Departman.Kodlar_AndPos_NFC)
+            if (Departman.Kodlar_AndPos_NFC && Fronttools.LimitUyarı_Bul(D_MasterId) == "E") // && den sonrası 10.05.2023 tarihinde eklendi
             {
                 if (D_MasterId > 0) // burası çalıştı 
                 {
@@ -2694,7 +2716,7 @@ namespace Pos
             {
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + bartxt_FisNo.EditValue.ToString() + "' ");
 
-                RHMesaj.alertMesaj("Sipariş Yazdırıldı",5);
+                RHMesaj.alertMesaj("Sipariş Yazdırıldı", 5);
             }
 
             btn_Cikis.Enabled = true;
@@ -2862,7 +2884,7 @@ namespace Pos
                 }
 
                 string yazdirilmissa = "Yazdırılmamış";
-                if (Departman.Siparis && Param.satirsilfiscikmasinaktif==false)
+                if (Departman.Siparis && Param.satirsilfiscikmasinaktif == false)
                 {
                     FisPr fis = new FisPr();
                     string sonuc = fis.newIptalPr(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), Sil_Miktar);

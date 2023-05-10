@@ -56,6 +56,7 @@
             this.chk_Bakiye = new DevExpress.XtraEditors.CheckButton();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tab_KartF = new DevExpress.XtraTab.XtraTabPage();
+            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.txtCardF_Tutar = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
@@ -291,7 +292,8 @@
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Param = new DevExpress.XtraEditors.CheckButton();
             this.chk_Rapor = new DevExpress.XtraEditors.CheckButton();
-            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.txtKartFIndirim = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_OdemeDep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
@@ -446,6 +448,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bandedGridColumn41
@@ -555,6 +559,8 @@
             // 
             // tab_KartF
             // 
+            this.tab_KartF.Controls.Add(this.txtKartFIndirim);
+            this.tab_KartF.Controls.Add(this.textEdit3);
             this.tab_KartF.Controls.Add(this.btnYenile);
             this.tab_KartF.Controls.Add(this.textEdit1);
             this.tab_KartF.Controls.Add(this.txtCardF_Tutar);
@@ -587,6 +593,13 @@
             this.tab_KartF.Controls.Add(this.CardF_Limit_Uyari);
             this.tab_KartF.Name = "tab_KartF";
             resources.ApplyResources(this.tab_KartF, "tab_KartF");
+            // 
+            // btnYenile
+            // 
+            this.btnYenile.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnYenile, "btnYenile");
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
             // 
             // textEdit1
             // 
@@ -626,11 +639,9 @@
             // 
             // btnKatTanimBakiyeTransfer
             // 
-            this.btnKatTanimBakiyeTransfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton22.Appearance.Font")));
             this.btnKatTanimBakiyeTransfer.Appearance.ForeColor = System.Drawing.Color.Black;
             this.btnKatTanimBakiyeTransfer.Appearance.Options.UseFont = true;
             this.btnKatTanimBakiyeTransfer.Appearance.Options.UseForeColor = true;
-            this.btnKatTanimBakiyeTransfer.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton22.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btnKatTanimBakiyeTransfer, "btnKatTanimBakiyeTransfer");
             this.btnKatTanimBakiyeTransfer.Name = "btnKatTanimBakiyeTransfer";
             this.btnKatTanimBakiyeTransfer.Click += new System.EventHandler(this.simpleButton22_Click);
@@ -655,11 +666,9 @@
             // 
             // btnKatTanimKartTransfer
             // 
-            this.btnKatTanimKartTransfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton16.Appearance.Font")));
             this.btnKatTanimKartTransfer.Appearance.ForeColor = System.Drawing.Color.Black;
             this.btnKatTanimKartTransfer.Appearance.Options.UseFont = true;
             this.btnKatTanimKartTransfer.Appearance.Options.UseForeColor = true;
-            this.btnKatTanimKartTransfer.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton16.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btnKatTanimKartTransfer, "btnKatTanimKartTransfer");
             this.btnKatTanimKartTransfer.Name = "btnKatTanimKartTransfer";
             this.btnKatTanimKartTransfer.Click += new System.EventHandler(this.simpleButton16_Click);
@@ -692,9 +701,7 @@
             // 
             // btnKatTanimDuzelt
             // 
-            this.btnKatTanimDuzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton12.Appearance.Font")));
             this.btnKatTanimDuzelt.Appearance.Options.UseFont = true;
-            this.btnKatTanimDuzelt.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton12.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btnKatTanimDuzelt, "btnKatTanimDuzelt");
             this.btnKatTanimDuzelt.Name = "btnKatTanimDuzelt";
             this.btnKatTanimDuzelt.Click += new System.EventHandler(this.simpleButton12_Click);
@@ -3029,14 +3036,23 @@
             this.chk_Rapor.Name = "chk_Rapor";
             this.chk_Rapor.CheckedChanged += new System.EventHandler(this.checkBtn);
             // 
-            // btnYenile
+            // textEdit3
             // 
-            this.btnYenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton10.Appearance.Font")));
-            this.btnYenile.Appearance.Options.UseFont = true;
-            this.btnYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
-            resources.ApplyResources(this.btnYenile, "btnYenile");
-            this.btnYenile.Name = "btnYenile";
-            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
+            resources.ApplyResources(this.textEdit3, "textEdit3");
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit3.Properties.ReadOnly = true;
+            this.textEdit3.TabStop = false;
+            // 
+            // txtKartFIndirim
+            // 
+            resources.ApplyResources(this.txtKartFIndirim, "txtKartFIndirim");
+            this.txtKartFIndirim.EnterMoveNextControl = true;
+            this.txtKartFIndirim.Name = "txtKartFIndirim";
+            this.txtKartFIndirim.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtKartFIndirim.Properties.MaxLength = 100;
             // 
             // Pos_ExtraFolio
             // 
@@ -3205,6 +3221,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3457,5 +3475,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton27;
         private DevExpress.XtraEditors.SimpleButton simpleButton29;
         private DevExpress.XtraEditors.SimpleButton btnYenile;
+        private DevExpress.XtraEditors.TextEdit txtKartFIndirim;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
     }
 }

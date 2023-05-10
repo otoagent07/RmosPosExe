@@ -312,8 +312,13 @@ namespace Pos
 
                 gridControl1.DataSource = null;
 
+                gridColumn14.FieldName = "CardF_Indirim";
+                gridColumn14.Caption = "CardF_Indirim";
+                gridColumn14.Visible = false;
+
                 if (Departman.Kodlar_AndPos_NFC == true) //  && User.ExtraFolio == false
                 {
+                    gridColumn14.Visible = true;
                     string sorgu = @"select Rez_Id,
                                     Rez_Odano,
                                     Rez_Adi_1 ,
@@ -327,7 +332,8 @@ namespace Pos
                                     Rez_Odeme, 
                                     case when Rez_Master_detay = 'D' then Rez_Master_id else Rez_Id end as Rez_Master_Id,
                                     KartF.ID as ID,
-                                    Kodlar_Ad  
+                                    Kodlar_Ad,
+                                    CardF_Indirim
                                     FROM Rez WITH(NOLOCK) 
                                     left join Acenta WITH(NOLOCK) on Rez_Macenta = Acenta.Ac_Kodu 
                                     left join Kodlar WITH(NOLOCK) on Kodlar_Sinif = '10' and Rez_Odeme = Kodlar_Kod 
@@ -546,6 +552,7 @@ namespace Pos
 
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
 
+        public decimal CardF_Indirim = 0;
 
         public void tamam()
         {
@@ -567,11 +574,12 @@ namespace Pos
                     Kart_No = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Kartno"));
                     KartID = Convert.ToString(gridView1.GetFocusedRowCellValue("ID"));
 
-                    DataTable dtInd = dbtools.SelectTable("declare @Ind nvarchar(200) =(select Rez_Uye_depind_kodu from " + Fronttools.DB_LinkServer + "." + Fronttools.DB_Database + ".dbo.Rez with(nolock) where Rez_Id = '" + Master_Folio.ToString() + "') "
+                    string query = "declare @Ind nvarchar(200) =(select Rez_Uye_depind_kodu from " + Fronttools.DB_LinkServer + "." + Fronttools.DB_Database + ".dbo.Rez with(nolock) where Rez_Id = '" + Master_Folio.ToString() + "') "
                                                            + " select Ind_Kodu,Ind_Oran "
                                                            + " from Cst_Indirim with(nolock) "
                                                            + " where Ind_Kodu in (select FieldValue from StringArray(@Ind,',')) "
-                                                           + " ORDER BY Ind_Oran desc");
+                                                           + " ORDER BY Ind_Oran desc";
+                    DataTable dtInd = dbtools.SelectTable(query);
                     if (dtInd != null)
                     {
                         if (dtInd.Rows.Count > 0)
@@ -615,6 +623,15 @@ namespace Pos
 
                 FormClose = true;
                 HizliSatis = true;
+
+                try
+                {
+                    CardF_Indirim = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("CardF_Indirim"));
+                }
+                catch (Exception ex)
+                {
+                    CardF_Indirim = 0;
+                }
                 this.Close();
             }
             catch (Exception ex)

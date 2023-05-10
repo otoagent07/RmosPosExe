@@ -365,27 +365,59 @@
   <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 54</value>
   </data>
-  <data name="btnYenile.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
+  <data name="txtKartFIndirim.EditValue" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="btnYenile.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACd0RVh0VGl0
-        bGUAUmVmcmVzaDtSZXBlYXQ7QmFycztSaWJib247UmVsb2FkzU326QAAAwFJREFUOE+lk3sslWEcxx/k
-        uOcPl1CNoR1JbrOWUB2iCzKEJOTkMsKZ5hJHNffrZiqc6OScwznVUtks5JJbck2RLHZoLmVtNavjcjj0
-        63nkjy7a2vptn73Pvu/3+33f/fa+CAD+i7+NFEb6N4j25zD5fYhZ2UeOxCC1fY+NjFvyfXoir7cd68uE
-        RG53Rzy7PeYEPUmReIifWdm/nkWxnJ71cFC6YGdsefdYUPpdQ1pE2bHg/Pq1KZEYZkTL0DXxGbhtQrjI
-        fj7kf4Wjj/3Ss+JvKI5kGTe7SIFsZHF704vJOTidWtOubWCqYk0vLbQNrwAHhgCibjyFwY/z8KB3GiKL
-        O0bMaF5byUOjf2TRlnM5dQm8tnEYXVoD1uNhcIzmXNXZZaFsYM/QNaBFUs28CzIPRVSudMyI4FrtW/DP
-        qL5EcmHXnyHkElNqlVDeKxEuSKBftApj8ysQlFUrsfBIoREThixQwfRUXmZAXgPcGZiFM1l1ZGkKAfkt
-        CNkEc17bnOeBT0YjtMwuQkBeC+ync2Bf4C0hNlE2CpS2GTuZ2YZw4eHEPPikN6xgTQtDlorkMequyXUr
-        zR8WwDutCTSojuZYU8bIYOSck2reuF6uB8+URuCOfgVydk2uB+fEmglEdSvCHqRoz6h6xeqchjh2Hxy5
-        UJ7/UwHF9GSig19Oq6TpvRj478TQMLMEtNCKVU3zQBdkF/WIFMhZ+RenhpT0QMXQJ/BKa5LQwli51IP+
-        5kaHA6lyKhralr4F2aHsASgTLoJPZgNoWEYX4pwKsgqtIgXSylq7tS3plcJw7iDwR75A9O0B8M5sBffU
-        ZtjrWyTAHn3zAHYf88kUqFnGvZSmqGpjTQaZBt5D1VNiUiKrZeFjZeJXPu6Z2wnJNUJgDc0Ba3AOHOJr
-        Qc8hga5m5GRtcpY3SdG0O4D9FGXjeISovnyMYP1KRHk1wx26R9PzDN1LhrAOWAdDD9aw3vFspgxFSRV7
-        yEckJ2/AQITNhixOCaOGIa+pg1Hf0Mi9X2ezX/TfAfQdAvawuvfdXuIAAAAASUVORK5CYII=
-</value>
+  <data name="txtKartFIndirim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 134</value>
+  </data>
+  <data name="txtKartFIndirim.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txtKartFIndirim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 22</value>
+  </data>
+  <data name="txtKartFIndirim.TabIndex" type="System.Int32, mscorlib">
+    <value>436</value>
+  </data>
+  <data name="&gt;&gt;txtKartFIndirim.Name" xml:space="preserve">
+    <value>txtKartFIndirim</value>
+  </data>
+  <data name="&gt;&gt;txtKartFIndirim.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtKartFIndirim.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtKartFIndirim.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textEdit3.EditValue" xml:space="preserve">
+    <value>% İndirim</value>
+  </data>
+  <data name="textEdit3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 134</value>
+  </data>
+  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>435</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
+    <value>textEdit3</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnYenile.Location" type="System.Drawing.Point, System.Drawing">
     <value>708, 83</value>
@@ -409,7 +441,7 @@
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;btnYenile.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="textEdit1.EditValue" xml:space="preserve">
     <value>Limit Uyarı</value>
@@ -436,7 +468,7 @@
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="txtCardF_Tutar.EditValue" xml:space="preserve">
     <value>0</value>
@@ -463,7 +495,7 @@
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;txtCardF_Tutar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -530,7 +562,7 @@
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;simpleButton3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="simpleButton2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -587,25 +619,7 @@
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnKatTanimBakiyeTransfer.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnKatTanimBakiyeTransfer.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAM8BAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkNhcmRzIj4N
-        CiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5CbHVle2ZpbGw6IzExNzdENzt9Cjwvc3R5bGU+DQog
-        IDxwYXRoIGQ9Ik0xNCwxMEgwVjRoMTRWMTB6IE0zMCw0SDE2djZoMTRWNHogTTE0LDEySDB2NmgxNFYx
-        MnogTTMwLDEySDE2djZoMTRWMTJ6IE0xNCwyMEgwdjZoMTRWMjB6IE0zMCwyMEgxNnY2aDE0ICBWMjB6
-        IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCjwvc3ZnPgs=
-</value>
+    <value>6</value>
   </data>
   <data name="btnKatTanimBakiyeTransfer.Location" type="System.Drawing.Point, System.Drawing">
     <value>712, 592</value>
@@ -630,7 +644,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;btnKatTanimBakiyeTransfer.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="txtCardF_Kisi.EditValue" xml:space="preserve">
     <value>1</value>
@@ -657,7 +671,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;txtCardF_Kisi.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="textEdit40.EditValue" xml:space="preserve">
     <value>Kişi Sayısı</value>
@@ -684,39 +698,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;textEdit40.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="btnKatTanimKartTransfer.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnKatTanimKartTransfer.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAABwFAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
-        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5ZZWxsb3d7
-        ZmlsbDojRkZCMTE1O30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5HcmVlbntmaWxsOiMwMzlDMjM7fQoJ
-        LkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
-        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntkaXNwbGF5Om5vbmU7fQoJLnN0M3tkaXNwbGF5
-        OmlubGluZTtmaWxsOiNGRkIxMTU7fQoJLnN0NHtkaXNwbGF5OmlubGluZTt9Cgkuc3Q1e2Rpc3BsYXk6
-        aW5saW5lO29wYWNpdHk6MC43NTt9Cgkuc3Q2e2Rpc3BsYXk6aW5saW5lO29wYWNpdHk6MC41O30KCS5z
-        dDd7ZGlzcGxheTppbmxpbmU7ZmlsbDojMDM5QzIzO30KCS5zdDh7ZGlzcGxheTppbmxpbmU7ZmlsbDoj
-        RDExQzFDO30KCS5zdDl7ZGlzcGxheTppbmxpbmU7ZmlsbDojMTE3N0Q3O30KCS5zdDEwe2Rpc3BsYXk6
-        aW5saW5lO2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+DQogIDxnIGlkPSJBZGRyZXNzXzFfIj4NCiAgICA8
-        ZyBvcGFjaXR5PSIwLjc1IiBjbGFzcz0ic3QxIj4NCiAgICAgIDxwYXRoIGQ9Ik0yNiwxMkgxNnYtMmgx
-        MFYxMnogTTI2LDE0SDE2djJoMTBWMTR6IE0yNiwxOEgxNnYyaDEwVjE4eiIgZmlsbD0iIzcyNzI3MiIg
-        b3BhY2l0eT0iMC43NSIgY2xhc3M9IkJsYWNrIiAvPg0KICAgIDwvZz4NCiAgICA8cGF0aCBkPSJNMjks
-        NEgxQzAuNCw0LDAsNC41LDAsNXYyMGMwLDAuNSwwLjQsMSwxLDFoMjhjMC42LDAsMS0wLjUsMS0xVjVD
-        MzAsNC41LDI5LjYsNCwyOSw0eiBNMjgsMjRIMlY2aDI2VjI0eiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9
-        IkJsYWNrIiAvPg0KICAgIDxwYXRoIGQ9Ik05LDhjMS43LDAsMywxLjMsMywzcy0xLjMsMy0zLDNzLTMt
-        MS4zLTMtM1M3LjMsOCw5LDh6IE0xMi4yLDE0LjhjLTAuOSwwLjctMiwxLjItMy4yLDEuMnMtMi4zLTAu
-        NS0zLjItMS4yICAgQzQsMTYuNSw0LDIyLDQsMjJoMTBDMTQsMjIsMTQsMTYuNSwxMi4yLDE0Ljh6IiBm
-        aWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
-</value>
+    <value>9</value>
   </data>
   <data name="btnKatTanimKartTransfer.Location" type="System.Drawing.Point, System.Drawing">
     <value>572, 592</value>
@@ -740,7 +722,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;btnKatTanimKartTransfer.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="rdb_RIH.EditValue" xml:space="preserve">
     <value>I</value>
@@ -785,7 +767,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;rdb_RIH.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="CardF_MusteriTipi.EditValue" xml:space="preserve">
     <value>GB</value>
@@ -836,30 +818,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;CardF_MusteriTipi.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="btnKatTanimDuzelt.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnKatTanimDuzelt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOACAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
-        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkdyZWVue2ZpbGw6IzAzOUMyMzt9CgkuQmxhY2t7
-        ZmlsbDojNzI3MjcyO30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5ZZWxsb3d7ZmlsbDojRkZCMTE1O30K
-        CS5CbHVle2ZpbGw6IzExNzdENzt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
-        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQo8L3N0eWxlPg0KICA8ZyBpZD0iUmVzZXRMYXlvdXRPcHRp
-        b25zIj4NCiAgICA8cGF0aCBkPSJNMTYsNGMtMy4zLDAtNi4zLDEuMy04LjUsMy41TDQsNHYxMGgwLjJo
-        NC4xSDE0bC0zLjYtMy42QzExLjgsOC45LDEzLjgsOCwxNiw4YzQuNCwwLDgsMy42LDgsOHMtMy42LDgt
-        OCw4ICAgYy0zLjcsMC02LjgtMi42LTcuNy02SDQuMmMxLDUuNyw1LjksMTAsMTEuOCwxMGM2LjYsMCwx
-        Mi01LjQsMTItMTJTMjIuNiw0LDE2LDR6IiBmaWxsPSIjMDM5QzIzIiBjbGFzcz0iR3JlZW4iIC8+DQog
-        IDwvZz4NCjwvc3ZnPgs=
-</value>
+    <value>12</value>
   </data>
   <data name="btnKatTanimDuzelt.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 592</value>
@@ -883,7 +842,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;btnKatTanimDuzelt.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="simpleButton9.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -927,7 +886,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;simpleButton9.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="btnKatTanimSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -967,7 +926,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;btnKatTanimSil.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="simpleButton11.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -1017,7 +976,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;simpleButton11.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="txtCardF_CikisTrh.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1048,7 +1007,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;txtCardF_CikisTrh.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="txtCardF_GirisTrh.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1078,7 +1037,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;txtCardF_GirisTrh.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="textEdit33.EditValue" xml:space="preserve">
     <value>Çıkış Tarihi</value>
@@ -1105,7 +1064,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;textEdit33.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="textEdit34.EditValue" xml:space="preserve">
     <value>Giriş Tarihi</value>
@@ -1132,7 +1091,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;textEdit34.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="textEdit29.EditValue" xml:space="preserve">
     <value>Soyadı</value>
@@ -1159,7 +1118,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;textEdit29.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="textEdit30.EditValue" xml:space="preserve">
     <value>Adı</value>
@@ -1186,7 +1145,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;textEdit30.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="txtCardF_Adi.Location" type="System.Drawing.Point, System.Drawing">
     <value>124, 65</value>
@@ -1207,7 +1166,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;txtCardF_Adi.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="txtCardF_Soyad.Location" type="System.Drawing.Point, System.Drawing">
     <value>124, 88</value>
@@ -1228,7 +1187,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;txtCardF_Soyad.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="textEdit27.EditValue" xml:space="preserve">
     <value>Oda No / Folio ID</value>
@@ -1255,7 +1214,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;textEdit27.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="txtCardF_Odano.EditValue" xml:space="preserve">
     <value />
@@ -1279,7 +1238,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;txtCardF_Odano.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="txtCardF_Kartno.Location" type="System.Drawing.Point, System.Drawing">
     <value>124, 14</value>
@@ -1300,7 +1259,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;txtCardF_Kartno.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="textEdit25.EditValue" xml:space="preserve">
     <value>Kart No</value>
@@ -1327,10 +1286,10 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;textEdit25.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="gridControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 139</value>
+    <value>3, 162</value>
   </data>
   <data name="gridColumn19.Caption" xml:space="preserve">
     <value>ID</value>
@@ -1465,7 +1424,7 @@ Transfer</value>
     <value>9</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>952, 447</value>
+    <value>952, 424</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1480,7 +1439,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;gridControl3.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="lookCardF_FolioID.Location" type="System.Drawing.Point, System.Drawing">
     <value>171, 42</value>
@@ -1615,7 +1574,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;lookCardF_FolioID.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="CardF_Limit_Uyari.EditValue" xml:space="preserve">
     <value>EVET</value>
@@ -1651,7 +1610,7 @@ Transfer</value>
     <value>tab_KartF</value>
   </data>
   <data name="&gt;&gt;CardF_Limit_Uyari.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>31</value>
   </data>
   <data name="tab_KartF.Size" type="System.Drawing.Size, System.Drawing">
     <value>982, 650</value>
