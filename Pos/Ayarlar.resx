@@ -6048,7 +6048,7 @@
     <value>Önbüroya İkram Sıfır Yaz Aktif</value>
   </data>
   <data name="onburoikramsifiryazaktif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 19</value>
+    <value>689, 19</value>
   </data>
   <data name="onburoikramsifiryazaktif.TabIndex" type="System.Int32, mscorlib">
     <value>357</value>
@@ -21221,7 +21221,7 @@ H13_3
   <data name="Pos_KartfIndirimAktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>689, 129</value>
   </data>
-  <data name="checkEdit2.Properties.Caption" xml:space="preserve">
+  <data name="Pos_KartfIndirimAktif.Properties.Caption" xml:space="preserve">
     <value>Kart İndirim Aktif</value>
   </data>
   <data name="Pos_KartfIndirimAktif.Size" type="System.Drawing.Size, System.Drawing">

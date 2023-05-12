@@ -965,6 +965,7 @@
             this.btn_Kul_TumYetki = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.Pos_KartfIndirimAktif = new DevExpress.XtraEditors.CheckEdit();
             this.chk_K_KasaRapor = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_KartTanimBakiyeTransfer = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_KartTanimTransfer = new DevExpress.XtraEditors.CheckEdit();
@@ -1232,7 +1233,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.Pos_KartfIndirimAktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1854,6 +1854,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_K_KasaRapor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartTanimBakiyeTransfer.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartTanimTransfer.Properties)).BeginInit();
@@ -2059,7 +2060,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -10227,6 +10227,13 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             // 
+            // Pos_KartfIndirimAktif
+            // 
+            resources.ApplyResources(this.Pos_KartfIndirimAktif, "Pos_KartfIndirimAktif");
+            this.Pos_KartfIndirimAktif.Name = "Pos_KartfIndirimAktif";
+            this.Pos_KartfIndirimAktif.Properties.Appearance.Options.UseFont = true;
+            this.Pos_KartfIndirimAktif.Properties.Caption = resources.GetString("Pos_KartfIndirimAktif.Properties.Caption");
+            // 
             // chk_K_KasaRapor
             // 
             resources.ApplyResources(this.chk_K_KasaRapor, "chk_K_KasaRapor");
@@ -12269,13 +12276,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // Pos_KartfIndirimAktif
-            // 
-            resources.ApplyResources(this.Pos_KartfIndirimAktif, "Pos_KartfIndirimAktif");
-            this.Pos_KartfIndirimAktif.Name = "Pos_KartfIndirimAktif";
-            this.Pos_KartfIndirimAktif.Properties.Appearance.Options.UseFont = true;
-            this.Pos_KartfIndirimAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -12930,6 +12930,7 @@
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_K_KasaRapor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartTanimBakiyeTransfer.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartTanimTransfer.Properties)).EndInit();
@@ -13142,7 +13143,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

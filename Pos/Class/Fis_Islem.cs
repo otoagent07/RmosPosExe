@@ -363,7 +363,7 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
                 if (ozelKod == "3" && Param.onburoikramsifiryazaktif) // 3 ikramdır
                 {
-                    Fronttools.execcmd("update Kumhrk set Kumhrk_Doviz_tutar='0',Kumhrk_Tutar='0',Kumhrk_Def_doviz='0',Kumhrk_Aciklama='POS: İKRAM, Fişno:" + Fisno + "' where Kumhrk_Cekno='" + Fisno + "'");
+                    Fronttools.execcmd("update Kumhrk set Kumhrk_Doviz_tutar='0',Kumhrk_Tutar='0',Kumhrk_Def_doviz='0',Kumhrk_Aciklama='POS: İKRAM, Fişno:" + Fisno + "' where Kumhrk_Pos_no='" + Fisno + "'");
                 }
             }
             catch (Exception ex)
