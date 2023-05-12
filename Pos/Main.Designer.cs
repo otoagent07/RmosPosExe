@@ -158,7 +158,6 @@
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.splitContainerControl1.Panel1.Appearance.Options.UseBackColor = true;
-            resources.ApplyResources(this.splitContainerControl1.Panel1, "splitContainerControl1.Panel1");
             this.splitContainerControl1.Panel1.Controls.Add(this.Main_Tarih);
             this.splitContainerControl1.Panel1.Controls.Add(this.groupControl4);
             this.splitContainerControl1.Panel1.Controls.Add(this.btnGunSonu);
@@ -171,8 +170,9 @@
             this.splitContainerControl1.Panel1.Controls.Add(this.btn_HizliSatis);
             this.splitContainerControl1.Panel1.Controls.Add(this.btnDirekSatis);
             this.splitContainerControl1.Panel1.Controls.Add(this.btnMasaTakip);
-            resources.ApplyResources(this.splitContainerControl1.Panel2, "splitContainerControl1.Panel2");
+            resources.ApplyResources(this.splitContainerControl1.Panel1, "splitContainerControl1.Panel1");
             this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl2);
+            resources.ApplyResources(this.splitContainerControl1.Panel2, "splitContainerControl1.Panel2");
             this.splitContainerControl1.SplitterPosition = 212;
             // 
             // Main_Tarih
@@ -186,25 +186,13 @@
             // 
             // groupControl4
             // 
-            resources.ApplyResources(this.groupControl4, "groupControl4");
             this.groupControl4.Controls.Add(this.gdc_Anlik);
+            resources.ApplyResources(this.groupControl4, "groupControl4");
             this.groupControl4.Name = "groupControl4";
             // 
             // gdc_Anlik
             // 
             resources.ApplyResources(this.gdc_Anlik, "gdc_Anlik");
-            this.gdc_Anlik.EmbeddedNavigator.AccessibleDescription = resources.GetString("gdc_Anlik.EmbeddedNavigator.AccessibleDescription");
-            this.gdc_Anlik.EmbeddedNavigator.AccessibleName = resources.GetString("gdc_Anlik.EmbeddedNavigator.AccessibleName");
-            this.gdc_Anlik.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gdc_Anlik.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.Anchor")));
-            this.gdc_Anlik.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.BackgroundImage")));
-            this.gdc_Anlik.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gdc_Anlik.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.ImeMode")));
-            this.gdc_Anlik.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.MaximumSize")));
-            this.gdc_Anlik.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.TextLocation")));
-            this.gdc_Anlik.EmbeddedNavigator.ToolTip = resources.GetString("gdc_Anlik.EmbeddedNavigator.ToolTip");
-            this.gdc_Anlik.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.ToolTipIconType")));
-            this.gdc_Anlik.EmbeddedNavigator.ToolTipTitle = resources.GetString("gdc_Anlik.EmbeddedNavigator.ToolTipTitle");
             this.gdc_Anlik.MainView = this.gridView2;
             this.gdc_Anlik.MenuManager = this.barManager1;
             this.gdc_Anlik.Name = "gdc_Anlik";
@@ -213,7 +201,6 @@
             // 
             // gridView2
             // 
-            resources.ApplyResources(this.gridView2, "gridView2");
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn3,
             this.gridColumn4,
@@ -308,32 +295,25 @@
             // 
             resources.ApplyResources(this.bartxt_Saat, "bartxt_Saat");
             this.bartxt_Saat.Id = 3;
-            this.bartxt_Saat.ImageOptions.ImageIndex = ((int)(resources.GetObject("bartxt_Saat.ImageOptions.ImageIndex")));
-            this.bartxt_Saat.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("bartxt_Saat.ImageOptions.LargeImageIndex")));
-            this.bartxt_Saat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bartxt_Saat.ImageOptions.SvgImage")));
             this.bartxt_Saat.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("bartxt_Saat.ItemAppearance.Normal.Font")));
             this.bartxt_Saat.ItemAppearance.Normal.Options.UseFont = true;
             this.bartxt_Saat.Name = "bartxt_Saat";
             // 
             // btn_Update
             // 
-            resources.ApplyResources(this.btn_Update, "btn_Update");
             this.btn_Update.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            resources.ApplyResources(this.btn_Update, "btn_Update");
             this.btn_Update.Enabled = false;
             this.btn_Update.Id = 21;
-            this.btn_Update.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Update.ImageOptions.ImageIndex")));
-            this.btn_Update.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Update.ImageOptions.LargeImageIndex")));
             this.btn_Update.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Update.ImageOptions.SvgImage")));
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
             // 
             // barButtonItem4
             // 
-            resources.ApplyResources(this.barButtonItem4, "barButtonItem4");
             this.barButtonItem4.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            resources.ApplyResources(this.barButtonItem4, "barButtonItem4");
             this.barButtonItem4.Id = 18;
-            this.barButtonItem4.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem4.ImageOptions.ImageIndex")));
-            this.barButtonItem4.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem4.ImageOptions.LargeImageIndex")));
             this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
             this.barButtonItem4.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem4.ItemAppearance.Normal.Font")));
             this.barButtonItem4.ItemAppearance.Normal.Options.UseFont = true;
@@ -342,11 +322,9 @@
             // 
             // btn_Fihrist
             // 
-            resources.ApplyResources(this.btn_Fihrist, "btn_Fihrist");
             this.btn_Fihrist.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            resources.ApplyResources(this.btn_Fihrist, "btn_Fihrist");
             this.btn_Fihrist.Id = 11;
-            this.btn_Fihrist.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Fihrist.ImageOptions.ImageIndex")));
-            this.btn_Fihrist.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Fihrist.ImageOptions.LargeImageIndex")));
             this.btn_Fihrist.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Fihrist.ImageOptions.SvgImage")));
             this.btn_Fihrist.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("btn_Fihrist.ItemAppearance.Normal.Font")));
             this.btn_Fihrist.ItemAppearance.Normal.Options.UseFont = true;
@@ -355,11 +333,9 @@
             // 
             // barButtonItem1
             // 
-            resources.ApplyResources(this.barButtonItem1, "barButtonItem1");
             this.barButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            resources.ApplyResources(this.barButtonItem1, "barButtonItem1");
             this.barButtonItem1.Id = 10;
-            this.barButtonItem1.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem1.ImageOptions.ImageIndex")));
-            this.barButtonItem1.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem1.ImageOptions.LargeImageIndex")));
             this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
             this.barButtonItem1.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem1.ItemAppearance.Normal.Font")));
             this.barButtonItem1.ItemAppearance.Normal.ForeColor = System.Drawing.Color.DarkRed;
@@ -372,8 +348,6 @@
             // 
             resources.ApplyResources(this.barButtonItem2, "barButtonItem2");
             this.barButtonItem2.Id = 15;
-            this.barButtonItem2.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem2.ImageOptions.ImageIndex")));
-            this.barButtonItem2.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem2.ImageOptions.LargeImageIndex")));
             this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
             this.barButtonItem2.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.barButtonItem2.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem2.ItemAppearance.Normal.Font")));
@@ -385,8 +359,6 @@
             // 
             resources.ApplyResources(this.barButtonItem3, "barButtonItem3");
             this.barButtonItem3.Id = 16;
-            this.barButtonItem3.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem3.ImageOptions.ImageIndex")));
-            this.barButtonItem3.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem3.ImageOptions.LargeImageIndex")));
             this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
             this.barButtonItem3.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.barButtonItem3.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem3.ItemAppearance.Normal.Font")));
@@ -396,15 +368,12 @@
             // 
             // barButtonItem7
             // 
-            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
             this.barButtonItem7.ActAsDropDown = true;
             this.barButtonItem7.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
             this.barButtonItem7.DropDownControl = this.popupMenu1;
             this.barButtonItem7.Id = 28;
             this.barButtonItem7.ImageOptions.Image = global::Pos.Properties.Resources.sepet25;
-            this.barButtonItem7.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem7.ImageOptions.ImageIndex")));
-            this.barButtonItem7.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem7.ImageOptions.LargeImageIndex")));
-            this.barButtonItem7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
             this.barButtonItem7.Name = "barButtonItem7";
             // 
             // popupMenu1
@@ -422,9 +391,6 @@
             resources.ApplyResources(this.barButtonItem10, "barButtonItem10");
             this.barButtonItem10.Id = 31;
             this.barButtonItem10.ImageOptions.Image = global::Pos.Properties.Resources.getir25x25;
-            this.barButtonItem10.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem10.ImageOptions.ImageIndex")));
-            this.barButtonItem10.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem10.ImageOptions.LargeImageIndex")));
-            this.barButtonItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
             this.barButtonItem10.Name = "barButtonItem10";
             this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
             // 
@@ -433,9 +399,6 @@
             resources.ApplyResources(this.barButtonItem11, "barButtonItem11");
             this.barButtonItem11.Id = 32;
             this.barButtonItem11.ImageOptions.Image = global::Pos.Properties.Resources.yemeksepeti25x;
-            this.barButtonItem11.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem11.ImageOptions.ImageIndex")));
-            this.barButtonItem11.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem11.ImageOptions.LargeImageIndex")));
-            this.barButtonItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
             this.barButtonItem11.Name = "barButtonItem11";
             this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bar_yemekSepeti_ItemClick);
             // 
@@ -444,9 +407,6 @@
             resources.ApplyResources(this.barButtonItem12, "barButtonItem12");
             this.barButtonItem12.Id = 33;
             this.barButtonItem12.ImageOptions.Image = global::Pos.Properties.Resources.trendyollogo25x25;
-            this.barButtonItem12.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem12.ImageOptions.ImageIndex")));
-            this.barButtonItem12.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem12.ImageOptions.LargeImageIndex")));
-            this.barButtonItem12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
             this.barButtonItem12.Name = "barButtonItem12";
             this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
@@ -455,9 +415,6 @@
             resources.ApplyResources(this.barButtonItem13, "barButtonItem13");
             this.barButtonItem13.Id = 34;
             this.barButtonItem13.ImageOptions.Image = global::Pos.Properties.Resources.yemeksepetigo25x25;
-            this.barButtonItem13.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem13.ImageOptions.ImageIndex")));
-            this.barButtonItem13.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem13.ImageOptions.LargeImageIndex")));
-            this.barButtonItem13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
             this.barButtonItem13.Name = "barButtonItem13";
             this.barButtonItem13.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYemekSepetiGo_ItemClick);
             // 
@@ -466,9 +423,6 @@
             resources.ApplyResources(this.barStaticItem1, "barStaticItem1");
             this.barStaticItem1.Id = 0;
             this.barStaticItem1.ImageOptions.Image = global::Pos.Properties.Resources.kasa;
-            this.barStaticItem1.ImageOptions.ImageIndex = ((int)(resources.GetObject("barStaticItem1.ImageOptions.ImageIndex")));
-            this.barStaticItem1.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barStaticItem1.ImageOptions.LargeImageIndex")));
-            this.barStaticItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barStaticItem1.ImageOptions.SvgImage")));
             this.barStaticItem1.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barStaticItem1.ItemAppearance.Normal.Font")));
             this.barStaticItem1.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem1.Name = "barStaticItem1";
@@ -478,26 +432,26 @@
             // 
             // barDockControlTop
             // 
-            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
             this.barDockControlTop.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
             this.barDockControlTop.Manager = this.barManager1;
             // 
             // barDockControlBottom
             // 
-            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
             this.barDockControlBottom.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
             this.barDockControlBottom.Manager = this.barManager1;
             // 
             // barDockControlLeft
             // 
-            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
             this.barDockControlLeft.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
             this.barDockControlLeft.Manager = this.barManager1;
             // 
             // barDockControlRight
             // 
-            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.Manager = this.barManager1;
             // 
             // bar_yemekSepeti
@@ -505,9 +459,6 @@
             resources.ApplyResources(this.bar_yemekSepeti, "bar_yemekSepeti");
             this.bar_yemekSepeti.Id = 19;
             this.bar_yemekSepeti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bar_yemekSepeti.ImageOptions.Image")));
-            this.bar_yemekSepeti.ImageOptions.ImageIndex = ((int)(resources.GetObject("bar_yemekSepeti.ImageOptions.ImageIndex")));
-            this.bar_yemekSepeti.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("bar_yemekSepeti.ImageOptions.LargeImageIndex")));
-            this.bar_yemekSepeti.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bar_yemekSepeti.ImageOptions.SvgImage")));
             this.bar_yemekSepeti.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.bar_yemekSepeti.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("bar_yemekSepeti.ItemAppearance.Normal.Font")));
             this.bar_yemekSepeti.ItemAppearance.Normal.Options.UseFont = true;
@@ -519,9 +470,6 @@
             resources.ApplyResources(this.barButtonItem5, "barButtonItem5");
             this.barButtonItem5.Id = 23;
             this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem5.ImageOptions.ImageIndex")));
-            this.barButtonItem5.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem5.ImageOptions.LargeImageIndex")));
-            this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
             this.barButtonItem5.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.barButtonItem5.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem5.ItemAppearance.Normal.Font")));
             this.barButtonItem5.ItemAppearance.Normal.Options.UseFont = true;
@@ -533,9 +481,6 @@
             resources.ApplyResources(this.barButtonItem6, "barButtonItem6");
             this.barButtonItem6.Id = 24;
             this.barButtonItem6.ImageOptions.Image = global::Pos.Properties.Resources.trendyollogo22;
-            this.barButtonItem6.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem6.ImageOptions.ImageIndex")));
-            this.barButtonItem6.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem6.ImageOptions.LargeImageIndex")));
-            this.barButtonItem6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
             this.barButtonItem6.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.barButtonItem6.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem6.ItemAppearance.Normal.Font")));
             this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
@@ -547,9 +492,6 @@
             resources.ApplyResources(this.btnYemekSepetiGo, "btnYemekSepetiGo");
             this.btnYemekSepetiGo.Id = 25;
             this.btnYemekSepetiGo.ImageOptions.Image = global::Pos.Properties.Resources.yemeksepetigo25x25;
-            this.btnYemekSepetiGo.ImageOptions.ImageIndex = ((int)(resources.GetObject("btnYemekSepetiGo.ImageOptions.ImageIndex")));
-            this.btnYemekSepetiGo.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btnYemekSepetiGo.ImageOptions.LargeImageIndex")));
-            this.btnYemekSepetiGo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnYemekSepetiGo.ImageOptions.SvgImage")));
             this.btnYemekSepetiGo.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
             this.btnYemekSepetiGo.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("btnYemekSepetiGo.ItemAppearance.Normal.Font")));
             this.btnYemekSepetiGo.ItemAppearance.Normal.Options.UseFont = true;
@@ -562,9 +504,6 @@
             resources.ApplyResources(this.barEditItem1, "barEditItem1");
             this.barEditItem1.Edit = this.repositoryItemTextEdit1;
             this.barEditItem1.Id = 26;
-            this.barEditItem1.ImageOptions.ImageIndex = ((int)(resources.GetObject("barEditItem1.ImageOptions.ImageIndex")));
-            this.barEditItem1.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barEditItem1.ImageOptions.LargeImageIndex")));
-            this.barEditItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barEditItem1.ImageOptions.SvgImage")));
             this.barEditItem1.Name = "barEditItem1";
             // 
             // repositoryItemTextEdit1
@@ -577,9 +516,6 @@
             resources.ApplyResources(this.barEditItem2, "barEditItem2");
             this.barEditItem2.Edit = this.repositoryItemTextEdit2;
             this.barEditItem2.Id = 27;
-            this.barEditItem2.ImageOptions.ImageIndex = ((int)(resources.GetObject("barEditItem2.ImageOptions.ImageIndex")));
-            this.barEditItem2.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barEditItem2.ImageOptions.LargeImageIndex")));
-            this.barEditItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barEditItem2.ImageOptions.SvgImage")));
             this.barEditItem2.Name = "barEditItem2";
             // 
             // repositoryItemTextEdit2
@@ -591,110 +527,104 @@
             // 
             resources.ApplyResources(this.barButtonItem8, "barButtonItem8");
             this.barButtonItem8.Id = 29;
-            this.barButtonItem8.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem8.ImageOptions.ImageIndex")));
-            this.barButtonItem8.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem8.ImageOptions.LargeImageIndex")));
-            this.barButtonItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
             this.barButtonItem8.Name = "barButtonItem8";
             // 
             // barButtonItem9
             // 
             resources.ApplyResources(this.barButtonItem9, "barButtonItem9");
             this.barButtonItem9.Id = 30;
-            this.barButtonItem9.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem9.ImageOptions.ImageIndex")));
-            this.barButtonItem9.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem9.ImageOptions.LargeImageIndex")));
-            this.barButtonItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
             this.barButtonItem9.Name = "barButtonItem9";
             // 
             // btnGunSonu
             // 
-            resources.ApplyResources(this.btnGunSonu, "btnGunSonu");
             this.btnGunSonu.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnGunSonu.Appearance.Font")));
             this.btnGunSonu.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnGunSonu, "btnGunSonu");
             this.btnGunSonu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGunSonu.ImageOptions.SvgImage")));
             this.btnGunSonu.Name = "btnGunSonu";
             this.btnGunSonu.Click += new System.EventHandler(this.btnGunSonu_Click);
             // 
             // btn_ExtraTanimlama
             // 
-            resources.ApplyResources(this.btn_ExtraTanimlama, "btn_ExtraTanimlama");
             this.btn_ExtraTanimlama.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_ExtraTanimlama.Appearance.Font")));
             this.btn_ExtraTanimlama.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_ExtraTanimlama, "btn_ExtraTanimlama");
             this.btn_ExtraTanimlama.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_ExtraTanimlama.ImageOptions.SvgImage")));
             this.btn_ExtraTanimlama.Name = "btn_ExtraTanimlama";
             this.btn_ExtraTanimlama.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnCari
             // 
-            resources.ApplyResources(this.btnCari, "btnCari");
             this.btnCari.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCari.Appearance.Font")));
             this.btnCari.Appearance.Options.UseFont = true;
             this.btnCari.Appearance.Options.UseTextOptions = true;
             this.btnCari.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            resources.ApplyResources(this.btnCari, "btnCari");
             this.btnCari.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCari.ImageOptions.SvgImage")));
             this.btnCari.Name = "btnCari";
             this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
             // 
             // btnKasa
             // 
-            resources.ApplyResources(this.btnKasa, "btnKasa");
             this.btnKasa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnKasa.Appearance.Font")));
             this.btnKasa.Appearance.Options.UseFont = true;
             this.btnKasa.Appearance.Options.UseTextOptions = true;
             this.btnKasa.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            resources.ApplyResources(this.btnKasa, "btnKasa");
             this.btnKasa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnKasa.ImageOptions.SvgImage")));
             this.btnKasa.Name = "btnKasa";
             this.btnKasa.Click += new System.EventHandler(this.btnKasa_Click);
             // 
             // btn_Rez
             // 
-            resources.ApplyResources(this.btn_Rez, "btn_Rez");
             this.btn_Rez.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Rez.Appearance.Font")));
             this.btn_Rez.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Rez, "btn_Rez");
             this.btn_Rez.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Rez.ImageOptions.SvgImage")));
             this.btn_Rez.Name = "btn_Rez";
             this.btn_Rez.Click += new System.EventHandler(this.btn_Rez_Click);
             // 
             // simpleButton1
             // 
-            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
             this.simpleButton1.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);
             // 
             // btnRaporlar
             // 
-            resources.ApplyResources(this.btnRaporlar, "btnRaporlar");
             this.btnRaporlar.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnRaporlar.Appearance.Font")));
             this.btnRaporlar.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnRaporlar, "btnRaporlar");
             this.btnRaporlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnRaporlar.ImageOptions.SvgImage")));
             this.btnRaporlar.Name = "btnRaporlar";
             this.btnRaporlar.Click += new System.EventHandler(this.btnRaporlar_Click);
             // 
             // btn_HizliSatis
             // 
-            resources.ApplyResources(this.btn_HizliSatis, "btn_HizliSatis");
             this.btn_HizliSatis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_HizliSatis.Appearance.Font")));
             this.btn_HizliSatis.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_HizliSatis, "btn_HizliSatis");
             this.btn_HizliSatis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_HizliSatis.ImageOptions.SvgImage")));
             this.btn_HizliSatis.Name = "btn_HizliSatis";
             this.btn_HizliSatis.Click += new System.EventHandler(this.btn_HizliSatis_Click);
             // 
             // btnDirekSatis
             // 
-            resources.ApplyResources(this.btnDirekSatis, "btnDirekSatis");
             this.btnDirekSatis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDirekSatis.Appearance.Font")));
             this.btnDirekSatis.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnDirekSatis, "btnDirekSatis");
             this.btnDirekSatis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDirekSatis.ImageOptions.SvgImage")));
             this.btnDirekSatis.Name = "btnDirekSatis";
             this.btnDirekSatis.Click += new System.EventHandler(this.btnDirekSatis_Click);
             // 
             // btnMasaTakip
             // 
-            resources.ApplyResources(this.btnMasaTakip, "btnMasaTakip");
             this.btnMasaTakip.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnMasaTakip.Appearance.Font")));
             this.btnMasaTakip.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnMasaTakip, "btnMasaTakip");
             this.btnMasaTakip.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMasaTakip.ImageOptions.SvgImage")));
             this.btnMasaTakip.Name = "btnMasaTakip";
             this.btnMasaTakip.Click += new System.EventHandler(this.btnMasaTakip_Click);
@@ -704,18 +634,17 @@
             resources.ApplyResources(this.splitContainerControl2, "splitContainerControl2");
             this.splitContainerControl2.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.Panel2;
             this.splitContainerControl2.Name = "splitContainerControl2";
-            resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel1.Controls.Add(this.groupControl5);
             this.splitContainerControl2.Panel1.Controls.Add(this.pictureBox1);
-            resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
+            resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.groupControl3);
             this.splitContainerControl2.Panel2.Controls.Add(this.groupControl2);
             this.splitContainerControl2.Panel2.Controls.Add(this.groupControl1);
+            resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
             this.splitContainerControl2.SplitterPosition = 228;
             // 
             // groupControl5
             // 
-            resources.ApplyResources(this.groupControl5, "groupControl5");
             this.groupControl5.Controls.Add(this.m_tvEcho);
             this.groupControl5.Controls.Add(this.m_txtInputData);
             this.groupControl5.Controls.Add(this.m_treeHandleList);
@@ -728,6 +657,7 @@
             this.groupControl5.Controls.Add(this.lbl_Tarih_In);
             this.groupControl5.Controls.Add(this.lblHata);
             this.groupControl5.Controls.Add(this.listBox1);
+            resources.ApplyResources(this.groupControl5, "groupControl5");
             this.groupControl5.Name = "groupControl5";
             // 
             // m_tvEcho
@@ -747,15 +677,15 @@
             // 
             // m_listBatchCommand
             // 
-            resources.ApplyResources(this.m_listBatchCommand, "m_listBatchCommand");
             this.m_listBatchCommand.HideSelection = false;
+            resources.ApplyResources(this.m_listBatchCommand, "m_listBatchCommand");
             this.m_listBatchCommand.Name = "m_listBatchCommand";
             this.m_listBatchCommand.UseCompatibleStateImageBehavior = false;
             // 
             // m_comboBoxCurrency
             // 
-            resources.ApplyResources(this.m_comboBoxCurrency, "m_comboBoxCurrency");
             this.m_comboBoxCurrency.FormattingEnabled = true;
+            resources.ApplyResources(this.m_comboBoxCurrency, "m_comboBoxCurrency");
             this.m_comboBoxCurrency.Name = "m_comboBoxCurrency";
             // 
             // lbl_AktifHandle
@@ -765,8 +695,8 @@
             // 
             // cmb_Dep
             // 
-            resources.ApplyResources(this.cmb_Dep, "cmb_Dep");
             this.cmb_Dep.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_Dep, "cmb_Dep");
             this.cmb_Dep.Name = "cmb_Dep";
             // 
             // textBox1
@@ -803,90 +733,78 @@
             // 
             // groupControl3
             // 
-            resources.ApplyResources(this.groupControl3, "groupControl3");
             this.groupControl3.Controls.Add(this.simpleButton6);
             this.groupControl3.Controls.Add(this.btnAyarlar);
             this.groupControl3.Controls.Add(this.simpleButton3);
             this.groupControl3.Controls.Add(this.simpleButton4);
             this.groupControl3.Controls.Add(this.simpleButton5);
             this.groupControl3.Controls.Add(this.btnDepDegis);
+            resources.ApplyResources(this.groupControl3, "groupControl3");
             this.groupControl3.Name = "groupControl3";
             // 
             // simpleButton6
             // 
-            resources.ApplyResources(this.simpleButton6, "simpleButton6");
             this.simpleButton6.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton6.Appearance.Font")));
             this.simpleButton6.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton6, "simpleButton6");
             this.simpleButton6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton6.ImageOptions.SvgImage")));
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // btnAyarlar
             // 
-            resources.ApplyResources(this.btnAyarlar, "btnAyarlar");
             this.btnAyarlar.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnAyarlar.Appearance.Font")));
             this.btnAyarlar.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnAyarlar, "btnAyarlar");
             this.btnAyarlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAyarlar.ImageOptions.SvgImage")));
             this.btnAyarlar.Name = "btnAyarlar";
             this.btnAyarlar.Click += new System.EventHandler(this.btnAyarlar_Click_1);
             // 
             // simpleButton3
             // 
-            resources.ApplyResources(this.simpleButton3, "simpleButton3");
             this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
             this.simpleButton3.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton3, "simpleButton3");
             this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton4
             // 
-            resources.ApplyResources(this.simpleButton4, "simpleButton4");
             this.simpleButton4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton4.Appearance.Font")));
             this.simpleButton4.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton4, "simpleButton4");
             this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // simpleButton5
             // 
-            resources.ApplyResources(this.simpleButton5, "simpleButton5");
             this.simpleButton5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton5.Appearance.Font")));
             this.simpleButton5.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton5, "simpleButton5");
             this.simpleButton5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // btnDepDegis
             // 
-            resources.ApplyResources(this.btnDepDegis, "btnDepDegis");
             this.btnDepDegis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDepDegis.Appearance.Font")));
             this.btnDepDegis.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnDepDegis, "btnDepDegis");
             this.btnDepDegis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDepDegis.ImageOptions.SvgImage")));
             this.btnDepDegis.Name = "btnDepDegis";
             this.btnDepDegis.Click += new System.EventHandler(this.btnDepDegis_Click);
             // 
             // groupControl2
             // 
-            resources.ApplyResources(this.groupControl2, "groupControl2");
             this.groupControl2.Controls.Add(this.gridControl1);
+            resources.ApplyResources(this.groupControl2, "groupControl2");
             this.groupControl2.Name = "groupControl2";
             // 
             // gridControl1
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
-            this.gridControl1.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl1.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl1.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl1.EmbeddedNavigator.AccessibleName");
-            this.gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl1.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl1.EmbeddedNavigator.Anchor")));
-            this.gridControl1.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl1.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl1.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl1.EmbeddedNavigator.ImeMode")));
-            this.gridControl1.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl1.EmbeddedNavigator.MaximumSize")));
-            this.gridControl1.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl1.EmbeddedNavigator.TextLocation")));
-            this.gridControl1.EmbeddedNavigator.ToolTip = resources.GetString("gridControl1.EmbeddedNavigator.ToolTip");
-            this.gridControl1.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl1.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl1.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl1.EmbeddedNavigator.ToolTipTitle");
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.barManager1;
             this.gridControl1.Name = "gridControl1";
@@ -895,7 +813,6 @@
             // 
             // gridView1
             // 
-            resources.ApplyResources(this.gridView1, "gridView1");
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2});
@@ -907,6 +824,7 @@
             this.gridView1.OptionsView.ShowPreviewRowLines = DevExpress.Utils.DefaultBoolean.False;
             this.gridView1.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.False;
             this.gridView1.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView1, "gridView1");
             this.gridView1.ViewCaptionHeight = 3;
             // 
             // gridColumn1
@@ -931,7 +849,6 @@
             // 
             // groupControl1
             // 
-            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.groupControl1.Controls.Add(this.lbl_FiyatSekli);
             this.groupControl1.Controls.Add(this.txt_FiyatSekli);
@@ -943,78 +860,79 @@
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl1);
+            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
             // lbl_FiyatSekli
             // 
-            resources.ApplyResources(this.lbl_FiyatSekli, "lbl_FiyatSekli");
             this.lbl_FiyatSekli.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_FiyatSekli.Appearance.Font")));
             this.lbl_FiyatSekli.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lbl_FiyatSekli, "lbl_FiyatSekli");
             this.lbl_FiyatSekli.Name = "lbl_FiyatSekli";
             // 
             // txt_FiyatSekli
             // 
-            resources.ApplyResources(this.txt_FiyatSekli, "txt_FiyatSekli");
             this.txt_FiyatSekli.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_FiyatSekli.Appearance.Font")));
             this.txt_FiyatSekli.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.txt_FiyatSekli, "txt_FiyatSekli");
             this.txt_FiyatSekli.Name = "txt_FiyatSekli";
             // 
             // lbl_Tarih
             // 
-            resources.ApplyResources(this.lbl_Tarih, "lbl_Tarih");
             this.lbl_Tarih.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Tarih.Appearance.Font")));
             this.lbl_Tarih.Appearance.ForeColor = System.Drawing.Color.DarkRed;
             this.lbl_Tarih.Appearance.Options.UseFont = true;
             this.lbl_Tarih.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.lbl_Tarih, "lbl_Tarih");
             this.lbl_Tarih.Name = "lbl_Tarih";
             // 
             // labelControl5
             // 
-            resources.ApplyResources(this.labelControl5, "labelControl5");
             this.labelControl5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl5.Appearance.Font")));
             this.labelControl5.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl5, "labelControl5");
             this.labelControl5.Name = "labelControl5";
             // 
             // lbl_Kur
             // 
-            resources.ApplyResources(this.lbl_Kur, "lbl_Kur");
             this.lbl_Kur.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Kur.Appearance.Font")));
             this.lbl_Kur.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lbl_Kur, "lbl_Kur");
             this.lbl_Kur.Name = "lbl_Kur";
             // 
             // lbl_Kullanici
             // 
-            resources.ApplyResources(this.lbl_Kullanici, "lbl_Kullanici");
             this.lbl_Kullanici.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Kullanici.Appearance.Font")));
             this.lbl_Kullanici.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lbl_Kullanici, "lbl_Kullanici");
             this.lbl_Kullanici.Name = "lbl_Kullanici";
             // 
             // lbl_Departman
             // 
-            resources.ApplyResources(this.lbl_Departman, "lbl_Departman");
             this.lbl_Departman.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Departman.Appearance.Font")));
             this.lbl_Departman.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lbl_Departman, "lbl_Departman");
             this.lbl_Departman.Name = "lbl_Departman";
             // 
             // labelControl3
             // 
-            resources.ApplyResources(this.labelControl3, "labelControl3");
             this.labelControl3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl3.Appearance.Font")));
             this.labelControl3.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl3, "labelControl3");
             this.labelControl3.Name = "labelControl3";
             // 
             // labelControl2
             // 
-            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl2.Appearance.Font")));
             this.labelControl2.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl2, "labelControl2");
             this.labelControl2.Name = "labelControl2";
             // 
             // labelControl1
             // 
-            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
             this.labelControl1.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
             // 
             // defaultLookAndFeel1

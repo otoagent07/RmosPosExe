@@ -1191,7 +1191,7 @@ namespace Pos
 
 
                     // indirim uygulama 
-                    if (User.Pos_KartfIndirimAktif && CardF_Indirim != 0 && etiketim == true)
+                    if (Departman.Kodlar_AndPos_NFC && CardF_Indirim != 0 && etiketim == true) // User.Pos_KartfIndirimAktif 
                     {
                         etiketim = false;
                         Fis_Islem.Manuel_Indirim(Convert.ToInt32(bartxt_FisNo.EditValue), "Y", tutar, doviztutar, CardF_Indirim, Split);

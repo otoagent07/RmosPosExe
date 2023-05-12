@@ -7,6 +7,7 @@ using DevExpress.XtraSplashScreen;
 using Newtonsoft.Json;
 using Pos.Class;
 using Pos.Controllers;
+using Pos.Forms;
 using Pos.Getir;
 using Pos.Getir.Class;
 using Pos.Models;
@@ -2005,26 +2006,32 @@ delete from GetirYemek_Option where GOptionCategory_ID=(select top 1 ID from Get
 
                 if (kontrol)
                 {
+                    string mesaj = "Eşleşmeyen ürün var!!!"+Environment.NewLine+"Eşleştirmek istiyor musun ?";
 
-                    if (RHMesaj.MyMessageConfirmation("Eşleşmeyen ürün var!!!\nEşleştirmek istiyor musun ?"))
+                    ConfirmationForm confirmationForm = new ConfirmationForm(mesaj);
+                    confirmationForm.ShowDialog();
+
+
+                    if (confirmationForm.onay)
                     {
                         EntegreMenu trendyolMenu = new EntegreMenu(2);
                         trendyolMenu.ShowDialog();
                         kontrol = trendyolApi.eslesmeyenUrunVarmi(siparisId);
                         if (kontrol)
                         {
-                            RHMesaj.alertMesajSagUst("TRENDYOL","EŞLEŞMEYEN ÜRÜN VAR",5);
+                            RHMesaj.alertMesajSagUst("TRENDYOL", "EŞLEŞMEYEN ÜRÜN VAR", 5);
                         }
                     }
-                    else // etmek istiyorsa bu şekilde satışını yaparız
+                    else
                     {
                         kontrol = true;
+
                     }
 
                 }
 
-                if (kontrol) return;
-              
+                //if (kontrol) return; // 12.05.2023 de yorum satırı yapıldı
+
                 cariController.kaydetBySiparisId(siparisId, cariId);
 
                 string masaNo = dbtools.DegerGetir("select top 1 Masa_No from Pos_Masa where Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1 and Masa_Durum = 0 order by Masa_No");
@@ -2058,7 +2065,7 @@ delete from GetirYemek_Option where GOptionCategory_ID=(select top 1 ID from Get
                     }
 
 
-                    RHMesaj.MyMessageInformation("Sipariş Kabul edildi.");
+                    RHMesaj.alertMesaj("Sipariş Kabul edildi.");
                 }
 
 

@@ -416,7 +416,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.17";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.18";
 
 
 
@@ -436,7 +436,7 @@ namespace Pos
 
                 string trendyolDurum = dbtools.DegerGetir("select top 1 trendyolDurum from entegreAyarlar where recDep='" + Departman.Dep_Kodu + "'");
 
-                if (trendyolDurum.ToLower().Equals("true") || trendyolDurum.Equals("1"))
+                if ((trendyolDurum.ToLower().Equals("true") || trendyolDurum.Equals("1")) && Maxc == Departman.Kodlar_YSMac)
                 {
                     entegreAyarlarYenile();
                     trendyolYenile();
@@ -1695,5 +1695,7 @@ No Cut Seçili Olsun
 
 
         }
+
+       
     }
 }

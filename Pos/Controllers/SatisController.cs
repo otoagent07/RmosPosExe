@@ -24,6 +24,9 @@ namespace Pos.Controllers
                 if (varmi.Count > 0)
                 {
                     RHMesaj.alertMesaj("Satış tablosunda zaten var. ama onay gönderildi!");
+                    int fisnom = Convert.ToInt32(varmi.FirstOrDefault().Rsat_Fisno);
+                    dbtools.execcmdR("update entegreSiparis set fisno='" + fisnom + "' where siparisId='" + siparisId + "'");
+                    siparisGonder(fisnom);
                     return;
                 }
 

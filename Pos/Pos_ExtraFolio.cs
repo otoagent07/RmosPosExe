@@ -362,6 +362,8 @@ namespace Pos
         private void Pos_ExtraFolio_Load(object sender, EventArgs e)
         {
 
+            txtKartFIndirim.Enabled = User.Pos_KartfIndirimAktif;
+
             groupControl6.Visible = User.Pos_KartF_CheckOut;
 
             txtCardF_GirisTrh.DateTime = Param.Tarih.Date;

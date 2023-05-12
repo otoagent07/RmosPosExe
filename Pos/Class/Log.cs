@@ -76,6 +76,26 @@ namespace Pos.Class
             Android
         }
 
+        public static void Log_Kaydet(Log_Program Program, Log_Bolum Bolum, Log_Islem Islem, string Aciklama, string Fisno, string Islem_ID)
+        {
+            SqlConnection con = dbtools.conn;
+            if (con.State == ConnectionState.Closed) con.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandTimeout = 0;
+            com.CommandText = "Pos_Log_Ekle";
+            com.Parameters.AddWithValue("@Log_Prog", Program.ToString());
+            com.Parameters.AddWithValue("@Log_Bolum", Bolum.ToString());
+            com.Parameters.AddWithValue("@Log_Islem", Islem.ToString());
+            com.Parameters.AddWithValue("@Log_User", User.P_Kod);
+            com.Parameters.AddWithValue("@Log_Bilg", SystemInformation.ComputerName);
+            com.Parameters.AddWithValue("@Log_Aciklama", Aciklama);
+            com.Parameters.AddWithValue("@Log_FisNo", Fisno);
+            com.Parameters.AddWithValue("@Log_IslemId", Islem_ID);
+            com.ExecuteNonQuery();
+            if (con.State == ConnectionState.Open) con.Close();
+        }
         public static void Log_Kaydet(Log_Program Program, Log_Bolum Bolum, Log_Islem Islem, string Aciklama, string Fisno, string Islem_ID,string neden="")
         {
             SqlConnection con = dbtools.conn;

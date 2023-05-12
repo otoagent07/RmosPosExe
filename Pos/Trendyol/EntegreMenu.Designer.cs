@@ -58,6 +58,7 @@ namespace Pos.Trendyol
             this.btnTumMenu = new DevExpress.XtraEditors.SimpleButton();
             this.btnEslemeyenMenuListele = new DevExpress.XtraEditors.SimpleButton();
             this.menuBottomYemekSepeti = new DevExpress.XtraEditors.GroupControl();
+            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
             this.btnYemekSepetiMenuYazdir = new DevExpress.XtraEditors.SimpleButton();
             this.btnYemekSepetiMenuYukle = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -114,7 +115,24 @@ namespace Pos.Trendyol
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.btnOdemeListele = new DevExpress.XtraEditors.SimpleButton();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.label18 = new System.Windows.Forms.Label();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -131,6 +149,7 @@ namespace Pos.Trendyol
             this.menuBottomTrendyol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuBottomYemekSepeti)).BeginInit();
             this.menuBottomYemekSepeti.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
             this.xtraTabControl3.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
@@ -166,7 +185,18 @@ namespace Pos.Trendyol
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
             this.SuspendLayout();
             // 
             // xtraTabControl1
@@ -505,6 +535,16 @@ namespace Pos.Trendyol
             this.menuBottomYemekSepeti.TabIndex = 2;
             this.menuBottomYemekSepeti.Text = "YEMEK SEPETİ";
             // 
+            // memoEdit1
+            // 
+            this.memoEdit1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.memoEdit1.EditValue = "yemeksepetinden menü excelini iste.\r\nexceli yükle ve menüyü eşleştir.\r\nexceli yaz" +
+    "dır ve yemeksepetine yolla.";
+            this.memoEdit1.Location = new System.Drawing.Point(419, 22);
+            this.memoEdit1.Name = "memoEdit1";
+            this.memoEdit1.Size = new System.Drawing.Size(226, 43);
+            this.memoEdit1.TabIndex = 2;
+            // 
             // btnYemekSepetiMenuYazdir
             // 
             this.btnYemekSepetiMenuYazdir.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -582,13 +622,13 @@ namespace Pos.Trendyol
             // xtraTabPage9
             // 
             this.xtraTabPage9.Name = "xtraTabPage9";
-            this.xtraTabPage9.Size = new System.Drawing.Size(1057, 0);
+            this.xtraTabPage9.Size = new System.Drawing.Size(1065, 0);
             this.xtraTabPage9.Text = "Yemek Sepeti Menü";
             // 
             // xtraTabPage10
             // 
             this.xtraTabPage10.Name = "xtraTabPage10";
-            this.xtraTabPage10.Size = new System.Drawing.Size(1057, 0);
+            this.xtraTabPage10.Size = new System.Drawing.Size(1065, 0);
             this.xtraTabPage10.Text = "Getir Menü";
             // 
             // xtraTabPage2
@@ -672,7 +712,7 @@ namespace Pos.Trendyol
             // 
             // txtTrendyolApiSecret
             // 
-            this.txtTrendyolApiSecret.EditValue = "jF6asDLQywr3H47NoDuM";
+            this.txtTrendyolApiSecret.EditValue = "HWS7LFPpF3t6Rsj7mvk9";
             this.txtTrendyolApiSecret.Location = new System.Drawing.Point(116, 119);
             this.txtTrendyolApiSecret.Margin = new System.Windows.Forms.Padding(4);
             this.txtTrendyolApiSecret.Name = "txtTrendyolApiSecret";
@@ -681,7 +721,7 @@ namespace Pos.Trendyol
             // 
             // txtTrendyolApiKey
             // 
-            this.txtTrendyolApiKey.EditValue = "BVE5E2xFzJGPjWc3RGAa";
+            this.txtTrendyolApiKey.EditValue = "e2ZJoehoVPBQ2IPXENPN";
             this.txtTrendyolApiKey.Location = new System.Drawing.Point(116, 87);
             this.txtTrendyolApiKey.Margin = new System.Windows.Forms.Padding(4);
             this.txtTrendyolApiKey.Name = "txtTrendyolApiKey";
@@ -690,7 +730,7 @@ namespace Pos.Trendyol
             // 
             // txtTrendyolRestoranId
             // 
-            this.txtTrendyolRestoranId.EditValue = "635";
+            this.txtTrendyolRestoranId.EditValue = "483";
             this.txtTrendyolRestoranId.Location = new System.Drawing.Point(116, 27);
             this.txtTrendyolRestoranId.Margin = new System.Windows.Forms.Padding(4);
             this.txtTrendyolRestoranId.Name = "txtTrendyolRestoranId";
@@ -759,7 +799,7 @@ namespace Pos.Trendyol
             // xtraTabPage7
             // 
             this.xtraTabPage7.Name = "xtraTabPage7";
-            this.xtraTabPage7.Size = new System.Drawing.Size(1057, 467);
+            this.xtraTabPage7.Size = new System.Drawing.Size(1065, 477);
             this.xtraTabPage7.Text = "Yemek Sepeti Ayarlar";
             // 
             // xtraTabPage4
@@ -767,7 +807,7 @@ namespace Pos.Trendyol
             this.xtraTabPage4.Controls.Add(this.groupControl3);
             this.xtraTabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(1057, 467);
+            this.xtraTabPage4.Size = new System.Drawing.Size(1065, 477);
             this.xtraTabPage4.Text = "Getir Ayarlar";
             // 
             // groupControl3
@@ -832,9 +872,10 @@ namespace Pos.Trendyol
             // 
             // xtraTabPage5
             // 
+            this.xtraTabPage5.Controls.Add(this.groupControl4);
             this.xtraTabPage5.Controls.Add(this.groupControl2);
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(1057, 467);
+            this.xtraTabPage5.Size = new System.Drawing.Size(1065, 477);
             this.xtraTabPage5.Text = "Genel Ayarlar";
             // 
             // groupControl2
@@ -936,7 +977,7 @@ namespace Pos.Trendyol
             this.xtraTabPage6.Controls.Add(this.gridControlOdemeTip);
             this.xtraTabPage6.Controls.Add(this.panelControl5);
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(1063, 560);
+            this.xtraTabPage6.Size = new System.Drawing.Size(1067, 565);
             this.xtraTabPage6.Text = "Ödeme Tipleri";
             // 
             // gridControlOdemeTip
@@ -947,7 +988,7 @@ namespace Pos.Trendyol
             this.gridControlOdemeTip.Name = "gridControlOdemeTip";
             this.gridControlOdemeTip.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEdit1});
-            this.gridControlOdemeTip.Size = new System.Drawing.Size(1063, 492);
+            this.gridControlOdemeTip.Size = new System.Drawing.Size(1067, 497);
             this.gridControlOdemeTip.TabIndex = 3;
             this.gridControlOdemeTip.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewOdemeTip});
@@ -1042,10 +1083,10 @@ namespace Pos.Trendyol
             // 
             this.panelControl5.Controls.Add(this.btnOdemeListele);
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl5.Location = new System.Drawing.Point(0, 492);
+            this.panelControl5.Location = new System.Drawing.Point(0, 497);
             this.panelControl5.Margin = new System.Windows.Forms.Padding(4);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(1063, 68);
+            this.panelControl5.Size = new System.Drawing.Size(1067, 68);
             this.panelControl5.TabIndex = 2;
             // 
             // btnOdemeListele
@@ -1061,15 +1102,199 @@ namespace Pos.Trendyol
             this.btnOdemeListele.Text = "Ödemeleri Listele";
             this.btnOdemeListele.Click += new System.EventHandler(this.btnOdemeListele_Click);
             // 
-            // memoEdit1
+            // groupControl4
             // 
-            this.memoEdit1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.memoEdit1.EditValue = "yemeksepetinden menü excelini iste.\r\nexceli yükle ve menüyü eşleştir.\r\nexceli yaz" +
-    "dır ve yemeksepetine yolla.";
-            this.memoEdit1.Location = new System.Drawing.Point(419, 22);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(226, 43);
-            this.memoEdit1.TabIndex = 2;
+            this.groupControl4.Controls.Add(this.groupControl5);
+            this.groupControl4.Controls.Add(this.textEdit1);
+            this.groupControl4.Controls.Add(this.textEdit2);
+            this.groupControl4.Controls.Add(this.textEdit3);
+            this.groupControl4.Controls.Add(this.textEdit4);
+            this.groupControl4.Controls.Add(this.textEdit5);
+            this.groupControl4.Controls.Add(this.label10);
+            this.groupControl4.Controls.Add(this.label12);
+            this.groupControl4.Controls.Add(this.label13);
+            this.groupControl4.Controls.Add(this.label14);
+            this.groupControl4.Controls.Add(this.label15);
+            this.groupControl4.Location = new System.Drawing.Point(626, 4);
+            this.groupControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Size = new System.Drawing.Size(436, 300);
+            this.groupControl4.TabIndex = 2;
+            this.groupControl4.Text = "Trendyol Entegre Api Test Bilgileri";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.EditValue = "http://192.168.1.120/RestaurantApi/";
+            this.textEdit1.Location = new System.Drawing.Point(116, 148);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.ReadOnly = true;
+            this.textEdit1.Size = new System.Drawing.Size(304, 20);
+            this.textEdit1.TabIndex = 1;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.EditValue = "HWS7LFPpF3t6Rsj7mvk9";
+            this.textEdit2.Location = new System.Drawing.Point(116, 119);
+            this.textEdit2.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.ReadOnly = true;
+            this.textEdit2.Size = new System.Drawing.Size(304, 20);
+            this.textEdit2.TabIndex = 1;
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.EditValue = "e2ZJoehoVPBQ2IPXENPN";
+            this.textEdit3.Location = new System.Drawing.Point(116, 87);
+            this.textEdit3.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.ReadOnly = true;
+            this.textEdit3.Size = new System.Drawing.Size(304, 20);
+            this.textEdit3.TabIndex = 1;
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.EditValue = "483";
+            this.textEdit4.Location = new System.Drawing.Point(116, 27);
+            this.textEdit4.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Properties.ReadOnly = true;
+            this.textEdit4.Size = new System.Drawing.Size(304, 20);
+            this.textEdit4.TabIndex = 1;
+            // 
+            // textEdit5
+            // 
+            this.textEdit5.EditValue = "121754";
+            this.textEdit5.Location = new System.Drawing.Point(116, 55);
+            this.textEdit5.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Properties.ReadOnly = true;
+            this.textEdit5.Size = new System.Drawing.Size(304, 20);
+            this.textEdit5.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(8, 152);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(43, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Api Link";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(8, 123);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(56, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Api Secret";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(8, 31);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(98, 13);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Restoran(Store) İd";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(8, 91);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 13);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Api Key";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(8, 59);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(91, 13);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Satıcı(Supplier) İd";
+            // 
+            // textEdit6
+            // 
+            this.textEdit6.EditValue = "https://stagepartner.trendyol.com/";
+            this.textEdit6.Location = new System.Drawing.Point(62, 27);
+            this.textEdit6.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit6.Name = "textEdit6";
+            this.textEdit6.Properties.ReadOnly = true;
+            this.textEdit6.Size = new System.Drawing.Size(304, 20);
+            this.textEdit6.TabIndex = 3;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 30);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "web Link";
+            // 
+            // textEdit7
+            // 
+            this.textEdit7.EditValue = "gofife5113@aranelab.com";
+            this.textEdit7.Location = new System.Drawing.Point(62, 55);
+            this.textEdit7.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit7.Name = "textEdit7";
+            this.textEdit7.Properties.ReadOnly = true;
+            this.textEdit7.Size = new System.Drawing.Size(304, 20);
+            this.textEdit7.TabIndex = 5;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 58);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(28, 13);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "k.ad";
+            // 
+            // textEdit8
+            // 
+            this.textEdit8.EditValue = "Trendyol1010!";
+            this.textEdit8.Location = new System.Drawing.Point(62, 83);
+            this.textEdit8.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit8.Name = "textEdit8";
+            this.textEdit8.Properties.ReadOnly = true;
+            this.textEdit8.Size = new System.Drawing.Size(304, 20);
+            this.textEdit8.TabIndex = 7;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 86);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(28, 13);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "şifre";
+            // 
+            // groupControl5
+            // 
+            this.groupControl5.Controls.Add(this.textEdit8);
+            this.groupControl5.Controls.Add(this.textEdit6);
+            this.groupControl5.Controls.Add(this.label18);
+            this.groupControl5.Controls.Add(this.label16);
+            this.groupControl5.Controls.Add(this.textEdit7);
+            this.groupControl5.Controls.Add(this.label17);
+            this.groupControl5.Location = new System.Drawing.Point(12, 175);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.Size = new System.Drawing.Size(408, 114);
+            this.groupControl5.TabIndex = 3;
+            this.groupControl5.Text = "Web Test Bilgiler(Global İp izin alınmalı)";
             // 
             // EntegreMenu
             // 
@@ -1100,6 +1325,7 @@ namespace Pos.Trendyol
             this.menuBottomTrendyol.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menuBottomYemekSepeti)).EndInit();
             this.menuBottomYemekSepeti.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
             this.xtraTabControl3.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
@@ -1138,7 +1364,20 @@ namespace Pos.Trendyol
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            this.groupControl5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1230,5 +1469,23 @@ namespace Pos.Trendyol
         private DevExpress.XtraGrid.GridControl gridControlYemekSepetiMenuYazdir;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewYemekSepetiMenuYazdir;
         private DevExpress.XtraEditors.MemoEdit memoEdit1;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private DevExpress.XtraEditors.TextEdit textEdit8;
+        private System.Windows.Forms.Label label18;
+        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private System.Windows.Forms.Label label17;
+        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private System.Windows.Forms.Label label16;
+        private DevExpress.XtraEditors.GroupControl groupControl5;
     }
 }
