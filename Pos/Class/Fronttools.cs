@@ -193,7 +193,7 @@ namespace Pos.Class
 
         private static string Bakiye(string FolioID, string Kart_ID)
         {
-            string bakiye = "";
+            string bakiye = "0";
 
             decimal Borc = 0, Alacak = 0;
 

@@ -2710,7 +2710,7 @@ Detayı</value>
     <value>30</value>
   </data>
   <data name="tab_BakiyeYukle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 650</value>
+    <value>978, 645</value>
   </data>
   <data name="tab_BakiyeYukle.Text" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -2740,7 +2740,7 @@ Detayı</value>
     <value>0, 124</value>
   </data>
   <data name="gridControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 322</value>
+    <value>976, 317</value>
   </data>
   <data name="gridControl4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2761,10 +2761,10 @@ Detayı</value>
     <value>Bottom</value>
   </data>
   <data name="gridControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 446</value>
+    <value>0, 441</value>
   </data>
   <data name="gridControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 181</value>
+    <value>976, 181</value>
   </data>
   <data name="gridControl5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3056,7 +3056,7 @@ Detayı</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 124</value>
+    <value>976, 124</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3074,7 +3074,7 @@ Detayı</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
+    <value>976, 622</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Raporlar</value>
@@ -3092,7 +3092,7 @@ Detayı</value>
     <value>0</value>
   </data>
   <data name="xtraTabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 650</value>
+    <value>978, 645</value>
   </data>
   <data name="xtraTabControl2.TabIndex" type="System.Int32, mscorlib">
     <value>214</value>
@@ -3692,7 +3692,7 @@ Detayı</value>
     <value>KartID</value>
   </data>
   <data name="gridControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 501</value>
+    <value>972, 491</value>
   </data>
   <data name="gridControl11.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4063,7 +4063,7 @@ Detayı</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 126</value>
+    <value>972, 126</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4081,7 +4081,7 @@ Detayı</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
+    <value>972, 617</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>NFC Raporlar</value>
@@ -4105,7 +4105,7 @@ Detayı</value>
     <value>0, 126</value>
   </data>
   <data name="gridControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 501</value>
+    <value>972, 491</value>
   </data>
   <data name="gridControl7.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4386,7 +4386,7 @@ Detayı</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 126</value>
+    <value>972, 126</value>
   </data>
   <data name="groupControl7.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4404,7 +4404,7 @@ Detayı</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
+    <value>972, 617</value>
   </data>
   <data name="xtraTabPage5.Text" xml:space="preserve">
     <value>NFC Raporlar 2</value>
@@ -4428,7 +4428,7 @@ Detayı</value>
     <value>0, 73</value>
   </data>
   <data name="chartControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 382</value>
+    <value>972, 372</value>
   </data>
   <data name="chartControl1.TabIndex" type="System.Int32, mscorlib">
     <value>209</value>
@@ -4497,7 +4497,7 @@ Detayı</value>
     <value>2</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 148</value>
+    <value>818, 148</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>210</value>
@@ -4538,7 +4538,7 @@ Detayı</value>
 </value>
   </data>
   <data name="simpleButton24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 22</value>
+    <value>820, 22</value>
   </data>
   <data name="simpleButton24.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 148</value>
@@ -4608,7 +4608,7 @@ Detayı</value>
 </value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 22</value>
+    <value>895, 22</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 148</value>
@@ -4635,10 +4635,10 @@ Detayı</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 455</value>
+    <value>0, 445</value>
   </data>
   <data name="groupControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 172</value>
+    <value>972, 172</value>
   </data>
   <data name="groupControl4.TabIndex" type="System.Int32, mscorlib">
     <value>211</value>
@@ -4838,7 +4838,7 @@ Detayı</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 73</value>
+    <value>972, 73</value>
   </data>
   <data name="groupControl3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4856,7 +4856,7 @@ Detayı</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
+    <value>972, 617</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Forecast</value>
@@ -4979,7 +4979,7 @@ Detayı</value>
     <value>6</value>
   </data>
   <data name="gridControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 524</value>
+    <value>972, 514</value>
   </data>
   <data name="gridControl6.TabIndex" type="System.Int32, mscorlib">
     <value>211</value>
@@ -5180,7 +5180,7 @@ Uygula</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 103</value>
+    <value>972, 103</value>
   </data>
   <data name="groupControl5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5198,7 +5198,7 @@ Uygula</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
+    <value>972, 617</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
     <value>Gelir Takibi</value>
@@ -5228,7 +5228,7 @@ Uygula</value>
     <value>0</value>
   </data>
   <data name="tab_Rapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 650</value>
+    <value>978, 645</value>
   </data>
   <data name="tab_Rapor.Text" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -5941,7 +5941,7 @@ Uygula</value>
     <value>24</value>
   </data>
   <data name="tab_Param.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 650</value>
+    <value>978, 645</value>
   </data>
   <data name="tab_Param.Text" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -6077,7 +6077,7 @@ Uygula</value>
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1010, 742</value>
+    <value>1012, 746</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

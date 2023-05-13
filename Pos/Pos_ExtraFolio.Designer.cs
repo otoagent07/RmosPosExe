@@ -56,6 +56,8 @@
             this.chk_Bakiye = new DevExpress.XtraEditors.CheckButton();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tab_KartF = new DevExpress.XtraTab.XtraTabPage();
+            this.txtKartFIndirim = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.txtCardF_Tutar = new DevExpress.XtraEditors.TextEdit();
@@ -292,8 +294,6 @@
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Param = new DevExpress.XtraEditors.CheckButton();
             this.chk_Rapor = new DevExpress.XtraEditors.CheckButton();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.txtKartFIndirim = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_OdemeDep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
@@ -301,6 +301,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_KartF.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCardF_Tutar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCardF_Kisi.Properties)).BeginInit();
@@ -448,8 +450,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bandedGridColumn41
@@ -593,6 +593,24 @@
             this.tab_KartF.Controls.Add(this.CardF_Limit_Uyari);
             this.tab_KartF.Name = "tab_KartF";
             resources.ApplyResources(this.tab_KartF, "tab_KartF");
+            // 
+            // txtKartFIndirim
+            // 
+            resources.ApplyResources(this.txtKartFIndirim, "txtKartFIndirim");
+            this.txtKartFIndirim.EnterMoveNextControl = true;
+            this.txtKartFIndirim.Name = "txtKartFIndirim";
+            this.txtKartFIndirim.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtKartFIndirim.Properties.MaxLength = 100;
+            // 
+            // textEdit3
+            // 
+            resources.ApplyResources(this.textEdit3, "textEdit3");
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit3.Properties.ReadOnly = true;
+            this.textEdit3.TabStop = false;
             // 
             // btnYenile
             // 
@@ -3036,24 +3054,6 @@
             this.chk_Rapor.Name = "chk_Rapor";
             this.chk_Rapor.CheckedChanged += new System.EventHandler(this.checkBtn);
             // 
-            // textEdit3
-            // 
-            resources.ApplyResources(this.textEdit3, "textEdit3");
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit3.Properties.ReadOnly = true;
-            this.textEdit3.TabStop = false;
-            // 
-            // txtKartFIndirim
-            // 
-            resources.ApplyResources(this.txtKartFIndirim, "txtKartFIndirim");
-            this.txtKartFIndirim.EnterMoveNextControl = true;
-            this.txtKartFIndirim.Name = "txtKartFIndirim";
-            this.txtKartFIndirim.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtKartFIndirim.Properties.MaxLength = 100;
-            // 
             // Pos_ExtraFolio
             // 
             resources.ApplyResources(this, "$this");
@@ -3074,6 +3074,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.tab_KartF.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCardF_Tutar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCardF_Kisi.Properties)).EndInit();
@@ -3221,8 +3223,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

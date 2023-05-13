@@ -1055,37 +1055,47 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
 
         private void CardF_CheckOut()
         {
-            if (txt_BakiyeFolioID.Text != "")
+            try
             {
-                //decimal Tutar = Convert.ToDecimal(Fronttools.DegerGetir("Select ISNULL( sum(Kumhrk_Tutar), 0)  as Tutar from Kumhrk  where Kumhrk_Rez_id = '" + txt_BakiyeFolioID.Text + "'"));
-
-                decimal Tutar = Convert.ToDecimal(Fronttools.BalanceBul(Convert.ToInt32(txt_BakiyeFolioID.Text), KartID.ToString(), KartID.ToString()));
-
-                DateTime Tarih1 = Convert.ToDateTime(Fronttools.DegerGetir("Select CardF_GirisTrh From KartF Where CardF_RezID = '" + txt_BakiyeFolioID.Text + "' and CardF_No = '" + txt_BakiyeKartNo.Text + "'"));
-                DateTime Tarih2 = Convert.ToDateTime(Fronttools.DegerGetir("Select CardF_CikisTrh From KartF Where CardF_RezID = '" + txt_BakiyeFolioID.Text + "' and CardF_No = '" + txt_BakiyeKartNo.Text + "'"));
-
-
-                if (Tutar > 0)
+                if (txt_BakiyeFolioID.Text != "")
                 {
-                    MessageBox.Show(res_man.GetString("Hareket Görmüş, Silinemez."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
-                    return;
-                }
-                else
-                {
-                    DialogResult c = MessageBox.Show(txt_BakiyeFolioID.Text + " Folio Numarasını Check Out Yapmak İstediğinize Eminmisiniz ?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo);
-                    if (c == DialogResult.Yes)
+                    //decimal Tutar = Convert.ToDecimal(Fronttools.DegerGetir("Select ISNULL( sum(Kumhrk_Tutar), 0)  as Tutar from Kumhrk  where Kumhrk_Rez_id = '" + txt_BakiyeFolioID.Text + "'"));
+
+                    decimal Tutar = Convert.ToDecimal(Fronttools.BalanceBul(Convert.ToInt32(txt_BakiyeFolioID.Text), KartID.ToString(), KartID.ToString()));
+
+                    DateTime Tarih1 = Convert.ToDateTime(Fronttools.DegerGetir("Select CardF_GirisTrh From KartF Where CardF_RezID = '" + txt_BakiyeFolioID.Text + "' and CardF_No = '" + txt_BakiyeKartNo.Text + "'"));
+                    DateTime Tarih2 = Convert.ToDateTime(Fronttools.DegerGetir("Select CardF_CikisTrh From KartF Where CardF_RezID = '" + txt_BakiyeFolioID.Text + "' and CardF_No = '" + txt_BakiyeKartNo.Text + "'"));
+
+
+                    if (Tutar > 0)
                     {
-                        //TopluGelirIade(true);
-                        Fronttools.execcmd("Update KartF Set CardF_R_I_H = 'H' Where CardF_RezID = '" + txt_BakiyeFolioID.Text + "' and CardF_No = '" + txt_BakiyeKartNo.Text + "'");
-                        for (int i = 0; i < 2; i++)
+                        MessageBox.Show(res_man.GetString("Hareket Görmüş, Silinemez."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
+                        return;
+                    }
+                    else
+                    {
+                        DialogResult c = MessageBox.Show(txt_BakiyeFolioID.Text + " Folio Numarasını Check Out Yapmak İstediğinize Eminmisiniz ?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo);
+                        if (c == DialogResult.Yes)
                         {
-                            FisPr pr = new FisPr();
-                            pr.ExtraFolioDokumPr(txt_BakiyeKartNo.Text, Convert.ToInt32(txt_BakiyeFolioID.Text), Tarih1, Tarih2);
+                            //TopluGelirIade(true);
+                            Fronttools.execcmd("Update KartF Set CardF_R_I_H = 'H' Where CardF_RezID = '" + txt_BakiyeFolioID.Text + "' and CardF_No = '" + txt_BakiyeKartNo.Text + "'");
+                            for (int i = 0; i < 2; i++)
+                            {
+                                FisPr pr = new FisPr();
+                                pr.ExtraFolioDokumPr(txt_BakiyeKartNo.Text, Convert.ToInt32(txt_BakiyeFolioID.Text), Tarih1, Tarih2);
+                            }
                         }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "CardF_CheckOut","",ex);
+            }
+           
         }
+
+        public static string MyClass = "Pos_ExtraFolio";
 
         int CardF_ID = 0;
 

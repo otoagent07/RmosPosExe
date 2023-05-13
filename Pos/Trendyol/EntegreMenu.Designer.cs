@@ -92,6 +92,24 @@ namespace Pos.Trendyol
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.txtEslesmeyenFiyat = new DevExpress.XtraEditors.TextEdit();
             this.txtEslesmeyenId = new DevExpress.XtraEditors.TextEdit();
@@ -115,24 +133,6 @@ namespace Pos.Trendyol
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.btnOdemeListele = new DevExpress.XtraEditors.SimpleButton();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            this.label18 = new System.Windows.Forms.Label();
-            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -172,6 +172,18 @@ namespace Pos.Trendyol
             ((System.ComponentModel.ISupportInitialize)(this.txtGetirResSecretKey.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGetirAppSecretKey.Properties)).BeginInit();
             this.xtraTabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEslesmeyenFiyat.Properties)).BeginInit();
@@ -185,18 +197,6 @@ namespace Pos.Trendyol
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
-            this.groupControl5.SuspendLayout();
             this.SuspendLayout();
             // 
             // xtraTabControl1
@@ -622,13 +622,13 @@ namespace Pos.Trendyol
             // xtraTabPage9
             // 
             this.xtraTabPage9.Name = "xtraTabPage9";
-            this.xtraTabPage9.Size = new System.Drawing.Size(1065, 0);
+            this.xtraTabPage9.Size = new System.Drawing.Size(1061, 0);
             this.xtraTabPage9.Text = "Yemek Sepeti Menü";
             // 
             // xtraTabPage10
             // 
             this.xtraTabPage10.Name = "xtraTabPage10";
-            this.xtraTabPage10.Size = new System.Drawing.Size(1065, 0);
+            this.xtraTabPage10.Size = new System.Drawing.Size(1061, 0);
             this.xtraTabPage10.Text = "Getir Menü";
             // 
             // xtraTabPage2
@@ -637,7 +637,7 @@ namespace Pos.Trendyol
             this.xtraTabPage2.Controls.Add(this.panelControl4);
             this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1067, 565);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1063, 560);
             this.xtraTabPage2.Text = "AYARLAR";
             // 
             // xtraTabControl2
@@ -647,7 +647,7 @@ namespace Pos.Trendyol
             this.xtraTabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabControl2.Name = "xtraTabControl2";
             this.xtraTabControl2.SelectedTabPage = this.xtraTabPage3;
-            this.xtraTabControl2.Size = new System.Drawing.Size(1067, 500);
+            this.xtraTabControl2.Size = new System.Drawing.Size(1063, 495);
             this.xtraTabControl2.TabIndex = 0;
             this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage3,
@@ -660,7 +660,7 @@ namespace Pos.Trendyol
             this.xtraTabPage3.Controls.Add(this.groupControl1);
             this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1065, 477);
+            this.xtraTabPage3.Size = new System.Drawing.Size(1061, 472);
             this.xtraTabPage3.Text = "Trendyol Ayarlar";
             // 
             // groupControl1
@@ -799,7 +799,7 @@ namespace Pos.Trendyol
             // xtraTabPage7
             // 
             this.xtraTabPage7.Name = "xtraTabPage7";
-            this.xtraTabPage7.Size = new System.Drawing.Size(1065, 477);
+            this.xtraTabPage7.Size = new System.Drawing.Size(1057, 467);
             this.xtraTabPage7.Text = "Yemek Sepeti Ayarlar";
             // 
             // xtraTabPage4
@@ -807,7 +807,7 @@ namespace Pos.Trendyol
             this.xtraTabPage4.Controls.Add(this.groupControl3);
             this.xtraTabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(1065, 477);
+            this.xtraTabPage4.Size = new System.Drawing.Size(1057, 467);
             this.xtraTabPage4.Text = "Getir Ayarlar";
             // 
             // groupControl3
@@ -875,232 +875,8 @@ namespace Pos.Trendyol
             this.xtraTabPage5.Controls.Add(this.groupControl4);
             this.xtraTabPage5.Controls.Add(this.groupControl2);
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(1065, 477);
+            this.xtraTabPage5.Size = new System.Drawing.Size(1057, 467);
             this.xtraTabPage5.Text = "Genel Ayarlar";
-            // 
-            // groupControl2
-            // 
-            this.groupControl2.Controls.Add(this.txtEslesmeyenFiyat);
-            this.groupControl2.Controls.Add(this.txtEslesmeyenId);
-            this.groupControl2.Controls.Add(this.txtEslesmeyenAd);
-            this.groupControl2.Controls.Add(this.label5);
-            this.groupControl2.Controls.Add(this.label6);
-            this.groupControl2.Controls.Add(this.label7);
-            this.groupControl2.Location = new System.Drawing.Point(19, 19);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(250, 133);
-            this.groupControl2.TabIndex = 0;
-            this.groupControl2.Text = "Eşleşmeyen Ürün Bilgileri";
-            // 
-            // txtEslesmeyenFiyat
-            // 
-            this.txtEslesmeyenFiyat.EditValue = "0";
-            this.txtEslesmeyenFiyat.Location = new System.Drawing.Point(92, 92);
-            this.txtEslesmeyenFiyat.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEslesmeyenFiyat.Name = "txtEslesmeyenFiyat";
-            this.txtEslesmeyenFiyat.Size = new System.Drawing.Size(132, 20);
-            this.txtEslesmeyenFiyat.TabIndex = 5;
-            // 
-            // txtEslesmeyenId
-            // 
-            this.txtEslesmeyenId.EditValue = "999888777";
-            this.txtEslesmeyenId.Location = new System.Drawing.Point(92, 30);
-            this.txtEslesmeyenId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEslesmeyenId.Name = "txtEslesmeyenId";
-            this.txtEslesmeyenId.Size = new System.Drawing.Size(132, 20);
-            this.txtEslesmeyenId.TabIndex = 6;
-            // 
-            // txtEslesmeyenAd
-            // 
-            this.txtEslesmeyenAd.EditValue = "Eşleşmeyen Ürün";
-            this.txtEslesmeyenAd.Location = new System.Drawing.Point(92, 62);
-            this.txtEslesmeyenAd.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEslesmeyenAd.Name = "txtEslesmeyenAd";
-            this.txtEslesmeyenAd.Size = new System.Drawing.Size(132, 20);
-            this.txtEslesmeyenAd.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 34);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Reçete Kodu";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 96);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Reçete Fiyat";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 66);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Reçete Ad";
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.btnAyarlariKaydet);
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl4.Location = new System.Drawing.Point(0, 500);
-            this.panelControl4.Margin = new System.Windows.Forms.Padding(4);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1067, 65);
-            this.panelControl4.TabIndex = 1;
-            // 
-            // btnAyarlariKaydet
-            // 
-            this.btnAyarlariKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAyarlariKaydet.Appearance.Options.UseFont = true;
-            this.btnAyarlariKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAyarlariKaydet.ImageOptions.Image")));
-            this.btnAyarlariKaydet.Location = new System.Drawing.Point(7, 2);
-            this.btnAyarlariKaydet.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAyarlariKaydet.Name = "btnAyarlariKaydet";
-            this.btnAyarlariKaydet.Size = new System.Drawing.Size(177, 57);
-            this.btnAyarlariKaydet.TabIndex = 0;
-            this.btnAyarlariKaydet.Text = "AYARLARI KAYDET";
-            this.btnAyarlariKaydet.Click += new System.EventHandler(this.btnAyarlariKaydet_Click);
-            // 
-            // xtraTabPage6
-            // 
-            this.xtraTabPage6.Controls.Add(this.gridControlOdemeTip);
-            this.xtraTabPage6.Controls.Add(this.panelControl5);
-            this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(1067, 565);
-            this.xtraTabPage6.Text = "Ödeme Tipleri";
-            // 
-            // gridControlOdemeTip
-            // 
-            this.gridControlOdemeTip.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlOdemeTip.Location = new System.Drawing.Point(0, 0);
-            this.gridControlOdemeTip.MainView = this.gridViewOdemeTip;
-            this.gridControlOdemeTip.Name = "gridControlOdemeTip";
-            this.gridControlOdemeTip.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemLookUpEdit1});
-            this.gridControlOdemeTip.Size = new System.Drawing.Size(1067, 497);
-            this.gridControlOdemeTip.TabIndex = 3;
-            this.gridControlOdemeTip.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewOdemeTip});
-            // 
-            // gridViewOdemeTip
-            // 
-            this.gridViewOdemeTip.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn9,
-            this.gridColumn5,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4});
-            this.gridViewOdemeTip.GridControl = this.gridControlOdemeTip;
-            this.gridViewOdemeTip.Name = "gridViewOdemeTip";
-            this.gridViewOdemeTip.OptionsView.ColumnAutoWidth = false;
-            this.gridViewOdemeTip.OptionsView.ShowAutoFilterRow = true;
-            this.gridViewOdemeTip.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "id";
-            this.gridColumn1.FieldName = "id";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 99;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.Caption = "Entegre Ad";
-            this.gridColumn9.FieldName = "entegreAd";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 1;
-            this.gridColumn9.Width = 236;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "Entegre Ödeme Ad";
-            this.gridColumn5.FieldName = "entegreOdemeAd";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 2;
-            this.gridColumn5.Width = 265;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "Rec Ödeme Ad";
-            this.gridColumn7.ColumnEdit = this.repositoryItemLookUpEdit1;
-            this.gridColumn7.FieldName = "recOdemeKod";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 3;
-            this.gridColumn7.Width = 351;
-            // 
-            // repositoryItemLookUpEdit1
-            // 
-            this.repositoryItemLookUpEdit1.AutoHeight = false;
-            this.repositoryItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
-            this.repositoryItemLookUpEdit1.Leave += new System.EventHandler(this.repositoryItemLookUpEdit1_Leave);
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "recDep";
-            this.gridColumn8.FieldName = "recDep";
-            this.gridColumn8.Name = "gridColumn8";
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "tip";
-            this.gridColumn2.FieldName = "tip";
-            this.gridColumn2.Name = "gridColumn2";
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "entegreOdemeType";
-            this.gridColumn3.FieldName = "entegreOdemeType";
-            this.gridColumn3.Name = "gridColumn3";
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "entegreOdemeKod";
-            this.gridColumn4.FieldName = "entegreOdemeKod";
-            this.gridColumn4.Name = "gridColumn4";
-            // 
-            // panelControl5
-            // 
-            this.panelControl5.Controls.Add(this.btnOdemeListele);
-            this.panelControl5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl5.Location = new System.Drawing.Point(0, 497);
-            this.panelControl5.Margin = new System.Windows.Forms.Padding(4);
-            this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(1067, 68);
-            this.panelControl5.TabIndex = 2;
-            // 
-            // btnOdemeListele
-            // 
-            this.btnOdemeListele.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeListele.Appearance.Options.UseFont = true;
-            this.btnOdemeListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOdemeListele.ImageOptions.Image")));
-            this.btnOdemeListele.Location = new System.Drawing.Point(7, 10);
-            this.btnOdemeListele.Margin = new System.Windows.Forms.Padding(4);
-            this.btnOdemeListele.Name = "btnOdemeListele";
-            this.btnOdemeListele.Size = new System.Drawing.Size(158, 48);
-            this.btnOdemeListele.TabIndex = 0;
-            this.btnOdemeListele.Text = "Ödemeleri Listele";
-            this.btnOdemeListele.Click += new System.EventHandler(this.btnOdemeListele_Click);
             // 
             // groupControl4
             // 
@@ -1121,6 +897,80 @@ namespace Pos.Trendyol
             this.groupControl4.Size = new System.Drawing.Size(436, 300);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Trendyol Entegre Api Test Bilgileri";
+            // 
+            // groupControl5
+            // 
+            this.groupControl5.Controls.Add(this.textEdit8);
+            this.groupControl5.Controls.Add(this.textEdit6);
+            this.groupControl5.Controls.Add(this.label18);
+            this.groupControl5.Controls.Add(this.label16);
+            this.groupControl5.Controls.Add(this.textEdit7);
+            this.groupControl5.Controls.Add(this.label17);
+            this.groupControl5.Location = new System.Drawing.Point(12, 175);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.Size = new System.Drawing.Size(408, 114);
+            this.groupControl5.TabIndex = 3;
+            this.groupControl5.Text = "Web Test Bilgiler(Global İp izin alınmalı)";
+            // 
+            // textEdit8
+            // 
+            this.textEdit8.EditValue = "Trendyol1010!";
+            this.textEdit8.Location = new System.Drawing.Point(62, 83);
+            this.textEdit8.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit8.Name = "textEdit8";
+            this.textEdit8.Properties.ReadOnly = true;
+            this.textEdit8.Size = new System.Drawing.Size(304, 20);
+            this.textEdit8.TabIndex = 7;
+            // 
+            // textEdit6
+            // 
+            this.textEdit6.EditValue = "https://stagepartner.trendyol.com/";
+            this.textEdit6.Location = new System.Drawing.Point(62, 27);
+            this.textEdit6.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit6.Name = "textEdit6";
+            this.textEdit6.Properties.ReadOnly = true;
+            this.textEdit6.Size = new System.Drawing.Size(304, 20);
+            this.textEdit6.TabIndex = 3;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 86);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(28, 13);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "şifre";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 30);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "web Link";
+            // 
+            // textEdit7
+            // 
+            this.textEdit7.EditValue = "gofife5113@aranelab.com";
+            this.textEdit7.Location = new System.Drawing.Point(62, 55);
+            this.textEdit7.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit7.Name = "textEdit7";
+            this.textEdit7.Properties.ReadOnly = true;
+            this.textEdit7.Size = new System.Drawing.Size(304, 20);
+            this.textEdit7.TabIndex = 5;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 58);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(28, 13);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "k.ad";
             // 
             // textEdit1
             // 
@@ -1222,79 +1072,229 @@ namespace Pos.Trendyol
             this.label15.TabIndex = 0;
             this.label15.Text = "Satıcı(Supplier) İd";
             // 
-            // textEdit6
+            // groupControl2
             // 
-            this.textEdit6.EditValue = "https://stagepartner.trendyol.com/";
-            this.textEdit6.Location = new System.Drawing.Point(62, 27);
-            this.textEdit6.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.ReadOnly = true;
-            this.textEdit6.Size = new System.Drawing.Size(304, 20);
-            this.textEdit6.TabIndex = 3;
+            this.groupControl2.Controls.Add(this.txtEslesmeyenFiyat);
+            this.groupControl2.Controls.Add(this.txtEslesmeyenId);
+            this.groupControl2.Controls.Add(this.txtEslesmeyenAd);
+            this.groupControl2.Controls.Add(this.label5);
+            this.groupControl2.Controls.Add(this.label6);
+            this.groupControl2.Controls.Add(this.label7);
+            this.groupControl2.Location = new System.Drawing.Point(19, 19);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(250, 133);
+            this.groupControl2.TabIndex = 0;
+            this.groupControl2.Text = "Eşleşmeyen Ürün Bilgileri";
             // 
-            // label16
+            // txtEslesmeyenFiyat
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 30);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 13);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "web Link";
+            this.txtEslesmeyenFiyat.EditValue = "0";
+            this.txtEslesmeyenFiyat.Location = new System.Drawing.Point(92, 92);
+            this.txtEslesmeyenFiyat.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEslesmeyenFiyat.Name = "txtEslesmeyenFiyat";
+            this.txtEslesmeyenFiyat.Size = new System.Drawing.Size(132, 20);
+            this.txtEslesmeyenFiyat.TabIndex = 5;
             // 
-            // textEdit7
+            // txtEslesmeyenId
             // 
-            this.textEdit7.EditValue = "gofife5113@aranelab.com";
-            this.textEdit7.Location = new System.Drawing.Point(62, 55);
-            this.textEdit7.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Properties.ReadOnly = true;
-            this.textEdit7.Size = new System.Drawing.Size(304, 20);
-            this.textEdit7.TabIndex = 5;
+            this.txtEslesmeyenId.EditValue = "999888777";
+            this.txtEslesmeyenId.Location = new System.Drawing.Point(92, 30);
+            this.txtEslesmeyenId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEslesmeyenId.Name = "txtEslesmeyenId";
+            this.txtEslesmeyenId.Size = new System.Drawing.Size(132, 20);
+            this.txtEslesmeyenId.TabIndex = 6;
             // 
-            // label17
+            // txtEslesmeyenAd
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 58);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(28, 13);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "k.ad";
+            this.txtEslesmeyenAd.EditValue = "Eşleşmeyen Ürün";
+            this.txtEslesmeyenAd.Location = new System.Drawing.Point(92, 62);
+            this.txtEslesmeyenAd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEslesmeyenAd.Name = "txtEslesmeyenAd";
+            this.txtEslesmeyenAd.Size = new System.Drawing.Size(132, 20);
+            this.txtEslesmeyenAd.TabIndex = 7;
             // 
-            // textEdit8
+            // label5
             // 
-            this.textEdit8.EditValue = "Trendyol1010!";
-            this.textEdit8.Location = new System.Drawing.Point(62, 83);
-            this.textEdit8.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Properties.ReadOnly = true;
-            this.textEdit8.Size = new System.Drawing.Size(304, 20);
-            this.textEdit8.TabIndex = 7;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 34);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Reçete Kodu";
             // 
-            // label18
+            // label6
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 86);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(28, 13);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "şifre";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(16, 96);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Reçete Fiyat";
             // 
-            // groupControl5
+            // label7
             // 
-            this.groupControl5.Controls.Add(this.textEdit8);
-            this.groupControl5.Controls.Add(this.textEdit6);
-            this.groupControl5.Controls.Add(this.label18);
-            this.groupControl5.Controls.Add(this.label16);
-            this.groupControl5.Controls.Add(this.textEdit7);
-            this.groupControl5.Controls.Add(this.label17);
-            this.groupControl5.Location = new System.Drawing.Point(12, 175);
-            this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Size = new System.Drawing.Size(408, 114);
-            this.groupControl5.TabIndex = 3;
-            this.groupControl5.Text = "Web Test Bilgiler(Global İp izin alınmalı)";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 66);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(57, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Reçete Ad";
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.btnAyarlariKaydet);
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl4.Location = new System.Drawing.Point(0, 495);
+            this.panelControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(1063, 65);
+            this.panelControl4.TabIndex = 1;
+            // 
+            // btnAyarlariKaydet
+            // 
+            this.btnAyarlariKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAyarlariKaydet.Appearance.Options.UseFont = true;
+            this.btnAyarlariKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAyarlariKaydet.ImageOptions.Image")));
+            this.btnAyarlariKaydet.Location = new System.Drawing.Point(7, 2);
+            this.btnAyarlariKaydet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAyarlariKaydet.Name = "btnAyarlariKaydet";
+            this.btnAyarlariKaydet.Size = new System.Drawing.Size(177, 57);
+            this.btnAyarlariKaydet.TabIndex = 0;
+            this.btnAyarlariKaydet.Text = "AYARLARI KAYDET";
+            this.btnAyarlariKaydet.Click += new System.EventHandler(this.btnAyarlariKaydet_Click);
+            // 
+            // xtraTabPage6
+            // 
+            this.xtraTabPage6.Controls.Add(this.gridControlOdemeTip);
+            this.xtraTabPage6.Controls.Add(this.panelControl5);
+            this.xtraTabPage6.Name = "xtraTabPage6";
+            this.xtraTabPage6.Size = new System.Drawing.Size(1063, 560);
+            this.xtraTabPage6.Text = "Ödeme Tipleri";
+            // 
+            // gridControlOdemeTip
+            // 
+            this.gridControlOdemeTip.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlOdemeTip.Location = new System.Drawing.Point(0, 0);
+            this.gridControlOdemeTip.MainView = this.gridViewOdemeTip;
+            this.gridControlOdemeTip.Name = "gridControlOdemeTip";
+            this.gridControlOdemeTip.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemLookUpEdit1});
+            this.gridControlOdemeTip.Size = new System.Drawing.Size(1063, 492);
+            this.gridControlOdemeTip.TabIndex = 3;
+            this.gridControlOdemeTip.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewOdemeTip});
+            // 
+            // gridViewOdemeTip
+            // 
+            this.gridViewOdemeTip.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn9,
+            this.gridColumn5,
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4});
+            this.gridViewOdemeTip.GridControl = this.gridControlOdemeTip;
+            this.gridViewOdemeTip.Name = "gridViewOdemeTip";
+            this.gridViewOdemeTip.OptionsView.ColumnAutoWidth = false;
+            this.gridViewOdemeTip.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewOdemeTip.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "id";
+            this.gridColumn1.FieldName = "id";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 99;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "Entegre Ad";
+            this.gridColumn9.FieldName = "entegreAd";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 1;
+            this.gridColumn9.Width = 236;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Entegre Ödeme Ad";
+            this.gridColumn5.FieldName = "entegreOdemeAd";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 2;
+            this.gridColumn5.Width = 265;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "Rec Ödeme Ad";
+            this.gridColumn7.ColumnEdit = this.repositoryItemLookUpEdit1;
+            this.gridColumn7.FieldName = "recOdemeKod";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 3;
+            this.gridColumn7.Width = 351;
+            // 
+            // repositoryItemLookUpEdit1
+            // 
+            this.repositoryItemLookUpEdit1.AutoHeight = false;
+            this.repositoryItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
+            this.repositoryItemLookUpEdit1.Leave += new System.EventHandler(this.repositoryItemLookUpEdit1_Leave);
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "recDep";
+            this.gridColumn8.FieldName = "recDep";
+            this.gridColumn8.Name = "gridColumn8";
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "tip";
+            this.gridColumn2.FieldName = "tip";
+            this.gridColumn2.Name = "gridColumn2";
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "entegreOdemeType";
+            this.gridColumn3.FieldName = "entegreOdemeType";
+            this.gridColumn3.Name = "gridColumn3";
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "entegreOdemeKod";
+            this.gridColumn4.FieldName = "entegreOdemeKod";
+            this.gridColumn4.Name = "gridColumn4";
+            // 
+            // panelControl5
+            // 
+            this.panelControl5.Controls.Add(this.btnOdemeListele);
+            this.panelControl5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl5.Location = new System.Drawing.Point(0, 492);
+            this.panelControl5.Margin = new System.Windows.Forms.Padding(4);
+            this.panelControl5.Name = "panelControl5";
+            this.panelControl5.Size = new System.Drawing.Size(1063, 68);
+            this.panelControl5.TabIndex = 2;
+            // 
+            // btnOdemeListele
+            // 
+            this.btnOdemeListele.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeListele.Appearance.Options.UseFont = true;
+            this.btnOdemeListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOdemeListele.ImageOptions.Image")));
+            this.btnOdemeListele.Location = new System.Drawing.Point(7, 10);
+            this.btnOdemeListele.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOdemeListele.Name = "btnOdemeListele";
+            this.btnOdemeListele.Size = new System.Drawing.Size(158, 48);
+            this.btnOdemeListele.TabIndex = 0;
+            this.btnOdemeListele.Text = "Ödemeleri Listele";
+            this.btnOdemeListele.Click += new System.EventHandler(this.btnOdemeListele_Click);
             // 
             // EntegreMenu
             // 
@@ -1350,6 +1350,20 @@ namespace Pos.Trendyol
             ((System.ComponentModel.ISupportInitialize)(this.txtGetirResSecretKey.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGetirAppSecretKey.Properties)).EndInit();
             this.xtraTabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            this.groupControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
@@ -1364,20 +1378,6 @@ namespace Pos.Trendyol
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
-            this.groupControl4.ResumeLayout(false);
-            this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
-            this.groupControl5.ResumeLayout(false);
-            this.groupControl5.PerformLayout();
             this.ResumeLayout(false);
 
         }

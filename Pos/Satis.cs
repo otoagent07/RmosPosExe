@@ -1298,6 +1298,11 @@ namespace Pos
                         fis.HesapDokum(false, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
                     }
 
+                    if (Departman.Kodlar_AndPos_NFC ) // User.Pos_KartfIndirimAktif 
+                    {
+                        Siparis_Gonder(false);
+                    }
+
 
                     if (Departman.Fatura)
                     {

@@ -96,7 +96,7 @@
             this.flp_Urun.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flp_Urun.Location = new System.Drawing.Point(0, 0);
             this.flp_Urun.Name = "flp_Urun";
-            this.flp_Urun.Size = new System.Drawing.Size(188, 44);
+            this.flp_Urun.Size = new System.Drawing.Size(182, 38);
             this.flp_Urun.TabIndex = 0;
             // 
             // btn_Kapat
@@ -200,7 +200,7 @@
             this.chklist_Aciklama.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.chklist_Aciklama.Properties.SelectAllItemCaption = "Tümünü Seç";
-            this.chklist_Aciklama.Size = new System.Drawing.Size(69, 21);
+            this.chklist_Aciklama.Size = new System.Drawing.Size(63, 21);
             this.chklist_Aciklama.TabIndex = 55;
             this.chklist_Aciklama.EditValueChanged += new System.EventHandler(this.chklist_Aciklama_EditValueChanged);
             // 
@@ -517,7 +517,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.flp_Urun);
-            this.splitContainer1.Size = new System.Drawing.Size(188, 73);
+            this.splitContainer1.Size = new System.Drawing.Size(182, 67);
             this.splitContainer1.SplitterDistance = 25;
             this.splitContainer1.TabIndex = 109;
             // 
@@ -549,8 +549,8 @@
             this.splitContainer2.Panel2.Controls.Add(this.btn_M_4);
             this.splitContainer2.Panel2.Controls.Add(this.look_EMiktar);
             this.splitContainer2.Panel2.Controls.Add(this.gridControl1);
-            this.splitContainer2.Size = new System.Drawing.Size(188, 215);
-            this.splitContainer2.SplitterDistance = 73;
+            this.splitContainer2.Size = new System.Drawing.Size(182, 209);
+            this.splitContainer2.SplitterDistance = 67;
             this.splitContainer2.TabIndex = 110;
             // 
             // look_EMiktar
@@ -569,14 +569,14 @@
             this.look_EMiktar.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Ad", "Ad")});
             this.look_EMiktar.Properties.NullText = "";
-            this.look_EMiktar.Size = new System.Drawing.Size(63, 21);
+            this.look_EMiktar.Size = new System.Drawing.Size(57, 21);
             this.look_EMiktar.TabIndex = 109;
             // 
             // Satis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(188, 215);
+            this.ClientSize = new System.Drawing.Size(182, 209);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer2);
             this.Controls.Add(this.txt_Aciklama);

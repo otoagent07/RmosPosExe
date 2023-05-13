@@ -637,7 +637,7 @@
     <value>16</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 449</value>
+    <value>966, 458</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -661,10 +661,10 @@
     <value>Bottom</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 449</value>
+    <value>0, 458</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 59</value>
+    <value>966, 59</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -682,7 +682,7 @@
     <value>1</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 508</value>
+    <value>966, 517</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Açık Paketler</value>
@@ -997,7 +997,7 @@
     <value>16</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 437</value>
+    <value>966, 446</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1540,7 +1540,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 71</value>
+    <value>966, 71</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1558,7 +1558,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 508</value>
+    <value>966, 517</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Kapalı Paketler</value>
@@ -1663,7 +1663,7 @@ Başlat</value>
     <value>ID</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 421</value>
+    <value>966, 430</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1809,7 +1809,7 @@ Başlat</value>
     <value>Right</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>825, 22</value>
+    <value>831, 22</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 63</value>
@@ -2007,10 +2007,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 421</value>
+    <value>0, 430</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 87</value>
+    <value>966, 87</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2028,7 +2028,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>960, 508</value>
+    <value>966, 517</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Getir</value>
