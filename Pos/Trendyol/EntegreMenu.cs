@@ -59,7 +59,7 @@ when tip=0 then 'Yemek Sepeti'
 when tip=1 then 'Getir'
 when tip=2 then 'Trendyol'
 end as tipAd,
-* from entegreMenu where recDep='" + Departman.Dep_Kodu + "' and  tip='" + tip + @"' " + filtre + @" order by entegreAd";
+* from entegreMenu where (recDep='" + Departman.Dep_Kodu + "' or recDep is null) and  tip='" + tip + @"' " + filtre + @" order by entegreAd";
 
                 treeListMenu.ClearNodes();
                 treeListMenu.DataSource = dbtools.SelectTableR(query);

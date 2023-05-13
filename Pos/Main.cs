@@ -416,7 +416,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.20";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.21";
 
 
 
@@ -1636,7 +1636,10 @@ YS_Panel a = new YS_Panel();
                 if (trendyolDurum.ToLower().Equals("true") || trendyolDurum.Equals("1"))
                 {
 
-                    string icindekiler = "'" + RestoranTip.onayBekliyorKod + "','" + RestoranTip.hazirlaniyorKod + "','" + RestoranTip.hazirlandiKod + "','" + RestoranTip.yolaCiktiKod + "'";
+                    //string icindekiler = "'" + RestoranTip.onayBekliyorKod + "','" + RestoranTip.hazirlaniyorKod + "','" + RestoranTip.hazirlandiKod + "','" + RestoranTip.yolaCiktiKod + "'";
+
+                    string icindekiler = "'" + RestoranTip.onayBekliyorKod + "'";
+
                     string query = "SELECT * FROM entegreSiparis where tip='" + RestoranTip.trendyol + "' and recDep='" + Departman.Dep_Kodu + "' and durumKod in(" + icindekiler + ") ";
 
                     DataTable dataSiparis = dbtools.SelectTableR(query);

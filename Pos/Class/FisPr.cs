@@ -1314,7 +1314,16 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 int dtSatirsay = dtPaket.Rows.Count;
 
                 Print.Paket paket = new Print.Paket();
-                xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), paket);
+
+                string raporId = Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]);
+                xtraDizayn.LoadReportStream(raporId, paket);
+
+
+                if (printer.Trim()=="")
+                {
+                    RHMesaj.MyMessageInformation("Yazıcı ismini bulamadı -> FisPr.cs->PaketPrTrendyol()\nMicrosoft XPS Document Writer -> olarak ayarlandı! ");
+                    printer = "Microsoft XPS Document Writer";
+                }
                 paket.PrinterName = printer;
 
 
