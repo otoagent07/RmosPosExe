@@ -120,6 +120,18 @@
   <data name="gridColumn49.Caption" xml:space="preserve">
     <value>Check No</value>
   </data>
+  <data name="dateEditCariBit.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateEditCariBit.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="dateEditCariBas.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateEditCariBas.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="simpleButton10.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -165,6 +177,45 @@
   <data name="simpleButton5.Text" xml:space="preserve">
     <value>Addition</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gridControl7.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridControl7.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridControl7.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl7.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
   <data name="gridColumn56.Caption" xml:space="preserve">
     <value>Product</value>
   </data>
@@ -179,6 +230,9 @@
   </data>
   <data name="gridView7.ViewCaption" xml:space="preserve">
     <value>Check Detail</value>
+  </data>
+  <data name="textEdit65.EditValue" xml:space="preserve">
+    <value>Balance</value>
   </data>
   <data name="btn_CariHep_Cikis.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -252,6 +306,51 @@
   <data name="btn_CariHep_Sil.Text" xml:space="preserve">
     <value>Del</value>
   </data>
+  <data name="btnFiltrele.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AElFTkSuQmCC
+</value>
+  </data>
   <data name="btn_CariHes_Kaydet.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -286,6 +385,48 @@
   </data>
   <data name="textEdit68.EditValue" xml:space="preserve">
     <value>Date</value>
+  </data>
+  <data name="date_CariHes.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="date_CariHes.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="grd_CariHesap.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn47.Caption" xml:space="preserve">
     <value>Date</value>
@@ -327,6 +468,9 @@
         IGNsYXNzPSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
+  <data name="simpleButton13.Text" xml:space="preserve">
+    <value>Save Exit</value>
+  </data>
   <data name="simpleButton4.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -367,6 +511,42 @@
   </data>
   <data name="textEdit7.EditValue" xml:space="preserve">
     <value>Customer Type</value>
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="grd_Cari.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn25.Caption" xml:space="preserve">
     <value>Code</value>
@@ -463,6 +643,9 @@
         MTkgMjUsMjggMjgsMjUgMTksMTYgMjgsNyAiIGZpbGw9IiNEMjRDMkYiIC8+DQo8L3N2Zz4L
 </value>
   </data>
+  <data name="btn_Cari_Sil.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="btn_Cari_Kaydet.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -486,6 +669,9 @@
         Cw==
 </value>
   </data>
+  <data name="btn_Cari_Kaydet.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
   <data name="textEdit43.EditValue" xml:space="preserve">
     <value>e-Mail</value>
   </data>
@@ -507,8 +693,23 @@
   <data name="groupControl2.Text" xml:space="preserve">
     <value>Invoice Information</value>
   </data>
+  <data name="Cari_DogumTar.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
   <data name="Cari_Aktif.Properties.Caption" xml:space="preserve">
     <value>Active</value>
+  </data>
+  <data name="Cari_Aktif.Properties.DisplayValueChecked" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cari_Aktif.Properties.DisplayValueGrayed" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cari_Aktif.Properties.DisplayValueUnchecked" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cari_Aktif.Properties.GlyphVerticalAlignment" type="DevExpress.Utils.VertAlignment, DevExpress.Data.v19.1">
+    <value>Default</value>
   </data>
   <data name="textEdit17.EditValue" xml:space="preserve">
     <value>Accounting Code</value>
@@ -551,6 +752,18 @@
   </data>
   <data name="chk_Cari_limit.Properties.Caption" xml:space="preserve">
     <value>Monthly Limit</value>
+  </data>
+  <data name="chk_Cari_limit.Properties.DisplayValueChecked" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chk_Cari_limit.Properties.DisplayValueGrayed" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chk_Cari_limit.Properties.DisplayValueUnchecked" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chk_Cari_limit.Properties.GlyphVerticalAlignment" type="DevExpress.Utils.VertAlignment, DevExpress.Data.v19.1">
+    <value>Default</value>
   </data>
   <data name="chk_Cari_limit.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 19</value>
@@ -608,6 +821,9 @@
   </data>
   <data name="textEdit60.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 22</value>
+  </data>
+  <data name="textEdit22.EditValue" xml:space="preserve">
+    <value>Date of Birth</value>
   </data>
   <data name="textEdit61.EditValue" xml:space="preserve">
     <value>Address 3</value>
@@ -686,11 +902,63 @@
         ICBoOFYyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
 </value>
   </data>
+  <data name="btn_Fispr.Text" xml:space="preserve">
+    <value>Receipt
+Printing</value>
+  </data>
+  <data name="dateEdit2.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateEdit2.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="dateEdit1.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateEdit1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
   <data name="textEdit5.EditValue" xml:space="preserve">
     <value>Date 2</value>
   </data>
   <data name="textEdit4.EditValue" xml:space="preserve">
     <value>Date 1</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl3.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn12.Caption" xml:space="preserve">
     <value>Product</value>
@@ -706,6 +974,42 @@
   </data>
   <data name="gridView3.ViewCaption" xml:space="preserve">
     <value>Check Detail</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl2.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="gridColumn6.Caption" xml:space="preserve">
     <value>Check</value>
@@ -737,6 +1041,42 @@
   <data name="textEdit3.EditValue" xml:space="preserve">
     <value>Debt</value>
   </data>
+  <data name="gridControl1.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl1.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
   <data name="gridColumn3.Caption" xml:space="preserve">
     <value>Code</value>
   </data>
@@ -751,6 +1091,18 @@
   </data>
   <data name="tab_CariIslem.Text" xml:space="preserve">
     <value>Account Process</value>
+  </data>
+  <data name="dateEdit3.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateEdit3.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="dateEdit4.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateEdit4.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
   </data>
   <data name="textEdit9.EditValue" xml:space="preserve">
     <value>Date 2</value>
@@ -775,6 +1127,42 @@
         ICBoOFYyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
 </value>
   </data>
+  <data name="gridControl5.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
   <data name="gridColumn22.Caption" xml:space="preserve">
     <value>Product</value>
   </data>
@@ -793,6 +1181,42 @@
   <data name="gridView5.ViewCaption" xml:space="preserve">
     <value>Check Detail</value>
   </data>
+  <data name="gridControl4.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl4.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
   <data name="gridColumn19.Caption" xml:space="preserve">
     <value>Code</value>
   </data>
@@ -807,6 +1231,42 @@
   </data>
   <data name="tab_CariOzet.Text" xml:space="preserve">
     <value>Account Summary</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl6.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="simpleButton7.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -864,11 +1324,59 @@
   <data name="simpleButton3.Text" xml:space="preserve">
     <value>List</value>
   </data>
+  <data name="dateTarih2.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateTarih2.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="dateTarih1.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateTarih1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
   <data name="textEdit15.EditValue" xml:space="preserve">
     <value>End Date</value>
   </data>
   <data name="textEdit16.EditValue" xml:space="preserve">
     <value>Start Date</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl8.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="simpleButton12.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -936,6 +1444,81 @@
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Account Report</value>
   </data>
+  <data name="gridControl10.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl10.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupControl9.Text" xml:space="preserve">
+    <value>Entered Collection</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl9.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
   <data name="groupControl8.Text" xml:space="preserve">
     <value>Accounts Sales</value>
   </data>
@@ -975,6 +1558,18 @@
   <data name="simpleButton15.Text" xml:space="preserve">
     <value>List</value>
   </data>
+  <data name="cari2_Tarih2.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="cari2_Tarih2.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="cari2_Tarih1.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="cari2_Tarih1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
   <data name="textEdit18.EditValue" xml:space="preserve">
     <value>End Date</value>
   </data>
@@ -984,35 +1579,278 @@
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Account Report 2</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Accounts</value>
+  <data name="simpleButton17.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAbFJREFUSEvFVD1LxEAQ3VMuu+EULcTGTgsbrWyyu4GrxEJBC68QFCxE7DS7e6Uo
+        grWFCPb+ARtrWxutLAR/gBaC4EclorNxdrkQ4XJy8R68IvNe8jIzmxBm5FeZ/L8AqsVB0IwXukFq5GEu
+        wAqkSwhVvNTjgEajn+l4jRqx7kiSKESV1DQfbdWYilegXPlRC3YAtV2nWdq5olRhSp5nNC22UEtRbES2
+        C8Mvnc4U/6gm0TQzYtXX7H1anoHbv71F4R2ESTQWKPnkPNDFDTX82V0zzW+Jnq2h3aOjJQeazztPhkq+
+        BE0xibYMOgqwoEocOZ9jqPkyyjl0HGBPifOlVPKd7sTjKOfQUUBV8ylY9pvzOUJX12SvztCWQeGAoe36
+        MGj33qPEA7z9p7tmWpyiNYNiAXukj2l54XR7TMNERvaf5WuW8EHiHR6FAnIPMtKkwuZMNTD8ytdhH3aM
+        qYZoGxAYsejqKaET2xHKBH4PE7CXV68reUeaYhDlNgF2NEYoquW+44Cqj6RaC6jic60eCIlRKr7kv6I3
+        ATDTYzjbG90gjPjkl4ByCCdGPpZJnFpZIOQbwvIcFsN0l8EAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="btn_Cari_Kaydet.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="btn_Cari_Sil.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="btn_Fispr.Text" xml:space="preserve">
-    <value>Receipt
-Printing</value>
-  </data>
-  <data name="groupControl9.Text" xml:space="preserve">
-    <value>Entered Collection</value>
-  </data>
-  <data name="simpleButton13.Text" xml:space="preserve">
-    <value>Save Exit</value>
+  <data name="simpleButton16.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKMDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuQmx1ZXtm
+        aWxsOiMxMTc3RDc7fQoJLkdyZWVue2ZpbGw6IzAzOUMyMzt9CgkuWWVsbG93e2ZpbGw6I0ZGQjExNTt9
+        CgkuUmVke2ZpbGw6I0QxMUMxQzt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
+        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQo8L3N0eWxlPg0KICA8ZyBpZD0iUHJldmlldyI+DQogICAg
+        PHBhdGggZD0iTTIxLjQsMjhIMThsMCwwbDAsMEg2VjRoMTR2NWMwLDAuNiwwLjQsMSwxLDFoNXYxMy40
+        bDIsMlY5bC03LTdINUM0LjQsMiw0LDIuNCw0LDN2MjZjMCwwLjYsMC40LDEsMSwxaDE4LjQgICBMMjEu
+        NCwyOHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCiAgICA8cGF0aCBkPSJNMTgsMTRj
+        My4zLDAsNiwyLjcsNiw2YzAsMS4yLTAuNCwyLjMtMSwzLjNsNC42LDQuNmMwLjUsMC41LDAuNSwxLjMs
+        MCwxLjdjLTAuNSwwLjUtMS4zLDAuNS0xLjcsMEwyMS4zLDI1ICAgYy0wLjksMC42LTIuMSwxLTMuMywx
+        Yy0zLjMsMC02LTIuNy02LTZDMTIsMTYuNywxNC43LDE0LDE4LDE0eiBNMTgsMjRjMi4yLDAsNC0xLjgs
+        NC00cy0xLjgtNC00LTRzLTQsMS44LTQsNFMxNS44LDI0LDE4LDI0eiIgZmlsbD0iIzExNzdENyIgY2xh
+        c3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
+</value>
   </data>
   <data name="simpleButton16.Text" xml:space="preserve">
     <value>List</value>
   </data>
-  <data name="textEdit22.Text" xml:space="preserve">
-    <value>Date of Birth</value>
+  <data name="gridControl11.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="textEdit65.Text" xml:space="preserve">
-    <value>Balance</value>
+  <data name="gridControl11.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControl11.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Current List</value>
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
+    <value>Center</value>
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
+    <value>None</value>
+  </data>
+  <data name="gridControlCariRap3Detay.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExcelKaydetCariRapor3Detay.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAA90RVh0VGl0
+        bGUAWGxzeDtTZW5kZroUlAAAAqpJREFUOE91kllPU1EUhS8tFHD8If4ZExlkKMODCiIJRqQzQ4EGY9AY
+        owkJL0RkCg1DSVMQgYKJgRiJA0ZBoKWitfN4e1vA5T6n9QYebPLlDvustfbet0Khpd5KoLC3DqreWqh6
+        iO4aFDC61CjoVCO/owrK9koojeVQGMqIcuTp6aorszIDpDNHZFCPlJQhsRrJVEYWG+YnEIlJCMdSUBgr
+        EAiLJC7F72ASedpSCCpLHSTpmCeLqSOozLWIJzPI76zmyZG4BKWpksTXodCXwxciA20JvIEEBM01CCy5
+        Y8nKxabXk8jvqkIsmZbb1jnGEYqKUBoqeHKbbQReSm+dHSaDEuogl1xgViPBhJQcS1Aqm9lUwZO19jH4
+        WbKujItZ8k8/ddBGHbCFiWJ25jhPrkY0N7PWPopgOMXFbXMjfOZfvPUSHPriWYMrvXou/jdzNjk3M22b
+        Ns2TBbYwNjNrmwmzWIXVDRe+7fmwTZyc/KEvcgIpfSzDntn7zc9urK1vY3VjH4IgFAIQGEL30xVqV4Jj
+        5Sv6BxaRFNN8lEBQRDxB97SPVvMLDLx0YscdhrH/FTMokg06nywjGElh1xPBpP0j7pkn4PoRpBqw6/Kh
+        pukZng858eW7H7sHUWgfLDCDYtmg/dESAhEJb955MO/cgcsTQlf/FK7WPUaLaQgbm/uYmd/CGtW33RHc
+        tziYwTnZQP9wEVs7fozbPiCayPBu9g6CeP/JQ7ipmxB/z+pvNw9x12xnBudlA03fAgbH1hEioT+UI3Dq
+        PgerD46uo7l9jhlclA1aexzw0Z/DS0vzBpL0nc9eZajOzjXqZ84aqJuHl++Y5tBksqHJaMNtotEwSwdn
+        0UCHG3TTuKWdxk3NNG5oplDbMuI8s0T6FREXiEv/4fIp2HMxocgaQPgLGkqm26hPndkAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btnExcelKaydetCariRapor3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAA90RVh0VGl0
+        bGUAWGxzeDtTZW5kZroUlAAAAqpJREFUOE91kllPU1EUhS8tFHD8If4ZExlkKMODCiIJRqQzQ4EGY9AY
+        owkJL0RkCg1DSVMQgYKJgRiJA0ZBoKWitfN4e1vA5T6n9QYebPLlDvustfbet0Khpd5KoLC3DqreWqh6
+        iO4aFDC61CjoVCO/owrK9koojeVQGMqIcuTp6aorszIDpDNHZFCPlJQhsRrJVEYWG+YnEIlJCMdSUBgr
+        EAiLJC7F72ASedpSCCpLHSTpmCeLqSOozLWIJzPI76zmyZG4BKWpksTXodCXwxciA20JvIEEBM01CCy5
+        Y8nKxabXk8jvqkIsmZbb1jnGEYqKUBoqeHKbbQReSm+dHSaDEuogl1xgViPBhJQcS1Aqm9lUwZO19jH4
+        WbKujItZ8k8/ddBGHbCFiWJ25jhPrkY0N7PWPopgOMXFbXMjfOZfvPUSHPriWYMrvXou/jdzNjk3M22b
+        Ns2TBbYwNjNrmwmzWIXVDRe+7fmwTZyc/KEvcgIpfSzDntn7zc9urK1vY3VjH4IgFAIQGEL30xVqV4Jj
+        5Sv6BxaRFNN8lEBQRDxB97SPVvMLDLx0YscdhrH/FTMokg06nywjGElh1xPBpP0j7pkn4PoRpBqw6/Kh
+        pukZng858eW7H7sHUWgfLDCDYtmg/dESAhEJb955MO/cgcsTQlf/FK7WPUaLaQgbm/uYmd/CGtW33RHc
+        tziYwTnZQP9wEVs7fozbPiCayPBu9g6CeP/JQ7ipmxB/z+pvNw9x12xnBudlA03fAgbH1hEioT+UI3Dq
+        PgerD46uo7l9jhlclA1aexzw0Z/DS0vzBpL0nc9eZajOzjXqZ84aqJuHl++Y5tBksqHJaMNtotEwSwdn
+        0UCHG3TTuKWdxk3NNG5oplDbMuI8s0T6FREXiEv/4fIp2HMxocgaQPgLGkqm26hPndkAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btnCariRap3ListeleHepsi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACd0RVh0VGl0
+        bGUAUmVmcmVzaDtSZXBlYXQ7QmFycztSaWJib247UmVsb2FkzU326QAAAwFJREFUOE+lk3sslWEcxx/k
+        uOcPl1CNoR1JbrOWUB2iCzKEJOTkMsKZ5hJHNffrZiqc6OScwznVUtks5JJbck2RLHZoLmVtNavjcjj0
+        63nkjy7a2vptn73Pvu/3+33f/fa+CAD+i7+NFEb6N4j25zD5fYhZ2UeOxCC1fY+NjFvyfXoir7cd68uE
+        RG53Rzy7PeYEPUmReIifWdm/nkWxnJ71cFC6YGdsefdYUPpdQ1pE2bHg/Pq1KZEYZkTL0DXxGbhtQrjI
+        fj7kf4Wjj/3Ss+JvKI5kGTe7SIFsZHF704vJOTidWtOubWCqYk0vLbQNrwAHhgCibjyFwY/z8KB3GiKL
+        O0bMaF5byUOjf2TRlnM5dQm8tnEYXVoD1uNhcIzmXNXZZaFsYM/QNaBFUs28CzIPRVSudMyI4FrtW/DP
+        qL5EcmHXnyHkElNqlVDeKxEuSKBftApj8ysQlFUrsfBIoREThixQwfRUXmZAXgPcGZiFM1l1ZGkKAfkt
+        CNkEc17bnOeBT0YjtMwuQkBeC+ync2Bf4C0hNlE2CpS2GTuZ2YZw4eHEPPikN6xgTQtDlorkMequyXUr
+        zR8WwDutCTSojuZYU8bIYOSck2reuF6uB8+URuCOfgVydk2uB+fEmglEdSvCHqRoz6h6xeqchjh2Hxy5
+        UJ7/UwHF9GSig19Oq6TpvRj478TQMLMEtNCKVU3zQBdkF/WIFMhZ+RenhpT0QMXQJ/BKa5LQwli51IP+
+        5kaHA6lyKhralr4F2aHsASgTLoJPZgNoWEYX4pwKsgqtIgXSylq7tS3plcJw7iDwR75A9O0B8M5sBffU
+        ZtjrWyTAHn3zAHYf88kUqFnGvZSmqGpjTQaZBt5D1VNiUiKrZeFjZeJXPu6Z2wnJNUJgDc0Ba3AOHOJr
+        Qc8hga5m5GRtcpY3SdG0O4D9FGXjeISovnyMYP1KRHk1wx26R9PzDN1LhrAOWAdDD9aw3vFspgxFSRV7
+        yEckJ2/AQITNhixOCaOGIa+pg1Hf0Mi9X2ezX/TfAfQdAvawuvfdXuIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnCariBakiyeMail.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAB50RVh0VGl0
+        bGUATGV0dGVyO2UtbWFpbDtlbWFpbDttYWlsGpGT2gAAAkJJREFUOE+lk/1PUmEUx5+stbL3v62f+qXN
+        zfKtrZYJgkrTRmWjTFeppeZyhoItFN+yBGwllhTZak4JCYVQ3roI93K5QN+e517G1mKt1t0+O+c559zv
+        ueeePQTAf1Ey+C+wp6zA3hLs+wMsv4f0GpfsA2YX+k0u9I0uyzwYeStz30h5/Aa9lO7hJYUhJ+4NLeJ2
+        /8KCLKRtnwSflpDP/4CUzStIeWSpZRRjhTOrS/IiVHor+/795NpdO4xWNzy+MHK5PIR0FryQURAVXxAk
+        CGJGzq989kN9ZQRtnfNM4ADR37Hh+64I87Qb07ZPcpckL4HbzRRhZymbw+CoA1c7rdgIJKDreMEEDpK2
+        LhtiXBreLQ4z9lXc6p2Vuyb5DKIxAckU80U0tA6i55EdaxtxeDc5NBnmmEA5udwxjygnwuPn8OpdAMbx
+        99DdGIM/EKNbArxfd1Bd342u/nnYnD65bt2fgPr6MyZwiDQbniMST2PRHYRp6iMSKQnr9H+03XyCkxUG
+        XNQ9xOtlD76Fd2GmeeeHINZ8HC7pZ5jAYaJpn8OqN4I+urY4HYWJMb74YnCt+GU2NuNyjOUHaB1rdr51
+        igkcIQ36WTq3A+EYj20683aURyj6qy1C86zO0GPDuRZ5jUdJRb0JW0EOoR0Bwe0UhS/A/N8JRXi5/lTt
+        sCJQ1TjmqGuZRF2zFbWUmqYJ1GgnUK0dR5VG4azGgjONFlSqqVU9RaXKgtMXhl9SgXIK3SWbhZBjJThe
+        ghMFy14uK3nD/h6QnxfMuqZly5fqAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnCariBakiyePrint.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAddEVYdFRpdGxlAERlZmF1bHRQcmludGVyO1ByaW50
+        ZXI72mmlAgAAAwhJREFUOE9lkXsw1FEUx09palLSPzXFH/0fMk1p9EclGpkeq6aQ8li7nu0OsUw1Vq3H
+        UqwR6cGWsIqhTEo10gglTUOmP2NSYfVY8ti8FvPt/Ha1menOfObMPfd+v+eecwmAGV5LmGXM8gVW/MUv
+        nzZFVVNVZDUNSO/SwInbVHUwlxx3q/h0kcGybO2bFk3JO2huWyiu+oAn7S2Q16yZj6gihN8jhOoIvvmE
+        owU07JlKmxcbrLisfYvZuXkzpllLvNZyHOIygiiPcPIWIbjIga8DgVrCXhXVCkLh6TbMavX1NsyY5jBo
+        MEL/8zfGfk8jssIewSVCDSC5xtsc5ZUOCCwi7FKSkTJvtu7LK+vqCIi+hIgkLSanZ9H/fRxfv49hdHwa
+        Yq09ThQTZDpLZVm5A/xvcAtXCDsVbKAp6fwxaJjA4aAUhMQWwjhpwpfBUXzWj8IwMgHVfRH8WOB3nRB9
+        xwEBhYRjVwneKsK2GG4hs6gDJtM8/CUqeB1JhJcvI0qEp0iBk9IM5N0qxgG1HUS5XJXn4JvDvSsJW6No
+        eIuEh3jxajv3akJDUycO+CfA3UuCHR5hcPMQY/ueUEhlatwoq4C88BB8lBvgqVgHl1CqdQkjR45E53Ja
+        8e3XBD59G0evGSN69Rz1RnNOoI8H+mNkCsNj06hr7BG+bLUziwUoXt2Ebv0YuroN2L7//ALn/uN99xC6
+        egyIUT4XDOx4npbvl11oRMfHITS970d6YRtPfgYZDQNIfdYPZX2/uWr6tdd40dGHlg+DCD/7VDBYYzUI
+        lOmaT8VWwi+6FBfzWzE0OoUhfq6Bo2FkEj8ZIe8dkAWfwBx4HUttZQNbqwGvlYIjsz4xo/5Vcu5LWGi2
+        xoT0R218vpFZy9gyS60GivTHFJ9WxzlaunBoH5ntqpHlbUWY2lnDe0G0irGRKHQkji83C60GcaqHiL1Q
+        C3nKA8iSa3D6fDXkBe7ogQKR2W6QJlVAkqBDWHw5Qs+UISSulHWLDBZvBCJyXUl62SVLnOmMoAynrFNp
+        Tv/d+QfoD6DBT8IUtckXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="dateEditRap3BitTar.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateEditRap3BitTar.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="dateEditRap3BasTar.Properties.CalendarTimeProperties.Mask.EditMask" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="dateEditRap3BasTar.Properties.Mask.EditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="btnCariRap3Listele.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAA90RVh0VGl0
+        bGUAWGxzeDtTZW5kZroUlAAAAqpJREFUOE91kllPU1EUhS8tFHD8If4ZExlkKMODCiIJRqQzQ4EGY9AY
+        owkJL0RkCg1DSVMQgYKJgRiJA0ZBoKWitfN4e1vA5T6n9QYebPLlDvustfbet0Khpd5KoLC3DqreWqh6
+        iO4aFDC61CjoVCO/owrK9koojeVQGMqIcuTp6aorszIDpDNHZFCPlJQhsRrJVEYWG+YnEIlJCMdSUBgr
+        EAiLJC7F72ASedpSCCpLHSTpmCeLqSOozLWIJzPI76zmyZG4BKWpksTXodCXwxciA20JvIEEBM01CCy5
+        Y8nKxabXk8jvqkIsmZbb1jnGEYqKUBoqeHKbbQReSm+dHSaDEuogl1xgViPBhJQcS1Aqm9lUwZO19jH4
+        WbKujItZ8k8/ddBGHbCFiWJ25jhPrkY0N7PWPopgOMXFbXMjfOZfvPUSHPriWYMrvXou/jdzNjk3M22b
+        Ns2TBbYwNjNrmwmzWIXVDRe+7fmwTZyc/KEvcgIpfSzDntn7zc9urK1vY3VjH4IgFAIQGEL30xVqV4Jj
+        5Sv6BxaRFNN8lEBQRDxB97SPVvMLDLx0YscdhrH/FTMokg06nywjGElh1xPBpP0j7pkn4PoRpBqw6/Kh
+        pukZng858eW7H7sHUWgfLDCDYtmg/dESAhEJb955MO/cgcsTQlf/FK7WPUaLaQgbm/uYmd/CGtW33RHc
+        tziYwTnZQP9wEVs7fozbPiCayPBu9g6CeP/JQ7ipmxB/z+pvNw9x12xnBudlA03fAgbH1hEioT+UI3Dq
+        PgerD46uo7l9jhlclA1aexzw0Z/DS0vzBpL0nc9eZajOzjXqZ84aqJuHl++Y5tBksqHJaMNtotEwSwdn
+        0UCHG3TTuKWdxk3NNG5oplDbMuI8s0T6FREXiEv/4fIp2HMxocgaQPgLGkqm26hPndkAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Accounts</value>
   </data>
 </root>

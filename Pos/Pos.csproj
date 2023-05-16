@@ -1295,6 +1295,9 @@
     <EmbeddedResource Include="CallerSubeSec.resx">
       <DependentUpon>CallerSubeSec.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CariHesap.en-GB.resx">
+      <DependentUpon>CariHesap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CariHesap.en-US.resx">
       <DependentUpon>CariHesap.cs</DependentUpon>
     </EmbeddedResource>

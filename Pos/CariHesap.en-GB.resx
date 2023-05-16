@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="gridColumn49.Caption" xml:space="preserve">
-    <value>Чек №</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="simpleButton10.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -162,27 +159,6 @@
         Cjwvc3ZnPgs=
 </value>
   </data>
-  <data name="simpleButton5.Text" xml:space="preserve">
-    <value>&amp;Бланк счет-заказа</value>
-  </data>
-  <data name="gridColumn56.Caption" xml:space="preserve">
-    <value>Продукт</value>
-  </data>
-  <data name="gridColumn57.Caption" xml:space="preserve">
-    <value>Количество</value>
-  </data>
-  <data name="gridColumn59.Caption" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="gridColumn60.Caption" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="gridView7.ViewCaption" xml:space="preserve">
-    <value>Детали чека</value>
-  </data>
-  <data name="textEdit65.EditValue" xml:space="preserve">
-    <value>Баланс</value>
-  </data>
   <data name="btn_CariHep_Cikis.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -198,9 +174,6 @@
         LTQtNGwtNCw0ICBsLTItMmw0LTRsLTQtNGwyLTJsNCw0bDQtNGwyLDJsLTQsNEwyMiwyMHoiIGZpbGw9
         IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQo8L3N2Zz4L
 </value>
-  </data>
-  <data name="btn_CariHep_Cikis.Text" xml:space="preserve">
-    <value>&amp;Выход</value>
   </data>
   <data name="simpleButton1.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -251,9 +224,6 @@
         Pg0KICA8cG9seWdvbiBwb2ludHM9IjI1LDQgMTYsMTMgNyw0IDQsNyAxMywxNiA0LDI1IDcsMjggMTYs
         MTkgMjUsMjggMjgsMjUgMTksMTYgMjgsNyAiIGZpbGw9IiNEMjRDMkYiIC8+DQo8L3N2Zz4L
 </value>
-  </data>
-  <data name="btn_CariHep_Sil.Text" xml:space="preserve">
-    <value>&amp;Удалить</value>
   </data>
   <data name="btnFiltrele.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -323,39 +293,6 @@
         Cw==
 </value>
   </data>
-  <data name="btn_CariHes_Kaydet.Text" xml:space="preserve">
-    <value>&amp;Сохранить</value>
-  </data>
-  <data name="textEdit66.EditValue" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="textEdit67.EditValue" xml:space="preserve">
-    <value>Код оплаты</value>
-  </data>
-  <data name="textEdit68.EditValue" xml:space="preserve">
-    <value>Дата</value>
-  </data>
-  <data name="gridColumn47.Caption" xml:space="preserve">
-    <value>Дата</value>
-  </data>
-  <data name="gridColumn48.Caption" xml:space="preserve">
-    <value>Филиал</value>
-  </data>
-  <data name="gridColumn50.Caption" xml:space="preserve">
-    <value>Форма оплаты</value>
-  </data>
-  <data name="gridColumn51.Caption" xml:space="preserve">
-    <value>Кредит</value>
-  </data>
-  <data name="gridColumn52.Caption" xml:space="preserve">
-    <value>Дебет</value>
-  </data>
-  <data name="textEdit69.EditValue" xml:space="preserve">
-    <value>Текущий код</value>
-  </data>
-  <data name="tab_Cari_Hesap.Text" xml:space="preserve">
-    <value>Текущие счета</value>
-  </data>
   <data name="simpleButton13.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -374,9 +311,6 @@
         Ni0yYzUuNSwwLDEwLDQuNSwxMCwxMGgtOGwxMCwxMGwxMC0xMCAgIEgyNHoiIGZpbGw9IiMxMTc3RDci
         IGNsYXNzPSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
-  </data>
-  <data name="simpleButton13.Text" xml:space="preserve">
-    <value>&amp;Сохранить Выход</value>
   </data>
   <data name="simpleButton4.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -407,81 +341,6 @@
         PSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 50</value>
-  </data>
-  <data name="simpleButton4.Text" xml:space="preserve">
-    <value>В текущий список</value>
-  </data>
-  <data name="look_Cari_Tip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 22</value>
-  </data>
-  <data name="textEdit7.EditValue" xml:space="preserve">
-    <value>Тип клиента</value>
-  </data>
-  <data name="gridColumn25.Caption" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="gridColumn28.Caption" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="gridColumn29.Caption" xml:space="preserve">
-    <value>Фамилия</value>
-  </data>
-  <data name="gridColumn36.Caption" xml:space="preserve">
-    <value>Телефон</value>
-  </data>
-  <data name="gridColumn37.Caption" xml:space="preserve">
-    <value>Карта №</value>
-  </data>
-  <data name="gridColumn38.Caption" xml:space="preserve">
-    <value>Адрес 1</value>
-  </data>
-  <data name="gridColumn39.Caption" xml:space="preserve">
-    <value>Адрес 2</value>
-  </data>
-  <data name="gridColumn40.Caption" xml:space="preserve">
-    <value>Адрес 3</value>
-  </data>
-  <data name="gridColumn41.Caption" xml:space="preserve">
-    <value>Название</value>
-  </data>
-  <data name="gridColumn42.Caption" xml:space="preserve">
-    <value>Адрес фактуры 1</value>
-  </data>
-  <data name="gridColumn43.Caption" xml:space="preserve">
-    <value>Адрес фактуры 2</value>
-  </data>
-  <data name="gridColumn44.Caption" xml:space="preserve">
-    <value>Налоговая администрация</value>
-  </data>
-  <data name="gridColumn45.Caption" xml:space="preserve">
-    <value>Налоговый №</value>
-  </data>
-  <data name="gridColumn46.Caption" xml:space="preserve">
-    <value>Почта</value>
-  </data>
-  <data name="gridColumn1.Caption" xml:space="preserve">
-    <value>Телефон 2</value>
-  </data>
-  <data name="gridColumn2.Caption" xml:space="preserve">
-    <value>Почта</value>
-  </data>
-  <data name="gridColumn18.Caption" xml:space="preserve">
-    <value>Тип</value>
-  </data>
-  <data name="gridColumn33.Caption" xml:space="preserve">
-    <value>Сумма лимита</value>
-  </data>
-  <data name="gridColumn34.Caption" xml:space="preserve">
-    <value>Провинция (İL)</value>
-  </data>
-  <data name="gridColumn35.Caption" xml:space="preserve">
-    <value>Район (İLÇE)</value>
-  </data>
-  <data name="gridColumn54.Caption" xml:space="preserve">
-    <value>Микрорайон (MAHALLE)</value>
-  </data>
   <data name="btn_Cari_Cikis.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -498,9 +357,6 @@
         IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="btn_Cari_Cikis.Text" xml:space="preserve">
-    <value>&amp;Выход</value>
-  </data>
   <data name="btn_Cari_Sil.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -513,9 +369,6 @@
         Pg0KICA8cG9seWdvbiBwb2ludHM9IjI1LDQgMTYsMTMgNyw0IDQsNyAxMywxNiA0LDI1IDcsMjggMTYs
         MTkgMjUsMjggMjgsMjUgMTksMTYgMjgsNyAiIGZpbGw9IiNEMjRDMkYiIC8+DQo8L3N2Zz4L
 </value>
-  </data>
-  <data name="btn_Cari_Sil.Text" xml:space="preserve">
-    <value>&amp;Удалить</value>
   </data>
   <data name="btn_Cari_Kaydet.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -539,177 +392,6 @@
         ICIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVuIiAvPg0KICAgIDwvZz4NCiAgPC9nPg0KPC9zdmc+
         Cw==
 </value>
-  </data>
-  <data name="btn_Cari_Kaydet.Text" xml:space="preserve">
-    <value>&amp;Сохранить</value>
-  </data>
-  <data name="textEdit43.EditValue" xml:space="preserve">
-    <value>Почта</value>
-  </data>
-  <data name="textEdit44.EditValue" xml:space="preserve">
-    <value>Налоговый №</value>
-  </data>
-  <data name="textEdit53.EditValue" xml:space="preserve">
-    <value>Налоговая администрация</value>
-  </data>
-  <data name="textEdit54.EditValue" xml:space="preserve">
-    <value>Адрес 2</value>
-  </data>
-  <data name="textEdit55.EditValue" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="textEdit56.EditValue" xml:space="preserve">
-    <value>Адрес 1</value>
-  </data>
-  <data name="groupControl2.Text" xml:space="preserve">
-    <value>Информация фактуры</value>
-  </data>
-  <data name="Cari_Aktif.Properties.Caption" xml:space="preserve">
-    <value>Активный</value>
-  </data>
-  <data name="textEdit17.EditValue" xml:space="preserve">
-    <value>Текущий код бухгалтерии</value>
-  </data>
-  <data name="textEdit17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 340</value>
-  </data>
-  <data name="textEdit17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
-  </data>
-  <data name="textEdit13.EditValue" xml:space="preserve">
-    <value>Микрорайон (MAHALLE)</value>
-  </data>
-  <data name="textEdit13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 313</value>
-  </data>
-  <data name="textEdit13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit12.EditValue" xml:space="preserve">
-    <value>Район (İLÇE)</value>
-  </data>
-  <data name="textEdit12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 290</value>
-  </data>
-  <data name="textEdit12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit11.EditValue" xml:space="preserve">
-    <value>Провинция (İL)</value>
-  </data>
-  <data name="textEdit11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 267</value>
-  </data>
-  <data name="textEdit11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="chk_Cari_limit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 375</value>
-  </data>
-  <data name="chk_Cari_limit.Properties.Caption" xml:space="preserve">
-    <value>Месячный лимит</value>
-  </data>
-  <data name="chk_Cari_limit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 19</value>
-  </data>
-  <data name="textEdit1.EditValue" xml:space="preserve">
-    <value>Почта</value>
-  </data>
-  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 239</value>
-  </data>
-  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit2.EditValue" xml:space="preserve">
-    <value>Телефон 2</value>
-  </data>
-  <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 124</value>
-  </data>
-  <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit57.EditValue" xml:space="preserve">
-    <value>Карта №</value>
-  </data>
-  <data name="textEdit57.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 216</value>
-  </data>
-  <data name="textEdit57.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit58.EditValue" xml:space="preserve">
-    <value>Фамилия</value>
-  </data>
-  <data name="textEdit58.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 78</value>
-  </data>
-  <data name="textEdit58.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit59.EditValue" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="textEdit59.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 28</value>
-  </data>
-  <data name="textEdit59.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit60.EditValue" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="textEdit60.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 55</value>
-  </data>
-  <data name="textEdit60.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit22.EditValue" xml:space="preserve">
-    <value>Дата рождения</value>
-  </data>
-  <data name="textEdit61.EditValue" xml:space="preserve">
-    <value>Адрес 3</value>
-  </data>
-  <data name="textEdit61.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 193</value>
-  </data>
-  <data name="textEdit61.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit62.EditValue" xml:space="preserve">
-    <value>Телефон 1</value>
-  </data>
-  <data name="textEdit62.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 101</value>
-  </data>
-  <data name="textEdit62.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit63.EditValue" xml:space="preserve">
-    <value>Адрес 2</value>
-  </data>
-  <data name="textEdit63.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 170</value>
-  </data>
-  <data name="textEdit63.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="textEdit64.EditValue" xml:space="preserve">
-    <value>Адрес 1</value>
-  </data>
-  <data name="textEdit64.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 147</value>
-  </data>
-  <data name="textEdit64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
-  </data>
-  <data name="groupControl1.Text" xml:space="preserve">
-    <value>Личная информация</value>
-  </data>
-  <data name="tab_Cari_Tanim.Text" xml:space="preserve">
-    <value>Текущие определения</value>
   </data>
   <data name="simpleButton11.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -746,81 +428,6 @@
         ICBoOFYyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="btn_Fispr.Text" xml:space="preserve">
-    <value>&amp;Печать</value>
-  </data>
-  <data name="textEdit5.EditValue" xml:space="preserve">
-    <value>Дата 2</value>
-  </data>
-  <data name="textEdit4.EditValue" xml:space="preserve">
-    <value>Дата 1</value>
-  </data>
-  <data name="gridColumn12.Caption" xml:space="preserve">
-    <value>Продукт</value>
-  </data>
-  <data name="gridColumn13.Caption" xml:space="preserve">
-    <value>Количество</value>
-  </data>
-  <data name="gridColumn15.Caption" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="gridColumn16.Caption" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="gridView3.ViewCaption" xml:space="preserve">
-    <value>Детали чека</value>
-  </data>
-  <data name="gridColumn6.Caption" xml:space="preserve">
-    <value>Чек №</value>
-  </data>
-  <data name="gridColumn7.Caption" xml:space="preserve">
-    <value>Дата</value>
-  </data>
-  <data name="gridColumn8.Caption" xml:space="preserve">
-    <value>Филиал</value>
-  </data>
-  <data name="gridColumn9.Caption" xml:space="preserve">
-    <value>Кредит</value>
-  </data>
-  <data name="gridColumn10.Caption" xml:space="preserve">
-    <value>Дебет</value>
-  </data>
-  <data name="gridColumn11.Caption" xml:space="preserve">
-    <value>Закрытие</value>
-  </data>
-  <data name="gridView2.ViewCaption" xml:space="preserve">
-    <value>Движения текущего счета</value>
-  </data>
-  <data name="textEdit8.EditValue" xml:space="preserve">
-    <value>Баланс</value>
-  </data>
-  <data name="textEdit6.EditValue" xml:space="preserve">
-    <value>Дебет</value>
-  </data>
-  <data name="textEdit3.EditValue" xml:space="preserve">
-    <value>Кредит</value>
-  </data>
-  <data name="gridColumn3.Caption" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="gridColumn4.Caption" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="gridColumn5.Caption" xml:space="preserve">
-    <value>Фамилия</value>
-  </data>
-  <data name="gridView1.ViewCaption" xml:space="preserve">
-    <value>Текущие счета</value>
-  </data>
-  <data name="tab_CariIslem.Text" xml:space="preserve">
-    <value>Текущие операции</value>
-  </data>
-  <data name="textEdit9.EditValue" xml:space="preserve">
-    <value>Дата 2</value>
-  </data>
-  <data name="textEdit10.EditValue" xml:space="preserve">
-    <value>Дата 1</value>
-  </data>
   <data name="btn_Print.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -838,39 +445,6 @@
         ICBoOFYyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
 </value>
   </data>
-  <data name="gridColumn22.Caption" xml:space="preserve">
-    <value>Продукт</value>
-  </data>
-  <data name="gridColumn23.Caption" xml:space="preserve">
-    <value>Количество</value>
-  </data>
-  <data name="gridColumn26.Caption" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="gridColumn27.Caption" xml:space="preserve">
-    <value>Сумма</value>
-  </data>
-  <data name="gridColumn31.Caption" xml:space="preserve">
-    <value>Себестоимость</value>
-  </data>
-  <data name="gridView5.ViewCaption" xml:space="preserve">
-    <value>Детали чека</value>
-  </data>
-  <data name="gridColumn19.Caption" xml:space="preserve">
-    <value>Код</value>
-  </data>
-  <data name="gridColumn20.Caption" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="gridColumn21.Caption" xml:space="preserve">
-    <value>Фамилия</value>
-  </data>
-  <data name="gridView4.ViewCaption" xml:space="preserve">
-    <value>Текущие счета</value>
-  </data>
-  <data name="tab_CariOzet.Text" xml:space="preserve">
-    <value>Текущая сводка</value>
-  </data>
   <data name="simpleButton7.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -887,9 +461,6 @@
         IE0yMiwyMnYydjRIMTB2LTR2LTJ2LTRoMTJWMjJ6IE0yMCwyNGgtOHYyaDhWMjR6IE0yMCwyMGgtOHYy
         ICBoOFYyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
 </value>
-  </data>
-  <data name="simpleButton7.Text" xml:space="preserve">
-    <value>Печатать</value>
   </data>
   <data name="simpleButton6.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -924,15 +495,6 @@
         IiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="simpleButton3.Text" xml:space="preserve">
-    <value>В список</value>
-  </data>
-  <data name="textEdit15.EditValue" xml:space="preserve">
-    <value>Дата окончания</value>
-  </data>
-  <data name="textEdit16.EditValue" xml:space="preserve">
-    <value>Дата начала</value>
-  </data>
   <data name="simpleButton12.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
@@ -959,9 +521,6 @@
         IkJsYWNrIiAvPg0KICAgIDxwb2x5Z29uIHBvaW50cz0iOCwzMCAxOCwyMCAyMiwyNCAzMiwxNCAzMiwz
         MCAgIiBmaWxsPSIjMDM5QzIzIiBjbGFzcz0iR3JlZW4iIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
-  </data>
-  <data name="simpleButton12.Text" xml:space="preserve">
-    <value>Рулонная печать</value>
   </data>
   <data name="simpleButton9.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -992,18 +551,6 @@
         IE0yMiwyMnYydjRIMTB2LTR2LTJ2LTRoMTJWMjJ6IE0yMCwyNGgtOHYyaDhWMjR6IE0yMCwyMGgtOHYy
         ICBoOFYyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
 </value>
-  </data>
-  <data name="simpleButton8.Text" xml:space="preserve">
-    <value>Печатать</value>
-  </data>
-  <data name="xtraTabPage1.Text" xml:space="preserve">
-    <value>Текущий отчет</value>
-  </data>
-  <data name="groupControl9.Text" xml:space="preserve">
-    <value>Введенный сбор</value>
-  </data>
-  <data name="groupControl8.Text" xml:space="preserve">
-    <value>Продажи отправленные в текущие</value>
   </data>
   <data name="simpleButton14.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1037,18 +584,6 @@
         MThIOHYyaDE0VjE4eiBNMjIsMjJIOHYyaDE0VjIyeiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNr
         IiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
-  </data>
-  <data name="simpleButton15.Text" xml:space="preserve">
-    <value>В список</value>
-  </data>
-  <data name="textEdit18.EditValue" xml:space="preserve">
-    <value>Дата окончания</value>
-  </data>
-  <data name="textEdit19.EditValue" xml:space="preserve">
-    <value>Дата начала</value>
-  </data>
-  <data name="xtraTabPage2.Text" xml:space="preserve">
-    <value>Текущий отчет 2</value>
   </data>
   <data name="simpleButton17.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1085,12 +620,6 @@
         NC00cy0xLjgtNC00LTRzLTQsMS44LTQsNFMxNS44LDI0LDE4LDI0eiIgZmlsbD0iIzExNzdENyIgY2xh
         c3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
-  </data>
-  <data name="simpleButton16.Text" xml:space="preserve">
-    <value>В сприсок</value>
-  </data>
-  <data name="xtraTabPage3.Text" xml:space="preserve">
-    <value>Текущий список</value>
   </data>
   <data name="btnExcelKaydetCariRapor3Detay.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1200,8 +729,5 @@
         0UCHG3TTuKWdxk3NNG5oplDbMuI8s0T6FREXiEv/4fIp2HMxocgaQPgLGkqm26hPndkAAAAASUVORK5C
         YII=
 </value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Текущий</value>
   </data>
 </root>
