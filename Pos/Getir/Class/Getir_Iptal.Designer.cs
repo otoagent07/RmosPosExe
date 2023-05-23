@@ -50,7 +50,7 @@ namespace Pos.Getir.Class
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(512, 411);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(514, 415);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // barManager1
@@ -72,15 +72,15 @@ namespace Pos.Getir.Class
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(512, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(514, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 472);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 476);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(512, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(514, 0);
             // 
             // barDockControlLeft
             // 
@@ -88,15 +88,15 @@ namespace Pos.Getir.Class
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 472);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 476);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(512, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(514, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 472);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 476);
             // 
             // barButtonItem1
             // 
@@ -127,9 +127,9 @@ namespace Pos.Getir.Class
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(0, 411);
+            this.simpleButton1.Location = new System.Drawing.Point(0, 415);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(512, 61);
+            this.simpleButton1.Size = new System.Drawing.Size(514, 61);
             this.simpleButton1.TabIndex = 5;
             this.simpleButton1.Text = "Çıkış";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -138,7 +138,7 @@ namespace Pos.Getir.Class
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 472);
+            this.ClientSize = new System.Drawing.Size(514, 476);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.barDockControlLeft);

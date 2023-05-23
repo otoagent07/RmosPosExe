@@ -210,38 +210,73 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
         public static void Odeme_Al(int Fisno, decimal tutar, decimal doviztutar, string kapatma, string mus_tipi, string odano, int folio, string cari, int Split, string dovizkodu, bool ads, decimal mevcutTutar = 0)
         {
-            string deger = "";
-
-            if (odano != null && odano != "") // önbüro ise demek sonradan yapıldı. 23.09.2022 
+            try
             {
-                deger = kurYap(odano);
-            }
+                string deger = "";
 
-            //Param.Param_Yukle();
-
-            if (Param.Tesis_Tipi == 0)
-            {
-                if ((folio == 0 || odano == "") && cari == "")
+                if (odano != null && odano != "") // önbüro ise demek sonradan yapıldı. 23.09.2022 
                 {
-                    MessageBox.Show(res_man.GetString("Folio Bulunamadı...") + "\n" + res_man.GetString("Lütfen Hesabı Tekrar Kapatın..."), res_man.GetString("Uyarı"), System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
-                    return;
+                    deger = kurYap(odano);
                 }
-            }
 
-            decimal kur = Param.Doviz_Kuru;
-            string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
+                //Param.Param_Yukle();
 
-
-            if (Param.Tesis_Tipi == 0)   //Otel 
-            {
-                if (Param.Calisma_Sekli == 1)   //Dövizli
+                if (Param.Tesis_Tipi == 0)
                 {
-                    if (Param.Doviz_Cinsi == 2) //Müşteri Giriş Günü Kuru
+                    if ((folio == 0 || odano == "") && cari == "")
                     {
-                        int Master_folio = Convert.ToInt32(Fronttools.DegerGetir("select top 1 isnull(Rez_Master_id,Rez_Id) from Rez WITH(NOLOCK) where Rez_Id = '" + folio.ToString() + "' "));
-                        DateTime Giris_tarihi = Convert.ToDateTime(Fronttools.DegerGetir("select top 1 Rez_Giris_tarihi from Rez WITH(NOLOCK) where Rez_Id = '" + Master_folio.ToString() + "' "));
-                        kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and  Convert(date,Kurlar_Tarih,105) = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
-                        tutar = doviztutar * kur;
+                        MessageBox.Show(res_man.GetString("Folio Bulunamadı...") + "\n" + res_man.GetString("Lütfen Hesabı Tekrar Kapatın..."), res_man.GetString("Uyarı"), System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+
+                decimal kur = Param.Doviz_Kuru;
+                string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
+
+
+                if (Param.Tesis_Tipi == 0)   //Otel 
+                {
+                    if (Param.Calisma_Sekli == 1)   //Dövizli
+                    {
+                        if (Param.Doviz_Cinsi == 2) //Müşteri Giriş Günü Kuru
+                        {
+                            int Master_folio = Convert.ToInt32(Fronttools.DegerGetir("select top 1 isnull(Rez_Master_id,Rez_Id) from Rez WITH(NOLOCK) where Rez_Id = '" + folio.ToString() + "' "));
+                            DateTime Giris_tarihi = Convert.ToDateTime(Fronttools.DegerGetir("select top 1 Rez_Giris_tarihi from Rez WITH(NOLOCK) where Rez_Id = '" + Master_folio.ToString() + "' "));
+                            kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and  Convert(date,Kurlar_Tarih,105) = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
+                            tutar = doviztutar * kur;
+                        }
+                        else
+                        {
+                            if (Param.Kurlar_Nerden == 0) // otel
+                            {
+                                kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+
+                                string onburoGirisKurdanmiAlinsi = Fronttools.DegerGetir("select top 1 Fis_Hesapgir_kur_e_gk from Fishrk"); // K İSE GİRİŞTEN G ise günlük
+
+                                if (odano!=null && onburoGirisKurdanmiAlinsi.Equals("K"))
+                                {
+                                    string girisKur = Fronttools.DegerGetir("select top 1 Rez_Kur_uygulanan from rez where Rez_Odano='" + odano + "' and Rez_R_I_H='I'"); // K İSE GİRİŞTEN G ise günlük
+
+                                    //tutar = doviztutar * Convert.ToDecimal(girisKur);
+                                    kur = Convert.ToDecimal(girisKur);
+
+                                    if (kur == 0)
+                                    {
+                                        kur = Param.Doviz_Kuru;
+                                    }
+
+                                    satisKurYenile(kur, Fisno.ToString());
+                                }
+                            }
+                            else
+                            {
+                                string text = "select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'";
+                                string query = Fronttools.DegerGetir(text);
+
+                                kur = Convert.ToDecimal(query);
+                            }
+                            tutar = doviztutar * kur;
+                        }
                     }
                     else
                     {
@@ -249,22 +284,6 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
                         {
                             kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
 
-                            string onburoGirisKurdanmiAlinsi = Fronttools.DegerGetir("select top 1 Fis_Hesapgir_kur_e_gk from Fishrk"); // K İSE GİRİŞTEN G ise günlük
-
-                            if (onburoGirisKurdanmiAlinsi.Equals("K"))
-                            {
-                                string girisKur = Fronttools.DegerGetir("select top 1 Rez_Kur_uygulanan from rez where Rez_Odano='" + odano + "' and Rez_R_I_H='I'"); // K İSE GİRİŞTEN G ise günlük
-
-                                //tutar = doviztutar * Convert.ToDecimal(girisKur);
-                                kur = Convert.ToDecimal(girisKur);
-
-                                if (kur == 0)
-                                {
-                                    kur = Param.Doviz_Kuru;
-                                }
-
-                                satisKurYenile(kur, Fisno.ToString());
-                            }
                         }
                         else
                         {
@@ -273,69 +292,60 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
                         tutar = doviztutar * kur;
                     }
                 }
-                else
+                if (Param.Tesis_Tipi == 1)
                 {
-                    if (Param.Kurlar_Nerden == 0) // otel
-                    {
-                        kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
-
-                    }
-                    else
-                    {
-                        kur = Convert.ToDecimal(dbtools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
-                    }
+                    string dovizXml = dbtools.DegerGetir("select Mkodlar_Xml from Muh_Kodlar where Mkodlar_Sinif = '02' and Mkodlar_Kod = '" + dovizkodu + "'");
+                    //if (!(dovizXml == "" || dovizXml == "TL"))
+                    //{
+                    kur = Convert.ToDecimal(dbtools.DegerGetir("select isnull((select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'),1)"));
                     tutar = doviztutar * kur;
+                    //}
+                }
+
+                if (Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1 && mevcutTutar != 0)
+                {
+                    tutar = StatikSinif.getTutarKontrol(tutar, mevcutTutar);
+                }
+
+
+                SqlConnection con = dbtools.conn;
+                if (con.State == ConnectionState.Closed) con.Open();
+                SqlCommand com = new SqlCommand();
+                com.Connection = con;
+                com.CommandType = CommandType.StoredProcedure;
+                com.CommandTimeout = 0;
+                com.CommandText = "Pos_Satis_Odeme";
+                com.Parameters.AddWithValue("@Tarih", Param.Tarih);
+                com.Parameters.AddWithValue("@Fisno", Fisno);
+                com.Parameters.AddWithValue("@Tutar", tutar.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Doviztutar", doviztutar.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Dovizkur", kur.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Kapatma", kapatma);
+                com.Parameters.AddWithValue("@Mustipi", mus_tipi);
+                com.Parameters.AddWithValue("@Odano", odano);
+                com.Parameters.AddWithValue("@Folio", folio);
+                com.Parameters.AddWithValue("@Cari", cari);
+                com.Parameters.AddWithValue("@Split", Split);
+                com.Parameters.AddWithValue("@DovizKodu", dovizkodu);
+                com.Parameters.AddWithValue("@UserKod", User.P_Kod);
+                com.Parameters.AddWithValue("@Ads", ads);
+                if (Departman.Kodlar_Ingenico_IWE == true) com.Parameters.AddWithValue("@Rsat_Ingenico_Status", 1);
+
+
+                com.ExecuteNonQuery();
+                if (con.State == ConnectionState.Open) con.Close();
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, Fisno.ToString() + " Fiş Ödeme Alındı. Tutar:" + tutar.ToString() + " Kod: " + kapatma, Fisno.ToString(), "");
+
+
+                if (!deger.Equals("") && deger.Equals("1"))
+                {
+                    Fronttools.execcmd("update rez set  Rez_Kur_uygulanan ='1' where Rez_Odano='" + odano + "' and Rez_R_I_H='I'");
                 }
             }
-            if (Param.Tesis_Tipi == 1)
+            catch (Exception ex)
             {
-                string dovizXml = dbtools.DegerGetir("select Mkodlar_Xml from Muh_Kodlar where Mkodlar_Sinif = '02' and Mkodlar_Kod = '" + dovizkodu + "'");
-                //if (!(dovizXml == "" || dovizXml == "TL"))
-                //{
-                kur = Convert.ToDecimal(dbtools.DegerGetir("select isnull((select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizkodu + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'),1)"));
-                tutar = doviztutar * kur;
-                //}
-            }
-
-            if (Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1 && mevcutTutar != 0)
-            {
-                tutar = StatikSinif.getTutarKontrol(tutar, mevcutTutar);
-            }
-
-
-            SqlConnection con = dbtools.conn;
-            if (con.State == ConnectionState.Closed) con.Open();
-            SqlCommand com = new SqlCommand();
-            com.Connection = con;
-            com.CommandType = CommandType.StoredProcedure;
-            com.CommandTimeout = 0;
-            com.CommandText = "Pos_Satis_Odeme";
-            com.Parameters.AddWithValue("@Tarih", Param.Tarih);
-            com.Parameters.AddWithValue("@Fisno", Fisno);
-            com.Parameters.AddWithValue("@Tutar", tutar.ToString().Replace(",", "."));
-            com.Parameters.AddWithValue("@Doviztutar", doviztutar.ToString().Replace(",", "."));
-            com.Parameters.AddWithValue("@Dovizkur", kur.ToString().Replace(",", "."));
-            com.Parameters.AddWithValue("@Kapatma", kapatma);
-            com.Parameters.AddWithValue("@Mustipi", mus_tipi);
-            com.Parameters.AddWithValue("@Odano", odano);
-            com.Parameters.AddWithValue("@Folio", folio);
-            com.Parameters.AddWithValue("@Cari", cari);
-            com.Parameters.AddWithValue("@Split", Split);
-            com.Parameters.AddWithValue("@DovizKodu", dovizkodu);
-            com.Parameters.AddWithValue("@UserKod", User.P_Kod);
-            com.Parameters.AddWithValue("@Ads", ads);
-            if (Departman.Kodlar_Ingenico_IWE == true) com.Parameters.AddWithValue("@Rsat_Ingenico_Status", 1);
-
-
-            com.ExecuteNonQuery();
-            if (con.State == ConnectionState.Open) con.Close();
-
-            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, Fisno.ToString() + " Fiş Ödeme Alındı. Tutar:" + tutar.ToString() + " Kod: " + kapatma, Fisno.ToString(), "");
-
-
-            if (!deger.Equals("") && deger.Equals("1"))
-            {
-                Fronttools.execcmd("update rez set  Rez_Kur_uygulanan ='1' where Rez_Odano='" + odano + "' and Rez_R_I_H='I'");
+                RHMesaj.MyMessageError(MyClass, "Odeme_Al", "",ex);
             }
         }
 

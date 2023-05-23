@@ -622,60 +622,68 @@ namespace Pos
 
         private void Fis_Update()
         {
-            if (Convert.ToString(musTipi_A) != String.Empty)
+            try
             {
-
-                string query2 = "update Cst_Recete_Satis set Rsat_MusTipi = '" + musTipi_A + "',Rsat_Odano = '" + odaNo_A + "',Rsat_Folio = '" + folio_A + "',Rsat_Pansiyon = '" + pansiyon_A + "',Rsat_Uye_Id = '" + uyeId_A + "', "
-                                        + " Rsat_Uye_Ad = '" + uyeAdsoyad_A + "',Rsat_Uye_Kart_Turu = '" + uyeKartturu_A + "', Rsat_Indkodu = '" + indKodu_A + "',Rsat_Indoran = '" + indOran_A.ToString().Replace(",", ".") + "', "
-                                         + " Rsat_Kartno = '" + FolioKart_No + "', Rsat_Kart_ID = '" + FolioKart_ID + "' "
-
-                                        + " where Rsat_Fisno = '" + this.Tag + "' and Rsat_Ba = 'B'";
-
-                dbtools.execcmd(query2);
-
-                dbtools.execcmd("exec Pos_Satis_Induyg @Fisno = " + this.Tag);
-
-
-                if (Param.Calisma_Sekli == 1)   //Dövizli
+                if (Convert.ToString(musTipi_A) != String.Empty)
                 {
-                    string dovkod = Param.Doviz_Kodu;
-                    if (look_DovizKod.EditValue != null)
+
+                    string query2 = "update Cst_Recete_Satis set Rsat_MusTipi = '" + musTipi_A + "',Rsat_Odano = '" + odaNo_A + "',Rsat_Folio = '" + folio_A + "',Rsat_Pansiyon = '" + pansiyon_A + "',Rsat_Uye_Id = '" + uyeId_A + "', "
+                                            + " Rsat_Uye_Ad = '" + uyeAdsoyad_A + "',Rsat_Uye_Kart_Turu = '" + uyeKartturu_A + "', Rsat_Indkodu = '" + indKodu_A + "',Rsat_Indoran = '" + indOran_A.ToString().Replace(",", ".") + "', "
+                                             + " Rsat_Kartno = '" + FolioKart_No + "', Rsat_Kart_ID = '" + FolioKart_ID + "' "
+
+                                            + " where Rsat_Fisno = '" + this.Tag + "' and Rsat_Ba = 'B'";
+
+                    dbtools.execcmd(query2);
+
+                    dbtools.execcmd("exec Pos_Satis_Induyg @Fisno = " + this.Tag);
+
+
+                    if (Param.Calisma_Sekli == 1)   //Dövizli
                     {
-                        dovkod = look_DovizKod.EditValue.ToString();
-                    }
-
-                    string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
-                    if (Param.Doviz_Cinsi == 2) //Müşteri Giriş Günü Kuru
-                    {
-                        int Master_folio = Convert.ToInt32(Fronttools.DegerGetir("select top 1 isnull(Rez_Master_id,Rez_Id) from Rez WITH(NOLOCK) where Rez_Id = '" + folio_A.ToString() + "' "));
-                        DateTime Giris_tarihi = Convert.ToDateTime(Fronttools.DegerGetir("select top 1 Rez_Giris_tarihi from Rez WITH(NOLOCK) where Rez_Id = '" + Master_folio.ToString() + "' "));
-                        Param.Doviz_Kuru = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovkod + "' and  Convert(date,Kurlar_Tarih,105) = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
-
-                        //Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
-                        //tutar = doviztutar * kur;
-
-                        dbtools.execcmd("update Cst_Recete_Satis set Rsat_Tutar = Rsat_Doviztutar * " + Param.Doviz_Kuru.ToString().Replace(",", ".") + ",Rsat_Net = ((Rsat_Doviztutar * " + Param.Doviz_Kuru.ToString().Replace(",", ".") + ") *100 ) / (100 * Rsat_Kdvoran), Rsat_Kdv = (Rsat_Doviztutar * " + Param.Doviz_Kuru.ToString().Replace(",", ".") + ") - ((Rsat_Doviztutar * " + Param.Doviz_Kuru.ToString().Replace(",", ".") + ") *100 ) / (100 * Rsat_Kdvoran) where Rsat_Fisno = '" + this.Tag + "' and Rsat_Ba = 'B'");
-
-                    }
-                    else
-                    {
-                        if (Param.Kurlar_Nerden == 0) // otel
+                        string dovkod = Param.Doviz_Kodu;
+                        if (look_DovizKod.EditValue != null)
                         {
+                            dovkod = look_DovizKod.EditValue.ToString();
+                        }
 
-                            string query = "select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovkod + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'";
-                            Param.Doviz_Kuru = Convert.ToDecimal(Fronttools.DegerGetir(query));
-                            //Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                        string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
+                        if (Param.Doviz_Cinsi == 2) //Müşteri Giriş Günü Kuru
+                        {
+                            int Master_folio = Convert.ToInt32(Fronttools.DegerGetir("select top 1 isnull(Rez_Master_id,Rez_Id) from Rez WITH(NOLOCK) where Rez_Id = '" + folio_A.ToString() + "' "));
+                            DateTime Giris_tarihi = Convert.ToDateTime(Fronttools.DegerGetir("select top 1 Rez_Giris_tarihi from Rez WITH(NOLOCK) where Rez_Id = '" + Master_folio.ToString() + "' "));
+                            Param.Doviz_Kuru = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovkod + "' and  Convert(date,Kurlar_Tarih,105) = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
+
+                            //Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
+                            //tutar = doviztutar * kur;
+
+                            dbtools.execcmd("update Cst_Recete_Satis set Rsat_Tutar = Rsat_Doviztutar * " + Param.Doviz_Kuru.ToString().Replace(",", ".") + ",Rsat_Net = ((Rsat_Doviztutar * " + Param.Doviz_Kuru.ToString().Replace(",", ".") + ") *100 ) / (100 * Rsat_Kdvoran), Rsat_Kdv = (Rsat_Doviztutar * " + Param.Doviz_Kuru.ToString().Replace(",", ".") + ") - ((Rsat_Doviztutar * " + Param.Doviz_Kuru.ToString().Replace(",", ".") + ") *100 ) / (100 * Rsat_Kdvoran) where Rsat_Fisno = '" + this.Tag + "' and Rsat_Ba = 'B'");
+
                         }
                         else
                         {
-                            Param.Doviz_Kuru = Convert.ToDecimal(dbtools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovkod + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
-                            //Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                            if (Param.Kurlar_Nerden == 0) // otel
+                            {
+
+                                string query = "select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovkod + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'";
+                                Param.Doviz_Kuru = Convert.ToDecimal(Fronttools.DegerGetir(query));
+                                //Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                            }
+                            else
+                            {
+                                Param.Doviz_Kuru = Convert.ToDecimal(dbtools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovkod + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                                //Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                            }
+                            //tutar = doviztutar * kur;
                         }
-                        //tutar = doviztutar * kur;
                     }
+
+                    LimitKontrol();
                 }
 
-                LimitKontrol();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
 
@@ -1837,7 +1845,7 @@ namespace Pos
             bool kapalimi = false;
             try
             {
-                string saatAralik = dbtools.DegerGetir("select top 1 saatAralikDurdur from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='" + look_Kapatma.EditValue + "'");
+                string saatAralik = dbtools.DegerGetir("select top 1 isnull(saatAralikDurdur,'') as saatAralikDurdur from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='" + look_Kapatma.EditValue + "'");
 
                 if (!saatAralik.Equals("") && saatAralik.Contains("-"))
                 {
@@ -2856,7 +2864,7 @@ namespace Pos
 
                         if (val == 0)
                         {
-                            e.DisplayText = "";
+                            e.DisplayText = "0";
                         }
 
                     }
@@ -2869,12 +2877,12 @@ namespace Pos
 
                         if (val == 0)
                         {
-                            e.DisplayText = "";
+                            e.DisplayText = "0";
                         }
                     }
                     else if (e.Value.ToString().Length == 0)
                     {
-                        e.DisplayText = "";
+                        e.DisplayText = "0";
                     }
                 }
             }
