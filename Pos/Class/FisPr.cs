@@ -587,8 +587,6 @@ namespace Pos.Class
 
                             siparis.Print();
                         }
-
-
                     }
 
                     AbuyerPr(Fisno, Mars, Split, abuyerBaslik, kartDetay1, kartdetay2, hizliSatis);
@@ -6121,9 +6119,9 @@ order by Pkod_Kod";
         public DataTable SiparisPrinterBul(int Fisno, int Split, bool SiparisTumYazici)
         {
             string query = "exec Pos_Sorgu @Sorgu_Tipi = 13, @Fisno = '" + Fisno + "', @Split = '" + Split + "', @MacAdres = '" + dbtools.MacAdresi() + "',@SiparisTumYazici = '" + SiparisTumYazici + "' ";
+            DataTable dataTable = dbtools.SelectTable(query);
 
-
-            return dbtools.SelectTable(query);
+            return dataTable;
         }
 
         public DataTable ZayiPrinterBul(int Fisno, int Split, bool SiparisTumYazici)

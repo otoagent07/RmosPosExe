@@ -158,7 +158,28 @@ namespace Pos
 
 
             btnJokerAciklama.Visible = Departman.Kodlar_YS_Aktif;
+
+
+            hesapYazmismi();
         }
+
+        string kodlarkodadisyonaktifmi = "";
+        string adisyondahaoncedenyazdirilmismi = "";
+        public void hesapYazmismi()
+        {
+            kodlarkodadisyonaktifmi = dbtools.DegerGetir("select isnull(Kodlar_Adisyon,0) Kodlar_Adisyon from Stok_Kodlar where Kodlar_Kod='" + Departman.Dep_Kodu + "' and Kodlar_Sinif='01'");
+            adisyondahaoncedenyazdirilmismi = dbtools.DegerGetir("select isnull(Rsat_AdisyonPr,0) Rsat_AdisyonPr from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "'");
+        }
+
+
+        public void hesapyazmissaRenginiGuncelle()
+        {
+            if (kodlarkodadisyonaktifmi == "True" && adisyondahaoncedenyazdirilmismi == "True")
+            {
+                dbtools.execcmdR("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Convert.ToString(bartxt_MasaNo.EditValue) + "'");
+            }
+        }
+
 
         public string barkodAktifmi = "false";
 
@@ -1298,7 +1319,7 @@ namespace Pos
                         fis.HesapDokum(false, Convert.ToInt32(bartxt_FisNo.EditValue), 0);
                     }
 
-                    if (Departman.Kodlar_AndPos_NFC ) // User.Pos_KartfIndirimAktif 
+                    if (Departman.Kodlar_AndPos_NFC) // User.Pos_KartfIndirimAktif 
                     {
                         Siparis_Gonder(false);
                     }
@@ -2440,6 +2461,8 @@ namespace Pos
         {
             try
             {
+              
+
                 DialogResult c = System.Windows.Forms.DialogResult.Yes;
 
                 if (Param.Param_Siparis_Uyari)
@@ -2533,6 +2556,10 @@ namespace Pos
                 {
                     btn_Cikis_Click(null, null);
                 }
+
+               
+
+
             }
             catch (Exception ex)
             {
@@ -2719,6 +2746,8 @@ namespace Pos
             }
             else
             {
+
+
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + bartxt_FisNo.EditValue.ToString() + "' ");
 
                 RHMesaj.alertMesaj("Sipariş Yazdırıldı", 5);
@@ -3154,12 +3183,49 @@ namespace Pos
                 //    return;
                 //}
 
+             
+
+                iptalFisCikar(kodlarkodadisyonaktifmi);
 
                 Miktar = -1;
 
                 Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")));
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Miktar_Duzelt, Log.Log_Islem.Duzelt, Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktarı " + eskiMiktar.ToString() + " iken Miktarı 1 Azalttı.", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
+
+
+
+
+                if (kodlarkodadisyonaktifmi == "True")
+                {
+
+                    btn_Cikis.Enabled = true;
+                    btn_Siparis.Enabled = false;
+                }
+
+
+            }
+        }
+
+        public void iptalFisCikar(string kodlarkodadisyonaktifmi)
+        {
+            string yazdirilmissa = "Yazdırılmamış";
+
+            if (kodlarkodadisyonaktifmi == "True" && Departman.Siparis && Param.satirsilfiscikmasinaktif == false)
+            {
+                FisPr fis = new FisPr();
+                string sonuc = fis.newIptalPr(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), 1);
+
+
+                if (fis.yazdirilmismi)
+                {
+                    yazdirilmissa = "Yazdırılmış";
+                }
+                if (sonuc != "OK")
+                {
+                    MessageBox.Show(sonuc);
+                }
+
             }
         }
 
@@ -3722,6 +3788,9 @@ namespace Pos
             {
                 dbtools.execcmd("update Pos_Masa set Masa_Durum='0',Masa_NFC='0',Masa_Ozel=NULL where Masa_No='" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             }
+
+
+            hesapyazmissaRenginiGuncelle();
         }
 
         private void btnAdresGuncelle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -8,8 +8,16 @@ using DevExpress.XtraReports.UI;
 
 namespace Pos.Class
 {
+
+
     public class AdisyonPr
     {
+        public  DataTable GetSortedTable(DataTable dt, string sort)
+        {
+            dt.DefaultView.Sort = sort;
+            return dt.DefaultView.ToTable();
+        }
+
         // 04.05.2023 kodu
         public string Adisyon_YazYeni(int Fisno, bool Detay = false)
         {
@@ -328,6 +336,11 @@ namespace Pos.Class
         }
 
         // aşağıki metot 30.07.2021 e ait
+
+
+
+
+        // aşağıki metot 30.07.2021 e ait
         public string Adisyon_Yaz(int Fisno, bool Detay = false)
         {
             //Printer Seçimi
@@ -378,16 +391,25 @@ namespace Pos.Class
             DataTable dt_Odeme = new DataTable();
             dt_Odeme = ds.Tables[1];
 
-            if (!Detay)
+            dt_Fis = GetSortedTable(dt_Fis, "Rsat_AdisPrSayac DESC");
+
+            int prSayac2 = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"]);
+            if (!Detay && prSayac2!=0)
             {
                 //Toplama Göre Boş Satır
                 int toplam = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"]);
-                for (int i = 0; i < toplam; i++)
+                for (int i = 0; i < toplam+1; i++)
                 {
                     DataRow row = dt_Fis.NewRow();
                     dt_Fis.Rows.InsertAt(row, 1);
                 }
             }
+
+            // her zaman 1 tane boş satır atıyorum işim garanti olsun toplam'ın üstüne ürün binmesin diye
+            //if (dt_Fis != null && dt_Fis.Rows.Count > 0)
+            //{
+            //    dt_Fis.Rows.InsertAt(dt_Fis.NewRow(), dt_Fis.Rows.Count);
+            //}
 
             Adisyon ads = new Adisyon();
             xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), ads);
