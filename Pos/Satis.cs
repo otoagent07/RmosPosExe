@@ -176,7 +176,7 @@ namespace Pos
         {
             if (kodlarkodadisyonaktifmi == "True" && adisyondahaoncedenyazdirilmismi == "True")
             {
-                dbtools.execcmdR("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Convert.ToString(bartxt_MasaNo.EditValue) + "'");
+                dbtools.execcmdR("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Convert.ToString(bartxt_MasaNo.EditValue) + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             }
         }
 
