@@ -1115,17 +1115,37 @@ namespace Pos
                 //    return;
                 //}
 
-                string masaNo = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Masa"));
-                if (masaNo == "")
-                {
-                    MessageBox.Show(res_man.GetString("Masa Bilgisi Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    return;
-                }
+                // 30.05.2023 de yorum yapıldı
+                //string masaNo = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Masa"));
+                //if (masaNo == "")
+                //{
+                //    MessageBox.Show(res_man.GetString("Masa Bilgisi Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                //    return;
+                //}
+
 
                 if (MessageBox.Show(res_man.GetString("Seçili Masayı Geri Almak İstiyor Musunuz?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
                 {
                     return;
                 }
+
+                string masaNo = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Masa"));
+                if (masaNo == "")
+                {
+                    string fisno = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno"));
+                     masaNo = dbtools.DegerGetir("select top 1 Masa_No from Pos_Masa where Masa_Durum='0' and Masa_Depart='" + Departman.Dep_Kodu + "' order by Masa_Id desc");
+                    
+                    
+                    string query = "update Cst_Recete_Satis set Rsat_Masa='"+ masaNo + "',Rsat_OzelMasaAdi='"+ masaNo + "' where Rsat_Fisno='"+ fisno + "'";
+                    dbtools.execcmdR(query);
+
+                    dbtools.execcmdR("update Pos_Masa set Masa_Durum='1' where Masa_No='"+ masaNo + "' and Masa_Depart='"+ Departman.Dep_Kodu + "'");
+
+                    MessageBox.Show("MASANO : "+masaNo+" Aktarılmıştır ");
+                }
+
+
+               
 
                 DataTable dtDurum = dbtools.SelectTable("select Rsat_Durum from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Masa = '" + masaNo + "' and rsat_Departman = '" + Convert.ToString(bandedGridView1.GetFocusedRowCellValue("DepartmanKod")) + "' and Rsat_Durum = 'A' ");
                 if (dtDurum.Rows.Count > 0)

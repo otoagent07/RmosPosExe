@@ -38,6 +38,9 @@ namespace Pos
             InitializeComponent();
         }
 
+        public bool otomatikSatis = false;
+        public string kartnom = "";
+
         private void Arama_Load(object sender, EventArgs e)
         {
 
@@ -679,6 +682,16 @@ namespace Pos
         private void gridControl1_DoubleClick(object sender, EventArgs e)
         {
             tamam();
+        }
+
+        private void Arama_Shown(object sender, EventArgs e)
+        {
+            if (otomatikSatis)
+            {
+                chk_KartNo.Checked = true;
+                txt_Arama.Text = kartnom;
+                btn_OK.PerformClick();
+            }
         }
     }
 }

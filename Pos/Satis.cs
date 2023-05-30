@@ -61,6 +61,14 @@ namespace Pos
 
         public string CariTel = String.Empty;
 
+
+        public bool otomatikSatis = false;
+        public string recetekod = "";
+        public string kartnom = "";
+        public string hizmetOdemeKod = "";
+        public int hizmetmiktar = 1;
+
+
         public Satis()
         {
             InitializeComponent();
@@ -575,9 +583,11 @@ namespace Pos
             {
                 gridControl1.DataSource = null;
             }
+            if (otomatikSatis) return true;
             Arama ara = new Arama();
             if (Masa_Durum == 0)
             {
+                
                 ara.Tag = "M";
                 ara.ShowDialog(); // burası çalıştı
 
@@ -1296,7 +1306,9 @@ namespace Pos
                         //}
 
                         dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
-                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, "Fiş Kapatma. Fisno:" + Convert.ToInt32(bartxt_FisNo.EditValue.ToString()) + " Masano:" + Masa_No.ToString(), Convert.ToString(bartxt_FisNo.EditValue.ToString()), "");
+
+                        string masa = Masa_No == null ? "":Masa_No;
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, "Fiş Kapatma. Fisno:" + Convert.ToInt32(bartxt_FisNo.EditValue.ToString()) + " Masano:" + masa, Convert.ToString(bartxt_FisNo.EditValue.ToString()), "");
 
 
                     }
@@ -2151,6 +2163,10 @@ namespace Pos
                     Rsat_SiparisPr = true;
                 }
 
+                if (otomatikSatis)
+                {
+                    Miktar = hizmetmiktar;
+                }
 
                 SqlConnection con = dbtools.conn;
                 if (con.State == ConnectionState.Closed) con.Open();
@@ -3831,6 +3847,67 @@ namespace Pos
             StatikSinif.masaKilitle(Masa_No);
 
             btn_Cikis.Enabled = true;
+
+            if (otomatikSatis)
+            {
+                Arama ara = new Arama();// pos tatış nfc aktif değilse
+                ara.Tag = "D";
+                ara.kartnom = kartnom;
+                ara.otomatikSatis = true;
+                ara.ShowDialog();
+
+                D_Mus_tipi = ara.Mus_tipi;
+                D_Oda_No = ara.Oda_No;
+                D_Folio = ara.Folio;
+                D_Pansiyon = ara.Pansiyon;
+                D_Uye_Id = ara.Uye_Id;
+                D_Uye_Adsoyad = ara.Uye_Adsoyad;
+                D_Uye_Kartturu = ara.Uye_Kartturu;
+                D_Cari_Kod = ara.Cari_Kod;
+                D_Ind_Kodu = ara.Ind_Kodu;
+                D_Ind_Oran = ara.Ind_Oran;
+                D_Odeme = ara.Odeme_Kodu;
+                D_MasterId = ara.Master_Folio;
+                Kart_No = ara.Kart_No;
+                FolioKart_ID = ara.KartID;
+
+                bartxt_OdaNo.EditValue = ara.Oda_No;
+
+                CardF_Indirim = ara.CardF_Indirim;
+                try
+                {
+                    string comp = Fronttools.DegerGetir("select top 1 CardF_MusteriTipi from kartf where ID='" + ara.KartID + "'");
+
+                    if (comp.Equals("CM"))
+                    {
+                        label1.Text = "COMP";
+                        label1.ForeColor = Color.Red;
+                    }
+                    else if (comp.Equals("OM"))
+                    {
+                        label1.Text = "OTEL MİSAFİRİ";
+                        label1.ForeColor = Color.Red;
+                    }
+
+                    decimal folioBakiye = Fronttools.BalanceBul(D_MasterId, Kart_No, FolioKart_ID) * -1; //13,95
+                    btnBakiye.Text = folioBakiye.ToString("N2");
+
+
+                }
+                catch (Exception ex) { }
+
+
+                Urun_Sat(recetekod);
+
+                foreach (SimpleButton item in flp_Kapatma.Controls)
+                {
+                    if (item.Tag.ToString()==hizmetOdemeKod)
+                    {
+                        item.PerformClick();
+                        break;
+                    }
+                }
+            }
         }
 
         public void marsKontrol(bool siparisten)

@@ -361,6 +361,17 @@ namespace Pos
 
         private void Pos_ExtraFolio_Load(object sender, EventArgs e)
         {
+            DataTable dthizmetodemekod = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43, @Dep_Kodu = '" + Departman.Dep_Kodu + "'");
+            hizmetOdemeKod.Properties.DataSource = dthizmetodemekod;
+            hizmetOdemeKod.Properties.DisplayMember = "Pkod_Ad";
+            hizmetOdemeKod.Properties.ValueMember = "Pkod_Kod";
+
+
+            DataTable dtRecete = dbtools.SelectTable("select Rec_Genelkod,Rec_Ad from Cst_Recete WITH(NOLOCK) order by Rec_Genelkod");
+            HizmetReceteKod.Properties.DataSource = dtRecete;
+            HizmetReceteKod.Properties.DisplayMember = "Rec_Ad";
+            HizmetReceteKod.Properties.ValueMember = "Rec_Genelkod";
+
 
             txtKartFIndirim.Enabled = User.Pos_KartfIndirimAktif;
 
@@ -483,6 +494,8 @@ namespace Pos
                 txtParam_OdaNo.Text = Param_ExtraFolio.Front_KartF_Odano;
                 look_Kapatma.EditValue = Param_ExtraFolio.Front_Kapatma;
                 look_GelirIade.EditValue = Param_ExtraFolio.Front_GelirIade;
+                HizmetReceteKod.EditValue = Param_ExtraFolio.HizmetReceteKod;
+                hizmetOdemeKod.EditValue = Param_ExtraFolio.hizmetOdemeKod;
 
             }
 
@@ -635,11 +648,11 @@ namespace Pos
                                 ,[Front_KartF_Odano]
                                 ,Front_Kapatma
                                 ,Front_IadeKK
-                                ,Front_GelirIade) 
+                                ,Front_GelirIade,HizmetReceteKod,hizmetOdemeKod) 
 
 VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + look_OdemeSekli.EditValue + "','" + look_KurKodu.EditValue + "','"
     + look_Konaklama.EditValue + "','" + look_MusteriTipi + "','" + Departman.Dep_Kodu + "','" + look_IadeNkt.EditValue + "','" + rdb_Kart_Onburo.EditValue + "','" + txtParam_OdaNo.Text + "','"
-    + look_Kapatma.EditValue + "','" + look_IadeKK.EditValue + "','" + look_GelirIade.EditValue + "')");
+    + look_Kapatma.EditValue + "','" + look_IadeKK.EditValue + "','" + look_GelirIade.EditValue + "','" + HizmetReceteKod.EditValue + "','" + hizmetOdemeKod.EditValue + "')");
 
 
             }
@@ -659,6 +672,8 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                                         ,[Front_Kapatma] = '" + look_Kapatma.EditValue + @"'
                                         ,[Front_IadeKK] = '" + look_IadeKK.EditValue + @"'
                                         ,[Front_GelirIade] = '" + look_GelirIade.EditValue + @"'
+                                        ,[HizmetReceteKod] = '" + HizmetReceteKod.EditValue + @"'
+                                        ,[hizmetOdemeKod] = '" + hizmetOdemeKod.EditValue + @"'
                                  WHERE Front_Departman = '" + Departman.Dep_Kodu + "'");
             }
 
@@ -830,8 +845,32 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Kart, Log.Log_Islem.Kaydet, txt_BakiyeKartNo.Text + " Nolu Karta " + txt_BakiyeLimit.EditValue + " TL Bakiye Yüklenmiştir.", "", Convert.ToString(lookCardF_FolioID.EditValue));
         }
 
+        public void otomatikReceteSatis()
+        {
+            try
+            {
+                if (checkEditHizmetBedeli.Checked)
+                {
+                    Satis satis = new Satis();
+                    satis.otomatikSatis = true;
+                    satis.kartnom = txtCardF_Kartno.Text;
+                    satis.recetekod = Param_ExtraFolio.HizmetReceteKod;
+                    satis.hizmetOdemeKod = Param_ExtraFolio.hizmetOdemeKod;
+                    satis.hizmetmiktar = Convert.ToInt32(kisiSayisi);
+                    satis.Show();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                RHMesaj.MyMessageError(MyClass, "otomatikReceteSatis", "",ex);
+            }
+            
+        }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+        
+
             if (Convert.ToString(look_OdemeDep.EditValue) == "")
             {
                 MessageBox.Show(res_man.GetString("Bakiye Yüklemek için Ödeme Departmanını Seçiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
@@ -858,6 +897,8 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                     pr.ExtraFolioPr(txt_BakiyeKartNo.Text, Convert.ToInt32(txt_BakiyeFolioID.Text), "BİLGİ FİŞİ", Convert.ToDecimal(txt_BakiyeLimit.EditValue), "Yüklenen", chk_Altbilgi.Checked, (string)look_DovizKod.EditValue);
                 }
 
+
+                otomatikReceteSatis();
                 MessageBox.Show(res_man.GetString("Bakiye Yüklenmiştir..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -1304,6 +1345,8 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             CardF_Listele();
         }
 
+        public string kisiSayisi = "1";
+
         bool Rack = true;
         private void gridView3_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
@@ -1341,6 +1384,8 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             CardF_MusteriTipi.EditValue = Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_MusteriTipi"));
             txtKartFIndirim.EditValue = Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Indirim"));
             txtCardF_Kisi.Text = Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Kisi")) == "" ? "1" : Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Kisi"));
+
+            kisiSayisi = txtCardF_Kisi.Text;
             CardF_Limit_Uyari.SelectedIndex = (Convert.ToString(gridView3.GetFocusedRowCellValue("CardF_Limit_Uyari")) == "E" ? 0 : 1);
 
 

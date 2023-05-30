@@ -810,6 +810,7 @@
             this.Name = "Arama";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Arama_FormClosing);
             this.Load += new System.EventHandler(this.Arama_Load);
+            this.Shown += new System.EventHandler(this.Arama_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

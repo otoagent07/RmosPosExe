@@ -294,6 +294,11 @@
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Param = new DevExpress.XtraEditors.CheckButton();
             this.chk_Rapor = new DevExpress.XtraEditors.CheckButton();
+            this.HizmetReceteKod = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.checkEditHizmetBedeli = new DevExpress.XtraEditors.CheckEdit();
+            this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            this.hizmetOdemeKod = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_OdemeDep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
@@ -450,6 +455,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HizmetReceteKod.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditHizmetBedeli.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hizmetOdemeKod.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bandedGridColumn41
@@ -1048,6 +1058,7 @@
             // 
             // tab_BakiyeYukle
             // 
+            this.tab_BakiyeYukle.Controls.Add(this.checkEditHizmetBedeli);
             this.tab_BakiyeYukle.Controls.Add(this.simpleButton29);
             this.tab_BakiyeYukle.Controls.Add(this.look_DovizKod);
             this.tab_BakiyeYukle.Controls.Add(this.simpleButton21);
@@ -2753,6 +2764,10 @@
             // 
             // tab_Param
             // 
+            this.tab_Param.Controls.Add(this.textEdit12);
+            this.tab_Param.Controls.Add(this.hizmetOdemeKod);
+            this.tab_Param.Controls.Add(this.HizmetReceteKod);
+            this.tab_Param.Controls.Add(this.textEdit5);
             this.tab_Param.Controls.Add(this.textEdit42);
             this.tab_Param.Controls.Add(this.look_GelirIade);
             this.tab_Param.Controls.Add(this.textEdit32);
@@ -3054,6 +3069,55 @@
             this.chk_Rapor.Name = "chk_Rapor";
             this.chk_Rapor.CheckedChanged += new System.EventHandler(this.checkBtn);
             // 
+            // HizmetReceteKod
+            // 
+            resources.ApplyResources(this.HizmetReceteKod, "HizmetReceteKod");
+            this.HizmetReceteKod.Name = "HizmetReceteKod";
+            this.HizmetReceteKod.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_Prm_Bindirim.Properties.Buttons"))))});
+            this.HizmetReceteKod.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_Prm_Bindirim.Properties.Columns"), resources.GetString("look_Prm_Bindirim.Properties.Columns1")),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_Prm_Bindirim.Properties.Columns2"), resources.GetString("look_Prm_Bindirim.Properties.Columns3"), ((int)(resources.GetObject("look_Prm_Bindirim.Properties.Columns4"))), ((DevExpress.Utils.FormatType)(resources.GetObject("look_Prm_Bindirim.Properties.Columns5"))), resources.GetString("look_Prm_Bindirim.Properties.Columns6"), ((bool)(resources.GetObject("look_Prm_Bindirim.Properties.Columns7"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("look_Prm_Bindirim.Properties.Columns8"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("look_Prm_Bindirim.Properties.Columns9"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("look_Prm_Bindirim.Properties.Columns10"))))});
+            this.HizmetReceteKod.Properties.DropDownRows = 18;
+            this.HizmetReceteKod.Properties.NullText = resources.GetString("look_Prm_Bindirim.Properties.NullText");
+            this.HizmetReceteKod.Properties.ShowFooter = false;
+            this.HizmetReceteKod.Properties.ShowHeader = false;
+            // 
+            // textEdit5
+            // 
+            resources.ApplyResources(this.textEdit5, "textEdit5");
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Properties.ReadOnly = true;
+            this.textEdit5.TabStop = false;
+            // 
+            // checkEditHizmetBedeli
+            // 
+            resources.ApplyResources(this.checkEditHizmetBedeli, "checkEditHizmetBedeli");
+            this.checkEditHizmetBedeli.Name = "checkEditHizmetBedeli";
+            this.checkEditHizmetBedeli.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEdit1.Properties.Appearance.Font")));
+            this.checkEditHizmetBedeli.Properties.Appearance.Options.UseFont = true;
+            this.checkEditHizmetBedeli.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
+            // 
+            // textEdit12
+            // 
+            resources.ApplyResources(this.textEdit12, "textEdit12");
+            this.textEdit12.Name = "textEdit12";
+            this.textEdit12.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit12.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit12.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit12.Properties.ReadOnly = true;
+            this.textEdit12.TabStop = false;
+            // 
+            // hizmetOdemeKod
+            // 
+            resources.ApplyResources(this.hizmetOdemeKod, "hizmetOdemeKod");
+            this.hizmetOdemeKod.Name = "hizmetOdemeKod";
+            this.hizmetOdemeKod.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.hizmetOdemeKod.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
+            this.hizmetOdemeKod.Properties.MaxLength = 100;
+            this.hizmetOdemeKod.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
+            // 
             // Pos_ExtraFolio
             // 
             resources.ApplyResources(this, "$this");
@@ -3223,6 +3287,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HizmetReceteKod.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditHizmetBedeli.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hizmetOdemeKod.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3477,5 +3546,10 @@
         private DevExpress.XtraEditors.SimpleButton btnYenile;
         private DevExpress.XtraEditors.TextEdit txtKartFIndirim;
         private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.LookUpEdit HizmetReceteKod;
+        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.CheckEdit checkEditHizmetBedeli;
+        private DevExpress.XtraEditors.TextEdit textEdit12;
+        private DevExpress.XtraEditors.LookUpEdit hizmetOdemeKod;
     }
 }
