@@ -336,7 +336,7 @@ namespace Pos.Class
         }
 
         // aşağıki metot 30.07.2021 e ait
-        public string Adisyon_Yaz(int Fisno, bool Detay = false)
+        public string Adisyon_Yaz(int Fisno, bool Detay = false,string yazdirkapat="")// yazdirkapat 1 ise kapatılıyor
         {
             //Printer Seçimi
             string printer = String.Empty;
@@ -388,12 +388,18 @@ namespace Pos.Class
 
             dt_Fis = GetSortedTable(dt_Fis, "Rsat_AdisPrSayac DESC");
 
+            //if (dt_Fis != null && dt_Fis.Rows.Count > 0 && yazdirkapat == "1")
+            //{
+            //    DataRow dataRow = dt_Fis.Rows[dt_Fis.Rows.Count - 1];
+            //    dataRow.Delete();
+            //}
+
             int prSayac2 = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"]);
             if (!Detay && prSayac2!=0)
             {
                 //Toplama Göre Boş Satır
-                int toplam = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"]);
-                for (int i = 0; i < toplam+3; i++)
+                int toplam = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"])*2;
+                for (int i = 0; i < toplam+ 1; i++)
                 {
                     DataRow row = dt_Fis.NewRow();
                     dt_Fis.Rows.InsertAt(row, 1);
@@ -404,8 +410,6 @@ namespace Pos.Class
                     dt_Fis.Rows.InsertAt(dt_Fis.NewRow(), dt_Fis.Rows.Count - 1);
                 }
             }
-
-
 
             Adisyon ads = new Adisyon();
             xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), ads);

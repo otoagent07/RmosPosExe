@@ -1981,7 +1981,7 @@ namespace Pos
                         if (c == System.Windows.Forms.DialogResult.Yes)
                         {
                             AdisyonPr adisyon = new AdisyonPr();
-                            string cevap = adisyon.Adisyon_Yaz(Convert.ToInt32(this.Tag));
+                            string cevap = adisyon.Adisyon_Yaz(Convert.ToInt32(this.Tag),yazdirkapat:"1");
                             if (cevap != "OK")
                             {
                                 MessageBox.Show(cevap);
