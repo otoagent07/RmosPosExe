@@ -181,7 +181,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>38</value>
   </data>
   <data name="btn_Print.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -233,7 +233,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Print.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>39</value>
   </data>
   <data name="textEdit3.EditValue" xml:space="preserve">
     <value>Garson</value>
@@ -257,7 +257,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>37</value>
   </data>
   <data name="look_Garson.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 93</value>
@@ -297,7 +297,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;look_Garson.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>35</value>
   </data>
   <data name="rdo_X_Z.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 12</value>
@@ -331,7 +331,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rdo_X_Z.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>34</value>
   </data>
   <data name="textEdit5.EditValue" xml:space="preserve">
     <value>Baslangıc Tarihi</value>
@@ -355,7 +355,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit5.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="dateTarih.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -386,7 +386,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dateTarih.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="chk_Odeme.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -413,7 +413,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Odeme.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="chk_Servis.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -422,10 +422,10 @@
     <value>24, 275</value>
   </data>
   <data name="chk_Servis.Properties.Caption" xml:space="preserve">
-    <value>Servis Payları</value>
+    <value>Servis Payları(KDV oranı)</value>
   </data>
   <data name="chk_Servis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 19</value>
+    <value>147, 19</value>
   </data>
   <data name="chk_Servis.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -440,7 +440,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Servis.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="chk_Cari.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -467,7 +467,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Cari.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="chk_Odenmez.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -494,7 +494,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Odenmez.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="chk_Malzeme.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -521,7 +521,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Malzeme.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="chk_Anagrup.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -548,7 +548,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Anagrup.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="chk_Altgrup.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -575,7 +575,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Altgrup.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="chk_Iptal.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -602,7 +602,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Iptal.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="chk_PaketServis.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -629,7 +629,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_PaketServis.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="chk_IndirimMasa.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -656,7 +656,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_IndirimMasa.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="chk_YiyecekIcecek.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -683,7 +683,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_YiyecekIcecek.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="chk_MasaKonum.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -710,7 +710,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_MasaKonum.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="chk_SiparisIptal.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -737,7 +737,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_SiparisIptal.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="chk_GonderilmemisSiparisIptal.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -764,7 +764,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_GonderilmemisSiparisIptal.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="chk_SiparisDuzelt.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -791,7 +791,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_SiparisDuzelt.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="checkEdit8.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -821,7 +821,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkEdit8.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="chk_GarsonOzet.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -848,7 +848,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_GarsonOzet.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="chk_GarsonTahsil.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -875,7 +875,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_GarsonTahsil.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="chk_SifirTutar.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -902,7 +902,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_SifirTutar.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="chk_OzetKasa.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -929,7 +929,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_OzetKasa.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="chk_ExtKasaRapor.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -956,7 +956,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_ExtKasaRapor.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="chk_ExtKasaDetay.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -983,7 +983,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_ExtKasaDetay.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 146</value>
@@ -1007,7 +1007,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
     <value>121, 146</value>
@@ -1031,7 +1031,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="chk_CariTahsilat.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1058,7 +1058,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_CariTahsilat.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="textEdit1.EditValue" xml:space="preserve">
     <value>Departman</value>
@@ -1082,7 +1082,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="cmb_Departman.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 70</value>
@@ -1106,7 +1106,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmb_Departman.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="checkEditDepSatis.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1133,7 +1133,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkEditDepSatis.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lookUpEditYazici.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 117</value>
@@ -1163,7 +1163,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lookUpEditYazici.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="textEdit2.EditValue" xml:space="preserve">
     <value>Yazıcı</value>
@@ -1187,12 +1187,12 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>36</value>
   </data>
   <data name="checkEditPdfKaydet.Location" type="System.Drawing.Point, System.Drawing">
     <value>285, 99</value>
   </data>
-  <data name="checkEdit1.Properties.Caption" xml:space="preserve">
+  <data name="checkEditPdfKaydet.Properties.Caption" xml:space="preserve">
     <value>PDF OLARAK KAYDET</value>
   </data>
   <data name="checkEditPdfKaydet.Size" type="System.Drawing.Size, System.Drawing">
@@ -1211,7 +1211,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkEditPdfKaydet.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>402, 228</value>
@@ -1235,6 +1235,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chk_servispayi.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chk_servispayi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 475</value>
+  </data>
+  <data name="checkEdit1.Properties.Caption" xml:space="preserve">
+    <value>Servis Payı</value>
+  </data>
+  <data name="chk_servispayi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 19</value>
+  </data>
+  <data name="chk_servispayi.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="&gt;&gt;chk_servispayi.Name" xml:space="preserve">
+    <value>chk_servispayi</value>
+  </data>
+  <data name="&gt;&gt;chk_servispayi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_servispayi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chk_servispayi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

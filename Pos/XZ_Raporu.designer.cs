@@ -69,6 +69,7 @@
             this.checkEditPdfKaydet = new DevExpress.XtraEditors.CheckEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.chk_servispayi = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Garson.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdo_X_Z.Properties)).BeginInit();
@@ -106,6 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkEditPdfKaydet.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chk_servispayi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Cikis
@@ -373,7 +375,7 @@
             // 
             resources.ApplyResources(this.checkEditPdfKaydet, "checkEditPdfKaydet");
             this.checkEditPdfKaydet.Name = "checkEditPdfKaydet";
-            this.checkEditPdfKaydet.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
+            this.checkEditPdfKaydet.Properties.Caption = resources.GetString("checkEditPdfKaydet.Properties.Caption");
             // 
             // gridControl1
             // 
@@ -389,10 +391,17 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.RowAutoHeight = true;
             // 
+            // chk_servispayi
+            // 
+            resources.ApplyResources(this.chk_servispayi, "chk_servispayi");
+            this.chk_servispayi.Name = "chk_servispayi";
+            this.chk_servispayi.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
+            // 
             // XZ_Raporu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.chk_servispayi);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.checkEditPdfKaydet);
             this.Controls.Add(this.lookUpEditYazici);
@@ -471,6 +480,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkEditPdfKaydet.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chk_servispayi.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -517,5 +527,6 @@
         private DevExpress.XtraEditors.CheckEdit checkEditPdfKaydet;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.CheckEdit chk_servispayi;
     }
 }

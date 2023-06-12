@@ -184,7 +184,7 @@ namespace Pos
         {
             if (kodlarkodadisyonaktifmi == "True" && adisyondahaoncedenyazdirilmismi == "True")
             {
-                dbtools.execcmdR("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Convert.ToString(bartxt_MasaNo.EditValue) + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+                //dbtools.execcmdR("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Convert.ToString(bartxt_MasaNo.EditValue) + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             }
         }
 
@@ -953,7 +953,7 @@ namespace Pos
             }
             catch (Exception ex)
             {
-                RHMesaj.alertMesaj("HATA LimitKontrol() " + ex.Message);
+                RHMesaj.alertMesaj2("HATA LimitKontrol() " + ex.Message);
             }
 
 
@@ -2766,7 +2766,7 @@ namespace Pos
 
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + bartxt_FisNo.EditValue.ToString() + "' ");
 
-                RHMesaj.alertMesaj("Sipariş Yazdırıldı", 5);
+                RHMesaj.alertMesaj2("Sipariş Yazdırıldı", 5);
             }
 
             btn_Cikis.Enabled = true;
@@ -2835,7 +2835,7 @@ namespace Pos
 
                 if (kullaniciTuru == "1" && receteKod == bindirimReceteKod)
                 {
-                    RHMesaj.alertMesaj("Kullanıcı Türü Garson. Servis Payı Silemez ! ", 2);
+                    RHMesaj.alertMesaj2("Kullanıcı Türü Garson. Servis Payı Silemez ! ", 2);
                     return;
                 }
 
@@ -3985,7 +3985,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                 siparis.Print();
 
-                RHMesaj.alertMesaj("SİPARİŞİNİZ YAZDIRILDI...", 1);
+                RHMesaj.alertMesaj2("SİPARİŞİNİZ YAZDIRILDI...", 1);
                 break;
             }
 

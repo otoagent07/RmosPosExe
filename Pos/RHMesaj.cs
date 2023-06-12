@@ -22,6 +22,20 @@ namespace Pos
             }
         }
 
+        public static void alertMesaj2(string icerik, int saniye = 60)
+        {
+            string header = "RMOS POS";
+            if (Program.main != null)
+            {
+                AlertInfo alertInfo = new AlertInfo(header, icerik);
+                Program.main.alertControl3.AutoFormDelay = saniye * 1000;
+                Program.main.alertControl3.FormLocation = AlertFormLocation.BottomRight;
+                Program.main.alertControl3.ShowPinButton = true;
+                Program.main.alertControl3.Show(Program.main, alertInfo);
+            }
+        }
+
+
         public static void alertMesajSagUst(string header, string icerik, int saniye = 60)
         {
             if (Program.main != null)

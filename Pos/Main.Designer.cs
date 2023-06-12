@@ -125,6 +125,7 @@
             this.timerGetir = new System.Windows.Forms.Timer(this.components);
             this.toastNotificationsManager2 = new DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager(this.components);
             this.timerTrendyol = new System.Windows.Forms.Timer(this.components);
+            this.alertControl3 = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -1138,5 +1139,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        public DevExpress.XtraBars.Alerter.AlertControl alertControl3;
     }
 }

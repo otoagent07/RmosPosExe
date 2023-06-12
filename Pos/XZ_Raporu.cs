@@ -362,6 +362,7 @@ group by Pkod_Ad";
             com.Parameters.AddWithValue("@GonderilmemisSiparisIptal", chk_GonderilmemisSiparisIptal.Checked);
             com.Parameters.AddWithValue("@SiparisDuzelt", chk_SiparisDuzelt.Checked);
             com.Parameters.AddWithValue("@CariTahsilat", chk_CariTahsilat.Checked);
+            com.Parameters.AddWithValue("@servispayi", chk_servispayi.Checked);
             com.Parameters.AddWithValue("@Departman", cmb_Departman.EditValue);
             SqlDataAdapter da = new SqlDataAdapter(com);
             DataTable dt = new DataTable();
@@ -423,6 +424,7 @@ group by Pkod_Ad";
                 }
             }
 
+            // dateTarih.DateTime Param.Param_Bindirim
 
             Console.WriteLine(copyDataTable.Rows.Count);
 
@@ -430,6 +432,8 @@ group by Pkod_Ad";
 
             this.Cursor = Cursors.Default;
         }
+
+      
 
         public void sadeceDeptKasa(DataTable dt, string date)
         {

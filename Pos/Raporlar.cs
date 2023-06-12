@@ -12,6 +12,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Reflection;
@@ -339,6 +340,11 @@ namespace Pos
                         gridControl11.DataSource = dt;
                     }
 
+
+                    if (checkEditDirektSatis.Checked)
+                    {
+                        dt= dt.Select("masano=''").CopyToDataTable();
+                    }
 
 
                     Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
