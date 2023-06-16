@@ -2971,7 +2971,14 @@ namespace Pos
         private void btn_Tutarduzelt_Click(object sender, EventArgs e)
         {
 
+            tutarDuzelt();
 
+
+
+        }
+
+        public void tutarDuzelt()
+        {
             decimal deger = Convert.ToDecimal(gridColumn4.SummaryItem.SummaryValue);
 
             //if (deger == 0)
@@ -3006,7 +3013,6 @@ namespace Pos
 
                 gridyenile();
             }
-
 
         }
 
@@ -4091,6 +4097,21 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 RHMesaj.MyMessageError(MyClass, "btnTopluSil_Click", "", ex);
             }
 
+        }
+
+        private void btnServisTutarDuzelt_Click(object sender, EventArgs e)
+        {
+            string receteKod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
+            string bindirimReceteKod = dbtools.DegerGetir("select top 1 Param_Bindirim  from Pos_Param where Param_Id = '1'");
+
+            if ( receteKod == bindirimReceteKod)
+            {
+                tutarDuzelt();
+            }
+            else
+            {
+                RHMesaj.alertMesaj("Sadece servis payı düzeltilebilir !");
+            }
         }
     }
 }

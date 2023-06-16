@@ -1233,6 +1233,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.Pos_ServisPayiDuzelt = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2060,6 +2061,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -10155,6 +10157,7 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.Pos_ServisPayiDuzelt);
             this.xtraTabPage1.Controls.Add(this.Pos_KartfIndirimAktif);
             this.xtraTabPage1.Controls.Add(this.chk_K_KasaRapor);
             this.xtraTabPage1.Controls.Add(this.Pos_KartTanimBakiyeTransfer);
@@ -10486,6 +10489,7 @@
             resources.ApplyResources(this.chk_G_Tutarduzelt, "chk_G_Tutarduzelt");
             this.chk_G_Tutarduzelt.Name = "chk_G_Tutarduzelt";
             this.chk_G_Tutarduzelt.Properties.Caption = resources.GetString("chk_G_Tutarduzelt.Properties.Caption");
+            this.chk_G_Tutarduzelt.CheckedChanged += new System.EventHandler(this.chk_G_Tutarduzelt_CheckedChanged);
             // 
             // chk_G_Satirsil
             // 
@@ -12276,6 +12280,14 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // Pos_ServisPayiDuzelt
+            // 
+            resources.ApplyResources(this.Pos_ServisPayiDuzelt, "Pos_ServisPayiDuzelt");
+            this.Pos_ServisPayiDuzelt.Name = "Pos_ServisPayiDuzelt";
+            this.Pos_ServisPayiDuzelt.Properties.Appearance.Options.UseFont = true;
+            this.Pos_ServisPayiDuzelt.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            this.Pos_ServisPayiDuzelt.CheckedChanged += new System.EventHandler(this.Pos_ServisPayiDuzelt_CheckedChanged);
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13143,6 +13155,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14352,5 +14365,6 @@
         private DevExpress.XtraEditors.CheckEdit satirsilfiscikmasinaktif;
         private DevExpress.XtraEditors.CheckEdit onburoikramsifiryazaktif;
         private DevExpress.XtraEditors.CheckEdit Pos_KartfIndirimAktif;
+        private DevExpress.XtraEditors.CheckEdit Pos_ServisPayiDuzelt;
     }
 }
