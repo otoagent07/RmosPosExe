@@ -171,7 +171,7 @@ namespace Pos.Class
                 }
                 else
                 {
-                    kurum = Convert.ToDecimal(deger);
+                    kurum = Convert.ToDecimal(deger); //1
                 }
 
                 if (kurum == 0)
@@ -212,6 +212,10 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
         {
             try
             {
+                string sorgu1 = "select isnull(Rez_Kur_uygulanan,0) as Rez_Kur_uygulanan from rez where Rez_Odano='" + odano + "' and Rez_R_I_H='I'";
+                string kisininKuru = Fronttools.DegerGetir(sorgu1);
+                int kursonuc = (int)Convert.ToDecimal(kisininKuru);
+
                 string deger = "";
 
                 if (odano != null && odano != "") // önbüro ise demek sonradan yapıldı. 23.09.2022 
@@ -253,7 +257,7 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
                                 string onburoGirisKurdanmiAlinsi = Fronttools.DegerGetir("select top 1 Fis_Hesapgir_kur_e_gk from Fishrk"); // K İSE GİRİŞTEN G ise günlük
 
-                                if (odano!=null && onburoGirisKurdanmiAlinsi.Equals("K"))
+                                if (odano != null && onburoGirisKurdanmiAlinsi.Equals("K"))
                                 {
                                     string girisKur = Fronttools.DegerGetir("select top 1 Rez_Kur_uygulanan from rez where Rez_Odano='" + odano + "' and Rez_R_I_H='I'"); // K İSE GİRİŞTEN G ise günlük
 
@@ -338,14 +342,19 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, Fisno.ToString() + " Fiş Ödeme Alındı. Tutar:" + tutar.ToString() + " Kod: " + kapatma, Fisno.ToString(), "");
 
 
-                if (!deger.Equals("") && deger.Equals("1"))
+                //if (!deger.Equals("") && deger.Equals("1"))
+                //{
+                //    Fronttools.execcmd("update rez set  Rez_Kur_uygulanan ='1' where Rez_Odano='" + odano + "' and Rez_R_I_H='I'");
+                //} 
+
+                if (kursonuc == 1)
                 {
                     Fronttools.execcmd("update rez set  Rez_Kur_uygulanan ='1' where Rez_Odano='" + odano + "' and Rez_R_I_H='I'");
                 }
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "Odeme_Al", "",ex);
+                RHMesaj.MyMessageError(MyClass, "Odeme_Al", "", ex);
             }
         }
 
