@@ -212,9 +212,14 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
         {
             try
             {
-                string sorgu1 = "select isnull(Rez_Kur_uygulanan,0) as Rez_Kur_uygulanan from rez where Rez_Odano='" + odano + "' and Rez_R_I_H='I'";
-                string kisininKuru = Fronttools.DegerGetir(sorgu1);
-                int kursonuc = (int)Convert.ToDecimal(kisininKuru);
+                int kursonuc = -1;
+                if (odano!="")
+                {
+                    string sorgu1 = "select isnull(Rez_Kur_uygulanan,0) as Rez_Kur_uygulanan from rez where Rez_Odano='" + odano + "' and Rez_R_I_H='I'";
+                    string kisininKuru = Fronttools.DegerGetir(sorgu1);
+                     kursonuc = (int)Convert.ToDecimal(kisininKuru);
+                }
+             
 
                 string deger = "";
 

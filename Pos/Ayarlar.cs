@@ -3650,8 +3650,31 @@ public void yaziciYukleHesap()
             }
         }
 
+        public void abuyerCiktiKaydet()
+        {
+            try
+            {
+                if (Convert.ToInt32(dbtools.DegerGetir("select count(*) from Pos_Kodlar where Pkod_Sinif = '17'  and Pkod_Kod = 'ABUYERSAYI' ")) > 0)
+                {
+                    dbtools.execcmd("update Pos_Kodlar set Pkod_Ciktisayisi = '" + Convert.ToInt32(spinEditAbuyerCiktiSayisi.EditValue) + "' where Pkod_Sinif = '17' and Pkod_Kod = 'ABUYERSAYI'");
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_HesapFis, Log.Log_Islem.Duzelt, "abuyer çıktı sayısı" + txt_Hesap_Font.Text + " Ciktisayisi :" + Convert.ToInt32(spinEditAbuyerCiktiSayisi.EditValue).ToString(), String.Empty, String.Empty);
+                }
+                else
+                {
+                    dbtools.execcmd(" insert into Pos_Kodlar(Pkod_Kod,Pkod_Sinif,Pkod_Ciktisayisi) "
+                            + " values ('ABUYERSAYI','17','" + Convert.ToInt32(spinEditAbuyerCiktiSayisi.EditValue) + "') ");
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_HesapFis, Log.Log_Islem.Kaydet, "abuyer çıktı sayısı" + txt_Hesap_Font.Text + " Ciktisayisi :" + Convert.ToInt32(spinEditAbuyerCiktiSayisi.EditValue).ToString(), String.Empty, String.Empty);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void btn_Hesap_Kaydet_Click(object sender, EventArgs e)
         {
+            abuyerCiktiKaydet();
             //Hesap
             if (Convert.ToInt32(dbtools.DegerGetir("select count(*) from Pos_Kodlar where Pkod_Sinif = '17'  and Pkod_Kod = 'HESAP' ")) > 0)
             {
@@ -3829,6 +3852,16 @@ public void yaziciYukleHesap()
             {
                 txt_Kasa_Font.Text = "";
                 spn_Kasa_Ciktisayisi.EditValue = 1;
+            }
+
+            DataTable dtAbuyer = dbtools.SelectTable("select Pkod_Kod,Pkod_Sinif,Pkod_Font,Pkod_Ciktisayisi from Pos_Kodlar where Pkod_Sinif = '17'  and Pkod_Kod = 'ABUYERSAYI'");
+            if (dtAbuyer.Rows.Count > 0)
+            {
+                spinEditAbuyerCiktiSayisi.EditValue = Convert.ToInt32(dtAbuyer.Rows[0]["Pkod_Ciktisayisi"]);
+            }
+            else
+            {
+                spinEditAbuyerCiktiSayisi.EditValue = 1;
             }
 
             DataTable dtZX = dbtools.SelectTable("select Pkod_Kod,Pkod_Sinif,Pkod_Font from Pos_Kodlar where Pkod_Sinif = '17'  and Pkod_Kod = 'XZRAPOR'");

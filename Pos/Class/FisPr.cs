@@ -1694,6 +1694,17 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             List<string> abuyer = new List<string>();
             DataTable dtPrinter = AbuyerPrinterBul(Fisno, Split, true);
 
+            int abuyerCiktisayisi = 1;
+            try
+            {
+                abuyerCiktisayisi =Convert.ToInt32( dbtools.DegerGetir("select ISNULL(Pkod_Ciktisayisi,1) as Pkod_Ciktisayisi from Pos_Kodlar where Pkod_Sinif='17' and Pkod_Kod='ABUYERSAYI'"));
+            }
+            catch (Exception ex)
+            {
+
+                
+            }
+
             string printer = "";
             for (int i = 0; i < dtPrinter.Rows.Count; i++)
             {
@@ -1842,7 +1853,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                             PrintDocument pd = new PrintDocument();
                             pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
                             pd.PrinterSettings.PrinterName = yaziciismi;//printer;
-                            pd.Print();
+
+                            for (int j   = 0; j < abuyerCiktisayisi; j++)
+                            {
+                                pd.Print();
+                            }
 
                             abuyer.Clear();
                         }

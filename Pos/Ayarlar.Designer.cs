@@ -965,6 +965,7 @@
             this.btn_Kul_TumYetki = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.Pos_ServisPayiDuzelt = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_KartfIndirimAktif = new DevExpress.XtraEditors.CheckEdit();
             this.chk_K_KasaRapor = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_KartTanimBakiyeTransfer = new DevExpress.XtraEditors.CheckEdit();
@@ -1233,7 +1234,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.Pos_ServisPayiDuzelt = new DevExpress.XtraEditors.CheckEdit();
+            this.spinEditAbuyerCiktiSayisi = new DevExpress.XtraEditors.SpinEdit();
+            this.textEdit197 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1855,6 +1857,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_K_KasaRapor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartTanimBakiyeTransfer.Properties)).BeginInit();
@@ -2061,7 +2064,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spinEditAbuyerCiktiSayisi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit197.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -6922,6 +6926,8 @@
             // 
             // tab_Print_Hesap
             // 
+            this.tab_Print_Hesap.Controls.Add(this.spinEditAbuyerCiktiSayisi);
+            this.tab_Print_Hesap.Controls.Add(this.textEdit197);
             this.tab_Print_Hesap.Controls.Add(this.txt_Cari_Font);
             this.tab_Print_Hesap.Controls.Add(this.txt_XZ_Font);
             this.tab_Print_Hesap.Controls.Add(this.btn_Cari_Font);
@@ -10230,6 +10236,14 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             // 
+            // Pos_ServisPayiDuzelt
+            // 
+            resources.ApplyResources(this.Pos_ServisPayiDuzelt, "Pos_ServisPayiDuzelt");
+            this.Pos_ServisPayiDuzelt.Name = "Pos_ServisPayiDuzelt";
+            this.Pos_ServisPayiDuzelt.Properties.Appearance.Options.UseFont = true;
+            this.Pos_ServisPayiDuzelt.Properties.Caption = resources.GetString("Pos_ServisPayiDuzelt.Properties.Caption");
+            this.Pos_ServisPayiDuzelt.CheckedChanged += new System.EventHandler(this.Pos_ServisPayiDuzelt_CheckedChanged);
+            // 
             // Pos_KartfIndirimAktif
             // 
             resources.ApplyResources(this.Pos_KartfIndirimAktif, "Pos_KartfIndirimAktif");
@@ -12280,13 +12294,21 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // Pos_ServisPayiDuzelt
+            // spinEditAbuyerCiktiSayisi
             // 
-            resources.ApplyResources(this.Pos_ServisPayiDuzelt, "Pos_ServisPayiDuzelt");
-            this.Pos_ServisPayiDuzelt.Name = "Pos_ServisPayiDuzelt";
-            this.Pos_ServisPayiDuzelt.Properties.Appearance.Options.UseFont = true;
-            this.Pos_ServisPayiDuzelt.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            this.Pos_ServisPayiDuzelt.CheckedChanged += new System.EventHandler(this.Pos_ServisPayiDuzelt_CheckedChanged);
+            resources.ApplyResources(this.spinEditAbuyerCiktiSayisi, "spinEditAbuyerCiktiSayisi");
+            this.spinEditAbuyerCiktiSayisi.Name = "spinEditAbuyerCiktiSayisi";
+            this.spinEditAbuyerCiktiSayisi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.spinEditAbuyerCiktiSayisi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            // 
+            // textEdit197
+            // 
+            resources.ApplyResources(this.textEdit197, "textEdit197");
+            this.textEdit197.Name = "textEdit197";
+            this.textEdit197.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit197.Properties.ReadOnly = true;
+            this.textEdit197.TabStop = false;
             // 
             // Ayarlar
             // 
@@ -12942,6 +12964,7 @@
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_K_KasaRapor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartTanimBakiyeTransfer.Properties)).EndInit();
@@ -13155,7 +13178,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spinEditAbuyerCiktiSayisi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit197.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14366,5 +14390,7 @@
         private DevExpress.XtraEditors.CheckEdit onburoikramsifiryazaktif;
         private DevExpress.XtraEditors.CheckEdit Pos_KartfIndirimAktif;
         private DevExpress.XtraEditors.CheckEdit Pos_ServisPayiDuzelt;
+        private DevExpress.XtraEditors.SpinEdit spinEditAbuyerCiktiSayisi;
+        private DevExpress.XtraEditors.TextEdit textEdit197;
     }
 }
