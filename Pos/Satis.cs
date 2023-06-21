@@ -170,7 +170,7 @@ namespace Pos
 
             hesapYazmismi();
 
-          //  marsSiparis();
+          //  marsSiparis(); // marşla doğru çalışıyor . sipariş yanlış çalışıyor. 
         }
 
         public void marsSiparis()
