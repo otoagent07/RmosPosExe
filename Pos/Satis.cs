@@ -169,7 +169,34 @@ namespace Pos
 
 
             hesapYazmismi();
+
+          //  marsSiparis();
         }
+
+        public void marsSiparis()
+        {
+            try
+            {
+                int count =Convert.ToInt32( dbtools.DegerGetir("select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and Rsat_SiparisPr='1'"));
+
+                if (count>0)
+                {
+                    btn_Mars.Enabled = false;
+                }
+
+                 count = Convert.ToInt32(dbtools.DegerGetir("select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and Rsat_Mars='1'"));
+
+                if (count > 0)
+                {
+                    btn_Siparis.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
+
 
         string kodlarkodadisyonaktifmi = "";
         string adisyondahaoncedenyazdirilmismi = "";
@@ -3264,14 +3291,17 @@ namespace Pos
                 mars.txt_Fisno.Text = Convert.ToInt32(bartxt_FisNo.EditValue).ToString();
                 mars.ShowDialog();
 
-                btn_Siparis.Enabled = false;
-                //Siparis_Gonder(true);
-                MarsKontrol();
+                if (mars.cikis)
+                {
 
-
-                this.Close();
-
-
+                }
+                else
+                {
+                    btn_Siparis.Enabled = false;
+                    //Siparis_Gonder(true);
+                    MarsKontrol();
+                    this.Close();
+                }
             }
         }
 

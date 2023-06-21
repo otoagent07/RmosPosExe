@@ -199,9 +199,6 @@
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="btn_Cikis.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;btn_Cikis.Name" xml:space="preserve">
     <value>btn_Cikis</value>
   </data>

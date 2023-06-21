@@ -30,8 +30,11 @@ namespace Pos
                     + " where Rsat_Ba = 'B' and Rsat_Fisno = '" + txt_Fisno.Text + "' and ISNULL(Rsat_Mars,0) = 0");
         }
 
+
+        public bool cikis = false;
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
+            cikis = true;
             this.Close();
         }
 
@@ -57,7 +60,14 @@ namespace Pos
                 MessageBox.Show(sonuc);
             }
 
+            for (int i = 0; i < gridView1.RowCount; i++)
+            {
+                if (Convert.ToBoolean(gridView1.GetRowCellValue(i, "sec")))
+                {
+                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Id = '" + Convert.ToInt32(gridView1.GetRowCellValue(i, "Rsat_Id")).ToString() + "'");
+                }
 
+            }
 
             this.Close();
 
