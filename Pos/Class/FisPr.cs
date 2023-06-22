@@ -5274,9 +5274,24 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     bosSatir = Convert.ToInt32(item["Mac_Satir"]);
                 }
 
+
                 iptal.PrinterName = printer;
                 iptal.Print();
+
+                string ipyalYaziciAd = AbuyerPrIptalFis(SatirId);
+                if (ipyalYaziciAd != null && ipyalYaziciAd != "")
+                {
+                    iptal.PrinterName = ipyalYaziciAd;
+                    iptal.Print();
+                }
+
+
+
             }
+
+
+
+
 
             return "OK";
         }
@@ -6420,11 +6435,41 @@ where  Rsat_Fisno='" + Fisno + @"' and konumposta='" + konumposta + @"' and ustg
                 return ex.Message;
             }
 
-
-
-
             return "OK";
         }
+
+
+        public string AbuyerPrIptalFis(int rsatId)
+        {
+
+            try
+            {
+                DataTable dataTable = dbtools.SelectTableR("select  konumposta,ustgrup,altgrup from Cst_Recete_Satis where Rsat_Id='" + rsatId + "' and konumposta is not null group by konumposta,ustgrup,altgrup");
+
+                if (dataTable != null && dataTable.Rows.Count > 0)
+                {
+                    foreach (DataRow item in dataTable.Rows)
+                    {
+                        string konumposta = item["konumposta"].ToString();
+                        string ustgrup = item["ustgrup"].ToString();
+                        string altgrup = item["altgrup"].ToString();
+
+                        string query = "select top 1 isnull(Pkod_AbuyerPr,'') as Pkod_AbuyerPr from Pos_Kodlar where Pkod_Sinif='16' and Pkod_Posta='" + konumposta + "' and Pkod_Ustgrup='" + ustgrup + "' and Pkod_Altgrup='" + altgrup + "'";
+                        string yaziciAd = dbtools.DegerGetir(query); // iki tane yazıcı ismi geliyor
+
+                        return yaziciAd;
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return "";
+            }
+
+            return "";
+        }
+
 
         public void yazdirAbuyerNew(DataTable dtAbuyer, string printer, int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis)
         {

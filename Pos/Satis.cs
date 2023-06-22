@@ -173,7 +173,7 @@ namespace Pos
             marsSiparis(); // marşla doğru çalışıyor . sipariş yanlış çalışıyor. (iptal abuyerden çıkmıyor)
 
 
-          
+
         }
 
         public void marsSiparis()
@@ -183,16 +183,17 @@ namespace Pos
                 string bindirimReceteKod = dbtools.DegerGetir("select top 1 Param_Bindirim  from Pos_Param where Param_Id = '1'");
 
                 string qq = "select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and isnull(Rsat_Mars,0)='1' and Rsat_Recete<>'" + bindirimReceteKod + "'";
-                int count =Convert.ToInt32( dbtools.DegerGetir(qq));
+                int count = Convert.ToInt32(dbtools.DegerGetir(qq));
 
                 string qq2 = "select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and isnull(Rsat_SiparisPr,0)='1' and Rsat_Recete<>'" + bindirimReceteKod + "'";
                 int count2 = Convert.ToInt32(dbtools.DegerGetir(qq2));
 
-                if (count==0 && count2 ==0)
+                if (count == 0 && count2 == 0)
                 {
                     btn_Mars.Enabled = true;
                     btn_Siparis.Enabled = true;
-                }else if (count==0)
+                }
+                else if (count == 0)
                 {
                     btn_Mars.Enabled = false;
                 }
@@ -210,7 +211,7 @@ namespace Pos
             }
             catch (Exception ex)
             {
-                
+
             }
         }
 
@@ -631,7 +632,7 @@ namespace Pos
             Arama ara = new Arama();
             if (Masa_Durum == 0)
             {
-                
+
                 ara.Tag = "M";
                 ara.ShowDialog(); // burası çalıştı
 
@@ -1351,7 +1352,7 @@ namespace Pos
 
                         dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
 
-                        string masa = Masa_No == null ? "":Masa_No;
+                        string masa = Masa_No == null ? "" : Masa_No;
                         Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, "Fiş Kapatma. Fisno:" + Convert.ToInt32(bartxt_FisNo.EditValue.ToString()) + " Masano:" + masa, Convert.ToString(bartxt_FisNo.EditValue.ToString()), "");
 
 
@@ -2266,7 +2267,7 @@ namespace Pos
                 com.Parameters.AddWithValue("@Rsat_OzelMasaAdi", Ozel_Masa);
                 com.Parameters.AddWithValue("@PaketFiyatTipi", PaketFiyat);
                 com.Parameters.AddWithValue("@Rsat_Duzeltme", MiktarDuzeltme);
-               
+
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kart_ID", FolioKart_ID);
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kartno", Kart_No);
                 if (Departman.Kodlar_Ingenico_IWE == true) com.Parameters.AddWithValue("@Rsat_Ingenico_Status", 1);
@@ -2522,7 +2523,7 @@ namespace Pos
         {
             try
             {
-              
+
 
                 DialogResult c = System.Windows.Forms.DialogResult.Yes;
 
@@ -2618,7 +2619,7 @@ namespace Pos
                     btn_Cikis_Click(null, null);
                 }
 
-               
+
 
 
             }
@@ -2861,6 +2862,9 @@ namespace Pos
             }
         }
 
+
+      
+
         public static string MyClass = "Satis";
 
         private void btn_SatirSil_Click(object sender, EventArgs e)
@@ -2983,6 +2987,8 @@ namespace Pos
                 {
                     FisPr fis = new FisPr();
                     string sonuc = fis.newIptalPr(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), Sil_Miktar);
+
+
                     if (fis.yazdirilmismi)
                     {
                         yazdirilmissa = "Yazdırılmış";
@@ -3250,7 +3256,7 @@ namespace Pos
                 //    return;
                 //}
 
-             
+
 
                 iptalFisCikar(kodlarkodadisyonaktifmi);
 
@@ -3955,7 +3961,7 @@ namespace Pos
 
                 foreach (SimpleButton item in flp_Kapatma.Controls)
                 {
-                    if (item.Tag.ToString()==hizmetOdemeKod)
+                    if (item.Tag.ToString() == hizmetOdemeKod)
                     {
                         item.PerformClick();
                         break;
@@ -4152,7 +4158,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
             string receteKod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
             string bindirimReceteKod = dbtools.DegerGetir("select top 1 Param_Bindirim  from Pos_Param where Param_Id = '1'");
 
-            if ( receteKod == bindirimReceteKod)
+            if (receteKod == bindirimReceteKod)
             {
                 tutarDuzelt();
             }
