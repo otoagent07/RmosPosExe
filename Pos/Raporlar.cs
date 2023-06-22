@@ -787,6 +787,13 @@ namespace Pos
                     gridControl16.DataSource = dt;
                     gridView16.BestFitColumns();
                 }
+
+
+                if (xtraTabControl1.SelectedTabPage == tab_reskullanim)
+                {
+                    reskullanimListele();
+                }
+
             }
             catch (Exception ex)
             {
@@ -795,6 +802,12 @@ namespace Pos
             }
             loadingKapat();
 
+        }
+
+        public void reskullanimListele()
+        {
+            gridControlResKullanim.DataSource = dbtools.SelectTableR("select * from Pos_ResKullanim");
+            gridViewResKullanim.BestFitColumns();
         }
 
         private void btn_Print_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

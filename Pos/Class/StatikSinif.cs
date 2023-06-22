@@ -15,6 +15,10 @@ namespace Pos.Class
         public static string getAlterQuery() // scriptgeç scriptbas
         {
             string query = @"
+IF COL_LENGTH('Cst_Recete_Satis', 'ustgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD ustgrup nvarchar(200) END;
+IF COL_LENGTH('Cst_Recete_Satis', 'altgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD altgrup nvarchar(200) END;
+IF COL_LENGTH('Cst_Recete_Satis', 'konumposta') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD konumposta nvarchar(200) END;
+
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_ServisPayiDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_ServisPayiDuzelt] bit END;
 IF COL_LENGTH('Pos_FolioParam', 'hizmetOdemeKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetOdemeKod nvarchar(200) END;
 IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD HizmetReceteKod nvarchar(200) END;

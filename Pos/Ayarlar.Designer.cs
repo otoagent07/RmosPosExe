@@ -601,6 +601,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tab_Print_Hesap = new DevExpress.XtraTab.XtraTabPage();
+            this.spinEditAbuyerCiktiSayisi = new DevExpress.XtraEditors.SpinEdit();
+            this.textEdit197 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Cari_Font = new DevExpress.XtraEditors.TextEdit();
             this.txt_XZ_Font = new DevExpress.XtraEditors.TextEdit();
             this.btn_Cari_Font = new DevExpress.XtraEditors.SimpleButton();
@@ -1234,8 +1236,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.spinEditAbuyerCiktiSayisi = new DevExpress.XtraEditors.SpinEdit();
-            this.textEdit197 = new DevExpress.XtraEditors.TextEdit();
+            this.gridColumn174 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1638,6 +1639,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
             this.tab_Print_Hesap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spinEditAbuyerCiktiSayisi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit197.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Cari_Font.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_XZ_Font.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Kasa_Font.Properties)).BeginInit();
@@ -2064,8 +2067,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinEditAbuyerCiktiSayisi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit197.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -6336,7 +6337,8 @@
             this.gridColumn147,
             this.gridColumn148,
             this.gridColumn159,
-            this.gridColumn160});
+            this.gridColumn160,
+            this.gridColumn174});
             this.gridView5.GridControl = this.grd_PrintAyar;
             this.gridView5.Name = "gridView5";
             this.gridView5.OptionsView.ColumnAutoWidth = false;
@@ -6960,6 +6962,22 @@
             this.tab_Print_Hesap.Controls.Add(this.textBox2);
             this.tab_Print_Hesap.Name = "tab_Print_Hesap";
             resources.ApplyResources(this.tab_Print_Hesap, "tab_Print_Hesap");
+            // 
+            // spinEditAbuyerCiktiSayisi
+            // 
+            resources.ApplyResources(this.spinEditAbuyerCiktiSayisi, "spinEditAbuyerCiktiSayisi");
+            this.spinEditAbuyerCiktiSayisi.Name = "spinEditAbuyerCiktiSayisi";
+            this.spinEditAbuyerCiktiSayisi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.spinEditAbuyerCiktiSayisi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            // 
+            // textEdit197
+            // 
+            resources.ApplyResources(this.textEdit197, "textEdit197");
+            this.textEdit197.Name = "textEdit197";
+            this.textEdit197.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit197.Properties.ReadOnly = true;
+            this.textEdit197.TabStop = false;
             // 
             // txt_Cari_Font
             // 
@@ -12294,21 +12312,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // spinEditAbuyerCiktiSayisi
+            // gridColumn174
             // 
-            resources.ApplyResources(this.spinEditAbuyerCiktiSayisi, "spinEditAbuyerCiktiSayisi");
-            this.spinEditAbuyerCiktiSayisi.Name = "spinEditAbuyerCiktiSayisi";
-            this.spinEditAbuyerCiktiSayisi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.spinEditAbuyerCiktiSayisi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            // 
-            // textEdit197
-            // 
-            resources.ApplyResources(this.textEdit197, "textEdit197");
-            this.textEdit197.Name = "textEdit197";
-            this.textEdit197.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit197.Properties.ReadOnly = true;
-            this.textEdit197.TabStop = false;
+            resources.ApplyResources(this.gridColumn174, "gridColumn174");
+            this.gridColumn174.FieldName = "Pkod_Id";
+            this.gridColumn174.Name = "gridColumn174";
             // 
             // Ayarlar
             // 
@@ -12735,6 +12743,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
             this.tab_Print_Hesap.ResumeLayout(false);
             this.tab_Print_Hesap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spinEditAbuyerCiktiSayisi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit197.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Cari_Font.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_XZ_Font.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Kasa_Font.Properties)).EndInit();
@@ -13178,8 +13188,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinEditAbuyerCiktiSayisi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit197.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14392,5 +14400,6 @@
         private DevExpress.XtraEditors.CheckEdit Pos_ServisPayiDuzelt;
         private DevExpress.XtraEditors.SpinEdit spinEditAbuyerCiktiSayisi;
         private DevExpress.XtraEditors.TextEdit textEdit197;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn174;
     }
 }

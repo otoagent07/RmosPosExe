@@ -170,26 +170,43 @@ namespace Pos
 
             hesapYazmismi();
 
-          //  marsSiparis(); // marşla doğru çalışıyor . sipariş yanlış çalışıyor. (iptal abuyerden çıkmıyor)
+            marsSiparis(); // marşla doğru çalışıyor . sipariş yanlış çalışıyor. (iptal abuyerden çıkmıyor)
+
+
+          
         }
 
         public void marsSiparis()
         {
             try
             {
-                int count =Convert.ToInt32( dbtools.DegerGetir("select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and Rsat_SiparisPr='1'"));
+                string bindirimReceteKod = dbtools.DegerGetir("select top 1 Param_Bindirim  from Pos_Param where Param_Id = '1'");
 
-                if (count>0)
+                string qq = "select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and isnull(Rsat_Mars,0)='1' and Rsat_Recete<>'" + bindirimReceteKod + "'";
+                int count =Convert.ToInt32( dbtools.DegerGetir(qq));
+
+                string qq2 = "select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and isnull(Rsat_SiparisPr,0)='1' and Rsat_Recete<>'" + bindirimReceteKod + "'";
+                int count2 = Convert.ToInt32(dbtools.DegerGetir(qq2));
+
+                if (count==0 && count2 ==0)
+                {
+                    btn_Mars.Enabled = true;
+                    btn_Siparis.Enabled = true;
+                }else if (count==0)
                 {
                     btn_Mars.Enabled = false;
                 }
-
-                 count = Convert.ToInt32(dbtools.DegerGetir("select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and Rsat_Mars='1'"));
-
-                if (count > 0)
+                else
                 {
-                    btn_Siparis.Enabled = false;
+
                 }
+
+                // count = Convert.ToInt32(dbtools.DegerGetir("select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and Rsat_Mars='1'"));
+
+                //if (count > 0)
+                //{
+                //    btn_Siparis.Enabled = false;
+                //}
             }
             catch (Exception ex)
             {
@@ -2249,6 +2266,7 @@ namespace Pos
                 com.Parameters.AddWithValue("@Rsat_OzelMasaAdi", Ozel_Masa);
                 com.Parameters.AddWithValue("@PaketFiyatTipi", PaketFiyat);
                 com.Parameters.AddWithValue("@Rsat_Duzeltme", MiktarDuzeltme);
+               
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kart_ID", FolioKart_ID);
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kartno", Kart_No);
                 if (Departman.Kodlar_Ingenico_IWE == true) com.Parameters.AddWithValue("@Rsat_Ingenico_Status", 1);

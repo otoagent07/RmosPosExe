@@ -446,7 +446,7 @@ namespace Pos.Class
         }
 
 
-     
+
         public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "")
         {
 
@@ -597,7 +597,7 @@ namespace Pos.Class
             catch (Exception ex)
             {
 
-                return "HATA Yazdırılamadı !\n"+ex.Message;
+                return "HATA Yazdırılamadı !\n" + ex.Message;
             }
 
 
@@ -1319,7 +1319,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 xtraDizayn.LoadReportStream(raporId, paket);
 
 
-                if (printer.Trim()=="")
+                if (printer.Trim() == "")
                 {
                     RHMesaj.MyMessageInformation("Yazıcı ismini bulamadı -> FisPr.cs->PaketPrTrendyol()\nMicrosoft XPS Document Writer -> olarak ayarlandı! ");
                     printer = "Microsoft XPS Document Writer";
@@ -1689,7 +1689,10 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             //AbuyerPr4(Fisno, Mars, Split, abuyerBaslik, kartDetay1, kartdetay2, hizliSatis);
             return "OK";
         }
-        public string AbuyerPr(int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis)
+
+
+
+        public string AbuyerPr33(int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis)
         {
             List<string> abuyer = new List<string>();
             DataTable dtPrinter = AbuyerPrinterBul(Fisno, Split, true);
@@ -1697,12 +1700,12 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             int abuyerCiktisayisi = 1;
             try
             {
-                abuyerCiktisayisi =Convert.ToInt32( dbtools.DegerGetir("select ISNULL(Pkod_Ciktisayisi,1) as Pkod_Ciktisayisi from Pos_Kodlar where Pkod_Sinif='17' and Pkod_Kod='ABUYERSAYI'"));
+                abuyerCiktisayisi = Convert.ToInt32(dbtools.DegerGetir("select ISNULL(Pkod_Ciktisayisi,1) as Pkod_Ciktisayisi from Pos_Kodlar where Pkod_Sinif='17' and Pkod_Kod='ABUYERSAYI'"));
             }
             catch (Exception ex)
             {
 
-                
+
             }
 
             string printer = "";
@@ -1864,7 +1867,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                             pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
                             pd.PrinterSettings.PrinterName = yaziciismi;//printer;
 
-                            for (int j   = 0; j < abuyerCiktisayisi; j++)
+                            for (int j = 0; j < abuyerCiktisayisi; j++)
                             {
                                 pd.Print();
                             }
@@ -1883,6 +1886,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
             return "OK";
         }
+
         public string AbuyerPrYedek1(int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis)
         {
             List<string> abuyer = new List<string>();
@@ -6341,9 +6345,216 @@ order by Pkod_Kod";
 
         public DataTable AbuyerPrinterBul(int Fisno, int Split, bool SiparisTumYazici)
         {
-            return dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 24, @Fisno = '" + Fisno + "', @Split = '" + Split + "', @MacAdres = '" + dbtools.MacAdresi() + "',@SiparisTumYazici = '" + SiparisTumYazici + "' ");
+            string query = "exec Pos_Sorgu @Sorgu_Tipi = 24, @Fisno = '" + Fisno + "', @Split = '" + Split + "', @MacAdres = '" + dbtools.MacAdresi() + "',@SiparisTumYazici = '" + SiparisTumYazici + "' ";
+            return dbtools.SelectTable(query);
         }
 
+        public string AbuyerPrinterBulYeni(int Fisno)
+        {
+            DataTable dataTable = dbtools.SelectTableR("select  konumposta,ustgrup,altgrup from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and konumposta is not null group by konumposta,ustgrup,altgrup");
+
+            string yaziciAd = "";
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    string konumposta = item["konumposta"].ToString();
+                    string ustgrup = item["ustgrup"].ToString();
+                    string altgrup = item["altgrup"].ToString();
+
+                    string query = "select isnull(Pkod_AbuyerPr,'') as Pkod_AbuyerPr from Pos_Kodlar where Pkod_Sinif='16' and Pkod_Posta='" + konumposta + "' and Pkod_Ustgrup='" + ustgrup + "' and Pkod_Altgrup='" + altgrup + "'";
+                    yaziciAd = dbtools.DegerGetir(query);
+
+                    break;
+                }
+            }
+
+            return yaziciAd;
+        }
+
+        public string AbuyerPr(int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis)
+        {
+            List<string> abuyer = new List<string>();
+
+            int abuyerCiktisayisi = 1;
+            try
+            {
+                abuyerCiktisayisi = Convert.ToInt32(dbtools.DegerGetir("select ISNULL(Pkod_Ciktisayisi,1) as Pkod_Ciktisayisi from Pos_Kodlar where Pkod_Sinif='17' and Pkod_Kod='ABUYERSAYI'"));
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+
+            string printer = AbuyerPrinterBulYeni(Fisno);
+
+
+            if (printer == "")
+            {
+                return "";
+            }
+
+
+            DataTable dtAbuyer = new DataTable();
+            SqlConnection con = dbtools.conn;
+            if (con.State == ConnectionState.Closed) con.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandTimeout = 0;
+            com.CommandText = "Pos_Satis";
+            com.Parameters.AddWithValue("@Fisno", Fisno);
+            com.Parameters.AddWithValue("@Rapor_Tipi", 9);
+            com.Parameters.AddWithValue("@Printer", printer);
+            com.Parameters.AddWithValue("@Mars", Mars);
+            com.Parameters.AddWithValue("@Split", Split);
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            da.Fill(dtAbuyer);
+
+            if (con.State != ConnectionState.Closed) con.Close();
+
+
+            if (Param.Param_Printer_Tanim)
+            {
+                printer = Convert.ToString(dtAbuyer.Rows[0]["Pkod_Printer"]);
+            }
+
+            foreach (DataRow boslaridoldur in dtAbuyer.Rows)
+            {
+                string yaziciismi = boslaridoldur["Rec_AbuyerPR"].ToString();
+                if (yaziciismi == "")
+                {
+                    boslaridoldur["Rec_AbuyerPR"] = printer;
+                }
+            }
+
+
+            var yazicilar = dtAbuyer.AsEnumerable()
+  .GroupBy(r => new { Col1 = r["Rec_AbuyerPR"] })
+  .Select(g => g.OrderBy(r => r["Rec_AbuyerPR"]).First())
+  .CopyToDataTable();
+
+
+
+            foreach (DataRow itemYazici in yazicilar.Rows) // 2 kere doncek
+            {
+                string yaziciismi = itemYazici["Rec_AbuyerPR"].ToString();
+
+
+
+                var yazilacaklar = dtAbuyer.Select("Rec_AbuyerPR='" + yaziciismi + "'").CopyToDataTable();
+
+
+
+
+
+
+                TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+
+
+
+                abuyer.Add(".");
+                //abuyer.Add("   * * * ABUYER FISI * * *  ");
+                if (!hizliSatis)
+                {
+                    abuyer.Add(baslik);
+                    abuyer.Add(" ");
+                    abuyer.Add("Departman : " + Departman.Dep_Adi);
+                    abuyer.Add(".");
+                    abuyer.Add("#Masa :" + Convert.ToString(yazilacaklar.Rows[0]["Rsat_Masa"]).PadRight(10, ' ') + "  #Kisi :" + Convert.ToString(yazilacaklar.Rows[0]["Rsat_Kisi"]).PadRight(10, ' '));
+                    abuyer.Add("#Konumu :" + (Convert.ToString(yazilacaklar.Rows[0]["MasaKonumAdi"])).PadRight(7, ' '));
+                    abuyer.Add(".");
+                    abuyer.Add("Tarih:" + Convert.ToDateTime(yazilacaklar.Rows[0]["Rsat_Tarih"]).ToString("dd.MM.yyyy").PadRight(14, ' ') + " Saat:" + Convert.ToString(timeSpan).PadRight(10, ' '));
+                    abuyer.Add(".");
+                    abuyer.Add("Cekno:" + Convert.ToString(yazilacaklar.Rows[0]["Rsat_Fisno"]).PadRight(10, ' '));
+                    abuyer.Add(".");
+                    abuyer.Add("Grson:" + Convert.ToString(yazilacaklar.Rows[0]["Garson"]));//.PadRight(10, ' '));// + " Grsn2:" + Convert.ToString(dtSiparis.Rows[0]["Garson2"]).PadRight(5, ' '));
+                    abuyer.Add(".");
+                    abuyer.Add("MIKTAR".PadRight(13, ' ') + "URUN".PadRight(15, ' '));
+                }
+                else
+                {
+                    abuyer.Add(".");
+                    abuyer.Add("   * * * SIPARIS FISI * * *  ");
+                    abuyer.Add(".");
+                    abuyer.Add("Departman : " + Departman.Dep_Adi);
+                    abuyer.Add("Tarih:" + Convert.ToDateTime(yazilacaklar.Rows[0]["Rsat_Tarih"]).ToString("dd.MM.yyyy").PadRight(14, ' ') + " Saat:" + Convert.ToString(timeSpan).PadRight(10, ' '));
+                    abuyer.Add("#Cekno:" + Convert.ToString(yazilacaklar.Rows[0]["Rsat_Fisno"]).PadRight(10, ' '));
+                    abuyer.Add(".");
+                    abuyer.Add("MIKTAR".PadRight(13, ' ') + "URUN".PadRight(15, ' '));
+                }
+                for (int j = 0; j < yazilacaklar.Rows.Count; j++)
+                {
+                    abuyer.Add("".PadLeft(36, '-'));
+                    if (Param.Param_SiparisSayi == false)
+                    {
+                        abuyer.Add(" " + String.Format("{0:0.##}", Convert.ToDecimal(yazilacaklar.Rows[j]["Rsat_Miktar"])).ToString().PadRight(4, ' ') + Convert.ToString(yazilacaklar.Rows[j]["Rsat_Emiktar"]).PadRight(8, ' ') + Convert.ToString(yazilacaklar.Rows[j]["Rec_Ad"]).PadRight(29, ' ').Substring(0, 29));
+                    }
+                    else
+                    {
+                        abuyer.Add(" " + String.Format("{0:0.##}", Convert.ToDecimal(yazilacaklar.Rows[j]["Rsat_Miktar"])).ToString().PadRight(4, ' ') + Convert.ToString(yazilacaklar.Rows[j]["Rsat_Emiktar"]).PadRight(8, ' ') + Convert.ToString(yazilacaklar.Rows[j]["Rec_Ad"]).PadRight(29, ' ').Substring(0, 29));
+                    }
+                    //abuyer.Add(" " + Convert.ToInt32(yazilacaklar.Rows[j]["Rsat_Miktar"]).ToString().PadRight(5, ' ') + Convert.ToString(yazilacaklar.Rows[j]["Rsat_Emiktar"]).PadRight(2, ' ') + Convert.ToString(yazilacaklar.Rows[j]["Rec_Ad"]).PadRight(29, ' ').Substring(0, 29));
+                    if (Convert.ToString(yazilacaklar.Rows[j]["Rsat_Aciklama"]) != String.Empty) abuyer.Add(Convert.ToString(yazilacaklar.Rows[j]["Rsat_Aciklama"]));
+
+
+                    string recAd = yazilacaklar.Rows[j]["Rec_Ad"].ToString();
+                    string rsatId = yazilacaklar.Rows[j]["Rsat_Id"].ToString();
+
+                    if (!recAd.Contains("**RZV**"))
+                    {
+                        dbtools.execcmd(@"update Cst_Recete_Satis set Rsat_AbuyerPr = 1,Rsat_AbuyerPr2 = 1,Rsat_AbuyerPr3 = 1,Rsat_AbuyerPr4 = 1 where Rsat_Id = '" + rsatId + "'");
+
+                    }
+                }
+                abuyer.Add("".PadLeft(36, '-'));
+
+                abuyer.Add(".");
+                if (kartDetay1 != "") abuyer.Add(kartDetay1);
+                if (kartdetay2 != "") abuyer.Add(kartdetay2);
+
+                for (int j = 0; j < 5; j++)
+                {
+                    abuyer.Add(".");
+                }
+
+                //siparis.Add(Convert.ToString((char) 27) + "@" + Convert.ToString((char) 29) + "V" + (char)1);
+
+                try
+                {
+                    System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
+                    Font fnt = (Font)converter.ConvertFromString(Siparis_Font);
+
+                    if (fnt == null)
+                    {
+                        fnt = new Font("Arial", 8);
+                    }
+
+                    Liste = abuyer;
+                    printFont = fnt;
+                    PrintDocument pd = new PrintDocument();
+                    pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
+                    pd.PrinterSettings.PrinterName = yaziciismi;//printer;
+
+                    for (int j = 0; j < abuyerCiktisayisi; j++)
+                    {
+                        pd.Print();
+                    }
+
+                    abuyer.Clear();
+                }
+                catch (Exception err)
+                {
+                    return err.Message;
+                }
+            }
+
+            //dbtools.execcmd(@"update Cst_Recete_Satis set Rsat_AbuyerPr = 1,Rsat_AbuyerPr2 = 1,Rsat_AbuyerPr3 = 1,Rsat_AbuyerPr4 = 1 where Rsat_Fisno = '" + Fisno + "'");
+
+            return "OK";
+        }
         public string CariHesapPr(string CariKod, DataTable data = null)
         {
             List<string> cari = new List<string>();

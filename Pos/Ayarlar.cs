@@ -1503,7 +1503,7 @@ public void yaziciYukleHesap()
             //                    + " "
             //                    + " left join Stok_Kodlar as Alt on Pkod_Altgrup = Alt.Kodlar_Kod and Alt.Kodlar_Sinif = '09' and Alt.Kodlar_Anagrup = ana.Kodlar_Kod where Pkod_Sinif = '16' and Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' ");
 
-            DataTable dt = dbtools.SelectTable("SELECT pr.Pkod_Kod, Alt.Kodlar_Ad as AltGrup,alt.Kodlar_Kod as Pkod_Altgrup, "
+            DataTable dt = dbtools.SelectTable("SELECT pr.Pkod_Id,pr.Pkod_Kod, Alt.Kodlar_Ad as AltGrup,alt.Kodlar_Kod as Pkod_Altgrup, "
                                 + " CASE WHEN pr.Pkod_Ustgrup = 'HES' THEN 'Hesap Printer' WHEN pr.Pkod_Ustgrup = 'ADI' THEN 'Adisyon Printer' WHEN pr.Pkod_Ustgrup = 'FAT' THEN 'Fatura Printer' WHEN pr.Pkod_Ustgrup = 'PKT' THEN 'Paket Printer' WHEN pr.Pkod_Ustgrup = 'KSM' THEN 'Kasa Makbuz Printer' else Ana.Kodlar_Ad end as AnaGrup, pr.Pkod_Ad, pr.Pkod_Satir,pr.Pkod_Ustgrup,pr.Pkod_Printer,  "
                                 + " pr.Pkod_Ip,isnull(pr.Pkod_Port,0) as Pkod_Port,pr.Pkod_Ekran,ISNULL(pr.Pkod_Posta,'') as Pkod_Posta ,posta.Pkod_Ad as Posta_Ad,pr.Pkod_AbuyerPr "
                                 + " ,pr.Pkod_AbuyerPr2,pr.Pkod_AbuyerPr3,pr.Pkod_AbuyerPr4,ISNULL(pr.Pkod_AbuyerIP,'') as Pkod_AbuyerIP, ISNULL(pr.Pkod_AbuyerPort,'') as Pkod_AbuyerPort "

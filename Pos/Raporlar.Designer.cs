@@ -83,6 +83,7 @@
             this.gridControl7 = new DevExpress.XtraGrid.GridControl();
             this.gridView7 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.checkEditDirektSatis = new DevExpress.XtraEditors.CheckEdit();
             this.checkEditServisPay = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
             this.chk_PR = new DevExpress.XtraEditors.CheckedComboBoxEdit();
@@ -405,7 +406,9 @@
             this.tab_Ikram = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl16 = new DevExpress.XtraGrid.GridControl();
             this.gridView16 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.checkEditDirektSatis = new DevExpress.XtraEditors.CheckEdit();
+            this.tab_reskullanim = new DevExpress.XtraTab.XtraTabPage();
+            this.gridControlResKullanim = new DevExpress.XtraGrid.GridControl();
+            this.gridViewResKullanim = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -415,6 +418,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditDirektSatis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditServisPay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_PR.Properties)).BeginInit();
@@ -501,7 +505,9 @@
             this.tab_Ikram.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditDirektSatis.Properties)).BeginInit();
+            this.tab_reskullanim.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlResKullanim)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewResKullanim)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView8_1
@@ -959,6 +965,14 @@
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
+            // checkEditDirektSatis
+            // 
+            resources.ApplyResources(this.checkEditDirektSatis, "checkEditDirektSatis");
+            this.checkEditDirektSatis.Name = "checkEditDirektSatis";
+            this.checkEditDirektSatis.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEditDirektSatis.Properties.Appearance.Font")));
+            this.checkEditDirektSatis.Properties.Appearance.Options.UseFont = true;
+            this.checkEditDirektSatis.Properties.Caption = resources.GetString("checkEditDirektSatis.Properties.Caption");
+            // 
             // checkEditServisPay
             // 
             resources.ApplyResources(this.checkEditServisPay, "checkEditServisPay");
@@ -1268,7 +1282,8 @@
             this.tab_DepartmanOzet,
             this.tab_Zayi,
             this.tab_AylikGenelRapor,
-            this.tab_Ikram});
+            this.tab_Ikram,
+            this.tab_reskullanim});
             this.xtraTabControl1.SelectedPageChanged += new DevExpress.XtraTab.TabPageChangedEventHandler(this.xtraTabControl1_SelectedPageChanged);
             // 
             // tab_Satis
@@ -4179,13 +4194,27 @@
             this.gridView16.OptionsView.ShowFooter = true;
             this.gridView16.OptionsView.ShowGroupPanel = false;
             // 
-            // checkEditDirektSatis
+            // tab_reskullanim
             // 
-            resources.ApplyResources(this.checkEditDirektSatis, "checkEditDirektSatis");
-            this.checkEditDirektSatis.Name = "checkEditDirektSatis";
-            this.checkEditDirektSatis.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEdit1.Properties.Appearance.Font")));
-            this.checkEditDirektSatis.Properties.Appearance.Options.UseFont = true;
-            this.checkEditDirektSatis.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
+            this.tab_reskullanim.Controls.Add(this.gridControlResKullanim);
+            this.tab_reskullanim.Name = "tab_reskullanim";
+            resources.ApplyResources(this.tab_reskullanim, "tab_reskullanim");
+            // 
+            // gridControlResKullanim
+            // 
+            resources.ApplyResources(this.gridControlResKullanim, "gridControlResKullanim");
+            this.gridControlResKullanim.MainView = this.gridViewResKullanim;
+            this.gridControlResKullanim.MenuManager = this.barManager1;
+            this.gridControlResKullanim.Name = "gridControlResKullanim";
+            this.gridControlResKullanim.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewResKullanim});
+            // 
+            // gridViewResKullanim
+            // 
+            this.gridViewResKullanim.GridControl = this.gridControlResKullanim;
+            this.gridViewResKullanim.Name = "gridViewResKullanim";
+            this.gridViewResKullanim.OptionsView.ColumnAutoWidth = false;
+            this.gridViewResKullanim.OptionsView.ShowAutoFilterRow = true;
             // 
             // Raporlar
             // 
@@ -4210,6 +4239,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditDirektSatis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditServisPay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_PR.Properties)).EndInit();
@@ -4296,7 +4326,9 @@
             this.tab_Ikram.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditDirektSatis.Properties)).EndInit();
+            this.tab_reskullanim.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlResKullanim)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewResKullanim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4666,5 +4698,8 @@
         private DevExpress.XtraEditors.CheckEdit checkEditServisPay;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn140;
         private DevExpress.XtraEditors.CheckEdit checkEditDirektSatis;
+        private DevExpress.XtraTab.XtraTabPage tab_reskullanim;
+        private DevExpress.XtraGrid.GridControl gridControlResKullanim;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewResKullanim;
     }
 }
