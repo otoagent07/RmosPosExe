@@ -589,9 +589,11 @@ namespace Pos.Class
                         }
                     }
 
-                    AbuyerPr(Fisno, Mars, Split, abuyerBaslik, kartDetay1, kartdetay2, hizliSatis);
                 }
 
+
+
+                AbuyerPr(Fisno, Mars, Split, abuyerBaslik, kartDetay1, kartdetay2, hizliSatis);
 
             }
             catch (Exception ex)
@@ -2652,6 +2654,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
         {
             List<string> mars = new List<string>();
 
+            bool birkere = true;
             DataTable dtPrinter = SiparisPrinterBul(Fisno, 0, false);
             for (int i = 0; i < dtPrinter.Rows.Count; i++)
             {
@@ -2782,7 +2785,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         string baslik = "   * * * ABUYER FISI * * *   ";
                         if (sayi > 0) baslik = "   * * * ABUYER FISI - MARS * * *   ";
 
-                        AbuyerPr(Fisno, true, 0, baslik, "", "", false);
+                        if (birkere)
+                        {
+                            birkere = false;
+                            AbuyerPr(Fisno, true, 0, baslik, "", "", false);
+                        }
                     }
                     catch (Exception err)
                     {
@@ -5281,6 +5288,26 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 string ipyalYaziciAd = AbuyerPrIptalFis(SatirId);
                 if (ipyalYaziciAd != null && ipyalYaziciAd != "")
                 {
+                 iptal = new Print.IptalFisi();
+                    xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), iptal);
+
+                    iptal.DataSource = dtCopy;
+
+
+                    iptal.xr_MasaNo.Text = Convert.ToString(item["Rsat_Masa"]);//+ " Adi: " + Convert.ToString(item["Masa_Ad"]).PadRight(5, ' '));
+                    iptal.xr_Tarih.Text = Convert.ToDateTime(item["Rsat_Tarih"]).ToString("dd.MM.yyyy");
+                    iptal.xr_Cek.Text = Convert.ToString(item["Rsat_Fisno"]);
+                    iptal.xr_Acilis.Text = Convert.ToDateTime(item["IptalTarih"]).ToString("HH:mm:ss");
+                    iptal.xr_Garson.Text = User.P_Ad + " " + User.P_Soyad;
+
+                     miktarim = Miktar.ToString().Replace(",0000", "").Replace(",000", "").Replace(",00", "");
+
+                    iptal.xr_Miktar.Text = miktarim + " " + "[Rsat_Emiktar]";
+                    //iptal.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
+                    iptal.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
+
+
+
                     iptal.PrinterName = ipyalYaziciAd;
                     iptal.Print();
                 }
@@ -6392,6 +6419,67 @@ order by Pkod_Kod";
 
             try
             {
+
+                int marsim = Mars == true ? 1 : 0;
+
+                DataTable dataTable = dbtools.SelectTableR("select  konumposta,ustgrup,altgrup from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and konumposta is not null group by konumposta,ustgrup,altgrup");
+
+                if (dataTable != null && dataTable.Rows.Count > 0)
+                {
+                    foreach (DataRow item in dataTable.Rows)
+                    {
+                        string konumposta = item["konumposta"].ToString();
+                        string ustgrup = item["ustgrup"].ToString();
+                        string altgrup = item["altgrup"].ToString();
+
+                        string query = "select top 1 isnull(Pkod_AbuyerPr,'') as Pkod_AbuyerPr from Pos_Kodlar where Pkod_Sinif='16' and Pkod_Posta='" + konumposta + "' and Pkod_Ustgrup='" + ustgrup + "' and Pkod_Altgrup='" + altgrup + "'";
+                        string yaziciAd = dbtools.DegerGetir(query); // iki tane yazıcı ismi geliyor
+
+                        // önceden @Rapor_Tipi = 9
+                        string q2 = @"select ISNULL(Rsat_SiparisPr,0) as Rsat_SiparisPr,Rsat_Id,Rsat_Tarih,CONVERT(varchar,Rsat_Acilis,108) as Rsat_Acilis,Rsat_Fisno,
+			isnull(Garson.P_Ad,'') + ' ' + ISNULL(Garson.P_Soyad,'') as Garson,isnull(Garson2.P_Ad,'') +' '+ ISNULL(Garson2.P_Soyad,'') as Garson2,
+case when ISNULL(Rsat_OzelMasaAdi,'') = '' then Masa_Ad else (Rsat_OzelMasaAdi + ' - ' + Masa_Ad) end as Rsat_Masa
+,Rsat_Miktar,
+case when ISNULL(Rsat_Mars,0) = 0 and " + marsim + @" = 1 then '**RZV** ' else '' end + case when ISNULL(Rsat_Yapma,0) = 1 then '[YAPMA] ' else '' end + Rec_Ad + ' ' + ISNULL(Rsat_Joker,'') as Rec_Ad,
+ISNULL(Rsat_Aciklama,'') AS Rsat_Aciklama,'' as Pkod_Printer,
+case Rsat_Emiktar when 'T' then '' when 'B' then '1BCK' When 'D' THEN 'DBL' When 'Y' THEN 'YRM' When 'A'  then '' else '' end as Rsat_Emiktar,
+isnull(Rsat_Tarih,getdate()) as Rsat_Tarih2,isnull(Rsat_Kisi,0) as Rsat_Kisi,MasKonum.Pkod_Ad as MasaKonumAdi,ISNULL(Rsat_SiraAciklama,'') as Rsat_SiraAciklama
+from Cst_Recete_Satis rez
+left join Cst_Recete as rec on rec.Rec_Genelkod=rez.Rsat_Recete
+left join Pos_Masa as masa on masa.Masa_No = Rsat_Masa and masa.Masa_Depart = Rsat_Departman
+left join pos_kodlar as MasKonum on MasKonum.Pkod_Sinif = '14' and MasKonum.Pkod_Konumkod = masa.Masa_Konum and MasKonum.Pkod_Kod = masa.Masa_Depart 
+	left join Rmosmuh.dbo.Pos_User as Garson on Garson.P_Kod = Rsat_Garson
+			left join Rmosmuh.dbo.Pos_User as Garson2 on Garson2.P_Kod = Rsat_Garson2
+where  Rsat_Fisno='" + Fisno + @"' and Rsat_SiparisPr=0";
+
+                        DataTable dtAbuyer = dbtools.SelectTableR(q2);
+
+                        yazdirAbuyerNew(dtAbuyer, yaziciAd, Fisno, Mars, Split, baslik, kartDetay1, kartdetay2, hizliSatis);
+
+                        break; // abuyer 1 tane olur dedik
+
+                    }
+                }
+
+
+
+
+                //dbtools.execcmd(@"update Cst_Recete_Satis set Rsat_AbuyerPr = 1,Rsat_AbuyerPr2 = 1,Rsat_AbuyerPr3 = 1,Rsat_AbuyerPr4 = 1 where Rsat_Fisno = '" + Fisno + "'");
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+
+            return "OK";
+        }
+
+
+        public string AbuyerPrYedek23062023(int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis)
+        {
+
+            try
+            {
                 DataTable dataTable = dbtools.SelectTableR("select  konumposta,ustgrup,altgrup from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and konumposta is not null group by konumposta,ustgrup,altgrup");
 
                 if (dataTable != null && dataTable.Rows.Count > 0)
@@ -6417,6 +6505,7 @@ left join pos_kodlar as MasKonum on MasKonum.Pkod_Sinif = '14' and MasKonum.Pkod
 			left join Rmosmuh.dbo.Pos_User as Garson2 on Garson2.P_Kod = Rsat_Garson2
 where  Rsat_Fisno='" + Fisno + @"' and konumposta='" + konumposta + @"' and ustgrup='" + ustgrup + @"' and altgrup='" + altgrup + @"'
 ";
+
                         DataTable dtAbuyer = dbtools.SelectTableR(q2);
 
                         yazdirAbuyerNew(dtAbuyer, yaziciAd, Fisno, Mars, Split, baslik, kartDetay1, kartdetay2, hizliSatis);
