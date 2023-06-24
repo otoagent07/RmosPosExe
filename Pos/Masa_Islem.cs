@@ -19,6 +19,28 @@ namespace Pos
             InitializeComponent();
         }
 
+        public void marsSiparis()
+        {
+            try
+            {
+                string bindirimReceteKod = dbtools.DegerGetir("select top 1 Param_Bindirim  from Pos_Param where Param_Id = '1'");
+
+                string qq = "select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and isnull(Rsat_Mars,0)='1' and Rsat_Recete<>'" + bindirimReceteKod + "'";
+                int count = Convert.ToInt32(dbtools.DegerGetir(qq));
+
+                if (count == 0)
+                {
+                    btn_Marsla.Enabled = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
         private void Masa_Islem_Load(object sender, EventArgs e)
         {
@@ -36,6 +58,8 @@ namespace Pos
             btn_GarsonDegistir.Enabled = User.M_GarsonDegistir;
             btn_KisiSayisiDegistir.Enabled = User.M_KisiSayisi;
             simpleButton2.Enabled = User.Pos_MasaAnlikDurum;
+
+            marsSiparis();
         }
 
         private void btn_OdaKontrol_Click(object sender, EventArgs e)

@@ -806,7 +806,13 @@ namespace Pos
 
         public void reskullanimListele()
         {
-            gridControlResKullanim.DataSource = dbtools.SelectTableR("select * from Pos_ResKullanim");
+            gridControlResKullanim.DataSource = dbtools.SelectTableR(@"select 
+case 
+when Bufe_Tipi=0 then 'Kahvaltı'
+when Bufe_Tipi=1 then 'Öğle'
+when Bufe_Tipi=2 then 'Akşam'
+end as Bufe_Tipi ,
+Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             gridViewResKullanim.BestFitColumns();
         }
 

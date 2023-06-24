@@ -584,8 +584,10 @@ namespace Pos.Class
                             siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                             siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
 
-
-                            siparis.Print();
+                            if (siparis.PrinterName!= "Microsoft XPS Document Writer")
+                            {
+                                siparis.Print();
+                            }
                         }
                     }
 
@@ -5309,7 +5311,14 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
 
                     iptal.PrinterName = ipyalYaziciAd;
-                    iptal.Print();
+
+
+                    if (iptal.PrinterName != "Microsoft XPS Document Writer")
+                    {
+                        iptal.Print();
+                    }
+
+                 
                 }
 
 
@@ -6443,14 +6452,16 @@ case when ISNULL(Rsat_OzelMasaAdi,'') = '' then Masa_Ad else (Rsat_OzelMasaAdi +
 case when ISNULL(Rsat_Mars,0) = 0 and " + marsim + @" = 1 then '**RZV** ' else '' end + case when ISNULL(Rsat_Yapma,0) = 1 then '[YAPMA] ' else '' end + Rec_Ad + ' ' + ISNULL(Rsat_Joker,'') as Rec_Ad,
 ISNULL(Rsat_Aciklama,'') AS Rsat_Aciklama,'' as Pkod_Printer,
 case Rsat_Emiktar when 'T' then '' when 'B' then '1BCK' When 'D' THEN 'DBL' When 'Y' THEN 'YRM' When 'A'  then '' else '' end as Rsat_Emiktar,
-isnull(Rsat_Tarih,getdate()) as Rsat_Tarih2,isnull(Rsat_Kisi,0) as Rsat_Kisi,MasKonum.Pkod_Ad as MasaKonumAdi,ISNULL(Rsat_SiraAciklama,'') as Rsat_SiraAciklama
+isnull(Rsat_Tarih,getdate()) as Rsat_Tarih2,isnull(Rsat_Kisi,0) as Rsat_Kisi,MasKonum.Pkod_Ad as MasaKonumAdi,ISNULL(Rsat_SiraAciklama,'') as Rsat_SiraAciklama,konumposta,ustgrup,altgrup,poskod.Pkod_AbuyerPr
 from Cst_Recete_Satis rez
 left join Cst_Recete as rec on rec.Rec_Genelkod=rez.Rsat_Recete
 left join Pos_Masa as masa on masa.Masa_No = Rsat_Masa and masa.Masa_Depart = Rsat_Departman
 left join pos_kodlar as MasKonum on MasKonum.Pkod_Sinif = '14' and MasKonum.Pkod_Konumkod = masa.Masa_Konum and MasKonum.Pkod_Kod = masa.Masa_Depart 
-	left join Rmosmuh.dbo.Pos_User as Garson on Garson.P_Kod = Rsat_Garson
-			left join Rmosmuh.dbo.Pos_User as Garson2 on Garson2.P_Kod = Rsat_Garson2
-where  Rsat_Fisno='" + Fisno + @"' and Rsat_SiparisPr=0";
+left join Rmosmuh.dbo.Pos_User as Garson on Garson.P_Kod = Rsat_Garson
+left join Rmosmuh.dbo.Pos_User as Garson2 on Garson2.P_Kod = Rsat_Garson2
+left join pos_kodlar as poskod on poskod.Pkod_Sinif='16' and poskod.Pkod_Posta=rez.konumposta and poskod.Pkod_Ustgrup=rez.ustgrup and poskod.Pkod_Altgrup=rez.altgrup
+
+where  Rsat_Fisno='" + Fisno + @"' and Rsat_SiparisPr=0 and isnull(poskod.Pkod_AbuyerPr,'')<>''";
 
                         DataTable dtAbuyer = dbtools.SelectTableR(q2);
 
