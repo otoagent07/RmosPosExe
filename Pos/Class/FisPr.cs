@@ -584,7 +584,7 @@ namespace Pos.Class
                             siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                             siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
 
-                            if (siparis.PrinterName!= "Microsoft XPS Document Writer")
+                            if (siparis.PrinterName!= "Microsoft Print to PDF")
                             {
                                 siparis.Print();
                             }
@@ -5313,7 +5313,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     iptal.PrinterName = ipyalYaziciAd;
 
 
-                    if (iptal.PrinterName != "Microsoft XPS Document Writer")
+                    if (iptal.PrinterName != "Microsoft Print to PDF")
                     {
                         iptal.Print();
                     }
