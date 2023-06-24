@@ -584,7 +584,7 @@ namespace Pos.Class
                             siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                             siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
 
-                            if (siparis.PrinterName!= "Microsoft Print to PDF")
+                            if (siparis.PrinterName != "Microsoft Print to PDF")
                             {
                                 siparis.Print();
                             }
@@ -5290,7 +5290,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 string ipyalYaziciAd = AbuyerPrIptalFis(SatirId);
                 if (ipyalYaziciAd != null && ipyalYaziciAd != "")
                 {
-                 iptal = new Print.IptalFisi();
+                    iptal = new Print.IptalFisi();
                     xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), iptal);
 
                     iptal.DataSource = dtCopy;
@@ -5302,7 +5302,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     iptal.xr_Acilis.Text = Convert.ToDateTime(item["IptalTarih"]).ToString("HH:mm:ss");
                     iptal.xr_Garson.Text = User.P_Ad + " " + User.P_Soyad;
 
-                     miktarim = Miktar.ToString().Replace(",0000", "").Replace(",000", "").Replace(",00", "");
+                    miktarim = Miktar.ToString().Replace(",0000", "").Replace(",000", "").Replace(",00", "");
 
                     iptal.xr_Miktar.Text = miktarim + " " + "[Rsat_Emiktar]";
                     //iptal.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
@@ -5318,7 +5318,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         iptal.Print();
                     }
 
-                 
+
                 }
 
 
