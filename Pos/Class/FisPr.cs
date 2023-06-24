@@ -5285,7 +5285,12 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
 
                 iptal.PrinterName = printer;
-                iptal.Print();
+
+                if (iptal.PrinterName != "Microsoft Print to PDF")
+                {
+                    iptal.Print();
+                }
+            
 
                 string ipyalYaziciAd = AbuyerPrIptalFis(SatirId);
                 if (ipyalYaziciAd != null && ipyalYaziciAd != "")
