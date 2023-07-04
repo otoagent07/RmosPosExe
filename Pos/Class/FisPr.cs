@@ -584,7 +584,7 @@ namespace Pos.Class
                             siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                             siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
 
-                            if (siparis.PrinterName != "Microsoft Print to PDF")
+                            if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "")
                             {
                                 siparis.Print();
                             }
@@ -5286,11 +5286,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 iptal.PrinterName = printer;
 
-                if (iptal.PrinterName != "Microsoft Print to PDF")
+                if (iptal.PrinterName != "Microsoft Print to PDF" && iptal.PrinterName != "")
                 {
                     iptal.Print();
                 }
-            
+
 
                 string ipyalYaziciAd = AbuyerPrIptalFis(SatirId);
                 if (ipyalYaziciAd != null && ipyalYaziciAd != "")
@@ -5318,7 +5318,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     iptal.PrinterName = ipyalYaziciAd;
 
 
-                    if (iptal.PrinterName != "Microsoft Print to PDF")
+                    if (iptal.PrinterName != "Microsoft Print to PDF" && iptal.PrinterName != "")
                     {
                         iptal.Print();
                     }
