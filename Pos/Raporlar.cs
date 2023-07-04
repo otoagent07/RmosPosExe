@@ -305,8 +305,6 @@ namespace Pos
                     {
                         if (item["Rsat_AdisyonPR"].ToString().ToLower().Equals("true"))
                         {
-                            //dbtools.execcmd("update Cst_Recete_Satis set Rsat_AdisyonPr='1' from Cst_Recete_Satis where Rsat_Fisno='" + item["Rsat_Fisno"].ToString() + "' and rsat_ba='B' ");
-
                             adisyonFisler.Add(item["Rsat_Fisno"].ToString());
                         }
                     }
@@ -315,7 +313,11 @@ namespace Pos
                     {
                         string newStr = string.Join(",", adisyonFisler);
                         string query = "update Cst_Recete_Satis set Rsat_AdisyonPr='1' from Cst_Recete_Satis where Rsat_Fisno in (" + newStr + ") and rsat_ba='B' ";
-                        dbtools.execcmd(query);
+
+                        if (Departman.Adisyon==false)
+                        {
+                            dbtools.execcmd(query);
+                        }
                     }
 
                     HashSet<int> providers = new HashSet<int>();
