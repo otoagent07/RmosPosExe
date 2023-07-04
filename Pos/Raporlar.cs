@@ -309,16 +309,16 @@ namespace Pos
                         }
                     }
 
-                    if (adisyonFisler.Count>0)
-                    {
-                        string newStr = string.Join(",", adisyonFisler);
-                        string query = "update Cst_Recete_Satis set Rsat_AdisyonPr='1' from Cst_Recete_Satis where Rsat_Fisno in (" + newStr + ") and rsat_ba='B' ";
+                    //if (adisyonFisler.Count>0)
+                    //{
+                    //    string newStr = string.Join(",", adisyonFisler);
+                    //    string query = "update Cst_Recete_Satis set Rsat_AdisyonPr='1' from Cst_Recete_Satis where Rsat_Fisno in (" + newStr + ") and rsat_ba='B' ";
 
-                        if (Departman.Adisyon==false)
-                        {
-                            dbtools.execcmd(query);
-                        }
-                    }
+                    //    if (Departman.Adisyon==false)
+                    //    {
+                    //        dbtools.execcmd(query);
+                    //    }
+                    //}
 
                     HashSet<int> providers = new HashSet<int>();
                     foreach (var provider in dt.AsEnumerable()
