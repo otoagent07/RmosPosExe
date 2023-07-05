@@ -3751,6 +3751,7 @@
             this.gridView9.OptionsBehavior.Editable = false;
             this.gridView9.OptionsView.ColumnAutoWidth = false;
             this.gridView9.OptionsView.ShowAutoFilterRow = true;
+            this.gridView9.OptionsView.ShowFooter = true;
             this.gridView9.OptionsView.ShowGroupPanel = false;
             // 
             // panelControl1

@@ -1690,7 +1690,28 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             }
 
             gridView9.BestFitColumns();
+            gridviewCountYaz(gridView9,"Tutar");
         }
+
+        public static void gridviewCountYaz(GridView grid, string fieldName)
+        {
+            try
+            {
+                if (grid.Columns.Count > 0)
+                {
+                    grid.OptionsView.ShowFooter = true;
+                    grid.Columns[fieldName].SummaryItem.SummaryType = DevExpress.Data.SummaryItemType.Sum;
+                    grid.Columns[fieldName].SummaryItem.FieldName = fieldName;
+                    grid.Columns[fieldName].SummaryItem.DisplayFormat = "{0:n0}";
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+           
+        }
+
 
 
         public static string MyClass = "Raporlar";

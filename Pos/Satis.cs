@@ -2961,6 +2961,11 @@ namespace Pos
                     Sil_Miktar = klv.sayi;
                 }
 
+                int satirId = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
+                string fisno = bartxt_FisNo.EditValue.ToString();
+                indirimvarsaazalt(satirId, fisno, (int)Sil_Miktar);
+
+
                 string neden = "";
                 if (Rsat_SiparisPr && Departman.Kodlar_YazSipNedSor)
                 {
@@ -3001,7 +3006,9 @@ namespace Pos
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
 
-                Fis_Islem.Satir_Sil(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), Sil_Miktar);
+
+              
+                Fis_Islem.Satir_Sil(satirId, Sil_Miktar);
 
 
                 int satirsay = Convert.ToInt32(dbtools.DegerGetir("select COUNT(*) from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Fisno = '" + bartxt_FisNo.EditValue.ToString() + "' and Rsat_Ba = 'B' "));
@@ -3010,6 +3017,8 @@ namespace Pos
                     dbtools.execcmd("update Pos_Masa set Masa_Durum = 0, Masa_Ozel = '' where Masa_No = '" + Convert.ToString(bartxt_MasaNo.EditValue) + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
                     dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Fisno = '" + bartxt_FisNo.EditValue.ToString() + "'");
                 }
+
+
                 gridyenile();
             }
             catch (Exception ex)
@@ -3017,6 +3026,60 @@ namespace Pos
                 RHMesaj.MyMessageError(MyClass, "btn_SatirSil_Click", "", ex);
             }
 
+        }
+
+        public void indirimvarsaazalt(int satirId,string fisno,int Sil_Miktar)
+        {
+            try
+            {
+                string q1 = @"select Rsat_Id,Rsat_Ba,isnull(Rsat_Miktar,0) as Rsat_Miktar,Rsat_Fiyat,Rsat_Tutar,Rsat_Doviztutar,Rsat_Net,Rsat_Kdv from Cst_Recete_Satis 
+where 
+Rsat_Fisno='" + fisno + @"'  
+and Rsat_Indkodu  in ('HAPPYHOUR','MANUEL') and Rsat_Ba='A'";
+                DataTable indirimTable = dbtools.SelectTableR(q1);
+
+                if (indirimTable!=null && indirimTable.Rows.Count>0)
+                {
+                    int Rsat_Miktar = Convert.ToInt32(Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Miktar"].ToString()));
+                    if (Rsat_Miktar==0)
+                    {
+                        return;
+                    }
+                    int Rsat_Id = Convert.ToInt32(indirimTable.Rows[0]["Rsat_Id"].ToString());
+                    decimal Rsat_Fiyat = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Fiyat"].ToString());
+                    decimal Rsat_Tutar = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Tutar"].ToString());
+                    decimal Rsat_Doviztutar = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Doviztutar"].ToString());
+                    decimal Rsat_Net = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Net"].ToString());
+                    decimal Rsat_Kdv = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Kdv"].ToString());
+
+                    string deger = dbtools.DegerGetir(@"select 
+(select top 1 isnull(Rec_HappyHourFiyat,0) as Rec_HappyHourFiyat from Cst_Recete where Rec_Genelkod=satis.Rsat_Recete and Rec_HappyHour='1')*"+ Sil_Miktar + @"
+as uygulanacakindirim
+from Cst_Recete_Satis as satis where Rsat_Id='"+ satirId + @"'");
+
+                    if (deger!=null && deger!="" && deger != "0")
+                    {
+                        decimal Rsat_Kdvoran = Convert.ToDecimal(dbtools.DegerGetir("select top 1 Rsat_Kdvoran from Cst_Recete_Satis where Rsat_Id='" + satirId + "'"));
+
+
+                        decimal uygulanacakindirim = Convert.ToDecimal(deger);
+                        decimal fiyat= Rsat_Fiyat - uygulanacakindirim;
+                        decimal tutar = Rsat_Tutar - uygulanacakindirim;
+                        decimal doviztutar = Rsat_Doviztutar - uygulanacakindirim;
+                        decimal net = tutar / ((100 + Rsat_Kdvoran) / 100);
+                        decimal kdv = tutar - tutar / ((100 + Rsat_Kdvoran) / 100);
+                        decimal miktar = Rsat_Miktar - Sil_Miktar;
+
+                        string q2 = "update Cst_Recete_Satis set Rsat_Miktar='" + miktar + "',Rsat_Fiyat='" + fiyat.ToString().Replace(",", ".") + "',Rsat_Tutar='" + tutar.ToString().Replace(",", ".") + "',Rsat_Doviztutar='" + doviztutar.ToString().Replace(",", ".") + "',Rsat_Net='" + net.ToString().Replace(",", ".") + "',Rsat_Kdv='" + kdv.ToString().Replace(",", ".") + "' where Rsat_Id='" + Rsat_Id + "'";
+
+                        dbtools.execcmdR(q2);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("önemsiz hata_1\n"+ex.Message);
+            }
         }
 
         private void btn_Tutarduzelt_Click(object sender, EventArgs e)
