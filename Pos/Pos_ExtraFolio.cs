@@ -1259,7 +1259,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                     cmd.Parameters.AddWithValue("@CardF_Kullanici", User.P_Kod);
                     cmd.Parameters.AddWithValue("@CardF_Kisi", txtCardF_Kisi.EditValue);
                     cmd.Parameters.AddWithValue("@CardF_Cocuk", CardF_Cocuk.EditValue);
-                    cmd.Parameters.AddWithValue("@CardF_Indirim", txtKartFIndirim.EditValue);
+                    cmd.Parameters.AddWithValue("@CardF_Indirim", txtKartFIndirim.EditValue.ToString().Replace(",","."));
 
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -1278,13 +1278,14 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                     //}
                 }
 
-
-                otomatikReceteSatis();
+               
 
 
                 this.Cursor = Cursors.Default;
                 if (ID == 0)
                 {
+                    otomatikReceteSatis();
+
                     Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Kart, Log.Log_Islem.Kaydet, Convert.ToString(txtCardF_Kartno.Text) + " Nolu Kart Kayıt Edilmiştir", "", Convert.ToString(lookCardF_FolioID.EditValue));
                 }
                 else
