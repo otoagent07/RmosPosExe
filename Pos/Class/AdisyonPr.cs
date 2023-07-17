@@ -423,7 +423,14 @@ namespace Pos.Class
             ads.lbl_Acilissaat.Text += Convert.ToString(dt_Fis.Rows[0]["Rsat_Acilis"]);
             ads.lbl_Fisno.Text += Convert.ToString(dt_Fis.Rows[0]["Rsat_Fisno"]);
             ads.lbl_Kasiyer.Text += Convert.ToString(dt_Fis.Rows[dt_Fis.Rows.Count - 2]["Kasiyer"]);
-            ads.lbl_Garson.Text += Convert.ToString(dt_Fis.Rows[0]["Garson"]);
+
+            string garson = Convert.ToString(dt_Fis.Rows[0]["Garson"]);
+            //string kasiyer = Convert.ToString(dt_Fis.Rows[0]["Kasiyer"]);
+            //if (garson=="")
+            //{
+            //    garson = kasiyer;
+            //}
+            ads.lbl_Garson.Text += garson;
             ads.lbl_Masa.Text += Convert.ToString(dt_Fis.Rows[0]["Rsat_Masa"]) + " - " + Convert.ToString(dt_Fis.Rows[0]["Masa_Ozel"]);
             ads.lbl_Kisi.Text += Convert.ToString(dt_Fis.Rows[0]["Rsat_Kisi"]);
             //ads.xr_AdSoyad.Text += "";

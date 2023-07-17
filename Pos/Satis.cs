@@ -64,9 +64,11 @@ namespace Pos
 
         public bool otomatikSatis = false;
         public string recetekod = "";
+        public string recetekodCocuk = "";
         public string kartnom = "";
         public string hizmetOdemeKod = "";
         public int hizmetmiktar = 1;
+        public int hizmetmiktarCocuk = 0;
 
 
         public Satis()
@@ -901,6 +903,12 @@ namespace Pos
         {
             try
             {
+                if (otomatikSatis)
+                {
+                    return true;
+                }
+
+
                 if (Param.Tesis_Tipi == 1)
                 {
                     return true;
@@ -1488,6 +1496,12 @@ namespace Pos
 
         private bool LimitKontrol(decimal odemeTutar)
         {
+
+            if (otomatikSatis)
+            {
+                return true;
+            }
+
             if (Param.Tesis_Tipi == 1)
             {
                 return true;
@@ -1934,7 +1948,7 @@ namespace Pos
         bool Rec_Miktar_Gr = false;
 
 
-        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false)
+        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false,int otomiktar=1)
         {
             try
             {
@@ -3038,6 +3052,14 @@ Rsat_Fisno='" + fisno + @"'
 and Rsat_Indkodu  in ('HAPPYHOUR','MANUEL') and Rsat_Ba='A'";
                 DataTable indirimTable = dbtools.SelectTableR(q1);
 
+
+                string q3 = @"select sum(Rsat_Fiyat) as Rsat_Fiyat,sum(Rsat_Tutar) as Rsat_Tutar,sum(Rsat_Doviztutar) as Rsat_Doviztutar from Cst_Recete_Satis 
+where 
+Rsat_Fisno='" + fisno + @"'  
+and Rsat_Indkodu  in ('HAPPYHOUR','MANUEL') and Rsat_Ba='A'
+group by Rsat_Fiyat,Rsat_Tutar,Rsat_Doviztutar";
+                DataTable indirimTable2 = dbtools.SelectTable(q3);
+
                 if (indirimTable!=null && indirimTable.Rows.Count>0)
                 {
                     int Rsat_Miktar = Convert.ToInt32(Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Miktar"].ToString()));
@@ -3046,11 +3068,9 @@ and Rsat_Indkodu  in ('HAPPYHOUR','MANUEL') and Rsat_Ba='A'";
                         return;
                     }
                     int Rsat_Id = Convert.ToInt32(indirimTable.Rows[0]["Rsat_Id"].ToString());
-                    decimal Rsat_Fiyat = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Fiyat"].ToString());
-                    decimal Rsat_Tutar = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Tutar"].ToString());
-                    decimal Rsat_Doviztutar = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Doviztutar"].ToString());
-                    decimal Rsat_Net = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Net"].ToString());
-                    decimal Rsat_Kdv = Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Kdv"].ToString());
+                    decimal Rsat_Fiyat = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Fiyat"].ToString());
+                    decimal Rsat_Tutar = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Tutar"].ToString());
+                    decimal Rsat_Doviztutar = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Doviztutar"].ToString());
 
                     string deger = dbtools.DegerGetir(@"select 
 (select top 1 isnull(Rec_HappyHourFiyat,0) as Rec_HappyHourFiyat from Cst_Recete where Rec_Genelkod=satis.Rsat_Recete and Rec_HappyHour='1')*"+ Sil_Miktar + @"
@@ -4020,7 +4040,8 @@ from Cst_Recete_Satis as satis where Rsat_Id='"+ satirId + @"'");
                 catch (Exception ex) { }
 
 
-                Urun_Sat(recetekod);
+                Urun_Sat(recetekod, otomiktar:hizmetmiktar);
+                Urun_Sat(recetekodCocuk, otomiktar:hizmetmiktarCocuk);
 
                 foreach (SimpleButton item in flp_Kapatma.Controls)
                 {

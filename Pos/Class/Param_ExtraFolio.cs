@@ -19,7 +19,9 @@ namespace Pos.Class
         public static string Front_IadeKK { get; set; }
         public static string Front_GelirIade { get; set; }
         public static string HizmetReceteKod { get; set; }
+        public static string HizmetReceteKodCocuk { get; set; }
         public static string hizmetOdemeKod { get; set; }
+        public static bool hizmetBedeliAktif { get; set; }
         public static void Param_ExtraFolioYukle()
         {
             DataTable dt = dbtools.SelectTable(@"Select
@@ -37,7 +39,9 @@ namespace Pos.Class
                     ,ISNULL([Front_IadeKK],'') as [Front_IadeKK]
                     ,ISNULL(Front_GelirIade,'') as Front_GelirIade
                     ,ISNULL(HizmetReceteKod,'') as HizmetReceteKod
+                    ,ISNULL(HizmetReceteKodCocuk,'') as HizmetReceteKodCocuk
                     ,ISNULL(hizmetOdemeKod,'') as hizmetOdemeKod
+                    ,ISNULL(hizmetBedeliAktif,'0') as hizmetBedeliAktif
                     FROM [dbo].[Pos_FolioParam] Where Front_Departman = '" + Departman.Dep_Kodu + "'");
 
             if (dt.Rows.Count > 0)
@@ -56,7 +60,9 @@ namespace Pos.Class
                 Front_IadeKK = Convert.ToString(dt.Rows[0]["Front_IadeKK"]);
                 Front_GelirIade= Convert.ToString(dt.Rows[0]["Front_GelirIade"]);
                 HizmetReceteKod = Convert.ToString(dt.Rows[0]["HizmetReceteKod"]);
+                HizmetReceteKodCocuk = Convert.ToString(dt.Rows[0]["HizmetReceteKodCocuk"]);
                 hizmetOdemeKod = Convert.ToString(dt.Rows[0]["hizmetOdemeKod"]);
+                hizmetBedeliAktif =Convert.ToBoolean( Convert.ToString(dt.Rows[0]["hizmetBedeliAktif"]));
             }
         }
     }
