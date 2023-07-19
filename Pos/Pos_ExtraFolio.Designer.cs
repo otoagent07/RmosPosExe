@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pos_ExtraFolio));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint(0D, new object[] {
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SeriesPoint seriesPoint6 = new DevExpress.XtraCharts.SeriesPoint(0D, new object[] {
             ((object)(7.7D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint2 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint7 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
             ((object)(1.3D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint3 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint8 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
             ((object)(1.5D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint4 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint9 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
             ((object)(4.1D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint5 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint10 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
             ((object)(1.6D))});
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView1 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView2 = new DevExpress.XtraCharts.StackedBarSeriesView();
             this.bandedGridColumn41 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn85 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
@@ -56,37 +56,7 @@
             this.chk_Bakiye = new DevExpress.XtraEditors.CheckButton();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tab_KartF = new DevExpress.XtraTab.XtraTabPage();
-            this.CardF_Cocuk = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit47 = new DevExpress.XtraEditors.TextEdit();
-            this.txtKartFIndirim = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.txtCardF_Tutar = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnKatTanimBakiyeTransfer = new DevExpress.XtraEditors.SimpleButton();
-            this.txtCardF_Kisi = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit40 = new DevExpress.XtraEditors.TextEdit();
-            this.btnKatTanimKartTransfer = new DevExpress.XtraEditors.SimpleButton();
-            this.rdb_RIH = new DevExpress.XtraEditors.RadioGroup();
-            this.CardF_MusteriTipi = new DevExpress.XtraEditors.RadioGroup();
-            this.btnKatTanimDuzelt = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnKatTanimSil = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
-            this.txtCardF_CikisTrh = new DevExpress.XtraEditors.DateEdit();
-            this.txtCardF_GirisTrh = new DevExpress.XtraEditors.DateEdit();
-            this.textEdit33 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit34 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit29 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit30 = new DevExpress.XtraEditors.TextEdit();
-            this.txtCardF_Adi = new DevExpress.XtraEditors.TextEdit();
-            this.txtCardF_Soyad = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit27 = new DevExpress.XtraEditors.TextEdit();
-            this.txtCardF_Odano = new DevExpress.XtraEditors.TextEdit();
-            this.txtCardF_Kartno = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit25 = new DevExpress.XtraEditors.TextEdit();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -105,6 +75,38 @@
             this.gridColumn35 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn36 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn37 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnKatTanimSil = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnKatTanimDuzelt = new DevExpress.XtraEditors.SimpleButton();
+            this.btnKatTanimKartTransfer = new DevExpress.XtraEditors.SimpleButton();
+            this.btnKatTanimBakiyeTransfer = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.CardF_Cocuk = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit47 = new DevExpress.XtraEditors.TextEdit();
+            this.txtKartFIndirim = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtCardF_Tutar = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtCardF_Kisi = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit40 = new DevExpress.XtraEditors.TextEdit();
+            this.rdb_RIH = new DevExpress.XtraEditors.RadioGroup();
+            this.CardF_MusteriTipi = new DevExpress.XtraEditors.RadioGroup();
+            this.txtCardF_CikisTrh = new DevExpress.XtraEditors.DateEdit();
+            this.txtCardF_GirisTrh = new DevExpress.XtraEditors.DateEdit();
+            this.textEdit33 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit34 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit29 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit30 = new DevExpress.XtraEditors.TextEdit();
+            this.txtCardF_Adi = new DevExpress.XtraEditors.TextEdit();
+            this.txtCardF_Soyad = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit27 = new DevExpress.XtraEditors.TextEdit();
+            this.txtCardF_Odano = new DevExpress.XtraEditors.TextEdit();
+            this.txtCardF_Kartno = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit25 = new DevExpress.XtraEditors.TextEdit();
             this.lookCardF_FolioID = new DevExpress.XtraEditors.LookUpEdit();
             this.CardF_Limit_Uyari = new DevExpress.XtraEditors.ComboBoxEdit();
             this.tab_BakiyeYukle = new DevExpress.XtraTab.XtraTabPage();
@@ -305,8 +307,6 @@
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Param = new DevExpress.XtraEditors.CheckButton();
             this.chk_Rapor = new DevExpress.XtraEditors.CheckButton();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_OdemeDep.Properties)).BeginInit();
@@ -315,6 +315,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_KartF.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CardF_Cocuk.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit47.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).BeginInit();
@@ -339,8 +345,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCardF_Odano.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCardF_Kartno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit25.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookCardF_FolioID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardF_Limit_Uyari.Properties)).BeginInit();
             this.tab_BakiyeYukle.SuspendLayout();
@@ -416,9 +420,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -473,10 +477,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
-            this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             this.SuspendLayout();
@@ -619,308 +619,11 @@
             this.tab_KartF.Name = "tab_KartF";
             resources.ApplyResources(this.tab_KartF, "tab_KartF");
             // 
-            // CardF_Cocuk
+            // panelControl2
             // 
-            resources.ApplyResources(this.CardF_Cocuk, "CardF_Cocuk");
-            this.CardF_Cocuk.EnterMoveNextControl = true;
-            this.CardF_Cocuk.Name = "CardF_Cocuk";
-            this.CardF_Cocuk.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.CardF_Cocuk.Properties.MaxLength = 100;
-            // 
-            // textEdit47
-            // 
-            resources.ApplyResources(this.textEdit47, "textEdit47");
-            this.textEdit47.Name = "textEdit47";
-            this.textEdit47.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit47.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit47.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit47.Properties.ReadOnly = true;
-            this.textEdit47.TabStop = false;
-            // 
-            // txtKartFIndirim
-            // 
-            resources.ApplyResources(this.txtKartFIndirim, "txtKartFIndirim");
-            this.txtKartFIndirim.EnterMoveNextControl = true;
-            this.txtKartFIndirim.Name = "txtKartFIndirim";
-            this.txtKartFIndirim.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtKartFIndirim.Properties.MaxLength = 100;
-            // 
-            // textEdit3
-            // 
-            resources.ApplyResources(this.textEdit3, "textEdit3");
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit3.Properties.ReadOnly = true;
-            this.textEdit3.TabStop = false;
-            // 
-            // btnYenile
-            // 
-            this.btnYenile.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnYenile, "btnYenile");
-            this.btnYenile.Name = "btnYenile";
-            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
-            // 
-            // textEdit1
-            // 
-            resources.ApplyResources(this.textEdit1, "textEdit1");
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit1.Properties.ReadOnly = true;
-            this.textEdit1.TabStop = false;
-            // 
-            // txtCardF_Tutar
-            // 
-            resources.ApplyResources(this.txtCardF_Tutar, "txtCardF_Tutar");
-            this.txtCardF_Tutar.EnterMoveNextControl = true;
-            this.txtCardF_Tutar.Name = "txtCardF_Tutar";
-            this.txtCardF_Tutar.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtCardF_Tutar.Properties.MaxLength = 100;
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            resources.ApplyResources(this.simpleButton3, "simpleButton3");
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            resources.ApplyResources(this.simpleButton2, "simpleButton2");
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
-            // 
-            // btnKatTanimBakiyeTransfer
-            // 
-            this.btnKatTanimBakiyeTransfer.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btnKatTanimBakiyeTransfer.Appearance.Options.UseFont = true;
-            this.btnKatTanimBakiyeTransfer.Appearance.Options.UseForeColor = true;
-            resources.ApplyResources(this.btnKatTanimBakiyeTransfer, "btnKatTanimBakiyeTransfer");
-            this.btnKatTanimBakiyeTransfer.Name = "btnKatTanimBakiyeTransfer";
-            this.btnKatTanimBakiyeTransfer.Click += new System.EventHandler(this.simpleButton22_Click);
-            // 
-            // txtCardF_Kisi
-            // 
-            resources.ApplyResources(this.txtCardF_Kisi, "txtCardF_Kisi");
-            this.txtCardF_Kisi.EnterMoveNextControl = true;
-            this.txtCardF_Kisi.Name = "txtCardF_Kisi";
-            this.txtCardF_Kisi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtCardF_Kisi.Properties.MaxLength = 100;
-            // 
-            // textEdit40
-            // 
-            resources.ApplyResources(this.textEdit40, "textEdit40");
-            this.textEdit40.Name = "textEdit40";
-            this.textEdit40.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit40.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit40.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit40.Properties.ReadOnly = true;
-            this.textEdit40.TabStop = false;
-            // 
-            // btnKatTanimKartTransfer
-            // 
-            this.btnKatTanimKartTransfer.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btnKatTanimKartTransfer.Appearance.Options.UseFont = true;
-            this.btnKatTanimKartTransfer.Appearance.Options.UseForeColor = true;
-            resources.ApplyResources(this.btnKatTanimKartTransfer, "btnKatTanimKartTransfer");
-            this.btnKatTanimKartTransfer.Name = "btnKatTanimKartTransfer";
-            this.btnKatTanimKartTransfer.Click += new System.EventHandler(this.simpleButton16_Click);
-            // 
-            // rdb_RIH
-            // 
-            resources.ApplyResources(this.rdb_RIH, "rdb_RIH");
-            this.rdb_RIH.Name = "rdb_RIH";
-            this.rdb_RIH.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("rdb_RIH.Properties.Appearance.Font")));
-            this.rdb_RIH.Properties.Appearance.Options.UseFont = true;
-            this.rdb_RIH.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdb_RIH.Properties.Items"), resources.GetString("rdb_RIH.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdb_RIH.Properties.Items2"), resources.GetString("rdb_RIH.Properties.Items3")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdb_RIH.Properties.Items4"), resources.GetString("rdb_RIH.Properties.Items5"))});
-            this.rdb_RIH.EditValueChanged += new System.EventHandler(this.radioGroup2_EditValueChanged);
-            // 
-            // CardF_MusteriTipi
-            // 
-            resources.ApplyResources(this.CardF_MusteriTipi, "CardF_MusteriTipi");
-            this.CardF_MusteriTipi.Name = "CardF_MusteriTipi";
-            this.CardF_MusteriTipi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("CardF_MusteriTipi.Properties.Appearance.Font")));
-            this.CardF_MusteriTipi.Properties.Appearance.Options.UseFont = true;
-            this.CardF_MusteriTipi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.CardF_MusteriTipi.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("CardF_MusteriTipi.Properties.Items"), resources.GetString("CardF_MusteriTipi.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("CardF_MusteriTipi.Properties.Items2"), resources.GetString("CardF_MusteriTipi.Properties.Items3")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("CardF_MusteriTipi.Properties.Items4"), resources.GetString("CardF_MusteriTipi.Properties.Items5")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("CardF_MusteriTipi.Properties.Items6"), resources.GetString("CardF_MusteriTipi.Properties.Items7"))});
-            this.CardF_MusteriTipi.SelectedIndexChanged += new System.EventHandler(this.CardF_MusteriTipi_SelectedIndexChanged);
-            // 
-            // btnKatTanimDuzelt
-            // 
-            this.btnKatTanimDuzelt.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnKatTanimDuzelt, "btnKatTanimDuzelt");
-            this.btnKatTanimDuzelt.Name = "btnKatTanimDuzelt";
-            this.btnKatTanimDuzelt.Click += new System.EventHandler(this.simpleButton12_Click);
-            // 
-            // simpleButton9
-            // 
-            this.simpleButton9.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton9.Appearance.Font")));
-            this.simpleButton9.Appearance.Options.UseFont = true;
-            this.simpleButton9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton9.ImageOptions.SvgImage")));
-            resources.ApplyResources(this.simpleButton9, "simpleButton9");
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
-            // 
-            // btnKatTanimSil
-            // 
-            this.btnKatTanimSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnKatTanimSil.Appearance.Font")));
-            this.btnKatTanimSil.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnKatTanimSil.Appearance.Options.UseFont = true;
-            this.btnKatTanimSil.Appearance.Options.UseForeColor = true;
-            this.btnKatTanimSil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnKatTanimSil.ImageOptions.SvgImage")));
-            resources.ApplyResources(this.btnKatTanimSil, "btnKatTanimSil");
-            this.btnKatTanimSil.Name = "btnKatTanimSil";
-            this.btnKatTanimSil.Click += new System.EventHandler(this.simpleButton10_Click);
-            // 
-            // simpleButton11
-            // 
-            this.simpleButton11.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton11.Appearance.Font")));
-            this.simpleButton11.Appearance.Options.UseFont = true;
-            this.simpleButton11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton11.ImageOptions.SvgImage")));
-            resources.ApplyResources(this.simpleButton11, "simpleButton11");
-            this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
-            // 
-            // txtCardF_CikisTrh
-            // 
-            resources.ApplyResources(this.txtCardF_CikisTrh, "txtCardF_CikisTrh");
-            this.txtCardF_CikisTrh.EnterMoveNextControl = true;
-            this.txtCardF_CikisTrh.Name = "txtCardF_CikisTrh";
-            this.txtCardF_CikisTrh.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtCardF_CikisTrh.Properties.Appearance.Options.UseForeColor = true;
-            this.txtCardF_CikisTrh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtCardF_CikisTrh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtCardF_CikisTrh.Properties.Buttons"))))});
-            this.txtCardF_CikisTrh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtCardF_CikisTrh.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("txtCardF_CikisTrh.Properties.Mask.MaskType")));
-            this.txtCardF_CikisTrh.TabStop = false;
-            // 
-            // txtCardF_GirisTrh
-            // 
-            resources.ApplyResources(this.txtCardF_GirisTrh, "txtCardF_GirisTrh");
-            this.txtCardF_GirisTrh.Name = "txtCardF_GirisTrh";
-            this.txtCardF_GirisTrh.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtCardF_GirisTrh.Properties.Appearance.Options.UseForeColor = true;
-            this.txtCardF_GirisTrh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtCardF_GirisTrh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtCardF_GirisTrh.Properties.Buttons"))))});
-            this.txtCardF_GirisTrh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtCardF_GirisTrh.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("txtCardF_GirisTrh.Properties.Mask.MaskType")));
-            this.txtCardF_GirisTrh.TabStop = false;
-            // 
-            // textEdit33
-            // 
-            resources.ApplyResources(this.textEdit33, "textEdit33");
-            this.textEdit33.Name = "textEdit33";
-            this.textEdit33.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit33.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit33.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit33.Properties.ReadOnly = true;
-            this.textEdit33.TabStop = false;
-            // 
-            // textEdit34
-            // 
-            resources.ApplyResources(this.textEdit34, "textEdit34");
-            this.textEdit34.Name = "textEdit34";
-            this.textEdit34.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit34.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit34.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit34.Properties.ReadOnly = true;
-            this.textEdit34.TabStop = false;
-            // 
-            // textEdit29
-            // 
-            resources.ApplyResources(this.textEdit29, "textEdit29");
-            this.textEdit29.Name = "textEdit29";
-            this.textEdit29.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit29.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit29.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit29.Properties.ReadOnly = true;
-            this.textEdit29.TabStop = false;
-            // 
-            // textEdit30
-            // 
-            resources.ApplyResources(this.textEdit30, "textEdit30");
-            this.textEdit30.Name = "textEdit30";
-            this.textEdit30.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit30.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit30.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit30.Properties.ReadOnly = true;
-            this.textEdit30.TabStop = false;
-            // 
-            // txtCardF_Adi
-            // 
-            this.txtCardF_Adi.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txtCardF_Adi, "txtCardF_Adi");
-            this.txtCardF_Adi.Name = "txtCardF_Adi";
-            this.txtCardF_Adi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtCardF_Adi.Properties.MaxLength = 100;
-            // 
-            // txtCardF_Soyad
-            // 
-            this.txtCardF_Soyad.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txtCardF_Soyad, "txtCardF_Soyad");
-            this.txtCardF_Soyad.Name = "txtCardF_Soyad";
-            this.txtCardF_Soyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtCardF_Soyad.Properties.MaxLength = 100;
-            // 
-            // textEdit27
-            // 
-            resources.ApplyResources(this.textEdit27, "textEdit27");
-            this.textEdit27.Name = "textEdit27";
-            this.textEdit27.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit27.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit27.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit27.Properties.ReadOnly = true;
-            this.textEdit27.TabStop = false;
-            // 
-            // txtCardF_Odano
-            // 
-            resources.ApplyResources(this.txtCardF_Odano, "txtCardF_Odano");
-            this.txtCardF_Odano.EnterMoveNextControl = true;
-            this.txtCardF_Odano.Name = "txtCardF_Odano";
-            this.txtCardF_Odano.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtCardF_Odano.Properties.Appearance.Options.UseForeColor = true;
-            this.txtCardF_Odano.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtCardF_Odano.Properties.MaxLength = 100;
-            this.txtCardF_Odano.EditValueChanged += new System.EventHandler(this.txtCardF_Odano_EditValueChanged);
-            this.txtCardF_Odano.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCardF_Odano_KeyDown);
-            // 
-            // txtCardF_Kartno
-            // 
-            this.txtCardF_Kartno.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txtCardF_Kartno, "txtCardF_Kartno");
-            this.txtCardF_Kartno.Name = "txtCardF_Kartno";
-            this.txtCardF_Kartno.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtCardF_Kartno.Properties.MaxLength = 100;
-            this.txtCardF_Kartno.EditValueChanged += new System.EventHandler(this.txtCardF_Kartno_EditValueChanged);
-            // 
-            // textEdit25
-            // 
-            resources.ApplyResources(this.textEdit25, "textEdit25");
-            this.textEdit25.Name = "textEdit25";
-            this.textEdit25.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit25.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit25.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit25.Properties.ReadOnly = true;
-            this.textEdit25.TabStop = false;
+            this.panelControl2.Controls.Add(this.gridControl3);
+            resources.ApplyResources(this.panelControl2, "panelControl2");
+            this.panelControl2.Name = "panelControl2";
             // 
             // gridControl3
             // 
@@ -1071,6 +774,321 @@
             this.gridColumn37.Name = "gridColumn37";
             this.gridColumn37.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn37.Summary"))), resources.GetString("gridColumn37.Summary1"), resources.GetString("gridColumn37.Summary2"))});
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.simpleButton11);
+            this.panelControl1.Controls.Add(this.btnKatTanimSil);
+            this.panelControl1.Controls.Add(this.simpleButton9);
+            this.panelControl1.Controls.Add(this.btnKatTanimDuzelt);
+            this.panelControl1.Controls.Add(this.btnKatTanimKartTransfer);
+            this.panelControl1.Controls.Add(this.btnKatTanimBakiyeTransfer);
+            this.panelControl1.Controls.Add(this.simpleButton3);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
+            this.panelControl1.Name = "panelControl1";
+            // 
+            // simpleButton11
+            // 
+            this.simpleButton11.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton11.Appearance.Font")));
+            this.simpleButton11.Appearance.Options.UseFont = true;
+            this.simpleButton11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton11.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton11, "simpleButton11");
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
+            // 
+            // btnKatTanimSil
+            // 
+            this.btnKatTanimSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnKatTanimSil.Appearance.Font")));
+            this.btnKatTanimSil.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnKatTanimSil.Appearance.Options.UseFont = true;
+            this.btnKatTanimSil.Appearance.Options.UseForeColor = true;
+            this.btnKatTanimSil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnKatTanimSil.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btnKatTanimSil, "btnKatTanimSil");
+            this.btnKatTanimSil.Name = "btnKatTanimSil";
+            this.btnKatTanimSil.Click += new System.EventHandler(this.simpleButton10_Click);
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton9.Appearance.Font")));
+            this.simpleButton9.Appearance.Options.UseFont = true;
+            this.simpleButton9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton9.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton9, "simpleButton9");
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
+            // 
+            // btnKatTanimDuzelt
+            // 
+            this.btnKatTanimDuzelt.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnKatTanimDuzelt, "btnKatTanimDuzelt");
+            this.btnKatTanimDuzelt.Name = "btnKatTanimDuzelt";
+            this.btnKatTanimDuzelt.Click += new System.EventHandler(this.simpleButton12_Click);
+            // 
+            // btnKatTanimKartTransfer
+            // 
+            this.btnKatTanimKartTransfer.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btnKatTanimKartTransfer.Appearance.Options.UseFont = true;
+            this.btnKatTanimKartTransfer.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.btnKatTanimKartTransfer, "btnKatTanimKartTransfer");
+            this.btnKatTanimKartTransfer.Name = "btnKatTanimKartTransfer";
+            this.btnKatTanimKartTransfer.Click += new System.EventHandler(this.simpleButton16_Click);
+            // 
+            // btnKatTanimBakiyeTransfer
+            // 
+            this.btnKatTanimBakiyeTransfer.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btnKatTanimBakiyeTransfer.Appearance.Options.UseFont = true;
+            this.btnKatTanimBakiyeTransfer.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.btnKatTanimBakiyeTransfer, "btnKatTanimBakiyeTransfer");
+            this.btnKatTanimBakiyeTransfer.Name = "btnKatTanimBakiyeTransfer";
+            this.btnKatTanimBakiyeTransfer.Click += new System.EventHandler(this.simpleButton22_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            resources.ApplyResources(this.simpleButton3, "simpleButton3");
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
+            // 
+            // CardF_Cocuk
+            // 
+            resources.ApplyResources(this.CardF_Cocuk, "CardF_Cocuk");
+            this.CardF_Cocuk.EnterMoveNextControl = true;
+            this.CardF_Cocuk.Name = "CardF_Cocuk";
+            this.CardF_Cocuk.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.CardF_Cocuk.Properties.MaxLength = 100;
+            // 
+            // textEdit47
+            // 
+            resources.ApplyResources(this.textEdit47, "textEdit47");
+            this.textEdit47.Name = "textEdit47";
+            this.textEdit47.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit47.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit47.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit47.Properties.ReadOnly = true;
+            this.textEdit47.TabStop = false;
+            // 
+            // txtKartFIndirim
+            // 
+            resources.ApplyResources(this.txtKartFIndirim, "txtKartFIndirim");
+            this.txtKartFIndirim.EnterMoveNextControl = true;
+            this.txtKartFIndirim.Name = "txtKartFIndirim";
+            this.txtKartFIndirim.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtKartFIndirim.Properties.MaxLength = 100;
+            // 
+            // textEdit3
+            // 
+            resources.ApplyResources(this.textEdit3, "textEdit3");
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit3.Properties.ReadOnly = true;
+            this.textEdit3.TabStop = false;
+            // 
+            // btnYenile
+            // 
+            this.btnYenile.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnYenile, "btnYenile");
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
+            // 
+            // textEdit1
+            // 
+            resources.ApplyResources(this.textEdit1, "textEdit1");
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit1.Properties.ReadOnly = true;
+            this.textEdit1.TabStop = false;
+            // 
+            // txtCardF_Tutar
+            // 
+            resources.ApplyResources(this.txtCardF_Tutar, "txtCardF_Tutar");
+            this.txtCardF_Tutar.EnterMoveNextControl = true;
+            this.txtCardF_Tutar.Name = "txtCardF_Tutar";
+            this.txtCardF_Tutar.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCardF_Tutar.Properties.MaxLength = 100;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton2, "simpleButton2");
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
+            // txtCardF_Kisi
+            // 
+            resources.ApplyResources(this.txtCardF_Kisi, "txtCardF_Kisi");
+            this.txtCardF_Kisi.EnterMoveNextControl = true;
+            this.txtCardF_Kisi.Name = "txtCardF_Kisi";
+            this.txtCardF_Kisi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCardF_Kisi.Properties.MaxLength = 100;
+            // 
+            // textEdit40
+            // 
+            resources.ApplyResources(this.textEdit40, "textEdit40");
+            this.textEdit40.Name = "textEdit40";
+            this.textEdit40.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit40.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit40.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit40.Properties.ReadOnly = true;
+            this.textEdit40.TabStop = false;
+            // 
+            // rdb_RIH
+            // 
+            resources.ApplyResources(this.rdb_RIH, "rdb_RIH");
+            this.rdb_RIH.Name = "rdb_RIH";
+            this.rdb_RIH.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("rdb_RIH.Properties.Appearance.Font")));
+            this.rdb_RIH.Properties.Appearance.Options.UseFont = true;
+            this.rdb_RIH.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdb_RIH.Properties.Items"), resources.GetString("rdb_RIH.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdb_RIH.Properties.Items2"), resources.GetString("rdb_RIH.Properties.Items3")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdb_RIH.Properties.Items4"), resources.GetString("rdb_RIH.Properties.Items5"))});
+            this.rdb_RIH.EditValueChanged += new System.EventHandler(this.radioGroup2_EditValueChanged);
+            // 
+            // CardF_MusteriTipi
+            // 
+            resources.ApplyResources(this.CardF_MusteriTipi, "CardF_MusteriTipi");
+            this.CardF_MusteriTipi.Name = "CardF_MusteriTipi";
+            this.CardF_MusteriTipi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("CardF_MusteriTipi.Properties.Appearance.Font")));
+            this.CardF_MusteriTipi.Properties.Appearance.Options.UseFont = true;
+            this.CardF_MusteriTipi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.CardF_MusteriTipi.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("CardF_MusteriTipi.Properties.Items"), resources.GetString("CardF_MusteriTipi.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("CardF_MusteriTipi.Properties.Items2"), resources.GetString("CardF_MusteriTipi.Properties.Items3")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("CardF_MusteriTipi.Properties.Items4"), resources.GetString("CardF_MusteriTipi.Properties.Items5")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("CardF_MusteriTipi.Properties.Items6"), resources.GetString("CardF_MusteriTipi.Properties.Items7"))});
+            this.CardF_MusteriTipi.SelectedIndexChanged += new System.EventHandler(this.CardF_MusteriTipi_SelectedIndexChanged);
+            // 
+            // txtCardF_CikisTrh
+            // 
+            resources.ApplyResources(this.txtCardF_CikisTrh, "txtCardF_CikisTrh");
+            this.txtCardF_CikisTrh.EnterMoveNextControl = true;
+            this.txtCardF_CikisTrh.Name = "txtCardF_CikisTrh";
+            this.txtCardF_CikisTrh.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtCardF_CikisTrh.Properties.Appearance.Options.UseForeColor = true;
+            this.txtCardF_CikisTrh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCardF_CikisTrh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtCardF_CikisTrh.Properties.Buttons"))))});
+            this.txtCardF_CikisTrh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtCardF_CikisTrh.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("txtCardF_CikisTrh.Properties.Mask.MaskType")));
+            this.txtCardF_CikisTrh.TabStop = false;
+            // 
+            // txtCardF_GirisTrh
+            // 
+            resources.ApplyResources(this.txtCardF_GirisTrh, "txtCardF_GirisTrh");
+            this.txtCardF_GirisTrh.Name = "txtCardF_GirisTrh";
+            this.txtCardF_GirisTrh.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtCardF_GirisTrh.Properties.Appearance.Options.UseForeColor = true;
+            this.txtCardF_GirisTrh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCardF_GirisTrh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtCardF_GirisTrh.Properties.Buttons"))))});
+            this.txtCardF_GirisTrh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtCardF_GirisTrh.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("txtCardF_GirisTrh.Properties.Mask.MaskType")));
+            this.txtCardF_GirisTrh.TabStop = false;
+            // 
+            // textEdit33
+            // 
+            resources.ApplyResources(this.textEdit33, "textEdit33");
+            this.textEdit33.Name = "textEdit33";
+            this.textEdit33.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit33.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit33.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit33.Properties.ReadOnly = true;
+            this.textEdit33.TabStop = false;
+            // 
+            // textEdit34
+            // 
+            resources.ApplyResources(this.textEdit34, "textEdit34");
+            this.textEdit34.Name = "textEdit34";
+            this.textEdit34.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit34.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit34.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit34.Properties.ReadOnly = true;
+            this.textEdit34.TabStop = false;
+            // 
+            // textEdit29
+            // 
+            resources.ApplyResources(this.textEdit29, "textEdit29");
+            this.textEdit29.Name = "textEdit29";
+            this.textEdit29.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit29.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit29.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit29.Properties.ReadOnly = true;
+            this.textEdit29.TabStop = false;
+            // 
+            // textEdit30
+            // 
+            resources.ApplyResources(this.textEdit30, "textEdit30");
+            this.textEdit30.Name = "textEdit30";
+            this.textEdit30.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit30.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit30.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit30.Properties.ReadOnly = true;
+            this.textEdit30.TabStop = false;
+            // 
+            // txtCardF_Adi
+            // 
+            this.txtCardF_Adi.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txtCardF_Adi, "txtCardF_Adi");
+            this.txtCardF_Adi.Name = "txtCardF_Adi";
+            this.txtCardF_Adi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCardF_Adi.Properties.MaxLength = 100;
+            // 
+            // txtCardF_Soyad
+            // 
+            this.txtCardF_Soyad.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txtCardF_Soyad, "txtCardF_Soyad");
+            this.txtCardF_Soyad.Name = "txtCardF_Soyad";
+            this.txtCardF_Soyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCardF_Soyad.Properties.MaxLength = 100;
+            // 
+            // textEdit27
+            // 
+            resources.ApplyResources(this.textEdit27, "textEdit27");
+            this.textEdit27.Name = "textEdit27";
+            this.textEdit27.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit27.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit27.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit27.Properties.ReadOnly = true;
+            this.textEdit27.TabStop = false;
+            // 
+            // txtCardF_Odano
+            // 
+            resources.ApplyResources(this.txtCardF_Odano, "txtCardF_Odano");
+            this.txtCardF_Odano.EnterMoveNextControl = true;
+            this.txtCardF_Odano.Name = "txtCardF_Odano";
+            this.txtCardF_Odano.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtCardF_Odano.Properties.Appearance.Options.UseForeColor = true;
+            this.txtCardF_Odano.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCardF_Odano.Properties.MaxLength = 100;
+            this.txtCardF_Odano.EditValueChanged += new System.EventHandler(this.txtCardF_Odano_EditValueChanged);
+            this.txtCardF_Odano.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCardF_Odano_KeyDown);
+            // 
+            // txtCardF_Kartno
+            // 
+            this.txtCardF_Kartno.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txtCardF_Kartno, "txtCardF_Kartno");
+            this.txtCardF_Kartno.Name = "txtCardF_Kartno";
+            this.txtCardF_Kartno.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtCardF_Kartno.Properties.MaxLength = 100;
+            this.txtCardF_Kartno.EditValueChanged += new System.EventHandler(this.txtCardF_Kartno_EditValueChanged);
+            // 
+            // textEdit25
+            // 
+            resources.ApplyResources(this.textEdit25, "textEdit25");
+            this.textEdit25.Name = "textEdit25";
+            this.textEdit25.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit25.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit25.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit25.Properties.ReadOnly = true;
+            this.textEdit25.TabStop = false;
             // 
             // lookCardF_FolioID
             // 
@@ -1791,20 +1809,20 @@
             this.gridColumn31,
             this.gridColumn32,
             this.gridColumn33});
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.Options.UseBackColor = true;
-            styleFormatCondition1.Column = this.bandedGridColumn41;
-            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition1.Value1 = "Acik";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            styleFormatCondition2.Appearance.Options.UseBackColor = true;
-            styleFormatCondition2.ApplyToRow = true;
-            styleFormatCondition2.Column = this.gridColumn85;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Value1 = true;
+            styleFormatCondition3.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition3.Appearance.Options.UseBackColor = true;
+            styleFormatCondition3.Column = this.bandedGridColumn41;
+            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition3.Value1 = "Acik";
+            styleFormatCondition4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            styleFormatCondition4.Appearance.Options.UseBackColor = true;
+            styleFormatCondition4.ApplyToRow = true;
+            styleFormatCondition4.Column = this.gridColumn85;
+            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition4.Value1 = true;
             this.gridView11.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1,
-            styleFormatCondition2});
+            styleFormatCondition3,
+            styleFormatCondition4});
             this.gridView11.GridControl = this.gridControl11;
             this.gridView11.Name = "gridView11";
             this.gridView11.OptionsLayout.Columns.AddNewColumns = false;
@@ -2505,23 +2523,23 @@
             // 
             // chartControl1
             // 
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
+            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram2;
             resources.ApplyResources(this.chartControl1, "chartControl1");
             this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartControl1.Name = "chartControl1";
-            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series1.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
-            seriesPoint1,
-            seriesPoint2,
-            seriesPoint3,
-            seriesPoint4,
-            seriesPoint5});
-            series1.View = stackedBarSeriesView1;
+            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series2.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint6,
+            seriesPoint7,
+            seriesPoint8,
+            seriesPoint9,
+            seriesPoint10});
+            series2.View = stackedBarSeriesView2;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
+        series2};
             this.chartControl1.SeriesTemplate.SeriesColorizer = null;
             // 
             // groupControl4
@@ -3190,24 +3208,6 @@
             this.chk_Rapor.Name = "chk_Rapor";
             this.chk_Rapor.CheckedChanged += new System.EventHandler(this.checkBtn);
             // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.simpleButton11);
-            this.panelControl1.Controls.Add(this.btnKatTanimSil);
-            this.panelControl1.Controls.Add(this.simpleButton9);
-            this.panelControl1.Controls.Add(this.btnKatTanimDuzelt);
-            this.panelControl1.Controls.Add(this.btnKatTanimKartTransfer);
-            this.panelControl1.Controls.Add(this.btnKatTanimBakiyeTransfer);
-            this.panelControl1.Controls.Add(this.simpleButton3);
-            resources.ApplyResources(this.panelControl1, "panelControl1");
-            this.panelControl1.Name = "panelControl1";
-            // 
-            // panelControl2
-            // 
-            this.panelControl2.Controls.Add(this.gridControl3);
-            resources.ApplyResources(this.panelControl2, "panelControl2");
-            this.panelControl2.Name = "panelControl2";
-            // 
             // panelControl3
             // 
             this.panelControl3.Controls.Add(this.simpleButton4);
@@ -3234,6 +3234,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.tab_KartF.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CardF_Cocuk.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit47.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).EndInit();
@@ -3258,8 +3264,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCardF_Odano.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCardF_Kartno.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit25.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookCardF_FolioID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardF_Limit_Uyari.Properties)).EndInit();
             this.tab_BakiyeYukle.ResumeLayout(false);
@@ -3334,9 +3338,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             this.xtraTabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
@@ -3392,10 +3396,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
-            this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             this.ResumeLayout(false);

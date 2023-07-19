@@ -368,6 +368,1846 @@
   <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 50</value>
   </data>
+  <data name="&gt;&gt;gridControl3.Name" xml:space="preserve">
+    <value>gridControl3</value>
+  </data>
+  <data name="&gt;&gt;gridControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl3.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 210</value>
+  </data>
+  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 399</value>
+  </data>
+  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>440</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;simpleButton11.Name" xml:space="preserve">
+    <value>simpleButton11</value>
+  </data>
+  <data name="&gt;&gt;simpleButton11.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton11.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimSil.Name" xml:space="preserve">
+    <value>btnKatTanimSil</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimSil.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimSil.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimSil.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton9.Name" xml:space="preserve">
+    <value>simpleButton9</value>
+  </data>
+  <data name="&gt;&gt;simpleButton9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton9.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimDuzelt.Name" xml:space="preserve">
+    <value>btnKatTanimDuzelt</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimDuzelt.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimDuzelt.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimDuzelt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimKartTransfer.Name" xml:space="preserve">
+    <value>btnKatTanimKartTransfer</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimKartTransfer.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimKartTransfer.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimKartTransfer.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimBakiyeTransfer.Name" xml:space="preserve">
+    <value>btnKatTanimBakiyeTransfer</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimBakiyeTransfer.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimBakiyeTransfer.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnKatTanimBakiyeTransfer.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;simpleButton3.Name" xml:space="preserve">
+    <value>simpleButton3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton3.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 609</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 64</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>439</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CardF_Cocuk.EditValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CardF_Cocuk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 135</value>
+  </data>
+  <data name="CardF_Cocuk.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="CardF_Cocuk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 22</value>
+  </data>
+  <data name="CardF_Cocuk.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CardF_Cocuk.Name" xml:space="preserve">
+    <value>CardF_Cocuk</value>
+  </data>
+  <data name="&gt;&gt;CardF_Cocuk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CardF_Cocuk.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;CardF_Cocuk.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textEdit47.EditValue" xml:space="preserve">
+    <value>Çocuk Kişi Sayısı</value>
+  </data>
+  <data name="textEdit47.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit47.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 135</value>
+  </data>
+  <data name="textEdit47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit47.TabIndex" type="System.Int32, mscorlib">
+    <value>438</value>
+  </data>
+  <data name="&gt;&gt;textEdit47.Name" xml:space="preserve">
+    <value>textEdit47</value>
+  </data>
+  <data name="&gt;&gt;textEdit47.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit47.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit47.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtKartFIndirim.EditValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtKartFIndirim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 159</value>
+  </data>
+  <data name="txtKartFIndirim.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txtKartFIndirim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 22</value>
+  </data>
+  <data name="txtKartFIndirim.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtKartFIndirim.Name" xml:space="preserve">
+    <value>txtKartFIndirim</value>
+  </data>
+  <data name="&gt;&gt;txtKartFIndirim.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtKartFIndirim.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtKartFIndirim.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textEdit3.EditValue" xml:space="preserve">
+    <value>% İndirim</value>
+  </data>
+  <data name="textEdit3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 159</value>
+  </data>
+  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>435</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
+    <value>textEdit3</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnYenile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 83</value>
+  </data>
+  <data name="btnYenile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 50</value>
+  </data>
+  <data name="btnYenile.TabIndex" type="System.Int32, mscorlib">
+    <value>434</value>
+  </data>
+  <data name="btnYenile.Text" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="&gt;&gt;btnYenile.Name" xml:space="preserve">
+    <value>btnYenile</value>
+  </data>
+  <data name="&gt;&gt;btnYenile.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnYenile.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;btnYenile.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textEdit1.EditValue" xml:space="preserve">
+    <value>Limit Uyarı</value>
+  </data>
+  <data name="textEdit1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 60</value>
+  </data>
+  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>228</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
+    <value>textEdit1</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtCardF_Tutar.EditValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCardF_Tutar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 111</value>
+  </data>
+  <data name="txtCardF_Tutar.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txtCardF_Tutar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="txtCardF_Tutar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Tutar.Name" xml:space="preserve">
+    <value>txtCardF_Tutar</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Tutar.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Tutar.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Tutar.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="simpleButton2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="simpleButton2.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKwEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5ZZWxsb3d7
+        ZmlsbDojRkZCMTE1O30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5HcmVlbntmaWxsOiMwMzlDMjM7fQoJ
+        LkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
+        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntkaXNwbGF5Om5vbmU7fQoJLnN0M3tkaXNwbGF5
+        OmlubGluZTtmaWxsOiNGRkIxMTU7fQoJLnN0NHtkaXNwbGF5OmlubGluZTt9Cgkuc3Q1e2Rpc3BsYXk6
+        aW5saW5lO29wYWNpdHk6MC43NTt9Cgkuc3Q2e2Rpc3BsYXk6aW5saW5lO29wYWNpdHk6MC41O30KCS5z
+        dDd7ZGlzcGxheTppbmxpbmU7ZmlsbDojMDM5QzIzO30KCS5zdDh7ZGlzcGxheTppbmxpbmU7ZmlsbDoj
+        RDExQzFDO30KCS5zdDl7ZGlzcGxheTppbmxpbmU7ZmlsbDojMTE3N0Q3O30KCS5zdDEwe2Rpc3BsYXk6
+        aW5saW5lO2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+DQogIDxnIGlkPSJDb250cmFjdCI+DQogICAgPGcg
+        b3BhY2l0eT0iMC43NSIgY2xhc3M9InN0MSI+DQogICAgICA8cGF0aCBkPSJNMjIsMTRIMTB2LTJoMTJW
+        MTR6IE0yMiw4SDEwdjJoMTJWOHogTTIyLDE2SDEwdjJoMTJWMTZ6IiBmaWxsPSIjNzI3MjcyIiBvcGFj
+        aXR5PSIwLjc1IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPC9nPg0KICAgIDxwYXRoIGQ9Ik0yNywySDVD
+        NC41LDIsNCwyLjUsNCwzdjI2YzAsMC41LDAuNSwxLDEsMWgyMmMwLjUsMCwxLTAuNSwxLTFWM0MyOCwy
+        LjUsMjcuNSwyLDI3LDJ6IE0yNiwyOEg2VjRoMjBWMjh6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxh
+        Y2siIC8+DQogICAgPHJlY3QgeD0iMTYiIHk9IjIyIiB3aWR0aD0iNiIgaGVpZ2h0PSIyIiByeD0iMCIg
+        cnk9IjAiIGZpbGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 14</value>
+  </data>
+  <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 50</value>
+  </data>
+  <data name="simpleButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>225</value>
+  </data>
+  <data name="simpleButton2.Text" xml:space="preserve">
+    <value>History Listele</value>
+  </data>
+  <data name="simpleButton2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Name" xml:space="preserve">
+    <value>simpleButton2</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtCardF_Kisi.EditValue" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtCardF_Kisi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 111</value>
+  </data>
+  <data name="txtCardF_Kisi.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="txtCardF_Kisi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 22</value>
+  </data>
+  <data name="txtCardF_Kisi.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Kisi.Name" xml:space="preserve">
+    <value>txtCardF_Kisi</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Kisi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Kisi.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Kisi.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textEdit40.EditValue" xml:space="preserve">
+    <value>Yetişkin Kişi Sayısı</value>
+  </data>
+  <data name="textEdit40.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 111</value>
+  </data>
+  <data name="textEdit40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit40.TabIndex" type="System.Int32, mscorlib">
+    <value>222</value>
+  </data>
+  <data name="&gt;&gt;textEdit40.Name" xml:space="preserve">
+    <value>textEdit40</value>
+  </data>
+  <data name="&gt;&gt;textEdit40.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit40.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit40.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="rdb_RIH.EditValue" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="rdb_RIH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 83</value>
+  </data>
+  <data name="rdb_RIH.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="rdb_RIH.Properties.Items" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="rdb_RIH.Properties.Items1" xml:space="preserve">
+    <value>Inhouse</value>
+  </data>
+  <data name="rdb_RIH.Properties.Items2" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="rdb_RIH.Properties.Items3" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="rdb_RIH.Properties.Items4" xml:space="preserve">
+    <value>I, H, C</value>
+  </data>
+  <data name="rdb_RIH.Properties.Items5" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="rdb_RIH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 50</value>
+  </data>
+  <data name="rdb_RIH.TabIndex" type="System.Int32, mscorlib">
+    <value>221</value>
+  </data>
+  <data name="&gt;&gt;rdb_RIH.Name" xml:space="preserve">
+    <value>rdb_RIH</value>
+  </data>
+  <data name="&gt;&gt;rdb_RIH.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rdb_RIH.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;rdb_RIH.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="CardF_MusteriTipi.EditValue" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="CardF_MusteriTipi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>516, 14</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Items" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Items1" xml:space="preserve">
+    <value>Günü Birlik</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Items2" xml:space="preserve">
+    <value>DM</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Items3" xml:space="preserve">
+    <value>Devre Mülk Misafiri</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Items4" xml:space="preserve">
+    <value>OM</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Items5" xml:space="preserve">
+    <value>Otel Misafiri</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Items6" xml:space="preserve">
+    <value>CM</value>
+  </data>
+  <data name="CardF_MusteriTipi.Properties.Items7" xml:space="preserve">
+    <value>Comp</value>
+  </data>
+  <data name="CardF_MusteriTipi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 119</value>
+  </data>
+  <data name="CardF_MusteriTipi.TabIndex" type="System.Int32, mscorlib">
+    <value>433</value>
+  </data>
+  <data name="&gt;&gt;CardF_MusteriTipi.Name" xml:space="preserve">
+    <value>CardF_MusteriTipi</value>
+  </data>
+  <data name="&gt;&gt;CardF_MusteriTipi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CardF_MusteriTipi.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;CardF_MusteriTipi.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtCardF_CikisTrh.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCardF_CikisTrh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 37</value>
+  </data>
+  <data name="txtCardF_CikisTrh.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="txtCardF_CikisTrh.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>DateTimeAdvancingCaret</value>
+  </data>
+  <data name="txtCardF_CikisTrh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="txtCardF_CikisTrh.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_CikisTrh.Name" xml:space="preserve">
+    <value>txtCardF_CikisTrh</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_CikisTrh.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_CikisTrh.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_CikisTrh.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txtCardF_GirisTrh.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCardF_GirisTrh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 14</value>
+  </data>
+  <data name="txtCardF_GirisTrh.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="txtCardF_GirisTrh.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+    <value>DateTimeAdvancingCaret</value>
+  </data>
+  <data name="txtCardF_GirisTrh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="txtCardF_GirisTrh.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_GirisTrh.Name" xml:space="preserve">
+    <value>txtCardF_GirisTrh</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_GirisTrh.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_GirisTrh.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_GirisTrh.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="textEdit33.EditValue" xml:space="preserve">
+    <value>Çıkış Tarihi</value>
+  </data>
+  <data name="textEdit33.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 37</value>
+  </data>
+  <data name="textEdit33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit33.TabIndex" type="System.Int32, mscorlib">
+    <value>211</value>
+  </data>
+  <data name="&gt;&gt;textEdit33.Name" xml:space="preserve">
+    <value>textEdit33</value>
+  </data>
+  <data name="&gt;&gt;textEdit33.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit33.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit33.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="textEdit34.EditValue" xml:space="preserve">
+    <value>Giriş Tarihi</value>
+  </data>
+  <data name="textEdit34.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 14</value>
+  </data>
+  <data name="textEdit34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit34.TabIndex" type="System.Int32, mscorlib">
+    <value>210</value>
+  </data>
+  <data name="&gt;&gt;textEdit34.Name" xml:space="preserve">
+    <value>textEdit34</value>
+  </data>
+  <data name="&gt;&gt;textEdit34.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit34.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit34.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="textEdit29.EditValue" xml:space="preserve">
+    <value>Soyadı</value>
+  </data>
+  <data name="textEdit29.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 88</value>
+  </data>
+  <data name="textEdit29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit29.TabIndex" type="System.Int32, mscorlib">
+    <value>208</value>
+  </data>
+  <data name="&gt;&gt;textEdit29.Name" xml:space="preserve">
+    <value>textEdit29</value>
+  </data>
+  <data name="&gt;&gt;textEdit29.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit29.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit29.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="textEdit30.EditValue" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="textEdit30.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 65</value>
+  </data>
+  <data name="textEdit30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit30.TabIndex" type="System.Int32, mscorlib">
+    <value>207</value>
+  </data>
+  <data name="&gt;&gt;textEdit30.Name" xml:space="preserve">
+    <value>textEdit30</value>
+  </data>
+  <data name="&gt;&gt;textEdit30.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit30.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit30.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txtCardF_Adi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 65</value>
+  </data>
+  <data name="txtCardF_Adi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="txtCardF_Adi.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Adi.Name" xml:space="preserve">
+    <value>txtCardF_Adi</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Adi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Adi.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Adi.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txtCardF_Soyad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 88</value>
+  </data>
+  <data name="txtCardF_Soyad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="txtCardF_Soyad.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Soyad.Name" xml:space="preserve">
+    <value>txtCardF_Soyad</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Soyad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Soyad.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Soyad.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="textEdit27.EditValue" xml:space="preserve">
+    <value>Oda No / Folio ID</value>
+  </data>
+  <data name="textEdit27.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 42</value>
+  </data>
+  <data name="textEdit27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit27.TabIndex" type="System.Int32, mscorlib">
+    <value>203</value>
+  </data>
+  <data name="&gt;&gt;textEdit27.Name" xml:space="preserve">
+    <value>textEdit27</value>
+  </data>
+  <data name="&gt;&gt;textEdit27.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit27.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit27.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="txtCardF_Odano.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCardF_Odano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 42</value>
+  </data>
+  <data name="txtCardF_Odano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 22</value>
+  </data>
+  <data name="txtCardF_Odano.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Odano.Name" xml:space="preserve">
+    <value>txtCardF_Odano</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Odano.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Odano.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Odano.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="txtCardF_Kartno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 14</value>
+  </data>
+  <data name="txtCardF_Kartno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="txtCardF_Kartno.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Kartno.Name" xml:space="preserve">
+    <value>txtCardF_Kartno</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Kartno.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Kartno.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;txtCardF_Kartno.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="textEdit25.EditValue" xml:space="preserve">
+    <value>Kart No</value>
+  </data>
+  <data name="textEdit25.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textEdit25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 14</value>
+  </data>
+  <data name="textEdit25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="textEdit25.TabIndex" type="System.Int32, mscorlib">
+    <value>201</value>
+  </data>
+  <data name="&gt;&gt;textEdit25.Name" xml:space="preserve">
+    <value>textEdit25</value>
+  </data>
+  <data name="&gt;&gt;textEdit25.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit25.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;textEdit25.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lookCardF_FolioID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 42</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns" xml:space="preserve">
+    <value>Rez_Id</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns1" xml:space="preserve">
+    <value>Folio ID</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns9" xml:space="preserve">
+    <value>Rez_Adi_1</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns10" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns11" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns14" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns18" xml:space="preserve">
+    <value>Rez_Adi_2</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns19" xml:space="preserve">
+    <value>Soyadı</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns20" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns21" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns22" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns23" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns24" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns25" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns26" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns27" xml:space="preserve">
+    <value>Rez_Odano</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns28" xml:space="preserve">
+    <value>Oda No</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns29" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns30" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns31" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns32" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns33" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns34" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.Columns35" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookCardF_FolioID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lookCardF_FolioID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="lookCardF_FolioID.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lookCardF_FolioID.Name" xml:space="preserve">
+    <value>lookCardF_FolioID</value>
+  </data>
+  <data name="&gt;&gt;lookCardF_FolioID.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lookCardF_FolioID.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;lookCardF_FolioID.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="CardF_Limit_Uyari.EditValue" xml:space="preserve">
+    <value>EVET</value>
+  </data>
+  <data name="CardF_Limit_Uyari.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 60</value>
+  </data>
+  <data name="CardF_Limit_Uyari.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="CardF_Limit_Uyari.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="CardF_Limit_Uyari.Properties.Items" xml:space="preserve">
+    <value>EVET</value>
+  </data>
+  <data name="CardF_Limit_Uyari.Properties.Items1" xml:space="preserve">
+    <value>HAYIR</value>
+  </data>
+  <data name="CardF_Limit_Uyari.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="CardF_Limit_Uyari.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;CardF_Limit_Uyari.Name" xml:space="preserve">
+    <value>CardF_Limit_Uyari</value>
+  </data>
+  <data name="&gt;&gt;CardF_Limit_Uyari.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CardF_Limit_Uyari.Parent" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;CardF_Limit_Uyari.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="tab_KartF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 673</value>
+  </data>
+  <data name="tab_KartF.Text" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;tab_KartF.Name" xml:space="preserve">
+    <value>tab_KartF</value>
+  </data>
+  <data name="&gt;&gt;tab_KartF.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_KartF.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_KartF.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1012, 696</value>
+  </data>
+  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>205</value>
+  </data>
+  <data name="&gt;&gt;simpleButton29.Name" xml:space="preserve">
+    <value>simpleButton29</value>
+  </data>
+  <data name="&gt;&gt;simpleButton29.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton29.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;simpleButton29.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;look_DovizKod.Name" xml:space="preserve">
+    <value>look_DovizKod</value>
+  </data>
+  <data name="&gt;&gt;look_DovizKod.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_DovizKod.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;look_DovizKod.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton21.Name" xml:space="preserve">
+    <value>simpleButton21</value>
+  </data>
+  <data name="&gt;&gt;simpleButton21.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton21.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;simpleButton21.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dateEdit1.Name" xml:space="preserve">
+    <value>dateEdit1</value>
+  </data>
+  <data name="&gt;&gt;dateEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dateEdit1.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;dateEdit1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dateEdit4.Name" xml:space="preserve">
+    <value>dateEdit4</value>
+  </data>
+  <data name="&gt;&gt;dateEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dateEdit4.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;dateEdit4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textEdit28.Name" xml:space="preserve">
+    <value>textEdit28</value>
+  </data>
+  <data name="&gt;&gt;textEdit28.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit28.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit28.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textEdit36.Name" xml:space="preserve">
+    <value>textEdit36</value>
+  </data>
+  <data name="&gt;&gt;textEdit36.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit36.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit36.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;chk_Altbilgi.Name" xml:space="preserve">
+    <value>chk_Altbilgi</value>
+  </data>
+  <data name="&gt;&gt;chk_Altbilgi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_Altbilgi.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;chk_Altbilgi.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;simpleButton15.Name" xml:space="preserve">
+    <value>simpleButton15</value>
+  </data>
+  <data name="&gt;&gt;simpleButton15.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton15.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;simpleButton15.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;simpleButton13.Name" xml:space="preserve">
+    <value>simpleButton13</value>
+  </data>
+  <data name="&gt;&gt;simpleButton13.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton13.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;simpleButton13.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeBorc.Name" xml:space="preserve">
+    <value>txt_BakiyeBorc</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeBorc.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeBorc.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeBorc.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textEdit11.Name" xml:space="preserve">
+    <value>textEdit11</value>
+  </data>
+  <data name="&gt;&gt;textEdit11.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit11.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit11.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textEdit15.Name" xml:space="preserve">
+    <value>textEdit15</value>
+  </data>
+  <data name="&gt;&gt;textEdit15.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit15.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit15.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textEdit22.Name" xml:space="preserve">
+    <value>textEdit22</value>
+  </data>
+  <data name="&gt;&gt;textEdit22.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit22.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit22.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeAlacak.Name" xml:space="preserve">
+    <value>txt_BakiyeAlacak</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeAlacak.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeAlacak.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeAlacak.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeBakiye.Name" xml:space="preserve">
+    <value>txt_BakiyeBakiye</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeBakiye.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeBakiye.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeBakiye.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
+    <value>gridControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeKartNo.Name" xml:space="preserve">
+    <value>txt_BakiyeKartNo</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeKartNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeKartNo.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeKartNo.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;textEdit19.Name" xml:space="preserve">
+    <value>textEdit19</value>
+  </data>
+  <data name="&gt;&gt;textEdit19.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit19.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit19.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;textEdit20.Name" xml:space="preserve">
+    <value>textEdit20</value>
+  </data>
+  <data name="&gt;&gt;textEdit20.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit20.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit20.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;textEdit26.Name" xml:space="preserve">
+    <value>textEdit26</value>
+  </data>
+  <data name="&gt;&gt;textEdit26.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit26.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit26.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeFolioID.Name" xml:space="preserve">
+    <value>txt_BakiyeFolioID</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeFolioID.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeFolioID.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeFolioID.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeOda.Name" xml:space="preserve">
+    <value>txt_BakiyeOda</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeOda.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeOda.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeOda.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;textEdit21.Name" xml:space="preserve">
+    <value>textEdit21</value>
+  </data>
+  <data name="&gt;&gt;textEdit21.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit21.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;textEdit21.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeAdi.Name" xml:space="preserve">
+    <value>txt_BakiyeAdi</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeAdi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeAdi.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeAdi.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeSoyad.Name" xml:space="preserve">
+    <value>txt_BakiyeSoyad</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeSoyad.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeSoyad.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;txt_BakiyeSoyad.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;simpleButton8.Name" xml:space="preserve">
+    <value>simpleButton8</value>
+  </data>
+  <data name="&gt;&gt;simpleButton8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton8.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;simpleButton8.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;simpleButton7.Name" xml:space="preserve">
+    <value>simpleButton7</value>
+  </data>
+  <data name="&gt;&gt;simpleButton7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton7.Parent" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;simpleButton7.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="tab_BakiyeYukle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 673</value>
+  </data>
+  <data name="tab_BakiyeYukle.Text" xml:space="preserve">
+    <value>xtraTabPage2</value>
+  </data>
+  <data name="&gt;&gt;tab_BakiyeYukle.Name" xml:space="preserve">
+    <value>tab_BakiyeYukle</value>
+  </data>
+  <data name="&gt;&gt;tab_BakiyeYukle.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_BakiyeYukle.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_BakiyeYukle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Name" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Parent" xml:space="preserve">
+    <value>tab_Rapor</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tab_Rapor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 673</value>
+  </data>
+  <data name="tab_Rapor.Text" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;tab_Rapor.Name" xml:space="preserve">
+    <value>tab_Rapor</value>
+  </data>
+  <data name="&gt;&gt;tab_Rapor.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_Rapor.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_Rapor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;HizmetReceteKodCocuk.Name" xml:space="preserve">
+    <value>HizmetReceteKodCocuk</value>
+  </data>
+  <data name="&gt;&gt;HizmetReceteKodCocuk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;HizmetReceteKodCocuk.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;HizmetReceteKodCocuk.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textEdit45.Name" xml:space="preserve">
+    <value>textEdit45</value>
+  </data>
+  <data name="&gt;&gt;textEdit45.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit45.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit45.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;hizmetBedeliAktif.Name" xml:space="preserve">
+    <value>hizmetBedeliAktif</value>
+  </data>
+  <data name="&gt;&gt;hizmetBedeliAktif.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;hizmetBedeliAktif.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;hizmetBedeliAktif.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textEdit12.Name" xml:space="preserve">
+    <value>textEdit12</value>
+  </data>
+  <data name="&gt;&gt;textEdit12.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit12.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit12.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;hizmetOdemeKod.Name" xml:space="preserve">
+    <value>hizmetOdemeKod</value>
+  </data>
+  <data name="&gt;&gt;hizmetOdemeKod.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;hizmetOdemeKod.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;hizmetOdemeKod.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;HizmetReceteKod.Name" xml:space="preserve">
+    <value>HizmetReceteKod</value>
+  </data>
+  <data name="&gt;&gt;HizmetReceteKod.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;HizmetReceteKod.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;HizmetReceteKod.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Name" xml:space="preserve">
+    <value>textEdit5</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textEdit42.Name" xml:space="preserve">
+    <value>textEdit42</value>
+  </data>
+  <data name="&gt;&gt;textEdit42.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit42.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit42.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;look_GelirIade.Name" xml:space="preserve">
+    <value>look_GelirIade</value>
+  </data>
+  <data name="&gt;&gt;look_GelirIade.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_GelirIade.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_GelirIade.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textEdit32.Name" xml:space="preserve">
+    <value>textEdit32</value>
+  </data>
+  <data name="&gt;&gt;textEdit32.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit32.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit32.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;look_IadeKK.Name" xml:space="preserve">
+    <value>look_IadeKK</value>
+  </data>
+  <data name="&gt;&gt;look_IadeKK.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_IadeKK.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_IadeKK.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtParam_OdaNo.Name" xml:space="preserve">
+    <value>txtParam_OdaNo</value>
+  </data>
+  <data name="&gt;&gt;txtParam_OdaNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtParam_OdaNo.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;txtParam_OdaNo.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textEdit31.Name" xml:space="preserve">
+    <value>textEdit31</value>
+  </data>
+  <data name="&gt;&gt;textEdit31.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit31.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit31.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textEdit24.Name" xml:space="preserve">
+    <value>textEdit24</value>
+  </data>
+  <data name="&gt;&gt;textEdit24.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit24.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit24.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;rdb_Kart_Onburo.Name" xml:space="preserve">
+    <value>rdb_Kart_Onburo</value>
+  </data>
+  <data name="&gt;&gt;rdb_Kart_Onburo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rdb_Kart_Onburo.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;rdb_Kart_Onburo.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;textEdit23.Name" xml:space="preserve">
+    <value>textEdit23</value>
+  </data>
+  <data name="&gt;&gt;textEdit23.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit23.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit23.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;textEdit9.Name" xml:space="preserve">
+    <value>textEdit9</value>
+  </data>
+  <data name="&gt;&gt;textEdit9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit9.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit9.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;look_IadeNkt.Name" xml:space="preserve">
+    <value>look_IadeNkt</value>
+  </data>
+  <data name="&gt;&gt;look_IadeNkt.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_IadeNkt.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_IadeNkt.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;simpleButton6.Name" xml:space="preserve">
+    <value>simpleButton6</value>
+  </data>
+  <data name="&gt;&gt;simpleButton6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton6.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;simpleButton6.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;textEdit18.Name" xml:space="preserve">
+    <value>textEdit18</value>
+  </data>
+  <data name="&gt;&gt;textEdit18.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit18.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit18.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;look_DovizSekli.Name" xml:space="preserve">
+    <value>look_DovizSekli</value>
+  </data>
+  <data name="&gt;&gt;look_DovizSekli.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_DovizSekli.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_DovizSekli.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;textEdit17.Name" xml:space="preserve">
+    <value>textEdit17</value>
+  </data>
+  <data name="&gt;&gt;textEdit17.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit17.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit17.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;look_KurKodu.Name" xml:space="preserve">
+    <value>look_KurKodu</value>
+  </data>
+  <data name="&gt;&gt;look_KurKodu.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_KurKodu.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_KurKodu.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;textEdit16.Name" xml:space="preserve">
+    <value>textEdit16</value>
+  </data>
+  <data name="&gt;&gt;textEdit16.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit16.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit16.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;look_Konaklama.Name" xml:space="preserve">
+    <value>look_Konaklama</value>
+  </data>
+  <data name="&gt;&gt;look_Konaklama.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_Konaklama.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_Konaklama.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;textEdit14.Name" xml:space="preserve">
+    <value>textEdit14</value>
+  </data>
+  <data name="&gt;&gt;textEdit14.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit14.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit14.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;look_OdemeSekli.Name" xml:space="preserve">
+    <value>look_OdemeSekli</value>
+  </data>
+  <data name="&gt;&gt;look_OdemeSekli.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_OdemeSekli.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_OdemeSekli.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
+    <value>textEdit4</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;look_Acenta.Name" xml:space="preserve">
+    <value>look_Acenta</value>
+  </data>
+  <data name="&gt;&gt;look_Acenta.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_Acenta.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_Acenta.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;textEdit13.Name" xml:space="preserve">
+    <value>textEdit13</value>
+  </data>
+  <data name="&gt;&gt;textEdit13.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit13.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;textEdit13.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;look_MusteriTipi.Name" xml:space="preserve">
+    <value>look_MusteriTipi</value>
+  </data>
+  <data name="&gt;&gt;look_MusteriTipi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_MusteriTipi.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_MusteriTipi.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;look_Kapatma.Name" xml:space="preserve">
+    <value>look_Kapatma</value>
+  </data>
+  <data name="&gt;&gt;look_Kapatma.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_Kapatma.Parent" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;look_Kapatma.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="tab_Param.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 673</value>
+  </data>
+  <data name="tab_Param.Text" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;tab_Param.Name" xml:space="preserve">
+    <value>tab_Param</value>
+  </data>
+  <data name="&gt;&gt;tab_Param.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_Param.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_Param.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="gridControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -549,30 +2389,6 @@
     <value>panelControl2</value>
   </data>
   <data name="&gt;&gt;gridControl3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 210</value>
-  </data>
-  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1010, 399</value>
-  </data>
-  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>440</value>
-  </data>
-  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
-    <value>panelControl2</value>
-  </data>
-  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="simpleButton11.Appearance.Font" type="System.Drawing.Font, System.Drawing">
@@ -848,928 +2664,6 @@ Transfer</value>
   </data>
   <data name="&gt;&gt;simpleButton3.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 609</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1010, 64</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>439</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CardF_Cocuk.EditValue" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="CardF_Cocuk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 135</value>
-  </data>
-  <data name="CardF_Cocuk.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="CardF_Cocuk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 22</value>
-  </data>
-  <data name="CardF_Cocuk.TabIndex" type="System.Int32, mscorlib">
-    <value>437</value>
-  </data>
-  <data name="&gt;&gt;CardF_Cocuk.Name" xml:space="preserve">
-    <value>CardF_Cocuk</value>
-  </data>
-  <data name="&gt;&gt;CardF_Cocuk.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;CardF_Cocuk.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;CardF_Cocuk.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="textEdit47.EditValue" xml:space="preserve">
-    <value>Çocuk Kişi Sayısı</value>
-  </data>
-  <data name="textEdit47.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 135</value>
-  </data>
-  <data name="textEdit47.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit47.TabIndex" type="System.Int32, mscorlib">
-    <value>438</value>
-  </data>
-  <data name="&gt;&gt;textEdit47.Name" xml:space="preserve">
-    <value>textEdit47</value>
-  </data>
-  <data name="&gt;&gt;textEdit47.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit47.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit47.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="txtKartFIndirim.EditValue" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtKartFIndirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 159</value>
-  </data>
-  <data name="txtKartFIndirim.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="txtKartFIndirim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 22</value>
-  </data>
-  <data name="txtKartFIndirim.TabIndex" type="System.Int32, mscorlib">
-    <value>436</value>
-  </data>
-  <data name="&gt;&gt;txtKartFIndirim.Name" xml:space="preserve">
-    <value>txtKartFIndirim</value>
-  </data>
-  <data name="&gt;&gt;txtKartFIndirim.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtKartFIndirim.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtKartFIndirim.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="textEdit3.EditValue" xml:space="preserve">
-    <value>% İndirim</value>
-  </data>
-  <data name="textEdit3.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 159</value>
-  </data>
-  <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
-    <value>435</value>
-  </data>
-  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
-    <value>textEdit3</value>
-  </data>
-  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btnYenile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 83</value>
-  </data>
-  <data name="btnYenile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 50</value>
-  </data>
-  <data name="btnYenile.TabIndex" type="System.Int32, mscorlib">
-    <value>434</value>
-  </data>
-  <data name="btnYenile.Text" xml:space="preserve">
-    <value>Yenile</value>
-  </data>
-  <data name="&gt;&gt;btnYenile.Name" xml:space="preserve">
-    <value>btnYenile</value>
-  </data>
-  <data name="&gt;&gt;btnYenile.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnYenile.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;btnYenile.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="textEdit1.EditValue" xml:space="preserve">
-    <value>Limit Uyarı</value>
-  </data>
-  <data name="textEdit1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 60</value>
-  </data>
-  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
-    <value>228</value>
-  </data>
-  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
-    <value>textEdit1</value>
-  </data>
-  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="txtCardF_Tutar.EditValue" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtCardF_Tutar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 111</value>
-  </data>
-  <data name="txtCardF_Tutar.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="txtCardF_Tutar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
-  </data>
-  <data name="txtCardF_Tutar.TabIndex" type="System.Int32, mscorlib">
-    <value>227</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Tutar.Name" xml:space="preserve">
-    <value>txtCardF_Tutar</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Tutar.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Tutar.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Tutar.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="simpleButton2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="simpleButton2.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKwEAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
-        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5ZZWxsb3d7
-        ZmlsbDojRkZCMTE1O30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5HcmVlbntmaWxsOiMwMzlDMjM7fQoJ
-        LkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
-        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntkaXNwbGF5Om5vbmU7fQoJLnN0M3tkaXNwbGF5
-        OmlubGluZTtmaWxsOiNGRkIxMTU7fQoJLnN0NHtkaXNwbGF5OmlubGluZTt9Cgkuc3Q1e2Rpc3BsYXk6
-        aW5saW5lO29wYWNpdHk6MC43NTt9Cgkuc3Q2e2Rpc3BsYXk6aW5saW5lO29wYWNpdHk6MC41O30KCS5z
-        dDd7ZGlzcGxheTppbmxpbmU7ZmlsbDojMDM5QzIzO30KCS5zdDh7ZGlzcGxheTppbmxpbmU7ZmlsbDoj
-        RDExQzFDO30KCS5zdDl7ZGlzcGxheTppbmxpbmU7ZmlsbDojMTE3N0Q3O30KCS5zdDEwe2Rpc3BsYXk6
-        aW5saW5lO2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+DQogIDxnIGlkPSJDb250cmFjdCI+DQogICAgPGcg
-        b3BhY2l0eT0iMC43NSIgY2xhc3M9InN0MSI+DQogICAgICA8cGF0aCBkPSJNMjIsMTRIMTB2LTJoMTJW
-        MTR6IE0yMiw4SDEwdjJoMTJWOHogTTIyLDE2SDEwdjJoMTJWMTZ6IiBmaWxsPSIjNzI3MjcyIiBvcGFj
-        aXR5PSIwLjc1IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPC9nPg0KICAgIDxwYXRoIGQ9Ik0yNywySDVD
-        NC41LDIsNCwyLjUsNCwzdjI2YzAsMC41LDAuNSwxLDEsMWgyMmMwLjUsMCwxLTAuNSwxLTFWM0MyOCwy
-        LjUsMjcuNSwyLDI3LDJ6IE0yNiwyOEg2VjRoMjBWMjh6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxh
-        Y2siIC8+DQogICAgPHJlY3QgeD0iMTYiIHk9IjIyIiB3aWR0aD0iNiIgaGVpZ2h0PSIyIiByeD0iMCIg
-        cnk9IjAiIGZpbGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
-</value>
-  </data>
-  <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 14</value>
-  </data>
-  <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 50</value>
-  </data>
-  <data name="simpleButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>225</value>
-  </data>
-  <data name="simpleButton2.Text" xml:space="preserve">
-    <value>History Listele</value>
-  </data>
-  <data name="simpleButton2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.Name" xml:space="preserve">
-    <value>simpleButton2</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="txtCardF_Kisi.EditValue" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtCardF_Kisi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 111</value>
-  </data>
-  <data name="txtCardF_Kisi.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="txtCardF_Kisi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 22</value>
-  </data>
-  <data name="txtCardF_Kisi.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Kisi.Name" xml:space="preserve">
-    <value>txtCardF_Kisi</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Kisi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Kisi.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Kisi.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="textEdit40.EditValue" xml:space="preserve">
-    <value>Yetişkin Kişi Sayısı</value>
-  </data>
-  <data name="textEdit40.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 111</value>
-  </data>
-  <data name="textEdit40.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit40.TabIndex" type="System.Int32, mscorlib">
-    <value>222</value>
-  </data>
-  <data name="&gt;&gt;textEdit40.Name" xml:space="preserve">
-    <value>textEdit40</value>
-  </data>
-  <data name="&gt;&gt;textEdit40.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit40.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit40.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="rdb_RIH.EditValue" xml:space="preserve">
-    <value>I</value>
-  </data>
-  <data name="rdb_RIH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 83</value>
-  </data>
-  <data name="rdb_RIH.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="rdb_RIH.Properties.Items" xml:space="preserve">
-    <value>I</value>
-  </data>
-  <data name="rdb_RIH.Properties.Items1" xml:space="preserve">
-    <value>Inhouse</value>
-  </data>
-  <data name="rdb_RIH.Properties.Items2" xml:space="preserve">
-    <value>H</value>
-  </data>
-  <data name="rdb_RIH.Properties.Items3" xml:space="preserve">
-    <value>History</value>
-  </data>
-  <data name="rdb_RIH.Properties.Items4" xml:space="preserve">
-    <value>I, H, C</value>
-  </data>
-  <data name="rdb_RIH.Properties.Items5" xml:space="preserve">
-    <value>All</value>
-  </data>
-  <data name="rdb_RIH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 50</value>
-  </data>
-  <data name="rdb_RIH.TabIndex" type="System.Int32, mscorlib">
-    <value>221</value>
-  </data>
-  <data name="&gt;&gt;rdb_RIH.Name" xml:space="preserve">
-    <value>rdb_RIH</value>
-  </data>
-  <data name="&gt;&gt;rdb_RIH.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rdb_RIH.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;rdb_RIH.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="CardF_MusteriTipi.EditValue" xml:space="preserve">
-    <value>GB</value>
-  </data>
-  <data name="CardF_MusteriTipi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 14</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Items" xml:space="preserve">
-    <value>GB</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Items1" xml:space="preserve">
-    <value>Günü Birlik</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Items2" xml:space="preserve">
-    <value>DM</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Items3" xml:space="preserve">
-    <value>Devre Mülk Misafiri</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Items4" xml:space="preserve">
-    <value>OM</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Items5" xml:space="preserve">
-    <value>Otel Misafiri</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Items6" xml:space="preserve">
-    <value>CM</value>
-  </data>
-  <data name="CardF_MusteriTipi.Properties.Items7" xml:space="preserve">
-    <value>Comp</value>
-  </data>
-  <data name="CardF_MusteriTipi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 119</value>
-  </data>
-  <data name="CardF_MusteriTipi.TabIndex" type="System.Int32, mscorlib">
-    <value>433</value>
-  </data>
-  <data name="&gt;&gt;CardF_MusteriTipi.Name" xml:space="preserve">
-    <value>CardF_MusteriTipi</value>
-  </data>
-  <data name="&gt;&gt;CardF_MusteriTipi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;CardF_MusteriTipi.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;CardF_MusteriTipi.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="txtCardF_CikisTrh.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtCardF_CikisTrh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 37</value>
-  </data>
-  <data name="txtCardF_CikisTrh.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Combo</value>
-  </data>
-  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="txtCardF_CikisTrh.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
-    <value>DateTimeAdvancingCaret</value>
-  </data>
-  <data name="txtCardF_CikisTrh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="txtCardF_CikisTrh.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_CikisTrh.Name" xml:space="preserve">
-    <value>txtCardF_CikisTrh</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_CikisTrh.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_CikisTrh.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_CikisTrh.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="txtCardF_GirisTrh.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtCardF_GirisTrh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 14</value>
-  </data>
-  <data name="txtCardF_GirisTrh.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Combo</value>
-  </data>
-  <data name="txtCardF_GirisTrh.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
-    <value>DateTimeAdvancingCaret</value>
-  </data>
-  <data name="txtCardF_GirisTrh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="txtCardF_GirisTrh.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_GirisTrh.Name" xml:space="preserve">
-    <value>txtCardF_GirisTrh</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_GirisTrh.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_GirisTrh.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_GirisTrh.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="textEdit33.EditValue" xml:space="preserve">
-    <value>Çıkış Tarihi</value>
-  </data>
-  <data name="textEdit33.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 37</value>
-  </data>
-  <data name="textEdit33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit33.TabIndex" type="System.Int32, mscorlib">
-    <value>211</value>
-  </data>
-  <data name="&gt;&gt;textEdit33.Name" xml:space="preserve">
-    <value>textEdit33</value>
-  </data>
-  <data name="&gt;&gt;textEdit33.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit33.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit33.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="textEdit34.EditValue" xml:space="preserve">
-    <value>Giriş Tarihi</value>
-  </data>
-  <data name="textEdit34.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 14</value>
-  </data>
-  <data name="textEdit34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit34.TabIndex" type="System.Int32, mscorlib">
-    <value>210</value>
-  </data>
-  <data name="&gt;&gt;textEdit34.Name" xml:space="preserve">
-    <value>textEdit34</value>
-  </data>
-  <data name="&gt;&gt;textEdit34.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit34.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit34.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="textEdit29.EditValue" xml:space="preserve">
-    <value>Soyadı</value>
-  </data>
-  <data name="textEdit29.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 88</value>
-  </data>
-  <data name="textEdit29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit29.TabIndex" type="System.Int32, mscorlib">
-    <value>208</value>
-  </data>
-  <data name="&gt;&gt;textEdit29.Name" xml:space="preserve">
-    <value>textEdit29</value>
-  </data>
-  <data name="&gt;&gt;textEdit29.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit29.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit29.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="textEdit30.EditValue" xml:space="preserve">
-    <value>Adı</value>
-  </data>
-  <data name="textEdit30.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 65</value>
-  </data>
-  <data name="textEdit30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit30.TabIndex" type="System.Int32, mscorlib">
-    <value>207</value>
-  </data>
-  <data name="&gt;&gt;textEdit30.Name" xml:space="preserve">
-    <value>textEdit30</value>
-  </data>
-  <data name="&gt;&gt;textEdit30.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit30.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit30.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="txtCardF_Adi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 65</value>
-  </data>
-  <data name="txtCardF_Adi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="txtCardF_Adi.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Adi.Name" xml:space="preserve">
-    <value>txtCardF_Adi</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Adi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Adi.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Adi.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="txtCardF_Soyad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 88</value>
-  </data>
-  <data name="txtCardF_Soyad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="txtCardF_Soyad.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Soyad.Name" xml:space="preserve">
-    <value>txtCardF_Soyad</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Soyad.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Soyad.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Soyad.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="textEdit27.EditValue" xml:space="preserve">
-    <value>Oda No / Folio ID</value>
-  </data>
-  <data name="textEdit27.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 42</value>
-  </data>
-  <data name="textEdit27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit27.TabIndex" type="System.Int32, mscorlib">
-    <value>203</value>
-  </data>
-  <data name="&gt;&gt;textEdit27.Name" xml:space="preserve">
-    <value>textEdit27</value>
-  </data>
-  <data name="&gt;&gt;textEdit27.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit27.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit27.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="txtCardF_Odano.EditValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtCardF_Odano.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 42</value>
-  </data>
-  <data name="txtCardF_Odano.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 22</value>
-  </data>
-  <data name="txtCardF_Odano.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Odano.Name" xml:space="preserve">
-    <value>txtCardF_Odano</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Odano.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Odano.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Odano.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="txtCardF_Kartno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 14</value>
-  </data>
-  <data name="txtCardF_Kartno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="txtCardF_Kartno.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Kartno.Name" xml:space="preserve">
-    <value>txtCardF_Kartno</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Kartno.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Kartno.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;txtCardF_Kartno.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="textEdit25.EditValue" xml:space="preserve">
-    <value>Kart No</value>
-  </data>
-  <data name="textEdit25.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textEdit25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 14</value>
-  </data>
-  <data name="textEdit25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
-  </data>
-  <data name="textEdit25.TabIndex" type="System.Int32, mscorlib">
-    <value>201</value>
-  </data>
-  <data name="&gt;&gt;textEdit25.Name" xml:space="preserve">
-    <value>textEdit25</value>
-  </data>
-  <data name="&gt;&gt;textEdit25.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit25.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;textEdit25.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="lookCardF_FolioID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 42</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Combo</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns" xml:space="preserve">
-    <value>Rez_Id</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns1" xml:space="preserve">
-    <value>Folio ID</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns2" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
-    <value>None</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns4" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns5" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
-    <value>None</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns9" xml:space="preserve">
-    <value>Rez_Adi_1</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns10" xml:space="preserve">
-    <value>Adı</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns11" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
-    <value>None</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns13" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns14" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
-    <value>None</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns18" xml:space="preserve">
-    <value>Rez_Adi_2</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns19" xml:space="preserve">
-    <value>Soyadı</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns20" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns21" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
-    <value>None</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns22" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns23" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns24" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns25" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
-    <value>None</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns26" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns27" xml:space="preserve">
-    <value>Rez_Odano</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns28" xml:space="preserve">
-    <value>Oda No</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns29" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns30" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
-    <value>None</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns31" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns32" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns33" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns34" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
-    <value>None</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.Columns35" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="lookCardF_FolioID.Properties.NullText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lookCardF_FolioID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
-  </data>
-  <data name="lookCardF_FolioID.TabIndex" type="System.Int32, mscorlib">
-    <value>222</value>
-  </data>
-  <data name="&gt;&gt;lookCardF_FolioID.Name" xml:space="preserve">
-    <value>lookCardF_FolioID</value>
-  </data>
-  <data name="&gt;&gt;lookCardF_FolioID.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;lookCardF_FolioID.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;lookCardF_FolioID.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="CardF_Limit_Uyari.EditValue" xml:space="preserve">
-    <value>EVET</value>
-  </data>
-  <data name="CardF_Limit_Uyari.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 60</value>
-  </data>
-  <data name="CardF_Limit_Uyari.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="CardF_Limit_Uyari.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Combo</value>
-  </data>
-  <data name="CardF_Limit_Uyari.Properties.Items" xml:space="preserve">
-    <value>EVET</value>
-  </data>
-  <data name="CardF_Limit_Uyari.Properties.Items1" xml:space="preserve">
-    <value>HAYIR</value>
-  </data>
-  <data name="CardF_Limit_Uyari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="CardF_Limit_Uyari.TabIndex" type="System.Int32, mscorlib">
-    <value>229</value>
-  </data>
-  <data name="&gt;&gt;CardF_Limit_Uyari.Name" xml:space="preserve">
-    <value>CardF_Limit_Uyari</value>
-  </data>
-  <data name="&gt;&gt;CardF_Limit_Uyari.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;CardF_Limit_Uyari.Parent" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;CardF_Limit_Uyari.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="tab_KartF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1010, 673</value>
-  </data>
-  <data name="tab_KartF.Text" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;tab_KartF.Name" xml:space="preserve">
-    <value>tab_KartF</value>
-  </data>
-  <data name="&gt;&gt;tab_KartF.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_KartF.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_KartF.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1012, 696</value>
-  </data>
-  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>205</value>
   </data>
   <data name="simpleButton29.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2400,12 +3294,6 @@ Detayı</value>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="departmanKoduDeğiştirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 22</value>
-  </data>
-  <data name="departmanKoduDeğiştirToolStripMenuItem.Text" xml:space="preserve">
-    <value>Departman Kodu Değiştir</value>
-  </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 26</value>
   </data>
@@ -2540,6 +3428,12 @@ Detayı</value>
   </data>
   <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
     <value>16</value>
+  </data>
+  <data name="departmanKoduDeğiştirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="departmanKoduDeğiştirToolStripMenuItem.Text" xml:space="preserve">
+    <value>Departman Kodu Değiştir</value>
   </data>
   <data name="txt_BakiyeKartNo.Location" type="System.Drawing.Point, System.Drawing">
     <value>124, 14</value>
@@ -2844,29 +3738,263 @@ Detayı</value>
   <data name="&gt;&gt;simpleButton7.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
-  <data name="tab_BakiyeYukle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1010, 673</value>
-  </data>
-  <data name="tab_BakiyeYukle.Text" xml:space="preserve">
-    <value>xtraTabPage2</value>
-  </data>
-  <data name="&gt;&gt;tab_BakiyeYukle.Name" xml:space="preserve">
-    <value>tab_BakiyeYukle</value>
-  </data>
-  <data name="&gt;&gt;tab_BakiyeYukle.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_BakiyeYukle.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_BakiyeYukle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="xtraTabControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="xtraTabControl2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;gridControl4.Name" xml:space="preserve">
+    <value>gridControl4</value>
+  </data>
+  <data name="&gt;&gt;gridControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl4.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;gridControl4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridControl5.Name" xml:space="preserve">
+    <value>gridControl5</value>
+  </data>
+  <data name="&gt;&gt;gridControl5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl5.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;gridControl5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 650</value>
+  </data>
+  <data name="xtraTabPage1.Text" xml:space="preserve">
+    <value>Raporlar</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtraTabControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 673</value>
+  </data>
+  <data name="xtraTabControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>214</value>
+  </data>
+  <data name="&gt;&gt;gridControl11.Name" xml:space="preserve">
+    <value>gridControl11</value>
+  </data>
+  <data name="&gt;&gt;gridControl11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl11.Parent" xml:space="preserve">
+    <value>xtraTabPage2</value>
+  </data>
+  <data name="&gt;&gt;gridControl11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Name" xml:space="preserve">
+    <value>groupControl2</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.Parent" xml:space="preserve">
+    <value>xtraTabPage2</value>
+  </data>
+  <data name="&gt;&gt;groupControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 650</value>
+  </data>
+  <data name="xtraTabPage2.Text" xml:space="preserve">
+    <value>NFC Raporlar</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Name" xml:space="preserve">
+    <value>xtraTabPage2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Parent" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gridControl7.Name" xml:space="preserve">
+    <value>gridControl7</value>
+  </data>
+  <data name="&gt;&gt;gridControl7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl7.Parent" xml:space="preserve">
+    <value>xtraTabPage5</value>
+  </data>
+  <data name="&gt;&gt;gridControl7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupControl7.Name" xml:space="preserve">
+    <value>groupControl7</value>
+  </data>
+  <data name="&gt;&gt;groupControl7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl7.Parent" xml:space="preserve">
+    <value>xtraTabPage5</value>
+  </data>
+  <data name="&gt;&gt;groupControl7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xtraTabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 650</value>
+  </data>
+  <data name="xtraTabPage5.Text" xml:space="preserve">
+    <value>NFC Raporlar 2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage5.Name" xml:space="preserve">
+    <value>xtraTabPage5</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage5.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage5.Parent" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chartControl1.Name" xml:space="preserve">
+    <value>chartControl1</value>
+  </data>
+  <data name="&gt;&gt;chartControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chartControl1.Parent" xml:space="preserve">
+    <value>xtraTabPage3</value>
+  </data>
+  <data name="&gt;&gt;chartControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupControl4.Name" xml:space="preserve">
+    <value>groupControl4</value>
+  </data>
+  <data name="&gt;&gt;groupControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl4.Parent" xml:space="preserve">
+    <value>xtraTabPage3</value>
+  </data>
+  <data name="&gt;&gt;groupControl4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupControl3.Name" xml:space="preserve">
+    <value>groupControl3</value>
+  </data>
+  <data name="&gt;&gt;groupControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl3.Parent" xml:space="preserve">
+    <value>xtraTabPage3</value>
+  </data>
+  <data name="&gt;&gt;groupControl3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 650</value>
+  </data>
+  <data name="xtraTabPage3.Text" xml:space="preserve">
+    <value>Forecast</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage3.Name" xml:space="preserve">
+    <value>xtraTabPage3</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage3.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage3.Parent" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;gridControl6.Name" xml:space="preserve">
+    <value>gridControl6</value>
+  </data>
+  <data name="&gt;&gt;gridControl6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl6.Parent" xml:space="preserve">
+    <value>xtraTabPage4</value>
+  </data>
+  <data name="&gt;&gt;gridControl6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupControl5.Name" xml:space="preserve">
+    <value>groupControl5</value>
+  </data>
+  <data name="&gt;&gt;groupControl5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl5.Parent" xml:space="preserve">
+    <value>xtraTabPage4</value>
+  </data>
+  <data name="&gt;&gt;groupControl5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 650</value>
+  </data>
+  <data name="xtraTabPage4.Text" xml:space="preserve">
+    <value>Gelir Takibi</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage4.Name" xml:space="preserve">
+    <value>xtraTabPage4</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage4.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage4.Parent" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Name" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Parent" xml:space="preserve">
+    <value>tab_Rapor</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="gridControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3207,30 +4335,6 @@ Detayı</value>
   </data>
   <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 650</value>
-  </data>
-  <data name="xtraTabPage1.Text" xml:space="preserve">
-    <value>Raporlar</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="xtraTabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1010, 673</value>
-  </data>
-  <data name="xtraTabControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>214</value>
   </data>
   <data name="gridControl11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3827,7 +4931,7 @@ Detayı</value>
     <value>KartID</value>
   </data>
   <data name="gridControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 501</value>
+    <value>1008, 524</value>
   </data>
   <data name="gridControl11.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4198,7 +5302,7 @@ Detayı</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 126</value>
+    <value>1008, 126</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4215,24 +5319,6 @@ Detayı</value>
   <data name="&gt;&gt;groupControl2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
-  </data>
-  <data name="xtraTabPage2.Text" xml:space="preserve">
-    <value>NFC Raporlar</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage2.Name" xml:space="preserve">
-    <value>xtraTabPage2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage2.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage2.Parent" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="gridControl7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -4240,7 +5326,7 @@ Detayı</value>
     <value>0, 126</value>
   </data>
   <data name="gridControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 501</value>
+    <value>1008, 524</value>
   </data>
   <data name="gridControl7.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4521,7 +5607,7 @@ Detayı</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 126</value>
+    <value>1008, 126</value>
   </data>
   <data name="groupControl7.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4538,24 +5624,6 @@ Detayı</value>
   <data name="&gt;&gt;groupControl7.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="xtraTabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
-  </data>
-  <data name="xtraTabPage5.Text" xml:space="preserve">
-    <value>NFC Raporlar 2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage5.Name" xml:space="preserve">
-    <value>xtraTabPage5</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage5.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage5.Parent" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="chartControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -4563,7 +5631,7 @@ Detayı</value>
     <value>0, 73</value>
   </data>
   <data name="chartControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 382</value>
+    <value>1008, 405</value>
   </data>
   <data name="chartControl1.TabIndex" type="System.Int32, mscorlib">
     <value>209</value>
@@ -4632,7 +5700,7 @@ Detayı</value>
     <value>2</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 148</value>
+    <value>854, 148</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>210</value>
@@ -4673,7 +5741,7 @@ Detayı</value>
 </value>
   </data>
   <data name="simpleButton24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 22</value>
+    <value>856, 22</value>
   </data>
   <data name="simpleButton24.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 148</value>
@@ -4743,7 +5811,7 @@ Detayı</value>
 </value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 22</value>
+    <value>931, 22</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 148</value>
@@ -4770,10 +5838,10 @@ Detayı</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 455</value>
+    <value>0, 478</value>
   </data>
   <data name="groupControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 172</value>
+    <value>1008, 172</value>
   </data>
   <data name="groupControl4.TabIndex" type="System.Int32, mscorlib">
     <value>211</value>
@@ -4973,7 +6041,7 @@ Detayı</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 73</value>
+    <value>1008, 73</value>
   </data>
   <data name="groupControl3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4989,24 +6057,6 @@ Detayı</value>
   </data>
   <data name="&gt;&gt;groupControl3.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
-  </data>
-  <data name="xtraTabPage3.Text" xml:space="preserve">
-    <value>Forecast</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage3.Name" xml:space="preserve">
-    <value>xtraTabPage3</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage3.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage3.Parent" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage3.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="gridControl6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -5114,7 +6164,7 @@ Detayı</value>
     <value>6</value>
   </data>
   <data name="gridControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 524</value>
+    <value>1008, 547</value>
   </data>
   <data name="gridControl6.TabIndex" type="System.Int32, mscorlib">
     <value>211</value>
@@ -5315,7 +6365,7 @@ Uygula</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 103</value>
+    <value>1008, 103</value>
   </data>
   <data name="groupControl5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5331,54 +6381,6 @@ Uygula</value>
   </data>
   <data name="&gt;&gt;groupControl5.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 627</value>
-  </data>
-  <data name="xtraTabPage4.Text" xml:space="preserve">
-    <value>Gelir Takibi</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage4.Name" xml:space="preserve">
-    <value>xtraTabPage4</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage4.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage4.Parent" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Name" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Parent" xml:space="preserve">
-    <value>tab_Rapor</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tab_Rapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1010, 673</value>
-  </data>
-  <data name="tab_Rapor.Text" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;tab_Rapor.Name" xml:space="preserve">
-    <value>tab_Rapor</value>
-  </data>
-  <data name="&gt;&gt;tab_Rapor.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_Rapor.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_Rapor.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="HizmetReceteKodCocuk.Location" type="System.Drawing.Point, System.Drawing">
     <value>573, 58</value>
@@ -6323,36 +7325,6 @@ Uygula</value>
   </data>
   <data name="&gt;&gt;look_Kapatma.ZOrder" xml:space="preserve">
     <value>31</value>
-  </data>
-  <data name="tab_Param.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1010, 673</value>
-  </data>
-  <data name="tab_Param.Text" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;tab_Param.Name" xml:space="preserve">
-    <value>tab_Param</value>
-  </data>
-  <data name="&gt;&gt;tab_Param.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_Param.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_Param.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="simpleButton4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>

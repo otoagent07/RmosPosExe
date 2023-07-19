@@ -2096,7 +2096,8 @@ order by Tarih ");
             DialogResult c = MessageBox.Show(date_GelirTakip.DateTime.ToString("dd.MM.yyyy") + " Tarihindeki Günü Birlik Kartlara Check Out Uygulansın mı ?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (c == DialogResult.Yes)
             {
-                Fronttools.execcmd("Update KartF Set CardF_R_I_H = 'H' Where CardF_GirisTrh = '" + date_GelirTakip.DateTime + "' and CardF_MusteriTipi = 'GB'");
+                // CardF_GirisTrh idi gökhan bey ile CardF_CikisTrh yaptık
+                Fronttools.execcmd("Update KartF Set CardF_R_I_H = 'H' Where CardF_CikisTrh = '" + date_GelirTakip.DateTime + "' and CardF_MusteriTipi = 'GB'");
                 MessageBox.Show(res_man.GetString("Kartlara Check Out İşlemi Uygulandı."));
                 return;
             }

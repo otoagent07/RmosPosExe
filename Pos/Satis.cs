@@ -2224,7 +2224,7 @@ namespace Pos
 
                 if (otomatikSatis)
                 {
-                    Miktar = hizmetmiktar;
+                    Miktar = otomiktar;// hizmetmiktar;
                 }
 
                 SqlConnection con = dbtools.conn;
