@@ -1339,6 +1339,10 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
         {
             gridControl3.DataSource = Fronttools.SelectTable(@"SELECT [ID]
                                           ,[CardF_No]
+                                 ,case when CardF_MusteriTipi ='GB' then 
+										  (select SUM(Kumhrk_Tutar) as Tahsilat from kumhrk where Kumhrk_Kartno=CardF_No  and kumhrk_ba='A' )
+										  else '0'
+										  end as Tahsilat
                                           ,[CardF_RezID]
                                           ,[CardF_Odano]
                                           ,[CardF_GirisTrh]

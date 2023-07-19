@@ -80,6 +80,7 @@
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnServisTutarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             this.btnTopluSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_SpSil = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Fix = new DevExpress.XtraEditors.CheckButton();
@@ -150,7 +151,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnServisTutarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -234,7 +234,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 149;
+            this.splitContainerControl4.SplitterPosition = 147;
             // 
             // ana_btnUp
             // 
@@ -670,6 +670,15 @@
             this.panelMenu.Controls.Add(this.btnRelogin);
             resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
+            // 
+            // btnServisTutarDuzelt
+            // 
+            this.btnServisTutarDuzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnServisTutarDuzelt.Appearance.Font")));
+            this.btnServisTutarDuzelt.Appearance.Options.UseFont = true;
+            this.btnServisTutarDuzelt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnServisTutarDuzelt.ImageOptions.Image")));
+            resources.ApplyResources(this.btnServisTutarDuzelt, "btnServisTutarDuzelt");
+            this.btnServisTutarDuzelt.Name = "btnServisTutarDuzelt";
+            this.btnServisTutarDuzelt.Click += new System.EventHandler(this.btnServisTutarDuzelt_Click);
             // 
             // btnTopluSil
             // 
@@ -1300,7 +1309,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(820, 704);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(822, 700);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1312,7 +1321,7 @@
             this.layoutControlItem1.MinSize = new System.Drawing.Size(201, 66);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(820, 70);
+            this.layoutControlItem1.Size = new System.Drawing.Size(822, 70);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1325,7 +1334,7 @@
             this.layoutControlItem2.MinSize = new System.Drawing.Size(196, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(820, 192);
+            this.layoutControlItem2.Size = new System.Drawing.Size(822, 191);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1334,9 +1343,9 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 262);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 261);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(820, 79);
+            this.layoutControlItem6.Size = new System.Drawing.Size(822, 78);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1344,18 +1353,18 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 341);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 339);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(820, 281);
+            this.layoutControlItem7.Size = new System.Drawing.Size(822, 279);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 622);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 618);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(820, 82);
+            this.layoutControlItem3.Size = new System.Drawing.Size(822, 82);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             this.layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -1379,15 +1388,6 @@
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // btnServisTutarDuzelt
-            // 
-            this.btnServisTutarDuzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.btnServisTutarDuzelt.Appearance.Options.UseFont = true;
-            this.btnServisTutarDuzelt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            resources.ApplyResources(this.btnServisTutarDuzelt, "btnServisTutarDuzelt");
-            this.btnServisTutarDuzelt.Name = "btnServisTutarDuzelt";
-            this.btnServisTutarDuzelt.Click += new System.EventHandler(this.btnServisTutarDuzelt_Click);
             // 
             // Satis
             // 

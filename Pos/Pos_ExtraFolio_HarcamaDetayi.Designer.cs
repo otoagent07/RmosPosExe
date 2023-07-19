@@ -40,6 +40,8 @@
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.btn_Adisyonpr = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Faturapr = new DevExpress.XtraEditors.SimpleButton();
+            this.btnFisIptal = new DevExpress.XtraEditors.SimpleButton();
+            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -72,6 +74,7 @@
             this.gridView1.OptionsView.ShowAutoFilterRow = true;
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // simpleButton1
             // 
@@ -157,10 +160,26 @@
             this.btn_Faturapr.Name = "btn_Faturapr";
             this.btn_Faturapr.Click += new System.EventHandler(this.btn_Faturapr_Click);
             // 
+            // btnFisIptal
+            // 
+            this.btnFisIptal.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            resources.ApplyResources(this.btnFisIptal, "btnFisIptal");
+            this.btnFisIptal.Name = "btnFisIptal";
+            this.btnFisIptal.Click += new System.EventHandler(this.btnFisIptal_Click);
+            // 
+            // btnYenile
+            // 
+            this.btnYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image1")));
+            resources.ApplyResources(this.btnYenile, "btnYenile");
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
+            // 
             // Pos_ExtraFolio_HarcamaDetayi
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnYenile);
+            this.Controls.Add(this.btnFisIptal);
             this.Controls.Add(this.btn_Faturapr);
             this.Controls.Add(this.btn_Adisyonpr);
             this.Controls.Add(this.txt_Bakiye);
@@ -197,5 +216,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit3;
         public DevExpress.XtraEditors.SimpleButton btn_Adisyonpr;
         public DevExpress.XtraEditors.SimpleButton btn_Faturapr;
+        private DevExpress.XtraEditors.SimpleButton btnFisIptal;
+        private DevExpress.XtraEditors.SimpleButton btnYenile;
     }
 }

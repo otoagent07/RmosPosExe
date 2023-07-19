@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pos_ExtraFolio));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SeriesPoint seriesPoint6 = new DevExpress.XtraCharts.SeriesPoint(0D, new object[] {
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint(0D, new object[] {
             ((object)(7.7D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint7 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint2 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
             ((object)(1.3D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint8 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint3 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
             ((object)(1.5D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint9 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint4 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
             ((object)(4.1D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint10 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint5 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
             ((object)(1.6D))});
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView2 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView1 = new DevExpress.XtraCharts.StackedBarSeriesView();
             this.bandedGridColumn41 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn85 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
@@ -56,6 +56,8 @@
             this.chk_Bakiye = new DevExpress.XtraEditors.CheckButton();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tab_KartF = new DevExpress.XtraTab.XtraTabPage();
+            this.CardF_Cocuk = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit47 = new DevExpress.XtraEditors.TextEdit();
             this.txtKartFIndirim = new DevExpress.XtraEditors.TextEdit();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
@@ -101,10 +103,11 @@
             this.gridColumn30 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn34 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn35 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn36 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn37 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lookCardF_FolioID = new DevExpress.XtraEditors.LookUpEdit();
             this.CardF_Limit_Uyari = new DevExpress.XtraEditors.ComboBoxEdit();
             this.tab_BakiyeYukle = new DevExpress.XtraTab.XtraTabPage();
-            this.hizmetBedeliAktif = new DevExpress.XtraEditors.CheckEdit();
             this.simpleButton29 = new DevExpress.XtraEditors.SimpleButton();
             this.look_DovizKod = new DevExpress.XtraEditors.LookUpEdit();
             this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
@@ -267,6 +270,9 @@
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton25 = new DevExpress.XtraEditors.SimpleButton();
             this.tab_Param = new DevExpress.XtraTab.XtraTabPage();
+            this.HizmetReceteKodCocuk = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit45 = new DevExpress.XtraEditors.TextEdit();
+            this.hizmetBedeliAktif = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
             this.hizmetOdemeKod = new DevExpress.XtraEditors.LookUpEdit();
             this.HizmetReceteKod = new DevExpress.XtraEditors.LookUpEdit();
@@ -299,11 +305,9 @@
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Param = new DevExpress.XtraEditors.CheckButton();
             this.chk_Rapor = new DevExpress.XtraEditors.CheckButton();
-            this.HizmetReceteKodCocuk = new DevExpress.XtraEditors.LookUpEdit();
-            this.textEdit45 = new DevExpress.XtraEditors.TextEdit();
-            this.CardF_Cocuk = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit47 = new DevExpress.XtraEditors.TextEdit();
-            this.gridColumn36 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_OdemeDep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
@@ -311,6 +315,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_KartF.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CardF_Cocuk.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit47.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
@@ -338,7 +344,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lookCardF_FolioID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardF_Limit_Uyari.Properties)).BeginInit();
             this.tab_BakiyeYukle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hizmetBedeliAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_DovizKod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
@@ -411,9 +416,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -437,6 +442,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.date_GelirTakip.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.tab_Param.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HizmetReceteKodCocuk.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit45.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hizmetBedeliAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hizmetOdemeKod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HizmetReceteKod.Properties)).BeginInit();
@@ -465,10 +473,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HizmetReceteKodCocuk.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit45.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CardF_Cocuk.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit47.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // bandedGridColumn41
@@ -578,6 +588,8 @@
             // 
             // tab_KartF
             // 
+            this.tab_KartF.Controls.Add(this.panelControl2);
+            this.tab_KartF.Controls.Add(this.panelControl1);
             this.tab_KartF.Controls.Add(this.CardF_Cocuk);
             this.tab_KartF.Controls.Add(this.textEdit47);
             this.tab_KartF.Controls.Add(this.txtKartFIndirim);
@@ -585,18 +597,11 @@
             this.tab_KartF.Controls.Add(this.btnYenile);
             this.tab_KartF.Controls.Add(this.textEdit1);
             this.tab_KartF.Controls.Add(this.txtCardF_Tutar);
-            this.tab_KartF.Controls.Add(this.simpleButton3);
             this.tab_KartF.Controls.Add(this.simpleButton2);
-            this.tab_KartF.Controls.Add(this.btnKatTanimBakiyeTransfer);
             this.tab_KartF.Controls.Add(this.txtCardF_Kisi);
             this.tab_KartF.Controls.Add(this.textEdit40);
-            this.tab_KartF.Controls.Add(this.btnKatTanimKartTransfer);
             this.tab_KartF.Controls.Add(this.rdb_RIH);
             this.tab_KartF.Controls.Add(this.CardF_MusteriTipi);
-            this.tab_KartF.Controls.Add(this.btnKatTanimDuzelt);
-            this.tab_KartF.Controls.Add(this.simpleButton9);
-            this.tab_KartF.Controls.Add(this.btnKatTanimSil);
-            this.tab_KartF.Controls.Add(this.simpleButton11);
             this.tab_KartF.Controls.Add(this.txtCardF_CikisTrh);
             this.tab_KartF.Controls.Add(this.txtCardF_GirisTrh);
             this.tab_KartF.Controls.Add(this.textEdit33);
@@ -609,11 +614,28 @@
             this.tab_KartF.Controls.Add(this.txtCardF_Odano);
             this.tab_KartF.Controls.Add(this.txtCardF_Kartno);
             this.tab_KartF.Controls.Add(this.textEdit25);
-            this.tab_KartF.Controls.Add(this.gridControl3);
             this.tab_KartF.Controls.Add(this.lookCardF_FolioID);
             this.tab_KartF.Controls.Add(this.CardF_Limit_Uyari);
             this.tab_KartF.Name = "tab_KartF";
             resources.ApplyResources(this.tab_KartF, "tab_KartF");
+            // 
+            // CardF_Cocuk
+            // 
+            resources.ApplyResources(this.CardF_Cocuk, "CardF_Cocuk");
+            this.CardF_Cocuk.EnterMoveNextControl = true;
+            this.CardF_Cocuk.Name = "CardF_Cocuk";
+            this.CardF_Cocuk.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.CardF_Cocuk.Properties.MaxLength = 100;
+            // 
+            // textEdit47
+            // 
+            resources.ApplyResources(this.textEdit47, "textEdit47");
+            this.textEdit47.Name = "textEdit47";
+            this.textEdit47.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.textEdit47.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit47.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit47.Properties.ReadOnly = true;
+            this.textEdit47.TabStop = false;
             // 
             // txtKartFIndirim
             // 
@@ -926,7 +948,8 @@
             this.gridColumn30,
             this.gridColumn34,
             this.gridColumn35,
-            this.gridColumn36});
+            this.gridColumn36,
+            this.gridColumn37});
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowAutoFilterRow = true;
@@ -1035,6 +1058,20 @@
             this.gridColumn35.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn35.Summary"))), resources.GetString("gridColumn35.Summary1"), resources.GetString("gridColumn35.Summary2"))});
             // 
+            // gridColumn36
+            // 
+            resources.ApplyResources(this.gridColumn36, "gridColumn36");
+            this.gridColumn36.FieldName = "CardF_Cocuk";
+            this.gridColumn36.Name = "gridColumn36";
+            // 
+            // gridColumn37
+            // 
+            resources.ApplyResources(this.gridColumn37, "gridColumn37");
+            this.gridColumn37.FieldName = "Tahsilat";
+            this.gridColumn37.Name = "gridColumn37";
+            this.gridColumn37.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn37.Summary"))), resources.GetString("gridColumn37.Summary1"), resources.GetString("gridColumn37.Summary2"))});
+            // 
             // lookCardF_FolioID
             // 
             this.lookCardF_FolioID.EnterMoveNextControl = true;
@@ -1105,14 +1142,6 @@
             this.tab_BakiyeYukle.Controls.Add(this.txt_BakiyeLimit);
             this.tab_BakiyeYukle.Name = "tab_BakiyeYukle";
             resources.ApplyResources(this.tab_BakiyeYukle, "tab_BakiyeYukle");
-            // 
-            // hizmetBedeliAktif
-            // 
-            resources.ApplyResources(this.hizmetBedeliAktif, "hizmetBedeliAktif");
-            this.hizmetBedeliAktif.Name = "hizmetBedeliAktif";
-            this.hizmetBedeliAktif.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEditHizmetBedeli.Properties.Appearance.Font")));
-            this.hizmetBedeliAktif.Properties.Appearance.Options.UseFont = true;
-            this.hizmetBedeliAktif.Properties.Caption = resources.GetString("checkEditHizmetBedeli.Properties.Caption");
             // 
             // simpleButton29
             // 
@@ -1762,20 +1791,20 @@
             this.gridColumn31,
             this.gridColumn32,
             this.gridColumn33});
-            styleFormatCondition3.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition3.Appearance.Options.UseBackColor = true;
-            styleFormatCondition3.Column = this.bandedGridColumn41;
-            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition3.Value1 = "Acik";
-            styleFormatCondition4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            styleFormatCondition4.Appearance.Options.UseBackColor = true;
-            styleFormatCondition4.ApplyToRow = true;
-            styleFormatCondition4.Column = this.gridColumn85;
-            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition4.Value1 = true;
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Column = this.bandedGridColumn41;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition1.Value1 = "Acik";
+            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            styleFormatCondition2.Appearance.Options.UseBackColor = true;
+            styleFormatCondition2.ApplyToRow = true;
+            styleFormatCondition2.Column = this.gridColumn85;
+            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition2.Value1 = true;
             this.gridView11.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition3,
-            styleFormatCondition4});
+            styleFormatCondition1,
+            styleFormatCondition2});
             this.gridView11.GridControl = this.gridControl11;
             this.gridView11.Name = "gridView11";
             this.gridView11.OptionsLayout.Columns.AddNewColumns = false;
@@ -2476,23 +2505,23 @@
             // 
             // chartControl1
             // 
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram2;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram1;
             resources.ApplyResources(this.chartControl1, "chartControl1");
             this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartControl1.Name = "chartControl1";
-            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series2.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
-            seriesPoint6,
-            seriesPoint7,
-            seriesPoint8,
-            seriesPoint9,
-            seriesPoint10});
-            series2.View = stackedBarSeriesView2;
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series1.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint1,
+            seriesPoint2,
+            seriesPoint3,
+            seriesPoint4,
+            seriesPoint5});
+            series1.View = stackedBarSeriesView1;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
+        series1};
             this.chartControl1.SeriesTemplate.SeriesColorizer = null;
             // 
             // groupControl4
@@ -2818,6 +2847,35 @@
             this.tab_Param.Name = "tab_Param";
             resources.ApplyResources(this.tab_Param, "tab_Param");
             // 
+            // HizmetReceteKodCocuk
+            // 
+            resources.ApplyResources(this.HizmetReceteKodCocuk, "HizmetReceteKodCocuk");
+            this.HizmetReceteKodCocuk.Name = "HizmetReceteKodCocuk";
+            this.HizmetReceteKodCocuk.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("HizmetReceteKodCocuk.Properties.Buttons"))))});
+            this.HizmetReceteKodCocuk.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("HizmetReceteKodCocuk.Properties.Columns"), resources.GetString("HizmetReceteKodCocuk.Properties.Columns1")),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("HizmetReceteKodCocuk.Properties.Columns2"), resources.GetString("HizmetReceteKodCocuk.Properties.Columns3"), ((int)(resources.GetObject("HizmetReceteKodCocuk.Properties.Columns4"))), ((DevExpress.Utils.FormatType)(resources.GetObject("HizmetReceteKodCocuk.Properties.Columns5"))), resources.GetString("HizmetReceteKodCocuk.Properties.Columns6"), ((bool)(resources.GetObject("HizmetReceteKodCocuk.Properties.Columns7"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("HizmetReceteKodCocuk.Properties.Columns8"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("HizmetReceteKodCocuk.Properties.Columns9"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("HizmetReceteKodCocuk.Properties.Columns10"))))});
+            this.HizmetReceteKodCocuk.Properties.DropDownRows = 18;
+            this.HizmetReceteKodCocuk.Properties.NullText = resources.GetString("HizmetReceteKodCocuk.Properties.NullText");
+            this.HizmetReceteKodCocuk.Properties.ShowFooter = false;
+            this.HizmetReceteKodCocuk.Properties.ShowHeader = false;
+            // 
+            // textEdit45
+            // 
+            resources.ApplyResources(this.textEdit45, "textEdit45");
+            this.textEdit45.Name = "textEdit45";
+            this.textEdit45.Properties.ReadOnly = true;
+            this.textEdit45.TabStop = false;
+            // 
+            // hizmetBedeliAktif
+            // 
+            resources.ApplyResources(this.hizmetBedeliAktif, "hizmetBedeliAktif");
+            this.hizmetBedeliAktif.Name = "hizmetBedeliAktif";
+            this.hizmetBedeliAktif.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("hizmetBedeliAktif.Properties.Appearance.Font")));
+            this.hizmetBedeliAktif.Properties.Appearance.Options.UseFont = true;
+            this.hizmetBedeliAktif.Properties.Caption = resources.GetString("hizmetBedeliAktif.Properties.Caption");
+            // 
             // textEdit12
             // 
             resources.ApplyResources(this.textEdit12, "textEdit12");
@@ -3132,61 +3190,40 @@
             this.chk_Rapor.Name = "chk_Rapor";
             this.chk_Rapor.CheckedChanged += new System.EventHandler(this.checkBtn);
             // 
-            // HizmetReceteKodCocuk
+            // panelControl1
             // 
-            resources.ApplyResources(this.HizmetReceteKodCocuk, "HizmetReceteKodCocuk");
-            this.HizmetReceteKodCocuk.Name = "HizmetReceteKodCocuk";
-            this.HizmetReceteKodCocuk.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
-            this.HizmetReceteKodCocuk.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns"), resources.GetString("lookUpEdit1.Properties.Columns1")),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns2"), resources.GetString("lookUpEdit1.Properties.Columns3"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns4"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns5"))), resources.GetString("lookUpEdit1.Properties.Columns6"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns7"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns8"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEdit1.Properties.Columns9"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEdit1.Properties.Columns10"))))});
-            this.HizmetReceteKodCocuk.Properties.DropDownRows = 18;
-            this.HizmetReceteKodCocuk.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
-            this.HizmetReceteKodCocuk.Properties.ShowFooter = false;
-            this.HizmetReceteKodCocuk.Properties.ShowHeader = false;
+            this.panelControl1.Controls.Add(this.simpleButton11);
+            this.panelControl1.Controls.Add(this.btnKatTanimSil);
+            this.panelControl1.Controls.Add(this.simpleButton9);
+            this.panelControl1.Controls.Add(this.btnKatTanimDuzelt);
+            this.panelControl1.Controls.Add(this.btnKatTanimKartTransfer);
+            this.panelControl1.Controls.Add(this.btnKatTanimBakiyeTransfer);
+            this.panelControl1.Controls.Add(this.simpleButton3);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
+            this.panelControl1.Name = "panelControl1";
             // 
-            // textEdit45
+            // panelControl2
             // 
-            resources.ApplyResources(this.textEdit45, "textEdit45");
-            this.textEdit45.Name = "textEdit45";
-            this.textEdit45.Properties.ReadOnly = true;
-            this.textEdit45.TabStop = false;
+            this.panelControl2.Controls.Add(this.gridControl3);
+            resources.ApplyResources(this.panelControl2, "panelControl2");
+            this.panelControl2.Name = "panelControl2";
             // 
-            // CardF_Cocuk
+            // panelControl3
             // 
-            resources.ApplyResources(this.CardF_Cocuk, "CardF_Cocuk");
-            this.CardF_Cocuk.EnterMoveNextControl = true;
-            this.CardF_Cocuk.Name = "CardF_Cocuk";
-            this.CardF_Cocuk.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.CardF_Cocuk.Properties.MaxLength = 100;
-            // 
-            // textEdit47
-            // 
-            resources.ApplyResources(this.textEdit47, "textEdit47");
-            this.textEdit47.Name = "textEdit47";
-            this.textEdit47.Properties.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textEdit47.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit47.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit47.Properties.ReadOnly = true;
-            this.textEdit47.TabStop = false;
-            // 
-            // gridColumn36
-            // 
-            resources.ApplyResources(this.gridColumn36, "gridColumn36");
-            this.gridColumn36.FieldName = "CardF_Cocuk";
-            this.gridColumn36.Name = "gridColumn36";
+            this.panelControl3.Controls.Add(this.simpleButton4);
+            this.panelControl3.Controls.Add(this.chk_Folio);
+            this.panelControl3.Controls.Add(this.chk_Rapor);
+            this.panelControl3.Controls.Add(this.chk_Bakiye);
+            this.panelControl3.Controls.Add(this.chk_Param);
+            resources.ApplyResources(this.panelControl3, "panelControl3");
+            this.panelControl3.Name = "panelControl3";
             // 
             // Pos_ExtraFolio
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.chk_Rapor);
-            this.Controls.Add(this.chk_Param);
-            this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.xtraTabControl1);
-            this.Controls.Add(this.chk_Bakiye);
-            this.Controls.Add(this.chk_Folio);
+            this.Controls.Add(this.panelControl3);
             this.KeyPreview = true;
             this.Name = "Pos_ExtraFolio";
             this.Load += new System.EventHandler(this.Pos_ExtraFolio_Load);
@@ -3197,6 +3234,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.tab_KartF.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CardF_Cocuk.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit47.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKartFIndirim.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
@@ -3224,7 +3263,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lookCardF_FolioID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CardF_Limit_Uyari.Properties)).EndInit();
             this.tab_BakiyeYukle.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.hizmetBedeliAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_DovizKod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
@@ -3296,9 +3334,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             this.xtraTabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
@@ -3323,6 +3361,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.date_GelirTakip.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.tab_Param.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.HizmetReceteKodCocuk.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit45.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hizmetBedeliAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hizmetOdemeKod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HizmetReceteKod.Properties)).EndInit();
@@ -3351,10 +3392,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_MusteriTipi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HizmetReceteKodCocuk.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit45.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CardF_Cocuk.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit47.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3619,5 +3662,9 @@
         private DevExpress.XtraEditors.TextEdit CardF_Cocuk;
         private DevExpress.XtraEditors.TextEdit textEdit47;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn36;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn37;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
     }
 }

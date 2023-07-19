@@ -758,7 +758,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1003, 0</value>
+    <value>1005, 0</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
     <value>barDockControlTop</value>
@@ -776,10 +776,10 @@
     <value>Bottom</value>
   </data>
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 706</value>
+    <value>0, 711</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1003, 43</value>
+    <value>1005, 42</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -800,7 +800,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 706</value>
+    <value>0, 711</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -818,10 +818,10 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1003, 0</value>
+    <value>1005, 0</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 706</value>
+    <value>0, 711</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
@@ -842,7 +842,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1003, 749</value>
+    <value>1005, 753</value>
   </data>
   <data name="xtraTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1520,7 +1520,7 @@
     <value>GR</value>
   </data>
   <data name="gridControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>997, 522</value>
+    <value>1003, 532</value>
   </data>
   <data name="gridControl11.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1538,7 +1538,7 @@
     <value>0</value>
   </data>
   <data name="tab_Satis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>997, 522</value>
+    <value>1003, 532</value>
   </data>
   <data name="tab_Satis.Text" xml:space="preserve">
     <value>Satış Raporu</value>
@@ -1556,7 +1556,7 @@
     <value>0</value>
   </data>
   <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1003, 550</value>
+    <value>1005, 555</value>
   </data>
   <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5242,7 +5242,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Rapor_Tipi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>843, 2</value>
+    <value>845, 2</value>
   </data>
   <data name="Rapor_Tipi.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -5734,7 +5734,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1003, 156</value>
+    <value>1005, 156</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
