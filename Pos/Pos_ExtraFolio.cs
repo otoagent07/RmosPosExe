@@ -1284,7 +1284,10 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                 this.Cursor = Cursors.Default;
                 if (ID == 0)
                 {
-                    otomatikReceteSatis();
+                    if (Convert.ToInt32(CardF_MusteriTipi.SelectedIndex) == 0)
+                    {
+                        otomatikReceteSatis();
+                    }
 
                     Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Kart, Log.Log_Islem.Kaydet, Convert.ToString(txtCardF_Kartno.Text) + " Nolu Kart Kayıt Edilmiştir", "", Convert.ToString(lookCardF_FolioID.EditValue));
                 }
