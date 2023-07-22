@@ -437,7 +437,7 @@ namespace Pos
         {
             Param_ExtraFolio.Param_ExtraFolioYukle();
 
-            
+
 
             look_Acenta.EditValue = Param_ExtraFolio.Front_Acenta;
             look_DovizSekli.EditValue = Param_ExtraFolio.Front_DovizSekli;
@@ -1259,7 +1259,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                     cmd.Parameters.AddWithValue("@CardF_Kullanici", User.P_Kod);
                     cmd.Parameters.AddWithValue("@CardF_Kisi", txtCardF_Kisi.EditValue);
                     cmd.Parameters.AddWithValue("@CardF_Cocuk", CardF_Cocuk.EditValue);
-                    cmd.Parameters.AddWithValue("@CardF_Indirim", txtKartFIndirim.EditValue.ToString().Replace(",","."));
+                    cmd.Parameters.AddWithValue("@CardF_Indirim", txtKartFIndirim.EditValue.ToString().Replace(",", "."));
 
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -1278,7 +1278,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                     //}
                 }
 
-               
+
 
 
                 this.Cursor = Cursors.Default;
@@ -1771,32 +1771,42 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
         {
             this.Cursor = Cursors.WaitCursor;
 
-            SqlConnection con = dbtools.conn;
-            if (con.State == ConnectionState.Closed) { con.Open(); }
-
             try
             {
-                using (SqlCommand cmd = new SqlCommand("Pos_NFCBakiye_Onburo", dbtools.conn) { CommandType = CommandType.StoredProcedure })
-                {
-                    cmd.Parameters.AddWithValue("@SirketKod", Departman.MKodlar_P_SirketKodu);
-                    cmd.Parameters.AddWithValue("@Tarih", dateEdit2.DateTime.Date);
-                    cmd.Parameters.AddWithValue("@KapatmaKodu", Param_ExtraFolio.Front_GelirIade);
-                    cmd.Parameters.AddWithValue("@Rsat_Garson", User.P_Kod);
-                    cmd.Parameters.AddWithValue("@Departman", Departman.Dep_Kodu);
-                    cmd.Parameters.AddWithValue("@PariteDovizKodu", Param_ExtraFolio.Front_KurKodu);
-                    if (Kart == true) cmd.Parameters.AddWithValue("@CardID", KartID);
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
+                string execc = "exec Pos_NFCBakiye_Onburo @SirketKod=N'" + Departman.MKodlar_P_SirketKodu + "',@Tarih=N'" + dateEdit2.DateTime.ToString("yyyy-MM-dd") + "',@KapatmaKodu=N'" + Param_ExtraFolio.Front_GelirIade + "',@Rsat_Garson=N'" + User.P_Kod + "',@Departman=N'" + Departman.Dep_Kodu + "',@PariteDovizKodu=N'" + Param_ExtraFolio.Front_KurKodu + "'";
+
+                if (Kart)
+                {
+                    execc = "exec Pos_NFCBakiye_Onburo @SirketKod=N'" + Departman.MKodlar_P_SirketKodu + "',@Tarih=N'" + dateEdit2.DateTime.ToString("yyyy-MM-dd") + "',@KapatmaKodu=N'" + Param_ExtraFolio.Front_GelirIade + "',@Rsat_Garson=N'" + User.P_Kod + "',@Departman=N'" + Departman.Dep_Kodu + "',@PariteDovizKodu=N'" + Param_ExtraFolio.Front_KurKodu + "', @CardID='" + KartID + "'";
                 }
+
+                dbtools.execcmdR(execc);
+                //SqlConnection con = dbtools.conn;
+                //if (con.State == ConnectionState.Closed) { con.Open(); }
+
+
+                //using (SqlCommand cmd = new SqlCommand("Pos_NFCBakiye_Onburo", dbtools.conn) { CommandType = CommandType.StoredProcedure })
+                //{
+                //    cmd.Parameters.AddWithValue("@SirketKod", Departman.MKodlar_P_SirketKodu);
+                //    cmd.Parameters.AddWithValue("@Tarih", dateEdit2.DateTime.ToString("yyyy-MM-dd"));
+                //    cmd.Parameters.AddWithValue("@KapatmaKodu", Param_ExtraFolio.Front_GelirIade);
+                //    cmd.Parameters.AddWithValue("@Rsat_Garson", User.P_Kod);
+                //    cmd.Parameters.AddWithValue("@Departman", Departman.Dep_Kodu);
+                //    cmd.Parameters.AddWithValue("@PariteDovizKodu", Param_ExtraFolio.Front_KurKodu);
+                //    if (Kart == true) cmd.Parameters.AddWithValue("@CardID", KartID);
+
+                //    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //    DataTable dt = new DataTable();
+                //    da.Fill(dt);
+                //}
 
 
 
             }
             catch (Exception x)
             {
-                //MessageBox.Show(res_man.GetString("Hata Mesajı..") + "\n" + x.Message);
+                MessageBox.Show(x.Message);
 
             }
             finally

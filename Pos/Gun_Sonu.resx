@@ -122,13 +122,17 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>14, 15</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textEdit1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
+    <value>135, 26</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
@@ -150,13 +154,16 @@
     <value>Kullanıcı Şifresi</value>
   </data>
   <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 41</value>
+    <value>14, 50</value>
+  </data>
+  <data name="textEdit2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit2.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
+    <value>135, 26</value>
   </data>
   <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -177,13 +184,16 @@
     <value>Gün Sonu Şifresi</value>
   </data>
   <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 70</value>
+    <value>14, 86</value>
+  </data>
+  <data name="textEdit3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit3.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
+    <value>135, 26</value>
   </data>
   <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -201,13 +211,16 @@
     <value>11</value>
   </data>
   <data name="txt_Gunsonusifre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 70</value>
+    <value>150, 86</value>
+  </data>
+  <data name="txt_Gunsonusifre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txt_Gunsonusifre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="txt_Gunsonusifre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+    <value>189, 26</value>
   </data>
   <data name="txt_Gunsonusifre.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -225,13 +238,16 @@
     <value>9</value>
   </data>
   <data name="txt_Kulsifre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 41</value>
+    <value>150, 50</value>
+  </data>
+  <data name="txt_Kulsifre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="txt_Kulsifre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="txt_Kulsifre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+    <value>189, 26</value>
   </data>
   <data name="txt_Kulsifre.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -248,12 +264,14 @@
   <data name="&gt;&gt;txt_Kulsifre.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dateTarih.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="dateTarih.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 12</value>
+    <value>150, 15</value>
+  </data>
+  <data name="dateTarih.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="dateTarih.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -269,7 +287,7 @@
     <value />
   </data>
   <data name="dateTarih.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+    <value>189, 26</value>
   </data>
   <data name="dateTarih.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -316,10 +334,13 @@
 </value>
   </data>
   <data name="btn_Gunsonu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 416</value>
+    <value>14, 512</value>
+  </data>
+  <data name="btn_Gunsonu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_Gunsonu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 46</value>
+    <value>362, 57</value>
   </data>
   <data name="btn_Gunsonu.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -359,10 +380,13 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 416</value>
+    <value>383, 512</value>
+  </data>
+  <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 46</value>
+    <value>362, 57</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -386,10 +410,13 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_Kulara.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 42</value>
+    <value>346, 52</value>
+  </data>
+  <data name="btn_Kulara.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_Kulara.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 22</value>
+    <value>47, 27</value>
   </data>
   <data name="btn_Kulara.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -413,10 +440,13 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_Gunsonusifre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 71</value>
+    <value>346, 87</value>
+  </data>
+  <data name="btn_Gunsonusifre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_Gunsonusifre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 22</value>
+    <value>47, 27</value>
   </data>
   <data name="btn_Gunsonusifre.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -445,6 +475,9 @@
   <data name="gridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="gridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
   <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -453,19 +486,19 @@
     <value>Application</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 99</value>
+    <value>14, 122</value>
   </data>
   <data name="gridColumn1.Caption" xml:space="preserve">
     <value>Durum</value>
   </data>
   <data name="gridColumn1.Width" type="System.Int32, mscorlib">
-    <value>133</value>
+    <value>155</value>
   </data>
   <data name="gridColumn2.Caption" xml:space="preserve">
     <value>Tarih</value>
   </data>
   <data name="gridColumn2.Width" type="System.Int32, mscorlib">
-    <value>257</value>
+    <value>300</value>
   </data>
   <data name="gridColumn3.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -477,7 +510,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn3.Width" type="System.Int32, mscorlib">
-    <value>340</value>
+    <value>397</value>
   </data>
   <data name="gridColumn4.Caption" xml:space="preserve">
     <value>Fisno</value>
@@ -489,10 +522,13 @@
     <value>2</value>
   </data>
   <data name="gridColumn4.Width" type="System.Int32, mscorlib">
-    <value>168</value>
+    <value>196</value>
   </data>
   <data name="gridColumn5.Caption" xml:space="preserve">
     <value>Recete</value>
+  </data>
+  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
+    <value>87</value>
   </data>
   <data name="gridColumn6.Caption" xml:space="preserve">
     <value>Urun</value>
@@ -504,7 +540,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn6.Width" type="System.Int32, mscorlib">
-    <value>514</value>
+    <value>600</value>
   </data>
   <data name="gridColumn7.Caption" xml:space="preserve">
     <value>Miktar</value>
@@ -516,13 +552,13 @@
     <value>4</value>
   </data>
   <data name="gridColumn7.Width" type="System.Int32, mscorlib">
-    <value>262</value>
+    <value>306</value>
   </data>
   <data name="gridColumn8.Caption" xml:space="preserve">
     <value>Tutar</value>
   </data>
   <data name="gridColumn8.Width" type="System.Int32, mscorlib">
-    <value>294</value>
+    <value>343</value>
   </data>
   <data name="gridColumn9.Caption" xml:space="preserve">
     <value>Masa</value>
@@ -534,13 +570,16 @@
     <value>1</value>
   </data>
   <data name="gridColumn9.Width" type="System.Int32, mscorlib">
-    <value>156</value>
+    <value>182</value>
   </data>
   <data name="gridView1.ViewCaption" xml:space="preserve">
     <value>Açık Çekler</value>
   </data>
+  <data name="gridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>626, 311</value>
+    <value>730, 383</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -561,7 +600,10 @@
     <value>True</value>
   </data>
   <data name="chk_Kurlar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 44</value>
+    <value>400, 54</value>
+  </data>
+  <data name="chk_Kurlar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="chk_Kurlar.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
@@ -570,7 +612,7 @@
     <value>Kurları Sonraki Güne Aktar</value>
   </data>
   <data name="chk_Kurlar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 20</value>
+    <value>247, 25</value>
   </data>
   <data name="chk_Kurlar.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -588,10 +630,13 @@
     <value>2</value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>443, 11</value>
+    <value>517, 14</value>
+  </data>
+  <data name="simpleButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 23</value>
+    <value>227, 28</value>
   </data>
   <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -614,8 +659,11 @@
   <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="gridControlCariRap3.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
   <data name="gridControlCariRap3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 178</value>
+    <value>295, 219</value>
   </data>
   <data name="gridColumn65.Caption" xml:space="preserve">
     <value>CariId</value>
@@ -625,6 +673,9 @@
   </data>
   <data name="gridColumn65.VisibleIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="gridColumn65.Width" type="System.Int32, mscorlib">
+    <value>87</value>
   </data>
   <data name="gridColumn66.Caption" xml:space="preserve">
     <value>Ad</value>
@@ -636,7 +687,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn66.Width" type="System.Int32, mscorlib">
-    <value>200</value>
+    <value>233</value>
   </data>
   <data name="gridColumn67.Caption" xml:space="preserve">
     <value>Soyad</value>
@@ -648,7 +699,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn67.Width" type="System.Int32, mscorlib">
-    <value>200</value>
+    <value>233</value>
   </data>
   <data name="gridColumn68.Caption" xml:space="preserve">
     <value>Bakiye</value>
@@ -669,10 +720,13 @@
     <value>3</value>
   </data>
   <data name="gridColumn68.Width" type="System.Int32, mscorlib">
-    <value>183</value>
+    <value>213</value>
+  </data>
+  <data name="gridControlCariRap3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControlCariRap3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 123</value>
+    <value>170, 151</value>
   </data>
   <data name="gridControlCariRap3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -696,10 +750,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>7, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>652, 478</value>
+    <value>761, 588</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
