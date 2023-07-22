@@ -1340,10 +1340,12 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
 
         private void CardF_Listele()
         {
+            string girTar = txtCardF_GirisTrh.DateTime.ToString("yyyy-MM-dd");
+            string cikTar = txtCardF_CikisTrh.DateTime.ToString("yyyy-MM-dd");
             gridControl3.DataSource = Fronttools.SelectTable(@"SELECT [ID]
                                           ,[CardF_No]
                                  ,case when CardF_MusteriTipi ='GB' then 
-										  (select SUM(Kumhrk_Tutar) as Tahsilat from kumhrk where Kumhrk_Kartno=CardF_No  and kumhrk_ba='A' )
+										  (select SUM(Kumhrk_Tutar) as Tahsilat from kumhrk where Kumhrk_Kartno=CardF_No  and kumhrk_ba='A' and Kumhrk_Tarih between '"+ girTar + @"' and '"+cikTar+@"' )
 										  else '0'
 										  end as Tahsilat
                                           ,[CardF_RezID]

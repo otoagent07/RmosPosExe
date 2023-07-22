@@ -3106,7 +3106,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_BakiyeYukle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1179, 828</value>
+    <value>1174, 822</value>
   </data>
   <data name="tab_BakiyeYukle.Text" xml:space="preserve">
     <value>xtraTabPage2</value>
@@ -3145,7 +3145,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 424</value>
+    <value>1172, 418</value>
   </data>
   <data name="gridControl4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3169,13 +3169,13 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 577</value>
+    <value>0, 571</value>
   </data>
   <data name="gridControl5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 223</value>
+    <value>1172, 223</value>
   </data>
   <data name="gridControl5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3491,7 +3491,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 153</value>
+    <value>1172, 153</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3512,7 +3512,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 800</value>
+    <value>1172, 794</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Raporlar</value>
@@ -3530,7 +3530,7 @@ Detayı</value>
     <value>0</value>
   </data>
   <data name="xtraTabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1179, 828</value>
+    <value>1174, 822</value>
   </data>
   <data name="xtraTabControl2.TabIndex" type="System.Int32, mscorlib">
     <value>214</value>
@@ -4163,7 +4163,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 645</value>
+    <value>1167, 633</value>
   </data>
   <data name="gridControl11.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4564,7 +4564,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 155</value>
+    <value>1167, 155</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4585,7 +4585,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 800</value>
+    <value>1167, 788</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>NFC Raporlar</value>
@@ -4615,7 +4615,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 645</value>
+    <value>1167, 633</value>
   </data>
   <data name="gridControl7.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4920,7 +4920,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 155</value>
+    <value>1167, 155</value>
   </data>
   <data name="groupControl7.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4941,7 +4941,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="xtraTabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 800</value>
+    <value>1167, 788</value>
   </data>
   <data name="xtraTabPage5.Text" xml:space="preserve">
     <value>NFC Raporlar 2</value>
@@ -4968,7 +4968,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="chartControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 498</value>
+    <value>1167, 486</value>
   </data>
   <data name="chartControl1.TabIndex" type="System.Int32, mscorlib">
     <value>209</value>
@@ -5052,7 +5052,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>999, 183</value>
+    <value>989, 183</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>210</value>
@@ -5093,7 +5093,7 @@ Detayı</value>
 </value>
   </data>
   <data name="simpleButton24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1001, 27</value>
+    <value>991, 27</value>
   </data>
   <data name="simpleButton24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -5166,7 +5166,7 @@ Detayı</value>
 </value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1088, 27</value>
+    <value>1078, 27</value>
   </data>
   <data name="simpleButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -5196,13 +5196,13 @@ Detayı</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 588</value>
+    <value>0, 576</value>
   </data>
   <data name="groupControl4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 212</value>
+    <value>1167, 212</value>
   </data>
   <data name="groupControl4.TabIndex" type="System.Int32, mscorlib">
     <value>211</value>
@@ -5420,7 +5420,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 90</value>
+    <value>1167, 90</value>
   </data>
   <data name="groupControl3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5441,7 +5441,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 800</value>
+    <value>1167, 788</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Forecast</value>
@@ -5591,7 +5591,7 @@ Detayı</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 673</value>
+    <value>1167, 661</value>
   </data>
   <data name="gridControl6.TabIndex" type="System.Int32, mscorlib">
     <value>211</value>
@@ -5810,7 +5810,7 @@ Uygula</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 127</value>
+    <value>1167, 127</value>
   </data>
   <data name="groupControl5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5831,7 +5831,7 @@ Uygula</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1177, 800</value>
+    <value>1167, 788</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
     <value>Gelir Takibi</value>
@@ -5864,7 +5864,7 @@ Uygula</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Rapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1179, 828</value>
+    <value>1174, 822</value>
   </data>
   <data name="tab_Rapor.Text" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -6925,7 +6925,7 @@ Uygula</value>
     <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Param.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1179, 828</value>
+    <value>1174, 822</value>
   </data>
   <data name="tab_Param.Text" xml:space="preserve">
     <value>xtraTabPage1</value>
