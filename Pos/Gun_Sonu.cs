@@ -178,8 +178,9 @@ namespace Pos
 
 
                 string cariBakiyeKontrolPath = cariRapGoster(true);
+                string muhrapor1 = muhasebeRapor(true);
                 //Mail Gönder
-                Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: cariBakiyeKontrolPath);
+                Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: cariBakiyeKontrolPath,muhRapor:muhrapor1);
 
                 StatikSinif.shrinkData();
 
@@ -270,6 +271,83 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari";
             return "";
         }
 
+
+        public string muhasebeRapor(bool mailGitsin = true)
+        {
+            try
+            {
+                string tarih = dateTarih.DateTime.ToString("yyyy-MM-dd");
+                string query = @"declare @Fis_Tutar decimal(18,2) = (select SUM(Satis.Rsat_Tutar)   
+FROM Cst_Recete_Satis as satis WITH(NOLOCK) 
+LEFT JOIN Pos_Kodlar as  kodlar WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' and Pkod_Ozelkod <> '4'
+where  Satis.Rsat_Ba = 'B' )  declare @Katsayi decimal(18,8) = (0 / @Fis_Tutar )  
+if @Katsayi = 0 begin set @Katsayi = 1 end  SELECT MIN(convert(date,Rsat_Tarih)) as Rsat_Tarih,
+Kodlar_Ad + ' BEDELI' as Aciklama,
+MIN(Rsat_Kdvoran) as Rec_Kdv,      
+((SUM(Rsat_Tutar) * 100 / (100 + MIN(Rsat_Kdvoran))) * MIN(Rsat_Kdvoran) / 100) * @Katsayi as Kdv,       
+(SUM(Rsat_Tutar) * 100 / (100 + MIN(Rsat_Kdvoran))) * @Katsayi as Net,      
+(SUM(Rsat_Tutar)) * @Katsayi as Tutar
+FROM Cst_Recete_Satis WITH(NOLOCK)      
+LEFT JOIN Cst_Recete WITH(NOLOCK) on Rec_Genelkod = Rsat_Recete      
+LEFT JOIN Stok_Kodlar WITH(NOLOCK) on Rec_Urungrup = Kodlar_Kod AND Kodlar_Sinif = '10'  
+WHERE Rsat_Tarih='"+ tarih + @"' AND Rsat_Ba = 'B' and Rsat_Satistip<>'O'
+GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
+
+                DataTable dataTable = dbtools.SelectTableR(query);
+
+                decimal brutToplam = 0;
+                decimal netToplam = 0;
+                if (dataTable != null && dataTable.Rows.Count > 0)
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        brutToplam += Convert.ToDecimal(row["Tutar"].ToString());
+                        netToplam += Convert.ToDecimal(row["Net"].ToString());
+                    }
+
+                MuhasebeRapor rapor = new MuhasebeRapor();
+                rapor.DataSource = dataTable;
+                rapor.txtTarih.Text = DateTime.Now.ToString("dd.MM.yyyy");
+                rapor.txtDepAd.Text = Departman.Dep_Adi;
+                rapor.txtBrutToplam.Text = brutToplam.ToString();
+                rapor.txtNetToplam.Text = netToplam.ToString();
+
+
+                string klasor = "CariRapor";
+                if (!Directory.Exists(klasor))
+                {
+                    Directory.CreateDirectory(klasor);
+                }
+
+                string path = klasor + "\\" + DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss") + "_muh.pdf";
+
+                gridControlMuh.DataSource = dataTable;
+
+                gridviewCountYaz(gridViewMuh);
+
+                rapor.ExportToPdf(path);
+
+                //gridViewMuh.ExportToPdf(path);
+
+                if (mailGitsin)
+                {
+                    // Mail_Gonder(path);
+                }
+                else
+                {
+                    rapor.ShowPreview();
+                }
+
+
+                return path;
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError("Rapor_Sec", "muhasebeRapor", "", ex);
+            }
+
+            return "";
+        }
+
         public void gridviewCountYaz(GridView grid)
         {
             if (grid.Columns.Count > 0)
@@ -331,7 +409,7 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari";
 
         public string MyClass = "Gun_Sonu";
 
-        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "")
+        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "",string muhRapor="")
         {
 
             try
@@ -472,6 +550,12 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari";
                                 ePosta.Attachments.Add(bakiyeKontrol);
                             }
 
+                            if (muhRapor != "")
+                            {
+                                Attachment bakiyeKontrol = new Attachment(muhRapor);
+                                bakiyeKontrol.Name = "MuhasebeRapor.pdf";
+                                ePosta.Attachments.Add(bakiyeKontrol);
+                            }
 
                             string mailbody = Mail_Detay(tarih);
 

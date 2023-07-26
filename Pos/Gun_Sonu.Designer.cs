@@ -58,6 +58,13 @@
             this.gridColumn66 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn67 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn68 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
+            this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
@@ -70,6 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Kurlar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlCariRap3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCariRap3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).BeginInit();
             this.SuspendLayout();
             // 
             // textEdit1
@@ -180,7 +189,6 @@
             this.gridControl1.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl1.EmbeddedNavigator.Anchor")));
             this.gridControl1.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImageLayout")));
             this.gridControl1.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl1.EmbeddedNavigator.ImeMode")));
-            this.gridControl1.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl1.EmbeddedNavigator.Margin")));
             this.gridControl1.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl1.EmbeddedNavigator.TextLocation")));
             this.gridControl1.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl1.EmbeddedNavigator.ToolTipIconType")));
             resources.ApplyResources(this.gridControl1, "gridControl1");
@@ -201,7 +209,6 @@
             this.gridColumn7,
             this.gridColumn8,
             this.gridColumn9});
-            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.AllowCellMerge = true;
@@ -214,7 +221,6 @@
             // 
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
             this.gridColumn1.FieldName = "Rsat_Durum";
-            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             // 
@@ -222,7 +228,6 @@
             // 
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
             this.gridColumn2.FieldName = "Rsat_Tarih";
-            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
@@ -230,7 +235,6 @@
             // 
             resources.ApplyResources(this.gridColumn3, "gridColumn3");
             this.gridColumn3.FieldName = "Kodlar_Ad";
-            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             // 
@@ -238,7 +242,6 @@
             // 
             resources.ApplyResources(this.gridColumn4, "gridColumn4");
             this.gridColumn4.FieldName = "Rsat_Fisno";
-            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             // 
@@ -246,7 +249,6 @@
             // 
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
             this.gridColumn5.FieldName = "Rsat_Recete";
-            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             this.gridColumn5.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
@@ -255,7 +257,6 @@
             // 
             resources.ApplyResources(this.gridColumn6, "gridColumn6");
             this.gridColumn6.FieldName = "Rec_Ad";
-            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowFocus = false;
             this.gridColumn6.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
@@ -264,7 +265,6 @@
             // 
             resources.ApplyResources(this.gridColumn7, "gridColumn7");
             this.gridColumn7.FieldName = "Rsat_Miktar";
-            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             this.gridColumn7.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
@@ -275,7 +275,6 @@
             this.gridColumn8.DisplayFormat.FormatString = "N2";
             this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn8.FieldName = "Rsat_Tutar";
-            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowFocus = false;
             this.gridColumn8.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
@@ -284,7 +283,6 @@
             // 
             resources.ApplyResources(this.gridColumn9, "gridColumn9");
             this.gridColumn9.FieldName = "Rsat_Masa";
-            this.gridColumn9.MinWidth = 23;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
@@ -304,7 +302,6 @@
             // 
             // gridControlCariRap3
             // 
-            this.gridControlCariRap3.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControlCariRap3, "gridControlCariRap3");
             this.gridControlCariRap3.MainView = this.gridViewCariRap3;
             this.gridControlCariRap3.Name = "gridControlCariRap3";
@@ -318,7 +315,6 @@
             this.gridColumn66,
             this.gridColumn67,
             this.gridColumn68});
-            this.gridViewCariRap3.DetailHeight = 431;
             this.gridViewCariRap3.GridControl = this.gridControlCariRap3;
             this.gridViewCariRap3.Name = "gridViewCariRap3";
             this.gridViewCariRap3.OptionsView.ColumnAutoWidth = false;
@@ -330,37 +326,89 @@
             // 
             resources.ApplyResources(this.gridColumn65, "gridColumn65");
             this.gridColumn65.FieldName = "CariId";
-            this.gridColumn65.MinWidth = 23;
             this.gridColumn65.Name = "gridColumn65";
             // 
             // gridColumn66
             // 
             resources.ApplyResources(this.gridColumn66, "gridColumn66");
             this.gridColumn66.FieldName = "Ad";
-            this.gridColumn66.MinWidth = 23;
             this.gridColumn66.Name = "gridColumn66";
             // 
             // gridColumn67
             // 
             resources.ApplyResources(this.gridColumn67, "gridColumn67");
             this.gridColumn67.FieldName = "Soyad";
-            this.gridColumn67.MinWidth = 23;
             this.gridColumn67.Name = "gridColumn67";
             // 
             // gridColumn68
             // 
             resources.ApplyResources(this.gridColumn68, "gridColumn68");
             this.gridColumn68.FieldName = "Bakiye";
-            this.gridColumn68.MinWidth = 23;
             this.gridColumn68.Name = "gridColumn68";
             this.gridColumn68.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn68.Summary"))), resources.GetString("gridColumn68.Summary1"), resources.GetString("gridColumn68.Summary2"))});
+            // 
+            // gridControlMuh
+            // 
+            resources.ApplyResources(this.gridControlMuh, "gridControlMuh");
+            this.gridControlMuh.MainView = this.gridViewMuh;
+            this.gridControlMuh.Name = "gridControlMuh";
+            this.gridControlMuh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewMuh});
+            // 
+            // gridViewMuh
+            // 
+            this.gridViewMuh.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn10,
+            this.gridColumn11,
+            this.gridColumn12,
+            this.gridColumn13,
+            this.gridColumn14});
+            this.gridViewMuh.GridControl = this.gridControlMuh;
+            this.gridViewMuh.Name = "gridViewMuh";
+            this.gridViewMuh.OptionsView.ColumnAutoWidth = false;
+            this.gridViewMuh.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewMuh.OptionsView.ShowFooter = true;
+            this.gridViewMuh.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn10
+            // 
+            resources.ApplyResources(this.gridColumn10, "gridColumn10");
+            this.gridColumn10.FieldName = "Aciklama";
+            this.gridColumn10.Name = "gridColumn10";
+            // 
+            // gridColumn11
+            // 
+            resources.ApplyResources(this.gridColumn11, "gridColumn11");
+            this.gridColumn11.FieldName = "Rec_Kdv";
+            this.gridColumn11.Name = "gridColumn11";
+            // 
+            // gridColumn12
+            // 
+            resources.ApplyResources(this.gridColumn12, "gridColumn12");
+            this.gridColumn12.FieldName = "Kdv";
+            this.gridColumn12.Name = "gridColumn12";
+            // 
+            // gridColumn13
+            // 
+            resources.ApplyResources(this.gridColumn13, "gridColumn13");
+            this.gridColumn13.FieldName = "Net";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn13.Summary"))), resources.GetString("gridColumn13.Summary1"), resources.GetString("gridColumn13.Summary2"))});
+            // 
+            // gridColumn14
+            // 
+            resources.ApplyResources(this.gridColumn14, "gridColumn14");
+            this.gridColumn14.FieldName = "Tutar";
+            this.gridColumn14.Name = "gridColumn14";
             // 
             // Gun_Sonu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.gridControlMuh);
             this.Controls.Add(this.gridControlCariRap3);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.chk_Kurlar);
@@ -389,6 +437,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Kurlar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlCariRap3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCariRap3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -424,5 +474,12 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn66;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn67;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn68;
+        private DevExpress.XtraGrid.GridControl gridControlMuh;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewMuh;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
     }
 }

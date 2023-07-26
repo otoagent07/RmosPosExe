@@ -122,17 +122,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 15</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textEdit1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>12, 12</value>
   </data>
   <data name="textEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 26</value>
+    <value>116, 22</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
@@ -148,22 +144,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="textEdit2.EditValue" xml:space="preserve">
     <value>Kullanıcı Şifresi</value>
   </data>
   <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 50</value>
-  </data>
-  <data name="textEdit2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>12, 41</value>
   </data>
   <data name="textEdit2.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 26</value>
+    <value>116, 22</value>
   </data>
   <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -178,22 +171,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="textEdit3.EditValue" xml:space="preserve">
     <value>Gün Sonu Şifresi</value>
   </data>
   <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 86</value>
-  </data>
-  <data name="textEdit3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>12, 70</value>
   </data>
   <data name="textEdit3.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 26</value>
+    <value>116, 22</value>
   </data>
   <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -208,19 +198,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="txt_Gunsonusifre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 86</value>
-  </data>
-  <data name="txt_Gunsonusifre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>129, 70</value>
   </data>
   <data name="txt_Gunsonusifre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="txt_Gunsonusifre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 26</value>
+    <value>162, 22</value>
   </data>
   <data name="txt_Gunsonusifre.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -235,19 +222,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_Gunsonusifre.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="txt_Kulsifre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="txt_Kulsifre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>129, 41</value>
   </data>
   <data name="txt_Kulsifre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="txt_Kulsifre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 26</value>
+    <value>162, 22</value>
   </data>
   <data name="txt_Kulsifre.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -262,16 +246,14 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_Kulsifre.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dateTarih.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="dateTarih.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 15</value>
-  </data>
-  <data name="dateTarih.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>129, 12</value>
   </data>
   <data name="dateTarih.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -287,7 +269,7 @@
     <value />
   </data>
   <data name="dateTarih.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 26</value>
+    <value>162, 22</value>
   </data>
   <data name="dateTarih.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -302,7 +284,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dateTarih.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="btn_Gunsonu.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -334,13 +316,10 @@
 </value>
   </data>
   <data name="btn_Gunsonu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 512</value>
-  </data>
-  <data name="btn_Gunsonu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>12, 416</value>
   </data>
   <data name="btn_Gunsonu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 57</value>
+    <value>310, 46</value>
   </data>
   <data name="btn_Gunsonu.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -358,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Gunsonu.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="btn_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -380,13 +359,10 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 512</value>
-  </data>
-  <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>328, 416</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 57</value>
+    <value>310, 46</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -404,19 +380,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btn_Kulara.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_Kulara.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 52</value>
-  </data>
-  <data name="btn_Kulara.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>297, 42</value>
   </data>
   <data name="btn_Kulara.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 27</value>
+    <value>40, 22</value>
   </data>
   <data name="btn_Kulara.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -434,19 +407,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Kulara.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btn_Gunsonusifre.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_Gunsonusifre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 87</value>
-  </data>
-  <data name="btn_Gunsonusifre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>297, 71</value>
   </data>
   <data name="btn_Gunsonusifre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 27</value>
+    <value>40, 22</value>
   </data>
   <data name="btn_Gunsonusifre.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -464,7 +434,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Gunsonusifre.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -475,9 +445,6 @@
   <data name="gridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="gridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
   <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -486,19 +453,19 @@
     <value>Application</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 122</value>
+    <value>12, 99</value>
   </data>
   <data name="gridColumn1.Caption" xml:space="preserve">
     <value>Durum</value>
   </data>
   <data name="gridColumn1.Width" type="System.Int32, mscorlib">
-    <value>155</value>
+    <value>133</value>
   </data>
   <data name="gridColumn2.Caption" xml:space="preserve">
     <value>Tarih</value>
   </data>
   <data name="gridColumn2.Width" type="System.Int32, mscorlib">
-    <value>300</value>
+    <value>257</value>
   </data>
   <data name="gridColumn3.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -510,7 +477,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn3.Width" type="System.Int32, mscorlib">
-    <value>397</value>
+    <value>340</value>
   </data>
   <data name="gridColumn4.Caption" xml:space="preserve">
     <value>Fisno</value>
@@ -522,13 +489,10 @@
     <value>2</value>
   </data>
   <data name="gridColumn4.Width" type="System.Int32, mscorlib">
-    <value>196</value>
+    <value>168</value>
   </data>
   <data name="gridColumn5.Caption" xml:space="preserve">
     <value>Recete</value>
-  </data>
-  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
-    <value>87</value>
   </data>
   <data name="gridColumn6.Caption" xml:space="preserve">
     <value>Urun</value>
@@ -540,7 +504,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn6.Width" type="System.Int32, mscorlib">
-    <value>600</value>
+    <value>514</value>
   </data>
   <data name="gridColumn7.Caption" xml:space="preserve">
     <value>Miktar</value>
@@ -552,13 +516,13 @@
     <value>4</value>
   </data>
   <data name="gridColumn7.Width" type="System.Int32, mscorlib">
-    <value>306</value>
+    <value>262</value>
   </data>
   <data name="gridColumn8.Caption" xml:space="preserve">
     <value>Tutar</value>
   </data>
   <data name="gridColumn8.Width" type="System.Int32, mscorlib">
-    <value>343</value>
+    <value>294</value>
   </data>
   <data name="gridColumn9.Caption" xml:space="preserve">
     <value>Masa</value>
@@ -570,16 +534,13 @@
     <value>1</value>
   </data>
   <data name="gridColumn9.Width" type="System.Int32, mscorlib">
-    <value>182</value>
+    <value>156</value>
   </data>
   <data name="gridView1.ViewCaption" xml:space="preserve">
     <value>Açık Çekler</value>
   </data>
-  <data name="gridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>730, 383</value>
+    <value>626, 311</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -594,16 +555,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chk_Kurlar.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chk_Kurlar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 54</value>
-  </data>
-  <data name="chk_Kurlar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>343, 44</value>
   </data>
   <data name="chk_Kurlar.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
@@ -612,7 +570,7 @@
     <value>Kurları Sonraki Güne Aktar</value>
   </data>
   <data name="chk_Kurlar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 25</value>
+    <value>212, 20</value>
   </data>
   <data name="chk_Kurlar.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -627,16 +585,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Kurlar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 14</value>
-  </data>
-  <data name="simpleButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>443, 11</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 28</value>
+    <value>195, 23</value>
   </data>
   <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -657,13 +612,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gridControlCariRap3.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>2</value>
   </data>
   <data name="gridControlCariRap3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 219</value>
+    <value>253, 178</value>
   </data>
   <data name="gridColumn65.Caption" xml:space="preserve">
     <value>CariId</value>
@@ -673,9 +625,6 @@
   </data>
   <data name="gridColumn65.VisibleIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="gridColumn65.Width" type="System.Int32, mscorlib">
-    <value>87</value>
   </data>
   <data name="gridColumn66.Caption" xml:space="preserve">
     <value>Ad</value>
@@ -687,7 +636,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn66.Width" type="System.Int32, mscorlib">
-    <value>233</value>
+    <value>200</value>
   </data>
   <data name="gridColumn67.Caption" xml:space="preserve">
     <value>Soyad</value>
@@ -699,7 +648,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn67.Width" type="System.Int32, mscorlib">
-    <value>233</value>
+    <value>200</value>
   </data>
   <data name="gridColumn68.Caption" xml:space="preserve">
     <value>Bakiye</value>
@@ -720,13 +669,10 @@
     <value>3</value>
   </data>
   <data name="gridColumn68.Width" type="System.Int32, mscorlib">
-    <value>213</value>
-  </data>
-  <data name="gridControlCariRap3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>183</value>
   </data>
   <data name="gridControlCariRap3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 151</value>
+    <value>146, 123</value>
   </data>
   <data name="gridControlCariRap3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -744,19 +690,103 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gridControlCariRap3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gridControlMuh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 210</value>
+  </data>
+  <data name="gridColumn10.Caption" xml:space="preserve">
+    <value>Aciklama</value>
+  </data>
+  <data name="gridColumn10.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn10.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn11.Caption" xml:space="preserve">
+    <value>Kdv Oran</value>
+  </data>
+  <data name="gridColumn11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn11.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn11.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="gridColumn12.Caption" xml:space="preserve">
+    <value>Kdv Tutar</value>
+  </data>
+  <data name="gridColumn12.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn12.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn12.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="gridColumn13.Caption" xml:space="preserve">
+    <value>Net</value>
+  </data>
+  <data name="gridColumn13.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn13.Summary1" xml:space="preserve">
+    <value>Bakiye</value>
+  </data>
+  <data name="gridColumn13.Summary2" xml:space="preserve">
+    <value>TOPLAM={0:0.##}</value>
+  </data>
+  <data name="gridColumn13.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn13.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn13.Width" type="System.Int32, mscorlib">
+    <value>183</value>
+  </data>
+  <data name="gridColumn14.Caption" xml:space="preserve">
+    <value>Tutar</value>
+  </data>
+  <data name="gridColumn14.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn14.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridControlMuh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 157</value>
+  </data>
+  <data name="gridControlMuh.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="gridControlMuh.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;gridControlMuh.Name" xml:space="preserve">
+    <value>gridControlMuh</value>
+  </data>
+  <data name="&gt;&gt;gridControlMuh.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControlMuh.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridControlMuh.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>761, 588</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>652, 478</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -852,6 +882,42 @@
     <value>gridColumn68</value>
   </data>
   <data name="&gt;&gt;gridColumn68.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridViewMuh.Name" xml:space="preserve">
+    <value>gridViewMuh</value>
+  </data>
+  <data name="&gt;&gt;gridViewMuh.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Name" xml:space="preserve">
+    <value>gridColumn10</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Name" xml:space="preserve">
+    <value>gridColumn11</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn12.Name" xml:space="preserve">
+    <value>gridColumn12</value>
+  </data>
+  <data name="&gt;&gt;gridColumn12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn13.Name" xml:space="preserve">
+    <value>gridColumn13</value>
+  </data>
+  <data name="&gt;&gt;gridColumn13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn14.Name" xml:space="preserve">
+    <value>gridColumn14</value>
+  </data>
+  <data name="&gt;&gt;gridColumn14.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

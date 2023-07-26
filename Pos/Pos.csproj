@@ -433,6 +433,12 @@
     <Compile Include="ParcaliOdeme.Designer.cs">
       <DependentUpon>ParcaliOdeme.cs</DependentUpon>
     </Compile>
+    <Compile Include="Print\MuhasebeRapor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\MuhasebeRapor.Designer.cs">
+      <DependentUpon>MuhasebeRapor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Print\CariBakiyeKontrolRapor.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1738,6 +1744,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Adisyon.resx">
       <DependentUpon>Adisyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\MuhasebeRapor.resx">
+      <DependentUpon>MuhasebeRapor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\CariBakiyeKontrolRapor.resx">
       <DependentUpon>CariBakiyeKontrolRapor.cs</DependentUpon>
