@@ -120,6 +120,10 @@ namespace Pos
             raporKasa.ShowPreview();
 
             cariRapGoster(false);
+
+
+
+            g.muhasebeRapor(false);
             this.Close();
         }
 

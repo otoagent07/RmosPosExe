@@ -7,6 +7,7 @@ using Pos.Class;
 using Pos.Forms;
 using Pos.Print;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
@@ -178,9 +179,9 @@ namespace Pos
 
 
                 string cariBakiyeKontrolPath = cariRapGoster(true);
-                string muhrapor1 = muhasebeRapor(true);
+               var muhrapor1 = muhasebeRapor(true);
                 //Mail Gönder
-                Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: cariBakiyeKontrolPath,muhRapor:muhrapor1);
+                Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: cariBakiyeKontrolPath, muhRapor: muhrapor1);
 
                 StatikSinif.shrinkData();
 
@@ -272,15 +273,20 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari";
         }
 
 
-        public string muhasebeRapor(bool mailGitsin = true)
+        public MuhasebeRapor  muhasebeRapor(bool mailGitsin = true)
         {
+            MuhasebeRapor rapor = new MuhasebeRapor();
+
             try
             {
-                string tarih = dateTarih.DateTime.ToString("yyyy-MM-dd");
+                string tarih = Param.Tarih.ToString("yyyy-MM-dd");
                 string query = @"declare @Fis_Tutar decimal(18,2) = (select SUM(Satis.Rsat_Tutar)   
 FROM Cst_Recete_Satis as satis WITH(NOLOCK) 
 LEFT JOIN Pos_Kodlar as  kodlar WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' and Pkod_Ozelkod <> '4'
-where  Satis.Rsat_Ba = 'B' )  declare @Katsayi decimal(18,8) = (0 / @Fis_Tutar )  
+where  Rsat_Tarih='" + tarih + @"' AND Satis.Rsat_Ba = 'B' )  declare @Katsayi decimal(18,8) = ((select SUM(ISNULL(Rsat_Tutar,0)) as Tutar from Cst_Recete_Satis 
+WITH(NOLOCK)  LEFT JOIN Pos_Kodlar as  kodlar 
+WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' 
+where Rsat_Tarih='" + tarih + @"' and Pkod_Ozelkod <> '4' and Rsat_Ba = 'A'  group by Pkod_Fatura) / @Fis_Tutar )  
 if @Katsayi = 0 begin set @Katsayi = 1 end  SELECT MIN(convert(date,Rsat_Tarih)) as Rsat_Tarih,
 Kodlar_Ad + ' BEDELI' as Aciklama,
 MIN(Rsat_Kdvoran) as Rec_Kdv,      
@@ -290,7 +296,7 @@ MIN(Rsat_Kdvoran) as Rec_Kdv,
 FROM Cst_Recete_Satis WITH(NOLOCK)      
 LEFT JOIN Cst_Recete WITH(NOLOCK) on Rec_Genelkod = Rsat_Recete      
 LEFT JOIN Stok_Kodlar WITH(NOLOCK) on Rec_Urungrup = Kodlar_Kod AND Kodlar_Sinif = '10'  
-WHERE Rsat_Tarih='"+ tarih + @"' AND Rsat_Ba = 'B' and Rsat_Satistip<>'O'
+WHERE Rsat_Tarih='" + tarih + @"' AND Rsat_Ba = 'B' and Rsat_Satistip<>'O'
 GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
 
                 DataTable dataTable = dbtools.SelectTableR(query);
@@ -304,13 +310,41 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                         netToplam += Convert.ToDecimal(row["Net"].ToString());
                     }
 
-                MuhasebeRapor rapor = new MuhasebeRapor();
                 rapor.DataSource = dataTable;
                 rapor.txtTarih.Text = DateTime.Now.ToString("dd.MM.yyyy");
                 rapor.txtDepAd.Text = Departman.Dep_Adi;
-                rapor.txtBrutToplam.Text = brutToplam.ToString();
-                rapor.txtNetToplam.Text = netToplam.ToString();
+                //rapor.txtBrutToplam.Text = brutToplam.ToString();
+                //rapor.txtNetToplam.Text = netToplam.ToString();
 
+                var istatis = dbtools.SelectTableR("exec Pos_Satis_Istatistik @Tarih1='" + tarih + "', @Tarih2='" + tarih + "',@TekDepartman='" + Departman.Dep_Kodu + "',@Tahsilat=1");
+                string odemeler = "";
+
+                if (istatis != null && istatis.Rows.Count > 0)
+                {
+                    bool ilksatir = false;
+                    foreach (DataRow item in istatis.Rows)
+                    {
+                        if (ilksatir == false)
+                        {
+                            ilksatir = true;
+                            continue;
+                        }
+
+                        string ad = item["Ad"].ToString();
+                        string tutar = item["Tutar"].ToString();
+                       
+                        int kalanbosluk = 15- ad.Length;
+                        string bosluk = "";
+                        for (int i = 0; i < kalanbosluk; i++)
+                        {
+                            bosluk = bosluk + " ";
+                        }
+                        int sonbosluk = bosluk.Length;
+                        odemeler = odemeler + ad + bosluk + tutar + "\n";
+                    }
+                }
+                odemeler = odemeler + "\nBRÜT TOPLAM :  " + brutToplam+"\n" + "NET TOPLAM  :  " + netToplam;
+                rapor.txtTumOdeme.Text = odemeler;
 
                 string klasor = "CariRapor";
                 if (!Directory.Exists(klasor))
@@ -338,14 +372,14 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                 }
 
 
-                return path;
+               
             }
             catch (Exception ex)
             {
                 RHMesaj.MyMessageError("Rapor_Sec", "muhasebeRapor", "", ex);
             }
 
-            return "";
+            return rapor;
         }
 
         public void gridviewCountYaz(GridView grid)
@@ -409,7 +443,23 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
 
         public string MyClass = "Gun_Sonu";
 
-        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "",string muhRapor="")
+
+        public XtraReport CreateReport(List<XtraReport> raporList)
+        {
+            XtraReport output = new XtraReport();
+            // output.CreateDocument(false);
+            foreach (var report in raporList)
+            {
+                report.CreateDocument(false);
+                output.Pages.AddRange(report.Pages);
+            }
+            if (output == null) output = new XtraReport();
+            output.PrintingSystem.ContinuousPageNumbering = true;
+            return output;
+        }
+
+
+        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "", MuhasebeRapor muhRapor=null)
         {
 
             try
@@ -426,6 +476,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                     if (Mail_Gonder == true)
                     {
 
+                        #region
                         string Mail_Isim = Convert.ToString(dt.Rows[0]["Mail_Isim"]);
                         string Mail_Adres = Convert.ToString(dt.Rows[0]["Mail_Adres"]);
                         string Mail_Parola = Convert.ToString(dt.Rows[0]["Mail_Parola"]);
@@ -443,18 +494,39 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                         string Mail_Alici8 = Convert.ToString(dt.Rows[0]["Mail_Alici8"]);
                         string Mail_Alici9 = Convert.ToString(dt.Rows[0]["Mail_Alici9"]);
                         string Mail_Alici10 = Convert.ToString(dt.Rows[0]["Mail_Alici10"]);
-
+                        #endregion
                         try
                         {
-
                             System.Threading.Thread.Sleep(1 * 1000);
                             Application.DoEvents();
-
                             Print.Rapor_Gunsonu gunsonu = Rapor_Gunsonu_Pr(tarih, Departman, Sube);
+                            List<XtraReport> raporlar = new List<XtraReport>();
+
+                            XtraReport gunsonuSon = new XtraReport();
+                            if (muhRapor != null)
+                            {
+                                raporlar.Add(gunsonu);
+                                raporlar.Add(muhRapor);
+                                gunsonuSon = CreateReport(raporlar);
+                                //Attachment bakiyeKontrol = new Attachment(muhRapor);
+                                //bakiyeKontrol.Name = "MuhasebeRapor.pdf";
+                                //ePosta.Attachments.Add(bakiyeKontrol);
+                            }
+
                             MemoryStream mem = new MemoryStream();
-                            gunsonu.ExportToPdf(mem);
+
+                            if (muhRapor!=null)
+                            {
+                                gunsonuSon.ExportToPdf(mem);
+                            }
+                            else
+                            {
+                                gunsonu.ExportToPdf(mem);
+                            }
+
                             mem.Seek(0, System.IO.SeekOrigin.Begin);
                             Attachment att = new Attachment(mem, "Gunsonu.pdf", "application/pdf");
+
 
 
                             Print.Rapor_Gunsonu2 gunsonu2 = Rapor_Gunsonu2_Pr(tarih, Sube);
@@ -550,12 +622,12 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                                 ePosta.Attachments.Add(bakiyeKontrol);
                             }
 
-                            if (muhRapor != "")
-                            {
-                                Attachment bakiyeKontrol = new Attachment(muhRapor);
-                                bakiyeKontrol.Name = "MuhasebeRapor.pdf";
-                                ePosta.Attachments.Add(bakiyeKontrol);
-                            }
+                            //if (muhRapor != "")
+                            //{
+                            //    Attachment bakiyeKontrol = new Attachment(muhRapor);
+                            //    bakiyeKontrol.Name = "MuhasebeRapor.pdf";
+                            //    ePosta.Attachments.Add(bakiyeKontrol);
+                            //}
 
                             string mailbody = Mail_Detay(tarih);
 

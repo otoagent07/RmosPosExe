@@ -30,6 +30,7 @@ namespace Pos.Print
         private void InitializeComponent()
         {
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.txtDepAd = new DevExpress.XtraReports.UI.XRLabel();
             this.txtTarih = new DevExpress.XtraReports.UI.XRLabel();
@@ -46,13 +47,9 @@ namespace Pos.Print
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtBrutToplam = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.txtNetToplam = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLine2 = new DevExpress.XtraReports.UI.XRLine();
-            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
+            this.txtTumOdeme = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -70,6 +67,19 @@ namespace Pos.Print
             this.xr_Baslik});
             this.TopMargin.HeightF = 71.5F;
             this.TopMargin.Name = "TopMargin";
+            // 
+            // xrLine1
+            // 
+            this.xrLine1.BorderColor = System.Drawing.Color.Black;
+            this.xrLine1.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dot;
+            this.xrLine1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLine1.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(9.536743E-05F, 60.25F);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.SizeF = new System.Drawing.SizeF(476.9999F, 5.000003F);
+            this.xrLine1.StylePriority.UseBorderColor = false;
+            this.xrLine1.StylePriority.UseBorderDashStyle = false;
+            this.xrLine1.StylePriority.UseBorders = false;
             // 
             // xrLabel11
             // 
@@ -197,7 +207,7 @@ namespace Pos.Print
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 10.16668F;
+            this.BottomMargin.HeightF = 2.166653F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -281,70 +291,13 @@ namespace Pos.Print
             this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrLabel8.WordWrap = false;
             // 
-            // xrLabel4
-            // 
-            this.xrLabel4.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(9.99999F, 5.000005F);
-            this.xrLabel4.Multiline = true;
-            this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(96.875F, 16.75F);
-            this.xrLabel4.StylePriority.UseFont = false;
-            this.xrLabel4.StylePriority.UseTextAlignment = false;
-            this.xrLabel4.Text = "BRÜT TOPLAM :";
-            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLabel4.WordWrap = false;
-            // 
-            // txtBrutToplam
-            // 
-            this.txtBrutToplam.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBrutToplam.LocationFloat = new DevExpress.Utils.PointFloat(106.875F, 12.50003F);
-            this.txtBrutToplam.Multiline = true;
-            this.txtBrutToplam.Name = "txtBrutToplam";
-            this.txtBrutToplam.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.txtBrutToplam.SizeF = new System.Drawing.SizeF(113.75F, 16.75F);
-            this.txtBrutToplam.StylePriority.UseFont = false;
-            this.txtBrutToplam.StylePriority.UseTextAlignment = false;
-            this.txtBrutToplam.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.txtBrutToplam.WordWrap = false;
-            // 
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLine2,
-            this.txtNetToplam,
-            this.xrLabel13,
-            this.txtBrutToplam,
-            this.xrLabel4});
-            this.ReportFooter.HeightF = 51.87499F;
+            this.txtTumOdeme,
+            this.xrLine2});
+            this.ReportFooter.HeightF = 34.91669F;
             this.ReportFooter.Name = "ReportFooter";
-            // 
-            // txtNetToplam
-            // 
-            this.txtNetToplam.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtNetToplam.LocationFloat = new DevExpress.Utils.PointFloat(106.875F, 33.12498F);
-            this.txtNetToplam.Multiline = true;
-            this.txtNetToplam.Name = "txtNetToplam";
-            this.txtNetToplam.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.txtNetToplam.SizeF = new System.Drawing.SizeF(113.75F, 16.75F);
-            this.txtNetToplam.StylePriority.UseFont = false;
-            this.txtNetToplam.StylePriority.UseTextAlignment = false;
-            this.txtNetToplam.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.txtNetToplam.WordWrap = false;
-            // 
-            // xrLabel13
-            // 
-            this.xrLabel13.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(9.99999F, 25.62499F);
-            this.xrLabel13.Multiline = true;
-            this.xrLabel13.Name = "xrLabel13";
-            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel13.SizeF = new System.Drawing.SizeF(96.875F, 16.75F);
-            this.xrLabel13.StylePriority.UseFont = false;
-            this.xrLabel13.StylePriority.UseTextAlignment = false;
-            this.xrLabel13.Text = "NET TOPLAM :";
-            this.xrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLabel13.WordWrap = false;
             // 
             // xrLine2
             // 
@@ -359,18 +312,17 @@ namespace Pos.Print
             this.xrLine2.StylePriority.UseBorderDashStyle = false;
             this.xrLine2.StylePriority.UseBorders = false;
             // 
-            // xrLine1
+            // txtTumOdeme
             // 
-            this.xrLine1.BorderColor = System.Drawing.Color.Black;
-            this.xrLine1.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dot;
-            this.xrLine1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLine1.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(9.536743E-05F, 60.25F);
-            this.xrLine1.Name = "xrLine1";
-            this.xrLine1.SizeF = new System.Drawing.SizeF(476.9999F, 5.000003F);
-            this.xrLine1.StylePriority.UseBorderColor = false;
-            this.xrLine1.StylePriority.UseBorderDashStyle = false;
-            this.xrLine1.StylePriority.UseBorders = false;
+            this.txtTumOdeme.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTumOdeme.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 15.5F);
+            this.txtTumOdeme.Multiline = true;
+            this.txtTumOdeme.Name = "txtTumOdeme";
+            this.txtTumOdeme.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.txtTumOdeme.SizeF = new System.Drawing.SizeF(230.4167F, 16.75002F);
+            this.txtTumOdeme.StylePriority.UseFont = false;
+            this.txtTumOdeme.StylePriority.UseTextAlignment = false;
+            this.txtTumOdeme.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // MuhasebeRapor
             // 
@@ -380,10 +332,7 @@ namespace Pos.Print
             this.Detail,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(12, 11, 72, 10);
-            this.PageHeight = 500;
-            this.PageWidth = 500;
-            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.Margins = new System.Drawing.Printing.Margins(12, 11, 72, 2);
             this.ShowPreviewMarginLines = false;
             this.ShowPrintMarginsWarning = false;
             this.ShowPrintStatusDialog = false;
@@ -402,8 +351,6 @@ namespace Pos.Print
         public DevExpress.XtraReports.UI.XRLabel xrLabel9;
         public DevExpress.XtraReports.UI.XRLabel xrLabel10;
         public DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        public DevExpress.XtraReports.UI.XRLabel txtBrutToplam;
-        public DevExpress.XtraReports.UI.XRLabel xrLabel4;
         public DevExpress.XtraReports.UI.XRLabel xrLabel5;
         public DevExpress.XtraReports.UI.XRLabel xrLabel6;
         public DevExpress.XtraReports.UI.XRLabel xrLabel7;
@@ -414,9 +361,8 @@ namespace Pos.Print
         public DevExpress.XtraReports.UI.XRLabel txtDepAd;
         public DevExpress.XtraReports.UI.XRLabel xrLabel11;
         public DevExpress.XtraReports.UI.XRLabel xrLabel12;
-        public DevExpress.XtraReports.UI.XRLabel txtNetToplam;
-        public DevExpress.XtraReports.UI.XRLabel xrLabel13;
         private DevExpress.XtraReports.UI.XRLine xrLine1;
         private DevExpress.XtraReports.UI.XRLine xrLine2;
+        public DevExpress.XtraReports.UI.XRLabel txtTumOdeme;
     }
 }

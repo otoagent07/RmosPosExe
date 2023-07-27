@@ -3,9 +3,11 @@ using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
+using DevExpress.XtraReports.UI;
 using DevExpress.XtraSplashScreen;
 using Pos.Class;
 using Pos.Models;
+using Pos.Print;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -18,38 +20,27 @@ using System.Net.Mail;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
-
 namespace Pos
 {
     // 21.09.2022 Dil için -> Formdan ->  Engilis united states seçildi -> kaydet ve defaulta geri çekmeyi unutma
     public partial class Raporlar : DevExpress.XtraEditors.XtraForm
     {
-
         public Raporlar()
         {
             InitializeComponent();
         }
-
         private void Raporlar_Load(object sender, EventArgs e)
         {
             this.BringToFront();
-
             //CultureInfo culture = CultureInfo.CreateSpecificCulture("en-EN");
             //System.Threading.Thread.CurrentThread.CurrentCulture = culture;
             //System.Threading.Thread.CurrentThread.CurrentUICulture = culture;     
-
-
-
             // Set this culture as the default culture for all threads in this application. 
             //// Note: The following properties are supported in the .NET Framework 4.5+
             //CultureInfo.DefaultThreadCurrentCulture = culture;
             //CultureInfo.DefaultThreadCurrentUICulture = culture;
-
-
             dateTarih1.DateTime = Param.Tarih.Date;//.AddYears(-2);
             dateTarih2.DateTime = Param.Tarih.Date;
-
-
             DataTable Fis_Tip = new DataTable();
             Fis_Tip.Columns.Add("Kod", typeof(string));
             Fis_Tip.Columns.Add("Ad", typeof(string));
@@ -58,39 +49,32 @@ namespace Pos
             Fis_Tip.Rows.Add("P", "Ikram");
             Fis_Tip.Rows.Add("V", "Hersey Dahil");
             Fis_Tip.Rows.Add("N", "Fiyat Analiz");
-
             cmb_Fistipi.Properties.DataSource = Fis_Tip;
             cmb_Fistipi.Properties.DisplayMember = "Ad";
             cmb_Fistipi.Properties.ValueMember = "Kod";
             cmb_Fistipi.SetEditValue("S,O,P,V,N");
-
             string filter = "";
             if (User.P_Departman != "")
             {
                 filter = " AND Kodlar_Kod IN ('" + User.P_Departman.Replace(", ", "','") + "')";
             }
-
             DataTable dt_Dep = dbtools.SelectTable("select Kodlar_Kod, Kodlar_Ad from Stok_Kodlar with(nolock) where Kodlar_Sinif = '01' and Kodlar_Anadepo = 'False' and Kodlar_Satis = 1 " + filter + " order by Kodlar_Kod");
             cmb_Departman.Properties.DataSource = dt_Dep;
             cmb_Departman.Properties.DisplayMember = "Kodlar_Ad";
             cmb_Departman.Properties.ValueMember = "Kodlar_Kod";
             cmb_Departman.SetEditValue(Departman.Dep_Kodu);
-
             DataTable dt_Ana = dbtools.SelectTable("SELECT Kodlar_Id ,Kodlar_Kod, Kodlar_Ad, Kodlar_Sinif  FROM Stok_Kodlar with(nolock) where Kodlar_Sinif = '08' order by Kodlar_Kod");
             cmb_Anagrup.Properties.DataSource = dt_Ana;
             cmb_Anagrup.Properties.DisplayMember = "Kodlar_Ad";
             cmb_Anagrup.Properties.ValueMember = "Kodlar_Kod";
-
             DataTable dt_Konum = dbtools.SelectTable("select Pkod_Id,Kodlar_Ad + ' - ' + Pkod_Ad as Ad from Pos_Kodlar left join Stok_Kodlar on Kodlar_Kod = Pkod_Kod and Kodlar_Sinif = '01' where pkod_sinif = '14'");
             cmb_Konum.Properties.DataSource = dt_Konum;
             cmb_Konum.Properties.DisplayMember = "Ad";
             cmb_Konum.Properties.ValueMember = "Pkod_Id";
-
             DataTable dt_Garson = dbtools.SelectTable("select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad from RmosMuh.dbo.Pos_User where P_Kulturu <> 4");
             chk_GarsonKasiyer.Properties.DataSource = dt_Garson;
             chk_GarsonKasiyer.Properties.DisplayMember = "AdSoyad";
             chk_GarsonKasiyer.Properties.ValueMember = "P_Kod";
-
             if (Departman.Kodlar_PRSor)
             {
                 DataTable dt_PR = dbtools.SelectTable("select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad from RmosMuh.dbo.Pos_User where P_Kulturu = 4");
@@ -101,10 +85,8 @@ namespace Pos
                     chk_PR.Properties.ValueMember = "P_Kod";
                 }
             }
-
             chk_Ana.Checked = false;
             chk_Alt.Checked = false;
-
             btn_Detay.Visibility = User.R_Detay == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
             btn_XZ.Visibility = User.R_XZ == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
             btn_Mahsupkes.Visibility = User.R_Mahsupkes == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
@@ -113,21 +95,12 @@ namespace Pos
                                                     User.R_MasaGeri == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
             btn_TopluIsleme.Visibility = User.R_TopluIsle == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
             btn_OdemeTipi.Visibility = User.Pos_OdemeDegistir == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
-
-
             raporyenile();
-
-
-
-
-
             //gridyenile();
         }
-
         private void cmb_Anagrup_EditValueChanged(object sender, EventArgs e)
         {
             chk_Alt.Checked = false;
-
             if (chk_Ana.Checked == true)
             {
                 DataTable dt = dbtools.SelectTable("SELECT Kodlar_Id ,Kodlar_Kod, Kodlar_Ad, Kodlar_Sinif  FROM Stok_Kodlar with(nolock) where Kodlar_Sinif = '09' and Kodlar_Anagrup in (" + cmb_Anagrup.EditValue + ") order by Kodlar_Kod");
@@ -145,19 +118,14 @@ namespace Pos
         {
             SplashScreenManager.ShowForm(this, typeof(WaitForm1), true, true, false);
         }
-
         public void loadingKapat()
         {
             SplashScreenManager.CloseForm(false);
         }
-
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             gridyenile();
-
         }
-
-
         public DataTable getSatisList()
         {
             SqlConnection con = dbtools.conn;
@@ -184,16 +152,12 @@ namespace Pos
             com.Parameters.AddWithValue("@GarsonKasiyer", chk_GarsonKasiyer.EditValue);
             if (Convert.ToString(cmb_Konum.EditValue) != "") com.Parameters.AddWithValue("@Konum_Id", cmb_Konum.EditValue);
             if (Departman.Kodlar_PRSor) com.Parameters.AddWithValue("@PR", chk_PR.EditValue);
-
             SqlDataAdapter da = new SqlDataAdapter(com);
             DataTable dt = new DataTable();
             da.Fill(dt);
             con.Close();
-
             return dt;
         }
-
-
         public DataTable servisPayiHesapla(DataTable dt)
         {
             try
@@ -210,9 +174,7 @@ namespace Pos
                 if (varmi == false) gridView11.Columns.AddVisible("Servis Payı");
                 foreach (DataRow item in dt.Rows)
                 {
-
                     DataTable dataTable = dbtools.SelectTableR("select Rsat_Recete,Rsat_Fisno,Rsat_Tutar from Cst_Recete_Satis where Rsat_Fisno='" + item["Rsat_Fisno"].ToString() + "'");
-
                     foreach (DataRow rec in dataTable.Rows)
                     {
                         if (rec["Rsat_Recete"].ToString().Equals(Param.Param_Bindirim))
@@ -221,14 +183,12 @@ namespace Pos
                             break;
                         }
                     }
-
                 }
             }
             catch (Exception ex)
             {
                 RHMesaj.MyMessageError(MyClass, "", "", ex);
             }
-
             return dt;
         }
         public void gridviewCountYaz(GridView grid)
@@ -241,17 +201,13 @@ namespace Pos
                 grid.UpdateTotalSummary();
             }
         }
-
-
         private void gridyenile()
         {
             try
             {
                 loadingAc();
-
                 dateTarih1.SelectionStart = 0;
                 dateTarih1.SelectionLength = 0;
-
                 dateTarih2.SelectionStart = 0;
                 dateTarih2.SelectionLength = 0;
                 if (xtraTabControl1.SelectedTabPage == tab_Genelrapor)
@@ -279,28 +235,21 @@ namespace Pos
                     if (User.Pos_IWERep == true) com.Parameters.AddWithValue("@IWERep", 1);
                     com.Parameters.AddWithValue("@GarsonKasiyer", chk_GarsonKasiyer.EditValue);
                     if (Convert.ToString(cmb_Konum.EditValue) != "") com.Parameters.AddWithValue("@Konum_Id", cmb_Konum.EditValue);
-
-
                     SqlDataAdapter da = new SqlDataAdapter(com);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl1.DataSource = dt;
-
                     string fileName = getGenelCekDizaynPath();
                     if (File.Exists(fileName))
                     {
                         bandedGridView1.RestoreLayoutFromXml(fileName);
                     }
-
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Satis)
                 {
-
                     DataTable dt = getSatisList();
                     List<string> adisyonFisler = new List<string>();
-
                     foreach (DataRow item in dt.Rows)
                     {
                         if (item["Rsat_AdisyonPR"].ToString().ToLower().Equals("true"))
@@ -308,18 +257,15 @@ namespace Pos
                             adisyonFisler.Add(item["Rsat_Fisno"].ToString());
                         }
                     }
-
                     //if (adisyonFisler.Count>0)
                     //{
                     //    string newStr = string.Join(",", adisyonFisler);
                     //    string query = "update Cst_Recete_Satis set Rsat_AdisyonPr='1' from Cst_Recete_Satis where Rsat_Fisno in (" + newStr + ") and rsat_ba='B' ";
-
                     //    if (Departman.Adisyon==false)
                     //    {
                     //        dbtools.execcmd(query);
                     //    }
                     //}
-
                     HashSet<int> providers = new HashSet<int>();
                     foreach (var provider in dt.AsEnumerable()
                                                .Select(dr => dr.Field<int>("Rsat_Fisno")))
@@ -330,7 +276,6 @@ namespace Pos
                             break;
                         }
                     }
-
                     if (checkEditServisPay.Checked)
                     {
                         dt = servisPayiHesapla(dt);
@@ -341,14 +286,10 @@ namespace Pos
                     {
                         gridControl11.DataSource = dt;
                     }
-
-
                     if (checkEditDirektSatis.Checked)
                     {
                         dt= dt.Select("masano=''").CopyToDataTable();
                     }
-
-
                     Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Iptalcekraporu)
@@ -376,19 +317,13 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl2.DataSource = dt;
-
-
                     string fileName = getIptalCekDizaynPath();
                     if (File.Exists(fileName))
                     {
                         gridView2.RestoreLayoutFromXml(fileName);
                     }
-
-
                 }
-
                 if (xtraTabControl1.SelectedTabPage == tab_Cekdetay)
                 {
                     SqlConnection con = dbtools.conn;
@@ -415,7 +350,6 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl3.DataSource = dt;
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Receteozet)
@@ -443,7 +377,6 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl4.DataSource = dt;
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Garsonsatis)
@@ -468,13 +401,10 @@ namespace Pos
                     com.Parameters.AddWithValue("@Kullanici", User.P_Kod);
                     if (User.Pos_IWERep == true) com.Parameters.AddWithValue("@IWERep", 1);
                     com.Parameters.AddWithValue("@GarsonKasiyer", chk_GarsonKasiyer.EditValue);
-
-
                     SqlDataAdapter da = new SqlDataAdapter(com);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl5.DataSource = dt;
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Fatura)
@@ -502,10 +432,8 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl6.DataSource = dt;
                 }
-
                 if (xtraTabControl1.SelectedTabPage == tab_AylikGenelRapor)
                 {
                     SqlConnection con = dbtools.conn;
@@ -534,11 +462,8 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl15.DataSource = dt;
                 }
-
-
                 if (xtraTabControl1.SelectedTabPage == tab_OdemeRaporu)
                 {
                     SqlConnection con = dbtools.conn;
@@ -563,17 +488,12 @@ namespace Pos
                     DataSet ds = new DataSet();
                     da.Fill(ds);
                     con.Close();
-
                     //ds.Relations.Clear();
                     //ds.Relations.Add("R_C", ds.Tables["Table"].Columns["Rsat_Fisno"], ds.Tables["Table1"].Columns["Rsat_Fisno"]);
-
                     //gridControl7.LevelTree.Nodes.Add(ds.Relations["R_C"].RelationName, gridView7_1);
                     //gridControl7.DataSource = ds.Tables["Table"];
-
                     gridControl7.DataSource = ds.Tables[0];
                     gridView7.BestFitColumns();
-
-
                     for (int i = 0; i < gridView7.Columns.Count; i++)
                     {
                         gridView7.Columns[i].OptionsColumn.AllowFocus = false;
@@ -614,13 +534,10 @@ namespace Pos
                     DataSet ds = new DataSet();
                     da.Fill(ds);
                     con.Close();
-
                     ds.Relations.Clear();
                     ds.Relations.Add("R_C", ds.Tables["Table"].Columns["Rsat_Fisno"], ds.Tables["Table1"].Columns["Rsat_Fisno"]);
-
                     gridControl8.LevelTree.Nodes.Add(ds.Relations["R_C"].RelationName, gridView8_1);
                     gridControl8.DataSource = ds.Tables["Table"];
-
                     for (int i = 0; i < gridView8.Columns.Count; i++)
                     {
                         gridView8.Columns[i].OptionsColumn.AllowFocus = false;
@@ -628,7 +545,6 @@ namespace Pos
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Log)
                 {
-
                     SqlConnection con = dbtools.conn;
                     if (con.State == ConnectionState.Closed) con.Open();
                     SqlCommand com = new SqlCommand();
@@ -645,9 +561,7 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl9.DataSource = dt;
-
                     string fileName = getLogDizaynPath();
                     if (File.Exists(fileName))
                     {
@@ -657,10 +571,7 @@ namespace Pos
                     {
                         gridView9.BestFitColumns();
                     }
-
-
                 }
-
                 if (xtraTabControl1.SelectedTabPage == tab_Alacak)
                 {
                     SqlConnection con = dbtools.conn;
@@ -681,10 +592,8 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl10.DataSource = dt;
                 }
-
                 if (xtraTabControl1.SelectedTabPage == tab_Uye)
                 {
                     SqlConnection con = dbtools.conn;
@@ -706,10 +615,8 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl12.DataSource = dt;
                 }
-
                 if (xtraTabControl1.SelectedTabPage == tab_DepartmanOzet)
                 {
                     SqlConnection con = dbtools.conn;
@@ -733,10 +640,8 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl13.DataSource = dt;
                 }
-
                 if (xtraTabControl1.SelectedTabPage == tab_Zayi)
                 {
                     SqlConnection con = dbtools.conn;
@@ -760,15 +665,12 @@ namespace Pos
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl14.DataSource = dt;
                     gridView14.BestFitColumns();
                 }
-
                 if (xtraTabControl1.SelectedTabPage == tab_Ikram)
                 {
                     gridView16.Columns.Clear();
-
                     SqlConnection con = dbtools.conn;
                     if (con.State == ConnectionState.Closed) con.Open();
                     SqlCommand com = new SqlCommand();
@@ -780,22 +682,17 @@ namespace Pos
                     com.Parameters.AddWithValue("@Tarih1", dateTarih1.DateTime.Date);
                     com.Parameters.AddWithValue("@Tarih2", dateTarih2.DateTime.Date);
                     if (cmb_Departman.EditValue != null) com.Parameters.AddWithValue("@Departman", cmb_Departman.EditValue);
-
                     SqlDataAdapter da = new SqlDataAdapter(com);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     con.Close();
-
                     gridControl16.DataSource = dt;
                     gridView16.BestFitColumns();
                 }
-
-
                 if (xtraTabControl1.SelectedTabPage == tab_reskullanim)
                 {
                     reskullanimListele();
                 }
-
             }
             catch (Exception ex)
             {
@@ -803,9 +700,7 @@ namespace Pos
                 RHMesaj.MyMessageError(MyClass, "gridyenile", "", ex);
             }
             loadingKapat();
-
         }
-
         public void reskullanimListele()
         {
             gridControlResKullanim.DataSource = dbtools.SelectTableR(@"select 
@@ -817,7 +712,6 @@ end as Bufe_Tipi ,
 Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             gridViewResKullanim.BestFitColumns();
         }
-
         private void btn_Print_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (xtraTabControl1.SelectedTabPage == tab_Genelrapor)
@@ -885,20 +779,16 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 Rapor_Print("İkram Edilen Ürünler Raporu", gridControl16);
             }
         }
-
         private void Rapor_Print(string header, GridControl grid)
         {
             string leftColumn = header;
             string rightColumn = dateTarih1.DateTime.ToLongDateString() + "-" + dateTarih2.DateTime.ToLongDateString();
-
-
             PrintingSystem printingSystem1 = new PrintingSystem();
             PrintableComponentLink printableComponentLink1 = new PrintableComponentLink();
             printingSystem1.Links.AddRange(new object[] { printableComponentLink1 });
             printableComponentLink1.Component = grid;
             printableComponentLink1.Landscape = false;
             printableComponentLink1.Margins = new System.Drawing.Printing.Margins(20, 20, 50, 20);
-
             PageHeaderFooter phf = printableComponentLink1.PageHeaderFooter as PageHeaderFooter;
             phf.Header.Content.Clear();
             phf.Header.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -906,9 +796,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             phf.Header.LineAlignment = BrickAlignment.Far;
             printableComponentLink1.ShowPreview();
         }
-
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
-
         private void btn_Mahsupkes_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (dateTarih1.DateTime.Date != dateTarih2.DateTime.Date)
@@ -916,7 +804,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 MessageBox.Show(res_man.GetString("Farklı Tarihler için Mahsup Oluşturulamaz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
             if (MessageBox.Show(res_man.GetString("Nakit Hesaplar için Mahsup Kesmek İstiyor Musunuz ?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 Pos_Mahsup(true, false);
@@ -926,7 +813,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 Pos_Mahsup(false, true);
             }
         }
-
         private void Pos_Gelir_Mahsup(bool Kdv)
         {
             if (Kdv == true)
@@ -941,12 +827,10 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 com.Parameters.AddWithValue("@Tarih2", dateTarih2.DateTime.Date);
                 if (cmb_Departman.EditValue != null) com.Parameters.AddWithValue("@Departman", cmb_Departman.EditValue);
                 //com.Parameters.AddWithValue("@KDVAyrimi", Kdv);
-
                 SqlDataAdapter da = new SqlDataAdapter(com);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 con.Close();
-
                 MessageBox.Show(res_man.GetString("Gelir Hesapları için Fis Oluştu.... Fis No : ") + Convert.ToString(dt.Rows[0][0]), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -968,16 +852,13 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 com.Parameters.AddWithValue("@Saat2", timeSaat2.Time.ToString("HH:mm:ss"));
                 com.Parameters.AddWithValue("@Kapali", true);
                 if (Convert.ToString(cmb_Konum.EditValue) != "") com.Parameters.AddWithValue("@Konum_Id", cmb_Konum.EditValue);
-
                 SqlDataAdapter da = new SqlDataAdapter(com);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 con.Close();
-
                 MessageBox.Show(res_man.GetString("Gelir Hesapları için Fis Oluştu.... Fis No : ") + Convert.ToString(dt.Rows[0][0]), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
         private void Pos_Mahsup(bool Nakit, bool KK)
         {
             SqlConnection con = dbtools.conn;
@@ -995,7 +876,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             DataTable dt = new DataTable();
             da.Fill(dt);
             con.Close();
-
             if (Nakit)
             {
                 MessageBox.Show(res_man.GetString("Nakit Hesaplar için Fis Oluştu.... Fis No : ") + Convert.ToString(dt.Rows[0][0]), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1005,17 +885,14 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 MessageBox.Show(res_man.GetString("KK Hesaplar için Fis Oluştu.... Fis No : ") + Convert.ToString(dt.Rows[0][0]), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
         private void fatNoDeğiştirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Fatno_Update fatno = new Fatno_Update();
             fatno.txt_Fisno.Text = Convert.ToString(gridView6.GetFocusedRowCellValue("PFat_Cekno"));
             fatno.txt_EskiFatNo.Text = Convert.ToString(gridView6.GetFocusedRowCellValue("PFat_Fatno"));
             fatno.ShowDialog();
-
             barButtonItem1_ItemClick(null, null);
         }
-
         private void FisIptal()
         {
             if (xtraTabControl1.SelectedTabPage == tab_Genelrapor || xtraTabControl1.SelectedTabPage == tab_Satis)
@@ -1024,7 +901,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 string iptalSebep = String.Empty;
                 string Fisno = xtraTabControl1.SelectedTabPage == tab_Genelrapor ? Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno")) : Convert.ToString(gridView11.GetFocusedRowCellValue("Rsat_Fisno"));
                 DateTime Tarih = xtraTabControl1.SelectedTabPage == tab_Genelrapor ? Convert.ToDateTime(bandedGridView1.GetFocusedRowCellValue("Rsat_Tarih")) : Convert.ToDateTime(gridView11.GetFocusedRowCellValue("Rsat_Tarih"));
-
                 if (User.P_Kod.ToUpper() != "RMOS")//!User.R_Fisiptalgecmis
                 {
                     if (Tarih.Date != Param.Tarih.Date)
@@ -1033,18 +909,14 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                         return;
                     }
                 }
-
                 Klavye2 klavye = new Klavye2();
                 klavye.Tag = "FISIPTAL";
                 klavye.ShowDialog();
                 iptalSebep = klavye.yazi;
-
                 if (iptalSebep.Length < 1)
                 {
                     return;
                 }
-
-
                 SqlConnection con = dbtools.conn;
                 if (con.State == ConnectionState.Closed) con.Open();
                 SqlCommand com = new SqlCommand();
@@ -1058,11 +930,8 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 com.Parameters.AddWithValue("@Onb_Sil", Tarih.Date != Param.Tarih.Date ? 0 : 1);
                 com.ExecuteNonQuery();
                 if (con.State == ConnectionState.Open) con.Close();
-
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Fis_Iptal, Log.Log_Islem.Sil, Fisno + " NL Fis Silindi", Fisno, String.Empty);
-
                 gridyenile();
-
                 if (Departman.Kodlar_AndPos_NFC == true)
                 {
                     FisPr fis = new FisPr();
@@ -1075,13 +944,10 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 return;
             }
         }
-
         private void btn_Detay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Detay();
-
         }
-
         private void Detay()
         {
             if (xtraTabControl1.SelectedTabPage == tab_Genelrapor || xtraTabControl1.SelectedTabPage == tab_Satis)
@@ -1109,17 +975,13 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 return;
             }
         }
-
         private void btn_Cikis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
         }
-
         private void btn_MasaGeri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
         }
-
         private void MasaGeriAl()
         {
             if (xtraTabControl1.SelectedTabPage == tab_Genelrapor)
@@ -1129,19 +991,16 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                     MessageBox.Show(res_man.GetString("Farklı Tarihteki Masayı Geri Alamazsınız..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-
                 if (Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Durum")) == "Acik")
                 {
                     MessageBox.Show(res_man.GetString("Açık Masayı Masayı Geri Alamazsınız..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-
                 //if (Param.Tesis_Tipi == 0)
                 //{
                 //    MessageBox.Show(res_man.GetString("Çalışma Sistemi Otel ise Masayı Geri Alamazsınız...", res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //    return;
                 //}
-
                 // 30.05.2023 de yorum yapıldı
                 //string masaNo = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Masa"));
                 //if (masaNo == "")
@@ -1149,55 +1008,36 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 //    MessageBox.Show(res_man.GetString("Masa Bilgisi Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 //    return;
                 //}
-
-
                 if (MessageBox.Show(res_man.GetString("Seçili Masayı Geri Almak İstiyor Musunuz?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
                 {
                     return;
                 }
-
                 string masaNo = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Masa"));
                 if (masaNo == "")
                 {
                     string fisno = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno"));
                      masaNo = dbtools.DegerGetir("select top 1 Masa_No from Pos_Masa where Masa_Durum='0' and Masa_Depart='" + Departman.Dep_Kodu + "' order by Masa_Id desc");
-                    
-                    
                     string query = "update Cst_Recete_Satis set Rsat_Masa='"+ masaNo + "',Rsat_OzelMasaAdi='"+ masaNo + "' where Rsat_Fisno='"+ fisno + "'";
                     dbtools.execcmdR(query);
-
                     dbtools.execcmdR("update Pos_Masa set Masa_Durum='1' where Masa_No='"+ masaNo + "' and Masa_Depart='"+ Departman.Dep_Kodu + "'");
-
                     MessageBox.Show("MASANO : "+masaNo+" Aktarılmıştır ");
                 }
-
-
-               
-
                 DataTable dtDurum = dbtools.SelectTable("select Rsat_Durum from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Masa = '" + masaNo + "' and rsat_Departman = '" + Convert.ToString(bandedGridView1.GetFocusedRowCellValue("DepartmanKod")) + "' and Rsat_Durum = 'A' ");
                 if (dtDurum.Rows.Count > 0)
                 {
                     MessageBox.Show(masaNo + " NL Masa Şuan Dolu Masa Geri Alınamıyor...", res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     return;
                 }
-
-
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Durum = 'A' , Rsat_RecAP = 2 where Rsat_Fisno = '" + Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno")) + "'");
                 string dep = Convert.ToString(dbtools.DegerGetir("select top 1 Rsat_Departman from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Fisno = '" + Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno")) + "'"));
-
                 string ozelMasa = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Masa_Ozel"));
                 string masaAd = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Masa_Ad"));
-
                 if (ozelMasa.Equals(masaAd))
                 {
                     ozelMasa = "";
                 }
-
-
                 dbtools.execcmd("update Pos_Masa set Masa_Durum = 1,Masa_Ozel='" + ozelMasa + "'  where Masa_No = '" + masaNo + "' and Masa_Depart = '" + dep + "' ");
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Raporlar, Log.Log_Islem.Duzelt, "Masa Geri Alma MasaNo:" + masaNo + " Fisno:" + Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno")), Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno")), "");
-
-
                 if (Param.Tesis_Tipi == 0)
                 {
                     SqlConnection con = dbtools.conn;
@@ -1213,11 +1053,8 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                     com.Parameters.AddWithValue("@Onb_Sil", Convert.ToDateTime(bandedGridView1.GetFocusedRowCellValue("Rsat_Tarih")).Date != Param.Tarih.Date ? 0 : 1);
                     com.ExecuteNonQuery();
                     if (con.State == ConnectionState.Open) con.Close();
-
                     Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Fis_Iptal, Log.Log_Islem.Sil, Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno")) + " NL Fis Cek Geri Alındı", Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno")), String.Empty);
                 }
-
-
                 gridyenile();
             }
             else
@@ -1225,22 +1062,18 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 MessageBox.Show(res_man.GetString("Sadece Genel Çek Raporundan Masa Geri Alabilirsiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
         private void raporyenile()
         {
             Rapor_Tipi.Properties.DataSource = dbtools.Dizayn_Getir(User.P_Kod, this.Name, "");
             Rapor_Tipi.Properties.DisplayMember = "Diz_Rapor";
             Rapor_Tipi.Properties.ValueMember = "Diz_Id";
         }
-
         private void Rapor_Tipi_EditValueChanged(object sender, EventArgs e)
         {
             DataTable dt = dbtools.Dizayn_Getir(User.P_Kod, this.Name, Convert.ToString(Rapor_Tipi.EditValue));
-
             MemoryStream memStream = new MemoryStream((byte[])dt.Rows[0]["Diz_XML"]);
             gridView11.RestoreLayoutFromStream(memStream);
         }
-
         private void raporDizaynıKaydetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (xtraTabControl1.SelectedTabPage == tab_Genelrapor)
@@ -1258,7 +1091,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 raporyenile();
             }
         }
-
         private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (rdo_SatisIptal.SelectedIndex == 0)
@@ -1272,12 +1104,9 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 gridyenile();
             }
         }
-
         private void btn_FisLog_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
         }
-
         private void gridView11_CustomDrawFooterCell(object sender, FooterCellCustomDrawEventArgs e)
         {
             if (e.Column.Name == "bandedGridColumn43")
@@ -1286,7 +1115,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 e.Info.Appearance.ForeColor = Color.Red;
                 //e.Info.Appearance.Font = new Font("Tahoma", 9, FontStyle.Bold);
             }
-
             if (e.Column.Name == "gridColumn120")
             {
                 e.Info.DisplayText = "Onburo : " + (Convert.ToDecimal(bandedGridColumn49.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn50.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn61.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn63.SummaryItem.SummaryValue)).ToString("N2");
@@ -1294,18 +1122,15 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 //e.Info.Appearance.Font = new Font("Tahoma", 9, FontStyle.Bold);
             }
         }
-
         private void btn_TopluIsleme_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FisTopluIsleme tt = new FisTopluIsleme();
             tt.ShowDialog();
         }
-
         private void tarihDeğiştirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (User.R_Fisiptalgecmis)
             {
-
             }
             else
             {
@@ -1315,15 +1140,11 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                     return;
                 }
             }
-
-
             TarihDegistir tarih = new TarihDegistir();
             tarih.Fisno = Convert.ToInt32(gridView11.GetFocusedRowCellValue("Rsat_Fisno"));
             tarih.ShowDialog();
-
             barButtonItem1_ItemClick(null, null);
         }
-
         public void Mail_Gonder(DateTime tarih, DateTime tarih2, GridControl gC, string RaporAdi)
         {
             DataTable dt = dbtools.SelectTable("select ISNULL(Mail_Gonder,0) as Mail_Gonder,Mail_Isim,Mail_Adres,Mail_Parola,Mail_Host,Mail_Port,Mail_SSL, "
@@ -1337,14 +1158,12 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 //bool Mail_Gonder = Convert.ToBoolean(dt.Rows[0]["Mail_Gonder"]);
                 //if (Mail_Gonder == true)
                 {
-
                     string Mail_Isim = Convert.ToString(dt.Rows[0]["Mail_Isim"]);
                     string Mail_Adres = Convert.ToString(dt.Rows[0]["Mail_Adres"]);
                     string Mail_Parola = Convert.ToString(dt.Rows[0]["Mail_Parola"]);
                     string Mail_Host = Convert.ToString(dt.Rows[0]["Mail_Host"]);
                     string Mail_Port = Convert.ToString(dt.Rows[0]["Mail_Port"]);
                     bool Mail_SSL = Convert.ToBoolean(dt.Rows[0]["Mail_SSL"]);
-
                     string Mail_Alici1 = Convert.ToString(dt.Rows[0]["Mail_Alici1"]);
                     string Mail_Alici2 = Convert.ToString(dt.Rows[0]["Mail_Alici2"]);
                     string Mail_Alici3 = Convert.ToString(dt.Rows[0]["Mail_Alici3"]);
@@ -1355,13 +1174,10 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                     string Mail_Alici8 = Convert.ToString(dt.Rows[0]["Mail_Alici8"]);
                     string Mail_Alici9 = Convert.ToString(dt.Rows[0]["Mail_Alici9"]);
                     string Mail_Alici10 = Convert.ToString(dt.Rows[0]["Mail_Alici10"]);
-
                     try
                     {
-
                         System.Threading.Thread.Sleep(1 * 1000);
                         Application.DoEvents();
-
                         DevExpress.XtraPrinting.PrintingSystemBase ps = new DevExpress.XtraPrinting.PrintingSystemBase();
                         DevExpress.XtraPrintingLinks.PrintableComponentLinkBase link = new DevExpress.XtraPrintingLinks.PrintableComponentLinkBase(ps);
                         link.Component = gC;
@@ -1369,21 +1185,14 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                         link.PaperKind = System.Drawing.Printing.PaperKind.A4;
                         link.CreateDocument();
                         //link.PrintingSystemBase.ExportToPdf(tarih.ToShortDateString() + " - " + tarih2.ToShortDateString() + " Tarih Arası " + RaporAdi + ".pdf");
-
-
                         MemoryStream mem = new MemoryStream();
                         link.PrintingSystemBase.ExportToPdf(mem);
                         mem.Seek(0, System.IO.SeekOrigin.Begin);
                         Attachment att = new Attachment(mem, tarih.ToShortDateString() + " - " + tarih2.ToShortDateString() + " Tarih Arası " + RaporAdi + ".pdf", "application/pdf");
-
-
-
                         //MemoryStream mem = new MemoryStream();
                         ////gunsonu.ExportToPdf(mem);
                         //mem.Seek(0, System.IO.SeekOrigin.Begin);
                         //Attachment att = new Attachment(tarih.ToShortDateString() + " - " + tarih2.ToShortDateString() + " Tarih Arası " + RaporAdi + ".pdf");
-
-
                         MailMessage ePosta = new MailMessage();
                         ePosta.From = new MailAddress(Mail_Adres, Mail_Isim);
                         if (Mail_Alici1.Length > 0) ePosta.To.Add(Mail_Alici1);
@@ -1401,20 +1210,15 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                         ePosta.Attachments.Add(att);
                         //ePosta.Attachments.Add(att2);
                         //ePosta.Attachments.Add(att3);
-
                         string mailbody = Mail_Detay(tarih, tarih2, RaporAdi);
-
                         ePosta.IsBodyHtml = true;
                         ePosta.Body = mailbody;
-
-
                         SmtpClient ss = new SmtpClient(Mail_Host, Convert.ToInt32(Mail_Port));
                         ss.EnableSsl = Mail_SSL;
                         ss.DeliveryMethod = SmtpDeliveryMethod.Network;
                         ss.UseDefaultCredentials = false;
                         ss.Credentials = new NetworkCredential(Mail_Adres, Mail_Parola);
                         ss.Send(ePosta);
-
                         MessageBox.Show(res_man.GetString("Mail Başarıyla Gönderildi."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception err)
@@ -1425,21 +1229,17 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 }
             }
         }
-
         private string Mail_Detay(DateTime tarih, DateTime tarih2, string RaporAdi)
         {
             return tarih.Date.ToLongDateString() + " - " + tarih2.Date.ToLongDateString() + " Tarihli Pos " + RaporAdi + " Ektedir.";
         }
-
         private void gridView1_PrintInitialize(object sender, PrintInitializeEventArgs e)
         {
             PrintingSystemBase pb = e.PrintingSystem as PrintingSystemBase;
             pb.PageSettings.Landscape = true;
         }
-
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
             if (xtraTabControl1.SelectedTabPage == tab_Genelrapor)
             {
                 Mail_Gonder(dateTarih1.DateTime, dateTarih2.DateTime, gridControl1, tab_Genelrapor.Text);
@@ -1500,10 +1300,8 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             {
                 Mail_Gonder(dateTarih1.DateTime, dateTarih2.DateTime, gridControl15, tab_AylikGenelRapor.Text);
             }
-
             //Mail_Gonder(dateTarih1.DateTime, dateTarih2.DateTime, gC, xtraTabControl1.SelectedTabPage.Text);
         }
-
         private void barButtonItem3_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (MessageBox.Show(res_man.GetString("Gelir Hesaplar için Mahsup Kesmek İstiyor Musunuz ?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
@@ -1511,7 +1309,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 Pos_Gelir_Mahsup(true);
             }
         }
-
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (MessageBox.Show(res_man.GetString("Gelir Hesaplar için Mahsup Kesmek İstiyor Musunuz ?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
@@ -1519,15 +1316,12 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 Pos_Gelir_Mahsup(false);
             }
         }
-
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             MasaGeriAl();
         }
-
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
             int Fisno = 0;
             DateTime Tarih = Param.Tarih;
             if (xtraTabControl1.SelectedTabPage == tab_Genelrapor || xtraTabControl1.SelectedTabPage == tab_Satis)
@@ -1542,43 +1336,35 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                     Fisno = Convert.ToInt32(gridView11.GetFocusedRowCellValue("Rsat_Fisno"));
                     Tarih = Convert.ToDateTime(gridView11.GetFocusedRowCellValue("Rsat_Tarih"));
                 }
-
                 if (Tarih.Date != Param.Tarih.Date)
                 {
                     MessageBox.Show(res_man.GetString("Geçmiş Tarihe Ait Ödeme Bilgileri Değiştirilemez..."), res_man.GetString("Uyarı"));
                     return;
                 }
-
                 /*
                 if (Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Durum")) != "Acik")
                 {
                     MessageBox.Show("Kapalı masanın ödeme tipini değiştiremezseniz!\nİlk önce masayı geri al yapınız!");
                     return;
                 }*/
-
                 Hesap h = new Hesap();
                 h.fisno = Fisno;
                 h.Tag = Fisno;
                 h.tip = "O";
                 h.ShowDialog();
-
                 gridyenile();
-
             }
         }
-
         private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FisIptal();
         }
-
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XZ_Raporu xz = new XZ_Raporu();
             xz.setDepartman = Convert.ToString(cmb_Departman.EditValue);
             xz.ShowDialog();
         }
-
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (xtraTabControl1.SelectedTabPage == tab_Genelrapor || xtraTabControl1.SelectedTabPage == tab_Satis || xtraTabControl1.SelectedTabPage == tab_Log)
@@ -1588,7 +1374,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     Fisno = Convert.ToInt32(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno"));
                 }
-
                 if (xtraTabControl1.SelectedTabPage == tab_Satis)
                 {
                     Fisno = Convert.ToInt32(gridView11.GetFocusedRowCellValue("Rsat_Fisno"));
@@ -1597,7 +1382,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     Fisno = Convert.ToInt32(gridView9.GetFocusedRowCellValue("Fisno"));
                 }
-
                 if (Fisno > 0)
                 {
                     Fis_Log log = new Fis_Log();
@@ -1606,12 +1390,10 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 }
             }
         }
-
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void chk_Detay_CheckedChanged(object sender, EventArgs e)
         {
             if (chk_Detay.Checked == true)
@@ -1627,42 +1409,32 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 cmb_DetayGrup.Properties.DataSource = null;
             }
         }
-
         private void kişiSayısıDeğiştirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             KisiSayisiDegistir kisi = new KisiSayisiDegistir();
             kisi.Fisno = Convert.ToInt32(gridView11.GetFocusedRowCellValue("Rsat_Fisno"));
             kisi.KisiSayisi = Convert.ToInt32(gridView11.GetFocusedRowCellValue("Rsat_Kisi"));
             kisi.ShowDialog();
-
             barButtonItem1_ItemClick(null, null);
         }
-
         private void gridView11_DoubleClick(object sender, EventArgs e)
         {
             Detay();
         }
-
         private void bandedGridView1_DoubleClick(object sender, EventArgs e)
         {
             Detay();
         }
-
         private void faturaİptalEtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Faturayı İptal Etmek İstiyormusunuz?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 dbtools.execcmd("Delete From Pos_Fatura where PFat_Cekno = '" + Convert.ToString(gridView6.GetFocusedRowCellValue("PFat_Cekno")) + "'");
             }
-
             barButtonItem1_ItemClick(null, null);
         }
-
         private void btnLogSatirSilRapor_Click(object sender, EventArgs e)
         {
-
-
-
             SqlConnection con = dbtools.conn;
             if (con.State == ConnectionState.Closed) con.Open();
             SqlCommand com = new SqlCommand();
@@ -1680,19 +1452,15 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             DataTable dt = new DataTable();
             da.Fill(dt);
             con.Close();
-
             gridControl9.DataSource = dt;
-
             string fileName = getLogDizaynPath();
             if (File.Exists(fileName))
             {
                 gridView9.RestoreLayoutFromXml(fileName);
             }
-
             gridView9.BestFitColumns();
             gridviewCountYaz(gridView9,"Tutar");
         }
-
         public static void gridviewCountYaz(GridView grid, string fieldName)
         {
             try
@@ -1707,13 +1475,8 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             }
             catch (Exception)
             {
-
             }
-           
         }
-
-
-
         public static string MyClass = "Raporlar";
         private void btnLogGridDizaynKaydet_Click(object sender, EventArgs e)
         {
@@ -1727,7 +1490,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 MessageBox.Show("HATA ! " + ex.Message);
             }
         }
-
         public string getLogDizaynPath()
         {
             string klasorAd = "GridDizaynPos";
@@ -1737,7 +1499,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             }
             return klasorAd + @"\" + User.P_Kod + "_Log.xml";
         }
-
         private void btnLogGridDizaynSil_Click(object sender, EventArgs e)
         {
             try
@@ -1746,10 +1507,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     return;
                 }
-
-
                 string path = getLogDizaynPath();
-
                 if (File.Exists(path))
                 {
                     File.Delete(path);
@@ -1759,15 +1517,12 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     RHMesaj.alertMesaj("Grid Dizayn BULUNAMADI! \n " + path);
                 }
-
             }
             catch (Exception ex)
             {
                 RHMesaj.MyMessageError(MyClass, "btnGridDizaynTemizle1_Click", "", ex);
             }
         }
-
-
         public string getIptalCekDizaynPath()
         {
             string klasorAd = "GridDizaynPos";
@@ -1777,8 +1532,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             }
             return klasorAd + @"\" + User.P_Kod + "_IptalCek.xml";
         }
-
-
         public string getGenelCekDizaynPath()
         {
             string klasorAd = "GridDizaynPos";
@@ -1788,7 +1541,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             }
             return klasorAd + @"\" + User.P_Kod + "_GenelCek.xml";
         }
-
         private void btnIptalGridDizanyKaydet_Click(object sender, EventArgs e)
         {
             try
@@ -1801,7 +1553,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 MessageBox.Show("HATA ! " + ex.Message);
             }
         }
-
         private void btnIptalGridDizanySil_Click(object sender, EventArgs e)
         {
             try
@@ -1810,9 +1561,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     return;
                 }
-
                 string path = getIptalCekDizaynPath();
-
                 if (File.Exists(path))
                 {
                     File.Delete(path);
@@ -1822,14 +1571,12 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     RHMesaj.alertMesaj("Grid Dizayn BULUNAMADI! \n " + path);
                 }
-
             }
             catch (Exception ex)
             {
                 RHMesaj.MyMessageError(MyClass, "btnGridDizaynTemizle1_Click", "", ex);
             }
         }
-
         private void btnGenelCekDizaynKaydet_Click(object sender, EventArgs e)
         {
             try
@@ -1842,7 +1589,6 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 MessageBox.Show("HATA ! " + ex.Message);
             }
         }
-
         private void btnGenelCekDizaynSil_Click(object sender, EventArgs e)
         {
             try
@@ -1851,11 +1597,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     return;
                 }
-
-
-
                 string path = getGenelCekDizaynPath();
-
                 if (File.Exists(path))
                 {
                     File.Delete(path);
@@ -1865,19 +1607,16 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     RHMesaj.alertMesaj("Grid Dizayn BULUNAMADI! \n " + path);
                 }
-
             }
             catch (Exception ex)
             {
                 RHMesaj.MyMessageError(MyClass, "btnGridDizaynTemizle1_Click", "", ex);
             }
         }
-
         private void Raporlar_Shown(object sender, EventArgs e)
         {
             gridyenile();
         }
-
         private void xtraTabControl1_SelectedPageChanged(object sender, DevExpress.XtraTab.TabPageChangedEventArgs e)
         {
             gridyenile();
@@ -1885,6 +1624,124 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             //{
             //    gridyenile();
             //}
+        }
+        private void btnMuhListele_Click(object sender, EventArgs e)
+        {
+            muhasebeRapor(true);
+        }
+        MuhasebeRapor rapor = null;
+        public MuhasebeRapor muhasebeRapor(bool mailGitsin = true)
+        {
+             rapor = new MuhasebeRapor();
+            try
+            {
+                string tar1 = dateTarih1.DateTime.ToString("yyyy-MM-dd");
+                string tar2 = dateTarih2.DateTime.ToString("yyyy-MM-dd");
+                string tarih = Param.Tarih.ToString("yyyy-MM-dd");
+                string query = @"declare @Fis_Tutar decimal(18,2) = (select SUM(Satis.Rsat_Tutar)   
+FROM Cst_Recete_Satis as satis WITH(NOLOCK) 
+LEFT JOIN Pos_Kodlar as  kodlar WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' and Pkod_Ozelkod <> '4'
+where  Rsat_Tarih between '" + tar1 + @"' and '" + tar2 + @"' AND Satis.Rsat_Ba = 'B' )  declare @Katsayi decimal(18,8) = ((select SUM(ISNULL(Rsat_Tutar,0)) as Tutar from Cst_Recete_Satis 
+WITH(NOLOCK)  LEFT JOIN Pos_Kodlar as  kodlar 
+WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' 
+where Rsat_Tarih='" + tarih + @"' and Pkod_Ozelkod <> '4' and Rsat_Ba = 'A'  group by Pkod_Fatura) / @Fis_Tutar )  
+if @Katsayi = 0 begin set @Katsayi = 1 end  SELECT MIN(convert(date,Rsat_Tarih)) as Rsat_Tarih,
+Kodlar_Ad + ' BEDELI' as Aciklama,
+MIN(Rsat_Kdvoran) as Rec_Kdv,      
+((SUM(Rsat_Tutar) * 100 / (100 + MIN(Rsat_Kdvoran))) * MIN(Rsat_Kdvoran) / 100) * @Katsayi as Kdv,       
+(SUM(Rsat_Tutar) * 100 / (100 + MIN(Rsat_Kdvoran))) * @Katsayi as Net,      
+(SUM(Rsat_Tutar)) * @Katsayi as Tutar
+FROM Cst_Recete_Satis WITH(NOLOCK)      
+LEFT JOIN Cst_Recete WITH(NOLOCK) on Rec_Genelkod = Rsat_Recete      
+LEFT JOIN Stok_Kodlar WITH(NOLOCK) on Rec_Urungrup = Kodlar_Kod AND Kodlar_Sinif = '10'  
+WHERE Rsat_Tarih between '" + tar1 + @"' and '" + tar2 + @"' AND Rsat_Ba = 'B' and Rsat_Satistip<>'O'
+GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
+                DataTable dataTable = dbtools.SelectTableR(query);
+                decimal brutToplam = 0;
+                decimal netToplam = 0;
+                if (dataTable != null && dataTable.Rows.Count > 0)
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        brutToplam += Convert.ToDecimal(row["Tutar"].ToString());
+                        netToplam += Convert.ToDecimal(row["Net"].ToString());
+                    }
+                rapor.DataSource = dataTable;
+                rapor.txtTarih.Text = DateTime.Now.ToString("dd.MM.yyyy");
+                rapor.txtDepAd.Text = Departman.Dep_Adi;
+                //rapor.txtBrutToplam.Text = brutToplam.ToString();
+                //rapor.txtNetToplam.Text = netToplam.ToString();
+                var istatis = dbtools.SelectTableR("exec Pos_Satis_Istatistik @Tarih1='" + tarih + "', @Tarih2='" + tarih + "',@TekDepartman='" + Departman.Dep_Kodu + "',@Tahsilat=1");
+                string odemeler = "";
+                if (istatis != null && istatis.Rows.Count > 0)
+                {
+                    bool ilksatir = false;
+                    foreach (DataRow item in istatis.Rows)
+                    {
+                        if (ilksatir == false)
+                        {
+                            ilksatir = true;
+                            continue;
+                        }
+                        string ad = item["Ad"].ToString();
+                        string tutar = item["Tutar"].ToString();
+                        int kalanbosluk = 15 - ad.Length;
+                        string bosluk = "";
+                        for (int i = 0; i < kalanbosluk; i++)
+                        {
+                            bosluk = bosluk + " ";
+                        }
+                        int sonbosluk = bosluk.Length;
+                        odemeler = odemeler + ad + bosluk + tutar + "\n";
+                    }
+                }
+                odemeler = odemeler + "\nBRÜT TOPLAM :  " + brutToplam + "\n" + "NET TOPLAM  :  " + netToplam;
+                rapor.txtTumOdeme.Text = odemeler;
+                string klasor = "CariRapor";
+                if (!Directory.Exists(klasor))
+                {
+                    Directory.CreateDirectory(klasor);
+                }
+                string path = klasor + "\\" + DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss") + "_muh.pdf";
+                gridControlMuh.DataSource = dataTable;
+                rapor.ExportToPdf(path);
+                //gridViewMuh.ExportToPdf(path);
+                if (mailGitsin)
+                {
+                    // Mail_Gonder(path);
+                }
+                else
+                {
+                    rapor.ShowPreview();
+                }
+
+                gridviewSumYaz(gridViewMuh,"Kdv");
+                gridviewSumYaz(gridViewMuh,"Net");
+                gridviewSumYaz(gridViewMuh,"Tutar");
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError("Rapor_Sec", "muhasebeRapor", "", ex);
+            }
+            return rapor;
+        }
+
+        public void gridviewSumYaz(GridView grid,string fieldname)
+        {
+            grid.OptionsView.ShowFooter = true;
+
+            if (grid.Columns.Count > 0)
+            {
+                grid.Columns[fieldname].SummaryItem.SummaryType = DevExpress.Data.SummaryItemType.Sum;
+                grid.Columns[fieldname].SummaryItem.FieldName = fieldname;
+                grid.Columns[fieldname].SummaryItem.DisplayFormat = "{0:n4}";
+                grid.UpdateTotalSummary();
+            }
+        }
+
+
+        private void btnMuhExcel_Click(object sender, EventArgs e)
+        {
+            rapor.ShowPreview();
         }
     }
 }

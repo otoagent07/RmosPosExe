@@ -155,6 +155,10 @@ namespace Pos
                                 yeniCikis = true;
                                 this.Close();
                             }
+                            else
+                            {
+                                //MessageBox.Show("Şifre yanlış");
+                            }
                         }
                         else     //Kullanıcı Kodu - Şifre ile giriş
                         {
@@ -181,6 +185,8 @@ namespace Pos
                                 }
                                 else
                                 {
+                                   
+                                        //MessageBox.Show("Şifre yanlış");
                                     User.P_Kod = String.Empty;
                                     txt_Giris.Text = String.Empty;
                                     txt_Giris.Properties.UseSystemPasswordChar = false;
