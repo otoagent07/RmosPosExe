@@ -1641,10 +1641,10 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 string query = @"declare @Fis_Tutar decimal(18,2) = (select SUM(Satis.Rsat_Tutar)   
 FROM Cst_Recete_Satis as satis WITH(NOLOCK) 
 LEFT JOIN Pos_Kodlar as  kodlar WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' and Pkod_Ozelkod <> '4'
-where  Rsat_Tarih between '" + tar1 + @"' and '" + tar2 + @"' AND Satis.Rsat_Ba = 'B' )  declare @Katsayi decimal(18,8) = ((select SUM(ISNULL(Rsat_Tutar,0)) as Tutar from Cst_Recete_Satis 
+where  Rsat_Tarih between '"+ tar1 + @"' and '" + tar2 + @"' AND Satis.Rsat_Ba = 'B' and Rsat_Satistip<>'O' )  declare @Katsayi decimal(18,8) = ((select SUM(ISNULL(Rsat_Tutar,0)) as Tutar from Cst_Recete_Satis 
 WITH(NOLOCK)  LEFT JOIN Pos_Kodlar as  kodlar 
 WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' 
-where Rsat_Tarih='" + tarih + @"' and Pkod_Ozelkod <> '4' and Rsat_Ba = 'A'  group by Pkod_Fatura) / @Fis_Tutar )  
+where Rsat_Tarih between '" + tar1 + @"' and '" + tar2 + @"' and Pkod_Ozelkod <> '4' and Rsat_Ba = 'A' and Rsat_Satistip<>'O' group by Pkod_Fatura) / @Fis_Tutar )  
 if @Katsayi = 0 begin set @Katsayi = 1 end  SELECT MIN(convert(date,Rsat_Tarih)) as Rsat_Tarih,
 Kodlar_Ad + ' BEDELI' as Aciklama,
 MIN(Rsat_Kdvoran) as Rec_Kdv,      

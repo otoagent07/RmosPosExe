@@ -648,7 +648,7 @@ namespace Pos
                 }
 
 
-                this.Text += " [" + dbtools.database + "] v0.3.12";
+                this.Text += " [" + dbtools.database + "] v0.4.0";
 
 
 
