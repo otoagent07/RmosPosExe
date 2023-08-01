@@ -693,6 +693,12 @@ namespace Pos
                 {
                     reskullanimListele();
                 }
+                if (xtraTabControl1.SelectedTabPage == tab_muhasebe)
+                {
+                    muhasebeRapor(true);
+
+
+                }
             }
             catch (Exception ex)
             {
@@ -777,6 +783,11 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             if (xtraTabControl1.SelectedTabPage == tab_Ikram)
             {
                 Rapor_Print("İkram Edilen Ürünler Raporu", gridControl16);
+            }
+
+            if (xtraTabControl1.SelectedTabPage == tab_muhasebe)
+            {
+                rapor.ShowPreview();
             }
         }
         private void Rapor_Print(string header, GridControl grid)

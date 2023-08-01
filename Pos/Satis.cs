@@ -2611,6 +2611,8 @@ namespace Pos
                 {
                     Siparis_Gonder(false);
 
+                    dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='"+bartxt_FisNo.EditValue.ToString()+"'");
+
                     if (Departman.Kodlar_AndPos_NFC == true)
                     {
                         HesapBul();

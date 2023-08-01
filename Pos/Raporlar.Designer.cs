@@ -409,14 +409,11 @@
             this.tab_reskullanim = new DevExpress.XtraTab.XtraTabPage();
             this.gridControlResKullanim = new DevExpress.XtraGrid.GridControl();
             this.gridViewResKullanim = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.tab_muhasebe = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.btnMuhListele = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.btnMuhExcel = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -516,15 +513,12 @@
             this.tab_reskullanim.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlResKullanim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewResKullanim)).BeginInit();
-            this.xtraTabPage1.SuspendLayout();
+            this.tab_muhasebe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            this.panelControl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridView8_1
@@ -1301,7 +1295,7 @@
             this.tab_AylikGenelRapor,
             this.tab_Ikram,
             this.tab_reskullanim,
-            this.xtraTabPage1});
+            this.tab_muhasebe});
             this.xtraTabControl1.SelectedPageChanged += new DevExpress.XtraTab.TabPageChangedEventHandler(this.xtraTabControl1_SelectedPageChanged);
             // 
             // tab_Satis
@@ -4235,13 +4229,12 @@
             this.gridViewResKullanim.OptionsView.ColumnAutoWidth = false;
             this.gridViewResKullanim.OptionsView.ShowAutoFilterRow = true;
             // 
-            // xtraTabPage1
+            // tab_muhasebe
             // 
-            this.xtraTabPage1.Controls.Add(this.panelControl2);
-            this.xtraTabPage1.Controls.Add(this.panelControl4);
-            this.xtraTabPage1.Controls.Add(this.panelControl3);
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
+            this.tab_muhasebe.Controls.Add(this.panelControl2);
+            this.tab_muhasebe.Controls.Add(this.panelControl4);
+            this.tab_muhasebe.Name = "tab_muhasebe";
+            resources.ApplyResources(this.tab_muhasebe, "tab_muhasebe");
             // 
             // panelControl2
             // 
@@ -4271,29 +4264,8 @@
             // 
             // panelControl4
             // 
-            this.panelControl4.Controls.Add(this.btnMuhListele);
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
-            // 
-            // btnMuhListele
-            // 
-            this.btnMuhListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMuhListele.ImageOptions.Image")));
-            resources.ApplyResources(this.btnMuhListele, "btnMuhListele");
-            this.btnMuhListele.Name = "btnMuhListele";
-            this.btnMuhListele.Click += new System.EventHandler(this.btnMuhListele_Click);
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.Controls.Add(this.btnMuhExcel);
-            resources.ApplyResources(this.panelControl3, "panelControl3");
-            this.panelControl3.Name = "panelControl3";
-            // 
-            // btnMuhExcel
-            // 
-            this.btnMuhExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMuhExcel.ImageOptions.Image")));
-            resources.ApplyResources(this.btnMuhExcel, "btnMuhExcel");
-            this.btnMuhExcel.Name = "btnMuhExcel";
-            this.btnMuhExcel.Click += new System.EventHandler(this.btnMuhExcel_Click);
             // 
             // Raporlar
             // 
@@ -4408,15 +4380,12 @@
             this.tab_reskullanim.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlResKullanim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewResKullanim)).EndInit();
-            this.xtraTabPage1.ResumeLayout(false);
+            this.tab_muhasebe.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            this.panelControl3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4789,13 +4758,10 @@
         private DevExpress.XtraTab.XtraTabPage tab_reskullanim;
         private DevExpress.XtraGrid.GridControl gridControlResKullanim;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewResKullanim;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private DevExpress.XtraTab.XtraTabPage tab_muhasebe;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraEditors.SimpleButton btnMuhListele;
-        private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraGrid.GridControl gridControlMuh;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewMuh;
-        private DevExpress.XtraEditors.SimpleButton btnMuhExcel;
     }
 }

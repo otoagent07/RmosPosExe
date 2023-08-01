@@ -2792,6 +2792,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                             birkere = false;
                             AbuyerPr(Fisno, true, 0, baslik, "", "", false);
                         }
+
+
+
+                        dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + Fisno + "'");
+
                     }
                     catch (Exception err)
                     {
@@ -3647,6 +3652,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 }
             }
 
+
+
+            dbtools.execcmdR("update Pos_Log set Log_HesapDokumu='E',Log_Yazdirilmis='E'  where Log_FisNo='" + Fisno + "'");
 
             return "OK";
         }
