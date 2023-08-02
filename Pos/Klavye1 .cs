@@ -64,7 +64,7 @@ namespace Pos
             if (Convert.ToString(this.Tag) == "SATIRSIL")
             {
                 lbl_UrunAdi.Text = UrunAdi;
-                lbl_Baslik.Text = res_man.GetString("Miktar Giriniz...");
+                lbl_Baslik.Text = "Silinecek Miktarı Giriniz...";
             }
             if (Convert.ToString(this.Tag) == "ZAYISIL")
             {
