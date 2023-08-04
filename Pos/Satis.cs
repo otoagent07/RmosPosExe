@@ -174,7 +174,7 @@ namespace Pos
 
             marsSiparis(); // marşla doğru çalışıyor . sipariş yanlış çalışıyor. (iptal abuyerden çıkmıyor)
 
-
+            btn_Bindirim.Enabled = User.G_Bindirim;
 
         }
 
@@ -4252,6 +4252,83 @@ where  Rsat_Id='" + Rsat_Id + "'";
             {
                 RHMesaj.alertMesaj("Sadece servis payı düzeltilebilir !");
             }
+        }
+
+        private void btn_Bindirim_Click(object sender, EventArgs e)
+        {
+            if (Param.Param_Bindirim == "")
+            {
+                MessageBox.Show(res_man.GetString("Bindirim Recetesi Tanımlı Değil...!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Indirim ind = new Indirim();
+            ind.Tag = "B";
+            ind.toplamTutar = 0;
+            ind.ShowDialog();
+
+            decimal tutar = 0, doviztutar = 0, oran = 0;
+            if (ind.indTipi == "T")
+            {
+                if (Param.Calisma_Sekli == 1)       //Dövizli
+                {
+                    doviztutar = ind.indSayi;
+                    tutar = doviztutar * Param.Doviz_Kuru;
+                }
+                else
+                {
+                    tutar = ind.indSayi;
+                    doviztutar = tutar / Param.Doviz_Kuru;
+
+                    decimal toplamTutar23 = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                    decimal oran23 = (tutar / toplamTutar23) * 100;
+
+                    if (oran23 > User.P_Indirim_Yuzde)
+                    {
+                        MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
+                        return;
+                    }
+                }
+
+
+
+            }
+            if (ind.indTipi == "Y")
+            {
+                oran = ind.indSayi;
+            }
+
+            if (ind.indTipi == "MY")
+            {
+                oran = ind.indSayi;
+                ind.indTipi = "Y";
+
+            }
+
+
+
+            if (oran > 0 || tutar > 0)
+            {
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+                Fis_Islem.Bindirim_Uygula(fisno, ind.indTipi, tutar, doviztutar, oran);
+
+                decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                if (oran > 0)
+                {
+                    string aciklama = "SERVİS PAYI UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " SERVİS PAYI ORANI : " + oran + " BİNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ServisPayi_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+                }
+                else if (tutar > 0)
+                {
+                    string aciklama = "SERVİS PAYI UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " SERVİS PAYI TUTARI : " + tutar + " BİNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ServisPayi_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+                }
+
+            }
+
+            gridyenile();
         }
     }
 }

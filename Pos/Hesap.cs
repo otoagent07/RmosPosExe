@@ -2208,9 +2208,6 @@ namespace Pos
                 oran = ind.indSayi;
                 ind.indTipi = "Y";
 
-
-
-
             }
 
 
