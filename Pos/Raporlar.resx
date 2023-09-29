@@ -3037,6 +3037,51 @@
   <data name="gridColumn124.VisibleIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
+  <data name="gridColumn141.Caption" xml:space="preserve">
+    <value>Satış Saati</value>
+  </data>
+  <data name="gridColumn141.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn141.VisibleIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="gridColumn142.Caption" xml:space="preserve">
+    <value>İndirim</value>
+  </data>
+  <data name="gridColumn142.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn142.Summary1" xml:space="preserve">
+    <value>Rsat_Ind</value>
+  </data>
+  <data name="gridColumn142.Summary2" xml:space="preserve">
+    <value>{0:0.##}</value>
+  </data>
+  <data name="gridColumn142.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn142.VisibleIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="gridColumn143.Caption" xml:space="preserve">
+    <value>Hapy İndirim Tutar</value>
+  </data>
+  <data name="gridColumn143.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn143.Summary1" xml:space="preserve">
+    <value>Rsat_HapyhourTutar</value>
+  </data>
+  <data name="gridColumn143.Summary2" xml:space="preserve">
+    <value>{0:0.##}</value>
+  </data>
+  <data name="gridColumn143.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn143.VisibleIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
     <value>999, 526</value>
   </data>
@@ -12938,6 +12983,24 @@
     <value>gridColumn124</value>
   </data>
   <data name="&gt;&gt;gridColumn124.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn141.Name" xml:space="preserve">
+    <value>gridColumn141</value>
+  </data>
+  <data name="&gt;&gt;gridColumn141.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn142.Name" xml:space="preserve">
+    <value>gridColumn142</value>
+  </data>
+  <data name="&gt;&gt;gridColumn142.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn143.Name" xml:space="preserve">
+    <value>gridColumn143</value>
+  </data>
+  <data name="&gt;&gt;gridColumn143.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gridView10.Name" xml:space="preserve">

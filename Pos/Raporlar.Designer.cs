@@ -295,6 +295,9 @@
             this.gridColumn118 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn123 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn124 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn141 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn142 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn143 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tab_Alacak = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl10 = new DevExpress.XtraGrid.GridControl();
             this.gridView10 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -2901,7 +2904,10 @@
             this.gridColumn117,
             this.gridColumn118,
             this.gridColumn123,
-            this.gridColumn124});
+            this.gridColumn124,
+            this.gridColumn141,
+            this.gridColumn142,
+            this.gridColumn143});
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ColumnAutoWidth = false;
@@ -3107,6 +3113,31 @@
             this.gridColumn124.FieldName = "Rsat_Kartno";
             this.gridColumn124.Name = "gridColumn124";
             this.gridColumn124.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn141
+            // 
+            resources.ApplyResources(this.gridColumn141, "gridColumn141");
+            this.gridColumn141.FieldName = "Rsat_Satissaat";
+            this.gridColumn141.Name = "gridColumn141";
+            this.gridColumn141.OptionsColumn.AllowEdit = false;
+            // 
+            // gridColumn142
+            // 
+            resources.ApplyResources(this.gridColumn142, "gridColumn142");
+            this.gridColumn142.FieldName = "Rsat_Ind";
+            this.gridColumn142.Name = "gridColumn142";
+            this.gridColumn142.OptionsColumn.AllowEdit = false;
+            this.gridColumn142.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn142.Summary"))), resources.GetString("gridColumn142.Summary1"), resources.GetString("gridColumn142.Summary2"))});
+            // 
+            // gridColumn143
+            // 
+            resources.ApplyResources(this.gridColumn143, "gridColumn143");
+            this.gridColumn143.FieldName = "Rsat_HapyhourTutar";
+            this.gridColumn143.Name = "gridColumn143";
+            this.gridColumn143.OptionsColumn.AllowEdit = false;
+            this.gridColumn143.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn143.Summary"))), resources.GetString("gridColumn143.Summary1"), resources.GetString("gridColumn143.Summary2"))});
             // 
             // tab_Alacak
             // 
@@ -4763,5 +4794,8 @@
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraGrid.GridControl gridControlMuh;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewMuh;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn141;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn142;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn143;
     }
 }

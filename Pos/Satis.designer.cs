@@ -81,6 +81,7 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnServisTutarDuzelt = new DevExpress.XtraEditors.SimpleButton();
+            this.btnJokerAciklama = new DevExpress.XtraEditors.SimpleButton();
             this.btnTopluSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_SpSil = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Fix = new DevExpress.XtraEditors.CheckButton();
@@ -94,8 +95,8 @@
             this.btn_Arti = new DevExpress.XtraEditors.SimpleButton();
             this.btn_3 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_Bindirim = new DevExpress.XtraEditors.SimpleButton();
             this.btnMenuAc = new DevExpress.XtraEditors.SimpleButton();
-            this.btnJokerAciklama = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_SatirSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_MiktarDuzelt = new DevExpress.XtraEditors.SimpleButton();
@@ -151,7 +152,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_Bindirim = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -682,6 +682,16 @@
             this.btnServisTutarDuzelt.Name = "btnServisTutarDuzelt";
             this.btnServisTutarDuzelt.Click += new System.EventHandler(this.btnServisTutarDuzelt_Click);
             // 
+            // btnJokerAciklama
+            // 
+            this.btnJokerAciklama.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnJokerAciklama.Appearance.Font")));
+            this.btnJokerAciklama.Appearance.Options.UseFont = true;
+            this.btnJokerAciklama.Appearance.Options.UseTextOptions = true;
+            this.btnJokerAciklama.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            resources.ApplyResources(this.btnJokerAciklama, "btnJokerAciklama");
+            this.btnJokerAciklama.Name = "btnJokerAciklama";
+            this.btnJokerAciklama.Click += new System.EventHandler(this.simpleButton4_Click_1);
+            // 
             // btnTopluSil
             // 
             this.btnTopluSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnTopluSil.Appearance.Font")));
@@ -813,6 +823,15 @@
             resources.ApplyResources(this.panelControl6, "panelControl6");
             this.panelControl6.Name = "panelControl6";
             // 
+            // btn_Bindirim
+            // 
+            resources.ApplyResources(this.btn_Bindirim, "btn_Bindirim");
+            this.btn_Bindirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Bindirim.Appearance.Font")));
+            this.btn_Bindirim.Appearance.Options.UseFont = true;
+            this.btn_Bindirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Bindirim.ImageOptions.Image")));
+            this.btn_Bindirim.Name = "btn_Bindirim";
+            this.btn_Bindirim.Click += new System.EventHandler(this.btn_Bindirim_Click);
+            // 
             // btnMenuAc
             // 
             this.btnMenuAc.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnMenuAc.Appearance.Font")));
@@ -824,16 +843,6 @@
             resources.ApplyResources(this.btnMenuAc, "btnMenuAc");
             this.btnMenuAc.Name = "btnMenuAc";
             this.btnMenuAc.Click += new System.EventHandler(this.btnMenuAc_Click);
-            // 
-            // btnJokerAciklama
-            // 
-            this.btnJokerAciklama.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnJokerAciklama.Appearance.Font")));
-            this.btnJokerAciklama.Appearance.Options.UseFont = true;
-            this.btnJokerAciklama.Appearance.Options.UseTextOptions = true;
-            this.btnJokerAciklama.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            resources.ApplyResources(this.btnJokerAciklama, "btnJokerAciklama");
-            this.btnJokerAciklama.Name = "btnJokerAciklama";
-            this.btnJokerAciklama.Click += new System.EventHandler(this.simpleButton4_Click_1);
             // 
             // simpleButton2
             // 
@@ -1390,15 +1399,6 @@
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // btn_Bindirim
-            // 
-            resources.ApplyResources(this.btn_Bindirim, "btn_Bindirim");
-            this.btn_Bindirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Bindirim.Appearance.Font")));
-            this.btn_Bindirim.Appearance.Options.UseFont = true;
-            this.btn_Bindirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Bindirim.ImageOptions.Image")));
-            this.btn_Bindirim.Name = "btn_Bindirim";
-            this.btn_Bindirim.Click += new System.EventHandler(this.btn_Bindirim_Click);
             // 
             // Satis
             // 
