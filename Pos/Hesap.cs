@@ -1591,6 +1591,20 @@ namespace Pos
                 return;
             }
             yazdirmadanKapat();
+
+            indirimYaz();
+        }
+
+        public void indirimYaz()
+        {
+            try
+            {
+                dbtools.execcmdR("exec indirimYaz @Rsat_Fisno='" + Convert.ToInt32(this.Tag) + "'");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Hesap_Kapat()
@@ -1896,10 +1910,8 @@ namespace Pos
         }
 
 
-
-        private void btn_Yazdirkapat_Click(object sender, EventArgs e)
+        public void yazdirKapat()
         {
-
             try
             {
                 if (odemeKodSaatAraligindaKapalimi())
@@ -1981,7 +1993,7 @@ namespace Pos
                         if (c == System.Windows.Forms.DialogResult.Yes)
                         {
                             AdisyonPr adisyon = new AdisyonPr();
-                            string cevap = adisyon.Adisyon_Yaz(Convert.ToInt32(this.Tag),yazdirkapat:"1");
+                            string cevap = adisyon.Adisyon_Yaz(Convert.ToInt32(this.Tag), yazdirkapat: "1");
                             if (cevap != "OK")
                             {
                                 MessageBox.Show(cevap);
@@ -2039,8 +2051,14 @@ namespace Pos
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "btn_Yazdirkapat_Click", "", ex);
+                RHMesaj.MyMessageError(MyClass, "yazdirKapat", "",ex);
             }
+        }
+        private void btn_Yazdirkapat_Click(object sender, EventArgs e)
+        {
+            yazdirKapat();
+            indirimYaz();
+
 
         }
 

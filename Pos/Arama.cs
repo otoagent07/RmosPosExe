@@ -204,7 +204,19 @@ namespace Pos
                 string Kart = txt_Arama.Text.Replace(" ", "").Replace(":", "");
                 txt_Arama.Text = Kart;
             }
-            Arama_Yap();
+
+            if (chk_KartNo.Checked)
+            {
+                if (txt_Arama.Text.Length >= Param.kartnoSayisi)
+                {
+                    Arama_Yap();
+                }
+            }
+            else
+            {
+                Arama_Yap();
+            }
+            
         }
 
         private void Arama_Yap()
@@ -639,7 +651,7 @@ namespace Pos
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "tamam", "",ex);
+                RHMesaj.MyMessageError(MyClass, "tamam", "", ex);
             }
         }
         public void btn_OK_Click(object sender, EventArgs e)

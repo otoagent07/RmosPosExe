@@ -6041,6 +6041,97 @@
   <data name="&gt;&gt;xtraTabPage6.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="textEdit198.EditValue" xml:space="preserve">
+    <value>Kart No Arama Sayısı</value>
+  </data>
+  <data name="textEdit198.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 275</value>
+  </data>
+  <data name="textEdit198.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
+  </data>
+  <data name="textEdit198.TabIndex" type="System.Int32, mscorlib">
+    <value>359</value>
+  </data>
+  <data name="textEdit198.ToolTip" xml:space="preserve">
+    <value>Kartno karakter sayısı</value>
+  </data>
+  <data name="&gt;&gt;textEdit198.Name" xml:space="preserve">
+    <value>textEdit198</value>
+  </data>
+  <data name="&gt;&gt;textEdit198.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit198.Parent" xml:space="preserve">
+    <value>xtraTabPage8</value>
+  </data>
+  <data name="&gt;&gt;textEdit198.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtKartnoSayisi.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtKartnoSayisi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 276</value>
+  </data>
+  <data name="spinEdit2.Properties.Mask.EditMask" xml:space="preserve">
+    <value>f0</value>
+  </data>
+  <data name="spinEdit2.Properties.NullText" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtKartnoSayisi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="txtKartnoSayisi.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxOS4xLCBWZXJzaW9uPTE5LjEu
+        My4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4zLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtBwAAAA1BbGxvd0h0bWxUZXh0BEljb24MSW1hZ2VPcHRpb25z
+        CkxlZnRJbmRlbnQITWF4V2lkdGgST3duZXJBbGxvd0h0bWxUZXh0BFRleHQEBAQAAAABH0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4DAAAAE1N5c3RlbS5EcmF3aW5nLkljb24JAAAAKERldkV4cHJl
+        c3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9wdGlvbnMCAAAACAgBAgAAAAH2/////P///wIAAAAKCQsA
+        AAAAAAAAPAEAAAAGDAAAABRNYXggU2F0xLHFnyBNaWt0YXLEsQUIAAAAHERldkV4cHJlc3MuVXRpbHMu
+        VG9vbFRpcEl0ZW0HAAAADUFsbG93SHRtbFRleHQESWNvbgxJbWFnZU9wdGlvbnMKTGVmdEluZGVudAhN
+        YXhXaWR0aBJPd25lckFsbG93SHRtbFRleHQEVGV4dAQEBAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZh
+        dWx0Qm9vbGVhbgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAoRGV2RXhwcmVzcy5VdGlscy5Ub29s
+        VGlwSXRlbUltYWdlT3B0aW9ucwIAAAAICAECAAAAAfP////8////AgAAAAoJDgAAAAYAAAA8AQAAAAYP
+        AAAAN8OccsO8bsO8biBlbiBmYXpsYSBrYcOnIGFkZXQgc2F0xLFsYWNhxJ/EsW7EsSBiZWxpcmxlci4F
+        CwAAAChEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVtSW1hZ2VPcHRpb25zBQAAAAhJbWFnZVVyaQxT
+        dmdJbWFnZVNpemUJQWxpZ25tZW50CkltYWdlSW5kZXgTSW1hZ2VUb1RleHREaXN0YW5jZQEEBAAAE1N5
+        c3RlbS5EcmF3aW5nLlNpemUJAAAAJkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50
+        AgAAAAgIAgAAAAYQAAAAAAXv////E1N5c3RlbS5EcmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAA
+        CAgJAAAAAAAAAAAAAAAF7v///yZEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJbWFnZUFsaWdubWVudAEA
+        AAAHdmFsdWVfXwAIAgAAAAAAAAD/////DgAAAAEOAAAACwAAAAkQAAAAAe3////v////AAAAAAAAAAAB
+        7P///+7///8AAAAA/////w4AAAAL
+</value>
+  </data>
+  <data name="txtKartnoSayisi.TabIndex" type="System.Int32, mscorlib">
+    <value>358</value>
+  </data>
+  <data name="&gt;&gt;txtKartnoSayisi.Name" xml:space="preserve">
+    <value>txtKartnoSayisi</value>
+  </data>
+  <data name="&gt;&gt;txtKartnoSayisi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtKartnoSayisi.Parent" xml:space="preserve">
+    <value>xtraTabPage8</value>
+  </data>
+  <data name="&gt;&gt;txtKartnoSayisi.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="onburoikramsifiryazaktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 251</value>
   </data>
@@ -6048,7 +6139,7 @@
     <value>Önbüroya İkram Sıfır Yaz Aktif</value>
   </data>
   <data name="onburoikramsifiryazaktif.Size" type="System.Drawing.Size, System.Drawing">
-    <value>689, 19</value>
+    <value>199, 19</value>
   </data>
   <data name="onburoikramsifiryazaktif.TabIndex" type="System.Int32, mscorlib">
     <value>357</value>
@@ -6063,7 +6154,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;onburoikramsifiryazaktif.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="satirsilfiscikmasinaktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 226</value>
@@ -6087,7 +6178,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;satirsilfiscikmasinaktif.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="kisivegarsonbirkeresoraktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 201</value>
@@ -6111,7 +6202,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;kisivegarsonbirkeresoraktif.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="masatakiphesappasif.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 176</value>
@@ -6135,7 +6226,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;masatakiphesappasif.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="masamusait.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 151</value>
@@ -6159,7 +6250,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;masamusait.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="checkOtoIndirimAktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>121, 51</value>
@@ -6264,7 +6355,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;groupControl12.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="yuvarlamaRecete.Location" type="System.Drawing.Point, System.Drawing">
     <value>121, 51</value>
@@ -6459,7 +6550,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;groupControl11.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="yazdirilmamissiparis.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 126</value>
@@ -6483,7 +6574,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;yazdirilmamissiparis.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="Param_ParcaliMasaAktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 103</value>
@@ -6507,7 +6598,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;Param_ParcaliMasaAktif.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="txtUrunSize.EditValue" xml:space="preserve">
     <value>140;60</value>
@@ -6604,7 +6695,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;groupControl10.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="Param_SatisCikisButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 78</value>
@@ -6628,7 +6719,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;Param_SatisCikisButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="Param_GetirOtomatikOnay.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -6652,7 +6743,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;Param_GetirOtomatikOnay.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="Param_GetirTest.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 28</value>
@@ -6676,7 +6767,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;Param_GetirTest.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="Param_PaketKucukEkran.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -6700,7 +6791,7 @@
     <value>xtraTabPage8</value>
   </data>
   <data name="&gt;&gt;Param_PaketKucukEkran.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="xtraTabPage8.Size" type="System.Drawing.Size, System.Drawing">
     <value>818, 526</value>
@@ -28373,6 +28464,12 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
   <data name="&gt;&gt;gridColumn160.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;gridColumn174.Name" xml:space="preserve">
+    <value>gridColumn174</value>
+  </data>
+  <data name="&gt;&gt;gridColumn174.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;gridView13.Name" xml:space="preserve">
     <value>gridView13</value>
   </data>
@@ -29146,12 +29243,6 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
   </data>
   <data name="&gt;&gt;fontDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridColumn174.Name" xml:space="preserve">
-    <value>gridColumn174</value>
-  </data>
-  <data name="&gt;&gt;gridColumn174.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Ayarlar</value>

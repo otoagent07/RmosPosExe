@@ -165,6 +165,7 @@ namespace Pos.Class
         public static bool Param_ParcaliMasaAktif { get; set; }
         public static bool yazdirilmamissiparis { get; set; }
         public static bool masamusait { get; set; }
+        public static int kartnoSayisi { get; set; }
         public static bool masatakiphesappasif { get; set; }
         public static bool kisivegarsonbirkeresoraktif { get; set; }
         public static bool satirsilfiscikmasinaktif { get; set; }
@@ -217,6 +218,7 @@ namespace Pos.Class
                         ",ISNULL(Param_ParcaliMasaAktif,0) as Param_ParcaliMasaAktif  " +
                         ",ISNULL(yazdirilmamissiparis,0) as yazdirilmamissiparis  " +
                         ",ISNULL(masamusait,0) as masamusait  " +
+                        ",ISNULL(kartnoSayisi,1) as kartnoSayisi  " +
                         ",ISNULL(masatakiphesappasif,0) as masatakiphesappasif  " +
                         ",ISNULL(kisivegarsonbirkeresoraktif,0) as kisivegarsonbirkeresoraktif  " +
                         ",ISNULL(satirsilfiscikmasinaktif,0) as satirsilfiscikmasinaktif  " +
@@ -411,6 +413,7 @@ namespace Pos.Class
                     Param_ParcaliMasaAktif = Convert.ToBoolean(dt.Rows[0]["Param_ParcaliMasaAktif"]);
                     yazdirilmamissiparis = Convert.ToBoolean(dt.Rows[0]["yazdirilmamissiparis"]);
                     masamusait = Convert.ToBoolean(dt.Rows[0]["masamusait"]);
+                    kartnoSayisi = Convert.ToInt32(dt.Rows[0]["kartnoSayisi"]);
                     masatakiphesappasif = Convert.ToBoolean(dt.Rows[0]["masatakiphesappasif"]);
                     kisivegarsonbirkeresoraktif = Convert.ToBoolean(dt.Rows[0]["kisivegarsonbirkeresoraktif"]);
                     satirsilfiscikmasinaktif = Convert.ToBoolean(dt.Rows[0]["satirsilfiscikmasinaktif"]);
