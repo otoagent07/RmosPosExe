@@ -31,6 +31,7 @@ namespace Pos
         public string Kart_No { get; set; }
         public string Ind_Kodu { get; set; }
         public decimal Ind_Oran { get; set; }
+        public decimal Cari_indirimOran { get; set; } = 0;
         public string Bilgi { get; set; } = string.Empty;
 
         public Arama()
@@ -527,7 +528,7 @@ namespace Pos
             gridColumn6.FieldName = "Cari_Adres2";
             gridColumn7.FieldName = "Cari_Adres3";
             gridColumn8.FieldName = "Cari_Kart";
-            gridColumn9.FieldName = "";
+            gridColumn9.FieldName = "Cari_indirimOran";
             gridColumn10.FieldName = "";
             gridColumn11.FieldName = "";
             gridColumn12.FieldName = "";
@@ -541,7 +542,7 @@ namespace Pos
             gridColumn6.Caption = "Cari Adres2";
             gridColumn7.Caption = "Cari Adres3";
             gridColumn8.Caption = "Cari Kart";
-            gridColumn9.Caption = "...";
+            gridColumn9.Caption = "Cari_indirimOran";
             gridColumn10.Caption = "...";
             gridColumn11.Caption = "...";
             gridColumn12.Caption = "...";
@@ -554,12 +555,12 @@ namespace Pos
             gridColumn6.Visible = true;
             gridColumn7.Visible = true;
             gridColumn8.Visible = true;
-            gridColumn9.Visible = false;
+            gridColumn9.Visible = true;
             gridColumn10.Visible = false;
             gridColumn11.Visible = false;
             gridColumn12.Visible = false;
 
-            gridControl1.DataSource = dbtools.SelectTable("select Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3,Cari_Kart from Pos_Cari where ISNULL(Cari_Aktif,1) = 1 " + filtre + tipFilter);
+            gridControl1.DataSource = dbtools.SelectTable("select Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3,Cari_Kart,isnull(Cari_indirimOran,0) as Cari_indirimOran from Pos_Cari where ISNULL(Cari_Aktif,1) = 1 " + filtre + tipFilter);
             gridView1.BestFitColumns();
         }
 
@@ -631,6 +632,7 @@ namespace Pos
                 if (Mus_tipi == "C")
                 {
                     Cari_Kod = Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Kod"));
+                    Cari_indirimOran = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Cari_indirimOran").ToString());
                     Bilgi = "Cari : " + Cari_Kod;
                     Uye_Adsoyad = Convert.ToString(Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Ad")) + " " + Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Soyad")));
 

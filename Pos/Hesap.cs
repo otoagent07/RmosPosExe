@@ -556,6 +556,7 @@ namespace Pos
         string FolioKart_No = String.Empty;
 
         string FolioKart_ID = "";
+        string cariIndirimDec = "0";
 
         private void btn_Hesapara_Click(object sender, EventArgs e)
         {
@@ -586,7 +587,7 @@ namespace Pos
             odemeKodu_A = ara.Odeme_Kodu;
             FolioKart_No = ara.Kart_No;
             FolioKart_ID = Convert.ToString(ara.KartID);
-
+            cariIndirimDec = ara.Cari_indirimOran.ToString().Replace(",",".");
             txt_Hesapno.Text = Convert.ToString(odaNo_A) == null ? cari_A : odaNo_A;
             lbl_Bilgi.Text = ara.Bilgi; // burada
 
@@ -595,7 +596,7 @@ namespace Pos
                 Fis_Update();
             }
 
-
+            
             if (Odeme_Ozelkod == 2 && musTipi_A == "C" && !string.IsNullOrEmpty(cari_A))
             {
                 DataTable dtCari = dbtools.SelectTable("select ISNULL(Cari_Limit,0) as Cari_Limit, ISNULL(Cari_LimitTutar,0) as Cari_LimitTutar from Pos_Cari where Cari_Kod = 'OH' and ISNULL(Cari_Aktif,1) = 1 ");
@@ -615,7 +616,11 @@ namespace Pos
                     }
                 }
             }
-
+            if (Param.cariindirimAktif && ara.Cari_indirimOran > 0)
+            {
+                string query = $@"exec Pos_Manuel_Indirim @Fisno={this.Tag},@Ind_Tip=N'Y',@Ind_Tutar=N'0',@Ind_Doviztutar=N'0',@Ind_Oran=N'{cariIndirimDec}',@Ind_Turu=N'MANUEL',@Split=0,@Ind_User=N'1',@aciklama=N'{uyeAdsoyad_A} %{cariIndirimDec} indirim',@Cari_id='{ara.Cari_Kod}'";
+                dbtools.execcmdR(query);
+            }
             gridyenile();
             Bakiye_Kontrol();
         }

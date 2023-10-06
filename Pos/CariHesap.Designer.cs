@@ -187,6 +187,8 @@
             this.textEdit56 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Cari_F_Adres1 = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit27 = new DevExpress.XtraEditors.TextEdit();
+            this.txtIndOran = new DevExpress.XtraEditors.SpinEdit();
             this.Cari_DogumTar = new DevExpress.XtraEditors.DateEdit();
             this.Cari_Aktif = new DevExpress.XtraEditors.CheckEdit();
             this.look_CariMuh = new DevExpress.XtraEditors.LookUpEdit();
@@ -345,6 +347,7 @@
             this.dateEditRap3BitTar = new DevExpress.XtraEditors.DateEdit();
             this.dateEditRap3BasTar = new DevExpress.XtraEditors.DateEdit();
             this.btnCariRap3Listele = new DevExpress.XtraEditors.SimpleButton();
+            this.gridColumn80 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Cari_Hesap.SuspendLayout();
@@ -397,6 +400,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Cari_F_Adres1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit27.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIndOran.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_DogumTar.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_DogumTar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_Aktif.Properties)).BeginInit();
@@ -565,7 +570,6 @@
             // 
             // tab_Cari_Hesap
             // 
-            resources.ApplyResources(this.tab_Cari_Hesap, "tab_Cari_Hesap");
             this.tab_Cari_Hesap.Controls.Add(this.dateEditCariBit);
             this.tab_Cari_Hesap.Controls.Add(this.dateEditCariBas);
             this.tab_Cari_Hesap.Controls.Add(this.simpleButton10);
@@ -594,6 +598,7 @@
             this.tab_Cari_Hesap.Controls.Add(this.textEdit25);
             this.tab_Cari_Hesap.Controls.Add(this.textEdit69);
             this.tab_Cari_Hesap.Name = "tab_Cari_Hesap";
+            resources.ApplyResources(this.tab_Cari_Hesap, "tab_Cari_Hesap");
             // 
             // dateEditCariBit
             // 
@@ -603,8 +608,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditCariBit.Properties.Buttons"))))});
             this.dateEditCariBit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditCariBit.Properties.CalendarTimeProperties.Buttons"))))});
-            this.dateEditCariBit.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateEditCariBit.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateEditCariBit.Properties.Mask.EditMask = resources.GetString("dateEditCariBit.Properties.Mask.EditMask");
             // 
             // dateEditCariBas
             // 
@@ -614,42 +617,28 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditCariBas.Properties.Buttons"))))});
             this.dateEditCariBas.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditCariBas.Properties.CalendarTimeProperties.Buttons"))))});
-            this.dateEditCariBas.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateEditCariBas.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateEditCariBas.Properties.Mask.EditMask = resources.GetString("dateEditCariBas.Properties.Mask.EditMask");
             // 
             // simpleButton10
             // 
-            resources.ApplyResources(this.simpleButton10, "simpleButton10");
             this.simpleButton10.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton10.Appearance.Font")));
             this.simpleButton10.Appearance.Options.UseFont = true;
             this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
+            resources.ApplyResources(this.simpleButton10, "simpleButton10");
             this.simpleButton10.Name = "simpleButton10";
             this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
             // 
             // simpleButton5
             // 
-            resources.ApplyResources(this.simpleButton5, "simpleButton5");
             this.simpleButton5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton5.Appearance.Font")));
             this.simpleButton5.Appearance.Options.UseFont = true;
             this.simpleButton5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton5, "simpleButton5");
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // gridControl7
             // 
             resources.ApplyResources(this.gridControl7, "gridControl7");
-            this.gridControl7.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl7.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl7.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl7.EmbeddedNavigator.AccessibleName");
-            this.gridControl7.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl7.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl7.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl7.EmbeddedNavigator.Anchor")));
-            this.gridControl7.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl7.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl7.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl7.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl7.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl7.EmbeddedNavigator.ImeMode")));
-            this.gridControl7.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl7.EmbeddedNavigator.MaximumSize")));
-            this.gridControl7.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl7.EmbeddedNavigator.TextLocation")));
-            this.gridControl7.EmbeddedNavigator.ToolTip = resources.GetString("gridControl7.EmbeddedNavigator.ToolTip");
-            this.gridControl7.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl7.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl7.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl7.EmbeddedNavigator.ToolTipTitle");
             this.gridControl7.MainView = this.gridView7;
             this.gridControl7.Name = "gridControl7";
             this.gridControl7.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -657,7 +646,6 @@
             // 
             // gridView7
             // 
-            resources.ApplyResources(this.gridView7, "gridView7");
             this.gridView7.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn56,
             this.gridColumn57,
@@ -679,6 +667,7 @@
             this.gridView7.OptionsView.ShowGroupPanel = false;
             this.gridView7.OptionsView.ShowViewCaption = true;
             this.gridView7.RowHeight = 25;
+            resources.ApplyResources(this.gridView7, "gridView7");
             // 
             // gridColumn56
             // 
@@ -734,10 +723,10 @@
             // 
             // groupControl3
             // 
-            resources.ApplyResources(this.groupControl3, "groupControl3");
             this.groupControl3.Controls.Add(this.spinEdit1);
             this.groupControl3.Controls.Add(this.simpleButton2);
             this.groupControl3.Controls.Add(this.textEdit14);
+            resources.ApplyResources(this.groupControl3, "groupControl3");
             this.groupControl3.Name = "groupControl3";
             // 
             // spinEdit1
@@ -762,9 +751,9 @@
             // 
             // simpleButton2
             // 
-            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
             this.simpleButton2.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
@@ -804,62 +793,62 @@
             // 
             // lbl_CariHes_Bilgi
             // 
-            resources.ApplyResources(this.lbl_CariHes_Bilgi, "lbl_CariHes_Bilgi");
             this.lbl_CariHes_Bilgi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_CariHes_Bilgi.Appearance.Font")));
             this.lbl_CariHes_Bilgi.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.lbl_CariHes_Bilgi, "lbl_CariHes_Bilgi");
             this.lbl_CariHes_Bilgi.Name = "lbl_CariHes_Bilgi";
             // 
             // btn_CariHep_Cikis
             // 
-            resources.ApplyResources(this.btn_CariHep_Cikis, "btn_CariHep_Cikis");
             this.btn_CariHep_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_CariHep_Cikis.Appearance.Font")));
             this.btn_CariHep_Cikis.Appearance.Options.UseFont = true;
             this.btn_CariHep_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_CariHep_Cikis.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_CariHep_Cikis, "btn_CariHep_Cikis");
             this.btn_CariHep_Cikis.Name = "btn_CariHep_Cikis";
             this.btn_CariHep_Cikis.Click += new System.EventHandler(this.btn_CariHep_Cikis_Click);
             // 
             // simpleButton1
             // 
-            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btn_CariHep_Print
             // 
-            resources.ApplyResources(this.btn_CariHep_Print, "btn_CariHep_Print");
             this.btn_CariHep_Print.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_CariHep_Print.Appearance.Font")));
             this.btn_CariHep_Print.Appearance.Options.UseFont = true;
             this.btn_CariHep_Print.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_CariHep_Print.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_CariHep_Print, "btn_CariHep_Print");
             this.btn_CariHep_Print.Name = "btn_CariHep_Print";
             this.btn_CariHep_Print.Click += new System.EventHandler(this.btn_CariHep_Print_Click);
             // 
             // btn_CariHep_Sil
             // 
-            resources.ApplyResources(this.btn_CariHep_Sil, "btn_CariHep_Sil");
             this.btn_CariHep_Sil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_CariHep_Sil.Appearance.Font")));
             this.btn_CariHep_Sil.Appearance.Options.UseFont = true;
             this.btn_CariHep_Sil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_CariHep_Sil.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_CariHep_Sil, "btn_CariHep_Sil");
             this.btn_CariHep_Sil.Name = "btn_CariHep_Sil";
             this.btn_CariHep_Sil.Click += new System.EventHandler(this.btn_CariHep_Sil_Click);
             // 
             // btnFiltrele
             // 
-            resources.ApplyResources(this.btnFiltrele, "btnFiltrele");
             this.btnFiltrele.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnFiltrele.Appearance.Font")));
             this.btnFiltrele.Appearance.Options.UseFont = true;
             this.btnFiltrele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFiltrele.ImageOptions.Image")));
+            resources.ApplyResources(this.btnFiltrele, "btnFiltrele");
             this.btnFiltrele.Name = "btnFiltrele";
             this.btnFiltrele.Click += new System.EventHandler(this.btnFiltrele_Click);
             // 
             // btn_CariHes_Kaydet
             // 
-            resources.ApplyResources(this.btn_CariHes_Kaydet, "btn_CariHes_Kaydet");
             this.btn_CariHes_Kaydet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_CariHes_Kaydet.Appearance.Font")));
             this.btn_CariHes_Kaydet.Appearance.Options.UseFont = true;
             this.btn_CariHes_Kaydet.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_CariHes_Kaydet.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_CariHes_Kaydet, "btn_CariHes_Kaydet");
             this.btn_CariHes_Kaydet.Name = "btn_CariHes_Kaydet";
             this.btn_CariHes_Kaydet.Click += new System.EventHandler(this.btn_CariHes_Kaydet_Click);
             // 
@@ -879,8 +868,8 @@
             // 
             // look_CariHes_Odeme
             // 
-            resources.ApplyResources(this.look_CariHes_Odeme, "look_CariHes_Odeme");
             this.look_CariHes_Odeme.EnterMoveNextControl = true;
+            resources.ApplyResources(this.look_CariHes_Odeme, "look_CariHes_Odeme");
             this.look_CariHes_Odeme.Name = "look_CariHes_Odeme";
             this.look_CariHes_Odeme.Properties.Appearance.Options.UseFont = true;
             this.look_CariHes_Odeme.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
@@ -930,25 +919,11 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("date_CariHes.Properties.Buttons"))))});
             this.date_CariHes.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.date_CariHes.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("date_CariHes.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.date_CariHes.Properties.Mask.EditMask = resources.GetString("date_CariHes.Properties.Mask.EditMask");
             // 
             // grd_CariHesap
             // 
             resources.ApplyResources(this.grd_CariHesap, "grd_CariHesap");
             this.grd_CariHesap.ContextMenuStrip = this.contextMenuStrip1;
-            this.grd_CariHesap.EmbeddedNavigator.AccessibleDescription = resources.GetString("grd_CariHesap.EmbeddedNavigator.AccessibleDescription");
-            this.grd_CariHesap.EmbeddedNavigator.AccessibleName = resources.GetString("grd_CariHesap.EmbeddedNavigator.AccessibleName");
-            this.grd_CariHesap.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("grd_CariHesap.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.grd_CariHesap.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("grd_CariHesap.EmbeddedNavigator.Anchor")));
-            this.grd_CariHesap.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grd_CariHesap.EmbeddedNavigator.BackgroundImage")));
-            this.grd_CariHesap.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("grd_CariHesap.EmbeddedNavigator.BackgroundImageLayout")));
-            this.grd_CariHesap.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("grd_CariHesap.EmbeddedNavigator.ImeMode")));
-            this.grd_CariHesap.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("grd_CariHesap.EmbeddedNavigator.MaximumSize")));
-            this.grd_CariHesap.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("grd_CariHesap.EmbeddedNavigator.TextLocation")));
-            this.grd_CariHesap.EmbeddedNavigator.ToolTip = resources.GetString("grd_CariHesap.EmbeddedNavigator.ToolTip");
-            this.grd_CariHesap.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("grd_CariHesap.EmbeddedNavigator.ToolTipIconType")));
-            this.grd_CariHesap.EmbeddedNavigator.ToolTipTitle = resources.GetString("grd_CariHesap.EmbeddedNavigator.ToolTipTitle");
             this.grd_CariHesap.MainView = this.gridView9;
             this.grd_CariHesap.Name = "grd_CariHesap";
             this.grd_CariHesap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -956,21 +931,20 @@
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.özelSilmeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // özelSilmeToolStripMenuItem
             // 
-            resources.ApplyResources(this.özelSilmeToolStripMenuItem, "özelSilmeToolStripMenuItem");
             this.özelSilmeToolStripMenuItem.Name = "özelSilmeToolStripMenuItem";
+            resources.ApplyResources(this.özelSilmeToolStripMenuItem, "özelSilmeToolStripMenuItem");
             this.özelSilmeToolStripMenuItem.Click += new System.EventHandler(this.özelSilmeToolStripMenuItem_Click);
             // 
             // gridView9
             // 
-            resources.ApplyResources(this.gridView9, "gridView9");
             this.gridView9.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn47,
             this.gridColumn48,
@@ -1045,16 +1019,16 @@
             // 
             // btn_CariAra
             // 
-            resources.ApplyResources(this.btn_CariAra, "btn_CariAra");
             this.btn_CariAra.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_CariAra.Appearance.Font")));
             this.btn_CariAra.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_CariAra, "btn_CariAra");
             this.btn_CariAra.Name = "btn_CariAra";
             this.btn_CariAra.Click += new System.EventHandler(this.btn_CariAra_Click);
             // 
             // txt_CariHes_Kodu
             // 
-            resources.ApplyResources(this.txt_CariHes_Kodu, "txt_CariHes_Kodu");
             this.txt_CariHes_Kodu.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_CariHes_Kodu, "txt_CariHes_Kodu");
             this.txt_CariHes_Kodu.Name = "txt_CariHes_Kodu";
             this.txt_CariHes_Kodu.Properties.Appearance.Options.UseFont = true;
             this.txt_CariHes_Kodu.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
@@ -1088,7 +1062,6 @@
             // 
             // tab_Cari_Tanim
             // 
-            resources.ApplyResources(this.tab_Cari_Tanim, "tab_Cari_Tanim");
             this.tab_Cari_Tanim.Controls.Add(this.simpleButton20);
             this.tab_Cari_Tanim.Controls.Add(this.simpleButton18);
             this.tab_Cari_Tanim.Controls.Add(this.simpleButton13);
@@ -1148,6 +1121,7 @@
             this.tab_Cari_Tanim.Controls.Add(this.groupControl2);
             this.tab_Cari_Tanim.Controls.Add(this.groupControl1);
             this.tab_Cari_Tanim.Name = "tab_Cari_Tanim";
+            resources.ApplyResources(this.tab_Cari_Tanim, "tab_Cari_Tanim");
             // 
             // simpleButton20
             // 
@@ -1167,19 +1141,19 @@
             // 
             // simpleButton13
             // 
-            resources.ApplyResources(this.simpleButton13, "simpleButton13");
             this.simpleButton13.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton13.Appearance.Font")));
             this.simpleButton13.Appearance.Options.UseFont = true;
             this.simpleButton13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton13.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton13, "simpleButton13");
             this.simpleButton13.Name = "simpleButton13";
             this.simpleButton13.Click += new System.EventHandler(this.simpleButton13_Click);
             // 
             // simpleButton4
             // 
-            resources.ApplyResources(this.simpleButton4, "simpleButton4");
             this.simpleButton4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton4.Appearance.Font")));
             this.simpleButton4.Appearance.Options.UseFont = true;
             this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton4, "simpleButton4");
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
@@ -1337,9 +1311,9 @@
             // 
             // Btn_F
             // 
-            resources.ApplyResources(this.Btn_F, "Btn_F");
             this.Btn_F.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("Btn_F.Appearance.Font")));
             this.Btn_F.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.Btn_F, "Btn_F");
             this.Btn_F.Name = "Btn_F";
             this.Btn_F.Click += new System.EventHandler(this.Btn_Click);
             // 
@@ -1576,18 +1550,6 @@
             // grd_Cari
             // 
             resources.ApplyResources(this.grd_Cari, "grd_Cari");
-            this.grd_Cari.EmbeddedNavigator.AccessibleDescription = resources.GetString("grd_Cari.EmbeddedNavigator.AccessibleDescription");
-            this.grd_Cari.EmbeddedNavigator.AccessibleName = resources.GetString("grd_Cari.EmbeddedNavigator.AccessibleName");
-            this.grd_Cari.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("grd_Cari.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.grd_Cari.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("grd_Cari.EmbeddedNavigator.Anchor")));
-            this.grd_Cari.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grd_Cari.EmbeddedNavigator.BackgroundImage")));
-            this.grd_Cari.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("grd_Cari.EmbeddedNavigator.BackgroundImageLayout")));
-            this.grd_Cari.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("grd_Cari.EmbeddedNavigator.ImeMode")));
-            this.grd_Cari.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("grd_Cari.EmbeddedNavigator.MaximumSize")));
-            this.grd_Cari.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("grd_Cari.EmbeddedNavigator.TextLocation")));
-            this.grd_Cari.EmbeddedNavigator.ToolTip = resources.GetString("grd_Cari.EmbeddedNavigator.ToolTip");
-            this.grd_Cari.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("grd_Cari.EmbeddedNavigator.ToolTipIconType")));
-            this.grd_Cari.EmbeddedNavigator.ToolTipTitle = resources.GetString("grd_Cari.EmbeddedNavigator.ToolTipTitle");
             this.grd_Cari.MainView = this.gridView8;
             this.grd_Cari.Name = "grd_Cari";
             this.grd_Cari.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1595,7 +1557,6 @@
             // 
             // gridView8
             // 
-            resources.ApplyResources(this.gridView8, "gridView8");
             this.gridView8.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn25,
             this.gridColumn28,
@@ -1622,7 +1583,8 @@
             this.gridColumn55,
             this.gridColumn62,
             this.gridColumn63,
-            this.gridColumn64});
+            this.gridColumn64,
+            this.gridColumn80});
             this.gridView8.GridControl = this.grd_Cari;
             this.gridView8.Name = "gridView8";
             this.gridView8.OptionsView.ColumnAutoWidth = false;
@@ -1778,7 +1740,6 @@
             // 
             // gridColumn63
             // 
-            resources.ApplyResources(this.gridColumn63, "gridColumn63");
             this.gridColumn63.FieldName = "Cari_Funvan2";
             this.gridColumn63.Name = "gridColumn63";
             this.gridColumn63.OptionsColumn.AllowFocus = false;
@@ -1792,34 +1753,33 @@
             // 
             // btn_Cari_Cikis
             // 
-            resources.ApplyResources(this.btn_Cari_Cikis, "btn_Cari_Cikis");
             this.btn_Cari_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cari_Cikis.Appearance.Font")));
             this.btn_Cari_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cari_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cari_Cikis.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_Cari_Cikis, "btn_Cari_Cikis");
             this.btn_Cari_Cikis.Name = "btn_Cari_Cikis";
             this.btn_Cari_Cikis.Click += new System.EventHandler(this.btn_Cari_Cikis_Click);
             // 
             // btn_Cari_Sil
             // 
-            resources.ApplyResources(this.btn_Cari_Sil, "btn_Cari_Sil");
             this.btn_Cari_Sil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cari_Sil.Appearance.Font")));
             this.btn_Cari_Sil.Appearance.Options.UseFont = true;
             this.btn_Cari_Sil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cari_Sil.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_Cari_Sil, "btn_Cari_Sil");
             this.btn_Cari_Sil.Name = "btn_Cari_Sil";
             this.btn_Cari_Sil.Click += new System.EventHandler(this.btn_Cari_Sil_Click);
             // 
             // btn_Cari_Kaydet
             // 
-            resources.ApplyResources(this.btn_Cari_Kaydet, "btn_Cari_Kaydet");
             this.btn_Cari_Kaydet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cari_Kaydet.Appearance.Font")));
             this.btn_Cari_Kaydet.Appearance.Options.UseFont = true;
             this.btn_Cari_Kaydet.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cari_Kaydet.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_Cari_Kaydet, "btn_Cari_Kaydet");
             this.btn_Cari_Kaydet.Name = "btn_Cari_Kaydet";
             this.btn_Cari_Kaydet.Click += new System.EventHandler(this.btn_Cari_Kaydet_Click);
             // 
             // groupControl2
             // 
-            resources.ApplyResources(this.groupControl2, "groupControl2");
             this.groupControl2.Controls.Add(this.textEdit43);
             this.groupControl2.Controls.Add(this.textEdit44);
             this.groupControl2.Controls.Add(this.txt_Cari_F_Vergino);
@@ -1834,6 +1794,7 @@
             this.groupControl2.Controls.Add(this.txt_Cari_F_Unvan);
             this.groupControl2.Controls.Add(this.textEdit56);
             this.groupControl2.Controls.Add(this.txt_Cari_F_Adres1);
+            resources.ApplyResources(this.groupControl2, "groupControl2");
             this.groupControl2.Name = "groupControl2";
             // 
             // textEdit43
@@ -1854,16 +1815,16 @@
             // 
             // txt_Cari_F_Vergino
             // 
-            resources.ApplyResources(this.txt_Cari_F_Vergino, "txt_Cari_F_Vergino");
             this.txt_Cari_F_Vergino.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_F_Vergino, "txt_Cari_F_Vergino");
             this.txt_Cari_F_Vergino.Name = "txt_Cari_F_Vergino";
             this.txt_Cari_F_Vergino.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_F_Vergino.Properties.MaxLength = 100;
             // 
             // txt_Cari_F_Mail
             // 
-            resources.ApplyResources(this.txt_Cari_F_Mail, "txt_Cari_F_Mail");
             this.txt_Cari_F_Mail.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_F_Mail, "txt_Cari_F_Mail");
             this.txt_Cari_F_Mail.Name = "txt_Cari_F_Mail";
             this.txt_Cari_F_Mail.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_F_Mail.Properties.MaxLength = 100;
@@ -1878,8 +1839,8 @@
             // 
             // txt_Cari_F_Vergidaire
             // 
-            resources.ApplyResources(this.txt_Cari_F_Vergidaire, "txt_Cari_F_Vergidaire");
             this.txt_Cari_F_Vergidaire.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_F_Vergidaire, "txt_Cari_F_Vergidaire");
             this.txt_Cari_F_Vergidaire.Name = "txt_Cari_F_Vergidaire";
             this.txt_Cari_F_Vergidaire.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_F_Vergidaire.Properties.MaxLength = 100;
@@ -1894,8 +1855,8 @@
             // 
             // txt_Cari_F_Adres2
             // 
-            resources.ApplyResources(this.txt_Cari_F_Adres2, "txt_Cari_F_Adres2");
             this.txt_Cari_F_Adres2.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_F_Adres2, "txt_Cari_F_Adres2");
             this.txt_Cari_F_Adres2.Name = "txt_Cari_F_Adres2";
             this.txt_Cari_F_Adres2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_F_Adres2.Properties.MaxLength = 100;
@@ -1910,8 +1871,8 @@
             // 
             // txt_Cari_F_Unvan2
             // 
-            resources.ApplyResources(this.txt_Cari_F_Unvan2, "txt_Cari_F_Unvan2");
             this.txt_Cari_F_Unvan2.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_F_Unvan2, "txt_Cari_F_Unvan2");
             this.txt_Cari_F_Unvan2.Name = "txt_Cari_F_Unvan2";
             this.txt_Cari_F_Unvan2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_F_Unvan2.Properties.MaxLength = 100;
@@ -1926,8 +1887,8 @@
             // 
             // txt_Cari_F_Unvan
             // 
-            resources.ApplyResources(this.txt_Cari_F_Unvan, "txt_Cari_F_Unvan");
             this.txt_Cari_F_Unvan.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_F_Unvan, "txt_Cari_F_Unvan");
             this.txt_Cari_F_Unvan.Name = "txt_Cari_F_Unvan";
             this.txt_Cari_F_Unvan.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_F_Unvan.Properties.MaxLength = 100;
@@ -1942,15 +1903,16 @@
             // 
             // txt_Cari_F_Adres1
             // 
-            resources.ApplyResources(this.txt_Cari_F_Adres1, "txt_Cari_F_Adres1");
             this.txt_Cari_F_Adres1.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_F_Adres1, "txt_Cari_F_Adres1");
             this.txt_Cari_F_Adres1.Name = "txt_Cari_F_Adres1";
             this.txt_Cari_F_Adres1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_F_Adres1.Properties.MaxLength = 100;
             // 
             // groupControl1
             // 
-            resources.ApplyResources(this.groupControl1, "groupControl1");
+            this.groupControl1.Controls.Add(this.textEdit27);
+            this.groupControl1.Controls.Add(this.txtIndOran);
             this.groupControl1.Controls.Add(this.Cari_DogumTar);
             this.groupControl1.Controls.Add(this.Cari_Aktif);
             this.groupControl1.Controls.Add(this.look_CariMuh);
@@ -1984,7 +1946,23 @@
             this.groupControl1.Controls.Add(this.textEdit63);
             this.groupControl1.Controls.Add(this.textEdit64);
             this.groupControl1.Controls.Add(this.txt_Cari_Adres2);
+            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // textEdit27
+            // 
+            resources.ApplyResources(this.textEdit27, "textEdit27");
+            this.textEdit27.Name = "textEdit27";
+            this.textEdit27.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit27.Properties.ReadOnly = true;
+            this.textEdit27.TabStop = false;
+            // 
+            // txtIndOran
+            // 
+            resources.ApplyResources(this.txtIndOran, "txtIndOran");
+            this.txtIndOran.Name = "txtIndOran";
+            this.txtIndOran.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtIndOran.Properties.Buttons"))))});
             // 
             // Cari_DogumTar
             // 
@@ -1996,7 +1974,6 @@
             this.Cari_DogumTar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.Cari_DogumTar.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("Cari_DogumTar.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.Cari_DogumTar.Properties.Mask.EditMask = resources.GetString("Cari_DogumTar.Properties.Mask.EditMask");
             this.Cari_DogumTar.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("Cari_DogumTar.Properties.Mask.MaskType")));
             // 
             // Cari_Aktif
@@ -2004,10 +1981,6 @@
             resources.ApplyResources(this.Cari_Aktif, "Cari_Aktif");
             this.Cari_Aktif.Name = "Cari_Aktif";
             this.Cari_Aktif.Properties.Caption = resources.GetString("Cari_Aktif.Properties.Caption");
-            this.Cari_Aktif.Properties.DisplayValueChecked = resources.GetString("Cari_Aktif.Properties.DisplayValueChecked");
-            this.Cari_Aktif.Properties.DisplayValueGrayed = resources.GetString("Cari_Aktif.Properties.DisplayValueGrayed");
-            this.Cari_Aktif.Properties.DisplayValueUnchecked = resources.GetString("Cari_Aktif.Properties.DisplayValueUnchecked");
-            this.Cari_Aktif.Properties.GlyphVerticalAlignment = ((DevExpress.Utils.VertAlignment)(resources.GetObject("Cari_Aktif.Properties.GlyphVerticalAlignment")));
             // 
             // look_CariMuh
             // 
@@ -2113,10 +2086,6 @@
             resources.ApplyResources(this.chk_Cari_limit, "chk_Cari_limit");
             this.chk_Cari_limit.Name = "chk_Cari_limit";
             this.chk_Cari_limit.Properties.Caption = resources.GetString("chk_Cari_limit.Properties.Caption");
-            this.chk_Cari_limit.Properties.DisplayValueChecked = resources.GetString("chk_Cari_limit.Properties.DisplayValueChecked");
-            this.chk_Cari_limit.Properties.DisplayValueGrayed = resources.GetString("chk_Cari_limit.Properties.DisplayValueGrayed");
-            this.chk_Cari_limit.Properties.DisplayValueUnchecked = resources.GetString("chk_Cari_limit.Properties.DisplayValueUnchecked");
-            this.chk_Cari_limit.Properties.GlyphVerticalAlignment = ((DevExpress.Utils.VertAlignment)(resources.GetObject("chk_Cari_limit.Properties.GlyphVerticalAlignment")));
             // 
             // textEdit1
             // 
@@ -2128,8 +2097,8 @@
             // 
             // txt_Cari_Email
             // 
-            resources.ApplyResources(this.txt_Cari_Email, "txt_Cari_Email");
             this.txt_Cari_Email.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Email, "txt_Cari_Email");
             this.txt_Cari_Email.Name = "txt_Cari_Email";
             this.txt_Cari_Email.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Email.Properties.MaxLength = 100;
@@ -2137,8 +2106,8 @@
             // 
             // txt_Cari_Telefon2
             // 
-            resources.ApplyResources(this.txt_Cari_Telefon2, "txt_Cari_Telefon2");
             this.txt_Cari_Telefon2.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Telefon2, "txt_Cari_Telefon2");
             this.txt_Cari_Telefon2.Name = "txt_Cari_Telefon2";
             this.txt_Cari_Telefon2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Telefon2.Properties.MaxLength = 100;
@@ -2162,8 +2131,8 @@
             // 
             // txt_Cari_Kart_No
             // 
-            resources.ApplyResources(this.txt_Cari_Kart_No, "txt_Cari_Kart_No");
             this.txt_Cari_Kart_No.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Kart_No, "txt_Cari_Kart_No");
             this.txt_Cari_Kart_No.Name = "txt_Cari_Kart_No";
             this.txt_Cari_Kart_No.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Kart_No.Properties.MaxLength = 100;
@@ -2171,8 +2140,8 @@
             // 
             // txt_Cari_Soyad
             // 
-            resources.ApplyResources(this.txt_Cari_Soyad, "txt_Cari_Soyad");
             this.txt_Cari_Soyad.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Soyad, "txt_Cari_Soyad");
             this.txt_Cari_Soyad.Name = "txt_Cari_Soyad";
             this.txt_Cari_Soyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Soyad.Properties.MaxLength = 100;
@@ -2196,8 +2165,8 @@
             // 
             // txt_Cari_Kod
             // 
-            resources.ApplyResources(this.txt_Cari_Kod, "txt_Cari_Kod");
             this.txt_Cari_Kod.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Kod, "txt_Cari_Kod");
             this.txt_Cari_Kod.Name = "txt_Cari_Kod";
             this.txt_Cari_Kod.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Kod.Properties.MaxLength = 100;
@@ -2205,8 +2174,8 @@
             // 
             // txt_Cari_Ad
             // 
-            resources.ApplyResources(this.txt_Cari_Ad, "txt_Cari_Ad");
             this.txt_Cari_Ad.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Ad, "txt_Cari_Ad");
             this.txt_Cari_Ad.Name = "txt_Cari_Ad";
             this.txt_Cari_Ad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Ad.Properties.MaxLength = 100;
@@ -2222,8 +2191,8 @@
             // 
             // txt_Cari_Telefon
             // 
-            resources.ApplyResources(this.txt_Cari_Telefon, "txt_Cari_Telefon");
             this.txt_Cari_Telefon.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Telefon, "txt_Cari_Telefon");
             this.txt_Cari_Telefon.Name = "txt_Cari_Telefon";
             this.txt_Cari_Telefon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Telefon.Properties.MaxLength = 100;
@@ -2255,8 +2224,8 @@
             // 
             // txt_Cari_Adres3
             // 
-            resources.ApplyResources(this.txt_Cari_Adres3, "txt_Cari_Adres3");
             this.txt_Cari_Adres3.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Adres3, "txt_Cari_Adres3");
             this.txt_Cari_Adres3.Name = "txt_Cari_Adres3";
             this.txt_Cari_Adres3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Adres3.Properties.MaxLength = 100;
@@ -2264,8 +2233,8 @@
             // 
             // txt_Cari_Adres1
             // 
-            resources.ApplyResources(this.txt_Cari_Adres1, "txt_Cari_Adres1");
             this.txt_Cari_Adres1.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Adres1, "txt_Cari_Adres1");
             this.txt_Cari_Adres1.Name = "txt_Cari_Adres1";
             this.txt_Cari_Adres1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Adres1.Properties.MaxLength = 100;
@@ -2289,8 +2258,8 @@
             // 
             // txt_Cari_Adres2
             // 
-            resources.ApplyResources(this.txt_Cari_Adres2, "txt_Cari_Adres2");
             this.txt_Cari_Adres2.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Cari_Adres2, "txt_Cari_Adres2");
             this.txt_Cari_Adres2.Name = "txt_Cari_Adres2";
             this.txt_Cari_Adres2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Adres2.Properties.MaxLength = 100;
@@ -2298,7 +2267,6 @@
             // 
             // tab_CariIslem
             // 
-            resources.ApplyResources(this.tab_CariIslem, "tab_CariIslem");
             this.tab_CariIslem.Controls.Add(this.simpleButton11);
             this.tab_CariIslem.Controls.Add(this.btn_Fispr);
             this.tab_CariIslem.Controls.Add(this.dateEdit2);
@@ -2315,13 +2283,14 @@
             this.tab_CariIslem.Controls.Add(this.textEdit3);
             this.tab_CariIslem.Controls.Add(this.gridControl1);
             this.tab_CariIslem.Name = "tab_CariIslem";
+            resources.ApplyResources(this.tab_CariIslem, "tab_CariIslem");
             // 
             // simpleButton11
             // 
-            resources.ApplyResources(this.simpleButton11, "simpleButton11");
             this.simpleButton11.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton11.Appearance.Font")));
             this.simpleButton11.Appearance.Options.UseFont = true;
             this.simpleButton11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.ImageOptions.Image")));
+            resources.ApplyResources(this.simpleButton11, "simpleButton11");
             this.simpleButton11.Name = "simpleButton11";
             this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
             // 
@@ -2344,8 +2313,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit2.Properties.Buttons"))))});
             this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateEdit2.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateEdit2.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateEdit2.Properties.Mask.EditMask = resources.GetString("dateEdit2.Properties.Mask.EditMask");
             this.dateEdit2.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateEdit2.Properties.Mask.MaskType")));
             // 
             // dateEdit1
@@ -2358,8 +2325,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.Buttons"))))});
             this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateEdit1.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateEdit1.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateEdit1.Properties.Mask.EditMask = resources.GetString("dateEdit1.Properties.Mask.EditMask");
             this.dateEdit1.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateEdit1.Properties.Mask.MaskType")));
             // 
             // textEdit5
@@ -2383,18 +2348,6 @@
             // gridControl3
             // 
             resources.ApplyResources(this.gridControl3, "gridControl3");
-            this.gridControl3.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl3.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl3.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl3.EmbeddedNavigator.AccessibleName");
-            this.gridControl3.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl3.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl3.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl3.EmbeddedNavigator.Anchor")));
-            this.gridControl3.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl3.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl3.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl3.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl3.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl3.EmbeddedNavigator.ImeMode")));
-            this.gridControl3.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl3.EmbeddedNavigator.MaximumSize")));
-            this.gridControl3.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl3.EmbeddedNavigator.TextLocation")));
-            this.gridControl3.EmbeddedNavigator.ToolTip = resources.GetString("gridControl3.EmbeddedNavigator.ToolTip");
-            this.gridControl3.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl3.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl3.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl3.EmbeddedNavigator.ToolTipTitle");
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Name = "gridControl3";
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -2402,7 +2355,6 @@
             // 
             // gridView3
             // 
-            resources.ApplyResources(this.gridView3, "gridView3");
             this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn12,
             this.gridColumn13,
@@ -2424,6 +2376,7 @@
             this.gridView3.OptionsView.ShowGroupPanel = false;
             this.gridView3.OptionsView.ShowViewCaption = true;
             this.gridView3.RowHeight = 25;
+            resources.ApplyResources(this.gridView3, "gridView3");
             // 
             // gridColumn12
             // 
@@ -2480,18 +2433,6 @@
             // gridControl2
             // 
             resources.ApplyResources(this.gridControl2, "gridControl2");
-            this.gridControl2.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl2.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl2.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl2.EmbeddedNavigator.AccessibleName");
-            this.gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl2.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl2.EmbeddedNavigator.Anchor")));
-            this.gridControl2.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl2.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl2.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl2.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl2.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl2.EmbeddedNavigator.ImeMode")));
-            this.gridControl2.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl2.EmbeddedNavigator.MaximumSize")));
-            this.gridControl2.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl2.EmbeddedNavigator.TextLocation")));
-            this.gridControl2.EmbeddedNavigator.ToolTip = resources.GetString("gridControl2.EmbeddedNavigator.ToolTip");
-            this.gridControl2.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl2.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl2.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl2.EmbeddedNavigator.ToolTipTitle");
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -2499,7 +2440,6 @@
             // 
             // gridView2
             // 
-            resources.ApplyResources(this.gridView2, "gridView2");
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn6,
             this.gridColumn7,
@@ -2512,6 +2452,7 @@
             this.gridView2.OptionsView.ShowFooter = true;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView2, "gridView2");
             this.gridView2.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView2_RowCellClick);
             // 
             // gridColumn6
@@ -2635,18 +2576,6 @@
             // gridControl1
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
-            this.gridControl1.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl1.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl1.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl1.EmbeddedNavigator.AccessibleName");
-            this.gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl1.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl1.EmbeddedNavigator.Anchor")));
-            this.gridControl1.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl1.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl1.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl1.EmbeddedNavigator.ImeMode")));
-            this.gridControl1.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl1.EmbeddedNavigator.MaximumSize")));
-            this.gridControl1.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl1.EmbeddedNavigator.TextLocation")));
-            this.gridControl1.EmbeddedNavigator.ToolTip = resources.GetString("gridControl1.EmbeddedNavigator.ToolTip");
-            this.gridControl1.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl1.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl1.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl1.EmbeddedNavigator.ToolTipTitle");
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -2654,7 +2583,6 @@
             // 
             // gridView1
             // 
-            resources.ApplyResources(this.gridView1, "gridView1");
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn3,
             this.gridColumn4,
@@ -2663,6 +2591,7 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView1, "gridView1");
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             // 
             // gridColumn3
@@ -2688,7 +2617,6 @@
             // 
             // tab_CariOzet
             // 
-            resources.ApplyResources(this.tab_CariOzet, "tab_CariOzet");
             this.tab_CariOzet.Controls.Add(this.dateEdit3);
             this.tab_CariOzet.Controls.Add(this.dateEdit4);
             this.tab_CariOzet.Controls.Add(this.textEdit9);
@@ -2697,6 +2625,7 @@
             this.tab_CariOzet.Controls.Add(this.gridControl5);
             this.tab_CariOzet.Controls.Add(this.gridControl4);
             this.tab_CariOzet.Name = "tab_CariOzet";
+            resources.ApplyResources(this.tab_CariOzet, "tab_CariOzet");
             // 
             // dateEdit3
             // 
@@ -2708,8 +2637,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit3.Properties.Buttons"))))});
             this.dateEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateEdit3.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateEdit3.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateEdit3.Properties.Mask.EditMask = resources.GetString("dateEdit3.Properties.Mask.EditMask");
             this.dateEdit3.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateEdit3.Properties.Mask.MaskType")));
             // 
             // dateEdit4
@@ -2722,8 +2649,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit4.Properties.Buttons"))))});
             this.dateEdit4.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateEdit4.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateEdit4.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateEdit4.Properties.Mask.EditMask = resources.GetString("dateEdit4.Properties.Mask.EditMask");
             this.dateEdit4.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateEdit4.Properties.Mask.MaskType")));
             // 
             // textEdit9
@@ -2756,18 +2681,6 @@
             // gridControl5
             // 
             resources.ApplyResources(this.gridControl5, "gridControl5");
-            this.gridControl5.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl5.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl5.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl5.EmbeddedNavigator.AccessibleName");
-            this.gridControl5.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl5.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl5.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl5.EmbeddedNavigator.Anchor")));
-            this.gridControl5.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl5.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl5.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl5.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl5.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl5.EmbeddedNavigator.ImeMode")));
-            this.gridControl5.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl5.EmbeddedNavigator.MaximumSize")));
-            this.gridControl5.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl5.EmbeddedNavigator.TextLocation")));
-            this.gridControl5.EmbeddedNavigator.ToolTip = resources.GetString("gridControl5.EmbeddedNavigator.ToolTip");
-            this.gridControl5.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl5.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl5.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl5.EmbeddedNavigator.ToolTipTitle");
             this.gridControl5.MainView = this.gridView5;
             this.gridControl5.Name = "gridControl5";
             this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -2775,7 +2688,6 @@
             // 
             // gridView5
             // 
-            resources.ApplyResources(this.gridView5, "gridView5");
             this.gridView5.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn22,
             this.gridColumn23,
@@ -2798,6 +2710,7 @@
             this.gridView5.OptionsView.ShowGroupPanel = false;
             this.gridView5.OptionsView.ShowViewCaption = true;
             this.gridView5.RowHeight = 25;
+            resources.ApplyResources(this.gridView5, "gridView5");
             // 
             // gridColumn22
             // 
@@ -2866,18 +2779,6 @@
             // gridControl4
             // 
             resources.ApplyResources(this.gridControl4, "gridControl4");
-            this.gridControl4.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl4.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl4.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl4.EmbeddedNavigator.AccessibleName");
-            this.gridControl4.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl4.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl4.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl4.EmbeddedNavigator.Anchor")));
-            this.gridControl4.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl4.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl4.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl4.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl4.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl4.EmbeddedNavigator.ImeMode")));
-            this.gridControl4.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl4.EmbeddedNavigator.MaximumSize")));
-            this.gridControl4.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl4.EmbeddedNavigator.TextLocation")));
-            this.gridControl4.EmbeddedNavigator.ToolTip = resources.GetString("gridControl4.EmbeddedNavigator.ToolTip");
-            this.gridControl4.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl4.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl4.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl4.EmbeddedNavigator.ToolTipTitle");
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.Name = "gridControl4";
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -2885,7 +2786,6 @@
             // 
             // gridView4
             // 
-            resources.ApplyResources(this.gridView4, "gridView4");
             this.gridView4.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn19,
             this.gridColumn20,
@@ -2894,6 +2794,7 @@
             this.gridView4.Name = "gridView4";
             this.gridView4.OptionsView.ShowGroupPanel = false;
             this.gridView4.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView4, "gridView4");
             this.gridView4.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView4_RowCellClick);
             // 
             // gridColumn19
@@ -2919,27 +2820,15 @@
             // 
             // xtraTabPage1
             // 
-            resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             this.xtraTabPage1.Controls.Add(this.gridControl6);
             this.xtraTabPage1.Controls.Add(this.groupControl4);
             this.xtraTabPage1.Controls.Add(this.groupControl5);
             this.xtraTabPage1.Name = "xtraTabPage1";
+            resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             // 
             // gridControl6
             // 
             resources.ApplyResources(this.gridControl6, "gridControl6");
-            this.gridControl6.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl6.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl6.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl6.EmbeddedNavigator.AccessibleName");
-            this.gridControl6.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl6.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl6.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl6.EmbeddedNavigator.Anchor")));
-            this.gridControl6.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl6.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl6.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl6.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl6.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl6.EmbeddedNavigator.ImeMode")));
-            this.gridControl6.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl6.EmbeddedNavigator.MaximumSize")));
-            this.gridControl6.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl6.EmbeddedNavigator.TextLocation")));
-            this.gridControl6.EmbeddedNavigator.ToolTip = resources.GetString("gridControl6.EmbeddedNavigator.ToolTip");
-            this.gridControl6.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl6.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl6.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl6.EmbeddedNavigator.ToolTipTitle");
             this.gridControl6.MainView = this.gridView6;
             this.gridControl6.Name = "gridControl6";
             this.gridControl6.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -2947,7 +2836,6 @@
             // 
             // gridView6
             // 
-            resources.ApplyResources(this.gridView6, "gridView6");
             this.gridView6.GridControl = this.gridControl6;
             this.gridView6.Name = "gridView6";
             this.gridView6.OptionsView.ShowAutoFilterRow = true;
@@ -2956,7 +2844,6 @@
             // 
             // groupControl4
             // 
-            resources.ApplyResources(this.groupControl4, "groupControl4");
             this.groupControl4.Controls.Add(this.simpleButton7);
             this.groupControl4.Controls.Add(this.simpleButton6);
             this.groupControl4.Controls.Add(this.simpleButton3);
@@ -2964,34 +2851,35 @@
             this.groupControl4.Controls.Add(this.dateTarih1);
             this.groupControl4.Controls.Add(this.textEdit15);
             this.groupControl4.Controls.Add(this.textEdit16);
+            resources.ApplyResources(this.groupControl4, "groupControl4");
             this.groupControl4.Name = "groupControl4";
             // 
             // simpleButton7
             // 
-            resources.ApplyResources(this.simpleButton7, "simpleButton7");
             this.simpleButton7.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton7.Appearance.Font")));
             this.simpleButton7.Appearance.Options.UseFont = true;
             this.simpleButton7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton7, "simpleButton7");
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
             // 
             // simpleButton6
             // 
-            resources.ApplyResources(this.simpleButton6, "simpleButton6");
             this.simpleButton6.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton6.Appearance.Font")));
             this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.DarkGreen;
             this.simpleButton6.Appearance.Options.UseFont = true;
             this.simpleButton6.Appearance.Options.UseForeColor = true;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            resources.ApplyResources(this.simpleButton6, "simpleButton6");
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // simpleButton3
             // 
-            resources.ApplyResources(this.simpleButton3, "simpleButton3");
             this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
             this.simpleButton3.Appearance.Options.UseFont = true;
             this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton3, "simpleButton3");
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
@@ -3006,8 +2894,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateTarih2.Properties.Buttons"))))});
             this.dateTarih2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateTarih2.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateTarih2.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateTarih2.Properties.Mask.EditMask = resources.GetString("dateTarih2.Properties.Mask.EditMask");
             this.dateTarih2.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateTarih2.Properties.Mask.MaskType")));
             // 
             // dateTarih1
@@ -3021,8 +2907,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateTarih1.Properties.Buttons"))))});
             this.dateTarih1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateTarih1.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateTarih1.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateTarih1.Properties.Mask.EditMask = resources.GetString("dateTarih1.Properties.Mask.EditMask");
             this.dateTarih1.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateTarih1.Properties.Mask.MaskType")));
             // 
             // textEdit15
@@ -3047,26 +2931,14 @@
             // 
             // groupControl5
             // 
-            resources.ApplyResources(this.groupControl5, "groupControl5");
             this.groupControl5.Controls.Add(this.gridControl8);
             this.groupControl5.Controls.Add(this.groupControl6);
+            resources.ApplyResources(this.groupControl5, "groupControl5");
             this.groupControl5.Name = "groupControl5";
             // 
             // gridControl8
             // 
             resources.ApplyResources(this.gridControl8, "gridControl8");
-            this.gridControl8.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl8.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl8.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl8.EmbeddedNavigator.AccessibleName");
-            this.gridControl8.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl8.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl8.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl8.EmbeddedNavigator.Anchor")));
-            this.gridControl8.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl8.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl8.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl8.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl8.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl8.EmbeddedNavigator.ImeMode")));
-            this.gridControl8.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl8.EmbeddedNavigator.MaximumSize")));
-            this.gridControl8.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl8.EmbeddedNavigator.TextLocation")));
-            this.gridControl8.EmbeddedNavigator.ToolTip = resources.GetString("gridControl8.EmbeddedNavigator.ToolTip");
-            this.gridControl8.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl8.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl8.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl8.EmbeddedNavigator.ToolTipTitle");
             this.gridControl8.MainView = this.gridView10;
             this.gridControl8.Name = "gridControl8";
             this.gridControl8.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -3074,7 +2946,6 @@
             // 
             // gridView10
             // 
-            resources.ApplyResources(this.gridView10, "gridView10");
             this.gridView10.GridControl = this.gridControl8;
             this.gridView10.Name = "gridView10";
             this.gridView10.OptionsView.ShowAutoFilterRow = true;
@@ -3083,72 +2954,60 @@
             // 
             // groupControl6
             // 
-            resources.ApplyResources(this.groupControl6, "groupControl6");
             this.groupControl6.Controls.Add(this.simpleButton12);
             this.groupControl6.Controls.Add(this.simpleButton9);
             this.groupControl6.Controls.Add(this.simpleButton8);
+            resources.ApplyResources(this.groupControl6, "groupControl6");
             this.groupControl6.Name = "groupControl6";
             // 
             // simpleButton12
             // 
-            resources.ApplyResources(this.simpleButton12, "simpleButton12");
             this.simpleButton12.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton12.Appearance.Font")));
             this.simpleButton12.Appearance.ForeColor = System.Drawing.Color.MidnightBlue;
             this.simpleButton12.Appearance.Options.UseFont = true;
             this.simpleButton12.Appearance.Options.UseForeColor = true;
             this.simpleButton12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton12.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton12, "simpleButton12");
             this.simpleButton12.Name = "simpleButton12";
             this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
             // 
             // simpleButton9
             // 
-            resources.ApplyResources(this.simpleButton9, "simpleButton9");
             this.simpleButton9.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton9.Appearance.Font")));
             this.simpleButton9.Appearance.ForeColor = System.Drawing.Color.DarkGreen;
             this.simpleButton9.Appearance.Options.UseFont = true;
             this.simpleButton9.Appearance.Options.UseForeColor = true;
             this.simpleButton9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
+            resources.ApplyResources(this.simpleButton9, "simpleButton9");
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
             // 
             // simpleButton8
             // 
-            resources.ApplyResources(this.simpleButton8, "simpleButton8");
             this.simpleButton8.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton8.Appearance.Font")));
             this.simpleButton8.Appearance.Options.UseFont = true;
             this.simpleButton8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton8.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton8, "simpleButton8");
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
             // 
             // xtraTabPage2
             // 
-            resources.ApplyResources(this.xtraTabPage2, "xtraTabPage2");
             this.xtraTabPage2.Controls.Add(this.groupControl9);
             this.xtraTabPage2.Controls.Add(this.groupControl8);
             this.xtraTabPage2.Controls.Add(this.groupControl7);
             this.xtraTabPage2.Name = "xtraTabPage2";
+            resources.ApplyResources(this.xtraTabPage2, "xtraTabPage2");
             // 
             // groupControl9
             // 
-            resources.ApplyResources(this.groupControl9, "groupControl9");
             this.groupControl9.Controls.Add(this.gridControl10);
+            resources.ApplyResources(this.groupControl9, "groupControl9");
             this.groupControl9.Name = "groupControl9";
             // 
             // gridControl10
             // 
             resources.ApplyResources(this.gridControl10, "gridControl10");
-            this.gridControl10.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl10.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl10.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl10.EmbeddedNavigator.AccessibleName");
-            this.gridControl10.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl10.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl10.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl10.EmbeddedNavigator.Anchor")));
-            this.gridControl10.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl10.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl10.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl10.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl10.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl10.EmbeddedNavigator.ImeMode")));
-            this.gridControl10.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl10.EmbeddedNavigator.MaximumSize")));
-            this.gridControl10.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl10.EmbeddedNavigator.TextLocation")));
-            this.gridControl10.EmbeddedNavigator.ToolTip = resources.GetString("gridControl10.EmbeddedNavigator.ToolTip");
-            this.gridControl10.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl10.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl10.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl10.EmbeddedNavigator.ToolTipTitle");
             this.gridControl10.MainView = this.gridView12;
             this.gridControl10.Name = "gridControl10";
             this.gridControl10.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -3156,7 +3015,6 @@
             // 
             // gridView12
             // 
-            resources.ApplyResources(this.gridView12, "gridView12");
             this.gridView12.GridControl = this.gridControl10;
             this.gridView12.Name = "gridView12";
             this.gridView12.OptionsView.ShowAutoFilterRow = true;
@@ -3165,25 +3023,13 @@
             // 
             // groupControl8
             // 
-            resources.ApplyResources(this.groupControl8, "groupControl8");
             this.groupControl8.Controls.Add(this.gridControl9);
+            resources.ApplyResources(this.groupControl8, "groupControl8");
             this.groupControl8.Name = "groupControl8";
             // 
             // gridControl9
             // 
             resources.ApplyResources(this.gridControl9, "gridControl9");
-            this.gridControl9.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl9.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl9.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl9.EmbeddedNavigator.AccessibleName");
-            this.gridControl9.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl9.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl9.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl9.EmbeddedNavigator.Anchor")));
-            this.gridControl9.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl9.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl9.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl9.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl9.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl9.EmbeddedNavigator.ImeMode")));
-            this.gridControl9.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl9.EmbeddedNavigator.MaximumSize")));
-            this.gridControl9.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl9.EmbeddedNavigator.TextLocation")));
-            this.gridControl9.EmbeddedNavigator.ToolTip = resources.GetString("gridControl9.EmbeddedNavigator.ToolTip");
-            this.gridControl9.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl9.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl9.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl9.EmbeddedNavigator.ToolTipTitle");
             this.gridControl9.MainView = this.gridView11;
             this.gridControl9.Name = "gridControl9";
             this.gridControl9.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -3191,7 +3037,6 @@
             // 
             // gridView11
             // 
-            resources.ApplyResources(this.gridView11, "gridView11");
             this.gridView11.GridControl = this.gridControl9;
             this.gridView11.Name = "gridView11";
             this.gridView11.OptionsView.ShowAutoFilterRow = true;
@@ -3200,32 +3045,32 @@
             // 
             // groupControl7
             // 
-            resources.ApplyResources(this.groupControl7, "groupControl7");
             this.groupControl7.Controls.Add(this.simpleButton14);
             this.groupControl7.Controls.Add(this.simpleButton15);
             this.groupControl7.Controls.Add(this.cari2_Tarih2);
             this.groupControl7.Controls.Add(this.cari2_Tarih1);
             this.groupControl7.Controls.Add(this.textEdit18);
             this.groupControl7.Controls.Add(this.textEdit19);
+            resources.ApplyResources(this.groupControl7, "groupControl7");
             this.groupControl7.Name = "groupControl7";
             // 
             // simpleButton14
             // 
-            resources.ApplyResources(this.simpleButton14, "simpleButton14");
             this.simpleButton14.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton14.Appearance.Font")));
             this.simpleButton14.Appearance.ForeColor = System.Drawing.Color.DarkGreen;
             this.simpleButton14.Appearance.Options.UseFont = true;
             this.simpleButton14.Appearance.Options.UseForeColor = true;
             this.simpleButton14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton14.ImageOptions.Image")));
+            resources.ApplyResources(this.simpleButton14, "simpleButton14");
             this.simpleButton14.Name = "simpleButton14";
             this.simpleButton14.Click += new System.EventHandler(this.simpleButton14_Click);
             // 
             // simpleButton15
             // 
-            resources.ApplyResources(this.simpleButton15, "simpleButton15");
             this.simpleButton15.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton15.Appearance.Font")));
             this.simpleButton15.Appearance.Options.UseFont = true;
             this.simpleButton15.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton15.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton15, "simpleButton15");
             this.simpleButton15.Name = "simpleButton15";
             this.simpleButton15.Click += new System.EventHandler(this.simpleButton15_Click);
             // 
@@ -3240,8 +3085,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cari2_Tarih2.Properties.Buttons"))))});
             this.cari2_Tarih2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.cari2_Tarih2.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("cari2_Tarih2.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.cari2_Tarih2.Properties.Mask.EditMask = resources.GetString("cari2_Tarih2.Properties.Mask.EditMask");
             this.cari2_Tarih2.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("cari2_Tarih2.Properties.Mask.MaskType")));
             // 
             // cari2_Tarih1
@@ -3255,8 +3098,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cari2_Tarih1.Properties.Buttons"))))});
             this.cari2_Tarih1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.cari2_Tarih1.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("cari2_Tarih1.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.cari2_Tarih1.Properties.Mask.EditMask = resources.GetString("cari2_Tarih1.Properties.Mask.EditMask");
             this.cari2_Tarih1.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("cari2_Tarih1.Properties.Mask.MaskType")));
             // 
             // textEdit18
@@ -3281,45 +3122,33 @@
             // 
             // xtraTabPage3
             // 
-            resources.ApplyResources(this.xtraTabPage3, "xtraTabPage3");
             this.xtraTabPage3.Controls.Add(this.simpleButton17);
             this.xtraTabPage3.Controls.Add(this.simpleButton16);
             this.xtraTabPage3.Controls.Add(this.gridControl11);
             this.xtraTabPage3.Name = "xtraTabPage3";
+            resources.ApplyResources(this.xtraTabPage3, "xtraTabPage3");
             // 
             // simpleButton17
             // 
-            resources.ApplyResources(this.simpleButton17, "simpleButton17");
             this.simpleButton17.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton17.Appearance.Font")));
             this.simpleButton17.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton17, "simpleButton17");
             this.simpleButton17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton17.ImageOptions.Image")));
             this.simpleButton17.Name = "simpleButton17";
             this.simpleButton17.Click += new System.EventHandler(this.simpleButton17_Click);
             // 
             // simpleButton16
             // 
-            resources.ApplyResources(this.simpleButton16, "simpleButton16");
             this.simpleButton16.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton16.Appearance.Font")));
             this.simpleButton16.Appearance.Options.UseFont = true;
             this.simpleButton16.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton16.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton16, "simpleButton16");
             this.simpleButton16.Name = "simpleButton16";
             this.simpleButton16.Click += new System.EventHandler(this.simpleButton16_Click);
             // 
             // gridControl11
             // 
             resources.ApplyResources(this.gridControl11, "gridControl11");
-            this.gridControl11.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl11.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl11.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl11.EmbeddedNavigator.AccessibleName");
-            this.gridControl11.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl11.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl11.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl11.EmbeddedNavigator.Anchor")));
-            this.gridControl11.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl11.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl11.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl11.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl11.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl11.EmbeddedNavigator.ImeMode")));
-            this.gridControl11.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl11.EmbeddedNavigator.MaximumSize")));
-            this.gridControl11.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl11.EmbeddedNavigator.TextLocation")));
-            this.gridControl11.EmbeddedNavigator.ToolTip = resources.GetString("gridControl11.EmbeddedNavigator.ToolTip");
-            this.gridControl11.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl11.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl11.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl11.EmbeddedNavigator.ToolTipTitle");
             this.gridControl11.MainView = this.gridView13;
             this.gridControl11.Name = "gridControl11";
             this.gridControl11.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -3327,7 +3156,6 @@
             // 
             // gridView13
             // 
-            resources.ApplyResources(this.gridView13, "gridView13");
             this.gridView13.GridControl = this.gridControl11;
             this.gridView13.Name = "gridView13";
             this.gridView13.OptionsView.ShowAutoFilterRow = true;
@@ -3335,40 +3163,28 @@
             // 
             // xtraTabPage4
             // 
-            resources.ApplyResources(this.xtraTabPage4, "xtraTabPage4");
             this.xtraTabPage4.Controls.Add(this.panelControl5);
             this.xtraTabPage4.Controls.Add(this.panelControl3);
             this.xtraTabPage4.Controls.Add(this.panelControl1);
             this.xtraTabPage4.Name = "xtraTabPage4";
+            resources.ApplyResources(this.xtraTabPage4, "xtraTabPage4");
             // 
             // panelControl5
             // 
-            resources.ApplyResources(this.panelControl5, "panelControl5");
             this.panelControl5.Controls.Add(this.panelControl2);
             this.panelControl5.Controls.Add(this.panelControl4);
+            resources.ApplyResources(this.panelControl5, "panelControl5");
             this.panelControl5.Name = "panelControl5";
             // 
             // panelControl2
             // 
-            resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Controls.Add(this.gridControlCariRap3);
+            resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Name = "panelControl2";
             // 
             // gridControlCariRap3
             // 
             resources.ApplyResources(this.gridControlCariRap3, "gridControlCariRap3");
-            this.gridControlCariRap3.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControlCariRap3.EmbeddedNavigator.AccessibleDescription");
-            this.gridControlCariRap3.EmbeddedNavigator.AccessibleName = resources.GetString("gridControlCariRap3.EmbeddedNavigator.AccessibleName");
-            this.gridControlCariRap3.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControlCariRap3.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.Anchor")));
-            this.gridControlCariRap3.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.BackgroundImage")));
-            this.gridControlCariRap3.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControlCariRap3.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.ImeMode")));
-            this.gridControlCariRap3.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.MaximumSize")));
-            this.gridControlCariRap3.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.TextLocation")));
-            this.gridControlCariRap3.EmbeddedNavigator.ToolTip = resources.GetString("gridControlCariRap3.EmbeddedNavigator.ToolTip");
-            this.gridControlCariRap3.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControlCariRap3.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControlCariRap3.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControlCariRap3.EmbeddedNavigator.ToolTipTitle");
             this.gridControlCariRap3.MainView = this.gridViewCariRap3;
             this.gridControlCariRap3.Name = "gridControlCariRap3";
             this.gridControlCariRap3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -3376,7 +3192,6 @@
             // 
             // gridViewCariRap3
             // 
-            resources.ApplyResources(this.gridViewCariRap3, "gridViewCariRap3");
             this.gridViewCariRap3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn65,
             this.gridColumn66,
@@ -3419,25 +3234,13 @@
             // 
             // panelControl4
             // 
-            resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Controls.Add(this.gridControlCariRap3Detay);
+            resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
             // gridControlCariRap3Detay
             // 
             resources.ApplyResources(this.gridControlCariRap3Detay, "gridControlCariRap3Detay");
-            this.gridControlCariRap3Detay.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControlCariRap3Detay.EmbeddedNavigator.AccessibleDescription");
-            this.gridControlCariRap3Detay.EmbeddedNavigator.AccessibleName = resources.GetString("gridControlCariRap3Detay.EmbeddedNavigator.AccessibleName");
-            this.gridControlCariRap3Detay.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControlCariRap3Detay.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControlCariRap3Detay.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControlCariRap3Detay.EmbeddedNavigator.Anchor")));
-            this.gridControlCariRap3Detay.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControlCariRap3Detay.EmbeddedNavigator.BackgroundImage")));
-            this.gridControlCariRap3Detay.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControlCariRap3Detay.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControlCariRap3Detay.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControlCariRap3Detay.EmbeddedNavigator.ImeMode")));
-            this.gridControlCariRap3Detay.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControlCariRap3Detay.EmbeddedNavigator.MaximumSize")));
-            this.gridControlCariRap3Detay.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControlCariRap3Detay.EmbeddedNavigator.TextLocation")));
-            this.gridControlCariRap3Detay.EmbeddedNavigator.ToolTip = resources.GetString("gridControlCariRap3Detay.EmbeddedNavigator.ToolTip");
-            this.gridControlCariRap3Detay.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControlCariRap3Detay.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControlCariRap3Detay.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControlCariRap3Detay.EmbeddedNavigator.ToolTipTitle");
             this.gridControlCariRap3Detay.MainView = this.gridViewCariRap3Detay;
             this.gridControlCariRap3Detay.Name = "gridControlCariRap3Detay";
             this.gridControlCariRap3Detay.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -3445,7 +3248,6 @@
             // 
             // gridViewCariRap3Detay
             // 
-            resources.ApplyResources(this.gridViewCariRap3Detay, "gridViewCariRap3Detay");
             this.gridViewCariRap3Detay.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn71,
             this.gridColumn75,
@@ -3473,6 +3275,7 @@
             this.gridViewCariRap3Detay.OptionsView.ShowGroupPanel = false;
             this.gridViewCariRap3Detay.OptionsView.ShowViewCaption = true;
             this.gridViewCariRap3Detay.RowHeight = 25;
+            resources.ApplyResources(this.gridViewCariRap3Detay, "gridViewCariRap3Detay");
             // 
             // gridColumn71
             // 
@@ -3538,32 +3341,31 @@
             // 
             // panelControl3
             // 
-            resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Controls.Add(this.btnExcelKaydetCariRapor3Detay);
             this.panelControl3.Controls.Add(this.btnExcelKaydetCariRapor3);
+            resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
             // 
             // btnExcelKaydetCariRapor3Detay
             // 
-            resources.ApplyResources(this.btnExcelKaydetCariRapor3Detay, "btnExcelKaydetCariRapor3Detay");
             this.btnExcelKaydetCariRapor3Detay.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnExcelKaydetCariRapor3Detay.Appearance.Font")));
             this.btnExcelKaydetCariRapor3Detay.Appearance.Options.UseFont = true;
             this.btnExcelKaydetCariRapor3Detay.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExcelKaydetCariRapor3Detay.ImageOptions.Image")));
+            resources.ApplyResources(this.btnExcelKaydetCariRapor3Detay, "btnExcelKaydetCariRapor3Detay");
             this.btnExcelKaydetCariRapor3Detay.Name = "btnExcelKaydetCariRapor3Detay";
             this.btnExcelKaydetCariRapor3Detay.Click += new System.EventHandler(this.btnExcelKaydetCariRapor3Detay_Click);
             // 
             // btnExcelKaydetCariRapor3
             // 
-            resources.ApplyResources(this.btnExcelKaydetCariRapor3, "btnExcelKaydetCariRapor3");
             this.btnExcelKaydetCariRapor3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnExcelKaydetCariRapor3.Appearance.Font")));
             this.btnExcelKaydetCariRapor3.Appearance.Options.UseFont = true;
             this.btnExcelKaydetCariRapor3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExcelKaydetCariRapor3.ImageOptions.Image")));
+            resources.ApplyResources(this.btnExcelKaydetCariRapor3, "btnExcelKaydetCariRapor3");
             this.btnExcelKaydetCariRapor3.Name = "btnExcelKaydetCariRapor3";
             this.btnExcelKaydetCariRapor3.Click += new System.EventHandler(this.btnExcelKaydetCariRapor3_Click);
             // 
             // panelControl1
             // 
-            resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Controls.Add(this.btnCariRap3ListeleHepsi);
             this.panelControl1.Controls.Add(this.look_Cari_TipBakiye);
             this.panelControl1.Controls.Add(this.textEdit24);
@@ -3574,14 +3376,15 @@
             this.panelControl1.Controls.Add(this.dateEditRap3BitTar);
             this.panelControl1.Controls.Add(this.dateEditRap3BasTar);
             this.panelControl1.Controls.Add(this.btnCariRap3Listele);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
             // 
             // btnCariRap3ListeleHepsi
             // 
-            resources.ApplyResources(this.btnCariRap3ListeleHepsi, "btnCariRap3ListeleHepsi");
             this.btnCariRap3ListeleHepsi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCariRap3ListeleHepsi.Appearance.Font")));
             this.btnCariRap3ListeleHepsi.Appearance.Options.UseFont = true;
             this.btnCariRap3ListeleHepsi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCariRap3ListeleHepsi.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCariRap3ListeleHepsi, "btnCariRap3ListeleHepsi");
             this.btnCariRap3ListeleHepsi.Name = "btnCariRap3ListeleHepsi";
             this.btnCariRap3ListeleHepsi.Click += new System.EventHandler(this.btnCariRap3ListeleHepsi_Click);
             // 
@@ -3609,19 +3412,19 @@
             // 
             // btnCariBakiyeMail
             // 
-            resources.ApplyResources(this.btnCariBakiyeMail, "btnCariBakiyeMail");
             this.btnCariBakiyeMail.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCariBakiyeMail.Appearance.Font")));
             this.btnCariBakiyeMail.Appearance.Options.UseFont = true;
             this.btnCariBakiyeMail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCariBakiyeMail.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCariBakiyeMail, "btnCariBakiyeMail");
             this.btnCariBakiyeMail.Name = "btnCariBakiyeMail";
             this.btnCariBakiyeMail.Click += new System.EventHandler(this.btnCariBakiyeMail_Click);
             // 
             // btnCariBakiyePrint
             // 
-            resources.ApplyResources(this.btnCariBakiyePrint, "btnCariBakiyePrint");
             this.btnCariBakiyePrint.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCariBakiyePrint.Appearance.Font")));
             this.btnCariBakiyePrint.Appearance.Options.UseFont = true;
             this.btnCariBakiyePrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCariBakiyePrint.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCariBakiyePrint, "btnCariBakiyePrint");
             this.btnCariBakiyePrint.Name = "btnCariBakiyePrint";
             this.btnCariBakiyePrint.Click += new System.EventHandler(this.btnCariBakiyePrint_Click);
             // 
@@ -3651,8 +3454,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditRap3BitTar.Properties.Buttons"))))});
             this.dateEditRap3BitTar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditRap3BitTar.Properties.CalendarTimeProperties.Buttons"))))});
-            this.dateEditRap3BitTar.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateEditRap3BitTar.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateEditRap3BitTar.Properties.Mask.EditMask = resources.GetString("dateEditRap3BitTar.Properties.Mask.EditMask");
             // 
             // dateEditRap3BasTar
             // 
@@ -3662,17 +3463,21 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditRap3BasTar.Properties.Buttons"))))});
             this.dateEditRap3BasTar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditRap3BasTar.Properties.CalendarTimeProperties.Buttons"))))});
-            this.dateEditRap3BasTar.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateEditRap3BasTar.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateEditRap3BasTar.Properties.Mask.EditMask = resources.GetString("dateEditRap3BasTar.Properties.Mask.EditMask");
             // 
             // btnCariRap3Listele
             // 
-            resources.ApplyResources(this.btnCariRap3Listele, "btnCariRap3Listele");
             this.btnCariRap3Listele.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCariRap3Listele.Appearance.Font")));
             this.btnCariRap3Listele.Appearance.Options.UseFont = true;
             this.btnCariRap3Listele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCariRap3Listele.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCariRap3Listele, "btnCariRap3Listele");
             this.btnCariRap3Listele.Name = "btnCariRap3Listele";
             this.btnCariRap3Listele.Click += new System.EventHandler(this.btnCariRap3Listele_Click);
+            // 
+            // gridColumn80
+            // 
+            resources.ApplyResources(this.gridColumn80, "gridColumn80");
+            this.gridColumn80.FieldName = "Cari_indirimOran";
+            this.gridColumn80.Name = "gridColumn80";
             // 
             // CariHesap
             // 
@@ -3734,6 +3539,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Cari_F_Adres1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit27.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIndOran.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_DogumTar.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_DogumTar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_Aktif.Properties)).EndInit();
@@ -4174,5 +3981,8 @@
         private DevExpress.XtraEditors.DateEdit dateEditCariBit;
         private DevExpress.XtraEditors.TextEdit textEdit26;
         private DevExpress.XtraEditors.TextEdit textEdit25;
+        private DevExpress.XtraEditors.TextEdit textEdit27;
+        private DevExpress.XtraEditors.SpinEdit txtIndOran;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn80;
     }
 }

@@ -274,6 +274,8 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.textEdit198 = new DevExpress.XtraEditors.TextEdit();
+            this.txtKartnoSayisi = new DevExpress.XtraEditors.SpinEdit();
             this.onburoikramsifiryazaktif = new DevExpress.XtraEditors.CheckEdit();
             this.satirsilfiscikmasinaktif = new DevExpress.XtraEditors.CheckEdit();
             this.kisivegarsonbirkeresoraktif = new DevExpress.XtraEditors.CheckEdit();
@@ -1237,8 +1239,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.txtKartnoSayisi = new DevExpress.XtraEditors.SpinEdit();
-            this.textEdit198 = new DevExpress.XtraEditors.TextEdit();
+            this.cariindirimAktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1427,6 +1428,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit198.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKartnoSayisi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.onburoikramsifiryazaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.satirsilfiscikmasinaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kisivegarsonbirkeresoraktif.Properties)).BeginInit();
@@ -2069,8 +2072,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKartnoSayisi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit198.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4078,6 +4080,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.cariindirimAktif);
             this.xtraTabPage8.Controls.Add(this.textEdit198);
             this.xtraTabPage8.Controls.Add(this.txtKartnoSayisi);
             this.xtraTabPage8.Controls.Add(this.onburoikramsifiryazaktif);
@@ -4096,6 +4099,24 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // textEdit198
+            // 
+            resources.ApplyResources(this.textEdit198, "textEdit198");
+            this.textEdit198.Name = "textEdit198";
+            this.textEdit198.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit198.Properties.ReadOnly = true;
+            this.textEdit198.TabStop = false;
+            // 
+            // txtKartnoSayisi
+            // 
+            resources.ApplyResources(this.txtKartnoSayisi, "txtKartnoSayisi");
+            this.txtKartnoSayisi.Name = "txtKartnoSayisi";
+            this.txtKartnoSayisi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtKartnoSayisi.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtKartnoSayisi.Properties.Mask.EditMask = resources.GetString("txtKartnoSayisi.Properties.Mask.EditMask");
+            this.txtKartnoSayisi.Properties.NullText = resources.GetString("txtKartnoSayisi.Properties.NullText");
             // 
             // onburoikramsifiryazaktif
             // 
@@ -12324,23 +12345,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // txtKartnoSayisi
+            // cariindirimAktif
             // 
-            resources.ApplyResources(this.txtKartnoSayisi, "txtKartnoSayisi");
-            this.txtKartnoSayisi.Name = "txtKartnoSayisi";
-            this.txtKartnoSayisi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtKartnoSayisi.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtKartnoSayisi.Properties.Mask.EditMask = resources.GetString("spinEdit2.Properties.Mask.EditMask");
-            this.txtKartnoSayisi.Properties.NullText = resources.GetString("spinEdit2.Properties.NullText");
-            // 
-            // textEdit198
-            // 
-            resources.ApplyResources(this.textEdit198, "textEdit198");
-            this.textEdit198.Name = "textEdit198";
-            this.textEdit198.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit198.Properties.ReadOnly = true;
-            this.textEdit198.TabStop = false;
+            resources.ApplyResources(this.cariindirimAktif, "cariindirimAktif");
+            this.cariindirimAktif.Name = "cariindirimAktif";
+            this.cariindirimAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -12542,6 +12551,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit198.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKartnoSayisi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.onburoikramsifiryazaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.satirsilfiscikmasinaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kisivegarsonbirkeresoraktif.Properties)).EndInit();
@@ -13212,8 +13223,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKartnoSayisi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit198.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14429,5 +14439,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn174;
         private DevExpress.XtraEditors.TextEdit textEdit198;
         public DevExpress.XtraEditors.SpinEdit txtKartnoSayisi;
+        private DevExpress.XtraEditors.CheckEdit cariindirimAktif;
     }
 }
