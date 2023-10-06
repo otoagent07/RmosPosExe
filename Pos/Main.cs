@@ -416,7 +416,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.64";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.65";
 
 
 
@@ -1497,7 +1497,7 @@ YS_Panel a = new YS_Panel();
                 }
                 else // getir
                 {
-                    paketCallCenter.xtraTabControl1.SelectedTabPage = paketCallCenter.xtraTabPage3;
+                    //paketCallCenter.xtraTabControl1.SelectedTabPage = paketCallCenter.xtraTabPage3;
                 }
 
 

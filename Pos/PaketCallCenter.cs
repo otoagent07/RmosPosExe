@@ -40,7 +40,7 @@ namespace Pos
 
             if (getirAktif)
             {
-                xtraTabControl1.SelectedTabPage = xtraTabPage3;
+                //xtraTabControl1.SelectedTabPage = xtraTabPage3;
             }
             else
             {
@@ -48,10 +48,13 @@ namespace Pos
             }
         }
 
+        // select top 1 isnull(Kodlar_Getir_AP,0) as Kodlar_Getir_AP from Stok_Kodlar where Kodlar_sinif=01 and Kodlar_Kod=''
+        bool getirAktifmi = false;
         private void PaketCallCenter_Load(object sender, EventArgs e)
         {
             try
             {
+                
                 dateTarih1.EditValue = Param.Tarih.Date;
                 dateTarih2.EditValue = Param.Tarih.Date;
                 dateEdit1.EditValue = Param.Tarih.Date;
@@ -96,6 +99,14 @@ namespace Pos
 
                 //trendyolApi.siparisGetir();
                 trendyolYenile();
+
+
+                if (Departman.Kodlar_Getir_AP == false)
+                {
+                    timerGetirYenile.Enabled = false;
+                    xtraTabControl1.SelectedTabPage = xtraTabPage1;
+                }
+
             }
             catch (Exception ex)
             {
@@ -108,7 +119,7 @@ namespace Pos
             if (Departman.Kodlar_Getir_AP && RestoGetir())
             {
                 //RestoGetir();
-                xtraTabPage3.PageVisible = true;
+                //xtraTabPage3.PageVisible = true;
                 SiparisAl(GetirToken.apitoken);
                 simpleButton7.Enabled = Departman.Kodlar_Getir_AP;
             }
@@ -1311,7 +1322,11 @@ namespace Pos
                     }
                     value = value.Substring(0, value.Length - 1);
 
-                    dbtools.execcmd(@"INSERT INTO [dbo].[Cst_Recete_Satis](" + col + ")VALUES(" + value + ")");
+
+                    string iki = value.Substring(0, value.Length - 2);
+                    value = iki + "'0'";
+
+                    dbtools.execcmd(@"INSERT INTO [dbo].[Cst_Recete_Satis](" + col + ") VALUES(" + value + ")");
 
 
                     dbtools.execcmd(@"update Pos_Masa set Masa_Durum = 1 where Masa_No = '" + Masano + @"' and Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1");
