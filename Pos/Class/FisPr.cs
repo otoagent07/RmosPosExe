@@ -3114,7 +3114,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
         public string newHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, bool sifirli = false, bool parcalimi = false, string parcamasano = "")
         {
-
+            string sirano = StatikSinif.getSira(Fisno.ToString());
             string printer = String.Empty;
             int bosSatir = 0;
             string filter = "";
@@ -3197,6 +3197,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             hsp.xr_Baslik.Text = Baslik;
             hsp.xr_OtelAdi2.Text = Departman.Sube_Ad;
             hsp.xr_Departman.Text = Departman.Dep_Adi;
+            hsp.txtSiraNo.Text = sirano;
 
             string masaAd = Convert.ToString(dtHesap.Rows[0]["MasaAdi"]);
             if (masaAd.Trim().Equals(""))
