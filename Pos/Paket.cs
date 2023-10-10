@@ -454,6 +454,7 @@ namespace Pos
                 #region Satıs
                 string Masano = Convert.ToString(dtMasa.Rows[0]["Masa_No"]);
                 int Fisno = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
+                StatikSinif.siranoarttir();
 
                 string col = "";
                 for (int i = 0; i < dtSatis.Columns.Count; i++)

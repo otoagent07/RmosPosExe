@@ -139,6 +139,7 @@ namespace Pos
 
                 dbtools.execcmd("UPDATE Pos_Param SET Param_Tarih = '" + dateTarih.DateTime.AddDays(1) + "'  where Param_Id = '1'");
 
+                StatikSinif.siranosifirla();
 
                 // açık paket masaları kapatmak için eklendi 11.02.2022
                 dbtools.execcmd("update Pos_Masa set Masa_Durum='0',Masa_NFC='0',Masa_Ozel=NULL where Masa_Paket='1' or Masa_Paket='true'");

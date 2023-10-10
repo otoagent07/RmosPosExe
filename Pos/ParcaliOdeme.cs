@@ -808,6 +808,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                     else
                     {
                         fisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+                        StatikSinif.siranoarttir();
                         nesne.Rsat_Fisno = fisno;
 
                         nesne.Rsat_Fiyat = Convert.ToDecimal(dtDeger.Rows[0]["Rsat_Fiyat"].ToString());

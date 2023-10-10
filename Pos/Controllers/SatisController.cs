@@ -38,6 +38,7 @@ namespace Pos.Controllers
 
                 Cst_Recete_Satis satis = new Cst_Recete_Satis();
                 int fisno = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
+                StatikSinif.siranoarttir();
 
                 var siparis = db.entegreSiparis.Where(x => x.siparisId == siparisId).FirstOrDefault();
                 var urunler = db.entegreSiparisUrunler.Where(x => x.siparisId == siparisId).ToList();

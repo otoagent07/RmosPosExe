@@ -338,6 +338,7 @@ namespace Pos.YemekSepeti
         private int FisnoAL()
         {
             Fisno = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
+            StatikSinif.siranoarttir();
             return Fisno;
         }
         public void Urun_Sat(DataSet Product, int Fis, decimal Joker)

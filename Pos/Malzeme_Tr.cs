@@ -168,12 +168,14 @@ namespace Pos
                     catch (Exception ex)
                     {
                         hedefFisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+                        StatikSinif.siranoarttir();
                     }
 
                 }
                 else
                 {
                     hedefFisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+                    StatikSinif.siranoarttir();
                 }
 
 
@@ -377,6 +379,7 @@ namespace Pos
                     else
                     {
                         hedefFisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+                        StatikSinif.siranoarttir();
                     }
 
 
@@ -433,6 +436,7 @@ namespace Pos
                         catch (Exception ex)
                         {
                             hedefFisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+                            StatikSinif.siranoarttir();
                         }
 
                         Fisno = hedefFisno;
@@ -446,6 +450,7 @@ namespace Pos
                     else
                     {
                         hedefFisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+                        StatikSinif.siranoarttir();
                         Satis s = new Satis();
                         s.Tag = "M";
                         s.malzemeTr = true;

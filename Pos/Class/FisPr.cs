@@ -452,6 +452,10 @@ namespace Pos.Class
 
             try
             {
+
+                string sirano = StatikSinif.getSira(Fisno.ToString());
+
+
                 //List<string> siparis = new List<string>();
                 DataTable dtPrinter = SiparisPrinterBul(Fisno, Split, false);
 
@@ -569,6 +573,7 @@ namespace Pos.Class
                             siparis.xr_Tarih.Text = Convert.ToDateTime(dtSiparis.Rows[0]["Rsat_Tarih"]).ToShortDateString();
                             siparis.xr_Acilis.Text = Convert.ToString(timeSpan);
                             siparis.txtDepartman.Text = Departman.Dep_Adi;
+                            siparis.txtSiraNo.Text = sirano;
 
                             if (garsonsor.Equals(""))
                             {

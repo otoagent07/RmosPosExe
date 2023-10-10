@@ -12,6 +12,49 @@ namespace Pos.Class
 {
     public class StatikSinif
     {
+        public static void siranoarttir()
+        {
+            try
+            {
+                string sirano = dbtools.DegerGetir("exec Cost_Fis_Sira @depKod='" + Departman.Dep_Kodu + "'");
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError("StatikSinif", "siranoarttir()", "", ex);
+            }
+        }
+        public static void siranosifirla()
+        {
+            try
+            {
+                dbtools.execcmdR("update Stok_Kodlar set Kodlar_PosSiraNo=0 Where Kodlar_Sinif = '01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError("StatikSinif", "siranosifirla()", "", ex);
+            }
+        }
+        public static string getSira(string fisno)
+        {
+            string sirano = "0";
+            try
+            {
+                 sirano = dbtools.DegerGetir("Select top 1 isnull(sirano,0) as sirano  From Cst_Recete_Satis where Rsat_Fisno='"+ fisno + "' order by sirano desc");
+
+                if (sirano=="0")
+                {
+                    sirano = dbtools.DegerGetir("Select top 1 isnull(Kodlar_PosSiraNo,0) as sirano From Stok_Kodlar Where Kodlar_Sinif = '01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+                }
+
+                dbtools.execcmdR("update Cst_Recete_Satis set sirano='"+sirano+ "' where Rsat_Fisno='" + fisno + "' ");
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError("StatikSinif", "siranoarttir()", "", ex);
+            }
+            return sirano;
+        }
+
         public static string getAlterQuery() // scriptgeç scriptbas
         {
             string query = @"
@@ -19,6 +62,7 @@ IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKodCocuk') IS NULL BEGIN ALTER TABL
 IF COL_LENGTH('Pos_Cari', 'Cari_indirimOran') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_indirimOran decimal(18, 2) END;
 IF COL_LENGTH('Pos_FolioParam', 'hizmetBedeliAktif') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetBedeliAktif bit END;
 IF COL_LENGTH('Cst_Recete_Satis', 'ustgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD ustgrup nvarchar(200) END;
+IF COL_LENGTH('Cst_Recete_Satis', 'sirano') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD sirano int END;
 IF COL_LENGTH('Cst_Recete_Satis', 'altgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD altgrup nvarchar(200) END;
 IF COL_LENGTH('Cst_Recete_Satis', 'konumposta') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD konumposta nvarchar(200) END;
 IF COL_LENGTH('Pos_Param', 'kartnoSayisi') IS NULL BEGIN ALTER TABLE Pos_Param ADD kartnoSayisi int END;
