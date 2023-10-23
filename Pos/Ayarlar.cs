@@ -1662,12 +1662,12 @@ public void yaziciYukleHesap()
             DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + txt_Odeme_Kod.EditValue + "' and Pkod_Sinif = '11' ");
             if (dt.Rows.Count < 1)
             { // System.Drawing.ColorTranslator.ToHtml(clr_Masakon_Bos.Color)
-                dbtools.execcmd("INSERT INTO Pos_Kodlar (Pkod_Kod,Pkod_Ad,Pkod_Sinif,Pkod_Kasagiris,Pkod_Kasacikis,Pkod_Tekoda,Pkod_Odano,Pkod_Ozelkod,Pkod_Fatura,Pkod_OnBuroKapatma,Pkod_OnBuroKapatma_Departman,Pkod_FisTipi,Pkod_PaketNot,Pkod_DirekBakiye,Pkod_MuhasebeAktif,Pkod_MuhasebeBorc,Pkod_MuhasebeAlacak,Pkod_AdisyonPr,Pkod_YKasaid,Pkod_banka,Pkod_YS_OdemeID,Pkod_OdemeBtnRenk,Pkod_IWEPayment,Pkod_Sira,Pkod_Dep,Pkod_otoKur,hesapDokTutarSifir,saatAralikDurdur) VALUES ( "
+                dbtools.execcmd("INSERT INTO Pos_Kodlar (Pkod_Kod,Pkod_Ad,Pkod_Sinif,Pkod_Kasagiris,Pkod_Kasacikis,Pkod_Tekoda,Pkod_Odano,Pkod_Ozelkod,Pkod_Fatura,Pkod_OnBuroKapatma,Pkod_OnBuroKapatma_Departman,Pkod_FisTipi,Pkod_PaketNot,Pkod_DirekBakiye,Pkod_MuhasebeAktif,Pkod_MuhasebeBorc,Pkod_MuhasebeAlacak,Pkod_AdisyonPr,Pkod_YKasaid,Pkod_banka,Pkod_YS_OdemeID,Pkod_OdemeBtnRenk,Pkod_IWEPayment,Pkod_Sira,Pkod_Dep,Pkod_otoKur,hesapDokTutarSifir,saatAralikDurdur,Pkod_E_Adisyon) VALUES ( "
                     + " '" + txt_Odeme_Kod.EditValue + "','" + txt_Odeme_Ad.EditValue + "','11','" + Convert.ToBoolean(chk_Odeme_Kasa_Giris.Checked) + "', "
                     + " '" + Convert.ToBoolean(chk_Odeme_Kasa_Cikis.Checked) + "', '" + Convert.ToBoolean(Chk_Odeme_TekOda.Checked) + "','" + txt_Odeme_Odano.EditValue + "','" + rdo_Odeme_OzelKod.SelectedIndex + "', '" + Convert.ToBoolean(chk_Odeme_Fatura.Checked) + "', "
                     + " '" + Convert.ToBoolean(chk_Prm_OnBuroKapatma.Checked) + "', '" + look_Odeme_OnbDepartman.EditValue + "','" + look_Odeme_FisTipi.EditValue + "','" + Convert.ToBoolean(chk_Odeme_paketNot.Checked) + "','" + Pkod_DirekBakiye.Checked + "', "
                     + " '" + Pkod_MuhasebeAktif.Checked + "', '" + Pkod_MuhasebeBorc.EditValue + "', '" + Pkod_MuhasebeAlacak.EditValue + "','" + Pkod_AdisyonPr.Checked + "', "
-                    + " '" + look_Ykkodu.EditValue + "','" + look_Bankakodu.EditValue + "', '" + Pkod_YS_OdemeID.EditValue + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OdemeBtnRenk.Color) + "','" + Pkod_IWEPayment.EditValue + "','" + odeme_Sira.EditValue + "','" + Pkod_Dep.EditValue + "','" + lookUpOtoKurSec.EditValue + "','" + hesapDokTutarSifir.Checked + "','" + txtsaatAralikDurdur.Text + "' )");
+                    + " '" + look_Ykkodu.EditValue + "','" + look_Bankakodu.EditValue + "', '" + Pkod_YS_OdemeID.EditValue + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OdemeBtnRenk.Color) + "','" + Pkod_IWEPayment.EditValue + "','" + odeme_Sira.EditValue + "','" + Pkod_Dep.EditValue + "','" + lookUpOtoKurSec.EditValue + "','" + hesapDokTutarSifir.Checked + "','" + txtsaatAralikDurdur.Text + "','" + Pkod_E_Adisyon.Checked + "' )");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_OdemeKodu, Log.Log_Islem.Kaydet, txt_Odeme_Kod.EditValue + " Kodlu " + txt_Odeme_Ad.EditValue + " Adlı Odeme Kodu Kaydedildi", String.Empty, String.Empty);
             }
@@ -1681,7 +1681,8 @@ public void yaziciYukleHesap()
                 + " Pkod_DirekBakiye = '" + Pkod_DirekBakiye.Checked + "',Pkod_MuhasebeAktif ='" + Pkod_MuhasebeAktif.Checked + "', Pkod_MuhasebeBorc = '" + Pkod_MuhasebeBorc.EditValue + "', Pkod_MuhasebeAlacak ='" + Pkod_MuhasebeAlacak.EditValue + "', "
                 + " Pkod_AdisyonPr = '" + Pkod_AdisyonPr.Checked + "', Pkod_YKasaid = '" + look_Ykkodu.EditValue + "', Pkod_banka = '" + look_Bankakodu.EditValue + "', "
                 + " Pkod_YS_OdemeID = '" + Pkod_YS_OdemeID.EditValue + "', Pkod_OdemeBtnRenk = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_OdemeBtnRenk.Color) + "', Pkod_IWEPayment = '" + Pkod_IWEPayment.EditValue + "', "
-                + " Pkod_Sira = '" + odeme_Sira.EditValue + "', Pkod_Dep= '" + Pkod_Dep.EditValue + "', Pkod_otoKur= '" + lookUpOtoKurSec.EditValue + "', hesapDokTutarSifir= '" + hesapDokTutarSifir.Checked + "', saatAralikDurdur= '" + txtsaatAralikDurdur.Text + "' "
+                + " Pkod_Sira = '" + odeme_Sira.EditValue + "', Pkod_Dep= '" + Pkod_Dep.EditValue + "', Pkod_otoKur= '" + lookUpOtoKurSec.EditValue + "', hesapDokTutarSifir= '" + hesapDokTutarSifir.Checked + "', saatAralikDurdur= '" + txtsaatAralikDurdur.Text + "', "
+                + " Pkod_E_Adisyon = '" + Pkod_E_Adisyon.Checked + "' "
                 + " where Pkod_Kod = '" + txt_Odeme_Kod.EditValue + "' and Pkod_Sinif = '11'");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_OdemeKodu, Log.Log_Islem.Duzelt, txt_Odeme_Kod.EditValue + " Kodlu " + txt_Odeme_Ad.EditValue + " Adlı Odeme Kodu Duzeltildi", String.Empty, String.Empty);
@@ -1709,8 +1710,9 @@ public void yaziciYukleHesap()
             gridColumn141.FieldName = "Pkod_MuhasebeAlacak";
             gridColumn145.FieldName = "Pkod_AdisyonPr";
             gridColumn161.FieldName = "Pkod_YS_OdemeID";
+            gridColumn175.FieldName = "Pkod_E_Adisyon";
 
-            DataTable dt = dbtools.SelectTable("select *, isnull(Pkod_Fatura,0) as Fatura,ISNULL(Pkod_PaketNot,0) as Pkod_PaketNot2, ISNULL(Pkod_DirekBakiye,0) as Pkod_DirekBakiye, ISNULL(Pkod_AdisyonPr,0) as Pkod_AdisyonPr,ISNULL(Pkod_YS_OdemeID,'') as Pkod_YS_OdemeID,Pkod_Dep from Pos_Kodlar where Pkod_Sinif = '11' order by Pkod_Kod");
+            DataTable dt = dbtools.SelectTable("select *, isnull(Pkod_Fatura,0) as Fatura,ISNULL(Pkod_PaketNot,0) as Pkod_PaketNot2, ISNULL(Pkod_DirekBakiye,0) as Pkod_DirekBakiye, ISNULL(Pkod_AdisyonPr,0) as Pkod_AdisyonPr,ISNULL(Pkod_YS_OdemeID,'') as Pkod_YS_OdemeID,Pkod_Dep,isnull(Pkod_E_Adisyon,0) as Pkod_E_Adisyon from Pos_Kodlar where Pkod_Sinif = '11' order by Pkod_Kod");
             grd_Odeme.DataSource = dt;
 
             txt_Odeme_Kod.EditValue = "";
@@ -1768,6 +1770,9 @@ public void yaziciYukleHesap()
                 Pkod_MuhasebeBorc.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeBorc"));
                 Pkod_MuhasebeAlacak.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeAlacak"));
                 Pkod_AdisyonPr.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_AdisyonPr")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_AdisyonPr"));
+
+                Pkod_E_Adisyon.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_E_Adisyon")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_E_Adisyon"));
+
                 look_Ykkodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_YKasaid"));
                 look_Bankakodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_banka"));
 

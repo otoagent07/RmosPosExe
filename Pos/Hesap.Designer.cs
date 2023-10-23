@@ -96,6 +96,7 @@
             this.btnFisIptal = new DevExpress.XtraEditors.SimpleButton();
             this.btnSpSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnParcaliOde = new DevExpress.XtraEditors.SimpleButton();
+            this.E_AdisyonDurum = new DevExpress.XtraEditors.CheckButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -800,11 +801,23 @@
             this.btnParcaliOde.Name = "btnParcaliOde";
             this.btnParcaliOde.Click += new System.EventHandler(this.btnParcaliOde_Click);
             // 
+            // E_AdisyonDurum
+            // 
+            resources.ApplyResources(this.E_AdisyonDurum, "E_AdisyonDurum");
+            this.E_AdisyonDurum.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkButton1.Appearance.Font")));
+            this.E_AdisyonDurum.Appearance.Options.UseFont = true;
+            this.E_AdisyonDurum.Appearance.Options.UseTextOptions = true;
+            this.E_AdisyonDurum.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.E_AdisyonDurum.LookAndFeel.SkinName = "iMaginary";
+            this.E_AdisyonDurum.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.E_AdisyonDurum.Name = "E_AdisyonDurum";
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.E_AdisyonDurum);
             this.Controls.Add(this.btnParcaliOde);
             this.Controls.Add(this.btnSpSil);
             this.Controls.Add(this.btnFisIptal);
@@ -933,5 +946,6 @@
         private DevExpress.XtraEditors.SimpleButton btnFisIptal;
         private DevExpress.XtraEditors.SimpleButton btnSpSil;
         private DevExpress.XtraEditors.SimpleButton btnParcaliOde;
+        private DevExpress.XtraEditors.CheckButton E_AdisyonDurum;
     }
 }

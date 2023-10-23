@@ -274,6 +274,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.cariindirimAktif = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit198 = new DevExpress.XtraEditors.TextEdit();
             this.txtKartnoSayisi = new DevExpress.XtraEditors.SpinEdit();
             this.onburoikramsifiryazaktif = new DevExpress.XtraEditors.CheckEdit();
@@ -655,6 +656,7 @@
             this.btn_Print_Fatura = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Print_Adisyon = new DevExpress.XtraEditors.SimpleButton();
             this.tab_OdemeKodlari = new DevExpress.XtraTab.XtraTabPage();
+            this.Pkod_E_Adisyon = new DevExpress.XtraEditors.CheckEdit();
             this.txtsaatAralikDurdur = new DevExpress.XtraEditors.TextEdit();
             this.lookUpOtoKurSec = new DevExpress.XtraEditors.LookUpEdit();
             this.textEdit195 = new DevExpress.XtraEditors.TextEdit();
@@ -1239,7 +1241,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.cariindirimAktif = new DevExpress.XtraEditors.CheckEdit();
+            this.gridColumn175 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1428,6 +1430,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit198.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKartnoSayisi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.onburoikramsifiryazaktif.Properties)).BeginInit();
@@ -1670,6 +1673,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.tab_OdemeKodlari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pkod_E_Adisyon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsaatAralikDurdur.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpOtoKurSec.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit195.Properties)).BeginInit();
@@ -2072,7 +2076,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4099,6 +4102,12 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // cariindirimAktif
+            // 
+            resources.ApplyResources(this.cariindirimAktif, "cariindirimAktif");
+            this.cariindirimAktif.Name = "cariindirimAktif";
+            this.cariindirimAktif.Properties.Caption = resources.GetString("cariindirimAktif.Properties.Caption");
             // 
             // textEdit198
             // 
@@ -7410,6 +7419,7 @@
             // 
             // tab_OdemeKodlari
             // 
+            this.tab_OdemeKodlari.Controls.Add(this.Pkod_E_Adisyon);
             this.tab_OdemeKodlari.Controls.Add(this.txtsaatAralikDurdur);
             this.tab_OdemeKodlari.Controls.Add(this.lookUpOtoKurSec);
             this.tab_OdemeKodlari.Controls.Add(this.textEdit195);
@@ -7454,6 +7464,12 @@
             this.tab_OdemeKodlari.Controls.Add(this.Pkod_Dep);
             this.tab_OdemeKodlari.Name = "tab_OdemeKodlari";
             resources.ApplyResources(this.tab_OdemeKodlari, "tab_OdemeKodlari");
+            // 
+            // Pkod_E_Adisyon
+            // 
+            resources.ApplyResources(this.Pkod_E_Adisyon, "Pkod_E_Adisyon");
+            this.Pkod_E_Adisyon.Name = "Pkod_E_Adisyon";
+            this.Pkod_E_Adisyon.Properties.Caption = resources.GetString("Pkod_E_Adisyon.Properties.Caption");
             // 
             // txtsaatAralikDurdur
             // 
@@ -7792,7 +7808,8 @@
             this.gridColumn162,
             this.gridColumn166,
             this.gridColumn167,
-            this.gridColumn168});
+            this.gridColumn168,
+            this.gridColumn175});
             this.gridView2.GridControl = this.grd_Odeme;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ColumnAutoWidth = false;
@@ -12345,11 +12362,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // cariindirimAktif
+            // gridColumn175
             // 
-            resources.ApplyResources(this.cariindirimAktif, "cariindirimAktif");
-            this.cariindirimAktif.Name = "cariindirimAktif";
-            this.cariindirimAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            resources.ApplyResources(this.gridColumn175, "gridColumn175");
+            this.gridColumn175.FieldName = "Pkod_E_Adisyon";
+            this.gridColumn175.Name = "gridColumn175";
             // 
             // Ayarlar
             // 
@@ -12551,6 +12568,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit198.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKartnoSayisi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.onburoikramsifiryazaktif.Properties)).EndInit();
@@ -12805,6 +12823,7 @@
             this.panelControl1.ResumeLayout(false);
             this.tab_OdemeKodlari.ResumeLayout(false);
             this.tab_OdemeKodlari.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pkod_E_Adisyon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsaatAralikDurdur.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpOtoKurSec.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit195.Properties)).EndInit();
@@ -13223,7 +13242,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14440,5 +14458,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit198;
         public DevExpress.XtraEditors.SpinEdit txtKartnoSayisi;
         private DevExpress.XtraEditors.CheckEdit cariindirimAktif;
+        private DevExpress.XtraEditors.CheckEdit Pkod_E_Adisyon;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn175;
     }
 }

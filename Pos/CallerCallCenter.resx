@@ -147,7 +147,7 @@
     <value>Fill</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 40</value>
+    <value>2, 39</value>
   </data>
   <data name="gridView1.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -271,7 +271,7 @@
     <value>Cari Hesaplar</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>923, 290</value>
+    <value>925, 292</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -360,7 +360,7 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>841, 0</value>
+    <value>843, 0</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 37</value>
@@ -583,10 +583,10 @@ Adres</value>
     <value>Top</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>923, 37</value>
+    <value>925, 37</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>

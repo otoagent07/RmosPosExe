@@ -1670,7 +1670,7 @@ namespace Pos
 
             //dbtools.execcmd("update Pos_Masa set Masa_Durum = '0', Masa_Ozel = '' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
-            dbtools.execcmd("Update Cst_Recete_Satis set Rsat_SistemDate = Getdate(), Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
+            dbtools.execcmd("Update Cst_Recete_Satis set Rsat_SistemDate = Getdate(), Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "', E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
 
             if (tip == "O")
             {
@@ -2158,7 +2158,7 @@ namespace Pos
                 return;
             }
 
-            DataTable dtOda = dbtools.SelectTable("select isnull(Pkod_Tekoda,0) as Pkod_Tekoda,Pkod_Odano,Pkod_Ozelkod,ISNULL(Pkod_AdisyonPr,0) as Pkod_AdisyonPr from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '11' and Pkod_Kod = '" + Convert.ToString(look_Kapatma.EditValue) + "' ");
+            DataTable dtOda = dbtools.SelectTable("select isnull(Pkod_Tekoda,0) as Pkod_Tekoda,Pkod_Odano,Pkod_Ozelkod,ISNULL(Pkod_AdisyonPr,0) as Pkod_AdisyonPr,isnull(Pkod_E_Adisyon,0) as Pkod_E_Adisyon from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '11' and Pkod_Kod = '" + Convert.ToString(look_Kapatma.EditValue) + "' ");
             if (dtOda.Rows.Count > 0)
             {
                 if (Param.Tesis_Tipi == 0)
@@ -2178,6 +2178,7 @@ namespace Pos
                 }
 
                 chk_AdisyonGR.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_AdisyonPr"]);
+                E_AdisyonDurum.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_E_Adisyon"]);
             }
         }
 
