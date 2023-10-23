@@ -1672,6 +1672,11 @@ namespace Pos
             dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
             dbtools.execcmd("Update Cst_Recete_Satis set Rsat_SistemDate = Getdate(), Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "', E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
 
+            if (E_AdisyonDurum.Checked) // raporlar için eklendi-> eadisyon ise adisyondur.
+            {
+                dbtools.execcmd("Update Cst_Recete_Satis  set Rsat_AdisyonTR = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
+            }
+
             if (tip == "O")
             {
                 dbtools.execcmd("Update Cst_Recete_Satis set Rsat_RecAP = 2 where Rsat_Fisno = '" + fis_no + "'");
@@ -2179,6 +2184,8 @@ namespace Pos
 
                 chk_AdisyonGR.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_AdisyonPr"]);
                 E_AdisyonDurum.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_E_Adisyon"]);
+
+                
             }
         }
 
