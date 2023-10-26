@@ -97,6 +97,7 @@
             this.btnSpSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnParcaliOde = new DevExpress.XtraEditors.SimpleButton();
             this.E_AdisyonDurum = new DevExpress.XtraEditors.CheckButton();
+            this.txtCariAd = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -804,7 +805,7 @@
             // E_AdisyonDurum
             // 
             resources.ApplyResources(this.E_AdisyonDurum, "E_AdisyonDurum");
-            this.E_AdisyonDurum.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkButton1.Appearance.Font")));
+            this.E_AdisyonDurum.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("E_AdisyonDurum.Appearance.Font")));
             this.E_AdisyonDurum.Appearance.Options.UseFont = true;
             this.E_AdisyonDurum.Appearance.Options.UseTextOptions = true;
             this.E_AdisyonDurum.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -812,11 +813,21 @@
             this.E_AdisyonDurum.LookAndFeel.UseDefaultLookAndFeel = false;
             this.E_AdisyonDurum.Name = "E_AdisyonDurum";
             // 
+            // txtCariAd
+            // 
+            this.txtCariAd.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl2.Appearance.Font")));
+            this.txtCariAd.Appearance.ForeColor = System.Drawing.Color.ForestGreen;
+            this.txtCariAd.Appearance.Options.UseFont = true;
+            this.txtCariAd.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.txtCariAd, "txtCariAd");
+            this.txtCariAd.Name = "txtCariAd";
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.txtCariAd);
             this.Controls.Add(this.E_AdisyonDurum);
             this.Controls.Add(this.btnParcaliOde);
             this.Controls.Add(this.btnSpSil);
@@ -947,5 +958,6 @@
         private DevExpress.XtraEditors.SimpleButton btnSpSil;
         private DevExpress.XtraEditors.SimpleButton btnParcaliOde;
         private DevExpress.XtraEditors.CheckButton E_AdisyonDurum;
+        private DevExpress.XtraEditors.LabelControl txtCariAd;
     }
 }

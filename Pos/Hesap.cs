@@ -591,6 +591,8 @@ namespace Pos
             txt_Hesapno.Text = Convert.ToString(odaNo_A) == null ? cari_A : odaNo_A;
             lbl_Bilgi.Text = ara.Bilgi; // burada
 
+            txtCariAd.Text = ara.Uye_Adsoyad;
+
             if (Convert.ToString(indOran_A) != "")
             {
                 Fis_Update();
