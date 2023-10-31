@@ -6329,7 +6329,88 @@ order by Pkod_Kod";
                 ozet.Add(".");
             }
 
+
+
+
+            string bastarih = basTar.ToString("yyyy-MM-dd");
+            string bittarih = bitTar.ToString("yyyy-MM-dd");
+            DataTable cariOzet = dbtools.SelectTableR($@"            select 
+	        Cari_Kod as CARI_KOD,
+	        Cari_Ad as ADI,
+	        Cari_Soyad as SOYAD,
+	        Cari_Tel as TELEFON,
+	        Chrk_Tarih as TARIH ,
+	        kodlar.Pkod_Ad as ODEME_TURU,
+	        ISNULL(SUM(Chrk_Alacak),0) as TAHSILAT
+	        from Pos_Cari WITH(NOLOCK)
+	        left join Pos_Carihrk WITH(NOLOCK) on Cari_Kod = Chrk_Cari
+	        LEFT OUTER JOIN Pos_Kodlar AS Kodlar WITH(NOLOCK) ON Chrk_Odeme = Kodlar.Pkod_Kod and Pkod_Sinif = '11'
+	        where Chrk_Borc = 0 and Chrk_Alacak > 0
+	        and (CONVERT(date,Chrk_Tarih) >= CONVERT(date,'{bastarih}'))
+	        AND	(CONVERT(date,Chrk_Tarih) <= CONVERT(date,'{bittarih}'))
+	        group by Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Chrk_Tarih,kodlar.Pkod_Ad 
+	        order by Cari_Kod");
+
+            if (cariOzet != null && cariOzet.Rows.Count > 0)
+            {
+                // Genişlik değerlerini belirleyin
+                int adSoyadWidth = 20; // Ad ve Soyad için genişlik
+                int odemeTuruWidth = 15; // Ödeme türü için genişlik
+                int tahsilatWidth = 10; // Tahsilat için genişlik
+
+                // Başlık kısmını formatla
+                string header = $"{"Cari Ad-Soyad".PadRight(adSoyadWidth)}{"Ödeme Türü".PadRight(odemeTuruWidth)}{"TAHSİLAT".PadRight(tahsilatWidth)}";
+                ozet.Add(header);
+
+                foreach (DataRow row in cariOzet.Rows)
+                {
+                    // Veri kısımlarını formatla
+                    string adSoyad = $"{row["ADI"]} {row["SOYAD"]}".PadRight(adSoyadWidth);
+                    string odemeTuru = $"{row["ODEME_TURU"]}".PadRight(odemeTuruWidth);
+                    string tahsilat = $"{row["TAHSILAT"]}".PadLeft(tahsilatWidth+10);
+
+                    ozet.Add($"{adSoyad.ToLower()}{odemeTuru}{tahsilat}");
+                }
+            }
+
+
+             cariOzet = dbtools.SelectTableR($@"            select 
+	         kodlar.Pkod_Ad as ODEME_TURU,
+	        ISNULL(SUM(Chrk_Alacak),0) as TAHSILAT
+	        from Pos_Cari WITH(NOLOCK)
+	        left join Pos_Carihrk WITH(NOLOCK) on Cari_Kod = Chrk_Cari
+	        LEFT OUTER JOIN Pos_Kodlar AS Kodlar WITH(NOLOCK) ON Chrk_Odeme = Kodlar.Pkod_Kod and Pkod_Sinif = '11'
+	        where Chrk_Borc = 0 and Chrk_Alacak > 0
+	        and (CONVERT(date,Chrk_Tarih) >= CONVERT(date,'{bastarih}'))
+	        AND	(CONVERT(date,Chrk_Tarih) <= CONVERT(date,'{bittarih}'))
+	        group by kodlar.Pkod_Ad 
+	        ");
+
+            ozet.Add("");
+            ozet.Add("");
+            ozet.Add("");
+            if (cariOzet != null && cariOzet.Rows.Count > 0)
+            {
+                // Genişlik değerlerini belirleyin
+                int odemeTuruWidth = 15; // Ödeme türü için genişlik
+                int tahsilatWidth = 10; // Tahsilat için genişlik
+
+                // Başlık kısmını formatla
+                string header = $"{"Cari Toplam    ".PadRight(odemeTuruWidth)}{"TAHSİLAT".PadRight(tahsilatWidth)}";
+                ozet.Add(header);
+
+                foreach (DataRow row in cariOzet.Rows)
+                {
+                    // Veri kısımlarını formatla
+                    string odemeTuru = $"{row["ODEME_TURU"]}".PadRight(odemeTuruWidth);
+                    string tahsilat = $"{row["TAHSILAT"]}".PadLeft(tahsilatWidth + 10);
+
+                    ozet.Add($"{odemeTuru}{tahsilat}");
+                }
+            }
+
             string ozetString = String.Join("\n", ozet.ToArray());
+
             return ozetString;
         }
 
