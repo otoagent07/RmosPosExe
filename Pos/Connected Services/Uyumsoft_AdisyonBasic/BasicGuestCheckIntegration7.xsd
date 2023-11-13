@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="urn:names:myinvoice:guestcheck" elementFormDefault="qualified" targetNamespace="urn:names:myinvoice:guestcheck" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd2" namespace="urn:names:myinvoice:domain" />
+  <xs:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd3" namespace="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" />
+  <xs:complexType name="GuestCheckInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="LocalDocumentId" type="xs:string" />
+      <xs:element xmlns:q1="urn:names:myinvoice:domain" minOccurs="0" maxOccurs="1" ref="q1:Notification" />
+      <xs:element xmlns:q2="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" minOccurs="0" maxOccurs="1" ref="q2:GuestCheck" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

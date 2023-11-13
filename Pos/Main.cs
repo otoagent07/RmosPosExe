@@ -1206,6 +1206,18 @@ namespace Pos
                     MessageBox.Show(err.Message);
                 }
             }
+            if (e.KeyCode == Keys.F4)
+            {
+                try
+                {
+                    StatikSinif.eadisyonAc();
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show(err.Message);
+                }
+            }
+
 
             if (e.KeyCode == Keys.F5)
             {

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd1" namespace="urn:names:myinvoice:guestcheck" />
+  <xs:element name="GetSystemDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="UserInformation">
+    <xs:attribute name="Username" type="xs:string" />
+    <xs:attribute name="Password" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="GetSystemDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSystemDateResult" type="tns:DateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="DateResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:attribute name="Value" type="xs:dateTime" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Response">
+    <xs:attribute name="IsSucceded" type="xs:boolean" use="required" />
+    <xs:attribute name="Message" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="GetSystemDateWithFormat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="format" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSystemDateWithFormatResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetSystemDateWithFormatResult" type="tns:StringResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="StringResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:attribute name="Value" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateDocumentUrl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentAccessInfo" type="tns:DocumentAccessInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="DocumentAccessInfo">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="DocumentType" type="tns:SystemDocumentType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DocumentId" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="AllowedFileTypes" type="tns:DocumentAccessFileType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="FileType" type="tns:DocumentAccessFileType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="SystemDocumentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OutboxInvoice" />
+      <xs:enumeration value="Voucher" />
+      <xs:enumeration value="ProducerReceipt" />
+      <xs:enumeration value="InboxInvoice" />
+      <xs:enumeration value="OutboxDespatch" />
+      <xs:enumeration value="InboxDespatch" />
+      <xs:enumeration value="GuestCheck" />
+      <xs:enumeration value="ForeignExchange" />
+      <xs:enumeration value="GibArchive" />
+      <xs:enumeration value="Ticket" />
+      <xs:enumeration value="PassengerList" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DocumentAccessFileType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="All" />
+      <xs:enumeration value="Default" />
+      <xs:enumeration value="Xml" />
+      <xs:enumeration value="Pdf" />
+      <xs:enumeration value="Html" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GenerateDocumentUrlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GenerateDocumentUrlResult" type="tns:StringResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestProductInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="request" type="tns:ProductInformationRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ProductInformationRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityCreateHistory">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ProductTypeEnum" type="tns:ProductType" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Date" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityCreateHistory" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBaseInt" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityBaseInt">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityBase" />
+  <xs:simpleType name="ProductType">
+    <xs:list>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="eInvoice" />
+          <xs:enumeration value="eArchive" />
+          <xs:enumeration value="eDespatch" />
+          <xs:enumeration value="eMM" />
+          <xs:enumeration value="eSMM" />
+          <xs:enumeration value="gibArchiveInvoice" />
+          <xs:enumeration value="eLedger" />
+          <xs:enumeration value="eForeignExchange" />
+          <xs:enumeration value="eGuestCheck" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:list>
+  </xs:simpleType>
+  <xs:element name="RequestProductInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="RequestProductInformationResult" type="tns:FlagResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="FlagResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:attribute name="Value" type="xs:boolean" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SendGuestCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="guestChecks" type="tns:ArrayOfGuestCheckInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfGuestCheckInfo">
+    <xs:sequence>
+      <xs:element xmlns:q1="urn:names:myinvoice:guestcheck" minOccurs="0" maxOccurs="unbounded" name="GuestCheckInfo" nillable="true" type="q1:GuestCheckInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendGuestCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SendGuestCheckResult" type="tns:GuestCheckIdentityResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="GuestCheckIdentityResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Value" type="tns:GuestCheckIdentity" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GuestCheckIdentity">
+    <xs:attribute name="DocumentId" type="xs:string" />
+    <xs:attribute name="GuestCheckNumber" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="SaveAsDraft">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="guestChecks" type="tns:ArrayOfGuestCheckInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveAsDraftResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SaveAsDraftResult" type="tns:GuestCheckIdentityResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendDraft">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentIds" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendDraftResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SendDraftResult" type="tns:FlagResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelDraft">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentIds" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelDraftResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CancelDraftResult" type="tns:FlagResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHtmlView">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHtmlViewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetHtmlViewResult" type="tns:ResponseOfHtmlViewResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ResponseOfHtmlViewResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Value" type="tns:HtmlViewResult" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="HtmlViewResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Html" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsUsingDefaultXslt" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetGuestCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGuestCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetGuestCheckResult" type="tns:GuestCheckInfoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="GuestCheckInfoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:sequence>
+          <xs:element xmlns:q2="urn:names:myinvoice:guestcheck" minOccurs="0" maxOccurs="1" name="Value" type="q2:GuestCheckInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPdfView">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPdfViewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetPdfViewResult" type="tns:GuestCheckDataResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="GuestCheckDataResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Value" type="tns:GuestCheckData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GuestCheckData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GuestCheckIdentity">
+        <xs:attribute name="FileData" type="xs:base64Binary" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetGuestCheckData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGuestCheckDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetGuestCheckDataResult" type="tns:GuestCheckDataResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelGuestCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="cancellationContext" type="tns:GuestCheckCancellationContext" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="GuestCheckCancellationContext">
+    <xs:attribute name="DocumentId" type="xs:string" />
+    <xs:attribute name="CancelDate" type="xs:dateTime" use="required" />
+  </xs:complexType>
+  <xs:element name="CancelGuestCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CancelGuestCheckResult" type="tns:FlagResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryGuestCheckStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentIds" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryGuestCheckStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="QueryGuestCheckStatusResult" type="tns:ResponseOfListOfGuestCheckStatusInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ResponseOfListOfGuestCheckStatusInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Value" type="tns:GuestCheckStatusInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GuestCheckStatusInfo">
+    <xs:attribute name="DocumentId" type="xs:string" />
+    <xs:attribute name="GuestCheckNumber" type="xs:string" />
+    <xs:attribute name="Status" type="tns:GuestCheckStatus" use="required" />
+    <xs:attribute name="StatusCode" type="xs:int" use="required" />
+    <xs:attribute name="LocalDocumentId" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="GuestCheckStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Draft" />
+      <xs:enumeration value="Canceled" />
+      <xs:enumeration value="Queued" />
+      <xs:enumeration value="Processing" />
+      <xs:enumeration value="Signed" />
+      <xs:enumeration value="GuestCheckCanceled" />
+      <xs:enumeration value="Error" />
+      <xs:enumeration value="Deleted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="QueryGuestCheckList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="context" type="tns:PagedGuestCheckFilterContext" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PagedGuestCheckFilterContext">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PagedQueryContext">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentId" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="GuestCheckNumber" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TargetTitle" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TargetVknTckn" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationSartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="CreationEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DocumentStartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="DocumentEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Statuses" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="StatusesNot" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="IdList" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsArchived" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="SortedColumn" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Ascending" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PagedQueryContext">
+    <xs:attribute name="PageIndex" type="xs:int" use="required" />
+    <xs:attribute name="PageSize" type="xs:int" use="required" />
+  </xs:complexType>
+  <xs:element name="QueryGuestCheckListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="QueryGuestCheckListResult" type="tns:ResponseOfPagedResponseOfGuestCheck" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ResponseOfPagedResponseOfGuestCheck">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Value" type="tns:PagedResponseOfGuestCheck" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PagedResponseOfGuestCheck">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Items" type="tns:GuestCheck" />
+    </xs:sequence>
+    <xs:attribute name="PageIndex" type="xs:int" use="required" />
+    <xs:attribute name="PageSize" type="xs:int" use="required" />
+    <xs:attribute name="TotalCount" type="xs:int" use="required" />
+    <xs:attribute name="TotalPages" type="xs:int" use="required" />
+  </xs:complexType>
+  <xs:complexType name="GuestCheck">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityUpdatedHistory">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentId" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="GuestCheckNumber" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IssueDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Status" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="StatusEnum" type="tns:GuestCheckStatus" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TargetTitle" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TargetVknTckn" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Server" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Table" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DocumentCurrencyCode" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PayableAmount" type="xs:decimal" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TaxAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="1" name="LocalDocumentId" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="IsArchived" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="SignedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Hash" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EntityUpdatedHistory" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityCreateHistory" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="QueryGuestCheckStatusWithLogs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="userInfo" type="tns:UserInformation" />
+        <xs:element minOccurs="0" maxOccurs="1" name="documentIds" type="tns:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryGuestCheckStatusWithLogsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="QueryGuestCheckStatusWithLogsResult" type="tns:ResponseOfListOfGuestCheckStatusWithLogInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ResponseOfListOfGuestCheckStatusWithLogInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Value" type="tns:GuestCheckStatusWithLogInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GuestCheckStatusWithLogInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GuestCheckStatusInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Logs" type="tns:LogRecordItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LogRecordItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Creator" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="CreateDateUtc" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RemoteIpAddress" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LocalIpAddress" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MachineName" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Type" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

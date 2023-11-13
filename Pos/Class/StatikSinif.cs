@@ -12,6 +12,32 @@ namespace Pos.Class
 {
     public class StatikSinif
     {
+
+        public static string MyClass = "StatikSinif";
+        public static void eadisyonAc()
+        {
+            try
+            {
+                string connectSting = dbtoolsEfatura.connstr;
+
+                RmosE_Fatura.classes.Constants constants = new RmosE_Fatura.classes.Constants();
+
+                RmosE_Fatura.classes.Constants.KullaniciKod = "rmos";
+                RmosE_Fatura.classes.Constants.EFatura_SirketId = 1;
+
+                RmosE_Fatura.classes.Constants.cnnBack = dbtools.connstr;
+                RmosE_Fatura.classes.Constants.cnnFront = Fronttools.connstr;
+
+
+                RmosE_Fatura.UI_Uyumsoft.Uyumsoft_EAdisyon adisyon = new RmosE_Fatura.UI_Uyumsoft.Uyumsoft_EAdisyon();
+
+                adisyon.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+               RHMesaj.MyMessageError(MyClass, "eadisyonAc", "",ex);
+            }
+        }
         public static void siranoarttir()
         {
             try

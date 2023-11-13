@@ -401,6 +401,11 @@
     <Compile Include="Class\Log.cs" />
     <Compile Include="Class\Param.cs" />
     <Compile Include="Class\Recete_Islem.cs" />
+    <Compile Include="Connected Services\Uyumsoft_AdisyonBasic\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\EntegreMenuController.cs" />
     <Compile Include="Controllers\OdemeTipController.cs" />
     <Compile Include="Controllers\CariController.cs" />
@@ -2031,6 +2036,70 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration.wsdl" />
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.DateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.FlagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.GuestCheckDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.GuestCheckIdentityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.GuestCheckInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.ResponseOfHtmlViewResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.ResponseOfListOfGuestCheckStatusInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.ResponseOfListOfGuestCheckStatusWithLogInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.ResponseOfPagedResponseOfGuestCheck.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Pos.Uyumsoft_AdisyonBasic.StringResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Entities\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -2087,6 +2156,13 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\BasicGuestCheckIntegration.disco" />
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\configuration91.svcinfo" />
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\configuration.svcinfo" />
+    <None Include="Connected Services\Uyumsoft_AdisyonBasic\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Entities\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -2138,6 +2214,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\NetGSM\" />
+    <WCFMetadataStorage Include="Connected Services\Uyumsoft_AdisyonBasic\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

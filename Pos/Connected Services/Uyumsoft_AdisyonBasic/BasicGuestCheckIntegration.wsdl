@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BasicGuestCheckIntegration" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd1" namespace="urn:names:myinvoice:guestcheck" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd2" namespace="urn:names:myinvoice:domain" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd3" namespace="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd4" namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd5" namespace="http://www.w3.org/2000/09/xmldsig#" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd6" namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd7" namespace="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd8" namespace="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd9" namespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2" />
+      <xsd:import schemaLocation="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration?xsd=xsd10" namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetSystemDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemDate" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetSystemDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetSystemDateWithFormat_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemDateWithFormat" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetSystemDateWithFormat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemDateWithFormatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GenerateDocumentUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateDocumentUrl" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GenerateDocumentUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateDocumentUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_RequestProductInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestProductInformation" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_RequestProductInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestProductInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_SendGuestCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendGuestCheck" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_SendGuestCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendGuestCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_SaveAsDraft_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAsDraft" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_SaveAsDraft_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAsDraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_SendDraft_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDraft" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_SendDraft_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_CancelDraft_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelDraft" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_CancelDraft_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelDraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetHtmlView_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHtmlView" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetHtmlView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHtmlViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetGuestCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGuestCheck" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetGuestCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGuestCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetPdfView_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPdfView" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetPdfView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPdfViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetGuestCheckData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGuestCheckData" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_GetGuestCheckData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGuestCheckDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_CancelGuestCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelGuestCheck" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_CancelGuestCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelGuestCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_QueryGuestCheckStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryGuestCheckStatus" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_QueryGuestCheckStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryGuestCheckStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_QueryGuestCheckList_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryGuestCheckList" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_QueryGuestCheckList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryGuestCheckListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_QueryGuestCheckStatusWithLogs_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryGuestCheckStatusWithLogs" />
+  </wsdl:message>
+  <wsdl:message name="IBasicGuestCheckIntegration_QueryGuestCheckStatusWithLogs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryGuestCheckStatusWithLogsResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="false" name="IBasicGuestCheckIntegration">
+    <wsdl:operation name="GetSystemDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerBasicServiceBase/GetSystemDate" message="tns:IBasicGuestCheckIntegration_GetSystemDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerBasicServiceBase/GetSystemDateResponse" message="tns:IBasicGuestCheckIntegration_GetSystemDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateWithFormat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerBasicServiceBase/GetSystemDateWithFormat" message="tns:IBasicGuestCheckIntegration_GetSystemDateWithFormat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerBasicServiceBase/GetSystemDateWithFormatResponse" message="tns:IBasicGuestCheckIntegration_GetSystemDateWithFormat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateDocumentUrl">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerBasicServiceBase/GenerateDocumentUrl" message="tns:IBasicGuestCheckIntegration_GenerateDocumentUrl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerBasicServiceBase/GenerateDocumentUrlResponse" message="tns:IBasicGuestCheckIntegration_GenerateDocumentUrl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestProductInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerBasicServiceBase/RequestProductInformation" message="tns:IBasicGuestCheckIntegration_RequestProductInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerBasicServiceBase/RequestProductInformationResponse" message="tns:IBasicGuestCheckIntegration_RequestProductInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendGuestCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/SendGuestCheck" message="tns:IBasicGuestCheckIntegration_SendGuestCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/SendGuestCheckResponse" message="tns:IBasicGuestCheckIntegration_SendGuestCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAsDraft">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/SaveAsDraft" message="tns:IBasicGuestCheckIntegration_SaveAsDraft_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/SaveAsDraftResponse" message="tns:IBasicGuestCheckIntegration_SaveAsDraft_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDraft">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/SendDraft" message="tns:IBasicGuestCheckIntegration_SendDraft_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/SendDraftResponse" message="tns:IBasicGuestCheckIntegration_SendDraft_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelDraft">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/CancelDraft" message="tns:IBasicGuestCheckIntegration_CancelDraft_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/CancelDraftResponse" message="tns:IBasicGuestCheckIntegration_CancelDraft_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHtmlView">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/GetHtmlView" message="tns:IBasicGuestCheckIntegration_GetHtmlView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/GetHtmlViewResponse" message="tns:IBasicGuestCheckIntegration_GetHtmlView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGuestCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/GetGuestCheck" message="tns:IBasicGuestCheckIntegration_GetGuestCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/GetGuestCheckResponse" message="tns:IBasicGuestCheckIntegration_GetGuestCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPdfView">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/GetPdfView" message="tns:IBasicGuestCheckIntegration_GetPdfView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/GetPdfViewResponse" message="tns:IBasicGuestCheckIntegration_GetPdfView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGuestCheckData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/GetGuestCheckData" message="tns:IBasicGuestCheckIntegration_GetGuestCheckData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/GetGuestCheckDataResponse" message="tns:IBasicGuestCheckIntegration_GetGuestCheckData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelGuestCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/CancelGuestCheck" message="tns:IBasicGuestCheckIntegration_CancelGuestCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/CancelGuestCheckResponse" message="tns:IBasicGuestCheckIntegration_CancelGuestCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryGuestCheckStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckStatus" message="tns:IBasicGuestCheckIntegration_QueryGuestCheckStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckStatusResponse" message="tns:IBasicGuestCheckIntegration_QueryGuestCheckStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryGuestCheckList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckList" message="tns:IBasicGuestCheckIntegration_QueryGuestCheckList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckListResponse" message="tns:IBasicGuestCheckIntegration_QueryGuestCheckList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryGuestCheckStatusWithLogs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckStatusWithLogs" message="tns:IBasicGuestCheckIntegration_QueryGuestCheckStatusWithLogs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckStatusWithLogsResponse" message="tns:IBasicGuestCheckIntegration_QueryGuestCheckStatusWithLogs_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBasicGuestCheckIntegration" type="tns:IBasicGuestCheckIntegration">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSystemDate">
+      <soap:operation soapAction="http://tempuri.org/ICustomerBasicServiceBase/GetSystemDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateWithFormat">
+      <soap:operation soapAction="http://tempuri.org/ICustomerBasicServiceBase/GetSystemDateWithFormat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateDocumentUrl">
+      <soap:operation soapAction="http://tempuri.org/ICustomerBasicServiceBase/GenerateDocumentUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestProductInformation">
+      <soap:operation soapAction="http://tempuri.org/ICustomerBasicServiceBase/RequestProductInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendGuestCheck">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/SendGuestCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAsDraft">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/SaveAsDraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDraft">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/SendDraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelDraft">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/CancelDraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHtmlView">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/GetHtmlView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuestCheck">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/GetGuestCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPdfView">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/GetPdfView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuestCheckData">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/GetGuestCheckData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelGuestCheck">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/CancelGuestCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryGuestCheckStatus">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryGuestCheckList">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryGuestCheckStatusWithLogs">
+      <soap:operation soapAction="http://tempuri.org/IBasicGuestCheckIntegration/QueryGuestCheckStatusWithLogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BasicGuestCheckIntegration">
+    <wsdl:port name="BasicHttpBinding_IBasicGuestCheckIntegration" binding="tns:BasicHttpBinding_IBasicGuestCheckIntegration">
+      <soap:address location="http://edonusumapi.uyum.com.tr/Services/BasicGuestCheckIntegration" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

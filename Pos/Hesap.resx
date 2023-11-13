@@ -2397,7 +2397,7 @@
   <data name="checkEditOtoCari.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
-  <data name="checkEdit1.Properties.Caption" xml:space="preserve">
+  <data name="checkEditOtoCari.Properties.Caption" xml:space="preserve">
     <value>Otomatik Cari</value>
   </data>
   <data name="checkEditOtoCari.Size" type="System.Drawing.Size, System.Drawing">

@@ -1612,20 +1612,7 @@ namespace Pos
             {
                 if (E_AdisyonDurum.Checked)
                 {
-                    string connectSting = dbtoolsEfatura.connstr;
-
-                    RmosE_Fatura.classes.Constants constants = new RmosE_Fatura.classes.Constants();
-
-                    RmosE_Fatura.classes.Constants.KullaniciKod = "rmos";
-                    RmosE_Fatura.classes.Constants.EFatura_SirketId = 1;
-
-                    RmosE_Fatura.classes.Constants.cnnBack = dbtools.connstr;
-                    RmosE_Fatura.classes.Constants.cnnFront = Fronttools.connstr;
-
-
-                    RmosE_Fatura.UI_Uyumsoft.Uyumsoft_EAdisyon adisyon = new RmosE_Fatura.UI_Uyumsoft.Uyumsoft_EAdisyon();
-
-                    adisyon.ShowDialog();
+                    StatikSinif.eadisyonAc();
                 }
             }
             catch (Exception ex)
