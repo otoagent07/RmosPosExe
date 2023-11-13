@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Malzeme_Tr));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue3 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule4 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue4 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txt_Masano = new DevExpress.XtraEditors.TextEdit();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
@@ -136,24 +136,24 @@
             this.gridColumn2,
             this.gridColumn13,
             this.gridColumn16});
-            gridFormatRule3.ApplyToRow = true;
-            gridFormatRule3.Column = this.gridColumn13;
-            gridFormatRule3.Name = "Format0";
-            formatConditionRuleValue3.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue3.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue3.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue3.Value1 = 1;
-            gridFormatRule3.Rule = formatConditionRuleValue3;
-            gridFormatRule4.ApplyToRow = true;
-            gridFormatRule4.Column = this.gridColumn13;
-            gridFormatRule4.Name = "Format1";
-            formatConditionRuleValue4.Appearance.ForeColor = System.Drawing.Color.MediumOrchid;
-            formatConditionRuleValue4.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue4.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue4.Value1 = 2;
-            gridFormatRule4.Rule = formatConditionRuleValue4;
-            this.gridView2.FormatRules.Add(gridFormatRule3);
-            this.gridView2.FormatRules.Add(gridFormatRule4);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn13;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue1.Value1 = 1;
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn13;
+            gridFormatRule2.Name = "Format1";
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.MediumOrchid;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue2.Value1 = 2;
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView2.FormatRules.Add(gridFormatRule1);
+            this.gridView2.FormatRules.Add(gridFormatRule2);
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
