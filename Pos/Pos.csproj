@@ -232,6 +232,10 @@
       <HintPath>bin\Debug\Rmosback.exe</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="RmosE-Fatura, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RmosE-Fatura.exe</HintPath>
+    </Reference>
     <Reference Include="SimpleTCP, Version=1.0.24.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleTCP.1.0.24\lib\net45\SimpleTCP.dll</HintPath>
     </Reference>
@@ -371,6 +375,7 @@
     <Compile Include="Class\Cari.cs" />
     <Compile Include="Class\Crypto.cs" />
     <Compile Include="Class\DataTableExt.cs" />
+    <Compile Include="Class\dbtoolsEfatura.cs" />
     <Compile Include="Class\DbtoolsMerkez.cs" />
     <Compile Include="Class\Departman.cs" />
     <Compile Include="Class\ErrorLog.cs" />

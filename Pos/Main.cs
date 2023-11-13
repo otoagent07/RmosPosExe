@@ -286,7 +286,7 @@ namespace Pos
         public frmLogin login;
         public static string MyClass = "Main";
 
-        public  void departmanYukleNew()
+        public void departmanYukleNew()
         {
             try
             {
@@ -471,7 +471,7 @@ namespace Pos
             catch (Exception ex)
             {
                 MessageBox.Show("loginOlNew()\n" + ex.Message);
-                
+
             }
         }
         private void Main_Load(object sender, EventArgs e)
@@ -1076,6 +1076,33 @@ namespace Pos
             }
         }
 
+        //public void eadisyonAc()
+        //{
+        //    try
+        //    {
+        //        //if (E_AdisyonDurum.Checked)
+        //        //{
+        //        string connectSting = dbtoolsEfatura.connstr;
+
+        //        RmosE_Fatura.classes.Constants constants = new RmosE_Fatura.classes.Constants();
+
+        //        RmosE_Fatura.classes.Constants.KullaniciKod = "rmos";
+        //        RmosE_Fatura.classes.Constants.EFatura_SirketId = 1;
+
+        //        RmosE_Fatura.classes.Constants.cnnBack = dbtools.connstr;
+        //        RmosE_Fatura.classes.Constants.cnnFront = Fronttools.connstr;
+
+
+        //        RmosE_Fatura.UI_Uyumsoft.Uyumsoft_EAdisyon adisyon = new RmosE_Fatura.UI_Uyumsoft.Uyumsoft_EAdisyon();
+
+        //        adisyon.ShowDialog();
+        //        //}
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        RHMesaj.MyMessageError(MyClass, "eadisyonAc", "", ex);
+        //    }
+        //}
 
         private void btnGunSonu_Click(object sender, EventArgs e)
         {
@@ -1676,7 +1703,7 @@ YS_Panel a = new YS_Panel();
             {
                 string yaziciAd = dbtools.DegerGetir("Select isnull(Kodlar_parakasa,'') as Kodlar_parakasa From Stok_Kodlar Where Kodlar_Sinif ='01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
 
-                if (yaziciAd=="")
+                if (yaziciAd == "")
                 {
                     string mesaj = @"Lütfen Pos Departmandan Yazıcı Seçiniz
 Yazıcı Özellikleri 
@@ -1699,6 +1726,6 @@ No Cut Seçili Olsun
 
         }
 
-       
+
     }
 }

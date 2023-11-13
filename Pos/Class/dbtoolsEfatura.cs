@@ -8,10 +8,10 @@ using System.Windows.Forms;
 
 namespace Pos.Class
 {
-    public class dbtools
+    public class dbtoolsEfatura
     {
 
-        public static StreamReader oku = new StreamReader("WinlinePos.dll");
+        public static StreamReader oku = new StreamReader("E_Fatura.ini");
         public static string server = Crypto.Decrypt(Convert.ToString(oku.ReadLine()), "keykubat");
         public static string users = Crypto.Decrypt(Convert.ToString(oku.ReadLine()), "keykubat");
         public static string pwd = Crypto.Decrypt(Convert.ToString(oku.ReadLine()), "keykubat");
@@ -25,8 +25,6 @@ namespace Pos.Class
         public static SqlConnection conn = new SqlConnection(connstr);
         static SqlCommand cmd = null;
         public static int cust_cag = 0;
-
-
 
 
         public void conYenile()

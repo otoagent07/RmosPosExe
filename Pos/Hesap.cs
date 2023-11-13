@@ -7,6 +7,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Linq;
 using System.Reflection;
 using System.Resources;
 using System.Text;
@@ -441,7 +442,7 @@ namespace Pos
             {
                 foreach (DataRow dr in dt.Rows)
                 {
-                  
+
 
 
                     if (dr != null && dr["Rsat_Ba"].ToString() == "A")
@@ -463,7 +464,7 @@ namespace Pos
 
             }
 
-            if (dt!=null && dt.Rows.Count>0)
+            if (dt != null && dt.Rows.Count > 0)
             {
                 foreach (DataRow dr in dt.Rows)
                 {
@@ -587,7 +588,7 @@ namespace Pos
             odemeKodu_A = ara.Odeme_Kodu;
             FolioKart_No = ara.Kart_No;
             FolioKart_ID = Convert.ToString(ara.KartID);
-            cariIndirimDec = ara.Cari_indirimOran.ToString().Replace(",",".");
+            cariIndirimDec = ara.Cari_indirimOran.ToString().Replace(",", ".");
             txt_Hesapno.Text = Convert.ToString(odaNo_A) == null ? cari_A : odaNo_A;
             lbl_Bilgi.Text = ara.Bilgi; // burada
 
@@ -598,7 +599,7 @@ namespace Pos
                 Fis_Update();
             }
 
-            
+
             if (Odeme_Ozelkod == 2 && musTipi_A == "C" && !string.IsNullOrEmpty(cari_A))
             {
                 DataTable dtCari = dbtools.SelectTable("select ISNULL(Cari_Limit,0) as Cari_Limit, ISNULL(Cari_LimitTutar,0) as Cari_LimitTutar from Pos_Cari where Cari_Kod = 'OH' and ISNULL(Cari_Aktif,1) = 1 ");
@@ -982,7 +983,7 @@ namespace Pos
         {
             try
             {
-                if (look_Kapatma.EditValue==null)
+                if (look_Kapatma.EditValue == null)
                 {
                     MessageBox.Show("Ödeme Kodu Seçiniz !");
                     return;
@@ -1161,6 +1162,8 @@ namespace Pos
                     //}
 
 
+                   
+
 
                     Fis_Islem.Odeme_Al(Convert.ToInt32(this.Tag), tutar, doviztutar, Convert.ToString(look_Kapatma.EditValue), musTipi_A, odaNo_A, folio_A, cari_A, Split, Convert.ToString(look_DovizKod.EditValue), chk_AdsPr.Checked, mevcutToplamTutar);
 
@@ -1333,7 +1336,7 @@ namespace Pos
             {
                 Klavye2 klv = new Klavye2();
                 klv.ShowDialog();
-                neden = klv.yazi == null ? "" : klv.yazi; 
+                neden = klv.yazi == null ? "" : klv.yazi;
             }
 
 
@@ -1394,19 +1397,19 @@ namespace Pos
             if (oran > 0 || tutar > 0)
             {
                 int fisno = Convert.ToInt32(this.Tag);
-                Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split,neden:neden);
+                Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split, neden: neden);
 
                 decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
 
                 if (oran > 0)
                 {
                     string aciklama = "İNDİRİM UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " İNDİRİM ORANI : " + oran + " İNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "",neden:neden);
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "", neden: neden);
                 }
                 else if (tutar > 0)
                 {
                     string aciklama = "İNDİRİM UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " İNDİRİM TUTARI : " + tutar + " İNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "",neden:neden);
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "", neden: neden);
                 }
 
                 //gridyenile();
@@ -1600,6 +1603,35 @@ namespace Pos
             yazdirmadanKapat();
 
             indirimYaz();
+            eadisyonAc();
+        }
+
+        public void eadisyonAc()
+        {
+            try
+            {
+                if (E_AdisyonDurum.Checked)
+                {
+                    string connectSting = dbtoolsEfatura.connstr;
+
+                    RmosE_Fatura.classes.Constants constants = new RmosE_Fatura.classes.Constants();
+
+                    RmosE_Fatura.classes.Constants.KullaniciKod = "rmos";
+                    RmosE_Fatura.classes.Constants.EFatura_SirketId = 1;
+
+                    RmosE_Fatura.classes.Constants.cnnBack = dbtools.connstr;
+                    RmosE_Fatura.classes.Constants.cnnFront = Fronttools.connstr;
+
+
+                    RmosE_Fatura.UI_Uyumsoft.Uyumsoft_EAdisyon adisyon = new RmosE_Fatura.UI_Uyumsoft.Uyumsoft_EAdisyon();
+
+                    adisyon.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "eadisyonAc", "", ex);
+            }
         }
 
         public void indirimYaz()
@@ -2063,7 +2095,7 @@ namespace Pos
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "yazdirKapat", "",ex);
+                RHMesaj.MyMessageError(MyClass, "yazdirKapat", "", ex);
             }
         }
         private void btn_Yazdirkapat_Click(object sender, EventArgs e)
@@ -2071,7 +2103,7 @@ namespace Pos
             yazdirKapat();
             indirimYaz();
 
-
+            eadisyonAc();
         }
 
         private void FisKontrol()
@@ -2187,7 +2219,7 @@ namespace Pos
                 chk_AdisyonGR.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_AdisyonPr"]);
                 E_AdisyonDurum.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_E_Adisyon"]);
 
-                
+
             }
         }
 
@@ -3269,8 +3301,35 @@ namespace Pos
 
         private void btnParcaliOde_Click(object sender, EventArgs e)
         {
-            ParcaliOdeme parcaliOdeme = new ParcaliOdeme(this.Tag.ToString(),Masa_No);
+            ParcaliOdeme parcaliOdeme = new ParcaliOdeme(this.Tag.ToString(), Masa_No);
             parcaliOdeme.ShowDialog();
+        }
+
+        private void checkEditOtoCari_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkEditOtoCari.Checked)
+            {
+                DataTable dataTable = dbtools.SelectTableR("select top 1  Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tip from Pos_Cari where Cari_Vergino='11111111111'");
+
+                if (dataTable == null || dataTable.Rows.Count == 0)
+                {
+                    MessageBox.Show("Cari_Vergino->11111111111 haneli Cari(C) Açınız! ");
+                    return;
+                }
+                cari_A = dataTable.Rows[0]["Cari_Kod"].ToString();
+                musTipi_A = dataTable.Rows[0]["Cari_Tip"].ToString();
+
+                lbl_Bilgi.Text = "Cari : " + cari_A;
+                txtCariAd.Text = dataTable.Rows[0]["Cari_Ad"].ToString() + " " + dataTable.Rows[0]["Cari_Soyad"].ToString();
+
+            }
+            else
+            {
+                lbl_Bilgi.Text = "...";
+                txtCariAd.Text = "Cari Ad";
+            }
+
+           
         }
     }
 }

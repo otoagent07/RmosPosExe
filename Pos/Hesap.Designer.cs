@@ -98,6 +98,7 @@
             this.btnParcaliOde = new DevExpress.XtraEditors.SimpleButton();
             this.E_AdisyonDurum = new DevExpress.XtraEditors.CheckButton();
             this.txtCariAd = new DevExpress.XtraEditors.LabelControl();
+            this.checkEditOtoCari = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -110,6 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_DovizKod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditOtoCari.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn13
@@ -822,11 +824,21 @@
             resources.ApplyResources(this.txtCariAd, "txtCariAd");
             this.txtCariAd.Name = "txtCariAd";
             // 
+            // checkEditOtoCari
+            // 
+            resources.ApplyResources(this.checkEditOtoCari, "checkEditOtoCari");
+            this.checkEditOtoCari.Name = "checkEditOtoCari";
+            this.checkEditOtoCari.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEditOtoCari.Properties.Appearance.Font")));
+            this.checkEditOtoCari.Properties.Appearance.Options.UseFont = true;
+            this.checkEditOtoCari.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
+            this.checkEditOtoCari.CheckedChanged += new System.EventHandler(this.checkEditOtoCari_CheckedChanged);
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.checkEditOtoCari);
             this.Controls.Add(this.txtCariAd);
             this.Controls.Add(this.E_AdisyonDurum);
             this.Controls.Add(this.btnParcaliOde);
@@ -890,6 +902,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_DovizKod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditOtoCari.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -959,5 +972,6 @@
         private DevExpress.XtraEditors.SimpleButton btnParcaliOde;
         private DevExpress.XtraEditors.CheckButton E_AdisyonDurum;
         private DevExpress.XtraEditors.LabelControl txtCariAd;
+        private DevExpress.XtraEditors.CheckEdit checkEditOtoCari;
     }
 }
