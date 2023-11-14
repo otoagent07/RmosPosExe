@@ -165,9 +165,6 @@
   <data name="gdc_Anlik.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="gdc_Anlik.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
   <data name="gdc_Anlik.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 27</value>
   </data>
@@ -6855,7 +6852,7 @@ Sepeti
     <value>barButtonItem9</value>
   </data>
   <data name="gdc_Anlik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 88</value>
+    <value>208, 88</value>
   </data>
   <data name="gdc_Anlik.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6882,7 +6879,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 117</value>
+    <value>212, 117</value>
   </data>
   <data name="groupControl4.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -6935,7 +6932,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnGunSonu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btnGunSonu.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -6997,7 +6994,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_ExtraTanimlama.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btn_ExtraTanimlama.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -7057,7 +7054,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnCari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btnCari.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -7116,7 +7113,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnKasa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btnKasa.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -7172,7 +7169,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_Rez.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btn_Rez.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -7249,7 +7246,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -7304,7 +7301,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnRaporlar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btnRaporlar.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -7356,7 +7353,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_HizliSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btn_HizliSatis.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -7407,7 +7404,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnDirekSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btnDirekSatis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -7469,7 +7466,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnMasaTakip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 62</value>
+    <value>212, 62</value>
   </data>
   <data name="btnMasaTakip.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7532,7 +7529,7 @@ Sepeti
     <value>Consolas, 15.75pt</value>
   </data>
   <data name="m_txtInputData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 146</value>
+    <value>129, 148</value>
   </data>
   <data name="m_txtInputData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -7544,7 +7541,7 @@ Sepeti
     <value>True</value>
   </data>
   <data name="m_txtInputData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>441, 30</value>
+    <value>514, 30</value>
   </data>
   <data name="m_txtInputData.TabIndex" type="System.Int32, mscorlib">
     <value>190</value>
@@ -7643,7 +7640,7 @@ Sepeti
     <value>True</value>
   </data>
   <data name="lbl_AktifHandle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 142</value>
+    <value>78, 144</value>
   </data>
   <data name="lbl_AktifHandle.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 17</value>
@@ -7715,7 +7712,7 @@ Sepeti
     <value>7</value>
   </data>
   <data name="lbl_Zaman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 122</value>
+    <value>6, 124</value>
   </data>
   <data name="lbl_Zaman.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -7742,7 +7739,7 @@ Sepeti
     <value>8</value>
   </data>
   <data name="lbl_Tarih_In.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 142</value>
+    <value>6, 144</value>
   </data>
   <data name="lbl_Tarih_In.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -7769,7 +7766,7 @@ Sepeti
     <value>9</value>
   </data>
   <data name="lblHata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 165</value>
+    <value>6, 167</value>
   </data>
   <data name="lblHata.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -7808,7 +7805,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>889, 84</value>
+    <value>962, 84</value>
   </data>
   <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -7835,7 +7832,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>893, 214</value>
+    <value>966, 214</value>
   </data>
   <data name="groupControl5.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -8231,7 +8228,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>893, 912</value>
+    <value>966, 912</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -8307,7 +8304,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="simpleButton6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 58</value>
+    <value>224, 58</value>
   </data>
   <data name="simpleButton6.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -8364,7 +8361,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnAyarlar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 58</value>
+    <value>224, 58</value>
   </data>
   <data name="btnAyarlar.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -8489,7 +8486,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 58</value>
+    <value>224, 58</value>
   </data>
   <data name="simpleButton3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -8542,7 +8539,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 58</value>
+    <value>224, 58</value>
   </data>
   <data name="simpleButton4.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -8593,7 +8590,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 58</value>
+    <value>224, 58</value>
   </data>
   <data name="simpleButton5.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -8650,7 +8647,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="btnDepDegis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 58</value>
+    <value>224, 58</value>
   </data>
   <data name="btnDepDegis.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -8680,7 +8677,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 470</value>
+    <value>228, 470</value>
   </data>
   <data name="groupControl3.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -8699,9 +8696,6 @@ Sepeti
   </data>
   <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="gridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 27</value>
@@ -8743,7 +8737,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 260</value>
+    <value>224, 260</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -8770,7 +8764,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 289</value>
+    <value>228, 289</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -9106,7 +9100,7 @@ Sepeti
     <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 153</value>
+    <value>228, 153</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -9130,7 +9124,7 @@ Sepeti
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1166, 912</value>
+    <value>1201, 912</value>
   </data>
   <data name="splitContainerControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

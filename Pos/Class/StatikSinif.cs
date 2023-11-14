@@ -23,7 +23,10 @@ namespace Pos.Class
                 RmosE_Fatura.classes.Constants constants = new RmosE_Fatura.classes.Constants();
 
                 RmosE_Fatura.classes.Constants.KullaniciKod = "rmos";
-                RmosE_Fatura.classes.Constants.EFatura_SirketId = 1;
+                RmosE_Fatura.dbtools.Sirket_id = 1;
+
+                RmosE_Fatura.classes.Constants.EFatura_SirketId = RmosE_Fatura.dbtools.Sirket_id;
+
 
                 RmosE_Fatura.classes.Constants.cnnBack = dbtools.connstr;
                 RmosE_Fatura.classes.Constants.cnnFront = Fronttools.connstr;

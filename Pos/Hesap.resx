@@ -2398,10 +2398,10 @@
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
   <data name="checkEditOtoCari.Properties.Caption" xml:space="preserve">
-    <value>Otomatik Cari</value>
+    <value />
   </data>
   <data name="checkEditOtoCari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 28</value>
+    <value>172, 19</value>
   </data>
   <data name="checkEditOtoCari.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>
