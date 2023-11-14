@@ -1612,7 +1612,7 @@ namespace Pos
             {
                 if (E_AdisyonDurum.Checked)
                 {
-                    StatikSinif.eadisyonAc();
+                   // StatikSinif.eadisyonAc();
                 }
             }
             catch (Exception ex)
