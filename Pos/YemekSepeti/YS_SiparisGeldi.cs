@@ -22,8 +22,16 @@ namespace Pos.YemekSepeti
         IntegrationWebService1.Integration iws = new IntegrationWebService1.Integration(); 
         private bool IsRestaurantOpen()
         {
-            bool s = iws.IsRestaurantOpen(YS_RestoInfo.YS_CatalogName, YS_RestoInfo.YS_CatagoryName);
-            return s;
+            try
+            {
+                bool s = iws.IsRestaurantOpen(YS_RestoInfo.YS_CatalogName, YS_RestoInfo.YS_CatagoryName);
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
         }
         private void Temizle(Control Ctrl)
         {

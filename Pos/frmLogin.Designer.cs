@@ -403,7 +403,7 @@
             rowDefinition5,
             rowDefinition6,
             rowDefinition7});
-            this.layoutControlGroup1.Size = new System.Drawing.Size(388, 566);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(390, 570);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -413,7 +413,7 @@
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.OptionsTableLayoutItem.ColumnSpan = 4;
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 6);
-            this.layoutControlItem1.Size = new System.Drawing.Size(366, 144);
+            this.layoutControlItem1.Size = new System.Drawing.Size(368, 147);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -422,11 +422,11 @@
             this.lblBilgi.AppearanceItemCaption.Font = ((System.Drawing.Font)(resources.GetObject("lblBilgi.AppearanceItemCaption.Font")));
             this.lblBilgi.AppearanceItemCaption.Options.UseFont = true;
             this.lblBilgi.Control = this.txt_Giris;
-            this.lblBilgi.Location = new System.Drawing.Point(0, 144);
+            this.lblBilgi.Location = new System.Drawing.Point(0, 147);
             this.lblBilgi.Name = "lblBilgi";
             this.lblBilgi.OptionsTableLayoutItem.ColumnSpan = 4;
             this.lblBilgi.OptionsTableLayoutItem.RowIndex = 1;
-            this.lblBilgi.Size = new System.Drawing.Size(366, 73);
+            this.lblBilgi.Size = new System.Drawing.Size(368, 73);
             resources.ApplyResources(this.lblBilgi, "lblBilgi");
             this.lblBilgi.TextLocation = DevExpress.Utils.Locations.Top;
             this.lblBilgi.TextSize = new System.Drawing.Size(269, 25);
@@ -434,12 +434,12 @@
             // litem_2
             // 
             this.litem_2.Control = this.simpleButton2;
-            this.litem_2.Location = new System.Drawing.Point(91, 363);
+            this.litem_2.Location = new System.Drawing.Point(92, 366);
             this.litem_2.MinSize = new System.Drawing.Size(28, 35);
             this.litem_2.Name = "litem_2";
             this.litem_2.OptionsTableLayoutItem.ColumnIndex = 1;
             this.litem_2.OptionsTableLayoutItem.RowIndex = 4;
-            this.litem_2.Size = new System.Drawing.Size(91, 73);
+            this.litem_2.Size = new System.Drawing.Size(92, 73);
             this.litem_2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_2.TextSize = new System.Drawing.Size(0, 0);
             this.litem_2.TextVisible = false;
@@ -447,12 +447,12 @@
             // litem_3
             // 
             this.litem_3.Control = this.simpleButton3;
-            this.litem_3.Location = new System.Drawing.Point(182, 363);
+            this.litem_3.Location = new System.Drawing.Point(184, 366);
             this.litem_3.MinSize = new System.Drawing.Size(28, 35);
             this.litem_3.Name = "litem_3";
             this.litem_3.OptionsTableLayoutItem.ColumnIndex = 2;
             this.litem_3.OptionsTableLayoutItem.RowIndex = 4;
-            this.litem_3.Size = new System.Drawing.Size(91, 73);
+            this.litem_3.Size = new System.Drawing.Size(92, 73);
             this.litem_3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_3.TextSize = new System.Drawing.Size(0, 0);
             this.litem_3.TextVisible = false;
@@ -460,12 +460,12 @@
             // litem_5
             // 
             this.litem_5.Control = this.simpleButton5;
-            this.litem_5.Location = new System.Drawing.Point(91, 290);
+            this.litem_5.Location = new System.Drawing.Point(92, 293);
             this.litem_5.MinSize = new System.Drawing.Size(82, 26);
             this.litem_5.Name = "litem_5";
             this.litem_5.OptionsTableLayoutItem.ColumnIndex = 1;
             this.litem_5.OptionsTableLayoutItem.RowIndex = 3;
-            this.litem_5.Size = new System.Drawing.Size(91, 73);
+            this.litem_5.Size = new System.Drawing.Size(92, 73);
             this.litem_5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_5.TextSize = new System.Drawing.Size(0, 0);
             this.litem_5.TextVisible = false;
@@ -473,12 +473,12 @@
             // litem_6
             // 
             this.litem_6.Control = this.simpleButton6;
-            this.litem_6.Location = new System.Drawing.Point(182, 290);
+            this.litem_6.Location = new System.Drawing.Point(184, 293);
             this.litem_6.MinSize = new System.Drawing.Size(82, 26);
             this.litem_6.Name = "litem_6";
             this.litem_6.OptionsTableLayoutItem.ColumnIndex = 2;
             this.litem_6.OptionsTableLayoutItem.RowIndex = 3;
-            this.litem_6.Size = new System.Drawing.Size(91, 73);
+            this.litem_6.Size = new System.Drawing.Size(92, 73);
             this.litem_6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_6.TextSize = new System.Drawing.Size(0, 0);
             this.litem_6.TextVisible = false;
@@ -486,11 +486,11 @@
             // litem_7
             // 
             this.litem_7.Control = this.simpleButton7;
-            this.litem_7.Location = new System.Drawing.Point(0, 217);
+            this.litem_7.Location = new System.Drawing.Point(0, 220);
             this.litem_7.MinSize = new System.Drawing.Size(28, 35);
             this.litem_7.Name = "litem_7";
             this.litem_7.OptionsTableLayoutItem.RowIndex = 2;
-            this.litem_7.Size = new System.Drawing.Size(91, 73);
+            this.litem_7.Size = new System.Drawing.Size(92, 73);
             this.litem_7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_7.TextSize = new System.Drawing.Size(0, 0);
             this.litem_7.TextVisible = false;
@@ -498,12 +498,12 @@
             // litem_8
             // 
             this.litem_8.Control = this.simpleButton8;
-            this.litem_8.Location = new System.Drawing.Point(91, 217);
+            this.litem_8.Location = new System.Drawing.Point(92, 220);
             this.litem_8.MinSize = new System.Drawing.Size(82, 26);
             this.litem_8.Name = "litem_8";
             this.litem_8.OptionsTableLayoutItem.ColumnIndex = 1;
             this.litem_8.OptionsTableLayoutItem.RowIndex = 2;
-            this.litem_8.Size = new System.Drawing.Size(91, 73);
+            this.litem_8.Size = new System.Drawing.Size(92, 73);
             this.litem_8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_8.TextSize = new System.Drawing.Size(0, 0);
             this.litem_8.TextVisible = false;
@@ -511,11 +511,11 @@
             // litem_Geri
             // 
             this.litem_Geri.Control = this.btn_Geri;
-            this.litem_Geri.Location = new System.Drawing.Point(0, 436);
+            this.litem_Geri.Location = new System.Drawing.Point(0, 439);
             this.litem_Geri.MinSize = new System.Drawing.Size(46, 42);
             this.litem_Geri.Name = "litem_Geri";
             this.litem_Geri.OptionsTableLayoutItem.RowIndex = 5;
-            this.litem_Geri.Size = new System.Drawing.Size(91, 73);
+            this.litem_Geri.Size = new System.Drawing.Size(92, 73);
             this.litem_Geri.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_Geri.TextSize = new System.Drawing.Size(0, 0);
             this.litem_Geri.TextVisible = false;
@@ -523,12 +523,12 @@
             // litem_0
             // 
             this.litem_0.Control = this.simpleButton11;
-            this.litem_0.Location = new System.Drawing.Point(91, 436);
+            this.litem_0.Location = new System.Drawing.Point(92, 439);
             this.litem_0.MinSize = new System.Drawing.Size(88, 26);
             this.litem_0.Name = "litem_0";
             this.litem_0.OptionsTableLayoutItem.ColumnIndex = 1;
             this.litem_0.OptionsTableLayoutItem.RowIndex = 5;
-            this.litem_0.Size = new System.Drawing.Size(91, 73);
+            this.litem_0.Size = new System.Drawing.Size(92, 73);
             this.litem_0.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_0.TextSize = new System.Drawing.Size(0, 0);
             this.litem_0.TextVisible = false;
@@ -536,13 +536,13 @@
             // litem_Giris
             // 
             this.litem_Giris.Control = this.btn_Giris;
-            this.litem_Giris.Location = new System.Drawing.Point(273, 217);
+            this.litem_Giris.Location = new System.Drawing.Point(276, 220);
             this.litem_Giris.MinSize = new System.Drawing.Size(88, 26);
             this.litem_Giris.Name = "litem_Giris";
             this.litem_Giris.OptionsTableLayoutItem.ColumnIndex = 3;
             this.litem_Giris.OptionsTableLayoutItem.RowIndex = 2;
             this.litem_Giris.OptionsTableLayoutItem.RowSpan = 2;
-            this.litem_Giris.Size = new System.Drawing.Size(93, 146);
+            this.litem_Giris.Size = new System.Drawing.Size(92, 146);
             this.litem_Giris.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_Giris.TextSize = new System.Drawing.Size(0, 0);
             this.litem_Giris.TextVisible = false;
@@ -550,13 +550,13 @@
             // litem_Cikis
             // 
             this.litem_Cikis.Control = this.Button_Cikis;
-            this.litem_Cikis.Location = new System.Drawing.Point(273, 363);
+            this.litem_Cikis.Location = new System.Drawing.Point(276, 366);
             this.litem_Cikis.MinSize = new System.Drawing.Size(88, 26);
             this.litem_Cikis.Name = "litem_Cikis";
             this.litem_Cikis.OptionsTableLayoutItem.ColumnIndex = 3;
             this.litem_Cikis.OptionsTableLayoutItem.RowIndex = 4;
             this.litem_Cikis.OptionsTableLayoutItem.RowSpan = 2;
-            this.litem_Cikis.Size = new System.Drawing.Size(93, 146);
+            this.litem_Cikis.Size = new System.Drawing.Size(92, 146);
             this.litem_Cikis.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_Cikis.TextSize = new System.Drawing.Size(0, 0);
             this.litem_Cikis.TextVisible = false;
@@ -564,12 +564,12 @@
             // litem_Sil
             // 
             this.litem_Sil.Control = this.btn_Sil;
-            this.litem_Sil.Location = new System.Drawing.Point(182, 436);
+            this.litem_Sil.Location = new System.Drawing.Point(184, 439);
             this.litem_Sil.MinSize = new System.Drawing.Size(88, 26);
             this.litem_Sil.Name = "litem_Sil";
             this.litem_Sil.OptionsTableLayoutItem.ColumnIndex = 2;
             this.litem_Sil.OptionsTableLayoutItem.RowIndex = 5;
-            this.litem_Sil.Size = new System.Drawing.Size(91, 73);
+            this.litem_Sil.Size = new System.Drawing.Size(92, 73);
             this.litem_Sil.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_Sil.TextSize = new System.Drawing.Size(0, 0);
             this.litem_Sil.TextVisible = false;
@@ -577,11 +577,11 @@
             // litem_1
             // 
             this.litem_1.Control = this.simpleButton1;
-            this.litem_1.Location = new System.Drawing.Point(0, 363);
+            this.litem_1.Location = new System.Drawing.Point(0, 366);
             this.litem_1.MinSize = new System.Drawing.Size(28, 35);
             this.litem_1.Name = "litem_1";
             this.litem_1.OptionsTableLayoutItem.RowIndex = 4;
-            this.litem_1.Size = new System.Drawing.Size(91, 73);
+            this.litem_1.Size = new System.Drawing.Size(92, 73);
             this.litem_1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_1.TextSize = new System.Drawing.Size(0, 0);
             this.litem_1.TextVisible = false;
@@ -589,11 +589,11 @@
             // litem_4
             // 
             this.litem_4.Control = this.simpleButton4;
-            this.litem_4.Location = new System.Drawing.Point(0, 290);
+            this.litem_4.Location = new System.Drawing.Point(0, 293);
             this.litem_4.MinSize = new System.Drawing.Size(28, 35);
             this.litem_4.Name = "litem_4";
             this.litem_4.OptionsTableLayoutItem.RowIndex = 3;
-            this.litem_4.Size = new System.Drawing.Size(91, 73);
+            this.litem_4.Size = new System.Drawing.Size(92, 73);
             this.litem_4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_4.TextSize = new System.Drawing.Size(0, 0);
             this.litem_4.TextVisible = false;
@@ -601,12 +601,12 @@
             // litem_9
             // 
             this.litem_9.Control = this.simpleButton9;
-            this.litem_9.Location = new System.Drawing.Point(182, 217);
+            this.litem_9.Location = new System.Drawing.Point(184, 220);
             this.litem_9.MinSize = new System.Drawing.Size(82, 26);
             this.litem_9.Name = "litem_9";
             this.litem_9.OptionsTableLayoutItem.ColumnIndex = 2;
             this.litem_9.OptionsTableLayoutItem.RowIndex = 2;
-            this.litem_9.Size = new System.Drawing.Size(91, 73);
+            this.litem_9.Size = new System.Drawing.Size(92, 73);
             this.litem_9.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.litem_9.TextSize = new System.Drawing.Size(0, 0);
             this.litem_9.TextVisible = false;

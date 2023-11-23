@@ -174,7 +174,7 @@
             resources.ApplyResources(this.splitContainerControl1.Panel1, "splitContainerControl1.Panel1");
             this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl2);
             resources.ApplyResources(this.splitContainerControl1.Panel2, "splitContainerControl1.Panel2");
-            this.splitContainerControl1.SplitterPosition = 212;
+            this.splitContainerControl1.SplitterPosition = 182;
             // 
             // Main_Tarih
             // 
@@ -194,6 +194,7 @@
             // gdc_Anlik
             // 
             resources.ApplyResources(this.gdc_Anlik, "gdc_Anlik");
+            this.gdc_Anlik.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gdc_Anlik.EmbeddedNavigator.Margin")));
             this.gdc_Anlik.MainView = this.gridView2;
             this.gdc_Anlik.MenuManager = this.barManager1;
             this.gdc_Anlik.Name = "gdc_Anlik";
@@ -206,6 +207,7 @@
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn5});
+            this.gridView2.DetailHeight = 284;
             this.gridView2.GridControl = this.gdc_Anlik;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
@@ -214,6 +216,7 @@
             // 
             resources.ApplyResources(this.gridColumn3, "gridColumn3");
             this.gridColumn3.FieldName = "Ciro";
+            this.gridColumn3.MinWidth = 17;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             // 
@@ -221,6 +224,7 @@
             // 
             resources.ApplyResources(this.gridColumn4, "gridColumn4");
             this.gridColumn4.FieldName = "KisiSayisi";
+            this.gridColumn4.MinWidth = 17;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             // 
@@ -228,6 +232,7 @@
             // 
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
             this.gridColumn5.FieldName = "KisiOrtalamasi";
+            this.gridColumn5.MinWidth = 17;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             // 
@@ -642,7 +647,7 @@
             this.splitContainerControl2.Panel2.Controls.Add(this.groupControl2);
             this.splitContainerControl2.Panel2.Controls.Add(this.groupControl1);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 228;
+            this.splitContainerControl2.SplitterPosition = 195;
             // 
             // groupControl5
             // 
@@ -806,6 +811,7 @@
             // gridControl1
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
+            this.gridControl1.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl1.EmbeddedNavigator.Margin")));
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.barManager1;
             this.gridControl1.Name = "gridControl1";
@@ -817,6 +823,7 @@
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2});
+            this.gridView1.DetailHeight = 284;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowColumnHeaders = false;
@@ -826,13 +833,14 @@
             this.gridView1.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.False;
             this.gridView1.OptionsView.ShowViewCaption = true;
             resources.ApplyResources(this.gridView1, "gridView1");
-            this.gridView1.ViewCaptionHeight = 3;
+            this.gridView1.ViewCaptionHeight = 2;
             // 
             // gridColumn1
             // 
             this.gridColumn1.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn1.AppearanceCell.Font")));
             this.gridColumn1.AppearanceCell.Options.UseFont = true;
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
+            this.gridColumn1.MinWidth = 17;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             this.gridColumn1.OptionsColumn.ShowCaption = false;
@@ -844,6 +852,7 @@
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
             this.gridColumn2.DisplayFormat.FormatString = "n4";
             this.gridColumn2.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.gridColumn2.MinWidth = 17;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             this.gridColumn2.OptionsColumn.ShowCaption = false;

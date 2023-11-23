@@ -1738,6 +1738,6 @@ No Cut Seçili Olsun
 
         }
 
-
+        
     }
 }
