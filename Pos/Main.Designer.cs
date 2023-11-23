@@ -126,6 +126,7 @@
             this.toastNotificationsManager2 = new DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager(this.components);
             this.timerTrendyol = new System.Windows.Forms.Timer(this.components);
             this.alertControl3 = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -1004,6 +1005,10 @@
             this.timerTrendyol.Interval = 30000;
             this.timerTrendyol.Tick += new System.EventHandler(this.timerTrendyol_Tick);
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
@@ -1149,5 +1154,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         public DevExpress.XtraBars.Alerter.AlertControl alertControl3;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

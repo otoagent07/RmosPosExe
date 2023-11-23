@@ -19,6 +19,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing.Printing;
 using System.IO;
+using System.IO.Pipes;
 using System.Linq;
 using System.Management;
 using System.Media;
@@ -416,7 +417,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.72";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.73";
 
 
 
@@ -493,6 +494,8 @@ namespace Pos
                 }
 
                 departmanYukleNew();
+
+                backgroundWorker1.RunWorkerAsync();
             }
             catch (Exception ex)
             {
@@ -1738,6 +1741,77 @@ No Cut Seçili Olsun
 
         }
 
-        
+        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+            server();
+        }
+
+        private void server()
+        {
+            try
+            {
+                var pipeServer = new NamedPipeServerStream("entegreyemek", PipeDirection.InOut, 4);
+
+                StreamReader sr = new StreamReader(pipeServer);
+                StreamWriter sw = new StreamWriter(pipeServer);
+
+                do
+                {
+                    try
+                    {
+                        pipeServer.WaitForConnection();
+                        string fisno;
+                        sw.WriteLine("Waiting");
+                        sw.Flush();
+                        pipeServer.WaitForPipeDrain();
+                        fisno = sr.ReadLine();
+
+                        Application.DoEvents();
+
+                        this.Invoke(new MethodInvoker(() =>
+                        {
+                            FisPr pr = new FisPr();
+                            string sonuc = "";
+
+                            if (Param.Param_YeniSiparisDkm)
+                            {
+                                sonuc = pr.newSiparisPr(Convert.ToInt32(fisno), false, 0);
+                            }
+                            else
+                            {
+                                sonuc = pr.SiparisPr(Convert.ToInt32(fisno), false, 0);
+                            }
+
+                            if (sonuc != "OK")
+                            {
+                                MessageBox.Show(sonuc);
+                            }
+                            else
+                            {
+                                dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + fisno + "' ");
+                                RHMesaj.alertMesaj2("Entegre\nSipariş Yazdırıldı", 5);
+                            }
+
+                        }));
+
+
+                    }
+
+                    catch (Exception ex) { throw ex; }
+
+                    finally
+                    {
+                        pipeServer.WaitForPipeDrain();
+                        if (pipeServer.IsConnected) { pipeServer.Disconnect(); }
+                    }
+                } while (true);
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "server", "",ex);
+            }
+            
+        }
+
     }
 }
