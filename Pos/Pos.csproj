@@ -378,6 +378,7 @@
     <Compile Include="Class\dbtoolsEfatura.cs" />
     <Compile Include="Class\DbtoolsMerkez.cs" />
     <Compile Include="Class\Departman.cs" />
+    <Compile Include="Class\EntegreJson.cs" />
     <Compile Include="Class\ErrorLog.cs" />
     <Compile Include="Class\FisPr.cs" />
     <Compile Include="Class\Fis_Islem.cs" />

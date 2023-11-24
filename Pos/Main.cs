@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraBars.Alerter;
 using DevExpress.XtraReports.UI;
+using Newtonsoft.Json;
 using Pos.Class;
 using Pos.Controllers;
 using Pos.Entities;
@@ -417,7 +418,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.73";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.74";
 
 
 
@@ -1760,37 +1761,38 @@ No Cut Seçili Olsun
                     try
                     {
                         pipeServer.WaitForConnection();
-                        string fisno;
+                        string entegrejson;
                         sw.WriteLine("Waiting");
                         sw.Flush();
                         pipeServer.WaitForPipeDrain();
-                        fisno = sr.ReadLine();
+                        entegrejson = sr.ReadLine();
 
                         Application.DoEvents();
 
                         this.Invoke(new MethodInvoker(() =>
                         {
-                            FisPr pr = new FisPr();
-                            string sonuc = "";
+                            EntegreJson json = JsonConvert.DeserializeObject<EntegreJson>(entegrejson);
 
-                            if (Param.Param_YeniSiparisDkm)
+
+
+                            switch (json.printTip)
                             {
-                                sonuc = pr.newSiparisPr(Convert.ToInt32(fisno), false, 0);
-                            }
-                            else
-                            {
-                                sonuc = pr.SiparisPr(Convert.ToInt32(fisno), false, 0);
+                                case "siparis":
+                                    siparisYazdir(json);
+                                    break;
+                                case "paket":
+                                    paketYazdir(json);
+                                    break;
+                                case "hesap":
+                                    hesapYazdir(json);
+                                    break;
+                                default:
+                                    break;
                             }
 
-                            if (sonuc != "OK")
-                            {
-                                MessageBox.Show(sonuc);
-                            }
-                            else
-                            {
-                                dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + fisno + "' ");
-                                RHMesaj.alertMesaj2("Entegre\nSipariş Yazdırıldı", 5);
-                            }
+
+
+
 
                         }));
 
@@ -1808,10 +1810,86 @@ No Cut Seçili Olsun
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "server", "",ex);
+                RHMesaj.MyMessageError(MyClass, "server", "", ex);
             }
-            
-        }
 
+        }
+        public void hesapYazdir(EntegreJson json)
+        {
+            try
+            {
+                string fiyat = dbtools.DegerGetir($"select sum(Rsat_Fiyat) as Rsat_Fiyat from Cst_Recete_Satis where Rsat_Fisno='${json.fisno}' and Rsat_Ba='B'");
+
+                string Rsat_Masa = dbtools.DegerGetir($"select top 1 Rsat_Masa from Cst_Recete_Satis where Rsat_Fisno='${json.fisno}' ");
+
+                fiyat = fiyat.Replace(",", ".");
+
+                string query = $"exec Pos_Satis_Odeme @Tarih='{Param.Tarih}',@Fisno={json.fisno},@Tutar=N'{fiyat}',@Doviztutar=N'{fiyat}',@Dovizkur=N'1.00000',@Kapatma=N'{json.odemeTip}',@Mustipi=N'C',@Odano=default,@Folio=0,@Cari=N'',@Split=0,@DovizKodu=N'TL',@UserKod=N'1',@Ads=0";
+
+                dbtools.execcmdR(query);
+
+                dbtools.execcmdR("update Cst_Recete_Satis set  Rsat_Durum='K' where Rsat_Fisno="+json.fisno);
+                dbtools.execcmdR($"update Pos_Masa set Masa_Durum='0',Masa_NFC='0',Masa_Ozel=NULL where Masa_No='{Rsat_Masa}'" );
+
+                if (json.hesapYazsinmi)
+                {
+                    FisPr pr = new FisPr();
+                    pr.newHesapDokum(true, Convert.ToInt32(this.Tag), 0, "* * * HESAP DÖKÜM FİŞİ * * *", false);
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "", "", ex);
+            }
+
+        }
+        public void paketYazdir(EntegreJson json)
+        {
+            try
+            {
+                FisPr pr = new FisPr();
+                string sonucPaket = pr.PaketPr(Convert.ToInt32(json.fisno), " * * * " + json.tip + " PAKET FİSİ * * * ");
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "", "", ex);
+            }
+
+        }
+        public void siparisYazdir(EntegreJson json)
+        {
+            try
+            {
+                FisPr pr = new FisPr();
+                string sonuc = "OK";
+
+                if (Param.Param_YeniSiparisDkm)
+                {
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(json.fisno), false, 0);
+                }
+                else
+                {
+                    sonuc = pr.SiparisPr(Convert.ToInt32(json.fisno), false, 0);
+                }
+
+                if (sonuc != "OK")
+                {
+                    MessageBox.Show(sonuc);
+                }
+                else
+                {
+                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + json.fisno + "' ");
+                    RHMesaj.alertMesaj2("Entegre\nSipariş Yazdırıldı", 5);
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "", "", ex);
+            }
+
+        }
     }
 }
