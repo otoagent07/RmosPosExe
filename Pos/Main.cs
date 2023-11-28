@@ -1818,13 +1818,13 @@ No Cut Seçili Olsun
         {
             try
             {
-                string fiyat = dbtools.DegerGetir($"select sum(Rsat_Fiyat) as Rsat_Fiyat from Cst_Recete_Satis where Rsat_Fisno='${json.fisno}' and Rsat_Ba='B'");
+                string fiyat = dbtools.DegerGetir($"select sum(Rsat_Fiyat) as Rsat_Fiyat from Cst_Recete_Satis where Rsat_Fisno='{json.fisno}' and Rsat_Ba='B'");
 
-                string Rsat_Masa = dbtools.DegerGetir($"select top 1 Rsat_Masa from Cst_Recete_Satis where Rsat_Fisno='${json.fisno}' ");
+                string Rsat_Masa = dbtools.DegerGetir($"select top 1 Rsat_Masa from Cst_Recete_Satis where Rsat_Fisno='{json.fisno}' ");
 
                 fiyat = fiyat.Replace(",", ".");
 
-                string query = $"exec Pos_Satis_Odeme @Tarih='{Param.Tarih}',@Fisno={json.fisno},@Tutar=N'{fiyat}',@Doviztutar=N'{fiyat}',@Dovizkur=N'1.00000',@Kapatma=N'{json.odemeTip}',@Mustipi=N'C',@Odano=default,@Folio=0,@Cari=N'',@Split=0,@DovizKodu=N'TL',@UserKod=N'1',@Ads=0";
+                string query = $"exec Pos_Satis_Odeme @Tarih='{Param.Tarih.ToString("yyyy-MM-dd")}',@Fisno={json.fisno},@Tutar=N'{fiyat}',@Doviztutar=N'{fiyat}',@Dovizkur=N'1.00000',@Kapatma=N'{json.odemeTip}',@Mustipi=N'C',@Odano=default,@Folio=0,@Cari=N'',@Split=0,@DovizKodu=N'TL',@UserKod=N'1',@Ads=0";
 
                 dbtools.execcmdR(query);
 
@@ -1834,7 +1834,7 @@ No Cut Seçili Olsun
                 if (json.hesapYazsinmi)
                 {
                     FisPr pr = new FisPr();
-                    pr.newHesapDokum(true, Convert.ToInt32(this.Tag), 0, "* * * HESAP DÖKÜM FİŞİ * * *", false);
+                    pr.newHesapDokum(true, Convert.ToInt32(json.fisno), 0, "* * * HESAP DÖKÜM FİŞİ * * *", false);
 
                 }
 
@@ -1883,6 +1883,11 @@ No Cut Seçili Olsun
                 {
                     dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + json.fisno + "' ");
                     RHMesaj.alertMesaj2("Entegre\nSipariş Yazdırıldı", 5);
+                }
+
+                if (json.siparistePaketYazsinmi)
+                {
+                    paketYazdir(json);
                 }
             }
             catch (Exception ex)
