@@ -278,7 +278,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1058, 0</value>
+    <value>1060, 0</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
     <value>barDockControlTop</value>
@@ -296,10 +296,10 @@
     <value>Bottom</value>
   </data>
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 681</value>
+    <value>0, 685</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1058, 41</value>
+    <value>1060, 41</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -320,7 +320,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 681</value>
+    <value>0, 685</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -338,10 +338,10 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1058, 0</value>
+    <value>1060, 0</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 681</value>
+    <value>0, 685</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
@@ -362,7 +362,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1058, 722</value>
+    <value>1060, 726</value>
   </data>
   <data name="xtraTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -637,7 +637,7 @@
     <value>16</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 466</value>
+    <value>972, 470</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -661,10 +661,10 @@
     <value>Bottom</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 466</value>
+    <value>0, 470</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 59</value>
+    <value>972, 59</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -682,7 +682,7 @@
     <value>1</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 525</value>
+    <value>972, 529</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Açık Paketler</value>
@@ -700,7 +700,7 @@
     <value>0</value>
   </data>
   <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 548</value>
+    <value>974, 552</value>
   </data>
   <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -997,7 +997,7 @@
     <value>16</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 454</value>
+    <value>966, 449</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1540,7 +1540,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 71</value>
+    <value>966, 71</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1558,7 +1558,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 525</value>
+    <value>966, 520</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Kapalı Paketler</value>
@@ -1663,7 +1663,7 @@ Başlat</value>
     <value>ID</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 438</value>
+    <value>966, 433</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1809,7 +1809,7 @@ Başlat</value>
     <value>Right</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>835, 22</value>
+    <value>831, 22</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 63</value>
@@ -2007,10 +2007,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 438</value>
+    <value>0, 433</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 87</value>
+    <value>966, 87</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2028,7 +2028,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 525</value>
+    <value>966, 520</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Getir</value>
@@ -2049,7 +2049,7 @@ Başlat</value>
     <value>Fill</value>
   </data>
   <data name="gridControlTrendyolSiparis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridViewTrendyolSiparis.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2181,7 +2181,7 @@ Başlat</value>
     <value>10</value>
   </data>
   <data name="gridControlTrendyolSiparis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>964, 240</value>
+    <value>962, 237</value>
   </data>
   <data name="gridControlTrendyolSiparis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2205,7 +2205,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 246</value>
+    <value>966, 241</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2226,10 +2226,10 @@ Başlat</value>
     <value>Fill</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>964, 187</value>
+    <value>962, 189</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2250,10 +2250,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 246</value>
+    <value>0, 241</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 193</value>
+    <value>966, 193</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2810,10 +2810,10 @@ Bizden Sil</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 439</value>
+    <value>0, 434</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 86</value>
+    <value>966, 86</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2831,7 +2831,7 @@ Bizden Sil</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>970, 525</value>
+    <value>966, 520</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
     <value>Trendyol</value>
@@ -2885,7 +2885,7 @@ Bizden Sil</value>
     <value>Center_Cari</value>
   </data>
   <data name="gridControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 548</value>
+    <value>86, 552</value>
   </data>
   <data name="gridControl5.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -3925,7 +3925,7 @@ Ekle</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1058, 133</value>
+    <value>1060, 133</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3961,7 +3961,7 @@ Ekle</value>
     <value>0, 0</value>
   </data>
   <data name="barDockControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1058, 0</value>
+    <value>1060, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl1.Name" xml:space="preserve">
     <value>barDockControl1</value>
@@ -3979,10 +3979,10 @@ Ekle</value>
     <value>Bottom</value>
   </data>
   <data name="barDockControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 722</value>
+    <value>0, 726</value>
   </data>
   <data name="barDockControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1058, 0</value>
+    <value>1060, 0</value>
   </data>
   <data name="&gt;&gt;barDockControl2.Name" xml:space="preserve">
     <value>barDockControl2</value>
@@ -4000,10 +4000,10 @@ Ekle</value>
     <value>Right</value>
   </data>
   <data name="barDockControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1058, 0</value>
+    <value>1060, 0</value>
   </data>
   <data name="barDockControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 722</value>
+    <value>0, 726</value>
   </data>
   <data name="&gt;&gt;barDockControl4.Name" xml:space="preserve">
     <value>barDockControl4</value>
@@ -4018,7 +4018,7 @@ Ekle</value>
     <value>10</value>
   </data>
   <data name="barDockControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 722</value>
+    <value>0, 726</value>
   </data>
   <data name="&gt;&gt;barDockControl3.Name" xml:space="preserve">
     <value>barDockControl3</value>
