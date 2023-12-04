@@ -589,10 +589,11 @@ namespace Pos.Class
                             siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                             siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
 
-                            if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "")
+                            if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "") // 
                             {
                                 siparis.Print();
                             }
+                          
                         }
                     }
 
@@ -6367,14 +6368,14 @@ order by Pkod_Kod";
                     // Veri kısımlarını formatla
                     string adSoyad = $"{row["ADI"]} {row["SOYAD"]}".PadRight(adSoyadWidth);
                     string odemeTuru = $"{row["ODEME_TURU"]}".PadRight(odemeTuruWidth);
-                    string tahsilat = $"{row["TAHSILAT"]}".PadLeft(tahsilatWidth+10);
+                    string tahsilat = $"{row["TAHSILAT"]}".PadLeft(tahsilatWidth + 10);
 
                     ozet.Add($"{adSoyad.ToLower()}{odemeTuru}{tahsilat}");
                 }
             }
 
 
-             cariOzet = dbtools.SelectTableR($@"            select 
+            cariOzet = dbtools.SelectTableR($@"            select 
 	         kodlar.Pkod_Ad as ODEME_TURU,
 	        ISNULL(SUM(Chrk_Alacak),0) as TAHSILAT
 	        from Pos_Cari WITH(NOLOCK)
