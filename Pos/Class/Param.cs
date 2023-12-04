@@ -95,6 +95,7 @@ namespace Pos.Class
         public static string Param_Parity { get; set; }
         public static decimal Param_StopBits { get; set; }
         public static string Param_FlowControl { get; set; }
+        public static string tipboxReceteKod { get; set; }
         public static int Param_bSizeW { get; set; }
         public static int Param_bSizeH { get; set; }
         public static bool Param_SatisArama { get; set; }
@@ -224,7 +225,7 @@ namespace Pos.Class
                         ",ISNULL(kisivegarsonbirkeresoraktif,0) as kisivegarsonbirkeresoraktif  " +
                         ",ISNULL(satirsilfiscikmasinaktif,0) as satirsilfiscikmasinaktif  " +
                         ",ISNULL(onburoikramsifiryazaktif,0) as onburoikramsifiryazaktif  " +
-                        ",ISNULL(cariindirimAktif,0) as cariindirimAktif  " +
+                        ",ISNULL(cariindirimAktif,0) as cariindirimAktif,isnull(tipboxReceteKod,'') as tipboxReceteKod  " +
                          " from Pos_Param where Param_Id = '1' ");
 
                 DataTable dtMac = dbtools.SelectTable("SELECT  isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep, ISNULL(P_Sabitkonum,0) as P_Sabitkonum, P_Sabitkonumkodu   FROM  Rmosmuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
@@ -421,6 +422,10 @@ namespace Pos.Class
                     satirsilfiscikmasinaktif = Convert.ToBoolean(dt.Rows[0]["satirsilfiscikmasinaktif"]);
                     onburoikramsifiryazaktif = Convert.ToBoolean(dt.Rows[0]["onburoikramsifiryazaktif"]);
                     cariindirimAktif = Convert.ToBoolean(dt.Rows[0]["cariindirimAktif"]);
+
+
+                    tipboxReceteKod = Convert.ToString(dt.Rows[0]["tipboxReceteKod"]);
+
 
                 }
                 if (dtMac.Rows.Count > 0)

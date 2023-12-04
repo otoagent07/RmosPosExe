@@ -61,7 +61,7 @@ group by Pkod_Ad";
 
             }
         }
-public void yaziciYukleHesap()
+        public void yaziciYukleHesap()
         {
             try
             {
@@ -102,9 +102,9 @@ public void yaziciYukleHesap()
 
                 Pos_dil.EditValue = Langs.Default.Dil == "" ? "tr-TR" : Langs.Default.Dil;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                
+
             }
         }
         private void Ayarlar_Load(object sender, EventArgs e)
@@ -122,7 +122,7 @@ public void yaziciYukleHesap()
             iws.AuthHeaderValue.Password = YS_AuthHeader.ah.Password;
 
             this.BringToFront();
-           // xtraTabControl1.SelectedTabPage = tab_Parametre;
+            // xtraTabControl1.SelectedTabPage = tab_Parametre;
             xtraTabControl1.SelectedTabPage = tab_Home;
             xtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
 
@@ -208,6 +208,11 @@ public void yaziciYukleHesap()
                 look_Prm_Bindirim.Properties.DataSource = dtRecete;
                 look_Prm_Bindirim.Properties.DisplayMember = "Rec_Ad";
                 look_Prm_Bindirim.Properties.ValueMember = "Rec_Genelkod";
+
+
+                lookUpEdit_tipbox.Properties.DataSource = dtRecete;
+                lookUpEdit_tipbox.Properties.DisplayMember = "Rec_Ad";
+                lookUpEdit_tipbox.Properties.ValueMember = "Rec_Genelkod";
 
                 look_Prm_Yuvarla.Properties.DataSource = dtRecete;
                 look_Prm_Yuvarla.Properties.DisplayMember = "Rec_Ad";
@@ -631,7 +636,7 @@ public void yaziciYukleHesap()
 
                 Rmosback.Service.RmosMuh.SirketService sirketService = new Rmosback.Service.RmosMuh.SirketService();
                 Rmosback.Classes.Constants.MuhSirketKod = sirketService.GetAll().Where(x => x.Sirket_Database.ToUpper() == dbtools.database.ToUpper()).FirstOrDefault().Sirket_Kod;
-               
+
 
                 Rmosback.Cst_Recete rec = new Rmosback.Cst_Recete();
                 rec.ShowDialog();
@@ -899,7 +904,7 @@ public void yaziciYukleHesap()
                     + " Param_Adres1,Param_Adres2,Param_Adres3,Param_Adres4,Param_Adres5,Param_Fis_Aciklama,ISNULL(NULLIF(Param_Masa_Size,''),'90;45') as Param_Masa_Size, "
                     + " ISNULL(Param_Sonmasa,0) as Param_Sonmasa,ISNULL(Param_Sonmasa_Renk,'#FF4500') as Param_Sonmasa_Renk,ISNULL(Param_Paket_Form,0) as Param_Paket_Form2, "
                     + " ISNULL(Param_Paket_Kisi,0) as Param_Paket_Kisi2,isnull(Param_Hesap_DovizOzet,0) as Param_Hesap_DovizOzet2,ISNULL(Param_Hesap_DovizOzetToplam,0) as Param_Hesap_DovizOzetToplam2,Param_FrontPath, "
-                    + " ISNULL(NULLIF(Param_SikKullanSize,''),'90;45') as Param_SikKullanSize "
+                    + " ISNULL(NULLIF(Param_SikKullanSize,''),'90;45') as Param_SikKullanSize,isnull(tipboxReceteKod,0) as tipboxReceteKod "
                     + " from Pos_Param where Param_Id = '1' ");
 
             DataTable dtMac = dbtools.SelectTable("SELECT  isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep, ISNULL(P_Sabitkonum,0) as P_Sabitkonum, P_Sabitkonumkodu  FROM  Rmosmuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
@@ -949,6 +954,7 @@ public void yaziciYukleHesap()
                 chk_Prm_DepFiyat.Checked = Convert.ToBoolean(dt.Rows[0]["Param_Dep_Fiyat2"]);
                 chk_Prm_Masatr_Uyari.Checked = Convert.ToBoolean(dt.Rows[0]["Param_Masatr_Uyari2"]);
                 look_Prm_Bindirim.EditValue = Convert.ToString(dt.Rows[0]["Param_Bindirim"]);
+                lookUpEdit_tipbox.EditValue = Convert.ToString(dt.Rows[0]["tipboxReceteKod"]);
 
                 chk_Prm_PrinterTanim.Checked = Convert.ToBoolean(dt.Rows[0]["Param_Printer_Tanim2"]);
                 chk_Prm_HesapDisable.Checked = Convert.ToBoolean(dt.Rows[0]["Param_Hesap_Disable2"]);
@@ -1014,7 +1020,7 @@ public void yaziciYukleHesap()
             {
 
                 string dep = yuvarlamaDepartman.EditValue.ToString();
-                decimal fiyat =Convert.ToDecimal(yuvarlamaFiyat.Text);
+                decimal fiyat = Convert.ToDecimal(yuvarlamaFiyat.Text);
                 string recete = yuvarlamaRecete.EditValue.ToString();
 
 
@@ -1066,7 +1072,7 @@ public void yaziciYukleHesap()
                     {
                         depvarmi = true;
                         item.depKod = dep;
-                        item.aktif= aktif;
+                        item.aktif = aktif;
                     }
                 }
 
@@ -1111,7 +1117,7 @@ public void yaziciYukleHesap()
                     + " Param_OzelMasaSiralama,Param_HesapFisiDokum,Param_HspFontAlgilama,Param_AdisyonFolioAdi,Param_FullPos,Param_CikisKapa,Param_DirekAdisyonZor,Param_DirekAdisyonPrSor,Param_KGAlgilama,Param_ExtraFolioAcma,Param_SiparisAna,Param_iadeKontrol,Param_iadeLimit, Pos_HesapDkmRenk, Param_AdisyonDegis, Param_AdisyonIndAd,Param_SiparisTutar,Param_AnaEkranCiro,Param_MasaTakipCiro,Param_AcilisCekSil,Param_CariAdSoyad,Param_OdenmezAc, "
                     + " Param_SatirSil,Param_SatirSilUser,Param_MasaTakipMenu,Param_ParaUstuIngenico,Param_SatisTabloGonderi, Param_SatisTabloID, Param_SatisTabloAktif, Param_AcilistaMenu,Param_IngenicoSPR,Param_SiparisFisFont,Param_HizliSatisCekAc,Param_KartfGBCheckOut, "
                     + " Param_YeniHesapDkm,Param_YeniSiparisDkm,Param_OdaKrediCompOdenmez,Param_KurTransfer,Param_CallCenterPaket, "
-                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif )"
+                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod )"
 
                     + " VALUES ( "
                     + " '1', '" + txt_Prm_Tesis_Adi.Text + "', '" + Convert.ToBoolean(chk_Prm_Onburo.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Cost.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Muh.Checked) + "','" + rdo_Prm_Calisma.SelectedIndex + "','" + rdo_Prm_Tarih_Nereden.SelectedIndex + "', "
@@ -1139,7 +1145,7 @@ public void yaziciYukleHesap()
                     + " '" + Param_CariAdSoyad.Checked + "','" + Param_OdenmezAc.Checked + "','" + Pos_SatirSil.Checked + "','" + Pos_SatirSilUser.Text + "','" + Param_MasaTakipMenu.Checked + "', "
                     + " '" + Param_ParaUstuIngenico.Checked + "','" + Param_SatisTabloGonderi.EditValue + "','" + Param_SatisTabloID.EditValue + "','" + Param_SatisTabloAktif.Checked + "','" + Param_AcilistaMenu.Checked + "','" + Param_IngenicoSPR.Checked + "','" + Param_SiparisFisFont.Checked + "', "
                     + " '" + Param_HizliSatisCekAc.Checked + "','" + Param_KartfGBCheckOut.Checked + "','" + Param_YeniHesapDkm.Checked + "','" + Param_YeniSiparisDkm.Checked + "','" + Param_OdaKrediCompOdenmez.Checked + "','" + Param_KurTransfer.Checked + "', "
-                    + " '" + Param_CallCenterPaket.Checked + "','" + Param_PaketDipTotal.Checked + "','" + Param_HesapKapamaAds.Checked + "','" + Param_HesapDkmAciklama.Checked + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "','" + Param_AndroGeriYazdir.Checked + "','" + Param_PaketKucukEkran.Checked + "','" + Param_GetirTest.Checked + "','" + Param_GetirOtomatikOnay.Checked + "','" + Param_SatisCikisButton.Checked + "','" + Param_nfcBarkodAktif.Checked + "','" + Param_ParcaliMasaAktif.Checked + "','" + yazdirilmamissiparis.Checked + "','" + masamusait.Checked + "','" + masatakiphesappasif.Checked + "','" + kisivegarsonbirkeresoraktif.Checked + "','" + satirsilfiscikmasinaktif.Checked + "','" + onburoikramsifiryazaktif.Checked + "','" + txtKartnoSayisi.Text + "','" + cariindirimAktif.Checked + "'  )");
+                    + " '" + Param_CallCenterPaket.Checked + "','" + Param_PaketDipTotal.Checked + "','" + Param_HesapKapamaAds.Checked + "','" + Param_HesapDkmAciklama.Checked + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "','" + Param_AndroGeriYazdir.Checked + "','" + Param_PaketKucukEkran.Checked + "','" + Param_GetirTest.Checked + "','" + Param_GetirOtomatikOnay.Checked + "','" + Param_SatisCikisButton.Checked + "','" + Param_nfcBarkodAktif.Checked + "','" + Param_ParcaliMasaAktif.Checked + "','" + yazdirilmamissiparis.Checked + "','" + masamusait.Checked + "','" + masatakiphesappasif.Checked + "','" + kisivegarsonbirkeresoraktif.Checked + "','" + satirsilfiscikmasinaktif.Checked + "','" + onburoikramsifiryazaktif.Checked + "','" + txtKartnoSayisi.Text + "','" + cariindirimAktif.Checked + "','" + lookUpEdit_tipbox.EditValue + "'  )");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Genel, Log.Log_Islem.Kaydet, "Genel Parametreler Kaydedildi", String.Empty, "1");
             }
@@ -1182,7 +1188,7 @@ public void yaziciYukleHesap()
                 + " Param_HizliSatisCekAc = '" + Param_HizliSatisCekAc.Checked + "', Param_KartfGBCheckOut = '" + Param_KartfGBCheckOut.Checked + "',Param_YeniHesapDkm = '" + Param_YeniHesapDkm.Checked + "',  "
                 + " Param_YeniSiparisDkm = '" + Param_YeniSiparisDkm.Checked + "', Param_OdaKrediCompOdenmez = '" + Param_OdaKrediCompOdenmez.Checked + "', "
                 + " Param_KurTransfer = '" + Param_KurTransfer.Checked + "',Param_CallCenterPaket = '" + Param_CallCenterPaket.Checked + "', "
-                + " Param_PaketDipTotal = '" + Param_PaketDipTotal.Checked + "', Param_HesapKapamaAds = '" + Param_HesapKapamaAds.Checked + "',Param_HesapDkmAciklama = '" + Param_HesapDkmAciklama.Checked + "',Param_OzelMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "' , Param_RezMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "',Param_AndroGeriYazdir = '" + Param_AndroGeriYazdir.Checked + "',Param_PaketKucukEkran = '" + Param_PaketKucukEkran.Checked + "',Param_GetirTest = '" + Param_GetirTest.Checked + "',Param_GetirOtomatikOnay = '" + Param_GetirOtomatikOnay.Checked + "',Param_SatisCikisButton = '" + Param_SatisCikisButton.Checked + "',Param_nfcBarkodAktif = '" + Param_nfcBarkodAktif.Checked + "',Param_ParcaliMasaAktif = '" + Param_ParcaliMasaAktif.Checked + "',yazdirilmamissiparis = '" + yazdirilmamissiparis.Checked + "',masamusait = '" + masamusait.Checked + "',masatakiphesappasif = '" + masatakiphesappasif.Checked + "',kisivegarsonbirkeresoraktif = '" + kisivegarsonbirkeresoraktif.Checked + "',satirsilfiscikmasinaktif = '" + satirsilfiscikmasinaktif.Checked + "',onburoikramsifiryazaktif = '" + onburoikramsifiryazaktif.Checked + "',kartnoSayisi = '" + txtKartnoSayisi.Text + "',cariindirimAktif = '" + cariindirimAktif.Checked + "'   "
+                + " Param_PaketDipTotal = '" + Param_PaketDipTotal.Checked + "', Param_HesapKapamaAds = '" + Param_HesapKapamaAds.Checked + "',Param_HesapDkmAciklama = '" + Param_HesapDkmAciklama.Checked + "',Param_OzelMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "' , Param_RezMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "',Param_AndroGeriYazdir = '" + Param_AndroGeriYazdir.Checked + "',Param_PaketKucukEkran = '" + Param_PaketKucukEkran.Checked + "',Param_GetirTest = '" + Param_GetirTest.Checked + "',Param_GetirOtomatikOnay = '" + Param_GetirOtomatikOnay.Checked + "',Param_SatisCikisButton = '" + Param_SatisCikisButton.Checked + "',Param_nfcBarkodAktif = '" + Param_nfcBarkodAktif.Checked + "',Param_ParcaliMasaAktif = '" + Param_ParcaliMasaAktif.Checked + "',yazdirilmamissiparis = '" + yazdirilmamissiparis.Checked + "',masamusait = '" + masamusait.Checked + "',masatakiphesappasif = '" + masatakiphesappasif.Checked + "',kisivegarsonbirkeresoraktif = '" + kisivegarsonbirkeresoraktif.Checked + "',satirsilfiscikmasinaktif = '" + satirsilfiscikmasinaktif.Checked + "',onburoikramsifiryazaktif = '" + onburoikramsifiryazaktif.Checked + "',kartnoSayisi = '" + txtKartnoSayisi.Text + "',cariindirimAktif = '" + cariindirimAktif.Checked + "',tipboxReceteKod = '" + lookUpEdit_tipbox.EditValue.ToString() + "'   "
                 + " where Param_Id = '1' ");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Genel, Log.Log_Islem.Duzelt, "Genel Parametrelerde Duzeltme Islemi Yapıldı", String.Empty, "1");
@@ -2831,7 +2837,7 @@ public void yaziciYukleHesap()
 
                 User.Yetki_Yukle();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -4708,7 +4714,7 @@ order by mah.Adres_Ad");
 
         }
 
-       
+
         private void simpleButton2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -5900,7 +5906,7 @@ Select InstanceNames from @GetInstances ";
                 YuvarlaModel model = Main.ayarlar.getYuvarlama(yuvarlamaDepartman.EditValue.ToString());
                 if (model != null)
                 {
-                    yuvarlamaFiyat.Text = model.yuvarlamaFiyat+"";
+                    yuvarlamaFiyat.Text = model.yuvarlamaFiyat + "";
                     yuvarlamaRecete.EditValue = model.yuvarlamaRecete;
                 }
                 else
@@ -5910,11 +5916,11 @@ Select InstanceNames from @GetInstances ";
                     yuvarlamaRecete.EditValue = null;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 RHMesaj.alertMesaj(ex.Message);
             }
-            
+
         }
 
         private void lookUpOtoIndirimDep_EditValueChanged(object sender, EventArgs e)

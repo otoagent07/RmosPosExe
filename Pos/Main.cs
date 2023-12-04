@@ -418,7 +418,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.75";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.76";
 
 
 
@@ -1786,6 +1786,9 @@ No Cut Seçili Olsun
                                 case "hesap":
                                     hesapYazdir(json);
                                     break;
+                                case "hesappr":
+                                    sadeceHesapYazdir(json);
+                                    break;
                                 default:
                                     break;
                             }
@@ -1814,6 +1817,20 @@ No Cut Seçili Olsun
             }
 
         }
+        public void sadeceHesapYazdir(EntegreJson json)
+        {
+            try
+            {
+                FisPr pr = new FisPr();
+                pr.newHesapDokum(true, Convert.ToInt32(json.fisno), 0, "* * * "+ json.tip.ToUpper() + " HESAP DÖKÜM FİŞİ * * *", false);
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "", "", ex);
+            }
+
+        }
+
         public void hesapYazdir(EntegreJson json)
         {
             try

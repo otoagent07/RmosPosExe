@@ -15,5 +15,7 @@ namespace Pos.Class
 
         public bool hesapYazsinmi { get; set; } = false;
         public bool siparistePaketYazsinmi { get; set; } = false;
+
+
     }
 }

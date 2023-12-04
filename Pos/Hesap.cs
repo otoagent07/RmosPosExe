@@ -97,7 +97,6 @@ namespace Pos
         {
             try
             {
-
                 btnSpSil.Visible = User.S_Sp_Sil;
 
                 string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
@@ -166,6 +165,7 @@ namespace Pos
                 btn_Yazdirkapat.Enabled = User.G_Yazdirkapat;
                 btn_Yazdirmadankapat.Enabled = User.G_Yazdirmadankapat;
                 btn_Bindirim.Enabled = User.G_Bindirim;
+                btnTipBox.Enabled = User.G_Bindirim;
                 btnIngenicoKapat.Visible = Departman.Kodlar_Ingenico;
                 // simpleButton2.Visible = Departman.Kodlar_Ingenico;
                 chk_AdisyonGR.Visible = true;// User.Pos_AdisyonPr;
@@ -1162,7 +1162,7 @@ namespace Pos
                     //}
 
 
-                   
+
 
 
                     Fis_Islem.Odeme_Al(Convert.ToInt32(this.Tag), tutar, doviztutar, Convert.ToString(look_Kapatma.EditValue), musTipi_A, odaNo_A, folio_A, cari_A, Split, Convert.ToString(look_DovizKod.EditValue), chk_AdsPr.Checked, mevcutToplamTutar);
@@ -1612,7 +1612,7 @@ namespace Pos
             {
                 if (E_AdisyonDurum.Checked)
                 {
-                   // StatikSinif.eadisyonAc();
+                    // StatikSinif.eadisyonAc();
                 }
             }
             catch (Exception ex)
@@ -2212,82 +2212,95 @@ namespace Pos
 
         private void btn_Bindirim_Click(object sender, EventArgs e)
         {
-            if (Param.Param_Bindirim == "")
+            try
             {
-                MessageBox.Show(res_man.GetString("Bindirim Recetesi Tanımlı Değil...!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            Indirim ind = new Indirim();
-            ind.Tag = "B";
-            ind.toplamTutar = 0;
-            ind.ShowDialog();
-
-            decimal tutar = 0, doviztutar = 0, oran = 0;
-            if (ind.indTipi == "T")
-            {
-                if (Param.Calisma_Sekli == 1)       //Dövizli
+                if (Param.Param_Bindirim == "")
                 {
-                    doviztutar = ind.indSayi;
-                    tutar = doviztutar * Param.Doviz_Kuru;
+                    MessageBox.Show(res_man.GetString("Bindirim Recetesi Tanımlı Değil...!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
-                else
+
+                Indirim ind = new Indirim();
+                ind.Tag = "B";
+                ind.toplamTutar = 0;
+                ind.ShowDialog();
+
+                decimal tutar = 0, doviztutar = 0, oran = 0;
+                if (ind.indTipi == "T")
                 {
-                    tutar = ind.indSayi;
-                    doviztutar = tutar / Param.Doviz_Kuru;
-
-                    decimal toplamTutar23 = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
-
-                    decimal oran23 = (tutar / toplamTutar23) * 100;
-
-                    if (oran23 > User.P_Indirim_Yuzde)
+                    if (Param.Calisma_Sekli == 1)       //Dövizli
                     {
-                        MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
-                        return;
+                        doviztutar = ind.indSayi;
+                        tutar = doviztutar * Param.Doviz_Kuru;
                     }
+                    else
+                    {
+                        tutar = ind.indSayi;
+                        doviztutar = tutar / Param.Doviz_Kuru;
+
+                        decimal toplamTutar23 = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                        decimal oran23 = (tutar / toplamTutar23) * 100;
+
+                        if (oran23 > User.P_Indirim_Yuzde)
+                        {
+                            MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
+                            return;
+                        }
+                    }
+
+
+
                 }
-
-
-
-            }
-            if (ind.indTipi == "Y")
-            {
-                oran = ind.indSayi;
-            }
-
-            if (ind.indTipi == "MY")
-            {
-                oran = ind.indSayi;
-                ind.indTipi = "Y";
-
-            }
-
-
-
-            if (oran > 0 || tutar > 0)
-            {
-                int fisno = Convert.ToInt32(this.Tag);
-                Fis_Islem.Bindirim_Uygula(fisno, ind.indTipi, tutar, doviztutar, oran);
-
-                decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
-
-                if (oran > 0)
+                if (ind.indTipi == "Y")
                 {
-                    string aciklama = "SERVİS PAYI UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " SERVİS PAYI ORANI : " + oran + " BİNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ServisPayi_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+                    oran = ind.indSayi;
                 }
-                else if (tutar > 0)
+
+                if (ind.indTipi == "MY")
                 {
-                    string aciklama = "SERVİS PAYI UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " SERVİS PAYI TUTARI : " + tutar + " BİNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ServisPayi_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+                    oran = ind.indSayi;
+                    ind.indTipi = "Y";
+
                 }
 
-            }
 
-            gridyenile();
-            Bakiye_Kontrol();
+
+                if (oran > 0 || tutar > 0)
+                {
+                    int fisno = Convert.ToInt32(this.Tag);
+
+                    Fis_Islem.Bindirim_Uygula(fisno, ind.indTipi, tutar, doviztutar, oran);
+
+                    decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                    if (oran > 0)
+                    {
+                        string aciklama = "SERVİS PAYI UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " SERVİS PAYI ORANI : " + oran + " BİNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ServisPayi_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+                    }
+                    else if (tutar > 0)
+                    {
+                        string aciklama = "SERVİS PAYI UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " SERVİS PAYI TUTARI : " + tutar + " BİNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
+                        Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ServisPayi_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+                    }
+
+                }
+
+                gridyenile();
+                Bakiye_Kontrol();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+
+        public void servisPayiveTipbox(bool servispayimi = true)
+        {
+
+        }
         private void btn_Yuvarla_Click(object sender, EventArgs e)
         {
             YuvarlaModel model = ayarlar.getYuvarlama(Departman.Dep_Kodu);
@@ -3036,8 +3049,17 @@ namespace Pos
 
             if (!receteKod.Equals(Param.Param_Bindirim))
             {
-                MessageBox.Show("Sadece servis payı silinebilir ! ");
-                return;
+
+                if (receteKod.Equals(Param.tipboxReceteKod))
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Sadece servis payı silinebilir ! ");
+                    return;
+                }
+
             }
 
 
@@ -3316,7 +3338,60 @@ namespace Pos
                 txtCariAd.Text = "Cari Ad";
             }
 
-           
+
+        }
+
+        private void btnTipBox_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Param.tipboxReceteKod == "")
+                {
+                    MessageBox.Show(res_man.GetString("Bindirim Recetesi Tanımlı Değil...!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                TipboxForm ind = new TipboxForm();
+                ind.Tag = "B";
+                ind.toplamTutar = 0;
+                ind.ShowDialog();
+
+                decimal tutar = 0, doviztutar = 0, oran = 0;
+                if (ind.indTipi == "T")
+                {
+                    if (Param.Calisma_Sekli == 1)       //Dövizli
+                    {
+                        doviztutar = ind.indSayi;
+                        tutar = doviztutar * Param.Doviz_Kuru;
+                    }
+                    else
+                    {
+                        tutar = ind.indSayi;
+                        doviztutar = tutar / Param.Doviz_Kuru;
+                    }
+                }
+
+
+                if (oran > 0 || tutar > 0)
+                {
+                    int fisno = Convert.ToInt32(this.Tag);
+
+                    Fis_Islem.Bindirim_UygulaTipBox(fisno, ind.indTipi, tutar, doviztutar, oran);
+
+                    decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                    string aciklama = "Tip Box UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " Tip Box TUTARI : " + tutar + " BİNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ServisPayi_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+
+                }
+
+                gridyenile();
+                Bakiye_Kontrol();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
