@@ -216,7 +216,7 @@
             // xtraTabPage3
             // 
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(896, 711);
+            this.xtraTabPage3.Size = new System.Drawing.Size(892, 706);
             this.xtraTabPage3.Text = "Bos";
             // 
             // xtraTabPage1
@@ -245,7 +245,7 @@
             this.xtraTabPage1.Controls.Add(this.labelControl1);
             this.xtraTabPage1.Controls.Add(this.look_Restoran);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(890, 702);
+            this.xtraTabPage1.Size = new System.Drawing.Size(892, 706);
             this.xtraTabPage1.Text = "Restoran Bilgisi";
             // 
             // labelControl11
@@ -490,7 +490,7 @@
             this.xtraTabPage2.Controls.Add(this.gridControl1);
             this.xtraTabPage2.Controls.Add(this.groupControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(890, 702);
+            this.xtraTabPage2.Size = new System.Drawing.Size(892, 706);
             this.xtraTabPage2.Text = "Menu Eşleştirme";
             // 
             // gridControl1
@@ -502,7 +502,7 @@
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(890, 560);
+            this.gridControl1.Size = new System.Drawing.Size(892, 564);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -600,7 +600,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(890, 142);
+            this.groupControl1.Size = new System.Drawing.Size(892, 142);
             this.groupControl1.TabIndex = 2;
             // 
             // memoEdit1
@@ -670,7 +670,7 @@
             this.xtraTabPage4.Controls.Add(this.gridControl2);
             this.xtraTabPage4.Controls.Add(this.groupControl2);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(890, 702);
+            this.xtraTabPage4.Size = new System.Drawing.Size(892, 706);
             this.xtraTabPage4.Text = "Siparis Yorumlar";
             // 
             // gridControl2
@@ -681,7 +681,7 @@
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEdit2});
-            this.gridControl2.Size = new System.Drawing.Size(890, 627);
+            this.gridControl2.Size = new System.Drawing.Size(892, 631);
             this.gridControl2.TabIndex = 6;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -797,7 +797,7 @@
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(890, 75);
+            this.groupControl2.Size = new System.Drawing.Size(892, 75);
             this.groupControl2.TabIndex = 5;
             // 
             // simpleButton8
