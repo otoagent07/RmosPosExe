@@ -1712,10 +1712,26 @@ namespace Pos
 
 
             parcalimi();
-
+            tumcarileriyaz(fis_no);
             string aciklama = "Fiş Kapatma. Fisno:" + fis_no + " Masano:" + Masa_No.ToString() + " Ödeme Şekli:" + look_Kapatma.Text + " Hesap No:" + txt_Hesapno.Text;
 
             Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, fis_no.ToString(), "");
+        }
+
+        public void tumcarileriyaz(int fisno)
+        {
+            try
+            {
+                string cariat = $"select top 1 Rsat_Cari from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Cari<>'' and Rsat_Cari is not null";
+                string cari = dbtools.DegerGetir(cariat);
+                if (cari == null || cari == "") return;
+
+                dbtools.execcmdR($"Update Cst_Recete_Satis Set Rsat_Cari = '{cari}' Where Rsat_Fisno = {fisno} ");
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "", "", ex);
+            }
         }
 
         public bool parcalimi() // false ise parçalı değildir. true ise parçalıdır
@@ -2206,6 +2222,10 @@ namespace Pos
                 chk_AdisyonGR.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_AdisyonPr"]);
                 E_AdisyonDurum.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_E_Adisyon"]);
 
+                if (E_AdisyonDurum.Checked)
+                {
+                    checkEditOtoCari.Checked = E_AdisyonDurum.Checked;
+                }
 
             }
         }
