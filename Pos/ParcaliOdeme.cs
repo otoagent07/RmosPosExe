@@ -63,13 +63,17 @@ namespace Pos
                 com.CommandTimeout = 0;
                 com.CommandText = "Pos_Satis";
                 com.Parameters.AddWithValue("@Fisno", fisno);
-                com.Parameters.AddWithValue("@Rapor_Tipi", 2);
+                com.Parameters.AddWithValue("@Rapor_Tipi", 0);//2
                 com.Parameters.AddWithValue("@Split", Split);
                 SqlDataAdapter da = new SqlDataAdapter(com);
                 dtAna = new DataTable();
                 da.Fill(dtAna);
                 /*Rsat_Id Rsat_Fisno Rsat_Masa Rsat_Tarih Rsat_Acilis Rsat_Ba Kasiyer Rsat_Miktar Rsat_Emiktar Rec_Ad Rsat_Tutar Rsat_Doviz MasaKonumAdi Rsat_UrunTahsilat Rsat_Recete Rsat_UrunBazliHspAdet*/
 
+                foreach (DataRow row in dtAna.Rows)
+                {
+                    row["Rec_Ad"] = row["Rec_Ad"].ToString().Replace("<b>", "").Replace("</b>", "").Replace("<i>", "").Replace("</i>", "").Replace("</br>", "").Replace("<br>", "").Trim();
+                }
 
                 gridControlAna.DataSource = dtAna;
 
