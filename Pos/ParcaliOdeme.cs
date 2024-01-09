@@ -342,7 +342,11 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 if (nesne != null)
                 {
                     decimal rsattutar = Convert.ToDecimal(neredenRow["Rsat_Tutar"].ToString());
-                    decimal rsatmiktar = Convert.ToDecimal(neredenRow["Rsat_Miktar"].ToString());
+                    
+                    //decimal rsatmiktar = Convert.ToDecimal(neredenRow["Rsat_Miktar"].ToString());
+                    decimal rsatmiktar = nesne.Rsat_Miktar.Value;
+
+
                     decimal kdvoran = Convert.ToDecimal(neredenRow["Rsat_Kdvoran"].ToString());
                     string urunad = neredenRow["Rec_Ad"].ToString();
                     string recete = neredenRow["Rsat_Recete"].ToString();
@@ -392,8 +396,17 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                         nesne.Rsat_Kdv = (aktarimAnaTutar * kdvoran) / 100;
                         nesne.Rsat_Maliyet = anamaliyet;
                         nesne.Rsat_Doviztutar = aktarimAnaTutar;
-                        db.Entry(nesne).State = System.Data.Entity.EntityState.Modified;
-                        db.SaveChanges();
+
+                        var originalEntity = db.Set<Cst_Recete_Satis>().Find(nesne.Rsat_Id);
+
+                        if (originalEntity != null)
+                        {
+                            db.Entry(originalEntity).CurrentValues.SetValues(nesne);
+                            db.SaveChanges();
+                        }
+
+                        //db.Entry(nesne).State = System.Data.Entity.EntityState.Modified;
+                        //db.SaveChanges();
                     }
                     else
                     {
@@ -442,8 +455,16 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                         nesne2.Rsat_Doviztutar = aktarimRsattutar;
                         nesne2.Rsat_Ind = 0;
                         nesne2.Rsat_Durum = "A";
-                        db.Entry(nesne2).State = System.Data.Entity.EntityState.Modified;
-                        db.SaveChanges();
+
+                        var originalEntity = db.Set<Cst_Recete_Satis>().Find(nesne2.Rsat_Id);
+                        if (originalEntity != null)
+                        {
+                            db.Entry(originalEntity).CurrentValues.SetValues(nesne2);
+                            db.SaveChanges();
+                        }
+
+                        //db.Entry(nesne2).State = System.Data.Entity.EntityState.Modified;
+                        //db.SaveChanges();
 
                     }
 
