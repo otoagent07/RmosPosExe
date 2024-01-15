@@ -1895,7 +1895,13 @@ namespace Pos
 
                     if (Param.Calisma_Sekli == 0) btn_Urun.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Fiyat"]);
 
-                    if (Param.Calisma_Sekli == 1) btn_Urun.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Dovifiyat"]);
+                    if (Param.Calisma_Sekli == 1 )
+                    {
+                        btn_Urun.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Dovifiyat"]);
+                    }else if (Convert.ToBoolean(dt.Rows[i]["Rec_DovizliSatis"].ToString()))
+                    {
+                        btn_Urun.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Dovifiyat"])+" "+ Convert.ToString(dt.Rows[i]["DovizAdi"]);
+                    }
 
                     btn_Urun.Tag = Convert.ToString(dt.Rows[i]["Rec_Genelkod"]);
 
@@ -2009,6 +2015,13 @@ namespace Pos
                 Rec_Miktar_Gr = Convert.ToBoolean(dtRecete.Rows[0]["Rec_Miktar_Gr2"]);
 
                 bool Rec_Tutar_Sor = Convert.ToBoolean(dtRecete.Rows[0]["Rec_Tutar_Sor2"]);
+                bool Rec_DovizliSatis = false;
+
+                if (dtRecete.Rows[0]["Rec_DovizliSatis"].ToString() != "")
+                {
+                    Rec_DovizliSatis = Convert.ToBoolean(dtRecete.Rows[0]["Rec_DovizliSatis"]);
+                }
+               
 
                 Rec_Terazi = Convert.ToBoolean(dtRecete.Rows[0]["Rec_Terazi"]);
 
@@ -2092,6 +2105,26 @@ namespace Pos
                             Rsat_Net = ((Rsat_Tutar * 100) / (100 + Rec_Kdv));
                             Rsat_Kdv = (Rsat_Tutar - Rsat_Net);
                         }
+
+                    }
+                    else if(Rec_DovizliSatis == true)
+                    {
+                        if (Param.Ent_Onb == true)
+                        {
+                            var Doviz_Kuru = Fronttools.KurGetir(DateTime.Now, Rec_Dovizkodu);
+                            Rsat_Tutar = Rec_Dovifiyat * StatikModel.getOdaGirisKur(D_Oda_No, Doviz_Kuru);
+                            Rsat_Net = ((Rsat_Tutar * 100) / (100 + Rec_Kdv));
+                            Rsat_Kdv = (Rsat_Tutar - Rsat_Net);
+                        }
+                        else
+                        {
+                            decimal getKur = StatikSinif.getKurRecete(Rec_Dovizkodu);
+
+                            Rsat_Tutar = Rec_Dovifiyat * getKur;
+                            Rsat_Net = ((Rsat_Tutar * 100) / (100 + Rec_Kdv));
+                            Rsat_Kdv = (Rsat_Tutar - Rsat_Net);
+                        }
+                       
 
                     }
                     else        // TL Çalışma

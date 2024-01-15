@@ -438,5 +438,24 @@ exec [varsayilanParametreOlustur] @ayarlar_key='satisEkranGenislik',@ayarlar_val
             }
             return kur;
         }
+        public static decimal getKurRecete(String dovizKodu)
+        {
+            decimal kur = 1;
+            try
+            {
+                string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
+
+                string dovizXml = dbtools.DegerGetir("select Mkodlar_Xml from Muh_Kodlar where Mkodlar_Sinif = '02' and Mkodlar_Kod = '" + dovizKodu + "'");
+                //if (!(dovizXml == "" || dovizXml == "TL"))
+                //{
+                kur = Convert.ToDecimal(dbtools.DegerGetir("select isnull((select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + dovizKodu + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'),1)"));
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return kur;
+        }
     }
 }
