@@ -542,8 +542,6 @@ namespace Pos.Class
                             foreach (DataRow item in dtSiparis.Rows)
                             {
                                 item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "").Replace(",000", "").Replace(",00", "");
-
-
                             }
 
 
