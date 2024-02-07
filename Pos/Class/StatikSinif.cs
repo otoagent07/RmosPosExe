@@ -101,6 +101,8 @@ IF COL_LENGTH('Cst_Recete_Satis', 'ustgrup') IS NULL BEGIN ALTER TABLE Cst_Recet
 IF COL_LENGTH('Cst_Recete_Satis', 'sirano') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD sirano int END;
 IF COL_LENGTH('Cst_Recete_Satis', 'altgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD altgrup nvarchar(200) END;
 IF COL_LENGTH('Cst_Recete_Satis', 'konumposta') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD konumposta nvarchar(200) END;
+IF COL_LENGTH('Cst_Recete_Satis', 'BankaID') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD BankaID int END;
+IF COL_LENGTH('Cst_Recete', 'Rec_DovizliSatis') IS NULL BEGIN ALTER TABLE Cst_Recete ADD Rec_DovizliSatis bit END;
 IF COL_LENGTH('Pos_Param', 'kartnoSayisi') IS NULL BEGIN ALTER TABLE Pos_Param ADD kartnoSayisi int END;
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_ServisPayiDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_ServisPayiDuzelt] bit END;

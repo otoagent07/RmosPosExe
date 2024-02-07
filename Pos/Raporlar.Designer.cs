@@ -417,6 +417,7 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.gridColumn144 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -1409,7 +1410,8 @@
             this.gridColumn137,
             this.gridColumn138,
             this.gridColumn139,
-            this.gridColumn140});
+            this.gridColumn140,
+            this.gridColumn144});
             gridFormatRule1.Column = this.bandedGridColumn41;
             gridFormatRule1.Name = "Format0";
             formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.Red;
@@ -4298,6 +4300,12 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
+            // gridColumn144
+            // 
+            resources.ApplyResources(this.gridColumn144, "gridColumn144");
+            this.gridColumn144.FieldName = "Banka";
+            this.gridColumn144.Name = "gridColumn144";
+            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -4797,5 +4805,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn141;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn142;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn143;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn144;
     }
 }

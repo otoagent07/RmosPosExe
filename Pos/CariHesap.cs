@@ -972,8 +972,36 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
             gridControl8.DataSource = null;
             gridView10.RefreshData();
             gridControl8.Refresh();
-            gridControl8.DataSource = dbtools.SelectTable("Exec Pos_Sorgu @Sorgu_Tipi = 27");
+            gridControl8.DataSource = dbtools.SelectTable("Exec Pos_Sorgu @Sorgu_Tipi = 27, @Tarih1 = '" + dateTarih1.DateTime.Date + "', @Tarih2 = '" + dateTarih2.DateTime.Date + "'");
+
+            gridviewSumYaz(gridView10,"BORC");
+            gridviewSumYaz(gridView10,"ALACAK");
+            gridviewSumYaz(gridView10,"BAKIYE");
+
+            gridviewSumYaz(gridView6, "BORC");
+            gridviewSumYaz(gridView6, "ALACAK");
         }
+        public void gridviewSumYaz(GridView grid,string fieldName)
+        {
+            try
+            {
+                grid.OptionsView.ShowFooter = true;
+
+                if (grid.Columns.Count > 0)
+                {
+                    grid.Columns[fieldName].SummaryItem.SummaryType = DevExpress.Data.SummaryItemType.Sum;
+                    grid.Columns[fieldName].SummaryItem.FieldName = fieldName;
+                    grid.Columns[fieldName].SummaryItem.DisplayFormat = "{0:n2}";
+                    grid.UpdateTotalSummary();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            
+        }
+
         private void simpleButton4_Click(object sender, EventArgs e)
         {
             gridColumn25.FieldName = "Cari_Kod";
