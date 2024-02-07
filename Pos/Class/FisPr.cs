@@ -3259,6 +3259,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 case "EURO":
                     dovizIcon = " €";
                     break;
+                case "EUR":
+                    dovizIcon = " €";
+                    break;
                 case "GBP":
                     dovizIcon = " £";
                     break;
@@ -3379,6 +3382,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         switch (dtOdeme.Rows[i]["DovizAdi"].ToString().ToUpper())
                         {
                             case "EURO":
+                                dovizIcon = " €";
+                                break;
+                            case "EUR":
                                 dovizIcon = " €";
                                 break;
                             case "GBP":
@@ -3844,6 +3850,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 case "EURO":
                     dovizIcon = " €";
                     break;
+                case "EUR":
+                    dovizIcon = " €";
+                    break;
                 case "GBP":
                     dovizIcon = " £";
                     break;
@@ -3952,6 +3961,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     switch (dtOdeme.Rows[i]["DovizAdi"].ToString().ToUpper())
                     {
                         case "EURO":
+                            dovizIcon = " €";
+                            break;
+                        case "EUR":
                             dovizIcon = " €";
                             break;
                         case "GBP":
@@ -4098,6 +4110,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             {
                 case "EURO":
                     dovizIconKalan = " €";
+                    break;
+                case "EUR":
+                    dovizIcon = " €";
                     break;
                 case "GBP":
                     dovizIconKalan = " £";
