@@ -1961,7 +1961,7 @@ namespace Pos
         bool Rec_Miktar_Gr = false;
 
 
-        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false,int otomiktar=1)
+        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false,int otomiktar=1,bool urunduzeltme=false)
         {
             try
             {
@@ -2025,7 +2025,7 @@ namespace Pos
 
                 Rec_Terazi = Convert.ToBoolean(dtRecete.Rows[0]["Rec_Terazi"]);
 
-                if (Rec_Miktar_Sor)
+                if (Rec_Miktar_Sor && urunduzeltme==false)
                 {
                     Klavye1 klv = new Klavye1();
                     klv.txt_Sayi.EditValue = Miktar;
@@ -2536,7 +2536,7 @@ namespace Pos
             Klavye1 klavye = new Klavye1();
             klavye.Tag = "MIKTARDUZELT";
             klavye.UrunAdi = Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad2"));
-            klavye.txt_Sayi.EditValue = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar")).ToString("n2");
+            klavye.txt_Sayi.EditValue = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar")).ToString("n3");
             Rec_Miktar_Gr = Convert.ToBoolean(gridView1.GetFocusedRowCellValue("Rec_Miktar_Gr"));
             if (Rec_Miktar_Gr == false)
             {
@@ -2562,7 +2562,7 @@ namespace Pos
 
             if (Miktar != 0)
             {
-                Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")));
+                Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")),urunduzeltme:true);
 
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Miktar_Duzelt, Log.Log_Islem.Duzelt, Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktarı " + eskiMiktar.ToString().Replace(",0000", "") + " iken " + Convert.ToDecimal(klavye.sayi).ToString() + " ile Değişti", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
@@ -3146,11 +3146,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='"+ satirId + @"'");
 
         private void btn_Tutarduzelt_Click(object sender, EventArgs e)
         {
-
             tutarDuzelt();
-
-
-
         }
 
         public void tutarDuzelt()
@@ -3180,7 +3176,10 @@ from Cst_Recete_Satis as satis where Rsat_Id='"+ satirId + @"'");
             klv.txt_Sayi.Text = eskitutar;
             klv.ShowDialog();
             decimal tutar = klv.sayi;
-
+            if (klv.iptal)
+            {
+                return;
+            }
             if (tutar != Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")))
             {
                 Fis_Islem.Tutar_Duzelt(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), tutar);

@@ -280,7 +280,7 @@ namespace Pos.Ingenico
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rBtnArti,
             this.rBtnEksi});
-            this.gridControl1.Size = new System.Drawing.Size(970, 270);
+            this.gridControl1.Size = new System.Drawing.Size(972, 272);
             this.gridControl1.TabIndex = 183;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -454,7 +454,7 @@ namespace Pos.Ingenico
             this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(4, 418);
+            this.labelControl1.Location = new System.Drawing.Point(4, 420);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(283, 39);
             this.labelControl1.StyleController = this.layoutControl1;
@@ -471,10 +471,10 @@ namespace Pos.Ingenico
             this.layoutControl1.Controls.Add(this.m_btnReloadTransaction);
             this.layoutControl1.Controls.Add(this.m_btnVoidAllTicket_059);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(3, 3);
+            this.layoutControl1.Location = new System.Drawing.Point(2, 2);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(978, 461);
+            this.layoutControl1.Size = new System.Drawing.Size(980, 463);
             this.layoutControl1.TabIndex = 190;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -485,7 +485,7 @@ namespace Pos.Ingenico
             this.txtToplamTutar.Appearance.ForeColor = System.Drawing.Color.Red;
             this.txtToplamTutar.Appearance.Options.UseFont = true;
             this.txtToplamTutar.Appearance.Options.UseForeColor = true;
-            this.txtToplamTutar.Location = new System.Drawing.Point(291, 418);
+            this.txtToplamTutar.Location = new System.Drawing.Point(291, 420);
             this.txtToplamTutar.Name = "txtToplamTutar";
             this.txtToplamTutar.Size = new System.Drawing.Size(70, 39);
             this.txtToplamTutar.StyleController = this.layoutControl1;
@@ -500,7 +500,7 @@ namespace Pos.Ingenico
             this.m_btnPaymentCreditAgain.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
             this.m_btnPaymentCreditAgain.Location = new System.Drawing.Point(7, 7);
             this.m_btnPaymentCreditAgain.Name = "m_btnPaymentCreditAgain";
-            this.m_btnPaymentCreditAgain.Size = new System.Drawing.Size(477, 60);
+            this.m_btnPaymentCreditAgain.Size = new System.Drawing.Size(478, 60);
             this.m_btnPaymentCreditAgain.StyleController = this.layoutControl1;
             this.m_btnPaymentCreditAgain.TabIndex = 4;
             this.m_btnPaymentCreditAgain.Text = "ÖDEMEYİ TEKRAR GÖNDER";
@@ -512,9 +512,9 @@ namespace Pos.Ingenico
             this.m_btn_031.Appearance.Options.UseFont = true;
             this.m_btn_031.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m_btn_031.ImageOptions.SvgImage")));
             this.m_btn_031.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
-            this.m_btn_031.Location = new System.Drawing.Point(494, 7);
+            this.m_btn_031.Location = new System.Drawing.Point(495, 7);
             this.m_btn_031.Name = "m_btn_031";
-            this.m_btn_031.Size = new System.Drawing.Size(477, 60);
+            this.m_btn_031.Size = new System.Drawing.Size(478, 60);
             this.m_btn_031.StyleController = this.layoutControl1;
             this.m_btn_031.TabIndex = 5;
             this.m_btn_031.Text = "FİŞ KAPAT";
@@ -528,7 +528,7 @@ namespace Pos.Ingenico
             this.m_btnReloadTransaction.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
             this.m_btnReloadTransaction.Location = new System.Drawing.Point(7, 77);
             this.m_btnReloadTransaction.Name = "m_btnReloadTransaction";
-            this.m_btnReloadTransaction.Size = new System.Drawing.Size(477, 60);
+            this.m_btnReloadTransaction.Size = new System.Drawing.Size(478, 60);
             this.m_btnReloadTransaction.StyleController = this.layoutControl1;
             this.m_btnReloadTransaction.TabIndex = 6;
             this.m_btnReloadTransaction.Text = "YENİDEN YÜKLE";
@@ -540,9 +540,9 @@ namespace Pos.Ingenico
             this.m_btnVoidAllTicket_059.Appearance.Options.UseFont = true;
             this.m_btnVoidAllTicket_059.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m_btnVoidAllTicket_059.ImageOptions.SvgImage")));
             this.m_btnVoidAllTicket_059.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
-            this.m_btnVoidAllTicket_059.Location = new System.Drawing.Point(494, 77);
+            this.m_btnVoidAllTicket_059.Location = new System.Drawing.Point(495, 77);
             this.m_btnVoidAllTicket_059.Name = "m_btnVoidAllTicket_059";
-            this.m_btnVoidAllTicket_059.Size = new System.Drawing.Size(477, 60);
+            this.m_btnVoidAllTicket_059.Size = new System.Drawing.Size(478, 60);
             this.m_btnVoidAllTicket_059.StyleController = this.layoutControl1;
             this.m_btnVoidAllTicket_059.TabIndex = 7;
             this.m_btnVoidAllTicket_059.Text = "FİŞ İPTAL";
@@ -562,7 +562,7 @@ namespace Pos.Ingenico
             this.layoutControlItem3});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(978, 461);
+            this.Root.Size = new System.Drawing.Size(980, 463);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem5
@@ -570,14 +570,14 @@ namespace Pos.Ingenico
             this.layoutControlItem5.Control = this.gridControl1;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 140);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(974, 274);
+            this.layoutControlItem5.Size = new System.Drawing.Size(976, 276);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.labelControl1;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 414);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 416);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(287, 43);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
@@ -586,9 +586,9 @@ namespace Pos.Ingenico
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.txtToplamTutar;
-            this.layoutControlItem7.Location = new System.Drawing.Point(287, 414);
+            this.layoutControlItem7.Location = new System.Drawing.Point(287, 416);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(687, 43);
+            this.layoutControlItem7.Size = new System.Drawing.Size(689, 43);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -600,7 +600,7 @@ namespace Pos.Ingenico
             this.layoutControlItem1.MinSize = new System.Drawing.Size(145, 70);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem1.Size = new System.Drawing.Size(487, 70);
+            this.layoutControlItem1.Size = new System.Drawing.Size(488, 70);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
@@ -610,12 +610,12 @@ namespace Pos.Ingenico
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.m_btn_031;
-            this.layoutControlItem2.Location = new System.Drawing.Point(487, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(488, 0);
             this.layoutControlItem2.MaxSize = new System.Drawing.Size(0, 70);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(145, 70);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem2.Size = new System.Drawing.Size(487, 70);
+            this.layoutControlItem2.Size = new System.Drawing.Size(488, 70);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
@@ -625,12 +625,12 @@ namespace Pos.Ingenico
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.m_btnVoidAllTicket_059;
-            this.layoutControlItem4.Location = new System.Drawing.Point(487, 70);
+            this.layoutControlItem4.Location = new System.Drawing.Point(488, 70);
             this.layoutControlItem4.MaxSize = new System.Drawing.Size(0, 70);
             this.layoutControlItem4.MinSize = new System.Drawing.Size(145, 70);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem4.Size = new System.Drawing.Size(487, 70);
+            this.layoutControlItem4.Size = new System.Drawing.Size(488, 70);
             this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem4.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
@@ -645,7 +645,7 @@ namespace Pos.Ingenico
             this.layoutControlItem3.MinSize = new System.Drawing.Size(145, 70);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem3.Size = new System.Drawing.Size(487, 70);
+            this.layoutControlItem3.Size = new System.Drawing.Size(488, 70);
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);

@@ -64,16 +64,16 @@
             // 
             // txt_Sayi
             // 
-            this.txt_Sayi.EditValue = "1,00";
+            this.txt_Sayi.EditValue = "1,000";
             this.txt_Sayi.Location = new System.Drawing.Point(12, 74);
             this.txt_Sayi.Name = "txt_Sayi";
             this.txt_Sayi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_Sayi.Properties.Appearance.Options.UseFont = true;
-            this.txt_Sayi.Properties.DisplayFormat.FormatString = "f2";
+            this.txt_Sayi.Properties.DisplayFormat.FormatString = "f3";
             this.txt_Sayi.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.txt_Sayi.Properties.EditFormat.FormatString = "f2";
+            this.txt_Sayi.Properties.EditFormat.FormatString = "f3";
             this.txt_Sayi.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.txt_Sayi.Properties.Mask.EditMask = "n2";
+            this.txt_Sayi.Properties.Mask.EditMask = "n3";
             this.txt_Sayi.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txt_Sayi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_Sayi.Size = new System.Drawing.Size(300, 46);
