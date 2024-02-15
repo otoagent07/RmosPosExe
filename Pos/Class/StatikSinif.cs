@@ -395,7 +395,7 @@ Select InstanceNames from @GetInstances ";
         public static decimal getTutarKontrol(decimal girilenDeger, decimal mevcutDeger)
         {
             decimal fark = mevcutDeger - girilenDeger;
-            if (Math.Abs(fark) <= (decimal)0.09)
+            if (Math.Abs(fark) <= (decimal)0.2)
             {
                 girilenDeger = mevcutDeger;
             }

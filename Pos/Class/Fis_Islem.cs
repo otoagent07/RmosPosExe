@@ -338,8 +338,8 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
                     tutar = doviztutar * kur;
                     //}
                 }
-
-                if (Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1 && mevcutTutar != 0)
+               
+                if ((Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1 && mevcutTutar != 0) || Math.Abs(mevcutTutar - tutar) <=(decimal)0.2)
                 {
                     tutar = StatikSinif.getTutarKontrol(tutar, mevcutTutar);
                 }
