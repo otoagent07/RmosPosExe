@@ -137,69 +137,6 @@
   <data name="bar3.BarAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="bartxt_Kul.Caption" xml:space="preserve">
-    <value>Kullanıcı : </value>
-  </data>
-  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_Dep.Caption" xml:space="preserve">
-    <value>Departman : </value>
-  </data>
-  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_FisNo.Caption" xml:space="preserve">
-    <value>Fis No : </value>
-  </data>
-  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
-    <value>Boş Masa :</value>
-  </data>
-  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_BosMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
-    <value>Dolu Masa : </value>
-  </data>
-  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_DoluMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="barspn_Refresh.Caption" xml:space="preserve">
-    <value>Kalan Süre : </value>
-  </data>
-  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barspn_Refresh.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="barStaticItem1.Caption" xml:space="preserve">
-    <value>Süre</value>
-  </data>
-  <data name="repositoryItemTextEdit5.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barStaticItem2.Caption" xml:space="preserve">
-    <value>Kuver Tutari :</value>
-  </data>
-  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="bar3.Text" xml:space="preserve">
     <value>Status bar</value>
   </data>
@@ -327,27 +264,6 @@
   <data name="&gt;&gt;flp_Masa.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btn_SplitBol.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btn_SplitBol.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="btn_SplitBol.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 2</value>
-  </data>
-  <data name="btn_SplitBol.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="btn_SplitBol.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 32</value>
-  </data>
-  <data name="btn_SplitBol.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="btn_SplitBol.Text" xml:space="preserve">
-    <value>Ayır</value>
-  </data>
   <data name="&gt;&gt;btn_SplitBol.Name" xml:space="preserve">
     <value>btn_SplitBol</value>
   </data>
@@ -359,27 +275,6 @@
   </data>
   <data name="&gt;&gt;btn_SplitBol.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="cbtn_9.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>561, 2</value>
-  </data>
-  <data name="cbtn_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_9.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="cbtn_9.Text" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="&gt;&gt;cbtn_9.Name" xml:space="preserve">
     <value>cbtn_9</value>
@@ -393,27 +288,6 @@
   <data name="&gt;&gt;cbtn_9.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="cbtn_8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>503, 2</value>
-  </data>
-  <data name="cbtn_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_8.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="cbtn_8.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="&gt;&gt;cbtn_8.Name" xml:space="preserve">
     <value>cbtn_8</value>
   </data>
@@ -425,27 +299,6 @@
   </data>
   <data name="&gt;&gt;cbtn_8.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="cbtn_7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>445, 2</value>
-  </data>
-  <data name="cbtn_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_7.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="cbtn_7.Text" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="&gt;&gt;cbtn_7.Name" xml:space="preserve">
     <value>cbtn_7</value>
@@ -459,27 +312,6 @@
   <data name="&gt;&gt;cbtn_7.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="cbtn_6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 2</value>
-  </data>
-  <data name="cbtn_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_6.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cbtn_6.Text" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="&gt;&gt;cbtn_6.Name" xml:space="preserve">
     <value>cbtn_6</value>
   </data>
@@ -491,27 +323,6 @@
   </data>
   <data name="&gt;&gt;cbtn_6.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="cbtn_5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>329, 2</value>
-  </data>
-  <data name="cbtn_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_5.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="cbtn_5.Text" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="&gt;&gt;cbtn_5.Name" xml:space="preserve">
     <value>cbtn_5</value>
@@ -525,27 +336,6 @@
   <data name="&gt;&gt;cbtn_5.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="cbtn_4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 2</value>
-  </data>
-  <data name="cbtn_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="cbtn_4.Text" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="&gt;&gt;cbtn_4.Name" xml:space="preserve">
     <value>cbtn_4</value>
   </data>
@@ -557,27 +347,6 @@
   </data>
   <data name="&gt;&gt;cbtn_4.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="cbtn_3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 2</value>
-  </data>
-  <data name="cbtn_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="cbtn_3.Text" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;cbtn_3.Name" xml:space="preserve">
     <value>cbtn_3</value>
@@ -591,27 +360,6 @@
   <data name="&gt;&gt;cbtn_3.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="cbtn_2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 2</value>
-  </data>
-  <data name="cbtn_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="cbtn_2.Text" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;cbtn_2.Name" xml:space="preserve">
     <value>cbtn_2</value>
   </data>
@@ -624,27 +372,6 @@
   <data name="&gt;&gt;cbtn_2.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="cbtn_1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 2</value>
-  </data>
-  <data name="cbtn_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="cbtn_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 32</value>
-  </data>
-  <data name="cbtn_1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="cbtn_1.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;cbtn_1.Name" xml:space="preserve">
     <value>cbtn_1</value>
   </data>
@@ -656,24 +383,6 @@
   </data>
   <data name="&gt;&gt;cbtn_1.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="cbtn_0.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="cbtn_0.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="cbtn_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="cbtn_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 32</value>
-  </data>
-  <data name="cbtn_0.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="cbtn_0.Text" xml:space="preserve">
-    <value>Tümü</value>
   </data>
   <data name="&gt;&gt;cbtn_0.Name" xml:space="preserve">
     <value>cbtn_0</value>
@@ -714,21 +423,6 @@
   <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="flp_Kapatma.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="flp_Kapatma.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>676, 121</value>
-  </data>
-  <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
   <data name="&gt;&gt;flp_Kapatma.Name" xml:space="preserve">
     <value>flp_Kapatma</value>
   </data>
@@ -740,74 +434,6 @@
   </data>
   <data name="&gt;&gt;flp_Kapatma.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="btnParcaliOdemeEski.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.25pt, style=Bold</value>
-  </data>
-  <data name="btnParcaliOdemeEski.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="btnParcaliOdemeEski.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAPdEVYdFRpdGxlAEN1cnJlbmN5O1OPL30AAAoDSURB
-        VFhHnZYHVFRXGsfHbEhi1iTrYS1YUBQbLmLAiIBYIARUylAGEAFXIoLgDEgXQboS2kAAmVCkSVGkKBqw
-        UGewIHUsVLEBIlEREsWQPee/9z7B4NlJovs/53fu4/Le9//ud+/73rC68zhvQTSF8AHhb4QPCR8RPp4E
-        /ZvO03umdOVwWF3Hx8l+DRWAd4IxHesrYf32REifo+bU+KMc/03yLWns4PZsU1Fnjll/dw4HHcfN+tuy
-        TEWtqcZBJwK0FpD7pAhMImOPq1ivHhSwOjP/zwSIaKAPLbUWfSE+Zhx3J99q9LEwDCMduRjtO4/fntZh
-        tLccw205GKgNRVfOjpGriYZ25BlaFZr0lFf38lntx8zI5fskkPum7FKJ+9UXkBU29l3ywau+CxgbqMCv
-        D4sx2pOD0TtpGO0m9GTj1YNCvLxbjIfl3hCnmJSmumnKkOeZStxOMaXxJJpJgoqaf2igLju9LdO0cbDu
-        O/xKjEfvF2C0KwWPL4dBFGOMsx7qOOW4CqXuahBGsTEgCiXJ5KK/KhRigbHI2UBhGonzwU2BCRNUkpkk
-        qGjmnzQns/l9F33xqr+MBM7CL7fi0Zq5CyU8FZz31URloBZqQnVQQcbyA5oo3vclmlNt8aIjGfdK9qM+
-        1jCCxKGHky5IopkkqKTiuWrLO7O3j73sOYWX3RnEPA71CeY466aKqiBtVBPoWBk4ToA2Kg5tJsmtwWOh
-        P4Zb4tCaYPoiw3U9PZh0QRLNJEH1ybUEw8jeck+8vJONX27G4H6ZO2NeGbgZFQGb0CCwJlsRiV860jBQ
-        F4HrSVa46LcB7Se4GGkMw/PrQejKs0NVsK47iUcPpEQzSVD9vSWJfe3pFXLim0Lxc/Nh1EYa4pLfRmKi
-        iYak7aQiCRgh88MNga/vuRGHJ/URZC4Cz6/64WmFI3pP20MUoldD4tFteC99Jk4yHnzeeATPhC5IZi9g
-        SnveZz3Oe2vgNLk+Zr4YxzjjmC3C0GUfPL/ihyGRF55cdMDjs9vRX7oTNYe+7iHx6GvJvBHj/KU+b01g
-        jw03BJOV2GO4PgClXCWUua1Dmcc6jLTG4mdxHH4m40grHyMtMXhWsx9PqlwwUGaL/hLzh71FpkV3T5pG
-        lrpv8CbxphL+p2N6J69jef+gyvKkCNayPJLWkunX+ryRbzD4THQAP5XbIlZnFgrslqHg2+UodlSEwGA+
-        kgxlCQtw1ECWrHgPHp/bSYzNBu+eYCdXpev5J6ZtPBeSotHtm6w2dCBVHd4pav1eAlWRa/yaIGsvhbc6
-        Zs/Tk6yWviiWW+Ia6s1oWt1hvfq+Mh4Gy2wwVOeD2lBtnNy5BCdsl6DSXxPPat0xVOtGVu6G/kJjPCgw
-        utWSvsWbn6JZGZixYex4lRNq2qIg7ktHz1AhxL3pqL4dicxLjjiQrDHiFPHlWx2zuS+S5RqvTL0ZTf3R
-        Vyu6LcOWJGCLgdNm6Mq2QL6NPPKt5ZFuIov8XcsgjtdCf4EhGvkbb8btWuoXlKJ+X3DOBjeIaceTDIgf
-        xeD6w2Bcue/LUE+uW/pj0PQgEfElluDylUvZe+XfdExe7GrGnErqkMm/FGqDdcceldrhURHpciXmEIZs
-        Rq7VYuRsX4w0tiyiN8/CYXXpwcBNM319YlUe5NVw0flTFpr6InH5njdEdz0g6vGAudcicAjCHncGUY8n
-        GnvDkUm2zjlaSbRWbzbTMZ2iV712J6JlmVrE04hv4LPxqNAI/Sf1MVBqjSvhOsixXIRsczlkc+ToG3L0
-        YNCqCrrytsEUsuIg1Pa44VL7PoRkf4094Upw+34tg3/aJhzO0UVFBxdV3S64cu8QYgqMYX945Vsdk4r5
-        FmjIS0uf5qrVN8dtQ1+eHnpz9UglLHEn1xLnPVWRs2NJb7iVXID3D2r/abjHR/2DENTc4eFiuxN2Byvi
-        2xBFOEcowzX2K7jEqmBX8ErsDFiBI7mkfXc541KnEy7ecqdVeGHktPBNx2T96KpOB5qElIuW3KLCPV81
-        C0n3u5uujYfZ2uglyfQXW6Dn1I4zEUfXXxCcMycl90E1WVUlCRyWrQPnyNXgxagQlFF9K5wcwhTEnTLH
-        PjLvc3QjLrQ7MBSJzRGerw2bQ0vfdEzWmb2qdJhoGlJbFWbOSN+hyD9lrzwq9F+HGzEa6BRooCVeLdqb
-        r3y3pGEvytr+jbO3rMiqHOCXogVu1GrsIzgTPOM1kCO0QlNvFDoGM9Dcx0fZ7W9R2MLB8eu6SK7Qx87A
-        pb93zMLdKqyhqwH0ciIJmtnHTurz5VI4K4KzLFcKMywUOhLYy/y50UrDF27zUHKDg5PN+igWmyKukAPH
-        CEU4fkcIV4St/1IY8WRh4bUY/GI9nLm5EyeaDJFd/w2yCBl1W2ETsIR2TNobprBO2iqxTtiuYuXbKLLy
-        rBXJ3FuJ0JtoR/uUMN0patXYpc59KGg2JEG3Ib9pK0qbdjPGdsHLsDtMAfYEu9DlsD4oDz2H2TiYrozM
-        azrIvPo1Mgjpl3VgfUh+eDw29flDTSRCoeX63OG7lYNnxfbIa9xG2ILchi2kEkY4f8MDHgnrwPGeDzOK
-        1zzCXJh6zoUBdy7Sr2jjGIMWBJUbYXlQ7vcKSPpETmZctBrT7EJW1B8n+0sTyCH7SdG0kYaXgBy+bg+U
-        NrgiIE2LMTaheMyBsfs8pNVtRmrdJobIM+okSdmJM/DOCdBXZqqV75LoI/k6pPxGZE91kXXtG5CkoLNn
-        JrySlZAu0kdpqwPMfWSJMTWfAxf+GqSINuEH4UbCBrgLVoHtOo++BUxHlGg6mXHRbZDaYCajsDtsxVje
-        NVOypzrMnoZk6TCr3bzrn1C1+AdUOV/AyG0O2ARLXznkCm0hIMaCWk3EXVCDhe+CF1q2M2XHY/71L5dx
-        0ZuZjsnxXBjvm6pGEvgGaZe1cbplF+KKTOBKVmrsLkOMZeBwRBGBx7RRJnYhh04XR6vXI7FaA3tjlsGQ
-        NydsPNZ7JUDFHMb5yz+VtvBZWB+YrYFUUtq0Oi0UtVqTRsMDe78MjAgX211wWmxHSq6FhCp1xBNck1bA
-        0FWmZrnaZ/RbMMXQdTYTVKLpZCa03U+ODsxWrN0mvcjMS7bZNUEJ31doIImUN6l2Pfnw+EF45yASqtXH
-        jdUQVb4W9hGLoc+b3ahuJk1daYwp+rxZNN67J2BxYCEdmIcJUvIq02boc+fyLXxkR10TFRBSoIyYclXE
-        V6ojsuwrBOSvhtP3S+lBfLFl76zIZeumMSunlN92Y23lziSXRJJMJzMhjrcsq6bLn15OJMF0TJUt0+W2
-        7p0dbMCbLdTnyXSQMmMbGfW5s6p0HWf4qplMn0fue/PTjJqX33JjbXGeQf4kkmQ6mQmZes1jmXjMYxm7
-        zyXMoVOTE5nomPRXzwR0jv6PMd5KDKnpxPjeCfyJJhL5I/5ELNZ/ARYVvuKnEwoEAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnParcaliOdemeEski.Location" type="System.Drawing.Point, System.Drawing">
-    <value>678, 2</value>
-  </data>
-  <data name="btnParcaliOdemeEski.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 121</value>
-  </data>
-  <data name="btnParcaliOdemeEski.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="btnParcaliOdemeEski.Text" xml:space="preserve">
-    <value>PARÇALI 
-ÖDEME</value>
   </data>
   <data name="&gt;&gt;btnParcaliOdemeEski.Name" xml:space="preserve">
     <value>btnParcaliOdemeEski</value>
@@ -845,124 +471,6 @@
   <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="gridControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 306</value>
-  </data>
-  <data name="gridView2.Appearance.FooterPanel.BackColor2" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
-  </data>
-  <data name="gridView2.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="gridView2.AppearancePrint.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="gridColumn3.Caption" xml:space="preserve">
-    <value>Urun</value>
-  </data>
-  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridColumn3.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
-    <value>Count</value>
-  </data>
-  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridColumn3.Width" type="System.Int32, mscorlib">
-    <value>255</value>
-  </data>
-  <data name="gridColumn9.Caption" xml:space="preserve">
-    <value>Personel</value>
-  </data>
-  <data name="gridColumn9.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn9.VisibleIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="gridColumn9.Width" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="gridColumn4.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="gridColumn4.Caption" xml:space="preserve">
-    <value>Miktar</value>
-  </data>
-  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="gridColumn4.Width" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="gridColumn5.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="gridColumn5.Caption" xml:space="preserve">
-    <value>.</value>
-  </data>
-  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="gridColumn6.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="gridColumn6.Caption" xml:space="preserve">
-    <value>  Tutar  </value>
-  </data>
-  <data name="gridColumn6.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
-    <value>Sum</value>
-  </data>
-  <data name="gridColumn6.Summary1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridColumn6.Summary2" xml:space="preserve">
-    <value>      {0:N2}</value>
-  </data>
-  <data name="gridColumn6.Width" type="System.Int32, mscorlib">
-    <value>78</value>
-  </data>
-  <data name="gridColumn7.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="gridColumn7.Caption" xml:space="preserve">
-    <value>D.Tutar</value>
-  </data>
-  <data name="gridColumn7.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
-    <value>Sum</value>
-  </data>
-  <data name="gridColumn7.Summary1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridColumn7.Summary2" xml:space="preserve">
-    <value>{0:N2}</value>
-  </data>
-  <data name="gridColumn7.Width" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="gridView2.ViewCaption" xml:space="preserve">
-    <value>Satılan Ürünler</value>
-  </data>
-  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 340</value>
-  </data>
-  <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
   <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
     <value>gridControl2</value>
   </data>
@@ -975,36 +483,6 @@
   <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 29</value>
-  </data>
-  <data name="gridColumn1.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="gridColumn1.Caption" xml:space="preserve">
-    <value>Konum Kod</value>
-  </data>
-  <data name="gridColumn2.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="gridColumn2.Caption" xml:space="preserve">
-    <value>Konum Ad</value>
-  </data>
-  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 277</value>
-  </data>
-  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
   <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
     <value>gridControl1</value>
   </data>
@@ -1016,95 +494,6 @@
   </data>
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="btnFilterClear.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="btnFilterClear.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
-        bGUAQ2xlYXIgRmlsdGVyO0ZpbHRlcjtSZW1vdmUgRmlsdGVyO0NsZWFyKfWMAgAAAzlJREFUOE+NkmtI
-        01EYh09YfepCbFJWs9JmEa7bVrpUyCLSsgSjq2PShSwrolpIWslyc1mhdtvSTFvYnF0gtWWolSlqTpNW
-        uS7qTLFpXv5Lc9Np+ev8oyKpD73wwPnw/p5z3nMOoeVyLVI0yxDtd7IwNuBxYYx/3aPYABTHBOBhtF/d
-        g6PiJ/cO+cZpti/ks72UUQDIL0iebNkR42WJs/PlLfR31GKwpwFD9hbKBwz1muFoK0VHTToqkzc6b+1b
-        ImMlIwRFMf59g7Y6ND68isozu5AdxEHOmkm4G8pF7qYpMF3ZjY+lqXB2lcNw0MdGBWNHCPIPifOspQoM
-        dpfhW78VX+nuXx1NFAs9xRv0NhSgrSQZDTop7uwR5f8lyN4riqrVbEZ/cyoVNIEaYG86i47ydbDoQlAh
-        E6DmpBAV8cuREbFgPxWMHiHYtHQqx3BY3N757BScnwqppAV2SwraS9aiteAYPuSdQWtRCkx6Vc9msYfr
-        X5fIGtOk86VlyiAw1Qo4O8rQ+z4JzAs5PlVeQ3nkFuT7+tD5w8/T3jH62XMEFIvO0+viTQ8v9lXIKMpY
-        9VbvnYXRAUNvb0aisyoO3aZLeBwRhvfp6fjyzgxDcIhNO4u/4f7qNUxPnQlmzWVcnzE7k9zbI/wtkYfw
-        g3XbPMAYo9FVlYIcoRC2Aj0GirNgf2VE8fYdw32mSgwU3QBj0CGN59lMnp1bT2oS/X9JJujCPdBnTgZT
-        o0ZZ0jFcFS22dWtVcORpMPDiKRy5anRlKHFl0UJGzpkiIKXKIGJU+pBqpS8rmZAt8YSj5Tba8qV4npWA
-        BDd3yf2glcM91+PRq1Xgc+Yp5K4KHL7gNjPsvNtMQh6dWEGq5EJilItYwcScCD7s1qewmTJRceE4spb5
-        29q1SWiLk+JjbDisLJp4ZAiXdJ+bPGMeKTji95MfY4yja+gl3qi9oUKq9yI0q5WwHg+H5UAo9KIFw41R
-        IWiVbURjggyJru71bOjPGk0ZT5nEonLlaUtCA2HesRppXnOZ01xeWCrfi3ktCURxsBgqzvT03x/iXyRy
-        eS40pFZxePVKrrtAyeURBZcnUHCm11PU8ZxpLv8M/j8g3wGtek8hsHHK3gAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnFilterClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 2</value>
-  </data>
-  <data name="btnFilterClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 23</value>
-  </data>
-  <data name="btnFilterClear.TabIndex" type="System.Int32, mscorlib">
-    <value>160</value>
-  </data>
-  <data name="&gt;&gt;btnFilterClear.Name" xml:space="preserve">
-    <value>btnFilterClear</value>
-  </data>
-  <data name="&gt;&gt;btnFilterClear.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnFilterClear.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;btnFilterClear.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txt_Filtre.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="txt_Filtre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="txt_Filtre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="txt_Filtre.Properties.NullValuePrompt" xml:space="preserve">
-    <value>Masa Adını Giriniz...</value>
-  </data>
-  <data name="txt_Filtre.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txt_Filtre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 22</value>
-  </data>
-  <data name="txt_Filtre.TabIndex" type="System.Int32, mscorlib">
-    <value>159</value>
-  </data>
-  <data name="&gt;&gt;txt_Filtre.Name" xml:space="preserve">
-    <value>txt_Filtre</value>
-  </data>
-  <data name="&gt;&gt;txt_Filtre.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Filtre.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;txt_Filtre.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panelControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 27</value>
-  </data>
-  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
   </data>
   <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
     <value>panelControl4</value>
@@ -2252,426 +1641,6 @@ Masa</value>
   <data name="bar_Menu.BarAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.5pt, style=Bold</value>
   </data>
-  <data name="bar_Satis.Caption" xml:space="preserve">
-    <value>Satış</value>
-  </data>
-  <data name="bar_Satis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="bar_HesapBak.Caption" xml:space="preserve">
-    <value>Hesap
-Bak</value>
-  </data>
-  <data name="bar_HesapBak.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAANIDAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
-        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuWWVsbG93
-        e2ZpbGw6I0ZGQjExNTt9CgkuQmx1ZXtmaWxsOiMxMTc3RDc7fQoJLlJlZHtmaWxsOiNEMTFDMUM7fQoJ
-        LldoaXRle2ZpbGw6I0ZGRkZGRjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5zdDB7ZmlsbDojNzI3
-        MjcyO30KCS5zdDF7b3BhY2l0eTowLjU7fQoJLnN0MntvcGFjaXR5OjAuNzU7fQo8L3N0eWxlPg0KICA8
-        ZyBpZD0iUmVmdW5kIj4NCiAgICA8cGF0aCBkPSJNMjIsMjZoNnYydjNjMCwwLjUtMC41LDEtMSwxSDNj
-        LTAuNSwwLTEtMC41LTEtMVY5YzAtMC41LDAuNS0xLDEtMWgxLjJsOC44LDguOEwyMS44LDhIMjdjMCww
-        LDEsMCwxLDF2NC45ICAgYzAsMCwwLDAuMS0wLjEsMC4xSDIyYy0zLjMsMC02LDIuNy02LDZTMTguNywy
-        NiwyMiwyNnogTTMwLDE3djZjMCwwLjUtMC41LDEtMSwxaC03Yy0yLjIsMC00LTEuOC00LTRzMS44LTQs
-        NC00aDcgICBDMjkuNSwxNiwzMCwxNi41LDMwLDE3eiBNMjQsMjBjMC0xLjEtMC45LTItMi0ycy0yLDAu
-        OS0yLDJjMCwxLjEsMC45LDIsMiwyUzI0LDIxLjEsMjQsMjB6IiBmaWxsPSIjRDExQzFDIiBjbGFzcz0i
-        UmVkIiAvPg0KICAgIDxwYXRoIGQ9Ik0xMiw2djJIN2w2LDZsNi02aC01VjZjMC0yLjIsMS44LTQsNC00
-        aDRWMGgtNEMxNC43LDAsMTIsMi43LDEyLDZ6IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4N
-        CiAgPC9nPg0KPC9zdmc+Cw==
-</value>
-  </data>
-  <data name="bar_OzelMasa.Caption" xml:space="preserve">
-    <value>Özel
-Masa</value>
-  </data>
-  <data name="bar_OzelMasa.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAQRJREFUWEdjGAX4wOSiBr9JhXW+UC4GICS/tLo4FoShXNLArt5Mv3jfOf9BGMSG
-        CsMBIflVTaX2MHkQGypMPJhXVdUT5zP3PwiD2FBhOKBUniCg1AJC8ljBs2rX2GcVnj0gfDA//nSrd9N/
-        EAaxYeIUywPtgFqHCp43edpf9vb+f9mLxhhoB8guqLUIAHIdVg00wCC7oNYiwKgDRh0w4A64Nt2z83Cv
-        z39S8cMCD5Lxqy73Kqi1CLDtqF9P6/Gw/6Ti//udyMDOIVBrEWDUAaMOGHXAqANGHTDqgF2HfWOxWUAI
-        Y7cAL/73f5+jMdRaVLDvmK89KCRIwSDfkIRxWT5CAQMDAEERLIkUVTE9AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bar_OdaKontrol.Caption" xml:space="preserve">
-    <value>Oda
-Kontrol</value>
-  </data>
-  <data name="bar_OdaKontrol.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAN5JREFUSEvtlkEKwkAMRQsiioKgoCsP67UEV4IICurChRvdewp9wWYIzXRaaQUR
-        Hzw6+Q3JrEozWOGjZWVmINbQhgEXNOS/oJJaCzTT3NYxLS4ra7LPd3DzXACaaW7rmBaXxZqa8B0LNNPc
-        1jEtLitrsk+hi4PXMYmb5wLQTPMpnvGOfbTvtUdxWazJMsYTSs8BO5giuUBud0X53A5xhHuU90ecYBXJ
-        BT28odRr3ORnubkMX+R1UYvLisEcL6i5Dq9LcZ4PYIY73GLq5qrFZbGmJvzwgrYNfOK3ZYmQZU+3h/Lm
-        uG6mDgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="barSubItem2.Caption" xml:space="preserve">
-    <value>Masa
-İşlem</value>
-  </data>
-  <data name="barSubItem2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAtJJREFUWEftVktrE1EUzsqFuHDrb3ApbmoS8/ax7LI7CepOaVe6Gxcz5+YxSWyF
-        YGkTarvoohULRoVSX3TVLhLcKFUEqaUgaBOl2IVkPOd6EmeaMb0T0xbEDz5y5zvnfHPunTt34vuPfxYD
-        hnHtjGFYRL+uX2f54IA31YamChaRxizvP2i2rZkfVgPayIOiRbQ3YG9sXx9LlwakPvt2Vsbomkv6hwAY
-        2/ZZ7sEGl/UPZFytl4hPq1uTWjdSLpdh58L4ZutMkjQOK8PLClAulzk6b5M0DntGt1rXmNsKOKjrw5yq
-        BKxJ8rADf4zZd6md9h0b0PUTAwARNLkY0rTjRBqTRjFp1AvwBo53tIO4An6AK37DqOMR+xy1CnKTWSGN
-        Y5fZ0htohkP4vt5cGneQtNbs5QrN51dwfzxDrians4+S0+ZjGpNGsVauZwQEdN8D3vj1pKYdYWs1UCHt
-        fGJtqzzIck8gL9wbx/hSDfYGkDu1ennC7fBQYT8a+Cv22kCTCvvFU5p2lK3VEEzBzouNCTx+4QdLnhFO
-        wzZ54OvaZEkd4QzUF9buWqGU8/yn84FeLTfuPh2jWfGZPILC+M7SXt+G319DLN6cqhUtbOQTSxKUeGOh
-        sObaAMY4TSKRE+vkEUrDF5Z+7a1GaaPaKJ9mqQ1HfcwU70aX71jxrHjPkoQ0qJeayIrbbuc0iXMF8Zo8
-        oln4yFKr3pWOeuy+duvJbStuwiuWJChJXxx15e4GLhTECnnEsuINS7K+GzkNu8+nXg7P561EDpZZkqAk
-        t+UnOgwQ5/NikTxwNVdZkvU87IAjFs/Bw0v3TCthQoUlCWUDBD6COfKI5sQSS+r1MRNmBotp7B5mWJLw
-        0gA+xnHyiGTEfZbU6yMZGItmwIqkYIwlCS8NhNNGijzOpmGSJfV6/JaPkEC/LEmg9oGHHcDcdR5KBIW4
-        Kj0A2p9kvPb+z+hg4fP9BJ0SlnASZtoJAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bar_MasaTransfer.Caption" xml:space="preserve">
-    <value>Masa Transfer</value>
-  </data>
-  <data name="bar_MasaTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAwZJREFUWEfdl91OE1EQxwuIFxo/00isu+dztpVUEW0iELkoRFEvMEbEqBCjJkZs
-        lETkS7zQxGfwwkS58hF8Cp/K/5Sh6Xa3tCw0Jv6SyZ4553R3dmbO7DTnnFNe21WvzPJ+xSmzWXTuZu4g
-        4EavZZgJMlQtWntd1P3Dby/DTHit75LW10SNUSqVTsiwPb0yAPPTxUIxL2p7emGA03qOjBkXdW8O04BK
-        pTIYGfMdybnhlX3WKqTUfMIrh+yBvmFD41brLe992CrDWp/3Sq0XCoVjsv/QDaijlDqDua1qrnpEphqQ
-        so984EnU3hiwC9cYGTZIGEDGbXDssgpZOwu3VuR2HUnzwG8Uo/Ws4rT56Y15LLfrSGoI+A04S13gLst0
-        1+wVgjSSBlj7KjLRmLV2hogmcB0RuQJ5uCuI56TMx8RpN0chebldRxIGMN74O1iYbRac5c8Uum9RaL+y
-        kLa/WveUlJ3P5/Ody20TKFC305KzlYFIm+3I2lUUlmUW/HCb31jWewtK6VODxHKhqzXEuBfIk3ew/pRs
-        6x2kzBcK7b1WlyNf1igMu453ZlA2z7UmGwvevihb/kNQ0WZk+G9Aln/EpW9Hy07mJD2oAT40950xmyjL
-        z1EZa1rrKVnqjgMYMIBy/raktcW4nyd2Psd0lcs0jvNFXKdRZU/yWluyGoDjuYgHOlFj4OGjqCkPUMhG
-        I+VR0KIxWUqSZkBaQ9EM3Gy5/xO1Iy40S3SBAlHjpBnAbkM8J0RNwP8JrLK3RO0Ih4Mc1SRccdCYvMGG
-        06I24PixG8vl8lGZqoMGs8yxr+QqgzLVFS4IIiTrE07WmIf54RHXenS0rUKh/oHvwB+0lpd4L39OYVSt
-        /sOMoNpOtfPeQLM4pSatUovinXqIDI5c4pu+f/rhiSUZp8N/rZAbVVEb8By6qBuiZgLfFg0vLoiaDjed
-        MowxMjR0HGFZSU2mLqg/PNS1tieiG4IgOMvJRNq9hEfe47SsIGE/1HtMbdfqDSvnD04X1raw9okF9QCN
-        rF7YeXgu9xdYC8kHVXz+FQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bar_MasaTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_MasaIslem.Caption" xml:space="preserve">
-    <value>Masa İşlemleri</value>
-  </data>
-  <data name="bar_MasaIslem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAmVJREFUWEfNV02oTVEUPoQoE/Liueestc45+1w6I7rFgFwDA2XACBmYKflJYWT6
-        TMhIZsYyMVDPgKH0MiCUZKSUmFAUIu/5+da+6/Vu17nPfa+zT776uuess9Ze3/5Ze+8b1YSljuValtB3
-        /E6VY+Vqs4dFe7y9ziVyJk/oGRL/nmUust9cwqEsyxVZIg/7E8+Rt5pbWBDRGoh40pf8F0bkY85ypxt1
-        l5lbWPhpYH7uBRDddSJdrIUfsF01l/BI03R9nshLzP0hfcfzURWUk5z2Dk1gU5JsZOaV9qoibkDEjHNu
-        zEzNIY7jVS6h147kppmaRc58AYvxm4iwmZrDZqLxjPkzREyYqRl0Op3lWPknUJZPeyXJ1wuizD6Hhc55
-        RnS/l3iOGcuXQmSXuc0PDNluHTYsnIsLJeImB5PPEpvSuwHfib9EZa2sgPPPweBQxBqZbhOllt73fq9+
-        0M1E93HXcnEIFsxbMC0vNFdB6R5L3yeA+ayZRgLmfUdOdDKn9NT8lGNlHK/VGD09hwuAs5lGAhq7onEj
-        csrHMB/X91oFoIfnsyTbWUVtG8P+Sk9JHxNCAM6ADWaqBE7J29iaP/nnICPAfBk8UEmcjBiBt0FHYBRi
-        wd7zMXUK0LLSO4AStX14GPWOqLulxtQqYDGoVQDiLqGH04id+Qe/wvecxoRZhHodY7lVRX9PxDYPoe99
-        TAgBRRy3zFQJtD8ZtAzRy9JMVVjij+qQAvxfMr0DVhB7wAfvw/zGx9QsAAcLP+pRHg8nP8DtaJ+PqVPA
-        YvB/CsAVaTuMqFc+YqZgQMke9ALSdFsURdEf70OJBobtuaQAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="bar_MasaIslem.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_MalzemeTransfer.Caption" xml:space="preserve">
-    <value>Ürün Transfer</value>
-  </data>
-  <data name="bar_MalzemeTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAWtJREFUWEft1r8rB3Ecx/HzqzAo5VcxKCklhcXAYFEWE6vJH8CiTEoZGfxYDEab
-        HyW7zSiJTSmlGAwoyoDn65urT9fp+777XHfLPeuRvurzuTf3vR9BWcYN/P0srHfsoavyqYDe8AMNsopm
-        pKoPs5hLSAfWAKFHLKAW5ibwBXcjX9eYhqlNxG3i6wNTqNoW4jbwcYpemNqGu3gDS0ZPcNfeYwaJig4w
-        Cms30JpPrKEJiduBO8AIrF3hDLqKUrcLd4BhWEvy3/q36JdwELk2Dp1DHfwCdci9Towhi4PrFO5jHalv
-        zWmrxzPC06mbXK61ITy4nMCrbugqsdYOd4BjpKoBy9DT7kW/MNYB7wEmcYtwk1dY05fZHeAI5vRWcwB3
-        A/nGnZGeBe7aQ1RNl94i9Je6i7NgGmAIl4jbwJfeF03VYB4PiNtIj92kztGDRDViBdHTkfsdTTcUPabD
-        d8UWFFI/dCm1Vj6VlXkXBL/ZAuoySZSYlAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bar_MalzemeTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bar_KisiSayisi.Caption" xml:space="preserve">
-    <value>Kişi Sayısı Değiştir</value>
-  </data>
-  <data name="bar_KisiSayisi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAVJJREFUWEft1s0qhGEYh/Gx8FlKySkgkhOQHcXChiykoUiilI84ATshKRSFfGRh
-        L3YWbKTYOAERib0V1/+5Wcz0jDLNPav3ql/dT7N4Z96vZ1JJSUl5VIJx3OLzh+Yx6DP3DnCJNpShHO24
-        wh5c68YddNDsKvCAzrByahOTNkabwbqNPh1hwMZow9i10ac1TNkYbQ5LNvo0gS0bo+1j1EafdAA9grma
-        x7aNPi1g0cZoy9CN6FYTHtEYVpm14BkNYeXYDvTWy04354aNvo3g2MaMTpG20bcavKI+rCxdmhdUh1UR
-        0q/ttTGkl1PsrLh1gn4bQ3oD6hEtSlW4QUdYWT24RmVYFTjtcn1YxQU+oPd9KX7TtnyId5xjBbpEsV3z
-        Xw1Bz/YZZqHtuBa5qkMXtCfoyz5hEHk1jXs0h1V+tUL/Ef7awHKm0/lVIG9ISkqKlEp9A1bcR7mllkYX
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bar_KisiSayisi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="btnMasaKilitAc.Caption" xml:space="preserve">
-    <value>Masa Kilit Aç</value>
-  </data>
-  <data name="btnMasaKilitAc.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="btnParcaliMasa.Caption" xml:space="preserve">
-    <value>Parçalı Masa</value>
-  </data>
-  <data name="btnParcaliMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="bar_Rapor.Caption" xml:space="preserve">
-    <value>Rapor</value>
-  </data>
-  <data name="bar_Rapor.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAABkEAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
-        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkdyZWVue2ZpbGw6IzAzOUMyMzt9CgkuQmxhY2t7
-        ZmlsbDojNzI3MjcyO30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5ZZWxsb3d7ZmlsbDojRkZCMTE1O30K
-        CS5CbHVle2ZpbGw6IzExNzdENzt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
-        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQo8L3N0eWxlPg0KICA8ZyBpZD0iRGF0YUxhYmVscyI+DQog
-        ICAgPHBhdGggZD0iTTEwLjMsNS4ybC05LjksOS45bDkuOSw5LjljMi4zLTIuNiwzLjctNi4xLDMuNy05
-        LjlTMTIuNiw3LjksMTAuMyw1LjJ6IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCiAgICA8
-        cGF0aCBkPSJNMCwzMGMzLjQtMC4yLDYuNS0xLjYsOC45LTMuN0wwLDE3LjVWMzB6IiBmaWxsPSIjRkZC
-        MTE1IiBjbGFzcz0iWWVsbG93IiAvPg0KICAgIDxwYXRoIGQ9Ik0wLDAuMXYxMi42bDguOS04LjlDNi40
-        LDEuNywzLjQsMC40LDAsMC4xeiIgZmlsbD0iI0QxMUMxQyIgY2xhc3M9IlJlZCIgLz4NCiAgICA8ZyBv
-        cGFjaXR5PSIwLjUiIGNsYXNzPSJzdDAiPg0KICAgICAgPHBhdGggZD0iTTIwLDE2aC00di0yaDRWMTZ6
-        IE0yMCwyaC04djJoOFYyeiBNMjAsMjZoLTh2Mmg4VjI2eiIgZmlsbD0iIzcyNzI3MiIgb3BhY2l0eT0i
-        MC41IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPC9nPg0KICAgIDxwYXRoIGQ9Ik0zMCw2aC04VjBoOFY2
-        eiBNMzAsMTJoLTh2Nmg4VjEyeiBNMzAsMjRoLTh2Nmg4VjI0eiIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9
-        IkdyZWVuIiAvPg0KICA8L2c+DQo8L3N2Zz4L
-</value>
-  </data>
-  <data name="bar_Relogin.Caption" xml:space="preserve">
-    <value>Kul.
-Çıkış</value>
-  </data>
-  <data name="bar_Relogin.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAiJJREFUWEftlUtLG1EYhrOw6/pDXHTdgtBVF+Jl1QpVpAtFkIBUseLC2FKobb2g
-        Thah1dRkxtqZXJpGk0kmYSSTS6UUqgiCpQtvtd6g/QVfc6bnzGQuTBIYpYt54YEw8833vHMSiMuJEyf6
-        iPn8raxUvJ/JlTrtRMiXHqDdWGOejFScy0oluEoyUmkG67T59+bmD9mNWCg0Ya0aXsz1koHt3T34sX9k
-        CZqpXFoPfDb3CGvVhJLpGTKABBe//8gcnJzCJ2FDBn0m17/vHyoLI4k0rH6Ma4gmBOW+nkhSmMRaNdx6
-        ap4MkAKC9BlutzyEpuYOmTstXZDNbxoKUIvvwDM1rYHyLyv39YQTwhTWqtEXQG+LhESulGjthuPTc02B
-        eqmpwJqQM8gJSbGgKbDMhuVTsCLARuwrwG8UNQXQcnTkVgS4Ogsc/jqTj1svb27vgZ9n1/AVnJxfwGPP
-        a0OB4afT5XuXVX+EetApkPmqBb5824G2brdBTmjvccNmeYbMR5Np+BCLW4JmyHzVAgOjz03FlbjHXigL
-        66Vqgb6hCVNpJf0jzwyLa8UpYFogxKeVv+KX1KIssOKVd8mwuFbCayljAToWe2I2fBUEo/FBrFWzwDD3
-        uETK9AE74dZ58NL0XaxV4/P5biwE6a23HAfBSAwCUXtBO9+wIfAyzFePKDZgrTazfn8jRa94vMGV9xTD
-        rNoJ2lmWj/tY9ibWOXHyP8Tl+guVa50uq94hcgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bar_Direksatis.Caption" xml:space="preserve">
-    <value>Direk
-Satış</value>
-  </data>
-  <data name="bar_Direksatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAtJJREFUWEftlktoE1EUhlPQ+kB8gIiCZCaZaWOSiklm5k5ek0yKWosbS5BCsTbQ
-        hQt34lLwBbVu3Imi4soXqLS4quBOXSldCIWCBMRHqVAUKqJY9HjP9KbNxJuZRJLQRT/4mcydc+9/5uQ+
-        xrPKikAShJwsCCd9Pl+ANbUWSRA/UQHVb79XHGHNrQMrIHnFcXpdsBIRxX72qLVIgu8MJtAVDEHO7G6q
-        konUDLNdRpKkHZhAQO7gdmqkshnzD7O1QxOYk0UfmNkct2OjlE6mvjJLO3QePMcqpJNpbsdGSdfjr5ml
-        HZrATUyAqITbEdVz0ITLF4MwXFiOGToWh9ELQVuck4hCrjFLO3Q/OIUJRPdFuR1RaA7zHpgtrrfuC4M6
-        zM+ssdoGB+L/xPOkRCJHmKUdWoFeTMBpJeCbo/nY/d1wNJ+Cz/Q3mr98th26c/w+5cL5JcvyOmZpR6Rg
-        ArWshMO9GSi+2WSZT73aDId6TG5cpej8+sbsuLTRBL67rYQD+02YfLHNMv8wvREKx3W4MhqAfJ/75I2T
-        +BTz4kMTmMQqOK2Ee7cFy/zL+3YY6E/AxPgu6x6vvPhyaQq5w6z4yIJ4FxNwWgm3rvph5u0GODGsWfeX
-        zodg7l27da2MrRSJkCFmxae0JTuthP8V/q2KomxhVnz8gpDHBJpxJhgp4wezqY7s9YYwgWacCQk9UWQ2
-        1aElWotHc6PPBHoAgRqLnWU2ztAKTGMV6M4YZU2thZqPYQL0Q+WBLIrn9obDN4iiTajR2ONOv38E26qp
-        Wiytao4N785iB+szDWKRmK2URjoDnVKH9axSLrEf2fDu0B15K12Op8N7gk/LBywpSRI/S29WkltsXRUo
-        QVTtCW9Q3hdNPbE1o6rkOm9QI238YiFL1BNbM1pY25kxsguVg+ox7RELWaKe2LqIdKlmMpGcxVLi2+gK
-        eUib2xaf2qkndpUVgMfzF6yqYhajQhNHAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bar_PaketSatis.Caption" xml:space="preserve">
-    <value>Paket
- Satış</value>
-  </data>
-  <data name="bar_PaketSatis.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKoFAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
-        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5ZZWxsb3d7
-        ZmlsbDojRkZCMTE1O30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5HcmVlbntmaWxsOiMwMzlDMjM7fQoJ
-        LkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
-        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntkaXNwbGF5Om5vbmU7fQoJLnN0M3tkaXNwbGF5
-        OmlubGluZTtmaWxsOiNGRkIxMTU7fQoJLnN0NHtkaXNwbGF5OmlubGluZTt9Cgkuc3Q1e2Rpc3BsYXk6
-        aW5saW5lO29wYWNpdHk6MC43NTt9Cgkuc3Q2e2Rpc3BsYXk6aW5saW5lO29wYWNpdHk6MC41O30KCS5z
-        dDd7ZGlzcGxheTppbmxpbmU7ZmlsbDojMDM5QzIzO30KCS5zdDh7ZGlzcGxheTppbmxpbmU7ZmlsbDoj
-        RDExQzFDO30KCS5zdDl7ZGlzcGxheTppbmxpbmU7ZmlsbDojMTE3N0Q3O30KCS5zdDEwe2Rpc3BsYXk6
-        aW5saW5lO2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+DQogIDxnIGlkPSJTYWxlIj4NCiAgICA8cGF0aCBk
-        PSJNNCwxOFY4SDBWNmg2djEwaDguNWMtMC41LDAuNi0wLjksMS4zLTEuMywySDR6IE05LDIwYy0xLjcs
-        MC0zLDEuMy0zLDNzMS4zLDMsMywzczMtMS4zLDMtM1MxMC43LDIwLDksMjB6IiBmaWxsPSIjNzI3Mjcy
-        IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPHBhdGggZD0iTTIzLDE0Yy01LDAtOSw0LTksOWMwLDUsNCw5
-        LDksOWM1LDAsOS00LDktOUMzMiwxOCwyOCwxNCwyMywxNHogTTIzLDIyYzEuNywwLDMsMS4zLDMsMyAg
-        IGMwLDEuMy0wLjgsMi40LTIsMi44VjI5aC0ydi0xLjJjLTEuMi0wLjQtMi0xLjUtMi0yLjhoMmMwLDAu
-        NiwwLjQsMSwxLDFjMC42LDAsMS0wLjQsMS0xcy0wLjQtMS0xLTFjLTEuNywwLTMtMS4zLTMtMyAgIGMw
-        LTEuMywwLjgtMi40LDItMi44VjE3aDJ2MS4yYzEuMiwwLjQsMiwxLjUsMiwyLjhoLTJjMC0wLjYtMC40
-        LTEtMS0xYy0wLjYsMC0xLDAuNC0xLDFTMjIuNCwyMiwyMywyMnoiIGZpbGw9IiMwMzlDMjMiIGNsYXNz
-        PSJHcmVlbiIgLz4NCiAgICA8cGF0aCBkPSJNMjMsMTJjMC4zLDAsMC43LDAsMSwwLjFWM2MwLTAuNS0w
-        LjQtMS0xLTFIOUM4LjQsMiw4LDIuNSw4LDN2MTBjMCwwLjUsMC40LDEsMSwxaDcuNyAgIEMxOC41LDEy
-        LjcsMjAuNiwxMiwyMywxMnoiIGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4N
-        Cjwvc3ZnPgs=
-</value>
-  </data>
-  <data name="bar_Yenile.Caption" xml:space="preserve">
-    <value>Yenile</value>
-  </data>
-  <data name="bar_Yenile.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        qo7/g9DT+w8vuPxsi/hIcQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnHesapDokum.Caption" xml:space="preserve">
-    <value>Hesap</value>
-  </data>
-  <data name="btnParcaliOdeme.Caption" xml:space="preserve">
-    <value>PARÇALI 
-ÖDEME</value>
-  </data>
-  <data name="btnParcaliOdeme.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAJcHAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
-        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuR3JlZW57
-        ZmlsbDojMDM5QzIzO30KCS5ZZWxsb3d7ZmlsbDojRkZCMTE1O30KCS5CbHVle2ZpbGw6IzExNzdENzt9
-        CgkuUmVke2ZpbGw6I0QxMUMxQzt9Cjwvc3R5bGU+DQogIDxnIGlkPSJDdXJyZW5jeUV4Y2hhbmdlIj4N
-        CiAgICA8cGF0aCBkPSJNMTEsMmMtNSwwLTksNC05LDljMCw1LDQsOSw5LDljNSwwLDktNCw5LTlDMjAs
-        NiwxNiwyLDExLDJ6IE0xNSw4LjVjLTAuNy0wLjQtMS41LTAuNi0yLjMtMC42ICAgYy0xLDAtMS43LDAu
-        My0yLjMsMC45QzEwLDkuMSw5LjcsOS41LDkuNiwxMEgxM3YySDkuNmMwLjEsMC41LDAuNCwwLjksMC43
-        LDEuM2MwLjYsMC42LDEuMywwLjgsMi4zLDAuOGMwLjksMCwxLjctMC4yLDIuNS0wLjZ2MiAgIGMtMC43
-        LDAuMy0xLjcsMC41LTIuOSwwLjVjLTEuNiwwLTIuOC0wLjQtMy43LTEuM0M3LjYsMTQsNy4yLDEzLjEs
-        Ny4xLDEySDZ2LTJoMS4xYzAuMi0xLDAuNy0xLjksMS40LTIuNmMxLTEsMi4zLTEuNCwzLjktMS40ICAg
-        YzEsMCwxLjgsMC4xLDIuNSwwLjRWOC41eiIgZmlsbD0iI0ZGQjExNSIgY2xhc3M9IlllbGxvdyIgLz4N
-        CiAgICA8cGF0aCBkPSJNMjEsMTJjLTUsMC05LDQtOSw5YzAsNSw0LDksOSw5YzUsMCw5LTQsOS05QzMw
-        LDE2LDI2LDEyLDIxLDEyeiBNMjQuMywyNC41Yy0wLjIsMC40LTAuNSwwLjctMC44LDAuOSAgIGMtMC40
-        LDAuMi0wLjgsMC40LTEuMiwwLjVjLTAuMSwwLTAuMiwwLTAuMywwVjI3aC0ydi0xYy0wLjIsMC0wLjUt
-        MC4xLTAuNy0wLjFjLTAuNS0wLjEtMC45LTAuMi0xLjMtMC40di0yLjIgICBjMC40LDAuMywwLjksMC42
-        LDEuMywwLjdjMC41LDAuMiwwLjksMC4yLDEuNCwwLjJjMC4zLDAsMC41LDAsMC43LTAuMWMwLjIsMCww
-        LjQtMC4xLDAuNS0wLjJjMC4xLTAuMSwwLjItMC4yLDAuMy0wLjMgICBjMC4xLTAuMSwwLjEtMC4yLDAu
-        MS0wLjRjMC0wLjItMC4xLTAuNC0wLjItMC41Yy0wLjEtMC4xLTAuMy0wLjMtMC40LTAuNGMtMC4yLTAu
-        MS0wLjQtMC4yLTAuNy0wLjRjLTAuMy0wLjEtMC41LTAuMi0wLjgtMC40ICAgYy0wLjgtMC4zLTEuMy0w
-        LjctMS43LTEuMmMtMC40LTAuNS0wLjYtMS0wLjYtMS42YzAtMC41LDAuMS0wLjksMC4zLTEuM2MwLjIt
-        MC40LDAuNS0wLjcsMC44LTAuOWMwLjMtMC4yLDAuNi0wLjMsMC45LTAuNFYxNWgydjEgICBjMC40LDAs
-        MC44LDAsMS4xLDAuMWMwLjQsMC4xLDAuNSwwLjEsMC45LDAuMnYyYy0wLjItMC4xLTAuMS0wLjEtMC4z
-        LTAuMmMtMC4yLTAuMS0wLjQtMC4yLTAuNi0wLjJjLTAuMi0wLjEtMC40LTAuMS0wLjYtMC4xICAgYy0w
-        LjIsMC0wLjQsMC0wLjYsMGMtMC4yLDAtMC41LDAtMC43LDAuMWMtMC4yLDAtMC40LDAuMS0wLjUsMC4y
-        Yy0wLjEsMC4xLTAuMiwwLjItMC4zLDAuM2MtMC4xLDAuMS0wLjEsMC4zLTAuMSwwLjQgICBjMCwwLjIs
-        MCwwLjMsMC4xLDAuNGMwLjEsMC4xLDAuMiwwLjIsMC40LDAuNGMwLjIsMC4xLDAuMywwLjIsMC42LDAu
-        M2MwLjIsMC4xLDAuNSwwLjIsMC44LDAuM2MwLjQsMC4yLDAuNywwLjMsMSwwLjUgICBjMC4zLDAuMiww
-        LjYsMC40LDAuOCwwLjZjMC4yLDAuMiwwLjQsMC41LDAuNSwwLjhjMC4xLDAuMywwLjIsMC42LDAuMiwx
-        QzI0LjYsMjMuNywyNC41LDI0LjEsMjQuMywyNC41eiIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVu
-        IiAvPg0KICA8L2c+DQo8L3N2Zz4L
-</value>
-  </data>
-  <data name="barButtonItem11.Caption" xml:space="preserve">
-    <value>Çıkış</value>
-  </data>
-  <data name="barButtonItem11.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAAMCAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
-        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkNsZWFySGVh
-        ZGVyQW5kRm9vdGVyIj4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5SZWR7ZmlsbDojRDExQzFD
-        O30KPC9zdHlsZT4NCiAgPHBhdGggZD0iTTI3LDRINUM0LjUsNCw0LDQuNSw0LDV2MjJjMCwwLjUsMC41
-        LDEsMSwxaDIyYzAuNSwwLDEtMC41LDEtMVY1QzI4LDQuNSwyNy41LDQsMjcsNHogTTIyLDIwbC0yLDJs
-        LTQtNGwtNCw0ICBsLTItMmw0LTRsLTQtNGwyLTJsNCw0bDQtNGwyLDJsLTQsNEwyMiwyMHoiIGZpbGw9
-        IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQo8L3N2Zz4L
-</value>
-  </data>
   <data name="bar_Menu.Text" xml:space="preserve">
     <value>Main menu</value>
   </data>
@@ -2738,14 +1707,435 @@ Satış</value>
   <data name="&gt;&gt;barDockControl16.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
+  <data name="bar_Satis.Caption" xml:space="preserve">
+    <value>Satış</value>
+  </data>
+  <data name="bar_Satis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAABTBJREFUSEu1V2tQVGUYXupH/avpT9P0pwx3Ic2EQFAQG2lB1BGG3bNnd9ndc2W5
+        LCvgJo5AinelCSsYhHTUskDFRMdyUslQCssam8E0G0hJTUEMl+ty2d237zt85CqHi0DPzDPD+b7nfZ/v
+        cs67L4qpYrZBfDFcyDwQbLa1zTJYB+aa0pwLxOwTSg0/g0j+P8w12uJDmAzn7mMn3TfutIDH64Xb99rg
+        UM05CONWdoVy9jQinRhUOl5H/hwXKkp8NZS1dzbdvgNyaG1/AAutju5AWgwnIeNDRQl/KSnLy+RxTKAd
+        1h07V+/FZrWXGuDzb85KxoUHqsCLTgLj4pVrgBZ5E8n9hqLGgUor7gqgRCt5HBWzKOGFN4wpA263RzJa
+        9WE55O3aD5euNcHmvRXS2DAWpjh6VRpxDgkdiZlU8lx0nFpMpU7Yik7hLJmS4K8RgtDYEl8qNaJtmWPd
+        oHtoo7C2dC8Im4ukhRw8XQs1F38dmkCwbi/xBFDChsdz4CuUDJRaQUQPezCVlLDvdVpwddVGV8OF6COY
+        723UXWUcxlu+1NlNdxelOMDZP2SCjxy/C/ll+yGrqExaCIbLDaDL3wYr0s1tvvFmR9KteWbWlVOg2ygt
+        wj/O/oxKJ0QoKT4y1MRdPvXZcoALi0el+4doCGHSoeFOB3SgRXjQSWBz/CXYCksgbUcx9KPbaXYO4HcA
+        2s+qR+Q4X7kM3hYsP0sLCKCTlcj8BDqqrwJ0fIMt19AvCRtSRwQOc8MmA4g7SuFmN8A/LoD6q03Qh3bs
+        7B2E1u4B+LsHIHdPFdjy02Xj6w4uh0iGOyMtgMDPn7a+NlMnRKHj6fXWI+Gt/bLBmPdr1BCbaoOcsgr4
+        ra0fmjuRHC2muQug8YEHtlSehKjkTGj+OkY2vmr3Cphv5sqJt0Ixg7I+h16O79Ep/DjHwDuvHF8iG+jL
+        nyriQG8XYFHaasgu/hSKjtZIC1KvzANtZgac3rtMNg6zuCjRO4vmVxH7RxFqYrcX79R4JPGNEtkEw/zz
+        eCxsW68Fzm4AfboZLBlGKMjTwu9fjr2BNevpHvzlEctHEUhzwUtTLJ2SuOWYbAJfetB1tZ15B/6ojoXW
+        U2r0ksrrfFlZFn8d/44QyxHwCzGJXa3onuWCp4M56+hGRUHBU8RvJBZbrdWHPokfCmjcMiLBVIk+w8PE
+        Sh6rP9qTI64xu+SCp0rXeVRHTFwHsZJHwc59zwcZeZerLlo2yVSIC9mmrVQpsRodERxT/90XY1fFyfD+
+        t2qw5dKFxGZ0zNYnp+Zu1PXJJZkK8abmM9xJYjM6cG8QZuF6pKook2iyrCyPhyAD/zGxGRthFv76RKri
+        k/CD9zWDgTSfRSzGRqiJf1gVp4lZeXRngFZMJBZjQ6XhQ5aK5v6Ow+HQWTU9XJFq6kWd11vEYlz4JdqM
+        TUkrDd53cymvYy3lZTL1QNuMIGTrAY/JEc9hDdbimOFxS5bBHWmxNCso6mmSfwJAJRN3t6hX0MwzM/dM
+        dv1gQX6Cd6mY5FbzpsuolUvwZYSFuYDnsMacoXdHMowTx+K5QEpUv8Kyz5LMTwallo9jMume7uMRgNl+
+        NBLCTGw/blKJRGpY55lYF54b1rGZdN+bNLecSCYPlZZPytvwaF2IsVo6fP8Lwk2NOpnp8NXkoVqC+gwj
+        kUwegYnWlxZYWNcvR+Kkcoq7miiWbUFTD/t+dF0LWfbuYfRDhjVYi2NwLFFMDWyOMTEmmXEGJ3GeBJv5
+        pibDEECm/gMew3NYg7U4hkw9BoXiXyVrZpSVCdCNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bar_HesapBak.Caption" xml:space="preserve">
+    <value>Hesap
+Bak</value>
+  </data>
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="bar_HesapBak.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAANIDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuWWVsbG93
+        e2ZpbGw6I0ZGQjExNTt9CgkuQmx1ZXtmaWxsOiMxMTc3RDc7fQoJLlJlZHtmaWxsOiNEMTFDMUM7fQoJ
+        LldoaXRle2ZpbGw6I0ZGRkZGRjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5zdDB7ZmlsbDojNzI3
+        MjcyO30KCS5zdDF7b3BhY2l0eTowLjU7fQoJLnN0MntvcGFjaXR5OjAuNzU7fQo8L3N0eWxlPg0KICA8
+        ZyBpZD0iUmVmdW5kIj4NCiAgICA8cGF0aCBkPSJNMjIsMjZoNnYydjNjMCwwLjUtMC41LDEtMSwxSDNj
+        LTAuNSwwLTEtMC41LTEtMVY5YzAtMC41LDAuNS0xLDEtMWgxLjJsOC44LDguOEwyMS44LDhIMjdjMCww
+        LDEsMCwxLDF2NC45ICAgYzAsMCwwLDAuMS0wLjEsMC4xSDIyYy0zLjMsMC02LDIuNy02LDZTMTguNywy
+        NiwyMiwyNnogTTMwLDE3djZjMCwwLjUtMC41LDEtMSwxaC03Yy0yLjIsMC00LTEuOC00LTRzMS44LTQs
+        NC00aDcgICBDMjkuNSwxNiwzMCwxNi41LDMwLDE3eiBNMjQsMjBjMC0xLjEtMC45LTItMi0ycy0yLDAu
+        OS0yLDJjMCwxLjEsMC45LDIsMiwyUzI0LDIxLjEsMjQsMjB6IiBmaWxsPSIjRDExQzFDIiBjbGFzcz0i
+        UmVkIiAvPg0KICAgIDxwYXRoIGQ9Ik0xMiw2djJIN2w2LDZsNi02aC01VjZjMC0yLjIsMS44LTQsNC00
+        aDRWMGgtNEMxNC43LDAsMTIsMi43LDEyLDZ6IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4N
+        CiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
   <data name="barSubItem1.Caption" xml:space="preserve">
     <value>Masa İşlemleri</value>
+  </data>
+  <data name="barSubItem2.Caption" xml:space="preserve">
+    <value>Masa
+İşlem</value>
+  </data>
+  <data name="barSubItem2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAtJJREFUWEftVktrE1EUzsqFuHDrb3ApbmoS8/ax7LI7CepOaVe6Gxcz5+YxSWyF
+        YGkTarvoohULRoVSX3TVLhLcKFUEqaUgaBOl2IVkPOd6EmeaMb0T0xbEDz5y5zvnfHPunTt34vuPfxYD
+        hnHtjGFYRL+uX2f54IA31YamChaRxizvP2i2rZkfVgPayIOiRbQ3YG9sXx9LlwakPvt2Vsbomkv6hwAY
+        2/ZZ7sEGl/UPZFytl4hPq1uTWjdSLpdh58L4ZutMkjQOK8PLClAulzk6b5M0DntGt1rXmNsKOKjrw5yq
+        BKxJ8rADf4zZd6md9h0b0PUTAwARNLkY0rTjRBqTRjFp1AvwBo53tIO4An6AK37DqOMR+xy1CnKTWSGN
+        Y5fZ0htohkP4vt5cGneQtNbs5QrN51dwfzxDrians4+S0+ZjGpNGsVauZwQEdN8D3vj1pKYdYWs1UCHt
+        fGJtqzzIck8gL9wbx/hSDfYGkDu1ennC7fBQYT8a+Cv22kCTCvvFU5p2lK3VEEzBzouNCTx+4QdLnhFO
+        wzZ54OvaZEkd4QzUF9buWqGU8/yn84FeLTfuPh2jWfGZPILC+M7SXt+G319DLN6cqhUtbOQTSxKUeGOh
+        sObaAMY4TSKRE+vkEUrDF5Z+7a1GaaPaKJ9mqQ1HfcwU70aX71jxrHjPkoQ0qJeayIrbbuc0iXMF8Zo8
+        oln4yFKr3pWOeuy+duvJbStuwiuWJChJXxx15e4GLhTECnnEsuINS7K+GzkNu8+nXg7P561EDpZZkqAk
+        t+UnOgwQ5/NikTxwNVdZkvU87IAjFs/Bw0v3TCthQoUlCWUDBD6COfKI5sQSS+r1MRNmBotp7B5mWJLw
+        0gA+xnHyiGTEfZbU6yMZGItmwIqkYIwlCS8NhNNGijzOpmGSJfV6/JaPkEC/LEmg9oGHHcDcdR5KBIW4
+        Kj0A2p9kvPb+z+hg4fP9BJ0SlnASZtoJAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bar_MasaTransfer.Caption" xml:space="preserve">
+    <value>Masa Transfer</value>
+  </data>
+  <data name="bar_MasaTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAwZJREFUWEfdl91OE1EQxwuIFxo/00isu+dztpVUEW0iELkoRFEvMEbEqBCjJkZs
+        lETkS7zQxGfwwkS58hF8Cp/K/5Sh6Xa3tCw0Jv6SyZ4553R3dmbO7DTnnFNe21WvzPJ+xSmzWXTuZu4g
+        4EavZZgJMlQtWntd1P3Dby/DTHit75LW10SNUSqVTsiwPb0yAPPTxUIxL2p7emGA03qOjBkXdW8O04BK
+        pTIYGfMdybnhlX3WKqTUfMIrh+yBvmFD41brLe992CrDWp/3Sq0XCoVjsv/QDaijlDqDua1qrnpEphqQ
+        so984EnU3hiwC9cYGTZIGEDGbXDssgpZOwu3VuR2HUnzwG8Uo/Ws4rT56Y15LLfrSGoI+A04S13gLst0
+        1+wVgjSSBlj7KjLRmLV2hogmcB0RuQJ5uCuI56TMx8RpN0chebldRxIGMN74O1iYbRac5c8Uum9RaL+y
+        kLa/WveUlJ3P5/Ody20TKFC305KzlYFIm+3I2lUUlmUW/HCb31jWewtK6VODxHKhqzXEuBfIk3ew/pRs
+        6x2kzBcK7b1WlyNf1igMu453ZlA2z7UmGwvevihb/kNQ0WZk+G9Aln/EpW9Hy07mJD2oAT40950xmyjL
+        z1EZa1rrKVnqjgMYMIBy/raktcW4nyd2Psd0lcs0jvNFXKdRZU/yWluyGoDjuYgHOlFj4OGjqCkPUMhG
+        I+VR0KIxWUqSZkBaQ9EM3Gy5/xO1Iy40S3SBAlHjpBnAbkM8J0RNwP8JrLK3RO0Ih4Mc1SRccdCYvMGG
+        06I24PixG8vl8lGZqoMGs8yxr+QqgzLVFS4IIiTrE07WmIf54RHXenS0rUKh/oHvwB+0lpd4L39OYVSt
+        /sOMoNpOtfPeQLM4pSatUovinXqIDI5c4pu+f/rhiSUZp8N/rZAbVVEb8By6qBuiZgLfFg0vLoiaDjed
+        MowxMjR0HGFZSU2mLqg/PNS1tieiG4IgOMvJRNq9hEfe47SsIGE/1HtMbdfqDSvnD04X1raw9okF9QCN
+        rF7YeXgu9xdYC8kHVXz+FQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bar_MasaTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_MalzemeTransfer.Caption" xml:space="preserve">
+    <value>Ürün Transfer</value>
+  </data>
+  <data name="bar_MalzemeTransfer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAWtJREFUWEft1r8rB3Ecx/HzqzAo5VcxKCklhcXAYFEWE6vJH8CiTEoZGfxYDEab
+        HyW7zSiJTSmlGAwoyoDn65urT9fp+777XHfLPeuRvurzuTf3vR9BWcYN/P0srHfsoavyqYDe8AMNsopm
+        pKoPs5hLSAfWAKFHLKAW5ibwBXcjX9eYhqlNxG3i6wNTqNoW4jbwcYpemNqGu3gDS0ZPcNfeYwaJig4w
+        Cms30JpPrKEJiduBO8AIrF3hDLqKUrcLd4BhWEvy3/q36JdwELk2Dp1DHfwCdci9Towhi4PrFO5jHalv
+        zWmrxzPC06mbXK61ITy4nMCrbugqsdYOd4BjpKoBy9DT7kW/MNYB7wEmcYtwk1dY05fZHeAI5vRWcwB3
+        A/nGnZGeBe7aQ1RNl94i9Je6i7NgGmAIl4jbwJfeF03VYB4PiNtIj92kztGDRDViBdHTkfsdTTcUPabD
+        d8UWFFI/dCm1Vj6VlXkXBL/ZAuoySZSYlAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bar_MalzemeTransfer.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_MasaIslem.Caption" xml:space="preserve">
+    <value>Masa İşlemleri</value>
+  </data>
+  <data name="bar_MasaIslem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAmVJREFUWEfNV02oTVEUPoQoE/Liueestc45+1w6I7rFgFwDA2XACBmYKflJYWT6
+        TMhIZsYyMVDPgKH0MiCUZKSUmFAUIu/5+da+6/Vu17nPfa+zT776uuess9Ze3/5Ze+8b1YSljuValtB3
+        /E6VY+Vqs4dFe7y9ziVyJk/oGRL/nmUust9cwqEsyxVZIg/7E8+Rt5pbWBDRGoh40pf8F0bkY85ypxt1
+        l5lbWPhpYH7uBRDddSJdrIUfsF01l/BI03R9nshLzP0hfcfzURWUk5z2Dk1gU5JsZOaV9qoibkDEjHNu
+        zEzNIY7jVS6h147kppmaRc58AYvxm4iwmZrDZqLxjPkzREyYqRl0Op3lWPknUJZPeyXJ1wuizD6Hhc55
+        RnS/l3iOGcuXQmSXuc0PDNluHTYsnIsLJeImB5PPEpvSuwHfib9EZa2sgPPPweBQxBqZbhOllt73fq9+
+        0M1E93HXcnEIFsxbMC0vNFdB6R5L3yeA+ayZRgLmfUdOdDKn9NT8lGNlHK/VGD09hwuAs5lGAhq7onEj
+        csrHMB/X91oFoIfnsyTbWUVtG8P+Sk9JHxNCAM6ADWaqBE7J29iaP/nnICPAfBk8UEmcjBiBt0FHYBRi
+        wd7zMXUK0LLSO4AStX14GPWOqLulxtQqYDGoVQDiLqGH04id+Qe/wvecxoRZhHodY7lVRX9PxDYPoe99
+        TAgBRRy3zFQJtD8ZtAzRy9JMVVjij+qQAvxfMr0DVhB7wAfvw/zGx9QsAAcLP+pRHg8nP8DtaJ+PqVPA
+        YvB/CsAVaTuMqFc+YqZgQMke9ALSdFsURdEf70OJBobtuaQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bar_MasaIslem.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_KisiSayisi.Caption" xml:space="preserve">
+    <value>Kişi Sayısı Değiştir</value>
+  </data>
+  <data name="bar_KisiSayisi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAVJJREFUWEft1s0qhGEYh/Gx8FlKySkgkhOQHcXChiykoUiilI84ATshKRSFfGRh
+        L3YWbKTYOAERib0V1/+5Wcz0jDLNPav3ql/dT7N4Z96vZ1JJSUl5VIJx3OLzh+Yx6DP3DnCJNpShHO24
+        wh5c68YddNDsKvCAzrByahOTNkabwbqNPh1hwMZow9i10ac1TNkYbQ5LNvo0gS0bo+1j1EafdAA9grma
+        x7aNPi1g0cZoy9CN6FYTHtEYVpm14BkNYeXYDvTWy04354aNvo3g2MaMTpG20bcavKI+rCxdmhdUh1UR
+        0q/ttTGkl1PsrLh1gn4bQ3oD6hEtSlW4QUdYWT24RmVYFTjtcn1YxQU+oPd9KX7TtnyId5xjBbpEsV3z
+        Xw1Bz/YZZqHtuBa5qkMXtCfoyz5hEHk1jXs0h1V+tUL/Ef7awHKm0/lVIG9ISkqKlEp9A1bcR7mllkYX
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bar_KisiSayisi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_Yenile.Caption" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="bar_Yenile.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        qo7/g9DT+w8vuPxsi/hIcQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bar_Rapor.Caption" xml:space="preserve">
+    <value>Rapor</value>
+  </data>
+  <data name="bar_Rapor.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAABkEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkdyZWVue2ZpbGw6IzAzOUMyMzt9CgkuQmxhY2t7
+        ZmlsbDojNzI3MjcyO30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5ZZWxsb3d7ZmlsbDojRkZCMTE1O30K
+        CS5CbHVle2ZpbGw6IzExNzdENzt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
+        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQo8L3N0eWxlPg0KICA8ZyBpZD0iRGF0YUxhYmVscyI+DQog
+        ICAgPHBhdGggZD0iTTEwLjMsNS4ybC05LjksOS45bDkuOSw5LjljMi4zLTIuNiwzLjctNi4xLDMuNy05
+        LjlTMTIuNiw3LjksMTAuMyw1LjJ6IiBmaWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCiAgICA8
+        cGF0aCBkPSJNMCwzMGMzLjQtMC4yLDYuNS0xLjYsOC45LTMuN0wwLDE3LjVWMzB6IiBmaWxsPSIjRkZC
+        MTE1IiBjbGFzcz0iWWVsbG93IiAvPg0KICAgIDxwYXRoIGQ9Ik0wLDAuMXYxMi42bDguOS04LjlDNi40
+        LDEuNywzLjQsMC40LDAsMC4xeiIgZmlsbD0iI0QxMUMxQyIgY2xhc3M9IlJlZCIgLz4NCiAgICA8ZyBv
+        cGFjaXR5PSIwLjUiIGNsYXNzPSJzdDAiPg0KICAgICAgPHBhdGggZD0iTTIwLDE2aC00di0yaDRWMTZ6
+        IE0yMCwyaC04djJoOFYyeiBNMjAsMjZoLTh2Mmg4VjI2eiIgZmlsbD0iIzcyNzI3MiIgb3BhY2l0eT0i
+        MC41IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPC9nPg0KICAgIDxwYXRoIGQ9Ik0zMCw2aC04VjBoOFY2
+        eiBNMzAsMTJoLTh2Nmg4VjEyeiBNMzAsMjRoLTh2Nmg4VjI0eiIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9
+        IkdyZWVuIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="bar_Relogin.Caption" xml:space="preserve">
+    <value>Kul.
+Çıkış</value>
+  </data>
+  <data name="bar_Relogin.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAiJJREFUWEftlUtLG1EYhrOw6/pDXHTdgtBVF+Jl1QpVpAtFkIBUseLC2FKobb2g
+        Thah1dRkxtqZXJpGk0kmYSSTS6UUqgiCpQtvtd6g/QVfc6bnzGQuTBIYpYt54YEw8833vHMSiMuJEyf6
+        iPn8raxUvJ/JlTrtRMiXHqDdWGOejFScy0oluEoyUmkG67T59+bmD9mNWCg0Ya0aXsz1koHt3T34sX9k
+        CZqpXFoPfDb3CGvVhJLpGTKABBe//8gcnJzCJ2FDBn0m17/vHyoLI4k0rH6Ma4gmBOW+nkhSmMRaNdx6
+        ap4MkAKC9BlutzyEpuYOmTstXZDNbxoKUIvvwDM1rYHyLyv39YQTwhTWqtEXQG+LhESulGjthuPTc02B
+        eqmpwJqQM8gJSbGgKbDMhuVTsCLARuwrwG8UNQXQcnTkVgS4Ogsc/jqTj1svb27vgZ9n1/AVnJxfwGPP
+        a0OB4afT5XuXVX+EetApkPmqBb5824G2brdBTmjvccNmeYbMR5Np+BCLW4JmyHzVAgOjz03FlbjHXigL
+        66Vqgb6hCVNpJf0jzwyLa8UpYFogxKeVv+KX1KIssOKVd8mwuFbCayljAToWe2I2fBUEo/FBrFWzwDD3
+        uETK9AE74dZ58NL0XaxV4/P5biwE6a23HAfBSAwCUXtBO9+wIfAyzFePKDZgrTazfn8jRa94vMGV9xTD
+        rNoJ2lmWj/tY9ibWOXHyP8Tl+guVa50uq94hcgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="barButtonItem11.Caption" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="barButtonItem11.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAAMCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkNsZWFySGVh
+        ZGVyQW5kRm9vdGVyIj4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5SZWR7ZmlsbDojRDExQzFD
+        O30KPC9zdHlsZT4NCiAgPHBhdGggZD0iTTI3LDRINUM0LjUsNCw0LDQuNSw0LDV2MjJjMCwwLjUsMC41
+        LDEsMSwxaDIyYzAuNSwwLDEtMC41LDEtMVY1QzI4LDQuNSwyNy41LDQsMjcsNHogTTIyLDIwbC0yLDJs
+        LTQtNGwtNCw0ICBsLTItMmw0LTRsLTQtNGwyLTJsNCw0bDQtNGwyLDJsLTQsNEwyMiwyMHoiIGZpbGw9
+        IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="bar_Direksatis.Caption" xml:space="preserve">
+    <value>Direk
+Satış</value>
+  </data>
+  <data name="bar_Direksatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAtJJREFUWEftlktoE1EUhlPQ+kB8gIiCZCaZaWOSiklm5k5ek0yKWosbS5BCsTbQ
+        hQt34lLwBbVu3Imi4soXqLS4quBOXSldCIWCBMRHqVAUKqJY9HjP9KbNxJuZRJLQRT/4mcydc+9/5uQ+
+        xrPKikAShJwsCCd9Pl+ANbUWSRA/UQHVb79XHGHNrQMrIHnFcXpdsBIRxX72qLVIgu8MJtAVDEHO7G6q
+        konUDLNdRpKkHZhAQO7gdmqkshnzD7O1QxOYk0UfmNkct2OjlE6mvjJLO3QePMcqpJNpbsdGSdfjr5ml
+        HZrATUyAqITbEdVz0ITLF4MwXFiOGToWh9ELQVuck4hCrjFLO3Q/OIUJRPdFuR1RaA7zHpgtrrfuC4M6
+        zM+ssdoGB+L/xPOkRCJHmKUdWoFeTMBpJeCbo/nY/d1wNJ+Cz/Q3mr98th26c/w+5cL5JcvyOmZpR6Rg
+        ArWshMO9GSi+2WSZT73aDId6TG5cpej8+sbsuLTRBL67rYQD+02YfLHNMv8wvREKx3W4MhqAfJ/75I2T
+        +BTz4kMTmMQqOK2Ee7cFy/zL+3YY6E/AxPgu6x6vvPhyaQq5w6z4yIJ4FxNwWgm3rvph5u0GODGsWfeX
+        zodg7l27da2MrRSJkCFmxae0JTuthP8V/q2KomxhVnz8gpDHBJpxJhgp4wezqY7s9YYwgWacCQk9UWQ2
+        1aElWotHc6PPBHoAgRqLnWU2ztAKTGMV6M4YZU2thZqPYQL0Q+WBLIrn9obDN4iiTajR2ONOv38E26qp
+        Wiytao4N785iB+szDWKRmK2URjoDnVKH9axSLrEf2fDu0B15K12Op8N7gk/LBywpSRI/S29WkltsXRUo
+        QVTtCW9Q3hdNPbE1o6rkOm9QI238YiFL1BNbM1pY25kxsguVg+ox7RELWaKe2LqIdKlmMpGcxVLi2+gK
+        eUib2xaf2qkndpUVgMfzF6yqYhajQhNHAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="barButtonItem2.Caption" xml:space="preserve">
     <value>Paket CallCenter</value>
   </data>
   <data name="barButtonItem2.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="bar_PaketSatis.Caption" xml:space="preserve">
+    <value>Paket
+ Satış</value>
+  </data>
+  <data name="bar_PaketSatis.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKoFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5ZZWxsb3d7
+        ZmlsbDojRkZCMTE1O30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5HcmVlbntmaWxsOiMwMzlDMjM7fQoJ
+        LkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
+        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntkaXNwbGF5Om5vbmU7fQoJLnN0M3tkaXNwbGF5
+        OmlubGluZTtmaWxsOiNGRkIxMTU7fQoJLnN0NHtkaXNwbGF5OmlubGluZTt9Cgkuc3Q1e2Rpc3BsYXk6
+        aW5saW5lO29wYWNpdHk6MC43NTt9Cgkuc3Q2e2Rpc3BsYXk6aW5saW5lO29wYWNpdHk6MC41O30KCS5z
+        dDd7ZGlzcGxheTppbmxpbmU7ZmlsbDojMDM5QzIzO30KCS5zdDh7ZGlzcGxheTppbmxpbmU7ZmlsbDoj
+        RDExQzFDO30KCS5zdDl7ZGlzcGxheTppbmxpbmU7ZmlsbDojMTE3N0Q3O30KCS5zdDEwe2Rpc3BsYXk6
+        aW5saW5lO2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+DQogIDxnIGlkPSJTYWxlIj4NCiAgICA8cGF0aCBk
+        PSJNNCwxOFY4SDBWNmg2djEwaDguNWMtMC41LDAuNi0wLjksMS4zLTEuMywySDR6IE05LDIwYy0xLjcs
+        MC0zLDEuMy0zLDNzMS4zLDMsMywzczMtMS4zLDMtM1MxMC43LDIwLDksMjB6IiBmaWxsPSIjNzI3Mjcy
+        IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPHBhdGggZD0iTTIzLDE0Yy01LDAtOSw0LTksOWMwLDUsNCw5
+        LDksOWM1LDAsOS00LDktOUMzMiwxOCwyOCwxNCwyMywxNHogTTIzLDIyYzEuNywwLDMsMS4zLDMsMyAg
+        IGMwLDEuMy0wLjgsMi40LTIsMi44VjI5aC0ydi0xLjJjLTEuMi0wLjQtMi0xLjUtMi0yLjhoMmMwLDAu
+        NiwwLjQsMSwxLDFjMC42LDAsMS0wLjQsMS0xcy0wLjQtMS0xLTFjLTEuNywwLTMtMS4zLTMtMyAgIGMw
+        LTEuMywwLjgtMi40LDItMi44VjE3aDJ2MS4yYzEuMiwwLjQsMiwxLjUsMiwyLjhoLTJjMC0wLjYtMC40
+        LTEtMS0xYy0wLjYsMC0xLDAuNC0xLDFTMjIuNCwyMiwyMywyMnoiIGZpbGw9IiMwMzlDMjMiIGNsYXNz
+        PSJHcmVlbiIgLz4NCiAgICA8cGF0aCBkPSJNMjMsMTJjMC4zLDAsMC43LDAsMSwwLjFWM2MwLTAuNS0w
+        LjQtMS0xLTFIOUM4LjQsMiw4LDIuNSw4LDN2MTBjMCwwLjUsMC40LDEsMSwxaDcuNyAgIEMxOC41LDEy
+        LjcsMjAuNiwxMiwyMywxMnoiIGZpbGw9IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDwvZz4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="bar_OzelMasa.Caption" xml:space="preserve">
+    <value>Özel
+Masa</value>
+  </data>
+  <data name="bar_OzelMasa.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAQRJREFUWEdjGAX4wOSiBr9JhXW+UC4GICS/tLo4FoShXNLArt5Mv3jfOf9BGMSG
+        CsMBIflVTaX2MHkQGypMPJhXVdUT5zP3PwiD2FBhOKBUniCg1AJC8ljBs2rX2GcVnj0gfDA//nSrd9N/
+        EAaxYeIUywPtgFqHCp43edpf9vb+f9mLxhhoB8guqLUIAHIdVg00wCC7oNYiwKgDRh0w4A64Nt2z83Cv
+        z39S8cMCD5Lxqy73Kqi1CLDtqF9P6/Gw/6Ti//udyMDOIVBrEWDUAaMOGHXAqANGHTDqgF2HfWOxWUAI
+        Y7cAL/73f5+jMdRaVLDvmK89KCRIwSDfkIRxWT5CAQMDAEERLIkUVTE9AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bar_OdaKontrol.Caption" xml:space="preserve">
+    <value>Oda
+Kontrol</value>
+  </data>
+  <data name="bar_OdaKontrol.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAN5JREFUSEvtlkEKwkAMRQsiioKgoCsP67UEV4IICurChRvdewp9wWYIzXRaaQUR
+        Hzw6+Q3JrEozWOGjZWVmINbQhgEXNOS/oJJaCzTT3NYxLS4ra7LPd3DzXACaaW7rmBaXxZqa8B0LNNPc
+        1jEtLitrsk+hi4PXMYmb5wLQTPMpnvGOfbTvtUdxWazJMsYTSs8BO5giuUBud0X53A5xhHuU90ecYBXJ
+        BT28odRr3ORnubkMX+R1UYvLisEcL6i5Dq9LcZ4PYIY73GLq5qrFZbGmJvzwgrYNfOK3ZYmQZU+3h/Lm
+        uG6mDgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnHesapDokum.Caption" xml:space="preserve">
+    <value>Hesap</value>
+  </data>
+  <data name="btnMasaKilitAc.Caption" xml:space="preserve">
+    <value>Masa Kilit Aç</value>
+  </data>
+  <data name="btnMasaKilitAc.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="btnParcaliMasa.Caption" xml:space="preserve">
+    <value>Parçalı Masa</value>
+  </data>
+  <data name="btnParcaliMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="btnParcaliOdeme.Caption" xml:space="preserve">
+    <value>PARÇALI 
+ÖDEME</value>
+  </data>
+  <data name="btnParcaliOdeme.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v19.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE5LjEsIFZlcnNpb249MTkuMS4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAJcHAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuR3JlZW57
+        ZmlsbDojMDM5QzIzO30KCS5ZZWxsb3d7ZmlsbDojRkZCMTE1O30KCS5CbHVle2ZpbGw6IzExNzdENzt9
+        CgkuUmVke2ZpbGw6I0QxMUMxQzt9Cjwvc3R5bGU+DQogIDxnIGlkPSJDdXJyZW5jeUV4Y2hhbmdlIj4N
+        CiAgICA8cGF0aCBkPSJNMTEsMmMtNSwwLTksNC05LDljMCw1LDQsOSw5LDljNSwwLDktNCw5LTlDMjAs
+        NiwxNiwyLDExLDJ6IE0xNSw4LjVjLTAuNy0wLjQtMS41LTAuNi0yLjMtMC42ICAgYy0xLDAtMS43LDAu
+        My0yLjMsMC45QzEwLDkuMSw5LjcsOS41LDkuNiwxMEgxM3YySDkuNmMwLjEsMC41LDAuNCwwLjksMC43
+        LDEuM2MwLjYsMC42LDEuMywwLjgsMi4zLDAuOGMwLjksMCwxLjctMC4yLDIuNS0wLjZ2MiAgIGMtMC43
+        LDAuMy0xLjcsMC41LTIuOSwwLjVjLTEuNiwwLTIuOC0wLjQtMy43LTEuM0M3LjYsMTQsNy4yLDEzLjEs
+        Ny4xLDEySDZ2LTJoMS4xYzAuMi0xLDAuNy0xLjksMS40LTIuNmMxLTEsMi4zLTEuNCwzLjktMS40ICAg
+        YzEsMCwxLjgsMC4xLDIuNSwwLjRWOC41eiIgZmlsbD0iI0ZGQjExNSIgY2xhc3M9IlllbGxvdyIgLz4N
+        CiAgICA8cGF0aCBkPSJNMjEsMTJjLTUsMC05LDQtOSw5YzAsNSw0LDksOSw5YzUsMCw5LTQsOS05QzMw
+        LDE2LDI2LDEyLDIxLDEyeiBNMjQuMywyNC41Yy0wLjIsMC40LTAuNSwwLjctMC44LDAuOSAgIGMtMC40
+        LDAuMi0wLjgsMC40LTEuMiwwLjVjLTAuMSwwLTAuMiwwLTAuMywwVjI3aC0ydi0xYy0wLjIsMC0wLjUt
+        MC4xLTAuNy0wLjFjLTAuNS0wLjEtMC45LTAuMi0xLjMtMC40di0yLjIgICBjMC40LDAuMywwLjksMC42
+        LDEuMywwLjdjMC41LDAuMiwwLjksMC4yLDEuNCwwLjJjMC4zLDAsMC41LDAsMC43LTAuMWMwLjIsMCww
+        LjQtMC4xLDAuNS0wLjJjMC4xLTAuMSwwLjItMC4yLDAuMy0wLjMgICBjMC4xLTAuMSwwLjEtMC4yLDAu
+        MS0wLjRjMC0wLjItMC4xLTAuNC0wLjItMC41Yy0wLjEtMC4xLTAuMy0wLjMtMC40LTAuNGMtMC4yLTAu
+        MS0wLjQtMC4yLTAuNy0wLjRjLTAuMy0wLjEtMC41LTAuMi0wLjgtMC40ICAgYy0wLjgtMC4zLTEuMy0w
+        LjctMS43LTEuMmMtMC40LTAuNS0wLjYtMS0wLjYtMS42YzAtMC41LDAuMS0wLjksMC4zLTEuM2MwLjIt
+        MC40LDAuNS0wLjcsMC44LTAuOWMwLjMtMC4yLDAuNi0wLjMsMC45LTAuNFYxNWgydjEgICBjMC40LDAs
+        MC44LDAsMS4xLDAuMWMwLjQsMC4xLDAuNSwwLjEsMC45LDAuMnYyYy0wLjItMC4xLTAuMS0wLjEtMC4z
+        LTAuMmMtMC4yLTAuMS0wLjQtMC4yLTAuNi0wLjJjLTAuMi0wLjEtMC40LTAuMS0wLjYtMC4xICAgYy0w
+        LjIsMC0wLjQsMC0wLjYsMGMtMC4yLDAtMC41LDAtMC43LDAuMWMtMC4yLDAtMC40LDAuMS0wLjUsMC4y
+        Yy0wLjEsMC4xLTAuMiwwLjItMC4zLDAuM2MtMC4xLDAuMS0wLjEsMC4zLTAuMSwwLjQgICBjMCwwLjIs
+        MCwwLjMsMC4xLDAuNGMwLjEsMC4xLDAuMiwwLjIsMC40LDAuNGMwLjIsMC4xLDAuMywwLjIsMC42LDAu
+        M2MwLjIsMC4xLDAuNSwwLjIsMC44LDAuM2MwLjQsMC4yLDAuNywwLjMsMSwwLjUgICBjMC4zLDAuMiww
+        LjYsMC40LDAuOCwwLjZjMC4yLDAuMiwwLjQsMC41LDAuNSwwLjhjMC4xLDAuMywwLjIsMC42LDAuMiwx
+        QzI0LjYsMjMuNywyNC41LDI0LjEsMjQuMywyNC41eiIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVu
+        IiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
   </data>
   <data name="barDockControl15.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 753</value>
@@ -3158,6 +2548,69 @@ Satış</value>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="bartxt_Kul.Caption" xml:space="preserve">
+    <value>Kullanıcı : </value>
+  </data>
+  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_Dep.Caption" xml:space="preserve">
+    <value>Departman : </value>
+  </data>
+  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="barspn_Refresh.Caption" xml:space="preserve">
+    <value>Kalan Süre : </value>
+  </data>
+  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barspn_Refresh.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
+    <value>Boş Masa :</value>
+  </data>
+  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_BosMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
+    <value>Dolu Masa : </value>
+  </data>
+  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_DoluMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_FisNo.Caption" xml:space="preserve">
+    <value>Fis No : </value>
+  </data>
+  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="barStaticItem1.Caption" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="repositoryItemTextEdit5.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barStaticItem2.Caption" xml:space="preserve">
+    <value>Kuver Tutari :</value>
+  </data>
+  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -3174,6 +2627,769 @@ Satış</value>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>131, 9</value>
   </metadata>
+  <data name="gridControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 306</value>
+  </data>
+  <data name="gridView2.Appearance.FooterPanel.BackColor2" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="gridView2.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="gridView2.AppearancePrint.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>Urun</value>
+  </data>
+  <data name="gridColumn3.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Count</value>
+  </data>
+  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn3.Width" type="System.Int32, mscorlib">
+    <value>255</value>
+  </data>
+  <data name="gridColumn9.Caption" xml:space="preserve">
+    <value>Personel</value>
+  </data>
+  <data name="gridColumn9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn9.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn9.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="gridColumn4.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn4.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="gridColumn5.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="gridColumn5.Caption" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="gridColumn6.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn6.Caption" xml:space="preserve">
+    <value>  Tutar  </value>
+  </data>
+  <data name="gridColumn6.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn6.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn6.Summary2" xml:space="preserve">
+    <value>      {0:N2}</value>
+  </data>
+  <data name="gridColumn6.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="gridColumn7.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn7.Caption" xml:space="preserve">
+    <value>D.Tutar</value>
+  </data>
+  <data name="gridColumn7.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn7.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn7.Summary2" xml:space="preserve">
+    <value>{0:N2}</value>
+  </data>
+  <data name="gridColumn7.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="gridView2.ViewCaption" xml:space="preserve">
+    <value>Satılan Ürünler</value>
+  </data>
+  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 340</value>
+  </data>
+  <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
+    <value>gridControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 29</value>
+  </data>
+  <data name="gridColumn1.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="gridColumn1.Caption" xml:space="preserve">
+    <value>Konum Kod</value>
+  </data>
+  <data name="gridColumn2.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>Konum Ad</value>
+  </data>
+  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 277</value>
+  </data>
+  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Name" xml:space="preserve">
+    <value>btnFilterClear</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Name" xml:space="preserve">
+    <value>txt_Filtre</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 27</value>
+  </data>
+  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnFilterClear.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btnFilterClear.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
+        bGUAQ2xlYXIgRmlsdGVyO0ZpbHRlcjtSZW1vdmUgRmlsdGVyO0NsZWFyKfWMAgAAAzlJREFUOE+NkmtI
+        01EYh09YfepCbFJWs9JmEa7bVrpUyCLSsgSjq2PShSwrolpIWslyc1mhdtvSTFvYnF0gtWWolSlqTpNW
+        uS7qTLFpXv5Lc9Np+ev8oyKpD73wwPnw/p5z3nMOoeVyLVI0yxDtd7IwNuBxYYx/3aPYABTHBOBhtF/d
+        g6PiJ/cO+cZpti/ks72UUQDIL0iebNkR42WJs/PlLfR31GKwpwFD9hbKBwz1muFoK0VHTToqkzc6b+1b
+        ImMlIwRFMf59g7Y6ND68isozu5AdxEHOmkm4G8pF7qYpMF3ZjY+lqXB2lcNw0MdGBWNHCPIPifOspQoM
+        dpfhW78VX+nuXx1NFAs9xRv0NhSgrSQZDTop7uwR5f8lyN4riqrVbEZ/cyoVNIEaYG86i47ydbDoQlAh
+        E6DmpBAV8cuREbFgPxWMHiHYtHQqx3BY3N757BScnwqppAV2SwraS9aiteAYPuSdQWtRCkx6Vc9msYfr
+        X5fIGtOk86VlyiAw1Qo4O8rQ+z4JzAs5PlVeQ3nkFuT7+tD5w8/T3jH62XMEFIvO0+viTQ8v9lXIKMpY
+        9VbvnYXRAUNvb0aisyoO3aZLeBwRhvfp6fjyzgxDcIhNO4u/4f7qNUxPnQlmzWVcnzE7k9zbI/wtkYfw
+        g3XbPMAYo9FVlYIcoRC2Aj0GirNgf2VE8fYdw32mSgwU3QBj0CGN59lMnp1bT2oS/X9JJujCPdBnTgZT
+        o0ZZ0jFcFS22dWtVcORpMPDiKRy5anRlKHFl0UJGzpkiIKXKIGJU+pBqpS8rmZAt8YSj5Tba8qV4npWA
+        BDd3yf2glcM91+PRq1Xgc+Yp5K4KHL7gNjPsvNtMQh6dWEGq5EJilItYwcScCD7s1qewmTJRceE4spb5
+        29q1SWiLk+JjbDisLJp4ZAiXdJ+bPGMeKTji95MfY4yja+gl3qi9oUKq9yI0q5WwHg+H5UAo9KIFw41R
+        IWiVbURjggyJru71bOjPGk0ZT5nEonLlaUtCA2HesRppXnOZ01xeWCrfi3ktCURxsBgqzvT03x/iXyRy
+        eS40pFZxePVKrrtAyeURBZcnUHCm11PU8ZxpLv8M/j8g3wGtek8hsHHK3gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnFilterClear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 2</value>
+  </data>
+  <data name="btnFilterClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 23</value>
+  </data>
+  <data name="btnFilterClear.TabIndex" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Name" xml:space="preserve">
+    <value>btnFilterClear</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_Filtre.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="txt_Filtre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="txt_Filtre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="txt_Filtre.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Masa Adını Giriniz...</value>
+  </data>
+  <data name="txt_Filtre.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_Filtre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 22</value>
+  </data>
+  <data name="txt_Filtre.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Name" xml:space="preserve">
+    <value>txt_Filtre</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SplitBol.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_SplitBol.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="btn_SplitBol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>619, 2</value>
+  </data>
+  <data name="btn_SplitBol.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="btn_SplitBol.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 32</value>
+  </data>
+  <data name="btn_SplitBol.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btn_SplitBol.Text" xml:space="preserve">
+    <value>Ayır</value>
+  </data>
+  <data name="&gt;&gt;btn_SplitBol.Name" xml:space="preserve">
+    <value>btn_SplitBol</value>
+  </data>
+  <data name="&gt;&gt;btn_SplitBol.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_SplitBol.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;btn_SplitBol.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbtn_9.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 2</value>
+  </data>
+  <data name="cbtn_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_9.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="cbtn_9.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cbtn_9.Name" xml:space="preserve">
+    <value>cbtn_9</value>
+  </data>
+  <data name="&gt;&gt;cbtn_9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_9.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbtn_8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 2</value>
+  </data>
+  <data name="cbtn_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_8.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cbtn_8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbtn_8.Name" xml:space="preserve">
+    <value>cbtn_8</value>
+  </data>
+  <data name="&gt;&gt;cbtn_8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_8.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbtn_7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 2</value>
+  </data>
+  <data name="cbtn_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_7.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="cbtn_7.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbtn_7.Name" xml:space="preserve">
+    <value>cbtn_7</value>
+  </data>
+  <data name="&gt;&gt;cbtn_7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_7.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbtn_6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 2</value>
+  </data>
+  <data name="cbtn_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cbtn_6.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cbtn_6.Name" xml:space="preserve">
+    <value>cbtn_6</value>
+  </data>
+  <data name="&gt;&gt;cbtn_6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_6.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cbtn_5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 2</value>
+  </data>
+  <data name="cbtn_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="cbtn_5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbtn_5.Name" xml:space="preserve">
+    <value>cbtn_5</value>
+  </data>
+  <data name="&gt;&gt;cbtn_5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_5.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbtn_4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 2</value>
+  </data>
+  <data name="cbtn_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cbtn_4.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbtn_4.Name" xml:space="preserve">
+    <value>cbtn_4</value>
+  </data>
+  <data name="&gt;&gt;cbtn_4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_4.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbtn_3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 2</value>
+  </data>
+  <data name="cbtn_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cbtn_3.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_3.Name" xml:space="preserve">
+    <value>cbtn_3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_3.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbtn_2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 2</value>
+  </data>
+  <data name="cbtn_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="cbtn_2.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbtn_2.Name" xml:space="preserve">
+    <value>cbtn_2</value>
+  </data>
+  <data name="&gt;&gt;cbtn_2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_2.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbtn_1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 2</value>
+  </data>
+  <data name="cbtn_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="cbtn_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 32</value>
+  </data>
+  <data name="cbtn_1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cbtn_1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbtn_1.Name" xml:space="preserve">
+    <value>cbtn_1</value>
+  </data>
+  <data name="&gt;&gt;cbtn_1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_1.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cbtn_0.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="cbtn_0.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbtn_0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="cbtn_0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 32</value>
+  </data>
+  <data name="cbtn_0.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbtn_0.Text" xml:space="preserve">
+    <value>Tümü</value>
+  </data>
+  <data name="&gt;&gt;cbtn_0.Name" xml:space="preserve">
+    <value>cbtn_0</value>
+  </data>
+  <data name="&gt;&gt;cbtn_0.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbtn_0.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;cbtn_0.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="flp_Kapatma.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flp_Kapatma.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 121</value>
+  </data>
+  <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.Name" xml:space="preserve">
+    <value>flp_Kapatma</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnParcaliOdemeEski.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt, style=Bold</value>
+  </data>
+  <data name="btnParcaliOdemeEski.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btnParcaliOdemeEski.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="btnParcaliOdemeEski.Location" type="System.Drawing.Point, System.Drawing">
+    <value>678, 2</value>
+  </data>
+  <data name="btnParcaliOdemeEski.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 121</value>
+  </data>
+  <data name="btnParcaliOdemeEski.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="btnParcaliOdemeEski.Text" xml:space="preserve">
+    <value>PARÇALI 
+ÖDEME</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdemeEski.Name" xml:space="preserve">
+    <value>btnParcaliOdemeEski</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdemeEski.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdemeEski.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdemeEski.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="barButtonItem3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
