@@ -777,7 +777,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                 Cursor.Current = Cursors.Default;
             }
         }
-        private void MasaYenileIlkAcilis(int Acik, string filtre = "") // orjinali hiç değişmedi
+        private void MasaYenileIlkAcilis(int Acik, string filtre = "") // orjinali hiç değişmedi aa
         {
             try
             {
