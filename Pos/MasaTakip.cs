@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Resources;
 using System.ServiceProcess;
@@ -49,6 +50,10 @@ namespace Pos
 
         bool birKere = false;
         bool yazdirilmamisSiparis = false;
+
+
+        private bool isDragging = false;
+        private Point dragStartPoint;
 
         private void MasaTakip_Load(object sender, EventArgs e)
         {
@@ -1094,6 +1099,13 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                     btnMasa.Click += new EventHandler(btnMasa_Click);
                     btnMasa.DoubleClick += new EventHandler(btnMasa_DoubleClick);
 
+
+                    btnMasa.Name = btnMasa.Tag.ToString();
+                    btnMasa.MouseDown += Button_MouseDown;
+                    btnMasa.MouseMove += Button_MouseMove;
+                    btnMasa.MouseUp += Button_MouseUp;
+
+
                     flp_Masa.Controls.Add(btnMasa);
                     //btnMasa.MouseHover += ButtonName_MouseHover;
 
@@ -1122,6 +1134,114 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
 
         }
+
+        private void Button_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = true;
+                dragStartPoint = e.Location;
+            }
+        }
+        private void Button_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging && (Math.Abs(e.X - dragStartPoint.X) > SystemInformation.DragSize.Width / 2 ||
+                Math.Abs(e.Y - dragStartPoint.Y) > SystemInformation.DragSize.Height / 2))
+            {
+                var control = sender as Control;
+                control.DoDragDrop(control.Name, DragDropEffects.Move);
+                isDragging = false;
+            }
+        }
+        private void Button_MouseUp(object sender, MouseEventArgs e)
+        {
+            isDragging = false;
+        }
+        private void Button_Click(object sender, EventArgs e)
+        {
+            var control = sender as Control;
+            MessageBox.Show($"{control.Name} butonuna tıklandı.");
+        }
+        private void flowLayoutPanel1_DragOver(object sender, DragEventArgs e)
+        {
+            if (!e.Data.GetDataPresent(typeof(string)))
+                return;
+            var name = e.Data.GetData(typeof(string)) as string;
+            var control = this.Controls.Find(name, true).FirstOrDefault();
+            if (control != null)
+            {
+                e.Effect = DragDropEffects.Move;
+            }
+        }
+        private void flowLayoutPanel1_DragDrop(object sender, DragEventArgs e)
+        {
+            if (!e.Data.GetDataPresent(typeof(string)))
+                return;
+            var draggedControlName = e.Data.GetData(typeof(string)) as string;
+            var flowLayoutPanel = sender as FlowLayoutPanel;
+            if (flowLayoutPanel != null)
+            {
+                var targetControl = flowLayoutPanel.GetChildAtPoint(flowLayoutPanel.PointToClient(new Point(e.X, e.Y))) as SimpleButton;
+                if (targetControl != null)
+                {
+                    string nereden = draggedControlName;
+                    string nereye = targetControl.Tag.ToString();
+                    string nereyeFisno = dbtools.DegerGetir($"exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '{Departman.Dep_Kodu}',@Masano = '{nereye}'");
+                    if (nereyeFisno != "0")
+                    {
+                        RHMesaj.alertMesaj("Lütfen boş masa seçiniz!");
+                        return;
+                    }
+                    if (nereden == nereye) return;
+                    string suankiMasaDurum = dbtools.DegerGetir("select ISNULL(Masa_Durum,0) as Masa_Durum from Pos_Masa where Masa_No='" + nereden + "'");
+
+                    string hedefMasaNo2 = nereye;
+
+                    if (StatikSinif.masaMusaitmi(hedefMasaNo2) == false)
+                    {
+                        return;
+                    }
+
+                   
+                    string fisno = dbtools.DegerGetir($"exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '{Departman.Dep_Kodu}',@Masano = '{nereden}'");
+
+                    if (Departman.Siparis && Param.Param_Masatr_Uyari)
+                    {
+                        FisPr pr = new FisPr();
+                        string sonuc = pr.MasaTr(Convert.ToInt32(fisno), nereden, nereye);
+                        if (sonuc != "OK")
+                        {
+                            MessageBox.Show(sonuc, "Uyarı");
+                        }
+                    }
+
+                  
+                    if (nereye == "")
+                    {
+                        return;
+                    }
+
+                    DataTable dtMasa = dbtools.SelectTable("Select isnull(Masa_Paket,0) as Masa_Paket,isnull(Masa_Ozel,'') as Masa_Ozel, isnull(Masa_Durum,0) as Masa_Durum From Pos_Masa WITH(NOLOCK) where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + nereden + "'");
+                    if (dtMasa.Rows.Count > 0)
+                    {
+                        Masa_Paket = Convert.ToBoolean(dtMasa.Rows[0]["Masa_Paket"]);
+                        Masa_OzelAdi = Convert.ToString(dtMasa.Rows[0]["Masa_Ozel"]);
+                        Masa_Durum = Convert.ToInt32(dtMasa.Rows[0]["Masa_Durum"]);
+                    }
+
+                    dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 12, @Dep_Kodu = '" + Departman.Dep_Kodu + "', @Yeni_Masano = '" + nereye + "',@Masano = '" + nereden + "',@Fisno = '" + fisno + "', @OzelMasaAdi = '" + Masa_OzelAdi + "'");
+
+
+                    dbtools.execcmdR("update Pos_Masa set Masa_Durum ='" + suankiMasaDurum + "' where Masa_No='" + hedefMasaNo2 + "'");
+
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Masa_Transfer, Log.Log_Islem.Duzelt, nereden + " NOLU Masa " + nereye + " NOLU MASAYA TRANSFER OLDU",Fisno:fisno, "");
+
+                    MasaYenile(0);
+
+                }
+            }
+        }
+
 
         /*
         private void MasaYenile(int Acik, string filtre = "")
