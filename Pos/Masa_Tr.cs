@@ -71,6 +71,8 @@ namespace Pos
                 return;
             }
 
+           
+
 
             if (Departman.Siparis && Param.Param_Masatr_Uyari)
             {

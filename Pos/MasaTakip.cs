@@ -2,6 +2,7 @@
 using DevExpress.XtraReports.UI;
 using Pos.Class;
 using Pos.Controllers;
+using Pos.Forms;
 using Pos.Models;
 using System;
 using System.Data;
@@ -1177,6 +1178,13 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
         {
             if (!e.Data.GetDataPresent(typeof(string)))
                 return;
+
+            if (User.M_Masatransfer==false)
+            {
+                RHMesaj.alertMesaj("Masa transfer yetkiniz yoktur!");
+                return;
+            }
+            
             var draggedControlName = e.Data.GetData(typeof(string)) as string;
             var flowLayoutPanel = sender as FlowLayoutPanel;
             if (flowLayoutPanel != null)
@@ -1202,7 +1210,15 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                         return;
                     }
 
-                   
+                    ConfirmationForm confirmationForm = new ConfirmationForm($"{nereden} den {hedefMasaNo2} ye masa transfer edilsin mi? ");
+                    confirmationForm.ShowDialog();
+                    if (confirmationForm.onay==false)
+                    {
+                        RHMesaj.alertMesaj("Masa transfer iptal edildi");
+                        return;
+                    }
+
+
                     string fisno = dbtools.DegerGetir($"exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '{Departman.Dep_Kodu}',@Masano = '{nereden}'");
 
                     if (Departman.Siparis && Param.Param_Masatr_Uyari)
@@ -1220,6 +1236,8 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                     {
                         return;
                     }
+
+
 
                     DataTable dtMasa = dbtools.SelectTable("Select isnull(Masa_Paket,0) as Masa_Paket,isnull(Masa_Ozel,'') as Masa_Ozel, isnull(Masa_Durum,0) as Masa_Durum From Pos_Masa WITH(NOLOCK) where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + nereden + "'");
                     if (dtMasa.Rows.Count > 0)
