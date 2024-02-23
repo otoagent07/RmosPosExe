@@ -236,7 +236,7 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
         }
 
-        public static void Odeme_Al(int Fisno, decimal tutar, decimal doviztutar, string kapatma, string mus_tipi, string odano, int folio, string cari, int Split, string dovizkodu, bool ads, decimal mevcutTutar = 0)
+        public static void Odeme_Al(int Fisno, decimal tutar, decimal doviztutar, string kapatma, string mus_tipi, string odano, int folio, string cari, int Split, string dovizkodu, bool ads, decimal mevcutTutar = 0,string kisiyeAdSoyad="")
         {
             try
             {
@@ -366,6 +366,7 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
                 com.Parameters.AddWithValue("@DovizKodu", dovizkodu);
                 com.Parameters.AddWithValue("@UserKod", User.P_Kod);
                 com.Parameters.AddWithValue("@Ads", ads);
+                com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", kisiyeAdSoyad);
                 if (Departman.Kodlar_Ingenico_IWE == true) com.Parameters.AddWithValue("@Rsat_Ingenico_Status", 1);
 
 

@@ -100,6 +100,7 @@
             this.txtCariAd = new DevExpress.XtraEditors.LabelControl();
             this.checkEditOtoCari = new DevExpress.XtraEditors.CheckEdit();
             this.btnTipBox = new DevExpress.XtraEditors.SimpleButton();
+            this.btnKisiyeKapat = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -843,11 +844,25 @@
             this.btnTipBox.Name = "btnTipBox";
             this.btnTipBox.Click += new System.EventHandler(this.btnTipBox_Click);
             // 
+            // btnKisiyeKapat
+            // 
+            resources.ApplyResources(this.btnKisiyeKapat, "btnKisiyeKapat");
+            this.btnKisiyeKapat.Appearance.BackColor = System.Drawing.Color.Tomato;
+            this.btnKisiyeKapat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnKisiyeKapat.Appearance.Font")));
+            this.btnKisiyeKapat.Appearance.Options.UseBackColor = true;
+            this.btnKisiyeKapat.Appearance.Options.UseFont = true;
+            this.btnKisiyeKapat.Appearance.Options.UseTextOptions = true;
+            this.btnKisiyeKapat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btnKisiyeKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKisiyeKapat.ImageOptions.Image")));
+            this.btnKisiyeKapat.Name = "btnKisiyeKapat";
+            this.btnKisiyeKapat.Click += new System.EventHandler(this.btnKisiyeKapat_Click);
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btnKisiyeKapat);
             this.Controls.Add(this.btnTipBox);
             this.Controls.Add(this.checkEditOtoCari);
             this.Controls.Add(this.txtCariAd);
@@ -985,5 +1000,6 @@
         private DevExpress.XtraEditors.LabelControl txtCariAd;
         private DevExpress.XtraEditors.CheckEdit checkEditOtoCari;
         private DevExpress.XtraEditors.SimpleButton btnTipBox;
+        private DevExpress.XtraEditors.SimpleButton btnKisiyeKapat;
     }
 }

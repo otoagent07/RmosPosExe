@@ -95,6 +95,7 @@ IF COL_LENGTH('Pos_FolioParam', 'hizmetBedeliAktif') IS NULL BEGIN ALTER TABLE P
 
 IF COL_LENGTH('Cst_Recete_Satis', 'E_AdisyonNo') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD E_AdisyonNo nvarchar(200) END;
 IF COL_LENGTH('Cst_Recete_Satis', 'E_AdisyonDurum') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD E_AdisyonDurum bit END;
+IF COL_LENGTH('Cst_Recete_Satis', 'kisiyeSatisAdSoyad') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD kisiyeSatisAdSoyad nvarchar(200) END;
 IF COL_LENGTH('Pos_Kodlar', 'Pkod_E_Adisyon') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD Pkod_E_Adisyon bit END;
 
 IF COL_LENGTH('Cst_Recete_Satis', 'ustgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD ustgrup nvarchar(200) END;

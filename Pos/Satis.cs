@@ -764,7 +764,7 @@ namespace Pos
         bool cikis = true;
         int Fisno = 0;
 
-       
+
 
         private void Fisno_Al()
         {
@@ -1895,12 +1895,13 @@ namespace Pos
 
                     if (Param.Calisma_Sekli == 0) btn_Urun.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Fiyat"]);
 
-                    if (Param.Calisma_Sekli == 1 )
+                    if (Param.Calisma_Sekli == 1)
                     {
                         btn_Urun.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Dovifiyat"]);
-                    }else if (Convert.ToBoolean(dt.Rows[i]["Rec_DovizliSatis"].ToString()))
+                    }
+                    else if (Convert.ToBoolean(dt.Rows[i]["Rec_DovizliSatis"].ToString()))
                     {
-                        btn_Urun.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Dovifiyat"])+" "+ Convert.ToString(dt.Rows[i]["DovizAdi"]);
+                        btn_Urun.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Dovifiyat"]) + " " + Convert.ToString(dt.Rows[i]["DovizAdi"]);
                     }
 
                     btn_Urun.Tag = Convert.ToString(dt.Rows[i]["Rec_Genelkod"]);
@@ -1961,7 +1962,7 @@ namespace Pos
         bool Rec_Miktar_Gr = false;
 
 
-        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false,int otomiktar=1,bool urunduzeltme=false)
+        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false, int otomiktar = 1, bool urunduzeltme = false)
         {
             try
             {
@@ -2021,11 +2022,11 @@ namespace Pos
                 {
                     Rec_DovizliSatis = Convert.ToBoolean(dtRecete.Rows[0]["Rec_DovizliSatis"]);
                 }
-               
+
 
                 Rec_Terazi = Convert.ToBoolean(dtRecete.Rows[0]["Rec_Terazi"]);
 
-                if (Rec_Miktar_Sor && urunduzeltme==false)
+                if (Rec_Miktar_Sor && urunduzeltme == false)
                 {
                     Klavye1 klv = new Klavye1();
                     klv.txt_Sayi.EditValue = Miktar;
@@ -2107,7 +2108,7 @@ namespace Pos
                         }
 
                     }
-                    else if(Rec_DovizliSatis == true)
+                    else if (Rec_DovizliSatis == true)
                     {
                         if (Param.Ent_Onb == true)
                         {
@@ -2124,7 +2125,7 @@ namespace Pos
                             Rsat_Net = ((Rsat_Tutar * 100) / (100 + Rec_Kdv));
                             Rsat_Kdv = (Rsat_Tutar - Rsat_Net);
                         }
-                       
+
 
                     }
                     else        // TL Çalışma
@@ -2321,6 +2322,7 @@ namespace Pos
                 com.Parameters.AddWithValue("@Rsat_OzelMasaAdi", Ozel_Masa);
                 com.Parameters.AddWithValue("@PaketFiyatTipi", PaketFiyat);
                 com.Parameters.AddWithValue("@Rsat_Duzeltme", MiktarDuzeltme);
+                com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", txtKisiyeSatis.Text);
 
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kart_ID", FolioKart_ID);
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kartno", Kart_No);
@@ -2562,7 +2564,7 @@ namespace Pos
 
             if (Miktar != 0)
             {
-                Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")),urunduzeltme:true);
+                Urun_Sat(Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")), urunduzeltme: true);
 
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Miktar_Duzelt, Log.Log_Islem.Duzelt, Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktarı " + eskiMiktar.ToString().Replace(",0000", "") + " iken " + Convert.ToDecimal(klavye.sayi).ToString() + " ile Değişti", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
@@ -2651,7 +2653,7 @@ namespace Pos
                 {
                     Siparis_Gonder(false);
 
-                    dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='"+bartxt_FisNo.EditValue.ToString()+"'");
+                    dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + bartxt_FisNo.EditValue.ToString() + "'");
 
                     if (Departman.Kodlar_AndPos_NFC == true)
                     {
@@ -2919,7 +2921,7 @@ namespace Pos
         }
 
 
-      
+
 
         public static string MyClass = "Satis";
 
@@ -3063,7 +3065,7 @@ namespace Pos
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
 
 
-              
+
                 Fis_Islem.Satir_Sil(satirId, Sil_Miktar);
 
 
@@ -3084,7 +3086,7 @@ namespace Pos
 
         }
 
-        public void indirimvarsaazalt(int satirId,string fisno,int Sil_Miktar)
+        public void indirimvarsaazalt(int satirId, string fisno, int Sil_Miktar)
         {
             try
             {
@@ -3102,10 +3104,10 @@ and Rsat_Indkodu  in ('HAPPYHOUR','MANUEL') and Rsat_Ba='A'
 group by Rsat_Fiyat,Rsat_Tutar,Rsat_Doviztutar";
                 DataTable indirimTable2 = dbtools.SelectTable(q3);
 
-                if (indirimTable!=null && indirimTable.Rows.Count>0)
+                if (indirimTable != null && indirimTable.Rows.Count > 0)
                 {
                     int Rsat_Miktar = Convert.ToInt32(Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Miktar"].ToString()));
-                    if (Rsat_Miktar==0)
+                    if (Rsat_Miktar == 0)
                     {
                         return;
                     }
@@ -3115,17 +3117,17 @@ group by Rsat_Fiyat,Rsat_Tutar,Rsat_Doviztutar";
                     decimal Rsat_Doviztutar = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Doviztutar"].ToString());
 
                     string deger = dbtools.DegerGetir(@"select 
-(select top 1 isnull(Rec_HappyHourFiyat,0) as Rec_HappyHourFiyat from Cst_Recete where Rec_Genelkod=satis.Rsat_Recete and Rec_HappyHour='1')*"+ Sil_Miktar + @"
+(select top 1 isnull(Rec_HappyHourFiyat,0) as Rec_HappyHourFiyat from Cst_Recete where Rec_Genelkod=satis.Rsat_Recete and Rec_HappyHour='1')*" + Sil_Miktar + @"
 as uygulanacakindirim
-from Cst_Recete_Satis as satis where Rsat_Id='"+ satirId + @"'");
+from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
-                    if (deger!=null && deger!="" && deger != "0")
+                    if (deger != null && deger != "" && deger != "0")
                     {
                         decimal Rsat_Kdvoran = Convert.ToDecimal(dbtools.DegerGetir("select top 1 Rsat_Kdvoran from Cst_Recete_Satis where Rsat_Id='" + satirId + "'"));
 
 
                         decimal uygulanacakindirim = Convert.ToDecimal(deger);
-                        decimal fiyat= Rsat_Fiyat - uygulanacakindirim;
+                        decimal fiyat = Rsat_Fiyat - uygulanacakindirim;
                         decimal tutar = Rsat_Tutar - uygulanacakindirim;
                         decimal doviztutar = Rsat_Doviztutar - uygulanacakindirim;
                         decimal net = tutar / ((100 + Rsat_Kdvoran) / 100);
@@ -3140,7 +3142,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='"+ satirId + @"'");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("önemsiz hata_1\n"+ex.Message);
+                MessageBox.Show("önemsiz hata_1\n" + ex.Message);
             }
         }
 
@@ -4081,8 +4083,8 @@ from Cst_Recete_Satis as satis where Rsat_Id='"+ satirId + @"'");
                 catch (Exception ex) { }
 
 
-                Urun_Sat(recetekod, otomiktar:hizmetmiktar);
-                Urun_Sat(recetekodCocuk, otomiktar:hizmetmiktarCocuk);
+                Urun_Sat(recetekod, otomiktar: hizmetmiktar);
+                Urun_Sat(recetekodCocuk, otomiktar: hizmetmiktarCocuk);
 
                 foreach (SimpleButton item in flp_Kapatma.Controls)
                 {
@@ -4368,6 +4370,13 @@ where  Rsat_Id='" + Rsat_Id + "'";
             }
 
             gridyenile();
+        }
+
+        private void btnTemizleKisiyeSatis_Click(object sender, EventArgs e)
+        {
+            txtKisiyeSatis.Text = "";
+            txtKisiyeSatis.Select();
+            txtKisiyeSatis.Focus();
         }
     }
 }

@@ -79,6 +79,8 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btnTemizleKisiyeSatis = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnServisTutarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             this.btnJokerAciklama = new DevExpress.XtraEditors.SimpleButton();
@@ -87,6 +89,7 @@
             this.chk_Fix = new DevExpress.XtraEditors.CheckButton();
             this.chk_Eksi = new DevExpress.XtraEditors.CheckButton();
             this.btnRelogin = new DevExpress.XtraEditors.SimpleButton();
+            this.txtKisiyeSatis = new DevExpress.XtraEditors.TextEdit();
             this.btn_9 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_FarkliMiktar = new DevExpress.XtraEditors.SimpleButton();
@@ -174,7 +177,9 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
@@ -632,7 +637,10 @@
             // 
             // panelControl3
             // 
+            this.panelControl3.Controls.Add(this.btnTemizleKisiyeSatis);
+            this.panelControl3.Controls.Add(this.textEdit3);
             this.panelControl3.Controls.Add(this.panelMenu);
+            this.panelControl3.Controls.Add(this.txtKisiyeSatis);
             this.panelControl3.Controls.Add(this.btn_9);
             this.panelControl3.Controls.Add(this.btn_1);
             this.panelControl3.Controls.Add(this.btn_FarkliMiktar);
@@ -660,6 +668,24 @@
             this.panelControl3.Controls.Add(this.btn_2);
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
+            // 
+            // btnTemizleKisiyeSatis
+            // 
+            this.btnTemizleKisiyeSatis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnTemizleKisiyeSatis.Appearance.Font")));
+            this.btnTemizleKisiyeSatis.Appearance.Options.UseFont = true;
+            this.btnTemizleKisiyeSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizleKisiyeSatis.ImageOptions.Image")));
+            this.btnTemizleKisiyeSatis.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            resources.ApplyResources(this.btnTemizleKisiyeSatis, "btnTemizleKisiyeSatis");
+            this.btnTemizleKisiyeSatis.Name = "btnTemizleKisiyeSatis";
+            this.btnTemizleKisiyeSatis.Click += new System.EventHandler(this.btnTemizleKisiyeSatis_Click);
+            // 
+            // textEdit3
+            // 
+            resources.ApplyResources(this.textEdit3, "textEdit3");
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit3.Properties.ReadOnly = true;
+            this.textEdit3.TabStop = false;
             // 
             // panelMenu
             // 
@@ -741,6 +767,18 @@
             resources.ApplyResources(this.btnRelogin, "btnRelogin");
             this.btnRelogin.Name = "btnRelogin";
             this.btnRelogin.Click += new System.EventHandler(this.btnRelogin_Click);
+            // 
+            // txtKisiyeSatis
+            // 
+            resources.ApplyResources(this.txtKisiyeSatis, "txtKisiyeSatis");
+            this.txtKisiyeSatis.Name = "txtKisiyeSatis";
+            this.txtKisiyeSatis.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtKisiyeSatis.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtKisiyeSatis.Properties.Appearance.Font")));
+            this.txtKisiyeSatis.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.txtKisiyeSatis.Properties.Appearance.Options.UseBackColor = true;
+            this.txtKisiyeSatis.Properties.Appearance.Options.UseFont = true;
+            this.txtKisiyeSatis.Properties.Appearance.Options.UseForeColor = true;
+            this.txtKisiyeSatis.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // btn_9
             // 
@@ -1441,7 +1479,9 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
@@ -1602,5 +1642,8 @@
         private DevExpress.XtraEditors.SimpleButton btnTopluSil;
         private DevExpress.XtraEditors.SimpleButton btnServisTutarDuzelt;
         private DevExpress.XtraEditors.SimpleButton btn_Bindirim;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit txtKisiyeSatis;
+        private DevExpress.XtraEditors.SimpleButton btnTemizleKisiyeSatis;
     }
 }

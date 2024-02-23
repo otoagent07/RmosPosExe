@@ -1194,6 +1194,8 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                 {
                     string nereden = draggedControlName;
                     string nereye = targetControl.Tag.ToString();
+
+                    Console.WriteLine(nereden+" "+nereye);
                     string nereyeFisno = dbtools.DegerGetir($"exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '{Departman.Dep_Kodu}',@Masano = '{nereye}'");
                     if (nereyeFisno != "0")
                     {

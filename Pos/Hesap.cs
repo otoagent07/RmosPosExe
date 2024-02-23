@@ -981,6 +981,12 @@ namespace Pos
 
         private void btn_Odemeal_Click(object sender, EventArgs e)
         {
+            araOdemeAl();
+
+        }
+
+        public void araOdemeAl()
+        {
             try
             {
                 if (look_Kapatma.EditValue == null)
@@ -1002,8 +1008,6 @@ namespace Pos
             {
                 RHMesaj.MyMessageError(MyClass, "btn_Odemeal_Click", "", ex);
             }
-
-
 
         }
 
@@ -1165,7 +1169,9 @@ namespace Pos
 
 
 
-                    Fis_Islem.Odeme_Al(Convert.ToInt32(this.Tag), tutar, doviztutar, Convert.ToString(look_Kapatma.EditValue), musTipi_A, odaNo_A, folio_A, cari_A, Split, Convert.ToString(look_DovizKod.EditValue), chk_AdsPr.Checked, mevcutToplamTutar);
+                    Fis_Islem.Odeme_Al(Convert.ToInt32(this.Tag), tutar, doviztutar, Convert.ToString(look_Kapatma.EditValue), musTipi_A, odaNo_A, folio_A, cari_A, Split, Convert.ToString(look_DovizKod.EditValue), chk_AdsPr.Checked, mevcutToplamTutar, kisiyeAdSoyad:kisiyesatisAdSoyad);
+
+                    btnKisiyeKapat.Text = "Kişiye Kapat";
 
 
 
@@ -3412,6 +3418,32 @@ namespace Pos
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+
+        string kisiyesatisAdSoyad = "";
+        private void btnKisiyeKapat_Click(object sender, EventArgs e)
+        {
+            kisiyesatisAdSoyad = "";
+
+            HesapKisiyeSatis hesapKisiyeSatis = new HesapKisiyeSatis(Convert.ToInt32(this.Tag));
+            hesapKisiyeSatis.ShowDialog();
+
+            if (hesapKisiyeSatis.seciliRow==null)
+            {
+
+                return;
+            }
+
+            string fark = hesapKisiyeSatis.seciliRow["fark"].ToString();
+
+            string tutar = Convert.ToDecimal(fark).ToString("n2");
+            txt_Odemetutari.EditValue = tutar;
+            txt_Odemetutari.Text = tutar;
+
+            kisiyesatisAdSoyad = hesapKisiyeSatis.seciliRow["Ad Soyad"].ToString();
+
+            btnKisiyeKapat.Text = "Kişiye Kapat\n"+kisiyesatisAdSoyad;
         }
     }
 }
