@@ -176,6 +176,14 @@ namespace Pos
 
             btn_Bindirim.Enabled = User.G_Bindirim;
 
+
+           string sayacimkisi= dbtools.DegerGetir($"select isnull(kisiyeSatisAdSoyad,'') as kisiyeSatisAdSoyad from Cst_Recete_Satis  where Rsat_Fisno=" + fisno+ " order by Rsat_Id desc");
+
+            if (sayacimkisi!="" && sayacimkisi.Contains("-"))
+            {
+                sayac = Convert.ToInt32(sayacimkisi.Split('-')[0]) +1;
+                txtKisiyeSatisSayac.Text = sayac+"";
+            }
         }
 
         public void marsSiparis()
@@ -2322,7 +2330,7 @@ namespace Pos
                 com.Parameters.AddWithValue("@Rsat_OzelMasaAdi", Ozel_Masa);
                 com.Parameters.AddWithValue("@PaketFiyatTipi", PaketFiyat);
                 com.Parameters.AddWithValue("@Rsat_Duzeltme", MiktarDuzeltme);
-                com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", txtKisiyeSatis.Text);
+                com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", txtKisiyeSatisSayac.Text+"-"+ txtKisiyeSatis.Text);
 
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kart_ID", FolioKart_ID);
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kartno", Kart_No);
@@ -4372,11 +4380,15 @@ where  Rsat_Id='" + Rsat_Id + "'";
             gridyenile();
         }
 
+        int sayac = 1;
         private void btnTemizleKisiyeSatis_Click(object sender, EventArgs e)
         {
             txtKisiyeSatis.Text = "";
             txtKisiyeSatis.Select();
             txtKisiyeSatis.Focus();
+
+            sayac++;
+            txtKisiyeSatisSayac.Text = sayac + "";
         }
     }
 }

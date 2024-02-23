@@ -79,6 +79,7 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.txtKisiyeSatisSayac = new DevExpress.XtraEditors.TextEdit();
             this.btnTemizleKisiyeSatis = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -177,6 +178,7 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatisSayac.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).BeginInit();
@@ -637,6 +639,7 @@
             // 
             // panelControl3
             // 
+            this.panelControl3.Controls.Add(this.txtKisiyeSatisSayac);
             this.panelControl3.Controls.Add(this.btnTemizleKisiyeSatis);
             this.panelControl3.Controls.Add(this.textEdit3);
             this.panelControl3.Controls.Add(this.panelMenu);
@@ -668,6 +671,19 @@
             this.panelControl3.Controls.Add(this.btn_2);
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
+            // 
+            // txtKisiyeSatisSayac
+            // 
+            resources.ApplyResources(this.txtKisiyeSatisSayac, "txtKisiyeSatisSayac");
+            this.txtKisiyeSatisSayac.Name = "txtKisiyeSatisSayac";
+            this.txtKisiyeSatisSayac.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtKisiyeSatisSayac.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtKisiyeSatisSayac.Properties.Appearance.Font")));
+            this.txtKisiyeSatisSayac.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.txtKisiyeSatisSayac.Properties.Appearance.Options.UseBackColor = true;
+            this.txtKisiyeSatisSayac.Properties.Appearance.Options.UseFont = true;
+            this.txtKisiyeSatisSayac.Properties.Appearance.Options.UseForeColor = true;
+            this.txtKisiyeSatisSayac.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtKisiyeSatisSayac.Properties.ReadOnly = true;
             // 
             // btnTemizleKisiyeSatis
             // 
@@ -1479,6 +1495,7 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatisSayac.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).EndInit();
@@ -1645,5 +1662,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.TextEdit txtKisiyeSatis;
         private DevExpress.XtraEditors.SimpleButton btnTemizleKisiyeSatis;
+        private DevExpress.XtraEditors.TextEdit txtKisiyeSatisSayac;
     }
 }
