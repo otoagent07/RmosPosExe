@@ -45,6 +45,10 @@ namespace Pos.Class
         int count = 0;
         float leftMargin = 1;
         float topMargin = 1;
+
+
+        public bool kisiyeSatis = false;
+        public string kisiyeSatisAdSoyad= "";
         private void pd_PrintPage(object sender, PrintPageEventArgs ev)
         {
 
@@ -3183,10 +3187,17 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             int dtSatirsay = dtHesap.Rows.Count;
 
 
+          
 
 
 
             Print.Hesap hsp = new Print.Hesap();
+
+            if (kisiyeSatis)
+            {
+                dtHesap = dtHesap.Select("kisiyeSatisAdSoyad='" + kisiyeSatisAdSoyad + "'").CopyToDataTable();
+            }
+
             xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), hsp);
             hsp.PrinterName = printer;
             hsp.DataSource = dtHesap;
@@ -3489,7 +3500,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         dtDovizDagilim = Fis_Islem.Doviz_Dagilim(dagilimTutar);
                     }
                 }
-                if (dtDovizDagilim.Rows.Count > 0)
+                if (dtDovizDagilim.Rows.Count > 0 && kisiyeSatis==false)
                 {
                     for (int i = 0; i < dtDovizDagilim.Rows.Count; i++)
                     {
@@ -3527,6 +3538,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
             DataTable dtUrungrup = new DataTable();
             dtUrungrup = UrunGrupBul(Fisno);
+            if (kisiyeSatis==false)
             for (int j = 0; j < dtUrungrup.Rows.Count; j++)
             {
                 XRTableRow row = new XRTableRow();

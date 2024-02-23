@@ -48,12 +48,15 @@ namespace Pos
                 string columname2 = "SATIŞLARI GÖSTER";
                 dataTable.Columns.Add(columname2, typeof(string));
 
+                string columname3 = "HESAP YAZDIR";
+                dataTable.Columns.Add(columname3, typeof(string));
 
                 gridControl1.DataSource = dataTable;
                 gridView1.BestFitColumns();
 
                 buttonEkle(columname);
                 buttonEkle2(columname2);
+                buttonEkle3(columname3);
 
 
                 gridviewSumYaz(gridView1, "fark");
@@ -65,16 +68,43 @@ namespace Pos
 
             }
         }
-        public void buttonEkle2(string columnName)
+
+     
+
+        private void hesapyazdir_click(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             try
             {
+                string adsoyad = gridView1.GetFocusedRowCellValue("Ad Soyad").ToString();
+                FisPr pr = new FisPr();
+                pr.kisiyeSatis = true;
+                pr.kisiyeSatisAdSoyad = adsoyad;
+                if (Param.Param_YeniHesapDkm)
+                {
+                    pr.newHesapDokum(true, fisno, 0, "* * * HESAP DÖKÜM FİŞİ * * *");
+                }
+                else
+                {
+                    pr.HesapDokum(true, Convert.ToInt32(this.Tag), 0);
+                }
+            }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        public void buttonEkle3(string columnName)
+        {
+            try
+            {
                 RepositoryItemButtonEdit repositoryButton = new RepositoryItemButtonEdit();
                 repositoryButton.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
                 repositoryButton.Buttons[0].Caption = columnName;
                 repositoryButton.Buttons[0].Kind = DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph;
-                repositoryButton.ButtonClick += RepositoryButton2_ButtonClick;
+                repositoryButton.ButtonClick += hesapyazdir_click;
                 gridView1.Columns[columnName].ColumnEdit = repositoryButton;
             }
             catch (Exception ex)
@@ -84,7 +114,26 @@ namespace Pos
             }
         }
 
-        public void gridviewSumYaz(GridView grid,string fieldname)
+        public void buttonEkle2(string columnName)
+        {
+            try
+            {
+
+                RepositoryItemButtonEdit repositoryButton = new RepositoryItemButtonEdit();
+                repositoryButton.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+                repositoryButton.Buttons[0].Caption = columnName;
+                repositoryButton.Buttons[0].Kind = DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph;
+                repositoryButton.ButtonClick += satislarigoster_click;
+                gridView1.Columns[columnName].ColumnEdit = repositoryButton;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
+
+        public void gridviewSumYaz(GridView grid, string fieldname)
         {
             try
             {
@@ -106,7 +155,7 @@ namespace Pos
         }
 
 
-        private void RepositoryButton2_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        private void satislarigoster_click(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             try
             {
@@ -140,8 +189,6 @@ where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  "
             {
                 MessageBox.Show(ex.Message);
             }
-           
-
         }
 
 
