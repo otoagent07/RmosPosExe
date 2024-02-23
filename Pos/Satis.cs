@@ -177,12 +177,12 @@ namespace Pos
             btn_Bindirim.Enabled = User.G_Bindirim;
 
 
-           string sayacimkisi= dbtools.DegerGetir($"select isnull(kisiyeSatisAdSoyad,'') as kisiyeSatisAdSoyad from Cst_Recete_Satis  where Rsat_Fisno=" + fisno+ " order by Rsat_Id desc");
+            string sayacimkisi = dbtools.DegerGetir($"select isnull(kisiyeSatisAdSoyad,'') as kisiyeSatisAdSoyad from Cst_Recete_Satis  where Rsat_Fisno=" + fisno + " order by Rsat_Id desc");
 
-            if (sayacimkisi!="" && sayacimkisi.Contains("-"))
+            if (sayacimkisi != "" && sayacimkisi.Contains("-"))
             {
-                sayac = Convert.ToInt32(sayacimkisi.Split('-')[0]) +1;
-                txtKisiyeSatisSayac.Text = sayac+"";
+                sayac = Convert.ToInt32(sayacimkisi.Split('-')[0]) + 1;
+                txtKisiyeSatisSayac.Text = sayac + "";
             }
         }
 
@@ -2330,7 +2330,7 @@ namespace Pos
                 com.Parameters.AddWithValue("@Rsat_OzelMasaAdi", Ozel_Masa);
                 com.Parameters.AddWithValue("@PaketFiyatTipi", PaketFiyat);
                 com.Parameters.AddWithValue("@Rsat_Duzeltme", MiktarDuzeltme);
-                com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", txtKisiyeSatisSayac.Text+"-"+ txtKisiyeSatis.Text);
+                com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", txtKisiyeSatisSayac.Text + "-" + txtKisiyeSatis.Text);
 
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kart_ID", FolioKart_ID);
                 if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kartno", Kart_No);
@@ -4393,7 +4393,19 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         private void btnKisiyeSatisYap_Click(object sender, EventArgs e)
         {
+            int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+            if (fisno < 1)
+            {
+                return;
+            }
+            KisiyeSatisSec kisiyeSatisSec = new KisiyeSatisSec(fisno);
+            kisiyeSatisSec.ShowDialog();
 
+            if (kisiyeSatisSec.iptal == false)
+            {
+                txtKisiyeSatis.Text = kisiyeSatisSec.adsoyad;
+                txtKisiyeSatisSayac.Text = kisiyeSatisSec.sayac;
+            }
         }
     }
 }
