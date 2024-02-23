@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -81,7 +81,6 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.txtKisiyeSatisSayac = new DevExpress.XtraEditors.TextEdit();
             this.btnTemizleKisiyeSatis = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnServisTutarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             this.btnJokerAciklama = new DevExpress.XtraEditors.SimpleButton();
@@ -156,6 +155,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnKisiyeSatisYap = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -179,7 +179,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatisSayac.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
@@ -639,9 +638,9 @@
             // 
             // panelControl3
             // 
+            this.panelControl3.Controls.Add(this.btnKisiyeSatisYap);
             this.panelControl3.Controls.Add(this.txtKisiyeSatisSayac);
             this.panelControl3.Controls.Add(this.btnTemizleKisiyeSatis);
-            this.panelControl3.Controls.Add(this.textEdit3);
             this.panelControl3.Controls.Add(this.panelMenu);
             this.panelControl3.Controls.Add(this.txtKisiyeSatis);
             this.panelControl3.Controls.Add(this.btn_9);
@@ -683,7 +682,6 @@
             this.txtKisiyeSatisSayac.Properties.Appearance.Options.UseFont = true;
             this.txtKisiyeSatisSayac.Properties.Appearance.Options.UseForeColor = true;
             this.txtKisiyeSatisSayac.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtKisiyeSatisSayac.Properties.ReadOnly = true;
             // 
             // btnTemizleKisiyeSatis
             // 
@@ -694,14 +692,6 @@
             resources.ApplyResources(this.btnTemizleKisiyeSatis, "btnTemizleKisiyeSatis");
             this.btnTemizleKisiyeSatis.Name = "btnTemizleKisiyeSatis";
             this.btnTemizleKisiyeSatis.Click += new System.EventHandler(this.btnTemizleKisiyeSatis_Click);
-            // 
-            // textEdit3
-            // 
-            resources.ApplyResources(this.textEdit3, "textEdit3");
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit3.Properties.ReadOnly = true;
-            this.textEdit3.TabStop = false;
             // 
             // panelMenu
             // 
@@ -1137,18 +1127,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn6;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn6;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.RowAutoHeight = true;
@@ -1454,6 +1444,12 @@
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // btnKisiyeSatisYap
+            // 
+            resources.ApplyResources(this.btnKisiyeSatisYap, "btnKisiyeSatisYap");
+            this.btnKisiyeSatisYap.Name = "btnKisiyeSatisYap";
+            this.btnKisiyeSatisYap.Click += new System.EventHandler(this.btnKisiyeSatisYap_Click);
+            // 
             // Satis
             // 
             resources.ApplyResources(this, "$this");
@@ -1496,7 +1492,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatisSayac.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
@@ -1659,9 +1654,9 @@
         private DevExpress.XtraEditors.SimpleButton btnTopluSil;
         private DevExpress.XtraEditors.SimpleButton btnServisTutarDuzelt;
         private DevExpress.XtraEditors.SimpleButton btn_Bindirim;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.TextEdit txtKisiyeSatis;
         private DevExpress.XtraEditors.SimpleButton btnTemizleKisiyeSatis;
         private DevExpress.XtraEditors.TextEdit txtKisiyeSatisSayac;
+        private DevExpress.XtraEditors.SimpleButton btnKisiyeSatisYap;
     }
 }

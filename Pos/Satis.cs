@@ -4390,5 +4390,10 @@ where  Rsat_Id='" + Rsat_Id + "'";
             sayac++;
             txtKisiyeSatisSayac.Text = sayac + "";
         }
+
+        private void btnKisiyeSatisYap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
