@@ -101,6 +101,10 @@
             this.checkEditOtoCari = new DevExpress.XtraEditors.CheckEdit();
             this.btnTipBox = new DevExpress.XtraEditors.SimpleButton();
             this.btnKisiyeKapat = new DevExpress.XtraEditors.SimpleButton();
+            this.gridControlKisiyeSatis = new DevExpress.XtraGrid.GridControl();
+            this.gridViewKisiyeSatis = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControlFis = new DevExpress.XtraGrid.GridControl();
+            this.gridViewFis = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -114,6 +118,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditOtoCari.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlKisiyeSatis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewKisiyeSatis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlFis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewFis)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn13
@@ -748,7 +756,6 @@
             this.simpleButton4.Appearance.Options.UseFont = true;
             this.simpleButton4.Appearance.Options.UseTextOptions = true;
             this.simpleButton4.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
@@ -759,7 +766,6 @@
             this.simpleButton5.Appearance.Options.UseFont = true;
             this.simpleButton5.Appearance.Options.UseTextOptions = true;
             this.simpleButton5.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
@@ -857,11 +863,53 @@
             this.btnKisiyeKapat.Name = "btnKisiyeKapat";
             this.btnKisiyeKapat.Click += new System.EventHandler(this.btnKisiyeKapat_Click);
             // 
+            // gridControlKisiyeSatis
+            // 
+            resources.ApplyResources(this.gridControlKisiyeSatis, "gridControlKisiyeSatis");
+            this.gridControlKisiyeSatis.MainView = this.gridViewKisiyeSatis;
+            this.gridControlKisiyeSatis.Name = "gridControlKisiyeSatis";
+            this.gridControlKisiyeSatis.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewKisiyeSatis});
+            // 
+            // gridViewKisiyeSatis
+            // 
+            this.gridViewKisiyeSatis.Appearance.Row.Font = ((System.Drawing.Font)(resources.GetObject("gridViewKisiyeSatis.Appearance.Row.Font")));
+            this.gridViewKisiyeSatis.Appearance.Row.Options.UseFont = true;
+            this.gridViewKisiyeSatis.GridControl = this.gridControlKisiyeSatis;
+            this.gridViewKisiyeSatis.Name = "gridViewKisiyeSatis";
+            this.gridViewKisiyeSatis.OptionsBehavior.ReadOnly = true;
+            this.gridViewKisiyeSatis.OptionsView.ColumnAutoWidth = false;
+            this.gridViewKisiyeSatis.OptionsView.ShowColumnHeaders = false;
+            this.gridViewKisiyeSatis.OptionsView.ShowFooter = true;
+            this.gridViewKisiyeSatis.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridControlFis
+            // 
+            resources.ApplyResources(this.gridControlFis, "gridControlFis");
+            this.gridControlFis.MainView = this.gridViewFis;
+            this.gridControlFis.Name = "gridControlFis";
+            this.gridControlFis.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewFis});
+            // 
+            // gridViewFis
+            // 
+            this.gridViewFis.Appearance.Row.Font = ((System.Drawing.Font)(resources.GetObject("gridViewFis.Appearance.Row.Font")));
+            this.gridViewFis.Appearance.Row.Options.UseFont = true;
+            this.gridViewFis.GridControl = this.gridControlFis;
+            this.gridViewFis.Name = "gridViewFis";
+            this.gridViewFis.OptionsBehavior.ReadOnly = true;
+            this.gridViewFis.OptionsView.ColumnAutoWidth = false;
+            this.gridViewFis.OptionsView.ShowColumnHeaders = false;
+            this.gridViewFis.OptionsView.ShowFooter = true;
+            this.gridViewFis.OptionsView.ShowGroupPanel = false;
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.gridControlFis);
+            this.Controls.Add(this.gridControlKisiyeSatis);
             this.Controls.Add(this.btnKisiyeKapat);
             this.Controls.Add(this.btnTipBox);
             this.Controls.Add(this.checkEditOtoCari);
@@ -929,6 +977,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditOtoCari.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlKisiyeSatis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewKisiyeSatis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlFis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewFis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -938,7 +990,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.TextEdit txt_Hesapno;
         private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit txt_Odemetutari;
         private DevExpress.XtraEditors.TextEdit textEdit6;
         private DevExpress.XtraEditors.SimpleButton btn_Odemetutari;
         private DevExpress.XtraEditors.SimpleButton btn_Hesapara;
@@ -1000,6 +1051,11 @@
         private DevExpress.XtraEditors.LabelControl txtCariAd;
         private DevExpress.XtraEditors.CheckEdit checkEditOtoCari;
         private DevExpress.XtraEditors.SimpleButton btnTipBox;
-        private DevExpress.XtraEditors.SimpleButton btnKisiyeKapat;
+        public DevExpress.XtraGrid.GridControl gridControlKisiyeSatis;
+        public DevExpress.XtraGrid.GridControl gridControlFis;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridViewKisiyeSatis;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridViewFis;
+        public DevExpress.XtraEditors.TextEdit txt_Odemetutari;
+        public DevExpress.XtraEditors.SimpleButton btnKisiyeKapat;
     }
 }

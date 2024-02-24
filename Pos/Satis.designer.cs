@@ -79,6 +79,7 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btnKisiyeSatisYap = new DevExpress.XtraEditors.SimpleButton();
             this.txtKisiyeSatisSayac = new DevExpress.XtraEditors.TextEdit();
             this.btnTemizleKisiyeSatis = new DevExpress.XtraEditors.SimpleButton();
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -155,7 +156,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnKisiyeSatisYap = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -670,6 +670,12 @@
             this.panelControl3.Controls.Add(this.btn_2);
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
+            // 
+            // btnKisiyeSatisYap
+            // 
+            resources.ApplyResources(this.btnKisiyeSatisYap, "btnKisiyeSatisYap");
+            this.btnKisiyeSatisYap.Name = "btnKisiyeSatisYap";
+            this.btnKisiyeSatisYap.Click += new System.EventHandler(this.btnKisiyeSatisYap_Click);
             // 
             // txtKisiyeSatisSayac
             // 
@@ -1443,12 +1449,6 @@
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // btnKisiyeSatisYap
-            // 
-            resources.ApplyResources(this.btnKisiyeSatisYap, "btnKisiyeSatisYap");
-            this.btnKisiyeSatisYap.Name = "btnKisiyeSatisYap";
-            this.btnKisiyeSatisYap.Click += new System.EventHandler(this.btnKisiyeSatisYap_Click);
             // 
             // Satis
             // 

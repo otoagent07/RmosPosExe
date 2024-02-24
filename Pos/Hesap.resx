@@ -151,7 +151,7 @@
     <value>Tahoma, 11pt, style=Bold</value>
   </data>
   <data name="lbl_Bilgi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 10</value>
+    <value>13, 5</value>
   </data>
   <data name="lbl_Bilgi.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 18</value>
@@ -172,13 +172,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_Bilgi.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>49</value>
   </data>
   <data name="textEdit1.EditValue" xml:space="preserve">
     <value>Hesap  No</value>
   </data>
   <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 37</value>
+    <value>12, 29</value>
   </data>
   <data name="textEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt, style=Bold</value>
@@ -199,13 +199,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>48</value>
   </data>
   <data name="txt_Hesapno.EditValue" xml:space="preserve">
     <value />
   </data>
   <data name="txt_Hesapno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 37</value>
+    <value>150, 29</value>
   </data>
   <data name="txt_Hesapno.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt, style=Bold</value>
@@ -230,13 +230,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_Hesapno.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>47</value>
   </data>
   <data name="textEdit4.EditValue" xml:space="preserve">
     <value>Ödeme Şekli</value>
   </data>
   <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 70</value>
+    <value>12, 58</value>
   </data>
   <data name="textEdit4.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt, style=Bold</value>
@@ -257,13 +257,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>46</value>
   </data>
   <data name="txt_Odemetutari.EditValue" xml:space="preserve">
     <value>0,00</value>
   </data>
   <data name="txt_Odemetutari.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 103</value>
+    <value>201, 87</value>
   </data>
   <data name="txt_Odemetutari.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt, style=Bold</value>
@@ -287,13 +287,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_Odemetutari.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>44</value>
   </data>
   <data name="textEdit6.EditValue" xml:space="preserve">
     <value>Ödeme Tutarı</value>
   </data>
   <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 103</value>
+    <value>12, 87</value>
   </data>
   <data name="textEdit6.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt, style=Bold</value>
@@ -314,10 +314,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>45</value>
   </data>
   <data name="look_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 70</value>
+    <value>150, 58</value>
   </data>
   <data name="look_Kapatma.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt, style=Bold</value>
@@ -357,13 +357,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;look_Kapatma.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>43</value>
   </data>
   <data name="btn_Odemetutari.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_Odemetutari.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 102</value>
+    <value>323, 86</value>
   </data>
   <data name="btn_Odemetutari.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 27</value>
@@ -384,7 +384,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Odemetutari.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>42</value>
   </data>
   <data name="btn_Hesapara.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -408,7 +408,7 @@
 </value>
   </data>
   <data name="btn_Hesapara.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 37</value>
+    <value>398, 29</value>
   </data>
   <data name="btn_Hesapara.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 27</value>
@@ -426,7 +426,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Hesapara.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>41</value>
   </data>
   <data name="btn_Yazdirkapat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -474,7 +474,7 @@
 </value>
   </data>
   <data name="btn_Yazdirkapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 135</value>
+    <value>12, 116</value>
   </data>
   <data name="btn_Yazdirkapat.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 43</value>
@@ -495,7 +495,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Yazdirkapat.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>40</value>
   </data>
   <data name="btn_Yazdirmadankapat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -536,7 +536,7 @@
 </value>
   </data>
   <data name="btn_Yazdirmadankapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 135</value>
+    <value>155, 116</value>
   </data>
   <data name="btn_Yazdirmadankapat.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 43</value>
@@ -557,7 +557,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Yazdirmadankapat.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>39</value>
   </data>
   <data name="btn_HesapDokumu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -608,7 +608,7 @@
 </value>
   </data>
   <data name="btn_HesapDokumu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 135</value>
+    <value>718, 127</value>
   </data>
   <data name="btn_HesapDokumu.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -629,7 +629,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_HesapDokumu.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>38</value>
   </data>
   <data name="btn_Odemeal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -687,7 +687,7 @@
 </value>
   </data>
   <data name="btn_Odemeal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 185</value>
+    <value>718, 185</value>
   </data>
   <data name="btn_Odemeal.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -708,7 +708,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Odemeal.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>36</value>
   </data>
   <data name="btn_Odemesil.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -744,7 +744,7 @@
 </value>
   </data>
   <data name="btn_Odemesil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 234</value>
+    <value>718, 234</value>
   </data>
   <data name="btn_Odemesil.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -765,7 +765,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Odemesil.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>35</value>
   </data>
   <data name="btn_Indirim.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -808,7 +808,7 @@
 </value>
   </data>
   <data name="btn_Indirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 234</value>
+    <value>849, 234</value>
   </data>
   <data name="btn_Indirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -829,7 +829,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Indirim.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>34</value>
   </data>
   <data name="btn_Cikis.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -882,10 +882,10 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>650, 557</value>
+    <value>719, 494</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 54</value>
+    <value>255, 39</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -903,7 +903,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>33</value>
   </data>
   <data name="chk_Adisyon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -912,7 +912,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Adisyon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 332</value>
+    <value>718, 332</value>
   </data>
   <data name="chk_Adisyon.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 55</value>
@@ -933,7 +933,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Adisyon.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>32</value>
   </data>
   <data name="gridControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -942,7 +942,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 185</value>
+    <value>13, 163</value>
   </data>
   <data name="gridView1.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -1033,7 +1033,7 @@
     <value>YellowGreen</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>632, 381</value>
+    <value>701, 348</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1048,7 +1048,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>31</value>
   </data>
   <data name="chk_Hesapdok.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1057,7 +1057,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Hesapdok.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 332</value>
+    <value>788, 332</value>
   </data>
   <data name="chk_Hesapdok.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -1078,13 +1078,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_Hesapdok.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="btn_Fisupdate.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_Fisupdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 37</value>
+    <value>323, 29</value>
   </data>
   <data name="btn_Fisupdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 27</value>
@@ -1105,13 +1105,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Fisupdate.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="txt_Not.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="txt_Not.Location" type="System.Drawing.Point, System.Drawing">
-    <value>391, 575</value>
+    <value>718, 679</value>
   </data>
   <data name="txt_Not.Properties.NullValuePrompt" xml:space="preserve">
     <value>Adisyon Notu Giriniz...</value>
@@ -1120,7 +1120,7 @@
     <value>True</value>
   </data>
   <data name="txt_Not.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 113</value>
+    <value>256, 27</value>
   </data>
   <data name="txt_Not.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
@@ -1135,7 +1135,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_Not.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="btn_Bindirim.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1186,7 +1186,7 @@
 </value>
   </data>
   <data name="btn_Bindirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 283</value>
+    <value>849, 283</value>
   </data>
   <data name="btn_Bindirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1207,7 +1207,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Bindirim.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="btn_Yuvarla.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1247,7 +1247,7 @@
 </value>
   </data>
   <data name="btn_Yuvarla.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 393</value>
+    <value>718, 393</value>
   </data>
   <data name="btn_Yuvarla.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 53</value>
@@ -1268,10 +1268,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Yuvarla.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="look_DovizKod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 103</value>
+    <value>150, 87</value>
   </data>
   <data name="look_DovizKod.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt, style=Bold</value>
@@ -1358,7 +1358,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;look_DovizKod.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="gridControl2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -1367,7 +1367,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 576</value>
+    <value>719, 539</value>
   </data>
   <data name="gridView2.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 7pt, style=Bold</value>
@@ -1403,7 +1403,7 @@
     <value>Kod</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 113</value>
+    <value>254, 138</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -1418,7 +1418,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="chk_HesabaFatura.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1427,7 +1427,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_HesabaFatura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>850, 393</value>
+    <value>919, 393</value>
   </data>
   <data name="chk_HesabaFatura.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 53</value>
@@ -1448,7 +1448,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_HesabaFatura.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="btn_AdisYaz.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1457,7 +1457,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_AdisYaz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>850, 332</value>
+    <value>919, 332</value>
   </data>
   <data name="btn_AdisYaz.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -1478,13 +1478,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_AdisYaz.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="lbl_Split.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12.25pt, style=Bold</value>
   </data>
   <data name="lbl_Split.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 9</value>
+    <value>506, 5</value>
   </data>
   <data name="lbl_Split.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 19</value>
@@ -1505,13 +1505,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_Split.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="lbl_CariAdi.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12.25pt, style=Bold</value>
   </data>
   <data name="lbl_CariAdi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 9</value>
+    <value>134, 5</value>
   </data>
   <data name="lbl_CariAdi.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 19</value>
@@ -1529,13 +1529,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_CariAdi.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11pt, style=Bold</value>
   </data>
   <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 37</value>
+    <value>506, 29</value>
   </data>
   <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 18</value>
@@ -1556,13 +1556,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="lbl_KisiSayisi.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11pt, style=Bold</value>
   </data>
   <data name="lbl_KisiSayisi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 37</value>
+    <value>606, 29</value>
   </data>
   <data name="lbl_KisiSayisi.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 18</value>
@@ -1583,13 +1583,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_KisiSayisi.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="lbl_Masaadi.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11pt, style=Bold</value>
   </data>
   <data name="lbl_Masaadi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 59</value>
+    <value>606, 51</value>
   </data>
   <data name="lbl_Masaadi.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 18</value>
@@ -1610,13 +1610,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_Masaadi.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="labelControl4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11pt, style=Bold</value>
   </data>
   <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 59</value>
+    <value>506, 51</value>
   </data>
   <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 18</value>
@@ -1637,7 +1637,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="chk_AdsPr.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1646,7 +1646,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdsPr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 332</value>
+    <value>849, 332</value>
   </data>
   <data name="chk_AdsPr.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 55</value>
@@ -1667,7 +1667,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_AdsPr.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="btnIngenicoKapat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1694,7 +1694,7 @@
 </value>
   </data>
   <data name="btnIngenicoKapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 86</value>
+    <value>718, 78</value>
   </data>
   <data name="btnIngenicoKapat.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 43</value>
@@ -1715,7 +1715,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnIngenicoKapat.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>37</value>
   </data>
   <data name="simpleButton2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1749,7 +1749,7 @@
 </value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>830, 4</value>
+    <value>899, 2</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 24</value>
@@ -1773,7 +1773,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="simpleButton3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1812,7 +1812,7 @@
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 283</value>
+    <value>718, 283</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1833,7 +1833,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;simpleButton3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="simpleButton4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1841,62 +1841,17 @@
   <data name="simpleButton4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="simpleButton4.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        QmCC
-</value>
-  </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>850, 634</value>
+    <value>563, 119</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 43</value>
+    <value>137, 23</value>
   </data>
   <data name="simpleButton4.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
   </data>
   <data name="simpleButton4.Text" xml:space="preserve">
-    <value>Ürün Bazlı Hesaplama</value>
+    <value>Ürün.B Hesaplama</value>
   </data>
   <data name="simpleButton4.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1911,7 +1866,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;simpleButton4.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="simpleButton5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1919,36 +1874,17 @@
   <data name="simpleButton5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="simpleButton5.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAYdEVYdFRpdGxlAFByaW50QXJlYTtQcmludGVyOxXw
-        68wAAALOSURBVDhPddJtT1JhGAfw07O11XpRn6Ev0Hp4V8qyNrPm5swt22pqaWs2H9KUNEVNRUpI0SkY
-        Zpqmac3K0gRB0RAFXT5Np6WM8KkQEUHE/l3nuKzUXvx2bfe57v997nMdprRWry6rN0LBqjOijCjqDOue
-        vDSgpOqThmGYnQCYjRi2adnt4RrZyln2wEVKa3u4Kqvppk7Ga8sAOTXJa3qQVNa7SSIprtajuErPBuzd
-        MoBtYE9JVPSiZsi2TjWxiHLlONz0Ru81I/8PKKrsgtO1gvhSI14M2lA9OI/qARu0JgfElUbkyrs4QlkX
-        cmQ65JToWv4JKCjvxBIFxJT04Hn/PCr6raj4bIXmqx1ZxZ3wrP7krHhWsbKyiszCDtr3V4BEocWS042o
-        Qj2dbMWHURuUY2vSpVpuo3lmkSzANGNH6mMNe50dZDvZxjySt8FBAZH5Om5zfbcFRXVDCI7IwX2xhpvK
-        xJQNkxYbJkhYXCkCrgmQLevWp0pUPCa3RI3FJTfC8zrxfvgHHj7rg2XGAf+QFPBFKu56X8zzGDdbOSG3
-        pPANiod5ehFpUt0Uk12oQpZUiasiLSR1A8go0nObfC7GwucC8Y+Ft38MvM9H47RfNE6RgCt86vGAL9aC
-        ycxvgd2xjAyqNrsDyZJOzM070aQ2wi8oDid513GCF47jPmE45h2KcwHRaFQauJ47OWow94QNrQJxM9JI
-        5Ss9EoQajFkWMM6x02tTNdu5td/rXKX1KEEL+0EZL7KfHCCHb6crYRyZhWF4Gkd975KETQwjczCOziKC
-        3/RnntxMKSwyuRlKgwlv24YhyG+HdcGF1EYT+G9M+G5zQVDQjo/dk1D3fUNo/LtNAbsu3XzaEnhDAb/L
-        IqTkaTBndWKW7jtrXcIMSaHRngl6gLPBQvAC05UbA9ifYzc5SI5Ep73uSKJRJolayVqNSW9oo2eHyD6G
-        Yfb8Ap5u1fxvZWjqAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>784, 634</value>
+    <value>563, 90</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 43</value>
+    <value>137, 23</value>
   </data>
   <data name="simpleButton5.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
   </data>
   <data name="simpleButton5.Text" xml:space="preserve">
-    <value>Ürün Bazlı Hesap Dkm.</value>
+    <value>Ürün Bazlı H.Dkm.</value>
   </data>
   <data name="simpleButton5.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1963,7 +1899,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;simpleButton5.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="chk_AdisyonGR.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1972,7 +1908,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdisyonGR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 393</value>
+    <value>788, 393</value>
   </data>
   <data name="chk_AdisyonGR.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 53</value>
@@ -1993,7 +1929,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chk_AdisyonGR.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="btnFisIptal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2042,10 +1978,10 @@
 </value>
   </data>
   <data name="btnFisIptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 465</value>
+    <value>718, 454</value>
   </data>
   <data name="btnFisIptal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 54</value>
+    <value>125, 37</value>
   </data>
   <data name="btnFisIptal.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -2066,7 +2002,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnFisIptal.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="btnSpSil.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2075,7 +2011,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnSpSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 393</value>
+    <value>849, 393</value>
   </data>
   <data name="btnSpSil.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 53</value>
@@ -2096,7 +2032,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSpSil.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btnParcaliOde.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2145,7 +2081,7 @@
 </value>
   </data>
   <data name="btnParcaliOde.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 135</value>
+    <value>849, 127</value>
   </data>
   <data name="btnParcaliOde.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -2167,7 +2103,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnParcaliOde.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="E_AdisyonDurum.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2176,7 +2112,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="E_AdisyonDurum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>811, 465</value>
+    <value>899, 452</value>
   </data>
   <data name="E_AdisyonDurum.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 37</value>
@@ -2197,13 +2133,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;E_AdisyonDurum.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="txtCariAd.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12.25pt, style=Bold</value>
   </data>
   <data name="txtCariAd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 10</value>
+    <value>225, 5</value>
   </data>
   <data name="txtCariAd.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 19</value>
@@ -2224,10 +2160,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtCariAd.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="checkEditOtoCari.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 72</value>
+    <value>327, 60</value>
   </data>
   <data name="checkEditOtoCari.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -2254,7 +2190,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkEditOtoCari.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btnTipBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2302,7 +2238,7 @@
 </value>
   </data>
   <data name="btnTipBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 185</value>
+    <value>849, 185</value>
   </data>
   <data name="btnTipBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -2323,7 +2259,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnTipBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="btnKisiyeKapat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2381,10 +2317,10 @@
 </value>
   </data>
   <data name="btnKisiyeKapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 135</value>
+    <value>398, 116</value>
   </data>
   <data name="btnKisiyeKapat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 43</value>
+    <value>148, 43</value>
   </data>
   <data name="btnKisiyeKapat.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -2402,6 +2338,54 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnKisiyeKapat.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gridControlKisiyeSatis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 517</value>
+  </data>
+  <data name="gridViewKisiyeSatis.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridControlKisiyeSatis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 191</value>
+  </data>
+  <data name="gridControlKisiyeSatis.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="&gt;&gt;gridControlKisiyeSatis.Name" xml:space="preserve">
+    <value>gridControlKisiyeSatis</value>
+  </data>
+  <data name="&gt;&gt;gridControlKisiyeSatis.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControlKisiyeSatis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridControlKisiyeSatis.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gridControlFis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 517</value>
+  </data>
+  <data name="gridViewFis.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridControlFis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 191</value>
+  </data>
+  <data name="gridControlFis.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="&gt;&gt;gridControlFis.Name" xml:space="preserve">
+    <value>gridControlFis</value>
+  </data>
+  <data name="&gt;&gt;gridControlFis.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControlFis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridControlFis.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2411,7 +2395,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>910, 698</value>
+    <value>979, 706</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -2526,6 +2510,18 @@
   </data>
   <data name="&gt;&gt;gridColumn11.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridViewKisiyeSatis.Name" xml:space="preserve">
+    <value>gridViewKisiyeSatis</value>
+  </data>
+  <data name="&gt;&gt;gridViewKisiyeSatis.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridViewFis.Name" xml:space="preserve">
+    <value>gridViewFis</value>
+  </data>
+  <data name="&gt;&gt;gridViewFis.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Hesap</value>

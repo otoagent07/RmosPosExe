@@ -408,6 +408,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Controllers\EntegreMenuController.cs" />
+    <Compile Include="Controllers\KisiyeSatisController.cs" />
     <Compile Include="Controllers\OdemeTipController.cs" />
     <Compile Include="Controllers\CariController.cs" />
     <Compile Include="Controllers\TrendyolController.cs" />

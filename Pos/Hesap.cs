@@ -212,6 +212,9 @@ namespace Pos
                 {
                     look_DovizKod.EditValue = kod;
                 }
+
+
+                kisiyeSatisController = new KisiyeSatisController(this, Convert.ToInt32(this.Tag));
             }
             catch (Exception ex)
             {
@@ -219,6 +222,9 @@ namespace Pos
             }
 
         }
+
+        KisiyeSatisController kisiyeSatisController = null;
+
 
         AyarlarController ayarlar = new AyarlarController();
         private void Yuvarlama()
@@ -514,6 +520,9 @@ namespace Pos
                 //txt_Odemetutari.Text = toplamTutar.ToString();
 
             }
+
+            if(kisiyeSatisController!=null)
+            kisiyeSatisController.listele();
 
         }
 
@@ -1169,10 +1178,9 @@ namespace Pos
 
 
 
-                    Fis_Islem.Odeme_Al(Convert.ToInt32(this.Tag), tutar, doviztutar, Convert.ToString(look_Kapatma.EditValue), musTipi_A, odaNo_A, folio_A, cari_A, Split, Convert.ToString(look_DovizKod.EditValue), chk_AdsPr.Checked, mevcutToplamTutar, kisiyeAdSoyad:kisiyesatisAdSoyad);
+                    Fis_Islem.Odeme_Al(Convert.ToInt32(this.Tag), tutar, doviztutar, Convert.ToString(look_Kapatma.EditValue), musTipi_A, odaNo_A, folio_A, cari_A, Split, Convert.ToString(look_DovizKod.EditValue), chk_AdsPr.Checked, mevcutToplamTutar, kisiyeAdSoyad: kisiyeSatisController.kisiyesatisAdSoyad);
 
                     btnKisiyeKapat.Text = "Kişiye Kapat";
-
 
 
                     Fis_Islem.Satis_Tip(Convert.ToInt32(this.Tag), Convert.ToString(look_Kapatma.EditValue), pansiyon_A);
@@ -3421,29 +3429,31 @@ namespace Pos
         }
 
 
-        string kisiyesatisAdSoyad = "";
+
         private void btnKisiyeKapat_Click(object sender, EventArgs e)
         {
-            kisiyesatisAdSoyad = "";
+            return;
 
-            HesapKisiyeSatis hesapKisiyeSatis = new HesapKisiyeSatis(Convert.ToInt32(this.Tag));
-            hesapKisiyeSatis.ShowDialog();
+            //kisiyesatisAdSoyad = "";
 
-            if (hesapKisiyeSatis.seciliRow==null)
-            {
+            //HesapKisiyeSatis hesapKisiyeSatis = new HesapKisiyeSatis(Convert.ToInt32(this.Tag));
+            //hesapKisiyeSatis.ShowDialog();
 
-                return;
-            }
+            //if (hesapKisiyeSatis.seciliRow == null)
+            //{
 
-            string fark = hesapKisiyeSatis.seciliRow["fark"].ToString();
+            //    return;
+            //}
 
-            string tutar = Convert.ToDecimal(fark).ToString("n2");
-            txt_Odemetutari.EditValue = tutar;
-            txt_Odemetutari.Text = tutar;
+            //string fark = hesapKisiyeSatis.seciliRow["fark"].ToString();
 
-            kisiyesatisAdSoyad = hesapKisiyeSatis.seciliRow["Ad Soyad"].ToString();
+            //string tutar = Convert.ToDecimal(fark).ToString("n2");
+            //txt_Odemetutari.EditValue = tutar;
+            //txt_Odemetutari.Text = tutar;
 
-            btnKisiyeKapat.Text = "Kişiye Kapat\n"+kisiyesatisAdSoyad;
+            //kisiyesatisAdSoyad = hesapKisiyeSatis.seciliRow["Ad Soyad"].ToString();
+
+            //btnKisiyeKapat.Text = "Kişiye Kapat\n" + kisiyesatisAdSoyad;
         }
     }
 }
