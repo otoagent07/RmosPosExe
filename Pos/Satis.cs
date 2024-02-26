@@ -202,6 +202,8 @@ namespace Pos
                 {
                     btn_Mars.Enabled = true;
                     btn_Siparis.Enabled = true;
+
+                    btn_Mars.Enabled = Departman.Kodlar_Mars;
                 }
                 else if (count == 0)
                 {

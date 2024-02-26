@@ -274,6 +274,8 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.lookUpEdit_tipbox = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit199 = new DevExpress.XtraEditors.TextEdit();
             this.cariindirimAktif = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit198 = new DevExpress.XtraEditors.TextEdit();
             this.txtKartnoSayisi = new DevExpress.XtraEditors.SpinEdit();
@@ -1242,8 +1244,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.lookUpEdit_tipbox = new DevExpress.XtraEditors.LookUpEdit();
-            this.textEdit199 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1432,6 +1432,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit_tipbox.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit199.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit198.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKartnoSayisi.Properties)).BeginInit();
@@ -2078,8 +2080,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit_tipbox.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit199.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4108,6 +4108,27 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // lookUpEdit_tipbox
+            // 
+            resources.ApplyResources(this.lookUpEdit_tipbox, "lookUpEdit_tipbox");
+            this.lookUpEdit_tipbox.Name = "lookUpEdit_tipbox";
+            this.lookUpEdit_tipbox.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit_tipbox.Properties.Buttons"))))});
+            this.lookUpEdit_tipbox.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit_tipbox.Properties.Columns"), resources.GetString("lookUpEdit_tipbox.Properties.Columns1")),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit_tipbox.Properties.Columns2"), resources.GetString("lookUpEdit_tipbox.Properties.Columns3"), ((int)(resources.GetObject("lookUpEdit_tipbox.Properties.Columns4"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit_tipbox.Properties.Columns5"))), resources.GetString("lookUpEdit_tipbox.Properties.Columns6"), ((bool)(resources.GetObject("lookUpEdit_tipbox.Properties.Columns7"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit_tipbox.Properties.Columns8"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEdit_tipbox.Properties.Columns9"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEdit_tipbox.Properties.Columns10"))))});
+            this.lookUpEdit_tipbox.Properties.DropDownRows = 18;
+            this.lookUpEdit_tipbox.Properties.NullText = resources.GetString("lookUpEdit_tipbox.Properties.NullText");
+            this.lookUpEdit_tipbox.Properties.ShowFooter = false;
+            this.lookUpEdit_tipbox.Properties.ShowHeader = false;
+            // 
+            // textEdit199
+            // 
+            resources.ApplyResources(this.textEdit199, "textEdit199");
+            this.textEdit199.Name = "textEdit199";
+            this.textEdit199.Properties.ReadOnly = true;
+            this.textEdit199.TabStop = false;
             // 
             // cariindirimAktif
             // 
@@ -12374,27 +12395,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // lookUpEdit_tipbox
-            // 
-            resources.ApplyResources(this.lookUpEdit_tipbox, "lookUpEdit_tipbox");
-            this.lookUpEdit_tipbox.Name = "lookUpEdit_tipbox";
-            this.lookUpEdit_tipbox.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
-            this.lookUpEdit_tipbox.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns"), resources.GetString("lookUpEdit1.Properties.Columns1")),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns2"), resources.GetString("lookUpEdit1.Properties.Columns3"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns4"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns5"))), resources.GetString("lookUpEdit1.Properties.Columns6"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns7"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns8"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEdit1.Properties.Columns9"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEdit1.Properties.Columns10"))))});
-            this.lookUpEdit_tipbox.Properties.DropDownRows = 18;
-            this.lookUpEdit_tipbox.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
-            this.lookUpEdit_tipbox.Properties.ShowFooter = false;
-            this.lookUpEdit_tipbox.Properties.ShowHeader = false;
-            // 
-            // textEdit199
-            // 
-            resources.ApplyResources(this.textEdit199, "textEdit199");
-            this.textEdit199.Name = "textEdit199";
-            this.textEdit199.Properties.ReadOnly = true;
-            this.textEdit199.TabStop = false;
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -12595,6 +12595,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit_tipbox.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit199.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit198.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKartnoSayisi.Properties)).EndInit();
@@ -13269,8 +13271,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit_tipbox.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit199.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
