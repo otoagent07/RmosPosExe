@@ -9,7 +9,7 @@ namespace Pos
     {
         public static string MyClassName = "MyMesaj";
 
-        public static void alertMesaj(string icerik,int saniye=60)
+        public static void alertMesaj(string icerik,int saniye=2)
         {
             string header = "RMOS POS";
             if (Program.main != null)
@@ -22,7 +22,7 @@ namespace Pos
             }
         }
 
-        public static void alertMesaj2(string icerik, int saniye = 60)
+        public static void alertMesaj2(string icerik, int saniye = 2)
         {
             string header = "RMOS POS";
             if (Program.main != null)
@@ -36,7 +36,7 @@ namespace Pos
         }
 
 
-        public static void alertMesajSagUst(string header, string icerik, int saniye = 60)
+        public static void alertMesajSagUst(string header, string icerik, int saniye = 2)
         {
             if (Program.main != null)
             {

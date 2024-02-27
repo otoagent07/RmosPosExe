@@ -153,23 +153,48 @@
         vg/tveR91gREJWOx2OyY3f9j1oRO9zd2Q+VlvUXHfgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="simpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="checkEditOnlinePaket.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 140</value>
+  </data>
+  <data name="checkEditOnlinePaket.Properties.Caption" xml:space="preserve">
+    <value>Online Paket</value>
+  </data>
+  <data name="checkEditOnlinePaket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkEditOnlinePaket.TabIndex" type="System.Int32, mscorlib">
+    <value>175</value>
+  </data>
+  <data name="&gt;&gt;checkEditOnlinePaket.Name" xml:space="preserve">
+    <value>checkEditOnlinePaket</value>
+  </data>
+  <data name="&gt;&gt;checkEditOnlinePaket.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditOnlinePaket.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;checkEditOnlinePaket.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnMaliyetSatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        hKAHQOcvA3wSczZOvyEAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnMaliyetSatis.Location" type="System.Drawing.Point, System.Drawing">
@@ -178,7 +203,6 @@
   <data name="btnMaliyetSatis.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnMaliyetSatis.TabIndex" type="System.Int32, mscorlib">
     <value>172</value>
   </data>
@@ -195,7 +219,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnMaliyetSatis.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnEncoksatan.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -237,7 +261,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btnEncoksatan.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="chk_Kdv.Location" type="System.Drawing.Point, System.Drawing">
     <value>975, 86</value>
@@ -261,7 +285,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Kdv.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chk_PR.Location" type="System.Drawing.Point, System.Drawing">
     <value>488, 111</value>
@@ -285,7 +309,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_PR.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chk_MalzemePors.Location" type="System.Drawing.Point, System.Drawing">
     <value>605, 111</value>
@@ -309,7 +333,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_MalzemePors.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="cmb_DetayGrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>337, 110</value>
@@ -334,10 +358,10 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;cmb_DetayGrup.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="chk_DetayGrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 111</value>
+    <value>230, 112</value>
   </data>
   <data name="chk_DetayGrup.Properties.Caption" xml:space="preserve">
     <value>Detay Grup</value>
@@ -358,7 +382,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_DetayGrup.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="textEdit3.EditValue" xml:space="preserve">
     <value>Şube Seçimi</value>
@@ -385,7 +409,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="chkCombo_Sube.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 88</value>
@@ -409,7 +433,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chkCombo_Sube.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="chk_SifirTutar.Location" type="System.Drawing.Point, System.Drawing">
     <value>844, 86</value>
@@ -433,7 +457,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_SifirTutar.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="chk_Malzeme.Location" type="System.Drawing.Point, System.Drawing">
     <value>605, 86</value>
@@ -457,7 +481,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Malzeme.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="chk_Kisi.Location" type="System.Drawing.Point, System.Drawing">
     <value>723, 86</value>
@@ -481,7 +505,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Kisi.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="chk_Garson.Location" type="System.Drawing.Point, System.Drawing">
     <value>488, 86</value>
@@ -505,7 +529,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Garson.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="chk_Paket.Location" type="System.Drawing.Point, System.Drawing">
     <value>844, 61</value>
@@ -529,7 +553,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Paket.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="chk_Grup.Location" type="System.Drawing.Point, System.Drawing">
     <value>605, 61</value>
@@ -553,7 +577,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Grup.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="chk_Tahsilat.Location" type="System.Drawing.Point, System.Drawing">
     <value>723, 61</value>
@@ -577,7 +601,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Tahsilat.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="chk_Anagrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>605, 35</value>
@@ -601,7 +625,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Anagrup.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="chk_UrunGrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>975, 35</value>
@@ -625,7 +649,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_UrunGrup.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="chk_UrunGrupNet.Location" type="System.Drawing.Point, System.Drawing">
     <value>975, 61</value>
@@ -649,7 +673,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_UrunGrupNet.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="chk_Konum.Location" type="System.Drawing.Point, System.Drawing">
     <value>844, 35</value>
@@ -673,7 +697,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Konum.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="chk_Saat.Location" type="System.Drawing.Point, System.Drawing">
     <value>723, 35</value>
@@ -697,7 +721,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Saat.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="chk_Kasiyer.Location" type="System.Drawing.Point, System.Drawing">
     <value>488, 61</value>
@@ -721,7 +745,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Kasiyer.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="chk_Dep.Location" type="System.Drawing.Point, System.Drawing">
     <value>488, 35</value>
@@ -1138,7 +1162,7 @@
     <value>Fill</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 146</value>
+    <value>0, 178</value>
   </data>
   <data name="gridColumn2.Caption" xml:space="preserve">
     <value>Kod</value>
@@ -1186,7 +1210,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1144, 444</value>
+    <value>1144, 412</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1342,7 +1366,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Dep.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="look_TekGrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>337, 85</value>
@@ -1366,7 +1390,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;look_TekGrup.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="look_TekGarson.Location" type="System.Drawing.Point, System.Drawing">
     <value>337, 60</value>
@@ -1390,7 +1414,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;look_TekGarson.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="look_TekDep.Location" type="System.Drawing.Point, System.Drawing">
     <value>337, 34</value>
@@ -1414,10 +1438,10 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;look_TekDep.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="chk_TekGrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 86</value>
+    <value>230, 87</value>
   </data>
   <data name="chk_TekGrup.Properties.Caption" xml:space="preserve">
     <value>Tek Grup</value>
@@ -1438,10 +1462,10 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_TekGrup.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="chk_TekGarson.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 61</value>
+    <value>230, 62</value>
   </data>
   <data name="chk_TekGarson.Properties.Caption" xml:space="preserve">
     <value>Tek Garson</value>
@@ -1462,10 +1486,10 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_TekGarson.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="chk_TekDep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 35</value>
+    <value>230, 36</value>
   </data>
   <data name="chk_TekDep.Properties.Caption" xml:space="preserve">
     <value>Tek Departman</value>
@@ -1486,7 +1510,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_TekDep.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="dateEdit2.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1513,7 +1537,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dateEdit2.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="dateEdit1.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1540,7 +1564,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dateEdit1.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="textEdit2.EditValue" xml:space="preserve">
     <value>Bit. Tarih</value>
@@ -1564,7 +1588,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="textEdit1.EditValue" xml:space="preserve">
     <value>Bas. Tarih</value>
@@ -1588,7 +1612,37 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
+  </data>
+  <data name="checkedComboBoxEditOnlinePaket.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkedComboBoxEditOnlinePaket.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 138</value>
+  </data>
+  <data name="checkedComboBoxEditOnlinePaket.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="checkedComboBoxEditOnlinePaket.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkedComboBoxEditOnlinePaket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="checkedComboBoxEditOnlinePaket.TabIndex" type="System.Int32, mscorlib">
+    <value>174</value>
+  </data>
+  <data name="&gt;&gt;checkedComboBoxEditOnlinePaket.Name" xml:space="preserve">
+    <value>checkedComboBoxEditOnlinePaket</value>
+  </data>
+  <data name="&gt;&gt;checkedComboBoxEditOnlinePaket.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkedComboBoxEditOnlinePaket.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;checkedComboBoxEditOnlinePaket.ZOrder" xml:space="preserve">
+    <value>34</value>
   </data>
   <data name="groupControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -1597,7 +1651,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1144, 146</value>
+    <value>1144, 178</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

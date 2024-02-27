@@ -434,6 +434,12 @@
     <Compile Include="Forms\UyariForm.Designer.cs">
       <DependentUpon>UyariForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginSadeceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSadeceForm.Designer.cs">
+      <DependentUpon>LoginSadeceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HesapKisiyeSatis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1438,6 +1444,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UyariForm.resx">
       <DependentUpon>UyariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSadeceForm.en-GB.resx">
+      <DependentUpon>LoginSadeceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSadeceForm.en-US.resx">
+      <DependentUpon>LoginSadeceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSadeceForm.resx">
+      <DependentUpon>LoginSadeceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSadeceForm.ru.resx">
+      <DependentUpon>LoginSadeceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.en-GB.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

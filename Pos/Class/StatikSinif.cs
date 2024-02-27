@@ -141,7 +141,7 @@ ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_Aciklama nvarchar(2000);
 ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_ZayiNeden nvarchar(1000);
 ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_IkramNeden nvarchar(1000);
 ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_OzelMasaAdi nvarchar(150);
-
+ALTER TABLE Cst_Recete_Satis ALTER COLUMN Rsat_YSOrderID nvarchar(500);
 
 ALTER TABLE Cst_Satis_Ipt ALTER COLUMN Rsat_Recete nvarchar(200);
 ALTER TABLE Cst_Satis_Ipt ALTER COLUMN Rsat_Aciklama nvarchar(2000);

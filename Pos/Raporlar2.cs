@@ -60,6 +60,30 @@ namespace Pos
                 chkCombo_Sube.Properties.DisplayMember = "Pkod_Ad";
                 chkCombo_Sube.Properties.ValueMember = "Pkod_Kod";
             }
+
+
+            DataTable dataTable = new DataTable();
+            dataTable.Columns.Add("Ad");
+            dataTable.Columns.Add("Kod");
+            DataRow dataRow = dataTable.NewRow();
+            dataRow["Ad"] = "Trendyol";
+            dataRow["Kod"] = "T";
+            dataTable.Rows.Add(dataRow);
+
+            dataRow = dataTable.NewRow();
+            dataRow["Ad"] = "Yemek Sepeti";
+            dataRow["Kod"] = "Y";
+            dataTable.Rows.Add(dataRow);
+
+            dataRow = dataTable.NewRow();
+            dataRow["Ad"] = "Getir";
+            dataRow["Kod"] = "G";
+            dataTable.Rows.Add(dataRow);
+
+
+            checkedComboBoxEditOnlinePaket.Properties.DataSource = dataTable;
+            checkedComboBoxEditOnlinePaket.Properties.DisplayMember = "Ad";
+            checkedComboBoxEditOnlinePaket.Properties.ValueMember = "Kod";
         }
 
         private void chk_TekDep_CheckedChanged(object sender, EventArgs e)
@@ -77,8 +101,29 @@ namespace Pos
             look_TekGrup.Properties.ReadOnly = !chk_TekGrup.Checked;
         }
 
+        public void onlineYemekSepetiListele()
+        {
+            string bastar = dateEdit1.DateTime.ToString("yyyy-MM-dd");
+            string bittar = dateEdit2.DateTime.ToString("yyyy-MM-dd");
+
+            string query = $@"SELECT r.Rec_Ad  as Ad , SUM(s.Rsat_Miktar) AS Miktar ,SUM(s.Rsat_Tutar) AS Tutar 
+FROM Cst_Recete_Satis s
+JOIN Pos_Cari c ON s.Rsat_Cari = c.Cari_Kod
+JOIN Cst_Recete r ON s.Rsat_Recete = r.Rec_Genelkod
+WHERE c.Cari_Tip = '{checkedComboBoxEditOnlinePaket.EditValue.ToString()}'  and  Convert(date,s.Rsat_Tarih) >= '{bastar}' and Convert(date,s.Rsat_Tarih) <= '{bittar}'
+GROUP BY r.Rec_Ad;";
+
+            gridColumnMaliyet.Visible = true;
+            gridControl1.DataSource = null;
+            gridControl1.DataSource = dbtools.SelectTableR(query);
+        }
         private void btn_Listele_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            if (checkEditOnlinePaket.Checked)
+            {
+                onlineYemekSepetiListele();
+                return;
+            }
             SqlConnection con = dbtools.conn;
             if (con.State == ConnectionState.Closed) con.Open();
 
@@ -573,6 +618,11 @@ order by (Miktar) desc";
             gridColumnMaliyet.Visible = true;
             gridControl1.DataSource = null;
             gridControl1.DataSource = dbtools.SelectTableR(query);
+        }
+
+        private void checkEditOnlinePaket_CheckedChanged(object sender, EventArgs e)
+        {
+            checkedComboBoxEditOnlinePaket.Properties.ReadOnly = !checkEditOnlinePaket.Checked;
         }
     }
 }

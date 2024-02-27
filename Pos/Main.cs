@@ -418,7 +418,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.89";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.90";
 
 
 
@@ -1885,7 +1885,7 @@ No Cut Seçili Olsun
 
                 if (Param.Param_YeniSiparisDkm)
                 {
-                    sonuc = pr.newSiparisPr(Convert.ToInt32(json.fisno), false, 0);
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(json.fisno), false, 0,fisBaslik: " * * * " + json.tip + " FİSİ * * * ");
                 }
                 else
                 {

@@ -451,7 +451,7 @@ namespace Pos.Class
 
 
 
-        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "")
+        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "",string fisBaslik="")
         {
 
             try
@@ -590,6 +590,11 @@ namespace Pos.Class
 
                             siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                             siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
+
+                            if (fisBaslik!="")
+                            {
+                                siparis.xr_Baslik.Text = fisBaslik;
+                            }
 
                             if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "") // 
                             {

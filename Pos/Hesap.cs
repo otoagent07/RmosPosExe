@@ -2996,6 +2996,15 @@ namespace Pos
 
         private void btnFisIptal_Click(object sender, EventArgs e)
         {
+            LoginSadeceForm loginSadeceForm = new LoginSadeceForm();
+            loginSadeceForm.ShowDialog();
+
+            if (loginSadeceForm.okey==false)
+            {
+                RHMesaj.alertMesaj("ŞİFRE YANLIŞ");
+                return;
+            }
+
             FisIptal();
         }
 

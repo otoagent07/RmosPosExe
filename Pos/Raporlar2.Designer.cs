@@ -33,6 +33,8 @@
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.checkEditOnlinePaket = new DevExpress.XtraEditors.CheckEdit();
+            this.btnMaliyetSatis = new DevExpress.XtraEditors.SimpleButton();
             this.btnEncoksatan = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Kdv = new DevExpress.XtraEditors.CheckEdit();
             this.chk_PR = new DevExpress.XtraEditors.CheckEdit();
@@ -80,16 +82,17 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.checkedComboBoxEditOnlinePaket = new DevExpress.XtraEditors.LookUpEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnMaliyetSatis = new DevExpress.XtraEditors.SimpleButton();
             this.gridColumnMaliyet = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditOnlinePaket.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Kdv.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_PR.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_MalzemePors.Properties)).BeginInit();
@@ -124,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditOnlinePaket.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
@@ -138,6 +142,7 @@
             // groupControl1
             // 
             this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
+            this.groupControl1.Controls.Add(this.checkEditOnlinePaket);
             this.groupControl1.Controls.Add(this.btnMaliyetSatis);
             this.groupControl1.Controls.Add(this.btnEncoksatan);
             this.groupControl1.Controls.Add(this.chk_Kdv);
@@ -171,8 +176,24 @@
             this.groupControl1.Controls.Add(this.dateEdit1);
             this.groupControl1.Controls.Add(this.textEdit2);
             this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.checkedComboBoxEditOnlinePaket);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // checkEditOnlinePaket
+            // 
+            resources.ApplyResources(this.checkEditOnlinePaket, "checkEditOnlinePaket");
+            this.checkEditOnlinePaket.Name = "checkEditOnlinePaket";
+            this.checkEditOnlinePaket.Properties.Caption = resources.GetString("checkEditOnlinePaket.Properties.Caption");
+            this.checkEditOnlinePaket.TabStop = false;
+            this.checkEditOnlinePaket.CheckedChanged += new System.EventHandler(this.checkEditOnlinePaket_CheckedChanged);
+            // 
+            // btnMaliyetSatis
+            // 
+            this.btnMaliyetSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMaliyetSatis.ImageOptions.Image")));
+            resources.ApplyResources(this.btnMaliyetSatis, "btnMaliyetSatis");
+            this.btnMaliyetSatis.Name = "btnMaliyetSatis";
+            this.btnMaliyetSatis.Click += new System.EventHandler(this.btnMaliyetSatis_Click);
             // 
             // btnEncoksatan
             // 
@@ -576,6 +597,17 @@
             this.textEdit1.Properties.ReadOnly = true;
             this.textEdit1.TabStop = false;
             // 
+            // checkedComboBoxEditOnlinePaket
+            // 
+            resources.ApplyResources(this.checkedComboBoxEditOnlinePaket, "checkedComboBoxEditOnlinePaket");
+            this.checkedComboBoxEditOnlinePaket.Name = "checkedComboBoxEditOnlinePaket";
+            this.checkedComboBoxEditOnlinePaket.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.checkedComboBoxEditOnlinePaket.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("checkedComboBoxEditOnlinePaket.Properties.Buttons"))))});
+            this.checkedComboBoxEditOnlinePaket.Properties.NullText = resources.GetString("checkedComboBoxEditOnlinePaket.Properties.NullText");
+            this.checkedComboBoxEditOnlinePaket.Properties.ReadOnly = true;
+            this.checkedComboBoxEditOnlinePaket.TabStop = false;
+            // 
             // gridControl1
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
@@ -641,13 +673,6 @@
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             // 
-            // btnMaliyetSatis
-            // 
-            this.btnMaliyetSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            resources.ApplyResources(this.btnMaliyetSatis, "btnMaliyetSatis");
-            this.btnMaliyetSatis.Name = "btnMaliyetSatis";
-            this.btnMaliyetSatis.Click += new System.EventHandler(this.btnMaliyetSatis_Click);
-            // 
             // gridColumnMaliyet
             // 
             resources.ApplyResources(this.gridColumnMaliyet, "gridColumnMaliyet");
@@ -669,6 +694,7 @@
             this.Load += new System.EventHandler(this.Raporlar2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditOnlinePaket.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Kdv.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_PR.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_MalzemePors.Properties)).EndInit();
@@ -703,6 +729,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditOnlinePaket.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
@@ -769,5 +796,7 @@
         private DevExpress.XtraEditors.SimpleButton btnEncoksatan;
         private DevExpress.XtraEditors.SimpleButton btnMaliyetSatis;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumnMaliyet;
+        private DevExpress.XtraEditors.CheckEdit checkEditOnlinePaket;
+        private DevExpress.XtraEditors.LookUpEdit checkedComboBoxEditOnlinePaket;
     }
 }

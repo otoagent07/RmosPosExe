@@ -1332,7 +1332,7 @@ Fişi</value>
     <value>4</value>
   </data>
   <data name="gridControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 532</value>
+    <value>1014, 541</value>
   </data>
   <data name="gridControl4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1460,7 +1460,7 @@ Fişi</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 62</value>
+    <value>1014, 62</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1478,7 +1478,7 @@ Fişi</value>
     <value>1</value>
   </data>
   <data name="tab_CallerId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 594</value>
+    <value>1014, 603</value>
   </data>
   <data name="tab_CallerId.Text" xml:space="preserve">
     <value>Caller Id</value>
@@ -1565,7 +1565,7 @@ Fişi</value>
     <value>5</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 594</value>
+    <value>1014, 603</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1583,7 +1583,7 @@ Fişi</value>
     <value>0</value>
   </data>
   <data name="tab_KayitliTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 594</value>
+    <value>1014, 603</value>
   </data>
   <data name="tab_KayitliTel.Text" xml:space="preserve">
     <value>Kayıtlı Tel No</value>
@@ -1892,7 +1892,7 @@ Fişi</value>
     <value>16</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 523</value>
+    <value>1014, 532</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2435,7 +2435,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 71</value>
+    <value>1014, 71</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2453,7 +2453,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="tab_KapaliPaket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 594</value>
+    <value>1014, 603</value>
   </data>
   <data name="tab_KapaliPaket.Text" xml:space="preserve">
     <value>Kapalı Paketler</value>
