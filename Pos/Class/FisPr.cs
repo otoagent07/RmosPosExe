@@ -3198,12 +3198,23 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
             Print.Hesap hsp = new Print.Hesap();
 
+      
             if (kisiyeSatis)
             {
                 dtHesap = dtHesap.Select("kisiyeSatisAdSoyad='" + kisiyeSatisAdSoyad + "'").CopyToDataTable();
             }
 
             xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), hsp);
+
+            if (Param.hesapFisQr)
+            {
+                hsp.txtQr.Text = Param.Tarih.ToString("yyyy-MM-dd");
+                hsp.txtQr.Visible = true;
+                hsp.ReportFooter.HeightF = (float)388.3324;
+                hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
+            }
+
+
             hsp.PrinterName = printer;
             hsp.DataSource = dtHesap;
 
