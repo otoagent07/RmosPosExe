@@ -440,12 +440,6 @@
     <Compile Include="LoginSadeceForm.Designer.cs">
       <DependentUpon>LoginSadeceForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="HesapKisiyeSatis.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HesapKisiyeSatis.Designer.cs">
-      <DependentUpon>HesapKisiyeSatis.cs</DependentUpon>
-    </Compile>
     <Compile Include="KisiyeSatisSec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1513,9 +1507,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hesap.ru.resx">
       <DependentUpon>Hesap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HesapKisiyeSatis.resx">
-      <DependentUpon>HesapKisiyeSatis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hesap_Tr.en-US.resx">
       <DependentUpon>Hesap_Tr.cs</DependentUpon>

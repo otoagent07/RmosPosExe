@@ -45,8 +45,8 @@ namespace Pos.Controllers
                 string columname = "KİŞİYİ\nSEÇ";
                 dataTable.Columns.Add(columname, typeof(string));
 
-                string columname2 = "SATIŞLARI\nGÖSTER";
-                dataTable.Columns.Add(columname2, typeof(string));
+                //string columname2 = "SATIŞLARI\nGÖSTER";
+                //dataTable.Columns.Add(columname2, typeof(string));
 
                 string columname3 = "HESAP\nYAZDIR";
                 dataTable.Columns.Add(columname3, typeof(string));
@@ -55,13 +55,13 @@ namespace Pos.Controllers
                 hesap.gridViewKisiyeSatis.BestFitColumns();
 
                 buttonEkle(columname);
-                buttonEkle2(columname2);
+                //buttonEkle2(columname2);
                 buttonEkle3(columname3);
 
 
                 gridviewSumYaz(hesap.gridViewKisiyeSatis, "fark");
 
-                hesap.gridViewKisiyeSatis.Columns["Ad Soyad"].Width = 130;
+                hesap.gridViewKisiyeSatis.Columns["Ad Soyad"].Width = 160;
                 hesap.gridViewKisiyeSatis.Columns["fark"].Width = 60;
 
             }
@@ -118,26 +118,26 @@ namespace Pos.Controllers
             }
         }
 
-        public void buttonEkle2(string columnName)
-        {
-            try
-            {
+        //public void buttonEkle2(string columnName)
+        //{
+        //    try
+        //    {
 
-                RepositoryItemButtonEdit repositoryButton = new RepositoryItemButtonEdit();
-                repositoryButton.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-                repositoryButton.Buttons[0].Caption = columnName;
-                repositoryButton.Buttons[0].Kind = DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph;
-                repositoryButton.ButtonClick += satislarigoster_click;
-                hesap.gridViewKisiyeSatis.Columns[columnName].ColumnEdit = repositoryButton;
-                hesap.gridViewKisiyeSatis.Columns[columnName].Width = buttongenislik;
+        //        RepositoryItemButtonEdit repositoryButton = new RepositoryItemButtonEdit();
+        //        repositoryButton.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+        //        repositoryButton.Buttons[0].Caption = columnName;
+        //        repositoryButton.Buttons[0].Kind = DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph;
+        //        repositoryButton.ButtonClick += satislarigoster_click;
+        //        hesap.gridViewKisiyeSatis.Columns[columnName].ColumnEdit = repositoryButton;
+        //        hesap.gridViewKisiyeSatis.Columns[columnName].Width = buttongenislik;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
 
-            }
-        }
+        //    }
+        //}
 
         public void gridviewSumYaz(GridView grid, string fieldname)
         {
@@ -161,7 +161,7 @@ namespace Pos.Controllers
         }
 
 
-        private void satislarigoster_click(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        public void satislariGoster()
         {
             try
             {
@@ -201,6 +201,10 @@ where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  "
                 MessageBox.Show(ex.Message);
             }
         }
+        private void satislarigoster_click(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            satislariGoster();
+        }
 
 
         public void buttonEkle(string columnName)
@@ -227,8 +231,8 @@ where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  "
         public DataRow seciliRow = null;
         private void RepositoryButton_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
-
             sec();
+            satislariGoster();
         }
 
         public void sec()
@@ -271,7 +275,6 @@ where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  "
 
             kisiyesatisAdSoyad = seciliRow["Ad Soyad"].ToString();
 
-            hesap.btnKisiyeKapat.Text = "Kişiye Kapat\n" + kisiyesatisAdSoyad;
         }
     }
 }

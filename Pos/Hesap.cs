@@ -1180,7 +1180,6 @@ namespace Pos
 
                     Fis_Islem.Odeme_Al(Convert.ToInt32(this.Tag), tutar, doviztutar, Convert.ToString(look_Kapatma.EditValue), musTipi_A, odaNo_A, folio_A, cari_A, Split, Convert.ToString(look_DovizKod.EditValue), chk_AdsPr.Checked, mevcutToplamTutar, kisiyeAdSoyad: kisiyeSatisController.kisiyesatisAdSoyad);
 
-                    btnKisiyeKapat.Text = "Kişiye Kapat";
 
 
                     Fis_Islem.Satis_Tip(Convert.ToInt32(this.Tag), Convert.ToString(look_Kapatma.EditValue), pansiyon_A);
@@ -3439,31 +3438,7 @@ namespace Pos
 
 
 
-        private void btnKisiyeKapat_Click(object sender, EventArgs e)
-        {
-            return;
-
-            //kisiyesatisAdSoyad = "";
-
-            //HesapKisiyeSatis hesapKisiyeSatis = new HesapKisiyeSatis(Convert.ToInt32(this.Tag));
-            //hesapKisiyeSatis.ShowDialog();
-
-            //if (hesapKisiyeSatis.seciliRow == null)
-            //{
-
-            //    return;
-            //}
-
-            //string fark = hesapKisiyeSatis.seciliRow["fark"].ToString();
-
-            //string tutar = Convert.ToDecimal(fark).ToString("n2");
-            //txt_Odemetutari.EditValue = tutar;
-            //txt_Odemetutari.Text = tutar;
-
-            //kisiyesatisAdSoyad = hesapKisiyeSatis.seciliRow["Ad Soyad"].ToString();
-
-            //btnKisiyeKapat.Text = "Kişiye Kapat\n" + kisiyesatisAdSoyad;
-        }
+       
     }
 }
 

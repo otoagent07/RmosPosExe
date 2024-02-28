@@ -184,6 +184,12 @@ namespace Pos
                 sayac = Convert.ToInt32(sayacimkisi.Split('-')[0]) + 1;
                 txtKisiyeSatisSayac.Text = sayac + "";
             }
+
+
+            txtKisiyeSatis.Text = "";
+            txtKisiyeSatis.Select();
+            txtKisiyeSatis.Focus();
+
         }
 
         public void marsSiparis()
@@ -1742,6 +1748,9 @@ namespace Pos
             Ana_Grup = btn_AnaGrup.Tag.ToString();
 
             Alt_Yenile();
+
+            txtKisiyeSatis.Select();
+            txtKisiyeSatis.Focus();
         }
 
         private void Alt_Yenile()
@@ -1839,6 +1848,9 @@ namespace Pos
             Urun_Grup_Yenile();
 
             Urun_Yenile();
+
+            txtKisiyeSatis.Select();
+            txtKisiyeSatis.Focus();
         }
 
         private void Urun_Yenile()
@@ -1954,6 +1966,9 @@ namespace Pos
             //Siparis_Kontrol();
 
             txt_Filtre.Text = String.Empty;
+
+            txtKisiyeSatis.Select();
+            txtKisiyeSatis.Focus();
         }
 
         private void Siparis_Kontrol()
@@ -3471,7 +3486,14 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             {
                 txt_Filtre.Focus();
             }
+
+            if (e.KeyCode == Keys.F1)
+            {
+                kisiyiTemizle();
+            }
+
         }
+
 
         private void btn_Zayi_Click(object sender, EventArgs e)
         {
@@ -4384,6 +4406,11 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         int sayac = 1;
         private void btnTemizleKisiyeSatis_Click(object sender, EventArgs e)
+        {
+            kisiyiTemizle();
+        }
+
+        public void kisiyiTemizle()
         {
             txtKisiyeSatis.Text = "";
             txtKisiyeSatis.Select();
