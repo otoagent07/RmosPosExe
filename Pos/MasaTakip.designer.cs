@@ -76,6 +76,8 @@
             this.btn_Satis = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuSagTik = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnContextKisiyeTransfer = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemRichTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit();
@@ -151,6 +153,7 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).BeginInit();
@@ -167,6 +170,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            this.contextMenuSagTik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -565,6 +569,7 @@
             // 
             // gridControl2
             // 
+            this.gridControl2.ContextMenuStrip = this.contextMenuSagTik;
             resources.ApplyResources(this.gridControl2, "gridControl2");
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
@@ -572,6 +577,20 @@
             this.repositoryItemRichTextEdit1});
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
+            // 
+            // contextMenuSagTik
+            // 
+            this.contextMenuSagTik.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnContextKisiyeTransfer});
+            this.contextMenuSagTik.Name = "contextMenuSagTik";
+            resources.ApplyResources(this.contextMenuSagTik, "contextMenuSagTik");
+            // 
+            // btnContextKisiyeTransfer
+            // 
+            this.btnContextKisiyeTransfer.Image = global::Pos.Properties.Resources.Apply_16x16;
+            this.btnContextKisiyeTransfer.Name = "btnContextKisiyeTransfer";
+            resources.ApplyResources(this.btnContextKisiyeTransfer, "btnContextKisiyeTransfer");
+            this.btnContextKisiyeTransfer.Click += new System.EventHandler(this.btnContextKisiyeTransfer_Click);
             // 
             // gridView2
             // 
@@ -596,7 +615,8 @@
             this.gridColumn6,
             this.gridColumn7,
             this.gridColumn8,
-            this.gridColumn10});
+            this.gridColumn10,
+            this.gridColumn11});
             gridFormatRule1.ApplyToRow = true;
             gridFormatRule1.Column = this.gridColumn10;
             gridFormatRule1.ColumnApplyTo = this.gridColumn10;
@@ -611,6 +631,9 @@
             this.gridView2.FormatRules.Add(gridFormatRule1);
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
+            this.gridView2.OptionsSelection.MultiSelect = true;
+            this.gridView2.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.gridView2.OptionsView.ShowFooter = true;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.OptionsView.ShowIndicator = false;
@@ -1307,6 +1330,12 @@
             this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem6.Name = "barButtonItem6";
             // 
+            // gridColumn11
+            // 
+            resources.ApplyResources(this.gridColumn11, "gridColumn11");
+            this.gridColumn11.FieldName = "Rsat_Id";
+            this.gridColumn11.Name = "gridColumn11";
+            // 
             // MasaTakip
             // 
             resources.ApplyResources(this, "$this");
@@ -1359,6 +1388,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            this.contextMenuSagTik.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -1504,5 +1534,8 @@
         private DevExpress.XtraBars.BarButtonItem btnParcaliOdeme;
         private DevExpress.XtraEditors.SimpleButton btn_KisiSayisi;
         private DevExpress.XtraEditors.SimpleButton btnParcaliOdemeEski;
+        private System.Windows.Forms.ContextMenuStrip contextMenuSagTik;
+        private System.Windows.Forms.ToolStripMenuItem btnContextKisiyeTransfer;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
     }
 }

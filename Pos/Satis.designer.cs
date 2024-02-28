@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -156,8 +156,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.contextMenuSagTik = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnContextKisiyeTransfer = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -215,7 +213,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).BeginInit();
-            this.contextMenuSagTik.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerControl3
@@ -1109,7 +1106,6 @@
             // gridControl1
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
-            this.gridControl1.ContextMenuStrip = this.contextMenuSagTik;
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.barManager1;
             this.gridControl1.Name = "gridControl1";
@@ -1136,18 +1132,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn6;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn6;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.RowAutoHeight = true;
@@ -1453,20 +1449,6 @@
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // contextMenuSagTik
-            // 
-            this.contextMenuSagTik.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnContextKisiyeTransfer});
-            this.contextMenuSagTik.Name = "contextMenuSagTik";
-            resources.ApplyResources(this.contextMenuSagTik, "contextMenuSagTik");
-            // 
-            // btnContextKisiyeTransfer
-            // 
-            this.btnContextKisiyeTransfer.Image = global::Pos.Properties.Resources.Apply_16x16;
-            this.btnContextKisiyeTransfer.Name = "btnContextKisiyeTransfer";
-            resources.ApplyResources(this.btnContextKisiyeTransfer, "btnContextKisiyeTransfer");
-            this.btnContextKisiyeTransfer.Click += new System.EventHandler(this.btnContextKisiyeTransfer_Click);
-            // 
             // Satis
             // 
             resources.ApplyResources(this, "$this");
@@ -1545,7 +1527,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).EndInit();
-            this.contextMenuSagTik.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1677,7 +1658,5 @@
         private DevExpress.XtraEditors.SimpleButton btnTemizleKisiyeSatis;
         private DevExpress.XtraEditors.TextEdit txtKisiyeSatisSayac;
         private DevExpress.XtraEditors.SimpleButton btnKisiyeSatisYap;
-        private System.Windows.Forms.ContextMenuStrip contextMenuSagTik;
-        private System.Windows.Forms.ToolStripMenuItem btnContextKisiyeTransfer;
     }
 }

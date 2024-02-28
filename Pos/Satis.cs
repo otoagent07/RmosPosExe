@@ -4460,40 +4460,7 @@ where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  "
 
              }
               */
-        private void btnContextKisiyeTransfer_Click(object sender, EventArgs e)
-        {
-            try
-            {
-             
-                int fisno = Convert.ToInt32(this.Tag);
-                if (fisno < 1)
-                {
-                    return;
-                }
-                KisiyeSatisSec kisiyeSatisSec = new KisiyeSatisSec(fisno);
-                kisiyeSatisSec.ShowDialog();
-
-                if (kisiyeSatisSec.iptal == false) // kişiyi seçmiştir
-                {
-                    string adsoyad = kisiyeSatisSec.adsoyadTam;
-
-                    foreach (var rowHandle in gridView1.GetSelectedRows())
-                    {
-                        var rsat_id = gridView1.GetRowCellValue(rowHandle, "Rsat_Id").ToString();
-                        var Rec_Ad = gridView1.GetRowCellValue(rowHandle, "Rec_Ad").ToString();
-
-                        string query = $"update Cst_Recete_Satis set kisiyeSatisAdSoyad='{adsoyad}' where Rsat_Id='{rsat_id}'";
-                        dbtools.execcmdR(query);
-                    }
-
-
-                }
-            }
-            catch (Exception ex)
-            {
-                RHMesaj.MyMessageError(MyClass, "btnContextKisiyeTransfer_Click", "", ex);
-            }
-        }
+       
 
        
     }
