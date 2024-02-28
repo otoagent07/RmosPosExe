@@ -1244,6 +1244,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.hesapFisQr = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2080,6 +2081,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hesapFisQr.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4087,6 +4089,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.hesapFisQr);
             this.xtraTabPage8.Controls.Add(this.lookUpEdit_tipbox);
             this.xtraTabPage8.Controls.Add(this.textEdit199);
             this.xtraTabPage8.Controls.Add(this.cariindirimAktif);
@@ -12395,6 +12398,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // hesapFisQr
+            // 
+            resources.ApplyResources(this.hesapFisQr, "hesapFisQr");
+            this.hesapFisQr.Name = "hesapFisQr";
+            this.hesapFisQr.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13271,6 +13280,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hesapFisQr.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14491,5 +14501,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn175;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit_tipbox;
         private DevExpress.XtraEditors.TextEdit textEdit199;
+        private DevExpress.XtraEditors.CheckEdit hesapFisQr;
     }
 }
