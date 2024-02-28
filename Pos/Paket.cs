@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
 using Newtonsoft.Json;
 using Pos.Class;
@@ -284,11 +285,33 @@ namespace Pos
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-            if (gridView1.RowCount > 0)
+
+            if (gridView1.GetSelectedRows().Length==0)
             {
-                PaketciDegistir(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Fisno")));
-                gridyenile_1();
+                RHMesaj.alertMesaj("Lütfen check ile satırı işaretle");
+                return;
             }
+            Garson_Sor pkt = new Garson_Sor();
+            pkt.Tag = "PAKET";
+            pkt.ShowDialog();
+            string Paketci = pkt.Garson_Kod;
+
+            if (Paketci != "")
+            {
+                foreach (var rowHandle in gridView1.GetSelectedRows())
+                {
+                    var Rsat_Fisno = gridView1.GetRowCellValue(rowHandle, "Rsat_Fisno").ToString();
+                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_Paketci = '" + Paketci + "' where Rsat_Fisno = '" + Rsat_Fisno + "'");
+
+                }
+
+            }
+
+
+           
+
+            gridyenile_1();
+
         }
 
         private void simpleButton4_Click(object sender, EventArgs e)
@@ -721,5 +744,7 @@ namespace Pos
             timer1.Enabled = false;
             timer1.Dispose();
         }
+
+        
     }
 }
