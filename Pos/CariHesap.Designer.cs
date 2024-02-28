@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CariHesap));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn61 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn49 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -88,6 +88,7 @@
             this.textEdit25 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit69 = new DevExpress.XtraEditors.TextEdit();
             this.tab_Cari_Tanim = new DevExpress.XtraTab.XtraTabPage();
+            this.btnPaketCariGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
@@ -653,14 +654,14 @@
             this.gridColumn59,
             this.gridColumn60,
             this.gridColumn61});
-            styleFormatCondition5.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition5.Appearance.Options.UseForeColor = true;
-            styleFormatCondition5.ApplyToRow = true;
-            styleFormatCondition5.Column = this.gridColumn61;
-            styleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition5.Value1 = "A";
+            styleFormatCondition6.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition6.Appearance.Options.UseForeColor = true;
+            styleFormatCondition6.ApplyToRow = true;
+            styleFormatCondition6.Column = this.gridColumn61;
+            styleFormatCondition6.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition6.Value1 = "A";
             this.gridView7.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition5});
+            styleFormatCondition6});
             this.gridView7.GridControl = this.gridControl7;
             this.gridView7.Name = "gridView7";
             this.gridView7.OptionsView.ShowFooter = true;
@@ -1062,6 +1063,7 @@
             // 
             // tab_Cari_Tanim
             // 
+            this.tab_Cari_Tanim.Controls.Add(this.btnPaketCariGuncelle);
             this.tab_Cari_Tanim.Controls.Add(this.simpleButton20);
             this.tab_Cari_Tanim.Controls.Add(this.simpleButton18);
             this.tab_Cari_Tanim.Controls.Add(this.simpleButton13);
@@ -1122,6 +1124,15 @@
             this.tab_Cari_Tanim.Controls.Add(this.groupControl1);
             this.tab_Cari_Tanim.Name = "tab_Cari_Tanim";
             resources.ApplyResources(this.tab_Cari_Tanim, "tab_Cari_Tanim");
+            // 
+            // btnPaketCariGuncelle
+            // 
+            this.btnPaketCariGuncelle.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnPaketCariGuncelle.Appearance.Font")));
+            this.btnPaketCariGuncelle.Appearance.Options.UseFont = true;
+            this.btnPaketCariGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPaketCariGuncelle.ImageOptions.Image")));
+            resources.ApplyResources(this.btnPaketCariGuncelle, "btnPaketCariGuncelle");
+            this.btnPaketCariGuncelle.Name = "btnPaketCariGuncelle";
+            this.btnPaketCariGuncelle.Click += new System.EventHandler(this.btnPaketCariGuncelle_Click);
             // 
             // simpleButton20
             // 
@@ -3265,13 +3276,13 @@
             this.gridColumn77,
             this.gridColumn78,
             this.gridColumn79});
-            styleFormatCondition6.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition6.Appearance.Options.UseForeColor = true;
-            styleFormatCondition6.ApplyToRow = true;
-            styleFormatCondition6.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition6.Value1 = "A";
+            styleFormatCondition4.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition4.Appearance.Options.UseForeColor = true;
+            styleFormatCondition4.ApplyToRow = true;
+            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition4.Value1 = "A";
             this.gridViewCariRap3Detay.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition6});
+            styleFormatCondition4});
             this.gridViewCariRap3Detay.GridControl = this.gridControlCariRap3Detay;
             this.gridViewCariRap3Detay.Name = "gridViewCariRap3Detay";
             this.gridViewCariRap3Detay.OptionsBehavior.Editable = false;
@@ -3984,5 +3995,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit27;
         private DevExpress.XtraEditors.SpinEdit txtIndOran;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn80;
+        private DevExpress.XtraEditors.SimpleButton btnPaketCariGuncelle;
     }
 }

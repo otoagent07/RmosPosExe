@@ -667,11 +667,21 @@ namespace Pos
 
         private void simpleButton11_Click(object sender, EventArgs e)
         {
+            string fisno = Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Fisno"));
+
+
             CariHesap cari = new CariHesap();
             cari.xtraTabControl1.SelectedTabPageIndex = 1;
             cari.CariKod = Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Kod"));
             cari.BilgiCari = true;
             cari.ShowDialog();
+
+            string yenicari = cari.cariKodPaketGuncelle;
+            if (yenicari != "")
+            {
+                dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Cari='{yenicari}' where Rsat_Fisno='{fisno}'");
+            }
+
             gridyenile_1();
         }
 

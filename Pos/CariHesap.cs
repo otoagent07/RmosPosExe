@@ -135,9 +135,12 @@ namespace Pos
 
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
 
+
+        public string cariKodPaketGuncelle = "";
         private void Kaydet()
         {
             // Cari_indirimOran txtIndOran
+
             string indirimDec = txtIndOran.EditValue.ToString().Replace(",",".");
             if (Param.Param_CariAdSoyad == false)
             {
@@ -1830,6 +1833,12 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                 RHMesaj.MyMessageError(MyClass, "btnFiltrele_Click", "",ex);
             }
            
+        }
+
+        private void btnPaketCariGuncelle_Click(object sender, EventArgs e)
+        {
+            cariKodPaketGuncelle = txt_Cari_Kod.Text;
+            this.Close();
         }
     }
 }
