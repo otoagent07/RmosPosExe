@@ -4436,5 +4436,65 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 txtKisiyeSatisSayac.Text = kisiyeSatisSec.sayac;
             }
         }
+
+
+        /*
+                 string adsoyad = hesap.gridViewKisiyeSatis.GetFocusedRowCellValue("Ad Soyad").ToString();
+
+             string query = $@"select rec.Rec_Ad as 'Ürün Ad',Rsat_Miktar as Miktar,Rsat_Tutar as Toplam from Cst_Recete_Satis sat
+left join Cst_Recete rec on rec.Rec_Genelkod=sat.Rsat_Recete
+where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  ";
+             DataTable dataTable = dbtools.SelectTableR(query);
+
+
+             if (dataTable != null && dataTable.Rows.Count > 0)
+             {
+                 foreach (DataRow dr in dataTable.Rows)
+                 {
+                     dr["Miktar"] = dr["Miktar"].ToString().Replace(",0000", "");
+                     dr["Miktar"] = dr["Miktar"].ToString().Replace(",000", "");
+                     dr["Toplam"] = dr["Toplam"].ToString().Replace(",00", "");
+                     dr["Toplam"] = dr["Toplam"].ToString().Replace(",000", "");
+                     dr["Toplam"] = dr["Toplam"].ToString().Replace(",0000", "");
+                 }
+
+             }
+              */
+        private void btnContextKisiyeTransfer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+             
+                int fisno = Convert.ToInt32(this.Tag);
+                if (fisno < 1)
+                {
+                    return;
+                }
+                KisiyeSatisSec kisiyeSatisSec = new KisiyeSatisSec(fisno);
+                kisiyeSatisSec.ShowDialog();
+
+                if (kisiyeSatisSec.iptal == false) // kişiyi seçmiştir
+                {
+                    string adsoyad = kisiyeSatisSec.adsoyadTam;
+
+                    foreach (var rowHandle in gridView1.GetSelectedRows())
+                    {
+                        var rsat_id = gridView1.GetRowCellValue(rowHandle, "Rsat_Id").ToString();
+                        var Rec_Ad = gridView1.GetRowCellValue(rowHandle, "Rec_Ad").ToString();
+
+                        string query = $"update Cst_Recete_Satis set kisiyeSatisAdSoyad='{adsoyad}' where Rsat_Id='{rsat_id}'";
+                        dbtools.execcmdR(query);
+                    }
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnContextKisiyeTransfer_Click", "", ex);
+            }
+        }
+
+       
     }
 }

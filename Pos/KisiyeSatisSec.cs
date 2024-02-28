@@ -62,12 +62,13 @@ namespace Pos
 
         public string sayac = "1";
         public string adsoyad = "";
+        public string adsoyadTam = "";
 
         private void Button_Click(object sender, EventArgs e)
         {
             var control = sender as Control;
             string isim = control.Name;
-
+            adsoyadTam = isim;
             if (isim!="" && isim.Contains("-"))
             {
                 sayac = isim.Split('-')[0].ToString();

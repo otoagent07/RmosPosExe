@@ -521,8 +521,8 @@ namespace Pos
 
             }
 
-            if(kisiyeSatisController!=null)
-            kisiyeSatisController.listele();
+            if (kisiyeSatisController != null)
+                kisiyeSatisController.listele();
 
         }
 
@@ -2998,7 +2998,7 @@ namespace Pos
             LoginSadeceForm loginSadeceForm = new LoginSadeceForm();
             loginSadeceForm.ShowDialog();
 
-            if (loginSadeceForm.okey==false)
+            if (loginSadeceForm.okey == false)
             {
                 RHMesaj.alertMesaj("ŞİFRE YANLIŞ");
                 return;
@@ -3436,9 +3436,7 @@ namespace Pos
             }
         }
 
-
-
-       
+        
     }
 }
 
