@@ -86,6 +86,7 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -153,7 +154,6 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).BeginInit();
@@ -705,6 +705,12 @@
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             this.gridColumn7.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn7.Summary"))), resources.GetString("gridColumn7.Summary1"), resources.GetString("gridColumn7.Summary2"))});
+            // 
+            // gridColumn11
+            // 
+            resources.ApplyResources(this.gridColumn11, "gridColumn11");
+            this.gridColumn11.FieldName = "Rsat_Id";
+            this.gridColumn11.Name = "gridColumn11";
             // 
             // gridControl1
             // 
@@ -1329,12 +1335,6 @@
             this.barButtonItem6.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem6.ItemAppearance.Normal.Font")));
             this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem6.Name = "barButtonItem6";
-            // 
-            // gridColumn11
-            // 
-            resources.ApplyResources(this.gridColumn11, "gridColumn11");
-            this.gridColumn11.FieldName = "Rsat_Id";
-            this.gridColumn11.Name = "gridColumn11";
             // 
             // MasaTakip
             // 

@@ -2883,7 +2883,12 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             try
             {
+                string kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
 
+                if (kisiyeSatisAktifmi=="0" || kisiyeSatisAktifmi.ToLower()=="false" )
+                {
+                    return;
+                }
                 int fisno = Convert.ToInt32(bartxt_FisNo.EditValue.ToString());
                 if (fisno < 1)
                 {

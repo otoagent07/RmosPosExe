@@ -97,6 +97,15 @@ namespace Pos
         {
             try
             {
+                string kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
+
+                if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
+                {
+                    gridControlKisiyeSatis.Visible = false;
+                    gridControlFis.Visible = false;
+                    gridControl1.Size = new System.Drawing.Size(701,500);
+                }
+
                 btnSpSil.Visible = User.S_Sp_Sil;
 
                 string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";

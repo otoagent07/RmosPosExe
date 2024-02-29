@@ -81,6 +81,14 @@ namespace Pos
         bool yazdirilmamisSiparis = false;
         private void Satis_Load(object sender, EventArgs e)
         {
+            
+                 string kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
+
+            if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
+            {
+                panelControl4.Visible = false;
+                txt_Not.Size = new Size(txt_Not.Size.Width, 50);
+            }
             AyarlarController ayarlar = new AyarlarController();
             panelControl2.Width = Convert.ToInt32(ayarlar.satisEkranGenislik);
             this.BringToFront();

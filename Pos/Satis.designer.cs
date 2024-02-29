@@ -156,6 +156,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -213,6 +214,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerControl3
@@ -638,11 +641,8 @@
             // 
             // panelControl3
             // 
-            this.panelControl3.Controls.Add(this.btnKisiyeSatisYap);
-            this.panelControl3.Controls.Add(this.txtKisiyeSatisSayac);
-            this.panelControl3.Controls.Add(this.btnTemizleKisiyeSatis);
+            this.panelControl3.Controls.Add(this.panelControl4);
             this.panelControl3.Controls.Add(this.panelMenu);
-            this.panelControl3.Controls.Add(this.txtKisiyeSatis);
             this.panelControl3.Controls.Add(this.btn_9);
             this.panelControl3.Controls.Add(this.btn_1);
             this.panelControl3.Controls.Add(this.btn_FarkliMiktar);
@@ -693,8 +693,8 @@
             // 
             this.btnTemizleKisiyeSatis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnTemizleKisiyeSatis.Appearance.Font")));
             this.btnTemizleKisiyeSatis.Appearance.Options.UseFont = true;
-            this.btnTemizleKisiyeSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizleKisiyeSatis.ImageOptions.Image")));
             resources.ApplyResources(this.btnTemizleKisiyeSatis, "btnTemizleKisiyeSatis");
+            this.btnTemizleKisiyeSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizleKisiyeSatis.ImageOptions.Image")));
             this.btnTemizleKisiyeSatis.Name = "btnTemizleKisiyeSatis";
             this.btnTemizleKisiyeSatis.Click += new System.EventHandler(this.btnTemizleKisiyeSatis_Click);
             // 
@@ -1449,6 +1449,15 @@
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.btnTemizleKisiyeSatis);
+            this.panelControl4.Controls.Add(this.txtKisiyeSatis);
+            this.panelControl4.Controls.Add(this.txtKisiyeSatisSayac);
+            this.panelControl4.Controls.Add(this.btnKisiyeSatisYap);
+            resources.ApplyResources(this.panelControl4, "panelControl4");
+            this.panelControl4.Name = "panelControl4";
+            // 
             // Satis
             // 
             resources.ApplyResources(this, "$this");
@@ -1527,6 +1536,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1658,5 +1669,6 @@
         private DevExpress.XtraEditors.SimpleButton btnTemizleKisiyeSatis;
         private DevExpress.XtraEditors.TextEdit txtKisiyeSatisSayac;
         private DevExpress.XtraEditors.SimpleButton btnKisiyeSatisYap;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
     }
 }
