@@ -111,9 +111,10 @@ namespace Pos.Ingenico
             m_btnVoidAllTicket_059.Enabled = setVisible;
         }
 
-        SonucTicket sonucTicket = new SonucTicket();
+      public  SonucTicket sonucTicket = new SonucTicket();
         private void Finish(string Sonuc)
         {
+            
             sonucTicket = JsonConvert.DeserializeObject<SonucTicket>(Sonuc);
             if (sonucTicket.EJNo != 0)
             {
@@ -126,7 +127,7 @@ namespace Pos.Ingenico
             ,[ZNo]
             ,[YFisno]
             ,[EJNo])
-              VALUES('" + Param.Tarih.Date + @"', '" + Fisno + "','" + Sonuc + "','" + User.P_Kod + "',Getdate(),'" + sonucTicket.ZNo.ToString() + "','" + sonucTicket.FNo.ToString() + "','" + sonucTicket.EJNo.ToString() + "')");
+              VALUES('" + Param.Tarih.Date + @"', '" + Fisno + "','" + Sonuc + "','" + User.P_Kod + "',Getdate(),'" + sonucTicket.ZNo.ToString() + "','" + sonucTicket.FNo.ToString() + "','" + sonucTicket.EJNo.ToString() + sonucTicket.BkmID + "')");
 
                 DonenDeger = true;
 

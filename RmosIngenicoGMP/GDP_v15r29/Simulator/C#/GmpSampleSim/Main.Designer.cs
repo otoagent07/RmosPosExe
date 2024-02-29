@@ -315,6 +315,7 @@
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupUltimate = new System.Windows.Forms.GroupBox();
             this.label90 = new System.Windows.Forms.Label();
@@ -587,7 +588,6 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_pbBaseInfo)).BeginInit();
@@ -3760,6 +3760,18 @@
             this.tabPage11.Size = new System.Drawing.Size(1000, 621);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "Init";
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Location = new System.Drawing.Point(499, 221);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(490, 41);
+            this.button4.TabIndex = 142;
+            this.button4.Text = "Gizle";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -7013,18 +7025,6 @@
             this.xtraTabPage2.Size = new System.Drawing.Size(1008, 647);
             this.xtraTabPage2.Text = "xtraTabPage2";
             // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(499, 221);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(490, 41);
-            this.button4.TabIndex = 142;
-            this.button4.Text = "Gizle";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7038,7 +7038,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Rmos Ingenico GMP3";
+            this.Text = "Rmos Ingenico GMP3 v0.2";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox2.ResumeLayout(false);

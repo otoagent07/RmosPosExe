@@ -12,5 +12,6 @@ namespace Pos.Ingenico
         public UInt16 ZNo { get; set; }
         public UInt16 FNo { get; set; }
         public UInt16 EJNo { get; set; }
+        public string BkmID { get; set; }
     }
 }

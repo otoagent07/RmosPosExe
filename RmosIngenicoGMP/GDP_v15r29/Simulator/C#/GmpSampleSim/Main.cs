@@ -345,6 +345,9 @@ namespace RmosIngenicoGMP
             if (Retcode == Defines.TRAN_RESULT_OK)
             {
                 Success = "";
+
+                sonucTicket.BkmID = bankaId;
+
                 return Success = "OK;" + JsonConvert.SerializeObject(sonucTicket);
             }
 
@@ -1067,6 +1070,7 @@ namespace RmosIngenicoGMP
                 TransactionInfo(m_listTransaction, String.Format("Z NO             : " + pstTicket.ZNo));
                 TransactionInfo(m_listTransaction, String.Format("F NO             : " + pstTicket.FNo));
                 TransactionInfo(m_listTransaction, String.Format("EJNO             : " + pstTicket.EJNo));
+                TransactionInfo(m_listTransaction, String.Format("BkmID            : " + pstTicket.BankPaymentUniqueId));
                 TransactionInfo(m_listTransaction, String.Format("TRANSACTION FLAG : " + pstTicket.TransactionFlags.ToString().PadLeft(8, '0')));
 
                 sonucTicket = new SonucTicket
@@ -1074,7 +1078,8 @@ namespace RmosIngenicoGMP
                     ticketType = pstTicket.ticketType,
                     ZNo = pstTicket.ZNo,
                     FNo = pstTicket.FNo,
-                    EJNo = pstTicket.EJNo
+                    EJNo = pstTicket.EJNo,
+                    BkmID = pstTicket.BankPaymentUniqueId
                 };
 
                 if ((pstTicket.TransactionFlags & (uint)ETransactionFlags.FLG_XTRANS_GMP3) != 0) TransactionInfo(m_listTransaction, String.Format("                : FLG_XTRANS_GMP3"));
@@ -1372,6 +1377,7 @@ namespace RmosIngenicoGMP
             return sonuc;
         }
 
+        string bankaId = "";
         private void RMOS_DepartmentSale(int deptIndex, List<Satislar> satislar)
         {
             UInt16 currency = 949;
@@ -2289,6 +2295,10 @@ namespace RmosIngenicoGMP
                         if (m_stTicket.stPayment[i].stBankPayment.bankName != "")
                         {
                             m_lstBankErrorMessage.Items.Add(m_stTicket.stPayment[i].stBankPayment.bankName);
+                            m_lstBankErrorMessage.Items.Add("BKMID= " + m_stTicket.stPayment[i].stBankPayment.bankBkmId); //test
+
+                            bankaId = m_stTicket.stPayment[i].stBankPayment.bankBkmId.ToString();
+
                             m_lstBankErrorMessage.Items.Add(m_stTicket.stPayment[i].stBankPayment.stBankSubPaymentInfo);
                             m_lstBankErrorMessage.Items.Add("Banking Error : " + m_stTicket.stPayment[i].stBankPayment.stPaymentErrMessage.ErrorCode + " " + m_stTicket.stPayment[i].stBankPayment.stPaymentErrMessage.ErrorMsg);
                             m_lstBankErrorMessage.Items.Add("Application Error : " + m_stTicket.stPayment[i].stBankPayment.stPaymentErrMessage.AppErrorCode + " " + m_stTicket.stPayment[i].stBankPayment.stPaymentErrMessage.AppErrorMsg);

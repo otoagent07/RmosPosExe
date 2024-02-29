@@ -2608,7 +2608,18 @@ namespace Pos
                         b.Fisno = Convert.ToInt32(this.Tag);
                         b.ShowDialog();
 
+
+                        dbtools.execcmdR($"update Cst_Recete_Satis set BankaID='{b.sonucTicket.BkmID}' where Rsat_Fisno='{this.Tag.ToString()}'");
                         // return;
+
+                        string deger=  dbtools.DegerGetir("select isnull(Kodlar_Ingenico_IWEHesap,0) as Kodlar_Ingenico_IWEHesap from Stok_Kodlar where Kodlar_Sinif=01 and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+
+                        if (deger=="1" || deger.ToLower()=="true")
+                        {
+                            dbtools.execcmdR($"update Pos_Masa set Masa_Durum='2'  where Masa_No='{Masa_No}'");
+                            dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Durum='A' where Rsat_Fisno='{this.Tag.ToString()}'");
+                        }
+                       
 
                         if (b.DonenDeger == false)
                         {
