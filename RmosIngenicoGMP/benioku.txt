@@ -1,0 +1,7 @@
+uygulama buradadır -> GDP_v15r29\Simulator\C#\RmosIngenicoGMP.sln
+
+PROGRAM ÇALIŞTIĞINDA EXE YOLU BURADADIR -> GDP_v15r32\DLL_DEBUG\Windows\x64\RmosIngenicoGMP.exe
+
+uygulama içindeki GMPSmartDLL.cs -> GDP_v15r29\CSharpClass\GMPSmartDLL.cs buradadır
+
+çalışan GMP.XML i bu yola atmayı unutma -> GDP_v15r29\DLL_DEBUG\Windows\x64\GMP.XML

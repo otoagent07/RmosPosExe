@@ -102,5 +102,10 @@ namespace Pos
                 _altF4Pressed = true;
             }
         }
+
+        private void btn_Sil_Click_1(object sender, EventArgs e)
+        {
+            txt_Giris.Text = "";
+        }
     }
 }
