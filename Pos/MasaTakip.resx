@@ -849,13 +849,13 @@
     <value>343, 9</value>
   </metadata>
   <data name="btnContextKisiyeTransfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>161, 22</value>
   </data>
   <data name="btnContextKisiyeTransfer.Text" xml:space="preserve">
     <value>Kisiye Transfer Et</value>
   </data>
   <data name="contextMenuSagTik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 48</value>
+    <value>162, 26</value>
   </data>
   <data name="&gt;&gt;contextMenuSagTik.Name" xml:space="preserve">
     <value>contextMenuSagTik</value>

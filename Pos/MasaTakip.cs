@@ -93,6 +93,15 @@ namespace Pos
                     
                 }
 
+
+                string kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
+
+                if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
+                {
+                    gridView2.OptionsSelection.MultiSelect = false;
+                }
+
+
             }
             catch (Exception ex)
             {
