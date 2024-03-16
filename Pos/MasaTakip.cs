@@ -76,12 +76,12 @@ namespace Pos
                 btnHesapDokumEski.Enabled = User.G_Hesapdokumu;
 
                 string var = dbtools.DegerGetir("select count(*) as toplam from Pos_Param where ISNULL(yazdirilmamissiparis,0)=1");
-                if (var=="1")
+                if (var == "1")
                 {
                     yazdirilmamisSiparis = true;
                 }
 
-                if (Param.Tesis_Tipi==1) // 1 ise posdur 0 ise otel
+                if (Param.Tesis_Tipi == 1) // 1 ise posdur 0 ise otel
                 {
                     btnParcaliOdeme.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
 
@@ -90,7 +90,7 @@ namespace Pos
                     {
                         btnParcaliOdemeEski.Visible = true;
                     }
-                    
+
                 }
 
 
@@ -101,6 +101,13 @@ namespace Pos
                     gridView2.OptionsSelection.MultiSelect = false;
                 }
 
+
+                // parametreye bağla
+                if (Param.masatrTutSurukle)
+                {
+                    this.flp_Masa.DragDrop += new System.Windows.Forms.DragEventHandler(this.flowLayoutPanel1_DragDrop);
+                    this.flp_Masa.DragOver += new System.Windows.Forms.DragEventHandler(this.flowLayoutPanel1_DragOver);
+                }
 
             }
             catch (Exception ex)
@@ -158,10 +165,10 @@ namespace Pos
             if (Param.masatakiphesappasif)
             {
                 btnHesapDokum.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-                
+
             }
 
-          
+
 
             if (!User.Pos_MasaPaketS)
             {
@@ -705,7 +712,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                         btnMasa.Text += "\n" + Convert.ToString(dtMasa.Rows[i]["Garson2"]);
                     }
 
-                    Console.WriteLine("doviz "+Param.Doviz_Kodu);
+                    Console.WriteLine("doviz " + Param.Doviz_Kodu);
 
                     string TL = "";
                     if (Param.Param_Masa_Garson == false)
@@ -719,13 +726,14 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                                 if (Param.Doviz_Kodu.Contains("USD"))
                                 {
                                     TL = TL + " $";
-                                }else
+                                }
+                                else
                                 {
                                     TL = TL + " €"; // €  £
                                 }
                             }
 
-                           
+
                         }
                         else
                         {
@@ -1111,9 +1119,15 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
 
                     btnMasa.Name = btnMasa.Tag.ToString();
-                    btnMasa.MouseDown += Button_MouseDown;
-                    btnMasa.MouseMove += Button_MouseMove;
-                    btnMasa.MouseUp += Button_MouseUp;
+
+                    // parametreye bağla
+
+                    if (Param.masatrTutSurukle)
+                    {
+                        btnMasa.MouseDown += Button_MouseDown;
+                        btnMasa.MouseMove += Button_MouseMove;
+                        btnMasa.MouseUp += Button_MouseUp;
+                    }
 
 
                     flp_Masa.Controls.Add(btnMasa);
@@ -1188,12 +1202,12 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
             if (!e.Data.GetDataPresent(typeof(string)))
                 return;
 
-            if (User.M_Masatransfer==false)
+            if (User.M_Masatransfer == false)
             {
                 RHMesaj.alertMesaj("Masa transfer yetkiniz yoktur!");
                 return;
             }
-            
+
             var draggedControlName = e.Data.GetData(typeof(string)) as string;
             var flowLayoutPanel = sender as FlowLayoutPanel;
             if (flowLayoutPanel != null)
@@ -1204,7 +1218,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                     string nereden = draggedControlName;
                     string nereye = targetControl.Tag.ToString();
 
-                    Console.WriteLine(nereden+" "+nereye);
+                    Console.WriteLine(nereden + " " + nereye);
                     string nereyeFisno = dbtools.DegerGetir($"exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '{Departman.Dep_Kodu}',@Masano = '{nereye}'");
                     if (nereyeFisno != "0")
                     {
@@ -1223,7 +1237,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
                     ConfirmationForm confirmationForm = new ConfirmationForm($"{nereden} den {hedefMasaNo2} ye masa transfer edilsin mi? ");
                     confirmationForm.ShowDialog();
-                    if (confirmationForm.onay==false)
+                    if (confirmationForm.onay == false)
                     {
                         RHMesaj.alertMesaj("Masa transfer iptal edildi");
                         return;
@@ -1242,7 +1256,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                         }
                     }
 
-                  
+
                     if (nereye == "")
                     {
                         return;
@@ -1263,7 +1277,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
                     dbtools.execcmdR("update Pos_Masa set Masa_Durum ='" + suankiMasaDurum + "' where Masa_No='" + hedefMasaNo2 + "'");
 
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Masa_Transfer, Log.Log_Islem.Duzelt, nereden + " NOLU Masa " + nereye + " NOLU MASAYA TRANSFER OLDU",Fisno:fisno, "");
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Masa_Transfer, Log.Log_Islem.Duzelt, nereden + " NOLU Masa " + nereye + " NOLU MASAYA TRANSFER OLDU", Fisno: fisno, "");
 
                     MasaYenile(0);
 
@@ -2317,7 +2331,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
         }
 
-       
+
 
         private void KisiSayisiDegistir()
         {
@@ -2347,7 +2361,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "KisiSayisiDegistir", "",ex);
+                RHMesaj.MyMessageError(MyClass, "KisiSayisiDegistir", "", ex);
             }
             //popupControlContainer1.HidePopup();
 
@@ -2428,7 +2442,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void barButtonItem2_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            
+
 
 
 
@@ -2645,7 +2659,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             try
             {
-                if (yazdirilmamisSiparis==false)
+                if (yazdirilmamisSiparis == false)
                 {
                     return false;
                 }
@@ -2894,7 +2908,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             {
                 string kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
 
-                if (kisiyeSatisAktifmi=="0" || kisiyeSatisAktifmi.ToLower()=="false" )
+                if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
                 {
                     return;
                 }
@@ -2906,7 +2920,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 KisiyeSatisSec kisiyeSatisSec = new KisiyeSatisSec(fisno);
                 kisiyeSatisSec.ShowDialog();
 
-                ConfirmationForm confirmationForm = new ConfirmationForm("Kişiye transfer edilecek eminmisin."+Environment.NewLine+"önceki kişi kaybolacaktır...!");
+                ConfirmationForm confirmationForm = new ConfirmationForm("Kişiye transfer edilecek eminmisin." + Environment.NewLine + "önceki kişi kaybolacaktır...!");
                 confirmationForm.ShowDialog();
                 if (confirmationForm.onay)
                 {
@@ -2928,8 +2942,8 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                         RHMesaj.alertMesaj("Transfer başarılı!");
                     }
                 }
-               
-                
+
+
             }
             catch (Exception ex)
             {

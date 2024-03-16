@@ -786,8 +786,6 @@
             this.flp_Masa.AllowDrop = true;
             resources.ApplyResources(this.flp_Masa, "flp_Masa");
             this.flp_Masa.Name = "flp_Masa";
-            this.flp_Masa.DragDrop += new System.Windows.Forms.DragEventHandler(this.flowLayoutPanel1_DragDrop);
-            this.flp_Masa.DragOver += new System.Windows.Forms.DragEventHandler(this.flowLayoutPanel1_DragOver);
             // 
             // barDockControl1
             // 

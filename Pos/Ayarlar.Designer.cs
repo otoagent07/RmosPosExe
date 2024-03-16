@@ -274,6 +274,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.hesapFisQr = new DevExpress.XtraEditors.CheckEdit();
             this.lookUpEdit_tipbox = new DevExpress.XtraEditors.LookUpEdit();
             this.textEdit199 = new DevExpress.XtraEditors.TextEdit();
             this.cariindirimAktif = new DevExpress.XtraEditors.CheckEdit();
@@ -1244,7 +1245,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.hesapFisQr = new DevExpress.XtraEditors.CheckEdit();
+            this.masatrTutSurukle = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1433,6 +1434,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hesapFisQr.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit_tipbox.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit199.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).BeginInit();
@@ -2081,7 +2083,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hesapFisQr.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masatrTutSurukle.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4089,6 +4091,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.masatrTutSurukle);
             this.xtraTabPage8.Controls.Add(this.hesapFisQr);
             this.xtraTabPage8.Controls.Add(this.lookUpEdit_tipbox);
             this.xtraTabPage8.Controls.Add(this.textEdit199);
@@ -4111,6 +4114,12 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // hesapFisQr
+            // 
+            resources.ApplyResources(this.hesapFisQr, "hesapFisQr");
+            this.hesapFisQr.Name = "hesapFisQr";
+            this.hesapFisQr.Properties.Caption = resources.GetString("hesapFisQr.Properties.Caption");
             // 
             // lookUpEdit_tipbox
             // 
@@ -12398,11 +12407,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // hesapFisQr
+            // masatrTutSurukle
             // 
-            resources.ApplyResources(this.hesapFisQr, "hesapFisQr");
-            this.hesapFisQr.Name = "hesapFisQr";
-            this.hesapFisQr.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            resources.ApplyResources(this.masatrTutSurukle, "masatrTutSurukle");
+            this.masatrTutSurukle.Name = "masatrTutSurukle";
+            this.masatrTutSurukle.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -12604,6 +12613,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hesapFisQr.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit_tipbox.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit199.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cariindirimAktif.Properties)).EndInit();
@@ -13280,7 +13290,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hesapFisQr.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masatrTutSurukle.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14502,5 +14512,6 @@
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit_tipbox;
         private DevExpress.XtraEditors.TextEdit textEdit199;
         private DevExpress.XtraEditors.CheckEdit hesapFisQr;
+        private DevExpress.XtraEditors.CheckEdit masatrTutSurukle;
     }
 }
