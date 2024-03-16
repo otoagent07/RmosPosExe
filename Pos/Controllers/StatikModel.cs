@@ -106,6 +106,7 @@ where 1 = 1
         select distinct
             case when MIN(Rsat_Durum) = 'A' then 'Acik' else 'Kapali' end as Rsat_Durum,
             MAX(Rsat_Id) as Rsat_Id,
+            MAX(Rsat_GetirOrderID) as entegreOdemeTip,
             Rsat_Tarih,
             Masa_No,
             Masa_Ad,

@@ -435,29 +435,14 @@
   <data name="gridColumn14.Width" type="System.Int32, mscorlib">
     <value>150</value>
   </data>
-  <data name="gridColumn47.Caption" xml:space="preserve">
-    <value>Sube</value>
+  <data name="gridColumn78.Caption" xml:space="preserve">
+    <value>Ödeme Tip</value>
   </data>
-  <data name="gridColumn47.Visible" type="System.Boolean, mscorlib">
+  <data name="gridColumn78.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="gridColumn47.VisibleIndex" type="System.Int32, mscorlib">
+  <data name="gridColumn78.VisibleIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="gridColumn47.Width" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="gridColumn48.Caption" xml:space="preserve">
-    <value>Sube Durum</value>
-  </data>
-  <data name="gridColumn48.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn48.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="gridColumn48.Width" type="System.Int32, mscorlib">
-    <value>120</value>
   </data>
   <data name="gridColumn1.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -475,7 +460,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn1.VisibleIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="gridColumn1.Width" type="System.Int32, mscorlib">
     <value>100</value>
@@ -493,7 +478,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="gridColumn3.Width" type="System.Int32, mscorlib">
     <value>80</value>
@@ -505,7 +490,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="gridColumn5.Caption" xml:space="preserve">
     <value>Cari Kod</value>
@@ -517,7 +502,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn6.VisibleIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="gridColumn6.Width" type="System.Int32, mscorlib">
     <value>190</value>
@@ -529,7 +514,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn7.VisibleIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="gridColumn7.Width" type="System.Int32, mscorlib">
     <value>400</value>
@@ -550,7 +535,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn8.VisibleIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="gridColumn8.Width" type="System.Int32, mscorlib">
     <value>90</value>
@@ -568,7 +553,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn10.VisibleIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="gridColumn10.Width" type="System.Int32, mscorlib">
     <value>150</value>
@@ -586,7 +571,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn16.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="gridColumn16.Width" type="System.Int32, mscorlib">
     <value>103</value>
@@ -598,7 +583,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn17.VisibleIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="gridColumn58.Caption" xml:space="preserve">
     <value>Kurye</value>
@@ -607,7 +592,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn58.VisibleIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="gridColumn59.Caption" xml:space="preserve">
     <value>deliveryType</value>
@@ -619,7 +604,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn62.VisibleIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="gridColumn63.Caption" xml:space="preserve">
     <value>Sipariş Fişi</value>
@@ -634,10 +619,34 @@
     <value>True</value>
   </data>
   <data name="gridColumn76.VisibleIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="gridColumn47.Caption" xml:space="preserve">
+    <value>Sube</value>
+  </data>
+  <data name="gridColumn47.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn47.VisibleIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="gridColumn47.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="gridColumn48.Caption" xml:space="preserve">
+    <value>Sube Durum</value>
+  </data>
+  <data name="gridColumn48.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn48.VisibleIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
+  <data name="gridColumn48.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 470</value>
+    <value>968, 465</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -661,10 +670,10 @@
     <value>Bottom</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 470</value>
+    <value>0, 465</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 59</value>
+    <value>968, 59</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -682,7 +691,7 @@
     <value>1</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 529</value>
+    <value>968, 524</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Açık Paketler</value>
@@ -997,7 +1006,7 @@
     <value>16</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 458</value>
+    <value>968, 453</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1540,7 +1549,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 71</value>
+    <value>968, 71</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1558,7 +1567,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 529</value>
+    <value>968, 524</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Kapalı Paketler</value>
@@ -1663,7 +1672,7 @@ Başlat</value>
     <value>ID</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 442</value>
+    <value>968, 437</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1809,10 +1818,10 @@ Başlat</value>
     <value>Right</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>837, 22</value>
+    <value>833, 20</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 63</value>
+    <value>133, 65</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2007,10 +2016,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 442</value>
+    <value>0, 437</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 87</value>
+    <value>968, 87</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2028,7 +2037,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 529</value>
+    <value>968, 524</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Getir</value>
@@ -2049,7 +2058,7 @@ Başlat</value>
     <value>Fill</value>
   </data>
   <data name="gridControlTrendyolSiparis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridViewTrendyolSiparis.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2181,7 +2190,7 @@ Başlat</value>
     <value>10</value>
   </data>
   <data name="gridControlTrendyolSiparis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>966, 244</value>
+    <value>964, 241</value>
   </data>
   <data name="gridControlTrendyolSiparis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2205,7 +2214,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 250</value>
+    <value>968, 245</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2226,10 +2235,10 @@ Başlat</value>
     <value>Fill</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>966, 187</value>
+    <value>964, 189</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2250,10 +2259,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 250</value>
+    <value>0, 245</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 193</value>
+    <value>968, 193</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2810,10 +2819,10 @@ Bizden Sil</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 443</value>
+    <value>0, 438</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 86</value>
+    <value>968, 86</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2831,7 +2840,7 @@ Bizden Sil</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 529</value>
+    <value>968, 524</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
     <value>Trendyol</value>
@@ -10024,16 +10033,10 @@ Ekle</value>
   <data name="&gt;&gt;gridColumn14.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridColumn47.Name" xml:space="preserve">
-    <value>gridColumn47</value>
+  <data name="&gt;&gt;gridColumn78.Name" xml:space="preserve">
+    <value>gridColumn78</value>
   </data>
-  <data name="&gt;&gt;gridColumn47.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn48.Name" xml:space="preserve">
-    <value>gridColumn48</value>
-  </data>
-  <data name="&gt;&gt;gridColumn48.Type" xml:space="preserve">
+  <data name="&gt;&gt;gridColumn78.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
@@ -10154,6 +10157,18 @@ Ekle</value>
     <value>gridColumn76</value>
   </data>
   <data name="&gt;&gt;gridColumn76.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn47.Name" xml:space="preserve">
+    <value>gridColumn47</value>
+  </data>
+  <data name="&gt;&gt;gridColumn47.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn48.Name" xml:space="preserve">
+    <value>gridColumn48</value>
+  </data>
+  <data name="&gt;&gt;gridColumn48.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gridView2.Name" xml:space="preserve">

@@ -85,8 +85,7 @@
             this.müşteriNumarasıGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn47 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn48 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn78 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -107,6 +106,8 @@
             this.gridColumn63 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn64 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn76 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn47 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn48 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.flp_Kapatma = new System.Windows.Forms.FlowLayoutPanel();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
@@ -678,8 +679,7 @@
             this.gridColumn11,
             this.gridColumn13,
             this.gridColumn14,
-            this.gridColumn47,
-            this.gridColumn48,
+            this.gridColumn78,
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
@@ -700,7 +700,9 @@
             this.gridColumn62,
             this.gridColumn63,
             this.gridColumn64,
-            this.gridColumn76});
+            this.gridColumn76,
+            this.gridColumn47,
+            this.gridColumn48});
             gridFormatRule1.Column = this.gridColumn11;
             gridFormatRule1.Name = "Format0";
             formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -744,6 +746,7 @@
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.RowHeight = 35;
+            this.gridView1.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView1_RowCellStyle);
             this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // gridColumn14
@@ -753,19 +756,11 @@
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowFocus = false;
             // 
-            // gridColumn47
+            // gridColumn78
             // 
-            resources.ApplyResources(this.gridColumn47, "gridColumn47");
-            this.gridColumn47.FieldName = "subeAd";
-            this.gridColumn47.Name = "gridColumn47";
-            this.gridColumn47.OptionsColumn.AllowFocus = false;
-            // 
-            // gridColumn48
-            // 
-            resources.ApplyResources(this.gridColumn48, "gridColumn48");
-            this.gridColumn48.FieldName = "Rsat_SubeDurum";
-            this.gridColumn48.Name = "gridColumn48";
-            this.gridColumn48.OptionsColumn.AllowFocus = false;
+            resources.ApplyResources(this.gridColumn78, "gridColumn78");
+            this.gridColumn78.FieldName = "entegreOdemeTip";
+            this.gridColumn78.Name = "gridColumn78";
             // 
             // gridColumn1
             // 
@@ -908,6 +903,20 @@
             resources.ApplyResources(this.gridColumn76, "gridColumn76");
             this.gridColumn76.FieldName = "Rsat_EntegreId";
             this.gridColumn76.Name = "gridColumn76";
+            // 
+            // gridColumn47
+            // 
+            resources.ApplyResources(this.gridColumn47, "gridColumn47");
+            this.gridColumn47.FieldName = "subeAd";
+            this.gridColumn47.Name = "gridColumn47";
+            this.gridColumn47.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn48
+            // 
+            resources.ApplyResources(this.gridColumn48, "gridColumn48");
+            this.gridColumn48.FieldName = "Rsat_SubeDurum";
+            this.gridColumn48.Name = "gridColumn48";
+            this.gridColumn48.OptionsColumn.AllowFocus = false;
             // 
             // flp_Kapatma
             // 
@@ -2151,5 +2160,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn76;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn77;
         public DevExpress.XtraTab.XtraTabPage xtraTabPage4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn78;
     }
 }

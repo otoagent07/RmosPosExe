@@ -2350,5 +2350,27 @@ delete from GetirYemek_Option where GOptionCategory_ID=(select top 1 ID from Get
         {
             hucreKopyala(gridControlTrendyolSiparisUrunler, e);
         }
+
+        private void gridView1_RowCellStyle(object sender, RowCellStyleEventArgs e)
+        {
+            if (e.RowHandle >= 0)
+            {
+                GridView View = sender as GridView;
+
+                string kapatma = View.GetRowCellDisplayText(e.RowHandle, View.Columns["YSDurum"]);
+
+                if (kapatma != null && kapatma == "PAKET" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.Turquoise;
+                    e.Appearance.ForeColor = Color.Black;
+                }
+                else if (kapatma != null && kapatma == "TRENDYOL" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.Orange;
+                    e.Appearance.ForeColor = Color.Black;
+                }
+            }
+
+        }
     }
 }
