@@ -420,7 +420,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.98";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.99";
 
 
 
@@ -1780,7 +1780,7 @@ No Cut Seçili Olsun
                             switch (json.printTip)
                             {
                                 case "siparis":
-                                    siparisYazdir(json);
+                                    siparisYazdirHepYeni(json); //  siparisYazdir(json);
                                     break;
                                 case "paket":
                                     paketYazdir(json);
@@ -1915,5 +1915,38 @@ No Cut Seçili Olsun
             }
 
         }
+
+        public void siparisYazdirHepYeni(EntegreJson json)
+        {
+            try
+            {
+                FisPr pr = new FisPr();
+                string sonuc = "OK";
+
+                sonuc = pr.newSiparisPr(Convert.ToInt32(json.fisno), false, 0, fisBaslik: " * * * " + json.tip + " FİSİ * * * ");
+
+
+                if (sonuc != "OK")
+                {
+                    MessageBox.Show(sonuc);
+                }
+                else
+                {
+                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno = '" + json.fisno + "' ");
+                    RHMesaj.alertMesaj2("Entegre\nSipariş Yazdırıldı", 5);
+                }
+
+                if (json.siparistePaketYazsinmi)
+                {
+                    paketYazdir(json);
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "", "", ex);
+            }
+
+        }
+
     }
 }
