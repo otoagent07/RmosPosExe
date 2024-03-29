@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -79,9 +79,11 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.btnKisiyeSatisYap = new DevExpress.XtraEditors.SimpleButton();
-            this.txtKisiyeSatisSayac = new DevExpress.XtraEditors.TextEdit();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.btnTemizleKisiyeSatis = new DevExpress.XtraEditors.SimpleButton();
+            this.txtKisiyeSatis = new DevExpress.XtraEditors.TextEdit();
+            this.txtKisiyeSatisSayac = new DevExpress.XtraEditors.TextEdit();
+            this.btnKisiyeSatisYap = new DevExpress.XtraEditors.SimpleButton();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnServisTutarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             this.btnJokerAciklama = new DevExpress.XtraEditors.SimpleButton();
@@ -90,7 +92,6 @@
             this.chk_Fix = new DevExpress.XtraEditors.CheckButton();
             this.chk_Eksi = new DevExpress.XtraEditors.CheckButton();
             this.btnRelogin = new DevExpress.XtraEditors.SimpleButton();
-            this.txtKisiyeSatis = new DevExpress.XtraEditors.TextEdit();
             this.btn_9 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_FarkliMiktar = new DevExpress.XtraEditors.SimpleButton();
@@ -156,7 +157,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -179,9 +179,11 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatisSayac.Properties)).BeginInit();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
@@ -214,8 +216,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerControl3
@@ -244,7 +244,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 150;
+            this.splitContainerControl4.SplitterPosition = 148;
             // 
             // ana_btnUp
             // 
@@ -671,11 +671,35 @@
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
             // 
-            // btnKisiyeSatisYap
+            // panelControl4
             // 
-            resources.ApplyResources(this.btnKisiyeSatisYap, "btnKisiyeSatisYap");
-            this.btnKisiyeSatisYap.Name = "btnKisiyeSatisYap";
-            this.btnKisiyeSatisYap.Click += new System.EventHandler(this.btnKisiyeSatisYap_Click);
+            this.panelControl4.Controls.Add(this.btnTemizleKisiyeSatis);
+            this.panelControl4.Controls.Add(this.txtKisiyeSatis);
+            this.panelControl4.Controls.Add(this.txtKisiyeSatisSayac);
+            this.panelControl4.Controls.Add(this.btnKisiyeSatisYap);
+            resources.ApplyResources(this.panelControl4, "panelControl4");
+            this.panelControl4.Name = "panelControl4";
+            // 
+            // btnTemizleKisiyeSatis
+            // 
+            this.btnTemizleKisiyeSatis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnTemizleKisiyeSatis.Appearance.Font")));
+            this.btnTemizleKisiyeSatis.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnTemizleKisiyeSatis, "btnTemizleKisiyeSatis");
+            this.btnTemizleKisiyeSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizleKisiyeSatis.ImageOptions.Image")));
+            this.btnTemizleKisiyeSatis.Name = "btnTemizleKisiyeSatis";
+            this.btnTemizleKisiyeSatis.Click += new System.EventHandler(this.btnTemizleKisiyeSatis_Click);
+            // 
+            // txtKisiyeSatis
+            // 
+            resources.ApplyResources(this.txtKisiyeSatis, "txtKisiyeSatis");
+            this.txtKisiyeSatis.Name = "txtKisiyeSatis";
+            this.txtKisiyeSatis.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtKisiyeSatis.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtKisiyeSatis.Properties.Appearance.Font")));
+            this.txtKisiyeSatis.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.txtKisiyeSatis.Properties.Appearance.Options.UseBackColor = true;
+            this.txtKisiyeSatis.Properties.Appearance.Options.UseFont = true;
+            this.txtKisiyeSatis.Properties.Appearance.Options.UseForeColor = true;
+            this.txtKisiyeSatis.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // txtKisiyeSatisSayac
             // 
@@ -689,14 +713,11 @@
             this.txtKisiyeSatisSayac.Properties.Appearance.Options.UseForeColor = true;
             this.txtKisiyeSatisSayac.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
-            // btnTemizleKisiyeSatis
+            // btnKisiyeSatisYap
             // 
-            this.btnTemizleKisiyeSatis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnTemizleKisiyeSatis.Appearance.Font")));
-            this.btnTemizleKisiyeSatis.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnTemizleKisiyeSatis, "btnTemizleKisiyeSatis");
-            this.btnTemizleKisiyeSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizleKisiyeSatis.ImageOptions.Image")));
-            this.btnTemizleKisiyeSatis.Name = "btnTemizleKisiyeSatis";
-            this.btnTemizleKisiyeSatis.Click += new System.EventHandler(this.btnTemizleKisiyeSatis_Click);
+            resources.ApplyResources(this.btnKisiyeSatisYap, "btnKisiyeSatisYap");
+            this.btnKisiyeSatisYap.Name = "btnKisiyeSatisYap";
+            this.btnKisiyeSatisYap.Click += new System.EventHandler(this.btnKisiyeSatisYap_Click);
             // 
             // panelMenu
             // 
@@ -778,18 +799,6 @@
             resources.ApplyResources(this.btnRelogin, "btnRelogin");
             this.btnRelogin.Name = "btnRelogin";
             this.btnRelogin.Click += new System.EventHandler(this.btnRelogin_Click);
-            // 
-            // txtKisiyeSatis
-            // 
-            resources.ApplyResources(this.txtKisiyeSatis, "txtKisiyeSatis");
-            this.txtKisiyeSatis.Name = "txtKisiyeSatis";
-            this.txtKisiyeSatis.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.txtKisiyeSatis.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtKisiyeSatis.Properties.Appearance.Font")));
-            this.txtKisiyeSatis.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.txtKisiyeSatis.Properties.Appearance.Options.UseBackColor = true;
-            this.txtKisiyeSatis.Properties.Appearance.Options.UseFont = true;
-            this.txtKisiyeSatis.Properties.Appearance.Options.UseForeColor = true;
-            this.txtKisiyeSatis.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // btn_9
             // 
@@ -1132,18 +1141,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Column = this.gridColumn6;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule2.Name = "Format0";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue2.Value1 = "";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            this.gridView1.FormatRules.Add(gridFormatRule2);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn6;
+            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue1.Value1 = "";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView1.FormatRules.Add(gridFormatRule1);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.RowAutoHeight = true;
@@ -1369,7 +1378,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(826, 716);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(828, 712);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1381,7 +1390,7 @@
             this.layoutControlItem1.MinSize = new System.Drawing.Size(201, 66);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(826, 70);
+            this.layoutControlItem1.Size = new System.Drawing.Size(828, 70);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1394,7 +1403,7 @@
             this.layoutControlItem2.MinSize = new System.Drawing.Size(196, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(826, 195);
+            this.layoutControlItem2.Size = new System.Drawing.Size(828, 194);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1403,9 +1412,9 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 265);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 264);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(826, 79);
+            this.layoutControlItem6.Size = new System.Drawing.Size(828, 78);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1413,18 +1422,18 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 344);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 342);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(826, 287);
+            this.layoutControlItem7.Size = new System.Drawing.Size(828, 285);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 631);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 627);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(826, 85);
+            this.layoutControlItem3.Size = new System.Drawing.Size(828, 85);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             this.layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -1448,15 +1457,6 @@
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.btnTemizleKisiyeSatis);
-            this.panelControl4.Controls.Add(this.txtKisiyeSatis);
-            this.panelControl4.Controls.Add(this.txtKisiyeSatisSayac);
-            this.panelControl4.Controls.Add(this.btnKisiyeSatisYap);
-            resources.ApplyResources(this.panelControl4, "panelControl4");
-            this.panelControl4.Name = "panelControl4";
             // 
             // Satis
             // 
@@ -1500,9 +1500,11 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatisSayac.Properties)).EndInit();
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
@@ -1536,8 +1538,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -5782,8 +5782,15 @@ Select InstanceNames from @GetInstances ";
         }
         public void MyGridDoldurAyarlar()
         {
-            gridControl_ayarlar.DataSource = dbtools.SelectTable("select * from ayarlar");
-            Main.ayarlar.yenile();
+            try
+            {
+                gridControl_ayarlar.DataSource = dbtools.SelectTable("select * from ayarlar");
+                Main.ayarlar.yenile();
+            }
+            catch (Exception ex)
+            {
+            }
+            
         }
         private void gridView_ayarlar_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
         {

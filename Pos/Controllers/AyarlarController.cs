@@ -33,51 +33,58 @@ namespace Pos.Controllers
 
         public void yenile()
         {
-            dataTable = dbtools.SelectTable("select * from ayarlar");
-            if (dataTable==null)
+            try
             {
-                return;
-            }
-            foreach (DataRow item in dataTable.Rows)
-            {
-                switch (item["ayarlar_key"].ToString())
+                dataTable = dbtools.SelectTable("select * from ayarlar");
+                if (dataTable == null)
                 {
-                    case "urun_printer":
-                        urun_printer = item["ayarlar_value"].ToString();
-                        break;
-                    case "paketOtoKapat":
-                        int deger = Convert.ToInt32(item["ayarlar_value"].ToString());
-                        paketOtoKapat = Convert.ToBoolean(deger);
-                        break;
-                    case "yuvarlama":
-                        yuvarlama = item["ayarlar_value"].ToString();
-                        break;
-                    case "otomatikIndirim":
-                        otomatikIndirim = item["ayarlar_value"].ToString();
-                        break;
-                    case "satisEkranGenislik":
-                        satisEkranGenislik = item["ayarlar_value"].ToString();
-                        break;
+                    return;
+                }
+                foreach (DataRow item in dataTable.Rows)
+                {
+                    switch (item["ayarlar_key"].ToString())
+                    {
+                        case "urun_printer":
+                            urun_printer = item["ayarlar_value"].ToString();
+                            break;
+                        case "paketOtoKapat":
+                            int deger = Convert.ToInt32(item["ayarlar_value"].ToString());
+                            paketOtoKapat = Convert.ToBoolean(deger);
+                            break;
+                        case "yuvarlama":
+                            yuvarlama = item["ayarlar_value"].ToString();
+                            break;
+                        case "otomatikIndirim":
+                            otomatikIndirim = item["ayarlar_value"].ToString();
+                            break;
+                        case "satisEkranGenislik":
+                            satisEkranGenislik = item["ayarlar_value"].ToString();
+                            break;
 
+                    }
+                }
+
+                urunPrintModels = new List<UrunPrintModel>();
+                if (!urun_printer.Equals(""))
+                {
+                    urunPrintModels = JsonConvert.DeserializeObject<List<UrunPrintModel>>(urun_printer);
+                }
+
+                yuvarlaModels = new List<YuvarlaModel>();
+                if (!yuvarlama.Equals(""))
+                {
+                    yuvarlaModels = JsonConvert.DeserializeObject<List<YuvarlaModel>>(yuvarlama);
+                }
+
+                indirimModels = new List<IndirimModel>();
+                if (!otomatikIndirim.Equals(""))
+                {
+                    indirimModels = JsonConvert.DeserializeObject<List<IndirimModel>>(otomatikIndirim);
                 }
             }
-
-            urunPrintModels = new List<UrunPrintModel>();
-            if (!urun_printer.Equals("")) 
+            catch (Exception ex)
             {
-                urunPrintModels = JsonConvert.DeserializeObject<List<UrunPrintModel>>(urun_printer);
-            }
-
-            yuvarlaModels = new List<YuvarlaModel>();
-            if (!yuvarlama.Equals(""))
-            {
-                yuvarlaModels = JsonConvert.DeserializeObject<List<YuvarlaModel>>(yuvarlama);
-            }
-
-            indirimModels = new List<IndirimModel>();
-            if (!otomatikIndirim.Equals(""))
-            {
-                indirimModels = JsonConvert.DeserializeObject<List<IndirimModel>>(otomatikIndirim);
+               // RHMesaj.alertMesaj("Yuvarlama reçetesi tanımlı değil\n"+ex.Message);
             }
         }
 

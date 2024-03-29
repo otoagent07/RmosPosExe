@@ -420,7 +420,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.99";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.100";
 
 
 
@@ -499,6 +499,18 @@ namespace Pos
                 departmanYukleNew();
 
                 backgroundWorker1.RunWorkerAsync();
+
+
+
+                try
+                {
+                    ayarlar = new AyarlarController();
+                }
+                catch (Exception ex)
+                {
+
+                }
+
             }
             catch (Exception ex)
             {
@@ -1592,37 +1604,46 @@ YS_Panel a = new YS_Panel();
         }
 
 
-        public static AyarlarController ayarlar = new AyarlarController();
+        public static AyarlarController ayarlar;
 
         private void Main_Shown(object sender, EventArgs e)
         {
-            dbtools.execcmdR("exec defaultParametre");
-
-            StatikModel.wait_loadingKapat();
-
-
-
-            string tar = Param.Tarih.ToString("yyyy-MM-dd");
-            string tar2 = DateTime.Now.ToString("yyyy-MM-dd");
-            if (!tar.Equals(tar2))
+            try
             {
-                if (User.P_Kod != "1")
+
+
+                dbtools.execcmdR("exec defaultParametre");
+
+                StatikModel.wait_loadingKapat();
+
+
+
+                string tar = Param.Tarih.ToString("yyyy-MM-dd");
+                string tar2 = DateTime.Now.ToString("yyyy-MM-dd");
+                if (!tar.Equals(tar2))
                 {
-                    tar = Convert.ToDateTime(tar).ToLongDateString();
-                    tar2 = Convert.ToDateTime(tar2).ToLongDateString();
+                    if (User.P_Kod != "1")
+                    {
+                        tar = Convert.ToDateTime(tar).ToLongDateString();
+                        tar2 = Convert.ToDateTime(tar2).ToLongDateString();
 
-                    string en = res_man.GetString("Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!");
-                    string mesaj = en + System.Environment.NewLine + res_man.GetString("SistemTar:") + tar2 + System.Environment.NewLine + res_man.GetString("PosTar:") + tar;
+                        string en = res_man.GetString("Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!");
+                        string mesaj = en + System.Environment.NewLine + res_man.GetString("SistemTar:") + tar2 + System.Environment.NewLine + res_man.GetString("PosTar:") + tar;
 
-                    //string mesaj = en + System.Environment.NewLine + res_man.GetString("SistemTar: ") + tar2 + System.Environment.NewLine + res_man.GetString("PosTar: ") + tar;
-                    ConfirmationForm confirmationForm = new ConfirmationForm(mesaj);
-                    confirmationForm.ShowDialog();
+                        //string mesaj = en + System.Environment.NewLine + res_man.GetString("SistemTar: ") + tar2 + System.Environment.NewLine + res_man.GetString("PosTar: ") + tar;
+                        ConfirmationForm confirmationForm = new ConfirmationForm(mesaj);
+                        confirmationForm.ShowDialog();
+                    }
+
                 }
 
+
+                // receteAc("asdsad","adsasd",(decimal)65.22);
             }
-
-
-            // receteAc("asdsad","adsasd",(decimal)65.22);
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void receteAc(string Rec_YS_UrunID, string Rec_Ad, decimal Rec_Fiyat)
@@ -1824,7 +1845,7 @@ No Cut Seçili Olsun
             try
             {
                 FisPr pr = new FisPr();
-                pr.newHesapDokum(true, Convert.ToInt32(json.fisno), 0, "* * * "+ json.tip.ToUpper() + " HESAP DÖKÜM FİŞİ * * *", false);
+                pr.newHesapDokum(true, Convert.ToInt32(json.fisno), 0, "* * * " + json.tip.ToUpper() + " HESAP DÖKÜM FİŞİ * * *", false);
             }
             catch (Exception ex)
             {
@@ -1847,8 +1868,8 @@ No Cut Seçili Olsun
 
                 dbtools.execcmdR(query);
 
-                dbtools.execcmdR("update Cst_Recete_Satis set  Rsat_Durum='K' where Rsat_Fisno="+json.fisno);
-                dbtools.execcmdR($"update Pos_Masa set Masa_Durum='0',Masa_NFC='0',Masa_Ozel=NULL where Masa_No='{Rsat_Masa}'" );
+                dbtools.execcmdR("update Cst_Recete_Satis set  Rsat_Durum='K' where Rsat_Fisno=" + json.fisno);
+                dbtools.execcmdR($"update Pos_Masa set Masa_Durum='0',Masa_NFC='0',Masa_Ozel=NULL where Masa_No='{Rsat_Masa}'");
 
                 if (json.hesapYazsinmi)
                 {
@@ -1887,7 +1908,7 @@ No Cut Seçili Olsun
 
                 if (Param.Param_YeniSiparisDkm)
                 {
-                    sonuc = pr.newSiparisPr(Convert.ToInt32(json.fisno), false, 0,fisBaslik: " * * * " + json.tip + " FİSİ * * * ");
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(json.fisno), false, 0, fisBaslik: " * * * " + json.tip + " FİSİ * * * ");
                 }
                 else
                 {

@@ -4,6 +4,7 @@ using Pos.Class;
 using Pos.Controllers;
 using System;
 using System.Globalization;
+using System.Text;
 using System.Windows.Forms;
 
 namespace Pos
@@ -14,7 +15,7 @@ namespace Pos
         public static Main main;
         
         [STAThread]
-        [Obsolete]
+        //[Obsolete]
         static void Main(string[] CalismaParametreleri)
         {
             try
@@ -68,7 +69,19 @@ namespace Pos
             }
             catch(Exception ex)
             {
-                RHMesaj.MyMessageError("Program","Main","",ex);
+                StringBuilder errorMessage = new StringBuilder();
+                errorMessage.AppendLine("Hata Oluştu:");
+                errorMessage.AppendLine("Message: " + ex.Message);
+                errorMessage.AppendLine("StackTrace: " + ex.StackTrace);
+
+                Exception innerEx = ex.InnerException;
+                while (innerEx != null)
+                {
+                    errorMessage.AppendLine("Inner Exception: " + innerEx.Message);
+                    innerEx = innerEx.InnerException;
+                }
+
+                MessageBox.Show(errorMessage.ToString(), "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
