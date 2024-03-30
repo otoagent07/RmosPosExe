@@ -32,15 +32,16 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.flp_Garson = new System.Windows.Forms.FlowLayoutPanel();
             this.lbl_Baslik = new DevExpress.XtraEditors.LabelControl();
+            this.btnCikis = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
             // 
             // labelControl1
             // 
-            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
             // 
             // flp_Garson
@@ -50,18 +51,26 @@
             // 
             // lbl_Baslik
             // 
-            resources.ApplyResources(this.lbl_Baslik, "lbl_Baslik");
             this.lbl_Baslik.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_Baslik.Appearance.Font")));
             this.lbl_Baslik.Appearance.ForeColor = System.Drawing.Color.Navy;
             this.lbl_Baslik.Appearance.Options.UseFont = true;
             this.lbl_Baslik.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.lbl_Baslik, "lbl_Baslik");
             this.lbl_Baslik.Name = "lbl_Baslik";
+            // 
+            // btnCikis
+            // 
+            this.btnCikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCikis, "btnCikis");
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // Garson_Sor
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.lbl_Baslik);
             this.Controls.Add(this.flp_Garson);
             this.Controls.Add(this.labelControl1);
@@ -77,5 +86,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.FlowLayoutPanel flp_Garson;
         private DevExpress.XtraEditors.LabelControl lbl_Baslik;
+        private DevExpress.XtraEditors.SimpleButton btnCikis;
     }
 }

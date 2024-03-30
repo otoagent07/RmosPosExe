@@ -52,7 +52,7 @@ namespace Pos
 
             if (Departman.Garson_Sor)
             {
-                garson = new Garson_Sor();
+                garson = new Garson_Sor(false);
                 garson.Tag = "GARSON";
                 garson.TopLevel = false;
                 garson.AutoScroll = true;

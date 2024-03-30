@@ -1058,6 +1058,11 @@ namespace Pos
             Garson_Sor pkt = new Garson_Sor();
             pkt.Tag = "PAKET";
             pkt.ShowDialog();
+
+            if (pkt.cikis)
+            {
+                return;
+            }
             string Paketci = pkt.Garson_Kod;
 
             FisPr pr = new FisPr();

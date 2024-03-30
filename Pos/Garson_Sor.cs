@@ -10,14 +10,19 @@ namespace Pos
     {
         public string Garson_Kod = String.Empty;
         public string Garson_AdSoyad = String.Empty;
-
-        public Garson_Sor()
+        public bool cikisbuttonaktif = true;
+        public Garson_Sor(bool cikisbuttonaktif=true)
         {
             InitializeComponent();
+            this.cikisbuttonaktif = cikisbuttonaktif;
         }
 
         private void Garson_Sor_Load(object sender, EventArgs e)
         {
+            if (cikisbuttonaktif==false)
+            {
+                btnCikis.Visible = false;
+            }
             this.BringToFront();
             if (Convert.ToString(this.Tag) == "PAKET")
             {
@@ -64,6 +69,11 @@ namespace Pos
             this.Close();
         }
 
-
+        public bool cikis = false;
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            cikis = true;
+            this.Close();
+        }
     }
 }
