@@ -525,7 +525,7 @@ namespace Pos
             //Cari_Soyad,Cari_Adres1,P_Kod,P_Ad,P_Soyad ,Rsat_Sube,sube.Pkod_Ad ,Rsat_SubeDurum,Cari_Tip,GOrder_deliveryType
             //order by Cst_Recete_Satis.Rsat_Fisno desc ";
 
-            string query = StatikModel.getPaketSqlText(dateTarih1, dateTarih2, Departman.Dep_Kodu, Sube, Durum);
+            string query = StatikModel.getPaketSqlText(dateTarih1, dateTarih2, Departman.Dep_Kodu, Sube, Durum,sistemTar: checkEditSistemTarihi.Checked);
             gridControl1.DataSource = dbtools.SelectTableR(query);
 
 

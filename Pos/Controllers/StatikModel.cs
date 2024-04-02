@@ -84,7 +84,7 @@ namespace Pos.Controllers
             return kur;
         }
 
-        public static string getPaketSqlText(DateEdit dateTarih1, DateEdit dateTarih2, string depkod, string Sube, string Durum, bool sadeceAcikmasagozuksun = false)
+        public static string getPaketSqlText(DateEdit dateTarih1, DateEdit dateTarih2, string depkod, string Sube, string Durum, bool sadeceAcikmasagozuksun = false, bool sistemTar = false)
         {
             //SUM(Rsat_Tutar) -
 
@@ -107,7 +107,7 @@ where 1 = 1
             case when MIN(Rsat_Durum) = 'A' then 'Acik' else 'Kapali' end as Rsat_Durum,
             MAX(Rsat_Id) as Rsat_Id,
             MAX(Rsat_GetirOrderID) as entegreOdemeTip,
-            Rsat_Tarih,
+            Rsat_Tarih  ,
             Masa_No,
             Masa_Ad,
             Cst_Recete_Satis.Rsat_Fisno,
@@ -154,11 +154,17 @@ end as Rsat_YSDurum,
             Left Join GetirYemek_Order on GOrder_id = Rsat_GetirOrderID
             where (Rsat_Durum in (SELECT fieldvalue FROM dbo.stringArray('" + Durum + @"',',')))
             and Rsat_Ba = 'B' and Masa_Konum = 'P' " + acikMasa + @"
-            group by Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Cari_Kod,Cari_Ad,
+            group by Masa_No,Rsat_Tarih,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Cari_Kod,Cari_Ad,
             Cari_Soyad,Cari_Adres1,P_Kod,P_Ad,P_Soyad ,Rsat_Sube,sube.Pkod_Ad ,Rsat_SubeDurum,Cari_Tip,GOrder_deliveryType,GOrder_confirmationId,GetirYemek_Order.ID,Rsat_EntegreId
             order by Cst_Recete_Satis.Rsat_Fisno desc 
             DROP TABLE #Cst_Recete_Satis ";
 
+            if (sistemTar)
+            {
+                query= query.Replace(",Rsat_Tarih", ",Rsat_SistemDate");
+                query= query.Replace("Rsat_Tarih  ,", "Rsat_SistemDate as Rsat_Tarih,");
+
+            }
             return query;
         }
     }

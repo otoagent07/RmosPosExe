@@ -215,6 +215,7 @@
             this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
             this.timerGetirYenile = new System.Windows.Forms.Timer(this.components);
+            this.checkEditSistemTarihi = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -267,6 +268,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditSistemTarihi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn11
@@ -409,6 +411,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.checkEditSistemTarihi);
             this.groupControl1.Controls.Add(this.simpleButton7);
             this.groupControl1.Controls.Add(this.simpleButton6);
             this.groupControl1.Controls.Add(this.simpleButton5);
@@ -1908,6 +1911,14 @@
             this.timerGetirYenile.Interval = 1000;
             this.timerGetirYenile.Tick += new System.EventHandler(this.timerGetirYenile_Tick);
             // 
+            // checkEditSistemTarihi
+            // 
+            resources.ApplyResources(this.checkEditSistemTarihi, "checkEditSistemTarihi");
+            this.checkEditSistemTarihi.Name = "checkEditSistemTarihi";
+            this.checkEditSistemTarihi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEdit3.Properties.Appearance.Font")));
+            this.checkEditSistemTarihi.Properties.Appearance.Options.UseFont = true;
+            this.checkEditSistemTarihi.Properties.Caption = resources.GetString("checkEdit3.Properties.Caption");
+            // 
             // PaketCallCenter
             // 
             resources.ApplyResources(this, "$this");
@@ -1982,6 +1993,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditSistemTarihi.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2161,5 +2173,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn77;
         public DevExpress.XtraTab.XtraTabPage xtraTabPage4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn78;
+        private DevExpress.XtraEditors.CheckEdit checkEditSistemTarihi;
     }
 }

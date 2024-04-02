@@ -368,7 +368,7 @@
     <value>Fill</value>
   </data>
   <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 133</value>
+    <value>86, 149</value>
   </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
@@ -646,7 +646,7 @@
     <value>120</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 465</value>
+    <value>972, 454</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -670,10 +670,10 @@
     <value>Bottom</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 465</value>
+    <value>0, 454</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 59</value>
+    <value>972, 59</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -691,7 +691,7 @@
     <value>1</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 524</value>
+    <value>972, 513</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Açık Paketler</value>
@@ -709,7 +709,7 @@
     <value>0</value>
   </data>
   <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 552</value>
+    <value>974, 536</value>
   </data>
   <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -1006,7 +1006,7 @@
     <value>16</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 453</value>
+    <value>972, 458</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1549,7 +1549,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 71</value>
+    <value>972, 71</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1567,7 +1567,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 524</value>
+    <value>972, 529</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Kapalı Paketler</value>
@@ -1672,7 +1672,7 @@ Başlat</value>
     <value>ID</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 437</value>
+    <value>972, 442</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1818,10 +1818,10 @@ Başlat</value>
     <value>Right</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>833, 20</value>
+    <value>837, 22</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 65</value>
+    <value>133, 63</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2016,10 +2016,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 437</value>
+    <value>0, 442</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 87</value>
+    <value>972, 87</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2037,7 +2037,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 524</value>
+    <value>972, 529</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Getir</value>
@@ -2058,7 +2058,7 @@ Başlat</value>
     <value>Fill</value>
   </data>
   <data name="gridControlTrendyolSiparis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 3</value>
   </data>
   <data name="gridViewTrendyolSiparis.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2190,7 +2190,7 @@ Başlat</value>
     <value>10</value>
   </data>
   <data name="gridControlTrendyolSiparis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>964, 241</value>
+    <value>966, 244</value>
   </data>
   <data name="gridControlTrendyolSiparis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2214,7 +2214,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 245</value>
+    <value>972, 250</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2235,10 +2235,10 @@ Başlat</value>
     <value>Fill</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 3</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>964, 189</value>
+    <value>966, 187</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2259,10 +2259,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 245</value>
+    <value>0, 250</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 193</value>
+    <value>972, 193</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2819,10 +2819,10 @@ Bizden Sil</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 438</value>
+    <value>0, 443</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 86</value>
+    <value>972, 86</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2840,7 +2840,7 @@ Bizden Sil</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 524</value>
+    <value>972, 529</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
     <value>Trendyol</value>
@@ -2873,7 +2873,7 @@ Bizden Sil</value>
     <value>Left</value>
   </data>
   <data name="gridControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 133</value>
+    <value>0, 149</value>
   </data>
   <data name="gridView5.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -2894,7 +2894,7 @@ Bizden Sil</value>
     <value>Center_Cari</value>
   </data>
   <data name="gridControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 552</value>
+    <value>86, 536</value>
   </data>
   <data name="gridControl5.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -2913,6 +2913,33 @@ Bizden Sil</value>
   </data>
   <data name="&gt;&gt;gridControl5.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="checkEditSistemTarihi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 124</value>
+  </data>
+  <data name="checkEdit3.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="checkEdit3.Properties.Caption" xml:space="preserve">
+    <value>Sistem Tarihine Göre</value>
+  </data>
+  <data name="checkEditSistemTarihi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 19</value>
+  </data>
+  <data name="checkEditSistemTarihi.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;checkEditSistemTarihi.Name" xml:space="preserve">
+    <value>checkEditSistemTarihi</value>
+  </data>
+  <data name="&gt;&gt;checkEditSistemTarihi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditSistemTarihi.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;checkEditSistemTarihi.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="simpleButton7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -2986,7 +3013,7 @@ Bizden Sil</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton7.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="simpleButton6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -3086,7 +3113,7 @@ Bizden Sil</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton6.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="simpleButton5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3155,7 +3182,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="dateTarih2.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3191,7 +3218,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dateTarih2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="dateTarih1.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3227,7 +3254,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dateTarih1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="textEdit6.EditValue" xml:space="preserve">
     <value>Bitis Tarihi</value>
@@ -3251,7 +3278,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="textEdit5.EditValue" xml:space="preserve">
     <value>Baslangıc Tarihi</value>
@@ -3275,7 +3302,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="chk_Sube.Location" type="System.Drawing.Point, System.Drawing">
     <value>337, 98</value>
@@ -3302,7 +3329,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Sube.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="chk_Kapali.Location" type="System.Drawing.Point, System.Drawing">
     <value>429, 25</value>
@@ -3329,7 +3356,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Kapali.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="chk_Acik.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3359,7 +3386,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Acik.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="btn_PaketPr.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3411,7 +3438,7 @@ Güncelle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn_PaketPr.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3474,7 +3501,7 @@ Değiştir</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="btn_SubeDegis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3539,7 +3566,7 @@ Değiştir</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn_SubeDegis.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="simpleButton4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3605,7 +3632,7 @@ Bak</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton4.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="btn_Gonder.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -3671,7 +3698,7 @@ Bak</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn_Gonder.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="btn_Yenile.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -3747,7 +3774,7 @@ Bak</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn_Yenile.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="simpleButton2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3810,7 +3837,7 @@ Paket</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3874,7 +3901,7 @@ Ekle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="simpleButton11.Location" type="System.Drawing.Point, System.Drawing">
     <value>1160, 54</value>
@@ -3901,7 +3928,7 @@ Ekle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton11.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="look_SubeListele.Location" type="System.Drawing.Point, System.Drawing">
     <value>427, 97</value>
@@ -3925,7 +3952,7 @@ Ekle</value>
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;look_SubeListele.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="groupControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -3934,7 +3961,7 @@ Ekle</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1060, 133</value>
+    <value>1060, 149</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
