@@ -59,6 +59,7 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.checkEditSistemTarihi = new DevExpress.XtraEditors.CheckEdit();
             this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
@@ -215,10 +216,10 @@
             this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
             this.timerGetirYenile = new System.Windows.Forms.Timer(this.components);
-            this.checkEditSistemTarihi = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditSistemTarihi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTarih2.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTarih2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTarih1.Properties.CalendarTimeProperties)).BeginInit();
@@ -268,7 +269,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditSistemTarihi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn11
@@ -434,6 +434,14 @@
             this.groupControl1.Controls.Add(this.look_SubeListele);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // checkEditSistemTarihi
+            // 
+            resources.ApplyResources(this.checkEditSistemTarihi, "checkEditSistemTarihi");
+            this.checkEditSistemTarihi.Name = "checkEditSistemTarihi";
+            this.checkEditSistemTarihi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEditSistemTarihi.Properties.Appearance.Font")));
+            this.checkEditSistemTarihi.Properties.Appearance.Options.UseFont = true;
+            this.checkEditSistemTarihi.Properties.Caption = resources.GetString("checkEditSistemTarihi.Properties.Caption");
             // 
             // simpleButton7
             // 
@@ -1911,14 +1919,6 @@
             this.timerGetirYenile.Interval = 1000;
             this.timerGetirYenile.Tick += new System.EventHandler(this.timerGetirYenile_Tick);
             // 
-            // checkEditSistemTarihi
-            // 
-            resources.ApplyResources(this.checkEditSistemTarihi, "checkEditSistemTarihi");
-            this.checkEditSistemTarihi.Name = "checkEditSistemTarihi";
-            this.checkEditSistemTarihi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEdit3.Properties.Appearance.Font")));
-            this.checkEditSistemTarihi.Properties.Appearance.Options.UseFont = true;
-            this.checkEditSistemTarihi.Properties.Caption = resources.GetString("checkEdit3.Properties.Caption");
-            // 
             // PaketCallCenter
             // 
             resources.ApplyResources(this, "$this");
@@ -1943,6 +1943,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditSistemTarihi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTarih2.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTarih2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTarih1.Properties.CalendarTimeProperties)).EndInit();
@@ -1993,7 +1994,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditSistemTarihi.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

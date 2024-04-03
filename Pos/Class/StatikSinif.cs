@@ -98,6 +98,8 @@ IF COL_LENGTH('Cst_Recete_Satis', 'E_AdisyonDurum') IS NULL BEGIN ALTER TABLE Cs
 IF COL_LENGTH('Cst_Recete_Satis', 'kisiyeSatisAdSoyad') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD kisiyeSatisAdSoyad nvarchar(200) END;
 IF COL_LENGTH('Pos_Kodlar', 'Pkod_E_Adisyon') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD Pkod_E_Adisyon bit END;
 
+IF COL_LENGTH('Cst_Recete_Satis', 'Rsat_AcilisTar') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD Rsat_AcilisTar  datetime null end;
+
 IF COL_LENGTH('Cst_Recete_Satis', 'ustgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD ustgrup nvarchar(200) END;
 IF COL_LENGTH('Cst_Recete_Satis', 'sirano') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD sirano int END;
 IF COL_LENGTH('Cst_Recete_Satis', 'altgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD altgrup nvarchar(200) END;
@@ -226,7 +228,34 @@ IF COL_LENGTH('Pos_Kasahrk', 'Pkasa_dep') IS NULL BEGIN ALTER TABLE Pos_Kasahrk 
             }
         }
 
-        public static void dilDegis(string dil = "tr-TR") // en-US
+        public static string getTriggerAcilisTar() 
+        {
+            string query = @"IF NOT EXISTS (SELECT * FROM sys.triggers WHERE name = 'trg_InsertRsat_AcilisTar' AND parent_class_desc = 'OBJECT_OR_COLUMN' AND parent_id = OBJECT_ID('Cst_Recete_Satis'))
+BEGIN
+    EXEC('
+   CREATE TRIGGER trg_InsertRsat_AcilisTar
+	ON Cst_Recete_Satis
+	AFTER INSERT
+	AS
+	BEGIN
+    SET NOCOUNT ON;
+
+	declare @tarihim datetime 
+	    SET @tarihim = (SELECT TOP 1 ISNULL(Rsat_AcilisTar, GETDATE()) AS tarih 
+                    FROM Cst_Recete_Satis WITH (NOLOCK) 
+                    WHERE Rsat_Fisno = (SELECT Rsat_Fisno FROM inserted) 
+                    ORDER BY Rsat_Id);
+
+    UPDATE Cst_Recete_Satis
+    SET Rsat_AcilisTar = @tarihim
+    FROM inserted
+    WHERE Cst_Recete_Satis.Rsat_Id = inserted.Rsat_Id;
+END;
+    ');
+END;";
+            return query;
+        }
+            public static void dilDegis(string dil = "tr-TR") // en-US
         {
             try
             {

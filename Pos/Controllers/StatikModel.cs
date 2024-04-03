@@ -161,8 +161,8 @@ end as Rsat_YSDurum,
 
             if (sistemTar)
             {
-                query= query.Replace(",Rsat_Tarih", ",Rsat_SistemDate");
-                query= query.Replace("Rsat_Tarih  ,", "Rsat_SistemDate as Rsat_Tarih,");
+                query= query.Replace(",Rsat_Tarih", ",Rsat_AcilisTar");
+                query= query.Replace("Rsat_Tarih  ,", "Rsat_AcilisTar as Rsat_Tarih,");
 
             }
             return query;

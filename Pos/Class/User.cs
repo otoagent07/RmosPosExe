@@ -174,6 +174,7 @@ namespace Pos.Class
                 try
                 {
                     dbtools.execcmdRMesajsiz(StatikSinif.getAlterQuery());
+                    dbtools.execcmdRMesajsiz(StatikSinif.getTriggerAcilisTar());
                     dbtools.execcmdR(StatikSinif.defaultParametreCalistir());
                     birkere = true;
                 }
