@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace Pos.Class
 {
@@ -3122,582 +3123,631 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
         public string newHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, bool sifirli = false, bool parcalimi = false, string parcamasano = "")
         {
-            string sirano = StatikSinif.getSira(Fisno.ToString());
-            string printer = String.Empty;
-            int bosSatir = 0;
-            string filter = "";
-            string posta = Masa_Posta_bul(Fisno);
-            decimal B = 0, A = 0, Bakiye = 0;
-            if (Departman.Kodlar_Pr_Posta)
+            try
             {
-                filter = " and ISNULL(Pkod_Posta,'') = ISNULL('" + posta + "','')  ";
-            }
-            else
-            {
-                filter = " and ISNULL(Pkod_Posta,'') = ''  ";
-            }
-
-            string query = "select Pkod_Ad,Pkod_Satir from Pos_Kodlar with(nolock) where Pkod_Sinif = '16' and Pkod_Kod = '" + Departman.Dep_Kodu + "' and Pkod_Ustgrup = 'HES' " + filter;
-            DataTable dtPrinter = dbtools.SelectTable(query);
-
-            if (dtPrinter.Rows.Count == 0)
-            {
-                query = "select distinct Pkod_Ad,Pkod_Satir from Pos_Kodlar with(nolock) where Pkod_Sinif = '16' and Pkod_Kod = '" + Departman.Dep_Kodu + "' and Pkod_Ustgrup = 'HES' ";
-
-                dtPrinter = dbtools.SelectTable(query);
-            }
-
-
-
-
-            if (dtPrinter.Rows.Count > 0)
-            {
-                printer = Convert.ToString(dtPrinter.Rows[0]["Pkod_Ad"]);
-                bosSatir = Convert.ToInt32(dtPrinter.Rows[0]["Pkod_Satir"]);
-            }
-
-            DataTable dtMacPrinter = dbtools.SelectTable("select Pkod_Ad from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '21' and Pkod_Ustgrup = 'HES' and Pkod_Mac = '" + dbtools.MacAdresi() + "'");
-            if (dtMacPrinter.Rows.Count > 0)
-            {
-                printer = Convert.ToString(dtMacPrinter.Rows[0]["Pkod_Ad"]);
-            }
-
-            DataTable dtDizayn = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'HESAP'");
-            if (dtDizayn.Rows.Count < 1)
-            {
-                return "Hesap Dizaynı Yapılmamış...";
-            }
-
-            DataSet ds = new DataSet();
-            DataTable dtHesap = new DataTable();
-            DataTable dtOdeme = new DataTable();
-            SqlConnection con = dbtools.conn;
-            if (con.State == ConnectionState.Closed) con.Open();
-            SqlCommand com = new SqlCommand();
-            com.Connection = con;
-            com.CommandType = CommandType.StoredProcedure;
-            com.CommandTimeout = 0;
-            com.CommandText = "Pos_Satis";
-            com.Parameters.AddWithValue("@Fisno", Fisno);
-            com.Parameters.AddWithValue("@Split", Split);
-            com.Parameters.AddWithValue("@parcalimasano", parcamasano);
-            com.Parameters.AddWithValue("@Rapor_Tipi", parcalimi == true ? 30 : 7);
-            SqlDataAdapter da = new SqlDataAdapter(com);
-            da.Fill(ds);
-
-            dtHesap = ds.Tables[0];
-            dtOdeme = ds.Tables[1];
-            if (con.State == ConnectionState.Open) con.Close();
-
-            int dtSatirsay = dtHesap.Rows.Count;
-
-
-          
-
-
-
-            Print.Hesap hsp = new Print.Hesap();
-
-      
-            if (kisiyeSatis)
-            {
-                dtHesap = dtHesap.Select("kisiyeSatisAdSoyad='" + kisiyeSatisAdSoyad + "'").CopyToDataTable();
-            }
-
-            xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), hsp);
-
-            if (Param.hesapFisQr)
-            {
-                hsp.txtQr.Text = Param.Tarih.ToString("yyyy-MM-dd");
-                hsp.txtQr.Visible = true;
-                hsp.ReportFooter.HeightF = (float)388.3324;
-                hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
-            }
-
-
-            hsp.PrinterName = printer;
-            hsp.DataSource = dtHesap;
-
-            DateTime sqlTarih = Convert.ToDateTime(dbtools.DegerGetir("select getdate()"));
-            hsp.xr_OtelAdi.Text = Param.Tesis_Adi;
-            hsp.xr_Baslik.Text = Baslik;
-            hsp.xr_OtelAdi2.Text = Departman.Sube_Ad;
-            hsp.xr_Departman.Text = Departman.Dep_Adi;
-            hsp.txtSiraNo.Text = sirano;
-
-            string masaAd = Convert.ToString(dtHesap.Rows[0]["MasaAdi"]);
-            if (masaAd.Trim().Equals(""))
-            {
-                masaAd = Convert.ToString(dtHesap.Rows[0]["Rsat_Masa"]);
-            }
-
-
-            hsp.txtToplamIkram.Text = dbtools.DegerGetir("select sum(Rsat_Fiyat) as Rsat_Fiyat from Cst_Recete_Satis where  Rsat_Ikram='1' and Rsat_Fisno='" + Fisno + "'");
-
-            hsp.xr_MasaNo.Text = masaAd;
-
-
-            hsp.xr_Konum.Text = Convert.ToString(dtHesap.Rows[0]["MasaKonumAdi"]);
-            hsp.xr_KisiSayisi.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Kisi"]);
-            hsp.xr_Kuver.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Kuver"]);
-            hsp.xr_Tarih.Text = Convert.ToDateTime(dtHesap.Rows[0]["Rsat_Tarih"]).ToShortDateString();
-            hsp.xr_Acilis.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Acilis"]);
-            hsp.xr_Kapanis.Text = sqlTarih.TimeOfDay.ToString();
-            hsp.xr_Cek.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Fisno"]);
-            hsp.xr_Odano.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Odano"]);
-            hsp.xr_Rez.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Folio"]);
-            if (Param.Tesis_Tipi == 0)
-            {
-                hsp.xr_Kart.Text = "";
-                hsp.xr_GC.Text = "";
-                try
+                string sirano = StatikSinif.getSira(Fisno.ToString());
+                string printer = String.Empty;
+                int bosSatir = 0;
+                string filter = "";
+                string posta = Masa_Posta_bul(Fisno);
+                decimal B = 0, A = 0, Bakiye = 0;
+                if (Departman.Kodlar_Pr_Posta)
                 {
-                    hsp.xr_Kart.Text = Fronttools.KartNo(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]));
-                    hsp.xr_GC.Text = Fronttools.GirisCikisTarih(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]));
+                    filter = " and ISNULL(Pkod_Posta,'') = ISNULL('" + posta + "','')  ";
                 }
-                catch (Exception ex)
+                else
                 {
-
+                    filter = " and ISNULL(Pkod_Posta,'') = ''  ";
                 }
 
-            }
-            hsp.xr_Kasiyer.Text = Convert.ToString(dtHesap.Rows[0]["Kasiyer"]);
-            hsp.xr_Adisyon.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Adisyon"]);
+                string query = "select Pkod_Ad,Pkod_Satir from Pos_Kodlar with(nolock) where Pkod_Sinif = '16' and Pkod_Kod = '" + Departman.Dep_Kodu + "' and Pkod_Ustgrup = 'HES' " + filter;
+                DataTable dtPrinter = dbtools.SelectTable(query);
 
-
-            if (Param.Param_HesapDkmAciklama)
-            {
-                hsp.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
-            }
-            else
-            {
-                hsp.xr_Urun.Text = "[Rec_Ad]";
-            }
-
-            hsp.xr_Miktar.Text = String.Format("{0:0.##}", ("[Rsat_Miktar]"));
-            //hsp.xr_Miktar.Text = String.Format("{0:0.##}", ("[Rsat_Miktar]"));
-            //hsp.xr_Miktar.Text = hsp.xr_Miktar.Text.Replace(",0000", "");
-
-            hsp.xr_Emiktar.Text = "[Rsat_Emiktar]";
-
-            string dovizIcon = "";
-            switch (Param.Doviz_Adi1.ToUpper())
-            {
-                case "EURO":
-                    dovizIcon = " €";
-                    break;
-                case "EUR":
-                    dovizIcon = " €";
-                    break;
-                case "GBP":
-                    dovizIcon = " £";
-                    break;
-                case "RUBLE":
-                    dovizIcon = " ₽";
-                    break;
-                case "USD":
-                    dovizIcon = " $";
-                    break;
-                case "DOLAR":
-                    dovizIcon = " $";
-                    break;
-                default:
-                    dovizIcon = " ₺";
-                    break;
-            }
-
-            if (Param.Fis_Dovizli == 0)
-            {
-                hsp.xr_Tutar.Text = String.Format("{0:0.00}", ("[Rsat_Tutar]"));
-            }
-            else
-            {
-                hsp.xr_Tutar.Text = String.Format("{0:0.00}", ("[Rsat_Doviztutar]"));
-            }
-
-
-            hsp.xr_Tutar.Text += dovizIcon;
-
-
-            if (Param.Param_Hsifir_Ikram)
-            {
-                dtHesap.ConvertColumnType("Rsat_Tutar", typeof(string));
-            }
-
-
-            decimal UrunToplam = 0, UrunToplamTr = 0;
-            for (int i = 0; i < dtHesap.Rows.Count; i++)
-            {
-
-                decimal tutar = Convert.ToDecimal(dtHesap.Rows[i]["Rsat_Tutar"].ToString());
-                decimal dovizTutar = Convert.ToDecimal(dtHesap.Rows[i]["Rsat_Doviztutar"].ToString());
-
-                if (Param.Param_Hsifir_Ikram && tutar == 0)
+                if (dtPrinter.Rows.Count == 0)
                 {
-                    dtHesap.Rows[i]["Rsat_Tutar"] = "*IKRAM*";
+                    query = "select distinct Pkod_Ad,Pkod_Satir from Pos_Kodlar with(nolock) where Pkod_Sinif = '16' and Pkod_Kod = '" + Departman.Dep_Kodu + "' and Pkod_Ustgrup = 'HES' ";
+
+                    dtPrinter = dbtools.SelectTable(query);
                 }
 
-                string zayimi = dbtools.DegerGetir("select ISNULL(Rsat_Zayi,0) as Rsat_Zayi  from Cst_Recete_Satis where Rsat_Id='" + dtHesap.Rows[i]["Rsat_Id"] + "'");
 
-                if (zayimi.Equals("True"))
-                {
-                    dtHesap.Rows[i]["Rsat_Tutar"] = "*ZAYİ*";
-                }
 
-                if (dtHesap.Rows[i]["Rsat_Emiktar"].Equals("B"))
+
+                if (dtPrinter.Rows.Count > 0)
                 {
-                    dtHesap.Rows[i]["Rsat_Emiktar"] = "1BCK";
-                }
-                else if (dtHesap.Rows[i]["Rsat_Emiktar"].Equals("D"))
-                {
-                    dtHesap.Rows[i]["Rsat_Emiktar"] = "DBL";
-                }
-                else if (dtHesap.Rows[i]["Rsat_Emiktar"].Equals("Y"))
-                {
-                    dtHesap.Rows[i]["Rsat_Emiktar"] = "YRM";
+                    printer = Convert.ToString(dtPrinter.Rows[0]["Pkod_Ad"]);
+                    bosSatir = Convert.ToInt32(dtPrinter.Rows[0]["Pkod_Satir"]);
                 }
 
+                DataTable dtMacPrinter = dbtools.SelectTable("select Pkod_Ad from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '21' and Pkod_Ustgrup = 'HES' and Pkod_Mac = '" + dbtools.MacAdresi() + "'");
+                if (dtMacPrinter.Rows.Count > 0)
+                {
+                    printer = Convert.ToString(dtMacPrinter.Rows[0]["Pkod_Ad"]);
+                }
+
+                DataTable dtDizayn = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'HESAP'");
+                if (dtDizayn.Rows.Count < 1)
+                {
+                    return "Hesap Dizaynı Yapılmamış...";
+                }
+
+                DataSet ds = new DataSet();
+                DataTable dtHesap = new DataTable();
+                DataTable dtOdeme = new DataTable();
+                SqlConnection con = dbtools.conn;
+                if (con.State == ConnectionState.Closed) con.Open();
+                SqlCommand com = new SqlCommand();
+                com.Connection = con;
+                com.CommandType = CommandType.StoredProcedure;
+                com.CommandTimeout = 0;
+                com.CommandText = "Pos_Satis";
+                com.Parameters.AddWithValue("@Fisno", Fisno);
+                com.Parameters.AddWithValue("@Split", Split);
+                com.Parameters.AddWithValue("@parcalimasano", parcamasano);
+                com.Parameters.AddWithValue("@Rapor_Tipi", parcalimi == true ? 30 : 7);
+                SqlDataAdapter da = new SqlDataAdapter(com);
+                da.Fill(ds);
+
+                dtHesap = ds.Tables[0];
+                dtOdeme = ds.Tables[1];
+                if (con.State == ConnectionState.Open) con.Close();
+
+                int dtSatirsay = dtHesap.Rows.Count;
+
+               
+
+
+                Print.Hesap hsp = new Print.Hesap();
+
+
+                if (kisiyeSatis)
+                {
+                    dtHesap = dtHesap.Select("kisiyeSatisAdSoyad='" + kisiyeSatisAdSoyad + "'").CopyToDataTable();
+                }
+
+                xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), hsp);
+
+                if (Param.hesapFisQr)
+                {
+                    hsp.txtQr.Text = Param.Tarih.ToString("yyyy-MM-dd");
+                    hsp.txtQr.Visible = true;
+                    hsp.ReportFooter.HeightF = (float)388.3324;
+                    hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
+                }
+
+
+                hsp.PrinterName = printer;
+                hsp.DataSource = dtHesap;
+
+                DateTime sqlTarih = Convert.ToDateTime(dbtools.DegerGetir("select getdate()"));
+                hsp.xr_OtelAdi.Text = Param.Tesis_Adi;
+                hsp.xr_Baslik.Text = Baslik;
+                hsp.xr_OtelAdi2.Text = Departman.Sube_Ad;
+                hsp.xr_Departman.Text = Departman.Dep_Adi;
+                hsp.txtSiraNo.Text = sirano;
+
+                string masaAd = Convert.ToString(dtHesap.Rows[0]["MasaAdi"]);
+                if (masaAd.Trim().Equals(""))
+                {
+                    masaAd = Convert.ToString(dtHesap.Rows[0]["Rsat_Masa"]);
+                }
+
+
+                hsp.txtToplamIkram.Text = dbtools.DegerGetir("select sum(Rsat_Fiyat) as Rsat_Fiyat from Cst_Recete_Satis where  Rsat_Ikram='1' and Rsat_Fisno='" + Fisno + "'");
+
+                hsp.xr_MasaNo.Text = masaAd;
+
+
+                hsp.xr_Konum.Text = Convert.ToString(dtHesap.Rows[0]["MasaKonumAdi"]);
+                hsp.xr_KisiSayisi.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Kisi"]);
+                hsp.xr_Kuver.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Kuver"]);
+                hsp.xr_Tarih.Text = Convert.ToDateTime(dtHesap.Rows[0]["Rsat_Tarih"]).ToShortDateString();
+                hsp.xr_Acilis.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Acilis"]);
+                hsp.xr_Kapanis.Text = sqlTarih.TimeOfDay.ToString();
+                hsp.xr_Cek.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Fisno"]);
+                hsp.xr_Odano.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Odano"]);
+                hsp.xr_Rez.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Folio"]);
+                if (Param.Tesis_Tipi == 0)
+                {
+                    hsp.xr_Kart.Text = "";
+                    hsp.xr_GC.Text = "";
+                    try
+                    {
+                        hsp.xr_Kart.Text = Fronttools.KartNo(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]));
+                        hsp.xr_GC.Text = Fronttools.GirisCikisTarih(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]));
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+
+                }
+                hsp.xr_Kasiyer.Text = Convert.ToString(dtHesap.Rows[0]["Kasiyer"]);
+                hsp.xr_Adisyon.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Adisyon"]);
+
+
+                if (Param.Param_HesapDkmAciklama)
+                {
+                    hsp.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
+                }
+                else
+                {
+                    hsp.xr_Urun.Text = "[Rec_Ad]";
+                }
+
+                hsp.xr_Miktar.Text = String.Format("{0:0.##}", ("[Rsat_Miktar]"));
+                //hsp.xr_Miktar.Text = String.Format("{0:0.##}", ("[Rsat_Miktar]"));
+                //hsp.xr_Miktar.Text = hsp.xr_Miktar.Text.Replace(",0000", "");
+
+                hsp.xr_Emiktar.Text = "[Rsat_Emiktar]";
+
+                string dovizIcon = "";
+                switch (Param.Doviz_Adi1.ToUpper())
+                {
+                    case "EURO":
+                        dovizIcon = " €";
+                        break;
+                    case "EUR":
+                        dovizIcon = " €";
+                        break;
+                    case "GBP":
+                        dovizIcon = " £";
+                        break;
+                    case "RUBLE":
+                        dovizIcon = " ₽";
+                        break;
+                    case "USD":
+                        dovizIcon = " $";
+                        break;
+                    case "DOLAR":
+                        dovizIcon = " $";
+                        break;
+                    default:
+                        dovizIcon = " ₺";
+                        break;
+                }
 
                 if (Param.Fis_Dovizli == 0)
                 {
-                    UrunToplam += tutar;
+                    hsp.xr_Tutar.Text = String.Format("{0:0.00}", ("[Rsat_Tutar]"));
                 }
                 else
                 {
-                    UrunToplam += dovizTutar;
+                    hsp.xr_Tutar.Text = String.Format("{0:0.00}", ("[Rsat_Doviztutar]"));
                 }
 
-                B += tutar;
-                UrunToplamTr += tutar;
-            }
+
+                hsp.xr_Tutar.Text += dovizIcon;
 
 
-            decimal odemeToplam = 0, odemeToplamTr = 0;
-            if (dtOdeme.Rows.Count > 0)
-            {
-                //Odeme Tablosu
-                for (int i = 0; i < dtOdeme.Rows.Count; i++)
+                if (Param.Param_Hsifir_Ikram)
                 {
-                    XRTableRow row = new XRTableRow();
+                    dtHesap.ConvertColumnType("Rsat_Tutar", typeof(string));
+                }
 
-                    XRTableCell cell1 = new XRTableCell();
-                    cell1.Text = Convert.ToString(dtOdeme.Rows[i]["Rec_Ad"]);
-                    cell1.WidthF = hsp.table_Odeme.WidthF * 30 / 100;
-                    cell1.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
-                    row.Cells.Add(cell1);
 
-                    XRTableCell cell2 = new XRTableCell();
+                decimal UrunToplam = 0, UrunToplamTr = 0;
+                for (int i = 0; i < dtHesap.Rows.Count; i++)
+                {
+
+                    decimal tutar = Convert.ToDecimal(dtHesap.Rows[i]["Rsat_Tutar"].ToString());
+                    decimal dovizTutar = Convert.ToDecimal(dtHesap.Rows[i]["Rsat_Doviztutar"].ToString());
+
+                    if (Param.Param_Hsifir_Ikram && tutar == 0)
+                    {
+                        dtHesap.Rows[i]["Rsat_Tutar"] = "*IKRAM*";
+                    }
+
+                    string zayimi = dbtools.DegerGetir("select ISNULL(Rsat_Zayi,0) as Rsat_Zayi  from Cst_Recete_Satis where Rsat_Id='" + dtHesap.Rows[i]["Rsat_Id"] + "'");
+
+                    if (zayimi.Equals("True"))
+                    {
+                        dtHesap.Rows[i]["Rsat_Tutar"] = "*ZAYİ*";
+                    }
+
+                    if (dtHesap.Rows[i]["Rsat_Emiktar"].Equals("B"))
+                    {
+                        dtHesap.Rows[i]["Rsat_Emiktar"] = "1BCK";
+                    }
+                    else if (dtHesap.Rows[i]["Rsat_Emiktar"].Equals("D"))
+                    {
+                        dtHesap.Rows[i]["Rsat_Emiktar"] = "DBL";
+                    }
+                    else if (dtHesap.Rows[i]["Rsat_Emiktar"].Equals("Y"))
+                    {
+                        dtHesap.Rows[i]["Rsat_Emiktar"] = "YRM";
+                    }
+
+
                     if (Param.Fis_Dovizli == 0)
                     {
-                        cell2.Text = Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Tutar"]).ToString("n2");
-
-                        if (sifirli)
-                        {
-                            cell2.Text = "0";
-                        }
+                        UrunToplam += tutar;
                     }
                     else
                     {
-                        cell2.Text = Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Doviztutar"]).ToString("n2");
-                        if (sifirli)
-                        {
-                            cell2.Text = "0";
-                        }
-                    }
-                    if (Param.Fis_Dovizli != 0)
-                    {
-                        switch (dtOdeme.Rows[i]["DovizAdi"].ToString().ToUpper())
-                        {
-                            case "EURO":
-                                dovizIcon = " €";
-                                break;
-                            case "EUR":
-                                dovizIcon = " €";
-                                break;
-                            case "GBP":
-                                dovizIcon = " £";
-                                break;
-                            case "RUBLE":
-                                dovizIcon = " ₽";
-                                break;
-                            case "USD":
-                                dovizIcon = " $";
-                                break;
-                            case "DOLAR":
-                                dovizIcon = " $";
-                                break;
-                            default:
-                                dovizIcon = " ₺";
-                                break;
-                        }
-                    }
-                    cell2.Text += dovizIcon;
-
-
-                    cell2.WidthF = hsp.table_Odeme.WidthF * 20 / 100;
-                    cell2.Font = new System.Drawing.Font("Calibri", 10F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
-                    cell2.RightToLeft = RightToLeft.Yes;
-                    row.Cells.Add(cell2);
-
-                    //if (Param.Tesis_Tipi == 0)
-                    //{
-                    //    XRTableCell cell3 = new XRTableCell();
-                    //    cell3.Text = Fronttools.IsimSoyisim(Convert.ToInt32(dtOdeme.Rows[i]["Rsat_Folio"]));
-                    //    cell3.WidthF = hsp.table_Odeme.WidthF * 30 / 100;
-                    //    row.Cells.Add(cell3);
-
-                    //    XRTableCell cell4 = new XRTableCell();
-                    //    cell4.Text = Convert.ToInt32(dtOdeme.Rows[i]["Rsat_Folio"]).ToString();
-                    //    cell4.WidthF = hsp.table_Odeme.WidthF * 25 / 100;
-                    //    row.Cells.Add(cell4);
-                    //}
-                    if (Param.Fis_Dovizli == 0)
-                    {
-                        odemeToplam += Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Tutar"]);
-                    }
-                    else
-                    {
-                        odemeToplam += Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Doviztutar"]);
+                        UrunToplam += dovizTutar;
                     }
 
-                    odemeToplamTr += Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Tutar"]);
-
-                    hsp.table_Odeme.Rows.Add(row);
-
-                    A = Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Tutar"]);
+                    B += tutar;
+                    UrunToplamTr += tutar;
                 }
-            }
 
 
-
-            hsp.xr_UrunToplam.Text = UrunToplam.ToString("n2");
-            hsp.xr_UrunToplamTr.Text = UrunToplamTr.ToString("n2");
-
-            hsp.xr_KalanToplam.Text = UrunToplam.ToString("n2");
-            hsp.xr_KalanToplamTr.Text = UrunToplamTr.ToString("n2");
-
-            if (dtOdeme.Rows.Count > 0)
-            {
-                hsp.xr_KalanToplam.Text = (UrunToplam - odemeToplam).ToString("n2");
-                hsp.xr_KalanToplamTr.Text = (UrunToplamTr - odemeToplamTr).ToString("n2");
-            }
-
-            // buraya yaz
-
-
-            hsp.xr_Not.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Not"]); // new hesapdöküm
-
-            Bakiye = B - A;
-            Bakiye = Bakiye / Param.Doviz_Kuru;
-            B = B / Param.Doviz_Kuru;
-            Bakiye = Bakiye < Convert.ToDecimal(0.05) ? 0 : Bakiye;
-
-            if (Param.Param_Hesap_DovizOzet)
-            {
-                DataTable dtDovizDagilim = new DataTable();
-
-                decimal dagilimTutar = Param.Param_Hesap_DovizOzetToplam == true ? Bakiye : B; // ramo yaptı
-                //decimal dagilimTutar = Param.Param_Hesap_DovizOzetToplam == true ? B : Bakiye; 
-
-                if (Param.Kurlar_Nerden == 0)
+                decimal odemeToplam = 0, odemeToplamTr = 0;
+                if (dtOdeme.Rows.Count > 0)
                 {
-                    dtDovizDagilim = Fis_Islem.Doviz_DagilimFront(dagilimTutar);
-                }
-                else
-                {
-                    if (Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1) // tesis 1 ise posdur .. 0 ise önbüro
-                    {
-
-                        dagilimTutar = Convert.ToDecimal(hsp.xr_UrunToplam.Text);
-                        dtDovizDagilim = Fis_Islem.Doviz_Dagilim(dagilimTutar);
-                    }
-                    else
-                    {
-                        dtDovizDagilim = Fis_Islem.Doviz_Dagilim(dagilimTutar);
-                    }
-                }
-                if (dtDovizDagilim.Rows.Count > 0 && kisiyeSatis==false)
-                {
-                    for (int i = 0; i < dtDovizDagilim.Rows.Count; i++)
+                    //Odeme Tablosu
+                    for (int i = 0; i < dtOdeme.Rows.Count; i++)
                     {
                         XRTableRow row = new XRTableRow();
 
                         XRTableCell cell1 = new XRTableCell();
-                        cell1.Text = Convert.ToString(dtDovizDagilim.Rows[i]["Mkodlar_Ad"]);
-                        cell1.WidthF = hsp.table_Doviz.WidthF * 30 / 100;
+                        cell1.Text = Convert.ToString(dtOdeme.Rows[i]["Rec_Ad"]);
+                        cell1.WidthF = hsp.table_Odeme.WidthF * 30 / 100;
                         cell1.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
                         row.Cells.Add(cell1);
 
                         XRTableCell cell2 = new XRTableCell();
+                        if (Param.Fis_Dovizli == 0)
+                        {
+                            cell2.Text = Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Tutar"]).ToString("n2");
 
-                        cell2.Text = Convert.ToDecimal(dtDovizDagilim.Rows[i]["Doviz"]).ToString("n2");
-                        cell2.WidthF = hsp.table_Doviz.WidthF * 20 / 100;
+                            if (sifirli)
+                            {
+                                cell2.Text = "0";
+                            }
+                        }
+                        else
+                        {
+                            cell2.Text = Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Doviztutar"]).ToString("n2");
+                            if (sifirli)
+                            {
+                                cell2.Text = "0";
+                            }
+                        }
+                        if (Param.Fis_Dovizli != 0)
+                        {
+                            switch (dtOdeme.Rows[i]["DovizAdi"].ToString().ToUpper())
+                            {
+                                case "EURO":
+                                    dovizIcon = " €";
+                                    break;
+                                case "EUR":
+                                    dovizIcon = " €";
+                                    break;
+                                case "GBP":
+                                    dovizIcon = " £";
+                                    break;
+                                case "RUBLE":
+                                    dovizIcon = " ₽";
+                                    break;
+                                case "USD":
+                                    dovizIcon = " $";
+                                    break;
+                                case "DOLAR":
+                                    dovizIcon = " $";
+                                    break;
+                                default:
+                                    dovizIcon = " ₺";
+                                    break;
+                            }
+                        }
+                        cell2.Text += dovizIcon;
+
+
+                        cell2.WidthF = hsp.table_Odeme.WidthF * 20 / 100;
+                        cell2.Font = new System.Drawing.Font("Calibri", 10F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
+                        cell2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+                        row.Cells.Add(cell2);
+
+                        //if (Param.Tesis_Tipi == 0)
+                        //{
+                        //    XRTableCell cell3 = new XRTableCell();
+                        //    cell3.Text = Fronttools.IsimSoyisim(Convert.ToInt32(dtOdeme.Rows[i]["Rsat_Folio"]));
+                        //    cell3.WidthF = hsp.table_Odeme.WidthF * 30 / 100;
+                        //    row.Cells.Add(cell3);
+
+                        //    XRTableCell cell4 = new XRTableCell();
+                        //    cell4.Text = Convert.ToInt32(dtOdeme.Rows[i]["Rsat_Folio"]).ToString();
+                        //    cell4.WidthF = hsp.table_Odeme.WidthF * 25 / 100;
+                        //    row.Cells.Add(cell4);
+                        //}
+                        if (Param.Fis_Dovizli == 0)
+                        {
+                            odemeToplam += Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Tutar"]);
+                        }
+                        else
+                        {
+                            odemeToplam += Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Doviztutar"]);
+                        }
+
+                        odemeToplamTr += Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Tutar"]);
+
+                        hsp.table_Odeme.Rows.Add(row);
+
+                        A = Convert.ToDecimal(dtOdeme.Rows[i]["Rsat_Tutar"]);
+                    }
+                }
+
+
+
+                hsp.xr_UrunToplam.Text = UrunToplam.ToString("n2");
+                hsp.xr_UrunToplamTr.Text = UrunToplamTr.ToString("n2");
+
+                hsp.xr_KalanToplam.Text = UrunToplam.ToString("n2");
+                hsp.xr_KalanToplamTr.Text = UrunToplamTr.ToString("n2");
+
+                if (dtOdeme.Rows.Count > 0)
+                {
+                    hsp.xr_KalanToplam.Text = (UrunToplam - odemeToplam).ToString("n2");
+                    hsp.xr_KalanToplamTr.Text = (UrunToplamTr - odemeToplamTr).ToString("n2");
+                }
+
+                // buraya yaz
+
+
+                hsp.xr_Not.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Not"]); // new hesapdöküm
+
+                Bakiye = B - A;
+                Bakiye = Bakiye / Param.Doviz_Kuru;
+                B = B / Param.Doviz_Kuru;
+                Bakiye = Bakiye < Convert.ToDecimal(0.05) ? 0 : Bakiye;
+
+                if (Param.Param_Hesap_DovizOzet)
+                {
+                    DataTable dtDovizDagilim = new DataTable();
+
+                    decimal dagilimTutar = Param.Param_Hesap_DovizOzetToplam == true ? Bakiye : B; // ramo yaptı
+                                                                                                   //decimal dagilimTutar = Param.Param_Hesap_DovizOzetToplam == true ? B : Bakiye; 
+
+                    if (Param.Kurlar_Nerden == 0)
+                    {
+                        dtDovizDagilim = Fis_Islem.Doviz_DagilimFront(dagilimTutar);
+                    }
+                    else
+                    {
+                        if (Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1) // tesis 1 ise posdur .. 0 ise önbüro
+                        {
+
+                            dagilimTutar = Convert.ToDecimal(hsp.xr_UrunToplam.Text);
+                            dtDovizDagilim = Fis_Islem.Doviz_Dagilim(dagilimTutar);
+                        }
+                        else
+                        {
+                            dtDovizDagilim = Fis_Islem.Doviz_Dagilim(dagilimTutar);
+                        }
+                    }
+                    if (dtDovizDagilim.Rows.Count > 0 && kisiyeSatis == false)
+                    {
+                        for (int i = 0; i < dtDovizDagilim.Rows.Count; i++)
+                        {
+                            XRTableRow row = new XRTableRow();
+
+                            XRTableCell cell1 = new XRTableCell();
+                            cell1.Text = Convert.ToString(dtDovizDagilim.Rows[i]["Mkodlar_Ad"]);
+                            cell1.WidthF = hsp.table_Doviz.WidthF * 30 / 100;
+                            cell1.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
+                            row.Cells.Add(cell1);
+
+                            XRTableCell cell2 = new XRTableCell();
+
+                            cell2.Text = Convert.ToDecimal(dtDovizDagilim.Rows[i]["Doviz"]).ToString("n2");
+                            cell2.WidthF = hsp.table_Doviz.WidthF * 20 / 100;
+                            cell2.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
+                            cell2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+                            row.Cells.Add(cell2);
+
+
+                            hsp.table_Doviz.Rows.Add(row);
+                        }
+                    }
+                }
+
+                hsp.xr_KalanToplam.Text += dovizIcon;
+                hsp.xr_UrunToplam.Text += dovizIcon;
+
+
+                hsp.xr_UrunToplamTr.Text += " ₺";
+                hsp.xr_KalanToplamTr.Text += " ₺";
+
+
+
+
+                DataTable dtUrungrup = new DataTable();
+                dtUrungrup = UrunGrupBul(Fisno);
+                if (kisiyeSatis == false)
+                    for (int j = 0; j < dtUrungrup.Rows.Count; j++)
+                    {
+                        XRTableRow row = new XRTableRow();
+
+                        XRTableCell cell1 = new XRTableCell();
+                        cell1.Text = Convert.ToString(dtUrungrup.Rows[j]["Kodlar_Ad"]);
+                        cell1.WidthF = hsp.table_UrunGrup.WidthF * 60 / 100;
+                        cell1.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
+                        row.Cells.Add(cell1);
+
+                        XRTableCell cell2 = new XRTableCell();
+                        if (Param.Fis_Dovizli == 0)
+                        {
+                            cell2.Text = Convert.ToDecimal(dtUrungrup.Rows[j]["Tutar"]).ToString("n2");
+                        }
+                        else
+                        {
+                            cell2.Text = Convert.ToDecimal(dtUrungrup.Rows[j]["Doviztutar"]).ToString("n2");
+                        }
+
+                        cell2.WidthF = hsp.table_UrunGrup.WidthF * 40 / 100;
                         cell2.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
-                        cell2.RightToLeft = RightToLeft.Yes;
+                        cell2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
                         row.Cells.Add(cell2);
 
 
-                        hsp.table_Doviz.Rows.Add(row);
+                        hsp.table_UrunGrup.Rows.Add(row);
+
                     }
-                }
-            }
-
-            hsp.xr_KalanToplam.Text += dovizIcon;
-            hsp.xr_UrunToplam.Text += dovizIcon;
 
 
-            hsp.xr_UrunToplamTr.Text += " ₺";
-            hsp.xr_KalanToplamTr.Text += " ₺";
-
-
-
-
-            DataTable dtUrungrup = new DataTable();
-            dtUrungrup = UrunGrupBul(Fisno);
-            if (kisiyeSatis==false)
-            for (int j = 0; j < dtUrungrup.Rows.Count; j++)
-            {
-                XRTableRow row = new XRTableRow();
-
-                XRTableCell cell1 = new XRTableCell();
-                cell1.Text = Convert.ToString(dtUrungrup.Rows[j]["Kodlar_Ad"]);
-                cell1.WidthF = hsp.table_UrunGrup.WidthF * 60 / 100;
-                cell1.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
-                row.Cells.Add(cell1);
-
-                XRTableCell cell2 = new XRTableCell();
-                if (Param.Fis_Dovizli == 0)
+                if (Convert.ToString(dtHesap.Rows[0]["Rsat_MusTipi"]) != "U" && Param.Tesis_Tipi == 0)
                 {
-                    cell2.Text = Convert.ToDecimal(dtUrungrup.Rows[j]["Tutar"]).ToString("n2");
+                    if (Param.Fiste_Balance == 0)
+                    {
+                        //int folio = Convert.ToString(dtHesap.Rows[0]["Rsat_Folio"]) == "" ? 0 : Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]);
+
+                        //hsp.Add("Bakiye :" + Fronttools.BalanceBul(folio, Kart_No).ToString("N2"));
+
+                        //hsp.Add("");
+                    }
+
+
+                    bakiyeYaz(hsp, dtHesap);
+
                 }
                 else
                 {
-                    cell2.Text = Convert.ToDecimal(dtUrungrup.Rows[j]["Doviztutar"]).ToString("n2");
+                    hsp.xr_FolioAdSoyad.Text = (Convert.ToString(dtHesap.Rows[0]["Rsat_Uye_Ad"]));
                 }
 
-                cell2.WidthF = hsp.table_UrunGrup.WidthF * 40 / 100;
-                cell2.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
-                cell2.RightToLeft = RightToLeft.Yes;
-                row.Cells.Add(cell2);
-
-
-                hsp.table_UrunGrup.Rows.Add(row);
-
-            }
-
-
-            if (Convert.ToString(dtHesap.Rows[0]["Rsat_MusTipi"]) != "U" && Param.Tesis_Tipi == 0)
-            {
-                if (Param.Fiste_Balance == 0)
+                if (hsp.xr_FolioAdSoyad.Text.Equals("") && dtOdeme.Rows.Count > 0)
                 {
-                    //int folio = Convert.ToString(dtHesap.Rows[0]["Rsat_Folio"]) == "" ? 0 : Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]);
+                    string text = dtOdeme.Rows[0]["Cari"].ToString();
+                    hsp.xr_FolioAdSoyad.Text = text;
 
-                    //hsp.Add("Bakiye :" + Fronttools.BalanceBul(folio, Kart_No).ToString("N2"));
-
-                    //hsp.Add("");
+                    if (text.Contains(" "))
+                    {
+                        hsp.xr_FolioAdSoyad.Text = text.Substring(text.IndexOf(" ")).Trim();
+                    }
                 }
 
+                //if (Departman.Kodlar_AndPos_NFC == true)
+                //{
+                //    hsp.xr_FolioAdSoyad.Text = (Fronttools.CardFIsim(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Kart_ID"])));
 
-                bakiyeYaz(hsp, dtHesap);
+                //    hsp.xr_Bakiye.Text = (Fronttools.NFCBakiye(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]), Convert.ToInt32(dtHesap.Rows[0]["Rsat_Kart_ID"]))).ToString();
+                //}
 
-            }
-            else
-            {
-                hsp.xr_FolioAdSoyad.Text = (Convert.ToString(dtHesap.Rows[0]["Rsat_Uye_Ad"]));
-            }
 
-            if (hsp.xr_FolioAdSoyad.Text.Equals("") && dtOdeme.Rows.Count > 0)
-            {
-                string text = dtOdeme.Rows[0]["Cari"].ToString();
-                hsp.xr_FolioAdSoyad.Text = text;
-
-                if (text.Contains(" "))
+                if (sifirli) // hesap döküm tutarları sıfırlar. mehmet şahin istedi
                 {
-                    hsp.xr_FolioAdSoyad.Text = text.Substring(text.IndexOf(" ")).Trim();
+                    hsp.xr_UrunToplam.Text = "0";
+                    hsp.xr_UrunToplamTr.Text = "0";
+                    hsp.xr_KalanToplam.Text = "0";
+                    hsp.xr_KalanToplamTr.Text = "0";
+                    hsp.txtToplamIkram.Text = "0";
+                    hsp.txtToplamIkram.Text = "0";
+                    hsp.xr_Tutar.Text = "0";
+                    SetTextWatermark(hsp);
+
                 }
-            }
 
-            //if (Departman.Kodlar_AndPos_NFC == true)
-            //{
-            //    hsp.xr_FolioAdSoyad.Text = (Fronttools.CardFIsim(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Kart_ID"])));
+                string yazici = dbtools.DegerGetir("select top 1 isnull(hesapyazici,0) as hesapyazici from Rmosmuh.dbo.Pos_User_XZ where P_Kod='" + User.P_Kod + "'");
 
-            //    hsp.xr_Bakiye.Text = (Fronttools.NFCBakiye(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]), Convert.ToInt32(dtHesap.Rows[0]["Rsat_Kart_ID"]))).ToString();
-            //}
-
-
-            if (sifirli) // hesap döküm tutarları sıfırlar. mehmet şahin istedi
-            {
-                hsp.xr_UrunToplam.Text = "0";
-                hsp.xr_UrunToplamTr.Text = "0";
-                hsp.xr_KalanToplam.Text = "0";
-                hsp.xr_KalanToplamTr.Text = "0";
-                hsp.txtToplamIkram.Text = "0";
-                hsp.txtToplamIkram.Text = "0";
-                hsp.xr_Tutar.Text = "0";
-                SetTextWatermark(hsp);
-
-            }
-
-            string yazici = dbtools.DegerGetir("select top 1 isnull(hesapyazici,0) as hesapyazici from Rmosmuh.dbo.Pos_User_XZ where P_Kod='" + User.P_Kod + "'");
-
-
-            if (dtPrinter.Rows.Count > 0 && dtMacPrinter.Rows.Count == 0)
-            {
-                for (int i = 0; i < dtPrinter.Rows.Count; i++)
+                if (Param.servispayFooterda)
                 {
-                    if (Convert.ToString(dtPrinter.Rows[i]["Pkod_Ad"]) == "")
-                    {
-                        continue;
-                    }
-
-                    printer = Convert.ToString(dtPrinter.Rows[i]["Pkod_Ad"]);
-                    hsp.PrinterName = printer;
-
-                    if (yazici.Length > 2)
-                    {
-                        hsp.PrinterName = yazici;
-                    }
-
-
-                    for (int k = 0; k < Hesap_Ciktisayisi; k++)
-                    {
-                        hsp.Print();
-                    }
+                    servisfarklisatirda(dtHesap, hsp, dovizIcon);
                 }
 
-            }
-            else
-            {
-                for (int i = 0; i < dtMacPrinter.Rows.Count; i++)
+
+
+
+                if (dtPrinter.Rows.Count > 0 && dtMacPrinter.Rows.Count == 0)
                 {
-
-                    if (Convert.ToString(dtMacPrinter.Rows[i]["Pkod_Ad"]) == "")
+                    for (int i = 0; i < dtPrinter.Rows.Count; i++)
                     {
-                        continue;
-                    }
-                    printer = Convert.ToString(dtMacPrinter.Rows[i]["Pkod_Ad"]);
-                    hsp.PrinterName = printer;
+                        if (Convert.ToString(dtPrinter.Rows[i]["Pkod_Ad"]) == "")
+                        {
+                            continue;
+                        }
 
-                    if (yazici.Length > 2)
-                    {
-                        hsp.PrinterName = yazici;
-                    }
+                        printer = Convert.ToString(dtPrinter.Rows[i]["Pkod_Ad"]);
+                        hsp.PrinterName = printer;
 
-                    for (int k = 0; k < Hesap_Ciktisayisi; k++)
-                    {
-                        hsp.Print();
+                        if (yazici.Length > 2)
+                        {
+                            hsp.PrinterName = yazici;
+                        }
+
+
+                        for (int k = 0; k < Hesap_Ciktisayisi; k++)
+                        {
+                            hsp.Print();
+                        }
                     }
 
                 }
+                else
+                {
+                    for (int i = 0; i < dtMacPrinter.Rows.Count; i++)
+                    {
+
+                        if (Convert.ToString(dtMacPrinter.Rows[i]["Pkod_Ad"]) == "")
+                        {
+                            continue;
+                        }
+                        printer = Convert.ToString(dtMacPrinter.Rows[i]["Pkod_Ad"]);
+                        hsp.PrinterName = printer;
+
+                        if (yazici.Length > 2)
+                        {
+                            hsp.PrinterName = yazici;
+                        }
+
+                        for (int k = 0; k < Hesap_Ciktisayisi; k++)
+                        {
+                            hsp.Print();
+                        }
+
+                    }
+                }
+
+
+
+                dbtools.execcmdR("update Pos_Log set Log_HesapDokumu='E',Log_Yazdirilmis='E'  where Log_FisNo='" + Fisno + "'");
             }
-
-
-
-            dbtools.execcmdR("update Pos_Log set Log_HesapDokumu='E',Log_Yazdirilmis='E'  where Log_FisNo='" + Fisno + "'");
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             return "OK";
         }
 
+        public void servisfarklisatirda(DataTable dtHesap, Print.Hesap hsp,string dovizIcon)
+        {
+            // servis payını ayrı yazma 15.04.2024
+            decimal servisToplam = 0;
+            try
+            {
+                string queryServis = $"select top 1 isnull(Kodlar_Servis_Recete,'') as servisPayiRecKod from Stok_Kodlar where Kodlar_Sinif = '01' and Kodlar_Kod = '{Departman.Dep_Kodu}'";
+
+                string serviskod = dbtools.DegerGetir(queryServis);
+
+                if (serviskod != "")
+                {
+                    DataRow[] rowsToDelete = dtHesap.Select("Rec_Genelkod = '" + serviskod + "'");
+
+                    // Her bir bulunan satırı sil
+                    if (rowsToDelete != null && rowsToDelete.Length > 0)
+                    {
+                        servisToplam = Convert.ToDecimal(rowsToDelete[0]["Rsat_Tutar"].ToString());
+
+                        foreach (DataRow row in rowsToDelete)
+                        {
+                            dtHesap.Rows.Remove(row);
+                        }
+
+                        // Değişiklikleri uygula
+                        dtHesap.AcceptChanges();
+                    }
+
+                }
+
+                hsp.txtServiceToplam.Text = servisToplam + dovizIcon;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("servisfarklisatirda() Hata 125 !\n " + ex.Message);
+            }
+        }
 
         public void SetTextWatermark(XtraReport report)
         {
@@ -4017,7 +4067,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                     cell2.WidthF = hsp.table_Odeme.WidthF * 20 / 100;
                     cell2.Font = new System.Drawing.Font("Calibri", 10F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
-                    cell2.RightToLeft = RightToLeft.Yes;
+                    cell2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
                     row.Cells.Add(cell2);
 
                     //if (Param.Tesis_Tipi == 0)
@@ -4124,7 +4174,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         cell2.Text = Convert.ToDecimal(dtDovizDagilim.Rows[i]["Doviz"]).ToString("n2");
                         cell2.WidthF = hsp.table_Doviz.WidthF * 20 / 100;
                         cell2.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
-                        cell2.RightToLeft = RightToLeft.Yes;
+                        cell2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
                         row.Cells.Add(cell2);
 
 
@@ -4194,7 +4244,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 cell2.WidthF = hsp.table_UrunGrup.WidthF * 40 / 100;
                 cell2.Font = new System.Drawing.Font("Calibri", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(162)));
-                cell2.RightToLeft = RightToLeft.Yes;
+                cell2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
                 row.Cells.Add(cell2);
 
 

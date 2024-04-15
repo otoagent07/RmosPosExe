@@ -2686,7 +2686,7 @@ namespace Pos
                 {
                     Siparis_Gonder(false);
 
-                    dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + bartxt_FisNo.EditValue.ToString() + "'");
+                    dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + bartxt_FisNo.EditValue.ToString() + "' and Log_Aciklama NOT LIKE '%Yazdırılmamış%'");
 
                     if (Departman.Kodlar_AndPos_NFC == true)
                     {
@@ -3595,11 +3595,12 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             //}
 
 
-
+            string neden = "";
             if (gridView1.RowCount > 0)
             {
                 int Id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
                 decimal miktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                decimal ikramlogmiktar = 1;
                 if (miktar > 1)
                 {
                     Klavye1 klv = new Klavye1();
@@ -3620,6 +3621,8 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                         return;
                     }
 
+                    ikramlogmiktar = klv.sayi;
+
                     Klavye2 klv2 = new Klavye2();
                     klv2.ShowDialog();
 
@@ -3628,7 +3631,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                         MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
                         return;
                     }
-
+                    neden = klv2.yazi;
 
                     decimal recfiyat = Convert.ToDecimal(dbtools.DegerGetir("select Rec_Fiyat from Cst_Recete where Rec_Genelkod=(select Rsat_Recete from Cst_Recete_Satis where Rsat_Id='" + Id + "')")) * klv.sayi;
                     bool Rsat_SiparisPr = Convert.ToBoolean(dbtools.DegerGetir("select top 1 isnull(Rsat_SiparisPr,0) as Rsat_SiparisPr from Cst_Recete_Satis where Rsat_Id='" + Id + "'"));
@@ -3643,19 +3646,32 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 }
                 if (miktar == 1)
                 {
+
                     Klavye2 klv2 = new Klavye2();
                     klv2.ShowDialog();
-
                     if (klv2.yazi.Length == 0)
                     {
                         MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
                         return;
                     }
 
+                    ikramlogmiktar = 1;
+                    neden = klv2.yazi;
+
                     dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Tutar = 0,Rsat_Net=0, Rsat_Doviztutar = 0,Rsat_Kdv = 0,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
                     Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
                 }
 
+                try
+                {
+                    //
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ikram, Log.Log_Islem.Duzelt, "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + ikramlogmiktar + " tanesi ikram edildi. Kalan Miktar:"+(miktar-ikramlogmiktar), Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), ikramlogmiktar, neden, Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
+                }
+                catch (Exception ex)
+                {
+
+                    
+                }
                 gridyenile();
             }
         }

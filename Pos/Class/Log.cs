@@ -59,7 +59,8 @@ namespace Pos.Class
             Kart,
             Menu,
             Urun_Tahsilat,
-            Print
+            Print,
+            ikram
         };
 
         public enum Log_Islem

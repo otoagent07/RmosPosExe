@@ -227,9 +227,9 @@
             // 
             // chk_KasaRapor
             // 
-            resources.ApplyResources(this.chk_KasaRapor, "chk_KasaRapor");
             this.chk_KasaRapor.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("chk_KasaRapor.Appearance.Font")));
             this.chk_KasaRapor.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.chk_KasaRapor, "chk_KasaRapor");
             this.chk_KasaRapor.LookAndFeel.SkinName = "iMaginary";
             this.chk_KasaRapor.LookAndFeel.UseDefaultLookAndFeel = false;
             this.chk_KasaRapor.Name = "chk_KasaRapor";
@@ -237,9 +237,9 @@
             // 
             // chk_KasaGiris
             // 
-            resources.ApplyResources(this.chk_KasaGiris, "chk_KasaGiris");
             this.chk_KasaGiris.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("chk_KasaGiris.Appearance.Font")));
             this.chk_KasaGiris.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.chk_KasaGiris, "chk_KasaGiris");
             this.chk_KasaGiris.LookAndFeel.SkinName = "iMaginary";
             this.chk_KasaGiris.LookAndFeel.UseDefaultLookAndFeel = false;
             this.chk_KasaGiris.Name = "chk_KasaGiris";
@@ -247,9 +247,9 @@
             // 
             // chk_KasaCikis
             // 
-            resources.ApplyResources(this.chk_KasaCikis, "chk_KasaCikis");
             this.chk_KasaCikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("chk_KasaCikis.Appearance.Font")));
             this.chk_KasaCikis.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.chk_KasaCikis, "chk_KasaCikis");
             this.chk_KasaCikis.LookAndFeel.SkinName = "iMaginary";
             this.chk_KasaCikis.LookAndFeel.UseDefaultLookAndFeel = false;
             this.chk_KasaCikis.Name = "chk_KasaCikis";
@@ -257,13 +257,13 @@
             // 
             // panelControl1
             // 
-            resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Controls.Add(this.textEdit15);
             this.panelControl1.Controls.Add(this.cmb_Departman);
             this.panelControl1.Controls.Add(this.btn_Cikis);
             this.panelControl1.Controls.Add(this.chk_KasaRapor);
             this.panelControl1.Controls.Add(this.chk_KasaCikis);
             this.panelControl1.Controls.Add(this.chk_KasaGiris);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
             // 
             // textEdit15
@@ -285,10 +285,10 @@
             // 
             // btn_Cikis
             // 
-            resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cikis.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
             this.btn_Cikis.Name = "btn_Cikis";
             this.btn_Cikis.Click += new System.EventHandler(this.btn_Cikis_Click);
             // 
@@ -303,15 +303,15 @@
             // 
             // tab_KasaRapor
             // 
-            resources.ApplyResources(this.tab_KasaRapor, "tab_KasaRapor");
             this.tab_KasaRapor.Controls.Add(this.xtraTabControl2);
+            resources.ApplyResources(this.tab_KasaRapor, "tab_KasaRapor");
             this.tab_KasaRapor.Name = "tab_KasaRapor";
             // 
             // xtraTabControl2
             // 
-            resources.ApplyResources(this.xtraTabControl2, "xtraTabControl2");
             this.xtraTabControl2.AppearancePage.Header.Font = ((System.Drawing.Font)(resources.GetObject("xtraTabControl2.AppearancePage.Header.Font")));
             this.xtraTabControl2.AppearancePage.Header.Options.UseFont = true;
+            resources.ApplyResources(this.xtraTabControl2, "xtraTabControl2");
             this.xtraTabControl2.Name = "xtraTabControl2";
             this.xtraTabControl2.SelectedTabPage = this.tab_Rpr_Genel;
             this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
@@ -321,7 +321,6 @@
             // 
             // tab_Rpr_Genel
             // 
-            resources.ApplyResources(this.tab_Rpr_Genel, "tab_Rpr_Genel");
             this.tab_Rpr_Genel.Controls.Add(this.btnGenelRaporPrint);
             this.tab_Rpr_Genel.Controls.Add(this.simpleButton5);
             this.tab_Rpr_Genel.Controls.Add(this.Tarih2);
@@ -341,23 +340,24 @@
             this.tab_Rpr_Genel.Controls.Add(this.gridControl4);
             this.tab_Rpr_Genel.Controls.Add(this.gridControl2);
             this.tab_Rpr_Genel.Controls.Add(this.gridControl1);
+            resources.ApplyResources(this.tab_Rpr_Genel, "tab_Rpr_Genel");
             this.tab_Rpr_Genel.Name = "tab_Rpr_Genel";
             // 
             // btnGenelRaporPrint
             // 
-            resources.ApplyResources(this.btnGenelRaporPrint, "btnGenelRaporPrint");
             this.btnGenelRaporPrint.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnGenelRaporPrint.Appearance.Font")));
             this.btnGenelRaporPrint.Appearance.Options.UseFont = true;
             this.btnGenelRaporPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGenelRaporPrint.ImageOptions.Image")));
+            resources.ApplyResources(this.btnGenelRaporPrint, "btnGenelRaporPrint");
             this.btnGenelRaporPrint.Name = "btnGenelRaporPrint";
             this.btnGenelRaporPrint.Click += new System.EventHandler(this.btnGenelRaporPrint_Click);
             // 
             // simpleButton5
             // 
-            resources.ApplyResources(this.simpleButton5, "simpleButton5");
             this.simpleButton5.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton5.Appearance.Font")));
             this.simpleButton5.Appearance.Options.UseFont = true;
             this.simpleButton5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton5, "simpleButton5");
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click_1);
             // 
@@ -405,19 +405,8 @@
             // 
             // gridControl7
             // 
+            this.gridControl7.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl7.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl7, "gridControl7");
-            this.gridControl7.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl7.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl7.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl7.EmbeddedNavigator.AccessibleName");
-            this.gridControl7.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl7.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl7.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl7.EmbeddedNavigator.Anchor")));
-            this.gridControl7.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl7.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl7.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl7.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl7.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl7.EmbeddedNavigator.ImeMode")));
-            this.gridControl7.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl7.EmbeddedNavigator.MaximumSize")));
-            this.gridControl7.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl7.EmbeddedNavigator.TextLocation")));
-            this.gridControl7.EmbeddedNavigator.ToolTip = resources.GetString("gridControl7.EmbeddedNavigator.ToolTip");
-            this.gridControl7.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl7.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl7.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl7.EmbeddedNavigator.ToolTipTitle");
             this.gridControl7.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl7.MainView = this.gridView7;
             this.gridControl7.Name = "gridControl7";
@@ -430,21 +419,23 @@
             this.gridView7.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Red;
             this.gridView7.Appearance.FooterPanel.Options.UseFont = true;
             this.gridView7.Appearance.FooterPanel.Options.UseForeColor = true;
-            resources.ApplyResources(this.gridView7, "gridView7");
             this.gridView7.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn28,
             this.gridColumn29,
             this.gridColumn30});
+            this.gridView7.DetailHeight = 431;
             this.gridView7.GridControl = this.gridControl7;
             this.gridView7.Name = "gridView7";
             this.gridView7.OptionsView.ShowFooter = true;
             this.gridView7.OptionsView.ShowGroupPanel = false;
             this.gridView7.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView7, "gridView7");
             // 
             // gridColumn28
             // 
             resources.ApplyResources(this.gridColumn28, "gridColumn28");
             this.gridColumn28.FieldName = "Pkod_Kod";
+            this.gridColumn28.MinWidth = 23;
             this.gridColumn28.Name = "gridColumn28";
             this.gridColumn28.OptionsColumn.AllowFocus = false;
             // 
@@ -452,6 +443,7 @@
             // 
             resources.ApplyResources(this.gridColumn29, "gridColumn29");
             this.gridColumn29.FieldName = "Pkod_Ad";
+            this.gridColumn29.MinWidth = 23;
             this.gridColumn29.Name = "gridColumn29";
             this.gridColumn29.OptionsColumn.AllowFocus = false;
             // 
@@ -461,6 +453,7 @@
             this.gridColumn30.DisplayFormat.FormatString = "N2";
             this.gridColumn30.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn30.FieldName = "Tutar";
+            this.gridColumn30.MinWidth = 23;
             this.gridColumn30.Name = "gridColumn30";
             this.gridColumn30.OptionsColumn.AllowFocus = false;
             this.gridColumn30.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -468,19 +461,8 @@
             // 
             // gridControl6
             // 
+            this.gridControl6.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl6.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl6, "gridControl6");
-            this.gridControl6.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl6.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl6.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl6.EmbeddedNavigator.AccessibleName");
-            this.gridControl6.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl6.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl6.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl6.EmbeddedNavigator.Anchor")));
-            this.gridControl6.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl6.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl6.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl6.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl6.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl6.EmbeddedNavigator.ImeMode")));
-            this.gridControl6.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl6.EmbeddedNavigator.MaximumSize")));
-            this.gridControl6.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl6.EmbeddedNavigator.TextLocation")));
-            this.gridControl6.EmbeddedNavigator.ToolTip = resources.GetString("gridControl6.EmbeddedNavigator.ToolTip");
-            this.gridControl6.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl6.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl6.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl6.EmbeddedNavigator.ToolTipTitle");
             this.gridControl6.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl6.MainView = this.gridView6;
             this.gridControl6.Name = "gridControl6";
@@ -493,21 +475,23 @@
             this.gridView6.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Red;
             this.gridView6.Appearance.FooterPanel.Options.UseFont = true;
             this.gridView6.Appearance.FooterPanel.Options.UseForeColor = true;
-            resources.ApplyResources(this.gridView6, "gridView6");
             this.gridView6.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn25,
             this.gridColumn26,
             this.gridColumn27});
+            this.gridView6.DetailHeight = 431;
             this.gridView6.GridControl = this.gridControl6;
             this.gridView6.Name = "gridView6";
             this.gridView6.OptionsView.ShowFooter = true;
             this.gridView6.OptionsView.ShowGroupPanel = false;
             this.gridView6.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView6, "gridView6");
             // 
             // gridColumn25
             // 
             resources.ApplyResources(this.gridColumn25, "gridColumn25");
             this.gridColumn25.FieldName = "Pkod_Kod";
+            this.gridColumn25.MinWidth = 23;
             this.gridColumn25.Name = "gridColumn25";
             this.gridColumn25.OptionsColumn.AllowFocus = false;
             // 
@@ -515,6 +499,7 @@
             // 
             resources.ApplyResources(this.gridColumn26, "gridColumn26");
             this.gridColumn26.FieldName = "Pkod_Ad";
+            this.gridColumn26.MinWidth = 23;
             this.gridColumn26.Name = "gridColumn26";
             this.gridColumn26.OptionsColumn.AllowFocus = false;
             // 
@@ -524,6 +509,7 @@
             this.gridColumn27.DisplayFormat.FormatString = "N2";
             this.gridColumn27.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn27.FieldName = "Tutar";
+            this.gridColumn27.MinWidth = 23;
             this.gridColumn27.Name = "gridColumn27";
             this.gridColumn27.OptionsColumn.AllowFocus = false;
             this.gridColumn27.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -531,10 +517,10 @@
             // 
             // btn_OzetPrint
             // 
-            resources.ApplyResources(this.btn_OzetPrint, "btn_OzetPrint");
             this.btn_OzetPrint.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_OzetPrint.Appearance.Font")));
             this.btn_OzetPrint.Appearance.Options.UseFont = true;
             this.btn_OzetPrint.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_OzetPrint.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_OzetPrint, "btn_OzetPrint");
             this.btn_OzetPrint.Name = "btn_OzetPrint";
             this.btn_OzetPrint.Click += new System.EventHandler(this.btn_OzetPrint_Click);
             // 
@@ -618,19 +604,8 @@
             // 
             // gridControl3
             // 
+            this.gridControl3.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl3.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl3, "gridControl3");
-            this.gridControl3.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl3.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl3.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl3.EmbeddedNavigator.AccessibleName");
-            this.gridControl3.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl3.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl3.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl3.EmbeddedNavigator.Anchor")));
-            this.gridControl3.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl3.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl3.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl3.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl3.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl3.EmbeddedNavigator.ImeMode")));
-            this.gridControl3.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl3.EmbeddedNavigator.MaximumSize")));
-            this.gridControl3.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl3.EmbeddedNavigator.TextLocation")));
-            this.gridControl3.EmbeddedNavigator.ToolTip = resources.GetString("gridControl3.EmbeddedNavigator.ToolTip");
-            this.gridControl3.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl3.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl3.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl3.EmbeddedNavigator.ToolTipTitle");
             this.gridControl3.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Name = "gridControl3";
@@ -643,21 +618,23 @@
             this.gridView3.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Red;
             this.gridView3.Appearance.FooterPanel.Options.UseFont = true;
             this.gridView3.Appearance.FooterPanel.Options.UseForeColor = true;
-            resources.ApplyResources(this.gridView3, "gridView3");
             this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn9,
             this.gridColumn10,
             this.gridColumn11});
+            this.gridView3.DetailHeight = 431;
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowFooter = true;
             this.gridView3.OptionsView.ShowGroupPanel = false;
             this.gridView3.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView3, "gridView3");
             // 
             // gridColumn9
             // 
             resources.ApplyResources(this.gridColumn9, "gridColumn9");
             this.gridColumn9.FieldName = "Pkod_Kod";
+            this.gridColumn9.MinWidth = 23;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
@@ -665,6 +642,7 @@
             // 
             resources.ApplyResources(this.gridColumn10, "gridColumn10");
             this.gridColumn10.FieldName = "Pkod_Ad";
+            this.gridColumn10.MinWidth = 23;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowFocus = false;
             // 
@@ -674,6 +652,7 @@
             this.gridColumn11.DisplayFormat.FormatString = "N2";
             this.gridColumn11.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn11.FieldName = "Pkasa_Tutar";
+            this.gridColumn11.MinWidth = 23;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.OptionsColumn.AllowFocus = false;
             this.gridColumn11.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -681,19 +660,8 @@
             // 
             // gridControl4
             // 
+            this.gridControl4.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl4.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl4, "gridControl4");
-            this.gridControl4.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl4.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl4.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl4.EmbeddedNavigator.AccessibleName");
-            this.gridControl4.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl4.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl4.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl4.EmbeddedNavigator.Anchor")));
-            this.gridControl4.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl4.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl4.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl4.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl4.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl4.EmbeddedNavigator.ImeMode")));
-            this.gridControl4.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl4.EmbeddedNavigator.MaximumSize")));
-            this.gridControl4.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl4.EmbeddedNavigator.TextLocation")));
-            this.gridControl4.EmbeddedNavigator.ToolTip = resources.GetString("gridControl4.EmbeddedNavigator.ToolTip");
-            this.gridControl4.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl4.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl4.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl4.EmbeddedNavigator.ToolTipTitle");
             this.gridControl4.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.Name = "gridControl4";
@@ -706,21 +674,23 @@
             this.gridView4.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Red;
             this.gridView4.Appearance.FooterPanel.Options.UseFont = true;
             this.gridView4.Appearance.FooterPanel.Options.UseForeColor = true;
-            resources.ApplyResources(this.gridView4, "gridView4");
             this.gridView4.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn13,
             this.gridColumn14,
             this.gridColumn15});
+            this.gridView4.DetailHeight = 431;
             this.gridView4.GridControl = this.gridControl4;
             this.gridView4.Name = "gridView4";
             this.gridView4.OptionsView.ShowFooter = true;
             this.gridView4.OptionsView.ShowGroupPanel = false;
             this.gridView4.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView4, "gridView4");
             // 
             // gridColumn13
             // 
             resources.ApplyResources(this.gridColumn13, "gridColumn13");
             this.gridColumn13.FieldName = "Pkod_Kod";
+            this.gridColumn13.MinWidth = 23;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.OptionsColumn.AllowFocus = false;
             // 
@@ -728,6 +698,7 @@
             // 
             resources.ApplyResources(this.gridColumn14, "gridColumn14");
             this.gridColumn14.FieldName = "Pkod_Ad";
+            this.gridColumn14.MinWidth = 23;
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowFocus = false;
             // 
@@ -737,6 +708,7 @@
             this.gridColumn15.DisplayFormat.FormatString = "N2";
             this.gridColumn15.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn15.FieldName = "Pkasa_Tutar";
+            this.gridColumn15.MinWidth = 23;
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.OptionsColumn.AllowFocus = false;
             this.gridColumn15.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -744,19 +716,8 @@
             // 
             // gridControl2
             // 
+            this.gridControl2.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl2.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl2, "gridControl2");
-            this.gridControl2.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl2.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl2.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl2.EmbeddedNavigator.AccessibleName");
-            this.gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl2.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl2.EmbeddedNavigator.Anchor")));
-            this.gridControl2.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl2.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl2.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl2.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl2.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl2.EmbeddedNavigator.ImeMode")));
-            this.gridControl2.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl2.EmbeddedNavigator.MaximumSize")));
-            this.gridControl2.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl2.EmbeddedNavigator.TextLocation")));
-            this.gridControl2.EmbeddedNavigator.ToolTip = resources.GetString("gridControl2.EmbeddedNavigator.ToolTip");
-            this.gridControl2.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl2.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl2.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl2.EmbeddedNavigator.ToolTipTitle");
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -768,23 +729,25 @@
             this.gridView2.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Red;
             this.gridView2.Appearance.FooterPanel.Options.UseFont = true;
             this.gridView2.Appearance.FooterPanel.Options.UseForeColor = true;
-            resources.ApplyResources(this.gridView2, "gridView2");
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn5,
             this.gridColumn6,
             this.gridColumn7,
             this.gridColumn8,
             this.gridColumn16});
+            this.gridView2.DetailHeight = 431;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowFooter = true;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView2, "gridView2");
             // 
             // gridColumn5
             // 
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
             this.gridColumn5.FieldName = "Pkod_Kod";
+            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             // 
@@ -792,6 +755,7 @@
             // 
             resources.ApplyResources(this.gridColumn6, "gridColumn6");
             this.gridColumn6.FieldName = "Pkod_Ad";
+            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowFocus = false;
             // 
@@ -801,6 +765,7 @@
             this.gridColumn7.DisplayFormat.FormatString = "N2";
             this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn7.FieldName = "Rsat_Tutar";
+            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             this.gridColumn7.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -812,6 +777,7 @@
             this.gridColumn8.DisplayFormat.FormatString = "N2";
             this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn8.FieldName = "Rsat_Doviztutar";
+            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowFocus = false;
             // 
@@ -819,24 +785,14 @@
             // 
             resources.ApplyResources(this.gridColumn16, "gridColumn16");
             this.gridColumn16.FieldName = "Dovizad";
+            this.gridColumn16.MinWidth = 23;
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.OptionsColumn.AllowFocus = false;
             // 
             // gridControl1
             // 
+            this.gridControl1.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl1.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl1, "gridControl1");
-            this.gridControl1.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl1.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl1.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl1.EmbeddedNavigator.AccessibleName");
-            this.gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl1.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl1.EmbeddedNavigator.Anchor")));
-            this.gridControl1.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl1.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl1.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl1.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl1.EmbeddedNavigator.ImeMode")));
-            this.gridControl1.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl1.EmbeddedNavigator.MaximumSize")));
-            this.gridControl1.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl1.EmbeddedNavigator.TextLocation")));
-            this.gridControl1.EmbeddedNavigator.ToolTip = resources.GetString("gridControl1.EmbeddedNavigator.ToolTip");
-            this.gridControl1.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl1.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl1.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl1.EmbeddedNavigator.ToolTipTitle");
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -848,23 +804,25 @@
             this.gridView1.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Red;
             this.gridView1.Appearance.FooterPanel.Options.UseFont = true;
             this.gridView1.Appearance.FooterPanel.Options.UseForeColor = true;
-            resources.ApplyResources(this.gridView1, "gridView1");
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn12});
+            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowViewCaption = true;
+            resources.ApplyResources(this.gridView1, "gridView1");
             // 
             // gridColumn1
             // 
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
             this.gridColumn1.FieldName = "Pkod_Kod";
+            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             // 
@@ -872,6 +830,7 @@
             // 
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
             this.gridColumn2.FieldName = "Pkod_Ad";
+            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
@@ -881,6 +840,7 @@
             this.gridColumn3.DisplayFormat.FormatString = "N2";
             this.gridColumn3.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn3.FieldName = "Rsat_Tutar";
+            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             this.gridColumn3.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -892,6 +852,7 @@
             this.gridColumn4.DisplayFormat.FormatString = "N2";
             this.gridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn4.FieldName = "Rsat_Doviztutar";
+            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             // 
@@ -901,31 +862,21 @@
             this.gridColumn12.DisplayFormat.FormatString = "N2";
             this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn12.FieldName = "Dovizad";
+            this.gridColumn12.MinWidth = 23;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsColumn.AllowFocus = false;
             // 
             // xtraTabPage1
             // 
-            resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             this.xtraTabPage1.Controls.Add(this.gridControl8);
             this.xtraTabPage1.Controls.Add(this.groupControl1);
+            resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             this.xtraTabPage1.Name = "xtraTabPage1";
             // 
             // gridControl8
             // 
             resources.ApplyResources(this.gridControl8, "gridControl8");
-            this.gridControl8.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl8.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl8.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl8.EmbeddedNavigator.AccessibleName");
-            this.gridControl8.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl8.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl8.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl8.EmbeddedNavigator.Anchor")));
-            this.gridControl8.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl8.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl8.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl8.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl8.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl8.EmbeddedNavigator.ImeMode")));
-            this.gridControl8.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl8.EmbeddedNavigator.MaximumSize")));
-            this.gridControl8.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl8.EmbeddedNavigator.TextLocation")));
-            this.gridControl8.EmbeddedNavigator.ToolTip = resources.GetString("gridControl8.EmbeddedNavigator.ToolTip");
-            this.gridControl8.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl8.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl8.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl8.EmbeddedNavigator.ToolTipTitle");
+            this.gridControl8.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl8.EmbeddedNavigator.Margin")));
             this.gridControl8.MainView = this.gridView8;
             this.gridControl8.Name = "gridControl8";
             this.gridControl8.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -933,7 +884,6 @@
             // 
             // gridView8
             // 
-            resources.ApplyResources(this.gridView8, "gridView8");
             this.gridView8.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn31,
             this.gridColumn32,
@@ -942,6 +892,7 @@
             this.gridColumn35,
             this.gridColumn36,
             this.gridColumn37});
+            this.gridView8.DetailHeight = 431;
             this.gridView8.GridControl = this.gridControl8;
             this.gridView8.Name = "gridView8";
             this.gridView8.OptionsView.ShowGroupPanel = false;
@@ -950,6 +901,7 @@
             // 
             resources.ApplyResources(this.gridColumn31, "gridColumn31");
             this.gridColumn31.FieldName = "Tarih";
+            this.gridColumn31.MinWidth = 23;
             this.gridColumn31.Name = "gridColumn31";
             this.gridColumn31.OptionsColumn.AllowFocus = false;
             // 
@@ -957,6 +909,7 @@
             // 
             resources.ApplyResources(this.gridColumn32, "gridColumn32");
             this.gridColumn32.FieldName = "Nakit_Satis";
+            this.gridColumn32.MinWidth = 23;
             this.gridColumn32.Name = "gridColumn32";
             this.gridColumn32.OptionsColumn.AllowFocus = false;
             // 
@@ -964,6 +917,7 @@
             // 
             resources.ApplyResources(this.gridColumn33, "gridColumn33");
             this.gridColumn33.FieldName = "Nakit_Cari";
+            this.gridColumn33.MinWidth = 23;
             this.gridColumn33.Name = "gridColumn33";
             this.gridColumn33.OptionsColumn.AllowFocus = false;
             // 
@@ -971,6 +925,7 @@
             // 
             resources.ApplyResources(this.gridColumn34, "gridColumn34");
             this.gridColumn34.FieldName = "Nakit_Kasa_Girisi";
+            this.gridColumn34.MinWidth = 23;
             this.gridColumn34.Name = "gridColumn34";
             this.gridColumn34.OptionsColumn.AllowFocus = false;
             // 
@@ -978,6 +933,7 @@
             // 
             resources.ApplyResources(this.gridColumn35, "gridColumn35");
             this.gridColumn35.FieldName = "Toplam_Nakit_Girisi";
+            this.gridColumn35.MinWidth = 23;
             this.gridColumn35.Name = "gridColumn35";
             this.gridColumn35.OptionsColumn.AllowFocus = false;
             // 
@@ -985,6 +941,7 @@
             // 
             resources.ApplyResources(this.gridColumn36, "gridColumn36");
             this.gridColumn36.FieldName = "Nakit_Kasa_Cikisi";
+            this.gridColumn36.MinWidth = 23;
             this.gridColumn36.Name = "gridColumn36";
             this.gridColumn36.OptionsColumn.AllowFocus = false;
             // 
@@ -992,35 +949,36 @@
             // 
             resources.ApplyResources(this.gridColumn37, "gridColumn37");
             this.gridColumn37.FieldName = "Nakit_KasaToplam";
+            this.gridColumn37.MinWidth = 23;
             this.gridColumn37.Name = "gridColumn37";
             this.gridColumn37.OptionsColumn.AllowFocus = false;
             // 
             // groupControl1
             // 
-            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Controls.Add(this.simpleButton3);
             this.groupControl1.Controls.Add(this.simpleButton1);
             this.groupControl1.Controls.Add(this.dateTarih2);
             this.groupControl1.Controls.Add(this.dateTarih1);
             this.groupControl1.Controls.Add(this.textEdit6);
             this.groupControl1.Controls.Add(this.textEdit5);
+            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
             // simpleButton3
             // 
-            resources.ApplyResources(this.simpleButton3, "simpleButton3");
             this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
             this.simpleButton3.Appearance.Options.UseFont = true;
             this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton3, "simpleButton3");
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton1
             // 
-            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
@@ -1033,8 +991,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateTarih2.Properties.Buttons"))))});
             this.dateTarih2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateTarih2.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateTarih2.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateTarih2.Properties.Mask.EditMask = resources.GetString("dateTarih2.Properties.Mask.EditMask");
             this.dateTarih2.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateTarih2.Properties.Mask.MaskType")));
             // 
             // dateTarih1
@@ -1046,8 +1002,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateTarih1.Properties.Buttons"))))});
             this.dateTarih1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateTarih1.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateTarih1.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateTarih1.Properties.Mask.EditMask = resources.GetString("dateTarih1.Properties.Mask.EditMask");
             this.dateTarih1.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateTarih1.Properties.Mask.MaskType")));
             // 
             // textEdit6
@@ -1068,26 +1022,15 @@
             // 
             // xtraTabPage2
             // 
-            resources.ApplyResources(this.xtraTabPage2, "xtraTabPage2");
             this.xtraTabPage2.Controls.Add(this.gridControl9);
             this.xtraTabPage2.Controls.Add(this.groupControl2);
+            resources.ApplyResources(this.xtraTabPage2, "xtraTabPage2");
             this.xtraTabPage2.Name = "xtraTabPage2";
             // 
             // gridControl9
             // 
             resources.ApplyResources(this.gridControl9, "gridControl9");
-            this.gridControl9.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl9.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl9.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl9.EmbeddedNavigator.AccessibleName");
-            this.gridControl9.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl9.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl9.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl9.EmbeddedNavigator.Anchor")));
-            this.gridControl9.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl9.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl9.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl9.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl9.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl9.EmbeddedNavigator.ImeMode")));
-            this.gridControl9.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl9.EmbeddedNavigator.MaximumSize")));
-            this.gridControl9.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl9.EmbeddedNavigator.TextLocation")));
-            this.gridControl9.EmbeddedNavigator.ToolTip = resources.GetString("gridControl9.EmbeddedNavigator.ToolTip");
-            this.gridControl9.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl9.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl9.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl9.EmbeddedNavigator.ToolTipTitle");
+            this.gridControl9.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl9.EmbeddedNavigator.Margin")));
             this.gridControl9.MainView = this.gridView9;
             this.gridControl9.Name = "gridControl9";
             this.gridControl9.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1095,7 +1038,6 @@
             // 
             // gridView9
             // 
-            resources.ApplyResources(this.gridView9, "gridView9");
             this.gridView9.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn38,
             this.gridColumn39,
@@ -1106,6 +1048,7 @@
             this.gridColumn44,
             this.gridColumn45,
             this.gridColumn46});
+            this.gridView9.DetailHeight = 431;
             this.gridView9.GridControl = this.gridControl9;
             this.gridView9.Name = "gridView9";
             this.gridView9.OptionsView.ShowGroupPanel = false;
@@ -1114,6 +1057,7 @@
             // 
             resources.ApplyResources(this.gridColumn38, "gridColumn38");
             this.gridColumn38.FieldName = "Tarih";
+            this.gridColumn38.MinWidth = 23;
             this.gridColumn38.Name = "gridColumn38";
             this.gridColumn38.OptionsColumn.AllowFocus = false;
             // 
@@ -1121,6 +1065,7 @@
             // 
             resources.ApplyResources(this.gridColumn39, "gridColumn39");
             this.gridColumn39.FieldName = "Nakit_Satis";
+            this.gridColumn39.MinWidth = 23;
             this.gridColumn39.Name = "gridColumn39";
             this.gridColumn39.OptionsColumn.AllowFocus = false;
             // 
@@ -1128,6 +1073,7 @@
             // 
             resources.ApplyResources(this.gridColumn40, "gridColumn40");
             this.gridColumn40.FieldName = "Nakit_Cari";
+            this.gridColumn40.MinWidth = 23;
             this.gridColumn40.Name = "gridColumn40";
             this.gridColumn40.OptionsColumn.AllowFocus = false;
             // 
@@ -1135,6 +1081,7 @@
             // 
             resources.ApplyResources(this.gridColumn41, "gridColumn41");
             this.gridColumn41.FieldName = "Nakit_Kasa_Girisi";
+            this.gridColumn41.MinWidth = 23;
             this.gridColumn41.Name = "gridColumn41";
             this.gridColumn41.OptionsColumn.AllowFocus = false;
             // 
@@ -1142,6 +1089,7 @@
             // 
             resources.ApplyResources(this.gridColumn42, "gridColumn42");
             this.gridColumn42.FieldName = "Toplam_Nakit_Girisi";
+            this.gridColumn42.MinWidth = 23;
             this.gridColumn42.Name = "gridColumn42";
             this.gridColumn42.OptionsColumn.AllowFocus = false;
             // 
@@ -1149,6 +1097,7 @@
             // 
             resources.ApplyResources(this.gridColumn43, "gridColumn43");
             this.gridColumn43.FieldName = "Nakit_Kasa_Cikisi";
+            this.gridColumn43.MinWidth = 23;
             this.gridColumn43.Name = "gridColumn43";
             this.gridColumn43.OptionsColumn.AllowFocus = false;
             // 
@@ -1156,6 +1105,7 @@
             // 
             resources.ApplyResources(this.gridColumn44, "gridColumn44");
             this.gridColumn44.FieldName = "Nakit_KasaToplam";
+            this.gridColumn44.MinWidth = 23;
             this.gridColumn44.Name = "gridColumn44";
             this.gridColumn44.OptionsColumn.AllowFocus = false;
             // 
@@ -1163,6 +1113,7 @@
             // 
             resources.ApplyResources(this.gridColumn45, "gridColumn45");
             this.gridColumn45.FieldName = "Pkasa_Aciklama_Giris";
+            this.gridColumn45.MinWidth = 23;
             this.gridColumn45.Name = "gridColumn45";
             this.gridColumn45.OptionsColumn.AllowFocus = false;
             // 
@@ -1170,35 +1121,36 @@
             // 
             resources.ApplyResources(this.gridColumn46, "gridColumn46");
             this.gridColumn46.FieldName = "Pkasa_Aciklama_Cikis";
+            this.gridColumn46.MinWidth = 23;
             this.gridColumn46.Name = "gridColumn46";
             this.gridColumn46.OptionsColumn.AllowFocus = false;
             // 
             // groupControl2
             // 
-            resources.ApplyResources(this.groupControl2, "groupControl2");
             this.groupControl2.Controls.Add(this.simpleButton4);
             this.groupControl2.Controls.Add(this.simpleButton2);
             this.groupControl2.Controls.Add(this.dateTarih2_2);
             this.groupControl2.Controls.Add(this.dateTarih1_1);
             this.groupControl2.Controls.Add(this.textEdit7);
             this.groupControl2.Controls.Add(this.textEdit12);
+            resources.ApplyResources(this.groupControl2, "groupControl2");
             this.groupControl2.Name = "groupControl2";
             // 
             // simpleButton4
             // 
-            resources.ApplyResources(this.simpleButton4, "simpleButton4");
             this.simpleButton4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton4.Appearance.Font")));
             this.simpleButton4.Appearance.Options.UseFont = true;
             this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton4, "simpleButton4");
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // simpleButton2
             // 
-            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
@@ -1211,8 +1163,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateTarih2_2.Properties.Buttons"))))});
             this.dateTarih2_2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateTarih2_2.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateTarih2_2.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateTarih2_2.Properties.Mask.EditMask = resources.GetString("dateTarih2_2.Properties.Mask.EditMask");
             this.dateTarih2_2.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateTarih2_2.Properties.Mask.MaskType")));
             // 
             // dateTarih1_1
@@ -1224,8 +1174,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateTarih1_1.Properties.Buttons"))))});
             this.dateTarih1_1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dateTarih1_1.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("dateTarih1_1.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.dateTarih1_1.Properties.Mask.EditMask = resources.GetString("dateTarih1_1.Properties.Mask.EditMask");
             this.dateTarih1_1.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("dateTarih1_1.Properties.Mask.MaskType")));
             // 
             // textEdit7
@@ -1246,7 +1194,6 @@
             // 
             // tab_KasaHareket
             // 
-            resources.ApplyResources(this.tab_KasaHareket, "tab_KasaHareket");
             this.tab_KasaHareket.Controls.Add(this.btn_Print);
             this.tab_KasaHareket.Controls.Add(this.btn_Cikis2);
             this.tab_KasaHareket.Controls.Add(this.btn_Sil);
@@ -1264,55 +1211,45 @@
             this.tab_KasaHareket.Controls.Add(this.textEdit1);
             this.tab_KasaHareket.Controls.Add(this.textEdit9);
             this.tab_KasaHareket.Controls.Add(this.txt_KasaHrkBaslik);
+            resources.ApplyResources(this.tab_KasaHareket, "tab_KasaHareket");
             this.tab_KasaHareket.Name = "tab_KasaHareket";
             // 
             // btn_Print
             // 
-            resources.ApplyResources(this.btn_Print, "btn_Print");
             this.btn_Print.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Print.Appearance.Font")));
             this.btn_Print.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Print, "btn_Print");
             this.btn_Print.Name = "btn_Print";
             this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
             // 
             // btn_Cikis2
             // 
-            resources.ApplyResources(this.btn_Cikis2, "btn_Cikis2");
             this.btn_Cikis2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis2.Appearance.Font")));
             this.btn_Cikis2.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Cikis2, "btn_Cikis2");
             this.btn_Cikis2.Name = "btn_Cikis2";
             this.btn_Cikis2.Click += new System.EventHandler(this.btn_Cikis2_Click);
             // 
             // btn_Sil
             // 
-            resources.ApplyResources(this.btn_Sil, "btn_Sil");
             this.btn_Sil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Sil.Appearance.Font")));
             this.btn_Sil.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Sil, "btn_Sil");
             this.btn_Sil.Name = "btn_Sil";
             this.btn_Sil.Click += new System.EventHandler(this.btn_Sil_Click);
             // 
             // btn_Kaydet
             // 
-            resources.ApplyResources(this.btn_Kaydet, "btn_Kaydet");
             this.btn_Kaydet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Kaydet.Appearance.Font")));
             this.btn_Kaydet.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_Kaydet, "btn_Kaydet");
             this.btn_Kaydet.Name = "btn_Kaydet";
             this.btn_Kaydet.Click += new System.EventHandler(this.btn_Kaydet_Click);
             // 
             // gridControl5
             // 
             resources.ApplyResources(this.gridControl5, "gridControl5");
-            this.gridControl5.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl5.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl5.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl5.EmbeddedNavigator.AccessibleName");
-            this.gridControl5.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl5.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl5.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl5.EmbeddedNavigator.Anchor")));
-            this.gridControl5.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl5.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl5.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl5.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl5.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl5.EmbeddedNavigator.ImeMode")));
-            this.gridControl5.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl5.EmbeddedNavigator.MaximumSize")));
-            this.gridControl5.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl5.EmbeddedNavigator.TextLocation")));
-            this.gridControl5.EmbeddedNavigator.ToolTip = resources.GetString("gridControl5.EmbeddedNavigator.ToolTip");
-            this.gridControl5.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl5.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl5.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl5.EmbeddedNavigator.ToolTipTitle");
+            this.gridControl5.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl5.EmbeddedNavigator.Margin")));
             this.gridControl5.MainView = this.gridView5;
             this.gridControl5.Name = "gridControl5";
             this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1320,7 +1257,6 @@
             // 
             // gridView5
             // 
-            resources.ApplyResources(this.gridView5, "gridView5");
             this.gridView5.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn17,
             this.gridColumn18,
@@ -1331,6 +1267,7 @@
             this.gridColumn23,
             this.gridColumn24,
             this.gridColumn47});
+            this.gridView5.DetailHeight = 431;
             this.gridView5.GridControl = this.gridControl5;
             this.gridView5.Name = "gridView5";
             this.gridView5.OptionsView.ShowAutoFilterRow = true;
@@ -1342,6 +1279,7 @@
             // 
             resources.ApplyResources(this.gridColumn17, "gridColumn17");
             this.gridColumn17.FieldName = "Pkasa_Id";
+            this.gridColumn17.MinWidth = 23;
             this.gridColumn17.Name = "gridColumn17";
             this.gridColumn17.OptionsColumn.AllowFocus = false;
             // 
@@ -1349,6 +1287,7 @@
             // 
             resources.ApplyResources(this.gridColumn18, "gridColumn18");
             this.gridColumn18.FieldName = "Pkasa_Tarih";
+            this.gridColumn18.MinWidth = 23;
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.OptionsColumn.AllowFocus = false;
             this.gridColumn18.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -1358,6 +1297,7 @@
             // 
             resources.ApplyResources(this.gridColumn19, "gridColumn19");
             this.gridColumn19.FieldName = "Pkasa_GC";
+            this.gridColumn19.MinWidth = 23;
             this.gridColumn19.Name = "gridColumn19";
             this.gridColumn19.OptionsColumn.AllowFocus = false;
             // 
@@ -1365,6 +1305,7 @@
             // 
             resources.ApplyResources(this.gridColumn20, "gridColumn20");
             this.gridColumn20.FieldName = "Pkasa_Kod";
+            this.gridColumn20.MinWidth = 23;
             this.gridColumn20.Name = "gridColumn20";
             this.gridColumn20.OptionsColumn.AllowFocus = false;
             // 
@@ -1372,6 +1313,7 @@
             // 
             resources.ApplyResources(this.gridColumn21, "gridColumn21");
             this.gridColumn21.FieldName = "Pkasa_User_Ad";
+            this.gridColumn21.MinWidth = 23;
             this.gridColumn21.Name = "gridColumn21";
             this.gridColumn21.OptionsColumn.AllowFocus = false;
             // 
@@ -1379,6 +1321,7 @@
             // 
             resources.ApplyResources(this.gridColumn22, "gridColumn22");
             this.gridColumn22.FieldName = "Pkasa_User_Soyad";
+            this.gridColumn22.MinWidth = 23;
             this.gridColumn22.Name = "gridColumn22";
             this.gridColumn22.OptionsColumn.AllowFocus = false;
             // 
@@ -1386,6 +1329,7 @@
             // 
             resources.ApplyResources(this.gridColumn23, "gridColumn23");
             this.gridColumn23.FieldName = "Pkasa_Tutar";
+            this.gridColumn23.MinWidth = 23;
             this.gridColumn23.Name = "gridColumn23";
             this.gridColumn23.OptionsColumn.AllowFocus = false;
             this.gridColumn23.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -1395,6 +1339,7 @@
             // 
             resources.ApplyResources(this.gridColumn24, "gridColumn24");
             this.gridColumn24.FieldName = "Pkasa_Aciklama";
+            this.gridColumn24.MinWidth = 23;
             this.gridColumn24.Name = "gridColumn24";
             this.gridColumn24.OptionsColumn.AllowFocus = false;
             // 
@@ -1402,6 +1347,7 @@
             // 
             resources.ApplyResources(this.gridColumn47, "gridColumn47");
             this.gridColumn47.FieldName = "Pkasa_dep";
+            this.gridColumn47.MinWidth = 23;
             this.gridColumn47.Name = "gridColumn47";
             // 
             // txt_Aciklama
@@ -1414,6 +1360,8 @@
             // 
             resources.ApplyResources(this.txt_Tutar, "txt_Tutar");
             this.txt_Tutar.Name = "txt_Tutar";
+            this.txt_Tutar.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_Tutar.Properties.Appearance.Font")));
+            this.txt_Tutar.Properties.Appearance.Options.UseFont = true;
             this.txt_Tutar.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Tutar.Properties.DisplayFormat.FormatString = "N2";
             this.txt_Tutar.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -1422,6 +1370,8 @@
             // 
             resources.ApplyResources(this.txt_Soyad, "txt_Soyad");
             this.txt_Soyad.Name = "txt_Soyad";
+            this.txt_Soyad.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_Soyad.Properties.Appearance.Font")));
+            this.txt_Soyad.Properties.Appearance.Options.UseFont = true;
             this.txt_Soyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Soyad.Properties.NullValuePrompt = resources.GetString("txt_Soyad.Properties.NullValuePrompt");
             this.txt_Soyad.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("txt_Soyad.Properties.NullValuePromptShowForEmptyValue")));
@@ -1430,6 +1380,8 @@
             // 
             resources.ApplyResources(this.txt_Ad, "txt_Ad");
             this.txt_Ad.Name = "txt_Ad";
+            this.txt_Ad.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_Ad.Properties.Appearance.Font")));
+            this.txt_Ad.Properties.Appearance.Options.UseFont = true;
             this.txt_Ad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Ad.Properties.NullValuePrompt = resources.GetString("txt_Ad.Properties.NullValuePrompt");
             this.txt_Ad.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("txt_Ad.Properties.NullValuePromptShowForEmptyValue")));
@@ -1438,12 +1390,17 @@
             // 
             resources.ApplyResources(this.look_GC, "look_GC");
             this.look_GC.Name = "look_GC";
+            this.look_GC.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("look_GC.Properties.Appearance.Font")));
+            this.look_GC.Properties.Appearance.Options.UseFont = true;
+            this.look_GC.Properties.AppearanceDropDown.Font = ((System.Drawing.Font)(resources.GetObject("look_GC.Properties.AppearanceDropDown.Font")));
+            this.look_GC.Properties.AppearanceDropDown.Options.UseFont = true;
             this.look_GC.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.look_GC.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_GC.Properties.Buttons"))))});
             this.look_GC.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_GC.Properties.Columns"), resources.GetString("look_GC.Properties.Columns1"), ((int)(resources.GetObject("look_GC.Properties.Columns2"))), ((DevExpress.Utils.FormatType)(resources.GetObject("look_GC.Properties.Columns3"))), resources.GetString("look_GC.Properties.Columns4"), ((bool)(resources.GetObject("look_GC.Properties.Columns5"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("look_GC.Properties.Columns6"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("look_GC.Properties.Columns7"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("look_GC.Properties.Columns8")))),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_GC.Properties.Columns9"), resources.GetString("look_GC.Properties.Columns10"))});
+            this.look_GC.Properties.DropDownRows = 17;
             this.look_GC.Properties.NullText = resources.GetString("look_GC.Properties.NullText");
             this.look_GC.Properties.ShowFooter = false;
             this.look_GC.Properties.ShowHeader = false;
@@ -1457,8 +1414,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("date_Tarih.Properties.Buttons"))))});
             this.date_Tarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.date_Tarih.Properties.CalendarTimeProperties.Mask.EditMask = resources.GetString("date_Tarih.Properties.CalendarTimeProperties.Mask.EditMask");
-            this.date_Tarih.Properties.Mask.EditMask = resources.GetString("date_Tarih.Properties.Mask.EditMask");
             this.date_Tarih.Properties.ReadOnly = true;
             // 
             // textEdit11
@@ -1473,6 +1428,7 @@
             // 
             resources.ApplyResources(this.textEdit10, "textEdit10");
             this.textEdit10.Name = "textEdit10";
+            this.textEdit10.Properties.AutoHeight = ((bool)(resources.GetObject("textEdit10.Properties.AutoHeight")));
             this.textEdit10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit10.Properties.ReadOnly = true;
             this.textEdit10.TabStop = false;
@@ -1481,6 +1437,7 @@
             // 
             resources.ApplyResources(this.textEdit2, "textEdit2");
             this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.AutoHeight = ((bool)(resources.GetObject("textEdit2.Properties.AutoHeight")));
             this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit2.Properties.ReadOnly = true;
             this.textEdit2.TabStop = false;
@@ -1489,6 +1446,7 @@
             // 
             resources.ApplyResources(this.textEdit1, "textEdit1");
             this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.AutoHeight = ((bool)(resources.GetObject("textEdit1.Properties.AutoHeight")));
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit1.Properties.ReadOnly = true;
             this.textEdit1.TabStop = false;

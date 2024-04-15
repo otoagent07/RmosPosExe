@@ -1018,7 +1018,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
         {
             try
             {
-                if (gridViewAlt.FocusedRowHandle < 1)
+                if (gridViewAlt.FocusedRowHandle < 0)
                 {
                     MessageBox.Show("Lütfen ödeme satırını seçiniz !");
                     return;
