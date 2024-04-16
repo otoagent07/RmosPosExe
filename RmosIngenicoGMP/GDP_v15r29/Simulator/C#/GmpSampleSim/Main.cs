@@ -1019,12 +1019,43 @@ namespace RmosIngenicoGMP
 
             for (int i = 0; i < m_stTicket.numberOfPaymentsInThis; i++)
                 m_lstBankErrorMessage.Items.Add(m_stTicket.stPayment[i].stBankPayment.stPaymentErrMessage.ErrorMsg);
-
             DisplayTransaction(m_stTicket, true);
 
             return Retcode;
         }
 
+        UInt32 ReloadTransactionYedek() // 61443 alırsan ilk önce payring sonra bu metodu çalıştır.
+        {
+            UInt32 RetCode = 0;
+            ST_TICKET m_stTicket = new ST_TICKET();
+            UInt64 activeFlags = 0;
+
+            RetCode = GMPSmartDLL.FP3_OptionFlags(CurrentInterface, GetTransactionHandle(CurrentInterface), ref activeFlags, Defines.GMP3_OPTION_ECHO_PRINTER | Defines.GMP3_OPTION_ECHO_ITEM_DETAILS | Defines.GMP3_OPTION_ECHO_PAYMENT_DETAILS, 0, Defines.TIMEOUT_DEFAULT);
+            if (RetCode != Defines.TRAN_RESULT_OK)
+                return RetCode;
+
+            RetCode = Json_GMPSmartDLL.FP3_GetTicket(CurrentInterface, GetTransactionHandle(CurrentInterface), ref m_stTicket, Defines.TIMEOUT_DEFAULT);
+            if (RetCode != Defines.TRAN_RESULT_OK)
+                return RetCode;
+            else if (m_stTicket.stPayment[0].payAmount == m_stTicket.stPayment[0].orgAmount)
+
+            {
+                GMPSmartDLL.FP3_PrintTotalsAndPayments(CurrentInterface, GetTransactionHandle(CurrentInterface), 3000);
+                GMPSmartDLL.FP3_PrintBeforeMF(CurrentInterface, GetTransactionHandle(CurrentInterface), 3000);
+                GMPSmartDLL.FP3_PrintMF(CurrentInterface, GetTransactionHandle(CurrentInterface), 3000);
+                GMPSmartDLL.FP3_Close(CurrentInterface, GetTransactionHandle(CurrentInterface), 3000);
+
+            }
+            m_lstBankErrorMessage.Items.Clear();
+
+            for (int i = 0; i < m_stTicket.numberOfPaymentsInThis; i++)
+                m_lstBankErrorMessage.Items.Add(m_stTicket.stPayment[i].stBankPayment.stPaymentErrMessage.ErrorMsg);
+
+            DisplayTransaction(m_stTicket, true);
+
+            return RetCode;
+
+        }
         public string formatAmount(uint amount, ECurrency currency)
         {
             string amountStr = String.Format("{0}.{1:00}", amount / 100, amount % 100);
@@ -1880,7 +1911,7 @@ namespace RmosIngenicoGMP
                                     stPaymentRequest[0].typeOfPayment = (uint)EPaymentTypes.PAYMENT_BANK_CARD;
                                     stPaymentRequest[0].payAmount = amount;
                                     stPaymentRequest[0].payAmountBonus = (uint)bonusAmount;
-
+                                    
                                     stPaymentRequest[0].payAmountCurrencyCode = currencyOfPayment;
                                     //if (paf.pstPaymentApplicationInfoSelected.u16BKMId.Equals(null))
                                     //    stPaymentRequest[0].bankBkmId = 0;
@@ -1891,7 +1922,7 @@ namespace RmosIngenicoGMP
                                     //stPaymentRequest[0].numberOfinstallments = (ushort)numberOfinstallments;
 
                                     ST_PAYMENT_APPLICATION_INFO pstPaymentApplicationInfoSelected = stPaymentApplicationInfo[item.banka];
-                                    stPaymentRequest[0].bankBkmId = pstPaymentApplicationInfoSelected.u16BKMId;
+                                    stPaymentRequest[0].bankBkmId = pstPaymentApplicationInfoSelected.u16BKMId; 
                                     stPaymentRequest[0].numberOfinstallments = (ushort)numberOfinstallments;
 
                                     stPaymentRequest[0].transactionFlag = 0x00000000;
@@ -2286,7 +2317,7 @@ namespace RmosIngenicoGMP
             {
                 m_lstBankErrorMessage.Items.Clear();
 
-                Retcode = Json_GMPSmartDLL.FP3_Payment(CurrentInterface, GetTransactionHandle(CurrentInterface), ref stPaymentRequest[0], ref m_stTicket, 30000);
+                Retcode = Json_GMPSmartDLL.FP3_Payment(CurrentInterface, GetTransactionHandle(CurrentInterface), ref stPaymentRequest[0], ref m_stTicket, odemeyitekrargonderTimeOut); // timeout süresi !!!!
 
                 for (int i = 0; i < m_stTicket.stPayment.Length; i++)
                 {
@@ -3465,7 +3496,7 @@ namespace RmosIngenicoGMP
                         MessageBox.Show("Select BANK first...");
                         return;
                     }
-                    if (paf.pstPaymentApplicationInfoSelected.u16BKMId.Equals(null))
+                    if (paf.pstPaymentApplicationInfoSelected.u16BKMId.Equals(null)) //bak burası dedikleri banka uygulamaları kısmı burası çalışıyor zaten
                         StPaymentRequest.bankBkmId = 0;
                     else
                     {
@@ -7851,6 +7882,7 @@ namespace RmosIngenicoGMP
             return (int)Retcode;
         }
 
+        public int odemeyitekrargonderTimeOut = 120000;
         public int GetPaymentTest(ST_PAYMENT_REQUEST[] stPaymentRequest, int numberOfPayments)
         {
 
@@ -7873,7 +7905,7 @@ namespace RmosIngenicoGMP
             {
                 m_lstBankErrorMessage.Items.Clear();
 
-                Retcode = Json_GMPSmartDLL.FP3_Payment(CurrentInterface, GetTransactionHandle(CurrentInterface), ref stPaymentRequest[0], ref m_stTicket, 120000);
+                Retcode = Json_GMPSmartDLL.FP3_Payment(CurrentInterface, GetTransactionHandle(CurrentInterface), ref stPaymentRequest[0], ref m_stTicket, odemeyitekrargonderTimeOut); // timeout süresi !!!!
 
                 for (int i = 0; i < m_stTicket.stPayment.Length; i++)
                 {
@@ -8261,6 +8293,7 @@ namespace RmosIngenicoGMP
                     stPaymentRequest[0].subtypeOfPayment = 0;
                     stPaymentRequest[0].payAmount = amount;
                     stPaymentRequest[0].payAmountCurrencyCode = currencyOfPayment;
+                    
 
                     GetPayment(stPaymentRequest, 1);
                 }
@@ -8600,7 +8633,7 @@ namespace RmosIngenicoGMP
                 stPaymentRequest[0].payAmount = amount;
                 stPaymentRequest[0].payAmountCurrencyCode = currencyOfPayment;
 
-                Retcode = Json_GMPSmartDLL.FP3_Payment(CurrentInterface, TranHandle, ref stPaymentRequest[0], ref m_stTicket, 30000);
+                Retcode = Json_GMPSmartDLL.FP3_Payment(CurrentInterface, TranHandle, ref stPaymentRequest[0], ref m_stTicket, odemeyitekrargonderTimeOut); // timeout süresi
 
                 ST_USER_MESSAGE[] stUserMessage = new ST_USER_MESSAGE[1];
                 for (int i = 0; i < stUserMessage.Length; i++)

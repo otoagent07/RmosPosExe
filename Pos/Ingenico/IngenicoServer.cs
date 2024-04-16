@@ -53,53 +53,69 @@ namespace Pos.Ingenico
 
         void client_DataReceived(object sender, SimpleTCP.Message e)
         {
-            System.Threading.Tasks.Task.Factory.StartNew(() =>
-            {
-                txtStatus.Invoke((MethodInvoker)delegate ()
-             {
-                 setAllEnable(false);
+            
+             
+                 System.Threading.Tasks.Task.Factory.StartNew(() =>
+                 {
+                     this.Invoke(new MethodInvoker(async () =>
+                     {
+                         try
+                         {
+                             setAllEnable(false);
 
-                 txtStatus.Text = e.MessageString;
+                             txtStatus.Text = e.MessageString;
 
-                 txtStatus.Text = txtStatus.Text.Remove(txtStatus.Text.Length - 1);
-                 if (txtStatus.Text == "2067")
-                 {
-                     lbl_Durum.Text = "FİŞ LİMİTİ AŞILDI.\nFİŞ İPTAL EDİLİYOR..";
-                     client.WriteLine("FISIPTAL;" + null);
+                             txtStatus.Text = txtStatus.Text.Remove(txtStatus.Text.Length - 1);
+                             if (txtStatus.Text == "2067")
+                             {
+                                 lbl_Durum.Text = "FİŞ LİMİTİ AŞILDI.\nFİŞ İPTAL EDİLİYOR..";
+                                 client.WriteLine("FISIPTAL;" + null);
 
-                     setAllEnable(true);
-                 }
-                 if (txtStatus.Text == "61443")
-                 {
-                     lbl_Durum.Text = "ZAMAN AŞIMINA UĞRANDI..";
-                     setAllEnable(true);
-                 }
-                 if (txtStatus.Text == "61468")
-                 {
-                     lbl_Durum.Text = "SİSTEM SUANDA MESGUL..\nCİHAZI KONTROL EDİNİZ...";
-                     setAllEnable(true);
-                 }
-                 if (txtStatus.Text == "2086")
-                 {
-                     lbl_Durum.Text = "ÖDEME GERÇEKLEŞTİRİLEMEDİ..\n";
-                     setAllEnable(true);
-                 }
-                 if (txtStatus.Text == "2085")
-                 {
-                     lbl_Durum.Text = "ÖDEME GERÇEKLEŞTİRİLEMEDİ..\n";
-                     setAllEnable(true);
-                 }
-                 if (txtStatus.Text == "2317")
-                 {
-                     lbl_Durum.Text = "OKC ÜZERİNDE HANDLE YOK..\nEKRANI KAPATIP ÖDEMEYİ TEKRAR GÖNDERİNİZ..";
-                     setAllEnable(true);
-                 }
-                 string[] veri = txtStatus.Text.Split(';');
-                 if (veri[0] == "OK")
-                 {
-                     Finish(veri[1]);
-                 }
-             });
+                                 setAllEnable(true);
+                             }
+                             if (txtStatus.Text == "61443")
+                             {
+                                 lbl_Durum.Text = "ZAMAN AŞIMINA UĞRANDI..";
+                                 setAllEnable(true);
+                             }
+                             if (txtStatus.Text == "61468")
+                             {
+                                 lbl_Durum.Text = "SİSTEM SUANDA MESGUL..\nCİHAZI KONTROL EDİNİZ...";
+                                 setAllEnable(true);
+                             }
+                             if (txtStatus.Text == "2086")
+                             {
+                                 lbl_Durum.Text = "ÖDEME GERÇEKLEŞTİRİLEMEDİ..\n";
+                                 setAllEnable(true);
+                             }
+                             if (txtStatus.Text == "2085")
+                             {
+                                 lbl_Durum.Text = "ÖDEME GERÇEKLEŞTİRİLEMEDİ..\n";
+                                 setAllEnable(true);
+                             }
+                             if (txtStatus.Text == "2317")
+                             {
+                                 lbl_Durum.Text = "OKC ÜZERİNDE HANDLE YOK..\nEKRANI KAPATIP ÖDEMEYİ TEKRAR GÖNDERİNİZ..";
+                                 setAllEnable(true);
+                             }
+                             string[] veri = txtStatus.Text.Split(';');
+                             if (veri[0] == "OK")
+                             {
+                                 Finish(veri[1]);
+                             }
+                         }
+                         catch (Exception ex)
+                         {
+                             MessageBox.Show(ex.Message);
+
+                         }
+                     }));
+
+
+             //        txtStatus.Invoke((MethodInvoker)delegate ()
+             //        {
+                        
+             //});
             });
         }
 
