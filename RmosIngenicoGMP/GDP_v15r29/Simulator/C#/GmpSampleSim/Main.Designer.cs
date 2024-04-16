@@ -587,7 +587,9 @@
             this.gösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnDenemeRmos = new System.Windows.Forms.Button();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.rmosLabel = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_pbBaseInfo)).BeginInit();
@@ -7010,6 +7012,8 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.rmosLabel);
+            this.xtraTabPage1.Controls.Add(this.btnDenemeRmos);
             this.xtraTabPage1.Controls.Add(this.groupBox13);
             this.xtraTabPage1.Controls.Add(this.groupBox10);
             this.xtraTabPage1.Controls.Add(this.m_CurrentInterfaceGroup);
@@ -7018,12 +7022,31 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(1008, 647);
             this.xtraTabPage1.Text = "xtraTabPage1";
             // 
+            // btnDenemeRmos
+            // 
+            this.btnDenemeRmos.Location = new System.Drawing.Point(835, 143);
+            this.btnDenemeRmos.Name = "btnDenemeRmos";
+            this.btnDenemeRmos.Size = new System.Drawing.Size(117, 56);
+            this.btnDenemeRmos.TabIndex = 179;
+            this.btnDenemeRmos.Text = "Deneme Rmos";
+            this.btnDenemeRmos.UseVisualStyleBackColor = true;
+            this.btnDenemeRmos.Click += new System.EventHandler(this.btnDenemeRmos_Click);
+            // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.tabControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1008, 647);
             this.xtraTabPage2.Text = "xtraTabPage2";
+            // 
+            // rmosLabel
+            // 
+            this.rmosLabel.AutoSize = true;
+            this.rmosLabel.Location = new System.Drawing.Point(788, 235);
+            this.rmosLabel.Name = "rmosLabel";
+            this.rmosLabel.Size = new System.Drawing.Size(47, 13);
+            this.rmosLabel.TabIndex = 180;
+            this.rmosLabel.Text = "label106";
             // 
             // Main
             // 
@@ -7128,6 +7151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
+            this.xtraTabPage1.PerformLayout();
             this.xtraTabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -7694,6 +7718,8 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDenemeRmos;
+        private System.Windows.Forms.Label rmosLabel;
     }
 }
 

@@ -6,6 +6,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Pos.Ingenico
@@ -37,7 +38,7 @@ namespace Pos.Ingenico
             client = new SimpleTcpClient();
             client.StringEncoder = Encoding.UTF8;
             client.AutoTrimStrings = true;
-            client.DataReceived += client_DataReceived;
+            client.DataReceived += client_DataReceivedAsync;
 
             client.Connect(Departman.Kodlar_Ingenico_IP, Departman.Kodlar_Ingenico_Port);
 
@@ -51,74 +52,113 @@ namespace Pos.Ingenico
 
         }
 
-        void client_DataReceived(object sender, SimpleTCP.Message e)
+         void client_DataReceivedAsync(object sender, SimpleTCP.Message e)
         {
+
+            //System.Windows.Forms.Form.CheckForIllegalCrossThreadCalls = false;
+            //if (!IsHandleCreated)
+            //   CreateControl();
+
             
-             
-                 System.Threading.Tasks.Task.Factory.StartNew(() =>
-                 {
-                     this.Invoke(new MethodInvoker(async () =>
-                     {
-                         try
-                         {
-                             setAllEnable(false);
+                 Task.Run(() => MyAsyncMethod(e.MessageString));
 
-                             txtStatus.Text = e.MessageString;
+            //System.Threading.Tasks.Task.Factory.StartNew(() =>
+            //     {
 
-                             txtStatus.Text = txtStatus.Text.Remove(txtStatus.Text.Length - 1);
-                             if (txtStatus.Text == "2067")
-                             {
-                                 lbl_Durum.Text = "FİŞ LİMİTİ AŞILDI.\nFİŞ İPTAL EDİLİYOR..";
-                                 client.WriteLine("FISIPTAL;" + null);
+            //         this.Invoke(new MethodInvoker(async () =>
+            //         {
+                         
 
-                                 setAllEnable(true);
-                             }
-                             if (txtStatus.Text == "61443")
-                             {
-                                 lbl_Durum.Text = "ZAMAN AŞIMINA UĞRANDI..";
-                                 setAllEnable(true);
-                             }
-                             if (txtStatus.Text == "61468")
-                             {
-                                 lbl_Durum.Text = "SİSTEM SUANDA MESGUL..\nCİHAZI KONTROL EDİNİZ...";
-                                 setAllEnable(true);
-                             }
-                             if (txtStatus.Text == "2086")
-                             {
-                                 lbl_Durum.Text = "ÖDEME GERÇEKLEŞTİRİLEMEDİ..\n";
-                                 setAllEnable(true);
-                             }
-                             if (txtStatus.Text == "2085")
-                             {
-                                 lbl_Durum.Text = "ÖDEME GERÇEKLEŞTİRİLEMEDİ..\n";
-                                 setAllEnable(true);
-                             }
-                             if (txtStatus.Text == "2317")
-                             {
-                                 lbl_Durum.Text = "OKC ÜZERİNDE HANDLE YOK..\nEKRANI KAPATIP ÖDEMEYİ TEKRAR GÖNDERİNİZ..";
-                                 setAllEnable(true);
-                             }
-                             string[] veri = txtStatus.Text.Split(';');
-                             if (veri[0] == "OK")
-                             {
-                                 Finish(veri[1]);
-                             }
-                         }
-                         catch (Exception ex)
-                         {
-                             MessageBox.Show(ex.Message);
-
-                         }
-                     }));
+            //         }));
 
 
-             //        txtStatus.Invoke((MethodInvoker)delegate ()
-             //        {
-                        
-             //});
-            });
+            //         //        txtStatus.Invoke((MethodInvoker)delegate ()
+            //         //        {
+
+            //         //});
+            //     });
         }
 
+        private async Task MyAsyncMethod(string text)
+        {
+            await Task.Delay(100); 
+            UpdateUI(text);
+        }
+
+        private void UpdateUI(string text)
+        {
+            if (this.InvokeRequired) // false dönmesinin sebebi bu formun kapalı olmasıdır
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    try
+                    {
+                        setAllEnable(false);
+
+                        txtStatus.Text = text;
+
+                        txtStatus.Text = txtStatus.Text.Remove(txtStatus.Text.Length - 1);
+                        if (txtStatus.Text == "2067")
+                        {
+                            lbl_Durum.Text = "FİŞ LİMİTİ AŞILDI.\nFİŞ İPTAL EDİLİYOR..";
+                            client.WriteLine("FISIPTAL;" + null);
+
+                            setAllEnable(true);
+                        }
+                        if (txtStatus.Text == "61443")
+                        {
+                            lbl_Durum.Text = "ZAMAN AŞIMINA UĞRANDI..";
+                            setAllEnable(true);
+                        }
+                        if (txtStatus.Text == "61468")
+                        {
+                            lbl_Durum.Text = "SİSTEM SUANDA MESGUL..\nCİHAZI KONTROL EDİNİZ...";
+                            setAllEnable(true);
+                        }
+                        if (txtStatus.Text == "2086")
+                        {
+                            lbl_Durum.Text = "ÖDEME GERÇEKLEŞTİRİLEMEDİ..\n";
+                            setAllEnable(true);
+                        }
+                        if (txtStatus.Text == "2085")
+                        {
+                            lbl_Durum.Text = "ÖDEME GERÇEKLEŞTİRİLEMEDİ..\n";
+                            setAllEnable(true);
+                        }
+                        if (txtStatus.Text == "2317")
+                        {
+                            lbl_Durum.Text = "OKC ÜZERİNDE HANDLE YOK..\nEKRANI KAPATIP ÖDEMEYİ TEKRAR GÖNDERİNİZ..";
+                            setAllEnable(true);
+                        }
+                        string[] veri = txtStatus.Text.Split(';');
+                        if (veri[0] == "OK")
+                        {
+                            Finish(veri[1]);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+
+                    }
+                });
+            }
+            else
+            {
+            }
+
+            try
+            {
+                if(text!=null && text != "" && text.Contains("BankaIdGuncelle"))
+                {
+                    string bankaId = text.Split(';')[1];
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         public void setAllEnable(bool setVisible)
         {
             m_btnPaymentCreditAgain.Enabled = setVisible;

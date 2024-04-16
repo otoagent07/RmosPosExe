@@ -513,8 +513,10 @@ namespace RmosIngenicoGMP
 
         //ListBox lstCihaz = new ListBox();
         string veri = "";
+        SimpleTCP.Message bagliClient;
         void server_DataReceived(object sender, SimpleTCP.Message e)
         {
+            this.bagliClient = e;
             this.Invoke((MethodInvoker)delegate ()
             {
                 //lstCihaz.Items.Add(e.MessageString);
@@ -1722,6 +1724,14 @@ namespace RmosIngenicoGMP
                 case 31:        //Close Ticket
                     {
 
+                        try
+                        {
+                            bagliClient.ReplyLine("BankaIdGuncelle;" + bankaId); // m_stTicket.stPayment[i].stBankPayment.bankBkmId.ToString();
+                        }
+                        catch (Exception ex)
+                        {
+                            rmosLabel.Text = ex.Message;
+                        }
 
                         if (GetTransactionHandle(CurrentInterface) == 0)
                             return;
@@ -1750,6 +1760,10 @@ namespace RmosIngenicoGMP
                     Exit:
                         HandleErrorCode(Retcode);
                         break;
+
+
+                       
+
                     }
 
                 case 32:    //Sub Total
@@ -2294,11 +2308,12 @@ namespace RmosIngenicoGMP
 
             return "PAYMENT_SUBTYPE_UNDEFINED";
         }
-
+       
+        ST_TICKET m_stTicket;
         UInt32 GetPayment(ST_PAYMENT_REQUEST[] stPaymentRequest, int numberOfPayments)
         {
 
-            ST_TICKET m_stTicket = new ST_TICKET();
+             m_stTicket = new ST_TICKET();
 
             //char display[256];
             string display = "";
@@ -7882,7 +7897,7 @@ namespace RmosIngenicoGMP
             return (int)Retcode;
         }
 
-        public int odemeyitekrargonderTimeOut = 120000;
+        public int odemeyitekrargonderTimeOut = 9000;
         public int GetPaymentTest(ST_PAYMENT_REQUEST[] stPaymentRequest, int numberOfPayments)
         {
 
@@ -9688,6 +9703,11 @@ namespace RmosIngenicoGMP
             notifyIcon1.Visible = true;
             notifyIcon1.ShowBalloonTip(50);
 
+        }
+
+        private void btnDenemeRmos_Click(object sender, EventArgs e)
+        {
+            bagliClient.ReplyLine("BankaIdGuncelle;" + bankaId) ;
         }
     }
 }

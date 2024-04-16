@@ -735,15 +735,17 @@ namespace Pos
                 }
                 else
                 {
+                    /* burayı aç
                     string programDizini = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
-                    string pro = programDizini + "\\IngenicoOKC\\RmosIngenicoGMP.exe";
+                    string pro = programDizini + "\\RmosIngenicoGMP.exe"; // \\IngenicoOKC\\
 
 
                     Process[] processesByName = Process.GetProcessesByName("RmosIngenicoGMP");
                     if (processesByName.Length == 0)
                     {
                         Process.Start(@"" + pro);
-                    }
+                    } 
+                    */ //buradan aç
 
                     //IngenicoOKC
                     //client = new SimpleTcpClient
