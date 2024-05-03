@@ -268,6 +268,7 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
                 }
 
                 decimal kur = Param.Doviz_Kuru;
+                Console.WriteLine("ödeme aldayim 2");
                 string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
 
 

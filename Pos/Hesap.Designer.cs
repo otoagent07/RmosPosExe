@@ -127,7 +127,7 @@
             // 
             resources.ApplyResources(this.gridColumn13, "gridColumn13");
             this.gridColumn13.FieldName = "Rsat_UrunTahsilat";
-            this.gridColumn13.MinWidth = 15;
+            this.gridColumn13.MinWidth = 17;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.OptionsColumn.AllowFocus = false;
             // 
@@ -135,7 +135,7 @@
             // 
             resources.ApplyResources(this.gridColumn15, "gridColumn15");
             this.gridColumn15.FieldName = "Rsat_UrunBazliHspDokum";
-            this.gridColumn15.MinWidth = 15;
+            this.gridColumn15.MinWidth = 17;
             this.gridColumn15.Name = "gridColumn15";
             // 
             // gridColumn1
@@ -143,7 +143,7 @@
             this.gridColumn1.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn1.AppearanceCell.Font")));
             this.gridColumn1.AppearanceCell.Options.UseFont = true;
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
-            this.gridColumn1.MinWidth = 15;
+            this.gridColumn1.MinWidth = 17;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             this.gridColumn1.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -153,7 +153,7 @@
             // 
             resources.ApplyResources(this.gridColumn6, "gridColumn6");
             this.gridColumn6.FieldName = "Rsat_Ba";
-            this.gridColumn6.MinWidth = 15;
+            this.gridColumn6.MinWidth = 17;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowFocus = false;
             // 
@@ -373,7 +373,7 @@
             this.gridColumn13,
             this.gridColumn14,
             this.gridColumn15});
-            this.gridView1.DetailHeight = 231;
+            this.gridView1.DetailHeight = 284;
             gridFormatRule1.ApplyToRow = true;
             gridFormatRule1.Column = this.gridColumn13;
             gridFormatRule1.ColumnApplyTo = this.gridColumn13;
@@ -416,7 +416,7 @@
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
-            this.gridView1.RowHeight = 24;
+            this.gridView1.RowHeight = 30;
             this.gridView1.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.gridView1_SelectionChanged);
             // 
             // gridColumn2
@@ -424,7 +424,7 @@
             this.gridColumn2.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn2.AppearanceCell.Font")));
             this.gridColumn2.AppearanceCell.Options.UseFont = true;
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
-            this.gridColumn2.MinWidth = 15;
+            this.gridColumn2.MinWidth = 17;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
@@ -434,7 +434,7 @@
             this.gridColumn18.AppearanceCell.Options.UseFont = true;
             resources.ApplyResources(this.gridColumn18, "gridColumn18");
             this.gridColumn18.FieldName = "Rsat_UrunBazliHspAdet";
-            this.gridColumn18.MinWidth = 15;
+            this.gridColumn18.MinWidth = 17;
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.OptionsColumn.AllowFocus = false;
             // 
@@ -446,7 +446,7 @@
             this.gridColumn3.AppearanceCell.Options.UseForeColor = true;
             resources.ApplyResources(this.gridColumn3, "gridColumn3");
             this.gridColumn3.FieldName = "Rsat_Emiktar";
-            this.gridColumn3.MinWidth = 15;
+            this.gridColumn3.MinWidth = 17;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             // 
@@ -457,7 +457,7 @@
             resources.ApplyResources(this.gridColumn4, "gridColumn4");
             this.gridColumn4.DisplayFormat.FormatString = "n2";
             this.gridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.gridColumn4.MinWidth = 15;
+            this.gridColumn4.MinWidth = 17;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             this.gridColumn4.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -470,7 +470,7 @@
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
             this.gridColumn5.DisplayFormat.FormatString = "n2";
             this.gridColumn5.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.gridColumn5.MinWidth = 15;
+            this.gridColumn5.MinWidth = 17;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             this.gridColumn5.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -480,7 +480,7 @@
             // 
             resources.ApplyResources(this.gridColumn7, "gridColumn7");
             this.gridColumn7.FieldName = "Rsat_Id";
-            this.gridColumn7.MinWidth = 15;
+            this.gridColumn7.MinWidth = 17;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             // 
@@ -488,7 +488,7 @@
             // 
             resources.ApplyResources(this.gridColumn12, "gridColumn12");
             this.gridColumn12.FieldName = "Rsat_Aciklama";
-            this.gridColumn12.MinWidth = 15;
+            this.gridColumn12.MinWidth = 17;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsColumn.AllowFocus = false;
             // 
@@ -496,7 +496,7 @@
             // 
             resources.ApplyResources(this.gridColumn14, "gridColumn14");
             this.gridColumn14.FieldName = "Rsat_Recete";
-            this.gridColumn14.MinWidth = 15;
+            this.gridColumn14.MinWidth = 17;
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowFocus = false;
             // 
@@ -584,7 +584,7 @@
             this.gridColumn9,
             this.gridColumn10,
             this.gridColumn11});
-            this.gridView2.DetailHeight = 231;
+            this.gridView2.DetailHeight = 284;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowColumnHeaders = false;
@@ -595,7 +595,7 @@
             // 
             resources.ApplyResources(this.gridColumn8, "gridColumn8");
             this.gridColumn8.FieldName = "Mkodlar_Ad";
-            this.gridColumn8.MinWidth = 15;
+            this.gridColumn8.MinWidth = 17;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowFocus = false;
             // 
@@ -605,7 +605,7 @@
             this.gridColumn9.DisplayFormat.FormatString = "N4";
             this.gridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn9.FieldName = "Kur";
-            this.gridColumn9.MinWidth = 15;
+            this.gridColumn9.MinWidth = 17;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
@@ -615,7 +615,7 @@
             this.gridColumn10.DisplayFormat.FormatString = "N4";
             this.gridColumn10.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn10.FieldName = "Doviz";
-            this.gridColumn10.MinWidth = 15;
+            this.gridColumn10.MinWidth = 17;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowFocus = false;
             // 
@@ -623,7 +623,7 @@
             // 
             resources.ApplyResources(this.gridColumn11, "gridColumn11");
             this.gridColumn11.FieldName = "Mkodlar_Kod";
-            this.gridColumn11.MinWidth = 15;
+            this.gridColumn11.MinWidth = 17;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.OptionsColumn.AllowFocus = false;
             // 
@@ -851,6 +851,7 @@
             // 
             // gridControlKisiyeSatis
             // 
+            this.gridControlKisiyeSatis.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControlKisiyeSatis.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControlKisiyeSatis, "gridControlKisiyeSatis");
             this.gridControlKisiyeSatis.MainView = this.gridViewKisiyeSatis;
             this.gridControlKisiyeSatis.Name = "gridControlKisiyeSatis";
@@ -861,6 +862,7 @@
             // 
             this.gridViewKisiyeSatis.Appearance.Row.Font = ((System.Drawing.Font)(resources.GetObject("gridViewKisiyeSatis.Appearance.Row.Font")));
             this.gridViewKisiyeSatis.Appearance.Row.Options.UseFont = true;
+            this.gridViewKisiyeSatis.DetailHeight = 431;
             this.gridViewKisiyeSatis.GridControl = this.gridControlKisiyeSatis;
             this.gridViewKisiyeSatis.Name = "gridViewKisiyeSatis";
             this.gridViewKisiyeSatis.OptionsBehavior.ReadOnly = true;
@@ -871,6 +873,7 @@
             // 
             // gridControlFis
             // 
+            this.gridControlFis.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControlFis.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControlFis, "gridControlFis");
             this.gridControlFis.MainView = this.gridViewFis;
             this.gridControlFis.Name = "gridControlFis";
@@ -881,6 +884,7 @@
             // 
             this.gridViewFis.Appearance.Row.Font = ((System.Drawing.Font)(resources.GetObject("gridViewFis.Appearance.Row.Font")));
             this.gridViewFis.Appearance.Row.Options.UseFont = true;
+            this.gridViewFis.DetailHeight = 431;
             this.gridViewFis.GridControl = this.gridControlFis;
             this.gridViewFis.Name = "gridViewFis";
             this.gridViewFis.OptionsBehavior.ReadOnly = true;

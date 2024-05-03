@@ -1117,7 +1117,7 @@ namespace Pos
 
 
                 decimal tutar, doviztutar;
-
+                Console.WriteLine("odemealdayim");
                 if (Param.Calisma_Sekli == 1)       //Döviz
                 {
                     if (Eksileme == false)
