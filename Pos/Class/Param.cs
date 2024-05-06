@@ -175,6 +175,7 @@ namespace Pos.Class
         public static bool hesapFisQr { get; set; }
         public static bool masatrTutSurukle { get; set; }
         public static bool servispayFooterda { get; set; }
+        public static bool servispayOdenmezIkramSil { get; set; }
 
 
         public static void Param_Yukle()
@@ -228,7 +229,7 @@ namespace Pos.Class
                         ",ISNULL(kisivegarsonbirkeresoraktif,0) as kisivegarsonbirkeresoraktif  " +
                         ",ISNULL(satirsilfiscikmasinaktif,0) as satirsilfiscikmasinaktif  " +
                         ",ISNULL(onburoikramsifiryazaktif,0) as onburoikramsifiryazaktif  " +
-                        ",ISNULL(cariindirimAktif,0) as cariindirimAktif,ISNULL(hesapFisQr,0) as hesapFisQr,ISNULL(masatrTutSurukle,0) as masatrTutSurukle,isnull(tipboxReceteKod,'') as tipboxReceteKod  ,ISNULL(servispayFooterda,0) as servispayFooterda" +
+                        ",ISNULL(cariindirimAktif,0) as cariindirimAktif,ISNULL(hesapFisQr,0) as hesapFisQr,ISNULL(masatrTutSurukle,0) as masatrTutSurukle,isnull(tipboxReceteKod,'') as tipboxReceteKod  ,ISNULL(servispayFooterda,0) as servispayFooterda,ISNULL(servispayOdenmezIkramSil,0) as servispayOdenmezIkramSil" +
                          " from Pos_Param where Param_Id = '1' ");
 
                 DataTable dtMac = dbtools.SelectTable("SELECT  isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep, ISNULL(P_Sabitkonum,0) as P_Sabitkonum, P_Sabitkonumkodu   FROM  Rmosmuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
@@ -428,6 +429,7 @@ namespace Pos.Class
                     hesapFisQr = Convert.ToBoolean(dt.Rows[0]["hesapFisQr"]);
                     masatrTutSurukle = Convert.ToBoolean(dt.Rows[0]["masatrTutSurukle"]);
                     servispayFooterda = Convert.ToBoolean(dt.Rows[0]["servispayFooterda"]);
+                    servispayOdenmezIkramSil = Convert.ToBoolean(dt.Rows[0]["servispayOdenmezIkramSil"]);
 
 
                     tipboxReceteKod = Convert.ToString(dt.Rows[0]["tipboxReceteKod"]);

@@ -1116,6 +1116,10 @@ namespace Pos
                     }
                 }
 
+                string fisnom = this.Tag.ToString();
+                Sabitler.odenmezVeyaIkramiseServisPayiSil(fisnom, look_Kapatma.EditValue.ToString());
+                gridyenile();
+
 
                 decimal tutar, doviztutar;
                 Console.WriteLine("odemealdayim");
@@ -1259,34 +1263,37 @@ namespace Pos
 
         private void btn_Odemesil_Click(object sender, EventArgs e)
         {
-            //Manuel İndirimlerin  Silinmesi
-            var look_KapatmaSecili = look_Kapatma.EditValue;
-
-
-            if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")).StartsWith("MA"))
+            try
             {
-                dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Fisno = '" + Convert.ToInt32(this.Tag) + "' and Rsat_Ba ='A' and Rsat_Indkodu = 'MANUEL'");
+                //Manuel İndirimlerin  Silinmesi
+                var look_KapatmaSecili = look_Kapatma.EditValue;
 
 
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Sil, "Ödeme Silme Fisno : " + Convert.ToString(this.Tag) + " Tutar:" + Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Tutar")), Convert.ToString(this.Tag), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
+                if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")).StartsWith("MA"))
+                {
+                    dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Fisno = '" + Convert.ToInt32(this.Tag) + "' and Rsat_Ba ='A' and Rsat_Indkodu = 'MANUEL'");
 
-                gridyenile();
-                Bakiye_Kontrol();
 
-                look_Kapatma.EditValue = null;
-                look_Kapatma.EditValue = look_KapatmaSecili;
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Sil, "Ödeme Silme Fisno : " + Convert.ToString(this.Tag) + " Tutar:" + Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Tutar")), Convert.ToString(this.Tag), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
 
-                return;
-            }
+                    Fis_Islem.ServisPayi(Convert.ToInt32(Convert.ToString(this.Tag)));
+                    gridyenile();
+                    Bakiye_Kontrol();
 
-            if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty || Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Ba")) == "B")
-            {
-                MessageBox.Show(res_man.GetString("Sadece Ödeme Satırı Silinebilir..."));
-                return;
-            }
+                    look_Kapatma.EditValue = null;
+                    look_Kapatma.EditValue = look_KapatmaSecili;
 
-            string id = Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id"));
-            dbtools.execcmd(@"
+                    return;
+                }
+
+                if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty || Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Ba")) == "B")
+                {
+                    MessageBox.Show(res_man.GetString("Sadece Ödeme Satırı Silinebilir..."));
+                    return;
+                }
+
+                string id = Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id"));
+                dbtools.execcmd(@"
                             delete from Pos_Carihrk
                             where Chrk_Id in (
                             select Chrk_Id from
@@ -1297,27 +1304,37 @@ namespace Pos
                             where satis.Rsat_Id = '" + id + "')");
 
 
-            dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Id = '" + Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) + "'");
+                dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Id = '" + Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) + "'");
 
 
-            if (tip == "O")
-            {
-                if (Param.Tesis_Tipi == 0)
+                if (tip == "O")
                 {
-                    Fronttools.execcmd(@"delete from Kumhrk where Kumhrk_Cekno = '" + this.Tag + @"' and  Kumhrk_Re = 'E' 
+                    if (Param.Tesis_Tipi == 0)
+                    {
+                        Fronttools.execcmd(@"delete from Kumhrk where Kumhrk_Cekno = '" + this.Tag + @"' and  Kumhrk_Re = 'E' 
                             and (Kumhrk_Cekno <> '''' or Kumhrk_Cekno is not null) and Kumhrk_Tarih  = '" + Param.Tarih + "'");
+                    }
                 }
+
+
+                MiktarSil();
+                Fis_Islem.ServisPayi(Convert.ToInt32(Convert.ToString(this.Tag)));
+                gridyenile();
+                Bakiye_Kontrol();
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Sil, "Ödeme Silme Fisno : " + Convert.ToString(this.Tag) + " Tutar:" + Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Tutar")), Convert.ToString(this.Tag), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
+
+                look_Kapatma.EditValue = null;
+                look_Kapatma.EditValue = look_KapatmaSecili;
             }
-
-
-            MiktarSil();
-            gridyenile();
-            Bakiye_Kontrol();
-
-            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Sil, "Ödeme Silme Fisno : " + Convert.ToString(this.Tag) + " Tutar:" + Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Tutar")), Convert.ToString(this.Tag), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
-
-            look_Kapatma.EditValue = null;
-            look_Kapatma.EditValue = look_KapatmaSecili;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                
+            }
         }
 
         private void btn_Indirim_Click(object sender, EventArgs e)
@@ -1336,6 +1353,9 @@ namespace Pos
                     return;
                 }
             }*/
+
+            int fisno = Convert.ToInt32(this.Tag);
+
 
             var look_KapatmaSecili = look_Kapatma.EditValue;
 
@@ -1419,7 +1439,6 @@ namespace Pos
 
             if (oran > 0 || tutar > 0)
             {
-                int fisno = Convert.ToInt32(this.Tag);
                 Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split, neden: neden);
 
                 decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
@@ -1439,6 +1458,8 @@ namespace Pos
                 //Bakiye_Kontrol();
             }
 
+
+            Fis_Islem.ServisPayi(fisno);
             gridyenile();
             Bakiye_Kontrol();
 
@@ -1548,7 +1569,7 @@ namespace Pos
 
                 onburoExtraIndrimVarsaUygula();
 
-
+               
                 if (Odeme_Al())
                 {
 

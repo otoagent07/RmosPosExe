@@ -113,6 +113,8 @@ IF COL_LENGTH('Pos_Param', 'hesapFisQr') IS NULL BEGIN ALTER TABLE Pos_Param ADD
 IF COL_LENGTH('Pos_Param', 'masatrTutSurukle') IS NULL BEGIN ALTER TABLE Pos_Param ADD masatrTutSurukle bit END;
 IF COL_LENGTH('Pos_Param', 'servispayFooterda') IS NULL BEGIN ALTER TABLE Pos_Param ADD servispayFooterda bit END;
 
+IF COL_LENGTH('Pos_Param', 'servispayOdenmezIkramSil') IS NULL BEGIN ALTER TABLE Pos_Param ADD servispayOdenmezIkramSil bit END;
+
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_ServisPayiDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_ServisPayiDuzelt] bit END;
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_OdenmezIkramPasif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_OdenmezIkramPasif] bit END;
