@@ -3663,7 +3663,6 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                     neden = klv2.yazi;
 
                     dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Tutar = 0,Rsat_Net=0, Rsat_Doviztutar = 0,Rsat_Kdv = 0,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
-                    Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
                 }
 
                 try
@@ -3676,6 +3675,9 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                     
                 }
+
+                Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
+
                 gridyenile();
             }
         }
