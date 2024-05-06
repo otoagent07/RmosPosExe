@@ -402,6 +402,7 @@
     <Compile Include="Class\Log.cs" />
     <Compile Include="Class\Param.cs" />
     <Compile Include="Class\Recete_Islem.cs" />
+    <Compile Include="Class\Sabitler.cs" />
     <Compile Include="Connected Services\Uyumsoft_AdisyonBasic\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

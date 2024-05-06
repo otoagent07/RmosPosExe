@@ -2757,7 +2757,7 @@ group by Pkod_Ad";
                         + " P_Posta,P_Indirim_Yuzde,P_Bindirim_Yuzde,P_Sabit_Masa,M_MasaAc,M_BaskaMasa,G_Satirsil_Y,M_GarsonDegistir, "
                         + " G_Zayi,G_Ikram,M_KisiSayisi,R_MasaGeri,M_SiparisTekrar,Pda_HesapDok,H_HizliSatis,R_TopluIsle,And_HesapDokum,And_HesapOdeme,And_MalzTransfer,S_Sp_Sil,ExtraFolio, "
                         + " And_Yarim,And_Tam,And_Bucuk,And_Duble,Pos_SubeTrf,Pos_AdisyonPr,Pos_OdemeDegistir,And_SatisSiparisBtn,Pos_ArtiEksi_Aktif,Pos_MasaAnlikDurum,Pos_MasaUrunSil,Pos_IWERep,Pos_KartF_CheckOut,Pos_SatirSilYetkili,Pos_MasaDirekS,Pos_MasaPaketS, "
-                        + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman,Pos_KartfIndirimAktif,Pos_ServisPayiDuzelt) VALUES( "
+                        + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman,Pos_KartfIndirimAktif,Pos_ServisPayiDuzelt,Pos_OdenmezIkramPasif) VALUES( "
                         + " '" + txt_Kul_kod.Text + "','" + txt_Kul_sifre.EditValue + "','" + txt_Kul_ad.EditValue + "','" + txt_Kul_soyad.EditValue + "','" + txt_Kul_Kart.EditValue + "','" + cmb_Kulturu.SelectedIndex.ToString() + "', "
                         + " '" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', "
                         + " '" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "','" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "','" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', "
@@ -2785,7 +2785,7 @@ group by Pkod_Ad";
                         + " '" + And_Yarim.Checked + "','" + And_Tam.Checked + "','" + And_Bucuk.Checked + "','" + And_Duble.Checked + "','" + Pos_SubeTrf.Checked + "', "
                         + " '" + Pos_AdisyonPr.Checked + "','" + chk_OdemeTipi.Checked + "','" + And_SatisSiparisBtn.Checked + "','" + Pos_ArtiEksi_Aktif.Checked + "','" + Pos_MasaAnlikDurum.Checked + "','" + Pos_MasaUrunSil.Checked + "','" + Pos_IWERep.Checked + "','" + Pos_KartF_CheckOut.Checked + "','" + Pos_SatirSilYetkili.Checked + "', "
                         + " '" + Pos_MasaDirekS.Checked + "','" + Pos_MasaPaketS.Checked + "','" + Pos_YS_YetkiReddet.Checked + "','" + Pos_YarimDubleAlan.Checked + "','" + Pos_ReceteTanimlama.Checked + "','" + Pos_FixMenu.Checked + "', "
-                        + " '" + Pos_HesapArti.Checked + "','" + User_AP.Checked + "','" + Pos_OdaKontrol.Checked + "','" + Pos_HesapFisIptal.Checked + "','" + Pos_KartTanimSil.Checked + "','" + backUser + "','" + chk_K_KasaRapor.Checked + "','" + Pos_KartTanimDuzelt.Checked + "','" + Pos_KartTanimTransfer.Checked + "','" + Pos_KartTanimBakiyeTransfer.Checked + "','" + dil + "','" + Pos_Eksileme.Checked + "','" + Pos_XZdepartman.Checked + "','" + Pos_KartfIndirimAktif.Checked + "','" + Pos_ServisPayiDuzelt.Checked + "' ) ");
+                        + " '" + Pos_HesapArti.Checked + "','" + User_AP.Checked + "','" + Pos_OdaKontrol.Checked + "','" + Pos_HesapFisIptal.Checked + "','" + Pos_KartTanimSil.Checked + "','" + backUser + "','" + chk_K_KasaRapor.Checked + "','" + Pos_KartTanimDuzelt.Checked + "','" + Pos_KartTanimTransfer.Checked + "','" + Pos_KartTanimBakiyeTransfer.Checked + "','" + dil + "','" + Pos_Eksileme.Checked + "','" + Pos_XZdepartman.Checked + "','" + Pos_KartfIndirimAktif.Checked + "','" + Pos_ServisPayiDuzelt.Checked + "','" + Pos_OdenmezIkramPasif.Checked + "' ) ");
 
 
 
@@ -2826,7 +2826,7 @@ group by Pkod_Ad";
                         + " Pos_MasaAnlikDurum = '" + Pos_MasaAnlikDurum.Checked + "',Pos_MasaUrunSil = '" + Pos_MasaUrunSil.Checked + "', Pos_IWERep= '" + Pos_IWERep.Checked + "', Pos_KartF_CheckOut ='" + Pos_KartF_CheckOut.Checked + "', "
                         + " Pos_SatirSilYetkili = '" + Pos_SatirSilYetkili.Checked + "', Pos_MasaDirekS ='" + Pos_MasaDirekS.Checked + "', Pos_MasaPaketS = '" + Pos_MasaPaketS.Checked + "', "
                         + " Pos_YS_YetkiReddet = '" + Pos_YS_YetkiReddet.Checked + "', Pos_YarimDubleAlan ='" + Pos_YarimDubleAlan.Checked + "', Pos_ReceteTanimlama= '" + Pos_ReceteTanimlama.Checked + "', Pos_FixMenu = '" + Pos_FixMenu.Checked + "', "
-                        + " Pos_HesapArti = '" + Pos_HesapArti.Checked + "', User_AP = '" + User_AP.Checked + "',Pos_OdaKontrol = '" + Pos_OdaKontrol.Checked + "',Pos_HesapFisIptal = '" + Pos_HesapFisIptal.Checked + "',Pos_KartTanimSil = '" + Pos_KartTanimSil.Checked + "',U_BackUser = '" + backUser + "',chk_K_KasaRapor = '" + chk_K_KasaRapor.Checked + "',Pos_KartTanimDuzelt = '" + Pos_KartTanimDuzelt.Checked + "',Pos_KartTanimBakiyeTransfer = '" + Pos_KartTanimBakiyeTransfer.Checked + "',Pos_KartTanimTransfer = '" + Pos_KartTanimTransfer.Checked + "',Pos_dil = '" + dil + "',Pos_Eksileme = '" + Pos_Eksileme.Checked + "',Pos_XZdepartman = '" + Pos_XZdepartman.Checked + "',Pos_KartfIndirimAktif = '" + Pos_KartfIndirimAktif.Checked + "',Pos_ServisPayiDuzelt = '" + Pos_ServisPayiDuzelt.Checked + "' "
+                        + " Pos_HesapArti = '" + Pos_HesapArti.Checked + "', User_AP = '" + User_AP.Checked + "',Pos_OdaKontrol = '" + Pos_OdaKontrol.Checked + "',Pos_HesapFisIptal = '" + Pos_HesapFisIptal.Checked + "',Pos_KartTanimSil = '" + Pos_KartTanimSil.Checked + "',U_BackUser = '" + backUser + "',chk_K_KasaRapor = '" + chk_K_KasaRapor.Checked + "',Pos_KartTanimDuzelt = '" + Pos_KartTanimDuzelt.Checked + "',Pos_KartTanimBakiyeTransfer = '" + Pos_KartTanimBakiyeTransfer.Checked + "',Pos_KartTanimTransfer = '" + Pos_KartTanimTransfer.Checked + "',Pos_dil = '" + dil + "',Pos_Eksileme = '" + Pos_Eksileme.Checked + "',Pos_XZdepartman = '" + Pos_XZdepartman.Checked + "',Pos_KartfIndirimAktif = '" + Pos_KartfIndirimAktif.Checked + "',Pos_ServisPayiDuzelt = '" + Pos_ServisPayiDuzelt.Checked + "',Pos_OdenmezIkramPasif = '" + Pos_OdenmezIkramPasif.Checked + "' "
                         + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
 
 
@@ -2904,7 +2904,7 @@ group by Pkod_Ad";
                     + " ISNULL(Pos_SubeTrf,0) as  Pos_SubeTrf,ISNULL(Pos_AdisyonPr,0) as  Pos_AdisyonPr, ISNULL(Pos_OdemeDegistir,0) as Pos_OdemeDegistir, ISNULL(ExtraFolio,0) as ExtraFolio, ISNULL(And_SatisSiparisBtn,0) as And_SatisSiparisBtn, "
                     + " ISNULL(Pos_MasaAnlikDurum,0) as Pos_MasaAnlikDurum, ISNULL(Pos_ArtiEksi_Aktif,0) as Pos_ArtiEksi_Aktif, ISNULL(Pos_MasaUrunSil,0) as Pos_MasaUrunSil,ISNULL(Pos_IWERep,0) as Pos_IWERep, ISNULL(Pos_KartF_CheckOut,0) as Pos_KartF_CheckOut, ISNULL(Pos_SatirSilYetkili,0) as Pos_SatirSilYetkili, "
                     + " ISNULL(Pos_MasaPaketS,0) as Pos_MasaPaketS,ISNULL(Pos_MasaDirekS,0) as Pos_MasaDirekS, ISNULL(Pos_YS_YetkiReddet,0) as Pos_YS_YetkiReddet, ISNULL(Pos_YarimDubleAlan,1) as Pos_YarimDubleAlan, ISNULL(Pos_ReceteTanimlama,1) as Pos_ReceteTanimlama,  "
-                    + " ISNULL(Pos_FixMenu,0) as Pos_FixMenu, ISNULL(Pos_HesapFisIptal,0) as Pos_HesapFisIptal, ISNULL(Pos_KartTanimSil,0) as Pos_KartTanimSil,ISNULL(Pos_HesapArti,0) as Pos_HesapArti, ISNULL(User_AP,1) as User_AP,U_BackUser,ISNULL(chk_K_KasaRapor,0) as chk_K_KasaRapor,ISNULL(Pos_KartTanimDuzelt,0) as Pos_KartTanimDuzelt,ISNULL(Pos_KartTanimTransfer,0) as Pos_KartTanimTransfer,ISNULL(Pos_KartTanimBakiyeTransfer,0) as Pos_KartTanimBakiyeTransfer,isnull(Pos_dil,'tr-TR') as Pos_dil, ISNULL(Pos_Eksileme,0) as Pos_Eksileme, ISNULL(Pos_XZdepartman,0) as Pos_XZdepartman, ISNULL(Pos_KartfIndirimAktif,0) as Pos_KartfIndirimAktif, ISNULL(Pos_ServisPayiDuzelt,0) as Pos_ServisPayiDuzelt "
+                    + " ISNULL(Pos_FixMenu,0) as Pos_FixMenu, ISNULL(Pos_HesapFisIptal,0) as Pos_HesapFisIptal, ISNULL(Pos_KartTanimSil,0) as Pos_KartTanimSil,ISNULL(Pos_HesapArti,0) as Pos_HesapArti, ISNULL(User_AP,1) as User_AP,U_BackUser,ISNULL(chk_K_KasaRapor,0) as chk_K_KasaRapor,ISNULL(Pos_KartTanimDuzelt,0) as Pos_KartTanimDuzelt,ISNULL(Pos_KartTanimTransfer,0) as Pos_KartTanimTransfer,ISNULL(Pos_KartTanimBakiyeTransfer,0) as Pos_KartTanimBakiyeTransfer,isnull(Pos_dil,'tr-TR') as Pos_dil, ISNULL(Pos_Eksileme,0) as Pos_Eksileme, ISNULL(Pos_XZdepartman,0) as Pos_XZdepartman, ISNULL(Pos_KartfIndirimAktif,0) as Pos_KartfIndirimAktif, ISNULL(Pos_ServisPayiDuzelt,0) as Pos_ServisPayiDuzelt, ISNULL(Pos_OdenmezIkramPasif,0) as Pos_OdenmezIkramPasif "
                     + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "' " + Filtre + " ");
 
             if (dt.Rows.Count > 0)
@@ -3041,6 +3041,7 @@ group by Pkod_Ad";
                 User_AP.Checked = Convert.ToBoolean(dt.Rows[0]["User_AP"]);
                 Pos_OdaKontrol.Checked = Convert.ToBoolean(dt.Rows[0]["Pos_OdaKontrol"]);
                 Pos_HesapFisIptal.Checked = Convert.ToBoolean(dt.Rows[0]["Pos_HesapFisIptal"]);
+                Pos_OdenmezIkramPasif.Checked = Convert.ToBoolean(dt.Rows[0]["Pos_OdenmezIkramPasif"]);
 
                 Pos_KartTanimSil.Checked = Convert.ToBoolean(dt.Rows[0]["Pos_KartTanimSil"]);
                 U_BackUser.EditValue = dt.Rows[0]["U_BackUser"];
@@ -3254,6 +3255,7 @@ group by Pkod_Ad";
             Pos_HesapArti.Checked = false;
             Pos_OdaKontrol.Checked = false;
             Pos_HesapFisIptal.Checked = false;
+            Pos_OdenmezIkramPasif.Checked = false;
             Pos_KartTanimSil.Checked = false;
             chk_K_KasaRapor.Checked = false;
             Pos_KartTanimDuzelt.Checked = false;
@@ -3403,6 +3405,7 @@ group by Pkod_Ad";
             User_AP.Checked = true;
             Pos_OdaKontrol.Checked = true;
             Pos_HesapFisIptal.Checked = true;
+            Pos_OdenmezIkramPasif.Checked = true;
             Pos_KartTanimSil.Checked = true;
             chk_K_KasaRapor.Checked = true;
 

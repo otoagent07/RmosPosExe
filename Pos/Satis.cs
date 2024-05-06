@@ -875,6 +875,7 @@ namespace Pos
                 dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43");
             }
 
+            dt = Sabitler.getOdemeKodlari(dt);
 
             if (dt.Rows.Count > 0)
             {
@@ -3220,6 +3221,9 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 Fis_Islem.Tutar_Duzelt(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), tutar);
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Tutar_Duzelt, Log.Log_Islem.Duzelt, Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + "'nın Fiyatı " + eskitutar + " iken " + tutar.ToString() + " ile Değişti", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
+
+
+                Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
 
                 gridyenile();
             }

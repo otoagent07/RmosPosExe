@@ -88,6 +88,7 @@ namespace Pos
                 dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43");
             }
 
+            dt=Sabitler.getOdemeKodlari(dt);
             look_Kapatma.Properties.DataSource = dt;
 
             look_Kapatma.Properties.DisplayMember = "Pkod_Ad";

@@ -198,6 +198,7 @@ namespace Pos
             }
 
 
+            dt = Sabitler.getOdemeKodlari(dt);
 
             if (dt.Rows.Count < 8)
             {
