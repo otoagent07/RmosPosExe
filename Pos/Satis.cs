@@ -2950,6 +2950,7 @@ namespace Pos
             {
                 Fis_Islem.Manuel_Indirim(Convert.ToInt32(bartxt_FisNo.EditValue), ind.indTipi, tutar, doviztutar, oran, Split);
 
+                Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
                 gridyenile();
             }
         }
