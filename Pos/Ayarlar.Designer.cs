@@ -945,6 +945,13 @@
             this.txt_CariHes_Kodu = new DevExpress.XtraEditors.TextEdit();
             this.textEdit69 = new DevExpress.XtraEditors.TextEdit();
             this.tab_Happy_Hour = new DevExpress.XtraTab.XtraTabPage();
+            this.checkEditPazar = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEditCumartesi = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEditCuma = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEditPersembe = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEditCarsamba = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEditSali = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEditPazartesi = new DevExpress.XtraEditors.CheckEdit();
             this.spn_HH_Oran = new DevExpress.XtraEditors.SpinEdit();
             this.btn_HH_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_HH_Sil = new DevExpress.XtraEditors.SimpleButton();
@@ -956,6 +963,13 @@
             this.gridColumn54 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn55 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn56 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn176 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn177 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn178 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn179 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn180 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn181 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn182 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit70 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit71 = new DevExpress.XtraEditors.TextEdit();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -1249,6 +1263,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.btnHapyhourYenile = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit200 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1860,6 +1876,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_CariHes_Kodu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit69.Properties)).BeginInit();
             this.tab_Happy_Hour.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPazar.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditCumartesi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditCuma.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPersembe.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditCarsamba.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditSali.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPazartesi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spn_HH_Oran.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.time_HH_2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.time_HH_1.Properties)).BeginInit();
@@ -2090,6 +2113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit200.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -10162,6 +10186,15 @@
             // 
             // tab_Happy_Hour
             // 
+            this.tab_Happy_Hour.Controls.Add(this.textEdit200);
+            this.tab_Happy_Hour.Controls.Add(this.btnHapyhourYenile);
+            this.tab_Happy_Hour.Controls.Add(this.checkEditPazar);
+            this.tab_Happy_Hour.Controls.Add(this.checkEditCumartesi);
+            this.tab_Happy_Hour.Controls.Add(this.checkEditCuma);
+            this.tab_Happy_Hour.Controls.Add(this.checkEditPersembe);
+            this.tab_Happy_Hour.Controls.Add(this.checkEditCarsamba);
+            this.tab_Happy_Hour.Controls.Add(this.checkEditSali);
+            this.tab_Happy_Hour.Controls.Add(this.checkEditPazartesi);
             this.tab_Happy_Hour.Controls.Add(this.spn_HH_Oran);
             this.tab_Happy_Hour.Controls.Add(this.btn_HH_Cikis);
             this.tab_Happy_Hour.Controls.Add(this.btn_HH_Sil);
@@ -10176,6 +10209,48 @@
             this.tab_Happy_Hour.Controls.Add(this.look_HH_Departman5);
             resources.ApplyResources(this.tab_Happy_Hour, "tab_Happy_Hour");
             this.tab_Happy_Hour.Name = "tab_Happy_Hour";
+            // 
+            // checkEditPazar
+            // 
+            resources.ApplyResources(this.checkEditPazar, "checkEditPazar");
+            this.checkEditPazar.Name = "checkEditPazar";
+            this.checkEditPazar.Properties.Caption = resources.GetString("checkEditPazar.Properties.Caption");
+            // 
+            // checkEditCumartesi
+            // 
+            resources.ApplyResources(this.checkEditCumartesi, "checkEditCumartesi");
+            this.checkEditCumartesi.Name = "checkEditCumartesi";
+            this.checkEditCumartesi.Properties.Caption = resources.GetString("checkEditCumartesi.Properties.Caption");
+            // 
+            // checkEditCuma
+            // 
+            resources.ApplyResources(this.checkEditCuma, "checkEditCuma");
+            this.checkEditCuma.Name = "checkEditCuma";
+            this.checkEditCuma.Properties.Caption = resources.GetString("checkEditCuma.Properties.Caption");
+            // 
+            // checkEditPersembe
+            // 
+            resources.ApplyResources(this.checkEditPersembe, "checkEditPersembe");
+            this.checkEditPersembe.Name = "checkEditPersembe";
+            this.checkEditPersembe.Properties.Caption = resources.GetString("checkEditPersembe.Properties.Caption");
+            // 
+            // checkEditCarsamba
+            // 
+            resources.ApplyResources(this.checkEditCarsamba, "checkEditCarsamba");
+            this.checkEditCarsamba.Name = "checkEditCarsamba";
+            this.checkEditCarsamba.Properties.Caption = resources.GetString("checkEditCarsamba.Properties.Caption");
+            // 
+            // checkEditSali
+            // 
+            resources.ApplyResources(this.checkEditSali, "checkEditSali");
+            this.checkEditSali.Name = "checkEditSali";
+            this.checkEditSali.Properties.Caption = resources.GetString("checkEditSali.Properties.Caption");
+            // 
+            // checkEditPazartesi
+            // 
+            resources.ApplyResources(this.checkEditPazartesi, "checkEditPazartesi");
+            this.checkEditPazartesi.Name = "checkEditPazartesi";
+            this.checkEditPazartesi.Properties.Caption = resources.GetString("checkEditPazartesi.Properties.Caption");
             // 
             // spn_HH_Oran
             // 
@@ -10242,14 +10317,21 @@
             this.gridView10.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn54,
             this.gridColumn55,
-            this.gridColumn56});
+            this.gridColumn56,
+            this.gridColumn176,
+            this.gridColumn177,
+            this.gridColumn178,
+            this.gridColumn179,
+            this.gridColumn180,
+            this.gridColumn181,
+            this.gridColumn182});
             this.gridView10.DetailHeight = 431;
             this.gridView10.GridControl = this.grd_HappyHour;
             this.gridView10.Name = "gridView10";
             this.gridView10.OptionsView.ColumnAutoWidth = false;
             this.gridView10.OptionsView.ShowAutoFilterRow = true;
             this.gridView10.OptionsView.ShowGroupPanel = false;
-            this.gridView10.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView10_RowCellClick);
+            this.gridView10.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView10_FocusedRowChanged);
             // 
             // gridColumn54
             // 
@@ -10271,6 +10353,55 @@
             this.gridColumn56.MinWidth = 23;
             this.gridColumn56.Name = "gridColumn56";
             this.gridColumn56.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn176
+            // 
+            resources.ApplyResources(this.gridColumn176, "gridColumn176");
+            this.gridColumn176.FieldName = "bit1";
+            this.gridColumn176.MinWidth = 25;
+            this.gridColumn176.Name = "gridColumn176";
+            // 
+            // gridColumn177
+            // 
+            resources.ApplyResources(this.gridColumn177, "gridColumn177");
+            this.gridColumn177.FieldName = "bit2";
+            this.gridColumn177.MinWidth = 25;
+            this.gridColumn177.Name = "gridColumn177";
+            // 
+            // gridColumn178
+            // 
+            resources.ApplyResources(this.gridColumn178, "gridColumn178");
+            this.gridColumn178.FieldName = "bit3";
+            this.gridColumn178.MinWidth = 25;
+            this.gridColumn178.Name = "gridColumn178";
+            // 
+            // gridColumn179
+            // 
+            resources.ApplyResources(this.gridColumn179, "gridColumn179");
+            this.gridColumn179.FieldName = "bit4";
+            this.gridColumn179.MinWidth = 25;
+            this.gridColumn179.Name = "gridColumn179";
+            // 
+            // gridColumn180
+            // 
+            resources.ApplyResources(this.gridColumn180, "gridColumn180");
+            this.gridColumn180.FieldName = "bit5";
+            this.gridColumn180.MinWidth = 25;
+            this.gridColumn180.Name = "gridColumn180";
+            // 
+            // gridColumn181
+            // 
+            resources.ApplyResources(this.gridColumn181, "gridColumn181");
+            this.gridColumn181.FieldName = "bit6";
+            this.gridColumn181.MinWidth = 25;
+            this.gridColumn181.Name = "gridColumn181";
+            // 
+            // gridColumn182
+            // 
+            resources.ApplyResources(this.gridColumn182, "gridColumn182");
+            this.gridColumn182.FieldName = "bit7";
+            this.gridColumn182.MinWidth = 25;
+            this.gridColumn182.Name = "gridColumn182";
             // 
             // textEdit70
             // 
@@ -12667,6 +12798,22 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // btnHapyhourYenile
+            // 
+            this.btnHapyhourYenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.btnHapyhourYenile.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnHapyhourYenile, "btnHapyhourYenile");
+            this.btnHapyhourYenile.Name = "btnHapyhourYenile";
+            this.btnHapyhourYenile.Click += new System.EventHandler(this.btnHapyhourYenile_Click);
+            // 
+            // textEdit200
+            // 
+            resources.ApplyResources(this.textEdit200, "textEdit200");
+            this.textEdit200.Name = "textEdit200";
+            this.textEdit200.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit200.Properties.ReadOnly = true;
+            this.textEdit200.TabStop = false;
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13309,6 +13456,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit69.Properties)).EndInit();
             this.tab_Happy_Hour.ResumeLayout(false);
             this.tab_Happy_Hour.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPazar.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditCumartesi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditCuma.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPersembe.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditCarsamba.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditSali.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPazartesi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spn_HH_Oran.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.time_HH_2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.time_HH_1.Properties)).EndInit();
@@ -13548,6 +13702,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit200.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14773,5 +14928,21 @@
         private DevExpress.XtraEditors.CheckEdit servispayFooterda;
         private DevExpress.XtraEditors.CheckEdit Pos_OdenmezIkramPasif;
         private DevExpress.XtraEditors.CheckEdit servispayOdenmezIkramSil;
+        private DevExpress.XtraEditors.CheckEdit checkEditPazar;
+        private DevExpress.XtraEditors.CheckEdit checkEditCumartesi;
+        private DevExpress.XtraEditors.CheckEdit checkEditCuma;
+        private DevExpress.XtraEditors.CheckEdit checkEditPersembe;
+        private DevExpress.XtraEditors.CheckEdit checkEditCarsamba;
+        private DevExpress.XtraEditors.CheckEdit checkEditSali;
+        private DevExpress.XtraEditors.CheckEdit checkEditPazartesi;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn176;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn177;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn178;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn179;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn180;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn181;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn182;
+        private DevExpress.XtraEditors.SimpleButton btnHapyhourYenile;
+        private DevExpress.XtraEditors.TextEdit textEdit200;
     }
 }

@@ -23184,6 +23184,231 @@ H13_3
   <data name="&gt;&gt;tab_Cari_Hesap.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
+  <data name="textEdit200.EditValue" xml:space="preserve">
+    <value>Happy Hour Uygulanmayacak Günleri Seçiniz</value>
+  </data>
+  <data name="textEdit200.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 46</value>
+  </data>
+  <data name="textEdit200.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="textEdit200.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 24</value>
+  </data>
+  <data name="textEdit200.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="&gt;&gt;textEdit200.Name" xml:space="preserve">
+    <value>textEdit200</value>
+  </data>
+  <data name="&gt;&gt;textEdit200.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit200.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;textEdit200.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnHapyhourYenile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 150</value>
+  </data>
+  <data name="btnHapyhourYenile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnHapyhourYenile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 33</value>
+  </data>
+  <data name="btnHapyhourYenile.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="btnHapyhourYenile.Text" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="&gt;&gt;btnHapyhourYenile.Name" xml:space="preserve">
+    <value>btnHapyhourYenile</value>
+  </data>
+  <data name="&gt;&gt;btnHapyhourYenile.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnHapyhourYenile.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;btnHapyhourYenile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkEditPazar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 233</value>
+  </data>
+  <data name="checkEditPazar.Properties.Caption" xml:space="preserve">
+    <value>Pazar</value>
+  </data>
+  <data name="checkEditPazar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="checkEditPazar.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="&gt;&gt;checkEditPazar.Name" xml:space="preserve">
+    <value>checkEditPazar</value>
+  </data>
+  <data name="&gt;&gt;checkEditPazar.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditPazar.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;checkEditPazar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkEditCumartesi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 207</value>
+  </data>
+  <data name="checkEditCumartesi.Properties.Caption" xml:space="preserve">
+    <value>Cumartesi</value>
+  </data>
+  <data name="checkEditCumartesi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="checkEditCumartesi.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;checkEditCumartesi.Name" xml:space="preserve">
+    <value>checkEditCumartesi</value>
+  </data>
+  <data name="&gt;&gt;checkEditCumartesi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditCumartesi.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;checkEditCumartesi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkEditCuma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 181</value>
+  </data>
+  <data name="checkEditCuma.Properties.Caption" xml:space="preserve">
+    <value>Cuma</value>
+  </data>
+  <data name="checkEditCuma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="checkEditCuma.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="&gt;&gt;checkEditCuma.Name" xml:space="preserve">
+    <value>checkEditCuma</value>
+  </data>
+  <data name="&gt;&gt;checkEditCuma.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditCuma.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;checkEditCuma.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkEditPersembe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 155</value>
+  </data>
+  <data name="checkEditPersembe.Properties.Caption" xml:space="preserve">
+    <value>Perşembe</value>
+  </data>
+  <data name="checkEditPersembe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="checkEditPersembe.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="&gt;&gt;checkEditPersembe.Name" xml:space="preserve">
+    <value>checkEditPersembe</value>
+  </data>
+  <data name="&gt;&gt;checkEditPersembe.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditPersembe.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;checkEditPersembe.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="checkEditCarsamba.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 129</value>
+  </data>
+  <data name="checkEditCarsamba.Properties.Caption" xml:space="preserve">
+    <value>Çarsamba</value>
+  </data>
+  <data name="checkEditCarsamba.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="checkEditCarsamba.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;checkEditCarsamba.Name" xml:space="preserve">
+    <value>checkEditCarsamba</value>
+  </data>
+  <data name="&gt;&gt;checkEditCarsamba.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditCarsamba.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;checkEditCarsamba.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="checkEditSali.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 103</value>
+  </data>
+  <data name="checkEditSali.Properties.Caption" xml:space="preserve">
+    <value>Salı</value>
+  </data>
+  <data name="checkEditSali.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="checkEditSali.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="&gt;&gt;checkEditSali.Name" xml:space="preserve">
+    <value>checkEditSali</value>
+  </data>
+  <data name="&gt;&gt;checkEditSali.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditSali.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;checkEditSali.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="checkEditPazartesi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 77</value>
+  </data>
+  <data name="checkEditPazartesi.Properties.Caption" xml:space="preserve">
+    <value>Pazartesi</value>
+  </data>
+  <data name="checkEditPazartesi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="checkEditPazartesi.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;checkEditPazartesi.Name" xml:space="preserve">
+    <value>checkEditPazartesi</value>
+  </data>
+  <data name="&gt;&gt;checkEditPazartesi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkEditPazartesi.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;checkEditPazartesi.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="spn_HH_Oran.EditValue" type="System.Decimal, mscorlib">
     <value>0</value>
   </data>
@@ -23209,13 +23434,13 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;spn_HH_Oran.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>9</value>
   </data>
   <data name="btn_HH_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_HH_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 153</value>
+    <value>218, 150</value>
   </data>
   <data name="btn_HH_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -23239,13 +23464,13 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;btn_HH_Cikis.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>10</value>
   </data>
   <data name="btn_HH_Sil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_HH_Sil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 153</value>
+    <value>119, 150</value>
   </data>
   <data name="btn_HH_Sil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -23269,13 +23494,13 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;btn_HH_Sil.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>11</value>
   </data>
   <data name="btn_HH_Kaydet.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_HH_Kaydet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 153</value>
+    <value>20, 150</value>
   </data>
   <data name="btn_HH_Kaydet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -23299,7 +23524,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;btn_HH_Kaydet.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>12</value>
   </data>
   <data name="time_HH_2.EditValue" type="System.DateTime, mscorlib">
     <value>2014-01-02</value>
@@ -23326,7 +23551,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;time_HH_2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>13</value>
   </data>
   <data name="time_HH_1.EditValue" type="System.DateTime, mscorlib">
     <value>2014-01-02</value>
@@ -23353,7 +23578,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;time_HH_1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>14</value>
   </data>
   <data name="grd_HappyHour.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -23362,7 +23587,7 @@ H13_3
     <value>3, 4, 3, 4</value>
   </data>
   <data name="grd_HappyHour.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 193</value>
+    <value>20, 191</value>
   </data>
   <data name="gridColumn54.Caption" xml:space="preserve">
     <value>Baş Saat</value>
@@ -23400,11 +23625,53 @@ H13_3
   <data name="gridColumn56.Width" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
+  <data name="gridColumn176.Caption" xml:space="preserve">
+    <value>Pazartesi</value>
+  </data>
+  <data name="gridColumn176.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="gridColumn177.Caption" xml:space="preserve">
+    <value>bit2</value>
+  </data>
+  <data name="gridColumn177.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="gridColumn178.Caption" xml:space="preserve">
+    <value>bit3</value>
+  </data>
+  <data name="gridColumn178.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="gridColumn179.Caption" xml:space="preserve">
+    <value>bit4</value>
+  </data>
+  <data name="gridColumn179.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="gridColumn180.Caption" xml:space="preserve">
+    <value>bit5</value>
+  </data>
+  <data name="gridColumn180.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="gridColumn181.Caption" xml:space="preserve">
+    <value>bit6</value>
+  </data>
+  <data name="gridColumn181.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="gridColumn182.Caption" xml:space="preserve">
+    <value>bit7</value>
+  </data>
+  <data name="gridColumn182.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
   <data name="grd_HappyHour.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="grd_HappyHour.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 521</value>
+    <value>390, 453</value>
   </data>
   <data name="grd_HappyHour.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -23419,7 +23686,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;grd_HappyHour.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>15</value>
   </data>
   <data name="textEdit70.EditValue" xml:space="preserve">
     <value>Oran</value>
@@ -23446,7 +23713,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;textEdit70.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>16</value>
   </data>
   <data name="textEdit71.EditValue" xml:space="preserve">
     <value>Baş / Bit Saat</value>
@@ -23473,7 +23740,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;textEdit71.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>17</value>
   </data>
   <data name="textBox10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -23509,7 +23776,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>18</value>
   </data>
   <data name="textEdit72.EditValue" xml:space="preserve">
     <value>Departman</value>
@@ -23536,7 +23803,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;textEdit72.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>19</value>
   </data>
   <data name="look_HH_Departman5.Location" type="System.Drawing.Point, System.Drawing">
     <value>132, 62</value>
@@ -23572,7 +23839,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;look_HH_Departman5.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>20</value>
   </data>
   <data name="tab_Happy_Hour.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -32609,6 +32876,48 @@ KODU "SS" ile başlayanlar Satır Sil Neden Sor</value>
     <value>gridColumn56</value>
   </data>
   <data name="&gt;&gt;gridColumn56.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn176.Name" xml:space="preserve">
+    <value>gridColumn176</value>
+  </data>
+  <data name="&gt;&gt;gridColumn176.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn177.Name" xml:space="preserve">
+    <value>gridColumn177</value>
+  </data>
+  <data name="&gt;&gt;gridColumn177.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn178.Name" xml:space="preserve">
+    <value>gridColumn178</value>
+  </data>
+  <data name="&gt;&gt;gridColumn178.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn179.Name" xml:space="preserve">
+    <value>gridColumn179</value>
+  </data>
+  <data name="&gt;&gt;gridColumn179.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn180.Name" xml:space="preserve">
+    <value>gridColumn180</value>
+  </data>
+  <data name="&gt;&gt;gridColumn180.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn181.Name" xml:space="preserve">
+    <value>gridColumn181</value>
+  </data>
+  <data name="&gt;&gt;gridColumn181.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn182.Name" xml:space="preserve">
+    <value>gridColumn182</value>
+  </data>
+  <data name="&gt;&gt;gridColumn182.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gridView11.Name" xml:space="preserve">

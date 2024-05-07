@@ -2552,15 +2552,34 @@ group by Pkod_Ad";
                 return;
             }
 
+            bool bit1 = checkEditPazartesi.Checked; // bit1 pazartesi demektir 07.05.2024 ramo ekledi
+            bool bit2 = checkEditSali.Checked;
+            bool bit3 = checkEditCarsamba.Checked;
+            bool bit4 = checkEditPersembe.Checked;
+            bool bit5 = checkEditCuma.Checked;
+            bool bit6 = checkEditCumartesi.Checked;
+            bool bit7 = checkEditPazar.Checked;
+
             DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + look_HH_Departman5.EditValue + "' and  Pkod_Sinif = '20' AND CONVERT(TIME(0),Pkod_Hh_Bas) = '" + time_HH_1.EditValue + "' AND CONVERT(TIME(0),Pkod_Hh_Bit) = '" + time_HH_2.EditValue + "' ");
             if (dt.Rows.Count < 1)
             {
-                dbtools.execcmd("INSERT INTO Pos_Kodlar (Pkod_Kod, Pkod_Hh_Bas, Pkod_Hh_Bit,Pkod_Hh_Oran, Pkod_Sinif) VALUES ('" + look_HH_Departman5.EditValue + "','" + time_HH_1.EditValue + "','" + time_HH_2.EditValue + "','" + spn_HH_Oran.EditValue + "', '20')");
+
+                string query = $@"INSERT INTO Pos_Kodlar (Pkod_Kod, Pkod_Hh_Bas, Pkod_Hh_Bit,Pkod_Hh_Oran, Pkod_Sinif,bit1,bit2,bit3,bit4,bit5,bit6,bit7) VALUES ('{look_HH_Departman5.EditValue}','{time_HH_1.EditValue }','{time_HH_2.EditValue}','{spn_HH_Oran.EditValue }', '{20}','{bit1}','{bit2}','{bit3}','{bit4}','{bit5}','{bit6}','{bit7}')";
+                dbtools.execcmd(query);
+
+
+
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_HH, Log.Log_Islem.Kaydet, look_HH_Departman5.EditValue + " Departmanına " + time_HH_1.EditValue + " - " + time_HH_2.EditValue + " Arasında " + spn_HH_Oran.EditValue + " Oranı Kaydedildi", String.Empty, String.Empty);
             }
             else
             {
-                dbtools.execcmd("Update Pos_Kodlar set Pkod_Hh_Oran =  '" + spn_HH_Oran.Value + "' where Pkod_Kod = '" + look_HH_Departman5.EditValue + "' and  Pkod_Sinif = '20' AND CONVERT(TIME(0),Pkod_Hh_Bas) = '" + time_HH_1.EditValue + "' AND CONVERT(TIME(0),Pkod_Hh_Bit) = '" + time_HH_2.EditValue + "' ");
+                string query1 = $@"Update Pos_Kodlar set Pkod_Hh_Oran =  '{spn_HH_Oran.Value}' ,bit1 =  '{bit1}',bit2 =  '{bit2}',bit3 =  '{bit3}',bit4 =  '{bit4}',bit5 =  '{bit5}',bit6 =  '{bit6}',bit7 =  '{bit7}'
+
+                  where Pkod_Kod = '{look_HH_Departman5.EditValue}' and  Pkod_Sinif = '20' AND CONVERT(TIME(0),Pkod_Hh_Bas) = '{time_HH_1.EditValue}' AND CONVERT(TIME(0),Pkod_Hh_Bit) = '{time_HH_2.EditValue}' ";
+
+
+                dbtools.execcmd(query1);
+
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_HH, Log.Log_Islem.Duzelt, look_HH_Departman5.EditValue + " Departmanına " + time_HH_1.EditValue + " - " + time_HH_2.EditValue + " Arasında " + spn_HH_Oran.EditValue + " Oranı Duzeltildi", String.Empty, String.Empty);
             }
 
@@ -2573,10 +2592,21 @@ group by Pkod_Ad";
             gridColumn55.FieldName = "Pkod_Hh_Bit";
             gridColumn56.FieldName = "Pkod_Hh_Oran";
 
-            DataTable dt = dbtools.SelectTable("SELECT Pkod_Hh_Bas, Pkod_Hh_Bit,Pkod_Hh_Oran FROM Pos_Kodlar "
+            DataTable dt = dbtools.SelectTable("SELECT Pkod_Hh_Bas, Pkod_Hh_Bit,Pkod_Hh_Oran," +
+                "isnull(bit1,0) as bit1," +
+                "isnull(bit2,0) as bit2," +
+                "isnull(bit3,0) as bit3," +
+                "isnull(bit4,0) as bit4," +
+                "isnull(bit5,0) as bit5," +
+                "isnull(bit6,0) as bit6," +
+                "isnull(bit7,0) as bit7 " +
+                "FROM Pos_Kodlar "
                 + " where Pkod_Sinif = '20' and Pkod_Kod = '" + Convert.ToString(look_HH_Departman5.EditValue) + "' ");
 
             grd_HappyHour.DataSource = dt;
+
+
+
         }
 
         private void look_Departman5_EditValueChanged(object sender, EventArgs e)
@@ -2601,12 +2631,7 @@ group by Pkod_Ad";
 
         private void gridView10_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-            if (gridView10.RowCount > 0)
-            {
-                time_HH_1.EditValue = gridView10.GetFocusedRowCellValue("Pkod_Hh_Bas");
-                time_HH_2.EditValue = gridView10.GetFocusedRowCellValue("Pkod_Hh_Bit");
-                spn_HH_Oran.Value = Convert.ToInt32(gridView10.GetFocusedRowCellValue("Pkod_Hh_Oran"));
-            }
+          
         }
 
         private void btn_HH_Cikis_Click(object sender, EventArgs e)
@@ -5795,7 +5820,7 @@ Select InstanceNames from @GetInstances ";
             catch (Exception ex)
             {
             }
-            
+
         }
         private void gridView_ayarlar_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
         {
@@ -5973,6 +5998,30 @@ Select InstanceNames from @GetInstances ";
             {
                 Pos_ServisPayiDuzelt.Checked = false;
                 Console.WriteLine("olay oldu");
+            }
+        }
+
+        private void btnHapyhourYenile_Click(object sender, EventArgs e)
+        {
+            HH_Yenile();
+        }
+
+        private void gridView10_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            if (gridView10.RowCount > 0)
+            {
+                time_HH_1.EditValue = gridView10.GetFocusedRowCellValue("Pkod_Hh_Bas");
+                time_HH_2.EditValue = gridView10.GetFocusedRowCellValue("Pkod_Hh_Bit");
+                spn_HH_Oran.Value = Convert.ToInt32(gridView10.GetFocusedRowCellValue("Pkod_Hh_Oran"));
+
+
+                checkEditPazartesi.Checked = Convert.ToBoolean(gridView10.GetFocusedRowCellValue("bit1"));
+                checkEditSali.Checked = Convert.ToBoolean(gridView10.GetFocusedRowCellValue("bit2"));
+                checkEditCarsamba.Checked = Convert.ToBoolean(gridView10.GetFocusedRowCellValue("bit3"));
+                checkEditPersembe.Checked = Convert.ToBoolean(gridView10.GetFocusedRowCellValue("bit4"));
+                checkEditCuma.Checked = Convert.ToBoolean(gridView10.GetFocusedRowCellValue("bit5"));
+                checkEditCumartesi.Checked = Convert.ToBoolean(gridView10.GetFocusedRowCellValue("bit6"));
+                checkEditPazar.Checked = Convert.ToBoolean(gridView10.GetFocusedRowCellValue("bit7"));
             }
         }
 
