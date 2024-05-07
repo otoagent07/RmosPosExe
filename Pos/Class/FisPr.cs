@@ -3500,6 +3500,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     decimal dagilimTutar = Param.Param_Hesap_DovizOzetToplam == true ? Bakiye : B; // ramo yaptı
                                                                                                    //decimal dagilimTutar = Param.Param_Hesap_DovizOzetToplam == true ? B : Bakiye; 
 
+
+                    dagilimTutar = Convert.ToDecimal(hsp.xr_KalanToplamTr.Text); // 07.05.2024 tarihinde ramo ekledi
                     if (Param.Kurlar_Nerden == 0)
                     {
                         dtDovizDagilim = Fis_Islem.Doviz_DagilimFront(dagilimTutar);
