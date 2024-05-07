@@ -19,7 +19,9 @@ namespace Pos.Print
             text = text.Replace(",0000", "");
             text = text.Replace(",000", "");
             text = text.Replace(",00", "");
-
+            text = text.Replace(".0000", "");
+            text = text.Replace(".000", "");
+            text = text.Replace(".00", "");
             ((XRLabel)sender).Text = text;
 
         }

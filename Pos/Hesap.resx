@@ -650,7 +650,7 @@
 </value>
   </data>
   <data name="btn_HesapDokumu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 156</value>
+    <value>667, 156</value>
   </data>
   <data name="btn_HesapDokumu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -732,7 +732,7 @@
 </value>
   </data>
   <data name="btn_Odemeal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 228</value>
+    <value>667, 228</value>
   </data>
   <data name="btn_Odemeal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -792,7 +792,7 @@
 </value>
   </data>
   <data name="btn_Odemesil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 288</value>
+    <value>667, 288</value>
   </data>
   <data name="btn_Odemesil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -859,7 +859,7 @@
 </value>
   </data>
   <data name="btn_Indirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 288</value>
+    <value>820, 288</value>
   </data>
   <data name="btn_Indirim.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -936,7 +936,7 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>841, 613</value>
+    <value>668, 613</value>
   </data>
   <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -969,7 +969,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Adisyon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 409</value>
+    <value>667, 409</value>
   </data>
   <data name="chk_Adisyon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1105,7 +1105,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>820, 353</value>
+    <value>643, 353</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1129,7 +1129,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Hesapdok.Location" type="System.Drawing.Point, System.Drawing">
-    <value>922, 409</value>
+    <value>749, 409</value>
   </data>
   <data name="chk_Hesapdok.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1189,7 +1189,7 @@
     <value>Bottom, Right</value>
   </data>
   <data name="txt_Not.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 841</value>
+    <value>667, 841</value>
   </data>
   <data name="txt_Not.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1267,7 +1267,7 @@
 </value>
   </data>
   <data name="btn_Bindirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 348</value>
+    <value>820, 348</value>
   </data>
   <data name="btn_Bindirim.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1331,7 +1331,7 @@
 </value>
   </data>
   <data name="btn_Yuvarla.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 484</value>
+    <value>667, 484</value>
   </data>
   <data name="btn_Yuvarla.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1457,7 +1457,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>841, 668</value>
+    <value>668, 668</value>
   </data>
   <data name="gridView2.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 7pt, style=Bold</value>
@@ -1532,7 +1532,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_HesabaFatura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1074, 484</value>
+    <value>901, 484</value>
   </data>
   <data name="chk_HesabaFatura.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1565,7 +1565,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_AdisYaz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1074, 409</value>
+    <value>901, 409</value>
   </data>
   <data name="btn_AdisYaz.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1775,7 +1775,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdsPr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 409</value>
+    <value>820, 409</value>
   </data>
   <data name="chk_AdsPr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1826,7 +1826,7 @@
 </value>
   </data>
   <data name="btnIngenicoKapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 96</value>
+    <value>667, 96</value>
   </data>
   <data name="btnIngenicoKapat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1884,7 +1884,7 @@
 </value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1051, 2</value>
+    <value>878, 2</value>
   </data>
   <data name="simpleButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1950,7 +1950,7 @@
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 348</value>
+    <value>667, 348</value>
   </data>
   <data name="simpleButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -1983,7 +1983,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 146</value>
+    <value>501, 143</value>
   </data>
   <data name="simpleButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -2019,7 +2019,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 111</value>
+    <value>501, 108</value>
   </data>
   <data name="simpleButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -2055,7 +2055,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdisyonGR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>922, 484</value>
+    <value>749, 484</value>
   </data>
   <data name="chk_AdisyonGR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -2128,7 +2128,7 @@
 </value>
   </data>
   <data name="btnFisIptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 559</value>
+    <value>667, 559</value>
   </data>
   <data name="btnFisIptal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -2164,7 +2164,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnSpSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 484</value>
+    <value>820, 484</value>
   </data>
   <data name="btnSpSil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -2237,7 +2237,7 @@
 </value>
   </data>
   <data name="btnParcaliOde.Location" type="System.Drawing.Point, System.Drawing">
-    <value>990, 156</value>
+    <value>818, 156</value>
   </data>
   <data name="btnParcaliOde.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -2271,7 +2271,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="E_AdisyonDurum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1051, 556</value>
+    <value>878, 556</value>
   </data>
   <data name="E_AdisyonDurum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -2403,7 +2403,7 @@
 </value>
   </data>
   <data name="btnTipBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 228</value>
+    <value>820, 228</value>
   </data>
   <data name="btnTipBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -2442,7 +2442,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControlKisiyeSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>443, 315</value>
+    <value>321, 315</value>
   </data>
   <data name="gridControlKisiyeSatis.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -2463,7 +2463,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControlFis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>464, 559</value>
+    <value>340, 556</value>
   </data>
   <data name="gridViewFis.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2472,7 +2472,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControlFis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 313</value>
+    <value>321, 313</value>
   </data>
   <data name="gridControlFis.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
@@ -2496,7 +2496,10 @@
     <value>7, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1144, 874</value>
+    <value>971, 874</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>

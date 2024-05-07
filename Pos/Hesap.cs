@@ -104,7 +104,7 @@ namespace Pos
                 {
                     gridControlKisiyeSatis.Visible = false;
                     gridControlFis.Visible = false;
-                    gridControl1.Size = new System.Drawing.Size(701,500);
+                   gridControl1.Size = new System.Drawing.Size(gridControl1.Size.Width, 500);
                 }
 
                 btnSpSil.Visible = User.S_Sp_Sil;
