@@ -6025,6 +6025,24 @@ Select InstanceNames from @GetInstances ";
             }
         }
 
+        private void btnRecAlfebetik_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Tüm reçetelerin sıra numarasını sıfır yapacak emin misiniz ?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                dbtools.execcmdR("Update Cst_Recete set Rec_Sira=0");
+                MessageBox.Show("Başarılı");
+            }
+            else
+            {
+                MessageBox.Show("İptal edildi.");
+
+
+            }
+
+        }
+
         private void gridyenile_SubeAdres()
         {
             gridControl21.DataSource = dbtools.SelectTable(@"

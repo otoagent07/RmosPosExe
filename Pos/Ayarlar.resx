@@ -513,6 +513,57 @@
   <data name="xtraTabControl3.MultiLine" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
     <value>True</value>
   </data>
+  <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="simpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACN0RVh0VGl0
+        bGUAQ29udmVydDtSZXBlYXQ7QXJyb3c7RXhjaGFuZ2V2I2jSAAADLklEQVQ4T3WTeyzVYRjHf665JpVL
+        p1rE0FSHCnXIyZG5JJNWyy2lo8vhhCjqCCmXgxhCTijXSclIiYNIpGz9QWJZQ2NM/qD+6ay2b+/bnJO1
+        9W6fvZfneb7vb8/39zJ03HzmxqS0uDE3mg8yyc2uTBKlyZWG1K43uiD+Ibc1JNXWmu4JSlfruTTGAPgz
+        M4mNLsw32Ru6VCIoE1QJNFkn7qEz3k5KkNbk8yO8xEFs684yWI4rKQTi653ppBx4g80Slu4VRD3gNFyq
+        5ExEVzn+jK7kYHKxHDNLLajquwhhmeOUf8rOAJKvphAgQzmswM4l/J5Dc5H0DNqHM/Fxtg6z39sxNF2N
+        kXkx+qfi0Pn5MjpGk3Ek1ZJWaskFlILS2ewICae7fuAaXo5mIa3uOILTd8MtxgSCYg6knwS4P3AIgiIb
+        2IcYzmw7rB9C6tTlAions9kZec8DUdsrRFDq7nmn85vy7AI3uK8z0dx0OMkC8TV74BRmLLPw1stbY6Ju
+        TIsJih6oBWTseF/+OhChOTbYx9+YSM40CCoELS+ROcw8dV8a2WruI3vaQH2CLo3LBdQPJZjLvERm8Lpm
+        ju0eBlvJmeYy9CYtgjbH96xlZEkfLt59Df+kZhk505ULUNvojdoEPe9zt3ZFFHRIoyRvaFSHQC3T8U+o
+        SktvGEJZ5xhMD8SM0FxFEwmqNrxjBnxxU/bVigFZw/tZCAp6YGRqbe4dnuNzQlQjiZX0LuS9GMXxxEfY
+        6BBWTGoULqgGJFb7C/K7vhRLx9E58R21HxYRW9qP0Cwposgni58M496rSZzKbIUZL3ZwrZU3/XFU5QIa
+        /NudePphAY/HllD47ity++dRPTiLtvFvKO+dQmxZH9wjK7DZUdi13vqoH60h/HWBF5ob4nvl0YywdBDi
+        7jmIe+bgEVkHtl/mr22eSdMm3EttLLvTotVbnCxJ/ipaTAtX9kCdZbV/A/dU/h2f+EZZVO0IeBdqaJQ6
+        Irftj7WNo0uMkV0EWa54TG4RtXSibmhZcfmOnODC3v38ChpdY8oTMZu5cQyLE8MY741kDO2FjOG/AisG
+        /Rr6CumNesvr/w4AzG/fQnRfIXokewAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnRecAlfebetik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, 50</value>
+  </data>
+  <data name="btnRecAlfebetik.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnRecAlfebetik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 38</value>
+  </data>
+  <data name="btnRecAlfebetik.TabIndex" type="System.Int32, mscorlib">
+    <value>307</value>
+  </data>
+  <data name="btnRecAlfebetik.Text" xml:space="preserve">
+    <value>Reçete
+ Alfabetik</value>
+  </data>
+  <data name="&gt;&gt;btnRecAlfebetik.Name" xml:space="preserve">
+    <value>btnRecAlfebetik</value>
+  </data>
+  <data name="&gt;&gt;btnRecAlfebetik.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnRecAlfebetik.Parent" xml:space="preserve">
+    <value>xtraTabPage5</value>
+  </data>
+  <data name="&gt;&gt;btnRecAlfebetik.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnSqlStopStart.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
@@ -561,7 +612,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;btnSqlStopStart.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="chk_Hesap_DovizOzetToplam.Location" type="System.Drawing.Point, System.Drawing">
     <value>549, 628</value>
@@ -588,7 +639,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Hesap_DovizOzetToplam.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="chk_Prm_MasaacanGarson.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 593</value>
@@ -615,7 +666,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_MasaacanGarson.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chk_HesapSor.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 562</value>
@@ -642,7 +693,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_HesapSor.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chk_SatisArama.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 533</value>
@@ -669,7 +720,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_SatisArama.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chk_Hesap_DovizOzet.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 503</value>
@@ -696,7 +747,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Hesap_DovizOzet.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="textEdit21.EditValue" xml:space="preserve">
     <value>Tesis Adı</value>
@@ -723,7 +774,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit21.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="date_Prm_Tarih.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -754,7 +805,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;date_Prm_Tarih.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="rdo_Prm_Tesis_Tipi.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 170</value>
@@ -790,7 +841,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;rdo_Prm_Tesis_Tipi.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="textEdit12.EditValue" xml:space="preserve">
     <value>Tarih Nereden</value>
@@ -817,7 +868,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit12.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="rdo_Prm_Fis_Dovizli.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 299</value>
@@ -853,7 +904,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;rdo_Prm_Fis_Dovizli.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="textEdit2.EditValue" xml:space="preserve">
     <value>Kurlar Nereden</value>
@@ -880,7 +931,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="rdo_Prm_Balance.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 273</value>
@@ -916,7 +967,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;rdo_Prm_Balance.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="textEdit3.EditValue" xml:space="preserve">
     <value>Limit Tipi</value>
@@ -943,7 +994,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="rdo_Prm_Limit_Tipi.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 247</value>
@@ -979,7 +1030,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;rdo_Prm_Limit_Tipi.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="textEdit4.EditValue" xml:space="preserve">
     <value>Fişte Balance Cıksın</value>
@@ -1006,7 +1057,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="rdo_Prm_Kur_Nereden.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 222</value>
@@ -1042,7 +1093,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;rdo_Prm_Kur_Nereden.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="chk_CallerID.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 473</value>
@@ -1069,7 +1120,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_CallerID.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="textEdit5.EditValue" xml:space="preserve">
     <value>Fis Dovizli</value>
@@ -1096,7 +1147,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit5.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="chk_CariSor.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 447</value>
@@ -1123,7 +1174,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_CariSor.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="rdo_Prm_Tarih_Nereden.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 325</value>
@@ -1159,7 +1210,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;rdo_Prm_Tarih_Nereden.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="textEdit6.EditValue" xml:space="preserve">
     <value>Tesis Tipi</value>
@@ -1186,7 +1237,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="textEdit7.EditValue" xml:space="preserve">
     <value>Çalışma Tarihi</value>
@@ -1213,7 +1264,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit7.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="textEdit14.EditValue" xml:space="preserve">
     <value>Calışılan Şekli</value>
@@ -1240,7 +1291,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit14.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="rdo_Prm_Calisma.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 196</value>
@@ -1276,7 +1327,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;rdo_Prm_Calisma.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="txt_Prm_Tesis_Adi.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 4</value>
@@ -1300,7 +1351,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Prm_Tesis_Adi.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="textEdit40.EditValue" xml:space="preserve">
     <value>Masa Refresh</value>
@@ -1327,7 +1378,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit40.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="spin_Prm_Refresh.EditValue" type="System.Decimal, mscorlib">
     <value>600</value>
@@ -1360,7 +1411,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;spin_Prm_Refresh.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="chk_Prm_TekDep.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 564</value>
@@ -1422,7 +1473,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_TekDep.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="txt_Prm_FrontPath.Location" type="System.Drawing.Point, System.Drawing">
     <value>441, 593</value>
@@ -1481,7 +1532,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Prm_FrontPath.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="txt_Prm_TekDep.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 562</value>
@@ -1508,7 +1559,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Prm_TekDep.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="chk_Prm_Yansit.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 533</value>
@@ -1535,7 +1586,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Yansit.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="chk_Prm_PaketForm.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 340</value>
@@ -1562,7 +1613,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_PaketForm.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="txt_Prm_Discount.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 533</value>
@@ -1589,7 +1640,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Prm_Discount.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>34</value>
   </data>
   <data name="textEdit123.EditValue" xml:space="preserve">
     <value>RmosFront Exe Yolu</value>
@@ -1616,7 +1667,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit123.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>35</value>
   </data>
   <data name="txt_Prm_FisAciklama.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 283</value>
@@ -1640,7 +1691,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Prm_FisAciklama.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>36</value>
   </data>
   <data name="textEdit74.EditValue" xml:space="preserve">
     <value>Max Miktar</value>
@@ -1667,7 +1718,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit74.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>37</value>
   </data>
   <data name="spn_Prm_Miktar.EditValue" type="System.Decimal, mscorlib">
     <value>0</value>
@@ -1734,7 +1785,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;spn_Prm_Miktar.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>38</value>
   </data>
   <data name="chk_Prm_HH.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 625</value>
@@ -1761,7 +1812,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_HH.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>39</value>
   </data>
   <data name="chk_Prm_Hesapkilit.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 420</value>
@@ -1788,7 +1839,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Hesapkilit.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>40</value>
   </data>
   <data name="textEdit75.EditValue" xml:space="preserve">
     <value>Full Comp Kodu</value>
@@ -1815,7 +1866,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit75.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>41</value>
   </data>
   <data name="txt_Prm_Fullcomp.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 428</value>
@@ -1880,7 +1931,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Prm_Fullcomp.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>42</value>
   </data>
   <data name="chk_Prm_Siparis_Uyari.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 395</value>
@@ -1907,7 +1958,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Siparis_Uyari.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>43</value>
   </data>
   <data name="textEdit94.EditValue" xml:space="preserve">
     <value>Default Rapor Design</value>
@@ -1934,7 +1985,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit94.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>44</value>
   </data>
   <data name="chk_Prm_AdisDoviz.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 368</value>
@@ -1961,7 +2012,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_AdisDoviz.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>45</value>
   </data>
   <data name="look_Param_Rapor_Design.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 454</value>
@@ -2038,7 +2089,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;look_Param_Rapor_Design.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>46</value>
   </data>
   <data name="chk_Prm_PaketKisi.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 313</value>
@@ -2065,7 +2116,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_PaketKisi.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>47</value>
   </data>
   <data name="textEdit120.EditValue" xml:space="preserve">
     <value>Adres 5</value>
@@ -2092,7 +2143,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit120.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>48</value>
   </data>
   <data name="chk_Prm_Paketcisor.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 286</value>
@@ -2119,7 +2170,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Paketcisor.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>49</value>
   </data>
   <data name="chk_Prm_Tum_Paket.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 624</value>
@@ -2146,7 +2197,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Tum_Paket.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>50</value>
   </data>
   <data name="textEdit76.EditValue" xml:space="preserve">
     <value>Fis Pr Açıklama</value>
@@ -2173,7 +2224,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit76.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>51</value>
   </data>
   <data name="look_Prm_Bindirim.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 480</value>
@@ -2236,7 +2287,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;look_Prm_Bindirim.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>52</value>
   </data>
   <data name="txt_Adres5.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 138</value>
@@ -2260,7 +2311,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Adres5.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>53</value>
   </data>
   <data name="textEdit11.EditValue" xml:space="preserve">
     <value>Servis Payı</value>
@@ -2287,7 +2338,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit11.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>54</value>
   </data>
   <data name="chk_Prm_PrinterTanim.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 257</value>
@@ -2348,7 +2399,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_PrinterTanim.ZOrder" xml:space="preserve">
-    <value>54</value>
+    <value>55</value>
   </data>
   <data name="chk_Prm_Extre_Cikmasin.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 122</value>
@@ -2375,7 +2426,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Extre_Cikmasin.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>56</value>
   </data>
   <data name="chk_Prm_Masatr_Uyari.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 230</value>
@@ -2437,7 +2488,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Masatr_Uyari.ZOrder" xml:space="preserve">
-    <value>56</value>
+    <value>57</value>
   </data>
   <data name="textEdit118.EditValue" xml:space="preserve">
     <value>Adres 4</value>
@@ -2464,7 +2515,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit118.ZOrder" xml:space="preserve">
-    <value>57</value>
+    <value>58</value>
   </data>
   <data name="chk_Prm_DepFiyat.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 203</value>
@@ -2526,7 +2577,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_DepFiyat.ZOrder" xml:space="preserve">
-    <value>58</value>
+    <value>59</value>
   </data>
   <data name="chk_Prm_MasaGarson.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 96</value>
@@ -2553,7 +2604,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_MasaGarson.ZOrder" xml:space="preserve">
-    <value>59</value>
+    <value>60</value>
   </data>
   <data name="chk_Prm_PaketYD_Aktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 174</value>
@@ -2580,7 +2631,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_PaketYD_Aktif.ZOrder" xml:space="preserve">
-    <value>60</value>
+    <value>61</value>
   </data>
   <data name="look_Prm_Yuvarla.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 506</value>
@@ -2643,7 +2694,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;look_Prm_Yuvarla.ZOrder" xml:space="preserve">
-    <value>61</value>
+    <value>62</value>
   </data>
   <data name="chk_Prm_SatisYD_Aktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 148</value>
@@ -2670,7 +2721,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_SatisYD_Aktif.ZOrder" xml:space="preserve">
-    <value>62</value>
+    <value>63</value>
   </data>
   <data name="chk_Prm_GunsonuAktar.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 65</value>
@@ -2697,7 +2748,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_GunsonuAktar.ZOrder" xml:space="preserve">
-    <value>63</value>
+    <value>64</value>
   </data>
   <data name="txt_Adres4.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 112</value>
@@ -2721,7 +2772,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Adres4.ZOrder" xml:space="preserve">
-    <value>64</value>
+    <value>65</value>
   </data>
   <data name="textEdit98.EditValue" xml:space="preserve">
     <value>Yuvarlama Recete</value>
@@ -2748,7 +2799,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit98.ZOrder" xml:space="preserve">
-    <value>65</value>
+    <value>66</value>
   </data>
   <data name="textEdit116.EditValue" xml:space="preserve">
     <value>Adres 3</value>
@@ -2775,7 +2826,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit116.ZOrder" xml:space="preserve">
-    <value>66</value>
+    <value>67</value>
   </data>
   <data name="spn_Prm_Ysayi.EditValue" type="System.Decimal, mscorlib">
     <value>0</value>
@@ -2808,7 +2859,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;spn_Prm_Ysayi.ZOrder" xml:space="preserve">
-    <value>67</value>
+    <value>68</value>
   </data>
   <data name="txt_Adres3.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 86</value>
@@ -2832,7 +2883,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Adres3.ZOrder" xml:space="preserve">
-    <value>68</value>
+    <value>69</value>
   </data>
   <data name="chk_Prm_Konum.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 594</value>
@@ -2897,7 +2948,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Konum.ZOrder" xml:space="preserve">
-    <value>69</value>
+    <value>70</value>
   </data>
   <data name="textEdit114.EditValue" xml:space="preserve">
     <value>Adres 2</value>
@@ -2924,7 +2975,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit114.ZOrder" xml:space="preserve">
-    <value>70</value>
+    <value>71</value>
   </data>
   <data name="txt_Prm_Konum.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 593</value>
@@ -2951,7 +3002,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Prm_Konum.ZOrder" xml:space="preserve">
-    <value>71</value>
+    <value>72</value>
   </data>
   <data name="txt_Adres2.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 60</value>
@@ -2975,7 +3026,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Adres2.ZOrder" xml:space="preserve">
-    <value>72</value>
+    <value>73</value>
   </data>
   <data name="textEdit111.EditValue" xml:space="preserve">
     <value>Adres 1</value>
@@ -3002,7 +3053,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit111.ZOrder" xml:space="preserve">
-    <value>73</value>
+    <value>74</value>
   </data>
   <data name="txt_Adres1.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 34</value>
@@ -3026,7 +3077,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Adres1.ZOrder" xml:space="preserve">
-    <value>74</value>
+    <value>75</value>
   </data>
   <data name="textEdit106.EditValue" xml:space="preserve">
     <value>Kart Yoksay Karakteri</value>
@@ -3053,7 +3104,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;textEdit106.ZOrder" xml:space="preserve">
-    <value>75</value>
+    <value>76</value>
   </data>
   <data name="chk_Prm_Anagrup_Cikmasin.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 482</value>
@@ -3080,7 +3131,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Anagrup_Cikmasin.ZOrder" xml:space="preserve">
-    <value>76</value>
+    <value>77</value>
   </data>
   <data name="txt_Prm_KartYoksay.Location" type="System.Drawing.Point, System.Drawing">
     <value>441, 562</value>
@@ -3139,7 +3190,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;txt_Prm_KartYoksay.ZOrder" xml:space="preserve">
-    <value>77</value>
+    <value>78</value>
   </data>
   <data name="chk_Prm_PdaKart.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 514</value>
@@ -3166,7 +3217,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_PdaKart.ZOrder" xml:space="preserve">
-    <value>78</value>
+    <value>79</value>
   </data>
   <data name="chk_Prm_Onburo.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 4</value>
@@ -3193,7 +3244,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Onburo.ZOrder" xml:space="preserve">
-    <value>79</value>
+    <value>80</value>
   </data>
   <data name="chk_Prm_MasaGeri.Location" type="System.Drawing.Point, System.Drawing">
     <value>570, 34</value>
@@ -3220,7 +3271,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_MasaGeri.ZOrder" xml:space="preserve">
-    <value>80</value>
+    <value>81</value>
   </data>
   <data name="chk_Prm_Muh.Location" type="System.Drawing.Point, System.Drawing">
     <value>538, 4</value>
@@ -3247,7 +3298,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Muh.ZOrder" xml:space="preserve">
-    <value>81</value>
+    <value>82</value>
   </data>
   <data name="spn_Prm_GRhane.EditValue" type="System.Decimal, mscorlib">
     <value>0</value>
@@ -3553,7 +3604,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;groupControl7.ZOrder" xml:space="preserve">
-    <value>82</value>
+    <value>83</value>
   </data>
   <data name="chk_Prm_UrunGrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 452</value>
@@ -3580,7 +3631,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_UrunGrup.ZOrder" xml:space="preserve">
-    <value>83</value>
+    <value>84</value>
   </data>
   <data name="chk_Prm_Cost.Location" type="System.Drawing.Point, System.Drawing">
     <value>429, 4</value>
@@ -3607,7 +3658,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Cost.ZOrder" xml:space="preserve">
-    <value>84</value>
+    <value>85</value>
   </data>
   <data name="textEdit16.EditValue" xml:space="preserve">
     <value>Doviz Kodu</value>
@@ -3790,7 +3841,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;groupControl3.ZOrder" xml:space="preserve">
-    <value>85</value>
+    <value>86</value>
   </data>
   <data name="chk_Prm_Kul_Kart.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 358</value>
@@ -3817,7 +3868,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_Kul_Kart.ZOrder" xml:space="preserve">
-    <value>86</value>
+    <value>87</value>
   </data>
   <data name="chk_Prm_YarimTam.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 421</value>
@@ -3844,7 +3895,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_YarimTam.ZOrder" xml:space="preserve">
-    <value>87</value>
+    <value>88</value>
   </data>
   <data name="chk_Prm_MiktarDuzelt.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 389</value>
@@ -3871,7 +3922,7 @@
     <value>xtraTabPage5</value>
   </data>
   <data name="&gt;&gt;chk_Prm_MiktarDuzelt.ZOrder" xml:space="preserve">
-    <value>88</value>
+    <value>89</value>
   </data>
   <data name="xtraTabPage5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -23211,7 +23262,7 @@ H13_3
   <data name="&gt;&gt;textEdit200.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnHapyhourYenile.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnHapyhourYenile.Location" type="System.Drawing.Point, System.Drawing">
