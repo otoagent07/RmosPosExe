@@ -2631,7 +2631,7 @@ group by Pkod_Ad";
 
         private void gridView10_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-          
+
         }
 
         private void btn_HH_Cikis_Click(object sender, EventArgs e)
