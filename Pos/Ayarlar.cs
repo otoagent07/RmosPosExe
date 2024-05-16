@@ -6024,7 +6024,7 @@ Select InstanceNames from @GetInstances ";
                 checkEditPazar.Checked = Convert.ToBoolean(gridView10.GetFocusedRowCellValue("bit7"));
             }
         }
-
+        //aa
         private void btnRecAlfebetik_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Tüm reçetelerin sıra numarasını sıfır yapacak emin misiniz ?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
