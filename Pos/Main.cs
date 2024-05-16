@@ -420,7 +420,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.114";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.115";
 
 
 
@@ -510,6 +510,10 @@ namespace Pos
                 {
 
                 }
+
+
+                //Sube2Merkez a = new Sube2Merkez();
+                //a.GonderSatis();
 
             }
             catch (Exception ex)
@@ -666,7 +670,7 @@ namespace Pos
                 }
 
 
-                this.Text += " [" + dbtools.database + "] v0.4.0";
+                this.Text += " [" + dbtools.database + "] v0.4.1";
 
 
 
@@ -735,7 +739,7 @@ namespace Pos
                 }
                 else
                 {
-                    /* burayı aç
+                    // burayı aç
                     string programDizini = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
                     string pro = programDizini + "\\RmosIngenicoGMP.exe"; // \\IngenicoOKC\\
 
@@ -745,7 +749,7 @@ namespace Pos
                     {
                         Process.Start(@"" + pro);
                     } 
-                    */ //buradan aç
+                    //buradan aç
 
                     //IngenicoOKC
                     //client = new SimpleTcpClient

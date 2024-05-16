@@ -87,6 +87,7 @@
             this.btn_Prm_Kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnRecAlfebetik = new DevExpress.XtraEditors.SimpleButton();
             this.btnSqlStopStart = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Hesap_DovizOzetToplam = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Prm_MasaacanGarson = new DevExpress.XtraEditors.CheckEdit();
@@ -1265,7 +1266,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.btnRecAlfebetik = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2695,6 +2695,15 @@
             this.xtraTabPage5.Controls.Add(this.chk_Prm_MiktarDuzelt);
             resources.ApplyResources(this.xtraTabPage5, "xtraTabPage5");
             this.xtraTabPage5.Name = "xtraTabPage5";
+            // 
+            // btnRecAlfebetik
+            // 
+            this.btnRecAlfebetik.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnRecAlfebetik.Appearance.Font")));
+            this.btnRecAlfebetik.Appearance.Options.UseFont = true;
+            this.btnRecAlfebetik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRecAlfebetik.ImageOptions.Image")));
+            resources.ApplyResources(this.btnRecAlfebetik, "btnRecAlfebetik");
+            this.btnRecAlfebetik.Name = "btnRecAlfebetik";
+            this.btnRecAlfebetik.Click += new System.EventHandler(this.btnRecAlfebetik_Click);
             // 
             // btnSqlStopStart
             // 
@@ -12815,15 +12824,6 @@
             this.textBox26.ForeColor = System.Drawing.Color.Navy;
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
-            // 
-            // btnRecAlfebetik
-            // 
-            this.btnRecAlfebetik.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.btnRecAlfebetik.Appearance.Options.UseFont = true;
-            this.btnRecAlfebetik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            resources.ApplyResources(this.btnRecAlfebetik, "btnRecAlfebetik");
-            this.btnRecAlfebetik.Name = "btnRecAlfebetik";
-            this.btnRecAlfebetik.Click += new System.EventHandler(this.btnRecAlfebetik_Click);
             // 
             // Ayarlar
             // 
