@@ -15,7 +15,7 @@ namespace Pos.Class
         /*
          Pkod_FisTipi P ise ikram O ise ödenmez
          */
-        public static void odenmezVeyaIkramiseServisPayiSil(string fisno,string odemeKod)
+        public static bool odenmezVeyaIkramiseServisPayiSil(string fisno,string odemeKod)
         {
             try
             {
@@ -33,6 +33,8 @@ and Rsat_Recete =
 (select top 1 Rsat_Departman from Cst_Recete_Satis where Rsat_Fisno = {fisno} and Rsat_Ba = 'B' order by Rsat_Id))";
 
                         dbtools.execcmdR(query);
+
+                        return true;
                     }
 
                 }
@@ -42,6 +44,8 @@ and Rsat_Recete =
                 MessageBox.Show("Sabitler.odenmezVeyaIkramiseServisPayiSil()-> " + ex.Message);
 
             }
+
+            return false;
         }
         public static DataTable getOdemeKodlari(DataTable dt)
         {

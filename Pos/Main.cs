@@ -420,7 +420,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.3.112";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.11";
 
 
 
@@ -511,6 +511,10 @@ namespace Pos
 
                 }
 
+
+                //Sube2Merkez a = new Sube2Merkez();
+                //a.GonderSatis();
+
             }
             catch (Exception ex)
             {
@@ -522,193 +526,193 @@ namespace Pos
         //SimpleTcpClient client;
 
         // aşağısı 06.05.2023 tarihinde yedeği alında
-        private void Main_LoadYeni(object sender, EventArgs e)
-        {
-            try
-            {
-                this.BringToFront();
-                isLogin = false;
-                if (direkGecis == false)
-                {
-                    login = new frmLogin();
-                    login.ShowDialog();
+        //private void Main_LoadYeni(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        this.BringToFront();
+        //        isLogin = false;
+        //        if (direkGecis == false)
+        //        {
+        //            login = new frmLogin();
+        //            login.ShowDialog();
 
-                    if (login.Cikis)
-                    {
-                        Application.Exit();
-                        return;
-                    }
-                }
+        //            if (login.Cikis)
+        //            {
+        //                Application.Exit();
+        //                return;
+        //            }
+        //        }
 
-                isLogin = true;
-                xMac = Mac();
-                xSubeMac = SubeMac();
-                Giris_Yap();
-                if (Departman.Kodlar_Getir_AP && Param.Param_GetirTest)
-                {
-                    GetirStatik.baseUri = GetirStatik.baseUriTest;
-                    GetirStatik.yenile();
-                }
+        //        isLogin = true;
+        //        xMac = Mac();
+        //        xSubeMac = SubeMac();
+        //        Giris_Yap();
+        //        if (Departman.Kodlar_Getir_AP && Param.Param_GetirTest)
+        //        {
+        //            GetirStatik.baseUri = GetirStatik.baseUriTest;
+        //            GetirStatik.yenile();
+        //        }
 
-                if (Param.Tesis_Tipi == 1)
-                {
-                    string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
-                    DataTable dtKur = dbtools.SelectTable("Select MKodlar_Ad as Kodlar_Ad," + Departman.MKodlar_P_DovizTuru + " from Kurlar with(nolock) left join Muh_Kodlar with(nolock) on MKodlar_Kod = Kurlar_Kodu and MKodlar_Sinif = '02'  where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Tarih = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "' ");
-                    if (dtKur.Rows.Count < 1)
-                    {
-                        MessageBox.Show(Param.Tarih.ToString("dd.MM.yyyy") + " Tarihli Kurlar Yoktur...Kur Girişinden Günlük Kurları Tanımlayabilirisiniz.", res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //        if (Param.Tesis_Tipi == 1)
+        //        {
+        //            string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
+        //            DataTable dtKur = dbtools.SelectTable("Select MKodlar_Ad as Kodlar_Ad," + Departman.MKodlar_P_DovizTuru + " from Kurlar with(nolock) left join Muh_Kodlar with(nolock) on MKodlar_Kod = Kurlar_Kodu and MKodlar_Sinif = '02'  where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Tarih = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "' ");
+        //            if (dtKur.Rows.Count < 1)
+        //            {
+        //                MessageBox.Show(Param.Tarih.ToString("dd.MM.yyyy") + " Tarihli Kurlar Yoktur...Kur Girişinden Günlük Kurları Tanımlayabilirisiniz.", res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        kurAc();
-                    }
-                }
-                if (Param.Param_KurTransfer == true)
-                {
-                    KurTransfer();
-                }
-                Bilgi_Paneli();
-                if (isLogin == true && Param.Param_CallerID == true)
-                {
-                    try
-                    {
-                        CallerId c = new CallerId();
-                        c.Show();
-                        c.Visible = false;
-                        c.notifyIcon1.Visible = true;
-                        c.ShowInTaskbar = true;
-                        c.notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                        c.notifyIcon1.BalloonTipTitle = "Caller Id";
-                        c.notifyIcon1.BalloonTipText = "Caller Id Çalışıyor...!!!";
-                        c.notifyIcon1.ShowBalloonTip(50);
+        //                kurAc();
+        //            }
+        //        }
+        //        if (Param.Param_KurTransfer == true)
+        //        {
+        //            KurTransfer();
+        //        }
+        //        Bilgi_Paneli();
+        //        if (isLogin == true && Param.Param_CallerID == true)
+        //        {
+        //            try
+        //            {
+        //                CallerId c = new CallerId();
+        //                c.Show();
+        //                c.Visible = false;
+        //                c.notifyIcon1.Visible = true;
+        //                c.ShowInTaskbar = true;
+        //                c.notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+        //                c.notifyIcon1.BalloonTipTitle = "Caller Id";
+        //                c.notifyIcon1.BalloonTipText = "Caller Id Çalışıyor...!!!";
+        //                c.notifyIcon1.ShowBalloonTip(50);
 
-                    }
-                    catch (Exception ex)
-                    {
-                        RHMesaj.MyMessageInformation(ex.Message);
-                    }
-                }
-                bool Update = Param.Param_AutoUpdate;
-                if (Update == true)
-                {
-                    DialogResult a = MessageBox.Show("Program İçerisinde Yeni Güncelleme Mevcuttur.", "Güncelleme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (a == DialogResult.Yes)
-                    {
-                        Updater u = new Updater();
-                        u.ShowDialog();
-                    }
-                }
-                barButtonItem4.Enabled = User.Pos_SubeTrf;
-                Main_Tarih.Text = Param.Tarih.ToString("dd.MM.yyyy") + "\n" + Param.Tarih.ToString("dddd");
-                if (Param.Param_FullPos == true)
-                {
-                    this.FormBorderStyle = FormBorderStyle.None;
-                }
-                IngenicoKullan();
-                if (Param.Param_AnaEkranCiro)
-                {
-                    groupControl4.Visible = true;
-                    Anlik();
-                }
+        //            }
+        //            catch (Exception ex)
+        //            {
+        //                RHMesaj.MyMessageInformation(ex.Message);
+        //            }
+        //        }
+        //        bool Update = Param.Param_AutoUpdate;
+        //        if (Update == true)
+        //        {
+        //            DialogResult a = MessageBox.Show("Program İçerisinde Yeni Güncelleme Mevcuttur.", "Güncelleme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        //            if (a == DialogResult.Yes)
+        //            {
+        //                Updater u = new Updater();
+        //                u.ShowDialog();
+        //            }
+        //        }
+        //        barButtonItem4.Enabled = User.Pos_SubeTrf;
+        //        Main_Tarih.Text = Param.Tarih.ToString("dd.MM.yyyy") + "\n" + Param.Tarih.ToString("dddd");
+        //        if (Param.Param_FullPos == true)
+        //        {
+        //            this.FormBorderStyle = FormBorderStyle.None;
+        //        }
+        //        IngenicoKullan();
+        //        if (Param.Param_AnaEkranCiro)
+        //        {
+        //            groupControl4.Visible = true;
+        //            Anlik();
+        //        }
 
-                if (Param.Param_AcilisCekSil)
-                {
-                    CekSil();
-                }
+        //        if (Param.Param_AcilisCekSil)
+        //        {
+        //            CekSil();
+        //        }
 
-                string Maxc = Mac();
-
-
-                if (Departman.Kodlar_YS_Aktif && Maxc == Departman.Kodlar_YSMac)
-                {
-                    YS_SiparisGeldi a = new YS_SiparisGeldi();
-                    a.timer1.Interval = (YS_RestoInfo.YS_ServiceTime * 1000);
-                    a.Show();
-                    a.Visible = false;
-                    a.notifyIcon1.Visible = true;
-                    a.ShowInTaskbar = true;
-                    a.notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                    a.notifyIcon1.BalloonTipTitle = "YemekSepeti Servis";
-                    a.notifyIcon1.BalloonTipText = "YemekSepeti Servisi Çalışıyor...";
-                    a.notifyIcon1.ShowBalloonTip(50);
-
-                }
-
-                if (Param.Param_AcilistaMenu)
-                {
-                    Sube2Merkez a = new Sube2Merkez();
-                    a.ReceteGetir();
-                }
-
-                if (Param.Param_SatisTabloAktif && Param.Param_SatisTabloGonderi > 0)
-                {
-                    timer_Sube2Merkez.Enabled = true;
-                }
-
-                if (User.ExtraFolio == true)
-                {
-                    if (Param.Param_KartfGBCheckOut && Param.Tesis_Tipi == 0)
-                    {
-                        Fronttools.execcmd("Update Kartf Set CardF_R_I_H = 'H' Where CardF_CikisTrh <= '" + Param.Tarih.AddDays(-1) + "'");
-                    }
-                }
-
-                if (User.P_Ad.Equals("ALİ") && User.P_Soyad.Equals("VELİ"))
-                {
-
-                }
-                else
-                {
-                    if (System.Windows.Forms.Screen.AllScreens.Length > 1)
-                    {
-                        Main.a.Location = Screen.AllScreens[1].Bounds.Location;
-                        Main.a.Show();
-
-                    }
-                }
+        //        string Maxc = Mac();
 
 
-                this.Text += " [" + dbtools.database + "] v0.4.0";
+        //        if (Departman.Kodlar_YS_Aktif && Maxc == Departman.Kodlar_YSMac)
+        //        {
+        //            YS_SiparisGeldi a = new YS_SiparisGeldi();
+        //            a.timer1.Interval = (YS_RestoInfo.YS_ServiceTime * 1000);
+        //            a.Show();
+        //            a.Visible = false;
+        //            a.notifyIcon1.Visible = true;
+        //            a.ShowInTaskbar = true;
+        //            a.notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+        //            a.notifyIcon1.BalloonTipTitle = "YemekSepeti Servis";
+        //            a.notifyIcon1.BalloonTipText = "YemekSepeti Servisi Çalışıyor...";
+        //            a.notifyIcon1.ShowBalloonTip(50);
+
+        //        }
+
+        //        if (Param.Param_AcilistaMenu)
+        //        {
+        //            Sube2Merkez a = new Sube2Merkez();
+        //            a.ReceteGetir();
+        //        }
+
+        //        if (Param.Param_SatisTabloAktif && Param.Param_SatisTabloGonderi > 0)
+        //        {
+        //            timer_Sube2Merkez.Enabled = true;
+        //        }
+
+        //        if (User.ExtraFolio == true)
+        //        {
+        //            if (Param.Param_KartfGBCheckOut && Param.Tesis_Tipi == 0)
+        //            {
+        //                Fronttools.execcmd("Update Kartf Set CardF_R_I_H = 'H' Where CardF_CikisTrh <= '" + Param.Tarih.AddDays(-1) + "'");
+        //            }
+        //        }
+
+        //        if (User.P_Ad.Equals("ALİ") && User.P_Soyad.Equals("VELİ"))
+        //        {
+
+        //        }
+        //        else
+        //        {
+        //            if (System.Windows.Forms.Screen.AllScreens.Length > 1)
+        //            {
+        //                Main.a.Location = Screen.AllScreens[1].Bounds.Location;
+        //                Main.a.Show();
+
+        //            }
+        //        }
+
+
+        //        this.Text += " [" + dbtools.database + "] v0.4.1";
 
 
 
-                if (Departman.Kodlar_Getir_AP && Maxc == Departman.Kodlar_YSMac)
-                {
-                    if (RestoGetir())
-                    {
-                        RHMesaj.toastMesaj("GetirYemek Servisi Çalışıyor...");
-                        getirYenile();
+        //        if (Departman.Kodlar_Getir_AP && Maxc == Departman.Kodlar_YSMac)
+        //        {
+        //            if (RestoGetir())
+        //            {
+        //                RHMesaj.toastMesaj("GetirYemek Servisi Çalışıyor...");
+        //                getirYenile();
 
-                    }
-                    else
-                    {
-                        RHMesaj.alertMesaj("Getir Yemek appSecretKey veya restaurantSecretKey hatalıdır !");
-                    }
-                }
+        //            }
+        //            else
+        //            {
+        //                RHMesaj.alertMesaj("Getir Yemek appSecretKey veya restaurantSecretKey hatalıdır !");
+        //            }
+        //        }
 
-                string trendyolDurum = dbtools.DegerGetir("select top 1 trendyolDurum from entegreAyarlar where recDep='" + Departman.Dep_Kodu + "'");
+        //        string trendyolDurum = dbtools.DegerGetir("select top 1 trendyolDurum from entegreAyarlar where recDep='" + Departman.Dep_Kodu + "'");
 
-                if (trendyolDurum.ToLower().Equals("true") || trendyolDurum.Equals("1"))
-                {
-                    entegreAyarlarYenile();
-                    trendyolYenile();
+        //        if (trendyolDurum.ToLower().Equals("true") || trendyolDurum.Equals("1"))
+        //        {
+        //            entegreAyarlarYenile();
+        //            trendyolYenile();
 
-                    RHMesaj.toastMesaj("TRENDYOL Servisi Çalışıyor...");
-                }
-                else
-                {
-                    timerTrendyol.Enabled = false;
-                    barButtonItem6.Enabled = false;
-                }
+        //            RHMesaj.toastMesaj("TRENDYOL Servisi Çalışıyor...");
+        //        }
+        //        else
+        //        {
+        //            timerTrendyol.Enabled = false;
+        //            barButtonItem6.Enabled = false;
+        //        }
 
 
-                //dbtools.execcmd(StatikSinif.getAlterQuery());
+        //        //dbtools.execcmd(StatikSinif.getAlterQuery());
 
-            }
-            catch (Exception ex)
-            {
-                RHMesaj.MyMessageError(MyClass, "Main_Load", "", ex);
-            }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        RHMesaj.MyMessageError(MyClass, "Main_Load", "", ex);
+        //    }
 
-        }
+        //}
         public void entegreAyarlarYenile()
         {
             TrendyolApi trendyolApi = new TrendyolApi();
@@ -735,7 +739,7 @@ namespace Pos
                 }
                 else
                 {
-                    /* burayı aç
+                    // burayı aç
                     string programDizini = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
                     string pro = programDizini + "\\RmosIngenicoGMP.exe"; // \\IngenicoOKC\\
 
@@ -745,7 +749,7 @@ namespace Pos
                     {
                         Process.Start(@"" + pro);
                     } 
-                    */ //buradan aç
+                    //buradan aç
 
                     //IngenicoOKC
                     //client = new SimpleTcpClient

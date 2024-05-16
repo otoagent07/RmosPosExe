@@ -244,12 +244,12 @@ IF COL_LENGTH('Pos_Kasahrk', 'Pkasa_dep') IS NULL BEGIN ALTER TABLE Pos_Kasahrk 
             }
         }
 
+
+
+      
         public static string getTriggerAcilisTar() 
         {
-            string query = @"IF NOT EXISTS (SELECT * FROM sys.triggers WHERE name = 'trg_InsertRsat_AcilisTar' AND parent_class_desc = 'OBJECT_OR_COLUMN' AND parent_id = OBJECT_ID('Cst_Recete_Satis'))
-BEGIN
-    EXEC('
-   CREATE TRIGGER trg_InsertRsat_AcilisTar
+            string queryTrig1 = @" CREATE TRIGGER trg_InsertRsat_AcilisTar
 	ON Cst_Recete_Satis
 	AFTER INSERT
 	AS
@@ -259,17 +259,28 @@ BEGIN
 	declare @tarihim datetime 
 	    SET @tarihim = (SELECT TOP 1 ISNULL(Rsat_AcilisTar, GETDATE()) AS tarih 
                     FROM Cst_Recete_Satis WITH (NOLOCK) 
-                    WHERE Rsat_Fisno = (SELECT Rsat_Fisno FROM inserted) 
+                    WHERE Rsat_Fisno = (SELECT top 1 Rsat_Fisno FROM inserted) 
                     ORDER BY Rsat_Id);
 
     UPDATE Cst_Recete_Satis
     SET Rsat_AcilisTar = @tarihim
     FROM inserted
     WHERE Cst_Recete_Satis.Rsat_Id = inserted.Rsat_Id;
-END;
-    ');
 END;";
-            return query;
+
+
+            string queryTrig = @"IF NOT EXISTS (SELECT * FROM sys.triggers WHERE name = 'trg_InsertRsat_AcilisTar' AND parent_class_desc = 'OBJECT_OR_COLUMN' AND parent_id = OBJECT_ID('Cst_Recete_Satis'))
+BEGIN
+    EXEC('
+  " + queryTrig1 + @"
+    ');
+END
+ELSE
+BEGIN EXEC('
+  " + queryTrig1.Replace("CREATE TRIGGER", "ALTER TRIGGER") + @"
+    ') END";
+
+            return queryTrig;
         }
             public static void dilDegis(string dil = "tr-TR") // en-US
         {

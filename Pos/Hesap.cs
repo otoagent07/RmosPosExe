@@ -947,7 +947,7 @@ namespace Pos
             return tlKarsilik;
         }
 
-        public void odemeAl()
+        public void odemeAl(bool araodeme)
         {
             try
             {
@@ -963,7 +963,7 @@ namespace Pos
                     return;
                 }
 
-                Odeme_Al();
+                Odeme_Al(araodeme);
 
                 decimal tutar = 0, doviztutar = 0;
                 if (Param.Calisma_Sekli == 1)       //Döviz
@@ -1000,11 +1000,11 @@ namespace Pos
 
         private void btn_Odemeal_Click(object sender, EventArgs e)
         {
-            araOdemeAl();
+            araOdemeAl(true);
 
         }
 
-        public void araOdemeAl()
+        public void araOdemeAl(bool araodeme)
         {
             try
             {
@@ -1015,7 +1015,7 @@ namespace Pos
                 }
                 var look_KapatmaSecili = look_Kapatma.EditValue.ToString();
                 var look_DovizKodSecili = look_DovizKod.EditValue.ToString();
-                odemeAl();
+                odemeAl(araodeme);
 
 
                 look_Kapatma.EditValue = null;
@@ -1080,7 +1080,7 @@ namespace Pos
         }
 
         public int ozelKod2 = 0;
-        private bool Odeme_Al()
+        private bool Odeme_Al(bool araodememi=false)
         {
             try
             {
@@ -1117,8 +1117,12 @@ namespace Pos
                 }
 
                 string fisnom = this.Tag.ToString();
-                Sabitler.odenmezVeyaIkramiseServisPayiSil(fisnom, look_Kapatma.EditValue.ToString());
-                gridyenile();
+                var donen = Sabitler.odenmezVeyaIkramiseServisPayiSil(fisnom, look_Kapatma.EditValue.ToString());
+
+                if (donen==true && araodememi==false) // 09.05.2024 de gridi yenilemek zorunda kaldık hepap katırken odenmez otomatik sildiği için tutarı alması için txttutar ı yenilemek gerekiyordu
+                {
+                    gridyenile();
+                }
 
 
                 decimal tutar, doviztutar;

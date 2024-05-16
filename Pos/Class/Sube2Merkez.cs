@@ -551,7 +551,7 @@ else ISNULL(Rec_Fiyat,0) end Rec_Fiyat
                                                   ,[Rsat_UrunTahsilat]
 	                                              ,[Rsat_Yerliyabanci]
 	                                              ,[Rsat_PR]
-	                                              ,Rsat_UrunBazliHspDokum 
+	                                              ,Rsat_UrunBazliHspDokum ,BankaID
                                             From Cst_Recete_Satis Where Rsat_Fisno = '" + dt.Rows[i]["Rsat_Fisno"] + "'");
 
                             cmd.Parameters.AddWithValue("@myTableType", dtRow);

@@ -3301,6 +3301,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         break;
                     case "DOLAR":
                         dovizIcon = " $";
+                        break; 
+                    case "POUND":
+                        dovizIcon = " £";
                         break;
                     default:
                         dovizIcon = " ₺";
