@@ -185,19 +185,29 @@ namespace Pos
             btn_Bindirim.Enabled = User.G_Bindirim;
 
 
-            string sayacimkisi = dbtools.DegerGetir($"select isnull(kisiyeSatisAdSoyad,'') as kisiyeSatisAdSoyad from Cst_Recete_Satis  where Rsat_Fisno=" + fisno + " order by Rsat_Id desc");
 
-            if (sayacimkisi != "" && sayacimkisi.Contains("-"))
+            if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
             {
-                sayac = Convert.ToInt32(sayacimkisi.Split('-')[0]) + 1;
-                txtKisiyeSatisSayac.Text = sayac + "";
+                panelControl4.Visible = false;
+                txt_Not.Size = new Size(txt_Not.Size.Width, 50);
+            }
+            else
+            {
+                string sayacimkisi = dbtools.DegerGetir($"select isnull(kisiyeSatisAdSoyad,'') as kisiyeSatisAdSoyad from Cst_Recete_Satis  where Rsat_Fisno=" + fisno + " order by Rsat_Id desc");
+
+                if (sayacimkisi != "" && sayacimkisi.Contains("-"))
+                {
+                    sayac = Convert.ToInt32(sayacimkisi.Split('-')[0]) + 1;
+                    txtKisiyeSatisSayac.Text = sayac + "";
+                }
+
+
+                txtKisiyeSatis.Text = "";
+                txtKisiyeSatis.Select();
+                txtKisiyeSatis.Focus();
             }
 
-
-            txtKisiyeSatis.Text = "";
-            txtKisiyeSatis.Select();
-            txtKisiyeSatis.Focus();
-
+           
         }
 
         public void marsSiparis()
