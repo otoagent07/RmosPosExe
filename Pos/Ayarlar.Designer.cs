@@ -87,6 +87,7 @@
             this.btn_Prm_Kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnRecAlfebetik = new DevExpress.XtraEditors.SimpleButton();
             this.btnSqlStopStart = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Hesap_DovizOzetToplam = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Prm_MasaacanGarson = new DevExpress.XtraEditors.CheckEdit();
@@ -953,6 +954,7 @@
             this.checkEditSali = new DevExpress.XtraEditors.CheckEdit();
             this.checkEditPazartesi = new DevExpress.XtraEditors.CheckEdit();
             this.spn_HH_Oran = new DevExpress.XtraEditors.SpinEdit();
+            this.btnHapyhourYenile = new DevExpress.XtraEditors.SimpleButton();
             this.btn_HH_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_HH_Sil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_HH_Kaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -1256,8 +1258,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.btnRecAlfebetik = new DevExpress.XtraEditors.SimpleButton();
-            this.btnHapyhourYenile = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit200 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2106,6 +2107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit200.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -2686,6 +2688,15 @@
             this.xtraTabPage5.Controls.Add(this.chk_Prm_MiktarDuzelt);
             this.xtraTabPage5.Name = "xtraTabPage5";
             resources.ApplyResources(this.xtraTabPage5, "xtraTabPage5");
+            // 
+            // btnRecAlfebetik
+            // 
+            this.btnRecAlfebetik.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnRecAlfebetik.Appearance.Font")));
+            this.btnRecAlfebetik.Appearance.Options.UseFont = true;
+            this.btnRecAlfebetik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRecAlfebetik.ImageOptions.Image")));
+            resources.ApplyResources(this.btnRecAlfebetik, "btnRecAlfebetik");
+            this.btnRecAlfebetik.Name = "btnRecAlfebetik";
+            this.btnRecAlfebetik.Click += new System.EventHandler(this.btnRecAlfebetik_Click);
             // 
             // btnSqlStopStart
             // 
@@ -10006,6 +10017,7 @@
             this.tab_Happy_Hour.Controls.Add(this.time_HH_1);
             this.tab_Happy_Hour.Controls.Add(this.grd_HappyHour);
             this.tab_Happy_Hour.Controls.Add(this.textEdit70);
+            this.tab_Happy_Hour.Controls.Add(this.textEdit200);
             this.tab_Happy_Hour.Controls.Add(this.textEdit71);
             this.tab_Happy_Hour.Controls.Add(this.textBox10);
             this.tab_Happy_Hour.Controls.Add(this.textEdit72);
@@ -10063,6 +10075,14 @@
             this.spn_HH_Oran.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.spn_HH_Oran.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            // 
+            // btnHapyhourYenile
+            // 
+            this.btnHapyhourYenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnHapyhourYenile.Appearance.Font")));
+            this.btnHapyhourYenile.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnHapyhourYenile, "btnHapyhourYenile");
+            this.btnHapyhourYenile.Name = "btnHapyhourYenile";
+            this.btnHapyhourYenile.Click += new System.EventHandler(this.btnHapyhourYenile_Click);
             // 
             // btn_HH_Cikis
             // 
@@ -12508,22 +12528,13 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // btnRecAlfebetik
+            // textEdit200
             // 
-            this.btnRecAlfebetik.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.btnRecAlfebetik.Appearance.Options.UseFont = true;
-            this.btnRecAlfebetik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            resources.ApplyResources(this.btnRecAlfebetik, "btnRecAlfebetik");
-            this.btnRecAlfebetik.Name = "btnRecAlfebetik";
-            this.btnRecAlfebetik.Click += new System.EventHandler(this.btnRecAlfebetik_Click);
-            // 
-            // btnHapyhourYenile
-            // 
-            this.btnHapyhourYenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font1")));
-            this.btnHapyhourYenile.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnHapyhourYenile, "btnHapyhourYenile");
-            this.btnHapyhourYenile.Name = "btnHapyhourYenile";
-            this.btnHapyhourYenile.Click += new System.EventHandler(this.btnHapyhourYenile_Click);
+            resources.ApplyResources(this.textEdit200, "textEdit200");
+            this.textEdit200.Name = "textEdit200";
+            this.textEdit200.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit200.Properties.ReadOnly = true;
+            this.textEdit200.TabStop = false;
             // 
             // Ayarlar
             // 
@@ -13413,6 +13424,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit200.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14647,5 +14659,6 @@
         private DevExpress.XtraEditors.CheckEdit Pos_OdenmezIkramPasif;
         private DevExpress.XtraEditors.SimpleButton btnRecAlfebetik;
         private DevExpress.XtraEditors.SimpleButton btnHapyhourYenile;
+        private DevExpress.XtraEditors.TextEdit textEdit200;
     }
 }

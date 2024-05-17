@@ -489,29 +489,29 @@
   <data name="xtraTabControl3.MultiLine" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
     <value>True</value>
   </data>
-  <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnRecAlfebetik.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="simpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRecAlfebetik.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="btnRecAlfebetik.Location" type="System.Drawing.Point, System.Drawing">
@@ -20826,7 +20826,7 @@ H13_3
     <value>21</value>
   </data>
   <data name="checkEditPazar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 306</value>
+    <value>428, 227</value>
   </data>
   <data name="checkEditPazar.Properties.Caption" xml:space="preserve">
     <value>Pazar</value>
@@ -20850,7 +20850,7 @@ H13_3
     <value>0</value>
   </data>
   <data name="checkEditCumartesi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 281</value>
+    <value>428, 202</value>
   </data>
   <data name="checkEditCumartesi.Properties.Caption" xml:space="preserve">
     <value>Cumartesi</value>
@@ -20874,7 +20874,7 @@ H13_3
     <value>1</value>
   </data>
   <data name="checkEditPersembe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 231</value>
+    <value>428, 152</value>
   </data>
   <data name="checkEditPersembe.Properties.Caption" xml:space="preserve">
     <value>Perşembe</value>
@@ -20898,7 +20898,7 @@ H13_3
     <value>2</value>
   </data>
   <data name="checkEditCuma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 256</value>
+    <value>428, 177</value>
   </data>
   <data name="checkEditCuma.Properties.Caption" xml:space="preserve">
     <value>Cuma</value>
@@ -20922,7 +20922,7 @@ H13_3
     <value>3</value>
   </data>
   <data name="checkEditCarsamba.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 206</value>
+    <value>428, 127</value>
   </data>
   <data name="checkEditCarsamba.Properties.Caption" xml:space="preserve">
     <value>Çarşamba</value>
@@ -20946,7 +20946,7 @@ H13_3
     <value>4</value>
   </data>
   <data name="checkEditSali.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 182</value>
+    <value>428, 103</value>
   </data>
   <data name="checkEditSali.Properties.Caption" xml:space="preserve">
     <value>Salı</value>
@@ -20970,7 +20970,7 @@ H13_3
     <value>5</value>
   </data>
   <data name="checkEditPazartesi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 157</value>
+    <value>428, 78</value>
   </data>
   <data name="checkEditPazartesi.Properties.Caption" xml:space="preserve">
     <value>Pazartesi</value>
@@ -21017,7 +21017,7 @@ H13_3
   <data name="&gt;&gt;spn_HH_Oran.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="simpleButton3.Appearance.Font1" type="System.Drawing.Font, System.Drawing">
+  <data name="btnHapyhourYenile.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnHapyhourYenile.Location" type="System.Drawing.Point, System.Drawing">
@@ -21257,6 +21257,30 @@ H13_3
   <data name="&gt;&gt;textEdit70.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="textEdit200.EditValue" xml:space="preserve">
+    <value>Kapalı Günleri Seçiniz</value>
+  </data>
+  <data name="textEdit200.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 50</value>
+  </data>
+  <data name="textEdit200.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="textEdit200.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="&gt;&gt;textEdit200.Name" xml:space="preserve">
+    <value>textEdit200</value>
+  </data>
+  <data name="&gt;&gt;textEdit200.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit200.Parent" xml:space="preserve">
+    <value>tab_Happy_Hour</value>
+  </data>
+  <data name="&gt;&gt;textEdit200.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
   <data name="textEdit71.EditValue" xml:space="preserve">
     <value>Baş / Bit Saat</value>
   </data>
@@ -21279,7 +21303,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;textEdit71.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="textBox10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -21312,7 +21336,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="textEdit72.EditValue" xml:space="preserve">
     <value>Departman</value>
@@ -21336,7 +21360,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;textEdit72.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="look_HH_Departman5.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 50</value>
@@ -21369,7 +21393,7 @@ H13_3
     <value>tab_Happy_Hour</value>
   </data>
   <data name="&gt;&gt;look_HH_Departman5.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="tab_Happy_Hour.Size" type="System.Drawing.Size, System.Drawing">
     <value>839, 615</value>
