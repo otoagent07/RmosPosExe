@@ -3209,7 +3209,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 if (Param.hesapFisQr)
                 {
-                    hsp.txtQr.Text = Param.Tarih.ToString("yyyy-MM-dd");
+                    string gunsonutar = Param.Tarih.ToString("yyyy-MM-dd");
+                    hsp.txtQr.Text = gunsonutar.Replace("-","");
                     hsp.txtQr.Visible = true;
                     hsp.ReportFooter.HeightF = (float)388.3324;
                     hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);

@@ -420,7 +420,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.12";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.13";
 
 
 
@@ -1842,7 +1842,7 @@ No Cut Seçili Olsun
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "server", "", ex);
+                //RHMesaj.MyMessageError(MyClass, "server", "", ex);
             }
 
         }
