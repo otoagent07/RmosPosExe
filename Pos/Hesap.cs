@@ -2712,14 +2712,24 @@ namespace Pos
                     else
                     {
                         FisPr fis = new FisPr();
-                        string cevap = fis.HesapDokum(false, Convert.ToInt32(this.Tag), Split);
-                        if (cevap != "OK")
+
+                        if (Param.Param_YeniHesapDkm) // 21.05.2024 eklendi
                         {
-                            MessageBox.Show(cevap);
-                            temizle();
-                            this.Close();
-                            return;
+                            fis.newHesapDokum(true, Convert.ToInt32(this.Tag), Split, "* * * HESAP DÖKÜM FİŞİ * * *" );
                         }
+                        else
+                        {
+                            string cevap = fis.HesapDokum(false, Convert.ToInt32(this.Tag), Split);
+                            if (cevap != "OK")
+                            {
+                                MessageBox.Show(cevap);
+                                temizle();
+                                this.Close();
+                                return;
+                            }
+                        }
+
+                        
                     }
 
                     //Fis_Islem.Fatura_Kes(Convert.ToInt32(this.Tag), chk_HesabaFatura.Checked, chk_HesabaFatura.Checked);
