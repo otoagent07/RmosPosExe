@@ -368,7 +368,7 @@ namespace Pos
                     }
                     if (chk_KartNo.Checked)
                     {
-                        filtre = " and rez.Rez_Kartno like N'" + txt_Arama.Text + "%' ";
+                        filtre = " and (rez.Rez_Kartno like N'" + txt_Arama.Text + "%'  or rez.Rez_Kartno11 like N'" + txt_Arama.Text + "%' or rez.Rez_Kartno12 like N'" + txt_Arama.Text + "%' or rez.Rez_Kartno13 like N'" + txt_Arama.Text + "%' )";
                     }
                     if (chk_Ad.Checked)
                     {
