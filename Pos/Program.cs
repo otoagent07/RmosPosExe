@@ -28,16 +28,33 @@ namespace Pos
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
 
-           
-                CultureInfo culture = new CultureInfo(Langs.Default.Dil == "" ? "tr-TR" : Langs.Default.Dil);
-                //culture = new CultureInfo(User.Pos_Culture);
-                //culture.DateTimeFormat.ShortDatePattern = "dd.MM.yyyy";
-                culture.DateTimeFormat.FirstDayOfWeek = DayOfWeek.Monday;
-                //culture.DateTimeFormat.DateSeparator = ".";
-                culture.DateTimeFormat.ShortTimePattern = "HH:mm";
-                System.Threading.Thread.CurrentThread.CurrentCulture = culture;
-                System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
-                Localize.ApplicationLanguage(culture.TwoLetterISOLanguageName);
+
+                try
+                {
+                    CultureInfo culture = new CultureInfo(Langs.Default.Dil == "" ? "tr-TR" : Langs.Default.Dil);
+                    //culture = new CultureInfo(User.Pos_Culture);
+                    //culture.DateTimeFormat.ShortDatePattern = "dd.MM.yyyy";
+                    culture.DateTimeFormat.FirstDayOfWeek = DayOfWeek.Monday;
+                    //culture.DateTimeFormat.DateSeparator = ".";
+                    culture.DateTimeFormat.ShortTimePattern = "HH:mm";
+                    System.Threading.Thread.CurrentThread.CurrentCulture = culture;
+                    System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
+                    Localize.ApplicationLanguage(culture.TwoLetterISOLanguageName);
+                }
+                catch (Exception ex)
+                {
+                    //// 27.05.2024 eklendi
+                    CultureInfo culture = new CultureInfo("tr-TR");
+                    Langs.Default.Dil = "tr-TR";
+                    Langs.Default.Save();
+
+                    culture.DateTimeFormat.FirstDayOfWeek = DayOfWeek.Monday;
+                    culture.DateTimeFormat.ShortTimePattern = "HH:mm";
+                    System.Threading.Thread.CurrentThread.CurrentCulture = culture;
+                    System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
+                    Localize.ApplicationLanguage(culture.TwoLetterISOLanguageName);
+                }
+              
                
 
                 DevExpress.Skins.SkinManager.EnableFormSkins();
