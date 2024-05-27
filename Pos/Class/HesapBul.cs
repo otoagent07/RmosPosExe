@@ -129,11 +129,11 @@ namespace Pos.Class
             }
             if (Departman.Sorgu_Sekli == 1)     // Kart No ile Arama
             {
-                filtre = " and " + Rez_Kartno + " like '" + dataKart + "%' ";
+                filtre = " and (" + Rez_Kartno + " like '" + dataKart + "%' or rez.Rez_Kartno11 like N'" + dataKart + "%' or rez.Rez_Kartno12 like N'" + dataKart  + "%' or rez.Rez_Kartno13 like N'" + dataKart + "%') ";
             }
             if (Departman.Sorgu_Sekli == 2)     // Odano ve Kart ile Arama
             {
-                filtre = " and ( " + Rez_Kartno + " like '" + dataKart + "%' or  Rez_Odano like '" + data + "%' )";
+                filtre = " and ( " + Rez_Kartno + " like '" + dataKart + "%' or  Rez_Odano like '" + data + "%' or rez.Rez_Kartno11 like N'" + dataKart + "%' or rez.Rez_Kartno12 like N'" + dataKart + "%' or rez.Rez_Kartno13 like N'" + dataKart + "%') ";
             }
             if (Param.Param_Extre_Cikmasin)
             {
