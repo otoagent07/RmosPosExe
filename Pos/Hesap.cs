@@ -1463,7 +1463,7 @@ namespace Pos
             }
 
 
-            Fis_Islem.ServisPayi(fisno);
+            //Fis_Islem.ServisPayi(fisno);
             gridyenile();
             Bakiye_Kontrol();
 
