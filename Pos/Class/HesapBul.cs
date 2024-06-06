@@ -167,7 +167,7 @@ namespace Pos.Class
                                                        + " from Cst_Indirim with(nolock) "
                                                        + " where Ind_Kodu in (select FieldValue from StringArray(@Ind,',')) "
                                                        + " ORDER BY Ind_Oran desc");
-                if (dtInd.Rows.Count > 0)
+                if (dtInd!=null && dtInd.Rows.Count > 0)
                 {
                     Ind_Oran = Convert.ToDecimal(dtInd.Rows[0]["Ind_Oran"]);
                     Ind_Kodu = Convert.ToString(dtInd.Rows[0]["Ind_Kodu"]);
