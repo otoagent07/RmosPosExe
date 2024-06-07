@@ -1250,6 +1250,14 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                     paket.xr_Paketci.Text = Convert.ToString(dtPaket.Rows[0]["Paketci"]);
 
+                    //7.06.2024 İLERİ TARİH TEXTİ YAPILDI -RMOS SEPET...
+
+                    string paketqr = $@"select top 1 isnull(deger1,'') as deger1 from Cst_Recete_Satis where Rsat_Fisno='{Fisno}' and (deger1 is not null and deger1<>'')";
+
+                    string ileriTarih = dbtools.DegerGetir(paketqr);
+
+                    paket.txtIleriTarih.Text = ileriTarih;
+
                     for (int i = 0; i < Paket_Ciktisayisi; i++)
                     {
                         paket.Print();
