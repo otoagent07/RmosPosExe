@@ -440,34 +440,39 @@ else ISNULL(Rec_Fiyat,0) end Rec_Fiyat
             await SatisGonder();
 
         }
+        //public void GonderSatis()
+        //{
+        //     SatisGonder();
 
-#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
-        private async Task SatisGonder()
-#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
+        //}
+
+        private async Task SatisGonder() // private async Task SatisGonder()
         {
 
-            if (CheckConnectionIP(connstr))
+            try
             {
-                SqlConnection con = dbtools.conn;
-
-                if (con.State == ConnectionState.Closed) { con.Open(); }
-
-                DataTable dt = dbtools.SelectTable(@"Select Rsat_Fisno,ISNULL(Rsat_RecAP,0) as Rsat_RecAP from Cst_Recete_Satis Where Rsat_Durum = 'K' and ISNULL(Rsat_RecAP,0) != 1 and Rsat_Departman = '" + Departman.Dep_Kodu + "' Group by Rsat_Fisno,ISNULL(Rsat_RecAP,0)");
-
-                if (dt.Rows.Count > 0)
+                if (CheckConnectionIP(connstr))
                 {
-                    if (conn.State == ConnectionState.Closed) { conn.Open(); }
-                    for (int i = 0; i < dt.Rows.Count; i++)
-                    {
-                        int Sil = 0;
-                        using (SqlCommand cmd = new SqlCommand("InsertTableTo_CstRecete_Satis", conn) { CommandType = CommandType.StoredProcedure })
-                        {
-                            if (Convert.ToInt32(dt.Rows[i]["Rsat_RecAP"]) == 2)
-                            {
-                                Sil = 1;
-                            }
+                    SqlConnection con = dbtools.conn;
 
-                            var dtRow = dbtools.SelectTable(@"Select 
+                    if (con.State == ConnectionState.Closed) { con.Open(); }
+
+                    DataTable dt = dbtools.SelectTable(@"Select Rsat_Fisno,ISNULL(Rsat_RecAP,0) as Rsat_RecAP from Cst_Recete_Satis Where Rsat_Durum = 'K' and ISNULL(Rsat_RecAP,0) != 1 and Rsat_Departman = '" + Departman.Dep_Kodu + "' Group by Rsat_Fisno,ISNULL(Rsat_RecAP,0)");
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        if (conn.State == ConnectionState.Closed) { conn.Open(); }
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                            int Sil = 0;
+                            using (SqlCommand cmd = new SqlCommand("InsertTableTo_CstRecete_Satis", conn) { CommandType = CommandType.StoredProcedure })
+                            {
+                                if (Convert.ToInt32(dt.Rows[i]["Rsat_RecAP"]) == 2)
+                                {
+                                    Sil = 1;
+                                }
+
+                                var dtRow = dbtools.SelectTable(@"Select 
                                                    [Rsat_Fisno]
                                                   ,[Rsat_Tarih]
                                                   ,[Rsat_Departman]
@@ -554,17 +559,22 @@ else ISNULL(Rec_Fiyat,0) end Rec_Fiyat
 	                                              ,Rsat_UrunBazliHspDokum ,BankaID
                                             From Cst_Recete_Satis Where Rsat_Fisno = '" + dt.Rows[i]["Rsat_Fisno"] + "'");
 
-                            cmd.Parameters.AddWithValue("@myTableType", dtRow);
-                            cmd.Parameters.AddWithValue("@DepKodu", Departman.Dep_Kodu);
-                            cmd.Parameters.AddWithValue("@Sil", Sil);
-                            cmd.Parameters.AddWithValue("@Fis", dt.Rows[i]["Rsat_Fisno"]);
-                            cmd.ExecuteNonQuery();
+                                cmd.Parameters.AddWithValue("@myTableType", dtRow);
+                                cmd.Parameters.AddWithValue("@DepKodu", Departman.Dep_Kodu);
+                                cmd.Parameters.AddWithValue("@Sil", Sil);
+                                cmd.Parameters.AddWithValue("@Fis", dt.Rows[i]["Rsat_Fisno"]);
+                                cmd.ExecuteNonQuery();
 
-                            dbtools.execcmd("Update Cst_Recete_Satis Set Rsat_RecAP = 1 Where Rsat_Fisno = '" + dt.Rows[i]["Rsat_Fisno"] + "'");
+                                dbtools.execcmd("Update Cst_Recete_Satis Set Rsat_RecAP = 1 Where Rsat_Fisno = '" + dt.Rows[i]["Rsat_Fisno"] + "'");
+                            }
                         }
-                    }
 
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 

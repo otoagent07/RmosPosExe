@@ -1090,6 +1090,10 @@ namespace Pos
 
         private void btnRaporlar_Click(object sender, EventArgs e)
         {
+            //Sube2Merkez a = new Sube2Merkez();
+            //a.GonderSatis();
+
+
             Rapor_Sec rap = new Rapor_Sec();
             rap.ShowDialog();
 
@@ -1098,6 +1102,8 @@ namespace Pos
                 groupControl4.Visible = true;
                 Anlik();
             }
+
+          
         }
 
         //public void eadisyonAc()
