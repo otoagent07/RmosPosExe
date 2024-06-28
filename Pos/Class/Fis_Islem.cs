@@ -212,7 +212,10 @@ namespace Pos.Class
                 if (kurum == 1)
                 {
                     string merkez = Fronttools.DegerGetir("select top 1 Fis_Doviz_me from Fishrk");
-
+                    if (merkez=="")
+                    {
+                        MessageBox.Show("select top 1 Fis_Doviz_me from Fishrk"+Environment.NewLine+" Sonucu Boş Dönüyor"+Environment.NewLine+" Fronttan ayarlayınız...");
+                    }
                     if (!merkez.Equals("G"))
                     {
                         string query = @"select top 1 Doviz_Alis from Kurlar where Kurlar_Tarih=(select top 1 Rez_Giris_tarihi from rez where Rez_R_I_H='I' and Rez_Odano='" + odano + @"') 
@@ -221,7 +224,15 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
                         string dovizAlisKur = Fronttools.DegerGetir(query).Replace(",", ".");
 
-                        Fronttools.execcmd("update rez set  Rez_Kur_uygulanan ='" + dovizAlisKur + "' where Rez_Odano='" + odano + "' and Rez_R_I_H='I'");
+                        if (dovizAlisKur=="")
+                        {
+                            MessageBox.Show(query+Environment.NewLine+Environment.NewLine+" Alış kur boş dönüyor" + Environment.NewLine + " Fronttan ayarlayınız...");
+
+                        }
+                        else
+                        {
+                            Fronttools.execcmd("update rez set  Rez_Kur_uygulanan ='" + dovizAlisKur + "' where Rez_Odano='" + odano + "' and Rez_R_I_H='I'");
+                        }
 
                     }
                 }
