@@ -6043,6 +6043,13 @@ Select InstanceNames from @GetInstances ";
 
         }
 
+        private void btnIndexYenile_Click(object sender, EventArgs e)
+        {
+            dbtools.execcmdRMesajsiz(Sabitler.cst_satis_index);
+            string query = "ALTER INDEX ALL ON dbo.Cst_Recete_Satis REBUILD;";
+            dbtools.execcmdR(query);
+        }
+
         private void gridyenile_SubeAdres()
         {
             gridControl21.DataSource = dbtools.SelectTable(@"

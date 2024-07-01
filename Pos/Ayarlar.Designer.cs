@@ -966,6 +966,7 @@
             this.gridColumn55 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn56 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit70 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit200 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit71 = new DevExpress.XtraEditors.TextEdit();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textEdit72 = new DevExpress.XtraEditors.TextEdit();
@@ -1258,7 +1259,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.textEdit200 = new DevExpress.XtraEditors.TextEdit();
+            this.btnIndexYenile = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1883,6 +1884,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grd_HappyHour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit70.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit200.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit71.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit72.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_HH_Departman5.Properties)).BeginInit();
@@ -2107,7 +2109,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit200.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -2596,6 +2597,7 @@
             // 
             // xtraTabPage5
             // 
+            this.xtraTabPage5.Controls.Add(this.btnIndexYenile);
             this.xtraTabPage5.Controls.Add(this.btnRecAlfebetik);
             this.xtraTabPage5.Controls.Add(this.btnSqlStopStart);
             this.xtraTabPage5.Controls.Add(this.chk_Hesap_DovizOzetToplam);
@@ -10174,6 +10176,14 @@
             this.textEdit70.Properties.ReadOnly = true;
             this.textEdit70.TabStop = false;
             // 
+            // textEdit200
+            // 
+            resources.ApplyResources(this.textEdit200, "textEdit200");
+            this.textEdit200.Name = "textEdit200";
+            this.textEdit200.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit200.Properties.ReadOnly = true;
+            this.textEdit200.TabStop = false;
+            // 
             // textEdit71
             // 
             resources.ApplyResources(this.textEdit71, "textEdit71");
@@ -12528,13 +12538,14 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // textEdit200
+            // btnIndexYenile
             // 
-            resources.ApplyResources(this.textEdit200, "textEdit200");
-            this.textEdit200.Name = "textEdit200";
-            this.textEdit200.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit200.Properties.ReadOnly = true;
-            this.textEdit200.TabStop = false;
+            this.btnIndexYenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.btnIndexYenile.Appearance.Options.UseFont = true;
+            this.btnIndexYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            resources.ApplyResources(this.btnIndexYenile, "btnIndexYenile");
+            this.btnIndexYenile.Name = "btnIndexYenile";
+            this.btnIndexYenile.Click += new System.EventHandler(this.btnIndexYenile_Click);
             // 
             // Ayarlar
             // 
@@ -13191,6 +13202,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grd_HappyHour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit70.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit200.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit71.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit72.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_HH_Departman5.Properties)).EndInit();
@@ -13424,7 +13436,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit200.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14660,5 +14671,6 @@
         private DevExpress.XtraEditors.SimpleButton btnRecAlfebetik;
         private DevExpress.XtraEditors.SimpleButton btnHapyhourYenile;
         private DevExpress.XtraEditors.TextEdit textEdit200;
+        private DevExpress.XtraEditors.SimpleButton btnIndexYenile;
     }
 }

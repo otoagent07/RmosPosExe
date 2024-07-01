@@ -237,13 +237,13 @@ namespace Pos
                 {
 
                 }
+                // todo: ramazan önceden yaptım
+                //////count = Convert.ToInt32(dbtools.DegerGetir("select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and Rsat_Mars='1'"));
 
-                // count = Convert.ToInt32(dbtools.DegerGetir("select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + Convert.ToInt32(bartxt_FisNo.EditValue) + "' and Rsat_Mars='1'"));
-
-                //if (count > 0)
-                //{
-                //    btn_Siparis.Enabled = false;
-                //}
+                //////if (count > 0)
+                //////{
+                //////    btn_Siparis.Enabled = false;
+                //////}
             }
             catch (Exception ex)
             {
