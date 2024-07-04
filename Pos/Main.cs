@@ -420,7 +420,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.20";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.24";
 
 
 
@@ -748,7 +748,7 @@ namespace Pos
                     if (processesByName.Length == 0)
                     {
                         Process.Start(@"" + pro);
-                    } 
+                    }
                     //buradan aç
 
                     //IngenicoOKC
@@ -1103,7 +1103,7 @@ namespace Pos
                 Anlik();
             }
 
-          
+
         }
 
         //public void eadisyonAc()

@@ -94,6 +94,10 @@ namespace Pos
             look_Kapatma.Properties.DisplayMember = "Pkod_Ad";
             look_Kapatma.Properties.ValueMember = "Pkod_Kod";
         }
+
+        /*
+         842;742 ekran boyutu 04.07.2024 değişti kişiye satış için
+         */
         private void Hesap_Load(object sender, EventArgs e)
         {
             try

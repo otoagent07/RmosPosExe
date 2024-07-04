@@ -282,7 +282,7 @@
             // 
             // btnParcaliMasa
             // 
-            this.btnParcaliMasa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton5.Appearance.Font")));
+            this.btnParcaliMasa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnParcaliMasa.Appearance.Font")));
             this.btnParcaliMasa.Appearance.Options.UseFont = true;
             this.btnParcaliMasa.Appearance.Options.UseTextOptions = true;
             this.btnParcaliMasa.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;

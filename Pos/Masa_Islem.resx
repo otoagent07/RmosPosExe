@@ -285,7 +285,8 @@
     <value>89</value>
   </data>
   <data name="btn_SiparisTekrar.Text" xml:space="preserve">
-    <value>Tüm Siparişi Tekrar Gönder</value>
+    <value>Tüm Siparişi Tekrar Gönder (F2)
+</value>
   </data>
   <data name="&gt;&gt;btn_SiparisTekrar.Name" xml:space="preserve">
     <value>btn_SiparisTekrar</value>
@@ -1231,7 +1232,7 @@ Masa İzinlerini Aç
   <data name="&gt;&gt;btnTumNfcMasaAc.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="simpleButton5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnParcaliMasa.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
   <data name="btnParcaliMasa.Location" type="System.Drawing.Point, System.Drawing">

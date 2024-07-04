@@ -452,7 +452,7 @@ namespace Pos.Class
 
 
 
-        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "",string fisBaslik="")
+        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "",string fisBaslik="",string kisiyeSatis="")
         {
 
             try
@@ -571,6 +571,12 @@ namespace Pos.Class
 
 
                             siparis.xr_MasaNo.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Masa"]);
+
+                            if (kisiyeSatis!="")
+                            {
+                                siparis.xr_MasaNo.Text = siparis.xr_MasaNo.Text + "[" + kisiyeSatis+"]";
+                            }
+
                             siparis.xr_Konum.Text = Convert.ToString(dtSiparis.Rows[0]["MasaKonumAdi"]);
                             siparis.xr_KisiSayisi.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Kisi"]);
                             siparis.xr_Tarih.Text = Convert.ToDateTime(dtSiparis.Rows[0]["Rsat_Tarih"]).ToShortDateString();
@@ -3236,6 +3242,17 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 hsp.txtSiraNo.Text = sirano;
 
                 string masaAd = Convert.ToString(dtHesap.Rows[0]["MasaAdi"]);
+                if (masaAd.Contains(" -"))
+                {
+                    string bol1 = masaAd.Split(new string[] { " -" }, StringSplitOptions.None)[0].Trim();
+                    string bol2 = masaAd.Split(new string[] { " -" }, StringSplitOptions.None)[1].Trim();
+
+                    if (bol1==bol2)
+                    {
+                        masaAd = masaAd.Replace("- "+bol1,"").Trim();
+                    }
+                }
+
                 if (masaAd.Trim().Equals(""))
                 {
                     masaAd = Convert.ToString(dtHesap.Rows[0]["Rsat_Masa"]);
@@ -3244,8 +3261,15 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 hsp.txtToplamIkram.Text = dbtools.DegerGetir("select sum(Rsat_Fiyat) as Rsat_Fiyat from Cst_Recete_Satis where  Rsat_Ikram='1' and Rsat_Fisno='" + Fisno + "'");
 
+
+                if (kisiyeSatis)
+                {
+                    masaAd = masaAd +"["+ kisiyeSatisAdSoyad+"]";
+                }
+
                 hsp.xr_MasaNo.Text = masaAd;
 
+                
 
                 hsp.xr_Konum.Text = Convert.ToString(dtHesap.Rows[0]["MasaKonumAdi"]);
                 hsp.xr_KisiSayisi.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Kisi"]);

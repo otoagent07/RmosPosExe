@@ -2322,6 +2322,30 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                     detay.Show();
                 }
             }
+
+            if (e.KeyCode == Keys.F4)
+            {
+                HesapDokum();
+            }
+            
+            if (e.KeyCode == Keys.F2)
+            {
+                if (Masa_No == String.Empty || gridView2.RowCount == 0)
+                {
+                    MessageBox.Show(res_man.GetString("Masa Bilgisi Bulunamadı..."), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 14, @Fisno = '" + bartxt_FisNo.EditValue + "'");
+                FisPr pr = new FisPr();
+                string sonuc = pr.SiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, 0);
+                if (sonuc != "OK")
+                {
+                    MessageBox.Show(sonuc);
+                }
+            }
+
+
         }
 
         private void gridView2_CustomDrawFooterCell(object sender, DevExpress.XtraGrid.Views.Grid.FooterCellCustomDrawEventArgs e)
@@ -2918,6 +2942,14 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 {
                     return;
                 }
+
+                //if (gridView2.GetSelectedRows().Length>1)
+                //{
+                //    UyariForm uyariForm = new UyariForm("Lütfen tek ürün seçiniz.");
+                //    uyariForm.ShowDialog();
+                //    return;
+                //}
+
                 KisiyeSatisSec kisiyeSatisSec = new KisiyeSatisSec(fisno);
                 kisiyeSatisSec.ShowDialog();
 
@@ -2950,6 +2982,11 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             {
                 RHMesaj.MyMessageError(MyClass, "btnContextKisiyeTransfer_Click", "", ex);
             }
+        }
+
+        private void btnParcaliUrunTr_Click(object sender, EventArgs e)
+        {
+            MalzemeTransfer();
         }
     }
 }

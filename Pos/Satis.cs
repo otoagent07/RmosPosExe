@@ -79,137 +79,150 @@ namespace Pos
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
 
         bool yazdirilmamisSiparis = false;
+        string kisiyeSatisAktifmi = "0";
         private void Satis_Load(object sender, EventArgs e)
         {
-            
-                 string kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
 
-            if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
-            {
-                panelControl4.Visible = false;
-                txt_Not.Size = new Size(txt_Not.Size.Width, 50);
-            }
-            AyarlarController ayarlar = new AyarlarController();
-            panelControl2.Width = Convert.ToInt32(ayarlar.satisEkranGenislik);
-            this.BringToFront();
-
-            StatikSinif.masaKilitle(Masa_No);
-
-            string var = dbtools.DegerGetir("select count(*) as toplam from Pos_Param where ISNULL(yazdirilmamissiparis,0)=1");
-            if (var == "1")
-            {
-                yazdirilmamisSiparis = true;
-            }
-
-
-            bar_Cari.Caption = "";
-
-            //Ozel_Masa = dbtools.DegerGetir("Select Masa_Ozel From Pos_Masa Where Masa_No = '" + Masa_No + "' and Masa_Depart ='" + Departman.Dep_Kodu + "'");
-
-            Bilgileri_Doldur();
-
-            Paket_Servis();
-
-            gridyenile();
-
-            barkodAktifmi = dbtools.DegerGetir("select top 1 Kodlar_RecBarSis from Stok_Kodlar where Kodlar_Kod='" + Departman.Dep_Kodu + "'");
-
-
-            if (Param.Param_Anagrup_Cikmasin)
-            {
-                Alt_Yenile();
-                layoutControlItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            }
-            else
-            {
-                Ust_Yenile();
-            }
-
-            btn_Siparis.Enabled = Departman.Siparis;
-            btn_Mars.Enabled = Departman.Kodlar_Mars;
-            btn_MiktarDuzelt.Enabled = User.G_Miktarduzelt;
-            btn_Tutarduzelt.Enabled = User.G_Tutarduzelt;
-            btn_SatirSil.Enabled = User.G_Satirsil;
-            btnTopluSil.Enabled = User.G_Satirsil;
-            btn_Indirim.Enabled = User.G_Indirim_Satis;
-            btn_Zayi.Enabled = User.G_Zayi;
-            btnJokerAciklama.Enabled = User.G_Zayi;
-            btn_Ikram.Enabled = User.G_Ikram;
-            btn_SpSil.Enabled = User.S_Sp_Sil;
-            btn_Arti.Enabled = User.Pos_ArtiEksi_Aktif;
-            btn_Eksi.Enabled = User.Pos_ArtiEksi_Aktif;
-            rdo_EMiktar.Enabled = User.Pos_YarimDubleAlan;
-
-
-
-            chk_Eksi.Enabled = getEksileme();
-            chk_Eksi.Visible = chk_Eksi.Enabled;
-
-
-            if (Param.Param_CallerID)
-            {
-                btnAdresGuncelle.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            }
-            else
-            {
-                btnAdresGuncelle.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-
-            }
-
-
-            bar_Tarih.Caption += Param.Tarih.ToShortDateString();
-
-            chk_Fix.Visible = User.Pos_FixMenu;
-
-            barkodFocuslan();
-
-            //if (Convert.ToString(this.Tag) ==  "H") barkodFocuslan();
-            MarsKontrol();
-            SiparisKontrol();
-
-            //SatisListesi a = new SatisListesi();
-
-            int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
-            Main.a.Listele(fisno);
-
-            //dbtools.execcmd("update Pos_Masa set Masa_Durum='1' where Masa_No='"+Masa_No+"' and Masa_Depart='" + Departman.Dep_Kodu+"'");
-
-
-            btnJokerAciklama.Visible = Departman.Kodlar_YS_Aktif;
-
-
-            hesapYazmismi();
-
-            marsSiparis(); // marşla doğru çalışıyor . sipariş yanlış çalışıyor. (iptal abuyerden çıkmıyor)
-
-            btn_Bindirim.Enabled = User.G_Bindirim;
-
-
-
-            if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
-            {
-                panelControl4.Visible = false;
-                txt_Not.Size = new Size(txt_Not.Size.Width, 50);
-            }
-            else
-            {
-                string sayacimkisi = dbtools.DegerGetir($"select isnull(kisiyeSatisAdSoyad,'') as kisiyeSatisAdSoyad from Cst_Recete_Satis  where Rsat_Fisno=" + fisno + " order by Rsat_Id desc");
-
-                if (sayacimkisi != "" && sayacimkisi.Contains("-"))
-                {
-                    sayac = Convert.ToInt32(sayacimkisi.Split('-')[0]) + 1;
-                    txtKisiyeSatisSayac.Text = sayac + "";
-                }
-
-
-                txtKisiyeSatis.Text = "";
-                txtKisiyeSatis.Select();
-                txtKisiyeSatis.Focus();
-            }
+            load();
 
            
         }
 
+
+        public void load()
+        {
+            try
+            {
+                kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
+
+                if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
+                {
+                    panelControl4.Visible = false;
+                    txt_Not.Size = new Size(txt_Not.Size.Width, 50);
+                }
+                AyarlarController ayarlar = new AyarlarController();
+                panelControl2.Width = Convert.ToInt32(ayarlar.satisEkranGenislik);
+                this.BringToFront();
+
+                StatikSinif.masaKilitle(Masa_No);
+
+                string var = dbtools.DegerGetir("select count(*) as toplam from Pos_Param where ISNULL(yazdirilmamissiparis,0)=1");
+                if (var == "1")
+                {
+                    yazdirilmamisSiparis = true;
+                }
+
+
+                bar_Cari.Caption = "";
+
+                //Ozel_Masa = dbtools.DegerGetir("Select Masa_Ozel From Pos_Masa Where Masa_No = '" + Masa_No + "' and Masa_Depart ='" + Departman.Dep_Kodu + "'");
+
+                Bilgileri_Doldur();
+
+                Paket_Servis();
+
+                gridyenile();
+
+                barkodAktifmi = dbtools.DegerGetir("select top 1 Kodlar_RecBarSis from Stok_Kodlar where Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+
+
+                if (Param.Param_Anagrup_Cikmasin)
+                {
+                    Alt_Yenile();
+                    layoutControlItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+                }
+                else
+                {
+                    Ust_Yenile();
+                }
+
+                btn_Siparis.Enabled = Departman.Siparis;
+                btn_Mars.Enabled = Departman.Kodlar_Mars;
+                btn_MiktarDuzelt.Enabled = User.G_Miktarduzelt;
+                btn_Tutarduzelt.Enabled = User.G_Tutarduzelt;
+                btn_SatirSil.Enabled = User.G_Satirsil;
+                btnTopluSil.Enabled = User.G_Satirsil;
+                btn_Indirim.Enabled = User.G_Indirim_Satis;
+                btn_Zayi.Enabled = User.G_Zayi;
+                btnJokerAciklama.Enabled = User.G_Zayi;
+                btn_Ikram.Enabled = User.G_Ikram;
+                btn_SpSil.Enabled = User.S_Sp_Sil;
+                btn_Arti.Enabled = User.Pos_ArtiEksi_Aktif;
+                btn_Eksi.Enabled = User.Pos_ArtiEksi_Aktif;
+                rdo_EMiktar.Enabled = User.Pos_YarimDubleAlan;
+
+
+
+                chk_Eksi.Enabled = getEksileme();
+                chk_Eksi.Visible = chk_Eksi.Enabled;
+
+
+                if (Param.Param_CallerID)
+                {
+                    btnAdresGuncelle.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+                }
+                else
+                {
+                    btnAdresGuncelle.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+
+                }
+
+
+                bar_Tarih.Caption += Param.Tarih.ToShortDateString();
+
+                chk_Fix.Visible = User.Pos_FixMenu;
+
+                barkodFocuslan();
+
+                //if (Convert.ToString(this.Tag) ==  "H") barkodFocuslan();
+                MarsKontrol();
+                SiparisKontrol();
+
+                //SatisListesi a = new SatisListesi();
+
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+                Main.a.Listele(fisno);
+
+                //dbtools.execcmd("update Pos_Masa set Masa_Durum='1' where Masa_No='"+Masa_No+"' and Masa_Depart='" + Departman.Dep_Kodu+"'");
+
+
+                btnJokerAciklama.Visible = Departman.Kodlar_YS_Aktif;
+
+
+                hesapYazmismi();
+
+                marsSiparis(); // marşla doğru çalışıyor . sipariş yanlış çalışıyor. (iptal abuyerden çıkmıyor)
+
+                btn_Bindirim.Enabled = User.G_Bindirim;
+
+
+
+                if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
+                {
+                    panelControl4.Visible = false;
+                    txt_Not.Size = new Size(txt_Not.Size.Width, 50);
+                }
+                else
+                {
+                    string sayacimkisi = dbtools.DegerGetir($"select isnull(kisiyeSatisAdSoyad,'') as kisiyeSatisAdSoyad from Cst_Recete_Satis  where Rsat_Fisno=" + fisno + " order by Rsat_Id desc");
+
+                    if (sayacimkisi != "" && sayacimkisi.Contains("-"))
+                    {
+                        sayac = Convert.ToInt32(sayacimkisi.Split('-')[0]) + 1;
+                        txtKisiyeSatisSayac.Text = sayac + "";
+                    }
+
+
+                    txtKisiyeSatis.Text = "";
+                    txtKisiyeSatis.Select();
+                    txtKisiyeSatis.Focus();
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "load()", "",ex);
+            }
+        }
         public void marsSiparis()
         {
             try
@@ -2621,6 +2634,11 @@ namespace Pos
         string Merkez_Sube_Kod = String.Empty;
         private void btn_Siparis_Click(object sender, EventArgs e)
         {
+            siparisYazdir();
+        }
+
+        public void siparisYazdir()
+        {
             try
             {
 
@@ -2718,7 +2736,16 @@ namespace Pos
 
                 if (Convert.ToString(this.Tag) == "M" || Convert.ToString(this.Tag) == "P")
                 {
-                    btn_Cikis_Click(null, null);
+                    if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
+                    {
+                        btn_Cikis_Click(null, null);
+                    }
+                    else
+                    {
+                        kisiyiTemizle();
+
+                    }
+
                 }
 
 
@@ -2897,7 +2924,7 @@ namespace Pos
 
             if (Param.Param_YeniSiparisDkm)
             {
-                sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson);
+                sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson,kisiyeSatis:txtKisiyeSatis.Text);
             }
             else
             {
@@ -3123,6 +3150,12 @@ namespace Pos
 
 
                 gridyenile();
+
+                if (kisiyeSatisAktifmi=="1" || kisiyeSatisAktifmi=="True")
+                {
+                    txtKisiyeSatis.Focus();
+                    txtKisiyeSatis.Select();
+                }
             }
             catch (Exception ex)
             {
@@ -3513,6 +3546,11 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             if (e.KeyCode == Keys.F1)
             {
                 kisiyiTemizle();
+            }
+
+            if (e.KeyCode == Keys.F3)
+            {
+                siparisYazdir();
             }
 
         }
