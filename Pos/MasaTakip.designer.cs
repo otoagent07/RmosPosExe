@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasaTakip));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -78,6 +78,7 @@
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.contextMenuSagTik = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnContextKisiyeTransfer = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnParcaliUrunTr = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemRichTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit();
@@ -154,7 +155,6 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnParcaliUrunTr = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).BeginInit();
@@ -595,6 +595,13 @@
             resources.ApplyResources(this.btnContextKisiyeTransfer, "btnContextKisiyeTransfer");
             this.btnContextKisiyeTransfer.Click += new System.EventHandler(this.btnContextKisiyeTransfer_Click);
             // 
+            // btnParcaliUrunTr
+            // 
+            this.btnParcaliUrunTr.Image = global::Pos.Properties.Resources.emptytablerowseparator_16x16;
+            this.btnParcaliUrunTr.Name = "btnParcaliUrunTr";
+            resources.ApplyResources(this.btnParcaliUrunTr, "btnParcaliUrunTr");
+            this.btnParcaliUrunTr.Click += new System.EventHandler(this.btnParcaliUrunTr_Click);
+            // 
             // gridView2
             // 
             this.gridView2.Appearance.FooterPanel.BackColor = System.Drawing.Color.White;
@@ -620,18 +627,18 @@
             this.gridColumn8,
             this.gridColumn10,
             this.gridColumn11});
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Column = this.gridColumn10;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn10;
-            gridFormatRule2.Name = "Format0";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue2.Value1 = "";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            this.gridView2.FormatRules.Add(gridFormatRule2);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn10;
+            gridFormatRule1.ColumnApplyTo = this.gridColumn10;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue1.Value1 = "";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView2.FormatRules.Add(gridFormatRule1);
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -1336,13 +1343,6 @@
             this.barButtonItem6.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem6.ItemAppearance.Normal.Font")));
             this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem6.Name = "barButtonItem6";
-            // 
-            // btnParcaliUrunTr
-            // 
-            this.btnParcaliUrunTr.Image = global::Pos.Properties.Resources.emptytablerowseparator_16x16;
-            this.btnParcaliUrunTr.Name = "btnParcaliUrunTr";
-            resources.ApplyResources(this.btnParcaliUrunTr, "btnParcaliUrunTr");
-            this.btnParcaliUrunTr.Click += new System.EventHandler(this.btnParcaliUrunTr_Click);
             // 
             // MasaTakip
             // 
