@@ -85,7 +85,7 @@ namespace Pos
 
             load();
 
-           
+
         }
 
 
@@ -220,7 +220,7 @@ namespace Pos
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "load()", "",ex);
+                RHMesaj.MyMessageError(MyClass, "load()", "", ex);
             }
         }
         public void marsSiparis()
@@ -2924,7 +2924,7 @@ namespace Pos
 
             if (Param.Param_YeniSiparisDkm)
             {
-                sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson,kisiyeSatis:txtKisiyeSatis.Text);
+                sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text);
             }
             else
             {
@@ -3151,7 +3151,7 @@ namespace Pos
 
                 gridyenile();
 
-                if (kisiyeSatisAktifmi=="1" || kisiyeSatisAktifmi=="True")
+                if (kisiyeSatisAktifmi == "1" || kisiyeSatisAktifmi == "True")
                 {
                     txtKisiyeSatis.Focus();
                     txtKisiyeSatis.Select();
@@ -3548,11 +3548,16 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 kisiyiTemizle();
             }
 
-            if (e.KeyCode == Keys.F3)
+            if (e.KeyCode == Keys.F3 && btn_Siparis.Enabled)
             {
                 siparisYazdir();
             }
 
+            if (e.KeyCode == Keys.F6)
+            {
+                FisPr pr = new FisPr();
+                pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split,  kisiyeSatis: txtKisiyeSatis.Text,tumsiparisiTekrarGonder:true);
+            }
         }
 
 
@@ -3717,12 +3722,12 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 try
                 {
                     //
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ikram, Log.Log_Islem.Duzelt, "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + ikramlogmiktar + " tanesi ikram edildi. Kalan Miktar:"+(miktar-ikramlogmiktar), Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), ikramlogmiktar, neden, Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ikram, Log.Log_Islem.Duzelt, "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + ikramlogmiktar + " tanesi ikram edildi. Kalan Miktar:" + (miktar - ikramlogmiktar), Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), ikramlogmiktar, neden, Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
                 }
                 catch (Exception ex)
                 {
 
-                    
+
                 }
 
                 Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
@@ -4221,6 +4226,11 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             if (siparisten)
             {
                 btn_Cikis.Enabled = false;
+
+                if (Param.Param_SatisCikisButton)
+                {
+                    btn_Cikis.Enabled = Param.Param_SatisCikisButton;
+                }
             }
 
             if (gridView1.DataRowCount < 1)
@@ -4539,8 +4549,8 @@ where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  "
 
              }
               */
-       
 
-       
+
+
     }
 }

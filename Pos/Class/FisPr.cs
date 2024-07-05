@@ -452,11 +452,15 @@ namespace Pos.Class
 
 
 
-        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "",string fisBaslik="",string kisiyeSatis="")
+        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "",string fisBaslik="",string kisiyeSatis="",bool tumsiparisiTekrarGonder=false)
         {
 
             try
             {
+                if (tumsiparisiTekrarGonder)
+                {
+                    dbtools.execcmdR("update Cst_Recete_Satis set Rsat_SiparisPr=0 where Rsat_Fisno='"+Fisno+"' ");
+                }
 
                 string sirano = StatikSinif.getSira(Fisno.ToString());
 
