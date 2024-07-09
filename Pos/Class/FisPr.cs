@@ -49,7 +49,7 @@ namespace Pos.Class
 
 
         public bool kisiyeSatis = false;
-        public string kisiyeSatisAdSoyad= "";
+        public string kisiyeSatisAdSoyad = "";
         private void pd_PrintPage(object sender, PrintPageEventArgs ev)
         {
 
@@ -452,14 +452,14 @@ namespace Pos.Class
 
 
 
-        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "",string fisBaslik="",string kisiyeSatis="",bool tumsiparisiTekrarGonder=false)
+        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false)
         {
 
             try
             {
                 if (tumsiparisiTekrarGonder)
                 {
-                    dbtools.execcmdR("update Cst_Recete_Satis set Rsat_SiparisPr=0 where Rsat_Fisno='"+Fisno+"' ");
+                    dbtools.execcmdR("update Cst_Recete_Satis set Rsat_SiparisPr=0 where Rsat_Fisno='" + Fisno + "' ");
                 }
 
                 string sirano = StatikSinif.getSira(Fisno.ToString());
@@ -485,6 +485,7 @@ namespace Pos.Class
                 {
                     return "Sipariş Dizaynı Yapılmamış...";
                 }
+
 
                 for (int i = 0; i < dtPrinter.Rows.Count; i++)
                 {
@@ -576,9 +577,9 @@ namespace Pos.Class
 
                             siparis.xr_MasaNo.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Masa"]);
 
-                            if (kisiyeSatis!="")
+                            if (kisiyeSatis != "")
                             {
-                                siparis.xr_MasaNo.Text = siparis.xr_MasaNo.Text + "[" + kisiyeSatis+"]";
+                                siparis.xr_MasaNo.Text = siparis.xr_MasaNo.Text + "[" + kisiyeSatis + "]";
                             }
 
                             siparis.xr_Konum.Text = Convert.ToString(dtSiparis.Rows[0]["MasaKonumAdi"]);
@@ -602,7 +603,7 @@ namespace Pos.Class
                             siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                             siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
 
-                            if (fisBaslik!="")
+                            if (fisBaslik != "")
                             {
                                 siparis.xr_Baslik.Text = fisBaslik;
                             }
@@ -611,10 +612,177 @@ namespace Pos.Class
                             {
                                 siparis.Print();
                             }
-                          
+
                         }
                     }
+                    
+                }
 
+                AbuyerPr(Fisno, Mars, Split, abuyerBaslik, kartDetay1, kartdetay2, hizliSatis);
+            }
+            catch (Exception ex)
+            {
+
+                return "HATA Yazdırılamadı !\n" + ex.Message;
+            }
+
+            return "OK";
+        }
+
+
+        public string newSiparisPrF2(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false)
+        {
+
+            try
+            {
+                int raporTip = 1;
+                string tekrarSiparisPrintName = "";
+                if (tumsiparisiTekrarGonder)
+                {
+                    dbtools.execcmdR("update Cst_Recete_Satis set Rsat_SiparisPr=0 where Rsat_Fisno='" + Fisno + "' ");
+                    raporTip = 31;
+                    tekrarSiparisPrintName = dbtools.DegerGetir("select isnull(siparisTekrarPrintName,'') as siparisTekrarPrintName from Pos_Param");
+                }
+
+                string sirano = StatikSinif.getSira(Fisno.ToString());
+
+
+                //List<string> siparis = new List<string>();
+                DataTable dtPrinter = SiparisPrinterBul(Fisno, Split, false);
+
+                //decimal bakiye = 0;
+
+                bool isMac_Printer = false;
+                for (int i = 0; i < dtPrinter.Rows.Count; i++)
+                {
+                    if (Convert.ToString(dtPrinter.Rows[i]["Mac_Printer"]) != "")
+                    {
+                        isMac_Printer = true;
+                        break;
+                    }
+                }
+
+                DataTable dtDizayn = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'SIPARISFISI'");
+                if (dtDizayn.Rows.Count < 1)
+                {
+                    return "Sipariş Dizaynı Yapılmamış...";
+                }
+
+                if (tumsiparisiTekrarGonder == true && tekrarSiparisPrintName != "")
+                {
+                    dtPrinter.Rows[0]["Printer"] = tekrarSiparisPrintName;
+                }
+
+                for (int i = 0; i < dtPrinter.Rows.Count; i++)
+                {
+                    string printer = Convert.ToString(dtPrinter.Rows[i]["Printer"]);
+                    int bosSatir = Convert.ToInt32(dtPrinter.Rows[i]["Pkod_Satir"]);
+
+                    if (printer == "" && Convert.ToString(dtPrinter.Rows[i]["Mac_Printer"]) == "") continue;
+
+
+                    // !! yeni siparis printer çıkarmıyorsa açtık. ERAMAX İÇİN YOKSA KALDRI YORUM SATIRINDAN
+                    if (Convert.ToString(dtPrinter.Rows[i]["Mac_Printer"]) != "")
+                    {
+                        printer = Convert.ToString(dtPrinter.Rows[i]["Mac_Printer"]);
+                    }
+
+
+                    DataTable dtSiparis = new DataTable();
+                    SqlConnection con = dbtools.conn;
+                    if (con.State == ConnectionState.Closed) con.Open();
+                    SqlCommand com = new SqlCommand();
+                    com.Connection = con;
+                    com.CommandType = CommandType.StoredProcedure;
+                    com.CommandTimeout = 0;
+                    com.CommandText = "Pos_Satis";
+                    com.Parameters.AddWithValue("@Fisno", Fisno);
+                    com.Parameters.AddWithValue("@Rapor_Tipi", raporTip);
+                    com.Parameters.AddWithValue("@Printer", printer);
+                    com.Parameters.AddWithValue("@Mars", Mars);
+                    com.Parameters.AddWithValue("@Split", Split);
+                    com.Parameters.AddWithValue("@MacAdres", isMac_Printer ? dbtools.MacAdresi() : "");
+                    SqlDataAdapter da = new SqlDataAdapter(com);
+                    da.Fill(dtSiparis);
+
+
+
+                    if (dtSiparis.Rows.Count > 0)
+                    {
+                        
+
+                          
+
+                            foreach (DataRow item in dtSiparis.Rows)
+                            {
+                                item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "").Replace(",000", "").Replace(",00", "");
+                            }
+
+
+                            Print.Siparis siparis = new Print.Siparis();
+                            xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
+                            siparis.PrinterName = tekrarSiparisPrintName;
+                            siparis.DataSource = dtSiparis;//dtSiparis;
+
+                            if (Param.Param_SiparisAna)
+                            {
+                                DataView dv = dtSiparis.DefaultView;
+                                dv.Sort = "AnaGrupAdi desc";
+                                dtSiparis = dv.ToTable();
+                            }
+
+                            if (con.State != ConnectionState.Closed) con.Close();
+
+                            if (Param.Param_Printer_Tanim) printer = Convert.ToString(dtSiparis.Rows[0]["Pkod_Printer"]);
+
+
+                            TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+
+
+                            siparis.xr_MasaNo.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Masa"]);
+
+                            if (kisiyeSatis != "")
+                            {
+                                siparis.xr_MasaNo.Text = siparis.xr_MasaNo.Text + "[" + kisiyeSatis + "]";
+                            }
+
+                            siparis.xr_Konum.Text = Convert.ToString(dtSiparis.Rows[0]["MasaKonumAdi"]);
+                            siparis.xr_KisiSayisi.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Kisi"]);
+                            siparis.xr_Tarih.Text = Convert.ToDateTime(dtSiparis.Rows[0]["Rsat_Tarih"]).ToShortDateString();
+                            siparis.xr_Acilis.Text = Convert.ToString(timeSpan);
+                            siparis.txtDepartman.Text = Departman.Dep_Adi;
+                            siparis.txtSiraNo.Text = sirano;
+
+                            if (garsonsor.Equals(""))
+                            {
+                                siparis.xr_Garson.Text = Convert.ToString(dtSiparis.Rows[0]["Garson"]);
+                            }
+                            else
+                            {
+                                siparis.xr_Garson.Text = garsonsor;
+                            }
+
+                            siparis.xr_Cek.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Fisno"]);
+
+                            siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
+                            siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
+
+                            if (fisBaslik != "")
+                            {
+                                siparis.xr_Baslik.Text = fisBaslik;
+                            }
+
+                            if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "") // 
+                            {
+                                siparis.Print();
+                            }
+
+                    }
+
+                    if (tumsiparisiTekrarGonder)
+                    {
+                        break;
+                    }
                 }
 
 
@@ -632,7 +800,6 @@ namespace Pos.Class
 
             return "OK";
         }
-
 
         public string newSiparisPrYedek(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "")
         {
@@ -3212,7 +3379,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 int dtSatirsay = dtHesap.Rows.Count;
 
-               
+
 
 
                 Print.Hesap hsp = new Print.Hesap();
@@ -3228,7 +3395,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 if (Param.hesapFisQr)
                 {
                     string gunsonutar = Param.Tarih.ToString("yyyy-MM-dd");
-                    hsp.txtQr.Text = gunsonutar.Replace("-","");
+                    hsp.txtQr.Text = gunsonutar.Replace("-", "");
                     hsp.txtQr.Visible = true;
                     hsp.ReportFooter.HeightF = (float)388.3324;
                     hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
@@ -3251,9 +3418,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     string bol1 = masaAd.Split(new string[] { " -" }, StringSplitOptions.None)[0].Trim();
                     string bol2 = masaAd.Split(new string[] { " -" }, StringSplitOptions.None)[1].Trim();
 
-                    if (bol1==bol2)
+                    if (bol1 == bol2)
                     {
-                        masaAd = masaAd.Replace("- "+bol1,"").Trim();
+                        masaAd = masaAd.Replace("- " + bol1, "").Trim();
                     }
                 }
 
@@ -3268,12 +3435,12 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 if (kisiyeSatis)
                 {
-                    masaAd = masaAd +"["+ kisiyeSatisAdSoyad+"]";
+                    masaAd = masaAd + "[" + kisiyeSatisAdSoyad + "]";
                 }
 
                 hsp.xr_MasaNo.Text = masaAd;
 
-                
+
 
                 hsp.xr_Konum.Text = Convert.ToString(dtHesap.Rows[0]["MasaKonumAdi"]);
                 hsp.xr_KisiSayisi.Text = Convert.ToString(dtHesap.Rows[0]["Rsat_Kisi"]);
@@ -3338,7 +3505,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         break;
                     case "DOLAR":
                         dovizIcon = " $";
-                        break; 
+                        break;
                     case "POUND":
                         dovizIcon = " £";
                         break;
@@ -3753,7 +3920,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             return "OK";
         }
 
-        public void servisfarklisatirda(DataTable dtHesap, Print.Hesap hsp,string dovizIcon)
+        public void servisfarklisatirda(DataTable dtHesap, Print.Hesap hsp, string dovizIcon)
         {
             // servis payını ayrı yazma 15.04.2024
             decimal servisToplam = 0;
@@ -5431,13 +5598,13 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     bosSatir = Convert.ToInt32(item["Mac_Satir"]);
                 }
 
-                string reckod = dbtools.DegerGetir("select isnull(Rsat_Recete,'') as Rsat_Recete from Cst_Recete_Satis where Rsat_Id='"+ SatirId + "'");
-                string yaziciismi = dbtools.DegerGetir("select top 1 isnull(Rec_Printer,'') as Rec_Printer from Cst_Recete where Rec_Genelkod='"+ reckod + "'");
+                string reckod = dbtools.DegerGetir("select isnull(Rsat_Recete,'') as Rsat_Recete from Cst_Recete_Satis where Rsat_Id='" + SatirId + "'");
+                string yaziciismi = dbtools.DegerGetir("select top 1 isnull(Rec_Printer,'') as Rec_Printer from Cst_Recete where Rec_Genelkod='" + reckod + "'");
 
 
                 iptal.PrinterName = printer;
 
-                if (yaziciismi!=null && yaziciismi!="")
+                if (yaziciismi != null && yaziciismi != "")
                 {
                     iptal.PrinterName = yaziciismi;
                 }

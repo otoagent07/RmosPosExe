@@ -2726,10 +2726,19 @@ namespace Pos
 
                 if (Merkez_Sube == String.Empty || Merkez_Sube == "M")
                 {
-                    if (Masa_Paket)
+                    if (Masa_Paket )
                     {
-                        FisPr pr = new FisPr();
-                        pr.PaketPr(Convert.ToInt32(bartxt_FisNo.EditValue), " * * * PAKET FİSİ * * * ");
+
+                        if (kisiyeSatisAktifmi=="True")
+                        {
+
+                        }
+                        else
+                        {
+                            FisPr pr = new FisPr();
+                            pr.PaketPr(Convert.ToInt32(bartxt_FisNo.EditValue), " * * * PAKET FİSİ * * * ");
+                        }
+                       
                     }
                 }
 

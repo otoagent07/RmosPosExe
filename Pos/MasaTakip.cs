@@ -2336,13 +2336,17 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                     return;
                 }
 
-                dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 14, @Fisno = '" + bartxt_FisNo.EditValue + "'");
+                //dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 14, @Fisno = '" + bartxt_FisNo.EditValue + "'");
+                //FisPr pr = new FisPr();
+                //string sonuc = pr.SiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, 0);
+                //if (sonuc != "OK")
+                //{
+                //    MessageBox.Show(sonuc);
+                //}
+
                 FisPr pr = new FisPr();
-                string sonuc = pr.SiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, 0);
-                if (sonuc != "OK")
-                {
-                    MessageBox.Show(sonuc);
-                }
+                pr.newSiparisPrF2(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split,  tumsiparisiTekrarGonder: true);
+
             }
 
 

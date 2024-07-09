@@ -91,6 +91,8 @@ namespace Pos.Class
 IF COL_LENGTH('Cst_Recete_Satis', 'deger1') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD deger1 nvarchar(3500) END;
 IF COL_LENGTH('Pos_Param', 'tipboxReceteKod') IS NULL BEGIN ALTER TABLE Pos_Param ADD tipboxReceteKod nvarchar(200) END;
 
+IF COL_LENGTH('Pos_Param', 'siparisTekrarPrintName') IS NULL BEGIN ALTER TABLE Pos_Param ADD siparisTekrarPrintName nvarchar(200) END;
+
 ALTER TABLE Pos_Log ALTER COLUMN Log_Recete VARCHAR(3500);
 
 IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKodCocuk') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD HizmetReceteKodCocuk nvarchar(200) END;

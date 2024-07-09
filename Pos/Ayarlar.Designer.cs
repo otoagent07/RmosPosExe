@@ -87,6 +87,7 @@
             this.btn_Prm_Kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnIndexYenile = new DevExpress.XtraEditors.SimpleButton();
             this.btnRecAlfebetik = new DevExpress.XtraEditors.SimpleButton();
             this.btnSqlStopStart = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Hesap_DovizOzetToplam = new DevExpress.XtraEditors.CheckEdit();
@@ -1259,7 +1260,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.btnIndexYenile = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit202 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSiparisTekrarPrintName = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2109,6 +2111,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit202.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSiparisTekrarPrintName.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -2690,6 +2694,15 @@
             this.xtraTabPage5.Controls.Add(this.chk_Prm_MiktarDuzelt);
             this.xtraTabPage5.Name = "xtraTabPage5";
             resources.ApplyResources(this.xtraTabPage5, "xtraTabPage5");
+            // 
+            // btnIndexYenile
+            // 
+            this.btnIndexYenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnIndexYenile.Appearance.Font")));
+            this.btnIndexYenile.Appearance.Options.UseFont = true;
+            this.btnIndexYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIndexYenile.ImageOptions.Image")));
+            resources.ApplyResources(this.btnIndexYenile, "btnIndexYenile");
+            this.btnIndexYenile.Name = "btnIndexYenile";
+            this.btnIndexYenile.Click += new System.EventHandler(this.btnIndexYenile_Click);
             // 
             // btnRecAlfebetik
             // 
@@ -4127,6 +4140,8 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.txtSiparisTekrarPrintName);
+            this.xtraTabPage8.Controls.Add(this.textEdit202);
             this.xtraTabPage8.Controls.Add(this.servispayOdenmezIkramSil);
             this.xtraTabPage8.Controls.Add(this.servispayFooterda);
             this.xtraTabPage8.Controls.Add(this.hesapFisQr);
@@ -12538,14 +12553,17 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // btnIndexYenile
+            // textEdit202
             // 
-            this.btnIndexYenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.btnIndexYenile.Appearance.Options.UseFont = true;
-            this.btnIndexYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            resources.ApplyResources(this.btnIndexYenile, "btnIndexYenile");
-            this.btnIndexYenile.Name = "btnIndexYenile";
-            this.btnIndexYenile.Click += new System.EventHandler(this.btnIndexYenile_Click);
+            resources.ApplyResources(this.textEdit202, "textEdit202");
+            this.textEdit202.Name = "textEdit202";
+            this.textEdit202.Properties.ReadOnly = true;
+            this.textEdit202.TabStop = false;
+            // 
+            // txtSiparisTekrarPrintName
+            // 
+            resources.ApplyResources(this.txtSiparisTekrarPrintName, "txtSiparisTekrarPrintName");
+            this.txtSiparisTekrarPrintName.Name = "txtSiparisTekrarPrintName";
             // 
             // Ayarlar
             // 
@@ -13436,6 +13454,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit202.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSiparisTekrarPrintName.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14672,5 +14692,7 @@
         private DevExpress.XtraEditors.SimpleButton btnHapyhourYenile;
         private DevExpress.XtraEditors.TextEdit textEdit200;
         private DevExpress.XtraEditors.SimpleButton btnIndexYenile;
+        private DevExpress.XtraEditors.TextEdit txtSiparisTekrarPrintName;
+        private DevExpress.XtraEditors.TextEdit textEdit202;
     }
 }
