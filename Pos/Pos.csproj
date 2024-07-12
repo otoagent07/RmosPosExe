@@ -447,6 +447,12 @@
     <Compile Include="KisiyeSatisSec.Designer.cs">
       <DependentUpon>KisiyeSatisSec.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasaSecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaSecForm.Designer.cs">
+      <DependentUpon>MasaSecForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TipboxForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1544,6 +1550,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KisiyeSatisSec.resx">
       <DependentUpon>KisiyeSatisSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaSecForm.resx">
+      <DependentUpon>MasaSecForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipboxForm.en-US.resx">
       <DependentUpon>TipboxForm.cs</DependentUpon>

@@ -2091,6 +2091,11 @@ namespace Pos
                     klv.MiktarGR = Rec_Miktar_Gr;
                     klv.ShowDialog();
 
+                    if (klv.Cikis == true)
+                    {
+                        return;
+                    }
+
                     if (klv.sayi <= 0) return;
                     if (Rec_Miktar_Gr)
                     {
@@ -2484,8 +2489,11 @@ namespace Pos
 
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
+            cikisyap();
+        }
 
-
+        public void cikisyap()
+        {
             if (mCari != null)
             {
                 if (Masa_Paket)
@@ -3567,6 +3575,11 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 FisPr pr = new FisPr();
                 pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split,  kisiyeSatis: txtKisiyeSatis.Text,tumsiparisiTekrarGonder:true);
             }
+
+            if (e.KeyCode == Keys.Escape && btn_Cikis.Enabled)
+            {
+                cikisyap();
+            }
         }
 
 
@@ -4533,6 +4546,11 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 txtKisiyeSatis.Text = kisiyeSatisSec.adsoyad;
                 txtKisiyeSatisSayac.Text = kisiyeSatisSec.sayac;
             }
+        }
+
+        private void btnMasaSec_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
 
 

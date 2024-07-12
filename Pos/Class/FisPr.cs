@@ -3635,7 +3635,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                                     dovizIcon = " $";
                                     break;
                                 default:
-                                    dovizIcon = " ₺";
+                                    //dovizIcon = " ₺";
                                     break;
                             }
                         }
