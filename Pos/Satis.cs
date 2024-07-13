@@ -9,6 +9,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
@@ -84,21 +85,27 @@ namespace Pos
         {
 
             load();
-
-
         }
 
-
-        public void load()
+        public bool urunleriYenile = true;
+        public void load(bool urunleriYenile = true)
         {
             try
             {
+                sayac = 0;
+                kisiyiTemizle();
+                this.urunleriYenile = urunleriYenile;
+
+                //flp_AnaGrup.Controls.Clear();
+
                 kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
 
                 if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
                 {
                     panelControl4.Visible = false;
                     txt_Not.Size = new Size(txt_Not.Size.Width, 50);
+                    btnMasaSec.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+
                 }
                 AyarlarController ayarlar = new AyarlarController();
                 panelControl2.Width = Convert.ToInt32(ayarlar.satisEkranGenislik);
@@ -128,12 +135,20 @@ namespace Pos
 
                 if (Param.Param_Anagrup_Cikmasin)
                 {
-                    Alt_Yenile();
+                    if (urunleriYenile)
+                    {
+                        Alt_Yenile();
+                    }
+
                     layoutControlItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
                 }
                 else
                 {
-                    Ust_Yenile();
+                    if (urunleriYenile)
+                    {
+                        Ust_Yenile();
+                    }
+
                 }
 
                 btn_Siparis.Enabled = Departman.Siparis;
@@ -168,7 +183,7 @@ namespace Pos
                 }
 
 
-                bar_Tarih.Caption += Param.Tarih.ToShortDateString();
+                bar_Tarih.Caption = "Tarih : " + Param.Tarih.ToShortDateString();
 
                 chk_Fix.Visible = User.Pos_FixMenu;
 
@@ -217,6 +232,9 @@ namespace Pos
                     txtKisiyeSatis.Select();
                     txtKisiyeSatis.Focus();
                 }
+
+                dizaynyukle();
+
             }
             catch (Exception ex)
             {
@@ -584,8 +602,8 @@ namespace Pos
             Fisno_Al();
 
 
-            bartxt_Kul.Caption += User.P_Ad + " " + User.P_Soyad;
-            bartxt_Dep.Caption += Departman.Dep_Adi;
+            bartxt_Kul.Caption = "Kullanıcı : " + User.P_Ad + " " + User.P_Soyad;
+            bartxt_Dep.Caption = "Departman : " + Departman.Dep_Adi;
 
             if (Convert.ToString(this.Tag) != "D") { btn_Indirim.Visible = false; }
 
@@ -1689,7 +1707,7 @@ namespace Pos
             gridControl1.DataSource = dtCloned;
 
 
-            gridView1.BestFitColumns();
+            //gridView1.BestFitColumns();
 
             if (dt.Rows.Count > 0)
             {
@@ -1766,6 +1784,11 @@ namespace Pos
 
                     btn_AnaGrup.Click += new EventHandler(btn_AnaGrup_Click);
                     flp_AnaGrup.Controls.Add(btn_AnaGrup);
+
+                    if (i == 0)
+                    {
+                        btn_AnaGrup.PerformClick();
+                    }
                 }
             }
         }
@@ -1855,6 +1878,11 @@ namespace Pos
                     btn_AltGrup.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
                     btn_AltGrup.Click += new EventHandler(btn_AltGrup_Click);
                     flp_AltGrup.Controls.Add(btn_AltGrup);
+
+                    if (i == 0)
+                    {
+                        btn_AltGrup.PerformClick();
+                    }
                 }
             }
         }
@@ -1912,8 +1940,13 @@ namespace Pos
             if (dt.Rows.Count == 0 && (User.P_Kod.Equals("999") || User.P_Kod.ToUpper().Equals("RMOS")))
             {
                 dbtools.execcmd("delete from Pos_Grup where Kont_Anagrup ='" + Ana_Grup + "' and Kont_Aragrup='" + Alt_Grup + "' and Kont_Departman='" + Departman.Dep_Kodu + "'");
-                flp_AnaGrup.Controls.Clear();
-                Ust_Yenile();
+
+                if (urunleriYenile)
+                {
+                    flp_AnaGrup.Controls.Clear();
+                    Ust_Yenile();
+                }
+                
             }
 
             if (dt.Rows.Count > 0)
@@ -2734,10 +2767,10 @@ namespace Pos
 
                 if (Merkez_Sube == String.Empty || Merkez_Sube == "M")
                 {
-                    if (Masa_Paket )
+                    if (Masa_Paket)
                     {
 
-                        if (kisiyeSatisAktifmi=="True")
+                        if (kisiyeSatisAktifmi == "True")
                         {
 
                         }
@@ -2746,7 +2779,7 @@ namespace Pos
                             FisPr pr = new FisPr();
                             pr.PaketPr(Convert.ToInt32(bartxt_FisNo.EditValue), " * * * PAKET FİSİ * * * ");
                         }
-                       
+
                     }
                 }
 
@@ -3573,7 +3606,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             if (e.KeyCode == Keys.F6)
             {
                 FisPr pr = new FisPr();
-                pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split,  kisiyeSatis: txtKisiyeSatis.Text,tumsiparisiTekrarGonder:true);
+                pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split, kisiyeSatis: txtKisiyeSatis.Text, tumsiparisiTekrarGonder: true);
             }
 
             if (e.KeyCode == Keys.Escape && btn_Cikis.Enabled)
@@ -4164,7 +4197,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             panelMenu.Visible = false;
         }
 
-        private void Satis_Shown(object sender, EventArgs e)
+        public void shownAc()
         {
             marsKontrol(false);
             // btn_Siparis.Enabled = true;
@@ -4233,6 +4266,10 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                     }
                 }
             }
+        }
+        private void Satis_Shown(object sender, EventArgs e)
+        {
+            shownAc();
         }
 
         public void marsKontrol(bool siparisten)
@@ -4550,6 +4587,50 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         private void btnMasaSec_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            MasaSecForm masaSecForm = new MasaSecForm();
+            masaSecForm.ShowDialog();
+        }
+
+        public void dizaynyukle()
+        {
+            try
+            {
+
+                if (File.Exists(fileName))
+                {
+                    gridView1.RestoreLayoutFromXml(fileName);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "dizaynyukle", "RmosCrm.exe'nin bulunduğu yerde GridDizayn klasörünü açınız", ex);
+            }
+
+        }
+        private void btnGridDizaynKaydet_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                gridView1.SaveLayoutToXml(fileName);
+                MessageBox.Show("KAYDEDİLDİ");
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnGridDizaynKaydet_Click", "RmosCrm.exe'nin bulunduğu yerde GridDizayn klasörünü açınız", ex);
+            }
+
+        }
+        string fileName = Departman.Dep_Kodu + "_" + MyClass + ".xml";
+
+        private void btnGridDizaynTemizle_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(fileName))
+            {
+                File.Delete(fileName);
+            }
+
+            MessageBox.Show("SİLİNDİ");
 
         }
 

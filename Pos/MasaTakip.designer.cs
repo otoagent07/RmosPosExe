@@ -79,6 +79,8 @@
             this.contextMenuSagTik = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnContextKisiyeTransfer = new System.Windows.Forms.ToolStripMenuItem();
             this.btnParcaliUrunTr = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGridDizaynKaydet = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGridDizaynTemizle = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemRichTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit();
@@ -584,7 +586,9 @@
             this.contextMenuSagTik.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuSagTik.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnContextKisiyeTransfer,
-            this.btnParcaliUrunTr});
+            this.btnParcaliUrunTr,
+            this.btnGridDizaynKaydet,
+            this.btnGridDizaynTemizle});
             this.contextMenuSagTik.Name = "contextMenuSagTik";
             resources.ApplyResources(this.contextMenuSagTik, "contextMenuSagTik");
             // 
@@ -601,6 +605,20 @@
             this.btnParcaliUrunTr.Name = "btnParcaliUrunTr";
             resources.ApplyResources(this.btnParcaliUrunTr, "btnParcaliUrunTr");
             this.btnParcaliUrunTr.Click += new System.EventHandler(this.btnParcaliUrunTr_Click);
+            // 
+            // btnGridDizaynKaydet
+            // 
+            this.btnGridDizaynKaydet.Image = global::Pos.Properties.Resources.parcalimasa32x32;
+            this.btnGridDizaynKaydet.Name = "btnGridDizaynKaydet";
+            resources.ApplyResources(this.btnGridDizaynKaydet, "btnGridDizaynKaydet");
+            this.btnGridDizaynKaydet.Click += new System.EventHandler(this.btnGridDizaynKaydet_Click);
+            // 
+            // btnGridDizaynTemizle
+            // 
+            this.btnGridDizaynTemizle.Image = global::Pos.Properties.Resources.Cancel_16x16;
+            this.btnGridDizaynTemizle.Name = "btnGridDizaynTemizle";
+            resources.ApplyResources(this.btnGridDizaynTemizle, "btnGridDizaynTemizle");
+            this.btnGridDizaynTemizle.Click += new System.EventHandler(this.btnGridDizaynTemizle_Click);
             // 
             // gridView2
             // 
@@ -644,6 +662,7 @@
             this.gridView2.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
             this.gridView2.OptionsSelection.MultiSelect = true;
             this.gridView2.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.gridView2.OptionsView.ColumnAutoWidth = false;
             this.gridView2.OptionsView.ShowFooter = true;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.OptionsView.ShowIndicator = false;
@@ -1546,5 +1565,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnContextKisiyeTransfer;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private System.Windows.Forms.ToolStripMenuItem btnParcaliUrunTr;
+        private System.Windows.Forms.ToolStripMenuItem btnGridDizaynKaydet;
+        private System.Windows.Forms.ToolStripMenuItem btnGridDizaynTemizle;
     }
 }

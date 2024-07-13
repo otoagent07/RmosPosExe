@@ -109,6 +109,9 @@ namespace Pos
                     this.flp_Masa.DragOver += new System.Windows.Forms.DragEventHandler(this.flowLayoutPanel1_DragOver);
                 }
 
+
+                dizaynyukle();
+
             }
             catch (Exception ex)
             {
@@ -1686,7 +1689,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 }
 
                 gridControl2.DataSource = dtParcaliHepsi;
-                gridView2.BestFitColumns();
+                //gridView2.BestFitColumns();
 
                 return;
             }
@@ -1748,7 +1751,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
             gridControl2.DataSource = dtCloned;
-            gridView2.BestFitColumns();
+            //gridView2.BestFitColumns();
         }
 
         decimal toplamTutar = 0;
@@ -1870,7 +1873,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
 
 
-            Satis satis = new Satis();
+            satis = new Satis();
             satis.Tag = "M";
             if (Masa_No == String.Empty)
             {
@@ -1895,6 +1898,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
         }
 
+        public static Satis satis;
         //private void btn_OdaKilitle_Click(object sender, EventArgs e)
         //{
         //    if (Masa_No == String.Empty || gridView2.RowCount == 0)
@@ -2327,7 +2331,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             {
                 HesapDokum();
             }
-            
+
             if (e.KeyCode == Keys.F2)
             {
                 if (Masa_No == String.Empty || gridView2.RowCount == 0)
@@ -2345,7 +2349,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 //}
 
                 FisPr pr = new FisPr();
-                pr.newSiparisPrF2(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split,  tumsiparisiTekrarGonder: true);
+                pr.newSiparisPrF2(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split, tumsiparisiTekrarGonder: true);
 
             }
 
@@ -2991,6 +2995,51 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         private void btnParcaliUrunTr_Click(object sender, EventArgs e)
         {
             MalzemeTransfer();
+        }
+
+
+        string fileName = Departman.Dep_Kodu + "_" + MyClass + ".xml";
+
+        public void dizaynyukle()
+        {
+            try
+            {
+
+                if (File.Exists(fileName))
+                {
+                    gridView2.RestoreLayoutFromXml(fileName);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "dizaynyukle", "RmosCrm.exe'nin bulunduğu yerde GridDizayn klasörünü açınız", ex);
+            }
+
+        }
+        private void btnGridDizaynKaydet_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                gridView2.SaveLayoutToXml(fileName);
+                MessageBox.Show("KAYDEDİLDİ");
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnGridDizaynKaydet_Click", "RmosCrm.exe'nin bulunduğu yerde GridDizayn klasörünü açınız", ex);
+            }
+
+        }
+
+        private void btnGridDizaynTemizle_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(fileName))
+            {
+                File.Delete(fileName);
+            }
+            MessageBox.Show("SİLİNDİ");
+
         }
     }
 }

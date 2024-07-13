@@ -59,6 +59,7 @@
             this.repositoryItemTextEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.bartxt_Garson = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTextEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.btnMasaSec = new DevExpress.XtraBars.BarButtonItem();
             this.bartxt_MasaNo = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTextEdit4 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.bartxt_Kisi = new DevExpress.XtraBars.BarStaticItem();
@@ -74,6 +75,7 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.repositoryItemTextEdit5 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.repositoryItemTextEdit7 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
@@ -123,6 +125,9 @@
             this.txt_Filtre = new DevExpress.XtraEditors.TextEdit();
             this.btn_5 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuSagTik = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnGridDizaynKaydet = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGridDizaynTemizle = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -157,8 +162,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMasaSec = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -197,6 +200,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            this.contextMenuSagTik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -486,6 +490,15 @@
             this.repositoryItemTextEdit3.Name = "repositoryItemTextEdit3";
             this.repositoryItemTextEdit3.ReadOnly = true;
             // 
+            // btnMasaSec
+            // 
+            resources.ApplyResources(this.btnMasaSec, "btnMasaSec");
+            this.btnMasaSec.Id = 19;
+            this.btnMasaSec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMasaSec.ImageOptions.Image")));
+            this.btnMasaSec.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMasaSec.ImageOptions.LargeImage")));
+            this.btnMasaSec.Name = "btnMasaSec";
+            this.btnMasaSec.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMasaSec_ItemClick);
+            // 
             // bartxt_MasaNo
             // 
             resources.ApplyResources(this.bartxt_MasaNo, "bartxt_MasaNo");
@@ -612,6 +625,12 @@
             this.barDockControlRight.CausesValidation = false;
             resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.Manager = this.barManager1;
+            // 
+            // barButtonItem2
+            // 
+            resources.ApplyResources(this.barButtonItem2, "barButtonItem2");
+            this.barButtonItem2.Id = 18;
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // repositoryItemTextEdit5
             // 
@@ -1119,12 +1138,36 @@
             // gridControl1
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
+            this.gridControl1.ContextMenuStrip = this.contextMenuSagTik;
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.barManager1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             this.gridControl1.DoubleClick += new System.EventHandler(this.gridControl1_DoubleClick);
+            // 
+            // contextMenuSagTik
+            // 
+            this.contextMenuSagTik.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuSagTik.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnGridDizaynKaydet,
+            this.btnGridDizaynTemizle});
+            this.contextMenuSagTik.Name = "contextMenuSagTik";
+            resources.ApplyResources(this.contextMenuSagTik, "contextMenuSagTik");
+            // 
+            // btnGridDizaynKaydet
+            // 
+            this.btnGridDizaynKaydet.Image = global::Pos.Properties.Resources.parcalimasa32x32;
+            this.btnGridDizaynKaydet.Name = "btnGridDizaynKaydet";
+            resources.ApplyResources(this.btnGridDizaynKaydet, "btnGridDizaynKaydet");
+            this.btnGridDizaynKaydet.Click += new System.EventHandler(this.btnGridDizaynKaydet_Click);
+            // 
+            // btnGridDizaynTemizle
+            // 
+            this.btnGridDizaynTemizle.Image = global::Pos.Properties.Resources.Cancel_16x16;
+            this.btnGridDizaynTemizle.Name = "btnGridDizaynTemizle";
+            resources.ApplyResources(this.btnGridDizaynTemizle, "btnGridDizaynTemizle");
+            this.btnGridDizaynTemizle.Click += new System.EventHandler(this.btnGridDizaynTemizle_Click);
             // 
             // gridView1
             // 
@@ -1159,6 +1202,7 @@
             this.gridView1.FormatRules.Add(gridFormatRule1);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ColumnAutoWidth = false;
             this.gridView1.OptionsView.RowAutoHeight = true;
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -1462,21 +1506,6 @@
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // barButtonItem2
-            // 
-            resources.ApplyResources(this.barButtonItem2, "barButtonItem2");
-            this.barButtonItem2.Id = 18;
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // btnMasaSec
-            // 
-            resources.ApplyResources(this.btnMasaSec, "btnMasaSec");
-            this.btnMasaSec.Id = 19;
-            this.btnMasaSec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.btnMasaSec.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.btnMasaSec.Name = "btnMasaSec";
-            this.btnMasaSec.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMasaSec_ItemClick);
-            // 
             // Satis
             // 
             resources.ApplyResources(this, "$this");
@@ -1535,6 +1564,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            this.contextMenuSagTik.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -1691,5 +1721,8 @@
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraBars.BarButtonItem btnMasaSec;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuSagTik;
+        private System.Windows.Forms.ToolStripMenuItem btnGridDizaynKaydet;
+        private System.Windows.Forms.ToolStripMenuItem btnGridDizaynTemizle;
     }
 }
