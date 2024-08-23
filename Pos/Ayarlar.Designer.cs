@@ -515,6 +515,7 @@
             this.txt_PrintGrup_Aciklama = new DevExpress.XtraEditors.TextEdit();
             this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
             this.tab_PrintAyarlari = new DevExpress.XtraTab.XtraTabPage();
+            this.checkEditTumPrinter = new DevExpress.XtraEditors.CheckEdit();
             this.Pkod_AbuyerPort = new DevExpress.XtraEditors.SpinEdit();
             this.textEdit178 = new DevExpress.XtraEditors.TextEdit();
             this.Pkod_AbuyerIP = new DevExpress.XtraEditors.TextEdit();
@@ -563,6 +564,7 @@
             this.gridColumn159 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn160 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn174 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn176 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit30 = new DevExpress.XtraEditors.TextEdit();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textEdit26 = new DevExpress.XtraEditors.TextEdit();
@@ -1262,8 +1264,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.checkEditTumPrinter = new DevExpress.XtraEditors.CheckEdit();
-            this.gridColumn176 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.tumPrinter = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1620,6 +1621,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_PrintGrup_Aciklama.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
             this.tab_PrintAyarlari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditTumPrinter.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pkod_AbuyerPort.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit178.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pkod_AbuyerIP.Properties)).BeginInit();
@@ -2115,7 +2117,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditTumPrinter.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tumPrinter.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4143,6 +4145,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.tumPrinter);
             this.xtraTabPage8.Controls.Add(this.txtSiparisTekrarPrintName);
             this.xtraTabPage8.Controls.Add(this.textEdit202);
             this.xtraTabPage8.Controls.Add(this.servispayOdenmezIkramSil);
@@ -6238,6 +6241,12 @@
             this.tab_PrintAyarlari.Name = "tab_PrintAyarlari";
             resources.ApplyResources(this.tab_PrintAyarlari, "tab_PrintAyarlari");
             // 
+            // checkEditTumPrinter
+            // 
+            resources.ApplyResources(this.checkEditTumPrinter, "checkEditTumPrinter");
+            this.checkEditTumPrinter.Name = "checkEditTumPrinter";
+            this.checkEditTumPrinter.Properties.Caption = resources.GetString("checkEditTumPrinter.Properties.Caption");
+            // 
             // Pkod_AbuyerPort
             // 
             resources.ApplyResources(this.Pkod_AbuyerPort, "Pkod_AbuyerPort");
@@ -6630,6 +6639,12 @@
             resources.ApplyResources(this.gridColumn174, "gridColumn174");
             this.gridColumn174.FieldName = "Pkod_Id";
             this.gridColumn174.Name = "gridColumn174";
+            // 
+            // gridColumn176
+            // 
+            resources.ApplyResources(this.gridColumn176, "gridColumn176");
+            this.gridColumn176.FieldName = "tumPrinter";
+            this.gridColumn176.Name = "gridColumn176";
             // 
             // textEdit30
             // 
@@ -12570,17 +12585,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // checkEditTumPrinter
+            // tumPrinter
             // 
-            resources.ApplyResources(this.checkEditTumPrinter, "checkEditTumPrinter");
-            this.checkEditTumPrinter.Name = "checkEditTumPrinter";
-            this.checkEditTumPrinter.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
-            // gridColumn176
-            // 
-            resources.ApplyResources(this.gridColumn176, "gridColumn176");
-            this.gridColumn176.FieldName = "tumPrinter";
-            this.gridColumn176.Name = "gridColumn176";
+            resources.ApplyResources(this.tumPrinter, "tumPrinter");
+            this.tumPrinter.Name = "tumPrinter";
+            this.tumPrinter.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -12959,6 +12968,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
             this.tab_PrintAyarlari.ResumeLayout(false);
             this.tab_PrintAyarlari.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditTumPrinter.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pkod_AbuyerPort.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit178.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pkod_AbuyerIP.Properties)).EndInit();
@@ -13473,7 +13483,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditTumPrinter.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tumPrinter.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14714,5 +14724,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit202;
         private DevExpress.XtraEditors.CheckEdit checkEditTumPrinter;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn176;
+        private DevExpress.XtraEditors.CheckEdit tumPrinter;
     }
 }
