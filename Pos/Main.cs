@@ -1956,7 +1956,16 @@ No Cut Seçili Olsun
                 FisPr pr = new FisPr();
                 string sonuc = "OK";
 
-                sonuc = pr.newSiparisPr(Convert.ToInt32(json.fisno), false, 0, fisBaslik: " * * * " + json.tip + " FİSİ * * * ");
+
+                if (Param.tumPrinter) // 23.08.2024 emre bey istediği için eklendi. mantık reçete 1 den fazla ise tüm fişten çıksın
+                {
+                    sonuc = pr.newSiparisPr_Tumsiparis(Convert.ToInt32(json.fisno), false, 0, fisBaslik: " * * * " + json.tip + " FİSİ * * * ");
+                }
+                else
+                {
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(json.fisno), false, 0, fisBaslik: " * * * " + json.tip + " FİSİ * * * ");
+                }
+
 
 
                 if (sonuc != "OK")
