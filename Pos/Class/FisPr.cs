@@ -629,7 +629,217 @@ namespace Pos.Class
             return "OK";
         }
 
+        public string newSiparisPr_Tumsiparis(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false)
+        {
 
+            try
+            {
+                if (tumsiparisiTekrarGonder)
+                {
+                    dbtools.execcmdR("update Cst_Recete_Satis set Rsat_SiparisPr=0 where Rsat_Fisno='" + Fisno + "' ");
+                }
+
+                string sirano = StatikSinif.getSira(Fisno.ToString());
+
+
+                //List<string> siparis = new List<string>();
+                DataTable dtPrinter = SiparisPrinterBul(Fisno, Split, false);
+
+                //decimal bakiye = 0;
+
+                bool isMac_Printer = false;
+                for (int i = 0; i < dtPrinter.Rows.Count; i++)
+                {
+                    if (Convert.ToString(dtPrinter.Rows[i]["Mac_Printer"]) != "")
+                    {
+                        isMac_Printer = true;
+                        break;
+                    }
+                }
+
+                DataTable dtDizayn = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'SIPARISFISI'");
+                if (dtDizayn.Rows.Count < 1)
+                {
+                    return "Sipariş Dizaynı Yapılmamış...";
+                }
+
+                //tümsiparis 1 olan tüm siparişlerin listesini getirdim
+                DataTable dtSiparis2 = new DataTable();
+                SqlConnection con2 = dbtools.conn;
+                if (con2.State == ConnectionState.Closed) con2.Open();
+                SqlCommand com2 = new SqlCommand();
+                com2.Connection = con2;
+                com2.CommandType = CommandType.StoredProcedure;
+                com2.CommandTimeout = 0;
+                com2.CommandText = "Pos_Satis";
+                com2.Parameters.AddWithValue("@Fisno", Fisno);
+                com2.Parameters.AddWithValue("@Rapor_Tipi", 32);
+                com2.Parameters.AddWithValue("@Printer", "");
+                com2.Parameters.AddWithValue("@Mars", Mars);
+                com2.Parameters.AddWithValue("@Split", Split);
+                com2.Parameters.AddWithValue("@MacAdres", isMac_Printer ? dbtools.MacAdresi() : "");
+                SqlDataAdapter da2 = new SqlDataAdapter(com2);
+                da2.Fill(dtSiparis2);
+
+
+                for (int i = 0; i < dtPrinter.Rows.Count; i++)
+                {
+                    string printer = Convert.ToString(dtPrinter.Rows[i]["Printer"]);
+                    int bosSatir = Convert.ToInt32(dtPrinter.Rows[i]["Pkod_Satir"]);
+
+                    if (printer == "" && Convert.ToString(dtPrinter.Rows[i]["Mac_Printer"]) == "") continue;
+
+
+                    // !! yeni siparis printer çıkarmıyorsa açtık. ERAMAX İÇİN YOKSA KALDRI YORUM SATIRINDAN
+                    if (Convert.ToString(dtPrinter.Rows[i]["Mac_Printer"]) != "")
+                    {
+                        printer = Convert.ToString(dtPrinter.Rows[i]["Mac_Printer"]);
+                    }
+
+
+                    DataTable dtSiparis = new DataTable();
+                    SqlConnection con = dbtools.conn;
+                    if (con.State == ConnectionState.Closed) con.Open();
+                    SqlCommand com = new SqlCommand();
+                    com.Connection = con;
+                    com.CommandType = CommandType.StoredProcedure;
+                    com.CommandTimeout = 0;
+                    com.CommandText = "Pos_Satis";
+                    com.Parameters.AddWithValue("@Fisno", Fisno);
+                    com.Parameters.AddWithValue("@Rapor_Tipi", 1);
+                    com.Parameters.AddWithValue("@Printer", printer);
+                    com.Parameters.AddWithValue("@Mars", Mars);
+                    com.Parameters.AddWithValue("@Split", Split);
+                    com.Parameters.AddWithValue("@MacAdres", isMac_Printer ? dbtools.MacAdresi() : "");
+                    SqlDataAdapter da = new SqlDataAdapter(com);
+                    da.Fill(dtSiparis);
+
+
+                    DataTable resultTable = dtSiparis.Clone();
+
+
+                    // DataTable'ların birleştirilmesi
+                    var query = from t1 in dtSiparis.AsEnumerable()
+                                select resultTable.LoadDataRow(
+                                    t1.ItemArray, // İlk tablonun verilerini ekle
+                                    false);
+                    query.CopyToDataTable(resultTable, LoadOption.PreserveChanges);
+
+                    foreach (DataRow item in dtSiparis.Rows)
+                    {
+                        int rsatid = Convert.ToInt32(item["Rsat_Id"].ToString());
+                        bool cik = false;
+                        foreach (DataRow item2 in dtSiparis2.Rows)
+                        {
+                            int rsatid2 = Convert.ToInt32(item2["Rsat_Id"].ToString());
+                            if (rsatid == rsatid2)
+                            {
+                                var query2 = from t2 in dtSiparis2.AsEnumerable()
+                                             select resultTable.LoadDataRow(
+                                                 t2.ItemArray, // İkinci tablonun eksik verilerini ekle
+                                                 false);
+                                query2.CopyToDataTable(resultTable, LoadOption.PreserveChanges);
+                                goto etiket2;
+                            }
+
+                        }
+                    }
+
+                etiket2:
+
+
+                    var distinctRows = resultTable.AsEnumerable()
+    .GroupBy(row => row.Field<int>("Rsat_Id"))
+    .Select(group => group.First()) // Aynı Rsat_Id'ye sahip olan ilk satırı alıyoruz
+    .CopyToDataTable();
+                    dtSiparis = distinctRows;
+                    if (dtSiparis.Rows.Count > 0)
+                    {
+
+                        string yaziciismi = printer.ToString();
+
+
+
+
+                        foreach (DataRow item in dtSiparis.Rows)
+                        {
+                            item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "").Replace(",000", "").Replace(",00", "");
+                        }
+
+
+                        Print.Siparis siparis = new Print.Siparis();
+                        xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
+                        siparis.PrinterName = yaziciismi == "" ? printer : yaziciismi;
+                        siparis.DataSource = dtSiparis;//dtSiparis;
+
+                        if (Param.Param_SiparisAna)
+                        {
+                            DataView dv = dtSiparis.DefaultView;
+                            dv.Sort = "AnaGrupAdi desc";
+                            dtSiparis = dv.ToTable();
+                        }
+
+                        if (con.State != ConnectionState.Closed) con.Close();
+
+                        if (Param.Param_Printer_Tanim) printer = Convert.ToString(dtSiparis.Rows[0]["Pkod_Printer"]);
+
+
+                        TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+
+
+                        siparis.xr_MasaNo.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Masa"]);
+
+                        if (kisiyeSatis != "")
+                        {
+                            siparis.xr_MasaNo.Text = siparis.xr_MasaNo.Text + "[" + kisiyeSatis + "]";
+                        }
+
+                        siparis.xr_Konum.Text = Convert.ToString(dtSiparis.Rows[0]["MasaKonumAdi"]);
+                        siparis.xr_KisiSayisi.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Kisi"]);
+                        siparis.xr_Tarih.Text = Convert.ToDateTime(dtSiparis.Rows[0]["Rsat_Tarih"]).ToShortDateString();
+                        siparis.xr_Acilis.Text = Convert.ToString(timeSpan);
+                        siparis.txtDepartman.Text = Departman.Dep_Adi;
+                        siparis.txtSiraNo.Text = sirano;
+
+                        if (garsonsor.Equals(""))
+                        {
+                            siparis.xr_Garson.Text = Convert.ToString(dtSiparis.Rows[0]["Garson"]);
+                        }
+                        else
+                        {
+                            siparis.xr_Garson.Text = garsonsor;
+                        }
+
+                        siparis.xr_Cek.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Fisno"]);
+
+                        siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
+                        siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
+
+                        if (fisBaslik != "")
+                        {
+                            siparis.xr_Baslik.Text = fisBaslik;
+                        }
+
+                        if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "") // 
+                        {
+                            siparis.Print();
+                        }
+
+
+                    }
+
+                }
+
+                AbuyerPr(Fisno, Mars, Split, abuyerBaslik, kartDetay1, kartdetay2, hizliSatis);
+            }
+            catch (Exception ex)
+            {
+
+                return "HATA Yazdırılamadı !\n" + ex.Message;
+            }
+
+            return "OK";
+        }
         public string newSiparisPrF2(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false)
         {
 

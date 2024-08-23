@@ -2056,7 +2056,7 @@ namespace Pos
         bool Rec_Miktar_Gr = false;
 
 
-        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false, int otomiktar = 1, bool urunduzeltme = false,bool urunTransfer=false)
+        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false, int otomiktar = 1, bool urunduzeltme = false, bool urunTransfer = false)
         {
             try
             {
@@ -2979,9 +2979,18 @@ namespace Pos
                 garson = bartxt_Garson.EditValue.ToString();
             }
 
+
             if (Param.Param_YeniSiparisDkm)
             {
-                sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text);
+                if (Param.tumPrinter) // 23.08.2024 emre bey istediği için eklendi. mantık reçete 1 den fazla ise tüm fişten çıksın
+                {
+                    sonuc = pr.newSiparisPr_Tumsiparis(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text);
+
+                }
+                else
+                {
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text);
+                }
             }
             else
             {
