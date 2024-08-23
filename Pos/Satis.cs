@@ -868,7 +868,11 @@ namespace Pos
             {
                 if (Param.Param_HizliSatisCekAc)
                 {
+                    dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Durum='K' where Rsat_Fisno='{Fisno}'");
+
+
                     bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
+                    Fisno = Convert.ToInt32(bartxt_FisNo.EditValue.ToString());
                     StatikSinif.siranoarttir();
                 }
                 else
@@ -1946,7 +1950,7 @@ namespace Pos
                     flp_AnaGrup.Controls.Clear();
                     Ust_Yenile();
                 }
-                
+
             }
 
             if (dt.Rows.Count > 0)
@@ -2052,7 +2056,7 @@ namespace Pos
         bool Rec_Miktar_Gr = false;
 
 
-        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false, int otomiktar = 1, bool urunduzeltme = false)
+        public void Urun_Sat(string Urun_Kodu, bool siparisPr = false, decimal recFiyat = 0, bool yenilemeYapma = false, int otomiktar = 1, bool urunduzeltme = false,bool urunTransfer=false)
         {
             try
             {
@@ -2075,6 +2079,7 @@ namespace Pos
 
                 string Rec_Ad = Convert.ToString(dtRecete.Rows[0]["Rec_Ad"]);
 
+
                 decimal Rec_Fiyat = Convert.ToDecimal(dtRecete.Rows[0]["Rec_Fiyat"]);
 
 
@@ -2086,7 +2091,7 @@ namespace Pos
                     eMiktar = "T";
                 }
 
-                if (recFiyat != 0)
+                if (recFiyat != 0 || urunTransfer)
                 {
                     Rec_Fiyat = recFiyat;
                 }
@@ -2338,19 +2343,21 @@ namespace Pos
                 }
 
                 string masano = Convert.ToString(bartxt_MasaNo.EditValue ?? Masa_No);
-                int fisnoKontrol = Convert.ToInt32(dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + masano + "'"));
-
-
-
-                //string SubeKodu = dbtools.DegerGetir("");
 
                 int satisFisno = Convert.ToInt32(bartxt_FisNo.EditValue);
 
-                if (fisnoKontrol != 0)
+                if (Convert.ToString(this.Tag) == "M")//hızlı satış ise H . Direkt Satış ise D .08.08.2024 güncellendi
                 {
-                    satisFisno = fisnoKontrol;
-                    bartxt_FisNo.EditValue = satisFisno;
+                    int fisnoKontrol = Convert.ToInt32(dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + masano + "'"));
+
+                    if (fisnoKontrol != 0)
+                    {
+                        satisFisno = fisnoKontrol;
+                        bartxt_FisNo.EditValue = satisFisno;
+                    }
                 }
+
+
 
 
                 if (siparisPr == true)
@@ -3428,7 +3435,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                             //int KG = Convert.ToInt32(barkod.Substring(Param.Barkod_KGbas, Param.Barkod_KGhane));
                             //int GR = Convert.ToInt32(barkod.Substring(Param.Barkod_GRbas, Param.Barkod_GRhane));
 
-                            decimal urun_Miktar = 1;
+                            //decimal urun_Miktar = 1; 
 
                             string query = "select Rec_Genelkod from Cst_Recete WITH(NOLOCK)  where (Rec_Barkod = '" + barkod + "' or Rec_Genelkod = '" + urun_Kodu + "')";
                             DataTable dtR = dbtools.SelectTable(query);
@@ -3440,7 +3447,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                             }
 
 
-                            Miktar = urun_Miktar;
+                            //Miktar = urun_Miktar;
                             Urun_Sat(Convert.ToString(dtR.Rows[0]["Rec_Genelkod"]));
                             barkodFocuslan();
 
@@ -3749,7 +3756,12 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                     decimal recfiyat = Convert.ToDecimal(dbtools.DegerGetir("select Rec_Fiyat from Cst_Recete where Rec_Genelkod=(select Rsat_Recete from Cst_Recete_Satis where Rsat_Id='" + Id + "')")) * klv.sayi;
                     bool Rsat_SiparisPr = Convert.ToBoolean(dbtools.DegerGetir("select top 1 isnull(Rsat_SiparisPr,0) as Rsat_SiparisPr from Cst_Recete_Satis where Rsat_Id='" + Id + "'"));
 
-                    dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Miktar = '" + Convert.ToString(klv.sayi).Replace(",", ".") + "',Rsat_Net = 0,Rsat_Kdv = 0,Rsat_Tutar = 0,Rsat_Fiyat='" + recfiyat.ToString().Replace(",", ".") + "', Rsat_Doviztutar = 0,Rsat_SiparisPr = 1,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
+
+                    //dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Miktar = '" + Convert.ToString(klv.sayi).Replace(",", ".") + "',Rsat_Net = 0,Rsat_Kdv = 0,Rsat_Tutar = 0,Rsat_Fiyat='" + recfiyat.ToString().Replace(",", ".") + "', Rsat_Doviztutar = 0,Rsat_SiparisPr = 1,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
+
+                    // 13.08.2024 tarihinde ürün transfer fiyat atıyor diye rsat_fiyat da sıfırlandı
+                    dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Miktar = '" + Convert.ToString(klv.sayi).Replace(",", ".") + "',Rsat_Net = 0,Rsat_Kdv = 0,Rsat_Tutar = 0,Rsat_Fiyat=0, Rsat_Doviztutar = 0,Rsat_SiparisPr = 1,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
+
 
                     Miktar = miktar - klv.sayi;
                     if (Miktar > 0)

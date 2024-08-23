@@ -1455,12 +1455,17 @@ group by Pkod_Ad";
             DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and  Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + Convert.ToString(look_PrintAyar_Posta.EditValue) + "' and Pkod_Ad = '" + Convert.ToString(cmb_PrintAyar_Printer.Text) + "' ");
             if (dt.Rows.Count < 1)
             {
-                dbtools.execcmd("INSERT INTO Pos_Kodlar (Pkod_Kod, Pkod_Ustgrup,Pkod_Altgrup,Pkod_Ad,Pkod_Sinif,Pkod_Satir,Pkod_Printer,Pkod_Ip,Pkod_Port,Pkod_Ekran,Pkod_Posta,Pkod_AbuyerPr,Pkod_AbuyerPr2,Pkod_AbuyerPr3,Pkod_AbuyerPr4,Pkod_AbuyerIP,Pkod_AbuyerPort) VALUES ('" + look_PrintAyar_dep.EditValue + "','" + look_PrintAyar_AnaGrup.EditValue + "','" + look_PrintAyar_AltGrup.EditValue + "','" + cmb_PrintAyar_Printer.EditValue + "','16','" + spn_PrintAyar_BosSatir.Value + "','" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "','" + txt_PrintAyar_Ip.Text + "'," + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + ",'" + txt_PrintAyar_Ekran.Text + "','" + Convert.ToString(look_PrintAyar_Posta.EditValue) + "','" + cmb_PrintAyar_AbuyerPr.EditValue + "','" + cmb_PrintAyar_AbuyerPr2.EditValue + "','" + cmb_PrintAyar_AbuyerPr3.EditValue + "','" + cmb_PrintAyar_AbuyerPr4.EditValue + "','" + Pkod_AbuyerIP.Text + "','" + Pkod_AbuyerPort.Text + "')");
+                dbtools.execcmd("INSERT INTO Pos_Kodlar (Pkod_Kod, Pkod_Ustgrup,Pkod_Altgrup,Pkod_Ad,Pkod_Sinif,Pkod_Satir,Pkod_Printer,Pkod_Ip,Pkod_Port,Pkod_Ekran,Pkod_Posta,Pkod_AbuyerPr,Pkod_AbuyerPr2,Pkod_AbuyerPr3,Pkod_AbuyerPr4,Pkod_AbuyerIP,Pkod_AbuyerPort,tumPrinter) VALUES ('" + look_PrintAyar_dep.EditValue + "','" + look_PrintAyar_AnaGrup.EditValue + "','" + look_PrintAyar_AltGrup.EditValue + "','" + cmb_PrintAyar_Printer.EditValue + "','16','" + spn_PrintAyar_BosSatir.Value + "','" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "','" + txt_PrintAyar_Ip.Text + "'," + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + ",'" + txt_PrintAyar_Ekran.Text + "','" + Convert.ToString(look_PrintAyar_Posta.EditValue) + "','" + cmb_PrintAyar_AbuyerPr.EditValue + "','" + cmb_PrintAyar_AbuyerPr2.EditValue + "','" + cmb_PrintAyar_AbuyerPr3.EditValue + "','" + cmb_PrintAyar_AbuyerPr4.EditValue + "','" + Pkod_AbuyerIP.Text + "','" + Pkod_AbuyerPort.Text + "','" + checkEditTumPrinter.Checked+ "')");
+
+
+
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Kaydet, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + Convert.ToString(look_PrintAyar_AltGrup.EditValue) + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
             }
             else
             {
-                dbtools.execcmd("Update Pos_Kodlar set Pkod_Ad =  '" + cmb_PrintAyar_Printer.EditValue + "', Pkod_Satir = '" + spn_PrintAyar_BosSatir.Value + "',Pkod_Printer = '" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "',Pkod_Ip = '" + txt_PrintAyar_Ip.Text + "',Pkod_Port = '" + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + "',Pkod_Ekran = '" + txt_PrintAyar_Ekran.Text + "',Pkod_AbuyerPr = '" + cmb_PrintAyar_AbuyerPr.EditValue + "' ,Pkod_AbuyerPr2 = '" + cmb_PrintAyar_AbuyerPr2.EditValue + "',Pkod_AbuyerPr3 = '" + cmb_PrintAyar_AbuyerPr3.EditValue + "' ,Pkod_AbuyerPr4 = '" + cmb_PrintAyar_AbuyerPr4.EditValue + "',Pkod_AbuyerIP = '" + Pkod_AbuyerIP.Text + "',Pkod_AbuyerPort = '" + Pkod_AbuyerPort.EditValue + "'  where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + Convert.ToString(look_PrintAyar_Posta.EditValue) + "' and Pkod_Ad = '" + cmb_PrintAyar_Printer.Text + "' ");
+                dbtools.execcmd("Update Pos_Kodlar set Pkod_Ad =  '" + cmb_PrintAyar_Printer.EditValue + "', Pkod_Satir = '" + spn_PrintAyar_BosSatir.Value + "',Pkod_Printer = '" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "',Pkod_Ip = '" + txt_PrintAyar_Ip.Text + "',Pkod_Port = '" + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + "',Pkod_Ekran = '" + txt_PrintAyar_Ekran.Text + "',Pkod_AbuyerPr = '" + cmb_PrintAyar_AbuyerPr.EditValue + "' ,Pkod_AbuyerPr2 = '" + cmb_PrintAyar_AbuyerPr2.EditValue + "',Pkod_AbuyerPr3 = '" + cmb_PrintAyar_AbuyerPr3.EditValue + "' ,Pkod_AbuyerPr4 = '" + cmb_PrintAyar_AbuyerPr4.EditValue + "',Pkod_AbuyerIP = '" + Pkod_AbuyerIP.Text + "',Pkod_AbuyerPort = '" + Pkod_AbuyerPort.EditValue + "',tumPrinter = '" + checkEditTumPrinter.Checked+ "'  where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + Convert.ToString(look_PrintAyar_Posta.EditValue) + "' and Pkod_Ad = '" + cmb_PrintAyar_Printer.Text + "' ");
+
+
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Duzelt, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + Convert.ToString(look_PrintAyar_AltGrup.EditValue) + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
             }
 
@@ -1507,6 +1512,7 @@ group by Pkod_Ad";
             gridColumn146.FieldName = "Pkod_AbuyerPr2";
             gridColumn147.FieldName = "Pkod_AbuyerPr3";
             gridColumn148.FieldName = "Pkod_AbuyerPr4";
+            gridColumn176.FieldName = "tumPrinter";
 
             //DataTable dt = dbtools.SelectTable("SELECT Pkod_Kod, Alt.Kodlar_Ad as AltGrup,alt.Kodlar_Kod as Pkod_Altgrup, "
             //                    + " CASE WHEN Pkod_Ustgrup = 'HES' THEN 'Hesap Printer' WHEN Pkod_Ustgrup = 'ADI' THEN 'Adisyon Printer' WHEN Pkod_Ustgrup = 'FAT' THEN 'Fatura Printer' WHEN Pkod_Ustgrup = 'PKT' THEN 'Paket Printer' WHEN Pkod_Ustgrup = 'KSM' THEN 'Kasa Makbuz Printer' else Ana.Kodlar_Ad end as AnaGrup, Pkod_Ad, Pkod_Satir,Pkod_Ustgrup,Pkod_Printer, "
@@ -1519,7 +1525,8 @@ group by Pkod_Ad";
             DataTable dt = dbtools.SelectTable("SELECT pr.Pkod_Id,pr.Pkod_Kod, Alt.Kodlar_Ad as AltGrup,alt.Kodlar_Kod as Pkod_Altgrup, "
                                 + " CASE WHEN pr.Pkod_Ustgrup = 'HES' THEN 'Hesap Printer' WHEN pr.Pkod_Ustgrup = 'ADI' THEN 'Adisyon Printer' WHEN pr.Pkod_Ustgrup = 'FAT' THEN 'Fatura Printer' WHEN pr.Pkod_Ustgrup = 'PKT' THEN 'Paket Printer' WHEN pr.Pkod_Ustgrup = 'KSM' THEN 'Kasa Makbuz Printer' else Ana.Kodlar_Ad end as AnaGrup, pr.Pkod_Ad, pr.Pkod_Satir,pr.Pkod_Ustgrup,pr.Pkod_Printer,  "
                                 + " pr.Pkod_Ip,isnull(pr.Pkod_Port,0) as Pkod_Port,pr.Pkod_Ekran,ISNULL(pr.Pkod_Posta,'') as Pkod_Posta ,posta.Pkod_Ad as Posta_Ad,pr.Pkod_AbuyerPr "
-                                + " ,pr.Pkod_AbuyerPr2,pr.Pkod_AbuyerPr3,pr.Pkod_AbuyerPr4,ISNULL(pr.Pkod_AbuyerIP,'') as Pkod_AbuyerIP, ISNULL(pr.Pkod_AbuyerPort,'') as Pkod_AbuyerPort "
+                                + " ,pr.Pkod_AbuyerPr2,pr.Pkod_AbuyerPr3,pr.Pkod_AbuyerPr4,ISNULL(pr.Pkod_AbuyerIP,'') as Pkod_AbuyerIP, ISNULL(pr.Pkod_AbuyerPort,'') as Pkod_AbuyerPort, ISNULL(pr.tumPrinter,'') as tumPrinter "
+
                                 + " FROM Pos_Kodlar as pr "
                                 + " left join Stok_Kodlar as Ana on Pkod_Ustgrup = Ana.Kodlar_Kod and Ana.Kodlar_Sinif = '08'  "
                                 + " left join Stok_Kodlar as Alt on Pkod_Altgrup = Alt.Kodlar_Kod and Alt.Kodlar_Sinif = '09' and Alt.Kodlar_Anagrup = ana.Kodlar_Kod  "
@@ -1568,6 +1575,8 @@ group by Pkod_Ad";
                 cmb_PrintAyar_AbuyerPr4.EditValue = gridView5.GetFocusedRowCellValue("Pkod_AbuyerPr4");
                 Pkod_AbuyerIP.Text = Convert.ToString(gridView5.GetFocusedRowCellValue("Pkod_AbuyerIP"));
                 Pkod_AbuyerPort.Text = Convert.ToString(gridView5.GetFocusedRowCellValue("Pkod_AbuyerPort"));
+
+                checkEditTumPrinter.Checked= Convert.ToBoolean(gridView5.GetFocusedRowCellValue("tumPrinter"));
             }
         }
 

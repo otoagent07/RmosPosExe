@@ -233,7 +233,7 @@ namespace Pos
                     s.Rsat_SiparisPr = true;// Convert.ToBoolean(gridView3.GetFocusedRowCellValue("Rsat_SiparisPr"));
                     s.Rsat_AbuyerPr = true;
 
-                    s.Urun_Sat(Convert.ToString(gridView3.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat);
+                    s.Urun_Sat(Convert.ToString(gridView3.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat,urunTransfer:true);
 
                     string rsat_id = Convert.ToInt32(gridView3.GetRowCellValue(index, "Rsat_Id")).ToString();
 
@@ -254,7 +254,12 @@ namespace Pos
                     }
 
                     // özel masa kayboluyordu onu düzelttim 
-                    dbtools.execcmd("update Pos_Masa set Masa_Ozel='" + ozelMasaAd + "' where Masa_No='" + masaNo + "' and Masa_No<>'" + ozelMasaAd + "'");
+
+                    if (txt_Masano.Text != ozelMasaAd)
+                    {
+                        dbtools.execcmd("update Pos_Masa set Masa_Ozel='" + ozelMasaAd + "' where Masa_No='" + masaNo + "' and Masa_No<>'" + ozelMasaAd + "'");
+                    }
+                    //dbtools.execcmd("update Pos_Masa set Masa_Ozel='" + ozelMasaAd + "' where Masa_No='" + masaNo + "' and Masa_No<>'" + ozelMasaAd + "'");
 
 
                     Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Malz_Transfer, Log.Log_Islem.Duzelt, Convert.ToString(gridView3.GetRowCellValue(index, "Rec_Ad")) + " ürünü " + deger.ToString() + " miktarı " + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + " NL masaya transfer oldu." + "Eski Masa :" + txt_Masano.Text, hedefFisno.ToString(), "");
@@ -397,7 +402,7 @@ namespace Pos
                     s.Masa_No = txt_Masano.Text.ToString();
                     s.Rsat_SiparisPr = true;// Convert.ToBoolean(gridView4.GetFocusedRowCellValue("Rsat_SiparisPr"));
                     s.Rsat_AbuyerPr = true;
-                    s.Urun_Sat(Convert.ToString(gridView4.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat);
+                    s.Urun_Sat(Convert.ToString(gridView4.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat, urunTransfer: true);
 
 
                     if (deger == Convert.ToDecimal(gridView4.GetRowCellValue(index, "Rsat_Miktar")))
