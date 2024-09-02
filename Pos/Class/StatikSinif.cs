@@ -129,6 +129,7 @@ IF COL_LENGTH('Pos_Param', 'servispayFooterda') IS NULL BEGIN ALTER TABLE Pos_Pa
 
 IF COL_LENGTH('Pos_Param', 'servispayOdenmezIkramSil') IS NULL BEGIN ALTER TABLE Pos_Param ADD servispayOdenmezIkramSil bit END;
 IF COL_LENGTH('Pos_Param', 'tumPrinter') IS NULL BEGIN ALTER TABLE Pos_Param ADD tumPrinter bit END;
+IF COL_LENGTH('Pos_Param', 'urunAdinaOdaklan') IS NULL BEGIN ALTER TABLE Pos_Param ADD urunAdinaOdaklan bit END;
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_ServisPayiDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_ServisPayiDuzelt] bit END;
 

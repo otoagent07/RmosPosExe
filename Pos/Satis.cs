@@ -228,9 +228,13 @@ namespace Pos
                     }
 
 
-                    txtKisiyeSatis.Text = "";
-                    txtKisiyeSatis.Select();
-                    txtKisiyeSatis.Focus();
+                    if (kisiyeSatisAktifmi == "1" || kisiyeSatisAktifmi == "True")
+                    {
+                        txtKisiyeSatis.Text = "";
+                        txtKisiyeSatis.Select();
+                        txtKisiyeSatis.Focus();
+                    }
+                        
                 }
 
                 dizaynyukle();
@@ -1559,6 +1563,11 @@ namespace Pos
             txt_Barkod.Focus();
             txt_Barkod.Select();
 
+            if (Param.urunAdinaOdaklan)
+            {
+                txt_Filtre.Focus();
+                txt_Filtre.Select();
+            }
             //if (barkodAktifmi.ToLower().Equals("false")) // barkod sistemi aktif değil
             //{
             //    txt_Filtre.Focus();
@@ -1808,8 +1817,12 @@ namespace Pos
 
             Alt_Yenile();
 
-            txtKisiyeSatis.Select();
-            txtKisiyeSatis.Focus();
+            if (kisiyeSatisAktifmi == "1" || kisiyeSatisAktifmi == "True")
+            {
+                txtKisiyeSatis.Select();
+                txtKisiyeSatis.Focus();
+            }
+              
         }
 
         private void Alt_Yenile()
@@ -1913,8 +1926,12 @@ namespace Pos
 
             Urun_Yenile();
 
-            txtKisiyeSatis.Select();
-            txtKisiyeSatis.Focus();
+            if (kisiyeSatisAktifmi == "1" || kisiyeSatisAktifmi == "True")
+            {
+                txtKisiyeSatis.Select();
+                txtKisiyeSatis.Focus();
+            }
+              
         }
 
         private void Urun_Yenile()
@@ -2036,8 +2053,12 @@ namespace Pos
 
             txt_Filtre.Text = String.Empty;
 
-            txtKisiyeSatis.Select();
-            txtKisiyeSatis.Focus();
+            if (kisiyeSatisAktifmi == "1" || kisiyeSatisAktifmi == "True")
+            {
+                txtKisiyeSatis.Focus();
+                txtKisiyeSatis.Select();
+            }
+         
         }
 
         private void Siparis_Kontrol()
@@ -3358,6 +3379,12 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             {
                 Barkod_Oku();
                 txt_Barkod.Focus();
+
+                if (Param.urunAdinaOdaklan)
+                {
+                    txt_Filtre.Focus();
+                    txt_Filtre.Select();
+                }
             }
         }
 
@@ -4581,12 +4608,15 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         public void kisiyiTemizle()
         {
-            txtKisiyeSatis.Text = "";
-            txtKisiyeSatis.Select();
-            txtKisiyeSatis.Focus();
+           
+                txtKisiyeSatis.Text = "";
+                txtKisiyeSatis.Select();
+                txtKisiyeSatis.Focus();
 
-            sayac++;
-            txtKisiyeSatisSayac.Text = sayac + "";
+                sayac++;
+                txtKisiyeSatisSayac.Text = sayac + "";
+
+           
         }
 
         private void btnKisiyeSatisYap_Click(object sender, EventArgs e)
