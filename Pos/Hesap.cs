@@ -857,7 +857,10 @@ namespace Pos
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, fisno, "");
 
-                this.Close();
+                if (Param.Param_GetirTest==false)
+                {
+                    this.Close();
+                }
             }
             catch (Exception ex)
             {

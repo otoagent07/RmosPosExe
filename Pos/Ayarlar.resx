@@ -274,10 +274,10 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="resource.ExpandedWidth" type="System.Int32, mscorlib">
-    <value>213</value>
+    <value>212</value>
   </data>
   <data name="navBarControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 709</value>
+    <value>212, 709</value>
   </data>
   <data name="navBarControl1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -463,10 +463,10 @@
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 581</value>
+    <value>0, 589</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 34</value>
+    <value>843, 34</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>306</value>
@@ -3644,7 +3644,7 @@ Sıfır Yap</value>
     <value>90</value>
   </data>
   <data name="xtraTabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 526</value>
+    <value>822, 531</value>
   </data>
   <data name="xtraTabPage5.Text" xml:space="preserve">
     <value>Genel Parametreler 1</value>
@@ -4949,6 +4949,9 @@ Sıfır Yap</value>
   <data name="Param_AcilisCekSil.TabIndex" type="System.Int32, mscorlib">
     <value>317</value>
   </data>
+  <data name="Param_AcilisCekSil.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;Param_AcilisCekSil.Name" xml:space="preserve">
     <value>Param_AcilisCekSil</value>
   </data>
@@ -6124,7 +6127,7 @@ Sıfır Yap</value>
     <value>70</value>
   </data>
   <data name="xtraTabPage6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 526</value>
+    <value>822, 531</value>
   </data>
   <data name="xtraTabPage6.Text" xml:space="preserve">
     <value>Genel Parametreler 2</value>
@@ -6144,7 +6147,7 @@ Sıfır Yap</value>
   <data name="urunAdinaOdaklan.Location" type="System.Drawing.Point, System.Drawing">
     <value>219, 237</value>
   </data>
-  <data name="checkEdit2.Properties.Caption" xml:space="preserve">
+  <data name="urunAdinaOdaklan.Properties.Caption" xml:space="preserve">
     <value>Ürün Adına odaklan</value>
   </data>
   <data name="urunAdinaOdaklan.Size" type="System.Drawing.Size, System.Drawing">
@@ -7131,10 +7134,10 @@ Sıfır Yap</value>
     <value>3, 53</value>
   </data>
   <data name="Param_GetirOtomatikOnay.Properties.Caption" xml:space="preserve">
-    <value>Getir Otomatik Onay</value>
+    <value>Gün Sonu Otomatik İndex Aktif</value>
   </data>
   <data name="Param_GetirOtomatikOnay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 19</value>
+    <value>178, 19</value>
   </data>
   <data name="Param_GetirOtomatikOnay.TabIndex" type="System.Int32, mscorlib">
     <value>343</value>
@@ -7155,13 +7158,16 @@ Sıfır Yap</value>
     <value>3, 28</value>
   </data>
   <data name="Param_GetirTest.Properties.Caption" xml:space="preserve">
-    <value>Getir Test Kullan</value>
+    <value>Hesap Dök.  Ekran Kapanmasın</value>
   </data>
   <data name="Param_GetirTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 19</value>
+    <value>199, 19</value>
   </data>
   <data name="Param_GetirTest.TabIndex" type="System.Int32, mscorlib">
     <value>342</value>
+  </data>
+  <data name="Param_GetirTest.ToolTip" xml:space="preserve">
+    <value>Eskiden Getir Test Kullan dı</value>
   </data>
   <data name="&gt;&gt;Param_GetirTest.Name" xml:space="preserve">
     <value>Param_GetirTest</value>
@@ -7200,7 +7206,7 @@ Sıfır Yap</value>
     <value>26</value>
   </data>
   <data name="xtraTabPage8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 526</value>
+    <value>822, 531</value>
   </data>
   <data name="xtraTabPage8.Text" xml:space="preserve">
     <value>Genel Parametreler 3</value>
@@ -7272,7 +7278,7 @@ Sıfır Yap</value>
     <value>370</value>
   </data>
   <data name="gridControl_ayarlar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 456</value>
+    <value>822, 456</value>
   </data>
   <data name="gridControl_ayarlar.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -7290,7 +7296,7 @@ Sıfır Yap</value>
     <value>0</value>
   </data>
   <data name="xtraTabPage13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 526</value>
+    <value>822, 531</value>
   </data>
   <data name="xtraTabPage13.Text" xml:space="preserve">
     <value>AYARLAR</value>
@@ -7353,7 +7359,7 @@ Sıfır Yap</value>
     <value>2</value>
   </data>
   <data name="tab_Parametre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Parametre.Text" xml:space="preserve">
     <value>Parametre</value>
@@ -7882,7 +7888,7 @@ Sıfır Yap</value>
     <value>0, 0</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
@@ -7903,7 +7909,7 @@ Sıfır Yap</value>
     <value>0</value>
   </data>
   <data name="tab_Home.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Home.Text" xml:space="preserve">
     <value>Home</value>
@@ -9073,7 +9079,7 @@ Sıfır Yap</value>
     <value>7</value>
   </data>
   <data name="tab_Mail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Mail.Text" xml:space="preserve">
     <value>Mail Parametreleri</value>
@@ -9298,7 +9304,7 @@ Sıfır Yap</value>
     <value>7</value>
   </data>
   <data name="tab_Pda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Pda.Text" xml:space="preserve">
     <value>Pda Parametreleri</value>
@@ -9592,7 +9598,7 @@ Sıfır Yap</value>
     <value>9</value>
   </data>
   <data name="tab_IlTanim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_IlTanim.Text" xml:space="preserve">
     <value>İl Tanımlama</value>
@@ -9934,7 +9940,7 @@ Sıfır Yap</value>
     <value>10</value>
   </data>
   <data name="tab_Ilce.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Ilce.Text" xml:space="preserve">
     <value>İlçe Tanımlama</value>
@@ -10348,7 +10354,7 @@ Sıfır Yap</value>
     <value>12</value>
   </data>
   <data name="tab_Mahalle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Mahalle.Text" xml:space="preserve">
     <value>Mahalle Tanımlama</value>
@@ -11071,7 +11077,7 @@ Sıfır Yap</value>
     <value>26</value>
   </data>
   <data name="tab_Sube.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Sube.Text" xml:space="preserve">
     <value>Sube Tanimlama</value>
@@ -11290,7 +11296,7 @@ Sıfır Yap</value>
     <value>4</value>
   </data>
   <data name="tab_SubeAdres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_SubeAdres.Text" xml:space="preserve">
     <value>Sube Adres Atama</value>
@@ -11816,7 +11822,7 @@ Sıfır Yap</value>
     <value>16</value>
   </data>
   <data name="tab_Print_Grup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Print_Grup.Text" xml:space="preserve">
     <value>Print Grup</value>
@@ -13101,7 +13107,7 @@ Sıfır Yap</value>
     <value>36</value>
   </data>
   <data name="tab_PrintAyarlari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_PrintAyarlari.Text" xml:space="preserve">
     <value>Print Ayarları</value>
@@ -13890,7 +13896,7 @@ Sıfır Yap</value>
     <value>25</value>
   </data>
   <data name="tab_PrinterTanim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_PrinterTanim.Text" xml:space="preserve">
     <value>Printer Tanımları</value>
@@ -14712,7 +14718,7 @@ Sıfır Yap</value>
     <value>31</value>
   </data>
   <data name="tab_Print_Hesap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Print_Hesap.Text" xml:space="preserve">
     <value>Fis Font Ayarları</value>
@@ -15183,7 +15189,7 @@ Sıfır Yap</value>
     <value>8</value>
   </data>
   <data name="tab_Print_Adisyon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Print_Adisyon.Text" xml:space="preserve">
     <value>Adisyon - Fatura</value>
@@ -16746,7 +16752,7 @@ Sıfır Yap</value>
     <value>42</value>
   </data>
   <data name="tab_OdemeKodlari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_OdemeKodlari.Text" xml:space="preserve">
     <value>Ödeme Kodları</value>
@@ -17085,7 +17091,7 @@ Sıfır Yap</value>
     <value>10</value>
   </data>
   <data name="tab_Entegre_Onb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Entegre_Onb.Text" xml:space="preserve">
     <value>Önbüro Entegre</value>
@@ -17436,7 +17442,7 @@ Sıfır Yap</value>
     <value>10</value>
   </data>
   <data name="tab_Entegre_Cost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Entegre_Cost.Text" xml:space="preserve">
     <value>Cost Entegre</value>
@@ -17931,7 +17937,7 @@ Sıfır Yap</value>
     <value>17</value>
   </data>
   <data name="xtraTabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 297</value>
+    <value>288, 302</value>
   </data>
   <data name="xtraTabPage9.Text" xml:space="preserve">
     <value>Masa Tanımları</value>
@@ -18071,7 +18077,7 @@ H13_3
     <value>3</value>
   </data>
   <data name="xtraTabPage10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 297</value>
+    <value>288, 302</value>
   </data>
   <data name="xtraTabPage10.Text" xml:space="preserve">
     <value>Parçalı Masa Tanıtımı</value>
@@ -18350,7 +18356,7 @@ H13_3
     <value>6</value>
   </data>
   <data name="tab_Masa_Tanim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Masa_Tanim.Text" xml:space="preserve">
     <value>Masa Tanımları</value>
@@ -19028,7 +19034,7 @@ H13_3
     <value>23</value>
   </data>
   <data name="tab_Masa_Konum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Masa_Konum.Text" xml:space="preserve">
     <value>Masa Konumları</value>
@@ -19475,7 +19481,7 @@ H13_3
     <value>14</value>
   </data>
   <data name="tab_Posta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Posta.Text" xml:space="preserve">
     <value>Posta Ayarları</value>
@@ -20432,7 +20438,7 @@ H13_3
     <value>5</value>
   </data>
   <data name="tab_Cari_Tanim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Cari_Tanim.Text" xml:space="preserve">
     <value>Cari Tanımları</value>
@@ -20996,7 +21002,7 @@ H13_3
     <value>16</value>
   </data>
   <data name="tab_Cari_Hesap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Cari_Hesap.Text" xml:space="preserve">
     <value>Cari Hesapları</value>
@@ -21584,7 +21590,7 @@ H13_3
     <value>20</value>
   </data>
   <data name="tab_Happy_Hour.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Happy_Hour.Text" xml:space="preserve">
     <value>Happy Hour</value>
@@ -23773,7 +23779,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>69</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>809, 329</value>
+    <value>813, 334</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Pos Yetkileri</value>
@@ -24067,7 +24073,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>10</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>809, 329</value>
+    <value>813, 334</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Pda Yetkileri</value>
@@ -24472,7 +24478,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>15</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>809, 329</value>
+    <value>813, 334</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Android Yetkileri</value>
@@ -25111,7 +25117,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>22</value>
   </data>
   <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>809, 329</value>
+    <value>813, 334</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
     <value>X-Z Rapor</value>
@@ -25471,7 +25477,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>13</value>
   </data>
   <data name="xtraTabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>809, 329</value>
+    <value>813, 334</value>
   </data>
   <data name="xtraTabPage7.Text" xml:space="preserve">
     <value>Diğer</value>
@@ -26042,7 +26048,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>33</value>
   </data>
   <data name="tab_Kullanici_Ayarlari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Kullanici_Ayarlari.Text" xml:space="preserve">
     <value>Kullanıcı Ayarları</value>
@@ -26291,7 +26297,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>125</value>
   </data>
   <data name="grd_MacPr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>489, 304</value>
+    <value>489, 309</value>
   </data>
   <data name="grd_MacPr.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -26495,7 +26501,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>13</value>
   </data>
   <data name="xtraTabPage11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>663, 477</value>
+    <value>667, 482</value>
   </data>
   <data name="xtraTabPage11.Text" xml:space="preserve">
     <value>MAC PRINTER AYARLARI</value>
@@ -26651,7 +26657,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>4</value>
   </data>
   <data name="xtraTabPage12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>663, 477</value>
+    <value>667, 482</value>
   </data>
   <data name="xtraTabPage12.Text" xml:space="preserve">
     <value>ÜRÜN PRINTER AYARLARI</value>
@@ -26714,7 +26720,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>1</value>
   </data>
   <data name="tab_MacPrint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_MacPrint.Text" xml:space="preserve">
     <value>Mac Print Ayarı</value>
@@ -27014,7 +27020,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>9</value>
   </data>
   <data name="tab_Kasagc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Kasagc.Text" xml:space="preserve">
     <value>Kasa Gelir Gider Kodları</value>
@@ -27309,7 +27315,7 @@ KODU "SS" ile başlayanlar Satır Sil Neden Sor</value>
     <value>9</value>
   </data>
   <data name="tab_AciklamaItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_AciklamaItem.Text" xml:space="preserve">
     <value>Açıklama Item</value>
@@ -27603,7 +27609,7 @@ KODU "SS" ile başlayanlar Satır Sil Neden Sor</value>
     <value>9</value>
   </data>
   <data name="OdemeTipleri.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="OdemeTipleri.Text" xml:space="preserve">
     <value>Odeme Tipleri</value>
@@ -27870,7 +27876,7 @@ KODU "SS" ile başlayanlar Satır Sil Neden Sor</value>
     <value>8</value>
   </data>
   <data name="DepartmanKisimlari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="DepartmanKisimlari.Text" xml:space="preserve">
     <value>Departman Kısımları</value>
@@ -28137,7 +28143,7 @@ KODU "SS" ile başlayanlar Satır Sil Neden Sor</value>
     <value>8</value>
   </data>
   <data name="Bankalar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="Bankalar.Text" xml:space="preserve">
     <value>Bankalar</value>
@@ -28404,7 +28410,7 @@ KODU "SS" ile başlayanlar Satır Sil Neden Sor</value>
     <value>8</value>
   </data>
   <data name="YemekCekleri.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="YemekCekleri.Text" xml:space="preserve">
     <value>Yemek Çekleri</value>

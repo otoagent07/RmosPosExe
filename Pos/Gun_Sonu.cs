@@ -197,6 +197,15 @@ namespace Pos
                 uyariForm.TopMost = true;
                 uyariForm.ShowDialog();
 
+
+                if (Param.Param_GetirOtomatikOnay)
+                {
+                    dbtools.execcmdRMesajsiz(Sabitler.cst_satis_index);
+                    string query = "ALTER INDEX ALL ON dbo.Cst_Recete_Satis REBUILD;";
+                    dbtools.execcmdR(query);
+                }
+
+                tumverileriSil();
                 Application.Exit();
 
             }
@@ -208,6 +217,28 @@ namespace Pos
             loadingKapat();
         }
 
+
+        public void tumverileriSil()
+        {
+            try
+            {
+                if (Param.Param_AcilisCekSil)
+                {
+                    var cvp = MessageBox.Show("TÜM VERİLER SIFIRLANACAK EMİN MİSİNİZ ?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    if (cvp == DialogResult.Yes)
+                    {
+                        dbtools.execcmdR("truncate table Cst_Recete_Satis");
+                        dbtools.execcmdR("truncate table Pos_Log");
+                        dbtools.execcmdR("truncate table Cst_Satis_Ipt");
+                        dbtools.execcmdR("update Muh_Sirket set Sirket_Cfisno=0 ");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         public string cariRapGoster(bool mailGitsin = true)
         {
             try

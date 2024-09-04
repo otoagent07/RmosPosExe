@@ -276,6 +276,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.urunAdinaOdaklan = new DevExpress.XtraEditors.CheckEdit();
             this.tumPrinter = new DevExpress.XtraEditors.CheckEdit();
             this.txtSiparisTekrarPrintName = new DevExpress.XtraEditors.TextEdit();
             this.textEdit202 = new DevExpress.XtraEditors.TextEdit();
@@ -1265,7 +1266,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.urunAdinaOdaklan = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1454,6 +1454,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.urunAdinaOdaklan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tumPrinter.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSiparisTekrarPrintName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit202.Properties)).BeginInit();
@@ -2119,7 +2120,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urunAdinaOdaklan.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4176,6 +4176,12 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // urunAdinaOdaklan
+            // 
+            resources.ApplyResources(this.urunAdinaOdaklan, "urunAdinaOdaklan");
+            this.urunAdinaOdaklan.Name = "urunAdinaOdaklan";
+            this.urunAdinaOdaklan.Properties.Caption = resources.GetString("urunAdinaOdaklan.Properties.Caption");
             // 
             // tumPrinter
             // 
@@ -12594,12 +12600,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // urunAdinaOdaklan
-            // 
-            resources.ApplyResources(this.urunAdinaOdaklan, "urunAdinaOdaklan");
-            this.urunAdinaOdaklan.Name = "urunAdinaOdaklan";
-            this.urunAdinaOdaklan.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -12800,6 +12800,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.urunAdinaOdaklan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tumPrinter.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSiparisTekrarPrintName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit202.Properties)).EndInit();
@@ -13493,7 +13494,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urunAdinaOdaklan.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

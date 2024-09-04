@@ -5393,6 +5393,11 @@ order by mah.Adres_Ad");
             {
                 adminForms admin = new adminForms();
                 admin.ShowDialog();
+
+                if (admin.aktif)
+                {
+                    Param_AcilisCekSil.Visible = true;
+                }
             }
         }
 

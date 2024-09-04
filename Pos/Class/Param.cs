@@ -160,8 +160,8 @@ namespace Pos.Class
 
         public static Color Param_OzelMasaRengi { get; set; }
         public static Color Param_RezMasaRengi { get; set; }
-        public static bool Param_GetirTest { get; set; }
-        public static bool Param_GetirOtomatikOnay { get; set; }
+        public static bool Param_GetirTest { get; set; } // eskiden Param_GetirTest için kullanıldı şimdi ise Hesap kapat ekran kapansın için
+        public static bool Param_GetirOtomatikOnay { get; set; } // eskiden Param_GetirOtomatikOnay için kullanıldı şimdi ise gün sonu otomatik index
         public static bool Param_SatisCikisButton { get; set; }
         public static bool Param_nfcBarkodAktif { get; set; }
         public static bool Param_ParcaliMasaAktif { get; set; }

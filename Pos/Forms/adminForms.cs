@@ -11,6 +11,7 @@ namespace RmosAcentex.Forms
             InitializeComponent();
         }
 
+        public bool aktif = false;
         private void btnGiris_Click(object sender, EventArgs e)
         {
             if (txtSifre.Text.ToLower().Equals("19830126x"))
@@ -25,7 +26,7 @@ namespace RmosAcentex.Forms
 
                     Program.main.genelAyarlar.date_Prm_Tarih.Properties.ReadOnly = false;
 
-
+                    aktif = true;
                     RHMesaj.alertMesaj("Admin Girişi Başarılı");
                 }
                     this.Close();
