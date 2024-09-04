@@ -182,13 +182,16 @@ namespace Pos
                 string cariBakiyeKontrolPath = cariRapGoster(true);
                var muhrapor1 = muhasebeRapor(true);
                 //Mail Gönder
+
+                loadingKapat();
+
+
                 Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: cariBakiyeKontrolPath, muhRapor: muhrapor1);
 
                 StatikSinif.shrinkData();
 
                 //MessageBox.Show(res_man.GetString("Günsonu Işlemi Tamamlandı...") + "\n" + res_man.GetString("Programı Kapatıp Yeniden Programa Giriş Yapmanız Gerekmektedir..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                loadingKapat();
 
 
                 string mesaj = res_man.GetString("Günsonu Işlemi Tamamlandı...") + "\n" + res_man.GetString("Programı Kapatıp") + "\n" + res_man.GetString("Yeniden Programa Giriş Yapmanız Gerekmektedir...");
