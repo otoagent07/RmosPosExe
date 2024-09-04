@@ -2784,7 +2784,7 @@ namespace Pos
                 {
                     Siparis_Gonder(false);
 
-                    dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + bartxt_FisNo.EditValue.ToString() + "' and Log_Aciklama NOT LIKE '%Yazdırılmamış%'");
+                    dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + bartxt_FisNo.EditValue.ToString() + "' and Log_Bolum<>'Satir_Sil' and Log_Aciklama NOT LIKE '%Yazdırılmamış%'");
 
                     if (Departman.Kodlar_AndPos_NFC == true)
                     {

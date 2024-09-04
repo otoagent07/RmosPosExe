@@ -52,14 +52,15 @@
             // 
             // btn_Cikis
             // 
-            this.btn_Cikis.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_Cikis.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_Cikis.Appearance.Options.UseFont = true;
-            this.btn_Cikis.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btn_Cikis.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btn_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cikis.ImageOptions.SvgImage")));
             this.btn_Cikis.Location = new System.Drawing.Point(240, 362);
             this.btn_Cikis.Name = "btn_Cikis";
-            this.btn_Cikis.Size = new System.Drawing.Size(72, 70);
+            this.btn_Cikis.Size = new System.Drawing.Size(81, 70);
             this.btn_Cikis.TabIndex = 50;
+            this.btn_Cikis.Text = "İPTAL";
             this.btn_Cikis.Click += new System.EventHandler(this.btn_Cikis_Click);
             // 
             // txt_Sayi
@@ -116,14 +117,16 @@
             // 
             // btn_OK
             // 
-            this.btn_OK.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_OK.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_OK.Appearance.Options.UseFont = true;
-            this.btn_OK.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btn_OK.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_OK.ImageOptions.SvgImage")));
+            this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
+            this.btn_OK.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btn_OK.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btn_OK.Location = new System.Drawing.Point(240, 134);
             this.btn_OK.Name = "btn_OK";
-            this.btn_OK.Size = new System.Drawing.Size(72, 109);
+            this.btn_OK.Size = new System.Drawing.Size(81, 109);
             this.btn_OK.TabIndex = 45;
+            this.btn_OK.Text = "ONAYLA";
             this.btn_OK.Click += new System.EventHandler(this.btn_OK_Click);
             // 
             // btn_0
@@ -238,14 +241,16 @@
             // 
             // btn_Sil
             // 
-            this.btn_Sil.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_Sil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_Sil.Appearance.Options.UseFont = true;
+            this.btn_Sil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sil.ImageOptions.Image")));
+            this.btn_Sil.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btn_Sil.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btn_Sil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Sil.ImageOptions.SvgImage")));
             this.btn_Sil.Location = new System.Drawing.Point(240, 249);
             this.btn_Sil.Name = "btn_Sil";
-            this.btn_Sil.Size = new System.Drawing.Size(72, 107);
+            this.btn_Sil.Size = new System.Drawing.Size(81, 107);
             this.btn_Sil.TabIndex = 51;
+            this.btn_Sil.Text = "SİL";
             this.btn_Sil.Click += new System.EventHandler(this.btn_Sil_Click);
             // 
             // lbl_UrunAdi
@@ -264,7 +269,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 444);
+            this.ClientSize = new System.Drawing.Size(331, 444);
             this.ControlBox = false;
             this.Controls.Add(this.lbl_UrunAdi);
             this.Controls.Add(this.btn_Sil);

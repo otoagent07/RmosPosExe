@@ -58,8 +58,19 @@ namespace Pos
 
         private void MasaTakip_Load(object sender, EventArgs e)
         {
+
+            loadYukle();
+
+        }
+
+        public void loadYukle()
+        {
             try
             {
+                if (flp_Kapatma!=null && flp_Kapatma.Controls.Count>0)
+                {
+                    flp_Kapatma.Controls.Clear();
+                }
                 btnParcaliOdeme.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
                 btnParcaliOdemeEski.Visible = false;
                 yaziciKapaliysaAc();
@@ -118,10 +129,7 @@ namespace Pos
                 MessageBox.Show(ex.Message);
             }
 
-
-
         }
-
 
         private void Bilgileri_Doldur()
         {
@@ -2198,6 +2206,8 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 return;
             }
             Bilgileri_Doldur();
+
+            loadYukle();
         }
 
         CheckButton btnSecilen;
@@ -2585,6 +2595,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             Main.masa_takip = null;
             timer1.Stop();
             timer1.Enabled = false;
+
         }
 
 
@@ -2718,7 +2729,12 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             try
             {
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue.ToString());
 
+                if (fisno == 0)
+                {
+                    return;
+                }
                 if (isYazdirilmamisSiparis())
                 {
                     return;
@@ -2729,7 +2745,6 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 Yuvarlama();
                 otoIndirimYuvarlama();
 
-                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue.ToString());
                 FisPr pr = new FisPr();
                 if (Param.Param_YeniHesapDkm)
                 {
@@ -2783,7 +2798,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             if (Fisno > 0)
             {
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Hesap_Kilit = 0 where Rsat_Fisno = '" + Fisno + "'");
-                dbtools.execcmd("update Pos_Masa set Masa_Durum = '1' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "' ");
+                dbtools.execcmd("update Pos_Masa set Masa_Durum = '1',Masa_Musait=0 where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "' ");
                 MasaYenile(0);
             }
         }
