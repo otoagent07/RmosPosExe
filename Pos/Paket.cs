@@ -131,7 +131,7 @@ namespace Pos
         private void Kapatma_Yenile()
         {
             flp_Kapatma.Controls.Clear();
-            DataTable dt = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Ozelkod <> '4' and Pkod_Ozelkod <> '8' ");
+            DataTable dt = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Ozelkod <> '4' and Pkod_Ozelkod <> '8' order by Pkod_Sira");
             if (dt.Rows.Count > 0)
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
