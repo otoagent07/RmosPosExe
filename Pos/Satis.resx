@@ -1045,10 +1045,10 @@
     <value>Fill</value>
   </data>
   <data name="btnBakiye.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 3</value>
   </data>
   <data name="btnBakiye.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 77</value>
+    <value>111, 75</value>
   </data>
   <data name="btnBakiye.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

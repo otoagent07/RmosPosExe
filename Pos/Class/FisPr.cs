@@ -1612,6 +1612,12 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     paket.xr_Cek.Text = Convert.ToString(dtPaket.Rows[0]["Rsat_Fisno"]);
                     paket.xr_CariAdSoyad.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Ad"]) + " " + Convert.ToString(dtPaket.Rows[0]["Cari_Soyad"]);
                     paket.xr_Tel.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Tel"]);
+
+                    paket.xr_Tel.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Tel"]);
+                    paket.txtDeger1.Text = Convert.ToString(dtPaket.Rows[0]["deger1"]);
+
+
+
                     paket.xr_Adres.Text = (Convert.ToString(dtPaket.Rows[0]["Cari_Adres1"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Adres2"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Adres3"]) + "\n"
                     + Convert.ToString(dtPaket.Rows[0]["Cari_Mahalle"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Ilce"]) + " - " + Convert.ToString(dtPaket.Rows[0]["Cari_Il"]));
 
@@ -1772,6 +1778,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     paket.xr_Cek.Text = Convert.ToString(dtPaket.Rows[0]["Rsat_Fisno"]);
                     paket.xr_CariAdSoyad.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Ad"]) + " " + Convert.ToString(dtPaket.Rows[0]["Cari_Soyad"]);
                     paket.xr_Tel.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Tel"]);
+
+                    paket.txtDeger1.Text = Convert.ToString(dtPaket.Rows[0]["deger1"]);
+
+
+
                     paket.xr_Adres.Text = (Convert.ToString(dtPaket.Rows[0]["Cari_Adres1"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Adres2"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Adres3"]) + "\n"
                     + Convert.ToString(dtPaket.Rows[0]["Cari_Mahalle"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Ilce"]) + " - " + Convert.ToString(dtPaket.Rows[0]["Cari_Il"]));
 
