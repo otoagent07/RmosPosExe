@@ -646,7 +646,7 @@
     <value>120</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 454</value>
+    <value>968, 449</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -670,10 +670,10 @@
     <value>Bottom</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 454</value>
+    <value>0, 449</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 59</value>
+    <value>968, 59</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -691,7 +691,7 @@
     <value>1</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 513</value>
+    <value>968, 508</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Açık Paketler</value>
@@ -1006,7 +1006,7 @@
     <value>16</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 442</value>
+    <value>968, 437</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1549,7 +1549,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 71</value>
+    <value>968, 71</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1567,7 +1567,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 513</value>
+    <value>968, 508</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Kapalı Paketler</value>
@@ -1672,7 +1672,7 @@ Başlat</value>
     <value>ID</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 426</value>
+    <value>968, 421</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1818,10 +1818,10 @@ Başlat</value>
     <value>Right</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>837, 22</value>
+    <value>833, 20</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 63</value>
+    <value>133, 65</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2016,10 +2016,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 426</value>
+    <value>0, 421</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 87</value>
+    <value>968, 87</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2037,7 +2037,7 @@ Başlat</value>
     <value>1</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 513</value>
+    <value>968, 508</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Getir</value>
@@ -2058,7 +2058,7 @@ Başlat</value>
     <value>Fill</value>
   </data>
   <data name="gridControlTrendyolSiparis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridViewTrendyolSiparis.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2190,7 +2190,7 @@ Başlat</value>
     <value>10</value>
   </data>
   <data name="gridControlTrendyolSiparis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>966, 228</value>
+    <value>964, 225</value>
   </data>
   <data name="gridControlTrendyolSiparis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2214,7 +2214,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 234</value>
+    <value>968, 229</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2235,10 +2235,10 @@ Başlat</value>
     <value>Fill</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>966, 187</value>
+    <value>964, 189</value>
   </data>
   <data name="gridControlTrendyolSiparisUrunler.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2259,10 +2259,10 @@ Başlat</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 234</value>
+    <value>0, 229</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 193</value>
+    <value>968, 193</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2819,10 +2819,10 @@ Bizden Sil</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 427</value>
+    <value>0, 422</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 86</value>
+    <value>968, 86</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2840,7 +2840,7 @@ Bizden Sil</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>972, 513</value>
+    <value>968, 508</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
     <value>Trendyol</value>

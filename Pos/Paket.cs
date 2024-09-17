@@ -8,6 +8,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
@@ -54,6 +55,13 @@ namespace Pos
 
 
             simpleButton10.Visible = User.G_Odemeal;
+
+            string fileName = getDizaynPath();
+            if (File.Exists(fileName))
+            {
+                gridView1.RestoreLayoutFromXml(fileName);
+            }
+
         }
 
 
@@ -745,6 +753,57 @@ namespace Pos
             timer1.Dispose();
         }
 
-        
+        private void btnGridDizaynKaydet_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                gridView1.SaveLayoutToXml(getDizaynPath());
+                MessageBox.Show("Grid Dizayn Kaydedildi");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("HATA ! " + ex.Message);
+            }
+        }
+        public string getDizaynPath()
+        {
+            string klasorAd = "GridDizaynPos";
+            if (!Directory.Exists(klasorAd))
+            {
+                Directory.CreateDirectory(klasorAd);
+            }
+            return klasorAd + @"\" + User.P_Kod + "_Paket.xml";
+        }
+
+        public static string MyClass = "Paket";
+        private void btnGridDizaynSil_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!RHMesaj.MyMessageConfirmation("\"" + User.P_Kod + "\" Kullanıcısına Ait Grid Dizayn'ı Silmek İstediğinize Emin misiniz ?"))
+                {
+                    return;
+                }
+
+
+                string path = getDizaynPath();
+
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                    RHMesaj.alertMesaj("Grid Dizayn Temizlendi");
+                }
+                else
+                {
+                    RHMesaj.alertMesaj("Grid Dizayn BULUNAMADI! \n " + path);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnGridDizaynTemizle1_Click", "", ex);
+            }
+
+        }
     }
 }

@@ -122,19 +122,19 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
     <value>Grid Dizayn Kaydet</value>
   </data>
   <data name="btnGridDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="btnGridDizaynSil.Text" xml:space="preserve">
     <value>Grid Dizayn Sil</value>
   </data>
   <data name="contextMenuStrip_LogRapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 48</value>
+    <value>181, 70</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip_LogRapor.Name" xml:space="preserve">
     <value>contextMenuStrip_LogRapor</value>
