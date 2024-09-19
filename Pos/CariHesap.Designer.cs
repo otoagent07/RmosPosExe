@@ -1152,9 +1152,11 @@
             // 
             // simpleButton13
             // 
+            this.simpleButton13.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
             this.simpleButton13.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton13.Appearance.Font")));
+            this.simpleButton13.Appearance.Options.UseBackColor = true;
             this.simpleButton13.Appearance.Options.UseFont = true;
-            this.simpleButton13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton13.ImageOptions.SvgImage")));
+            this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));
             resources.ApplyResources(this.simpleButton13, "simpleButton13");
             this.simpleButton13.Name = "simpleButton13";
             this.simpleButton13.Click += new System.EventHandler(this.simpleButton13_Click);

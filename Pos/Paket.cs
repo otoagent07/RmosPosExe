@@ -139,7 +139,7 @@ namespace Pos
         private void Kapatma_Yenile()
         {
             flp_Kapatma.Controls.Clear();
-            DataTable dt = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Ozelkod <> '4' and Pkod_Ozelkod <> '8' order by Pkod_Sira");
+            DataTable dt = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad,isnull(Pkod_OdemeBtnRenk,'') as renk  from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Ozelkod <> '4' and Pkod_Ozelkod <> '8' order by Pkod_Sira");
             if (dt.Rows.Count > 0)
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
@@ -156,7 +156,11 @@ namespace Pos
 
                     btn_Kapatma.Text = Convert.ToString(dt.Rows[i]["Pkod_Ad"]);
                     btn_Kapatma.Tag = Convert.ToString(dt.Rows[i]["Pkod_Kod"]);
-
+                    string renk = dt.Rows[i]["renk"].ToString();
+                    if (renk != "")
+                    {
+                        btn_Kapatma.Appearance.BackColor = System.Drawing.ColorTranslator.FromHtml(renk);
+                    }
 
                     btn_Kapatma.Click += new EventHandler(btn_Kapatma_Click);
                     flp_Kapatma.Controls.Add(btn_Kapatma);
@@ -804,6 +808,37 @@ namespace Pos
                 RHMesaj.MyMessageError(MyClass, "btnGridDizaynTemizle1_Click", "", ex);
             }
 
+        }
+
+        private void gridView1_RowCellStyle(object sender, RowCellStyleEventArgs e)
+        {
+            if (e.RowHandle >= 0)
+            {
+                GridView View = sender as GridView;
+
+                string kapatma = View.GetRowCellDisplayText(e.RowHandle, View.Columns["YSDurum"]);
+
+                if (kapatma != null && kapatma == "PAKET" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.Turquoise;
+                    e.Appearance.ForeColor = Color.Black;
+                }
+                else if (kapatma != null && kapatma == "TRENDYOL" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.Orange;
+                    e.Appearance.ForeColor = Color.Black;
+                }
+                else if (kapatma != null && kapatma == "GETİR YEMEK" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.FromArgb(127, 109, 237); 
+                    e.Appearance.ForeColor = Color.Black;
+                }
+                else if (kapatma != null && kapatma == "YEMEK SEPETİ" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.DarkOrange;
+                    e.Appearance.ForeColor = Color.Black;
+                }
+            }
         }
     }
 }

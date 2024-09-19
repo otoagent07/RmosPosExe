@@ -43,7 +43,11 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tab_Paket = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuStrip_LogRapor = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnGridDizaynKaydet = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGridDizaynSil = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn51 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -139,15 +143,13 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.contextMenuStrip_LogRapor = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnGridDizaynKaydet = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnGridDizaynSil = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Paket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            this.contextMenuStrip_LogRapor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
@@ -184,7 +186,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            this.contextMenuStrip_LogRapor.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridColumn17
@@ -294,6 +295,28 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
+            // contextMenuStrip_LogRapor
+            // 
+            this.contextMenuStrip_LogRapor.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnGridDizaynKaydet,
+            this.btnGridDizaynSil});
+            this.contextMenuStrip_LogRapor.Name = "contextMenuStrip_LogRapor";
+            resources.ApplyResources(this.contextMenuStrip_LogRapor, "contextMenuStrip_LogRapor");
+            // 
+            // btnGridDizaynKaydet
+            // 
+            this.btnGridDizaynKaydet.Image = global::Pos.Properties.Resources.Apply_16x16;
+            this.btnGridDizaynKaydet.Name = "btnGridDizaynKaydet";
+            resources.ApplyResources(this.btnGridDizaynKaydet, "btnGridDizaynKaydet");
+            this.btnGridDizaynKaydet.Click += new System.EventHandler(this.btnGridDizaynKaydet_Click);
+            // 
+            // btnGridDizaynSil
+            // 
+            this.btnGridDizaynSil.Image = global::Pos.Properties.Resources.Cancel_16x16;
+            this.btnGridDizaynSil.Name = "btnGridDizaynSil";
+            resources.ApplyResources(this.btnGridDizaynSil, "btnGridDizaynSil");
+            this.btnGridDizaynSil.Click += new System.EventHandler(this.btnGridDizaynSil_Click);
+            // 
             // gridView1
             // 
             this.gridView1.Appearance.FooterPanel.Font = ((System.Drawing.Font)(resources.GetObject("gridView1.Appearance.FooterPanel.Font")));
@@ -305,6 +328,7 @@
             this.gridView1.Appearance.Row.Font = ((System.Drawing.Font)(resources.GetObject("gridView1.Appearance.Row.Font")));
             this.gridView1.Appearance.Row.Options.UseFont = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn51,
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
@@ -326,6 +350,14 @@
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.RowHeight = 35;
+            this.gridView1.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView1_RowCellStyle);
+            // 
+            // gridColumn51
+            // 
+            resources.ApplyResources(this.gridColumn51, "gridColumn51");
+            this.gridColumn51.FieldName = "YSDurum";
+            this.gridColumn51.Name = "gridColumn51";
+            this.gridColumn51.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn1
             // 
@@ -522,7 +554,9 @@
             // 
             // simpleButton13
             // 
+            this.simpleButton13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.simpleButton13.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton13.Appearance.Font")));
+            this.simpleButton13.Appearance.Options.UseBackColor = true;
             this.simpleButton13.Appearance.Options.UseFont = true;
             this.simpleButton13.Appearance.Options.UseTextOptions = true;
             this.simpleButton13.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -607,7 +641,9 @@
             // 
             // simpleButton2
             // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Blue;
             this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             resources.ApplyResources(this.simpleButton2, "simpleButton2");
@@ -616,7 +652,9 @@
             // 
             // simpleButton1
             // 
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.OliveDrab;
             this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             resources.ApplyResources(this.simpleButton1, "simpleButton1");
@@ -1248,28 +1286,6 @@
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // contextMenuStrip_LogRapor
-            // 
-            this.contextMenuStrip_LogRapor.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnGridDizaynKaydet,
-            this.btnGridDizaynSil});
-            this.contextMenuStrip_LogRapor.Name = "contextMenuStrip_LogRapor";
-            resources.ApplyResources(this.contextMenuStrip_LogRapor, "contextMenuStrip_LogRapor");
-            // 
-            // btnGridDizaynKaydet
-            // 
-            this.btnGridDizaynKaydet.Image = global::Pos.Properties.Resources.Apply_16x16;
-            this.btnGridDizaynKaydet.Name = "btnGridDizaynKaydet";
-            resources.ApplyResources(this.btnGridDizaynKaydet, "btnGridDizaynKaydet");
-            this.btnGridDizaynKaydet.Click += new System.EventHandler(this.btnGridDizaynKaydet_Click);
-            // 
-            // btnGridDizaynSil
-            // 
-            this.btnGridDizaynSil.Image = global::Pos.Properties.Resources.Cancel_16x16;
-            this.btnGridDizaynSil.Name = "btnGridDizaynSil";
-            resources.ApplyResources(this.btnGridDizaynSil, "btnGridDizaynSil");
-            this.btnGridDizaynSil.Click += new System.EventHandler(this.btnGridDizaynSil_Click);
-            // 
             // Paket
             // 
             resources.ApplyResources(this, "$this");
@@ -1287,6 +1303,7 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.tab_Paket.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            this.contextMenuStrip_LogRapor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
@@ -1323,7 +1340,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            this.contextMenuStrip_LogRapor.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1440,5 +1456,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip_LogRapor;
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynKaydet;
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynSil;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn51;
     }
 }
