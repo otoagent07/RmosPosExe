@@ -458,7 +458,9 @@
             // btn_Satis
             // 
             resources.ApplyResources(this.btn_Satis, "btn_Satis");
+            this.btn_Satis.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_Satis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Satis.Appearance.Font")));
+            this.btn_Satis.Appearance.Options.UseBackColor = true;
             this.btn_Satis.Appearance.Options.UseFont = true;
             this.btn_Satis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Satis.ImageOptions.SvgImage")));
             this.btn_Satis.Name = "btn_Satis";

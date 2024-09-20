@@ -236,7 +236,9 @@
             // btn_Satis
             // 
             resources.ApplyResources(this.btn_Satis, "btn_Satis");
+            this.btn_Satis.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_Satis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Satis.Appearance.Font")));
+            this.btn_Satis.Appearance.Options.UseBackColor = true;
             this.btn_Satis.Appearance.Options.UseFont = true;
             this.btn_Satis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Satis.ImageOptions.SvgImage")));
             this.btn_Satis.Name = "btn_Satis";
@@ -264,7 +266,9 @@
             // btn_AcikAdres
             // 
             resources.ApplyResources(this.btn_AcikAdres, "btn_AcikAdres");
+            this.btn_AcikAdres.Appearance.BackColor = System.Drawing.Color.Red;
             this.btn_AcikAdres.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_AcikAdres.Appearance.Font")));
+            this.btn_AcikAdres.Appearance.Options.UseBackColor = true;
             this.btn_AcikAdres.Appearance.Options.UseFont = true;
             this.btn_AcikAdres.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_AcikAdres.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_AcikAdres.ImageOptions.Image")));
