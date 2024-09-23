@@ -453,6 +453,12 @@
     <Compile Include="MasaSecForm.Designer.cs">
       <DependentUpon>MasaSecForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Print\Abuyer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\Abuyer.Designer.cs">
+      <DependentUpon>Abuyer.cs</DependentUpon>
+    </Compile>
     <Compile Include="TipboxForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1553,6 +1559,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasaSecForm.resx">
       <DependentUpon>MasaSecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Abuyer.resx">
+      <DependentUpon>Abuyer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipboxForm.en-US.resx">
       <DependentUpon>TipboxForm.cs</DependentUpon>
