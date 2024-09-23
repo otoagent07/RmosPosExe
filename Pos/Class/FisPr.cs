@@ -7220,7 +7220,7 @@ where  Rsat_Fisno='" + Fisno + @"' and Rsat_SiparisPr=0 and isnull(poskod.Pkod_A
             catch (Exception ex)
             {
 
-                MessageBox.Show("ABUYER FİŞİ HATA\n" + ex.Message);
+                //MessageBox.Show("ABUYER FİŞİ HATA\n" + ex.Message);
 
             }
 

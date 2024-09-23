@@ -106,7 +106,7 @@
             // 
             // xr_Urun
             // 
-            this.xr_Urun.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xr_Urun.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.xr_Urun.LocationFloat = new DevExpress.Utils.PointFloat(79.21595F, 0F);
             this.xr_Urun.Multiline = true;
             this.xr_Urun.Name = "xr_Urun";
@@ -119,7 +119,7 @@
             // 
             // xr_Miktar
             // 
-            this.xr_Miktar.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xr_Miktar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.xr_Miktar.LocationFloat = new DevExpress.Utils.PointFloat(0.00743866F, 0F);
             this.xr_Miktar.Multiline = true;
             this.xr_Miktar.Name = "xr_Miktar";
@@ -172,7 +172,7 @@
             // 
             // txtSiraNo
             // 
-            this.txtSiraNo.Font = new System.Drawing.Font("Calibri", 8F);
+            this.txtSiraNo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSiraNo.LocationFloat = new DevExpress.Utils.PointFloat(206.022F, 133.9167F);
             this.txtSiraNo.Multiline = true;
             this.txtSiraNo.Name = "txtSiraNo";
