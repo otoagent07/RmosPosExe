@@ -143,6 +143,9 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.gridColumn52 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn53 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn54 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -341,7 +344,10 @@
             this.gridColumn10,
             this.gridColumn46,
             this.gridColumn47,
-            this.gridColumn48});
+            this.gridColumn48,
+            this.gridColumn52,
+            this.gridColumn53,
+            this.gridColumn54});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -1286,6 +1292,24 @@
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // gridColumn52
+            // 
+            resources.ApplyResources(this.gridColumn52, "gridColumn52");
+            this.gridColumn52.FieldName = "sirano";
+            this.gridColumn52.Name = "gridColumn52";
+            // 
+            // gridColumn53
+            // 
+            resources.ApplyResources(this.gridColumn53, "gridColumn53");
+            this.gridColumn53.FieldName = "deger1";
+            this.gridColumn53.Name = "gridColumn53";
+            // 
+            // gridColumn54
+            // 
+            resources.ApplyResources(this.gridColumn54, "gridColumn54");
+            this.gridColumn54.FieldName = "entegreOdemeTip";
+            this.gridColumn54.Name = "gridColumn54";
+            // 
             // Paket
             // 
             resources.ApplyResources(this, "$this");
@@ -1457,5 +1481,8 @@
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynKaydet;
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynSil;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn51;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn52;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn53;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn54;
     }
 }

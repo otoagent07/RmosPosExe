@@ -112,7 +112,8 @@ where 1 = 1
             Masa_Ad,
             Cst_Recete_Satis.Rsat_Fisno,
             Cari_Kod,(Cari_Ad + ' ' + Cari_Soyad) as Cari_AdSoyad,
-
+            Cst_Recete_Satis.sirano,
+			Cst_Recete_Satis.deger1,
            SUM(Rsat_Tutar) -  (Select ISNULL(SUM(Rsat_Tutar),0) From #Cst_Recete_Satis r Where Rsat_Ba = 'A' AND r.Rsat_Fisno = Cst_Recete_Satis.Rsat_Fisno) as Tutar,
 
             P_Kod,P_Ad + ' ' + P_Soyad as P_AdSoyad ,Rsat_Sube,sube.Pkod_Ad as subeAd,Rsat_SubeDurum,
@@ -155,7 +156,8 @@ end as Rsat_YSDurum,
             where (Rsat_Durum in (SELECT fieldvalue FROM dbo.stringArray('" + Durum + @"',',')))
             and Rsat_Ba = 'B' and Masa_Konum = 'P' " + acikMasa + @"
             group by Masa_No,Rsat_Tarih,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Cari_Kod,Cari_Ad,
-            Cari_Soyad,Cari_Adres1,P_Kod,P_Ad,P_Soyad ,Rsat_Sube,sube.Pkod_Ad ,Rsat_SubeDurum,Cari_Tip,GOrder_deliveryType,GOrder_confirmationId,GetirYemek_Order.ID,Rsat_EntegreId
+            Cari_Soyad,Cari_Adres1,P_Kod,P_Ad,P_Soyad ,Rsat_Sube,sube.Pkod_Ad ,Rsat_SubeDurum,Cari_Tip,GOrder_deliveryType,GOrder_confirmationId,GetirYemek_Order.ID,Rsat_EntegreId,Cst_Recete_Satis.sirano,
+			Cst_Recete_Satis.deger1
             order by Cst_Recete_Satis.Rsat_Fisno desc 
             DROP TABLE #Cst_Recete_Satis ";
 

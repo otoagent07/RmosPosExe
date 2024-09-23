@@ -1627,6 +1627,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     paket.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                     paket.xr_Tutar.Text = "[Rsat_Tutar]";
 
+                    paket.txtSirano.Text = "[sirano]";
+
 
 
                     decimal UrunToplam = 0;
