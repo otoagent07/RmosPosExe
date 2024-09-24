@@ -6067,6 +6067,43 @@ Select InstanceNames from @GetInstances ";
             dbtools.execcmdR(query);
         }
 
+        private void btnAbuyerDizaynSil_Click(object sender, EventArgs e)
+        {
+            string dizaynAd = "ABUYERR";
+            Abuyer myReport = new Abuyer();
+
+            xtraDizayn.SaveReportStream("0", dizaynAd, myReport);
+            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_HesapFis, Log.Log_Islem.Kaydet, dizaynAd + " Dizaynı Kaydedildi.", String.Empty, String.Empty);
+
+            dizaynSil(dizaynAd);
+        }
+
+        private void btnAbuyerDizayn_Click(object sender, EventArgs e)
+        {
+            DataTable dt = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'ABUYERR'");
+
+            if (dt.Rows.Count > 0)
+            {
+                DevExpress.XtraReports.UI.XtraReport myReport = xtraDizayn.BuildReport(Convert.ToString(dt.Rows[0]["Rapor_Id"]));
+                myReport.ShowDesignerDialog();
+                if (MessageBox.Show(res_man.GetString("Rapor Dataya Kaydedilsin mi...?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    xtraDizayn.SaveReportStream(Convert.ToString(dt.Rows[0]["Rapor_Id"]), null, myReport);
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_SiparisFis, Log.Log_Islem.Duzelt, "ABUYERR Dizaynı Değiştirildi.", String.Empty, String.Empty);
+                }
+            }
+            else
+            {
+                Abuyer myReport = new Abuyer();
+                myReport.ShowDesignerDialog();
+                if (MessageBox.Show(res_man.GetString("Rapor Dataya Kaydedilsin mi...?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    xtraDizayn.SaveReportStream("0", "ABUYERR", myReport);
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_SiparisFis, Log.Log_Islem.Kaydet, "ABUYERR Dizaynı Kaydedildi.", String.Empty, String.Empty);
+                }
+            }
+        }
+
         private void gridyenile_SubeAdres()
         {
             gridControl21.DataSource = dbtools.SelectTable(@"

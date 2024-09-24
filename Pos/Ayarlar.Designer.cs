@@ -1266,6 +1266,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.btnAbuyerDizayn = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAbuyerDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -7421,6 +7423,7 @@
             // 
             // tab_Print_Adisyon
             // 
+            this.tab_Print_Adisyon.Controls.Add(this.btnAbuyerDizayn);
             this.tab_Print_Adisyon.Controls.Add(this.btnUrunDizayn);
             this.tab_Print_Adisyon.Controls.Add(this.panelControl1);
             this.tab_Print_Adisyon.Controls.Add(this.simpleButton23);
@@ -7443,6 +7446,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnAbuyerDizaynSil);
             this.panelControl1.Controls.Add(this.btnUrunDizaynSil);
             this.panelControl1.Controls.Add(this.btn_Print_Adisyon_Sil);
             this.panelControl1.Controls.Add(this.btn_Print_Paket_Sil);
@@ -12600,6 +12604,22 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // btnAbuyerDizayn
+            // 
+            this.btnAbuyerDizayn.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.btnAbuyerDizayn.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnAbuyerDizayn, "btnAbuyerDizayn");
+            this.btnAbuyerDizayn.Name = "btnAbuyerDizayn";
+            this.btnAbuyerDizayn.Click += new System.EventHandler(this.btnAbuyerDizayn_Click);
+            // 
+            // btnAbuyerDizaynSil
+            // 
+            this.btnAbuyerDizaynSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton22.Appearance.Font")));
+            this.btnAbuyerDizaynSil.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnAbuyerDizaynSil, "btnAbuyerDizaynSil");
+            this.btnAbuyerDizaynSil.Name = "btnAbuyerDizaynSil";
+            this.btnAbuyerDizaynSil.Click += new System.EventHandler(this.btnAbuyerDizaynSil_Click);
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -14736,5 +14756,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn176;
         private DevExpress.XtraEditors.CheckEdit tumPrinter;
         private DevExpress.XtraEditors.CheckEdit urunAdinaOdaklan;
+        private DevExpress.XtraEditors.SimpleButton btnAbuyerDizayn;
+        private DevExpress.XtraEditors.SimpleButton btnAbuyerDizaynSil;
     }
 }

@@ -7158,11 +7158,22 @@ where  Rsat_Fisno='" + Fisno + @"' and Rsat_SiparisPr=0 and isnull(poskod.Pkod_A
         public void yazdirAbuyerNew(DataTable dtAbuyer, string printer, int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis)
         {
             int abuyerCiktisayisi = 1;
+
+            bool abuyerDizayn = true;
             try
             {
+                DataTable dtDizayn = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'ABUYERR'");
+
                 try
                 {
                     abuyerCiktisayisi = Convert.ToInt32(dbtools.DegerGetir("select ISNULL(Pkod_Ciktisayisi,1) as Pkod_Ciktisayisi from Pos_Kodlar where Pkod_Sinif='17' and Pkod_Kod='ABUYERSAYI'"));
+
+
+                    if (dtDizayn.Rows.Count < 1)
+                    {
+                        abuyerDizayn = false; // dizayn yoktur
+                    }
+
                 }
                 catch (Exception ex)
                 {
@@ -7188,6 +7199,12 @@ where  Rsat_Fisno='" + Fisno + @"' and Rsat_SiparisPr=0 and isnull(poskod.Pkod_A
                     string not = dtAbuyer.Rows[0]["Rsat_Not"].ToString();
 
                     Abuyer abuyer1 = new Abuyer();
+
+                    if (abuyerDizayn)
+                    {
+                        xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), abuyer1);
+                    }
+
                     abuyer1.DataSource = dtAbuyer;
                     abuyer1.PrinterName = printer;
 
