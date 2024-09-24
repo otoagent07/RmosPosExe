@@ -7099,7 +7099,7 @@ left join Rmosmuh.dbo.Pos_User as Garson on Garson.P_Kod = Rsat_Garson
 left join Rmosmuh.dbo.Pos_User as Garson2 on Garson2.P_Kod = Rsat_Garson2
 left join pos_kodlar as poskod on poskod.Pkod_Sinif='16' and poskod.Pkod_Posta=rez.konumposta and poskod.Pkod_Ustgrup=rez.ustgrup and poskod.Pkod_Altgrup=rez.altgrup
 
-where  Rsat_Fisno='" + Fisno + @"' and Rsat_SiparisPr=0 and isnull(poskod.Pkod_AbuyerPr,'')<>''";
+where  Rsat_Fisno='" + Fisno + @"' and rec.Rec_SiparisCikmasin=0 and Rsat_SiparisPr=0 and isnull(poskod.Pkod_AbuyerPr,'')<>''";
 
                         DataTable dtAbuyer = dbtools.SelectTableR(q2);
 
@@ -7221,6 +7221,7 @@ where  Rsat_Fisno='" + Fisno + @"' and Rsat_SiparisPr=0 and isnull(poskod.Pkod_A
 
                     abuyer1.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
 
+                    abuyer1.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
 
                     for (int i = 0; i < abuyerCiktisayisi; i++)
                     {
