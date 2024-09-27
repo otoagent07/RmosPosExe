@@ -429,7 +429,7 @@
     <value>40</value>
   </data>
   <data name="btn_Yazdirkapat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
+    <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="btn_Yazdirkapat.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -477,7 +477,7 @@
     <value>12, 116</value>
   </data>
   <data name="btn_Yazdirkapat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 43</value>
+    <value>142, 43</value>
   </data>
   <data name="btn_Yazdirkapat.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -498,7 +498,7 @@
     <value>39</value>
   </data>
   <data name="btn_Yazdirmadankapat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
+    <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="btn_Yazdirmadankapat.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -536,10 +536,10 @@
 </value>
   </data>
   <data name="btn_Yazdirmadankapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 116</value>
+    <value>160, 116</value>
   </data>
   <data name="btn_Yazdirmadankapat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 43</value>
+    <value>177, 43</value>
   </data>
   <data name="btn_Yazdirmadankapat.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>

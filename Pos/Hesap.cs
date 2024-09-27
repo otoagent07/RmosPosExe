@@ -88,7 +88,7 @@ namespace Pos
                 dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43");
             }
 
-            dt=Sabitler.getOdemeKodlari(dt);
+            dt = Sabitler.getOdemeKodlari(dt);
             look_Kapatma.Properties.DataSource = dt;
 
             look_Kapatma.Properties.DisplayMember = "Pkod_Ad";
@@ -108,7 +108,7 @@ namespace Pos
                 {
                     gridControlKisiyeSatis.Visible = false;
                     gridControlFis.Visible = false;
-                   gridControl1.Size = new System.Drawing.Size(gridControl1.Size.Width, 500);
+                    gridControl1.Size = new System.Drawing.Size(gridControl1.Size.Width, 500);
                 }
 
                 btnSpSil.Visible = User.S_Sp_Sil;
@@ -325,12 +325,47 @@ namespace Pos
 
                 txt_Hesapno.EditValue = odaNo_A;
                 lbl_Bilgi.Text = ara.Bilgi;
+
             }
             catch (Exception ex)
             {
                 RHMesaj.alertMesajSagUst("Hesap.Hesap_Bul", "" + ex.Message, 6);
             }
 
+        }
+
+        public void bakiyeYaz(string cariKod)
+        {
+            try
+            {
+                var cari1 = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + cariKod + "' ");
+
+                decimal toplamBorc = 0;
+                decimal toplamAlacak = 0;
+                decimal bakiye = 0;
+
+                // Her satırı döngü ile işleyelim
+                foreach (DataRow row in cari1.Rows)
+                {
+                    // Borç ve alacak sütunlarını doğru isimlendirmeyi unutmayın
+                    decimal borc = Convert.ToDecimal(row["Chrk_Borc"]);
+                    decimal alacak = Convert.ToDecimal(row["Chrk_Alacak"]);
+
+                    toplamBorc += borc;
+                    toplamAlacak += alacak;
+                }
+
+                bakiye = toplamBorc - toplamAlacak ;
+                if (bakiye != 0)
+                {
+                    txtCariAd.Text = txtCariAd.Text + " [" + bakiye + " TL]";
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void Bakiye_Kontrol()
@@ -649,6 +684,8 @@ namespace Pos
             }
             gridyenile();
             Bakiye_Kontrol();
+
+            bakiyeYaz(cari_A);
         }
 
         private void Fis_Update()
@@ -857,7 +894,7 @@ namespace Pos
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, fisno, "");
 
-                if (Param.Param_GetirTest==false)
+                if (Param.Param_GetirTest == false)
                 {
                     this.Close();
                 }
@@ -1087,7 +1124,7 @@ namespace Pos
         }
 
         public int ozelKod2 = 0;
-        private bool Odeme_Al(bool araodememi=false)
+        private bool Odeme_Al(bool araodememi = false)
         {
             try
             {
@@ -1126,7 +1163,7 @@ namespace Pos
                 string fisnom = this.Tag.ToString();
                 var donen = Sabitler.odenmezVeyaIkramiseServisPayiSil(fisnom, look_Kapatma.EditValue.ToString());
 
-                if (donen==true && araodememi==false) // 09.05.2024 de gridi yenilemek zorunda kaldık hepap katırken odenmez otomatik sildiği için tutarı alması için txttutar ı yenilemek gerekiyordu
+                if (donen == true && araodememi == false) // 09.05.2024 de gridi yenilemek zorunda kaldık hepap katırken odenmez otomatik sildiği için tutarı alması için txttutar ı yenilemek gerekiyordu
                 {
                     gridyenile();
                 }
@@ -1344,7 +1381,7 @@ namespace Pos
             }
             finally
             {
-                
+
             }
         }
 
@@ -1580,7 +1617,7 @@ namespace Pos
 
                 onburoExtraIndrimVarsaUygula();
 
-               
+
                 if (Odeme_Al())
                 {
 
@@ -2654,14 +2691,14 @@ namespace Pos
                         dbtools.execcmdR($"update Cst_Recete_Satis set BankaID='{b.sonucTicket.BkmID}' where Rsat_Fisno='{this.Tag.ToString()}'");
                         // return;
 
-                        string deger=  dbtools.DegerGetir("select isnull(Kodlar_Ingenico_IWEHesap,0) as Kodlar_Ingenico_IWEHesap from Stok_Kodlar where Kodlar_Sinif=01 and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+                        string deger = dbtools.DegerGetir("select isnull(Kodlar_Ingenico_IWEHesap,0) as Kodlar_Ingenico_IWEHesap from Stok_Kodlar where Kodlar_Sinif=01 and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
 
-                        if (deger=="1" || deger.ToLower()=="true")
+                        if (deger == "1" || deger.ToLower() == "true")
                         {
                             dbtools.execcmdR($"update Pos_Masa set Masa_Durum='2'  where Masa_No='{Masa_No}'");
                             dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Durum='A' where Rsat_Fisno='{this.Tag.ToString()}'");
                         }
-                       
+
 
                         if (b.DonenDeger == false)
                         {
@@ -2722,7 +2759,7 @@ namespace Pos
 
                         if (Param.Param_YeniHesapDkm) // 21.05.2024 eklendi
                         {
-                            fis.newHesapDokum(true, Convert.ToInt32(this.Tag), Split, "* * * HESAP DÖKÜM FİŞİ * * *" );
+                            fis.newHesapDokum(true, Convert.ToInt32(this.Tag), Split, "* * * HESAP DÖKÜM FİŞİ * * *");
                         }
                         else
                         {
@@ -2736,7 +2773,7 @@ namespace Pos
                             }
                         }
 
-                        
+
                     }
 
                     //Fis_Islem.Fatura_Kes(Convert.ToInt32(this.Tag), chk_HesabaFatura.Checked, chk_HesabaFatura.Checked);
@@ -3499,7 +3536,7 @@ namespace Pos
             }
         }
 
-        
+
     }
 }
 

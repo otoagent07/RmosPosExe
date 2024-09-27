@@ -148,7 +148,8 @@ namespace Pos
             if (Fisno > 0)
             {
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Hesap_Kilit = 0 where Rsat_Fisno = '" + Fisno + "'");
-                dbtools.execcmd("update Pos_Masa set Masa_Durum = '1' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "' ");
+                dbtools.execcmd("update Pos_Masa set Masa_Durum = '1',Masa_Musait=0 where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "' ");
+
                 this.Close();
             }
         }

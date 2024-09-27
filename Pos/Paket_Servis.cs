@@ -37,7 +37,7 @@ namespace Pos
     Cari_Funvan, Cari_Fadres1, Cari_Fadres2, Cari_Vergidarie, Cari_Vergino, Cari_Mail, Cari_Il, Cari_Ilce, Cari_Mahalle,
     0 as Bakiye
 
-    from Pos_Cari WITH(NOLOCK)  
+    from Pos_Cari WITH(NOLOCK)   order by Cari_Kod
 
         ");
         }
@@ -119,11 +119,26 @@ namespace Pos
 
         private void btn_Satis_Click(object sender, EventArgs e)
         {
-            if (gv_Cari.RowCount > 0)
+
+            int seciliSatir = gv_Cari.FocusedRowHandle;
+            if (seciliSatir== -2147483646)
             {
-                pCari = Cari.Cari_Getir(Convert.ToString(gv_Cari.GetFocusedRowCellValue("Cari_Kod")));
-                this.Close();
+                if (gv_Cari.RowCount > 0)
+                {
+                    pCari = Cari.Cari_Getir(Convert.ToString(gv_Cari.GetRowCellValue(0, "Cari_Kod")));
+
+                    this.Close();
+                }
             }
+            else
+            {
+                if (gv_Cari.RowCount > 0)
+                {
+                    pCari = Cari.Cari_Getir(Convert.ToString(gv_Cari.GetFocusedRowCellValue("Cari_Kod")));
+                    this.Close();
+                }
+            }
+         
         }
 
         private void btn_Cikis_Click(object sender, EventArgs e)

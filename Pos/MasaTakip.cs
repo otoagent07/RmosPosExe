@@ -1838,6 +1838,9 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void Satis()
         {
+            if (StatikSinif.masaMusaitmi(Masa_No) == false) return;
+            if (StatikSinif.sadeceKendiMasanaGir(bartxt_FisNo.EditValue.ToString()) == false) return;
+
             if (Param.Param_Masaacan_Garson && !User.M_BaskaMasa)
             {
                 string garson = dbtools.DegerGetir("select ISNULL((select top 1 Rsat_Garson from Cst_Recete_Satis where Rsat_Ba = 'B' and Rsat_Fisno = '" + Convert.ToInt32(bartxt_FisNo.EditValue).ToString() + "' order by Rsat_Id),'')");

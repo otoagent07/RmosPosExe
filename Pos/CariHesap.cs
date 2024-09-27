@@ -130,7 +130,6 @@ namespace Pos
         private void btn_Cari_Kaydet_Click(object sender, EventArgs e)
         {
             Kaydet();
-            gridyenile_Cari();
         }
 
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
@@ -148,7 +147,7 @@ namespace Pos
                 {
                     if (txt_Cari_Kod.Text.Length == 0)
                     {
-                        DialogResult c = MessageBox.Show(res_man.GetString("Cari Kodu Boş Geçilemez...") + "\n" + res_man.GetString("Sistem Yeni Kod Versin mi?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        DialogResult c = MessageBox.Show("Cari Kodu Boş Geçilemez..." + "\n" + "Sistem Yeni Kod Versin mi?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (c == System.Windows.Forms.DialogResult.No)
                         {
                             MessageBox.Show(res_man.GetString("Cari Kodu Giriniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -235,7 +234,7 @@ namespace Pos
             {
                 if (txt_Cari_Kod.Text.Length == 0)
                 {
-                    DialogResult c = MessageBox.Show(res_man.GetString("Cari Kodu Boş Geçilemez...\nSistem Yeni Kod Versin mi?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult c = MessageBox.Show("Cari Kodu Boş Geçilemez...\nSistem Yeni Kod Versin mi?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (c == System.Windows.Forms.DialogResult.No)
                     {
                         MessageBox.Show(res_man.GetString("Cari Kodu Giriniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -278,6 +277,9 @@ namespace Pos
                     CariKod = txt_Cari_Kod.Text;
                 }
             }
+
+            gridyenile_Cari();
+
         }
 
         private void btn_Cari_Sil_Click(object sender, EventArgs e)
