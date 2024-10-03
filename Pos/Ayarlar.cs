@@ -44,11 +44,23 @@ namespace Pos
         {
             try
             {
-                string query = @"SELECT Pkod_Ad FROM Pos_Kodlar  
-where Pkod_Sinif = '16' and Pkod_Ustgrup = 'HES'
-group by Pkod_Ad";
+//                string query = @"SELECT Pkod_Ad FROM Pos_Kodlar  
+//where Pkod_Sinif = '16' and Pkod_Ustgrup = 'HES'
+//group by Pkod_Ad";
+//                DataTable dataTable = dbtools.SelectTableR(query);
 
-                DataTable dataTable = dbtools.SelectTableR(query);
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("Pkod_Ad", typeof(string));
+
+                for (int i = 0; i < PrinterSettings.InstalledPrinters.Count; i++)
+                {
+                   string deger = PrinterSettings.InstalledPrinters[i];
+                    DataRow row = dataTable.NewRow();
+                    row["Pkod_Ad"] = deger;
+                    dataTable.Rows.Add(row);
+                }
+
+
                 lookUpEditYazici.Properties.DataSource = dataTable;
                 lookUpEditYazici.Properties.ValueMember = "Pkod_Ad";
                 lookUpEditYazici.Properties.DisplayMember = "Pkod_Ad";

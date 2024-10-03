@@ -14735,7 +14735,7 @@ Sıfır Yap</value>
   <data name="&gt;&gt;tab_Print_Hesap.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnAbuyerDizayn.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnAbuyerDizayn.Location" type="System.Drawing.Point, System.Drawing">
@@ -14789,7 +14789,7 @@ Sıfır Yap</value>
   <data name="&gt;&gt;btnUrunDizayn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="simpleButton22.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnAbuyerDizaynSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnAbuyerDizaynSil.Location" type="System.Drawing.Point, System.Drawing">
