@@ -7079,8 +7079,15 @@ order by Pkod_Kod";
                         string ustgrup = item["ustgrup"].ToString();
                         string altgrup = item["altgrup"].ToString();
 
-                        string query = "select top 1 isnull(Pkod_AbuyerPr,'') as Pkod_AbuyerPr from Pos_Kodlar where Pkod_Sinif='16' and Pkod_Posta='" + konumposta + "' and Pkod_Ustgrup='" + ustgrup + "' and Pkod_Altgrup='" + altgrup + "'";
-                        string yaziciAd = dbtools.DegerGetir(query); // iki tane yazıcı ismi geliyor
+                        string query = "select top 1 isnull(Pkod_AbuyerPr,'') as p1,isnull(Pkod_AbuyerPr2,'') as p2 ,isnull(Pkod_AbuyerPr3,'') as p3 ,isnull(Pkod_AbuyerPr4,'') as p4 from Pos_Kodlar where Pkod_Sinif='16' and Pkod_Posta='" + konumposta + "' and Pkod_Ustgrup='" + ustgrup + "' and Pkod_Altgrup='" + altgrup + "'";
+                        DataTable data = dbtools.SelectTableR(query); // iki tane yazıcı ismi geliyor
+
+                        if (data == null || data.Rows.Count < 1) return "OK";
+
+                        string abuyerPrintName_1 = data.Rows[0]["p1"].ToString();
+                        string abuyerPrintName_2 = data.Rows[0]["p2"].ToString();
+                        string abuyerPrintName_3 = data.Rows[0]["p3"].ToString();
+                        string abuyerPrintName_4 = data.Rows[0]["p4"].ToString();
 
                         // önceden @Rapor_Tipi = 9
                         string q2 = @"select ISNULL(Rsat_SiparisPr,0) as Rsat_SiparisPr,Rsat_Id,Rsat_Tarih,CONVERT(varchar,Rsat_Acilis,108) as Rsat_Acilis,Rsat_Fisno,
@@ -7103,7 +7110,7 @@ where  Rsat_Fisno='" + Fisno + @"' and rec.Rec_SiparisCikmasin=0 and Rsat_Sipari
 
                         DataTable dtAbuyer = dbtools.SelectTableR(q2);
 
-                        yazdirAbuyerNew(dtAbuyer, yaziciAd, Fisno, Mars, Split, baslik, kartDetay1, kartdetay2, hizliSatis);
+                        yazdirAbuyerNew(dtAbuyer, abuyerPrintName_1, Fisno, Mars, Split, baslik, kartDetay1, kartdetay2, hizliSatis, abuyerPrintName_2, abuyerPrintName_3, abuyerPrintName_4);
 
                         break; // abuyer 1 tane olur dedik
 
@@ -7155,7 +7162,7 @@ where  Rsat_Fisno='" + Fisno + @"' and rec.Rec_SiparisCikmasin=0 and Rsat_Sipari
         }
 
 
-        public void yazdirAbuyerNew(DataTable dtAbuyer, string printer, int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis)
+        public void yazdirAbuyerNew(DataTable dtAbuyer, string printer, int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis,string abuyerPrintName_2,string abuyerPrintName_3,string abuyerPrintName_4)
         {
             int abuyerCiktisayisi = 1;
 
@@ -7227,8 +7234,32 @@ where  Rsat_Fisno='" + Fisno + @"' and rec.Rec_SiparisCikmasin=0 and Rsat_Sipari
                     {
                         if (abuyer1.PrinterName != "Microsoft Print to PDF" && abuyer1.PrinterName != "") // 
                         {
+                            abuyer1.CreateDocument();
                             abuyer1.Print();
                         }
+
+                        if (abuyerPrintName_2!="" && abuyerPrintName_2!= "Microsoft Print to PDF")
+                        {
+                            abuyer1.PrinterName = abuyerPrintName_2;
+                            abuyer1.CreateDocument();
+                            abuyer1.Print();
+                        }
+
+                        if (abuyerPrintName_3 != "" && abuyerPrintName_3 != "Microsoft Print to PDF")
+                        {
+                            abuyer1.PrinterName = abuyerPrintName_3;
+                            abuyer1.CreateDocument();
+                            abuyer1.Print();
+                        }
+
+
+                        if (abuyerPrintName_4 != "" && abuyerPrintName_4 != "Microsoft Print to PDF")
+                        {
+                            abuyer1.PrinterName = abuyerPrintName_4;
+                            abuyer1.CreateDocument();
+                            abuyer1.Print();
+                        }
+
                     }
 
                 }
