@@ -21,8 +21,9 @@ namespace Pos
             kucukEkranAktifmi();
             if (aktifmi)
             {
-                
-                this.Size = new Size(476, 230);
+
+                //this.Size = new Size(476, 230);
+                this.Size = new Size(520, 280);
 
                 this.StartPosition = FormStartPosition.Manual;
                 foreach (var scrn in Screen.AllScreens)

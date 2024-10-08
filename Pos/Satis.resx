@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="splitContainerControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 3</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flp_Urun.AutoScroll" type="System.Boolean, mscorlib">
@@ -136,7 +136,7 @@
     <value>0, 0</value>
   </data>
   <data name="flp_Urun.Size" type="System.Drawing.Size, System.Drawing">
-    <value>783, 279</value>
+    <value>782, 275</value>
   </data>
   <data name="flp_Urun.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
@@ -220,7 +220,7 @@
     <value>0, 0</value>
   </data>
   <data name="ana_btnUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 157</value>
+    <value>38, 155</value>
   </data>
   <data name="ana_btnUp.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -298,7 +298,7 @@
     <value>0, 0</value>
   </data>
   <data name="ana_btnDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 117</value>
+    <value>38, 114</value>
   </data>
   <data name="ana_btnDown.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -319,7 +319,7 @@
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 279</value>
+    <value>38, 275</value>
   </data>
   <data name="splitContainerControl4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -343,7 +343,7 @@
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 279</value>
+    <value>826, 275</value>
   </data>
   <data name="splitContainerControl3.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -367,7 +367,7 @@
     <value>Fill</value>
   </data>
   <data name="splitContainerControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 22</value>
   </data>
   <data name="flp_AltGrup.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -379,7 +379,7 @@
     <value>0, 0</value>
   </data>
   <data name="flp_AltGrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>786, 174</value>
+    <value>787, 171</value>
   </data>
   <data name="flp_AltGrup.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -463,7 +463,7 @@
     <value>0, 0</value>
   </data>
   <data name="alt_btnUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 105</value>
+    <value>39, 104</value>
   </data>
   <data name="alt_btnUp.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -541,7 +541,7 @@
     <value>0, 0</value>
   </data>
   <data name="alt_btnDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 64</value>
+    <value>39, 61</value>
   </data>
   <data name="alt_btnDown.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -562,7 +562,7 @@
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 174</value>
+    <value>39, 171</value>
   </data>
   <data name="splitContainerControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -586,7 +586,7 @@
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>830, 174</value>
+    <value>832, 171</value>
   </data>
   <data name="splitContainerControl1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -889,7 +889,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1122, 62</value>
+    <value>1124, 71</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
     <value>barDockControlTop</value>
@@ -907,10 +907,10 @@
     <value>Bottom</value>
   </data>
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 779</value>
+    <value>0, 784</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1122, 29</value>
+    <value>1124, 28</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -928,10 +928,10 @@
     <value>Left</value>
   </data>
   <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 62</value>
+    <value>0, 71</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 717</value>
+    <value>0, 713</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -949,10 +949,10 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1122, 62</value>
+    <value>1124, 71</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 717</value>
+    <value>0, 713</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
@@ -976,7 +976,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1122, 808</value>
+    <value>1124, 812</value>
   </data>
   <data name="flp_Kapatma.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -988,7 +988,7 @@
     <value>0, 0</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>713, 83</value>
+    <value>715, 83</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>148</value>
@@ -1015,7 +1015,7 @@
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 9</value>
+    <value>11, 10</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 16</value>
@@ -1045,10 +1045,10 @@
     <value>Fill</value>
   </data>
   <data name="btnBakiye.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 3</value>
   </data>
   <data name="btnBakiye.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 79</value>
+    <value>111, 77</value>
   </data>
   <data name="btnBakiye.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1072,7 +1072,7 @@
     <value>Right</value>
   </data>
   <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>713, 0</value>
+    <value>715, 0</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 83</value>
@@ -1093,10 +1093,10 @@
     <value>1</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 632</value>
+    <value>2, 628</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>830, 83</value>
+    <value>832, 83</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>146</value>
@@ -1120,10 +1120,10 @@
     <value>Fill</value>
   </data>
   <data name="flp_UrunGrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 3</value>
   </data>
   <data name="flp_UrunGrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>705, 69</value>
+    <value>705, 66</value>
   </data>
   <data name="flp_UrunGrup.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -1147,10 +1147,10 @@
     <value>Right</value>
   </data>
   <data name="chk_Yapma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 2</value>
+    <value>708, 3</value>
   </data>
   <data name="chk_Yapma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 69</value>
+    <value>59, 66</value>
   </data>
   <data name="chk_Yapma.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -1177,10 +1177,10 @@
     <value>Right</value>
   </data>
   <data name="btn_Aciklama.Location" type="System.Drawing.Point, System.Drawing">
-    <value>766, 2</value>
+    <value>767, 3</value>
   </data>
   <data name="btn_Aciklama.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 69</value>
+    <value>62, 66</value>
   </data>
   <data name="btn_Aciklama.TabIndex" type="System.Int32, mscorlib">
     <value>113</value>
@@ -1201,10 +1201,10 @@
     <value>2</value>
   </data>
   <data name="panelControl7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 268</value>
+    <value>2, 267</value>
   </data>
   <data name="panelControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>830, 73</value>
+    <value>832, 72</value>
   </data>
   <data name="panelControl7.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -1225,7 +1225,7 @@
     <value>0, 70</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>834, 196</value>
+    <value>836, 195</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -1252,10 +1252,10 @@
     <value>Fill</value>
   </data>
   <data name="flp_AnaGrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 20</value>
+    <value>2, 22</value>
   </data>
   <data name="flp_AnaGrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>830, 48</value>
+    <value>832, 46</value>
   </data>
   <data name="flp_AnaGrup.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1276,7 +1276,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>834, 70</value>
+    <value>836, 70</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -1297,10 +1297,10 @@
     <value>7</value>
   </data>
   <data name="panelControl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 345</value>
+    <value>2, 343</value>
   </data>
   <data name="panelControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>830, 283</value>
+    <value>832, 281</value>
   </data>
   <data name="panelControl8.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
@@ -1321,7 +1321,7 @@
     <value>Fill</value>
   </data>
   <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 62</value>
+    <value>0, 71</value>
   </data>
   <data name="layoutControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1342,7 +1342,7 @@
     <value>layoutControlItem7</value>
   </data>
   <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>834, 717</value>
+    <value>836, 713</value>
   </data>
   <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
@@ -1766,10 +1766,10 @@ Sil</value>
     <value>Bottom</value>
   </data>
   <data name="panelMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 501</value>
+    <value>3, 494</value>
   </data>
   <data name="panelMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 100</value>
+    <value>276, 100</value>
   </data>
   <data name="panelMenu.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1877,10 +1877,10 @@ Sil</value>
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 6</value>
+    <value>190, 7</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 22</value>
+    <value>80, 22</value>
   </data>
   <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
     <value>165</value>
@@ -2046,7 +2046,7 @@ Sil</value>
 </value>
   </data>
   <data name="btn_Bindirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 41</value>
+    <value>178, 42</value>
   </data>
   <data name="btn_Bindirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 35</value>
@@ -2283,10 +2283,10 @@ Düzelt</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 601</value>
+    <value>3, 594</value>
   </data>
   <data name="panelControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 75</value>
+    <value>276, 75</value>
   </data>
   <data name="panelControl6.TabIndex" type="System.Int32, mscorlib">
     <value>164</value>
@@ -2465,10 +2465,10 @@ Düzelt</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 676</value>
+    <value>3, 669</value>
   </data>
   <data name="panelControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 35</value>
+    <value>276, 35</value>
   </data>
   <data name="panelControl5.TabIndex" type="System.Int32, mscorlib">
     <value>163</value>
@@ -2623,7 +2623,7 @@ Düzelt</value>
 </value>
   </data>
   <data name="btn_Mars.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 112</value>
+    <value>97, 113</value>
   </data>
   <data name="btn_Mars.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 34</value>
@@ -2650,7 +2650,7 @@ Düzelt</value>
     <value>Top, Left, Right</value>
   </data>
   <data name="txt_Not.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 54</value>
+    <value>4, 55</value>
   </data>
   <data name="txt_Not.Properties.NullValuePrompt" xml:space="preserve">
     <value>Adisyon Notu Giriniz...</value>
@@ -2659,7 +2659,7 @@ Düzelt</value>
     <value>True</value>
   </data>
   <data name="txt_Not.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 23</value>
+    <value>264, 23</value>
   </data>
   <data name="txt_Not.TabIndex" type="System.Int32, mscorlib">
     <value>149</value>
@@ -2806,13 +2806,13 @@ Düzelt</value>
     <value>Top, Left, Right</value>
   </data>
   <data name="txt_Filtre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 28</value>
+    <value>94, 29</value>
   </data>
   <data name="txt_Filtre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="txt_Filtre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>176, 22</value>
   </data>
   <data name="txt_Filtre.TabIndex" type="System.Int32, mscorlib">
     <value>158</value>
@@ -2884,7 +2884,7 @@ Düzelt</value>
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 240</value>
+    <value>18, 241</value>
   </data>
   <data name="gridView1.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -2959,7 +2959,7 @@ Düzelt</value>
     <value>Recete Adı</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 341</value>
+    <value>240, 333</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>154</value>
@@ -3037,7 +3037,7 @@ Düzelt</value>
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 112</value>
+    <value>184, 113</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 34</value>
@@ -3113,10 +3113,10 @@ Düzelt</value>
 </value>
   </data>
   <data name="btn_Siparis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 112</value>
+    <value>7, 113</value>
   </data>
   <data name="btn_Siparis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 34</value>
+    <value>88, 34</value>
   </data>
   <data name="btn_Siparis.TabIndex" type="System.Int32, mscorlib">
     <value>150</value>
@@ -3168,10 +3168,10 @@ Düzelt</value>
     <value>Fill</value>
   </data>
   <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 3</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 713</value>
+    <value>282, 707</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>149</value>
@@ -3192,10 +3192,10 @@ Düzelt</value>
     <value>Right</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>834, 62</value>
+    <value>836, 71</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 717</value>
+    <value>288, 713</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>
