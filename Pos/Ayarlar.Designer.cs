@@ -1268,6 +1268,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.ikinciEkranAktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2122,6 +2123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ikinciEkranAktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4149,6 +4151,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.ikinciEkranAktif);
             this.xtraTabPage8.Controls.Add(this.urunAdinaOdaklan);
             this.xtraTabPage8.Controls.Add(this.tumPrinter);
             this.xtraTabPage8.Controls.Add(this.txtSiparisTekrarPrintName);
@@ -12621,6 +12624,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // ikinciEkranAktif
+            // 
+            resources.ApplyResources(this.ikinciEkranAktif, "ikinciEkranAktif");
+            this.ikinciEkranAktif.Name = "ikinciEkranAktif";
+            this.ikinciEkranAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13515,6 +13524,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ikinciEkranAktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14759,5 +14769,6 @@
         private DevExpress.XtraEditors.CheckEdit urunAdinaOdaklan;
         private DevExpress.XtraEditors.SimpleButton btnAbuyerDizayn;
         private DevExpress.XtraEditors.SimpleButton btnAbuyerDizaynSil;
+        private DevExpress.XtraEditors.CheckEdit ikinciEkranAktif;
     }
 }

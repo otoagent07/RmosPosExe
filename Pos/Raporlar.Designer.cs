@@ -1031,7 +1031,7 @@
             this.chk_GarsonKasiyer.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.chk_GarsonKasiyer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("chk_GarsonKasiyer.Properties.Buttons"))))});
-            this.chk_GarsonKasiyer.Properties.DropDownRows = 15;
+            this.chk_GarsonKasiyer.Properties.DropDownRows = 25;
             this.chk_GarsonKasiyer.Properties.PopupFormMinSize = new System.Drawing.Size(350, 350);
             // 
             // chk_Detay

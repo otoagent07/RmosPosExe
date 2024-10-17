@@ -10,6 +10,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+using System.Media;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
@@ -938,10 +939,10 @@ namespace Pos
                     }
 
                     SimpleButton btn_Kapatma = new SimpleButton();
-                    btn_Kapatma.Size = new System.Drawing.Size(68, 50);
                     //if (Convert.ToString(this.Tag) ==  "H") btn_Kapatma.Size = new Size(150, 50);
                     btn_Kapatma.TabIndex = 0;
-                    //btn_Kapatma.Size = new System.Drawing.Size(90, 50);
+                    //btn_Kapatma.Size = new System.Drawing.Size(68, 50);
+                    btn_Kapatma.Size = new System.Drawing.Size(90, 43);
                     btn_Kapatma.TabStop = false;
                     btn_Kapatma.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
                     btn_Kapatma.Font = new System.Drawing.Font("Tahoma", 10F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(162)));
@@ -3404,7 +3405,19 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                             DataTable dtR = dbtools.SelectTable("select Rec_Genelkod from Cst_Recete WITH(NOLOCK)  where Rec_Barkod = '" + barkod + "'");
                             if (dtR.Rows.Count < 1)
                             {
+
+                                if (File.Exists("urunyok.wav"))
+                                {
+                                    SoundPlayer player = new SoundPlayer("urunyok.wav");
+                                    player.Play();
+                                }
+
                                 MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                              
+                                
+
+
                                 barkodFocuslan();
                                 return;
                             }
@@ -3421,7 +3434,17 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                             DataTable dtR = dbtools.SelectTable("select top(1) Recete_Kod from Cst_Recete_Barkod WITH(NOLOCK)  where Barkod = '" + barkod + "'");
                             if (dtR.Rows.Count < 1)
                             {
+
+                                if (File.Exists("urunyok.wav"))
+                                {
+                                    SoundPlayer player = new SoundPlayer("urunyok.wav");
+                                    player.Play();
+                                }
+
                                 MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                
+
                                 barkodFocuslan();
                                 return;
                             }
@@ -3447,7 +3470,17 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                             int sayac = Convert.ToInt32(dbtools.DegerGetir("select COUNT(*) from Cst_Recete WITH(NOLOCK) where Rec_Genelkod = '" + urun_Kodu + "'"));
                             if (sayac < 1)
                             {
+
+                                if (File.Exists("urunyok.wav"))
+                                {
+                                    SoundPlayer player = new SoundPlayer("urunyok.wav");
+                                    player.Play();
+                                }
+
                                 MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                
+
                                 barkodFocuslan();
                                 return;
                             }
@@ -3477,7 +3510,18 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                             DataTable dtR = dbtools.SelectTable(query);
                             if (dtR.Rows.Count < 1)
                             {
+
+                                if (File.Exists("urunyok.wav"))
+                                {
+                                    SoundPlayer player = new SoundPlayer("urunyok.wav");
+                                    player.Play();
+                                }
+
+
                                 MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                
+
                                 barkodFocuslan();
                                 return;
                             }
@@ -3497,7 +3541,17 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                         DataTable dtR = dbtools.SelectTable("select Rec_Genelkod from Cst_Recete WITH(NOLOCK)  where Rec_Barkod = '" + barkod + "'");
                         if (dtR.Rows.Count < 1)
                         {
+
+                            if (File.Exists("urunyok.wav"))
+                            {
+                                SoundPlayer player = new SoundPlayer("urunyok.wav");
+                                player.Play();
+                            }
+
+
                             MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                           
+
                             barkodFocuslan();
                             return;
                         }

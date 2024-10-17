@@ -261,41 +261,49 @@ namespace Pos.Class
 
         public static DataTable SelectTableR(string sql1)
         {
-            for (int i = 0; i <= denemeSayisi; i++)
+            try
             {
-                try
+                for (int i = 0; i <= denemeSayisi; i++)
                 {
-                    if (conn.State != ConnectionState.Closed)
+                    try
                     {
-                        conn.Close();
-                    }
-                    conn.Open();
+                        if (conn.State != ConnectionState.Closed)
+                        {
+                            conn.Close();
+                        }
+                        conn.Open();
 
-                    dt = new DataSet();
-                    adap = new SqlDataAdapter(sql1, conn);
-                    adap.SelectCommand.CommandTimeout = 0;
-                    adap.Fill(dt, "q");
-                    return dt.Tables["q"];
+                        dt = new DataSet();
+                        adap = new SqlDataAdapter(sql1, conn);
+                        adap.SelectCommand.CommandTimeout = 0;
+                        adap.Fill(dt, "q");
+                        return dt.Tables["q"];
+
+                    }
+                    catch (Exception ex)
+                    {
+                        if (ex.Message.Contains("was deadlocked on lock"))
+                        {
+                            Thread.Sleep(beklemeSuresi);
+                            continue;
+                        }
+                        else
+                        {
+                            RHMesaj.MyMessageError(MyClass, "SelectTableR", "", ex);
+                            return null;
+                        }
+                    }
 
                 }
-                catch (Exception ex)
-                {
-                    if (ex.Message.Contains("was deadlocked on lock"))
-                    {
-                        Thread.Sleep(beklemeSuresi);
-                        continue;
-                    }
-                    else
-                    {
-                        RHMesaj.MyMessageError(MyClass, "SelectTableR", "", ex);
-                        return null;
-                    }
-                }
 
+                RHMesaj.MyMessageError(MyClass, "SelectTableR", "", new Exception("Deadlock Hatası"));
+
+                return null;
             }
-
-            RHMesaj.MyMessageError(MyClass, "SelectTableR", "", new Exception("Deadlock Hatası"));
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             return null;
         }
 

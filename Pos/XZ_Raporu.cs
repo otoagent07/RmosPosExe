@@ -110,7 +110,7 @@ group by Pkod_Ad";
             List<string> list;
 
             DataTable dt3 = dbtools.SelectTable("SELECT Pkod_Ad, Pkod_Satir FROM Pos_Kodlar  where Pkod_Sinif = '16' and Pkod_Ustgrup = 'HES' and Pkod_Kod = '" + Departman.Dep_Kodu + "' ");
-            if (dt3.Rows.Count > 0)
+            if (dt3.Rows.Count > 0 )
             {
                 string Printer = dt3.Rows[0]["Pkod_Ad"].ToString();
                 int Bos_Satir = Convert.ToInt32(dt3.Rows[0]["Pkod_Satir"].ToString());
@@ -396,6 +396,14 @@ group by Pkod_Ad";
 
                 foreach (DataRow item in dt.Rows)
                 {
+                   
+
+                    if (item["Aciklama"].ToString().Contains("#Yazdırılmamış Sipariş-> Recete :"))
+                    {
+                        item["Aciklama"] = item["Aciklama"].ToString().Replace("#Yazdırılmamış Sipariş-> Recete :", "").Trim();
+                        item["Aciklama"] = item["Aciklama"].ToString().Replace("Silindi", "").Trim();
+                        item["Aciklama"] = item["Aciklama"].ToString().Replace("Miktar :", "").Trim();
+                    }
 
                     string deger = item["Aciklama"].ToString();
 

@@ -104,6 +104,22 @@
             this.gridViewKisiyeSatis = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControlFis = new DevExpress.XtraGrid.GridControl();
             this.gridViewFis = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt2kisi = new System.Windows.Forms.Label();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.txt3kisi = new System.Windows.Forms.Label();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.txt5kisi = new System.Windows.Forms.Label();
+            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
+            this.txt4kisi = new System.Windows.Forms.Label();
+            this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -121,6 +137,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewKisiyeSatis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlFis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewFis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
+            this.panelControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
+            this.panelControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
+            this.panelControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).BeginInit();
+            this.panelControl8.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridColumn13
@@ -891,11 +923,107 @@
             this.gridViewFis.OptionsView.ShowFooter = true;
             this.gridViewFis.OptionsView.ShowGroupPanel = false;
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.label1);
+            resources.ApplyResources(this.panelControl1, "panelControl1");
+            this.panelControl1.Name = "panelControl1";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.txt2kisi);
+            resources.ApplyResources(this.panelControl2, "panelControl2");
+            this.panelControl2.Name = "panelControl2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // txt2kisi
+            // 
+            resources.ApplyResources(this.txt2kisi, "txt2kisi");
+            this.txt2kisi.Name = "txt2kisi";
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Controls.Add(this.txt3kisi);
+            resources.ApplyResources(this.panelControl3, "panelControl3");
+            this.panelControl3.Name = "panelControl3";
+            // 
+            // txt3kisi
+            // 
+            resources.ApplyResources(this.txt3kisi, "txt3kisi");
+            this.txt3kisi.Name = "txt3kisi";
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.label4);
+            resources.ApplyResources(this.panelControl4, "panelControl4");
+            this.panelControl4.Name = "panelControl4";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // panelControl5
+            // 
+            this.panelControl5.Controls.Add(this.txt5kisi);
+            resources.ApplyResources(this.panelControl5, "panelControl5");
+            this.panelControl5.Name = "panelControl5";
+            // 
+            // txt5kisi
+            // 
+            resources.ApplyResources(this.txt5kisi, "txt5kisi");
+            this.txt5kisi.Name = "txt5kisi";
+            // 
+            // panelControl6
+            // 
+            this.panelControl6.Controls.Add(this.label6);
+            resources.ApplyResources(this.panelControl6, "panelControl6");
+            this.panelControl6.Name = "panelControl6";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // panelControl7
+            // 
+            this.panelControl7.Controls.Add(this.txt4kisi);
+            resources.ApplyResources(this.panelControl7, "panelControl7");
+            this.panelControl7.Name = "panelControl7";
+            // 
+            // txt4kisi
+            // 
+            resources.ApplyResources(this.txt4kisi, "txt4kisi");
+            this.txt4kisi.Name = "txt4kisi";
+            // 
+            // panelControl8
+            // 
+            this.panelControl8.Controls.Add(this.label8);
+            resources.ApplyResources(this.panelControl8, "panelControl8");
+            this.panelControl8.Name = "panelControl8";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.panelControl5);
+            this.Controls.Add(this.panelControl6);
+            this.Controls.Add(this.panelControl7);
+            this.Controls.Add(this.panelControl8);
+            this.Controls.Add(this.panelControl3);
+            this.Controls.Add(this.panelControl4);
+            this.Controls.Add(this.panelControl2);
+            this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.gridControlFis);
             this.Controls.Add(this.gridControlKisiyeSatis);
             this.Controls.Add(this.btnTipBox);
@@ -968,6 +1096,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewKisiyeSatis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlFis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewFis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
+            this.panelControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            this.panelControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
+            this.panelControl5.ResumeLayout(false);
+            this.panelControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
+            this.panelControl6.ResumeLayout(false);
+            this.panelControl6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).EndInit();
+            this.panelControl7.ResumeLayout(false);
+            this.panelControl7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).EndInit();
+            this.panelControl8.ResumeLayout(false);
+            this.panelControl8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1043,5 +1195,21 @@
         public DevExpress.XtraGrid.Views.Grid.GridView gridViewKisiyeSatis;
         public DevExpress.XtraGrid.Views.Grid.GridView gridViewFis;
         public DevExpress.XtraEditors.TextEdit txt_Odemetutari;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private System.Windows.Forms.Label txt2kisi;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
+        private System.Windows.Forms.Label txt3kisi;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
+        private System.Windows.Forms.Label label4;
+        private DevExpress.XtraEditors.PanelControl panelControl5;
+        private System.Windows.Forms.Label txt5kisi;
+        private DevExpress.XtraEditors.PanelControl panelControl6;
+        private System.Windows.Forms.Label label6;
+        private DevExpress.XtraEditors.PanelControl panelControl7;
+        private System.Windows.Forms.Label txt4kisi;
+        private DevExpress.XtraEditors.PanelControl panelControl8;
+        private System.Windows.Forms.Label label8;
     }
 }

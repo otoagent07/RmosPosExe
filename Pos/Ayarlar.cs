@@ -320,6 +320,7 @@ namespace Pos
                 servispayOdenmezIkramSil.Checked = Param.servispayOdenmezIkramSil;
                 tumPrinter.Checked = Param.tumPrinter;
                 urunAdinaOdaklan.Checked = Param.urunAdinaOdaklan;
+                ikinciEkranAktif.Checked = Param.ikinciEkranAktif;
                 txtKartnoSayisi.Text = Param.kartnoSayisi.ToString();
             }
             catch (Exception ex)
@@ -1136,7 +1137,7 @@ namespace Pos
                     + " Param_OzelMasaSiralama,Param_HesapFisiDokum,Param_HspFontAlgilama,Param_AdisyonFolioAdi,Param_FullPos,Param_CikisKapa,Param_DirekAdisyonZor,Param_DirekAdisyonPrSor,Param_KGAlgilama,Param_ExtraFolioAcma,Param_SiparisAna,Param_iadeKontrol,Param_iadeLimit, Pos_HesapDkmRenk, Param_AdisyonDegis, Param_AdisyonIndAd,Param_SiparisTutar,Param_AnaEkranCiro,Param_MasaTakipCiro,Param_AcilisCekSil,Param_CariAdSoyad,Param_OdenmezAc, "
                     + " Param_SatirSil,Param_SatirSilUser,Param_MasaTakipMenu,Param_ParaUstuIngenico,Param_SatisTabloGonderi, Param_SatisTabloID, Param_SatisTabloAktif, Param_AcilistaMenu,Param_IngenicoSPR,Param_SiparisFisFont,Param_HizliSatisCekAc,Param_KartfGBCheckOut, "
                     + " Param_YeniHesapDkm,Param_YeniSiparisDkm,Param_OdaKrediCompOdenmez,Param_KurTransfer,Param_CallCenterPaket, "
-                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan )"
+                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif )"
 
                     + " VALUES ( "
                     + " '1', '" + txt_Prm_Tesis_Adi.Text + "', '" + Convert.ToBoolean(chk_Prm_Onburo.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Cost.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Muh.Checked) + "','" + rdo_Prm_Calisma.SelectedIndex + "','" + rdo_Prm_Tarih_Nereden.SelectedIndex + "', "
@@ -1164,7 +1165,7 @@ namespace Pos
                     + " '" + Param_CariAdSoyad.Checked + "','" + Param_OdenmezAc.Checked + "','" + Pos_SatirSil.Checked + "','" + Pos_SatirSilUser.Text + "','" + Param_MasaTakipMenu.Checked + "', "
                     + " '" + Param_ParaUstuIngenico.Checked + "','" + Param_SatisTabloGonderi.EditValue + "','" + Param_SatisTabloID.EditValue + "','" + Param_SatisTabloAktif.Checked + "','" + Param_AcilistaMenu.Checked + "','" + Param_IngenicoSPR.Checked + "','" + Param_SiparisFisFont.Checked + "', "
                     + " '" + Param_HizliSatisCekAc.Checked + "','" + Param_KartfGBCheckOut.Checked + "','" + Param_YeniHesapDkm.Checked + "','" + Param_YeniSiparisDkm.Checked + "','" + Param_OdaKrediCompOdenmez.Checked + "','" + Param_KurTransfer.Checked + "', "
-                    + " '" + Param_CallCenterPaket.Checked + "','" + Param_PaketDipTotal.Checked + "','" + Param_HesapKapamaAds.Checked + "','" + Param_HesapDkmAciklama.Checked + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "','" + Param_AndroGeriYazdir.Checked + "','" + Param_PaketKucukEkran.Checked + "','" + Param_GetirTest.Checked + "','" + Param_GetirOtomatikOnay.Checked + "','" + Param_SatisCikisButton.Checked + "','" + Param_nfcBarkodAktif.Checked + "','" + Param_ParcaliMasaAktif.Checked + "','" + yazdirilmamissiparis.Checked + "','" + masamusait.Checked + "','" + masatakiphesappasif.Checked + "','" + kisivegarsonbirkeresoraktif.Checked + "','" + satirsilfiscikmasinaktif.Checked + "','" + onburoikramsifiryazaktif.Checked + "','" + txtKartnoSayisi.Text + "','" + cariindirimAktif.Checked + "','" + lookUpEdit_tipbox.EditValue + "','" + hesapFisQr.Checked + "','" + masatrTutSurukle.Checked + "','" + servispayFooterda.Checked + "','" + servispayOdenmezIkramSil.Checked + "','" + txtSiparisTekrarPrintName.Text + "','" + tumPrinter.Checked + "','" + urunAdinaOdaklan.Checked + "'  )");
+                    + " '" + Param_CallCenterPaket.Checked + "','" + Param_PaketDipTotal.Checked + "','" + Param_HesapKapamaAds.Checked + "','" + Param_HesapDkmAciklama.Checked + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "','" + Param_AndroGeriYazdir.Checked + "','" + Param_PaketKucukEkran.Checked + "','" + Param_GetirTest.Checked + "','" + Param_GetirOtomatikOnay.Checked + "','" + Param_SatisCikisButton.Checked + "','" + Param_nfcBarkodAktif.Checked + "','" + Param_ParcaliMasaAktif.Checked + "','" + yazdirilmamissiparis.Checked + "','" + masamusait.Checked + "','" + masatakiphesappasif.Checked + "','" + kisivegarsonbirkeresoraktif.Checked + "','" + satirsilfiscikmasinaktif.Checked + "','" + onburoikramsifiryazaktif.Checked + "','" + txtKartnoSayisi.Text + "','" + cariindirimAktif.Checked + "','" + lookUpEdit_tipbox.EditValue + "','" + hesapFisQr.Checked + "','" + masatrTutSurukle.Checked + "','" + servispayFooterda.Checked + "','" + servispayOdenmezIkramSil.Checked + "','" + txtSiparisTekrarPrintName.Text + "','" + tumPrinter.Checked + "','" + urunAdinaOdaklan.Checked + "','" + ikinciEkranAktif.Checked + "'  )");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Genel, Log.Log_Islem.Kaydet, "Genel Parametreler Kaydedildi", String.Empty, "1");
             }
@@ -1207,7 +1208,7 @@ namespace Pos
                 + " Param_HizliSatisCekAc = '" + Param_HizliSatisCekAc.Checked + "', Param_KartfGBCheckOut = '" + Param_KartfGBCheckOut.Checked + "',Param_YeniHesapDkm = '" + Param_YeniHesapDkm.Checked + "',  "
                 + " Param_YeniSiparisDkm = '" + Param_YeniSiparisDkm.Checked + "', Param_OdaKrediCompOdenmez = '" + Param_OdaKrediCompOdenmez.Checked + "', "
                 + " Param_KurTransfer = '" + Param_KurTransfer.Checked + "',Param_CallCenterPaket = '" + Param_CallCenterPaket.Checked + "', "
-                + " Param_PaketDipTotal = '" + Param_PaketDipTotal.Checked + "', Param_HesapKapamaAds = '" + Param_HesapKapamaAds.Checked + "',Param_HesapDkmAciklama = '" + Param_HesapDkmAciklama.Checked + "',Param_OzelMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "' , Param_RezMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "',Param_AndroGeriYazdir = '" + Param_AndroGeriYazdir.Checked + "',Param_PaketKucukEkran = '" + Param_PaketKucukEkran.Checked + "',Param_GetirTest = '" + Param_GetirTest.Checked + "',Param_GetirOtomatikOnay = '" + Param_GetirOtomatikOnay.Checked + "',Param_SatisCikisButton = '" + Param_SatisCikisButton.Checked + "',Param_nfcBarkodAktif = '" + Param_nfcBarkodAktif.Checked + "',Param_ParcaliMasaAktif = '" + Param_ParcaliMasaAktif.Checked + "',yazdirilmamissiparis = '" + yazdirilmamissiparis.Checked + "',masamusait = '" + masamusait.Checked + "',masatakiphesappasif = '" + masatakiphesappasif.Checked + "',kisivegarsonbirkeresoraktif = '" + kisivegarsonbirkeresoraktif.Checked + "',satirsilfiscikmasinaktif = '" + satirsilfiscikmasinaktif.Checked + "',onburoikramsifiryazaktif = '" + onburoikramsifiryazaktif.Checked + "',kartnoSayisi = '" + txtKartnoSayisi.Text + "',cariindirimAktif = '" + cariindirimAktif.Checked + "',tipboxReceteKod = '" + lookUpEdit_tipbox.EditValue.ToString() + "',hesapFisQr = '" + hesapFisQr.Checked + "',masatrTutSurukle = '" + masatrTutSurukle.Checked + "',servispayFooterda = '" + servispayFooterda.Checked + "',servispayOdenmezIkramSil = '" + servispayOdenmezIkramSil.Checked + "',siparisTekrarPrintName = '" + txtSiparisTekrarPrintName.Text + "',tumPrinter = '" + tumPrinter.Checked + "',urunAdinaOdaklan = '" + urunAdinaOdaklan.Checked + "'   "
+                + " Param_PaketDipTotal = '" + Param_PaketDipTotal.Checked + "', Param_HesapKapamaAds = '" + Param_HesapKapamaAds.Checked + "',Param_HesapDkmAciklama = '" + Param_HesapDkmAciklama.Checked + "',Param_OzelMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "' , Param_RezMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "',Param_AndroGeriYazdir = '" + Param_AndroGeriYazdir.Checked + "',Param_PaketKucukEkran = '" + Param_PaketKucukEkran.Checked + "',Param_GetirTest = '" + Param_GetirTest.Checked + "',Param_GetirOtomatikOnay = '" + Param_GetirOtomatikOnay.Checked + "',Param_SatisCikisButton = '" + Param_SatisCikisButton.Checked + "',Param_nfcBarkodAktif = '" + Param_nfcBarkodAktif.Checked + "',Param_ParcaliMasaAktif = '" + Param_ParcaliMasaAktif.Checked + "',yazdirilmamissiparis = '" + yazdirilmamissiparis.Checked + "',masamusait = '" + masamusait.Checked + "',masatakiphesappasif = '" + masatakiphesappasif.Checked + "',kisivegarsonbirkeresoraktif = '" + kisivegarsonbirkeresoraktif.Checked + "',satirsilfiscikmasinaktif = '" + satirsilfiscikmasinaktif.Checked + "',onburoikramsifiryazaktif = '" + onburoikramsifiryazaktif.Checked + "',kartnoSayisi = '" + txtKartnoSayisi.Text + "',cariindirimAktif = '" + cariindirimAktif.Checked + "',tipboxReceteKod = '" + lookUpEdit_tipbox.EditValue.ToString() + "',hesapFisQr = '" + hesapFisQr.Checked + "',masatrTutSurukle = '" + masatrTutSurukle.Checked + "',servispayFooterda = '" + servispayFooterda.Checked + "',servispayOdenmezIkramSil = '" + servispayOdenmezIkramSil.Checked + "',siparisTekrarPrintName = '" + txtSiparisTekrarPrintName.Text + "',tumPrinter = '" + tumPrinter.Checked + "',urunAdinaOdaklan = '" + urunAdinaOdaklan.Checked + "',ikinciEkranAktif = '" + ikinciEkranAktif.Checked + "'   "
                 + " where Param_Id = '1' ");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Genel, Log.Log_Islem.Duzelt, "Genel Parametrelerde Duzeltme Islemi Yapıldı", String.Empty, "1");
@@ -1807,8 +1808,24 @@ namespace Pos
 
                 Pkod_E_Adisyon.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_E_Adisyon")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_E_Adisyon"));
 
-                look_Ykkodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_YKasaid"));
-                look_Bankakodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_banka"));
+                try
+                {
+                    look_Ykkodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_YKasaid"));
+
+                }
+                catch (Exception ex)
+                {
+                    look_Ykkodu.EditValue = 0;
+                }
+
+                try
+                {
+                    look_Bankakodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_banka"));
+                }
+                catch (Exception ex)
+                {
+
+                }
 
 
                 string deger = gridView2.GetFocusedRowCellValue("Pkod_YS_OdemeID").ToString();
@@ -5365,19 +5382,26 @@ order by mah.Adres_Ad");
 
         private void rdo_Odeme_OzelKod_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (rdo_Odeme_OzelKod.SelectedIndex == 7)
+            try
             {
+                if (rdo_Odeme_OzelKod.SelectedIndex == 7)
+                {
 
-                look_Bankakodu.Properties.DataSource = dbtools.SelectTable("select Convert(int,Pkod_Kod) as Pkod_Kod ,Pkod_Ad from Pos_Kodlar where Pkod_Sinif = '94'");
-                look_Bankakodu.Properties.DisplayMember = "Pkod_Ad";
-                look_Bankakodu.Properties.ValueMember = "Pkod_Kod";
+                    look_Bankakodu.Properties.DataSource = dbtools.SelectTableR("select Convert(int,Pkod_Kod) as Pkod_Kod ,Pkod_Ad from Pos_Kodlar where Pkod_Sinif = '94'");
+                    look_Bankakodu.Properties.DisplayMember = "Pkod_Ad";
+                    look_Bankakodu.Properties.ValueMember = "Pkod_Kod";
+                }
+                else
+                {
+
+                    look_Bankakodu.Properties.DataSource = dbtools.SelectTableR("select Convert(int,Pkod_Kod) as Pkod_Kod,Pkod_Ad from Pos_Kodlar where Pkod_Sinif = '93'");
+                    look_Bankakodu.Properties.DisplayMember = "Pkod_Ad";
+                    look_Bankakodu.Properties.ValueMember = "Pkod_Kod";
+                }
             }
-            else
+            catch (Exception ex)
             {
-
-                look_Bankakodu.Properties.DataSource = dbtools.SelectTable("select Convert(int,Pkod_Kod) as Pkod_Kod,Pkod_Ad from Pos_Kodlar where Pkod_Sinif = '93'");
-                look_Bankakodu.Properties.DisplayMember = "Pkod_Ad";
-                look_Bankakodu.Properties.ValueMember = "Pkod_Kod";
+                MessageBox.Show(ex.Message);
             }
         }
 

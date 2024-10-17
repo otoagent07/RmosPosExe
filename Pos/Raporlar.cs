@@ -71,10 +71,27 @@ namespace Pos
             cmb_Konum.Properties.DataSource = dt_Konum;
             cmb_Konum.Properties.DisplayMember = "Ad";
             cmb_Konum.Properties.ValueMember = "Pkod_Id";
-            DataTable dt_Garson = dbtools.SelectTable("select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad from RmosMuh.dbo.Pos_User where P_Kulturu <> 4");
+            DataTable dt_Garson = dbtools.SelectTable(@"select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad,
+CASE 
+        WHEN P_Kulturu = 3 THEN 'YÖNETİCİ'
+        WHEN P_Kulturu = 0 THEN 'KASİYER'
+        WHEN P_Kulturu = 1 THEN 'GARSON'
+        WHEN P_Kulturu = 2 THEN 'PAKETÇİ'
+	    ELSE 'KULLANICI'
+        end as 'Tip'
+from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY 
+    CASE 
+        WHEN P_Kulturu = 3 THEN 1
+        WHEN P_Kulturu = 0 THEN 2
+        WHEN P_Kulturu = 1 THEN 3
+        WHEN P_Kulturu = 2 THEN 4
+        ELSE 5
+    END;");
             chk_GarsonKasiyer.Properties.DataSource = dt_Garson;
             chk_GarsonKasiyer.Properties.DisplayMember = "AdSoyad";
             chk_GarsonKasiyer.Properties.ValueMember = "P_Kod";
+
+
             if (Departman.Kodlar_PRSor)
             {
                 DataTable dt_PR = dbtools.SelectTable("select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad from RmosMuh.dbo.Pos_User where P_Kulturu = 4");
@@ -286,9 +303,24 @@ namespace Pos
                     {
                         gridControl11.DataSource = dt;
                     }
+
+
+
                     if (checkEditDirektSatis.Checked)
                     {
-                        dt= dt.Select("masano=''").CopyToDataTable();
+                        try
+                        {
+                            if (dt.Rows.Count>0)
+                            {
+                                dt = dt.Select("Rsat_Masa=''").CopyToDataTable(); // Masa_No masano
+                                gridControl11.DataSource = dt;
+                            }
+                         
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("direkt satış hatası \n"+ex.Message);
+                        }
                     }
                     Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
                 }

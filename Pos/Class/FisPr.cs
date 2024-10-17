@@ -3529,6 +3529,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             }
         }
 
+
+     
         public string newHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, bool sifirli = false, bool parcalimi = false, string parcamasano = "")
         {
             try
@@ -4084,7 +4086,19 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     servisfarklisatirda(dtHesap, hsp, dovizIcon);
                 }
 
+                try
+                {
+                    string toplamtutarim = hsp.xr_KalanToplamTr.Text.Replace(" ₺", "");
+                    decimal toplamTutar = Convert.ToDecimal(toplamtutarim);
+                    hsp.txt2kisi.Text = (toplamTutar / 2).ToString("N2");
+                    hsp.txt3kisi.Text = (toplamTutar / 3).ToString("N2");
+                    hsp.txt4kisi.Text = (toplamTutar / 4).ToString("N2");
+                    hsp.txt5kisi.Text = (toplamTutar / 5).ToString("N2");
+                }
+                catch (Exception ex)
+                {
 
+                }
 
 
                 if (dtPrinter.Rows.Count > 0 && dtMacPrinter.Rows.Count == 0)

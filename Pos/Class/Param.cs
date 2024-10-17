@@ -179,6 +179,7 @@ namespace Pos.Class
         public static bool servispayOdenmezIkramSil { get; set; }
         public static bool tumPrinter { get; set; }
         public static bool urunAdinaOdaklan { get; set; }
+        public static bool ikinciEkranAktif { get; set; } // ters çalışıyor. önceki yerler bozulmasın diye
 
 
         public static void Param_Yukle()
@@ -232,7 +233,7 @@ namespace Pos.Class
                         ",ISNULL(kisivegarsonbirkeresoraktif,0) as kisivegarsonbirkeresoraktif  " +
                         ",ISNULL(satirsilfiscikmasinaktif,0) as satirsilfiscikmasinaktif  " +
                         ",ISNULL(onburoikramsifiryazaktif,0) as onburoikramsifiryazaktif  " +
-                        ",ISNULL(cariindirimAktif,0) as cariindirimAktif,ISNULL(hesapFisQr,0) as hesapFisQr,ISNULL(masatrTutSurukle,0) as masatrTutSurukle,isnull(tipboxReceteKod,'') as tipboxReceteKod  ,ISNULL(servispayFooterda,0) as servispayFooterda,ISNULL(servispayOdenmezIkramSil,0) as servispayOdenmezIkramSil,ISNULL(siparisTekrarPrintName,'') as siparisTekrarPrintName,ISNULL(tumPrinter,0) as tumPrinter,ISNULL(urunAdinaOdaklan,0) as urunAdinaOdaklan" +
+                        ",ISNULL(cariindirimAktif,0) as cariindirimAktif,ISNULL(hesapFisQr,0) as hesapFisQr,ISNULL(masatrTutSurukle,0) as masatrTutSurukle,isnull(tipboxReceteKod,'') as tipboxReceteKod  ,ISNULL(servispayFooterda,0) as servispayFooterda,ISNULL(servispayOdenmezIkramSil,0) as servispayOdenmezIkramSil,ISNULL(siparisTekrarPrintName,'') as siparisTekrarPrintName,ISNULL(tumPrinter,0) as tumPrinter,ISNULL(urunAdinaOdaklan,0) as urunAdinaOdaklan,ISNULL(ikinciEkranAktif,0) as ikinciEkranAktif" +
                          " from Pos_Param where Param_Id = '1' ");
 
                 DataTable dtMac = dbtools.SelectTable("SELECT  isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep, ISNULL(P_Sabitkonum,0) as P_Sabitkonum, P_Sabitkonumkodu   FROM  Rmosmuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
@@ -435,6 +436,7 @@ namespace Pos.Class
                     servispayOdenmezIkramSil = Convert.ToBoolean(dt.Rows[0]["servispayOdenmezIkramSil"]);
                     tumPrinter = Convert.ToBoolean(dt.Rows[0]["tumPrinter"]);
                     urunAdinaOdaklan = Convert.ToBoolean(dt.Rows[0]["urunAdinaOdaklan"]);
+                    ikinciEkranAktif = Convert.ToBoolean(dt.Rows[0]["ikinciEkranAktif"]);
 
 
                     tipboxReceteKod = Convert.ToString(dt.Rows[0]["tipboxReceteKod"]);

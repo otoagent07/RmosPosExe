@@ -940,6 +940,22 @@ namespace Pos
             return hesapsifir;
         }
 
+        public void kisiTutarYaz(string tutar)
+        {
+            try
+            {
+                decimal toplamTutar = Convert.ToDecimal(tutar);
+                
+                txt2kisi.Text = (toplamTutar / 2).ToString("N2");
+                txt3kisi.Text = (toplamTutar / 3).ToString("N2");
+                txt4kisi.Text = (toplamTutar / 4).ToString("N2");
+                txt5kisi.Text = (toplamTutar / 5).ToString("N2");
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         public bool odemeKontrol()
         {
             try
@@ -3432,6 +3448,8 @@ namespace Pos
                     }
 
                 }
+
+                kisiTutarYaz(txt_Odemetutari.Text);
             }
             catch (Exception ex)
             {

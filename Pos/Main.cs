@@ -405,18 +405,10 @@ namespace Pos
                     }
                 }
 
-                if (User.P_Ad.Equals("ALİ") && User.P_Soyad.Equals("VELİ"))
+                if (System.Windows.Forms.Screen.AllScreens.Length > 1 && Param.ikinciEkranAktif==false)
                 {
-
-                }
-                else
-                {
-                    if (System.Windows.Forms.Screen.AllScreens.Length > 1)
-                    {
-                        Main.a.Location = Screen.AllScreens[1].Bounds.Location;
-                        Main.a.Show();
-
-                    }
+                    Main.a.Location = Screen.AllScreens[1].Bounds.Location;
+                    Main.a.Show();
                 }
 
 
