@@ -652,8 +652,10 @@
             this.btn_Hesap_Kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tab_Print_Adisyon = new DevExpress.XtraTab.XtraTabPage();
+            this.btnAbuyerDizayn = new DevExpress.XtraEditors.SimpleButton();
             this.btnUrunDizayn = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnAbuyerDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnUrunDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Print_Adisyon_Sil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Print_Paket_Sil = new DevExpress.XtraEditors.SimpleButton();
@@ -1266,8 +1268,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.btnAbuyerDizayn = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAbuyerDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -7436,6 +7436,13 @@
             this.tab_Print_Adisyon.Name = "tab_Print_Adisyon";
             resources.ApplyResources(this.tab_Print_Adisyon, "tab_Print_Adisyon");
             // 
+            // btnAbuyerDizayn
+            // 
+            this.btnAbuyerDizayn.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnAbuyerDizayn, "btnAbuyerDizayn");
+            this.btnAbuyerDizayn.Name = "btnAbuyerDizayn";
+            this.btnAbuyerDizayn.Click += new System.EventHandler(this.btnAbuyerDizayn_Click);
+            // 
             // btnUrunDizayn
             // 
             this.btnUrunDizayn.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnUrunDizayn.Appearance.Font")));
@@ -7457,6 +7464,13 @@
             this.panelControl1.Controls.Add(this.btn_Print_Siparis_Sil);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
+            // 
+            // btnAbuyerDizaynSil
+            // 
+            this.btnAbuyerDizaynSil.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnAbuyerDizaynSil, "btnAbuyerDizaynSil");
+            this.btnAbuyerDizaynSil.Name = "btnAbuyerDizaynSil";
+            this.btnAbuyerDizaynSil.Click += new System.EventHandler(this.btnAbuyerDizaynSil_Click);
             // 
             // btnUrunDizaynSil
             // 
@@ -7909,7 +7923,10 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items8"))), resources.GetString("rdo_Odeme_OzelKod.Properties.Items9")),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items10"))), resources.GetString("rdo_Odeme_OzelKod.Properties.Items11")),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items12"))), resources.GetString("rdo_Odeme_OzelKod.Properties.Items13")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items14"))), resources.GetString("rdo_Odeme_OzelKod.Properties.Items15"))});
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items14"))), resources.GetString("rdo_Odeme_OzelKod.Properties.Items15")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items16"))), resources.GetString("rdo_Odeme_OzelKod.Properties.Items17"), ((bool)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items18")))),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items19"))), resources.GetString("rdo_Odeme_OzelKod.Properties.Items20")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("rdo_Odeme_OzelKod.Properties.Items21"))), resources.GetString("rdo_Odeme_OzelKod.Properties.Items22"))});
             this.rdo_Odeme_OzelKod.SelectedIndexChanged += new System.EventHandler(this.rdo_Odeme_OzelKod_SelectedIndexChanged);
             // 
             // btn_Odeme_Cikis
@@ -12603,22 +12620,6 @@
             this.textBox26.ForeColor = System.Drawing.Color.Navy;
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
-            // 
-            // btnAbuyerDizayn
-            // 
-            this.btnAbuyerDizayn.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.btnAbuyerDizayn.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnAbuyerDizayn, "btnAbuyerDizayn");
-            this.btnAbuyerDizayn.Name = "btnAbuyerDizayn";
-            this.btnAbuyerDizayn.Click += new System.EventHandler(this.btnAbuyerDizayn_Click);
-            // 
-            // btnAbuyerDizaynSil
-            // 
-            this.btnAbuyerDizaynSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton22.Appearance.Font")));
-            this.btnAbuyerDizaynSil.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnAbuyerDizaynSil, "btnAbuyerDizaynSil");
-            this.btnAbuyerDizaynSil.Name = "btnAbuyerDizaynSil";
-            this.btnAbuyerDizaynSil.Click += new System.EventHandler(this.btnAbuyerDizaynSil_Click);
             // 
             // Ayarlar
             // 

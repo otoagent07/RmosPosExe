@@ -237,7 +237,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_Kapatma.Properties.Buttons"))))});
             this.look_Kapatma.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_Kapatma.Properties.Columns"), resources.GetString("look_Kapatma.Properties.Columns1"))});
-            this.look_Kapatma.Properties.DropDownRows = 8;
+            this.look_Kapatma.Properties.DropDownRows = 15;
             this.look_Kapatma.Properties.NullText = resources.GetString("look_Kapatma.Properties.NullText");
             this.look_Kapatma.Properties.ShowFooter = false;
             this.look_Kapatma.Properties.ShowHeader = false;

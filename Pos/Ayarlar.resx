@@ -14735,9 +14735,6 @@ Sıfır Yap</value>
   <data name="&gt;&gt;tab_Print_Hesap.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="btnAbuyerDizayn.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="btnAbuyerDizayn.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 443</value>
   </data>
@@ -14788,9 +14785,6 @@ Sıfır Yap</value>
   </data>
   <data name="&gt;&gt;btnUrunDizayn.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="btnAbuyerDizaynSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnAbuyerDizaynSil.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 421</value>
@@ -16379,8 +16373,29 @@ Sıfır Yap</value>
   <data name="rdo_Odeme_OzelKod.Properties.Items15" xml:space="preserve">
     <value>Yemek Çeki</value>
   </data>
+  <data name="rdo_Odeme_OzelKod.Properties.Items16" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdo_Odeme_OzelKod.Properties.Items17" xml:space="preserve">
+    <value>kapali</value>
+  </data>
+  <data name="rdo_Odeme_OzelKod.Properties.Items18" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rdo_Odeme_OzelKod.Properties.Items19" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdo_Odeme_OzelKod.Properties.Items20" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="rdo_Odeme_OzelKod.Properties.Items21" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rdo_Odeme_OzelKod.Properties.Items22" xml:space="preserve">
+    <value>Havale</value>
+  </data>
   <data name="rdo_Odeme_OzelKod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 51</value>
+    <value>530, 51</value>
   </data>
   <data name="rdo_Odeme_OzelKod.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>

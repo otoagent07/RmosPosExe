@@ -152,11 +152,14 @@
             this.bandedGridColumn50 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn51 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn59 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.bandedGridColumn58 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.bandedGridColumn61 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.bandedGridColumn62 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.bandedGridColumn63 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn60 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn100 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.bandedGridColumn63 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.bandedGridColumn62 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.bandedGridColumn61 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.bandedGridColumn58 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn146 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn145 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn55 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn56 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn57 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -165,7 +168,6 @@
             this.bandedGridColumn70 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn71 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn99 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn100 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn116 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn119 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn125 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -174,6 +176,7 @@
             this.gridColumn137 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn138 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn140 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn144 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tab_Genelrapor = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStripGenelCek = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -417,7 +420,6 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.gridColumn144 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -1387,11 +1389,14 @@
             this.bandedGridColumn50,
             this.bandedGridColumn51,
             this.bandedGridColumn59,
-            this.bandedGridColumn58,
-            this.bandedGridColumn61,
-            this.bandedGridColumn62,
-            this.bandedGridColumn63,
             this.bandedGridColumn60,
+            this.gridColumn100,
+            this.bandedGridColumn63,
+            this.bandedGridColumn62,
+            this.bandedGridColumn61,
+            this.bandedGridColumn58,
+            this.gridColumn146,
+            this.gridColumn145,
             this.bandedGridColumn55,
             this.bandedGridColumn56,
             this.bandedGridColumn57,
@@ -1401,7 +1406,6 @@
             this.bandedGridColumn71,
             this.gridColumn85,
             this.gridColumn99,
-            this.gridColumn100,
             this.gridColumn116,
             this.gridColumn119,
             this.gridColumn125,
@@ -1721,38 +1725,27 @@
             this.bandedGridColumn59.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn59.Summary"))), resources.GetString("bandedGridColumn59.Summary1"), resources.GetString("bandedGridColumn59.Summary2"))});
             // 
-            // bandedGridColumn58
+            // bandedGridColumn60
             // 
-            this.bandedGridColumn58.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn58.AppearanceCell.Options.UseBackColor = true;
-            resources.ApplyResources(this.bandedGridColumn58, "bandedGridColumn58");
-            this.bandedGridColumn58.FieldName = "KREDI";
-            this.bandedGridColumn58.Name = "bandedGridColumn58";
-            this.bandedGridColumn58.OptionsColumn.AllowFocus = false;
-            this.bandedGridColumn58.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn58.Summary"))), resources.GetString("bandedGridColumn58.Summary1"), resources.GetString("bandedGridColumn58.Summary2"))});
+            this.bandedGridColumn60.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.bandedGridColumn60.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.bandedGridColumn60, "bandedGridColumn60");
+            this.bandedGridColumn60.FieldName = "KK";
+            this.bandedGridColumn60.Name = "bandedGridColumn60";
+            this.bandedGridColumn60.OptionsColumn.AllowFocus = false;
+            this.bandedGridColumn60.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn60.Summary"))), resources.GetString("bandedGridColumn60.Summary1"), resources.GetString("bandedGridColumn60.Summary2"))});
             // 
-            // bandedGridColumn61
+            // gridColumn100
             // 
-            this.bandedGridColumn61.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn61.AppearanceCell.Options.UseBackColor = true;
-            resources.ApplyResources(this.bandedGridColumn61, "bandedGridColumn61");
-            this.bandedGridColumn61.FieldName = "ODENMEZ";
-            this.bandedGridColumn61.Name = "bandedGridColumn61";
-            this.bandedGridColumn61.OptionsColumn.AllowFocus = false;
-            this.bandedGridColumn61.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn61.Summary"))), resources.GetString("bandedGridColumn61.Summary1"), resources.GetString("bandedGridColumn61.Summary2"))});
-            // 
-            // bandedGridColumn62
-            // 
-            this.bandedGridColumn62.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn62.AppearanceCell.Options.UseBackColor = true;
-            resources.ApplyResources(this.bandedGridColumn62, "bandedGridColumn62");
-            this.bandedGridColumn62.FieldName = "IKRAM";
-            this.bandedGridColumn62.Name = "bandedGridColumn62";
-            this.bandedGridColumn62.OptionsColumn.AllowFocus = false;
-            this.bandedGridColumn62.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn62.Summary"))), resources.GetString("bandedGridColumn62.Summary1"), resources.GetString("bandedGridColumn62.Summary2"))});
+            this.gridColumn100.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.gridColumn100.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.gridColumn100, "gridColumn100");
+            this.gridColumn100.FieldName = "YEMEKCEKI";
+            this.gridColumn100.Name = "gridColumn100";
+            this.gridColumn100.OptionsColumn.AllowFocus = false;
+            this.gridColumn100.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn100.Summary"))), resources.GetString("gridColumn100.Summary1"), resources.GetString("gridColumn100.Summary2"))});
             // 
             // bandedGridColumn63
             // 
@@ -1765,16 +1758,60 @@
             this.bandedGridColumn63.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn63.Summary"))), resources.GetString("bandedGridColumn63.Summary1"), resources.GetString("bandedGridColumn63.Summary2"))});
             // 
-            // bandedGridColumn60
+            // bandedGridColumn62
             // 
-            this.bandedGridColumn60.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn60.AppearanceCell.Options.UseBackColor = true;
-            resources.ApplyResources(this.bandedGridColumn60, "bandedGridColumn60");
-            this.bandedGridColumn60.FieldName = "KK";
-            this.bandedGridColumn60.Name = "bandedGridColumn60";
-            this.bandedGridColumn60.OptionsColumn.AllowFocus = false;
-            this.bandedGridColumn60.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn60.Summary"))), resources.GetString("bandedGridColumn60.Summary1"), resources.GetString("bandedGridColumn60.Summary2"))});
+            this.bandedGridColumn62.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.bandedGridColumn62.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.bandedGridColumn62, "bandedGridColumn62");
+            this.bandedGridColumn62.FieldName = "IKRAM";
+            this.bandedGridColumn62.Name = "bandedGridColumn62";
+            this.bandedGridColumn62.OptionsColumn.AllowFocus = false;
+            this.bandedGridColumn62.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn62.Summary"))), resources.GetString("bandedGridColumn62.Summary1"), resources.GetString("bandedGridColumn62.Summary2"))});
+            // 
+            // bandedGridColumn61
+            // 
+            this.bandedGridColumn61.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.bandedGridColumn61.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.bandedGridColumn61, "bandedGridColumn61");
+            this.bandedGridColumn61.FieldName = "ODENMEZ";
+            this.bandedGridColumn61.Name = "bandedGridColumn61";
+            this.bandedGridColumn61.OptionsColumn.AllowFocus = false;
+            this.bandedGridColumn61.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn61.Summary"))), resources.GetString("bandedGridColumn61.Summary1"), resources.GetString("bandedGridColumn61.Summary2"))});
+            // 
+            // bandedGridColumn58
+            // 
+            this.bandedGridColumn58.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.bandedGridColumn58.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.bandedGridColumn58, "bandedGridColumn58");
+            this.bandedGridColumn58.FieldName = "KREDI";
+            this.bandedGridColumn58.Name = "bandedGridColumn58";
+            this.bandedGridColumn58.OptionsColumn.AllowFocus = false;
+            this.bandedGridColumn58.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn58.Summary"))), resources.GetString("bandedGridColumn58.Summary1"), resources.GetString("bandedGridColumn58.Summary2"))});
+            // 
+            // gridColumn146
+            // 
+            this.gridColumn146.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.gridColumn146.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.gridColumn146, "gridColumn146");
+            this.gridColumn146.FieldName = "ONLINE";
+            this.gridColumn146.Name = "gridColumn146";
+            this.gridColumn146.OptionsColumn.AllowFocus = false;
+            this.gridColumn146.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn146.Summary"))), resources.GetString("gridColumn146.Summary1"), resources.GetString("gridColumn146.Summary2"))});
+            // 
+            // gridColumn145
+            // 
+            this.gridColumn145.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.gridColumn145.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.gridColumn145, "gridColumn145");
+            this.gridColumn145.FieldName = "HAVALE";
+            this.gridColumn145.Name = "gridColumn145";
+            this.gridColumn145.OptionsColumn.AllowFocus = false;
+            this.gridColumn145.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn145.Summary"))), resources.GetString("gridColumn145.Summary1"), resources.GetString("gridColumn145.Summary2"))});
             // 
             // bandedGridColumn55
             // 
@@ -1844,17 +1881,6 @@
             this.gridColumn99.Name = "gridColumn99";
             this.gridColumn99.OptionsColumn.AllowFocus = false;
             // 
-            // gridColumn100
-            // 
-            this.gridColumn100.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.gridColumn100.AppearanceCell.Options.UseBackColor = true;
-            resources.ApplyResources(this.gridColumn100, "gridColumn100");
-            this.gridColumn100.FieldName = "MULTINET";
-            this.gridColumn100.Name = "gridColumn100";
-            this.gridColumn100.OptionsColumn.AllowFocus = false;
-            this.gridColumn100.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn100.Summary"))), resources.GetString("gridColumn100.Summary1"), resources.GetString("gridColumn100.Summary2"))});
-            // 
             // gridColumn116
             // 
             resources.ApplyResources(this.gridColumn116, "gridColumn116");
@@ -1909,6 +1935,12 @@
             resources.ApplyResources(this.gridColumn140, "gridColumn140");
             this.gridColumn140.FieldName = "Rsat_AdisyonTR";
             this.gridColumn140.Name = "gridColumn140";
+            // 
+            // gridColumn144
+            // 
+            resources.ApplyResources(this.gridColumn144, "gridColumn144");
+            this.gridColumn144.FieldName = "Banka";
+            this.gridColumn144.Name = "gridColumn144";
             // 
             // tab_Genelrapor
             // 
@@ -4300,12 +4332,6 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
-            // gridColumn144
-            // 
-            resources.ApplyResources(this.gridColumn144, "gridColumn144");
-            this.gridColumn144.FieldName = "Banka";
-            this.gridColumn144.Name = "gridColumn144";
-            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -4806,5 +4832,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn142;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn143;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn144;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn146;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn145;
     }
 }
