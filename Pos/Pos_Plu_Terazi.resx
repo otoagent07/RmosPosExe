@@ -118,264 +118,81 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkedComboBoxEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 20</value>
+  <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 112</value>
   </data>
-  <data name="&gt;&gt;gridColumn8.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>Ana Grup</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="gridColumn2.Caption" xml:space="preserve">
-    <value>Ana Grup</value>
-  </data>
-  <data name="&gt;&gt;gridColumn8.Name" xml:space="preserve">
-    <value>gridColumn8</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textEdit6.EditValue" xml:space="preserve">
-    <value>Departman</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gridControl2.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
-    <value>groupControl1</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
-    <value>barButtonItem1</value>
-  </data>
-  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 46</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
-    <value>barDockControlTop</value>
-  </data>
-  <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 112</value>
-  </data>
-  <data name="&gt;&gt;checkedComboBoxEdit1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textEdit6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
-    <value>barDockControlBottom</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
-    <value>barButtonItem2</value>
-  </data>
-  <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
-    <value>gridView2</value>
-  </data>
-  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1050, 0</value>
-  </data>
-  <data name="barButtonItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="gridColumn8.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;bar3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;checkedComboBoxEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit6.Parent" xml:space="preserve">
-    <value>groupControl1</value>
-  </data>
-  <data name="barButtonItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
-    <value>barDockControlLeft</value>
-  </data>
-  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
-    <value>Default</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
-    <value>gridColumn5</value>
-  </data>
-  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="checkedComboBoxEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Combo</value>
-  </data>
-  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 630</value>
-  </data>
-  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="barButtonItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 20</value>
-  </data>
-  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="barButtonItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="bar3.Text" xml:space="preserve">
-    <value>Status bar</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Tile</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemCheckEdit1.Name" xml:space="preserve">
-    <value>repositoryItemCheckEdit1</value>
-  </data>
-  <data name="textEdit6.TabIndex" type="System.Int32, mscorlib">
-    <value>215</value>
-  </data>
-  <data name="checkedComboBoxEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 46</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;checkedComboBoxEdit1.Name" xml:space="preserve">
-    <value>checkedComboBoxEdit1</value>
-  </data>
-  <data name="barButtonItem2.Caption" xml:space="preserve">
-    <value>Çıkış</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textEdit6.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Rounded MT Bold, 9pt</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;bar3.Name" xml:space="preserve">
-    <value>bar3</value>
-  </data>
-  <data name="&gt;&gt;gridView2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="bar3.BarAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
-    <value>barDockControlRight</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
-  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gridColumn8.Caption" xml:space="preserve">
-    <value>Fiyat</value>
-  </data>
-  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="barButtonItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="barButtonItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
   </data>
   <data name="gridColumn3.Caption" xml:space="preserve">
     <value>Ara Grup</value>
   </data>
-  <data name="gridColumn8.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;checkedComboBoxEdit1.Parent" xml:space="preserve">
-    <value>groupControl1</value>
+  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>Reçete Kodu</value>
   </data>
-  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 630</value>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1026, 513</value>
-  </data>
-  <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemCheckEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="gridColumn5.Caption" xml:space="preserve">
     <value>Reçete Adi</value>
   </data>
+  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn8.Caption" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="gridColumn8.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn8.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1026, 513</value>
+  </data>
+  <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
     <value>gridControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="bar3.BarAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="barButtonItem1.Caption" xml:space="preserve">
+    <value>TXT Oluştur</value>
   </data>
   <data name="barButtonItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -414,114 +231,8 @@
         4Mq0z5d9ToiHDlc+9INEaEyI/wK1rjQrMYNyKQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn4.Caption" xml:space="preserve">
-    <value>Reçete Kodu</value>
-  </data>
-  <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1026, 94</value>
-  </data>
-  <data name="checkedComboBoxEdit1.TabIndex" type="System.Int32, mscorlib">
-    <value>216</value>
-  </data>
-  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkedComboBoxEdit1.EditValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
-    <value>gridColumn4</value>
-  </data>
-  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1050, 0</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Terazi PLU</value>
-  </data>
-  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
-    <value>barManager1</value>
-  </data>
-  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 630</value>
-  </data>
-  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
-    <value>gridColumn2</value>
-  </data>
-  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
-    <value>gridColumn3</value>
-  </data>
-  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1050, 43</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v19.1">
-    <value>None</value>
-  </data>
-  <data name="checkedComboBoxEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Rounded MT Bold, 9pt</value>
-  </data>
-  <data name="&gt;&gt;textEdit6.Name" xml:space="preserve">
-    <value>textEdit6</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridControl2.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
-    <value>Center</value>
-  </data>
-  <data name="gridControl2.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1050, 673</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Pos_Plu_Terazi</value>
+  <data name="barButtonItem2.Caption" xml:space="preserve">
+    <value>Çıkış</value>
   </data>
   <data name="barButtonItem2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -567,25 +278,282 @@
         yfvkPPhE1Ql+k9vzOv3/P/ifoPoeVeUDAqiG6o3/Nb1j0KB/AMYUfCkDw9hpAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="bar3.Text" xml:space="preserve">
+    <value>Status bar</value>
   </data>
-  <data name="gridControl2.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="barButtonItem1.Caption" xml:space="preserve">
-    <value>TXT Oluştur</value>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 630</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 43</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 630</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1050, 0</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 630</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1050, 673</value>
+  </data>
+  <data name="btnYenile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 49</value>
+  </data>
+  <data name="btnYenile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnYenile.TabIndex" type="System.Int32, mscorlib">
+    <value>217</value>
+  </data>
+  <data name="btnYenile.Text" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="&gt;&gt;btnYenile.Name" xml:space="preserve">
+    <value>btnYenile</value>
+  </data>
+  <data name="&gt;&gt;btnYenile.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnYenile.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;btnYenile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkedComboBoxEdit1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkedComboBoxEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 46</value>
+  </data>
+  <data name="checkedComboBoxEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="checkedComboBoxEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="checkedComboBoxEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 22</value>
+  </data>
+  <data name="checkedComboBoxEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>216</value>
+  </data>
+  <data name="&gt;&gt;checkedComboBoxEdit1.Name" xml:space="preserve">
+    <value>checkedComboBoxEdit1</value>
+  </data>
+  <data name="&gt;&gt;checkedComboBoxEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;checkedComboBoxEdit1.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;checkedComboBoxEdit1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textEdit6.EditValue" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 46</value>
+  </data>
+  <data name="textEdit6.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 22</value>
+  </data>
+  <data name="textEdit6.TabIndex" type="System.Int32, mscorlib">
+    <value>215</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Name" xml:space="preserve">
+    <value>textEdit6</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1026, 94</value>
+  </data>
+  <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Terazi PLU</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
+    <value>gridView2</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
+    <value>gridColumn2</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
+    <value>gridColumn3</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
+    <value>gridColumn4</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
+    <value>gridColumn5</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Name" xml:space="preserve">
+    <value>gridColumn8</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemCheckEdit1.Name" xml:space="preserve">
+    <value>repositoryItemCheckEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemCheckEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
+    <value>barManager1</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar3.Name" xml:space="preserve">
+    <value>bar3</value>
+  </data>
+  <data name="&gt;&gt;bar3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
+    <value>barButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
+    <value>barButtonItem2</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Pos_Plu_Terazi</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
 </root>

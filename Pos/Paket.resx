@@ -410,7 +410,7 @@
     <value>Fill</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 61</value>
+    <value>286, 61</value>
   </data>
   <data name="gridView1.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -587,7 +587,7 @@
     <value>10</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 541</value>
+    <value>613, 541</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -604,11 +604,62 @@
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="gridControlSon5Call.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridControlSon5Call.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 325</value>
+  </data>
+  <data name="gridViewSon5Call.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="gridColumn58.Caption" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="gridColumn58.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn58.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn58.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="gridColumn62.Caption" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="gridColumn62.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn62.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn59.Caption" xml:space="preserve">
+    <value>Cari Kod</value>
+  </data>
+  <data name="gridControlSon5Call.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 216</value>
+  </data>
+  <data name="gridControlSon5Call.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;gridControlSon5Call.Name" xml:space="preserve">
+    <value>gridControlSon5Call</value>
+  </data>
+  <data name="&gt;&gt;gridControlSon5Call.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControlSon5Call.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;gridControlSon5Call.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="gridControl5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+    <value>Top</value>
   </data>
   <data name="gridControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 61</value>
+    <value>0, 0</value>
   </data>
   <data name="gridView5.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -638,7 +689,7 @@
     <value>Center_Cari</value>
   </data>
   <data name="gridControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 541</value>
+    <value>286, 325</value>
   </data>
   <data name="gridControl5.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -650,9 +701,33 @@
     <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gridControl5.Parent" xml:space="preserve">
-    <value>tab_Paket</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;gridControl5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 61</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 541</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tab_Paket</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="flp_Kapatma.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -2737,6 +2812,36 @@ Başlat</value>
   <data name="&gt;&gt;gridColumn54.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;gridColumn57.Name" xml:space="preserve">
+    <value>gridColumn57</value>
+  </data>
+  <data name="&gt;&gt;gridColumn57.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridViewSon5Call.Name" xml:space="preserve">
+    <value>gridViewSon5Call</value>
+  </data>
+  <data name="&gt;&gt;gridViewSon5Call.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn58.Name" xml:space="preserve">
+    <value>gridColumn58</value>
+  </data>
+  <data name="&gt;&gt;gridColumn58.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn62.Name" xml:space="preserve">
+    <value>gridColumn62</value>
+  </data>
+  <data name="&gt;&gt;gridColumn62.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn59.Name" xml:space="preserve">
+    <value>gridColumn59</value>
+  </data>
+  <data name="&gt;&gt;gridColumn59.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;gridView5.Name" xml:space="preserve">
     <value>gridView5</value>
   </data>
@@ -3006,12 +3111,6 @@ Başlat</value>
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridColumn57.Name" xml:space="preserve">
-    <value>gridColumn57</value>
-  </data>
-  <data name="&gt;&gt;gridColumn57.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Paket</value>

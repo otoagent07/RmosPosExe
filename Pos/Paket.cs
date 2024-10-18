@@ -188,69 +188,7 @@ namespace Pos
             }
         }
 
-        private void gridyenile_1()
-        {
-            //            string query = @"
-            //                select Rsat_Fisno,SUM(Rsat_Tutar) as Tutar
-            //            into #Temp
-            //            from Cst_Recete_Satis 
-            //	            left join Pos_Masa on Rsat_Masa = Masa_No  and Masa_Depart = Rsat_Departman
-            //	            left join Pos_Cari on Rsat_Cari = Cari_Kod 
-            //	            left join Pos_Kodlar as OdemeKodu on OdemeKodu.Pkod_Kod = Rsat_Kapatma and OdemeKodu.Pkod_Sinif = '11'
-            //          where Rsat_Ba = 'A'  and Rsat_Departman = '" + Departman.Dep_Kodu + @"' and OdemeKodu.Pkod_Ozelkod = '4'
-            //            group by Rsat_Fisno
 
-
-            //select  MAX(Rsat_Id) as Rsat_Id,Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,MAX(Cari_Kod) as Cari_Kod,MAX(Cari_Ad) + ' ' + MAX(Cari_Soyad) as Cari_AdSoyad,
-            //MAX(ISNULL(Cari_Adres1,'')) + ' ' + MAX(ISNULL(Cari_Adres2,'')) + ' ' + MAX(ISNULL(Cari_Adres3,'')) as Cari_Adres, 
-            //	(SUM(Rsat_Tutar) - SUM(t.Tutar)) as Tutar, max(P_Kod) as P_Kod,max(P_Ad + ' ' + P_Soyad) as P_AdSoyad ,Rsat_Sube,sube.Pkod_Ad as subeAd,MAX(ISNULL(Rsat_SubeDurum,'')) as Rsat_SubeDurum
-            //from Cst_Recete_Satis 
-            //	left join Pos_Masa on Rsat_Masa = Masa_No  and Masa_Depart = Rsat_Departman
-            //	left join Pos_Cari on Rsat_Cari = Cari_Kod 
-            //	left join Rmosmuh.dbo.Pos_User on P_Kod = Rsat_Paketci 
-            //	left join Pos_Kodlar as sube on sube.Pkod_Kod = Rsat_Sube and sube.Pkod_Sinif = '27'
-            //    left join #Temp as t on t.Rsat_Fisno = Cst_Recete_Satis.Rsat_Fisno
-            //where Rsat_Durum = 'A' and Masa_Konum = 'P' and Rsat_Departman = '" + Departman.Dep_Kodu + @"' 
-            //and Rsat_Ba = 'B'
-            //and Rsat_Tarih >= '" + dateTarih1.DateTime.Date + @"' and Rsat_Tarih <= '" + dateTarih2.DateTime.Date + @"'
-
-            //group by Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Rsat_Sube,sube.Pkod_Ad ,t.Tutar
-            //order by Cst_Recete_Satis.Rsat_Fisno desc
-
-            //drop table #Temp
-
-            //";
-
-            string query = StatikModel.getPaketSqlText(dateTarih1, dateTarih2, Departman.Dep_Kodu, "", "A,K", true);
-
-            gridControl1.DataSource = dbtools.SelectTableR(query);
-
-            //gridControl1.DataSource = dbtools.SelectTable(@"
-            //          select  MAX(Rsat_Id) as Rsat_Id,Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,MAX(Cari_Kod) as Cari_Kod,MAX(Cari_Ad) + ' ' + MAX(Cari_Soyad) as Cari_AdSoyad,
-            //MAX(ISNULL(Cari_Adres1,'')) + ' ' + MAX(ISNULL(Cari_Adres2,'')) + ' ' + MAX(ISNULL(Cari_Adres3,'')) as Cari_Adres, 
-            //	(SUM(Rsat_Tutar)) as Tutar, max(P_Kod) as P_Kod,max(P_Ad + ' ' + P_Soyad) as P_AdSoyad ,Rsat_Sube,sube.Pkod_Ad as subeAd,MAX(ISNULL(Rsat_SubeDurum,'')) as Rsat_SubeDurum
-            //from Cst_Recete_Satis 
-            //	left join Pos_Masa on Rsat_Masa = Masa_No  and Masa_Depart = Rsat_Departman
-            //	left join Pos_Cari on Rsat_Cari = Cari_Kod 
-            //	left join Rmosmuh.dbo.Pos_User on P_Kod = Rsat_Paketci 
-            //	left join Pos_Kodlar as sube on sube.Pkod_Kod = Rsat_Sube and sube.Pkod_Sinif = '27'
-
-            //where Rsat_Durum = 'A' and Masa_Konum = 'P' and Rsat_Departman = '" + Departman.Dep_Kodu + @"' 
-            //and Rsat_Ba = 'B'
-            //and Rsat_Tarih >= '" + dateTarih1.DateTime.Date + @"' and Rsat_Tarih <= '" + dateTarih2.DateTime.Date + @"'
-
-            //group by Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Rsat_Sube,sube.Pkod_Ad 
-            //order by Cst_Recete_Satis.Rsat_Fisno desc
-            //");
-
-            //gridView1.BestFitColumns();
-
-
-
-            gridControl5.DataSource = dbtools.SelectTable("select 'Yeni Sipariş' as Data,* from Pos_CallCenter where ISNULL(Center_Pasif,0) = 0");
-
-
-        }
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
@@ -274,6 +212,11 @@ namespace Pos
         ResourceManager res_man = new ResourceManager("Pos.Class.lang_" + (Langs.Default.Dil == "" ? "tr" : Langs.Default.Dil.Substring(0, 2)), Assembly.GetExecutingAssembly());
         private void simpleButton2_Click(object sender, EventArgs e)
         {
+            yenipaket();
+        }
+
+        public void yenipaket()
+        {
             DataTable dtMasa = dbtools.SelectTable("select * from Pos_Masa where Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1 and Masa_Durum = 0 order by Masa_No");
 
             if (dtMasa.Rows.Count < 1)
@@ -294,11 +237,10 @@ namespace Pos
             satis.ShowDialog();
             gridyenile_1();
         }
-
         private void simpleButton3_Click(object sender, EventArgs e)
         {
 
-            if (gridView1.GetSelectedRows().Length==0)
+            if (gridView1.GetSelectedRows().Length == 0)
             {
                 RHMesaj.alertMesaj("Lütfen check ile satırı işaretle");
                 return;
@@ -320,7 +262,7 @@ namespace Pos
             }
 
 
-           
+
 
             gridyenile_1();
 
@@ -391,7 +333,77 @@ namespace Pos
         {
             gridyenile_1();
         }
+        private void gridyenile_1()
+        {
+            //            string query = @"
+            //                select Rsat_Fisno,SUM(Rsat_Tutar) as Tutar
+            //            into #Temp
+            //            from Cst_Recete_Satis 
+            //	            left join Pos_Masa on Rsat_Masa = Masa_No  and Masa_Depart = Rsat_Departman
+            //	            left join Pos_Cari on Rsat_Cari = Cari_Kod 
+            //	            left join Pos_Kodlar as OdemeKodu on OdemeKodu.Pkod_Kod = Rsat_Kapatma and OdemeKodu.Pkod_Sinif = '11'
+            //          where Rsat_Ba = 'A'  and Rsat_Departman = '" + Departman.Dep_Kodu + @"' and OdemeKodu.Pkod_Ozelkod = '4'
+            //            group by Rsat_Fisno
 
+
+            //select  MAX(Rsat_Id) as Rsat_Id,Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,MAX(Cari_Kod) as Cari_Kod,MAX(Cari_Ad) + ' ' + MAX(Cari_Soyad) as Cari_AdSoyad,
+            //MAX(ISNULL(Cari_Adres1,'')) + ' ' + MAX(ISNULL(Cari_Adres2,'')) + ' ' + MAX(ISNULL(Cari_Adres3,'')) as Cari_Adres, 
+            //	(SUM(Rsat_Tutar) - SUM(t.Tutar)) as Tutar, max(P_Kod) as P_Kod,max(P_Ad + ' ' + P_Soyad) as P_AdSoyad ,Rsat_Sube,sube.Pkod_Ad as subeAd,MAX(ISNULL(Rsat_SubeDurum,'')) as Rsat_SubeDurum
+            //from Cst_Recete_Satis 
+            //	left join Pos_Masa on Rsat_Masa = Masa_No  and Masa_Depart = Rsat_Departman
+            //	left join Pos_Cari on Rsat_Cari = Cari_Kod 
+            //	left join Rmosmuh.dbo.Pos_User on P_Kod = Rsat_Paketci 
+            //	left join Pos_Kodlar as sube on sube.Pkod_Kod = Rsat_Sube and sube.Pkod_Sinif = '27'
+            //    left join #Temp as t on t.Rsat_Fisno = Cst_Recete_Satis.Rsat_Fisno
+            //where Rsat_Durum = 'A' and Masa_Konum = 'P' and Rsat_Departman = '" + Departman.Dep_Kodu + @"' 
+            //and Rsat_Ba = 'B'
+            //and Rsat_Tarih >= '" + dateTarih1.DateTime.Date + @"' and Rsat_Tarih <= '" + dateTarih2.DateTime.Date + @"'
+
+            //group by Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Rsat_Sube,sube.Pkod_Ad ,t.Tutar
+            //order by Cst_Recete_Satis.Rsat_Fisno desc
+
+            //drop table #Temp
+
+            //";
+
+            string query = StatikModel.getPaketSqlText(dateTarih1, dateTarih2, Departman.Dep_Kodu, "", "A,K", true);
+
+            gridControl1.DataSource = dbtools.SelectTableR(query);
+
+            //gridControl1.DataSource = dbtools.SelectTable(@"
+            //          select  MAX(Rsat_Id) as Rsat_Id,Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,MAX(Cari_Kod) as Cari_Kod,MAX(Cari_Ad) + ' ' + MAX(Cari_Soyad) as Cari_AdSoyad,
+            //MAX(ISNULL(Cari_Adres1,'')) + ' ' + MAX(ISNULL(Cari_Adres2,'')) + ' ' + MAX(ISNULL(Cari_Adres3,'')) as Cari_Adres, 
+            //	(SUM(Rsat_Tutar)) as Tutar, max(P_Kod) as P_Kod,max(P_Ad + ' ' + P_Soyad) as P_AdSoyad ,Rsat_Sube,sube.Pkod_Ad as subeAd,MAX(ISNULL(Rsat_SubeDurum,'')) as Rsat_SubeDurum
+            //from Cst_Recete_Satis 
+            //	left join Pos_Masa on Rsat_Masa = Masa_No  and Masa_Depart = Rsat_Departman
+            //	left join Pos_Cari on Rsat_Cari = Cari_Kod 
+            //	left join Rmosmuh.dbo.Pos_User on P_Kod = Rsat_Paketci 
+            //	left join Pos_Kodlar as sube on sube.Pkod_Kod = Rsat_Sube and sube.Pkod_Sinif = '27'
+
+            //where Rsat_Durum = 'A' and Masa_Konum = 'P' and Rsat_Departman = '" + Departman.Dep_Kodu + @"' 
+            //and Rsat_Ba = 'B'
+            //and Rsat_Tarih >= '" + dateTarih1.DateTime.Date + @"' and Rsat_Tarih <= '" + dateTarih2.DateTime.Date + @"'
+
+            //group by Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Rsat_Sube,sube.Pkod_Ad 
+            //order by Cst_Recete_Satis.Rsat_Fisno desc
+            //");
+
+            //gridView1.BestFitColumns();
+
+
+
+            gridControl5.DataSource = dbtools.SelectTable("select 'Yeni Sipariş' as Data,* from Pos_CallCenter where ISNULL(Center_Pasif,0) = 0");
+
+            son5call();
+        }
+
+        public void son5call()
+        {
+            string query = $@"select top 5 Caller_Telno as tel,Caller_Carikod as kod,isnull((Cari_Ad+' '+Cari_Soyad),'') as adSoyad from Pos_CallerId poscari
+left join Pos_Cari cari on cari.Cari_Kod=poscari.Caller_Carikod
+order by Caller_Id desc";
+            gridControlSon5Call.DataSource = dbtools.SelectTableR(query);
+        }
         private void gridView5_DoubleClick(object sender, EventArgs e)
         {
             try
@@ -830,7 +842,7 @@ namespace Pos
                 }
                 else if (kapatma != null && kapatma == "GETİR YEMEK" && e.Column.FieldName == "YSDurum")
                 {
-                    e.Appearance.BackColor = Color.FromArgb(127, 109, 237); 
+                    e.Appearance.BackColor = Color.FromArgb(127, 109, 237);
                     e.Appearance.ForeColor = Color.Black;
                 }
                 else if (kapatma != null && kapatma == "YEMEK SEPETİ" && e.Column.FieldName == "YSDurum")
@@ -839,6 +851,56 @@ namespace Pos
                     e.Appearance.ForeColor = Color.Black;
                 }
             }
+        }
+
+        private void gridControlSon5Call_DoubleClick(object sender, EventArgs e)
+        {
+            int seciliSatir = gridViewSon5Call.FocusedRowHandle;
+            if (seciliSatir < 0)
+            {
+                MessageBox.Show("Satır yok");
+                return;
+            }
+
+
+            DataTable dtMasa = dbtools.SelectTable("select * from Pos_Masa where Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1 and Masa_Durum = 0 order by Masa_No");
+
+            if (dtMasa.Rows.Count < 1)
+            {
+                MessageBox.Show(res_man.GetString("Boş Paket Masanız Bulunmamaktadır."));
+                return;
+            }
+
+            Masa_No = Convert.ToString(dtMasa.Rows[0]["Masa_No"]);
+
+            string carikod = Convert.ToString(gridViewSon5Call.GetFocusedRowCellValue("kod"));
+            string tel = Convert.ToString(gridViewSon5Call.GetFocusedRowCellValue("tel"));
+            var pCari = Cari.Cari_Getir(carikod);
+
+            Satis satis = new Satis();
+            satis.Tag = "M";
+            satis.Masa_No = Masa_No;
+            satis.Masa_Paket = true;
+            satis.Ozel_Masa = "";
+            satis.Split = 0;
+            satis.Splitad = "";
+            satis.mCari = pCari;
+
+            if (carikod == "")
+            {
+                satis.AcikAdres = true;
+                satis.mCari = null;
+                satis.CariTel = tel;
+                satis.ShowDialog();
+            }
+            else
+            {
+                satis.AcikAdres = false;
+                satis.ShowDialog();
+            }
+
+            gridyenile_1();
+
         }
     }
 }

@@ -105,8 +105,8 @@
             this.gridControlFis = new DevExpress.XtraGrid.GridControl();
             this.gridViewFis = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.txt2kisi = new System.Windows.Forms.Label();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.txt3kisi = new System.Windows.Forms.Label();
@@ -929,16 +929,16 @@
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.txt2kisi);
             resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Name = "panelControl2";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // txt2kisi
             // 

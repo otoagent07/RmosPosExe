@@ -113,10 +113,14 @@ namespace Pos
                 s.Append(Environment.NewLine);
             }
 
-            StreamWriter sw = new StreamWriter(@"Barkod.TXT");
+            StreamWriter sw = new StreamWriter(@"Barkod.TXT", false, Encoding.Default);
             sw.Write(s.ToString());
             sw.Flush();
             sw.Close();
+
+            MessageBox.Show("Kaydedildi");
+            string dosyaKonum = Path.GetDirectoryName(Application.ExecutablePath);
+            System.Diagnostics.Process.Start(dosyaKonum);
 
         }
 
@@ -126,6 +130,12 @@ namespace Pos
         }
 
         private void checkedComboBoxEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+            gridControl2.DataSource = null;
+            AnaAraKodlar();
+        }
+
+        private void btnYenile_Click(object sender, EventArgs e)
         {
             gridControl2.DataSource = null;
             AnaAraKodlar();

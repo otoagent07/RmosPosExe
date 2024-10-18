@@ -49,6 +49,7 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.checkedComboBoxEdit1 = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
@@ -62,18 +63,6 @@
             // gridControl2
             // 
             resources.ApplyResources(this.gridControl2, "gridControl2");
-            this.gridControl2.EmbeddedNavigator.AccessibleDescription = resources.GetString("gridControl2.EmbeddedNavigator.AccessibleDescription");
-            this.gridControl2.EmbeddedNavigator.AccessibleName = resources.GetString("gridControl2.EmbeddedNavigator.AccessibleName");
-            this.gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip = ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("gridControl2.EmbeddedNavigator.AllowHtmlTextInToolTip")));
-            this.gridControl2.EmbeddedNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("gridControl2.EmbeddedNavigator.Anchor")));
-            this.gridControl2.EmbeddedNavigator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl2.EmbeddedNavigator.BackgroundImage")));
-            this.gridControl2.EmbeddedNavigator.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("gridControl2.EmbeddedNavigator.BackgroundImageLayout")));
-            this.gridControl2.EmbeddedNavigator.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("gridControl2.EmbeddedNavigator.ImeMode")));
-            this.gridControl2.EmbeddedNavigator.MaximumSize = ((System.Drawing.Size)(resources.GetObject("gridControl2.EmbeddedNavigator.MaximumSize")));
-            this.gridControl2.EmbeddedNavigator.TextLocation = ((DevExpress.XtraEditors.NavigatorButtonsTextLocation)(resources.GetObject("gridControl2.EmbeddedNavigator.TextLocation")));
-            this.gridControl2.EmbeddedNavigator.ToolTip = resources.GetString("gridControl2.EmbeddedNavigator.ToolTip");
-            this.gridControl2.EmbeddedNavigator.ToolTipIconType = ((DevExpress.Utils.ToolTipIconType)(resources.GetObject("gridControl2.EmbeddedNavigator.ToolTipIconType")));
-            this.gridControl2.EmbeddedNavigator.ToolTipTitle = resources.GetString("gridControl2.EmbeddedNavigator.ToolTipTitle");
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -83,7 +72,6 @@
             // 
             // gridView2
             // 
-            resources.ApplyResources(this.gridView2, "gridView2");
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn2,
             this.gridColumn3,
@@ -131,7 +119,6 @@
             // 
             // repositoryItemCheckEdit1
             // 
-            resources.ApplyResources(this.repositoryItemCheckEdit1, "repositoryItemCheckEdit1");
             this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
             // 
             // barManager1
@@ -172,9 +159,6 @@
             resources.ApplyResources(this.barButtonItem1, "barButtonItem1");
             this.barButtonItem1.Id = 0;
             this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem1.ImageOptions.ImageIndex")));
-            this.barButtonItem1.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem1.ImageOptions.LargeImageIndex")));
-            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
@@ -183,41 +167,39 @@
             resources.ApplyResources(this.barButtonItem2, "barButtonItem2");
             this.barButtonItem2.Id = 1;
             this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.ImageIndex = ((int)(resources.GetObject("barButtonItem2.ImageOptions.ImageIndex")));
-            this.barButtonItem2.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("barButtonItem2.ImageOptions.LargeImageIndex")));
-            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // barDockControlTop
             // 
-            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
             this.barDockControlTop.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
             this.barDockControlTop.Manager = this.barManager1;
             // 
             // barDockControlBottom
             // 
-            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
             this.barDockControlBottom.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
             this.barDockControlBottom.Manager = this.barManager1;
             // 
             // barDockControlLeft
             // 
-            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
             this.barDockControlLeft.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
             this.barDockControlLeft.Manager = this.barManager1;
             // 
             // barDockControlRight
             // 
-            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.CausesValidation = false;
+            resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             this.barDockControlRight.Manager = this.barManager1;
             // 
             // groupControl1
             // 
-            resources.ApplyResources(this.groupControl1, "groupControl1");
+            this.groupControl1.Controls.Add(this.btnYenile);
             this.groupControl1.Controls.Add(this.checkedComboBoxEdit1);
             this.groupControl1.Controls.Add(this.textEdit6);
+            resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
             // checkedComboBoxEdit1
@@ -239,6 +221,12 @@
             this.textEdit6.Properties.Appearance.Options.UseFont = true;
             this.textEdit6.Properties.ReadOnly = true;
             this.textEdit6.TabStop = false;
+            // 
+            // btnYenile
+            // 
+            resources.ApplyResources(this.btnYenile, "btnYenile");
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
             // 
             // Pos_Plu_Terazi
             // 
@@ -285,5 +273,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.SimpleButton btnYenile;
     }
 }

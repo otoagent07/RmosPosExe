@@ -64,6 +64,13 @@
             this.gridColumn52 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn53 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn54 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn57 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.gridControlSon5Call = new DevExpress.XtraGrid.GridControl();
+            this.gridViewSon5Call = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn58 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn62 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn59 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl5 = new DevExpress.XtraGrid.GridControl();
             this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn60 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -148,7 +155,6 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.gridColumn57 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -157,6 +163,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.contextMenuStrip_LogRapor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlSon5Call)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewSon5Call)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -286,7 +295,7 @@
             // tab_Paket
             // 
             this.tab_Paket.Controls.Add(this.gridControl1);
-            this.tab_Paket.Controls.Add(this.gridControl5);
+            this.tab_Paket.Controls.Add(this.panel1);
             this.tab_Paket.Controls.Add(this.panelControl2);
             this.tab_Paket.Controls.Add(this.panelControl1);
             this.tab_Paket.Name = "tab_Paket";
@@ -481,6 +490,63 @@
             resources.ApplyResources(this.gridColumn54, "gridColumn54");
             this.gridColumn54.FieldName = "entegreOdemeTip";
             this.gridColumn54.Name = "gridColumn54";
+            // 
+            // gridColumn57
+            // 
+            resources.ApplyResources(this.gridColumn57, "gridColumn57");
+            this.gridColumn57.FieldName = "Cari_Tel";
+            this.gridColumn57.Name = "gridColumn57";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.gridControlSon5Call);
+            this.panel1.Controls.Add(this.gridControl5);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // gridControlSon5Call
+            // 
+            resources.ApplyResources(this.gridControlSon5Call, "gridControlSon5Call");
+            this.gridControlSon5Call.MainView = this.gridViewSon5Call;
+            this.gridControlSon5Call.Name = "gridControlSon5Call";
+            this.gridControlSon5Call.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewSon5Call});
+            this.gridControlSon5Call.DoubleClick += new System.EventHandler(this.gridControlSon5Call_DoubleClick);
+            // 
+            // gridViewSon5Call
+            // 
+            this.gridViewSon5Call.Appearance.Row.Font = ((System.Drawing.Font)(resources.GetObject("gridViewSon5Call.Appearance.Row.Font")));
+            this.gridViewSon5Call.Appearance.Row.Options.UseFont = true;
+            this.gridViewSon5Call.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn58,
+            this.gridColumn62,
+            this.gridColumn59});
+            this.gridViewSon5Call.GridControl = this.gridControlSon5Call;
+            this.gridViewSon5Call.Name = "gridViewSon5Call";
+            this.gridViewSon5Call.OptionsView.ColumnAutoWidth = false;
+            this.gridViewSon5Call.OptionsView.ShowGroupPanel = false;
+            this.gridViewSon5Call.RowHeight = 50;
+            // 
+            // gridColumn58
+            // 
+            resources.ApplyResources(this.gridColumn58, "gridColumn58");
+            this.gridColumn58.FieldName = "tel";
+            this.gridColumn58.Name = "gridColumn58";
+            this.gridColumn58.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn62
+            // 
+            resources.ApplyResources(this.gridColumn62, "gridColumn62");
+            this.gridColumn62.FieldName = "adSoyad";
+            this.gridColumn62.Name = "gridColumn62";
+            this.gridColumn62.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn59
+            // 
+            resources.ApplyResources(this.gridColumn59, "gridColumn59");
+            this.gridColumn59.FieldName = "kod";
+            this.gridColumn59.Name = "gridColumn59";
+            this.gridColumn59.OptionsColumn.AllowFocus = false;
             // 
             // gridControl5
             // 
@@ -1338,12 +1404,6 @@
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // gridColumn57
-            // 
-            resources.ApplyResources(this.gridColumn57, "gridColumn57");
-            this.gridColumn57.FieldName = "Cari_Tel";
-            this.gridColumn57.Name = "gridColumn57";
-            // 
             // Paket
             // 
             resources.ApplyResources(this, "$this");
@@ -1363,6 +1423,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             this.contextMenuStrip_LogRapor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlSon5Call)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewSon5Call)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -1521,5 +1584,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn55;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn56;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn57;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraGrid.GridControl gridControlSon5Call;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewSon5Call;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn58;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn62;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn59;
     }
 }

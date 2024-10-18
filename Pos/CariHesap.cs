@@ -280,6 +280,9 @@ namespace Pos
 
             gridyenile_Cari();
 
+
+            string quer = $"update Pos_CallerId set Caller_Carikod='{CariKod}' where Caller_Telno='{txt_Cari_Telefon.EditValue}' and Caller_Carikod=''";
+            dbtools.execcmdR(quer);
         }
 
         private void btn_Cari_Sil_Click(object sender, EventArgs e)
