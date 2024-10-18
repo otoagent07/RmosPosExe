@@ -146,7 +146,7 @@ end as Rsat_YSDurum,
             Max(Rsat_Not) as Rsat_Not,MIN(Rsat_Acilis) as Rsat_Acilis,Rsat_EntegreId,
             case when ISNULL(GOrder_deliveryType,2) = 1 then 'GETİR KURYESİ' else 'RESTORAN KURYESİ' end as Kurye,
             GOrder_deliveryType as GOrder_deliveryType,
-            GOrder_confirmationId,GetirYemek_Order.ID
+            GOrder_confirmationId,GetirYemek_Order.ID,Max(Cari_Tel)  as Cari_Tel
             from #Cst_Recete_Satis Cst_Recete_Satis 
             left join Pos_Masa on Rsat_Masa = Masa_No  and Masa_Depart = Rsat_Departman
             left join Pos_Cari on Rsat_Cari = Cari_Kod 

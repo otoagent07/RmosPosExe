@@ -145,6 +145,9 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
         }
         public DataTable getSatisList()
         {
+
+            int paketharic = checkEditPaketHaricHepsi.Checked ? 0 : 1;
+
             SqlConnection con = dbtools.conn;
             if (con.State == ConnectionState.Closed) con.Open();
             SqlCommand com = new SqlCommand();
@@ -153,6 +156,7 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
             com.CommandTimeout = 0;
             com.CommandText = "Pos_Satis_Rapor";
             com.Parameters.AddWithValue("@Rapor_Tipi", 0);
+            com.Parameters.AddWithValue("@paketharichepsi", paketharic);
             com.Parameters.AddWithValue("@Tarih1", dateTarih1.DateTime.Date);
             com.Parameters.AddWithValue("@Tarih2", dateTarih2.DateTime.Date);
             com.Parameters.AddWithValue("@Satis_Tip", cmb_Fistipi.EditValue);
@@ -310,16 +314,27 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                     {
                         try
                         {
-                            if (dt.Rows.Count>0)
+                            if (dt.Rows.Count > 0)
                             {
-                                dt = dt.Select("Rsat_Masa=''").CopyToDataTable(); // Masa_No masano
-                                gridControl11.DataSource = dt;
+                                var sonuc = dt.Select("Rsat_Masa=''");
+                                if (sonuc != null && sonuc.Length > 0)
+                                {
+                                    dt = sonuc.CopyToDataTable();
+                                    gridControl11.DataSource = dt;
+                                }
+                                else
+                                {
+                                    dt.Rows.Clear();
+                                    gridControl11.DataSource = dt;
+                                }
+
+
                             }
-                         
+
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("direkt satış hatası \n"+ex.Message);
+                            MessageBox.Show("direkt satış hatası \n" + ex.Message);
                         }
                     }
                     Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
@@ -1059,11 +1074,11 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 if (masaNo == "")
                 {
                     string fisno = Convert.ToString(bandedGridView1.GetFocusedRowCellValue("Rsat_Fisno"));
-                     masaNo = dbtools.DegerGetir("select top 1 Masa_No from Pos_Masa where Masa_Durum='0' and Masa_Depart='" + Departman.Dep_Kodu + "' order by Masa_Id desc");
-                    string query = "update Cst_Recete_Satis set Rsat_Masa='"+ masaNo + "',Rsat_OzelMasaAdi='"+ masaNo + "' where Rsat_Fisno='"+ fisno + "'";
+                    masaNo = dbtools.DegerGetir("select top 1 Masa_No from Pos_Masa where Masa_Durum='0' and Masa_Depart='" + Departman.Dep_Kodu + "' order by Masa_Id desc");
+                    string query = "update Cst_Recete_Satis set Rsat_Masa='" + masaNo + "',Rsat_OzelMasaAdi='" + masaNo + "' where Rsat_Fisno='" + fisno + "'";
                     dbtools.execcmdR(query);
-                    dbtools.execcmdR("update Pos_Masa set Masa_Durum='1' where Masa_No='"+ masaNo + "' and Masa_Depart='"+ Departman.Dep_Kodu + "'");
-                    MessageBox.Show("MASANO : "+masaNo+" Aktarılmıştır ");
+                    dbtools.execcmdR("update Pos_Masa set Masa_Durum='1' where Masa_No='" + masaNo + "' and Masa_Depart='" + Departman.Dep_Kodu + "'");
+                    MessageBox.Show("MASANO : " + masaNo + " Aktarılmıştır ");
                 }
                 DataTable dtDurum = dbtools.SelectTable("select Rsat_Durum from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Masa = '" + masaNo + "' and rsat_Departman = '" + Convert.ToString(bandedGridView1.GetFocusedRowCellValue("DepartmanKod")) + "' and Rsat_Durum = 'A' ");
                 if (dtDurum.Rows.Count > 0)
@@ -1502,7 +1517,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 gridView9.RestoreLayoutFromXml(fileName);
             }
             gridView9.BestFitColumns();
-            gridviewCountYaz(gridView9,"Tutar");
+            gridviewCountYaz(gridView9, "Tutar");
         }
         public static void gridviewCountYaz(GridView grid, string fieldName)
         {
@@ -1675,7 +1690,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
         MuhasebeRapor rapor = null;
         public MuhasebeRapor muhasebeRapor(bool mailGitsin = true)
         {
-             rapor = new MuhasebeRapor();
+            rapor = new MuhasebeRapor();
             try
             {
                 string tar1 = dateTarih1.DateTime.ToString("yyyy-MM-dd");
@@ -1684,7 +1699,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 string query = @"declare @Fis_Tutar decimal(18,2) = (select SUM(Satis.Rsat_Tutar)   
 FROM Cst_Recete_Satis as satis WITH(NOLOCK) 
 LEFT JOIN Pos_Kodlar as  kodlar WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' and Pkod_Ozelkod <> '4'
-where  Rsat_Tarih between '"+ tar1 + @"' and '" + tar2 + @"' AND Satis.Rsat_Ba = 'B' and Rsat_Satistip<>'O' )  declare @Katsayi decimal(18,8) = ((select SUM(ISNULL(Rsat_Tutar,0)) as Tutar from Cst_Recete_Satis 
+where  Rsat_Tarih between '" + tar1 + @"' and '" + tar2 + @"' AND Satis.Rsat_Ba = 'B' and Rsat_Satistip<>'O' )  declare @Katsayi decimal(18,8) = ((select SUM(ISNULL(Rsat_Tutar,0)) as Tutar from Cst_Recete_Satis 
 WITH(NOLOCK)  LEFT JOIN Pos_Kodlar as  kodlar 
 WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' 
 where Rsat_Tarih between '" + tar1 + @"' and '" + tar2 + @"' and Pkod_Ozelkod <> '4' and Rsat_Ba = 'A' and Rsat_Satistip<>'O' group by Pkod_Fatura) / @Fis_Tutar )  
@@ -1757,9 +1772,9 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                     rapor.ShowPreview();
                 }
 
-                gridviewSumYaz(gridViewMuh,"Kdv");
-                gridviewSumYaz(gridViewMuh,"Net");
-                gridviewSumYaz(gridViewMuh,"Tutar");
+                gridviewSumYaz(gridViewMuh, "Kdv");
+                gridviewSumYaz(gridViewMuh, "Net");
+                gridviewSumYaz(gridViewMuh, "Tutar");
             }
             catch (Exception ex)
             {
@@ -1768,7 +1783,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
             return rapor;
         }
 
-        public void gridviewSumYaz(GridView grid,string fieldname)
+        public void gridviewSumYaz(GridView grid, string fieldname)
         {
             grid.OptionsView.ShowFooter = true;
 

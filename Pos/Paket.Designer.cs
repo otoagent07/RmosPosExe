@@ -61,6 +61,9 @@
             this.gridColumn46 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn47 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn48 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn52 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn53 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn54 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl5 = new DevExpress.XtraGrid.GridControl();
             this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn60 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -129,6 +132,8 @@
             this.gridColumn32 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn33 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn34 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn55 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn56 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
@@ -143,9 +148,7 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.gridColumn52 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn53 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn54 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn57 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -347,7 +350,8 @@
             this.gridColumn48,
             this.gridColumn52,
             this.gridColumn53,
-            this.gridColumn54});
+            this.gridColumn54,
+            this.gridColumn57});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -459,6 +463,24 @@
             this.gridColumn48.FieldName = "Rsat_SubeDurum";
             this.gridColumn48.Name = "gridColumn48";
             this.gridColumn48.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn52
+            // 
+            resources.ApplyResources(this.gridColumn52, "gridColumn52");
+            this.gridColumn52.FieldName = "sirano";
+            this.gridColumn52.Name = "gridColumn52";
+            // 
+            // gridColumn53
+            // 
+            resources.ApplyResources(this.gridColumn53, "gridColumn53");
+            this.gridColumn53.FieldName = "deger1";
+            this.gridColumn53.Name = "gridColumn53";
+            // 
+            // gridColumn54
+            // 
+            resources.ApplyResources(this.gridColumn54, "gridColumn54");
+            this.gridColumn54.FieldName = "entegreOdemeTip";
+            this.gridColumn54.Name = "gridColumn54";
             // 
             // gridControl5
             // 
@@ -918,7 +940,9 @@
             this.gridColumn31,
             this.gridColumn32,
             this.gridColumn33,
-            this.gridColumn34});
+            this.gridColumn34,
+            this.gridColumn55,
+            this.gridColumn56});
             styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
             styleFormatCondition1.Column = this.gridColumn17;
@@ -1140,11 +1164,33 @@
             resources.ApplyResources(this.gridColumn34, "gridColumn34");
             this.gridColumn34.DisplayFormat.FormatString = "N2";
             this.gridColumn34.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.gridColumn34.FieldName = "MULTINET";
+            this.gridColumn34.FieldName = "YEMEKCEKI";
             this.gridColumn34.Name = "gridColumn34";
             this.gridColumn34.OptionsColumn.AllowFocus = false;
             this.gridColumn34.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn34.Summary"))), resources.GetString("gridColumn34.Summary1"), resources.GetString("gridColumn34.Summary2"))});
+            // 
+            // gridColumn55
+            // 
+            this.gridColumn55.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridColumn55.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.gridColumn55, "gridColumn55");
+            this.gridColumn55.FieldName = "ONLINE";
+            this.gridColumn55.Name = "gridColumn55";
+            this.gridColumn55.OptionsColumn.AllowFocus = false;
+            this.gridColumn55.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn55.Summary"))), resources.GetString("gridColumn55.Summary1"), resources.GetString("gridColumn55.Summary2"))});
+            // 
+            // gridColumn56
+            // 
+            this.gridColumn56.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridColumn56.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.gridColumn56, "gridColumn56");
+            this.gridColumn56.FieldName = "HAVALE";
+            this.gridColumn56.Name = "gridColumn56";
+            this.gridColumn56.OptionsColumn.AllowFocus = false;
+            this.gridColumn56.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn56.Summary"))), resources.GetString("gridColumn56.Summary1"), resources.GetString("gridColumn56.Summary2"))});
             // 
             // panelControl3
             // 
@@ -1292,23 +1338,11 @@
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // gridColumn52
+            // gridColumn57
             // 
-            resources.ApplyResources(this.gridColumn52, "gridColumn52");
-            this.gridColumn52.FieldName = "sirano";
-            this.gridColumn52.Name = "gridColumn52";
-            // 
-            // gridColumn53
-            // 
-            resources.ApplyResources(this.gridColumn53, "gridColumn53");
-            this.gridColumn53.FieldName = "deger1";
-            this.gridColumn53.Name = "gridColumn53";
-            // 
-            // gridColumn54
-            // 
-            resources.ApplyResources(this.gridColumn54, "gridColumn54");
-            this.gridColumn54.FieldName = "entegreOdemeTip";
-            this.gridColumn54.Name = "gridColumn54";
+            resources.ApplyResources(this.gridColumn57, "gridColumn57");
+            this.gridColumn57.FieldName = "Cari_Tel";
+            this.gridColumn57.Name = "gridColumn57";
             // 
             // Paket
             // 
@@ -1484,5 +1518,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn52;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn53;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn54;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn55;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn56;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn57;
     }
 }

@@ -1104,6 +1104,7 @@ namespace Pos
 
             try
             {
+                if (gridColumn4.SummaryText == "") return;
                 siparisToplamTutar = Convert.ToDecimal(gridColumn4.SummaryText);//15,28
 
                 SimpleButton btn_Kapatma = (SimpleButton)sender;

@@ -420,6 +420,7 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.checkEditPaketHaricHepsi = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -525,6 +526,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPaketHaricHepsi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView8_1
@@ -946,6 +948,7 @@
             // groupControl1
             // 
             this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
+            this.groupControl1.Controls.Add(this.checkEditPaketHaricHepsi);
             this.groupControl1.Controls.Add(this.checkEditDirektSatis);
             this.groupControl1.Controls.Add(this.checkEditServisPay);
             this.groupControl1.Controls.Add(this.textEdit10);
@@ -4332,6 +4335,14 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
+            // checkEditPaketHaricHepsi
+            // 
+            resources.ApplyResources(this.checkEditPaketHaricHepsi, "checkEditPaketHaricHepsi");
+            this.checkEditPaketHaricHepsi.Name = "checkEditPaketHaricHepsi";
+            this.checkEditPaketHaricHepsi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEdit1.Properties.Appearance.Font")));
+            this.checkEditPaketHaricHepsi.Properties.Appearance.Options.UseFont = true;
+            this.checkEditPaketHaricHepsi.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
+            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -4451,6 +4462,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPaketHaricHepsi.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4834,5 +4846,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn144;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn146;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn145;
+        private DevExpress.XtraEditors.CheckEdit checkEditPaketHaricHepsi;
     }
 }
