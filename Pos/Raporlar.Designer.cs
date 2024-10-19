@@ -83,6 +83,7 @@
             this.gridControl7 = new DevExpress.XtraGrid.GridControl();
             this.gridView7 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.checkEditPaketHaricHepsi = new DevExpress.XtraEditors.CheckEdit();
             this.checkEditDirektSatis = new DevExpress.XtraEditors.CheckEdit();
             this.checkEditServisPay = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
@@ -420,7 +421,6 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.checkEditPaketHaricHepsi = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -430,6 +430,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPaketHaricHepsi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditDirektSatis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditServisPay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
@@ -526,7 +527,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditPaketHaricHepsi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView8_1
@@ -984,6 +984,14 @@
             this.groupControl1.Controls.Add(this.cmb_Departman);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // checkEditPaketHaricHepsi
+            // 
+            resources.ApplyResources(this.checkEditPaketHaricHepsi, "checkEditPaketHaricHepsi");
+            this.checkEditPaketHaricHepsi.Name = "checkEditPaketHaricHepsi";
+            this.checkEditPaketHaricHepsi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEditPaketHaricHepsi.Properties.Appearance.Font")));
+            this.checkEditPaketHaricHepsi.Properties.Appearance.Options.UseFont = true;
+            this.checkEditPaketHaricHepsi.Properties.Caption = resources.GetString("checkEditPaketHaricHepsi.Properties.Caption");
             // 
             // checkEditDirektSatis
             // 
@@ -4335,14 +4343,6 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
-            // checkEditPaketHaricHepsi
-            // 
-            resources.ApplyResources(this.checkEditPaketHaricHepsi, "checkEditPaketHaricHepsi");
-            this.checkEditPaketHaricHepsi.Name = "checkEditPaketHaricHepsi";
-            this.checkEditPaketHaricHepsi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("checkEdit1.Properties.Appearance.Font")));
-            this.checkEditPaketHaricHepsi.Properties.Appearance.Options.UseFont = true;
-            this.checkEditPaketHaricHepsi.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
-            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -4366,6 +4366,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditPaketHaricHepsi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditDirektSatis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditServisPay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
@@ -4462,7 +4463,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEditPaketHaricHepsi.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

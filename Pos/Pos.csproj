@@ -329,6 +329,12 @@
     <Compile Include="Ayarlar.Designer.cs">
       <DependentUpon>Ayarlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="BarkodUrunBilgisiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarkodUrunBilgisiForm.Designer.cs">
+      <DependentUpon>BarkodUrunBilgisiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CallerCallCenter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1335,6 +1341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ayarlar.ru.resx">
       <DependentUpon>Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarkodUrunBilgisiForm.resx">
+      <DependentUpon>BarkodUrunBilgisiForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CallerCallCenter.en-US.resx">
       <DependentUpon>CallerCallCenter.cs</DependentUpon>

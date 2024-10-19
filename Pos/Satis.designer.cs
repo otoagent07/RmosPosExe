@@ -81,6 +81,7 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btnFiyatBilgisi = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.btnTemizleKisiyeSatis = new DevExpress.XtraEditors.SimpleButton();
             this.txtKisiyeSatis = new DevExpress.XtraEditors.TextEdit();
@@ -666,6 +667,7 @@
             // 
             // panelControl3
             // 
+            this.panelControl3.Controls.Add(this.btnFiyatBilgisi);
             this.panelControl3.Controls.Add(this.panelControl4);
             this.panelControl3.Controls.Add(this.panelMenu);
             this.panelControl3.Controls.Add(this.btn_9);
@@ -692,6 +694,17 @@
             this.panelControl3.Controls.Add(this.btn_2);
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
+            // 
+            // btnFiyatBilgisi
+            // 
+            resources.ApplyResources(this.btnFiyatBilgisi, "btnFiyatBilgisi");
+            this.btnFiyatBilgisi.Appearance.BackColor = System.Drawing.Color.Indigo;
+            this.btnFiyatBilgisi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnFiyatBilgisi.Appearance.Font")));
+            this.btnFiyatBilgisi.Appearance.Options.UseBackColor = true;
+            this.btnFiyatBilgisi.Appearance.Options.UseFont = true;
+            this.btnFiyatBilgisi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFiyatBilgisi.ImageOptions.Image")));
+            this.btnFiyatBilgisi.Name = "btnFiyatBilgisi";
+            this.btnFiyatBilgisi.Click += new System.EventHandler(this.btnFiyatBilgisi_Click);
             // 
             // panelControl4
             // 
@@ -1729,5 +1742,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuSagTik;
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynKaydet;
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynTemizle;
+        private DevExpress.XtraEditors.SimpleButton btnFiyatBilgisi;
     }
 }

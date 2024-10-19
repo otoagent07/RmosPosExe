@@ -905,7 +905,7 @@
     <value>0, 0</value>
   </data>
   <data name="gridView11.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
+    <value>Tahoma, 12pt, style=Bold</value>
   </data>
   <data name="bandedGridColumn41.Caption" xml:space="preserve">
     <value>Durum</value>
@@ -959,19 +959,13 @@
     <value>3</value>
   </data>
   <data name="bandedGridColumn43.Width" type="System.Int32, mscorlib">
-    <value>120</value>
+    <value>155</value>
   </data>
   <data name="gridColumn120.Caption" xml:space="preserve">
     <value>Masa No</value>
   </data>
   <data name="gridColumn120.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
     <value>Sum</value>
-  </data>
-  <data name="gridColumn120.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn120.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="bandedGridColumn46.Caption" xml:space="preserve">
     <value>Fiyat</value>
@@ -1004,7 +998,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn49.VisibleIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="bandedGridColumn49.Width" type="System.Int32, mscorlib">
     <value>72</value>
@@ -1073,7 +1067,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn98.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="gridColumn98.Width" type="System.Int32, mscorlib">
     <value>54</value>
@@ -1085,7 +1079,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn77.VisibleIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>18</value>
   </data>
   <data name="bandedGridColumn77.Width" type="System.Int32, mscorlib">
     <value>55</value>
@@ -1112,7 +1106,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn72.VisibleIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>20</value>
   </data>
   <data name="bandedGridColumn72.Width" type="System.Int32, mscorlib">
     <value>49</value>
@@ -1124,7 +1118,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn73.VisibleIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="bandedGridColumn73.Width" type="System.Int32, mscorlib">
     <value>49</value>
@@ -1238,7 +1232,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn53.VisibleIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>19</value>
   </data>
   <data name="bandedGridColumn53.Width" type="System.Int32, mscorlib">
     <value>48</value>
@@ -1259,7 +1253,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn50.VisibleIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="bandedGridColumn50.Width" type="System.Int32, mscorlib">
     <value>57</value>
@@ -1295,7 +1289,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn59.VisibleIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="bandedGridColumn59.Width" type="System.Int32, mscorlib">
     <value>62</value>
@@ -1316,7 +1310,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn60.VisibleIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="bandedGridColumn60.Width" type="System.Int32, mscorlib">
     <value>61</value>
@@ -1337,7 +1331,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn100.VisibleIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="bandedGridColumn63.Caption" xml:space="preserve">
     <value>CARI</value>
@@ -1355,7 +1349,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn63.VisibleIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="bandedGridColumn63.Width" type="System.Int32, mscorlib">
     <value>71</value>
@@ -1376,7 +1370,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn62.VisibleIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="bandedGridColumn62.Width" type="System.Int32, mscorlib">
     <value>50</value>
@@ -1397,7 +1391,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn61.VisibleIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="bandedGridColumn61.Width" type="System.Int32, mscorlib">
     <value>58</value>
@@ -1418,7 +1412,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn58.VisibleIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="bandedGridColumn58.Width" type="System.Int32, mscorlib">
     <value>56</value>
@@ -1439,7 +1433,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn146.VisibleIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="gridColumn145.Caption" xml:space="preserve">
     <value>HAVALE</value>
@@ -1457,7 +1451,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn145.VisibleIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="bandedGridColumn55.Caption" xml:space="preserve">
     <value>Oda No</value>
@@ -1532,7 +1526,7 @@
     <value>True</value>
   </data>
   <data name="gridColumn119.VisibleIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="gridColumn125.Caption" xml:space="preserve">
     <value>Kart No</value>
@@ -4987,10 +4981,10 @@
   <data name="checkEditPaketHaricHepsi.Location" type="System.Drawing.Point, System.Drawing">
     <value>475, 130</value>
   </data>
-  <data name="checkEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="checkEditPaketHaricHepsi.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="checkEdit1.Properties.Caption" xml:space="preserve">
+  <data name="checkEditPaketHaricHepsi.Properties.Caption" xml:space="preserve">
     <value>Paket Hariç Hepsi</value>
   </data>
   <data name="checkEditPaketHaricHepsi.Size" type="System.Drawing.Size, System.Drawing">

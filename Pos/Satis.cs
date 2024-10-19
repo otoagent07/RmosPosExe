@@ -4740,6 +4740,12 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         }
 
+        private void btnFiyatBilgisi_Click(object sender, EventArgs e)
+        {
+            BarkodUrunBilgisiForm form = new BarkodUrunBilgisiForm();
+            form.ShowDialog();
+        }
+
 
         /*
                  string adsoyad = hesap.gridViewKisiyeSatis.GetFocusedRowCellValue("Ad Soyad").ToString();
