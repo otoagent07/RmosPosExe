@@ -123,6 +123,9 @@ namespace Pos
 
                 dizaynyukle();
 
+
+                btnParcaliOdemeEski.Visible = Param.Param_ParcaliMasaAktif;
+                
             }
             catch (Exception ex)
             {
@@ -158,6 +161,9 @@ namespace Pos
             btn_HesapBak.Enabled = User.M_Hesapkapatma;
             flp_Kapatma.Enabled = User.M_Hesapkapatma;
             btn_MalzemeTransfer.Enabled = User.M_Malzemetransfer;
+
+            btnParcaliUrunTr.Visible = User.M_Malzemetransfer;
+
             btn_Rapor.Enabled = User.R_Raporlar;
 
             bar_Satis.Enabled = User.M_Satis;

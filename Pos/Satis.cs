@@ -2733,6 +2733,11 @@ namespace Pos
                     cari.AcikAdres = AcikAdres;
                     cari.ShowDialog();
 
+                    // 22.10.2024 oguzhan istedi
+                    if (cari.CariKod=="")
+                    {
+                        return;
+                    }
                     mCari = Cari.Cari_Getir(cari.CariKod);
 
                     string carikod = cari.CariKod;

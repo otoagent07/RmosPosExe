@@ -438,14 +438,15 @@ namespace Pos
 
         private void Cikis()
         {
-            if (AcikAdres == true)
-            {
-                if (txt_Cari_Kod.Text.Length == 0)
-                {
-                    MessageBox.Show(res_man.GetString("Cari Kodu Boş Geçilemez..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-            }
+            // 22.10.2024 oguzhan istedi
+            //if (AcikAdres == true)
+            //{
+            //    if (txt_Cari_Kod.Text.Length == 0)
+            //    {
+            //        MessageBox.Show(res_man.GetString("Cari Kodu Boş Geçilemez..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        return;
+            //    }
+            //}
 
             CariKod = txt_Cari_Kod.Text;
             this.Close();
