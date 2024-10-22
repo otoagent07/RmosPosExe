@@ -189,7 +189,6 @@
             this.textEdit56 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Cari_F_Adres1 = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit27 = new DevExpress.XtraEditors.TextEdit();
             this.txtIndOran = new DevExpress.XtraEditors.SpinEdit();
             this.Cari_DogumTar = new DevExpress.XtraEditors.DateEdit();
             this.Cari_Aktif = new DevExpress.XtraEditors.CheckEdit();
@@ -349,6 +348,7 @@
             this.dateEditRap3BitTar = new DevExpress.XtraEditors.DateEdit();
             this.dateEditRap3BasTar = new DevExpress.XtraEditors.DateEdit();
             this.btnCariRap3Listele = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit27 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Cari_Hesap.SuspendLayout();
@@ -401,7 +401,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Cari_F_Adres1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit27.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIndOran.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_DogumTar.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_DogumTar.Properties)).BeginInit();
@@ -527,6 +526,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit27.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn61
@@ -1967,14 +1967,6 @@
             this.groupControl1.Controls.Add(this.txt_Cari_Adres2);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
-            // 
-            // textEdit27
-            // 
-            resources.ApplyResources(this.textEdit27, "textEdit27");
-            this.textEdit27.Name = "textEdit27";
-            this.textEdit27.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit27.Properties.ReadOnly = true;
-            this.textEdit27.TabStop = false;
             // 
             // txtIndOran
             // 
@@ -3492,6 +3484,15 @@
             this.btnCariRap3Listele.Name = "btnCariRap3Listele";
             this.btnCariRap3Listele.Click += new System.EventHandler(this.btnCariRap3Listele_Click);
             // 
+            // textEdit27
+            // 
+            resources.ApplyResources(this.textEdit27, "textEdit27");
+            this.textEdit27.Name = "textEdit27";
+            this.textEdit27.Properties.AutoHeight = ((bool)(resources.GetObject("textEdit27.Properties.AutoHeight")));
+            this.textEdit27.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit27.Properties.ReadOnly = true;
+            this.textEdit27.TabStop = false;
+            // 
             // CariHesap
             // 
             resources.ApplyResources(this, "$this");
@@ -3552,7 +3553,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Cari_F_Adres1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit27.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIndOran.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_DogumTar.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cari_DogumTar.Properties)).EndInit();
@@ -3678,6 +3678,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BitTar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRap3BasTar.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit27.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3994,9 +3995,9 @@
         private DevExpress.XtraEditors.DateEdit dateEditCariBit;
         private DevExpress.XtraEditors.TextEdit textEdit26;
         private DevExpress.XtraEditors.TextEdit textEdit25;
-        private DevExpress.XtraEditors.TextEdit textEdit27;
         private DevExpress.XtraEditors.SpinEdit txtIndOran;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn80;
         private DevExpress.XtraEditors.SimpleButton btnPaketCariGuncelle;
+        private DevExpress.XtraEditors.TextEdit textEdit27;
     }
 }

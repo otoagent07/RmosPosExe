@@ -355,7 +355,7 @@ namespace Pos
                     toplamAlacak += alacak;
                 }
 
-                bakiye = toplamBorc - toplamAlacak ;
+                bakiye = toplamBorc - toplamAlacak;
                 if (bakiye != 0)
                 {
                     txtCariAd.Text = txtCariAd.Text + " [" + bakiye + " TL]";
@@ -945,7 +945,7 @@ namespace Pos
             try
             {
                 decimal toplamTutar = Convert.ToDecimal(tutar);
-                
+
                 txt2kisi.Text = (toplamTutar / 2).ToString("N2");
                 txt3kisi.Text = (toplamTutar / 3).ToString("N2");
                 txt4kisi.Text = (toplamTutar / 4).ToString("N2");
@@ -1624,6 +1624,7 @@ namespace Pos
                 {
                     return;
                 }
+                otoOdenmez();
 
                 FisKontrol();
                 cikis = true;
@@ -1701,6 +1702,44 @@ namespace Pos
             }
         }
 
+        public void otoOdenmez()
+        {
+            try
+            {
+                if (Param.otomatikOdenmez == false) return;
+
+                string fistipquery = $"select top 1 Pkod_FisTipi from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='{look_Kapatma.EditValue.ToString()}'";
+
+                string fistip = dbtools.DegerGetir(fistipquery);
+
+                if (fistip != "O")
+                {
+                    return;
+                }
+
+                DataTable dataTable = dbtools.SelectTableR("select top 1  Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tip from Pos_Cari where Cari_Vergino='22222222222'");
+
+                if (dataTable == null || dataTable.Rows.Count == 0)
+                {
+                    //MessageBox.Show("Cari_Vergino->11111111111 haneli Cari(C) Açınız! ");
+                    return;
+                }
+                cari_A = dataTable.Rows[0]["Cari_Kod"].ToString();
+                musTipi_A = dataTable.Rows[0]["Cari_Tip"].ToString();
+
+                lbl_Bilgi.Text = "Cari : " + cari_A;
+                txtCariAd.Text = dataTable.Rows[0]["Cari_Ad"].ToString() + " " + dataTable.Rows[0]["Cari_Soyad"].ToString();
+
+
+                txt_Hesapno.Text = cari_A;
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
         private void btn_Yazdirmadankapat_Click(object sender, EventArgs e)
         {
             if (odemeKodSaatAraligindaKapalimi())
@@ -1708,6 +1747,7 @@ namespace Pos
                 MessageBox.Show("Ödeme kodu kapalı");
                 return;
             }
+
             yazdirmadanKapat();
 
             indirimYaz();
@@ -2079,6 +2119,7 @@ namespace Pos
                 {
                     return;
                 }
+                otoOdenmez();
 
                 FisKontrol();
                 cikis = true;
@@ -3490,6 +3531,7 @@ namespace Pos
 
                 lbl_Bilgi.Text = "Cari : " + cari_A;
                 txtCariAd.Text = dataTable.Rows[0]["Cari_Ad"].ToString() + " " + dataTable.Rows[0]["Cari_Soyad"].ToString();
+                txt_Hesapno.Text = cari_A;
 
             }
             else

@@ -1559,10 +1559,10 @@
 </value>
   </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 3</value>
+    <value>384, 5</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 47</value>
+    <value>110, 44</value>
   </data>
   <data name="simpleButton4.TabIndex" type="System.Int32, mscorlib">
     <value>233</value>
@@ -3188,7 +3188,7 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="grd_Cari.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 183</value>
+    <value>373, 183</value>
   </data>
   <data name="gridColumn25.Caption" xml:space="preserve">
     <value>Kod</value>
@@ -3446,7 +3446,7 @@
     <value>22</value>
   </data>
   <data name="grd_Cari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>640, 247</value>
+    <value>617, 247</value>
   </data>
   <data name="grd_Cari.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -3648,7 +3648,7 @@
     <value>412, 47</value>
   </data>
   <data name="txt_Cari_F_Vergino.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>188, 22</value>
   </data>
   <data name="txt_Cari_F_Vergino.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3669,7 +3669,7 @@
     <value>412, 70</value>
   </data>
   <data name="txt_Cari_F_Mail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>188, 22</value>
   </data>
   <data name="txt_Cari_F_Mail.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3714,7 +3714,7 @@
     <value>412, 24</value>
   </data>
   <data name="txt_Cari_F_Vergidaire.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>188, 22</value>
   </data>
   <data name="txt_Cari_F_Vergidaire.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3912,10 +3912,10 @@
     <value>13</value>
   </data>
   <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 53</value>
+    <value>373, 53</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>628, 125</value>
+    <value>605, 125</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -3939,10 +3939,13 @@
     <value>indirim %</value>
   </data>
   <data name="textEdit27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 23</value>
+    <value>249, 23</value>
+  </data>
+  <data name="textEdit27.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="textEdit27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 22</value>
+    <value>58, 20</value>
   </data>
   <data name="textEdit27.TabIndex" type="System.Int32, mscorlib">
     <value>200</value>
@@ -3963,13 +3966,13 @@
     <value>0</value>
   </data>
   <data name="txtIndOran.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 24</value>
+    <value>313, 23</value>
   </data>
   <data name="txtIndOran.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="txtIndOran.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="txtIndOran.TabIndex" type="System.Int32, mscorlib">
     <value>199</value>
@@ -4581,7 +4584,7 @@
     <value>95, 23</value>
   </data>
   <data name="txt_Cari_Kod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="txt_Cari_Kod.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4851,7 +4854,7 @@
     <value>7, 38</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 398</value>
+    <value>360, 398</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
