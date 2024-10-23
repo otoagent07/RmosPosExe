@@ -852,6 +852,8 @@
             this.bandedGridColumn44.FieldName = "Rsat_Fisno";
             this.bandedGridColumn44.Name = "bandedGridColumn44";
             this.bandedGridColumn44.OptionsColumn.AllowFocus = false;
+            this.bandedGridColumn44.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn44.Summary"))), resources.GetString("bandedGridColumn44.Summary1"), resources.GetString("bandedGridColumn44.Summary2"))});
             // 
             // bandedGridColumn1
             // 

@@ -937,6 +937,15 @@
   <data name="bandedGridColumn44.Caption" xml:space="preserve">
     <value>Fis No</value>
   </data>
+  <data name="bandedGridColumn44.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Min</value>
+  </data>
+  <data name="bandedGridColumn44.Summary1" xml:space="preserve">
+    <value>Rsat_Fisno</value>
+  </data>
+  <data name="bandedGridColumn44.Summary2" xml:space="preserve">
+    <value>Ciro :</value>
+  </data>
   <data name="bandedGridColumn44.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -959,7 +968,7 @@
     <value>3</value>
   </data>
   <data name="bandedGridColumn43.Width" type="System.Int32, mscorlib">
-    <value>155</value>
+    <value>175</value>
   </data>
   <data name="gridColumn120.Caption" xml:space="preserve">
     <value>Masa No</value>
@@ -1001,7 +1010,7 @@
     <value>6</value>
   </data>
   <data name="bandedGridColumn49.Width" type="System.Int32, mscorlib">
-    <value>72</value>
+    <value>150</value>
   </data>
   <data name="bandedGridColumn47.Caption" xml:space="preserve">
     <value>Kur Adı</value>
@@ -1235,7 +1244,7 @@
     <value>19</value>
   </data>
   <data name="bandedGridColumn53.Width" type="System.Int32, mscorlib">
-    <value>48</value>
+    <value>150</value>
   </data>
   <data name="bandedGridColumn50.Caption" xml:space="preserve">
     <value>Indirim Tutar</value>
@@ -1256,7 +1265,7 @@
     <value>7</value>
   </data>
   <data name="bandedGridColumn50.Width" type="System.Int32, mscorlib">
-    <value>57</value>
+    <value>150</value>
   </data>
   <data name="bandedGridColumn51.Caption" xml:space="preserve">
     <value>Toplam Tutar</value>
@@ -1292,7 +1301,7 @@
     <value>8</value>
   </data>
   <data name="bandedGridColumn59.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>150</value>
   </data>
   <data name="bandedGridColumn60.Caption" xml:space="preserve">
     <value>KREDİKART</value>
@@ -1313,7 +1322,7 @@
     <value>9</value>
   </data>
   <data name="bandedGridColumn60.Width" type="System.Int32, mscorlib">
-    <value>61</value>
+    <value>150</value>
   </data>
   <data name="gridColumn100.Caption" xml:space="preserve">
     <value>YEMEK CEKI</value>
@@ -1332,6 +1341,9 @@
   </data>
   <data name="gridColumn100.VisibleIndex" type="System.Int32, mscorlib">
     <value>10</value>
+  </data>
+  <data name="gridColumn100.Width" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
   <data name="bandedGridColumn63.Caption" xml:space="preserve">
     <value>CARI</value>
@@ -1352,7 +1364,7 @@
     <value>11</value>
   </data>
   <data name="bandedGridColumn63.Width" type="System.Int32, mscorlib">
-    <value>71</value>
+    <value>150</value>
   </data>
   <data name="bandedGridColumn62.Caption" xml:space="preserve">
     <value>IKRAM</value>
@@ -1373,7 +1385,7 @@
     <value>12</value>
   </data>
   <data name="bandedGridColumn62.Width" type="System.Int32, mscorlib">
-    <value>50</value>
+    <value>150</value>
   </data>
   <data name="bandedGridColumn61.Caption" xml:space="preserve">
     <value>ODENMEZ</value>
@@ -1394,7 +1406,7 @@
     <value>13</value>
   </data>
   <data name="bandedGridColumn61.Width" type="System.Int32, mscorlib">
-    <value>58</value>
+    <value>150</value>
   </data>
   <data name="bandedGridColumn58.Caption" xml:space="preserve">
     <value>KREDI</value>
@@ -1415,7 +1427,7 @@
     <value>14</value>
   </data>
   <data name="bandedGridColumn58.Width" type="System.Int32, mscorlib">
-    <value>56</value>
+    <value>150</value>
   </data>
   <data name="gridColumn146.Caption" xml:space="preserve">
     <value>ONLINE</value>
@@ -1435,6 +1447,9 @@
   <data name="gridColumn146.VisibleIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
+  <data name="gridColumn146.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
   <data name="gridColumn145.Caption" xml:space="preserve">
     <value>HAVALE</value>
   </data>
@@ -1452,6 +1467,9 @@
   </data>
   <data name="gridColumn145.VisibleIndex" type="System.Int32, mscorlib">
     <value>16</value>
+  </data>
+  <data name="gridColumn145.Width" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
   <data name="bandedGridColumn55.Caption" xml:space="preserve">
     <value>Oda No</value>

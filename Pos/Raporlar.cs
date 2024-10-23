@@ -1169,7 +1169,8 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
         {
             if (e.Column.Name == "bandedGridColumn43")
             {
-                e.Info.DisplayText = "Ciro : " + (Convert.ToDecimal(bandedGridColumn49.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn50.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn61.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn62.SummaryItem.SummaryValue)).ToString("N2");
+                // "Ciro : "  23.10.2024
+                e.Info.DisplayText = (Convert.ToDecimal(bandedGridColumn49.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn50.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn61.SummaryItem.SummaryValue) - Convert.ToDecimal(bandedGridColumn62.SummaryItem.SummaryValue)).ToString("N2");
                 e.Info.Appearance.ForeColor = Color.Red;
                 //e.Info.Appearance.Font = new Font("Tahoma", 9, FontStyle.Bold);
             }

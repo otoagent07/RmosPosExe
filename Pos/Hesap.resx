@@ -1001,6 +1001,12 @@
   <data name="gridColumn4.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
     <value>Sum</value>
   </data>
+  <data name="gridColumn4.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn4.Summary2" xml:space="preserve">
+    <value>{0:#,##0.00}</value>
+  </data>
   <data name="gridColumn4.Width" type="System.Int32, mscorlib">
     <value>68</value>
   </data>

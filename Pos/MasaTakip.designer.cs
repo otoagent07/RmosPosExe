@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasaTakip));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -84,10 +84,10 @@
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemRichTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -467,7 +467,9 @@
             // 
             // btnHesapDokumEski
             // 
+            this.btnHesapDokumEski.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btnHesapDokumEski.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnHesapDokumEski.Appearance.Font")));
+            this.btnHesapDokumEski.Appearance.Options.UseBackColor = true;
             this.btnHesapDokumEski.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnHesapDokumEski, "btnHesapDokumEski");
             this.btnHesapDokumEski.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapDokumEski.ImageOptions.Image")));
@@ -637,26 +639,26 @@
             this.gridView2.AppearancePrint.FooterPanel.Options.UseForeColor = true;
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn3,
-            this.gridColumn9,
             this.gridColumn4,
-            this.gridColumn5,
             this.gridColumn6,
+            this.gridColumn5,
+            this.gridColumn9,
             this.gridColumn7,
             this.gridColumn8,
             this.gridColumn10,
             this.gridColumn11});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn10;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn10;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView2.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn10;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn10;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView2.FormatRules.Add(gridFormatRule2);
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -679,19 +681,13 @@
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             this.gridColumn3.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn3.Summary"))))});
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn3.Summary"))), resources.GetString("gridColumn3.Summary1"), resources.GetString("gridColumn3.Summary2"))});
             // 
             // repositoryItemRichTextEdit1
             // 
             this.repositoryItemRichTextEdit1.DocumentFormat = DevExpress.XtraRichEdit.DocumentFormat.Html;
             this.repositoryItemRichTextEdit1.Name = "repositoryItemRichTextEdit1";
             this.repositoryItemRichTextEdit1.ShowCaretInReadOnly = false;
-            // 
-            // gridColumn9
-            // 
-            resources.ApplyResources(this.gridColumn9, "gridColumn9");
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn4
             // 
@@ -700,16 +696,6 @@
             resources.ApplyResources(this.gridColumn4, "gridColumn4");
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn5.AppearanceCell.Font")));
-            this.gridColumn5.AppearanceCell.ForeColor = System.Drawing.Color.Red;
-            this.gridColumn5.AppearanceCell.Options.UseFont = true;
-            this.gridColumn5.AppearanceCell.Options.UseForeColor = true;
-            resources.ApplyResources(this.gridColumn5, "gridColumn5");
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn6
             // 
@@ -722,6 +708,22 @@
             this.gridColumn6.OptionsColumn.AllowFocus = false;
             this.gridColumn6.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn6.Summary"))), resources.GetString("gridColumn6.Summary1"), resources.GetString("gridColumn6.Summary2"))});
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn5.AppearanceCell.Font")));
+            this.gridColumn5.AppearanceCell.ForeColor = System.Drawing.Color.Red;
+            this.gridColumn5.AppearanceCell.Options.UseFont = true;
+            this.gridColumn5.AppearanceCell.Options.UseForeColor = true;
+            resources.ApplyResources(this.gridColumn5, "gridColumn5");
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn9
+            // 
+            resources.ApplyResources(this.gridColumn9, "gridColumn9");
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn7
             // 
@@ -1117,6 +1119,10 @@
             resources.ApplyResources(this.btnHesapDokum, "btnHesapDokum");
             this.btnHesapDokum.Id = 28;
             this.btnHesapDokum.ImageOptions.ImageUri.Uri = "Print;Size32x32";
+            this.btnHesapDokum.ItemAppearance.Normal.BackColor = System.Drawing.Color.Blue;
+            this.btnHesapDokum.ItemAppearance.Normal.ForeColor = System.Drawing.Color.White;
+            this.btnHesapDokum.ItemAppearance.Normal.Options.UseBackColor = true;
+            this.btnHesapDokum.ItemAppearance.Normal.Options.UseForeColor = true;
             this.btnHesapDokum.Name = "btnHesapDokum";
             this.btnHesapDokum.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnHesapDokum.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHesapDokum_ItemClick);

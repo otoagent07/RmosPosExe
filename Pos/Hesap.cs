@@ -3418,6 +3418,9 @@ namespace Pos
 
         }
 
+   
+
+
         public void otoIndirimYuvarlama()
         {
             try

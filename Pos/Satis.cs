@@ -240,6 +240,20 @@ namespace Pos
 
                 dizaynyukle();
 
+
+                gridView1.CustomColumnDisplayText += (s, e) =>
+                {
+                    if (e.Column.FieldName == "Rsat_Tutar" && e.Value != null)
+                    {
+                        // Değerin sayısal bir değer olduğunu kontrol edin
+                        if (decimal.TryParse(e.Value.ToString(), out decimal tutarValue))
+                        {
+                            // Değeri noktalı formatta göstermek için manuel olarak formatlıyoruz
+                            e.DisplayText = string.Format("{0:#,##0.00}", tutarValue);
+                        }
+                    }
+                };
+
             }
             catch (Exception ex)
             {

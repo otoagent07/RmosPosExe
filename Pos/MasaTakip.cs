@@ -125,7 +125,23 @@ namespace Pos
 
 
                 btnParcaliOdemeEski.Visible = Param.Param_ParcaliMasaAktif;
-                
+
+
+
+                gridView2.CustomColumnDisplayText += (s, e) =>
+                {
+                    if (e.Column.FieldName == "Rsat_Tutar" && e.Value != null)
+                    {
+                        // Değerin sayısal bir değer olduğunu kontrol edin
+                        if (decimal.TryParse(e.Value.ToString(), out decimal tutarValue))
+                        {
+                            // Değeri noktalı formatta göstermek için manuel olarak formatlıyoruz
+                            e.DisplayText = string.Format("{0:#,##0.00}", tutarValue);
+                        }
+                    }
+                };
+
+
             }
             catch (Exception ex)
             {
@@ -1702,6 +1718,18 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                     dtParcaliHepsi.Merge(dtParcali);
                 }
 
+
+                if (dtParcaliHepsi != null && dtParcaliHepsi.Rows.Count > 0)
+                {
+                    foreach (DataRow item in dtParcaliHepsi.Rows)
+                    {
+                        item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "");
+                        item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",000", "");
+                        //item["Rsat_Tutar"] = item["Rsat_Tutar"].ToString().Replace(",00", "");
+                    }
+                }
+
+
                 gridControl2.DataSource = dtParcaliHepsi;
                 //gridView2.BestFitColumns();
 
@@ -1760,9 +1788,14 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             dtCloned.Columns["Rsat_Tutar"].DataType = typeof(string);
             foreach (DataRow row in dt.Rows)
             {
+                row["Rsat_Miktar"] = row["Rsat_Miktar"].ToString().Replace(",0000", "");
+                row["Rsat_Miktar"] = row["Rsat_Miktar"].ToString().Replace(",000", "");
+
                 dtCloned.ImportRow(row);
             }
 
+
+            
 
             gridControl2.DataSource = dtCloned;
             //gridView2.BestFitColumns();
