@@ -1982,5 +1982,35 @@ No Cut Seçili Olsun
 
         }
 
+        private void timerMobileCallerId_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = @"select Caller_Id,Caller_Telno,Caller_Carikod,Caller_Tarih from Pos_CallerId where Caller_Durum=0";
+                DataTable data = dbtools.SelectTableR(query);
+
+                if (data != null && data.Rows.Count > 0)
+                {
+                    foreach (DataRow item in data.Rows)
+                    {
+                        string tel = item["Caller_Telno"].ToString();
+                        string Caller_Id = item["Caller_Id"].ToString();
+
+                        CallerCallCenter cc = new CallerCallCenter();
+                        cc.Tel = tel;
+                        cc.Show();
+
+                        dbtools.execcmdR($"update Pos_CallerId set Caller_Durum = 1 where Caller_Id={Caller_Id}");
+
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("timerMobileCallerId_Tick -> hata var kontrol et");
+            }
+        }
     }
 }

@@ -106,6 +106,11 @@ IF COL_LENGTH('Pos_Kodlar', 'Pkod_E_Adisyon') IS NULL BEGIN ALTER TABLE Pos_Kodl
 
 IF COL_LENGTH('Pos_Kodlar', 'tumPrinter') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD tumPrinter bit END;
 
+
+IF COL_LENGTH('Pos_CallerId', 'Caller_Durum') IS NULL BEGIN ALTER TABLE Pos_CallerId ADD Caller_Durum int END;
+
+
+
 IF COL_LENGTH('Pos_Kodlar', 'bit1') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD bit1 bit END;
 IF COL_LENGTH('Pos_Kodlar', 'bit2') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD bit2 bit END;
 IF COL_LENGTH('Pos_Kodlar', 'bit3') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD bit3 bit END;

@@ -127,6 +127,7 @@
             this.timerTrendyol = new System.Windows.Forms.Timer(this.components);
             this.alertControl3 = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.timerMobileCallerId = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -1009,6 +1010,12 @@
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
+            // timerMobileCallerId
+            // 
+            this.timerMobileCallerId.Enabled = true;
+            this.timerMobileCallerId.Interval = 3000;
+            this.timerMobileCallerId.Tick += new System.EventHandler(this.timerMobileCallerId_Tick);
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
@@ -1155,5 +1162,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         public DevExpress.XtraBars.Alerter.AlertControl alertControl3;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        public System.Windows.Forms.Timer timerMobileCallerId;
     }
 }
