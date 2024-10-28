@@ -162,6 +162,7 @@ namespace Pos.Class
         public static bool Pos_OdaKontrol { get; set; }
         public static bool Pos_KartfIndirimAktif { get; set; }
         public static bool Pos_ServisPayiDuzelt { get; set; }
+        public static bool cariTahsilatlari { get; set; }
         //public static bool MasaTakip_Paket { get; set; }
 
 
@@ -328,12 +329,13 @@ namespace Pos.Class
                 U_BackUser = Convert.ToString(dt.Rows[0]["U_BackUser"]);
                 Pos_KartfIndirimAktif = Convert.ToBoolean(dt.Rows[0]["Pos_KartfIndirimAktif"]);
                 Pos_ServisPayiDuzelt = Convert.ToBoolean(dt.Rows[0]["Pos_ServisPayiDuzelt"]);
+                
                 //MasaTakip_Paket = Convert.ToBoolean(dt.Rows[0]["MasaTakip_Paket"]);
 
 
             }
 
-            DataTable dtXZ = dbtools.SelectTable("SELECT 0,Id,P_Kod,ISNULL(Odeme,0) as Odeme,ISNULL(Servis,0) as Servis,ISNULL(Cari,0) as Cari,ISNULL(Odenmez,0) as Odenmez,ISNULL(Malzeme,0) as Malzeme,ISNULL(Anagrup,0) as Anagrup,ISNULL(Altgrup,0) as Altgrup,ISNULL(Iptal,0) as Iptal,ISNULL(PaketServis,0) as PaketServis,ISNULL(IndirimMasa,0) as IndirimMasa,ISNULL(YiyecekIcecek,0) as YiyecekIcecek,ISNULL(MasaKonum,0) as MasaKonum,ISNULL(GarsonOzet,0) as GarsonOzet,ISNULL(GarsonTahsil,0) as GarsonTahsil,ISNULL(SifirTutar,0) as SifirTutar,ISNULL(OzetKasa,0) as OzetKasa,ISNULL(ExtKasaRapor,0) as ExtKasaRapor,ISNULL(ExtKasaDetay,0) as ExtKasaDetay,ISNULL(SiparisIptal,0) as SiparisIptal,ISNULL(GonderilmemisSiparisIptal,0) as GonderilmemisSiparisIptal,ISNULL(SiparisDuzelt,0) as SiparisDuzelt FROM Rmosmuh.dbo.Pos_User_XZ where P_Kod = '" + P_Kod + "' ");
+            DataTable dtXZ = dbtools.SelectTable("SELECT 0,Id,P_Kod,ISNULL(Odeme,0) as Odeme,ISNULL(Servis,0) as Servis,ISNULL(Cari,0) as Cari,ISNULL(Odenmez,0) as Odenmez,ISNULL(Malzeme,0) as Malzeme,ISNULL(Anagrup,0) as Anagrup,ISNULL(Altgrup,0) as Altgrup,ISNULL(Iptal,0) as Iptal,ISNULL(PaketServis,0) as PaketServis,ISNULL(IndirimMasa,0) as IndirimMasa,ISNULL(YiyecekIcecek,0) as YiyecekIcecek,ISNULL(MasaKonum,0) as MasaKonum,ISNULL(GarsonOzet,0) as GarsonOzet,ISNULL(GarsonTahsil,0) as GarsonTahsil,ISNULL(SifirTutar,0) as SifirTutar,ISNULL(OzetKasa,0) as OzetKasa,ISNULL(ExtKasaRapor,0) as ExtKasaRapor,ISNULL(ExtKasaDetay,0) as ExtKasaDetay,ISNULL(SiparisIptal,0) as SiparisIptal,ISNULL(GonderilmemisSiparisIptal,0) as GonderilmemisSiparisIptal,ISNULL(SiparisDuzelt,0) as SiparisDuzelt,ISNULL(cariTahsilatlari,0) as cariTahsilatlari FROM Rmosmuh.dbo.Pos_User_XZ where P_Kod = '" + P_Kod + "' ");
             if (dtXZ.Rows.Count > 0)
             {
                 XZ_Odeme = Convert.ToBoolean(dtXZ.Rows[0]["Odeme"]);
@@ -357,6 +359,7 @@ namespace Pos.Class
                 XZ_SiparisIptal = Convert.ToBoolean(dtXZ.Rows[0]["SiparisIptal"]);
                 XZ_GonderilmemisSiparisIptal = Convert.ToBoolean(dtXZ.Rows[0]["GonderilmemisSiparisIptal"]);
                 XZ_SiparisDuzelt = Convert.ToBoolean(dtXZ.Rows[0]["SiparisDuzelt"]);
+                cariTahsilatlari = Convert.ToBoolean(dtXZ.Rows[0]["cariTahsilatlari"]);
             }
         }
 

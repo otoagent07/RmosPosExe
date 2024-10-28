@@ -497,6 +497,11 @@ namespace Pos
                 try
                 {
                     ayarlar = new AyarlarController();
+
+                    if (Param.mobilCallerIdAktif)
+                    {
+                        timerMobileCallerId.Enabled = true;
+                    }
                 }
                 catch (Exception ex)
                 {

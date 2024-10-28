@@ -383,6 +383,7 @@
             this.barButtonItem7.Id = 28;
             this.barButtonItem7.ImageOptions.Image = global::Pos.Properties.Resources.sepet25;
             this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // popupMenu1
             // 
@@ -1012,8 +1013,7 @@
             // 
             // timerMobileCallerId
             // 
-            this.timerMobileCallerId.Enabled = true;
-            this.timerMobileCallerId.Interval = 3000;
+            this.timerMobileCallerId.Interval = 1000;
             this.timerMobileCallerId.Tick += new System.EventHandler(this.timerMobileCallerId_Tick);
             // 
             // Main

@@ -1335,6 +1335,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
             (CONVERT(date,Satis.Rsat_Tarih) <= CONVERT(date,'" + cari2_Tarih2.EditValue + @"'))
             AND 
             Rsat_Ba = 'A' and Rsat_Kapatma <> @Indkapatma
+            and Rsat_Cari<>'' and Rsat_Cari is not null
             GROUP BY Rsat_Fisno,Rsat_Tarih
             order by Rsat_Fisno desc
             ");
@@ -1479,9 +1480,11 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
 
                 string tip = look_Cari_TipBakiye.EditValue.ToString();
 
+                // 28.10.2024 cast(cari.Cari_Id as nvarchar(50))=hrk.Chrk_Cari böyleydi
+
                 string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,sum(Chrk_Borc-Chrk_Alacak) as Bakiye from Pos_Carihrk as hrk 
-left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
-where isnull(Cari_Tip,'C')='"+ tip + "' and Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
+left join Pos_Cari as cari on cari.Cari_Kod=hrk.Chrk_Cari 
+where isnull(Cari_Tip,'C')='" + tip + "' and Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
 group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
 
                 DataTable dataTable = dbtools.SelectTableR(query);

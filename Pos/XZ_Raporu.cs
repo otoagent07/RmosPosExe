@@ -84,6 +84,8 @@ group by Pkod_Ad";
             chk_Servis.Checked = User.XZ_Servis;
             chk_Cari.Checked = User.XZ_Cari;
             chk_Odenmez.Checked = User.XZ_Odenmez;
+            chk_CariTahsilat.Checked = User.cariTahsilatlari;
+
             chk_Malzeme.Checked = User.XZ_Malzeme;
             chk_Anagrup.Checked = User.XZ_Anagrup;
             chk_Altgrup.Checked = User.XZ_Altgrup;
@@ -570,6 +572,8 @@ and Pkod_Kasacikis = 1";
             chk_Servis.Checked = true;
             chk_Cari.Checked = true;
             chk_Odenmez.Checked = true;
+            chk_CariTahsilat.Checked = true;
+
             chk_Malzeme.Checked = true;
             chk_Anagrup.Checked = true;
             chk_Altgrup.Checked = true;
@@ -595,6 +599,8 @@ and Pkod_Kasacikis = 1";
             chk_Servis.Checked = false;
             chk_Cari.Checked = false;
             chk_Odenmez.Checked = false;
+            chk_CariTahsilat.Checked = false;
+
             chk_Malzeme.Checked = false;
             chk_Anagrup.Checked = false;
             chk_Altgrup.Checked = false;

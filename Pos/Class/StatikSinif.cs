@@ -137,6 +137,7 @@ IF COL_LENGTH('Pos_Param', 'tumPrinter') IS NULL BEGIN ALTER TABLE Pos_Param ADD
 IF COL_LENGTH('Pos_Param', 'urunAdinaOdaklan') IS NULL BEGIN ALTER TABLE Pos_Param ADD urunAdinaOdaklan bit END;
 IF COL_LENGTH('Pos_Param', 'ikinciEkranAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD ikinciEkranAktif bit END;
 IF COL_LENGTH('Pos_Param', 'otomatikOdenmez') IS NULL BEGIN ALTER TABLE Pos_Param ADD otomatikOdenmez bit END;
+IF COL_LENGTH('Pos_Param', 'mobilCallerIdAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD mobilCallerIdAktif bit END;
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_ServisPayiDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_ServisPayiDuzelt] bit END;
 
@@ -152,7 +153,12 @@ IF COL_LENGTH('Pos_Param', 'satirsilfiscikmasinaktif') IS NULL BEGIN ALTER TABLE
 IF COL_LENGTH('Pos_Param', 'kisivegarsonbirkeresoraktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD kisivegarsonbirkeresoraktif bit END;
 IF COL_LENGTH('Pos_Param', 'yazdirilmamissiparis') IS NULL BEGIN ALTER TABLE Pos_Param ADD yazdirilmamissiparis bit END;
 IF COL_LENGTH('Pos_Param', 'masamusait') IS NULL BEGIN ALTER TABLE Pos_Param ADD masamusait bit END;
+
+
 IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'hesapyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [hesapyazici] nvarchar(250) END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'cariTahsilatlari') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [cariTahsilatlari] bit END;
+
+
 IF COL_LENGTH('Stok_Kodlar', 'Kodlar_parakasa') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_parakasa nvarchar(200) END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_Eksileme') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_Eksileme bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_XZdepartman') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_XZdepartman bit END;

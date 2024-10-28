@@ -78,6 +78,8 @@ namespace Pos
             this.BringToFront();
             this.Size = new System.Drawing.Size(469, 678);
 
+            //dbtools.execcmdRMesajsiz(StatikSinif.getAlterQuery());
+
             DataTable dt = dbtools.SelectTable("select isnull(Param_Kartla_Giris,0) as Param_Kartla_Giris from Pos_Param where Param_Id = '1'");
             if (dt.Rows.Count > 0)
             {
