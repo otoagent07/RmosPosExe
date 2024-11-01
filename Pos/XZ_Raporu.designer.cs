@@ -395,7 +395,7 @@
             // 
             resources.ApplyResources(this.chk_servispayi, "chk_servispayi");
             this.chk_servispayi.Name = "chk_servispayi";
-            this.chk_servispayi.Properties.Caption = resources.GetString("checkEdit1.Properties.Caption");
+            this.chk_servispayi.Properties.Caption = resources.GetString("chk_servispayi.Properties.Caption");
             // 
             // XZ_Raporu
             // 

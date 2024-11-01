@@ -307,7 +307,7 @@
     <value>None</value>
   </data>
   <data name="gridControl7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 182</value>
+    <value>550, 186</value>
   </data>
   <data name="gridColumn56.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -514,7 +514,7 @@
     <value>0.00</value>
   </data>
   <data name="Bakiye.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 547</value>
+    <value>467, 556</value>
   </data>
   <data name="Bakiye.Properties.Mask.EditMask" xml:space="preserve">
     <value>n2</value>
@@ -551,7 +551,7 @@
     <value>Bakiye</value>
   </data>
   <data name="textEdit65.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 547</value>
+    <value>379, 556</value>
   </data>
   <data name="textEdit65.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 22</value>
@@ -1159,7 +1159,7 @@
     <value>Odeme Kodu</value>
   </data>
   <data name="grd_CariHesap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 358</value>
+    <value>534, 367</value>
   </data>
   <data name="grd_CariHesap.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1297,7 +1297,7 @@
     <value>26</value>
   </data>
   <data name="tab_Cari_Hesap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 697</value>
+    <value>1051, 701</value>
   </data>
   <data name="tab_Cari_Hesap.Text" xml:space="preserve">
     <value>Cari Hesapları</value>
@@ -1315,7 +1315,7 @@
     <value>0</value>
   </data>
   <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1051, 720</value>
+    <value>1053, 724</value>
   </data>
   <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4875,7 +4875,7 @@
     <value>58</value>
   </data>
   <data name="tab_Cari_Tanim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 697</value>
+    <value>1045, 692</value>
   </data>
   <data name="tab_Cari_Tanim.Text" xml:space="preserve">
     <value>Cari Tanımları</value>
@@ -5534,7 +5534,7 @@
     <value>14</value>
   </data>
   <data name="tab_CariIslem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 697</value>
+    <value>1045, 692</value>
   </data>
   <data name="tab_CariIslem.Text" xml:space="preserve">
     <value>Cari İşlemleri</value>
@@ -5902,7 +5902,7 @@
     <value>6</value>
   </data>
   <data name="tab_CariOzet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 697</value>
+    <value>1045, 692</value>
   </data>
   <data name="tab_CariOzet.Text" xml:space="preserve">
     <value>Cari Özet</value>
@@ -5926,7 +5926,7 @@
     <value>0, 75</value>
   </data>
   <data name="gridControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 306</value>
+    <value>1045, 301</value>
   </data>
   <data name="gridControl6.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -6201,7 +6201,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 75</value>
+    <value>1045, 75</value>
   </data>
   <data name="groupControl4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6225,7 +6225,7 @@
     <value>2, 22</value>
   </data>
   <data name="gridControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>928, 292</value>
+    <value>924, 292</value>
   </data>
   <data name="gridControl8.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -6385,7 +6385,7 @@ Print</value>
     <value>Right</value>
   </data>
   <data name="groupControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>930, 22</value>
+    <value>926, 22</value>
   </data>
   <data name="groupControl6.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 292</value>
@@ -6409,10 +6409,10 @@ Print</value>
     <value>Bottom</value>
   </data>
   <data name="groupControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 381</value>
+    <value>0, 376</value>
   </data>
   <data name="groupControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 316</value>
+    <value>1045, 316</value>
   </data>
   <data name="groupControl5.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -6430,7 +6430,7 @@ Print</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 697</value>
+    <value>1045, 692</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Cari Rapor</value>
@@ -6454,7 +6454,7 @@ Print</value>
     <value>2, 22</value>
   </data>
   <data name="gridControl10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1045, 304</value>
+    <value>1041, 299</value>
   </data>
   <data name="gridControl10.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -6478,7 +6478,7 @@ Print</value>
     <value>0, 369</value>
   </data>
   <data name="groupControl9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 328</value>
+    <value>1045, 323</value>
   </data>
   <data name="groupControl9.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -6505,7 +6505,7 @@ Print</value>
     <value>2, 22</value>
   </data>
   <data name="gridControl9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1045, 270</value>
+    <value>1041, 270</value>
   </data>
   <data name="gridControl9.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -6529,7 +6529,7 @@ Print</value>
     <value>0, 75</value>
   </data>
   <data name="groupControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 294</value>
+    <value>1045, 294</value>
   </data>
   <data name="groupControl8.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -6763,7 +6763,7 @@ Print</value>
     <value>0, 0</value>
   </data>
   <data name="groupControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 75</value>
+    <value>1045, 75</value>
   </data>
   <data name="groupControl7.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -6781,7 +6781,7 @@ Print</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 697</value>
+    <value>1045, 692</value>
   </data>
   <data name="xtraTabPage2.Text" xml:space="preserve">
     <value>Cari Rapor 2</value>
@@ -6916,7 +6916,7 @@ Print</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 697</value>
+    <value>1045, 692</value>
   </data>
   <data name="xtraTabPage3.Text" xml:space="preserve">
     <value>Cari Listesi</value>
@@ -6937,7 +6937,7 @@ Print</value>
     <value>Fill</value>
   </data>
   <data name="gridControlCariRap3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridColumn65.Caption" xml:space="preserve">
     <value>CariId</value>
@@ -6994,7 +6994,7 @@ Print</value>
     <value>100</value>
   </data>
   <data name="gridControlCariRap3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>511, 571</value>
+    <value>511, 570</value>
   </data>
   <data name="gridControlCariRap3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7015,10 +7015,10 @@ Print</value>
     <value>Fill</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>517, 577</value>
+    <value>515, 574</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7039,7 +7039,7 @@ Print</value>
     <value>Fill</value>
   </data>
   <data name="gridControlCariRap3Detay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridColumn71.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -7117,7 +7117,7 @@ Print</value>
     <value>Cek Detayı</value>
   </data>
   <data name="gridControlCariRap3Detay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>520, 571</value>
+    <value>522, 570</value>
   </data>
   <data name="gridControlCariRap3Detay.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -7138,10 +7138,10 @@ Print</value>
     <value>Right</value>
   </data>
   <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 3</value>
+    <value>517, 2</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>526, 577</value>
+    <value>526, 574</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -7165,7 +7165,7 @@ Print</value>
     <value>0, 65</value>
   </data>
   <data name="panelControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 583</value>
+    <value>1045, 578</value>
   </data>
   <data name="panelControl5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -7276,10 +7276,10 @@ Print</value>
     <value>Bottom</value>
   </data>
   <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 648</value>
+    <value>0, 643</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 49</value>
+    <value>1045, 49</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7677,7 +7677,7 @@ Listele</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 65</value>
+    <value>1045, 65</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7695,7 +7695,7 @@ Listele</value>
     <value>2</value>
   </data>
   <data name="xtraTabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1049, 697</value>
+    <value>1045, 692</value>
   </data>
   <data name="xtraTabPage4.Text" xml:space="preserve">
     <value>Cari Bakiye Kontrol</value>
@@ -7731,7 +7731,7 @@ Listele</value>
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1075, 744</value>
+    <value>1077, 748</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
