@@ -120,6 +120,7 @@
             this.txt4kisi = new System.Windows.Forms.Label();
             this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnUrunIade = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -1011,11 +1012,25 @@
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
             // 
+            // btnUrunIade
+            // 
+            resources.ApplyResources(this.btnUrunIade, "btnUrunIade");
+            this.btnUrunIade.Appearance.BackColor = System.Drawing.Color.Indigo;
+            this.btnUrunIade.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.btnUrunIade.Appearance.Options.UseBackColor = true;
+            this.btnUrunIade.Appearance.Options.UseFont = true;
+            this.btnUrunIade.Appearance.Options.UseTextOptions = true;
+            this.btnUrunIade.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btnUrunIade.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnUrunIade.Name = "btnUrunIade";
+            this.btnUrunIade.Click += new System.EventHandler(this.btnUrunIade_Click);
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btnUrunIade);
             this.Controls.Add(this.panelControl5);
             this.Controls.Add(this.panelControl6);
             this.Controls.Add(this.panelControl7);
@@ -1211,5 +1226,6 @@
         private System.Windows.Forms.Label txt4kisi;
         private DevExpress.XtraEditors.PanelControl panelControl8;
         private System.Windows.Forms.Label label8;
+        private DevExpress.XtraEditors.SimpleButton btnUrunIade;
     }
 }

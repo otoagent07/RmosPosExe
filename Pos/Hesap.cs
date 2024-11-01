@@ -112,6 +112,7 @@ namespace Pos
                 }
 
                 btnSpSil.Visible = User.S_Sp_Sil;
+                btnUrunIade.Visible = User.urunIade;
 
                 string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
                 string tar = Param.Tarih.Date.ToString("yyyy-MM-dd");
@@ -3599,7 +3600,207 @@ namespace Pos
             }
         }
 
+        public void indirimvarsaazalt(int satirId, string fisno, int Sil_Miktar)
+        {
+            try
+            {
+                string q1 = @"select Rsat_Id,Rsat_Ba,isnull(Rsat_Miktar,0) as Rsat_Miktar,Rsat_Fiyat,Rsat_Tutar,Rsat_Doviztutar,Rsat_Net,Rsat_Kdv from Cst_Recete_Satis 
+where 
+Rsat_Fisno='" + fisno + @"'  
+and Rsat_Indkodu  in ('HAPPYHOUR','MANUEL') and Rsat_Ba='A'";
+                DataTable indirimTable = dbtools.SelectTableR(q1);
 
+
+                string q3 = @"select sum(Rsat_Fiyat) as Rsat_Fiyat,sum(Rsat_Tutar) as Rsat_Tutar,sum(Rsat_Doviztutar) as Rsat_Doviztutar from Cst_Recete_Satis 
+where 
+Rsat_Fisno='" + fisno + @"'  
+and Rsat_Indkodu  in ('HAPPYHOUR','MANUEL') and Rsat_Ba='A'
+group by Rsat_Fiyat,Rsat_Tutar,Rsat_Doviztutar";
+                DataTable indirimTable2 = dbtools.SelectTable(q3);
+
+                if (indirimTable != null && indirimTable.Rows.Count > 0)
+                {
+                    int Rsat_Miktar = Convert.ToInt32(Convert.ToDecimal(indirimTable.Rows[0]["Rsat_Miktar"].ToString()));
+                    if (Rsat_Miktar == 0)
+                    {
+                        return;
+                    }
+                    int Rsat_Id = Convert.ToInt32(indirimTable.Rows[0]["Rsat_Id"].ToString());
+                    decimal Rsat_Fiyat = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Fiyat"].ToString());
+                    decimal Rsat_Tutar = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Tutar"].ToString());
+                    decimal Rsat_Doviztutar = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Doviztutar"].ToString());
+
+                    string deger = dbtools.DegerGetir(@"select 
+(select top 1 isnull(Rec_HappyHourFiyat,0) as Rec_HappyHourFiyat from Cst_Recete where Rec_Genelkod=satis.Rsat_Recete and Rec_HappyHour='1')*" + Sil_Miktar + @"
+as uygulanacakindirim
+from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
+
+                    if (deger != null && deger != "" && deger != "0")
+                    {
+                        decimal Rsat_Kdvoran = Convert.ToDecimal(dbtools.DegerGetir("select top 1 Rsat_Kdvoran from Cst_Recete_Satis where Rsat_Id='" + satirId + "'"));
+
+
+                        decimal uygulanacakindirim = Convert.ToDecimal(deger);
+                        decimal fiyat = Rsat_Fiyat - uygulanacakindirim;
+                        decimal tutar = Rsat_Tutar - uygulanacakindirim;
+                        decimal doviztutar = Rsat_Doviztutar - uygulanacakindirim;
+                        decimal net = tutar / ((100 + Rsat_Kdvoran) / 100);
+                        decimal kdv = tutar - tutar / ((100 + Rsat_Kdvoran) / 100);
+                        decimal miktar = Rsat_Miktar - Sil_Miktar;
+
+                        string q2 = "update Cst_Recete_Satis set Rsat_Miktar='" + miktar + "',Rsat_Fiyat='" + fiyat.ToString().Replace(",", ".") + "',Rsat_Tutar='" + tutar.ToString().Replace(",", ".") + "',Rsat_Doviztutar='" + doviztutar.ToString().Replace(",", ".") + "',Rsat_Net='" + net.ToString().Replace(",", ".") + "',Rsat_Kdv='" + kdv.ToString().Replace(",", ".") + "' where Rsat_Id='" + Rsat_Id + "'";
+
+                        dbtools.execcmdR(q2);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("önemsiz hata_1\n" + ex.Message);
+            }
+        }
+
+        private void btnUrunIade_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty)
+                {
+                    return;
+                }
+
+                string fisno = Convert.ToInt32(this.Tag).ToString();
+
+
+                string receteKod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
+                string bindirimReceteKod = dbtools.DegerGetir("select top 1 Param_Bindirim  from Pos_Param where Param_Id = '1'");
+                string kullaniciTuru = dbtools.DegerGetir("select P_Kulturu from Rmosmuh.dbo.Pos_User where P_Kod='2'"); // 1 ise garsondur
+
+                if (kullaniciTuru == "1" && receteKod == bindirimReceteKod)
+                {
+                    RHMesaj.alertMesaj2("Kullanıcı Türü Garson. Servis Payı Silemez ! ", 2);
+                    return;
+                }
+
+                if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Ba")) == "A")
+                {
+                    MessageBox.Show(res_man.GetString("Ödemeler veya İndirimler Silinemez.."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
+               
+                bool Rsat_SiparisPr = Convert.ToBoolean(dbtools.DegerGetir("select ISNULL((select ISNULL(Rsat_SiparisPr,0) from Cst_Recete_Satis WHERE Rsat_Id = " + Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")) + "),0)"));
+               
+
+
+                if (Rsat_SiparisPr && !User.G_Satirsil_Y)
+                {
+                    MessageBox.Show(res_man.GetString("Yazdırılmış Satır Silme Yetkiniz Yoktur...!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
+
+
+                string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null";
+                string kapatmaVarmi = dbtools.DegerGetir(qq);
+                if (kapatmaVarmi!="0")
+                {
+                    MessageBox.Show("Ödeme veya İndirim varken ürün silinemez !");
+                    return;
+                }
+
+
+                decimal Sil_Miktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                if (Sil_Miktar > 1 && Convert.ToInt32(dbtools.DegerGetir("SELECT COUNT(*) FROM Cst_Recete_Satis WITH(NOLOCK) WHERE Rsat_Id = " + Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")) + " AND ISNULL(Rsat_AdisyonPr,0) = 0")) > 0)
+                {
+                    Klavye1 klv = new Klavye1();
+                    klv.txt_Sayi.Text = Sil_Miktar.ToString();
+                    klv.Tag = "SATIRSIL";
+                    klv.UrunAdi = Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad2"));
+                    klv.ShowDialog();
+                    if (klv.Cikis)
+                    {
+                        return;
+                    }
+                    if (klv.sayi <= 0)
+                    {
+                        return;
+                    }
+                    if (Sil_Miktar < klv.sayi)
+                    {
+                        MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
+                        return;
+                    }
+                    Sil_Miktar = klv.sayi;
+                }
+
+                int satirId = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
+                indirimvarsaazalt(satirId, fisno, (int)Sil_Miktar);
+
+
+                string neden = "";
+                if (Rsat_SiparisPr && Departman.Kodlar_YazSipNedSor)
+                {
+                    Klavye2 klv = new Klavye2();
+                    klv.ShowDialog();
+
+                    if (klv.yazi == null)
+                    {
+                        MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
+                        return;
+                    }
+
+                    if (klv.yazi.Length == 0)
+                    {
+                        MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
+                        return;
+                    }
+
+                    neden = klv.yazi;
+                }
+
+                string yazdirilmissa = "Yazdırılmamış";
+                if (Departman.Siparis && Param.satirsilfiscikmasinaktif == false)
+                {
+                    FisPr fis = new FisPr();
+                    string sonuc = fis.newIptalPr(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), Sil_Miktar);
+
+
+                    if (fis.yazdirilmismi)
+                    {
+                        yazdirilmissa = "Yazdırılmış";
+                    }
+                    if (sonuc != "OK")
+                    {
+                        MessageBox.Show(sonuc);
+                    }
+                }
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " İade Edildi", fisno, Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
+
+
+
+                Fis_Islem.Satir_Sil(satirId, Sil_Miktar);
+
+
+                int satirsay = Convert.ToInt32(dbtools.DegerGetir("select COUNT(*) from Cst_Recete_Satis WITH(NOLOCK) where Rsat_Fisno = '" + fisno + "' and Rsat_Ba = 'B' "));
+                if (satirsay == 0)
+                {
+                    dbtools.execcmd("update Pos_Masa set Masa_Durum = 0, Masa_Ozel = '' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+                    dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Fisno = '" + fisno+ "'");
+                }
+
+
+                gridyenile();
+
+              
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "btnUrunIade_Click", "", ex);
+            }
+        }
     }
 }
 

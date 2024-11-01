@@ -238,6 +238,8 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimTransfer') IS NULL BEGIN ALT
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimBakiyeTransfer') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimBakiyeTransfer] bit END;
 
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'urunIade') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [urunIade] bit END;
+
 IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'xzraporyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [xzraporyazici] nvarchar(250) END;
 
 IF COL_LENGTH('Pos_Kodlar', 'hesapDokTutarSifir') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD hesapDokTutarSifir bit END;

@@ -60,7 +60,8 @@ namespace Pos.Class
             Menu,
             Urun_Tahsilat,
             Print,
-            ikram
+            ikram,
+            UrunIade
         };
 
         public enum Log_Islem
@@ -68,7 +69,8 @@ namespace Pos.Class
             Kaydet,
             Duzelt,
             Sil,
-            FixKaydet
+            FixKaydet,
+            UrunIade
         };
 
         public enum Log_Program

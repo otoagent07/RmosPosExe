@@ -119,6 +119,7 @@ namespace Pos.Class
         public static bool R_TopluIsle { get; set; }
 
         public static bool S_Sp_Sil { get; set; }
+        public static bool urunIade { get; set; }
 
         public static bool ExtraFolio { get; set; }
 
@@ -212,6 +213,7 @@ namespace Pos.Class
                     + " ISNULL(Pos_HesapArti,0) as Pos_HesapArti, ISNULL(User_AP,1) as User_AP, ISNULL(Pos_OdaKontrol,0) as Pos_OdaKontrol,U_BackUser "
                     + ", ISNULL(Pos_KartfIndirimAktif,0) as Pos_KartfIndirimAktif "
                     + ", ISNULL(Pos_ServisPayiDuzelt,0) as Pos_ServisPayiDuzelt "
+                    + ", ISNULL(urunIade,0) as urunIade "
                     + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + P_Kod + "'");
 
             if (dt.Rows.Count > 0)
@@ -297,6 +299,7 @@ namespace Pos.Class
                 H_HizliSatis = Convert.ToBoolean(dt.Rows[0]["H_HizliSatis"]);
                 R_TopluIsle = Convert.ToBoolean(dt.Rows[0]["R_TopluIsle"]);
                 S_Sp_Sil = Convert.ToBoolean(dt.Rows[0]["S_Sp_Sil"]);
+                urunIade = Convert.ToBoolean(dt.Rows[0]["urunIade"]);
                 ExtraFolio = Convert.ToBoolean(dt.Rows[0]["ExtraFolio"]);
 
 

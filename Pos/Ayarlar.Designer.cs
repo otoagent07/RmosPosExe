@@ -276,6 +276,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.mobilCallerIdAktif = new DevExpress.XtraEditors.CheckEdit();
             this.otomatikOdenmez = new DevExpress.XtraEditors.CheckEdit();
             this.ikinciEkranAktif = new DevExpress.XtraEditors.CheckEdit();
             this.urunAdinaOdaklan = new DevExpress.XtraEditors.CheckEdit();
@@ -1119,6 +1120,7 @@
             this.chk_Altgrup = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Anagrup = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Malzeme = new DevExpress.XtraEditors.CheckEdit();
+            this.cariTahsilatlari = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odenmez = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Cari = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Servis = new DevExpress.XtraEditors.CheckEdit();
@@ -1270,8 +1272,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.mobilCallerIdAktif = new DevExpress.XtraEditors.CheckEdit();
-            this.cariTahsilatlari = new DevExpress.XtraEditors.CheckEdit();
+            this.urunIade = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1460,6 +1461,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mobilCallerIdAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otomatikOdenmez.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ikinciEkranAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.urunAdinaOdaklan.Properties)).BeginInit();
@@ -2038,6 +2040,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Altgrup.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Anagrup.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Malzeme.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cariTahsilatlari.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odenmez.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Cari.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).BeginInit();
@@ -2128,8 +2131,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mobilCallerIdAktif.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cariTahsilatlari.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urunIade.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4189,6 +4191,12 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // mobilCallerIdAktif
+            // 
+            resources.ApplyResources(this.mobilCallerIdAktif, "mobilCallerIdAktif");
+            this.mobilCallerIdAktif.Name = "mobilCallerIdAktif";
+            this.mobilCallerIdAktif.Properties.Caption = resources.GetString("mobilCallerIdAktif.Properties.Caption");
             // 
             // otomatikOdenmez
             // 
@@ -10506,6 +10514,7 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.urunIade);
             this.xtraTabPage1.Controls.Add(this.Pos_ServisPayiDuzelt);
             this.xtraTabPage1.Controls.Add(this.Pos_KartfIndirimAktif);
             this.xtraTabPage1.Controls.Add(this.chk_K_KasaRapor);
@@ -11381,6 +11390,12 @@
             resources.ApplyResources(this.chk_Malzeme, "chk_Malzeme");
             this.chk_Malzeme.Name = "chk_Malzeme";
             this.chk_Malzeme.Properties.Caption = resources.GetString("chk_Malzeme.Properties.Caption");
+            // 
+            // cariTahsilatlari
+            // 
+            resources.ApplyResources(this.cariTahsilatlari, "cariTahsilatlari");
+            this.cariTahsilatlari.Name = "cariTahsilatlari";
+            this.cariTahsilatlari.Properties.Caption = resources.GetString("cariTahsilatlari.Properties.Caption");
             // 
             // chk_Odenmez
             // 
@@ -12645,17 +12660,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // mobilCallerIdAktif
+            // urunIade
             // 
-            resources.ApplyResources(this.mobilCallerIdAktif, "mobilCallerIdAktif");
-            this.mobilCallerIdAktif.Name = "mobilCallerIdAktif";
-            this.mobilCallerIdAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
-            // cariTahsilatlari
-            // 
-            resources.ApplyResources(this.cariTahsilatlari, "cariTahsilatlari");
-            this.cariTahsilatlari.Name = "cariTahsilatlari";
-            this.cariTahsilatlari.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption1");
+            resources.ApplyResources(this.urunIade, "urunIade");
+            this.urunIade.Name = "urunIade";
+            this.urunIade.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -12857,6 +12866,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mobilCallerIdAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otomatikOdenmez.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ikinciEkranAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.urunAdinaOdaklan.Properties)).EndInit();
@@ -13456,6 +13466,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Altgrup.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Anagrup.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Malzeme.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cariTahsilatlari.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odenmez.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Cari.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).EndInit();
@@ -13553,8 +13564,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mobilCallerIdAktif.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cariTahsilatlari.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urunIade.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14803,5 +14813,6 @@
         private DevExpress.XtraEditors.CheckEdit otomatikOdenmez;
         private DevExpress.XtraEditors.CheckEdit mobilCallerIdAktif;
         private DevExpress.XtraEditors.CheckEdit cariTahsilatlari;
+        private DevExpress.XtraEditors.CheckEdit urunIade;
     }
 }

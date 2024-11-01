@@ -3110,9 +3110,19 @@ namespace Pos
             try
             {
 
+                string fisno = bartxt_FisNo.EditValue.ToString();
 
                 if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty)
                 {
+                    return;
+                }
+
+
+                string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null";
+                string kapatmaVarmi = dbtools.DegerGetir(qq);
+                if (kapatmaVarmi != "0")
+                {
+                    MessageBox.Show("Ödeme veya İndirim varken ürün silinemez !");
                     return;
                 }
 
@@ -3200,7 +3210,6 @@ namespace Pos
                 }
 
                 int satirId = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
-                string fisno = bartxt_FisNo.EditValue.ToString();
                 indirimvarsaazalt(satirId, fisno, (int)Sil_Miktar);
 
 
