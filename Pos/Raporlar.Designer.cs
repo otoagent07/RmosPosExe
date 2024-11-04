@@ -178,6 +178,7 @@
             this.gridColumn138 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn140 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn144 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn147 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tab_Genelrapor = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStripGenelCek = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -240,6 +241,7 @@
             this.bandedGridColumn81 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn85 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.bandedGridColumn90 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.bandedGridColumn91 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.tab_Iptalcekraporu = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip_IptalCekRapor = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -1428,7 +1430,8 @@
             this.gridColumn138,
             this.gridColumn139,
             this.gridColumn140,
-            this.gridColumn144});
+            this.gridColumn144,
+            this.gridColumn147});
             gridFormatRule1.Column = this.bandedGridColumn41;
             gridFormatRule1.Name = "Format0";
             formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.Red;
@@ -1955,6 +1958,15 @@
             this.gridColumn144.FieldName = "Banka";
             this.gridColumn144.Name = "gridColumn144";
             // 
+            // gridColumn147
+            // 
+            this.gridColumn147.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.gridColumn147.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.gridColumn147, "gridColumn147");
+            this.gridColumn147.FieldName = "sirano";
+            this.gridColumn147.Name = "gridColumn147";
+            this.gridColumn147.OptionsColumn.AllowFocus = false;
+            // 
             // tab_Genelrapor
             // 
             this.tab_Genelrapor.Controls.Add(this.gridControl1);
@@ -2060,7 +2072,8 @@
             this.bandedGridColumn87,
             this.bandedGridColumn88,
             this.bandedGridColumn89,
-            this.bandedGridColumn90});
+            this.bandedGridColumn90,
+            this.bandedGridColumn91});
             styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
             styleFormatCondition1.Column = this.bandedGridColumn1;
@@ -2623,6 +2636,15 @@
             this.bandedGridColumn90.FieldName = "Rsat_YerliYabanci";
             this.bandedGridColumn90.Name = "bandedGridColumn90";
             this.bandedGridColumn90.OptionsColumn.AllowFocus = false;
+            // 
+            // bandedGridColumn91
+            // 
+            this.bandedGridColumn91.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
+            this.bandedGridColumn91.AppearanceCell.Options.UseBackColor = true;
+            resources.ApplyResources(this.bandedGridColumn91, "bandedGridColumn91");
+            this.bandedGridColumn91.FieldName = "sirano";
+            this.bandedGridColumn91.Name = "bandedGridColumn91";
+            this.bandedGridColumn91.OptionsColumn.AllowFocus = false;
             // 
             // tab_Iptalcekraporu
             // 
@@ -4849,5 +4871,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn146;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn145;
         private DevExpress.XtraEditors.CheckEdit checkEditPaketHaricHepsi;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn147;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn bandedGridColumn91;
     }
 }

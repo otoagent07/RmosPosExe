@@ -4301,14 +4301,17 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
         {
             if (Masa_Paket)
             {
+
+                mCari = Cari.Cari_Getir(bartxt_OdaNo.EditValue.ToString());
+
+
                 CariHesap cari = new CariHesap();
                 cari.xtraTabControl1.SelectedTabPageIndex = 1;
                 cari.Tel = CariTel;
                 cari.AcikAdres = AcikAdres;
                 cari.CariKod = Cari_Kod;
+                cari.carim = mCari;
                 cari.ShowDialog();
-
-                mCari = Cari.Cari_Getir(cari.CariKod);
 
                 string carikod = cari.CariKod;
                 if (carikod != "")

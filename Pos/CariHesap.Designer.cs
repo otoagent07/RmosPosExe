@@ -2191,6 +2191,7 @@
             this.txt_Cari_Kod.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Cari_Kod.Properties.MaxLength = 100;
             this.txt_Cari_Kod.Click += new System.EventHandler(this.txt_Cari_Kod_Click);
+            this.txt_Cari_Kod.Leave += new System.EventHandler(this.txt_Cari_Kod_Leave);
             // 
             // txt_Cari_Ad
             // 
@@ -3499,7 +3500,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.xtraTabControl1);
             this.Name = "CariHesap";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CariHesap_FormClosed);
             this.Load += new System.EventHandler(this.Cari_Load);
+            this.Shown += new System.EventHandler(this.CariHesap_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.tab_Cari_Hesap.ResumeLayout(false);

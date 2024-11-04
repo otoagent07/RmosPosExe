@@ -26,6 +26,7 @@ namespace Pos.Class
         public string Cari_Il { get; set; }
         public string Cari_Ilce { get; set; }
         public string Cari_Mahalle { get; set; }
+        public string Cari_Tel2 { get; set; }
         public static Cari Cari_Getir(string Kod)
         {
             Cari c = new Cari();
@@ -63,6 +64,7 @@ namespace Pos.Class
                 c.Cari_Il = Convert.ToString(dt.Rows[0]["Cari_Il"]);
                 c.Cari_Ilce = Convert.ToString(dt.Rows[0]["Cari_Ilce"]);
                 c.Cari_Mahalle = Convert.ToString(dt.Rows[0]["Cari_Mahalle"]);
+                c.Cari_Tel2 = Convert.ToString(dt.Rows[0]["Cari_Tel2"]);
 
                 return c;
             }

@@ -29,6 +29,9 @@ namespace Pos
         public string CariKod = "";
         public bool AcikAdres = false;
         public bool BilgiCari = false;
+
+        public Cari carim = null; // 04.11.2024 de değerler dolması için eklendi
+
         public CariHesap()
         {
             InitializeComponent();
@@ -1452,6 +1455,8 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
             
 
         }
+
+        
         public static string MyClass = "CariHesap";
         private void btnCariRap3Listele_Click(object sender, EventArgs e)
         {
@@ -1849,5 +1854,156 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
             cariKodPaketGuncelle = txt_Cari_Kod.Text;
             this.Close();
         }
+
+        private void CariHesap_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            carim = null;
+        }
+
+        private void CariHesap_Shown(object sender, EventArgs e)
+        {
+            try
+            {
+                if (carim != null)
+                {
+                    txt_Cari_Kod.Text = carim.Cari_Kod;
+                    cariBul();
+                    //txt_Cari_Ad.Text = carim.Cari_Ad;
+
+                    //txt_Cari_Soyad.Text = carim.Cari_Soyad;
+                    //txt_Cari_Telefon.Text = carim.Cari_Tel;
+                    //txt_Cari_Telefon2.Text = carim.Cari_Tel2;
+                    //txt_Cari_Adres1.Text = carim.Cari_Adres1;
+                    //txt_Cari_Adres2.Text = carim.Cari_Adres2;
+                    //txt_Cari_Adres3.Text = carim.Cari_Adres3;
+                    //txt_Cari_Kart_No.Text = carim.Cari_Kart;
+                    //txt_Cari_Email.Text = carim.Cari_Mail;
+                    //look_Cari_Il.EditValue = carim.Cari_Il;
+                    //look_Cari_Ilce.EditValue = carim.Cari_Ilce;
+                    //look_Cari_Mahalle.EditValue = carim.Cari_Mahalle;
+                    //txt_Cari_F_Vergino.Text = carim.Cari_Vergino;
+                    //txt_Cari_F_Vergidaire.Text = carim.Cari_Vergidarie;
+                    //txt_Cari_F_Adres1.Text = carim.Cari_Fadres1;
+                    //txt_Cari_F_Adres2.Text = carim.Cari_Fadres2;
+                    //txt_Cari_F_Unvan.Text = carim.Cari_Funvan;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            
+        }
+
+        private void txt_Cari_Kod_Leave(object sender, EventArgs e)
+        {
+            cariBul();
+        }
+
+        public void cariBul()
+        {
+            try
+            {
+                DataTable dt = dbtools.SelectTable($@"
+        SELECT ISNULL(Cari_Id,0)            as Cari_Id
+      , ISNULL(Cari_Kod, '')                as Cari_Kod
+      , ISNULL(Cari_Ad, '')                 as Cari_Ad
+      , ISNULL(Cari_Soyad, '')              as Cari_Soyad
+      , ISNULL(Cari_Tel, '')                as Cari_Tel
+      , ISNULL(Cari_Adres1, '')             as Cari_Adres1
+      , ISNULL(Cari_Adres2, '')             as Cari_Adres2
+      , ISNULL(Cari_Adres3, '')             as Cari_Adres3
+      , ISNULL(Cari_Funvan, '')             as Cari_Funvan
+      , ISNULL(Cari_Fadres1, '')            as Cari_Fadres1
+      , ISNULL(Cari_Fadres2, '')            as Cari_Fadres2
+      , ISNULL(Cari_Vergidarie, '')         as Cari_Vergidarie
+      , ISNULL(Cari_Vergino, '')            as Cari_Vergino
+      , ISNULL(Cari_Mail, '')               as Cari_Mail
+      , ISNULL(Cari_Kart, '')               as Cari_Kart
+      , ISNULL(Cari_Tel2, '')               as Cari_Tel2
+      , ISNULL(Cari_Email, '')              as Cari_Email
+      , ISNULL(Cari_Tip, 'C')               as Cari_Tip
+      , ISNULL(Cari_Limit, 0)               as Cari_Limit
+      , ISNULL(Cari_LimitTutar, 0)          as Cari_LimitTutar
+      , ISNULL(Cari_Il, '')                 as Cari_Il
+      , ISNULL(Cari_Ilce, '')               as Cari_Ilce
+      , ISNULL(Cari_Mahalle, '')            as Cari_Mahalle
+      , ISNULL(Cari_MuhasebeKodu, '')       as Cari_MuhasebeKodu
+      , ISNULL(Cari_Aktif, 1)               as Cari_Aktif
+      , ISNULL(Cari_YS_AddressId, 0)        as Cari_YS_AddressId
+      , ISNULL(Cari_YS_CustomerID, '')      as Cari_YS_CustomerID
+      , ISNULL(Cari_Funvan2, '')            as Cari_Funvan2
+      , ISNULL(Cari_DogumTar, getdate())    as Cari_DogumTar
+      , ISNULL(Cari_indirimOran,0)          as Cari_indirimOran
+  FROM [dbo].[Pos_Cari] where Cari_Kod='{txt_Cari_Kod.Text}'");
+
+                if (dt==null || dt.Rows.Count==0)
+                {
+                    look_Cari_Tip.EditValue = "";
+                    txt_Cari_Kod.EditValue = "";
+                    txt_Cari_Ad.EditValue = "";
+                    txt_Cari_Soyad.EditValue = "";
+                    txt_Cari_Telefon.EditValue = "";
+                    txt_Cari_Adres1.EditValue = "";
+                    txt_Cari_Adres2.EditValue = "";
+                    txt_Cari_Adres3.EditValue = "";
+                    txt_Cari_F_Unvan.EditValue = "";
+                    txt_Cari_F_Unvan2.EditValue = "";
+                    txt_Cari_F_Adres1.EditValue = "";
+                    txt_Cari_F_Adres2.EditValue = "";
+                    txt_Cari_F_Vergidaire.EditValue = "";
+                    txt_Cari_F_Vergino.EditValue = "";
+                    txt_Cari_F_Mail.EditValue = "";
+                    txt_Cari_Kart_No.EditValue = "";
+                    txt_Cari_Telefon2.EditValue = "";
+                    txt_Cari_Email.EditValue = "";
+                    chk_Cari_limit.Checked = false;
+                    spn_Cari_Limit.Value = 0;
+                    look_Cari_Il.EditValue = "";
+                    look_Cari_Ilce.EditValue = "";
+                    look_Cari_Mahalle.EditValue = "";
+                    look_CariMuh.EditValue = "";
+                    Cari_Aktif.Checked = false;
+                    Cari_DogumTar.EditValue = "";
+                    txtIndOran.EditValue = "";
+                    return;
+                }
+
+                look_Cari_Tip.EditValue = Convert.ToString(dt.Rows[0]["Cari_Tip"].ToString());
+
+                txt_Cari_Kod.EditValue = Convert.ToString(dt.Rows[0]["Cari_Kod"].ToString());
+                txt_Cari_Ad.EditValue = Convert.ToString(dt.Rows[0]["Cari_Ad"].ToString());
+                txt_Cari_Soyad.EditValue = Convert.ToString(dt.Rows[0]["Cari_Soyad"].ToString());
+                txt_Cari_Telefon.EditValue = Convert.ToString(dt.Rows[0]["Cari_Tel"].ToString());
+                txt_Cari_Adres1.EditValue = Convert.ToString(dt.Rows[0]["Cari_Adres1"].ToString());
+                txt_Cari_Adres2.EditValue = Convert.ToString(dt.Rows[0]["Cari_Adres2"].ToString());
+                txt_Cari_Adres3.EditValue = Convert.ToString(dt.Rows[0]["Cari_Adres3"].ToString());
+                txt_Cari_F_Unvan.EditValue = Convert.ToString(dt.Rows[0]["Cari_Funvan"].ToString());
+                txt_Cari_F_Unvan2.EditValue = Convert.ToString(dt.Rows[0]["Cari_Funvan2"].ToString());
+                txt_Cari_F_Adres1.EditValue = Convert.ToString(dt.Rows[0]["Cari_Fadres1"].ToString());
+                txt_Cari_F_Adres2.EditValue = Convert.ToString(dt.Rows[0]["Cari_Fadres2"].ToString());
+                txt_Cari_F_Vergidaire.EditValue = Convert.ToString(dt.Rows[0]["Cari_Vergidarie"].ToString());
+                txt_Cari_F_Vergino.EditValue = Convert.ToString(dt.Rows[0]["Cari_Vergino"].ToString());
+                txt_Cari_F_Mail.EditValue = Convert.ToString(dt.Rows[0]["Cari_Mail"].ToString());
+                txt_Cari_Kart_No.EditValue = Convert.ToString(dt.Rows[0]["Cari_Kart"].ToString());
+                txt_Cari_Telefon2.EditValue = Convert.ToString(dt.Rows[0]["Cari_Tel2"].ToString());
+                txt_Cari_Email.EditValue = Convert.ToString(dt.Rows[0]["Cari_Email"].ToString());
+                chk_Cari_limit.Checked = Convert.ToBoolean(dt.Rows[0]["Cari_Limit"]);
+                spn_Cari_Limit.Value = Convert.ToDecimal(dt.Rows[0]["Cari_LimitTutar"]);
+                look_Cari_Il.EditValue = Convert.ToString(dt.Rows[0]["Cari_Il"].ToString());
+                look_Cari_Ilce.EditValue = Convert.ToString(dt.Rows[0]["Cari_Ilce"].ToString());
+                look_Cari_Mahalle.EditValue = Convert.ToString(dt.Rows[0]["Cari_Mahalle"].ToString());
+                look_CariMuh.EditValue = Convert.ToString(dt.Rows[0]["Cari_MuhasebeKodu"].ToString());
+                Cari_Aktif.Checked = Convert.ToString(dt.Rows[0]["Cari_Aktif"]) == "" ? false : Convert.ToBoolean(dt.Rows[0]["Cari_Aktif"]);
+                Cari_DogumTar.EditValue = Convert.ToString(dt.Rows[0]["Cari_DogumTar"].ToString());
+                txtIndOran.EditValue = dt.Rows[0]["Cari_indirimOran"].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("cariBul " + ex.Message);
+            }
+            
+        }
+
     }
 }
