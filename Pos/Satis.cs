@@ -958,7 +958,7 @@ namespace Pos
                     //btn_Kapatma.Size = new System.Drawing.Size(68, 50);
                     btn_Kapatma.Size = new System.Drawing.Size(90, 43);
                     btn_Kapatma.TabStop = false;
-                    btn_Kapatma.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+                    //btn_Kapatma.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
                     btn_Kapatma.Font = new System.Drawing.Font("Tahoma", 10F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(162)));
                     btn_Kapatma.Appearance.TextOptions.Trimming = DevExpress.Utils.Trimming.Word;
                     btn_Kapatma.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;

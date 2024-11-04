@@ -261,7 +261,7 @@ namespace Pos
                     btn_Kapatma.Appearance.TextOptions.Trimming = DevExpress.Utils.Trimming.Word;
                     btn_Kapatma.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
                     btn_Kapatma.Appearance.Options.UseBackColor = true;
-                    btn_Kapatma.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+                    //btn_Kapatma.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
                     btn_Kapatma.Appearance.BackColor = color;
 
                     btn_Kapatma.Text = Convert.ToString(dt.Rows[i]["Pkod_Ad"]);
