@@ -3,10 +3,11 @@ using Pos.Class;
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace Pos
 {
-    public partial class Alt_Recete : DevExpress.XtraEditors.XtraForm
+    public partial class Alt_Recete : Form
     {
         public string ustReceteKodu { get; set; }
         public string ustReceteAdi { get; set; }

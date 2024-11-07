@@ -315,10 +315,10 @@
     <value>605, 111</value>
   </data>
   <data name="chk_MalzemePors.Properties.Caption" xml:space="preserve">
-    <value>Malzeme Porsiyon</value>
+    <value>Ürün Malzeme Porsiyon</value>
   </data>
   <data name="chk_MalzemePors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 19</value>
+    <value>135, 19</value>
   </data>
   <data name="chk_MalzemePors.TabIndex" type="System.Int32, mscorlib">
     <value>169</value>
@@ -463,7 +463,7 @@
     <value>605, 86</value>
   </data>
   <data name="chk_Malzeme.Properties.Caption" xml:space="preserve">
-    <value>Malzeme Özet</value>
+    <value>Ürün Özet</value>
   </data>
   <data name="chk_Malzeme.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 19</value>
@@ -559,7 +559,7 @@
     <value>605, 61</value>
   </data>
   <data name="chk_Grup.Properties.Caption" xml:space="preserve">
-    <value>Grup Özet</value>
+    <value>Ürün Grup Özet</value>
   </data>
   <data name="chk_Grup.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 19</value>
@@ -1090,10 +1090,10 @@
     <value>Bottom</value>
   </data>
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 590</value>
+    <value>0, 589</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1144, 42</value>
+    <value>1144, 43</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -1114,7 +1114,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 590</value>
+    <value>0, 589</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -1135,7 +1135,7 @@
     <value>1144, 0</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 590</value>
+    <value>0, 589</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
@@ -1210,7 +1210,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1144, 412</value>
+    <value>1144, 411</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
