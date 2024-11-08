@@ -412,7 +412,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.59";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.60";
 
 
 
@@ -2026,6 +2026,15 @@ No Cut Seçili Olsun
             {
                 Console.WriteLine("timerMobileCallerId_Tick -> hata var kontrol et");
             }
+        }
+
+        private void btnSifreDegis_Click(object sender, EventArgs e)
+        {
+            SifreDegistirForm sifreDegistirForm = new SifreDegistirForm();
+            sifreDegistirForm.ShowDialog();
+
+            loginOlNew();
+            departmanYukleNew();
         }
     }
 }

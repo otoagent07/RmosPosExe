@@ -94,6 +94,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.btnSifreDegis = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.btnAyarlar = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
@@ -742,6 +743,7 @@
             // 
             // groupControl3
             // 
+            this.groupControl3.Controls.Add(this.btnSifreDegis);
             this.groupControl3.Controls.Add(this.simpleButton6);
             this.groupControl3.Controls.Add(this.btnAyarlar);
             this.groupControl3.Controls.Add(this.simpleButton3);
@@ -750,6 +752,15 @@
             this.groupControl3.Controls.Add(this.btnDepDegis);
             resources.ApplyResources(this.groupControl3, "groupControl3");
             this.groupControl3.Name = "groupControl3";
+            // 
+            // btnSifreDegis
+            // 
+            this.btnSifreDegis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnSifreDegis.Appearance.Font")));
+            this.btnSifreDegis.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnSifreDegis, "btnSifreDegis");
+            this.btnSifreDegis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSifreDegis.ImageOptions.Image")));
+            this.btnSifreDegis.Name = "btnSifreDegis";
+            this.btnSifreDegis.Click += new System.EventHandler(this.btnSifreDegis_Click);
             // 
             // simpleButton6
             // 
@@ -1163,5 +1174,6 @@
         public DevExpress.XtraBars.Alerter.AlertControl alertControl3;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         public System.Windows.Forms.Timer timerMobileCallerId;
+        private DevExpress.XtraEditors.SimpleButton btnSifreDegis;
     }
 }

@@ -6280,7 +6280,7 @@ Sıfır Yap</value>
     <value>615, 82</value>
   </data>
   <data name="txtKendiMac.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 20</value>
+    <value>117, 20</value>
   </data>
   <data name="txtKendiMac.TabIndex" type="System.Int32, mscorlib">
     <value>365</value>
@@ -6304,7 +6304,7 @@ Sıfır Yap</value>
     <value>150, 423</value>
   </data>
   <data name="mobileCallerIdMacAdres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 20</value>
+    <value>131, 20</value>
   </data>
   <data name="mobileCallerIdMacAdres.TabIndex" type="System.Int32, mscorlib">
     <value>365</value>
@@ -6328,7 +6328,7 @@ Sıfır Yap</value>
     <value>150, 397</value>
   </data>
   <data name="txtSiparisTekrarPrintName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 20</value>
+    <value>131, 20</value>
   </data>
   <data name="txtSiparisTekrarPrintName.TabIndex" type="System.Int32, mscorlib">
     <value>365</value>
