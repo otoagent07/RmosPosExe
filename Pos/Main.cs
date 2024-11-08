@@ -412,7 +412,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.58";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.59";
 
 
 
@@ -470,10 +470,15 @@ namespace Pos
 
             }
         }
+
+        //string mac = Sabitler.MyGetMacAddress(); // benim yaptığım
+       public static string macadresim = ""; 
+
         private void Main_Load(object sender, EventArgs e)
         {
             try
             {
+                macadresim = dbtools.MacAdresi(); 
                 this.BringToFront();
                 isLogin = false;
                 if (direkGecis == false)
@@ -1991,6 +1996,11 @@ No Cut Seçili Olsun
         {
             try
             {
+                string paramMac = Param.mobileCallerIdMacAdres.ToString();
+                if (macadresim!= paramMac)
+                {
+                    return;
+                }
                 string query = @"select Caller_Id,Caller_Telno,Caller_Carikod,Caller_Tarih from Pos_CallerId where Caller_Durum=0";
                 DataTable data = dbtools.SelectTableR(query);
 

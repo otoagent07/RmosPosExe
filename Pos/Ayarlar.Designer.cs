@@ -1001,6 +1001,7 @@
             this.btn_Kul_TumYetki = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.urunIade = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_ServisPayiDuzelt = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_KartfIndirimAktif = new DevExpress.XtraEditors.CheckEdit();
             this.chk_K_KasaRapor = new DevExpress.XtraEditors.CheckEdit();
@@ -1272,7 +1273,10 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.urunIade = new DevExpress.XtraEditors.CheckEdit();
+            this.mobileCallerIdMacAdres = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit203 = new DevExpress.XtraEditors.TextEdit();
+            this.txtKendiMac = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit204 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1922,6 +1926,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.urunIade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_K_KasaRapor.Properties)).BeginInit();
@@ -2131,7 +2136,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urunIade.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileCallerIdMacAdres.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit203.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKendiMac.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit204.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4164,7 +4172,11 @@
             this.xtraTabPage8.Controls.Add(this.ikinciEkranAktif);
             this.xtraTabPage8.Controls.Add(this.urunAdinaOdaklan);
             this.xtraTabPage8.Controls.Add(this.tumPrinter);
+            this.xtraTabPage8.Controls.Add(this.txtKendiMac);
+            this.xtraTabPage8.Controls.Add(this.mobileCallerIdMacAdres);
             this.xtraTabPage8.Controls.Add(this.txtSiparisTekrarPrintName);
+            this.xtraTabPage8.Controls.Add(this.textEdit204);
+            this.xtraTabPage8.Controls.Add(this.textEdit203);
             this.xtraTabPage8.Controls.Add(this.textEdit202);
             this.xtraTabPage8.Controls.Add(this.servispayOdenmezIkramSil);
             this.xtraTabPage8.Controls.Add(this.servispayFooterda);
@@ -10588,6 +10600,12 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             // 
+            // urunIade
+            // 
+            resources.ApplyResources(this.urunIade, "urunIade");
+            this.urunIade.Name = "urunIade";
+            this.urunIade.Properties.Caption = resources.GetString("urunIade.Properties.Caption");
+            // 
             // Pos_ServisPayiDuzelt
             // 
             resources.ApplyResources(this.Pos_ServisPayiDuzelt, "Pos_ServisPayiDuzelt");
@@ -12660,11 +12678,29 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // urunIade
+            // mobileCallerIdMacAdres
             // 
-            resources.ApplyResources(this.urunIade, "urunIade");
-            this.urunIade.Name = "urunIade";
-            this.urunIade.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            resources.ApplyResources(this.mobileCallerIdMacAdres, "mobileCallerIdMacAdres");
+            this.mobileCallerIdMacAdres.Name = "mobileCallerIdMacAdres";
+            // 
+            // textEdit203
+            // 
+            resources.ApplyResources(this.textEdit203, "textEdit203");
+            this.textEdit203.Name = "textEdit203";
+            this.textEdit203.Properties.ReadOnly = true;
+            this.textEdit203.TabStop = false;
+            // 
+            // txtKendiMac
+            // 
+            resources.ApplyResources(this.txtKendiMac, "txtKendiMac");
+            this.txtKendiMac.Name = "txtKendiMac";
+            // 
+            // textEdit204
+            // 
+            resources.ApplyResources(this.textEdit204, "textEdit204");
+            this.textEdit204.Name = "textEdit204";
+            this.textEdit204.Properties.ReadOnly = true;
+            this.textEdit204.TabStop = false;
             // 
             // Ayarlar
             // 
@@ -13348,6 +13384,7 @@
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.urunIade.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_KartfIndirimAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_K_KasaRapor.Properties)).EndInit();
@@ -13564,7 +13601,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urunIade.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileCallerIdMacAdres.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit203.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKendiMac.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit204.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14814,5 +14854,9 @@
         private DevExpress.XtraEditors.CheckEdit mobilCallerIdAktif;
         private DevExpress.XtraEditors.CheckEdit cariTahsilatlari;
         private DevExpress.XtraEditors.CheckEdit urunIade;
+        private DevExpress.XtraEditors.TextEdit mobileCallerIdMacAdres;
+        private DevExpress.XtraEditors.TextEdit textEdit203;
+        private DevExpress.XtraEditors.TextEdit txtKendiMac;
+        private DevExpress.XtraEditors.TextEdit textEdit204;
     }
 }

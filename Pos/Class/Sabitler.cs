@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,10 +13,21 @@ namespace Pos.Class
     {
 
 
-        /*
+		/*
          Pkod_FisTipi P ise ikram O ise ödenmez
          */
-        public static bool odenmezVeyaIkramiseServisPayiSil(string fisno,string odemeKod)
+		public static string MyGetMacAddress()
+		{
+			string mac=  NetworkInterface
+			   .GetAllNetworkInterfaces()
+			   .Where(nic => nic.OperationalStatus == OperationalStatus.Up && nic.NetworkInterfaceType != NetworkInterfaceType.Loopback)
+			   .Select(nic => nic.GetPhysicalAddress().ToString())
+			   .FirstOrDefault();
+
+			return mac;
+		}
+
+		public static bool odenmezVeyaIkramiseServisPayiSil(string fisno,string odemeKod)
         {
             try
             {
