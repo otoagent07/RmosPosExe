@@ -848,7 +848,7 @@ namespace Pos
         bool cikis = true;
         int Fisno = 0;
 
-
+        // aa
 
         private void Fisno_Al()
         {
