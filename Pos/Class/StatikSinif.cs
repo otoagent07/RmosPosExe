@@ -38,19 +38,21 @@ namespace Pos.Class
             }
             catch (Exception ex)
             {
-               RHMesaj.MyMessageError(MyClass, "eadisyonAc", "",ex);
+                RHMesaj.MyMessageError(MyClass, "eadisyonAc", "", ex);
             }
         }
-        public static void siranoarttir()
+        public static string siranoarttir()
         {
             try
             {
                 string sirano = dbtools.DegerGetir("exec Cost_Fis_Sira @depKod='" + Departman.Dep_Kodu + "'");
+                return sirano;
             }
             catch (Exception ex)
             {
                 RHMesaj.MyMessageError("StatikSinif", "siranoarttir()", "", ex);
             }
+            return "0";
         }
         public static void siranosifirla()
         {
@@ -68,14 +70,14 @@ namespace Pos.Class
             string sirano = "0";
             try
             {
-                 sirano = dbtools.DegerGetir("Select top 1 isnull(sirano,0) as sirano  From Cst_Recete_Satis where Rsat_Fisno='"+ fisno + "' order by sirano desc");
+                sirano = dbtools.DegerGetir("Select top 1 isnull(sirano,0) as sirano  From Cst_Recete_Satis where Rsat_Fisno='" + fisno + "' order by sirano desc");
 
-                if (sirano=="0")
+                if (sirano == "0" || sirano == "")
                 {
-                    sirano = dbtools.DegerGetir("Select top 1 isnull(Kodlar_PosSiraNo,0) as sirano From Stok_Kodlar Where Kodlar_Sinif = '01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+                    sirano = siranoarttir();
                 }
 
-                dbtools.execcmdR("update Cst_Recete_Satis set sirano='"+sirano+ "' where Rsat_Fisno='" + fisno + "' ");
+                dbtools.execcmdR("update Cst_Recete_Satis set sirano='" + sirano + "' where Rsat_Fisno='" + fisno + "' ");
             }
             catch (Exception ex)
             {
@@ -271,8 +273,8 @@ IF COL_LENGTH('Pos_Kasahrk', 'Pkasa_dep') IS NULL BEGIN ALTER TABLE Pos_Kasahrk 
 
 
 
-      
-        public static string getTriggerAcilisTar() 
+
+        public static string getTriggerAcilisTar()
         {
             string queryTrig1 = @" CREATE TRIGGER trg_InsertRsat_AcilisTar
 	ON Cst_Recete_Satis
@@ -307,7 +309,7 @@ BEGIN EXEC('
 
             return queryTrig;
         }
-            public static void dilDegis(string dil = "tr-TR") // en-US
+        public static void dilDegis(string dil = "tr-TR") // en-US
         {
             try
             {

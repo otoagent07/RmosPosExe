@@ -858,7 +858,6 @@ namespace Pos
                 if (Convert.ToInt32(bartxt_FisNo.EditValue) == 0)
                 {
                     bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
-                    StatikSinif.siranoarttir();
                 }
 
             }
@@ -870,7 +869,6 @@ namespace Pos
                 //    bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
                 //}
                 bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
-                StatikSinif.siranoarttir();
             }
             else if ((Convert.ToString(this.Tag) != "M" || Convert.ToString(this.Tag) == "P") && Convert.ToString(this.Tag) != "H" && Convert.ToString(this.Tag) != "D" && cikis == false)
             {
@@ -880,7 +878,6 @@ namespace Pos
                 if (Convert.ToInt32(bartxt_FisNo.EditValue) == 0)
                 {
                     bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
-                    StatikSinif.siranoarttir();
                 }
             }
             else
@@ -892,7 +889,6 @@ namespace Pos
 
                     bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
                     Fisno = Convert.ToInt32(bartxt_FisNo.EditValue.ToString());
-                    StatikSinif.siranoarttir();
                 }
                 else
                 {
@@ -900,7 +896,6 @@ namespace Pos
                     if (Convert.ToInt32(bartxt_FisNo.EditValue) == 0)
                     {
                         bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
-                        StatikSinif.siranoarttir();
                     }
                 }
             }
