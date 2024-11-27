@@ -1743,6 +1743,14 @@ namespace Pos
 
         private void btn_Yazdirmadankapat_Click(object sender, EventArgs e)
         {
+
+            if (E_AdisyonDurum.Checked && cari_A == "" )
+            {
+                MessageBox.Show("E adisyon işaretliyken cari seçili olmak zorunda !");
+                return;
+            }
+
+
             if (odemeKodSaatAraligindaKapalimi())
             {
                 MessageBox.Show("Ödeme kodu kapalı");
@@ -2253,6 +2261,11 @@ namespace Pos
         }
         private void btn_Yazdirkapat_Click(object sender, EventArgs e)
         {
+            if (E_AdisyonDurum.Checked && cari_A == "")
+            {
+                MessageBox.Show("E adisyon işaretliyken cari seçili olmak zorunda !");
+                return;
+            }
             yazdirKapat();
             indirimYaz();
 
