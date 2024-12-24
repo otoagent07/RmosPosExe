@@ -211,7 +211,6 @@ ALTER TABLE Pos_Param ALTER COLUMN Param_Kur decimal(10,6);
 
 ALTER TABLE Rapor_Dizayn ALTER COLUMN Rapor_Sekil varbinary(MAX);
 
-ALTER TABLE Ys_Order ALTER COLUMN Address nvarchar(MAX);
 
 ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_AddressId nvarchar(2000);
 ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_CustomerID nvarchar(2000);
