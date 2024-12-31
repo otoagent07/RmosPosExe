@@ -8,11 +8,13 @@ using Pos.Print;
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Media;
 using System.Reflection;
 using System.Resources;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Pos
@@ -4770,6 +4772,36 @@ where  Rsat_Id='" + Rsat_Id + "'";
         {
             BarkodUrunBilgisiForm form = new BarkodUrunBilgisiForm();
             form.ShowDialog();
+        }
+
+
+        [DllImport("Kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+        private static extern bool IsWow64Process(IntPtr hProcess, out bool Wow64Process);
+
+        [DllImport("Kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+        private static extern bool Wow64DisableWow64FsRedirection(out IntPtr OldValue);
+
+
+
+        private void txt_Filtre_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool bWow64 = false;
+                IsWow64Process(Process.GetCurrentProcess().Handle, out bWow64);
+                if (bWow64)
+                {
+                    IntPtr OldValue = IntPtr.Zero;
+                    bool bRet = Wow64DisableWow64FsRedirection(out OldValue);
+                }
+                Process.Start(new ProcessStartInfo { UseShellExecute = true, FileName = "osk" });
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
 
