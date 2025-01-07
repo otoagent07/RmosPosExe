@@ -1286,7 +1286,7 @@ namespace Pos
                     Fis_Islem.Satis_Tip(Convert.ToInt32(bartxt_FisNo.EditValue), btn_Kapatma.Tag.ToString(), D_Pansiyon);
 
 
-                    //if (Param.Tesis_Tipi == 0) // 07.01.2025 
+                    //if (Param.Tesis_Tipi == 0) // 07.01.2025 de yorum satırı yapıldı
                     //{
                     //    Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID));
                     //}
