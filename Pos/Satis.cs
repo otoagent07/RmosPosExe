@@ -4794,6 +4794,12 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         private void txt_Filtre_Click(object sender, EventArgs e)
         {
+            klavyeac();
+
+        }
+
+        public void klavyeac()
+        {
             try
             {
                 bool bWow64 = false;
@@ -4810,32 +4816,35 @@ where  Rsat_Id='" + Rsat_Id + "'";
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
+        private void txt_Not_Click(object sender, EventArgs e)
+        {
+            klavyeac();
 
+        }
         /*
-                 string adsoyad = hesap.gridViewKisiyeSatis.GetFocusedRowCellValue("Ad Soyad").ToString();
+        string adsoyad = hesap.gridViewKisiyeSatis.GetFocusedRowCellValue("Ad Soyad").ToString();
 
-             string query = $@"select rec.Rec_Ad as 'Ürün Ad',Rsat_Miktar as Miktar,Rsat_Tutar as Toplam from Cst_Recete_Satis sat
+    string query = $@"select rec.Rec_Ad as 'Ürün Ad',Rsat_Miktar as Miktar,Rsat_Tutar as Toplam from Cst_Recete_Satis sat
 left join Cst_Recete rec on rec.Rec_Genelkod=sat.Rsat_Recete
 where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  ";
-             DataTable dataTable = dbtools.SelectTableR(query);
+    DataTable dataTable = dbtools.SelectTableR(query);
 
 
-             if (dataTable != null && dataTable.Rows.Count > 0)
-             {
-                 foreach (DataRow dr in dataTable.Rows)
-                 {
-                     dr["Miktar"] = dr["Miktar"].ToString().Replace(",0000", "");
-                     dr["Miktar"] = dr["Miktar"].ToString().Replace(",000", "");
-                     dr["Toplam"] = dr["Toplam"].ToString().Replace(",00", "");
-                     dr["Toplam"] = dr["Toplam"].ToString().Replace(",000", "");
-                     dr["Toplam"] = dr["Toplam"].ToString().Replace(",0000", "");
-                 }
+    if (dataTable != null && dataTable.Rows.Count > 0)
+    {
+        foreach (DataRow dr in dataTable.Rows)
+        {
+            dr["Miktar"] = dr["Miktar"].ToString().Replace(",0000", "");
+            dr["Miktar"] = dr["Miktar"].ToString().Replace(",000", "");
+            dr["Toplam"] = dr["Toplam"].ToString().Replace(",00", "");
+            dr["Toplam"] = dr["Toplam"].ToString().Replace(",000", "");
+            dr["Toplam"] = dr["Toplam"].ToString().Replace(",0000", "");
+        }
 
-             }
-              */
+    }
+     */
 
 
 
