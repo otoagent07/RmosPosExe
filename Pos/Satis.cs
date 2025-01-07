@@ -1267,7 +1267,12 @@ namespace Pos
                     }
                     else
                     {
-                        tutar = Convert.ToDecimal(gridColumn4.SummaryText);
+                        string toplam = gridColumn4.SummaryText;
+                        if (toplam=="")
+                        {
+                            toplam = "0";
+                        }
+                        tutar = Convert.ToDecimal(toplam);
                         doviztutar = tutar;
                     }
 
@@ -1279,10 +1284,14 @@ namespace Pos
 
                     Fis_Islem.Odeme_Al(Convert.ToInt32(bartxt_FisNo.EditValue), tutar, doviztutar, btn_Kapatma.Tag.ToString(), D_Mus_tipi, D_Oda_No, D_Folio, D_Cari_Kod, Split, Param.Doviz_Kodu, false);
                     Fis_Islem.Satis_Tip(Convert.ToInt32(bartxt_FisNo.EditValue), btn_Kapatma.Tag.ToString(), D_Pansiyon);
-                    if (Param.Tesis_Tipi == 0)
-                    {
-                        Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID));
-                    }
+
+
+                    //if (Param.Tesis_Tipi == 0) // 07.01.2025 
+                    //{
+                    //    Fis_Islem.Onburo_At(Convert.ToInt32(bartxt_FisNo.EditValue), Kart_No, FolioKart_ID == "" ? 0 : Convert.ToInt32(FolioKart_ID));
+                    //}
+
+
                     decimal folioBakiye = 0;
 
                     if (Param.Param_SatisArama == true)
@@ -1973,7 +1982,7 @@ namespace Pos
 
             if (dt.Rows.Count == 0 && (User.P_Kod.Equals("999") || User.P_Kod.ToUpper().Equals("RMOS")))
             {
-                dbtools.execcmd("delete from Pos_Grup where Kont_Anagrup ='" + Ana_Grup + "' and Kont_Aragrup='" + Alt_Grup + "' and Kont_Departman='" + Departman.Dep_Kodu + "'");
+                // dbtools.execcmd("delete from Pos_Grup where Kont_Anagrup ='" + Ana_Grup + "' and Kont_Aragrup='" + Alt_Grup + "' and Kont_Departman='" + Departman.Dep_Kodu + "'");
 
                 if (urunleriYenile)
                 {
