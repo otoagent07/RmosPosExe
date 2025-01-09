@@ -556,6 +556,20 @@ order by Caller_Id desc";
                             continue;
                         }
 
+
+                        if (dtSatis.Columns[j].ColumnName == "Rsat_HapyhourTutar")
+                        {
+                            value += "0,";
+                            continue;
+                        }
+
+                        if (dtSatis.Columns[j].ColumnName == "Rsat_EntegreToplamFiyat")
+                        {
+                            value += "0,";
+                            continue;
+                        }
+
+
                         value += "'" + Convert.ToString(dtSatis.Rows[i][j]).Replace(",", ".") + "',";
                     }
                     value = value.Substring(0, value.Length - 1);
