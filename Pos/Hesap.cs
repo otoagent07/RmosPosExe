@@ -3715,7 +3715,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 }
 
 
-                string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null";
+                string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null and Rsat_Kapatma<>''";
                 string kapatmaVarmi = dbtools.DegerGetir(qq);
                 if (kapatmaVarmi!="0")
                 {

@@ -280,6 +280,7 @@
             // 
             this.btn_Odemetutari.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Odemetutari.Appearance.Font")));
             this.btn_Odemetutari.Appearance.Options.UseFont = true;
+            this.btn_Odemetutari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Odemetutari.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Odemetutari, "btn_Odemetutari");
             this.btn_Odemetutari.Name = "btn_Odemetutari";
             this.btn_Odemetutari.Click += new System.EventHandler(this.btn_Odemetutari_Click);
@@ -1016,12 +1017,12 @@
             // 
             resources.ApplyResources(this.btnUrunIade, "btnUrunIade");
             this.btnUrunIade.Appearance.BackColor = System.Drawing.Color.Indigo;
-            this.btnUrunIade.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.btnUrunIade.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnUrunIade.Appearance.Font")));
             this.btnUrunIade.Appearance.Options.UseBackColor = true;
             this.btnUrunIade.Appearance.Options.UseFont = true;
             this.btnUrunIade.Appearance.Options.UseTextOptions = true;
             this.btnUrunIade.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.btnUrunIade.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnUrunIade.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunIade.ImageOptions.Image")));
             this.btnUrunIade.Name = "btnUrunIade";
             this.btnUrunIade.Click += new System.EventHandler(this.btnUrunIade_Click);
             // 

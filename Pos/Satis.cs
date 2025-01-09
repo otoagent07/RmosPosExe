@@ -149,7 +149,7 @@ namespace Pos
                 {
                     if (urunleriYenile)
                     {
-                        Ust_Yenile();
+                         Ust_Yenile(); // 09.01.2025 de kaldırıldı
                     }
 
                 }
@@ -1920,7 +1920,7 @@ namespace Pos
 
                     if (i == 0)
                     {
-                        btn_AltGrup.PerformClick();
+                        //btn_AltGrup.PerformClick();
                     }
                 }
             }
@@ -3124,7 +3124,7 @@ namespace Pos
                 }
 
 
-                string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null";
+                string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null and Rsat_Kapatma<>''";
                 string kapatmaVarmi = dbtools.DegerGetir(qq);
                 if (kapatmaVarmi != "0")
                 {

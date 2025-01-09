@@ -1939,7 +1939,6 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
 
                 if (dt==null || dt.Rows.Count==0)
                 {
-                    look_Cari_Tip.EditValue = "";
                     txt_Cari_Kod.EditValue = "";
                     txt_Cari_Ad.EditValue = "";
                     txt_Cari_Soyad.EditValue = "";
@@ -1963,13 +1962,17 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                     look_Cari_Ilce.EditValue = "";
                     look_Cari_Mahalle.EditValue = "";
                     look_CariMuh.EditValue = "";
-                    Cari_Aktif.Checked = false;
                     Cari_DogumTar.EditValue = "";
                     txtIndOran.EditValue = "";
                     return;
                 }
 
-                look_Cari_Tip.EditValue = Convert.ToString(dt.Rows[0]["Cari_Tip"].ToString());
+               var a = Convert.ToString(dt.Rows[0]["Cari_Tip"].ToString());
+
+                if (a!="")
+                {
+                    look_Cari_Tip.EditValue = a;
+                }
 
                 txt_Cari_Kod.EditValue = Convert.ToString(dt.Rows[0]["Cari_Kod"].ToString());
                 txt_Cari_Ad.EditValue = Convert.ToString(dt.Rows[0]["Cari_Ad"].ToString());
@@ -1994,7 +1997,13 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                 look_Cari_Ilce.EditValue = Convert.ToString(dt.Rows[0]["Cari_Ilce"].ToString());
                 look_Cari_Mahalle.EditValue = Convert.ToString(dt.Rows[0]["Cari_Mahalle"].ToString());
                 look_CariMuh.EditValue = Convert.ToString(dt.Rows[0]["Cari_MuhasebeKodu"].ToString());
-                Cari_Aktif.Checked = Convert.ToString(dt.Rows[0]["Cari_Aktif"]) == "" ? false : Convert.ToBoolean(dt.Rows[0]["Cari_Aktif"]);
+
+
+                if (Convert.ToString(dt.Rows[0]["Cari_Aktif"]) != "")
+                {
+                    Cari_Aktif.Checked = Convert.ToBoolean(dt.Rows[0]["Cari_Aktif"]);
+                }
+
                 Cari_DogumTar.EditValue = Convert.ToString(dt.Rows[0]["Cari_DogumTar"].ToString());
                 txtIndOran.EditValue = dt.Rows[0]["Cari_indirimOran"].ToString();
             }
