@@ -62,6 +62,14 @@ namespace Pos
                 gridView1.RestoreLayoutFromXml(fileName);
             }
 
+
+            string fileName2 = getDizaynPath_kp();
+            if (File.Exists(fileName2))
+            {
+                gridView2.RestoreLayoutFromXml(fileName2);
+            }
+
+
         }
 
 
@@ -787,8 +795,18 @@ order by Caller_Id desc";
         {
             try
             {
-                gridView1.SaveLayoutToXml(getDizaynPath());
-                MessageBox.Show("Grid Dizayn Kaydedildi");
+                if (xtraTabControl1.SelectedTabPage==tab_Paket)
+                {
+                    gridView1.SaveLayoutToXml(getDizaynPath());
+                    MessageBox.Show("Grid Dizayn Kaydedildi");
+                }
+
+                if (xtraTabControl1.SelectedTabPage == tab_KapaliPaket)
+                {
+                    gridView2.SaveLayoutToXml(getDizaynPath_kp());
+                    MessageBox.Show("Grid Dizayn Kaydedildi");
+                }
+
             }
             catch (Exception ex)
             {
@@ -805,6 +823,17 @@ order by Caller_Id desc";
             return klasorAd + @"\" + User.P_Kod + "_Paket.xml";
         }
 
+        public string getDizaynPath_kp()
+        {
+            string klasorAd = "GridDizaynPos";
+            if (!Directory.Exists(klasorAd))
+            {
+                Directory.CreateDirectory(klasorAd);
+            }
+            return klasorAd + @"\" + User.P_Kod + "_Paket_kp.xml";
+        }
+
+
         public static string MyClass = "Paket";
         private void btnGridDizaynSil_Click(object sender, EventArgs e)
         {
@@ -816,7 +845,19 @@ order by Caller_Id desc";
                 }
 
 
+
                 string path = getDizaynPath();
+
+
+                if (xtraTabControl1.SelectedTabPage==tab_Paket)
+                {
+
+                }
+
+                if (xtraTabControl1.SelectedTabPage == tab_KapaliPaket)
+                {
+                    path = getDizaynPath_kp();
+                }
 
                 if (File.Exists(path))
                 {

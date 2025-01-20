@@ -966,6 +966,7 @@
             // 
             // gridControl2
             // 
+            this.gridControl2.ContextMenuStrip = this.contextMenuStrip_LogRapor;
             resources.ApplyResources(this.gridControl2, "gridControl2");
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";

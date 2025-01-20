@@ -1981,6 +1981,19 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         private void HesapBak()
         {
 
+            string fisno = Convert.ToInt32(bartxt_FisNo.EditValue).ToString();
+
+
+            string query = $"exec Ingenico_Islem @Fisno={fisno}";
+
+            string ingenicoislemdemi = dbtools.DegerGetir(query);
+
+            if (ingenicoislemdemi!="0")
+            {
+                MessageBox.Show("Fiş Yazarkasa da işlem görüyor...");
+                return;
+            }
+
             if (isYazdirilmamisSiparis())
             {
                 return;

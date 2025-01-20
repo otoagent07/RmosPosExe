@@ -364,24 +364,23 @@
   </data>
   <data name="btn_Odemetutari.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAArdEVYdFRpdGxlAEZvcm1hdE51bWJlckN1cnJlbmN5O0N1cnJlbmN5O0Zvcm1hdDsDOcfvAAAD
-        eklEQVQ4T23Sa0zTVxgG8DO8JH7VOFMgjhF1YoCCSwgWlU2EAq5SSrl1BYk0jgFzM1hphU3mCgoUxhah
-        cqloq00lAgV0hFEEthWRCnbIpbVggY4RcJlFWgjd9Nn+zfZh6T48n877/nLOyUNer08SQsgbDy9zfcaq
-        UmXjVbzZ8apUPKlMnRutSKkfKOb4UOfOJS0ZlSYTAP+Ja3m4LJk59nXKyq/aStgtnfhzeQj2KQ2snZdg
-        KE9aeSBhR1Nzjy9z3IGfLsb7/CxNsr00t2N9sRMjZRx08nZDX8zC6rQSvxsaoS+OX24/G+U79NVxd0Av
-        YVf/0l0J51IzxupO4GEJB/ZpDQYuHsdcWw5WxsphaS3AD5/H1hBCPNyAwSLWvP3ZbazP1qMjIwi/PaqB
-        Y7ICa8+UWHlSOmMbPKdb0kk0vaLIbwkhGymEeo64gUGokB8LY9bXZhqgjPaCgukJRZQnrkfSVm1D5/VG
-        bVZznSrG9OW1w3ZxAwOieoZVKDsgzynb70tBJpuMkPvnjs6/GC6Bc6kb6pRALA5dxdpss/5+O6+7oCHs
-        j5v9AjywlMD0QoYBiwSKvpPIrz1g/0T67jHXbe6ePlRnUn2El4Yi6CrS0ZEbOjOiSW8R1zKc/U8v4NFi
-        IXqtAnDFPuiZO4nBhXz0GMXIqw5Z5ov27SbytP177n160G69lw3bSDlac8N1+UI/o7IvE73WU/jOkoh4
-        4U6w/4ms7wi6LGm4puUjq5ReR/XA4zo/6IPWUyH24W/YmO+XaIRXQle/N+egY5qDm49jwfrMG11TWei3
-        5qLNzEGTMQbtkxnIKvVfIGuzdyhkgzRu717lh4GNitQA2cdlAa86zIloecpCqzkOl5qOgplDw+kaf6gn
-        I6GaiIB6IhqC4n1Ook6jEzU/wNVICiKEbMmU+C0oR6LQZGRCPREJjTkBXZZMHBHsQKGKjhujh3B1MAzp
-        F/YsuDeLkI2887saS1oYuDX+PmQ6BsIztrty+MR21Oreg9wQiqLbweAK377xf4BHRBrNn//FLkdVbwgU
-        o+G4O8VDGH8b2szJkBsYkGqDkFLg6zjIfZPuBiSJ3qKQTUyBZ0KiaKdD2OiHip5gaExclPcEIk/+DhKE
-        3o6I9B1JhJDNbkDCWe9//2MTI34b/Vg27VbcGe/n7DwvxJ3xeh6bTVOFsLYGu5b/nvsL1GFFjUQzkOgA
-        AAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACt0RVh0VGl0
+        bGUARm9ybWF0TnVtYmVyQ3VycmVuY3k7Q3VycmVuY3k7Rm9ybWF0OwM5x+8AAAN6SURBVDhPbdJrTNNX
+        GAbwM7wkftU4UyCOEXVigIJLCBaVTYQCrlJKuXUFiTSOAXMzWGmFTeYKChTGFqFyqWirTSUCBXSEUQS2
+        FZEKdsiltWCBjhFwmUVaCN302f7N9mHpPjyfzvv+cs7JQ16vTxJCyBsPL3N9xqpSZeNVvNnxqlQ8qUyd
+        G61IqR8o5vhQ584lLRmVJhMA/4lrebgsmTn2dcrKr9pK2C2d+HN5CPYpDaydl2AoT1p5IGFHU3OPL3Pc
+        gZ8uxvv8LE2yvTS3Y32xEyNlHHTydkNfzMLqtBK/GxqhL45fbj8b5Tv01XF3QC9hV//SXQnnUjPG6k7g
+        YQkH9mkNBi4ex1xbDlbGymFpLcAPn8fWEEI83IDBIta8/dltrM/WoyMjCL89qoFjsgJrz5RYeVI6Yxs8
+        p1vSSTS9oshvCSEbKYR6jriBQaiQHwtj1tdmGqCM9oKC6QlFlCeuR9JWbUPn9UZtVnOdKsb05bXDdnED
+        A6J6hlUoOyDPKdvvS0Emm4yQ++eOzr8YLoFzqRvqlEAsDl3F2myz/n47r7ugIeyPm/0CPLCUwPRChgGL
+        BIq+k8ivPWD/RPruMddt7p4+VGdSfYSXhiLoKtLRkRs6M6JJbxHXMpz9Ty/g0WIheq0CcMU+6Jk7icGF
+        fPQYxcirDlnmi/btJvK0/XvufXrQbr2XDdtIOVpzw3X5Qj+jsi8TvdZT+M6SiHjhTrD/iazvCLosabim
+        5SOrlF5H9cDjOj/og9ZTIfbhb9iY75dohFdCV78356BjmoObj2PB+swbXVNZ6Lfmos3MQZMxBu2TGcgq
+        9V8ga7N3KGSDNG7vXuWHgY2K1ADZx2UBrzrMiWh5ykKrOQ6Xmo6CmUPD6Rp/qCcjoZqIgHoiGoLifU6i
+        TqMTNT/A1UgKIoRsyZT4LShHotBkZEI9EQmNOQFdlkwcEexAoYqOG6OHcHUwDOkX9iy4N4uQjbzzuxpL
+        Whi4Nf4+ZDoGwjO2u3L4xHbU6t6D3BCKotvB4ArfvvF/gEdEGs2f/8UuR1VvCBSj4bg7xUMYfxvazMmQ
+        GxiQaoOQUuDrOMh9k+4GJIneopBNTIFnQqJop0PY6IeKnmBoTFyU9wQiT/4OEoTejoj0HUmEkM1uQMJZ
+        73//YxMjfhv9WDbtVtwZ7+fsPC/EnfF6HptNU4Wwtga7lv+e+wvUYUWNRDOQ6AAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btn_Odemetutari.Location" type="System.Drawing.Point, System.Drawing">
@@ -631,7 +630,7 @@
 </value>
   </data>
   <data name="btn_HesapDokumu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 127</value>
+    <value>688, 127</value>
   </data>
   <data name="btn_HesapDokumu.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -710,7 +709,7 @@
 </value>
   </data>
   <data name="btn_Odemeal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 176</value>
+    <value>688, 176</value>
   </data>
   <data name="btn_Odemeal.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -767,7 +766,7 @@
 </value>
   </data>
   <data name="btn_Odemesil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 221</value>
+    <value>688, 221</value>
   </data>
   <data name="btn_Odemesil.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -832,7 +831,7 @@
 </value>
   </data>
   <data name="btn_Indirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>817, 221</value>
+    <value>819, 221</value>
   </data>
   <data name="btn_Indirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -907,7 +906,7 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 464</value>
+    <value>689, 468</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 39</value>
@@ -937,7 +936,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Adisyon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 311</value>
+    <value>688, 311</value>
   </data>
   <data name="chk_Adisyon.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 55</value>
@@ -1064,7 +1063,7 @@
     <value>YellowGreen</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>665, 287</value>
+    <value>667, 291</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1088,7 +1087,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_Hesapdok.Location" type="System.Drawing.Point, System.Drawing">
-    <value>756, 311</value>
+    <value>758, 311</value>
   </data>
   <data name="chk_Hesapdok.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -1142,7 +1141,7 @@
     <value>Bottom, Right</value>
   </data>
   <data name="txt_Not.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 649</value>
+    <value>688, 653</value>
   </data>
   <data name="txt_Not.Properties.NullValuePrompt" xml:space="preserve">
     <value>Adisyon Notu Giriniz...</value>
@@ -1217,7 +1216,7 @@
 </value>
   </data>
   <data name="btn_Bindirim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>817, 266</value>
+    <value>819, 266</value>
   </data>
   <data name="btn_Bindirim.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1278,7 +1277,7 @@
 </value>
   </data>
   <data name="btn_Yuvarla.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 368</value>
+    <value>688, 368</value>
   </data>
   <data name="btn_Yuvarla.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 53</value>
@@ -1398,7 +1397,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 505</value>
+    <value>689, 509</value>
   </data>
   <data name="gridView2.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 7pt, style=Bold</value>
@@ -1458,7 +1457,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_HesabaFatura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>886, 368</value>
+    <value>888, 368</value>
   </data>
   <data name="chk_HesabaFatura.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 53</value>
@@ -1488,7 +1487,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_AdisYaz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>886, 311</value>
+    <value>888, 311</value>
   </data>
   <data name="btn_AdisYaz.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 55</value>
@@ -1677,7 +1676,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdsPr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>817, 311</value>
+    <value>819, 311</value>
   </data>
   <data name="chk_AdsPr.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 55</value>
@@ -1725,7 +1724,7 @@
 </value>
   </data>
   <data name="btnIngenicoKapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 78</value>
+    <value>688, 78</value>
   </data>
   <data name="btnIngenicoKapat.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 43</value>
@@ -1780,7 +1779,7 @@
 </value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>867, 2</value>
+    <value>869, 2</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 24</value>
@@ -1844,7 +1843,7 @@
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 266</value>
+    <value>688, 266</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -1874,7 +1873,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>867, 29</value>
+    <value>869, 29</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 38</value>
@@ -1907,7 +1906,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 29</value>
+    <value>905, 29</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 38</value>
@@ -1940,7 +1939,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_AdisyonGR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>756, 368</value>
+    <value>758, 368</value>
   </data>
   <data name="chk_AdisyonGR.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 53</value>
@@ -2010,7 +2009,7 @@
 </value>
   </data>
   <data name="btnFisIptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>686, 426</value>
+    <value>688, 426</value>
   </data>
   <data name="btnFisIptal.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 37</value>
@@ -2043,7 +2042,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btnSpSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>817, 368</value>
+    <value>819, 368</value>
   </data>
   <data name="btnSpSil.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 53</value>
@@ -2144,7 +2143,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="E_AdisyonDurum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>867, 424</value>
+    <value>869, 424</value>
   </data>
   <data name="E_AdisyonDurum.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 37</value>
@@ -2271,7 +2270,7 @@
 </value>
   </data>
   <data name="btnTipBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>817, 176</value>
+    <value>819, 176</value>
   </data>
   <data name="btnTipBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -2802,7 +2801,7 @@
 </value>
   </data>
   <data name="btnUrunIade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 426</value>
+    <value>779, 426</value>
   </data>
   <data name="btnUrunIade.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 37</value>
@@ -2835,7 +2834,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>946, 710</value>
+    <value>948, 714</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

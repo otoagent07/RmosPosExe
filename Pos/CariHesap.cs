@@ -1939,7 +1939,9 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
 
                 if (dt==null || dt.Rows.Count==0)
                 {
-                    txt_Cari_Kod.EditValue = "";
+
+                    //CariKod İstediğimiz gibi Verdik Oğuzhan Mendi
+                    //txt_Cari_Kod.EditValue = "";
                     txt_Cari_Ad.EditValue = "";
                     txt_Cari_Soyad.EditValue = "";
                     txt_Cari_Telefon.EditValue = "";
