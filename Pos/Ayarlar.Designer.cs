@@ -281,7 +281,11 @@
             this.ikinciEkranAktif = new DevExpress.XtraEditors.CheckEdit();
             this.urunAdinaOdaklan = new DevExpress.XtraEditors.CheckEdit();
             this.tumPrinter = new DevExpress.XtraEditors.CheckEdit();
+            this.txtKendiMac = new DevExpress.XtraEditors.TextEdit();
+            this.mobileCallerIdMacAdres = new DevExpress.XtraEditors.TextEdit();
             this.txtSiparisTekrarPrintName = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit204 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit203 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit202 = new DevExpress.XtraEditors.TextEdit();
             this.servispayOdenmezIkramSil = new DevExpress.XtraEditors.CheckEdit();
             this.servispayFooterda = new DevExpress.XtraEditors.CheckEdit();
@@ -1273,10 +1277,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.mobileCallerIdMacAdres = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit203 = new DevExpress.XtraEditors.TextEdit();
-            this.txtKendiMac = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit204 = new DevExpress.XtraEditors.TextEdit();
+            this.btnMarsDizayn = new DevExpress.XtraEditors.SimpleButton();
+            this.btnMarsDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1470,7 +1472,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ikinciEkranAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.urunAdinaOdaklan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tumPrinter.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKendiMac.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileCallerIdMacAdres.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSiparisTekrarPrintName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit204.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit203.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit202.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.servispayOdenmezIkramSil.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.servispayFooterda.Properties)).BeginInit();
@@ -2136,10 +2142,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mobileCallerIdMacAdres.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit203.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKendiMac.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit204.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4234,10 +4236,34 @@
             this.tumPrinter.Name = "tumPrinter";
             this.tumPrinter.Properties.Caption = resources.GetString("tumPrinter.Properties.Caption");
             // 
+            // txtKendiMac
+            // 
+            resources.ApplyResources(this.txtKendiMac, "txtKendiMac");
+            this.txtKendiMac.Name = "txtKendiMac";
+            // 
+            // mobileCallerIdMacAdres
+            // 
+            resources.ApplyResources(this.mobileCallerIdMacAdres, "mobileCallerIdMacAdres");
+            this.mobileCallerIdMacAdres.Name = "mobileCallerIdMacAdres";
+            // 
             // txtSiparisTekrarPrintName
             // 
             resources.ApplyResources(this.txtSiparisTekrarPrintName, "txtSiparisTekrarPrintName");
             this.txtSiparisTekrarPrintName.Name = "txtSiparisTekrarPrintName";
+            // 
+            // textEdit204
+            // 
+            resources.ApplyResources(this.textEdit204, "textEdit204");
+            this.textEdit204.Name = "textEdit204";
+            this.textEdit204.Properties.ReadOnly = true;
+            this.textEdit204.TabStop = false;
+            // 
+            // textEdit203
+            // 
+            resources.ApplyResources(this.textEdit203, "textEdit203");
+            this.textEdit203.Name = "textEdit203";
+            this.textEdit203.Properties.ReadOnly = true;
+            this.textEdit203.TabStop = false;
             // 
             // textEdit202
             // 
@@ -7466,6 +7492,7 @@
             // 
             // tab_Print_Adisyon
             // 
+            this.tab_Print_Adisyon.Controls.Add(this.btnMarsDizayn);
             this.tab_Print_Adisyon.Controls.Add(this.btnAbuyerDizayn);
             this.tab_Print_Adisyon.Controls.Add(this.btnUrunDizayn);
             this.tab_Print_Adisyon.Controls.Add(this.panelControl1);
@@ -7496,6 +7523,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnMarsDizaynSil);
             this.panelControl1.Controls.Add(this.btnAbuyerDizaynSil);
             this.panelControl1.Controls.Add(this.btnUrunDizaynSil);
             this.panelControl1.Controls.Add(this.btn_Print_Adisyon_Sil);
@@ -12678,29 +12706,19 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // mobileCallerIdMacAdres
+            // btnMarsDizayn
             // 
-            resources.ApplyResources(this.mobileCallerIdMacAdres, "mobileCallerIdMacAdres");
-            this.mobileCallerIdMacAdres.Name = "mobileCallerIdMacAdres";
+            this.btnMarsDizayn.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnMarsDizayn, "btnMarsDizayn");
+            this.btnMarsDizayn.Name = "btnMarsDizayn";
+            this.btnMarsDizayn.Click += new System.EventHandler(this.btnMarsDizayn_Click);
             // 
-            // textEdit203
+            // btnMarsDizaynSil
             // 
-            resources.ApplyResources(this.textEdit203, "textEdit203");
-            this.textEdit203.Name = "textEdit203";
-            this.textEdit203.Properties.ReadOnly = true;
-            this.textEdit203.TabStop = false;
-            // 
-            // txtKendiMac
-            // 
-            resources.ApplyResources(this.txtKendiMac, "txtKendiMac");
-            this.txtKendiMac.Name = "txtKendiMac";
-            // 
-            // textEdit204
-            // 
-            resources.ApplyResources(this.textEdit204, "textEdit204");
-            this.textEdit204.Name = "textEdit204";
-            this.textEdit204.Properties.ReadOnly = true;
-            this.textEdit204.TabStop = false;
+            this.btnMarsDizaynSil.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnMarsDizaynSil, "btnMarsDizaynSil");
+            this.btnMarsDizaynSil.Name = "btnMarsDizaynSil";
+            this.btnMarsDizaynSil.Click += new System.EventHandler(this.btnMarsDizaynSil_Click);
             // 
             // Ayarlar
             // 
@@ -12907,7 +12925,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ikinciEkranAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.urunAdinaOdaklan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tumPrinter.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKendiMac.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mobileCallerIdMacAdres.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSiparisTekrarPrintName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit204.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit203.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit202.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.servispayOdenmezIkramSil.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.servispayFooterda.Properties)).EndInit();
@@ -13601,10 +13623,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mobileCallerIdMacAdres.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit203.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKendiMac.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit204.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14858,5 +14876,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit203;
         private DevExpress.XtraEditors.TextEdit txtKendiMac;
         private DevExpress.XtraEditors.TextEdit textEdit204;
+        private DevExpress.XtraEditors.SimpleButton btnMarsDizayn;
+        private DevExpress.XtraEditors.SimpleButton btnMarsDizaynSil;
     }
 }

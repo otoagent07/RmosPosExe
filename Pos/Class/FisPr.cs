@@ -3078,6 +3078,13 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
         {
             List<string> mars = new List<string>();
 
+            DataTable dtDizayn = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'MARS'");
+            if (dtDizayn.Rows.Count < 1)
+            {
+                return "Marş Dizaynı Yapılmamış...";
+            }
+
+
             bool birkere = true;
             DataTable dtPrinter = SiparisPrinterBul(Fisno, 0, false);
             for (int i = 0; i < dtPrinter.Rows.Count; i++)
@@ -3126,6 +3133,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 dtMars = copyDataTable;
 
 
+               
                 if (con.State != ConnectionState.Closed) con.Close();
 
                 if (Param.Param_Printer_Tanim) printer = Convert.ToString(dtMars.Rows[0]["Pkod_Printer"]);
@@ -3133,77 +3141,35 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
                 for (int k = 0; k < Mars_Ciktisayisi; k++)
                 {
-                    mars.Add(".");
-                    mars.Add("   * * * MARS FISI * * *  ");
-                    mars.Add(".");
-                    mars.Add("#Cekno:" + Convert.ToString(dtMars.Rows[0]["Rsat_Fisno"]).PadRight(10, ' ') + " #Masa :" + Convert.ToString(dtMars.Rows[0]["Rsat_Masa"]).PadRight(7, ' '));
-                    mars.Add("Grson:" + Convert.ToString(dtMars.Rows[0]["Garson"]).PadRight(10, ' '));
-                    mars.Add("Tarih:" + Convert.ToDateTime(dbtools.DegerGetir("select getdate()")).ToString("dd.MM.yyyy HH:mm:ss"));
-                    mars.Add(".");
-                    mars.Add("MIKTAR" + "     " + "URUN".PadRight(15, ' '));
-                    for (int j = 0; j < dtMars.Rows.Count; j++)
-                    {
-                        mars.Add("#------------------------");
-                        if (Param.Param_SiparisSayi == false)
-                        {
-                            mars.Add(" " + String.Format("{0:0.##}", Convert.ToDecimal(dtMars.Rows[j]["Rsat_Miktar"])).ToString().PadRight(5, ' ') + Convert.ToString(dtMars.Rows[j]["Rsat_Emiktar"]).PadRight(2, ' ') + Convert.ToString(dtMars.Rows[j]["Rec_Ad"]).PadRight(29, ' ').Substring(0, 29));
-                        }
-                        else
-                        {
-                            mars.Add(" " + String.Format("{0:0.##}", Convert.ToDecimal(dtMars.Rows[j]["Rsat_Miktar"])).ToString().PadRight(5, ' ') + Convert.ToString(dtMars.Rows[j]["Rsat_Emiktar"]).PadRight(2, ' ') + Convert.ToString(dtMars.Rows[j]["Rec_Ad"]).PadRight(29, ' ').Substring(0, 29));
-                        }
-
-                        //mars.Add(" " + Convert.ToInt32(dtMars.Rows[j]["Rsat_Miktar"]).ToString().PadRight(3, ' ') + Convert.ToString(dtMars.Rows[j]["Rsat_Emiktar"]).PadRight(2, ' ') + Convert.ToString(dtMars.Rows[j]["Rec_Ad"]).PadRight(23, ' ').Substring(0, 23));
-                        if (Convert.ToString(dtMars.Rows[j]["Rsat_Aciklama"]) != String.Empty) mars.Add(Convert.ToString(dtMars.Rows[j]["Rsat_Aciklama"]));
-                    }
-                    mars.Add("#------------------------");
-
-                    for (int j = 0; j < bosSatir; j++)
-                    {
-                        mars.Add(".");
-                    }
-
+                   
                     try
                     {
-                        System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
-                        Font fnt = (Font)converter.ConvertFromString(Mars_Font);
+                        Mars marsReport = new Mars();
 
-                        if (fnt == null)
+
+                       
+
+                        xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), marsReport);
+                        marsReport.PrinterName = printer;
+                        marsReport.DataSource = dtMars;
+                        marsReport.xr_MasaNo.Text = Convert.ToString(dtMars.Rows[0]["Rsat_Masa"]);
+                        marsReport.xr_Konum.Text = Convert.ToString(dtMars.Rows[0]["MasaKonumAdi"]);
+                        marsReport.xr_KisiSayisi.Text = Convert.ToString(dtMars.Rows[0]["Rsat_Kisi"]);
+                        marsReport.xr_Tarih.Text = Convert.ToDateTime(dtMars.Rows[0]["Rsat_Tarih"]).ToShortDateString();
+                        marsReport.xr_Acilis.Text = Convert.ToString(timeSpan);
+                        marsReport.txtDepartman.Text = Departman.Dep_Adi;
+                        marsReport.xr_Garson.Text = dtMars.Rows[0]["Garson"].ToString();
+                        marsReport.xr_Cek.Text = Convert.ToString(dtMars.Rows[0]["Rsat_Fisno"]);
+                        marsReport.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
+                        marsReport.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
+                        //mars.txtSiraNo.Text = sirano;
+
+                        if ( marsReport.PrinterName != "") //  marsReport.PrinterName != "Microsoft Print to PDF" &&
                         {
-                            fnt = new Font("Arial", 8);
+                            marsReport.Print();
                         }
 
-                        Liste = mars;
-                        printFont = fnt;
-                        PrintDocument pd = new PrintDocument();
-                        pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
-                        pd.PrinterSettings.PrinterName = printer;
-                        pd.Print();
-
-                        if (Param.Param_Printer_Tanim && Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr1"]) != "")
-                        {
-                            PrintDocument pd1 = new PrintDocument();
-                            pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
-                            pd.PrinterSettings.PrinterName = Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr1"]);
-                            pd.Print();
-                        }
-                        if (Param.Param_Printer_Tanim && Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr2"]) != "")
-                        {
-                            PrintDocument pd2 = new PrintDocument();
-                            pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
-                            pd.PrinterSettings.PrinterName = Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr2"]);
-                            pd.Print();
-                        }
-                        if (Param.Param_Printer_Tanim && Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr3"]) != "")
-                        {
-                            PrintDocument pd3 = new PrintDocument();
-                            pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
-                            pd.PrinterSettings.PrinterName = Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr3"]);
-                            pd.Print();
-                        }
-
-                        mars.Clear();
-
+                        // aşağıya dokunma
                         int sayi = Convert.ToInt32(dbtools.DegerGetir("select COUNT(*) from Cst_Recete_Satis where Rsat_Fisno = '" + Fisno + "' and ISNULL(Rsat_Mars,0) = 1 and ISNULL(Rsat_AbuyerPr,0) = 1"));
 
                         string baslik = "   * * * ABUYER FISI * * *   ";
@@ -3229,6 +3195,164 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
             }
             return "OK";
         }
+
+
+        //public string MarsPr(int Fisno, DataTable dataTable)
+        //{
+        //    List<string> mars = new List<string>();
+
+        //    bool birkere = true;
+        //    DataTable dtPrinter = SiparisPrinterBul(Fisno, 0, false);
+        //    for (int i = 0; i < dtPrinter.Rows.Count; i++)
+        //    {
+        //        string printer = Convert.ToString(dtPrinter.Rows[i]["Printer"]);
+        //        int bosSatir = Convert.ToInt32(dtPrinter.Rows[i]["Pkod_Satir"]);
+
+        //        if (printer == "") continue;
+
+        //        DataTable dtMars = new DataTable();
+        //        SqlConnection con = dbtools.conn;
+        //        if (con.State == ConnectionState.Closed) con.Open();
+        //        SqlCommand com = new SqlCommand();
+        //        com.Connection = con;
+        //        com.CommandType = CommandType.StoredProcedure;
+        //        com.CommandTimeout = 0;
+        //        com.CommandText = "Pos_Satis";
+        //        com.Parameters.AddWithValue("@Fisno", Fisno);
+        //        com.Parameters.AddWithValue("@Rapor_Tipi", 1);
+        //        com.Parameters.AddWithValue("@Printer", printer);
+        //        com.Parameters.AddWithValue("@Mars", 1);
+        //        SqlDataAdapter da = new SqlDataAdapter(com);
+        //        da.Fill(dtMars);
+
+
+        //        DataTable copyDataTable = dtMars.Clone();
+
+        //        foreach (DataRow item in dtMars.Rows)
+        //        {
+        //            bool varmi = false;
+        //            foreach (DataRow item2 in dataTable.Rows)
+        //            {
+        //                if (item["Rsat_Id"].ToString().Equals(item2["Rsat_Id"].ToString()))
+        //                {
+        //                    varmi = true;
+        //                }
+        //            }
+
+        //            if (varmi == false)
+        //            {
+        //                copyDataTable.ImportRow(item);
+        //            }
+
+        //        }
+
+        //        dtMars = copyDataTable;
+
+
+        //        if (con.State != ConnectionState.Closed) con.Close();
+
+        //        if (Param.Param_Printer_Tanim) printer = Convert.ToString(dtMars.Rows[0]["Pkod_Printer"]);
+
+        //        TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+        //        for (int k = 0; k < Mars_Ciktisayisi; k++)
+        //        {
+        //            mars.Add(".");
+        //            mars.Add("   * * * MARS FISI * * *  ");
+        //            mars.Add(".");
+        //            mars.Add("#Cekno:" + Convert.ToString(dtMars.Rows[0]["Rsat_Fisno"]).PadRight(10, ' ') + " #Masa :" + Convert.ToString(dtMars.Rows[0]["Rsat_Masa"]).PadRight(7, ' '));
+        //            mars.Add("Grson:" + Convert.ToString(dtMars.Rows[0]["Garson"]).PadRight(10, ' '));
+        //            mars.Add("Tarih:" + Convert.ToDateTime(dbtools.DegerGetir("select getdate()")).ToString("dd.MM.yyyy HH:mm:ss"));
+        //            mars.Add(".");
+        //            mars.Add("MIKTAR" + "     " + "URUN".PadRight(15, ' '));
+        //            for (int j = 0; j < dtMars.Rows.Count; j++)
+        //            {
+        //                mars.Add("#------------------------");
+        //                if (Param.Param_SiparisSayi == false)
+        //                {
+        //                    mars.Add(" " + String.Format("{0:0.##}", Convert.ToDecimal(dtMars.Rows[j]["Rsat_Miktar"])).ToString().PadRight(5, ' ') + Convert.ToString(dtMars.Rows[j]["Rsat_Emiktar"]).PadRight(2, ' ') + Convert.ToString(dtMars.Rows[j]["Rec_Ad"]).PadRight(29, ' ').Substring(0, 29));
+        //                }
+        //                else
+        //                {
+        //                    mars.Add(" " + String.Format("{0:0.##}", Convert.ToDecimal(dtMars.Rows[j]["Rsat_Miktar"])).ToString().PadRight(5, ' ') + Convert.ToString(dtMars.Rows[j]["Rsat_Emiktar"]).PadRight(2, ' ') + Convert.ToString(dtMars.Rows[j]["Rec_Ad"]).PadRight(29, ' ').Substring(0, 29));
+        //                }
+
+        //                //mars.Add(" " + Convert.ToInt32(dtMars.Rows[j]["Rsat_Miktar"]).ToString().PadRight(3, ' ') + Convert.ToString(dtMars.Rows[j]["Rsat_Emiktar"]).PadRight(2, ' ') + Convert.ToString(dtMars.Rows[j]["Rec_Ad"]).PadRight(23, ' ').Substring(0, 23));
+        //                if (Convert.ToString(dtMars.Rows[j]["Rsat_Aciklama"]) != String.Empty) mars.Add(Convert.ToString(dtMars.Rows[j]["Rsat_Aciklama"]));
+        //            }
+        //            mars.Add("#------------------------");
+
+        //            for (int j = 0; j < bosSatir; j++)
+        //            {
+        //                mars.Add(".");
+        //            }
+
+        //            try
+        //            {
+        //                System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
+        //                Font fnt = (Font)converter.ConvertFromString(Mars_Font);
+
+        //                if (fnt == null)
+        //                {
+        //                    fnt = new Font("Arial", 8);
+        //                }
+
+        //                Liste = mars;
+        //                printFont = fnt;
+        //                PrintDocument pd = new PrintDocument();
+        //                pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
+        //                pd.PrinterSettings.PrinterName = printer;
+        //                pd.Print();
+
+        //                if (Param.Param_Printer_Tanim && Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr1"]) != "")
+        //                {
+        //                    PrintDocument pd1 = new PrintDocument();
+        //                    pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
+        //                    pd.PrinterSettings.PrinterName = Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr1"]);
+        //                    pd.Print();
+        //                }
+        //                if (Param.Param_Printer_Tanim && Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr2"]) != "")
+        //                {
+        //                    PrintDocument pd2 = new PrintDocument();
+        //                    pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
+        //                    pd.PrinterSettings.PrinterName = Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr2"]);
+        //                    pd.Print();
+        //                }
+        //                if (Param.Param_Printer_Tanim && Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr3"]) != "")
+        //                {
+        //                    PrintDocument pd3 = new PrintDocument();
+        //                    pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
+        //                    pd.PrinterSettings.PrinterName = Convert.ToString(dtMars.Rows[0]["Pkod_Ek_Pr3"]);
+        //                    pd.Print();
+        //                }
+
+        //                mars.Clear();
+
+        //                int sayi = Convert.ToInt32(dbtools.DegerGetir("select COUNT(*) from Cst_Recete_Satis where Rsat_Fisno = '" + Fisno + "' and ISNULL(Rsat_Mars,0) = 1 and ISNULL(Rsat_AbuyerPr,0) = 1"));
+
+        //                string baslik = "   * * * ABUYER FISI * * *   ";
+        //                if (sayi > 0) baslik = "   * * * ABUYER FISI - MARS * * *   ";
+
+        //                if (birkere)
+        //                {
+        //                    birkere = false;
+        //                    AbuyerPr(Fisno, true, 0, baslik, "", "", false);
+        //                }
+
+
+
+        //                dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + Fisno + "'");
+
+        //            }
+        //            catch (Exception err)
+        //            {
+        //                return err.Message;
+        //            }
+        //        }
+
+        //    }
+        //    return "OK";
+        //}
+
         public string newUrunBazliHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, string Recete)
         {
             string printer = String.Empty;

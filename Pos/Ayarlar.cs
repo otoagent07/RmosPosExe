@@ -6159,6 +6159,43 @@ Select InstanceNames from @GetInstances ";
             }
         }
 
+        private void btnMarsDizayn_Click(object sender, EventArgs e)
+        {
+            DataTable dt = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'MARS'");
+
+            if (dt.Rows.Count > 0)
+            {
+                DevExpress.XtraReports.UI.XtraReport myReport = xtraDizayn.BuildReport(Convert.ToString(dt.Rows[0]["Rapor_Id"]));
+                myReport.ShowDesignerDialog();
+                if (MessageBox.Show(res_man.GetString("Rapor Dataya Kaydedilsin mi...?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    xtraDizayn.SaveReportStream(Convert.ToString(dt.Rows[0]["Rapor_Id"]), null, myReport);
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_SiparisFis, Log.Log_Islem.Duzelt, "MARS Dizaynı Değiştirildi.", String.Empty, String.Empty);
+                }
+            }
+            else
+            {
+                Mars myReport = new Mars();
+                myReport.ShowDesignerDialog();
+                if (MessageBox.Show(res_man.GetString("Rapor Dataya Kaydedilsin mi...?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    xtraDizayn.SaveReportStream("0", "MARS", myReport);
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_SiparisFis, Log.Log_Islem.Kaydet, "MARS Dizaynı Kaydedildi.", String.Empty, String.Empty);
+                }
+            }
+        }
+
+        private void btnMarsDizaynSil_Click(object sender, EventArgs e)
+        {
+            string dizaynAd = "MARS";
+            Mars myReport = new Mars();
+
+            xtraDizayn.SaveReportStream("0", dizaynAd, myReport);
+            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_HesapFis, Log.Log_Islem.Kaydet, dizaynAd + " Dizaynı Kaydedildi.", String.Empty, String.Empty);
+
+            dizaynSil(dizaynAd);
+        }
+
         private void gridyenile_SubeAdres()
         {
             gridControl21.DataSource = dbtools.SelectTable(@"

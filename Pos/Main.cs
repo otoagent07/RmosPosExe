@@ -405,7 +405,7 @@ namespace Pos
                     }
                 }
 
-                if (System.Windows.Forms.Screen.AllScreens.Length > 1 && Param.ikinciEkranAktif==false)
+                if (System.Windows.Forms.Screen.AllScreens.Length > 1 && Param.ikinciEkranAktif == false)
                 {
                     Main.a.Location = Screen.AllScreens[1].Bounds.Location;
                     Main.a.Show();
@@ -472,13 +472,13 @@ namespace Pos
         }
 
         //string mac = Sabitler.MyGetMacAddress(); // benim yaptığım
-       public static string macadresim = ""; 
+        public static string macadresim = "";
 
         private void Main_Load(object sender, EventArgs e)
         {
             try
             {
-                macadresim = dbtools.MacAdresi(); 
+                macadresim = dbtools.MacAdresi();
                 this.BringToFront();
                 isLogin = false;
                 if (direkGecis == false)
@@ -1997,7 +1997,7 @@ No Cut Seçili Olsun
             try
             {
                 string paramMac = Param.mobileCallerIdMacAdres.ToString();
-                if (macadresim!= paramMac)
+                if (macadresim != paramMac)
                 {
                     return;
                 }

@@ -4802,6 +4802,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
         {
             try
             {
+                return;
                 bool bWow64 = false;
                 IsWow64Process(Process.GetCurrentProcess().Handle, out bWow64);
                 if (bWow64)
