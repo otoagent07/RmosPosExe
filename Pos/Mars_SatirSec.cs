@@ -43,15 +43,15 @@ namespace Pos
 
             DataTable dataTable = dbtools.SelectTableR("select Rsat_Id from Cst_Recete_Satis where Rsat_Fisno = '" + txt_Fisno.Text + "' and Rsat_Mars = 1 ");
 
-
             for (int i = 0; i < gridView1.RowCount; i++)
             {
-                if (Convert.ToBoolean(gridView1.GetRowCellValue(i,"sec")))
+                if (Convert.ToBoolean(gridView1.GetRowCellValue(i, "sec")))
                 {
-                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_Mars = 1 where Rsat_Id = '" + Convert.ToInt32(gridView1.GetRowCellValue(i, "Rsat_Id")).ToString() + "'"); 
+                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_Mars = 1 where Rsat_Id = '" + Convert.ToInt32(gridView1.GetRowCellValue(i, "Rsat_Id")).ToString() + "'");
                 }
-                
+
             }
+
 
             FisPr pr = new FisPr();
             string sonuc = pr.MarsPr(Convert.ToInt32(txt_Fisno.Text), dataTable);
@@ -67,7 +67,11 @@ namespace Pos
                     dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Id = '" + Convert.ToInt32(gridView1.GetRowCellValue(i, "Rsat_Id")).ToString() + "'");
                 }
 
+                dbtools.execcmd("update Cst_Recete_Satis set rezevePrintCiktimi=1 where Rsat_Id = '" + Convert.ToInt32(gridView1.GetRowCellValue(i, "Rsat_Id")).ToString() + "'");
+
             }
+
+
 
             this.Close();
 

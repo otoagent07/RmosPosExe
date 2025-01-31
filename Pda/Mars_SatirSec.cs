@@ -33,6 +33,8 @@ namespace Pda
                     + " where Rsat_Ba = 'B' and Rsat_Fisno = '" + this.Tag.ToString() + "' and ISNULL(Rsat_Mars,0) = 0");
         }
 
+
+        // burası küçük el terminali
         private void btn_Mars_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < gridView1.RowCount; i++)

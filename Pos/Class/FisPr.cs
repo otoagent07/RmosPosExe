@@ -3133,7 +3133,27 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 dtMars = copyDataTable;
 
 
+                // 31.01.2025 emre atalayın isteği üzerine eklendi
+                try
+                {
+                    string marslananlar = $"SELECT Rsat_Id FROM Cst_Recete_Satis where Rsat_Fisno={Fisno} and rezevePrintCiktimi=1 and Rsat_Mars is null";
+                    DataTable dtMarslananlar = dbtools.SelectTableR(marslananlar);
+                    HashSet<int> marslananIds = new HashSet<int>(dtMarslananlar.AsEnumerable()
+                        .Select(row => row.Field<int>("Rsat_Id")));
+                    dtMars = dtMars.AsEnumerable()
+                        .Where(row => !marslananIds.Contains(row.Field<int>("Rsat_Id")))
+                        .CopyToDataTable();
+                }
+                catch (Exception ex)
+                {
+                    //MessageBox.Show(ex.Message);
+                }
                
+
+
+
+
+
                 if (con.State != ConnectionState.Closed) con.Close();
 
                 if (Param.Param_Printer_Tanim) printer = Convert.ToString(dtMars.Rows[0]["Pkod_Printer"]);
