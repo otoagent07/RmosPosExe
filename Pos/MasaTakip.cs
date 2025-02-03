@@ -61,6 +61,10 @@ namespace Pos
 
             loadYukle();
             fisnotemizle();
+
+
+
+
         }
 
         public void loadYukle()

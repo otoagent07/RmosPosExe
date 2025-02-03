@@ -237,21 +237,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1068, 846</value>
   </data>
-  <data name="flp_Masa.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="flp_Masa.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flp_Masa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 165</value>
-  </data>
-  <data name="flp_Masa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>777, 491</value>
-  </data>
-  <data name="flp_Masa.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
-  </data>
   <data name="&gt;&gt;flp_Masa.Name" xml:space="preserve">
     <value>flp_Masa</value>
   </data>
@@ -263,153 +248,6 @@
   </data>
   <data name="&gt;&gt;flp_Masa.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_SplitBol.Name" xml:space="preserve">
-    <value>btn_SplitBol</value>
-  </data>
-  <data name="&gt;&gt;btn_SplitBol.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_SplitBol.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;btn_SplitBol.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cbtn_9.Name" xml:space="preserve">
-    <value>cbtn_9</value>
-  </data>
-  <data name="&gt;&gt;cbtn_9.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_9.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_9.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cbtn_8.Name" xml:space="preserve">
-    <value>cbtn_8</value>
-  </data>
-  <data name="&gt;&gt;cbtn_8.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_8.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_8.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;cbtn_7.Name" xml:space="preserve">
-    <value>cbtn_7</value>
-  </data>
-  <data name="&gt;&gt;cbtn_7.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_7.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_6.Name" xml:space="preserve">
-    <value>cbtn_6</value>
-  </data>
-  <data name="&gt;&gt;cbtn_6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_6.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_6.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;cbtn_5.Name" xml:space="preserve">
-    <value>cbtn_5</value>
-  </data>
-  <data name="&gt;&gt;cbtn_5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_5.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_5.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cbtn_4.Name" xml:space="preserve">
-    <value>cbtn_4</value>
-  </data>
-  <data name="&gt;&gt;cbtn_4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_4.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;cbtn_3.Name" xml:space="preserve">
-    <value>cbtn_3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_3.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;cbtn_2.Name" xml:space="preserve">
-    <value>cbtn_2</value>
-  </data>
-  <data name="&gt;&gt;cbtn_2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_2.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;cbtn_1.Name" xml:space="preserve">
-    <value>cbtn_1</value>
-  </data>
-  <data name="&gt;&gt;cbtn_1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_1.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;cbtn_0.Name" xml:space="preserve">
-    <value>cbtn_0</value>
-  </data>
-  <data name="&gt;&gt;cbtn_0.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cbtn_0.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;cbtn_0.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="panelControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 656</value>
-  </data>
-  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>777, 36</value>
-  </data>
-  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="panelControl3.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
     <value>panelControl3</value>
@@ -423,42 +261,6 @@
   <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;flp_Kapatma.Name" xml:space="preserve">
-    <value>flp_Kapatma</value>
-  </data>
-  <data name="&gt;&gt;flp_Kapatma.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flp_Kapatma.Parent" xml:space="preserve">
-    <value>panelControl2</value>
-  </data>
-  <data name="&gt;&gt;flp_Kapatma.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliOdemeEski.Name" xml:space="preserve">
-    <value>btnParcaliOdemeEski</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliOdemeEski.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliOdemeEski.Parent" xml:space="preserve">
-    <value>panelControl2</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliOdemeEski.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 692</value>
-  </data>
-  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>777, 125</value>
-  </data>
-  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
   <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
     <value>panelControl2</value>
   </data>
@@ -470,382 +272,6 @@
   </data>
   <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <metadata name="contextMenuSagTik.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>343, 9</value>
-  </metadata>
-  <data name="contextMenuSagTik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 108</value>
-  </data>
-  <data name="&gt;&gt;contextMenuSagTik.Name" xml:space="preserve">
-    <value>contextMenuSagTik</value>
-  </data>
-  <data name="&gt;&gt;contextMenuSagTik.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gridControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 333</value>
-  </data>
-  <data name="gridView2.Appearance.FooterPanel.BackColor2" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
-  </data>
-  <data name="gridView2.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 15.75pt, style=Bold</value>
-  </data>
-  <data name="gridView2.AppearancePrint.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="gridColumn3.Caption" xml:space="preserve">
-    <value>Urun</value>
-  </data>
-  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridColumn3.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
-    <value>Count</value>
-  </data>
-  <data name="gridColumn3.Summary1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridColumn3.Summary2" xml:space="preserve">
-    <value>{0}</value>
-  </data>
-  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="gridColumn3.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="gridColumn4.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="gridColumn4.Caption" xml:space="preserve">
-    <value>Miktar</value>
-  </data>
-  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="gridColumn4.Width" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="gridColumn6.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="gridColumn6.Caption" xml:space="preserve">
-    <value>  Tutar  </value>
-  </data>
-  <data name="gridColumn6.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
-    <value>Sum</value>
-  </data>
-  <data name="gridColumn6.Summary1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridColumn6.Summary2" xml:space="preserve">
-    <value>                            {0:N2}</value>
-  </data>
-  <data name="gridColumn6.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn6.VisibleIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="gridColumn6.Width" type="System.Int32, mscorlib">
-    <value>78</value>
-  </data>
-  <data name="gridColumn5.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="gridColumn5.Caption" xml:space="preserve">
-    <value>.</value>
-  </data>
-  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="gridColumn9.Caption" xml:space="preserve">
-    <value>Personel</value>
-  </data>
-  <data name="gridColumn9.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn9.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="gridColumn9.Width" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="gridColumn7.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="gridColumn7.Caption" xml:space="preserve">
-    <value>D.Tutar</value>
-  </data>
-  <data name="gridColumn7.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
-    <value>Sum</value>
-  </data>
-  <data name="gridColumn7.Summary1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridColumn7.Summary2" xml:space="preserve">
-    <value>{0:N2}</value>
-  </data>
-  <data name="gridColumn7.Width" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="gridColumn11.Caption" xml:space="preserve">
-    <value>Rsat_Id</value>
-  </data>
-  <data name="gridView2.ViewCaption" xml:space="preserve">
-    <value>Satılan Ürünler</value>
-  </data>
-  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 317</value>
-  </data>
-  <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
-    <value>gridControl2</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 56</value>
-  </data>
-  <data name="gridColumn1.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="gridColumn1.Caption" xml:space="preserve">
-    <value>Konum Kod</value>
-  </data>
-  <data name="gridColumn2.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="gridColumn2.Caption" xml:space="preserve">
-    <value>Konum Ad</value>
-  </data>
-  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 277</value>
-  </data>
-  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
-    <value>gridControl1</value>
-  </data>
-  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="simpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
-        bGUAQ2xlYXIgRmlsdGVyO0ZpbHRlcjtSZW1vdmUgRmlsdGVyO0NsZWFyKfWMAgAAA0xJREFUOE+V0mtM
-        k1ccx/G/we3VpjEtmShFBYrGUG+tgwokY4sRFCXBqFOaEi8Rb4txdCGCk1RaKs4AutkKIliDpbiZCFhr
-        ABUhgFQk1o1uEyhCsCCXp4PxtJQCv+UxakbwjSf5vjvnk5zzP0REPleTJctMqRGnq9KjHlSlRbbdT49C
-        TVoU7qVGtN39Qfrw9onwDN3eNUJuLxHNAUDvogrFhhTLJZln8PlNuAdaMTHSAS/bAy/7Et5RG1x9dRho
-        KURT7g7PzaPrFRwyA6hOixybcLah894VNJ07gNIYHso2L8CteD7Kdy6E9fJBvKrLh2eoAabjYU4i+nQG
-        UHlCWuGoU2FiuB5Tbgcm2R5Murow6bLDy/6J0Q4z+mpz0WGQ47dDkspZQOlhyZFW3S64u/Mx5e4CJlmw
-        XT9hoGEr7IY4NCpEaDktRmPmVyhKWn2MiObOAHZ+uYhn+l7aP/j4DDyvqzDl7gFrz0N/7Rb0mk/iZcU5
-        9FbnwWrUjOySBvrOekROLJCvkterY8A8UcEzUI/RFzlgninxuukqGpK/RWV4GEzHEy8Q0SfG4OUiY/By
-        uyEo5OcbgSHcVGgOdy/t7tD9ValR3r9uJGOwOQPD1l/wICkBLwoL8e/fNphi45z6ZcLtdzZtZkbarLDp
-        LuHakuBiun1I/B5RxgljDXsCwVhSMdSchzKxGE6zEeM1JWB/t6Bm777pMWsTxquvgzEZUCAI6qbH57dR
-        S3bkO2SeITEQY7ZcMC1a1OecxBXJOuewXgNXhQ7jzx7BVa7FUJEal9euYZS8hSKqU8eQRR1GT9ThHDKv
-        VBYEV8+v6KuU42lJFrL8AmR3Yr6ZHrmWiVG9Cv8Un0H5xujpi35LEy74LSW6/+PX1KwUk0Up4YD5ZUlC
-        sI5HcFqL0XjxFEo2RDr79Tnoy5DjVXoiHFy6TBSJ1w+f/2LJSjKnRLztzTU+M6dEwCgLRet1DfJD16Jb
-        q4bjVCLs38XDKFk93XkkDr2KHejMUiDbN6D9zRz/t+YS0edEtIBL4yvQ18ZHw7ZvEwpCVjBn+YKEfGEI
-        84csGjWxUmh4/oXvP8SHyuYLfM7yBVoNT9Cu5geI1HwBqfgCkYrn367i+WszeYt9Zh362P4DrXpPIV6m
-        BAkAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnFisnoTemizle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>257, 27</value>
-  </data>
-  <data name="btnFisnoTemizle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 21</value>
-  </data>
-  <data name="btnFisnoTemizle.TabIndex" type="System.Int32, mscorlib">
-    <value>162</value>
-  </data>
-  <data name="&gt;&gt;btnFisnoTemizle.Name" xml:space="preserve">
-    <value>btnFisnoTemizle</value>
-  </data>
-  <data name="&gt;&gt;btnFisnoTemizle.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnFisnoTemizle.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;btnFisnoTemizle.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtFisnoGit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 28</value>
-  </data>
-  <data name="textEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="textEdit1.Properties.NullValuePrompt" xml:space="preserve">
-    <value>Fiş no girin ve enter basın...</value>
-  </data>
-  <data name="txtFisnoGit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 20</value>
-  </data>
-  <data name="txtFisnoGit.TabIndex" type="System.Int32, mscorlib">
-    <value>161</value>
-  </data>
-  <data name="&gt;&gt;txtFisnoGit.Name" xml:space="preserve">
-    <value>txtFisnoGit</value>
-  </data>
-  <data name="&gt;&gt;txtFisnoGit.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtFisnoGit.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;txtFisnoGit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnFilterClear.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
-        bGUAQ2xlYXIgRmlsdGVyO0ZpbHRlcjtSZW1vdmUgRmlsdGVyO0NsZWFyKfWMAgAAA0xJREFUOE+V0mtM
-        k1ccx/G/we3VpjEtmShFBYrGUG+tgwokY4sRFCXBqFOaEi8Rb4txdCGCk1RaKs4AutkKIliDpbiZCFhr
-        ABUhgFQk1o1uEyhCsCCXp4PxtJQCv+UxakbwjSf5vjvnk5zzP0REPleTJctMqRGnq9KjHlSlRbbdT49C
-        TVoU7qVGtN39Qfrw9onwDN3eNUJuLxHNAUDvogrFhhTLJZln8PlNuAdaMTHSAS/bAy/7Et5RG1x9dRho
-        KURT7g7PzaPrFRwyA6hOixybcLah894VNJ07gNIYHso2L8CteD7Kdy6E9fJBvKrLh2eoAabjYU4i+nQG
-        UHlCWuGoU2FiuB5Tbgcm2R5Murow6bLDy/6J0Q4z+mpz0WGQ47dDkspZQOlhyZFW3S64u/Mx5e4CJlmw
-        XT9hoGEr7IY4NCpEaDktRmPmVyhKWn2MiObOAHZ+uYhn+l7aP/j4DDyvqzDl7gFrz0N/7Rb0mk/iZcU5
-        9FbnwWrUjOySBvrOekROLJCvkterY8A8UcEzUI/RFzlgninxuukqGpK/RWV4GEzHEy8Q0SfG4OUiY/By
-        uyEo5OcbgSHcVGgOdy/t7tD9ValR3r9uJGOwOQPD1l/wICkBLwoL8e/fNphi45z6ZcLtdzZtZkbarLDp
-        LuHakuBiun1I/B5RxgljDXsCwVhSMdSchzKxGE6zEeM1JWB/t6Bm777pMWsTxquvgzEZUCAI6qbH57dR
-        S3bkO2SeITEQY7ZcMC1a1OecxBXJOuewXgNXhQ7jzx7BVa7FUJEal9euYZS8hSKqU8eQRR1GT9ThHDKv
-        VBYEV8+v6KuU42lJFrL8AmR3Yr6ZHrmWiVG9Cv8Un0H5xujpi35LEy74LSW6/+PX1KwUk0Up4YD5ZUlC
-        sI5HcFqL0XjxFEo2RDr79Tnoy5DjVXoiHFy6TBSJ1w+f/2LJSjKnRLztzTU+M6dEwCgLRet1DfJD16Jb
-        q4bjVCLs38XDKFk93XkkDr2KHejMUiDbN6D9zRz/t+YS0edEtIBL4yvQ18ZHw7ZvEwpCVjBn+YKEfGEI
-        84csGjWxUmh4/oXvP8SHyuYLfM7yBVoNT9Cu5geI1HwBqfgCkYrn367i+WszeYt9Zh362P4DrXpPIV6m
-        BAkAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnFilterClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>257, 3</value>
-  </data>
-  <data name="btnFilterClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 21</value>
-  </data>
-  <data name="btnFilterClear.TabIndex" type="System.Int32, mscorlib">
-    <value>160</value>
-  </data>
-  <data name="&gt;&gt;btnFilterClear.Name" xml:space="preserve">
-    <value>btnFilterClear</value>
-  </data>
-  <data name="&gt;&gt;btnFilterClear.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnFilterClear.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;btnFilterClear.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="txt_Filtre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="txt_Filtre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="txt_Filtre.Properties.NullValuePrompt" xml:space="preserve">
-    <value>Masa Adını Giriniz...</value>
-  </data>
-  <data name="txt_Filtre.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txt_Filtre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 22</value>
-  </data>
-  <data name="txt_Filtre.TabIndex" type="System.Int32, mscorlib">
-    <value>159</value>
-  </data>
-  <data name="&gt;&gt;txt_Filtre.Name" xml:space="preserve">
-    <value>txt_Filtre</value>
-  </data>
-  <data name="&gt;&gt;txt_Filtre.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Filtre.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;txt_Filtre.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panelControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 54</value>
-  </data>
-  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 165</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 652</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
   </data>
   <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
     <value>panelControl1</value>
@@ -859,6 +285,679 @@
   <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;barDockControl3.Name" xml:space="preserve">
+    <value>barDockControl3</value>
+  </data>
+  <data name="&gt;&gt;barDockControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;barDockControl4.Name" xml:space="preserve">
+    <value>barDockControl4</value>
+  </data>
+  <data name="&gt;&gt;barDockControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Name" xml:space="preserve">
+    <value>barDockControl2</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Name" xml:space="preserve">
+    <value>barDockControl1</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;barDockControl7.Name" xml:space="preserve">
+    <value>barDockControl7</value>
+  </data>
+  <data name="&gt;&gt;barDockControl7.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl7.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;barDockControl8.Name" xml:space="preserve">
+    <value>barDockControl8</value>
+  </data>
+  <data name="&gt;&gt;barDockControl8.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl8.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;barDockControl6.Name" xml:space="preserve">
+    <value>barDockControl6</value>
+  </data>
+  <data name="&gt;&gt;barDockControl6.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl6.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;barDockControl5.Name" xml:space="preserve">
+    <value>barDockControl5</value>
+  </data>
+  <data name="&gt;&gt;barDockControl5.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl5.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;barDockControl11.Name" xml:space="preserve">
+    <value>barDockControl11</value>
+  </data>
+  <data name="&gt;&gt;barDockControl11.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl11.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;barDockControl12.Name" xml:space="preserve">
+    <value>barDockControl12</value>
+  </data>
+  <data name="&gt;&gt;barDockControl12.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl12.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;barDockControl10.Name" xml:space="preserve">
+    <value>barDockControl10</value>
+  </data>
+  <data name="&gt;&gt;barDockControl10.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl10.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;barDockControl9.Name" xml:space="preserve">
+    <value>barDockControl9</value>
+  </data>
+  <data name="&gt;&gt;barDockControl9.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl9.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;barDockControl15.Name" xml:space="preserve">
+    <value>barDockControl15</value>
+  </data>
+  <data name="&gt;&gt;barDockControl15.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl15.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MasaTakip</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Name" xml:space="preserve">
+    <value>gridColumn10</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Name" xml:space="preserve">
+    <value>gridColumn8</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
+    <value>barManager1</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar3.Name" xml:space="preserve">
+    <value>bar3</value>
+  </data>
+  <data name="&gt;&gt;bar3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bartxt_Kul.Name" xml:space="preserve">
+    <value>bartxt_Kul</value>
+  </data>
+  <data name="&gt;&gt;bartxt_Kul.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bartxt_Dep.Name" xml:space="preserve">
+    <value>bartxt_Dep</value>
+  </data>
+  <data name="&gt;&gt;bartxt_Dep.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bartxt_FisNo.Name" xml:space="preserve">
+    <value>bartxt_FisNo</value>
+  </data>
+  <data name="&gt;&gt;bartxt_FisNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit2.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bartxt_BosMasa.Name" xml:space="preserve">
+    <value>bartxt_BosMasa</value>
+  </data>
+  <data name="&gt;&gt;bartxt_BosMasa.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit3.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bartxt_DoluMasa.Name" xml:space="preserve">
+    <value>bartxt_DoluMasa</value>
+  </data>
+  <data name="&gt;&gt;bartxt_DoluMasa.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit4.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit4</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barspn_Refresh.Name" xml:space="preserve">
+    <value>barspn_Refresh</value>
+  </data>
+  <data name="&gt;&gt;barspn_Refresh.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barStaticItem1.Name" xml:space="preserve">
+    <value>barStaticItem1</value>
+  </data>
+  <data name="&gt;&gt;barStaticItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_Sure.Name" xml:space="preserve">
+    <value>bar_Sure</value>
+  </data>
+  <data name="&gt;&gt;bar_Sure.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit5.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit5</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barStaticItem2.Name" xml:space="preserve">
+    <value>barStaticItem2</value>
+  </data>
+  <data name="&gt;&gt;barStaticItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_KuverTutar.Name" xml:space="preserve">
+    <value>bar_KuverTutar</value>
+  </data>
+  <data name="&gt;&gt;bar_KuverTutar.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit6.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit6</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit2.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Name" xml:space="preserve">
+    <value>repositoryItemGridLookUpEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Name" xml:space="preserve">
+    <value>repositoryItemGridLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnContextKisiyeTransfer.Name" xml:space="preserve">
+    <value>btnContextKisiyeTransfer</value>
+  </data>
+  <data name="&gt;&gt;btnContextKisiyeTransfer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliUrunTr.Name" xml:space="preserve">
+    <value>btnParcaliUrunTr</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliUrunTr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGridDizaynKaydet.Name" xml:space="preserve">
+    <value>btnGridDizaynKaydet</value>
+  </data>
+  <data name="&gt;&gt;btnGridDizaynKaydet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGridDizaynTemizle.Name" xml:space="preserve">
+    <value>btnGridDizaynTemizle</value>
+  </data>
+  <data name="&gt;&gt;btnGridDizaynTemizle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
+    <value>gridView2</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
+    <value>gridColumn3</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichTextEdit1.Name" xml:space="preserve">
+    <value>repositoryItemRichTextEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichTextEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit, DevExpress.XtraRichEdit.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
+    <value>gridColumn4</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Name" xml:space="preserve">
+    <value>gridColumn6</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
+    <value>gridColumn5</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn9.Name" xml:space="preserve">
+    <value>gridColumn9</value>
+  </data>
+  <data name="&gt;&gt;gridColumn9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn7.Name" xml:space="preserve">
+    <value>gridColumn7</value>
+  </data>
+  <data name="&gt;&gt;gridColumn7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Name" xml:space="preserve">
+    <value>gridColumn11</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
+    <value>gridColumn1</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
+    <value>gridColumn2</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barManager2.Name" xml:space="preserve">
+    <value>barManager2</value>
+  </data>
+  <data name="&gt;&gt;barManager2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_Menu.Name" xml:space="preserve">
+    <value>bar_Menu</value>
+  </data>
+  <data name="&gt;&gt;bar_Menu.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_Satis.Name" xml:space="preserve">
+    <value>bar_Satis</value>
+  </data>
+  <data name="&gt;&gt;bar_Satis.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_HesapBak.Name" xml:space="preserve">
+    <value>bar_HesapBak</value>
+  </data>
+  <data name="&gt;&gt;bar_HesapBak.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_OzelMasa.Name" xml:space="preserve">
+    <value>bar_OzelMasa</value>
+  </data>
+  <data name="&gt;&gt;bar_OzelMasa.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_OdaKontrol.Name" xml:space="preserve">
+    <value>bar_OdaKontrol</value>
+  </data>
+  <data name="&gt;&gt;bar_OdaKontrol.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barSubItem2.Name" xml:space="preserve">
+    <value>barSubItem2</value>
+  </data>
+  <data name="&gt;&gt;barSubItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_MasaTransfer.Name" xml:space="preserve">
+    <value>bar_MasaTransfer</value>
+  </data>
+  <data name="&gt;&gt;bar_MasaTransfer.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_MasaIslem.Name" xml:space="preserve">
+    <value>bar_MasaIslem</value>
+  </data>
+  <data name="&gt;&gt;bar_MasaIslem.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_MalzemeTransfer.Name" xml:space="preserve">
+    <value>bar_MalzemeTransfer</value>
+  </data>
+  <data name="&gt;&gt;bar_MalzemeTransfer.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_KisiSayisi.Name" xml:space="preserve">
+    <value>bar_KisiSayisi</value>
+  </data>
+  <data name="&gt;&gt;bar_KisiSayisi.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnMasaKilitAc.Name" xml:space="preserve">
+    <value>btnMasaKilitAc</value>
+  </data>
+  <data name="&gt;&gt;btnMasaKilitAc.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliMasa.Name" xml:space="preserve">
+    <value>btnParcaliMasa</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliMasa.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_Rapor.Name" xml:space="preserve">
+    <value>bar_Rapor</value>
+  </data>
+  <data name="&gt;&gt;bar_Rapor.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_Relogin.Name" xml:space="preserve">
+    <value>bar_Relogin</value>
+  </data>
+  <data name="&gt;&gt;bar_Relogin.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_Direksatis.Name" xml:space="preserve">
+    <value>bar_Direksatis</value>
+  </data>
+  <data name="&gt;&gt;bar_Direksatis.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_PaketSatis.Name" xml:space="preserve">
+    <value>bar_PaketSatis</value>
+  </data>
+  <data name="&gt;&gt;bar_PaketSatis.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bar_Yenile.Name" xml:space="preserve">
+    <value>bar_Yenile</value>
+  </data>
+  <data name="&gt;&gt;bar_Yenile.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnHesapDokum.Name" xml:space="preserve">
+    <value>btnHesapDokum</value>
+  </data>
+  <data name="&gt;&gt;btnHesapDokum.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdeme.Name" xml:space="preserve">
+    <value>btnParcaliOdeme</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdeme.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem11.Name" xml:space="preserve">
+    <value>barButtonItem11</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barSubItem1.Name" xml:space="preserve">
+    <value>barSubItem1</value>
+  </data>
+  <data name="&gt;&gt;barSubItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
+    <value>barButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
+    <value>barButtonItem2</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem3.Name" xml:space="preserve">
+    <value>barButtonItem3</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem4.Name" xml:space="preserve">
+    <value>barButtonItem4</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem5.Name" xml:space="preserve">
+    <value>barButtonItem5</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem6.Name" xml:space="preserve">
+    <value>barButtonItem6</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MasaTakip</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bartxt_Kul.Caption" xml:space="preserve">
+    <value>Kullanıcı : </value>
+  </data>
+  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_Dep.Caption" xml:space="preserve">
+    <value>Departman : </value>
+  </data>
+  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="barspn_Refresh.Caption" xml:space="preserve">
+    <value>Kalan Süre : </value>
+  </data>
+  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barspn_Refresh.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
+    <value>Boş Masa :</value>
+  </data>
+  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_BosMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
+    <value>Dolu Masa : </value>
+  </data>
+  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_DoluMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_FisNo.Caption" xml:space="preserve">
+    <value>Fis No : </value>
+  </data>
+  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="barStaticItem1.Caption" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="repositoryItemTextEdit5.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barStaticItem2.Caption" xml:space="preserve">
+    <value>Kuver Tutari :</value>
+  </data>
+  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemTextEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemGridLookUpEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="repositoryItemGridLookUpEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>131, 9</value>
+  </metadata>
   <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
@@ -1710,6 +1809,502 @@ Masa</value>
   <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
+    <value>gridControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>777, 165</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 652</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="contextMenuSagTik.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>343, 9</value>
+  </metadata>
+  <data name="contextMenuSagTik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 108</value>
+  </data>
+  <data name="&gt;&gt;contextMenuSagTik.Name" xml:space="preserve">
+    <value>contextMenuSagTik</value>
+  </data>
+  <data name="&gt;&gt;contextMenuSagTik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gridControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 333</value>
+  </data>
+  <data name="gridView2.Appearance.FooterPanel.BackColor2" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="gridView2.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 15.75pt, style=Bold</value>
+  </data>
+  <data name="gridView2.AppearancePrint.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>Urun</value>
+  </data>
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridColumn3.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Count</value>
+  </data>
+  <data name="gridColumn3.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn3.Summary2" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn3.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="gridColumn4.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn4.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="gridColumn6.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn6.Caption" xml:space="preserve">
+    <value>  Tutar  </value>
+  </data>
+  <data name="gridColumn6.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn6.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn6.Summary2" xml:space="preserve">
+    <value>                            {0:N2}</value>
+  </data>
+  <data name="gridColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn6.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn6.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="gridColumn5.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="gridColumn5.Caption" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="gridColumn9.Caption" xml:space="preserve">
+    <value>Personel</value>
+  </data>
+  <data name="gridColumn9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn9.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridColumn9.Width" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="gridColumn7.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="gridColumn7.Caption" xml:space="preserve">
+    <value>D.Tutar</value>
+  </data>
+  <data name="gridColumn7.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v19.1">
+    <value>Sum</value>
+  </data>
+  <data name="gridColumn7.Summary1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn7.Summary2" xml:space="preserve">
+    <value>{0:N2}</value>
+  </data>
+  <data name="gridColumn7.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="gridColumn11.Caption" xml:space="preserve">
+    <value>Rsat_Id</value>
+  </data>
+  <data name="gridView2.ViewCaption" xml:space="preserve">
+    <value>Satılan Ürünler</value>
+  </data>
+  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 317</value>
+  </data>
+  <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
+    <value>gridControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnContextKisiyeTransfer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 26</value>
+  </data>
+  <data name="btnContextKisiyeTransfer.Text" xml:space="preserve">
+    <value>Kisiye Transfer Et</value>
+  </data>
+  <data name="btnParcaliUrunTr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 26</value>
+  </data>
+  <data name="btnParcaliUrunTr.Text" xml:space="preserve">
+    <value>Parçalı Ürün Transfer Et</value>
+  </data>
+  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 26</value>
+  </data>
+  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
+    <value>Grid Dizayn Kaydet</value>
+  </data>
+  <data name="btnGridDizaynTemizle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 26</value>
+  </data>
+  <data name="btnGridDizaynTemizle.Text" xml:space="preserve">
+    <value>Grid Dizayn Temizle</value>
+  </data>
+  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 56</value>
+  </data>
+  <data name="gridColumn1.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="gridColumn1.Caption" xml:space="preserve">
+    <value>Konum Kod</value>
+  </data>
+  <data name="gridColumn2.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>Konum Ad</value>
+  </data>
+  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 277</value>
+  </data>
+  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnFisnoTemizle.Name" xml:space="preserve">
+    <value>btnFisnoTemizle</value>
+  </data>
+  <data name="&gt;&gt;btnFisnoTemizle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnFisnoTemizle.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;btnFisnoTemizle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtFisnoGit.Name" xml:space="preserve">
+    <value>txtFisnoGit</value>
+  </data>
+  <data name="&gt;&gt;txtFisnoGit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtFisnoGit.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;txtFisnoGit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Name" xml:space="preserve">
+    <value>btnFilterClear</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Name" xml:space="preserve">
+    <value>txt_Filtre</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 54</value>
+  </data>
+  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnFilterClear.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
+        bGUAQ2xlYXIgRmlsdGVyO0ZpbHRlcjtSZW1vdmUgRmlsdGVyO0NsZWFyKfWMAgAAA0xJREFUOE+V0mtM
+        k1ccx/G/we3VpjEtmShFBYrGUG+tgwokY4sRFCXBqFOaEi8Rb4txdCGCk1RaKs4AutkKIliDpbiZCFhr
+        ABUhgFQk1o1uEyhCsCCXp4PxtJQCv+UxakbwjSf5vjvnk5zzP0REPleTJctMqRGnq9KjHlSlRbbdT49C
+        TVoU7qVGtN39Qfrw9onwDN3eNUJuLxHNAUDvogrFhhTLJZln8PlNuAdaMTHSAS/bAy/7Et5RG1x9dRho
+        KURT7g7PzaPrFRwyA6hOixybcLah894VNJ07gNIYHso2L8CteD7Kdy6E9fJBvKrLh2eoAabjYU4i+nQG
+        UHlCWuGoU2FiuB5Tbgcm2R5Murow6bLDy/6J0Q4z+mpz0WGQ47dDkspZQOlhyZFW3S64u/Mx5e4CJlmw
+        XT9hoGEr7IY4NCpEaDktRmPmVyhKWn2MiObOAHZ+uYhn+l7aP/j4DDyvqzDl7gFrz0N/7Rb0mk/iZcU5
+        9FbnwWrUjOySBvrOekROLJCvkterY8A8UcEzUI/RFzlgninxuukqGpK/RWV4GEzHEy8Q0SfG4OUiY/By
+        uyEo5OcbgSHcVGgOdy/t7tD9ValR3r9uJGOwOQPD1l/wICkBLwoL8e/fNphi45z6ZcLtdzZtZkbarLDp
+        LuHakuBiun1I/B5RxgljDXsCwVhSMdSchzKxGE6zEeM1JWB/t6Bm777pMWsTxquvgzEZUCAI6qbH57dR
+        S3bkO2SeITEQY7ZcMC1a1OecxBXJOuewXgNXhQ7jzx7BVa7FUJEal9euYZS8hSKqU8eQRR1GT9ThHDKv
+        VBYEV8+v6KuU42lJFrL8AmR3Yr6ZHrmWiVG9Cv8Un0H5xujpi35LEy74LSW6/+PX1KwUk0Up4YD5ZUlC
+        sI5HcFqL0XjxFEo2RDr79Tnoy5DjVXoiHFy6TBSJ1w+f/2LJSjKnRLztzTU+M6dEwCgLRet1DfJD16Jb
+        q4bjVCLs38XDKFk93XkkDr2KHejMUiDbN6D9zRz/t+YS0edEtIBL4yvQ18ZHw7ZvEwpCVjBn+YKEfGEI
+        84csGjWxUmh4/oXvP8SHyuYLfM7yBVoNT9Cu5geI1HwBqfgCkYrn367i+WszeYt9Zh362P4DrXpPIV6m
+        BAkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnFilterClear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 3</value>
+  </data>
+  <data name="btnFilterClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 21</value>
+  </data>
+  <data name="btnFilterClear.TabIndex" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Name" xml:space="preserve">
+    <value>btnFilterClear</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;btnFilterClear.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txt_Filtre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="txt_Filtre.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="txt_Filtre.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Masa Adını Giriniz...</value>
+  </data>
+  <data name="txt_Filtre.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_Filtre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
+  <data name="txt_Filtre.TabIndex" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Name" xml:space="preserve">
+    <value>txt_Filtre</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;txt_Filtre.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="flp_Masa.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flp_Masa.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flp_Masa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 165</value>
+  </data>
+  <data name="flp_Masa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>777, 491</value>
+  </data>
+  <data name="flp_Masa.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="&gt;&gt;flp_Masa.Name" xml:space="preserve">
+    <value>flp_Masa</value>
+  </data>
+  <data name="&gt;&gt;flp_Masa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flp_Masa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flp_Masa.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="barDockControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 89</value>
+  </data>
+  <data name="barDockControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1068, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Name" xml:space="preserve">
+    <value>barDockControl1</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="barDockControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 817</value>
+  </data>
+  <data name="barDockControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1068, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Name" xml:space="preserve">
+    <value>barDockControl2</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="barDockControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -1752,47 +2347,47 @@ Masa</value>
   <data name="&gt;&gt;barDockControl4.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="barDockControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="barDockControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 817</value>
-  </data>
-  <data name="barDockControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1068, 0</value>
-  </data>
-  <data name="&gt;&gt;barDockControl2.Name" xml:space="preserve">
-    <value>barDockControl2</value>
-  </data>
-  <data name="&gt;&gt;barDockControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControl2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControl2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="barDockControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="barDockControl5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="barDockControl1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="barDockControl5.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 89</value>
   </data>
-  <data name="barDockControl1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="barDockControl5.Size" type="System.Drawing.Size, System.Drawing">
     <value>1068, 0</value>
   </data>
-  <data name="&gt;&gt;barDockControl1.Name" xml:space="preserve">
-    <value>barDockControl1</value>
+  <data name="&gt;&gt;barDockControl5.Name" xml:space="preserve">
+    <value>barDockControl5</value>
   </data>
-  <data name="&gt;&gt;barDockControl1.Type" xml:space="preserve">
+  <data name="&gt;&gt;barDockControl5.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barDockControl1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;barDockControl5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;barDockControl1.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;barDockControl5.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="barDockControl6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 817</value>
+  </data>
+  <data name="barDockControl6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1068, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControl6.Name" xml:space="preserve">
+    <value>barDockControl6</value>
+  </data>
+  <data name="&gt;&gt;barDockControl6.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl6.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="barDockControl7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -1836,47 +2431,47 @@ Masa</value>
   <data name="&gt;&gt;barDockControl8.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="barDockControl6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="barDockControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 817</value>
-  </data>
-  <data name="barDockControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1068, 0</value>
-  </data>
-  <data name="&gt;&gt;barDockControl6.Name" xml:space="preserve">
-    <value>barDockControl6</value>
-  </data>
-  <data name="&gt;&gt;barDockControl6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControl6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControl6.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="barDockControl5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="barDockControl9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="barDockControl5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="barDockControl9.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 89</value>
   </data>
-  <data name="barDockControl5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="barDockControl9.Size" type="System.Drawing.Size, System.Drawing">
     <value>1068, 0</value>
   </data>
-  <data name="&gt;&gt;barDockControl5.Name" xml:space="preserve">
-    <value>barDockControl5</value>
+  <data name="&gt;&gt;barDockControl9.Name" xml:space="preserve">
+    <value>barDockControl9</value>
   </data>
-  <data name="&gt;&gt;barDockControl5.Type" xml:space="preserve">
+  <data name="&gt;&gt;barDockControl9.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barDockControl5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;barDockControl9.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;barDockControl5.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;barDockControl9.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="barDockControl10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControl10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 817</value>
+  </data>
+  <data name="barDockControl10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1068, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControl10.Name" xml:space="preserve">
+    <value>barDockControl10</value>
+  </data>
+  <data name="&gt;&gt;barDockControl10.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl10.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="barDockControl11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -1919,54 +2514,6 @@ Masa</value>
   </data>
   <data name="&gt;&gt;barDockControl12.ZOrder" xml:space="preserve">
     <value>15</value>
-  </data>
-  <data name="barDockControl10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="barDockControl10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 817</value>
-  </data>
-  <data name="barDockControl10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1068, 0</value>
-  </data>
-  <data name="&gt;&gt;barDockControl10.Name" xml:space="preserve">
-    <value>barDockControl10</value>
-  </data>
-  <data name="&gt;&gt;barDockControl10.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControl10.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControl10.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="barDockControl9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="barDockControl9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
-  </data>
-  <data name="barDockControl9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1068, 0</value>
-  </data>
-  <data name="&gt;&gt;barDockControl9.Name" xml:space="preserve">
-    <value>barDockControl9</value>
-  </data>
-  <data name="&gt;&gt;barDockControl9.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDockControl9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;barDockControl9.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="barDockControl15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="barDockControl15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 89</value>
   </data>
   <metadata name="barManager2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>218, 9</value>
@@ -2018,6 +2565,27 @@ Masa</value>
   </data>
   <data name="&gt;&gt;barDockControl14.ZOrder" xml:space="preserve">
     <value>24</value>
+  </data>
+  <data name="barDockControl15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControl15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 89</value>
+  </data>
+  <data name="barDockControl15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 757</value>
+  </data>
+  <data name="&gt;&gt;barDockControl15.Name" xml:space="preserve">
+    <value>barDockControl15</value>
+  </data>
+  <data name="&gt;&gt;barDockControl15.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControl15.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="barDockControl16.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -2469,549 +3037,164 @@ Kontrol</value>
         IiAvPg0KICA8L2c+DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="barDockControl15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 757</value>
+  <data name="&gt;&gt;btn_SplitBol.Name" xml:space="preserve">
+    <value>btn_SplitBol</value>
   </data>
-  <data name="&gt;&gt;barDockControl15.Name" xml:space="preserve">
-    <value>barDockControl15</value>
+  <data name="&gt;&gt;btn_SplitBol.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barDockControl15.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;btn_SplitBol.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;barDockControl15.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;btn_SplitBol.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;barDockControl15.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <data name="&gt;&gt;cbtn_9.Name" xml:space="preserve">
+    <value>cbtn_9</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;cbtn_9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MasaTakip</value>
+  <data name="&gt;&gt;cbtn_9.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;gridColumn10.Name" xml:space="preserve">
-    <value>gridColumn10</value>
+  <data name="&gt;&gt;cbtn_9.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;gridColumn10.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_8.Name" xml:space="preserve">
+    <value>cbtn_8</value>
   </data>
-  <data name="&gt;&gt;gridColumn8.Name" xml:space="preserve">
-    <value>gridColumn8</value>
+  <data name="&gt;&gt;cbtn_8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridColumn8.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_8.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
-    <value>barManager1</value>
+  <data name="&gt;&gt;cbtn_8.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_7.Name" xml:space="preserve">
+    <value>cbtn_7</value>
   </data>
-  <data name="&gt;&gt;bar3.Name" xml:space="preserve">
-    <value>bar3</value>
+  <data name="&gt;&gt;cbtn_7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;bar3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_7.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;bartxt_Kul.Name" xml:space="preserve">
-    <value>bartxt_Kul</value>
+  <data name="&gt;&gt;cbtn_7.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;bartxt_Kul.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_6.Name" xml:space="preserve">
+    <value>cbtn_6</value>
   </data>
-  <data name="&gt;&gt;bartxt_Dep.Name" xml:space="preserve">
-    <value>bartxt_Dep</value>
+  <data name="&gt;&gt;cbtn_6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;bartxt_Dep.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_6.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;bartxt_FisNo.Name" xml:space="preserve">
-    <value>bartxt_FisNo</value>
+  <data name="&gt;&gt;cbtn_6.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;bartxt_FisNo.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_5.Name" xml:space="preserve">
+    <value>cbtn_5</value>
   </data>
-  <data name="&gt;&gt;repositoryItemSpinEdit2.Name" xml:space="preserve">
-    <value>repositoryItemSpinEdit2</value>
+  <data name="&gt;&gt;cbtn_5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;repositoryItemSpinEdit2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_5.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;bartxt_BosMasa.Name" xml:space="preserve">
-    <value>bartxt_BosMasa</value>
+  <data name="&gt;&gt;cbtn_5.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;bartxt_BosMasa.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_4.Name" xml:space="preserve">
+    <value>cbtn_4</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit3.Name" xml:space="preserve">
-    <value>repositoryItemTextEdit3</value>
+  <data name="&gt;&gt;cbtn_4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_4.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;bartxt_DoluMasa.Name" xml:space="preserve">
-    <value>bartxt_DoluMasa</value>
+  <data name="&gt;&gt;cbtn_4.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;bartxt_DoluMasa.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_3.Name" xml:space="preserve">
+    <value>cbtn_3</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit4.Name" xml:space="preserve">
-    <value>repositoryItemTextEdit4</value>
+  <data name="&gt;&gt;cbtn_3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_3.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;barspn_Refresh.Name" xml:space="preserve">
-    <value>barspn_Refresh</value>
+  <data name="&gt;&gt;cbtn_3.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;barspn_Refresh.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_2.Name" xml:space="preserve">
+    <value>cbtn_2</value>
   </data>
-  <data name="&gt;&gt;repositoryItemSpinEdit1.Name" xml:space="preserve">
-    <value>repositoryItemSpinEdit1</value>
+  <data name="&gt;&gt;cbtn_2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_2.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;barStaticItem1.Name" xml:space="preserve">
-    <value>barStaticItem1</value>
+  <data name="&gt;&gt;cbtn_2.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;barStaticItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_1.Name" xml:space="preserve">
+    <value>cbtn_1</value>
   </data>
-  <data name="&gt;&gt;bar_Sure.Name" xml:space="preserve">
-    <value>bar_Sure</value>
+  <data name="&gt;&gt;cbtn_1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;bar_Sure.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_1.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit5.Name" xml:space="preserve">
-    <value>repositoryItemTextEdit5</value>
+  <data name="&gt;&gt;cbtn_1.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_0.Name" xml:space="preserve">
+    <value>cbtn_0</value>
   </data>
-  <data name="&gt;&gt;barStaticItem2.Name" xml:space="preserve">
-    <value>barStaticItem2</value>
+  <data name="&gt;&gt;cbtn_0.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barStaticItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;cbtn_0.Parent" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="&gt;&gt;bar_KuverTutar.Name" xml:space="preserve">
-    <value>bar_KuverTutar</value>
+  <data name="&gt;&gt;cbtn_0.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;bar_KuverTutar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="panelControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit6.Name" xml:space="preserve">
-    <value>repositoryItemTextEdit6</value>
+  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 656</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>777, 36</value>
   </data>
-  <data name="&gt;&gt;repositoryItemTextEdit1.Name" xml:space="preserve">
-    <value>repositoryItemTextEdit1</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemTextEdit2.Name" xml:space="preserve">
-    <value>repositoryItemTextEdit2</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemTextEdit2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Name" xml:space="preserve">
-    <value>repositoryItemGridLookUpEdit1</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Name" xml:space="preserve">
-    <value>repositoryItemGridLookUpEdit1View</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnContextKisiyeTransfer.Name" xml:space="preserve">
-    <value>btnContextKisiyeTransfer</value>
-  </data>
-  <data name="&gt;&gt;btnContextKisiyeTransfer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliUrunTr.Name" xml:space="preserve">
-    <value>btnParcaliUrunTr</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliUrunTr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGridDizaynKaydet.Name" xml:space="preserve">
-    <value>btnGridDizaynKaydet</value>
-  </data>
-  <data name="&gt;&gt;btnGridDizaynKaydet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGridDizaynTemizle.Name" xml:space="preserve">
-    <value>btnGridDizaynTemizle</value>
-  </data>
-  <data name="&gt;&gt;btnGridDizaynTemizle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
-    <value>gridView2</value>
-  </data>
-  <data name="&gt;&gt;gridView2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
-    <value>gridColumn3</value>
-  </data>
-  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemRichTextEdit1.Name" xml:space="preserve">
-    <value>repositoryItemRichTextEdit1</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemRichTextEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit, DevExpress.XtraRichEdit.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
-    <value>gridColumn4</value>
-  </data>
-  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn6.Name" xml:space="preserve">
-    <value>gridColumn6</value>
-  </data>
-  <data name="&gt;&gt;gridColumn6.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
-    <value>gridColumn5</value>
-  </data>
-  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn9.Name" xml:space="preserve">
-    <value>gridColumn9</value>
-  </data>
-  <data name="&gt;&gt;gridColumn9.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn7.Name" xml:space="preserve">
-    <value>gridColumn7</value>
-  </data>
-  <data name="&gt;&gt;gridColumn7.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn11.Name" xml:space="preserve">
-    <value>gridColumn11</value>
-  </data>
-  <data name="&gt;&gt;gridColumn11.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
-    <value>gridView1</value>
-  </data>
-  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
-    <value>gridColumn1</value>
-  </data>
-  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
-    <value>gridColumn2</value>
-  </data>
-  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barManager2.Name" xml:space="preserve">
-    <value>barManager2</value>
-  </data>
-  <data name="&gt;&gt;barManager2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_Menu.Name" xml:space="preserve">
-    <value>bar_Menu</value>
-  </data>
-  <data name="&gt;&gt;bar_Menu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_Satis.Name" xml:space="preserve">
-    <value>bar_Satis</value>
-  </data>
-  <data name="&gt;&gt;bar_Satis.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_HesapBak.Name" xml:space="preserve">
-    <value>bar_HesapBak</value>
-  </data>
-  <data name="&gt;&gt;bar_HesapBak.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_OzelMasa.Name" xml:space="preserve">
-    <value>bar_OzelMasa</value>
-  </data>
-  <data name="&gt;&gt;bar_OzelMasa.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_OdaKontrol.Name" xml:space="preserve">
-    <value>bar_OdaKontrol</value>
-  </data>
-  <data name="&gt;&gt;bar_OdaKontrol.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barSubItem2.Name" xml:space="preserve">
-    <value>barSubItem2</value>
-  </data>
-  <data name="&gt;&gt;barSubItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_MasaTransfer.Name" xml:space="preserve">
-    <value>bar_MasaTransfer</value>
-  </data>
-  <data name="&gt;&gt;bar_MasaTransfer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_MasaIslem.Name" xml:space="preserve">
-    <value>bar_MasaIslem</value>
-  </data>
-  <data name="&gt;&gt;bar_MasaIslem.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_MalzemeTransfer.Name" xml:space="preserve">
-    <value>bar_MalzemeTransfer</value>
-  </data>
-  <data name="&gt;&gt;bar_MalzemeTransfer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_KisiSayisi.Name" xml:space="preserve">
-    <value>bar_KisiSayisi</value>
-  </data>
-  <data name="&gt;&gt;bar_KisiSayisi.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnMasaKilitAc.Name" xml:space="preserve">
-    <value>btnMasaKilitAc</value>
-  </data>
-  <data name="&gt;&gt;btnMasaKilitAc.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliMasa.Name" xml:space="preserve">
-    <value>btnParcaliMasa</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliMasa.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_Rapor.Name" xml:space="preserve">
-    <value>bar_Rapor</value>
-  </data>
-  <data name="&gt;&gt;bar_Rapor.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_Relogin.Name" xml:space="preserve">
-    <value>bar_Relogin</value>
-  </data>
-  <data name="&gt;&gt;bar_Relogin.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_Direksatis.Name" xml:space="preserve">
-    <value>bar_Direksatis</value>
-  </data>
-  <data name="&gt;&gt;bar_Direksatis.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_PaketSatis.Name" xml:space="preserve">
-    <value>bar_PaketSatis</value>
-  </data>
-  <data name="&gt;&gt;bar_PaketSatis.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bar_Yenile.Name" xml:space="preserve">
-    <value>bar_Yenile</value>
-  </data>
-  <data name="&gt;&gt;bar_Yenile.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnHesapDokum.Name" xml:space="preserve">
-    <value>btnHesapDokum</value>
-  </data>
-  <data name="&gt;&gt;btnHesapDokum.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliOdeme.Name" xml:space="preserve">
-    <value>btnParcaliOdeme</value>
-  </data>
-  <data name="&gt;&gt;btnParcaliOdeme.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem11.Name" xml:space="preserve">
-    <value>barButtonItem11</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem11.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barSubItem1.Name" xml:space="preserve">
-    <value>barSubItem1</value>
-  </data>
-  <data name="&gt;&gt;barSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
-    <value>barButtonItem1</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
-    <value>barButtonItem2</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem3.Name" xml:space="preserve">
-    <value>barButtonItem3</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem4.Name" xml:space="preserve">
-    <value>barButtonItem4</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem5.Name" xml:space="preserve">
-    <value>barButtonItem5</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem6.Name" xml:space="preserve">
-    <value>barButtonItem6</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MasaTakip</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="bartxt_Kul.Caption" xml:space="preserve">
-    <value>Kullanıcı : </value>
-  </data>
-  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_Dep.Caption" xml:space="preserve">
-    <value>Departman : </value>
-  </data>
-  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="barspn_Refresh.Caption" xml:space="preserve">
-    <value>Kalan Süre : </value>
-  </data>
-  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barspn_Refresh.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_BosMasa.Caption" xml:space="preserve">
-    <value>Boş Masa :</value>
-  </data>
-  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_BosMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_DoluMasa.Caption" xml:space="preserve">
-    <value>Dolu Masa : </value>
-  </data>
-  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_DoluMasa.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_FisNo.Caption" xml:space="preserve">
-    <value>Fis No : </value>
-  </data>
-  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
+  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
   </data>
-  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="barStaticItem1.Caption" xml:space="preserve">
-    <value>Süre</value>
-  </data>
-  <data name="repositoryItemTextEdit5.AutoHeight" type="System.Boolean, mscorlib">
+  <data name="panelControl3.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="barStaticItem2.Caption" xml:space="preserve">
-    <value>Kuver Tutari :</value>
+  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="repositoryItemTextEdit2.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="repositoryItemGridLookUpEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="repositoryItemGridLookUpEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Combo</value>
-  </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>131, 9</value>
-  </metadata>
-  <data name="btnContextKisiyeTransfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
-  </data>
-  <data name="btnContextKisiyeTransfer.Text" xml:space="preserve">
-    <value>Kisiye Transfer Et</value>
-  </data>
-  <data name="btnParcaliUrunTr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
-  </data>
-  <data name="btnParcaliUrunTr.Text" xml:space="preserve">
-    <value>Parçalı Ürün Transfer Et</value>
-  </data>
-  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
-  </data>
-  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
-    <value>Grid Dizayn Kaydet</value>
-  </data>
-  <data name="btnGridDizaynTemizle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
-  </data>
-  <data name="btnGridDizaynTemizle.Text" xml:space="preserve">
-    <value>Grid Dizayn Temizle</value>
+  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btn_SplitBol.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3373,6 +3556,54 @@ Kontrol</value>
   <data name="&gt;&gt;cbtn_0.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="&gt;&gt;flp_Kapatma.Name" xml:space="preserve">
+    <value>flp_Kapatma</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdemeEski.Name" xml:space="preserve">
+    <value>btnParcaliOdemeEski</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdemeEski.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdemeEski.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;btnParcaliOdemeEski.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 692</value>
+  </data>
+  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>777, 125</value>
+  </data>
+  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="flp_Kapatma.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3599,5 +3830,80 @@ Kontrol</value>
   </data>
   <data name="barButtonItem6.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="txtFisnoGit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 28</value>
+  </data>
+  <data name="textEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="textEdit1.Properties.NullText" xml:space="preserve">
+    <value>Fiş no girin ve enter basın...</value>
+  </data>
+  <data name="textEdit1.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Fiş no girin ve enter basın...</value>
+  </data>
+  <data name="textEdit1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtFisnoGit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 20</value>
+  </data>
+  <data name="txtFisnoGit.TabIndex" type="System.Int32, mscorlib">
+    <value>161</value>
+  </data>
+  <data name="&gt;&gt;txtFisnoGit.Name" xml:space="preserve">
+    <value>txtFisnoGit</value>
+  </data>
+  <data name="&gt;&gt;txtFisnoGit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtFisnoGit.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;txtFisnoGit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="simpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
+        bGUAQ2xlYXIgRmlsdGVyO0ZpbHRlcjtSZW1vdmUgRmlsdGVyO0NsZWFyKfWMAgAAA0xJREFUOE+V0mtM
+        k1ccx/G/we3VpjEtmShFBYrGUG+tgwokY4sRFCXBqFOaEi8Rb4txdCGCk1RaKs4AutkKIliDpbiZCFhr
+        ABUhgFQk1o1uEyhCsCCXp4PxtJQCv+UxakbwjSf5vjvnk5zzP0REPleTJctMqRGnq9KjHlSlRbbdT49C
+        TVoU7qVGtN39Qfrw9onwDN3eNUJuLxHNAUDvogrFhhTLJZln8PlNuAdaMTHSAS/bAy/7Et5RG1x9dRho
+        KURT7g7PzaPrFRwyA6hOixybcLah894VNJ07gNIYHso2L8CteD7Kdy6E9fJBvKrLh2eoAabjYU4i+nQG
+        UHlCWuGoU2FiuB5Tbgcm2R5Murow6bLDy/6J0Q4z+mpz0WGQ47dDkspZQOlhyZFW3S64u/Mx5e4CJlmw
+        XT9hoGEr7IY4NCpEaDktRmPmVyhKWn2MiObOAHZ+uYhn+l7aP/j4DDyvqzDl7gFrz0N/7Rb0mk/iZcU5
+        9FbnwWrUjOySBvrOekROLJCvkterY8A8UcEzUI/RFzlgninxuukqGpK/RWV4GEzHEy8Q0SfG4OUiY/By
+        uyEo5OcbgSHcVGgOdy/t7tD9ValR3r9uJGOwOQPD1l/wICkBLwoL8e/fNphi45z6ZcLtdzZtZkbarLDp
+        LuHakuBiun1I/B5RxgljDXsCwVhSMdSchzKxGE6zEeM1JWB/t6Bm777pMWsTxquvgzEZUCAI6qbH57dR
+        S3bkO2SeITEQY7ZcMC1a1OecxBXJOuewXgNXhQ7jzx7BVa7FUJEal9euYZS8hSKqU8eQRR1GT9ThHDKv
+        VBYEV8+v6KuU42lJFrL8AmR3Yr6ZHrmWiVG9Cv8Un0H5xujpi35LEy74LSW6/+PX1KwUk0Up4YD5ZUlC
+        sI5HcFqL0XjxFEo2RDr79Tnoy5DjVXoiHFy6TBSJ1w+f/2LJSjKnRLztzTU+M6dEwCgLRet1DfJD16Jb
+        q4bjVCLs38XDKFk93XkkDr2KHejMUiDbN6D9zRz/t+YS0edEtIBL4yvQ18ZHw7ZvEwpCVjBn+YKEfGEI
+        84csGjWxUmh4/oXvP8SHyuYLfM7yBVoNT9Cu5geI1HwBqfgCkYrn367i+WszeYt9Zh362P4DrXpPIV6m
+        BAkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnFisnoTemizle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 27</value>
+  </data>
+  <data name="btnFisnoTemizle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 21</value>
+  </data>
+  <data name="btnFisnoTemizle.TabIndex" type="System.Int32, mscorlib">
+    <value>162</value>
+  </data>
+  <data name="&gt;&gt;btnFisnoTemizle.Name" xml:space="preserve">
+    <value>btnFisnoTemizle</value>
+  </data>
+  <data name="&gt;&gt;btnFisnoTemizle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnFisnoTemizle.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;btnFisnoTemizle.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
 </root>
