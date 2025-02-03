@@ -60,7 +60,7 @@ namespace Pos
         {
 
             loadYukle();
-
+            fisnotemizle();
         }
 
         public void loadYukle()
@@ -1633,8 +1633,10 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
                 //Split_Ayarla();
 
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+                gridyenile(fisno);
 
-                gridyenile();
+                fisnotemizle();
             }
             catch (Exception ex)
             {
@@ -1696,7 +1698,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
             return true;
         }
 
-        private void gridyenile()
+        private void gridyenile(int fisnog)
         {
             if (!Masa_No.Contains("_") && parcalimi())
             {
@@ -1760,7 +1762,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             com.CommandType = CommandType.StoredProcedure;
             com.CommandTimeout = 0;
             com.CommandText = "Pos_Satis";
-            com.Parameters.AddWithValue("@Fisno", Convert.ToInt32(bartxt_FisNo.EditValue));
+            com.Parameters.AddWithValue("@Fisno", fisnog);
             com.Parameters.AddWithValue("@Rapor_Tipi", 0);
             com.Parameters.AddWithValue("@Split", Split);
             SqlDataAdapter da = new SqlDataAdapter(com);
@@ -1975,14 +1977,15 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void btn_HesapBak_Click(object sender, EventArgs e)
         {
-            HesapBak();
-        }
-
-        private void HesapBak()
-        {
-
             string fisno = Convert.ToInt32(bartxt_FisNo.EditValue).ToString();
 
+            HesapBak(fisno);
+        }
+
+        private void HesapBak(string fisno)
+        {
+
+           
 
             string query = $"exec Ingenico_Islem @Fisno={fisno}";
 
@@ -2023,7 +2026,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             string masaDurum = dbtools.DegerGetir("select top 1 Masa_Durum from Pos_Masa where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
 
             hes = new Hesap();
-            hes.Tag = bartxt_FisNo.EditValue;
+            hes.Tag = fisno;
             hes.Masa_No = Masa_No;
             hes.Split = Split;
             hes.Splitad = Splitad;
@@ -2302,7 +2305,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 btnSecilen = null;
 
                 //Split_Ayarla();
-                gridyenile();
+
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+
+                gridyenile(fisno);
             }
 
         }
@@ -2543,8 +2549,9 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
 
+            string fisno = Convert.ToInt32(bartxt_FisNo.EditValue).ToString();
 
-            HesapBak();
+            HesapBak(fisno);
             Main.a.Listele(0);
 
             txt_Filtre.Text = "";
@@ -2717,7 +2724,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
                     Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Indirim_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
 
-                    gridyenile();
+                    gridyenile(fisno);
                 }
 
             }
@@ -3114,17 +3121,45 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void txtFisnoGit_Leave(object sender, EventArgs e)
         {
-            HesapBak();
-            Main.a.Listele(0);
+            try
+            {
+                if (txtFisnoGit.Text == "") return;
+                int fisno = Convert.ToInt32(txtFisnoGit.Text.ToString());
 
-            txt_Filtre.Text = "";
+                string masano = dbtools.DegerGetir($"select top 1 Rsat_Masa from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Masa<>'' and Rsat_Masa is not null");
+
+                if (masano != "") // fiş no enter basılarak açılmıştır
+                {
+                    Masa_No = masano;
+                }
+
+
+                gridyenile(fisno);
+                HesapBak(fisno+"");
+                Main.a.Listele(0);
+
+                fisnotemizle();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void btnFisnoTemizle_Click(object sender, EventArgs e)
         {
+            fisnotemizle();
+        }
+
+        public void fisnotemizle()
+        {
             txtFisnoGit.Text = "";
             txtFisnoGit.Focus();
             txtFisnoGit.Select();
+
+            txt_Filtre.Text = "";
+
         }
     }
 }
