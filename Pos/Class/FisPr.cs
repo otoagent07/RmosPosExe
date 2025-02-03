@@ -3768,6 +3768,12 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     hsp.txtQr.Visible = true;
                     hsp.ReportFooter.HeightF = (float)388.3324;
                     hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
+                }else if (Param.hesapFisQrFisno)
+                {
+                    hsp.txtQr.Text = Fisno+"";
+                    hsp.txtQr.Visible = true;
+                    hsp.ReportFooter.HeightF = (float)388.3324;
+                    hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
                 }
 
 

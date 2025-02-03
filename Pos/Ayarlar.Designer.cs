@@ -276,6 +276,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.hesapFisQrFisno = new DevExpress.XtraEditors.CheckEdit();
             this.mobilCallerIdAktif = new DevExpress.XtraEditors.CheckEdit();
             this.otomatikOdenmez = new DevExpress.XtraEditors.CheckEdit();
             this.ikinciEkranAktif = new DevExpress.XtraEditors.CheckEdit();
@@ -659,9 +660,11 @@
             this.btn_Hesap_Kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tab_Print_Adisyon = new DevExpress.XtraTab.XtraTabPage();
+            this.btnMarsDizayn = new DevExpress.XtraEditors.SimpleButton();
             this.btnAbuyerDizayn = new DevExpress.XtraEditors.SimpleButton();
             this.btnUrunDizayn = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnMarsDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnAbuyerDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnUrunDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Print_Adisyon_Sil = new DevExpress.XtraEditors.SimpleButton();
@@ -1277,8 +1280,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.btnMarsDizayn = new DevExpress.XtraEditors.SimpleButton();
-            this.btnMarsDizaynSil = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1467,6 +1468,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hesapFisQrFisno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mobilCallerIdAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otomatikOdenmez.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ikinciEkranAktif.Properties)).BeginInit();
@@ -4169,6 +4171,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.hesapFisQrFisno);
             this.xtraTabPage8.Controls.Add(this.mobilCallerIdAktif);
             this.xtraTabPage8.Controls.Add(this.otomatikOdenmez);
             this.xtraTabPage8.Controls.Add(this.ikinciEkranAktif);
@@ -4205,6 +4208,13 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // hesapFisQrFisno
+            // 
+            resources.ApplyResources(this.hesapFisQrFisno, "hesapFisQrFisno");
+            this.hesapFisQrFisno.Name = "hesapFisQrFisno";
+            this.hesapFisQrFisno.Properties.Caption = resources.GetString("hesapFisQrFisno.Properties.Caption");
+            this.hesapFisQrFisno.CheckedChanged += new System.EventHandler(this.hesapFisQrFisno_CheckedChanged);
             // 
             // mobilCallerIdAktif
             // 
@@ -4289,6 +4299,7 @@
             resources.ApplyResources(this.hesapFisQr, "hesapFisQr");
             this.hesapFisQr.Name = "hesapFisQr";
             this.hesapFisQr.Properties.Caption = resources.GetString("hesapFisQr.Properties.Caption");
+            this.hesapFisQr.CheckedChanged += new System.EventHandler(this.hesapFisQr_CheckedChanged);
             // 
             // lookUpEdit_tipbox
             // 
@@ -7506,6 +7517,13 @@
             this.tab_Print_Adisyon.Name = "tab_Print_Adisyon";
             resources.ApplyResources(this.tab_Print_Adisyon, "tab_Print_Adisyon");
             // 
+            // btnMarsDizayn
+            // 
+            this.btnMarsDizayn.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnMarsDizayn, "btnMarsDizayn");
+            this.btnMarsDizayn.Name = "btnMarsDizayn";
+            this.btnMarsDizayn.Click += new System.EventHandler(this.btnMarsDizayn_Click);
+            // 
             // btnAbuyerDizayn
             // 
             this.btnAbuyerDizayn.Appearance.Options.UseFont = true;
@@ -7535,6 +7553,13 @@
             this.panelControl1.Controls.Add(this.btn_Print_Siparis_Sil);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
+            // 
+            // btnMarsDizaynSil
+            // 
+            this.btnMarsDizaynSil.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnMarsDizaynSil, "btnMarsDizaynSil");
+            this.btnMarsDizaynSil.Name = "btnMarsDizaynSil";
+            this.btnMarsDizaynSil.Click += new System.EventHandler(this.btnMarsDizaynSil_Click);
             // 
             // btnAbuyerDizaynSil
             // 
@@ -12706,20 +12731,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // btnMarsDizayn
-            // 
-            this.btnMarsDizayn.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnMarsDizayn, "btnMarsDizayn");
-            this.btnMarsDizayn.Name = "btnMarsDizayn";
-            this.btnMarsDizayn.Click += new System.EventHandler(this.btnMarsDizayn_Click);
-            // 
-            // btnMarsDizaynSil
-            // 
-            this.btnMarsDizaynSil.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnMarsDizaynSil, "btnMarsDizaynSil");
-            this.btnMarsDizaynSil.Name = "btnMarsDizaynSil";
-            this.btnMarsDizaynSil.Click += new System.EventHandler(this.btnMarsDizaynSil_Click);
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -12920,6 +12931,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hesapFisQrFisno.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mobilCallerIdAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otomatikOdenmez.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ikinciEkranAktif.Properties)).EndInit();
@@ -14878,5 +14890,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit204;
         private DevExpress.XtraEditors.SimpleButton btnMarsDizayn;
         private DevExpress.XtraEditors.SimpleButton btnMarsDizaynSil;
+        private DevExpress.XtraEditors.CheckEdit hesapFisQrFisno;
     }
 }

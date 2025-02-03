@@ -175,6 +175,7 @@ namespace Pos.Class
         public static bool onburoikramsifiryazaktif { get; set; }
         public static bool cariindirimAktif { get; set; }
         public static bool hesapFisQr { get; set; }
+        public static bool hesapFisQrFisno { get; set; }
         public static bool masatrTutSurukle { get; set; }
         public static bool servispayFooterda { get; set; }
         public static bool servispayOdenmezIkramSil { get; set; }
@@ -236,7 +237,7 @@ namespace Pos.Class
                         ",ISNULL(kisivegarsonbirkeresoraktif,0) as kisivegarsonbirkeresoraktif  " +
                         ",ISNULL(satirsilfiscikmasinaktif,0) as satirsilfiscikmasinaktif  " +
                         ",ISNULL(onburoikramsifiryazaktif,0) as onburoikramsifiryazaktif  " +
-                        ",ISNULL(cariindirimAktif,0) as cariindirimAktif,ISNULL(hesapFisQr,0) as hesapFisQr,ISNULL(masatrTutSurukle,0) as masatrTutSurukle,isnull(tipboxReceteKod,'') as tipboxReceteKod  ,ISNULL(servispayFooterda,0) as servispayFooterda,ISNULL(servispayOdenmezIkramSil,0) as servispayOdenmezIkramSil,ISNULL(siparisTekrarPrintName,'') as siparisTekrarPrintName,ISNULL(tumPrinter,0) as tumPrinter,ISNULL(urunAdinaOdaklan,0) as urunAdinaOdaklan" +
+                        ",ISNULL(cariindirimAktif,0) as cariindirimAktif,ISNULL(hesapFisQr,0) as hesapFisQr,ISNULL(hesapFisQrFisno,0) as hesapFisQrFisno,ISNULL(masatrTutSurukle,0) as masatrTutSurukle,isnull(tipboxReceteKod,'') as tipboxReceteKod  ,ISNULL(servispayFooterda,0) as servispayFooterda,ISNULL(servispayOdenmezIkramSil,0) as servispayOdenmezIkramSil,ISNULL(siparisTekrarPrintName,'') as siparisTekrarPrintName,ISNULL(tumPrinter,0) as tumPrinter,ISNULL(urunAdinaOdaklan,0) as urunAdinaOdaklan" +
                         ",ISNULL(ikinciEkranAktif,0) as ikinciEkranAktif " +
                         ",ISNULL(otomatikOdenmez,0) as otomatikOdenmez " +
                         ",ISNULL(mobilCallerIdAktif,0) as mobilCallerIdAktif " +
@@ -438,6 +439,7 @@ namespace Pos.Class
                     onburoikramsifiryazaktif = Convert.ToBoolean(dt.Rows[0]["onburoikramsifiryazaktif"]);
                     cariindirimAktif = Convert.ToBoolean(dt.Rows[0]["cariindirimAktif"]);
                     hesapFisQr = Convert.ToBoolean(dt.Rows[0]["hesapFisQr"]);
+                    hesapFisQrFisno = Convert.ToBoolean(dt.Rows[0]["hesapFisQrFisno"]);
                     masatrTutSurukle = Convert.ToBoolean(dt.Rows[0]["masatrTutSurukle"]);
                     servispayFooterda = Convert.ToBoolean(dt.Rows[0]["servispayFooterda"]);
                     servispayOdenmezIkramSil = Convert.ToBoolean(dt.Rows[0]["servispayOdenmezIkramSil"]);

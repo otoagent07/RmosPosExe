@@ -133,7 +133,11 @@ IF COL_LENGTH('Cst_Recete_Satis', 'konumposta') IS NULL BEGIN ALTER TABLE Cst_Re
 IF COL_LENGTH('Cst_Recete_Satis', 'BankaID') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD BankaID int END;
 IF COL_LENGTH('Cst_Recete', 'Rec_DovizliSatis') IS NULL BEGIN ALTER TABLE Cst_Recete ADD Rec_DovizliSatis bit END;
 IF COL_LENGTH('Pos_Param', 'kartnoSayisi') IS NULL BEGIN ALTER TABLE Pos_Param ADD kartnoSayisi int END;
+
 IF COL_LENGTH('Pos_Param', 'hesapFisQr') IS NULL BEGIN ALTER TABLE Pos_Param ADD hesapFisQr bit END;
+IF COL_LENGTH('Pos_Param', 'hesapFisQrFisno') IS NULL BEGIN ALTER TABLE Pos_Param ADD hesapFisQrFisno bit END;
+
+
 IF COL_LENGTH('Pos_Param', 'masatrTutSurukle') IS NULL BEGIN ALTER TABLE Pos_Param ADD masatrTutSurukle bit END;
 IF COL_LENGTH('Pos_Param', 'servispayFooterda') IS NULL BEGIN ALTER TABLE Pos_Param ADD servispayFooterda bit END;
 
