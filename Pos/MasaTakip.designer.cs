@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasaTakip));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -157,6 +157,8 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
+            this.btnFisnoTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).BeginInit();
@@ -186,6 +188,7 @@
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn10
@@ -647,18 +650,18 @@
             this.gridColumn8,
             this.gridColumn10,
             this.gridColumn11});
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Column = this.gridColumn10;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn10;
-            gridFormatRule2.Name = "Format0";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue2.Value1 = "";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            this.gridView2.FormatRules.Add(gridFormatRule2);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn10;
+            gridFormatRule1.ColumnApplyTo = this.gridColumn10;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue1.Value1 = "";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView2.FormatRules.Add(gridFormatRule1);
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -783,6 +786,8 @@
             // 
             // panelControl4
             // 
+            this.panelControl4.Controls.Add(this.btnFisnoTemizle);
+            this.panelControl4.Controls.Add(this.txtFisnoGit);
             this.panelControl4.Controls.Add(this.btnFilterClear);
             this.panelControl4.Controls.Add(this.txt_Filtre);
             resources.ApplyResources(this.panelControl4, "panelControl4");
@@ -790,8 +795,8 @@
             // 
             // btnFilterClear
             // 
-            resources.ApplyResources(this.btnFilterClear, "btnFilterClear");
             this.btnFilterClear.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFilterClear.ImageOptions.Image")));
+            resources.ApplyResources(this.btnFilterClear, "btnFilterClear");
             this.btnFilterClear.Name = "btnFilterClear";
             this.btnFilterClear.Click += new System.EventHandler(this.btnFilterClear_Click);
             // 
@@ -1369,6 +1374,26 @@
             this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem6.Name = "barButtonItem6";
             // 
+            // txtFisnoGit
+            // 
+            this.txtFisnoGit.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txtFisnoGit, "txtFisnoGit");
+            this.txtFisnoGit.MenuManager = this.barManager1;
+            this.txtFisnoGit.Name = "txtFisnoGit";
+            this.txtFisnoGit.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("textEdit1.Properties.Appearance.Font")));
+            this.txtFisnoGit.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.txtFisnoGit.Properties.Appearance.Options.UseFont = true;
+            this.txtFisnoGit.Properties.Appearance.Options.UseForeColor = true;
+            this.txtFisnoGit.Properties.NullValuePrompt = resources.GetString("textEdit1.Properties.NullValuePrompt");
+            this.txtFisnoGit.Leave += new System.EventHandler(this.txtFisnoGit_Leave);
+            // 
+            // btnFisnoTemizle
+            // 
+            this.btnFisnoTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            resources.ApplyResources(this.btnFisnoTemizle, "btnFisnoTemizle");
+            this.btnFisnoTemizle.Name = "btnFisnoTemizle";
+            this.btnFisnoTemizle.Click += new System.EventHandler(this.btnFisnoTemizle_Click);
+            // 
             // MasaTakip
             // 
             resources.ApplyResources(this, "$this");
@@ -1434,6 +1459,7 @@
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1573,5 +1599,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnParcaliUrunTr;
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynKaydet;
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynTemizle;
+        private DevExpress.XtraEditors.SimpleButton btnFisnoTemizle;
+        private DevExpress.XtraEditors.TextEdit txtFisnoGit;
     }
 }

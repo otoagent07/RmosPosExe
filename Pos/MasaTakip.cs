@@ -3111,5 +3111,20 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             MessageBox.Show("SİLİNDİ");
 
         }
+
+        private void txtFisnoGit_Leave(object sender, EventArgs e)
+        {
+            HesapBak();
+            Main.a.Listele(0);
+
+            txt_Filtre.Text = "";
+        }
+
+        private void btnFisnoTemizle_Click(object sender, EventArgs e)
+        {
+            txtFisnoGit.Text = "";
+            txtFisnoGit.Focus();
+            txtFisnoGit.Select();
+        }
     }
 }
