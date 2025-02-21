@@ -2006,14 +2006,20 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 return;
             }
 
-            if (Masa_No == String.Empty || gridView2.RowCount == 0)
+            if (Param.hesapFisQrFisno==false) //21.02.2025 tarihinde hızlı satışta masa no olmadığı için qr okutma için eklendi (gökhan)
             {
-                MessageBox.Show(res_man.GetString("Masa Bilgisi Bulunamadı..."), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                if (Masa_No == String.Empty || gridView2.RowCount == 0)
+                {
+                    MessageBox.Show(res_man.GetString("Masa Bilgisi Bulunamadı..."), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                if (StatikSinif.masaMusaitmi(Masa_No) == false) return;
+
             }
 
 
-            if (StatikSinif.masaMusaitmi(Masa_No) == false) return;
+
 
             if (Param.Param_Masaacan_Garson && !User.M_BaskaMasa)
             {

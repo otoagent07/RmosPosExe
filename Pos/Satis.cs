@@ -2726,6 +2726,22 @@ namespace Pos
         private void btn_Siparis_Click(object sender, EventArgs e)
         {
             siparisYazdir();
+
+
+            // 21.02.2025 tarihinde hızlı satışta QR Hesap dökmek için eklendi, QR'la ilintili olarak masa takipde qr okutulunca verilen masa bilgisi bulunamadı
+            //parametrede HesapFisQR'a bakacak şekilde false ye çekildi.
+            if (Param.hesapFisQrFisno && Convert.ToString(this.Tag) == "D")
+            {
+                FisPr pr = new FisPr();
+                if (Param.Param_YeniHesapDkm)
+                {
+                    pr.newHesapDokum(true, Fisno, Split, "* * * HESAP DÖKÜM FİŞİ * * *");
+                }
+
+                Bilgileri_Doldur();
+
+            }
+
         }
 
         public void siparisYazdir()
