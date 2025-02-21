@@ -2725,6 +2725,8 @@ namespace Pos
         string Merkez_Sube_Kod = String.Empty;
         private void btn_Siparis_Click(object sender, EventArgs e)
         {
+            int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+
             siparisYazdir();
 
 
@@ -2735,7 +2737,7 @@ namespace Pos
                 FisPr pr = new FisPr();
                 if (Param.Param_YeniHesapDkm)
                 {
-                    pr.newHesapDokum(true, Fisno, Split, "* * * HESAP DÖKÜM FİŞİ * * *");
+                    pr.newHesapDokum(true, fisno, Split, "* * * HESAP DÖKÜM FİŞİ * * *");
                 }
 
                 Bilgileri_Doldur();
