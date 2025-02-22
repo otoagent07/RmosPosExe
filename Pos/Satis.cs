@@ -2694,7 +2694,7 @@ namespace Pos
 
                 if (klavye.sayi != 0)
                 {
-                    Miktar = Convert.ToDecimal(klavye.sayi) - Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                    Miktar = Convert.ToDecimal(klavye.sayi)- Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
                 }
 
                 if (klavye.iptal == true)
@@ -2703,12 +2703,24 @@ namespace Pos
                     return;
                 }
             }
-            else
+            if (Rec_Miktar_Gr)
             {
-                Miktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar")) * 1000;
-                //Aciklama += " -- DÜZELTME -- ";
+                klavye.ShowDialog();
+                if (klavye.sayi != 0)
+                {
+                    Miktar = Convert.ToDecimal(klavye.sayi); //- Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"))*1000;
+                    Miktar = Miktar / 1000;
+                }
+
+                if (klavye.iptal == true)
+                {
+                    Miktar = 1;
+                    return;
+                }
+
                 MiktarDuzeltme = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
             }
+
 
             if (Miktar != 0)
             {
