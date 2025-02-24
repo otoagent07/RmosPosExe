@@ -103,6 +103,10 @@ IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKodCocuk') IS NULL BEGIN ALTER TABL
 IF COL_LENGTH('Pos_Cari', 'Cari_indirimOran') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_indirimOran decimal(18, 2) END;
 IF COL_LENGTH('Pos_FolioParam', 'hizmetBedeliAktif') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetBedeliAktif bit END;
 
+IF COL_LENGTH('Cst_Recete_Satis', 'latitude') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD latitude nvarchar(200) END;
+IF COL_LENGTH('Cst_Recete_Satis', 'longitude') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD longitude nvarchar(200) END;
+
+
 IF COL_LENGTH('Cst_Recete_Satis', 'E_AdisyonNo') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD E_AdisyonNo nvarchar(200) END;
 IF COL_LENGTH('Cst_Recete_Satis', 'E_AdisyonDurum') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD E_AdisyonDurum bit END;
 IF COL_LENGTH('Cst_Recete_Satis', 'kisiyeSatisAdSoyad') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD kisiyeSatisAdSoyad nvarchar(200) END;

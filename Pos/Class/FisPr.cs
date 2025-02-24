@@ -1653,6 +1653,18 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                     paket.txtIleriTarih.Text = ileriTarih;
 
+
+                    DataTable lat1 = dbtools.SelectTableR("select top 1 isnull(latitude,'') as latitude,isnull(longitude,'') as longitude from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and latitude<>'' and latitude is not null");
+
+                    if (lat1!=null && lat1.Rows.Count>0)
+                    {
+                        string latitude = lat1.Rows[0][0].ToString();
+                        string longitude = lat1.Rows[0][1].ToString();
+
+                        paket.txtQr.Text = $"https://www.google.com/maps?q={latitude},{longitude}";
+                    }
+      
+
                     for (int i = 0; i < Paket_Ciktisayisi; i++)
                     {
                         paket.Print();
@@ -1809,12 +1821,19 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     paket.xr_Toplam.Text = "[Rsat_EntegreToplamFiyat]";
 
                     paket.xr_Not.Text = Convert.ToString(dtPaket.Rows[0]["Rsat_Not"]);
-
-
                     paket.xr_Paketci.Text = Convert.ToString(dtPaket.Rows[0]["Paketci"]);
+
+                    DataTable lat1 = dbtools.SelectTableR("select top 1 isnull(latitude,'') as latitude,isnull(longitude,'') as longitude from Cst_Recete_Satis where Rsat_Fisno='"+Fisno+"' and latitude<>'' and latitude is not null");
+
+                    string latitude = lat1.Rows[0][0].ToString();
+                    string longitude = lat1.Rows[0][1].ToString();
+
+                    paket.txtQr.Text = $"https://www.google.com/maps?q={latitude},{longitude}";
 
                     for (int i = 0; i < Paket_Ciktisayisi; i++)
                     {
+
+
                         paket.Print();
                     }
 

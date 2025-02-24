@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -35,6 +36,9 @@
             this.xr_Miktar = new DevExpress.XtraReports.UI.XRLabel();
             this.xr_Urun = new DevExpress.XtraReports.UI.XRLabel();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.xrLabel26 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtSirano = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
             this.txtDeger1 = new DevExpress.XtraReports.UI.XRLabel();
@@ -70,6 +74,7 @@
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.txtQr = new DevExpress.XtraReports.UI.XRBarCode();
             this.xr_Paketci = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel23 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel21 = new DevExpress.XtraReports.UI.XRLabel();
@@ -81,9 +86,6 @@
             this.xrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel26 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
-            this.txtSirano = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -188,6 +190,44 @@
             this.xrLabel2});
             this.PageHeader.HeightF = 259.4948F;
             this.PageHeader.Name = "PageHeader";
+            // 
+            // xrLabel26
+            // 
+            this.xrLabel26.Font = new System.Drawing.Font("Calibri", 8F);
+            this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(147.249F, 117.5781F);
+            this.xrLabel26.Multiline = true;
+            this.xrLabel26.Name = "xrLabel26";
+            this.xrLabel26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel26.SizeF = new System.Drawing.SizeF(40.12508F, 16.75F);
+            this.xrLabel26.StylePriority.UseFont = false;
+            this.xrLabel26.StylePriority.UseTextAlignment = false;
+            this.xrLabel26.Text = "Sıra No";
+            this.xrLabel26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel27
+            // 
+            this.xrLabel27.Font = new System.Drawing.Font("Calibri", 8F);
+            this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(187.3739F, 117.5781F);
+            this.xrLabel27.Multiline = true;
+            this.xrLabel27.Name = "xrLabel27";
+            this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel27.SizeF = new System.Drawing.SizeF(14.08341F, 16.75F);
+            this.xrLabel27.StylePriority.UseFont = false;
+            this.xrLabel27.StylePriority.UseTextAlignment = false;
+            this.xrLabel27.Text = ":";
+            this.xrLabel27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // txtSirano
+            // 
+            this.txtSirano.Font = new System.Drawing.Font("Calibri", 8F);
+            this.txtSirano.LocationFloat = new DevExpress.Utils.PointFloat(201.4575F, 117.5781F);
+            this.txtSirano.Multiline = true;
+            this.txtSirano.Name = "txtSirano";
+            this.txtSirano.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.txtSirano.SizeF = new System.Drawing.SizeF(66.70331F, 16.75F);
+            this.txtSirano.StylePriority.UseFont = false;
+            this.txtSirano.StylePriority.UseTextAlignment = false;
+            this.txtSirano.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel24
             // 
@@ -623,6 +663,7 @@
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.txtQr,
             this.xr_Paketci,
             this.xrLabel23,
             this.xrLabel21,
@@ -634,8 +675,20 @@
             this.xrLabel19,
             this.xrLine1,
             this.xrLabel18});
-            this.PageFooter.HeightF = 158.4999F;
+            this.PageFooter.HeightF = 321.6568F;
             this.PageFooter.Name = "PageFooter";
+            // 
+            // txtQr
+            // 
+            this.txtQr.LocationFloat = new DevExpress.Utils.PointFloat(48.08556F, 130.1667F);
+            this.txtQr.Module = 5F;
+            this.txtQr.Name = "txtQr";
+            this.txtQr.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
+            this.txtQr.ShowText = false;
+            this.txtQr.SizeF = new System.Drawing.SizeF(209.5811F, 181.4901F);
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.txtQr.Symbology = qrCodeGenerator1;
+            this.txtQr.Text = "https://www.google.com/maps?q=41.0262904,28.6308441";
             // 
             // xr_Paketci
             // 
@@ -781,44 +834,6 @@
             this.xrLabel18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrLabel18.WordWrap = false;
             // 
-            // xrLabel26
-            // 
-            this.xrLabel26.Font = new System.Drawing.Font("Calibri", 8F);
-            this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(147.249F, 117.5781F);
-            this.xrLabel26.Multiline = true;
-            this.xrLabel26.Name = "xrLabel26";
-            this.xrLabel26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel26.SizeF = new System.Drawing.SizeF(40.12508F, 16.75F);
-            this.xrLabel26.StylePriority.UseFont = false;
-            this.xrLabel26.StylePriority.UseTextAlignment = false;
-            this.xrLabel26.Text = "Sıra No";
-            this.xrLabel26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel27
-            // 
-            this.xrLabel27.Font = new System.Drawing.Font("Calibri", 8F);
-            this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(187.3739F, 117.5781F);
-            this.xrLabel27.Multiline = true;
-            this.xrLabel27.Name = "xrLabel27";
-            this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel27.SizeF = new System.Drawing.SizeF(14.08341F, 16.75F);
-            this.xrLabel27.StylePriority.UseFont = false;
-            this.xrLabel27.StylePriority.UseTextAlignment = false;
-            this.xrLabel27.Text = ":";
-            this.xrLabel27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // txtSirano
-            // 
-            this.txtSirano.Font = new System.Drawing.Font("Calibri", 8F);
-            this.txtSirano.LocationFloat = new DevExpress.Utils.PointFloat(201.4575F, 117.5781F);
-            this.txtSirano.Multiline = true;
-            this.txtSirano.Name = "txtSirano";
-            this.txtSirano.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.txtSirano.SizeF = new System.Drawing.SizeF(66.70331F, 16.75F);
-            this.txtSirano.StylePriority.UseFont = false;
-            this.txtSirano.StylePriority.UseTextAlignment = false;
-            this.txtSirano.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
             // Paket
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -898,5 +913,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel26;
         private DevExpress.XtraReports.UI.XRLabel xrLabel27;
         public DevExpress.XtraReports.UI.XRLabel txtSirano;
+        public DevExpress.XtraReports.UI.XRBarCode txtQr;
     }
 }
