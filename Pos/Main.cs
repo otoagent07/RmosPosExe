@@ -412,7 +412,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.74";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.75";
 
 
 
@@ -741,6 +741,13 @@ namespace Pos
                 }
                 else
                 {
+                    string deger = dbtools.DegerGetir("select top 1 isnull(ingenicoaktif,0) as ingenicoaktif from  RmosMuh.dbo.Pos_User where P_Kod='" + User.P_Kod + "'");
+                    var ingenicoaktif = Convert.ToBoolean(deger);
+                    if (ingenicoaktif==false)
+                    {
+                        return;
+                    }
+
                     // burayı aç
                     string programDizini = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
                     string pro = programDizini + "\\RmosIngenicoGMP.exe"; // \\IngenicoOKC\\

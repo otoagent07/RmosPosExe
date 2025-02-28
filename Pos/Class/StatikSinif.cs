@@ -156,6 +156,9 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_ServisPayiDuzelt') IS NULL BEGIN ALTE
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_OdenmezIkramPasif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_OdenmezIkramPasif] bit END;
 
+
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'ingenicoaktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [ingenicoaktif] bit END;
+
 IF COL_LENGTH('Pos_FolioParam', 'hizmetOdemeKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetOdemeKod nvarchar(200) END;
 IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD HizmetReceteKod nvarchar(200) END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartfIndirimAktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartfIndirimAktif] bit END;

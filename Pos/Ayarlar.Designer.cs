@@ -1280,6 +1280,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.ingenicoaktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2144,6 +2145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenicoaktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -10579,6 +10581,7 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.ingenicoaktif);
             this.xtraTabPage1.Controls.Add(this.urunIade);
             this.xtraTabPage1.Controls.Add(this.Pos_ServisPayiDuzelt);
             this.xtraTabPage1.Controls.Add(this.Pos_KartfIndirimAktif);
@@ -12731,6 +12734,13 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // ingenicoaktif
+            // 
+            resources.ApplyResources(this.ingenicoaktif, "ingenicoaktif");
+            this.ingenicoaktif.Name = "ingenicoaktif";
+            this.ingenicoaktif.Properties.Appearance.Options.UseFont = true;
+            this.ingenicoaktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13635,6 +13645,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenicoaktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14891,5 +14902,6 @@
         private DevExpress.XtraEditors.SimpleButton btnMarsDizayn;
         private DevExpress.XtraEditors.SimpleButton btnMarsDizaynSil;
         private DevExpress.XtraEditors.CheckEdit hesapFisQrFisno;
+        private DevExpress.XtraEditors.CheckEdit ingenicoaktif;
     }
 }
