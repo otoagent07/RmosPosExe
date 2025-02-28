@@ -158,7 +158,8 @@ end as Rsat_YSDurum,
             group by Masa_No,Rsat_Tarih,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Cari_Kod,Cari_Ad,
             Cari_Soyad,Cari_Adres1,P_Kod,P_Ad,P_Soyad ,Rsat_Sube,sube.Pkod_Ad ,Rsat_SubeDurum,Cari_Tip,GOrder_deliveryType,GOrder_confirmationId,GetirYemek_Order.ID,Rsat_EntegreId,Cst_Recete_Satis.sirano,
 			Cst_Recete_Satis.deger1
-            order by Cst_Recete_Satis.Rsat_Fisno desc 
+            --order by Cst_Recete_Satis.Rsat_Fisno desc 
+            order by P_Kod asc 
             DROP TABLE #Cst_Recete_Satis ";
 
             if (sistemTar)

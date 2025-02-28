@@ -885,6 +885,20 @@ order by Caller_Id desc";
 
                 string kapatma = View.GetRowCellDisplayText(e.RowHandle, View.Columns["YSDurum"]);
 
+                try
+                {
+                    string pkod = View.GetRowCellDisplayText(e.RowHandle, View.Columns["P_Kod"]);
+                    if (pkod!="")
+                    {
+                        e.Appearance.BackColor = Color.Green;
+                        e.Appearance.ForeColor = Color.White;
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+
                 if (kapatma != null && kapatma == "PAKET" && e.Column.FieldName == "YSDurum")
                 {
                     e.Appearance.BackColor = Color.Turquoise;
