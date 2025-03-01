@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paket));
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
@@ -155,6 +155,7 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.gridColumn63 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -360,7 +361,8 @@
             this.gridColumn52,
             this.gridColumn53,
             this.gridColumn54,
-            this.gridColumn57});
+            this.gridColumn57,
+            this.gridColumn63});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -551,9 +553,9 @@
             // gridControl5
             // 
             resources.ApplyResources(this.gridControl5, "gridControl5");
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gridControl5.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gridControl5.MainView = this.gridView5;
             this.gridControl5.Name = "gridControl5";
             this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1014,13 +1016,13 @@
             this.gridColumn34,
             this.gridColumn55,
             this.gridColumn56});
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition2.Appearance.Options.UseBackColor = true;
-            styleFormatCondition2.Column = this.gridColumn17;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Tag = "Acik";
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Column = this.gridColumn17;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition1.Tag = "Acik";
             this.gridView2.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition2});
+            styleFormatCondition1});
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ColumnAutoWidth = false;
@@ -1409,6 +1411,12 @@
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // gridColumn63
+            // 
+            resources.ApplyResources(this.gridColumn63, "gridColumn63");
+            this.gridColumn63.FieldName = "AcikDakika";
+            this.gridColumn63.Name = "gridColumn63";
+            // 
             // Paket
             // 
             resources.ApplyResources(this, "$this");
@@ -1595,5 +1603,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn58;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn62;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn59;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn63;
     }
 }

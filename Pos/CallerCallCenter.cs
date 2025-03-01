@@ -71,18 +71,109 @@ namespace Pos
 
         }
 
+        //        private void ekranyenile()
+        //        {
+        //            string data = @"
+        //select Cari_Id,Cari_Kod,Cari_Ad,Cari_Tel,ISNULL(Cari_Adres1,'') as Cari_Adres1,ISNULL(Cari_Adres2,'') as Cari_Adres2, ISNULL(Cari_Adres3,'') as Cari_Adres31,
+        //	 il.Adres_Kod as ilKod,il.Adres_Ad as ilAd,ilce.Adres_Kod as ilceKod, ilce.Adres_Ad as ilceAd,mah.Adres_Kod as mahKod, mah.Adres_Ad as mahAd,
+        //	 sube.Pkod_Kod as subeKod, sube.Pkod_Ad as subeAd
+        //from Pos_Cari as cari
+        //left join Pos_Adres as mah on cari.Cari_Mahalle = mah.Adres_Kod and mah.Adres_Sinif = '26'
+        //left join Pos_Adres as ilce on cari.Cari_Ilce = ilce.Adres_Kod and ilce.Adres_Sinif = '25'
+        //left join Pos_Adres as il on cari.Cari_Il = il.Adres_Kod and il.Adres_Sinif = '24'
+        //left join Pos_Kodlar as sube on mah.Adres_Sube = sube.Pkod_Kod and Pkod_Sinif = '27'
+        //where cari.Cari_Tel = '" + Tel + "'";
+
+
+        //            DataTable dt = dbtools.SelectTable(data);
+
+        //            DataTable newDt = new DataTable();
+
+        //            // Yeni DataTable sütunlarını oluştur
+        //            newDt.Columns.Add("Cari_Id", typeof(int));
+        //            newDt.Columns.Add("Cari_Kod", typeof(string));
+        //            newDt.Columns.Add("Cari_Ad", typeof(string));
+        //            newDt.Columns.Add("Cari_Tel", typeof(string));
+        //            newDt.Columns.Add("Cari_Adres", typeof(string));
+        //            newDt.Columns.Add("ilKod", typeof(string));
+        //            newDt.Columns.Add("ilAd", typeof(string));
+        //            newDt.Columns.Add("ilceKod", typeof(string));
+        //            newDt.Columns.Add("ilceAd", typeof(string));
+        //            newDt.Columns.Add("mahKod", typeof(string));
+        //            newDt.Columns.Add("mahAd", typeof(string));
+        //            newDt.Columns.Add("subeKod", typeof(string));
+        //            newDt.Columns.Add("subeAd", typeof(string));
+
+        //            // Mevcut tablodaki her satır için 3 adresi ayrı satırlar olarak ekle
+        //            foreach (DataRow row in dt.Rows)
+        //            {
+        //                string cariId = row["Cari_Id"].ToString();
+        //                string cariKod = row["Cari_Kod"].ToString();
+        //                string cariAd = row["Cari_Ad"].ToString();
+        //                string cariTel = row["Cari_Tel"].ToString();
+        //                string ilKod = row["ilKod"].ToString();
+        //                string ilAd = row["ilAd"].ToString();
+        //                string ilceKod = row["ilceKod"].ToString();
+        //                string ilceAd = row["ilceAd"].ToString();
+        //                string mahKod = row["mahKod"].ToString();
+        //                string mahAd = row["mahAd"].ToString();
+        //                string subeKod = row["subeKod"].ToString();
+        //                string subeAd = row["subeAd"].ToString();
+
+        //                string[] adresler = { row["Cari_Adres1"].ToString(), row["Cari_Adres2"].ToString(), row["Cari_Adres3"].ToString() };
+
+        //                foreach (string adres in adresler)
+        //                {
+        //                    if (!string.IsNullOrWhiteSpace(adres)) // Boş veya null adresleri eklemiyoruz
+        //                    {
+        //                        DataRow newRow = newDt.NewRow();
+        //                        newRow["Cari_Id"] = cariId;
+        //                        newRow["Cari_Kod"] = cariKod;
+        //                        newRow["Cari_Ad"] = cariAd;
+        //                        newRow["Cari_Tel"] = cariTel;
+        //                        newRow["Cari_Adres"] = adres;
+        //                        newRow["ilKod"] = ilKod;
+        //                        newRow["ilAd"] = ilAd;
+        //                        newRow["ilceKod"] = ilceKod;
+        //                        newRow["ilceAd"] = ilceAd;
+        //                        newRow["mahKod"] = mahKod;
+        //                        newRow["mahAd"] = mahAd;
+        //                        newRow["subeKod"] = subeKod;
+        //                        newRow["subeAd"] = subeAd;
+
+        //                        newDt.Rows.Add(newRow);
+        //                    }
+        //                }
+        //            }
+
+        //            // Yeni tabloyu GridControl'e bağla
+        //            gridControl1.DataSource = newDt;
+
+        //            string fileName = getDizaynPath();
+        //            if (File.Exists(fileName))
+        //            {
+        //                gridView1.RestoreLayoutFromXml(fileName);
+        //            }
+
+
+        //        }
+
+
         private void ekranyenile()
         {
-            gridControl1.DataSource = dbtools.SelectTable(@"
-select Cari_Id,Cari_Kod,Cari_Ad,Cari_Tel,(ISNULL(Cari_Adres1,'') + ' ' + ISNULL(Cari_Adres2,'') +  ' ' + ISNULL(Cari_Adres3,'')) as Cari_Adres,
-	 il.Adres_Kod as ilKod,il.Adres_Ad as ilAd,ilce.Adres_Kod as ilceKod, ilce.Adres_Ad as ilceAd,mah.Adres_Kod as mahKod, mah.Adres_Ad as mahAd,
-	 sube.Pkod_Kod as subeKod, sube.Pkod_Ad as subeAd
-from Pos_Cari as cari
-left join Pos_Adres as mah on cari.Cari_Mahalle = mah.Adres_Kod and mah.Adres_Sinif = '26'
-left join Pos_Adres as ilce on cari.Cari_Ilce = ilce.Adres_Kod and ilce.Adres_Sinif = '25'
-left join Pos_Adres as il on cari.Cari_Il = il.Adres_Kod and il.Adres_Sinif = '24'
-left join Pos_Kodlar as sube on mah.Adres_Sube = sube.Pkod_Kod and Pkod_Sinif = '27'
-where cari.Cari_Tel = '" + Tel + "'");
+            string data = @"
+        select Cari_Id,Cari_Kod,Cari_Ad,Cari_Tel,(ISNULL(Cari_Adres1,'') + ' ' + ISNULL(Cari_Adres2,'') +  ' ' + ISNULL(Cari_Adres3,'')) as Cari_Adres,
+        	 il.Adres_Kod as ilKod,il.Adres_Ad as ilAd,ilce.Adres_Kod as ilceKod, ilce.Adres_Ad as ilceAd,mah.Adres_Kod as mahKod, mah.Adres_Ad as mahAd,
+        	 sube.Pkod_Kod as subeKod, sube.Pkod_Ad as subeAd
+        from Pos_Cari as cari
+        left join Pos_Adres as mah on cari.Cari_Mahalle = mah.Adres_Kod and mah.Adres_Sinif = '26'
+        left join Pos_Adres as ilce on cari.Cari_Ilce = ilce.Adres_Kod and ilce.Adres_Sinif = '25'
+        left join Pos_Adres as il on cari.Cari_Il = il.Adres_Kod and il.Adres_Sinif = '24'
+        left join Pos_Kodlar as sube on mah.Adres_Sube = sube.Pkod_Kod and Pkod_Sinif = '27'
+        where cari.Cari_Tel = '" + Tel + "'";
+
+
+            gridControl1.DataSource = dbtools.SelectTable(data);
 
             string fileName = getDizaynPath();
             if (File.Exists(fileName))

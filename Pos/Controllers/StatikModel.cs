@@ -143,7 +143,13 @@ When 'T' Then
 
 end as Rsat_YSDurum,
             case Cari_Tip when 'Y' then MIN(ISNULL(Rsat_YSOrderID,'')) when 'G' then MIN(ISNULL(Rsat_GetirOrderID,'')) else  '' end  as Rsat_YSOrderID,
-            Max(Rsat_Not) as Rsat_Not,MIN(Rsat_Acilis) as Rsat_Acilis,Rsat_EntegreId,
+            Max(Rsat_Not) as Rsat_Not,MIN(Rsat_Acilis) as Rsat_Acilis,
+
+ABS(DATEDIFF(MINUTE, 
+        CAST(CONVERT(DATE, GETDATE()) AS DATETIME) + CAST(MIN(Rsat_Acilis) AS DATETIME),
+        GETDATE()
+    )) AS AcikDakika,
+Rsat_EntegreId,
             case when ISNULL(GOrder_deliveryType,2) = 1 then 'GETİR KURYESİ' else 'RESTORAN KURYESİ' end as Kurye,
             GOrder_deliveryType as GOrder_deliveryType,
             GOrder_confirmationId,GetirYemek_Order.ID,Max(Cari_Tel)  as Cari_Tel
