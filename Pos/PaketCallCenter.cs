@@ -830,6 +830,9 @@ namespace Pos
                 {
                     MessageBox.Show(sonuc);
                 }
+
+                dbtools.execcmd("update Cst_Recete_Satis set Rsat_Ingenico_Status='1' where Rsat_Fisno='" + Fisno + "'");
+
             }
         }
 

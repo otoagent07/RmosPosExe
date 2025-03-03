@@ -75,6 +75,8 @@ namespace Pos
         public int hizmetmiktarCocuk = 0;
 
 
+        public string adres = "";
+
         public Satis()
         {
             InitializeComponent();
@@ -2862,7 +2864,7 @@ namespace Pos
                         else
                         {
                             FisPr pr = new FisPr();
-                            pr.PaketPr(Convert.ToInt32(bartxt_FisNo.EditValue), " * * * PAKET FİSİ * * * ");
+                            pr.PaketPr(Convert.ToInt32(bartxt_FisNo.EditValue), " * * * PAKET FİSİ * * * ",parcaliAdres:adres);
                         }
 
                     }

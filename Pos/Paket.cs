@@ -23,6 +23,8 @@ namespace Pos
         //int Fisno = 0;
 
 
+        public static Paket paketForm ;
+
         public Paket()
         {
             InitializeComponent();
@@ -31,7 +33,7 @@ namespace Pos
         private void Paket_Load(object sender, EventArgs e)
         {
             //Param.Param_Yukle();
-
+            paketForm = this;
             xtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
 
             dateTarih1.EditValue = Param.Tarih;
@@ -250,6 +252,7 @@ namespace Pos
             yenipaket();
         }
 
+        public Satis satis;
         public void yenipaket()
         {
             DataTable dtMasa = dbtools.SelectTable("select * from Pos_Masa where Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1 and Masa_Durum = 0 order by Masa_No");
@@ -262,7 +265,7 @@ namespace Pos
 
             Masa_No = Convert.ToString(dtMasa.Rows[0]["Masa_No"]);
 
-            Satis satis = new Satis();
+             satis = new Satis();
             satis.Tag = "M";
             satis.Masa_No = Masa_No;
             satis.Masa_Paket = true;
@@ -357,6 +360,9 @@ namespace Pos
                 {
                     MessageBox.Show(sonuc);
                 }
+
+
+                dbtools.execcmd("update Cst_Recete_Satis set Rsat_Ingenico_Status='1' where Rsat_Fisno='" + Fisno + "'");
             }
         }
 

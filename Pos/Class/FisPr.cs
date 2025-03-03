@@ -1441,7 +1441,7 @@ namespace Pos.Class
             return "OK";
         }
 
-        public string PaketPr(int Fisno, string Baslik, string siparisFisi = "", string GetirYemek_Order_ID = "")
+        public string PaketPr(int Fisno, string Baslik, string siparisFisi = "", string GetirYemek_Order_ID = "",string parcaliAdres="")
         {
 
             try
@@ -1621,6 +1621,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     paket.xr_Adres.Text = (Convert.ToString(dtPaket.Rows[0]["Cari_Adres1"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Adres2"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Adres3"]) + "\n"
                     + Convert.ToString(dtPaket.Rows[0]["Cari_Mahalle"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Ilce"]) + " - " + Convert.ToString(dtPaket.Rows[0]["Cari_Il"]));
 
+
+                    if (parcaliAdres!="")
+                    {
+                        paket.xr_Adres.Text = parcaliAdres;
+                    }
 
 
                     paket.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]".ToString().Replace("|", "\n")));
@@ -4269,6 +4274,43 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 }
 
+
+                try
+                {
+                    string cariKod = dtHesap.Rows[0]["Rsat_Cari"].ToString();
+                    string bakiye = hsp.xr_Bakiye.Text;
+                    if (bakiye== "Bakiye")
+                    {
+                        var cari1 = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + cariKod + "' ");
+
+                        decimal toplamBorc = 0;
+                        decimal toplamAlacak = 0;
+                        decimal bakiye1 = 0;
+
+                        // Her satırı döngü ile işleyelim
+                        foreach (DataRow row in cari1.Rows)
+                        {
+                            // Borç ve alacak sütunlarını doğru isimlendirmeyi unutmayın
+                            decimal borc = Convert.ToDecimal(row["Chrk_Borc"]);
+                            decimal alacak = Convert.ToDecimal(row["Chrk_Alacak"]);
+
+                            toplamBorc += borc;
+                            toplamAlacak += alacak;
+                        }
+
+                        bakiye1 = toplamBorc - toplamAlacak;
+                        if (bakiye1 != 0)
+                        {
+                            hsp.xr_Bakiye.Text ="[" + bakiye1 + "]";
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+               
 
                 if (dtPrinter.Rows.Count > 0 && dtMacPrinter.Rows.Count == 0)
                 {

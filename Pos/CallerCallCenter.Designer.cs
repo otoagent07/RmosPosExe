@@ -56,8 +56,8 @@
             this.btn_AcikAdres = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.labelDakika = new System.Windows.Forms.Label();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.contextMenuStrip_LogRapor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -307,6 +307,11 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // labelDakika
+            // 
+            resources.ApplyResources(this.labelDakika, "labelDakika");
+            this.labelDakika.Name = "labelDakika";
+            // 
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.btn_Satis);
@@ -315,11 +320,6 @@
             this.panelControl2.Controls.Add(this.btn_CariEkle);
             resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Name = "panelControl2";
-            // 
-            // labelDakika
-            // 
-            resources.ApplyResources(this.labelDakika, "labelDakika");
-            this.labelDakika.Name = "labelDakika";
             // 
             // CallerCallCenter
             // 

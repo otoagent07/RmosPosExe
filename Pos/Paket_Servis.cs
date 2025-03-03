@@ -32,15 +32,109 @@ namespace Pos
             gv_Cari.FocusedColumn = gv_Cari.Columns.ColumnByFieldName("Cari_Kod");
             gv_Cari.ShowEditor();
 
-            grd_Cari.DataSource = dbtools.SelectTable(@"select  Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3,
-    ISNULL(Cari_Adres1, '') + ' ' + ISNULL(Cari_Adres2, '') + ' ' + ISNULL(Cari_Adres3, '') as Adres, Cari_Kart,
+            var data = dbtools.SelectTable(@"select  Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3, Cari_Kart,
     Cari_Funvan, Cari_Fadres1, Cari_Fadres2, Cari_Vergidarie, Cari_Vergino, Cari_Mail, Cari_Il, Cari_Ilce, Cari_Mahalle,
     0 as Bakiye
 
     from Pos_Cari WITH(NOLOCK)   order by Cari_Kod
 
         ");
+
+            DataTable newDt = new DataTable();
+
+            // Yeni tablo için sütunları oluştur
+            newDt.Columns.Add("Cari_Kod", typeof(string));
+            newDt.Columns.Add("Cari_Ad", typeof(string));
+            newDt.Columns.Add("Cari_Soyad", typeof(string));
+            newDt.Columns.Add("Cari_Tel", typeof(string));
+            newDt.Columns.Add("Adres", typeof(string));
+            newDt.Columns.Add("Cari_Kart", typeof(string));
+            newDt.Columns.Add("Cari_Funvan", typeof(string));
+            newDt.Columns.Add("Cari_Fadres1", typeof(string));
+            newDt.Columns.Add("Cari_Fadres2", typeof(string));
+            newDt.Columns.Add("Cari_Vergidarie", typeof(string));
+            newDt.Columns.Add("Cari_Vergino", typeof(string));
+            newDt.Columns.Add("Cari_Mail", typeof(string));
+            newDt.Columns.Add("Cari_Il", typeof(string));
+            newDt.Columns.Add("Cari_Ilce", typeof(string));
+            newDt.Columns.Add("Cari_Mahalle", typeof(string));
+            newDt.Columns.Add("Bakiye", typeof(decimal));
+
+            // Adresleri ayrı satırlar olarak ekleme işlemi
+            foreach (DataRow row in data.Rows)
+            {
+                string cariKod = row["Cari_Kod"].ToString();
+                string cariAd = row["Cari_Ad"].ToString();
+                string cariSoyad = row["Cari_Soyad"].ToString();
+                string cariTel = row["Cari_Tel"].ToString();
+                string cariKart = row["Cari_Kart"].ToString();
+                string cariFunvan = row["Cari_Funvan"].ToString();
+                string cariFadres1 = row["Cari_Fadres1"].ToString();
+                string cariFadres2 = row["Cari_Fadres2"].ToString();
+                string cariVergidarie = row["Cari_Vergidarie"].ToString();
+                string cariVergino = row["Cari_Vergino"].ToString();
+                string cariMail = row["Cari_Mail"].ToString();
+                string cariIl = row["Cari_Il"].ToString();
+                string cariIlce = row["Cari_Ilce"].ToString();
+                string cariMahalle = row["Cari_Mahalle"].ToString();
+                decimal bakiye = Convert.ToDecimal(row["Bakiye"]);
+
+                string[] adresler = { row["Cari_Adres1"].ToString(), row["Cari_Adres2"].ToString(), row["Cari_Adres3"].ToString() };
+
+                foreach (string adres in adresler)
+                {
+                    if (!string.IsNullOrWhiteSpace(adres)) // Boş veya null adresleri eklemiyoruz
+                    {
+                        DataRow newRow = newDt.NewRow();
+                        newRow["Cari_Kod"] = cariKod;
+                        newRow["Cari_Ad"] = cariAd;
+                        newRow["Cari_Soyad"] = cariSoyad;
+                        newRow["Cari_Tel"] = cariTel;
+                        newRow["Adres"] = adres;
+                        newRow["Cari_Kart"] = cariKart;
+                        newRow["Cari_Funvan"] = cariFunvan;
+                        newRow["Cari_Fadres1"] = cariFadres1;
+                        newRow["Cari_Fadres2"] = cariFadres2;
+                        newRow["Cari_Vergidarie"] = cariVergidarie;
+                        newRow["Cari_Vergino"] = cariVergino;
+                        newRow["Cari_Mail"] = cariMail;
+                        newRow["Cari_Il"] = cariIl;
+                        newRow["Cari_Ilce"] = cariIlce;
+                        newRow["Cari_Mahalle"] = cariMahalle;
+                        newRow["Bakiye"] = bakiye;
+
+                        newDt.Rows.Add(newRow);
+                    }
+                }
+            }
+
+            // Yeni tabloyu GridControl'e bağla
+            grd_Cari.DataSource = newDt;
+
+
         }
+
+
+        //    private void gridyenile1()
+        //    {
+
+        //        gv_Cari.FocusedRowHandle = DevExpress.XtraGrid.GridControl.AutoFilterRowHandle;
+        //        gv_Cari.FocusedColumn = gv_Cari.Columns.ColumnByFieldName("Cari_Kod");
+        //        gv_Cari.ShowEditor();
+
+        //        var data = dbtools.SelectTable(@"select  Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3,
+        //ISNULL(Cari_Adres1, '') + ' ' + ISNULL(Cari_Adres2, '') + ' ' + ISNULL(Cari_Adres3, '') as Adres, Cari_Kart,
+        //Cari_Funvan, Cari_Fadres1, Cari_Fadres2, Cari_Vergidarie, Cari_Vergino, Cari_Mail, Cari_Il, Cari_Ilce, Cari_Mahalle,
+        //0 as Bakiye
+
+        //from Pos_Cari WITH(NOLOCK)   order by Cari_Kod
+
+        //    ");
+
+        //        grd_Cari.DataSource = data;
+
+
+        //    }
 
 
         private void gridyenile2()
@@ -119,6 +213,15 @@ namespace Pos
 
         private void btn_Satis_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Paket.paketForm.satis.adres = Convert.ToString(gv_Cari.GetFocusedRowCellValue("Adres"));
+
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             int seciliSatir = gv_Cari.FocusedRowHandle;
             if (seciliSatir== -2147483646)
