@@ -121,18 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
-    <value>Grid Dizayn Kaydet</value>
-  </data>
-  <data name="btnGridDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="btnGridDizaynSil.Text" xml:space="preserve">
-    <value>Grid Dizayn Sil</value>
-  </data>
   <data name="contextMenuStrip_LogRapor.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 48</value>
   </data>
@@ -146,6 +134,9 @@
   <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="gridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 40</value>
   </data>
@@ -158,10 +149,13 @@
   <data name="gridColumn1.Caption" xml:space="preserve">
     <value>Id</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gridColumn1.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
   <data name="gridColumn2.Caption" xml:space="preserve">
     <value>Kod</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -169,7 +163,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn2.Width" type="System.Int32, mscorlib">
-    <value>113</value>
+    <value>94</value>
   </data>
   <data name="gridColumn3.Caption" xml:space="preserve">
     <value>Ad</value>
@@ -181,7 +175,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn3.Width" type="System.Int32, mscorlib">
-    <value>213</value>
+    <value>177</value>
   </data>
   <data name="gridColumn4.Caption" xml:space="preserve">
     <value>Tel</value>
@@ -193,7 +187,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn4.Width" type="System.Int32, mscorlib">
-    <value>102</value>
+    <value>85</value>
   </data>
   <data name="gridColumn5.Caption" xml:space="preserve">
     <value>Adres</value>
@@ -205,10 +199,13 @@
     <value>3</value>
   </data>
   <data name="gridColumn5.Width" type="System.Int32, mscorlib">
-    <value>618</value>
+    <value>515</value>
   </data>
   <data name="gridColumn6.Caption" xml:space="preserve">
     <value>ilKod</value>
+  </data>
+  <data name="gridColumn6.Width" type="System.Int32, mscorlib">
+    <value>62</value>
   </data>
   <data name="gridColumn7.Caption" xml:space="preserve">
     <value>İl</value>
@@ -220,10 +217,13 @@
     <value>4</value>
   </data>
   <data name="gridColumn7.Width" type="System.Int32, mscorlib">
-    <value>165</value>
+    <value>137</value>
   </data>
   <data name="gridColumn8.Caption" xml:space="preserve">
     <value>ilceKod</value>
+  </data>
+  <data name="gridColumn8.Width" type="System.Int32, mscorlib">
+    <value>62</value>
   </data>
   <data name="gridColumn9.Caption" xml:space="preserve">
     <value>İlçe</value>
@@ -235,10 +235,13 @@
     <value>5</value>
   </data>
   <data name="gridColumn9.Width" type="System.Int32, mscorlib">
-    <value>132</value>
+    <value>110</value>
   </data>
   <data name="gridColumn10.Caption" xml:space="preserve">
     <value>mahKod</value>
+  </data>
+  <data name="gridColumn10.Width" type="System.Int32, mscorlib">
+    <value>62</value>
   </data>
   <data name="gridColumn11.Caption" xml:space="preserve">
     <value>Mahalle</value>
@@ -250,10 +253,13 @@
     <value>6</value>
   </data>
   <data name="gridColumn11.Width" type="System.Int32, mscorlib">
-    <value>154</value>
+    <value>128</value>
   </data>
   <data name="gridColumn12.Caption" xml:space="preserve">
     <value>subeKod</value>
+  </data>
+  <data name="gridColumn12.Width" type="System.Int32, mscorlib">
+    <value>62</value>
   </data>
   <data name="gridColumn13.Caption" xml:space="preserve">
     <value>Şube</value>
@@ -265,13 +271,16 @@
     <value>7</value>
   </data>
   <data name="gridColumn13.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>104</value>
   </data>
   <data name="gridView1.ViewCaption" xml:space="preserve">
     <value>Cari Hesaplar</value>
   </data>
+  <data name="gridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>925, 294</value>
+    <value>769, 294</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -288,6 +297,18 @@
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
+    <value>Grid Dizayn Kaydet</value>
+  </data>
+  <data name="btnGridDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="btnGridDizaynSil.Text" xml:space="preserve">
+    <value>Grid Dizayn Sil</value>
+  </data>
   <data name="btn_CariEkle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
@@ -297,26 +318,29 @@
   <data name="btn_CariEkle.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
 </value>
   </data>
   <data name="btn_CariEkle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 9</value>
+    <value>4, 9</value>
+  </data>
+  <data name="btn_CariEkle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_CariEkle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 42</value>
+    <value>86, 42</value>
   </data>
   <data name="btn_CariEkle.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -360,10 +384,13 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>843, 0</value>
+    <value>701, 0</value>
+  </data>
+  <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 37</value>
+    <value>68, 37</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -381,7 +408,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btn_Satis.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -425,10 +452,13 @@
 </value>
   </data>
   <data name="btn_Satis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 4</value>
+    <value>666, 4</value>
+  </data>
+  <data name="btn_Satis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_Satis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 47</value>
+    <value>102, 47</value>
   </data>
   <data name="btn_Satis.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -456,6 +486,9 @@
   </data>
   <data name="lbl_Tel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="lbl_Tel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="lbl_Tel.Size" type="System.Drawing.Size, System.Drawing">
     <value>351, 32</value>
@@ -487,28 +520,31 @@
   <data name="btn_CariDuzenle.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
 </value>
   </data>
   <data name="btn_CariDuzenle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 9</value>
+    <value>96, 9</value>
+  </data>
+  <data name="btn_CariDuzenle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_CariDuzenle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 42</value>
+    <value>86, 42</value>
   </data>
   <data name="btn_CariDuzenle.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -541,24 +577,27 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAATdEVYdFRpdGxlAFRhYmxlO0Zvcm1hdDvurMrjAAAC
-        TElEQVQ4T6WS60tTcRzGj9jFvFJIIAT1RojyRfZnBPmi3jQv2HRuzTYrYUWRK7HCgZdNnU2bumVQUUYG
-        W1rabrKxm+EMtL1MwbnaJha6YfH0+/5oXWCE4A8+5/d8z3me5xzOOQKAHZHxZCY+3DspzN8tVzOE0J1y
-        dajthDDHoJXFyGbs/g97GDmzt8oQUJc5gurj7NZCVuDmMbYJwi6p1uaQ9Tgh0zkh1TrR0O2ApMuO+g4b
-        NE/fw9J3A77rR/F9+RkSXg22Pj2G52op3KrSVirYS+bJcAIT4ThHZwn/0gn4ltbhCX/BfH8VYtNKJP1N
-        iI6fg015xO64dJg/QU5t+zQPjM6uYjQYweWhANMRrt9QkaEF7xoPIRm6jdUXFUjaqzElK8FbWYmaCvaJ
-        2ibR8XIRTQN+KAd9UA74oDB4objvhXZ8ARb/MoLzS5iUHIS3/TRe1xXTOyiyiospL+SebbHA+jEOc3AF
-        5kAEcr2H64dMmwMrkPa6sZHcwsKYBsnUD0xoVVSQT1+HVn7FtVewLsZgYmYqaOhx8yDNhEQ7g7WvKc63
-        jS10GqYoWZAuKDjVPIbWJyHUdc/8hQviLhfOM8SdLvSbXdCbXHhumUN9s5mShemCQpnqEdbWU/gc30SU
-        QUbao/Ekp8/kxCqbiQTz1TaNULLod0HdFTO/QAYK9o78CRB8jm0iwqC56qLxn4Jc0QW9s0Y5jBrFMKoV
-        Q8xAGDmVjUaI5A9QyRDJB7k+I9a5WC4vXUC/cR5jP+PANiAf+bN5AR12QsaT2wfCTyUDcJuuKSF0AAAA
-        AElFTkSuQmCC
+        WklEQVQ4T6WT70tTURjHT9gP0zQKCYSg3ghRvtD+jCBf1JvmFJvOrem2SphR5EqW4UDn5q+mTt0yqCgj
+        gy0tzW1XNjbvFm6BtpcpuFnbZIXbWPGNc2z9kiLpwof7POc+3w+Hc+8lAMj/sGXhT7y5fZIE28rVwbZy
+        ErhVrg5oysiCpozQawchJIcQsusv7CaE5PpvlIJXlzp86hOgOf76cSbYKdHPOqTdTkgNTkj0TtR3OSDW
+        2VHXMQvtw9ew9l6D9+oxfF55hLhHi8y7+3A3l8ClKmmlgj10eCoUx2QoxjBYQ9/qOLzLCbhDHxDsFyI6
+        o0BqXom1iXOYVRy1Oy4eYTvIrWmfYYExfwRjvjAuDfMY84dZ/YKKjC141XAYqcBNRJ5UIGWvwrS0GC+l
+        xWoq2CvQTKHj6RKUA/NQDHqhGPBCbvRAfscD/cQirPMr8AWXMSU+BE/7aTyvLaJnsN8mKmI7yDvbYoXt
+        bQwW3yosfBiyPjer7/JhWPhVSHpc2EhlsDiuRSr9BZN6FRXsY6+RFhVXnsG2FIWZ3xTUd7tYkPYUsX4O
+        6x/TjE8bGXQap2myICsoONU0jtYHAdR2zf0EB5GOw3kdB1Enh34Lhz4zh8fWBdQ1WWiyMCsolKruYT2R
+        xvtYEmuxJBuk97VYitFrdiISSzLiiTRqlKPsDL4Lai9b2AM6QIM9oz8CFNZHkwhHN3tho+kXQZ7gQp+z
+        WjGCavkIquTDEDZSTIzKBhMEsiFUyoYgkA2y+ozIwBFC8rMC+hnnE0IOEEIO/gN0js7nMMHvP8122bKw
+        Xb4CJQNwmxHJQYcAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btn_AcikAdres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 4</value>
+    <value>559, 4</value>
+  </data>
+  <data name="btn_AcikAdres.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_AcikAdres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 47</value>
+    <value>102, 47</value>
   </data>
   <data name="btn_AcikAdres.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -579,14 +618,50 @@ Adres</value>
   <data name="&gt;&gt;btn_AcikAdres.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="labelDakika.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelDakika.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="labelDakika.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 15.75pt, style=Bold</value>
+  </data>
+  <data name="labelDakika.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 0</value>
+  </data>
+  <data name="labelDakika.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 25</value>
+  </data>
+  <data name="labelDakika.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelDakika.Text" xml:space="preserve">
+    <value>1000 dakika</value>
+  </data>
+  <data name="&gt;&gt;labelDakika.Name" xml:space="preserve">
+    <value>labelDakika</value>
+  </data>
+  <data name="&gt;&gt;labelDakika.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelDakika.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelDakika.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>925, 37</value>
+    <value>769, 37</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -609,8 +684,11 @@ Adres</value>
   <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="panelControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>931, 337</value>
+    <value>775, 337</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -633,8 +711,11 @@ Adres</value>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 337</value>
   </data>
+  <data name="panelControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>931, 55</value>
+    <value>775, 55</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -655,10 +736,13 @@ Adres</value>
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>5, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>931, 392</value>
+    <value>775, 392</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

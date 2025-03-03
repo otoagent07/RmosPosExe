@@ -141,6 +141,9 @@
   <data name="grd_Cari.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
   </data>
+  <data name="gv_Cari.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
   <data name="gridColumn25.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
@@ -895,6 +898,9 @@
   </data>
   <data name="btn_Cikis.Text" xml:space="preserve">
     <value>Çıkış</value>
+  </data>
+  <data name="btn_Cikis.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;btn_Cikis.Name" xml:space="preserve">
     <value>btn_Cikis</value>

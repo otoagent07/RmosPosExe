@@ -11,6 +11,7 @@ namespace Pos
         public string Garson_Kod = String.Empty;
         public string Garson_AdSoyad = String.Empty;
         public bool cikisbuttonaktif = true;
+        public string fisno = "-1";
         public Garson_Sor(bool cikisbuttonaktif=true)
         {
             InitializeComponent();
@@ -73,6 +74,13 @@ namespace Pos
         private void btnCikis_Click(object sender, EventArgs e)
         {
             cikis = true;
+            this.Close();
+        }
+
+        private void btnPaketciSil_Click(object sender, EventArgs e)
+        {
+            string q = "update Cst_Recete_Satis set Rsat_Paketci='',paketAtamaTarih=null where Rsat_Fisno='" + fisno+"'";
+            dbtools.execcmdR(q);
             this.Close();
         }
     }

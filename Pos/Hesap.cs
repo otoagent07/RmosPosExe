@@ -98,6 +98,9 @@ namespace Pos
         /*
          842;742 ekran boyutu 04.07.2024 değişti kişiye satış için
          */
+
+
+        public bool acaracmazyazdirmadankapat = false;
         private void Hesap_Load(object sender, EventArgs e)
         {
             try
@@ -1743,8 +1746,13 @@ namespace Pos
 
         private void btn_Yazdirmadankapat_Click(object sender, EventArgs e)
         {
+            yazdirmadankapat();
+        }
 
-            if (E_AdisyonDurum.Checked && cari_A == "" )
+
+        public void yazdirmadankapat()
+        {
+            if (E_AdisyonDurum.Checked && cari_A == "")
             {
                 MessageBox.Show("E adisyon işaretliyken cari seçili olmak zorunda !");
                 return;
@@ -1762,7 +1770,6 @@ namespace Pos
             indirimYaz();
             eadisyonAc();
         }
-
         public void eadisyonAc()
         {
             try
@@ -1848,7 +1855,7 @@ namespace Pos
 
             //dbtools.execcmd("update Pos_Masa set Masa_Durum = '0', Masa_Ozel = '' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
-            dbtools.execcmd("Update Cst_Recete_Satis set Rsat_SistemDate = Getdate(), Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "', E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
+            dbtools.execcmd("Update Cst_Recete_Satis set sepetDurum=3,Rsat_SistemDate = Getdate(), Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "', E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
 
             if (E_AdisyonDurum.Checked) // raporlar için eklendi-> eadisyon ise adisyondur.
             {
@@ -3422,6 +3429,12 @@ namespace Pos
 
                     }
 
+                }
+
+
+                if (acaracmazyazdirmadankapat)
+                {
+                    yazdirmadankapat();
                 }
             }
             catch (Exception ex)

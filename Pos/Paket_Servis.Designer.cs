@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paket_Servis));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grd_Cari = new DevExpress.XtraGrid.GridControl();
             this.gv_Cari = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -116,6 +116,8 @@
             // 
             // gv_Cari
             // 
+            this.gv_Cari.Appearance.Row.Font = ((System.Drawing.Font)(resources.GetObject("gv_Cari.Appearance.Row.Font")));
+            this.gv_Cari.Appearance.Row.Options.UseFont = true;
             this.gv_Cari.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn25,
             this.gridColumn28,
@@ -124,17 +126,17 @@
             this.gridColumn37,
             this.gridColumn38,
             this.gridColumn9});
-            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.Options.UseForeColor = true;
-            styleFormatCondition1.Column = this.gridColumn9;
-            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Less;
-            styleFormatCondition1.Value1 = new decimal(new int[] {
+            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition2.Appearance.Options.UseForeColor = true;
+            styleFormatCondition2.Column = this.gridColumn9;
+            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Less;
+            styleFormatCondition2.Value1 = new decimal(new int[] {
             0,
             0,
             0,
             0});
             this.gv_Cari.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1});
+            styleFormatCondition2});
             this.gv_Cari.GridControl = this.grd_Cari;
             this.gv_Cari.Name = "gv_Cari";
             this.gv_Cari.OptionsView.ShowAutoFilterRow = true;

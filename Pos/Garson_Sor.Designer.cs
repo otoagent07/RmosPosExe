@@ -33,6 +33,7 @@
             this.flp_Garson = new System.Windows.Forms.FlowLayoutPanel();
             this.lbl_Baslik = new DevExpress.XtraEditors.LabelControl();
             this.btnCikis = new DevExpress.XtraEditors.SimpleButton();
+            this.btnPaketciSil = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -60,16 +61,28 @@
             // 
             // btnCikis
             // 
-            this.btnCikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnCikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.ImageOptions.Image")));
             resources.ApplyResources(this.btnCikis, "btnCikis");
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
+            // btnPaketciSil
+            // 
+            this.btnPaketciSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.btnPaketciSil.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.btnPaketciSil.Appearance.Options.UseFont = true;
+            this.btnPaketciSil.Appearance.Options.UseForeColor = true;
+            this.btnPaketciSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            resources.ApplyResources(this.btnPaketciSil, "btnPaketciSil");
+            this.btnPaketciSil.Name = "btnPaketciSil";
+            this.btnPaketciSil.Click += new System.EventHandler(this.btnPaketciSil_Click);
             // 
             // Garson_Sor
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btnPaketciSil);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.lbl_Baslik);
             this.Controls.Add(this.flp_Garson);
@@ -87,5 +100,6 @@
         private System.Windows.Forms.FlowLayoutPanel flp_Garson;
         private DevExpress.XtraEditors.LabelControl lbl_Baslik;
         private DevExpress.XtraEditors.SimpleButton btnCikis;
+        private DevExpress.XtraEditors.SimpleButton btnPaketciSil;
     }
 }

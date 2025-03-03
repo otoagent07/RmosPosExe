@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Pos.Class;
 using Pos.Controllers;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -70,6 +71,9 @@ namespace Pos
             }
 
 
+
+            btnDirektSatis.Visible = User.D_Direksatis;
+
         }
 
 
@@ -125,8 +129,14 @@ namespace Pos
                 xtraTabControl1.SelectedTabPage = tab_KapaliPaket;
             }
             chktip = null;
+
+            //if (chk_PaketSatis.Checked)
+            //{
+            //    gridyenile_1();
+            //}
         }
 
+        int sonsecili = 0;
         private void xtraTabControl1_SelectedPageChanged(object sender, DevExpress.XtraTab.TabPageChangedEventArgs e)
         {
             if (xtraTabControl1.SelectedTabPage == tab_Paket)
@@ -181,19 +191,36 @@ namespace Pos
         {
             if (gridView1.RowCount > 0)
             {
-                string Fisno = Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Fisno"));
-                Masa_No = Convert.ToString(gridView1.GetFocusedRowCellValue("Masa_No"));
 
-                SimpleButton btn = (SimpleButton)sender;
+                if (gridView1.GetSelectedRows().Length == 0)
+                {
+                    RHMesaj.alertMesaj("Lütfen satırı işaretle");
+                    return;
+                }
 
-                Hesap hes = new Hesap();
-                hes.Tag = Fisno;
-                hes.Masa_No = Masa_No;
-                hes.look_Kapatma.EditValue = btn.Tag.ToString();
-                if (Param.Param_Hesap_Disable) hes.look_Kapatma.Enabled = false;
-                hes.ShowDialog();
-                gridyenile_1();
+
+                foreach (var rowHandle in gridView1.GetSelectedRows())
+                {
+                    var Fisno = gridView1.GetRowCellValue(rowHandle, "Rsat_Fisno").ToString();
+                     Masa_No = gridView1.GetRowCellValue(rowHandle, "Masa_No").ToString();
+
+                    SimpleButton btn = (SimpleButton)sender;
+
+                    Hesap hes = new Hesap();
+                    hes.Tag = Fisno;
+                    hes.Masa_No = Masa_No;
+                    hes.acaracmazyazdirmadankapat = Param.paketotohesapkapat;
+                    hes.look_Kapatma.EditValue = btn.Tag.ToString();
+                    if (Param.Param_Hesap_Disable) hes.look_Kapatma.Enabled = false;
+                    hes.ShowDialog();
+                }
+
+
+
             }
+
+            gridyenile_1();
+
         }
 
 
@@ -253,8 +280,13 @@ namespace Pos
                 RHMesaj.alertMesaj("Lütfen check ile satırı işaretle");
                 return;
             }
+
+
+
+
             Garson_Sor pkt = new Garson_Sor();
             pkt.Tag = "PAKET";
+            pkt.fisno = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Rsat_Fisno").ToString();
             pkt.ShowDialog();
             string Paketci = pkt.Garson_Kod;
 
@@ -263,7 +295,10 @@ namespace Pos
                 foreach (var rowHandle in gridView1.GetSelectedRows())
                 {
                     var Rsat_Fisno = gridView1.GetRowCellValue(rowHandle, "Rsat_Fisno").ToString();
-                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_Paketci = '" + Paketci + "' where Rsat_Fisno = '" + Rsat_Fisno + "'");
+                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_Paketci = '" + Paketci + "'" +
+                        ",paketAtamaTarih=getdate() " +
+                        ",sepetDurum=1 " +
+                        "where Rsat_Fisno = '" + Rsat_Fisno + "'");
 
                 }
 
@@ -374,10 +409,33 @@ namespace Pos
 
             //";
 
-            string query = StatikModel.getPaketSqlText(dateTarih1, dateTarih2, Departman.Dep_Kodu, "", "A,K", true);
 
-            gridControl1.DataSource = dbtools.SelectTableR(query);
+            switch (sonsecili)
+            {
+                case 0:
+                    chk_PaketSatis.Checked = true;
+                    chk_PaketciAtanmayanlar.Checked = false;
+                    chk_PaketciAtananlar.Checked = false;
 
+                    break;
+                case 1:
+                    chk_PaketciAtanmayanlar.Checked = true;
+                    break;
+                case 2:
+                    chk_PaketciAtananlar.Checked = true;
+                    break;
+                default:
+                    break;
+            }
+
+
+            string query = StatikModel.getPaketSqlText(dateTarih1, dateTarih2, Departman.Dep_Kodu, "", "A,K", true, atanmayanlar: chk_PaketciAtanmayanlar.Checked, atananlar: chk_PaketciAtananlar.Checked);
+
+            var data = dbtools.SelectTableR(query);
+
+
+
+            gridControl1.DataSource = data;
             //gridControl1.DataSource = dbtools.SelectTable(@"
             //          select  MAX(Rsat_Id) as Rsat_Id,Rsat_Tarih,Masa_No,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,MAX(Cari_Kod) as Cari_Kod,MAX(Cari_Ad) + ' ' + MAX(Cari_Soyad) as Cari_AdSoyad,
             //MAX(ISNULL(Cari_Adres1,'')) + ' ' + MAX(ISNULL(Cari_Adres2,'')) + ' ' + MAX(ISNULL(Cari_Adres3,'')) as Cari_Adres, 
@@ -756,14 +814,31 @@ order by Caller_Id desc";
 
         private void simpleButton13_Click(object sender, EventArgs e)
         {
+
+            int fisno = -1;
+            if (xtraTabControl1.SelectedTabPage == tab_Paket)
+            {
+                fisno = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Fisno"));
+
+            }
+            else if (xtraTabControl1.SelectedTabPage == tab_KapaliPaket)
+            {
+                fisno = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Rsat_Fisno"));
+            }
+
+            if (fisno == -1)
+            {
+                return;
+            }
+
             FisPr pr = new FisPr();
             if (Param.Param_YeniHesapDkm)
             {
-                pr.newHesapDokum(true, Convert.ToInt32(gridView2.GetFocusedRowCellValue("Rsat_Fisno")), 0, "* * * HESAP FİŞİ * * *");
+                pr.newHesapDokum(true, fisno, 0, "* * * HESAP FİŞİ * * *");
             }
             else
             {
-                pr.HesapDokum(true, Convert.ToInt32(gridView2.GetFocusedRowCellValue("Rsat_Fisno")), 0);
+                pr.HesapDokum(true, fisno, 0);
             }
         }
 
@@ -795,7 +870,7 @@ order by Caller_Id desc";
         {
             try
             {
-                if (xtraTabControl1.SelectedTabPage==tab_Paket)
+                if (xtraTabControl1.SelectedTabPage == tab_Paket)
                 {
                     gridView1.SaveLayoutToXml(getDizaynPath());
                     MessageBox.Show("Grid Dizayn Kaydedildi");
@@ -849,7 +924,7 @@ order by Caller_Id desc";
                 string path = getDizaynPath();
 
 
-                if (xtraTabControl1.SelectedTabPage==tab_Paket)
+                if (xtraTabControl1.SelectedTabPage == tab_Paket)
                 {
 
                 }
@@ -887,12 +962,21 @@ order by Caller_Id desc";
 
                 try
                 {
-                    string pkod = View.GetRowCellDisplayText(e.RowHandle, View.Columns["P_Kod"]);
-                    if (pkod!="")
+
+                    GridView view = sender as GridView;
+
+                    bool isSelected = gridView1.IsRowSelected(e.RowHandle);
+
+                    if (isSelected == false)
                     {
-                        e.Appearance.BackColor = Color.Green;
-                        e.Appearance.ForeColor = Color.White;
+                        string pkod = View.GetRowCellDisplayText(e.RowHandle, View.Columns["P_Kod"]);
+                        if (pkod != "")
+                        {
+                            e.Appearance.BackColor = Color.Green;
+                            e.Appearance.ForeColor = Color.White;
+                        }
                     }
+
                 }
                 catch (Exception ex)
                 {
@@ -970,6 +1054,92 @@ order by Caller_Id desc";
 
             gridyenile_1();
 
+        }
+
+        private void chk_PaketciAtanmayanlar_Click(object sender, EventArgs e)
+        {
+            sonsecili = 1;
+
+            chk_PaketciAtananlar.Checked = false;
+            chk_PaketciAtanmayanlar.Checked = true;
+
+            chk_PaketSatis.Checked = false;
+            chk_CallerId.Checked = false;
+            chk_KayitliTel.Checked = false;
+            chk_KapaliPaket.Checked = false;
+
+            xtraTabControl1.SelectedTabPage = tab_Paket;
+
+            gridyenile_1();
+
+
+
+        }
+
+        private void chk_PaketciAtananlar_Click(object sender, EventArgs e)
+        {
+            sonsecili = 2;
+
+            chk_PaketciAtananlar.Checked = true;
+            chk_PaketciAtanmayanlar.Checked = false;
+
+            chk_PaketSatis.Checked = false;
+            chk_CallerId.Checked = false;
+            chk_KayitliTel.Checked = false;
+            chk_KapaliPaket.Checked = false;
+
+            xtraTabControl1.SelectedTabPage = tab_Paket;
+            gridyenile_1();
+
+        }
+
+        private void chk_PaketSatis_Click(object sender, EventArgs e)
+        {
+            sonsecili = 0;
+            gridyenile_1();
+
+        }
+
+        private void chk_PaketciAtanmayanlar_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void chk_PaketciAtananlar_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void gridView1_RowClick(object sender, RowClickEventArgs e)
+        {
+            if (e.RowHandle < 0) return; // Başlık satırına tıklamayı önle
+
+            GridView view = sender as GridView;
+
+            bool isSelected = gridView1.IsRowSelected(e.RowHandle);
+
+            if (!isSelected)
+            {
+                // Satırı seç
+                gridView1.SelectRow(e.RowHandle);
+            }
+            else
+            {
+                // Eğer zaten seçiliyse, tekrar tıklanınca seçimi kaldır
+                gridView1.UnselectRow(e.RowHandle);
+            }
+
+
+        }
+
+        private void btnDirektSatis_Click(object sender, EventArgs e)
+        {
+
+            Satis sat = new Satis();
+            sat.Masa_No = User.P_Sabit_Masa;
+            sat.Tag = "D";
+            sat.ShowDialog();
+
+          
+            Main.a.Listele(0);
         }
     }
 }

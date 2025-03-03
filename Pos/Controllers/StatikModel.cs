@@ -84,7 +84,8 @@ namespace Pos.Controllers
             return kur;
         }
 
-        public static string getPaketSqlText(DateEdit dateTarih1, DateEdit dateTarih2, string depkod, string Sube, string Durum, bool sadeceAcikmasagozuksun = false, bool sistemTar = false)
+        public static string getPaketSqlText(DateEdit dateTarih1, DateEdit dateTarih2, string depkod, string Sube, string Durum, bool sadeceAcikmasagozuksun = false,
+            bool sistemTar = false,bool atanmayanlar=false,bool atananlar=false)
         {
             //SUM(Rsat_Tutar) -
 
@@ -94,6 +95,20 @@ namespace Pos.Controllers
                 acikMasa = " and Rsat_Durum='A'";
             }
 
+            string paketatanmayanlar = "";
+            if (atanmayanlar)
+            {
+                paketatanmayanlar = " and (P_Kod='' or P_Kod is null) ";
+            }
+
+
+            string paketatananlar = "";
+            if (atananlar)
+            {
+                paketatananlar = " and isnull(P_Kod,'')<>'' ";
+
+
+            }
             string query = @" Select *
 Into #Cst_Recete_Satis
 From Cst_Recete_Satis
@@ -145,10 +160,8 @@ end as Rsat_YSDurum,
             case Cari_Tip when 'Y' then MIN(ISNULL(Rsat_YSOrderID,'')) when 'G' then MIN(ISNULL(Rsat_GetirOrderID,'')) else  '' end  as Rsat_YSOrderID,
             Max(Rsat_Not) as Rsat_Not,MIN(Rsat_Acilis) as Rsat_Acilis,
 
-ABS(DATEDIFF(MINUTE, 
-        CAST(CONVERT(DATE, GETDATE()) AS DATETIME) + CAST(MIN(Rsat_Acilis) AS DATETIME),
-        GETDATE()
-    )) AS AcikDakika,
+ISNULL(ABS(DATEDIFF(MINUTE, MIN(paketAtamaTarih), GETDATE())), 0) AS AcikDakika,
+
 Rsat_EntegreId,
             case when ISNULL(GOrder_deliveryType,2) = 1 then 'GETİR KURYESİ' else 'RESTORAN KURYESİ' end as Kurye,
             GOrder_deliveryType as GOrder_deliveryType,
@@ -160,7 +173,7 @@ Rsat_EntegreId,
             left join Pos_Kodlar as sube on sube.Pkod_Kod = Rsat_Sube and sube.Pkod_Sinif = '27'
             Left Join GetirYemek_Order on GOrder_id = Rsat_GetirOrderID
             where (Rsat_Durum in (SELECT fieldvalue FROM dbo.stringArray('" + Durum + @"',',')))
-            and Rsat_Ba = 'B' and Masa_Konum = 'P' " + acikMasa + @"
+            "+ paketatananlar + " and Rsat_Ba = 'B' "+ paketatanmayanlar + " and Masa_Konum = 'P' " + acikMasa + @"
             group by Masa_No,Rsat_Tarih,Masa_Ad,Cst_Recete_Satis.Rsat_Fisno,Cari_Kod,Cari_Ad,
             Cari_Soyad,Cari_Adres1,P_Kod,P_Ad,P_Soyad ,Rsat_Sube,sube.Pkod_Ad ,Rsat_SubeDurum,Cari_Tip,GOrder_deliveryType,GOrder_confirmationId,GetirYemek_Order.ID,Rsat_EntegreId,Cst_Recete_Satis.sirano,
 			Cst_Recete_Satis.deger1

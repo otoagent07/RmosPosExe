@@ -370,5 +370,41 @@ namespace Pos
             this.TopMost = false;
 
         }
+
+        private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+
+            dakikayaz();
+        }
+
+        public void dakikayaz()
+        {
+            try
+            {
+                string Cari_Kod = gridView1.GetFocusedRowCellValue("Cari_Kod").ToString();
+                string q = "select top 1 ISNULL(ABS(DATEDIFF(MINUTE, MIN(paketAtamaTarih), GETDATE())), 0) AS AcikDakika from Cst_Recete_Satis where Rsat_Cari='" + Cari_Kod + "' and paketAtamaTarih is not null and Rsat_Durum='A'";
+
+                string deger = dbtools.DegerGetir(q);
+
+                if (deger == "0")
+                {
+                    labelDakika.Text = "";
+                }
+                else
+                {
+                    labelDakika.Text = deger + " dk";
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            dakikayaz();
+        }
     }
 }

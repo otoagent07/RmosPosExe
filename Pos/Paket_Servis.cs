@@ -19,7 +19,7 @@ namespace Pos
             InitializeComponent();
             this.BringToFront();
         }
-        bool canClose = false;
+        public bool canClose = false;
         private void Paket_Servis_Load(object sender, EventArgs e)
         {
             gridyenile1();

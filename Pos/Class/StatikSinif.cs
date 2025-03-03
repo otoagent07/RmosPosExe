@@ -130,6 +130,15 @@ IF COL_LENGTH('Pos_Kodlar', 'bit7') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD bit
 
 IF COL_LENGTH('Cst_Recete_Satis', 'Rsat_AcilisTar') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD Rsat_AcilisTar  datetime null end;
 
+
+IF COL_LENGTH('Cst_Recete_Satis', 'paketAtamaTarih') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD paketAtamaTarih  datetime null end;
+
+
+IF COL_LENGTH('Cst_Recete_Satis', 'sepetDurum') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD sepetDurum int END;
+
+
+
+
 IF COL_LENGTH('Cst_Recete_Satis', 'ustgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD ustgrup nvarchar(200) END;
 IF COL_LENGTH('Cst_Recete_Satis', 'sirano') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD sirano int END;
 IF COL_LENGTH('Cst_Recete_Satis', 'altgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD altgrup nvarchar(200) END;
@@ -139,9 +148,11 @@ IF COL_LENGTH('Cst_Recete', 'Rec_DovizliSatis') IS NULL BEGIN ALTER TABLE Cst_Re
 IF COL_LENGTH('Pos_Param', 'kartnoSayisi') IS NULL BEGIN ALTER TABLE Pos_Param ADD kartnoSayisi int END;
 
 IF COL_LENGTH('Pos_Param', 'hesapFisQr') IS NULL BEGIN ALTER TABLE Pos_Param ADD hesapFisQr bit END;
+IF COL_LENGTH('Pos_Param', 'paketotohesapkapat') IS NULL BEGIN ALTER TABLE Pos_Param ADD paketotohesapkapat bit END;
+
+
+
 IF COL_LENGTH('Pos_Param', 'hesapFisQrFisno') IS NULL BEGIN ALTER TABLE Pos_Param ADD hesapFisQrFisno bit END;
-
-
 IF COL_LENGTH('Pos_Param', 'masatrTutSurukle') IS NULL BEGIN ALTER TABLE Pos_Param ADD masatrTutSurukle bit END;
 IF COL_LENGTH('Pos_Param', 'servispayFooterda') IS NULL BEGIN ALTER TABLE Pos_Param ADD servispayFooterda bit END;
 
