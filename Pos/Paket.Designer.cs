@@ -119,6 +119,8 @@
             this.gridColumn39 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn40 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tab_KapaliPaket = new DevExpress.XtraTab.XtraTabPage();
+            this.gridControlTest = new DevExpress.XtraGrid.GridControl();
+            this.gridViewTest = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -148,6 +150,7 @@
             this.gridColumn56 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn64 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btnKuryeOzet = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
@@ -161,9 +164,7 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnKuryeOzet = new DevExpress.XtraEditors.SimpleButton();
-            this.gridControlTest = new DevExpress.XtraGrid.GridControl();
-            this.gridViewTest = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn65 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -199,6 +200,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             this.tab_KapaliPaket.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -210,8 +213,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlTest)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewTest)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn17
@@ -1038,6 +1039,19 @@
             this.tab_KapaliPaket.Name = "tab_KapaliPaket";
             resources.ApplyResources(this.tab_KapaliPaket, "tab_KapaliPaket");
             // 
+            // gridControlTest
+            // 
+            resources.ApplyResources(this.gridControlTest, "gridControlTest");
+            this.gridControlTest.MainView = this.gridViewTest;
+            this.gridControlTest.Name = "gridControlTest";
+            this.gridControlTest.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewTest});
+            // 
+            // gridViewTest
+            // 
+            this.gridViewTest.GridControl = this.gridControlTest;
+            this.gridViewTest.Name = "gridViewTest";
+            // 
             // gridControl2
             // 
             this.gridControl2.ContextMenuStrip = this.contextMenuStrip_LogRapor;
@@ -1084,7 +1098,8 @@
             this.gridColumn34,
             this.gridColumn55,
             this.gridColumn56,
-            this.gridColumn64});
+            this.gridColumn64,
+            this.gridColumn65});
             styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
             styleFormatCondition1.Column = this.gridColumn17;
@@ -1099,6 +1114,7 @@
             this.gridView2.OptionsView.ShowFooter = true;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.RowHeight = 35;
+            this.gridView2.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView2_RowCellStyle);
             // 
             // gridColumn11
             // 
@@ -1359,6 +1375,16 @@
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
             // 
+            // btnKuryeOzet
+            // 
+            this.btnKuryeOzet.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnKuryeOzet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnKuryeOzet.Appearance.Font")));
+            this.btnKuryeOzet.Appearance.Options.UseBackColor = true;
+            this.btnKuryeOzet.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnKuryeOzet, "btnKuryeOzet");
+            this.btnKuryeOzet.Name = "btnKuryeOzet";
+            this.btnKuryeOzet.Click += new System.EventHandler(this.btnKuryeOzet_Click);
+            // 
             // simpleButton14
             // 
             this.simpleButton14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -1500,28 +1526,11 @@
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnKuryeOzet
+            // gridColumn65
             // 
-            this.btnKuryeOzet.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnKuryeOzet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton15.Appearance.Font")));
-            this.btnKuryeOzet.Appearance.Options.UseBackColor = true;
-            this.btnKuryeOzet.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnKuryeOzet, "btnKuryeOzet");
-            this.btnKuryeOzet.Name = "btnKuryeOzet";
-            this.btnKuryeOzet.Click += new System.EventHandler(this.btnKuryeOzet_Click);
-            // 
-            // gridControlTest
-            // 
-            resources.ApplyResources(this.gridControlTest, "gridControlTest");
-            this.gridControlTest.MainView = this.gridViewTest;
-            this.gridControlTest.Name = "gridControlTest";
-            this.gridControlTest.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewTest});
-            // 
-            // gridViewTest
-            // 
-            this.gridViewTest.GridControl = this.gridControlTest;
-            this.gridViewTest.Name = "gridViewTest";
+            resources.ApplyResources(this.gridColumn65, "gridColumn65");
+            this.gridColumn65.FieldName = "YSDurum";
+            this.gridColumn65.Name = "gridColumn65";
             // 
             // Paket
             // 
@@ -1570,6 +1579,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             this.tab_KapaliPaket.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
@@ -1581,8 +1592,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlTest)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewTest)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1721,5 +1730,6 @@
         private DevExpress.XtraEditors.SimpleButton btnKuryeOzet;
         private DevExpress.XtraGrid.GridControl gridControlTest;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewTest;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn65;
     }
 }

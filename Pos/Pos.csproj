@@ -471,6 +471,12 @@
     <Compile Include="Print\Mars.Designer.cs">
       <DependentUpon>Mars.cs</DependentUpon>
     </Compile>
+    <Compile Include="Print\KuryeOzet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\KuryeOzet.Designer.cs">
+      <DependentUpon>KuryeOzet.cs</DependentUpon>
+    </Compile>
     <Compile Include="SifreDegistirForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1586,6 +1592,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Mars.resx">
       <DependentUpon>Mars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\KuryeOzet.resx">
+      <DependentUpon>KuryeOzet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SifreDegistirForm.resx">
       <DependentUpon>SifreDegistirForm.cs</DependentUpon>

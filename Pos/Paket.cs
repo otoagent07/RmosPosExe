@@ -1,9 +1,11 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
+using DevExpress.XtraReports.UI;
 using Newtonsoft.Json;
 using Pos.Class;
 using Pos.Controllers;
+using Pos.Print;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -469,11 +471,13 @@ namespace Pos
             gridControl5.DataSource = dbtools.SelectTable("select 'Yeni Sipariş' as Data,* from Pos_CallCenter where ISNULL(Center_Pasif,0) = 0");
 
             son5call();
+
+            seciliyaz();
         }
 
         public void son5call()
         {
-            string query = $@"select top 5 Caller_Telno as tel,Caller_Carikod as kod,isnull((Cari_Ad+' '+Cari_Soyad),'') as adSoyad from Pos_CallerId poscari
+            string query = $@"select top 10 Caller_Telno as tel,Caller_Carikod as kod,isnull((Cari_Ad+' '+Cari_Soyad),'') as adSoyad from Pos_CallerId poscari
 left join Pos_Cari cari on cari.Cari_Kod=poscari.Caller_Carikod
 order by Caller_Id desc";
             gridControlSon5Call.DataSource = dbtools.SelectTableR(query);
@@ -980,8 +984,8 @@ order by Caller_Id desc";
                         string pkod = View.GetRowCellDisplayText(e.RowHandle, View.Columns["P_Kod"]);
                         if (pkod != "")
                         {
-                            e.Appearance.BackColor = Color.Green;
-                            e.Appearance.ForeColor = Color.White;
+                            e.Appearance.BackColor = Color.Lime;
+                            e.Appearance.ForeColor = Color.Black;
                         }
                     }
 
@@ -1135,17 +1139,31 @@ order by Caller_Id desc";
                 gridView1.UnselectRow(e.RowHandle);
             }
 
-            int sayi= gridView1.GetSelectedRows().Length;
-
-            if (sayi==0)
-            {
-                labelSecili.Text = "";
-            }
-            else
-            {
-                labelSecili.Text = sayi+" adet seçildi";
-            }
+            seciliyaz();
         }
+
+        public void seciliyaz()
+        {
+            try
+            {
+                int sayi = gridView1.GetSelectedRows().Length;
+
+                if (sayi == 0)
+                {
+                    labelSecili.Text = "";
+                }
+                else
+                {
+                    labelSecili.Text = sayi + " adet seçildi";
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            
+        }
+             
 
         private void btnDirektSatis_Click(object sender, EventArgs e)
         {
@@ -1171,9 +1189,9 @@ set @Tarih2 = CONVERT(DATE,'{date}')
 declare @Indkapatma nvarchar(20) = (select Pkod_Kod from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '11' and Pkod_Ozelkod = '4')
 
 select  
-isnull(max(P_Ad + ' ' + P_Soyad),'ATANMAMIŞ') as 'Ad Soyad',
-count(distinct Satis.Rsat_Fisno) as 'Paket Adet',
-SUM(Satis.Rsat_Tutar) as 'Toplam Tutar'
+isnull(max(P_Ad + ' ' + P_Soyad),'ATANMAMIŞ') as 'adsoyad',
+count(distinct Satis.Rsat_Fisno) as 'adet',
+SUM(Satis.Rsat_Tutar) as 'tutar'
 from Cst_Recete_Satis as Satis
 left join Pos_Masa on Rsat_Masa = Masa_No 
 left join Pos_Cari on Rsat_Cari = Cari_Kod
@@ -1194,11 +1212,59 @@ order by count(distinct Satis.Rsat_Fisno) desc";
 
             var data = dbtools.SelectTableR(query);
 
-            gridControlTest.DataSource = data;
+            KuryeOzet kuryeOzet = new KuryeOzet();
 
-            gridViewTest.ShowPrintPreview();
+            kuryeOzet.xr_Tarih.Text = dateEdit1.DateTime.ToString("dd.MM.yyyy");
+            kuryeOzet.DataSource = data;
 
 
+            string yazici = dbtools.DegerGetir("select top 1 isnull(xzraporyazici,0) as xzraporyazici from Rmosmuh.dbo.Pos_User_XZ where P_Kod='" + User.P_Kod + "'");
+
+            if (yazici.Equals("0"))
+            {
+                kuryeOzet.ShowPreview();
+            }
+            else
+            {
+                kuryeOzet.PrinterName = yazici;
+                kuryeOzet.Print();
+            }
+
+
+
+        }
+
+        private void gridView2_RowCellStyle(object sender, RowCellStyleEventArgs e)
+        {
+            if (e.RowHandle >= 0)
+            {
+                GridView View = sender as GridView;
+
+                string kapatma = View.GetRowCellDisplayText(e.RowHandle, View.Columns["YSDurum"]);
+
+                
+
+                if (kapatma != null && kapatma == "PAKET" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.Turquoise;
+                    e.Appearance.ForeColor = Color.Black;
+                }
+                else if (kapatma != null && kapatma == "TRENDYOL" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.Orange;
+                    e.Appearance.ForeColor = Color.Black;
+                }
+                else if (kapatma != null && kapatma == "GETİR YEMEK" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.FromArgb(127, 109, 237);
+                    e.Appearance.ForeColor = Color.Black;
+                }
+                else if (kapatma != null && kapatma == "YEMEK SEPETİ" && e.Column.FieldName == "YSDurum")
+                {
+                    e.Appearance.BackColor = Color.DarkOrange;
+                    e.Appearance.ForeColor = Color.Black;
+                }
+            }
         }
     }
 }

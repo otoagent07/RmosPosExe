@@ -861,7 +861,6 @@
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
-        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         public DevExpress.XtraReports.UI.XRLabel xr_Baslik;
         public DevExpress.XtraReports.UI.XRLabel xr_OtelAdi;
         private DevExpress.XtraReports.UI.XRLabel xrLabel40;
@@ -914,5 +913,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel27;
         public DevExpress.XtraReports.UI.XRLabel txtSirano;
         public DevExpress.XtraReports.UI.XRBarCode txtQr;
+        public DevExpress.XtraReports.UI.PageFooterBand PageFooter;
     }
 }

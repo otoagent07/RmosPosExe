@@ -1671,6 +1671,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                         paket.txtQr.Text = $"https://www.google.com/maps?q={latitude},{longitude}";
                     }
+                    else
+                    {
+                        paket.txtQr.Visible = false;
+                        paket.PageFooter.HeightF = (float)128;
+                    }
       
 
                     for (int i = 0; i < Paket_Ciktisayisi; i++)
@@ -3163,20 +3168,43 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 // 31.01.2025 emre atalayın isteği üzerine eklendi
                 try
                 {
+                    //string marslananlar = $"SELECT Rsat_Id FROM Cst_Recete_Satis where Rsat_Fisno={Fisno} and rezevePrintCiktimi=1 and Rsat_Mars is null";
+                    //DataTable dtMarslananlar = dbtools.SelectTableR(marslananlar);
+                    //HashSet<int> marslananIds = new HashSet<int>(dtMarslananlar.AsEnumerable()
+                    //    .Select(row => row.Field<int>("Rsat_Id")));
+                    //dtMars = dtMars.AsEnumerable()
+                    //    .Where(row => !marslananIds.Contains(row.Field<int>("Rsat_Id")))
+                    //    .CopyToDataTable();
+
                     string marslananlar = $"SELECT Rsat_Id FROM Cst_Recete_Satis where Rsat_Fisno={Fisno} and rezevePrintCiktimi=1 and Rsat_Mars is null";
                     DataTable dtMarslananlar = dbtools.SelectTableR(marslananlar);
-                    HashSet<int> marslananIds = new HashSet<int>(dtMarslananlar.AsEnumerable()
-                        .Select(row => row.Field<int>("Rsat_Id")));
-                    dtMars = dtMars.AsEnumerable()
-                        .Where(row => !marslananIds.Contains(row.Field<int>("Rsat_Id")))
-                        .CopyToDataTable();
+
+                    HashSet<int> marslananIds = new HashSet<int>(
+                        dtMarslananlar.AsEnumerable().Select(row => row.Field<int>("Rsat_Id"))
+                    );
+
+                    var filteredRows = dtMars.AsEnumerable()
+                        .Where(row => !marslananIds.Contains(row.Field<int>("Rsat_Id")));
+
+                    if (filteredRows.Any()) // Eğer en az bir satır varsa
+                    {
+                        dtMars = filteredRows.CopyToDataTable();
+                    }
+                    else
+                    {
+                        dtMars = dtMars.Clone(); // Boş ama yapısı korunan bir DataTable oluştur
+                    }
+
                 }
                 catch (Exception ex)
                 {
                     //MessageBox.Show(ex.Message);
                 }
-               
 
+                if (dtMars == null || dtMars.Rows.Count == 0)
+                {
+                    return "OK";
+                }
 
 
 

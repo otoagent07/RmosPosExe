@@ -12,7 +12,7 @@ namespace Pos.Class
 
     public class AdisyonPr
     {
-        public  DataTable GetSortedTable(DataTable dt, string sort)
+        public DataTable GetSortedTable(DataTable dt, string sort)
         {
             dt.DefaultView.Sort = sort;
             return dt.DefaultView.ToTable();
@@ -336,7 +336,7 @@ namespace Pos.Class
         }
 
         // aşağıki metot 30.07.2021 e ait
-        public string Adisyon_Yaz(int Fisno, bool Detay = false,string yazdirkapat="")// yazdirkapat 1 ise kapatılıyor
+        public string Adisyon_Yaz(int Fisno, bool Detay = false, string yazdirkapat = "")// yazdirkapat 1 ise kapatılıyor
         {
             //Printer Seçimi
             string printer = String.Empty;
@@ -395,11 +395,11 @@ namespace Pos.Class
             //}
 
             int prSayac2 = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"]);
-            if (!Detay && prSayac2!=0)
+            if (!Detay && prSayac2 != 0)
             {
                 //Toplama Göre Boş Satır
-                int toplam = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"])*2;
-                for (int i = 0; i < toplam+ 1; i++)
+                int toplam = Convert.ToInt32(dt_Fis.Rows[0]["Rsat_AdisPrSayac"]) * 2;
+                for (int i = 0; i < toplam + 1; i++)
                 {
                     DataRow row = dt_Fis.NewRow();
                     dt_Fis.Rows.InsertAt(row, 1);
@@ -433,6 +433,19 @@ namespace Pos.Class
             ads.lbl_Garson.Text += garson;
             ads.lbl_Masa.Text += Convert.ToString(dt_Fis.Rows[0]["Rsat_Masa"]) + " - " + Convert.ToString(dt_Fis.Rows[0]["Masa_Ozel"]);
             ads.lbl_Kisi.Text += Convert.ToString(dt_Fis.Rows[0]["Rsat_Kisi"]);
+
+
+            try
+            {
+                string cariadsoyad = dbtools.DegerGetir($"select (Cari_Ad+' '+Cari_Soyad) as cariAdSoyad from Pos_Cari where cari_kod= (select top 1 Rsat_Cari from Cst_Recete_Satis where Rsat_Fisno='{Fisno}' and Rsat_Cari is not null and Rsat_Cari<>'')");
+                ads.lbl_Kapatmaisim.Text = cariadsoyad;
+
+            }
+            catch (Exception ex)
+            {
+
+
+            }
             //ads.xr_AdSoyad.Text += "";
             //ads.xr_Oda.Text += Convert.ToString(dt_Fis.Rows[0]["Rsat_Odano"]); ;
 
