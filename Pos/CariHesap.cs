@@ -1887,6 +1887,11 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                     //txt_Cari_F_Adres2.Text = carim.Cari_Fadres2;
                     //txt_Cari_F_Unvan.Text = carim.Cari_Funvan;
                 }
+                else
+                {
+                    txt_Cari_Kod.Text = CariKod;
+                    cariBul();
+                }
             }
             catch (Exception ex)
             {

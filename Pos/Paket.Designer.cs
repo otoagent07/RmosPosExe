@@ -34,6 +34,7 @@
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.labelSecili = new System.Windows.Forms.Label();
             this.chk_PaketciAtanmayanlar = new DevExpress.XtraEditors.CheckButton();
             this.chk_PaketciAtananlar = new DevExpress.XtraEditors.CheckButton();
             this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
@@ -160,6 +161,9 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnKuryeOzet = new DevExpress.XtraEditors.SimpleButton();
+            this.gridControlTest = new DevExpress.XtraGrid.GridControl();
+            this.gridViewTest = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -206,6 +210,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTest)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn17
@@ -217,6 +223,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.labelSecili);
             this.groupControl1.Controls.Add(this.chk_PaketciAtanmayanlar);
             this.groupControl1.Controls.Add(this.chk_PaketciAtananlar);
             this.groupControl1.Controls.Add(this.simpleButton11);
@@ -227,6 +234,11 @@
             this.groupControl1.Controls.Add(this.chk_PaketSatis);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // labelSecili
+            // 
+            resources.ApplyResources(this.labelSecili, "labelSecili");
+            this.labelSecili.Name = "labelSecili";
             // 
             // chk_PaketciAtanmayanlar
             // 
@@ -1020,6 +1032,7 @@
             // 
             // tab_KapaliPaket
             // 
+            this.tab_KapaliPaket.Controls.Add(this.gridControlTest);
             this.tab_KapaliPaket.Controls.Add(this.gridControl2);
             this.tab_KapaliPaket.Controls.Add(this.panelControl3);
             this.tab_KapaliPaket.Name = "tab_KapaliPaket";
@@ -1330,6 +1343,7 @@
             // 
             // panelControl3
             // 
+            this.panelControl3.Controls.Add(this.btnKuryeOzet);
             this.panelControl3.Controls.Add(this.simpleButton14);
             this.panelControl3.Controls.Add(this.simpleButton9);
             this.panelControl3.Controls.Add(this.simpleButton8);
@@ -1486,6 +1500,29 @@
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnKuryeOzet
+            // 
+            this.btnKuryeOzet.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnKuryeOzet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton15.Appearance.Font")));
+            this.btnKuryeOzet.Appearance.Options.UseBackColor = true;
+            this.btnKuryeOzet.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnKuryeOzet, "btnKuryeOzet");
+            this.btnKuryeOzet.Name = "btnKuryeOzet";
+            this.btnKuryeOzet.Click += new System.EventHandler(this.btnKuryeOzet_Click);
+            // 
+            // gridControlTest
+            // 
+            resources.ApplyResources(this.gridControlTest, "gridControlTest");
+            this.gridControlTest.MainView = this.gridViewTest;
+            this.gridControlTest.Name = "gridControlTest";
+            this.gridControlTest.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewTest});
+            // 
+            // gridViewTest
+            // 
+            this.gridViewTest.GridControl = this.gridControlTest;
+            this.gridViewTest.Name = "gridViewTest";
+            // 
             // Paket
             // 
             resources.ApplyResources(this, "$this");
@@ -1499,6 +1536,7 @@
             this.Load += new System.EventHandler(this.Paket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.tab_Paket.ResumeLayout(false);
@@ -1543,6 +1581,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTest)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1677,5 +1717,9 @@
         private DevExpress.XtraEditors.CheckButton chk_PaketciAtananlar;
         private DevExpress.XtraEditors.SimpleButton btnDirektSatis;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn64;
+        private System.Windows.Forms.Label labelSecili;
+        private DevExpress.XtraEditors.SimpleButton btnKuryeOzet;
+        private DevExpress.XtraGrid.GridControl gridControlTest;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewTest;
     }
 }

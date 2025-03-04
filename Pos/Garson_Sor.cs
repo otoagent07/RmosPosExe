@@ -53,7 +53,15 @@ namespace Pos
                 btnGarson.TabStop = false;
                 btnGarson.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
                 btnGarson.Appearance.TextOptions.Trimming = DevExpress.Utils.Trimming.Word;
-                btnGarson.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+                //btnGarson.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+
+                btnGarson.Appearance.BackColor = Color.DarkGreen;
+
+                if (i%2==0)
+                {
+                    btnGarson.Appearance.BackColor = Color.Blue;
+                }
+               
 
                 btnGarson.Text = Convert.ToString(dtGarson.Rows[i]["Adsoyad"]);
                 btnGarson.Tag = Convert.ToString(dtGarson.Rows[i]["P_Kod"]);

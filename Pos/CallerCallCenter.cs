@@ -69,6 +69,7 @@ namespace Pos
                 btn_AcikAdres.Enabled = true;
             }
 
+            labelDakika.Text = "";
         }
 
         private void ekranyenile()
@@ -224,6 +225,7 @@ namespace Pos
             //}
 
             cari = Cari.Cari_Getir(Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Kod")));
+            string adres = Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Adres"));
 
             if (cari.Cari_Kod != null)
             {
@@ -233,7 +235,6 @@ namespace Pos
                     if (MessageBox.Show(res_man.GetString("Mevcut Cari için Açık çek bulunmaktadır. Açık çek üzerinde devam etmek istiyor musunuz?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         string Masa_No = Convert.ToString(dtSatis.Rows[0]["Rsat_Masa"]);
-                        string adres = Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Adres"));
 
                         Satis satis = new Satis();
                         satis.Tag = "M";
@@ -269,6 +270,8 @@ namespace Pos
                 satis.CariTel = Tel;
                 satis.PaketFiyat = "P";
                 satis.Cari_Kod = cari.Cari_Kod;
+                satis.adres = adres;
+
                 //satis.AcikAdres = true;
                 //satis.Sube = subeKod;
                 this.Close();

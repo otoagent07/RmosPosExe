@@ -611,6 +611,8 @@ namespace Pos.Class
                             if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "") // 
                             {
                                 siparis.Print();
+
+
                             }
 
                         }
@@ -1625,6 +1627,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     if (parcaliAdres!="")
                     {
                         paket.xr_Adres.Text = parcaliAdres;
+
                     }
 
 

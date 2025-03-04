@@ -76,6 +76,8 @@ namespace Pos
 
             btnDirektSatis.Visible = User.D_Direksatis;
 
+
+            labelSecili.Text = "";
         }
 
 
@@ -1133,7 +1135,16 @@ order by Caller_Id desc";
                 gridView1.UnselectRow(e.RowHandle);
             }
 
+            int sayi= gridView1.GetSelectedRows().Length;
 
+            if (sayi==0)
+            {
+                labelSecili.Text = "";
+            }
+            else
+            {
+                labelSecili.Text = sayi+" adet seçildi";
+            }
         }
 
         private void btnDirektSatis_Click(object sender, EventArgs e)
@@ -1146,6 +1157,48 @@ order by Caller_Id desc";
 
           
             Main.a.Listele(0);
+        }
+
+        private void btnKuryeOzet_Click(object sender, EventArgs e)
+        {
+
+            string date = dateEdit1.DateTime.ToString("yyyy-MM-dd");
+
+            string query = $@"declare @Tarih1  datetime 
+set @Tarih1 = CONVERT(DATE,'{date}')
+declare @Tarih2  datetime 
+set @Tarih2 = CONVERT(DATE,'{date}')
+declare @Indkapatma nvarchar(20) = (select Pkod_Kod from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '11' and Pkod_Ozelkod = '4')
+
+select  
+isnull(max(P_Ad + ' ' + P_Soyad),'ATANMAMIŞ') as 'Ad Soyad',
+count(distinct Satis.Rsat_Fisno) as 'Paket Adet',
+SUM(Satis.Rsat_Tutar) as 'Toplam Tutar'
+from Cst_Recete_Satis as Satis
+left join Pos_Masa on Rsat_Masa = Masa_No 
+left join Pos_Cari on Rsat_Cari = Cari_Kod
+left join Rmosmuh.dbo.Pos_User on P_Kod = Rsat_Paketci
+left join Cst_Recete_Satis  as Indirim on Satis.Rsat_Fisno = Indirim.Rsat_Fisno and Indirim.Rsat_Ba = 'A' and Indirim.Rsat_Kapatma = @Indkapatma
+left join (SELECT Rsat_Fisno,Rsat_Kapatma,SUM(Rsat_Tutar) as Rsat_Tutar FROM Cst_Recete_Satis WITH(NOLOCK) WHERE (Rsat_Ba = 'A' and Rsat_Kapatma <> @Indkapatma)
+GROUP BY Rsat_Fisno,Rsat_Kapatma,Rsat_Cari) AS Odeme ON Satis.Rsat_Fisno = Odeme.Rsat_Fisno
+left join Pos_Kodlar AS Kodlar WITH(NOLOCK) ON Odeme.Rsat_Kapatma = Kodlar.Pkod_Kod and Kodlar.Pkod_Ozelkod <> '4' and Pkod_Sinif = '11'
+left join Stok_Kodlar AS Departman WITH(NOLOCK) ON Satis.Rsat_Departman = Departman.Kodlar_Kod AND Departman.Kodlar_Sinif = '01' 
+where (CONVERT(date,Satis.Rsat_Tarih) >= CONVERT(DATE,@Tarih1) OR @Tarih1 IS NULL)
+AND (CONVERT(DATE,Satis.Rsat_Tarih) <= CONVERT(DATE,@Tarih2) or @Tarih2 is null) 
+AND ((Satis.Rsat_Durum  = 'A' AND 0 = 1) OR (Satis.Rsat_Durum  = 'K' AND 1 = 1))
+AND Masa_Konum = 'P' 
+and satis.Rsat_Ba = 'B'
+group by (P_Ad + ' ' + P_Soyad)
+order by count(distinct Satis.Rsat_Fisno) desc";
+
+
+            var data = dbtools.SelectTableR(query);
+
+            gridControlTest.DataSource = data;
+
+            gridViewTest.ShowPrintPreview();
+
+
         }
     }
 }
