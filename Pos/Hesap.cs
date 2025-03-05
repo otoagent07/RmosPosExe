@@ -1,7 +1,9 @@
-﻿using Pos.Class;
+﻿using DevExpress.XtraReports.UI;
+using Pos.Class;
 using Pos.Controllers;
 using Pos.Ingenico;
 using Pos.Models;
+using Pos.Print;
 using SimpleTCP;
 using System;
 using System.Data;
@@ -233,6 +235,23 @@ namespace Pos
 
 
                 kisiyeSatisController = new KisiyeSatisController(this, Convert.ToInt32(this.Tag));
+
+
+
+
+                btnParcaliOde.Visible = Param.Param_ParcaliMasaAktif;
+
+
+                 yaziciAd = dbtools.DegerGetir("Select isnull(Kodlar_parakasa,'') as Kodlar_parakasa From Stok_Kodlar Where Kodlar_Sinif ='01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+
+                if (yaziciAd == "")
+                {
+                    btnCekmeceAc.Visible = false;
+                        
+                }
+
+
+
             }
             catch (Exception ex)
             {
@@ -240,6 +259,8 @@ namespace Pos
             }
 
         }
+
+        string yaziciAd = "";
 
         KisiyeSatisController kisiyeSatisController = null;
 
@@ -3826,6 +3847,22 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             {
                 RHMesaj.MyMessageError(MyClass, "btnUrunIade_Click", "", ex);
             }
+        }
+
+        private void btnCekmeceAc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (yaziciAd == "") return;
+                XtraReport1 report1 = new XtraReport1();
+                report1.PrinterName = yaziciAd;
+                report1.Print();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }

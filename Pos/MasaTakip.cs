@@ -129,7 +129,7 @@ namespace Pos
 
 
                 btnParcaliOdemeEski.Visible = Param.Param_ParcaliMasaAktif;
-
+                btnParcaliOdeme.Visibility = Param.Param_ParcaliMasaAktif?DevExpress.XtraBars.BarItemVisibility.Always:DevExpress.XtraBars.BarItemVisibility.Never;
 
 
                 gridView2.CustomColumnDisplayText += (s, e) =>

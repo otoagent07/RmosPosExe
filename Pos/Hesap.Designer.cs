@@ -121,6 +121,7 @@
             this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
             this.label8 = new System.Windows.Forms.Label();
             this.btnUrunIade = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCekmeceAc = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -1026,11 +1027,21 @@
             this.btnUrunIade.Name = "btnUrunIade";
             this.btnUrunIade.Click += new System.EventHandler(this.btnUrunIade_Click);
             // 
+            // btnCekmeceAc
+            // 
+            this.btnCekmeceAc.ImageOptions.Image = global::Pos.Properties.Resources.kasa;
+            this.btnCekmeceAc.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnCekmeceAc.ImageOptions.SvgImageSize = new System.Drawing.Size(12, 12);
+            resources.ApplyResources(this.btnCekmeceAc, "btnCekmeceAc");
+            this.btnCekmeceAc.Name = "btnCekmeceAc";
+            this.btnCekmeceAc.Click += new System.EventHandler(this.btnCekmeceAc_Click);
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btnCekmeceAc);
             this.Controls.Add(this.btnUrunIade);
             this.Controls.Add(this.panelControl5);
             this.Controls.Add(this.panelControl6);
@@ -1228,5 +1239,6 @@
         private DevExpress.XtraEditors.PanelControl panelControl8;
         private System.Windows.Forms.Label label8;
         private DevExpress.XtraEditors.SimpleButton btnUrunIade;
+        private DevExpress.XtraEditors.SimpleButton btnCekmeceAc;
     }
 }
