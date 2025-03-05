@@ -1647,7 +1647,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.MemoEdit txt_Not;
         private DevExpress.XtraEditors.ButtonEdit txt_Barkod;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit13;
@@ -1747,5 +1746,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynKaydet;
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynTemizle;
         private DevExpress.XtraEditors.SimpleButton btnFiyatBilgisi;
+        public DevExpress.XtraEditors.MemoEdit txt_Not;
     }
 }

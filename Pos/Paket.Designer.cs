@@ -34,6 +34,7 @@
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnDirektSatis = new DevExpress.XtraEditors.SimpleButton();
             this.labelSecili = new System.Windows.Forms.Label();
             this.chk_PaketciAtanmayanlar = new DevExpress.XtraEditors.CheckButton();
             this.chk_PaketciAtananlar = new DevExpress.XtraEditors.CheckButton();
@@ -69,6 +70,7 @@
             this.gridColumn54 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn57 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn63 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn66 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gridControlSon5Call = new DevExpress.XtraGrid.GridControl();
             this.gridViewSon5Call = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -85,7 +87,6 @@
             this.flp_Kapatma = new System.Windows.Forms.FlowLayoutPanel();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnDirektSatis = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Yenile = new DevExpress.XtraEditors.SimpleButton();
             this.dateTarih2 = new DevExpress.XtraEditors.DateEdit();
@@ -149,6 +150,7 @@
             this.gridColumn55 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn56 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn64 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn65 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btnKuryeOzet = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
@@ -164,7 +166,6 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.gridColumn65 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -224,6 +225,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnDirektSatis);
             this.groupControl1.Controls.Add(this.labelSecili);
             this.groupControl1.Controls.Add(this.chk_PaketciAtanmayanlar);
             this.groupControl1.Controls.Add(this.chk_PaketciAtananlar);
@@ -235,6 +237,17 @@
             this.groupControl1.Controls.Add(this.chk_PaketSatis);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // btnDirektSatis
+            // 
+            this.btnDirektSatis.Appearance.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnDirektSatis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDirektSatis.Appearance.Font")));
+            this.btnDirektSatis.Appearance.Options.UseBackColor = true;
+            this.btnDirektSatis.Appearance.Options.UseFont = true;
+            this.btnDirektSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDirektSatis.ImageOptions.Image")));
+            resources.ApplyResources(this.btnDirektSatis, "btnDirektSatis");
+            this.btnDirektSatis.Name = "btnDirektSatis";
+            this.btnDirektSatis.Click += new System.EventHandler(this.btnDirektSatis_Click);
             // 
             // labelSecili
             // 
@@ -410,7 +423,8 @@
             this.gridColumn53,
             this.gridColumn54,
             this.gridColumn57,
-            this.gridColumn63});
+            this.gridColumn63,
+            this.gridColumn66});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -530,30 +544,42 @@
             resources.ApplyResources(this.gridColumn52, "gridColumn52");
             this.gridColumn52.FieldName = "sirano";
             this.gridColumn52.Name = "gridColumn52";
+            this.gridColumn52.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn53
             // 
             resources.ApplyResources(this.gridColumn53, "gridColumn53");
             this.gridColumn53.FieldName = "deger1";
             this.gridColumn53.Name = "gridColumn53";
+            this.gridColumn53.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn54
             // 
             resources.ApplyResources(this.gridColumn54, "gridColumn54");
             this.gridColumn54.FieldName = "entegreOdemeTip";
             this.gridColumn54.Name = "gridColumn54";
+            this.gridColumn54.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn57
             // 
             resources.ApplyResources(this.gridColumn57, "gridColumn57");
             this.gridColumn57.FieldName = "Cari_Tel";
             this.gridColumn57.Name = "gridColumn57";
+            this.gridColumn57.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn63
             // 
             resources.ApplyResources(this.gridColumn63, "gridColumn63");
             this.gridColumn63.FieldName = "AcikDakika";
             this.gridColumn63.Name = "gridColumn63";
+            this.gridColumn63.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn66
+            // 
+            resources.ApplyResources(this.gridColumn66, "gridColumn66");
+            this.gridColumn66.FieldName = "baslangicDakika";
+            this.gridColumn66.Name = "gridColumn66";
+            this.gridColumn66.OptionsColumn.AllowFocus = false;
             // 
             // panel1
             // 
@@ -690,7 +716,6 @@
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.btnDirektSatis);
             this.panelControl1.Controls.Add(this.simpleButton13);
             this.panelControl1.Controls.Add(this.btn_Yenile);
             this.panelControl1.Controls.Add(this.dateTarih2);
@@ -704,17 +729,6 @@
             this.panelControl1.Controls.Add(this.btn_PaketPr);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
-            // 
-            // btnDirektSatis
-            // 
-            this.btnDirektSatis.Appearance.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnDirektSatis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDirektSatis.Appearance.Font")));
-            this.btnDirektSatis.Appearance.Options.UseBackColor = true;
-            this.btnDirektSatis.Appearance.Options.UseFont = true;
-            this.btnDirektSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDirektSatis.ImageOptions.Image")));
-            resources.ApplyResources(this.btnDirektSatis, "btnDirektSatis");
-            this.btnDirektSatis.Name = "btnDirektSatis";
-            this.btnDirektSatis.Click += new System.EventHandler(this.btnDirektSatis_Click);
             // 
             // simpleButton13
             // 
@@ -1357,6 +1371,12 @@
             this.gridColumn64.FieldName = "sirano";
             this.gridColumn64.Name = "gridColumn64";
             // 
+            // gridColumn65
+            // 
+            resources.ApplyResources(this.gridColumn65, "gridColumn65");
+            this.gridColumn65.FieldName = "YSDurum";
+            this.gridColumn65.Name = "gridColumn65";
+            // 
             // panelControl3
             // 
             this.panelControl3.Controls.Add(this.btnKuryeOzet);
@@ -1525,12 +1545,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // gridColumn65
-            // 
-            resources.ApplyResources(this.gridColumn65, "gridColumn65");
-            this.gridColumn65.FieldName = "YSDurum";
-            this.gridColumn65.Name = "gridColumn65";
             // 
             // Paket
             // 
@@ -1731,5 +1745,6 @@
         private DevExpress.XtraGrid.GridControl gridControlTest;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewTest;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn65;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn66;
     }
 }

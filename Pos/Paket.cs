@@ -981,7 +981,7 @@ order by Caller_Id desc";
 
                     if (isSelected == false)
                     {
-                        string pkod = View.GetRowCellDisplayText(e.RowHandle, View.Columns["P_Kod"]);
+                         string pkod = View.GetRowCellDisplayText(e.RowHandle, View.Columns["P_Kod"]);
                         if (pkod != "")
                         {
                             e.Appearance.BackColor = Color.Lime;
@@ -993,6 +993,12 @@ order by Caller_Id desc";
                 catch (Exception ex)
                 {
 
+                }
+
+                if ( e.Column.FieldName == "baslangicDakika")
+                {
+                    e.Appearance.BackColor = Color.Red;
+                    e.Appearance.ForeColor = Color.White;
                 }
 
                 if (kapatma != null && kapatma == "PAKET" && e.Column.FieldName == "YSDurum")

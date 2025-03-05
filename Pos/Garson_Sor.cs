@@ -48,7 +48,7 @@ namespace Pos
             for (int i = 0; i < dtGarson.Rows.Count; i++)
             {
                 SimpleButton btnGarson = new SimpleButton();
-                btnGarson.Size = new Size(90, 45);
+                btnGarson.Size = new Size(175, 60);
                 btnGarson.TabIndex = 0;
                 btnGarson.TabStop = false;
                 btnGarson.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
@@ -59,7 +59,7 @@ namespace Pos
 
                 if (i%2==0)
                 {
-                    btnGarson.Appearance.BackColor = Color.Blue;
+                    btnGarson.Appearance.BackColor = Color.DeepPink;
                 }
                
 

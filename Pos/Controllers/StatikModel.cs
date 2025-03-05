@@ -161,7 +161,7 @@ end as Rsat_YSDurum,
             Max(Rsat_Not) as Rsat_Not,MIN(Rsat_Acilis) as Rsat_Acilis,
 
 ISNULL(ABS(DATEDIFF(MINUTE, MIN(paketAtamaTarih), GETDATE())), 0) AS AcikDakika,
-
+ISNULL(ABS(DATEDIFF(MINUTE, MIN(isnull(Rsat_AcilisTar,Rsat_Acilis)), GETDATE())), 0) AS baslangicDakika,
 Rsat_EntegreId,
             case when ISNULL(GOrder_deliveryType,2) = 1 then 'GETİR KURYESİ' else 'RESTORAN KURYESİ' end as Kurye,
             GOrder_deliveryType as GOrder_deliveryType,

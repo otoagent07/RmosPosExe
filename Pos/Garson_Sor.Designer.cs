@@ -61,6 +61,8 @@
             // 
             // btnCikis
             // 
+            this.btnCikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCikis.Appearance.Font")));
+            this.btnCikis.Appearance.Options.UseFont = true;
             this.btnCikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.ImageOptions.Image")));
             resources.ApplyResources(this.btnCikis, "btnCikis");
             this.btnCikis.Name = "btnCikis";
@@ -68,11 +70,11 @@
             // 
             // btnPaketciSil
             // 
-            this.btnPaketciSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.btnPaketciSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnPaketciSil.Appearance.Font")));
             this.btnPaketciSil.Appearance.ForeColor = System.Drawing.Color.Red;
             this.btnPaketciSil.Appearance.Options.UseFont = true;
             this.btnPaketciSil.Appearance.Options.UseForeColor = true;
-            this.btnPaketciSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnPaketciSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPaketciSil.ImageOptions.Image")));
             resources.ApplyResources(this.btnPaketciSil, "btnPaketciSil");
             this.btnPaketciSil.Name = "btnPaketciSil";
             this.btnPaketciSil.Click += new System.EventHandler(this.btnPaketciSil_Click);

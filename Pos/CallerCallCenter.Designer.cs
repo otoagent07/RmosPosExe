@@ -58,6 +58,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelDakika = new System.Windows.Forms.Label();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.btnGelAl = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.contextMenuStrip_LogRapor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -301,12 +302,24 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.btnGelAl);
             this.panelControl2.Controls.Add(this.btn_Satis);
             this.panelControl2.Controls.Add(this.btn_CariDuzenle);
             this.panelControl2.Controls.Add(this.btn_AcikAdres);
             this.panelControl2.Controls.Add(this.btn_CariEkle);
             resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Name = "panelControl2";
+            // 
+            // btnGelAl
+            // 
+            resources.ApplyResources(this.btnGelAl, "btnGelAl");
+            this.btnGelAl.Appearance.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnGelAl.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.btnGelAl.Appearance.Options.UseBackColor = true;
+            this.btnGelAl.Appearance.Options.UseFont = true;
+            this.btnGelAl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnGelAl.Name = "btnGelAl";
+            this.btnGelAl.Click += new System.EventHandler(this.btnGelAl_Click_1);
             // 
             // CallerCallCenter
             // 
@@ -362,5 +375,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynSil;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelDakika;
+        private DevExpress.XtraEditors.SimpleButton btnGelAl;
     }
 }

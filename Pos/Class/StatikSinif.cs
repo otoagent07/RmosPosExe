@@ -272,6 +272,9 @@ IF COL_LENGTH('Pos_Kodlar', 'hesapDokTutarSifir') IS NULL BEGIN ALTER TABLE Pos_
 IF COL_LENGTH('Pos_Kodlar', 'saatAralikDurdur') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD saatAralikDurdur nvarchar(500) END;
 IF COL_LENGTH('Pos_Cari', 'Cari_TrendyolId') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_TrendyolId int END;
 
+IF COL_LENGTH('Pos_Cari', 'adressecenek') IS NULL BEGIN ALTER TABLE Pos_Cari ADD adressecenek int END;
+
+
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_dil') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_dil nvarchar(50) END;
 
 IF COL_LENGTH('Pos_Kasahrk', 'Pkasa_dep') IS NULL BEGIN ALTER TABLE Pos_Kasahrk ADD Pkasa_dep nvarchar(100) END;

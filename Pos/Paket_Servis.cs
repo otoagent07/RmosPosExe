@@ -211,12 +211,36 @@ namespace Pos
             }
         }
 
-        private void btn_Satis_Click(object sender, EventArgs e)
+        public void adressecenekGuncelle(string carikod, string adres)
         {
             try
             {
-                Paket.paketForm.satis.adres = Convert.ToString(gv_Cari.GetFocusedRowCellValue("Adres"));
+                if (adres == "") return;
+                string q = $@"update Pos_Cari set adressecenek=(SELECT 
+    CASE 
+        WHEN EXISTS (SELECT 1 FROM Pos_Cari WHERE Cari_Kod = '{carikod}' AND Cari_Adres1 = '{adres}') THEN 1
+        WHEN EXISTS (SELECT 1 FROM Pos_Cari WHERE Cari_Kod = '{carikod}' AND Cari_Adres2 = '{adres}') THEN 2
+        WHEN EXISTS (SELECT 1 FROM Pos_Cari WHERE Cari_Kod = '{carikod}' AND Cari_Adres3 = '{adres}') THEN 3
+        ELSE 1 
+    END AS Aktif_Adres) WHERE Cari_Kod = '{carikod}'";
 
+                dbtools.execcmdR(q);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void btn_Satis_Click(object sender, EventArgs e)
+        {
+
+            string adres = "";
+            try
+            {
+                adres = Convert.ToString(gv_Cari.GetFocusedRowCellValue("Adres"));
+
+                Paket.paketForm.satis.adres = adres;
             }
             catch (Exception ex)
             {
@@ -230,6 +254,8 @@ namespace Pos
                 {
                     pCari = Cari.Cari_Getir(Convert.ToString(gv_Cari.GetRowCellValue(0, "Cari_Kod")));
 
+                    adressecenekGuncelle(pCari.Cari_Kod,adres);
+
                     this.Close();
                 }
             }
@@ -238,6 +264,7 @@ namespace Pos
                 if (gv_Cari.RowCount > 0)
                 {
                     pCari = Cari.Cari_Getir(Convert.ToString(gv_Cari.GetFocusedRowCellValue("Cari_Kod")));
+                    adressecenekGuncelle(pCari.Cari_Kod, adres);
                     this.Close();
                 }
             }

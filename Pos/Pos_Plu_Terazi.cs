@@ -41,7 +41,21 @@ namespace Pos
             DataTable dt = dbtools.SelectTable("exec Cost_Recete_Liste @Liste_Tipi=1,@Departman='" + Convert.ToString(checkedComboBoxEdit1.EditValue) +"'");
             if (dt.Rows.Count > 0)
             {
-                gridControl2.DataSource = dt;
+
+                var tekHaneliSatirlar = dt.AsEnumerable()
+    .Where(row => row["Rec_Anagrup"] != DBNull.Value &&
+                  int.TryParse(row["Rec_Anagrup"].ToString(), out int value) &&
+                  value >= 0 && value <= 9)
+    .ToList(); // Listeye çevir
+
+                // Eğer tek haneli satırlar varsa onları al, yoksa tüm datayı al
+                DataTable filteredTable = tekHaneliSatirlar.Any()
+                    ? tekHaneliSatirlar.CopyToDataTable()
+                    : dt.Copy(); // Eğer tek haneli yoksa tüm satırları al
+
+
+
+                gridControl2.DataSource = filteredTable;
             }
         }
 

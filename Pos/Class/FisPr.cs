@@ -1624,14 +1624,36 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     + Convert.ToString(dtPaket.Rows[0]["Cari_Mahalle"]) + "\n" + Convert.ToString(dtPaket.Rows[0]["Cari_Ilce"]) + " - " + Convert.ToString(dtPaket.Rows[0]["Cari_Il"]));
 
 
-                    if (parcaliAdres!="")
-                    {
-                        paket.xr_Adres.Text = parcaliAdres;
+                    //if (parcaliAdres!="")
+                    //{
+                    //    paket.xr_Adres.Text = parcaliAdres;
+                    //}
 
+                    // 05.03.2025 emre atalay istedi
+                    string aktifAdres = dbtools.DegerGetir("select top 1 isnull(adressecenek,1) as adressecenek from Pos_Cari where Cari_Kod='"+ dtPaket.Rows[0]["Cari_Kod"] + "'");
+
+                    switch (aktifAdres)
+                    {
+                        case "1":
+                            paket.xr_Adres.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Adres1"]);
+
+                            break;
+                        case "2":
+                            paket.xr_Adres.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Adres2"]);
+
+                            break;
+                        case "3":
+                            paket.xr_Adres.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Adres3"]);
+
+                            break;
+                        default:
+                            paket.xr_Adres.Text = Convert.ToString(dtPaket.Rows[0]["Cari_Adres1"]);
+                            break;
                     }
 
 
-                    paket.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]".ToString().Replace("|", "\n")));
+
+                   paket.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]".ToString().Replace("|", "\n")));
                     paket.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                     paket.xr_Tutar.Text = "[Rsat_Tutar]";
 

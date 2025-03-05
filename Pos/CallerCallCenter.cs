@@ -70,6 +70,9 @@ namespace Pos
             }
 
             labelDakika.Text = "";
+
+
+            btnGelAl.Enabled = true;
         }
 
         private void ekranyenile()
@@ -227,6 +230,9 @@ namespace Pos
             cari = Cari.Cari_Getir(Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Kod")));
             string adres = Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Adres"));
 
+            adressecenekGuncelle(cari.Cari_Kod,adres);
+
+
             if (cari.Cari_Kod != null)
             {
                 DataTable dtSatis = dbtools.SelectTable("select distinct Rsat_Fisno,Rsat_Masa from Cst_Recete_Satis where Rsat_Cari = '" + cari.Cari_Kod + "' and Rsat_Durum = 'A' and Rsat_Departman = '" + Departman.Dep_Kodu + "'");
@@ -235,6 +241,8 @@ namespace Pos
                     if (MessageBox.Show(res_man.GetString("Mevcut Cari için Açık çek bulunmaktadır. Açık çek üzerinde devam etmek istiyor musunuz?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         string Masa_No = Convert.ToString(dtSatis.Rows[0]["Rsat_Masa"]);
+
+
 
                         Satis satis = new Satis();
                         satis.Tag = "M";
@@ -279,6 +287,28 @@ namespace Pos
             }
 
            
+        }
+
+        public void adressecenekGuncelle(string carikod,string adres)
+        {
+            try
+            {
+                if (adres == "") return;
+
+                string q = $@"update Pos_Cari set adressecenek=(SELECT 
+    CASE 
+        WHEN EXISTS (SELECT 1 FROM Pos_Cari WHERE Cari_Kod = '{carikod}' AND Cari_Adres1 = '{adres}') THEN 1
+        WHEN EXISTS (SELECT 1 FROM Pos_Cari WHERE Cari_Kod = '{carikod}' AND Cari_Adres2 = '{adres}') THEN 2
+        WHEN EXISTS (SELECT 1 FROM Pos_Cari WHERE Cari_Kod = '{carikod}' AND Cari_Adres3 = '{adres}') THEN 3
+        ELSE 1 
+    END AS Aktif_Adres) WHERE Cari_Kod = '{carikod}'";
+
+                dbtools.execcmdR(q);
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void btn_CariDuzenle_Click(object sender, EventArgs e)
@@ -411,5 +441,49 @@ namespace Pos
         {
             dakikayaz();
         }
+
+        private void btnGelAl_Click(object sender, EventArgs e)
+        {
+            Paket_Servis paket = new Paket_Servis();
+            paket.txt_Cari_Telefon.Text = Tel;
+            paket.ShowDialog();
+        }
+
+        private void btnGelAl_Click_1(object sender, EventArgs e)
+        {
+            yenipaket();
+
+            //Paket_Servis paket = new Paket_Servis();
+            //paket.txt_Cari_Telefon.Text = Tel;
+            //paket.ShowDialog();
+        }
+
+
+        public Satis satis;
+
+        public void yenipaket()
+        {
+            DataTable dtMasa = dbtools.SelectTable("select * from Pos_Masa where Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1 and Masa_Durum = 0 order by Masa_No");
+
+            if (dtMasa.Rows.Count < 1)
+            {
+                MessageBox.Show(res_man.GetString("Boş Paket Masanız Bulunmamaktadır."));
+                return;
+            }
+
+          var  Masa_No = Convert.ToString(dtMasa.Rows[0]["Masa_No"]);
+
+            satis = new Satis();
+            satis.Tag = "M";
+            satis.txt_Not.Text = Tel;
+
+            satis.Masa_No = Masa_No;
+            satis.Masa_Paket = true;
+            satis.Ozel_Masa = "";
+            satis.Split = 0;
+            satis.Splitad = "";
+            satis.ShowDialog();
+        }
+
     }
 }

@@ -127,15 +127,83 @@
   <data name="gridColumn17.VisibleIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnDirektSatis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="btnDirektSatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnDirektSatis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 23</value>
+  </data>
+  <data name="btnDirektSatis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 47</value>
+  </data>
+  <data name="btnDirektSatis.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="btnDirektSatis.Text" xml:space="preserve">
+    <value>Direkt
+Satış</value>
+  </data>
+  <data name="&gt;&gt;btnDirektSatis.Name" xml:space="preserve">
+    <value>btnDirektSatis</value>
+  </data>
+  <data name="&gt;&gt;btnDirektSatis.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnDirektSatis.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;btnDirektSatis.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="labelSecili.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelSecili.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="labelSecili.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 42</value>
+    <value>658, 0</value>
   </data>
   <data name="labelSecili.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 16</value>
@@ -156,7 +224,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelSecili.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="chk_PaketciAtanmayanlar.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -230,7 +298,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_PaketciAtanmayanlar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="chk_PaketciAtananlar.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -308,7 +376,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_PaketciAtananlar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="simpleButton11.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -376,7 +444,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton11.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btn_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -420,22 +488,23 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chk_KapaliPaket.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_KapaliPaket.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 23</value>
+    <value>521, 23</value>
   </data>
   <data name="chk_KapaliPaket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 47</value>
+    <value>78, 47</value>
   </data>
   <data name="chk_KapaliPaket.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="chk_KapaliPaket.Text" xml:space="preserve">
-    <value>Kapalı Paketler</value>
+    <value>Kapalı
+ Paketler</value>
   </data>
   <data name="&gt;&gt;chk_KapaliPaket.Name" xml:space="preserve">
     <value>chk_KapaliPaket</value>
@@ -447,22 +516,23 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_KapaliPaket.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="chk_KayitliTel.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_KayitliTel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>464, 23</value>
+    <value>451, 23</value>
   </data>
   <data name="chk_KayitliTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 47</value>
+    <value>64, 47</value>
   </data>
   <data name="chk_KayitliTel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="chk_KayitliTel.Text" xml:space="preserve">
-    <value>Kayıtlı Tel No</value>
+    <value>Kayıtlı
+Tel No</value>
   </data>
   <data name="&gt;&gt;chk_KayitliTel.Name" xml:space="preserve">
     <value>chk_KayitliTel</value>
@@ -474,7 +544,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_KayitliTel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="chk_CallerId.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -483,7 +553,7 @@
     <value>362, 23</value>
   </data>
   <data name="chk_CallerId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 47</value>
+    <value>83, 47</value>
   </data>
   <data name="chk_CallerId.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -501,7 +571,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_CallerId.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="chk_PaketSatis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -528,7 +598,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_PaketSatis.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="groupControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -776,6 +846,15 @@
   </data>
   <data name="gridColumn63.VisibleIndex" type="System.Int32, mscorlib">
     <value>12</value>
+  </data>
+  <data name="gridColumn66.Caption" xml:space="preserve">
+    <value>BasDk</value>
+  </data>
+  <data name="gridColumn66.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn66.VisibleIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>759, 545</value>
@@ -1048,74 +1127,6 @@
   <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnDirektSatis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 11.25pt, style=Bold</value>
-  </data>
-  <data name="btnDirektSatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnDirektSatis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>871, 5</value>
-  </data>
-  <data name="btnDirektSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
-  </data>
-  <data name="btnDirektSatis.TabIndex" type="System.Int32, mscorlib">
-    <value>119</value>
-  </data>
-  <data name="btnDirektSatis.Text" xml:space="preserve">
-    <value>Direkt
-Satış</value>
-  </data>
-  <data name="&gt;&gt;btnDirektSatis.Name" xml:space="preserve">
-    <value>btnDirektSatis</value>
-  </data>
-  <data name="&gt;&gt;btnDirektSatis.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnDirektSatis.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnDirektSatis.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="simpleButton13.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
   </data>
@@ -1146,7 +1157,7 @@ Satış</value>
 </value>
   </data>
   <data name="simpleButton13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 6</value>
+    <value>292, 7</value>
   </data>
   <data name="simpleButton13.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 50</value>
@@ -1167,7 +1178,7 @@ Satış</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton13.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="btn_Yenile.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -1191,7 +1202,7 @@ Satış</value>
 </value>
   </data>
   <data name="btn_Yenile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>683, 6</value>
+    <value>588, 4</value>
   </data>
   <data name="btn_Yenile.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 50</value>
@@ -1212,13 +1223,13 @@ Satış</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;btn_Yenile.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="dateTarih2.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="dateTarih2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 34</value>
+    <value>467, 32</value>
   </data>
   <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="dateTarih2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
@@ -1244,13 +1255,13 @@ Satış</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;dateTarih2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="dateTarih1.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="dateTarih1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 7</value>
+    <value>467, 5</value>
   </data>
   <data name="dateTarih1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -1274,13 +1285,13 @@ Satış</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;dateTarih1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="textEdit6.EditValue" xml:space="preserve">
     <value>Bit.Tar.</value>
   </data>
   <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 34</value>
+    <value>401, 32</value>
   </data>
   <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 22</value>
@@ -1298,13 +1309,13 @@ Satış</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="textEdit5.EditValue" xml:space="preserve">
     <value>Baş.Tar.</value>
   </data>
   <data name="textEdit5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 7</value>
+    <value>401, 5</value>
   </data>
   <data name="textEdit5.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 22</value>
@@ -1322,7 +1333,7 @@ Satış</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;textEdit5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="simpleButton10.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -1373,10 +1384,10 @@ Satış</value>
 </value>
   </data>
   <data name="simpleButton10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>769, 6</value>
+    <value>674, 4</value>
   </data>
   <data name="simpleButton10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 50</value>
+    <value>82, 49</value>
   </data>
   <data name="simpleButton10.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -1394,7 +1405,7 @@ Satış</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton10.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -1432,10 +1443,10 @@ Satış</value>
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 6</value>
+    <value>762, 3</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 50</value>
+    <value>121, 50</value>
   </data>
   <data name="simpleButton3.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -1454,7 +1465,7 @@ Değiştir</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="simpleButton2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -1519,7 +1530,7 @@ Paket</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -1583,7 +1594,7 @@ Ekle</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="btn_PaketPr.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -1639,7 +1650,7 @@ Ekle</value>
 </value>
   </data>
   <data name="btn_PaketPr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 6</value>
+    <value>197, 7</value>
   </data>
   <data name="btn_PaketPr.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 50</value>
@@ -1661,7 +1672,7 @@ Fişi</value>
     <value>panelControl1</value>
   </data>
   <data name="&gt;&gt;btn_PaketPr.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -3287,6 +3298,12 @@ Başlat</value>
   <data name="&gt;&gt;gridColumn63.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;gridColumn66.Name" xml:space="preserve">
+    <value>gridColumn66</value>
+  </data>
+  <data name="&gt;&gt;gridColumn66.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;gridViewSon5Call.Name" xml:space="preserve">
     <value>gridViewSon5Call</value>
   </data>
@@ -3587,17 +3604,17 @@ Başlat</value>
   <data name="&gt;&gt;gridColumn64.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;gridColumn65.Name" xml:space="preserve">
     <value>gridColumn65</value>
   </data>
   <data name="&gt;&gt;gridColumn65.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Paket</value>

@@ -139,11 +139,40 @@ namespace Pos
 
 
         public string cariKodPaketGuncelle = "";
+
+
+        public int getAdresSecenek()
+        {
+            int secenek = 1;
+            try
+            {
+                if (adres1Aktif.Checked)
+                {
+                    secenek = 1;
+                }
+
+                if (adres2Aktif.Checked)
+                {
+                    secenek = 2;
+                }
+
+                if (adres3Aktif.Checked)
+                {
+                    secenek = 3;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return secenek;
+        }
         private void Kaydet()
         {
             // Cari_indirimOran txtIndOran
 
-            string indirimDec = txtIndOran.EditValue.ToString().Replace(",",".");
+            string indirimDec = txtIndOran.EditValue.ToString().Replace(",", ".");
             if (Param.Param_CariAdSoyad == false)
             {
                 if (txt_Cari_Ad.Text.Length > 0 && txt_Cari_Soyad.Text.Length > 0)
@@ -162,11 +191,14 @@ namespace Pos
                     if (dt.Rows.Count < 1)
                     {
                         int id = Convert.ToInt32(dbtools.DegerGetir("INSERT INTO dbo.Pos_Cari (Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3,Cari_Funvan,Cari_Funvan2, "
-                            + " Cari_Fadres1,Cari_Fadres2,Cari_Vergidarie,Cari_Vergino,Cari_Mail,Cari_Kart,Cari_Tel2,Cari_Email,Cari_Tip,Cari_Limit,Cari_LimitTutar,Cari_Il,cari_Ilce,Cari_Mahalle,Cari_MuhasebeKodu,Cari_Aktif,Cari_DogumTar,Cari_indirimOran) VALUES ( '" + txt_Cari_Kod.EditValue + "','" + txt_Cari_Ad.EditValue + "','" + txt_Cari_Soyad.EditValue + "','" + txt_Cari_Telefon.EditValue + "', "
+                            + " Cari_Fadres1,Cari_Fadres2,Cari_Vergidarie,Cari_Vergino,Cari_Mail,Cari_Kart,Cari_Tel2,Cari_Email,Cari_Tip,Cari_Limit,Cari_LimitTutar,Cari_Il,cari_Ilce,Cari_Mahalle,Cari_MuhasebeKodu,Cari_Aktif,Cari_DogumTar,Cari_indirimOran,adressecenek) " +
+                            "VALUES ( '" + txt_Cari_Kod.EditValue + "','" + txt_Cari_Ad.EditValue + "','" + txt_Cari_Soyad.EditValue + "','" + txt_Cari_Telefon.EditValue + "', "
                             + " '" + txt_Cari_Adres1.EditValue + "','" + txt_Cari_Adres2.EditValue + "','" + txt_Cari_Adres3.EditValue + "','" + txt_Cari_F_Unvan.EditValue + "','" + txt_Cari_F_Unvan2.EditValue + "','" + txt_Cari_F_Adres1.EditValue + "','" + txt_Cari_F_Adres2.EditValue + "','" + txt_Cari_F_Vergidaire.EditValue + "', "
                             + " '" + txt_Cari_F_Vergino.EditValue + "','" + txt_Cari_F_Mail.EditValue + "', '" + txt_Cari_Kart_No.EditValue + "','" + txt_Cari_Telefon2.EditValue + "','" + txt_Cari_Email.EditValue + "','" + Convert.ToString(look_Cari_Tip.EditValue) + "', "
-                            + " '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "','" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "','" + Convert.ToString(look_Cari_Il.EditValue) + "','" + Convert.ToString(look_Cari_Ilce.EditValue) + "','" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
-                            + " '" + look_CariMuh.EditValue + "','" + Cari_Aktif.Checked + "','" + Cari_DogumTar.EditValue + "','"+ indirimDec+"')  select SCOPE_IDENTITY()"));
+                            + " '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "','" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "','" + Convert.ToString(look_Cari_Il.EditValue) + "','" + Convert.ToString(look_Cari_Ilce.EditValue)
+                            + "','" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
+                            + " '" + look_CariMuh.EditValue + "','" + Cari_Aktif.Checked + "','" + Cari_DogumTar.EditValue + "','" + indirimDec + "','" + getAdresSecenek() + "')  " +
+                            "select SCOPE_IDENTITY()"));
 
                         if (txt_Cari_Kod.Text.Length == 0)
                         {
@@ -207,7 +239,7 @@ namespace Pos
                         + " Cari_Limit = '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "',Cari_LimitTutar = '" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "',Cari_Il = '" + Convert.ToString(look_Cari_Il.EditValue) + "', "
                         + " Cari_Ilce = '" + Convert.ToString(look_Cari_Ilce.EditValue) + "',Cari_Mahalle = '" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
                         + " Cari_MuhasebeKodu = '" + look_CariMuh.EditValue + "', Cari_Aktif = '" + Cari_Aktif.Checked + "',Cari_Funvan2='" + txt_Cari_F_Unvan2.EditValue + "', "
-                        + " Cari_DogumTar = '" + Cari_DogumTar.DateTime.Date + "', Cari_indirimOran = '" + indirimDec + "' where  Cari_Kod = '" + txt_Cari_Kod.EditValue + "' ");
+                        + " Cari_DogumTar = '" + Cari_DogumTar.DateTime.Date + "', Cari_indirimOran = '" + indirimDec + "', adressecenek = '" + getAdresSecenek() + "' where  Cari_Kod = '" + txt_Cari_Kod.EditValue + "' ");
 
                         Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_CariTanim, Log.Log_Islem.Duzelt, txt_Cari_Kod.EditValue + " Kod ile Cari Duzeltildi.", String.Empty, String.Empty);
 
@@ -249,11 +281,13 @@ namespace Pos
                 if (dt.Rows.Count < 1)
                 {
                     int id = Convert.ToInt32(dbtools.DegerGetir("INSERT INTO dbo.Pos_Cari (Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3,Cari_Funvan, "
-                        + " Cari_Fadres1,Cari_Fadres2,Cari_Vergidarie,Cari_Vergino,Cari_Mail,Cari_Kart,Cari_Tel2,Cari_Email,Cari_Tip,Cari_Limit,Cari_LimitTutar,Cari_Il,cari_Ilce,Cari_Mahalle,Cari_MuhasebeKodu,Cari_Aktif,Cari_indirimOran) VALUES ( '" + txt_Cari_Kod.EditValue + "','" + txt_Cari_Ad.EditValue + "','" + txt_Cari_Soyad.EditValue + "','" + txt_Cari_Telefon.EditValue + "', "
+                        + " Cari_Fadres1,Cari_Fadres2,Cari_Vergidarie,Cari_Vergino,Cari_Mail,Cari_Kart,Cari_Tel2,Cari_Email,Cari_Tip,Cari_Limit,Cari_LimitTutar,Cari_Il,cari_Ilce,Cari_Mahalle,Cari_MuhasebeKodu,Cari_Aktif,Cari_indirimOran,adressecenek) VALUES ( '" + txt_Cari_Kod.EditValue + "','" + txt_Cari_Ad.EditValue + "','" + txt_Cari_Soyad.EditValue + "','" + txt_Cari_Telefon.EditValue + "', "
                         + " '" + txt_Cari_Adres1.EditValue + "','" + txt_Cari_Adres2.EditValue + "','" + txt_Cari_Adres3.EditValue + "','" + txt_Cari_F_Unvan.EditValue + "','" + txt_Cari_F_Adres1.EditValue + "','" + txt_Cari_F_Adres2.EditValue + "','" + txt_Cari_F_Vergidaire.EditValue + "', "
                         + " '" + txt_Cari_F_Vergino.EditValue + "','" + txt_Cari_F_Mail.EditValue + "', '" + txt_Cari_Kart_No.EditValue + "','" + txt_Cari_Telefon2.EditValue + "','" + txt_Cari_Email.EditValue + "','" + Convert.ToString(look_Cari_Tip.EditValue) + "', "
-                        + " '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "','" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "','" + Convert.ToString(look_Cari_Il.EditValue) + "','" + Convert.ToString(look_Cari_Ilce.EditValue) + "','" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
-                        + " '" + look_CariMuh.EditValue + "','" + Cari_Aktif.Checked + "','"+ indirimDec+"')  select SCOPE_IDENTITY()"));
+                        + " '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "','" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "','" + Convert.ToString(look_Cari_Il.EditValue) + "','" + Convert.ToString(look_Cari_Ilce.EditValue)
+                        + "','" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
+                        + " '" + look_CariMuh.EditValue + "','" + Cari_Aktif.Checked + "','" + indirimDec + "','" + getAdresSecenek() + "')  " +
+                        "select SCOPE_IDENTITY()"));
 
                     if (txt_Cari_Kod.Text.Length == 0)
                     {
@@ -273,7 +307,8 @@ namespace Pos
                     + " Cari_Tel2 = '" + txt_Cari_Telefon2.EditValue + "',Cari_Email = '" + txt_Cari_Email.EditValue + "',Cari_Tip = '" + Convert.ToString(look_Cari_Tip.EditValue) + "', "
                     + " Cari_Limit = '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "',Cari_LimitTutar = '" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "',Cari_Il = '" + Convert.ToString(look_Cari_Il.EditValue) + "', "
                     + " Cari_Ilce = '" + Convert.ToString(look_Cari_Ilce.EditValue) + "',Cari_Mahalle = '" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
-                    + " Cari_MuhasebeKodu = '" + look_CariMuh.EditValue + "', Cari_Aktif = '" + Cari_Aktif.Checked+ "', Cari_indirimOran = '" + indirimDec + "' where  Cari_Kod = '" + txt_Cari_Kod.EditValue + "' ");
+                    + " Cari_MuhasebeKodu = '" + look_CariMuh.EditValue + "', Cari_Aktif = '" + Cari_Aktif.Checked
+                    + "', Cari_indirimOran = '" + indirimDec + "', adressecenek = '" + getAdresSecenek() + "' where  Cari_Kod = '" + txt_Cari_Kod.EditValue + "' ");
 
                     Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_CariTanim, Log.Log_Islem.Duzelt, txt_Cari_Kod.EditValue + " Kod ile Cari Duzeltildi.", String.Empty, String.Empty);
 
@@ -639,7 +674,7 @@ namespace Pos
             if (gridView9.RowCount > 0)
             {
                 FisPr pr = new FisPr();
-                pr.CariHesapPr(Convert.ToString(txt_CariHes_Kodu.EditValue),data: grd_CariHesap.DataSource as DataTable);
+                pr.CariHesapPr(Convert.ToString(txt_CariHes_Kodu.EditValue), data: grd_CariHesap.DataSource as DataTable);
             }
         }
         #endregion
@@ -986,14 +1021,14 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
             gridControl8.Refresh();
             gridControl8.DataSource = dbtools.SelectTable("Exec Pos_Sorgu @Sorgu_Tipi = 27, @Tarih1 = '" + dateTarih1.DateTime.Date + "', @Tarih2 = '" + dateTarih2.DateTime.Date + "'");
 
-            gridviewSumYaz(gridView10,"BORC");
-            gridviewSumYaz(gridView10,"ALACAK");
-            gridviewSumYaz(gridView10,"BAKIYE");
+            gridviewSumYaz(gridView10, "BORC");
+            gridviewSumYaz(gridView10, "ALACAK");
+            gridviewSumYaz(gridView10, "BAKIYE");
 
             gridviewSumYaz(gridView6, "BORC");
             gridviewSumYaz(gridView6, "ALACAK");
         }
-        public void gridviewSumYaz(GridView grid,string fieldName)
+        public void gridviewSumYaz(GridView grid, string fieldName)
         {
             try
             {
@@ -1011,7 +1046,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
             {
 
             }
-            
+
         }
 
         private void simpleButton4_Click(object sender, EventArgs e)
@@ -1071,7 +1106,8 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
       , ISNULL(Cari_YS_CustomerID, '')      as Cari_YS_CustomerID
       , ISNULL(Cari_Funvan2, '')            as Cari_Funvan2
       , ISNULL(Cari_DogumTar, getdate())    as Cari_DogumTar
-      , ISNULL(Cari_indirimOran,0)          as Cari_indirimOran
+      , ISNULL(Cari_indirimOran,0)          as Cari_indirimOran,
+, ISNULL(adressecenek,1)          as adressecenek
   FROM [dbo].[Pos_Cari] order by Cari_Kod");
 
 
@@ -1436,6 +1472,12 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
 
                     txtIndOran.EditValue = gridView8.GetFocusedRowCellValue("Cari_indirimOran").ToString();
 
+
+                    int secenek = Convert.ToInt32(gridView8.GetFocusedRowCellValue("adressecenek").ToString());
+                    if (secenek==1) adres1Aktif.Checked = true;
+                    if (secenek==2) adres2Aktif.Checked = true;
+                    if (secenek==3) adres3Aktif.Checked = true;
+
                 }
 
                 //if (AcikAdres)
@@ -1450,13 +1492,13 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
             }
             catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "gridView8_RowClick", "",ex);
+                RHMesaj.MyMessageError(MyClass, "gridView8_RowClick", "", ex);
             }
-            
+
 
         }
 
-        
+
         public static string MyClass = "CariHesap";
         private void btnCariRap3Listele_Click(object sender, EventArgs e)
         {
@@ -1464,7 +1506,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
         }
 
 
-        public DataTable rap3Listele(bool hepsi = false,bool sifirDahil=false)
+        public DataTable rap3Listele(bool hepsi = false, bool sifirDahil = false)
         {
             try
             {
@@ -1478,7 +1520,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
                 }
 
                 string sifir = "";
-                if (sifirDahil==false)
+                if (sifirDahil == false)
                 {
                     sifir = "having sum(Chrk_Borc-Chrk_Alacak)>0";
                 }
@@ -1490,7 +1532,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
                 string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,sum(Chrk_Borc-Chrk_Alacak) as Bakiye from Pos_Carihrk as hrk 
 left join Pos_Cari as cari on cari.Cari_Kod=hrk.Chrk_Cari 
 where isnull(Cari_Tip,'C')='" + tip + "' and Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
-group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
+group by Cari_Ad,Cari_Soyad,Chrk_Cari " + sifir;
 
                 DataTable dataTable = dbtools.SelectTableR(query);
 
@@ -1527,7 +1569,7 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
         private void btnExcelKaydetCariRapor3_Click(object sender, EventArgs e)
         {
             yazdir(gridControlCariRap3);
-            
+
         }
 
         public void yazdir2(GridControl gridControl)
@@ -1539,7 +1581,7 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
                 {
                     string exportFilePath = saveDialog.FileName;
                     string fileExtenstion = new FileInfo(exportFilePath).Extension;
-                    string dosyaAdi = new FileInfo(exportFilePath).Name.Replace(fileExtenstion,"")+"_detay";
+                    string dosyaAdi = new FileInfo(exportFilePath).Name.Replace(fileExtenstion, "") + "_detay";
 
                     //string dosyaKonum = Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -1685,7 +1727,7 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
                     Directory.CreateDirectory(klasor);
                 }
 
-                string path = klasor+"\\"+DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss")+".pdf";
+                string path = klasor + "\\" + DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss") + ".pdf";
 
                 gridViewCariRap3.ExportToPdf(path);
 
@@ -1752,7 +1794,7 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
                         if (Mail_Alici9.Length > 0) ePosta.To.Add(Mail_Alici9);
                         if (Mail_Alici10.Length > 0) ePosta.To.Add(Mail_Alici10);
                         ePosta.Priority = MailPriority.Normal;
-                        ePosta.Subject = "CARİ BAKİYE KONTROL RAPOR "+DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
+                        ePosta.Subject = "CARİ BAKİYE KONTROL RAPOR " + DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
                         ePosta.IsBodyHtml = true;
                         ePosta.Body = ePosta.Subject;
 
@@ -1777,12 +1819,12 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari "+ sifir;
 
         private void btnCariRap3ListeleHepsi_Click(object sender, EventArgs e)
         {
-            rap3Listele(sifirDahil:true);
+            rap3Listele(sifirDahil: true);
         }
 
         private void gridViewCariRap3_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            if (gridViewCariRap3.FocusedRowHandle<0)
+            if (gridViewCariRap3.FocusedRowHandle < 0)
             {
                 return;
             }
@@ -1816,9 +1858,9 @@ from Cst_Recete_Satis
 where Rsat_Fisno in (select Rsat_Fisno from Cst_Recete_Satis where (Rsat_Tarih >= '" + dateEditRap3BasTar.DateTime.Date + "' and Rsat_Tarih <= '" + dateEditRap3BitTar.DateTime.Date + "') and Rsat_Ba = 'A' and Rsat_Cari = '" + Convert.ToString(gridViewCariRap3.GetFocusedRowCellValue("CariId")) + @"') 
 	and Rsat_Ba = 'B'
 group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
-                DataTable dt = dbtools.SelectTable(query);
+            DataTable dt = dbtools.SelectTable(query);
 
-                gridControlCariRap3Detay.DataSource = dt;
+            gridControlCariRap3Detay.DataSource = dt;
         }
 
         private void btnExcelKaydetCariRapor3Detay_Click(object sender, EventArgs e)
@@ -1837,16 +1879,16 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                 //var yazilacaklar = data.Select("Chrk_Tarih between '" + dateEditCariBas.DateTime.ToString("yyyy-MM-dd") + "' and " + dateEditCariBit.DateTime.ToString("yyyy-MM-dd") + "").CopyToDataTable();
 
 
-                var yazilacaklar = dtCari1.Select("Chrk_Tarih >= #"+ dateEditCariBas.DateTime.ToString("yyyy-MM-dd") + "#  and Chrk_Tarih<= #" + dateEditCariBit.DateTime.ToString("yyyy-MM-dd") + "#").CopyToDataTable();
+                var yazilacaklar = dtCari1.Select("Chrk_Tarih >= #" + dateEditCariBas.DateTime.ToString("yyyy-MM-dd") + "#  and Chrk_Tarih<= #" + dateEditCariBit.DateTime.ToString("yyyy-MM-dd") + "#").CopyToDataTable();
 
                 grd_CariHesap.DataSource = yazilacaklar;
                 Bakiye.Text = Convert.ToString(Convert.ToDecimal(gridColumn51.SummaryText) - Convert.ToDecimal(gridColumn52.SummaryText));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                RHMesaj.MyMessageError(MyClass, "btnFiltrele_Click", "",ex);
+                RHMesaj.MyMessageError(MyClass, "btnFiltrele_Click", "", ex);
             }
-           
+
         }
 
         private void btnPaketCariGuncelle_Click(object sender, EventArgs e)
@@ -1897,7 +1939,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
             {
 
             }
-            
+
         }
 
         private void txt_Cari_Kod_Leave(object sender, EventArgs e)
@@ -1940,9 +1982,10 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
       , ISNULL(Cari_Funvan2, '')            as Cari_Funvan2
       , ISNULL(Cari_DogumTar, getdate())    as Cari_DogumTar
       , ISNULL(Cari_indirimOran,0)          as Cari_indirimOran
+      , ISNULL(adressecenek,1)          as adressecenek
   FROM [dbo].[Pos_Cari] where Cari_Kod='{txt_Cari_Kod.Text}'");
 
-                if (dt==null || dt.Rows.Count==0)
+                if (dt == null || dt.Rows.Count == 0)
                 {
 
                     //CariKod İstediğimiz gibi Verdik Oğuzhan Mendi
@@ -1974,9 +2017,9 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                     return;
                 }
 
-               var a = Convert.ToString(dt.Rows[0]["Cari_Tip"].ToString());
+                var a = Convert.ToString(dt.Rows[0]["Cari_Tip"].ToString());
 
-                if (a!="")
+                if (a != "")
                 {
                     look_Cari_Tip.EditValue = a;
                 }
@@ -2013,12 +2056,16 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
 
                 Cari_DogumTar.EditValue = Convert.ToString(dt.Rows[0]["Cari_DogumTar"].ToString());
                 txtIndOran.EditValue = dt.Rows[0]["Cari_indirimOran"].ToString();
+                int secenek = Convert.ToInt32(dt.Rows[0]["adressecenek"].ToString());
+                if (secenek == 1) adres1Aktif.Checked = true;
+                if (secenek == 2) adres2Aktif.Checked = true;
+                if (secenek == 3) adres3Aktif.Checked = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("cariBul " + ex.Message);
             }
-            
+
         }
 
     }
