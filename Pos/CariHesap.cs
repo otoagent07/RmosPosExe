@@ -1106,7 +1106,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
       , ISNULL(Cari_YS_CustomerID, '')      as Cari_YS_CustomerID
       , ISNULL(Cari_Funvan2, '')            as Cari_Funvan2
       , ISNULL(Cari_DogumTar, getdate())    as Cari_DogumTar
-      , ISNULL(Cari_indirimOran,0)          as Cari_indirimOran,
+      , ISNULL(Cari_indirimOran,0)          as Cari_indirimOran
 , ISNULL(adressecenek,1)          as adressecenek
   FROM [dbo].[Pos_Cari] order by Cari_Kod");
 
@@ -1933,6 +1933,11 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                 {
                     txt_Cari_Kod.Text = CariKod;
                     cariBul();
+                }
+
+                if (Tel!="")
+                {
+                    txt_Cari_Telefon.Text = Tel;
                 }
             }
             catch (Exception ex)

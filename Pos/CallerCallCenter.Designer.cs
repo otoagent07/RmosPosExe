@@ -314,10 +314,10 @@
             // 
             resources.ApplyResources(this.btnGelAl, "btnGelAl");
             this.btnGelAl.Appearance.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnGelAl.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.btnGelAl.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnGelAl.Appearance.Font")));
             this.btnGelAl.Appearance.Options.UseBackColor = true;
             this.btnGelAl.Appearance.Options.UseFont = true;
-            this.btnGelAl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnGelAl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGelAl.ImageOptions.Image")));
             this.btnGelAl.Name = "btnGelAl";
             this.btnGelAl.Click += new System.EventHandler(this.btnGelAl_Click_1);
             // 

@@ -121,6 +121,18 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
+    <value>Grid Dizayn Kaydet</value>
+  </data>
+  <data name="btnGridDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
+  </data>
+  <data name="btnGridDizaynSil.Text" xml:space="preserve">
+    <value>Grid Dizayn Sil</value>
+  </data>
   <data name="contextMenuStrip_LogRapor.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 48</value>
   </data>
@@ -296,18 +308,6 @@
   </data>
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
-    <value>Grid Dizayn Kaydet</value>
-  </data>
-  <data name="btnGridDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="btnGridDizaynSil.Text" xml:space="preserve">
-    <value>Grid Dizayn Sil</value>
   </data>
   <data name="btn_CariEkle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -618,44 +618,29 @@ Adres</value>
   <data name="&gt;&gt;btn_AcikAdres.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
+  <data name="labelDakika.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelDakika.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panelControl1</value>
+  <data name="labelDakika.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 15.75pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="labelDakika.Location" type="System.Drawing.Point, System.Drawing">
+    <value>703, 0</value>
   </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="labelDakika.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="labelDakika.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 25</value>
   </data>
-  <data name="panelControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+  <data name="labelDakika.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>930, 337</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="labelDakika.Text" xml:space="preserve">
+    <value>1000 dakika</value>
   </data>
   <data name="&gt;&gt;labelDakika.Name" xml:space="preserve">
     <value>labelDakika</value>
@@ -696,88 +681,79 @@ Adres</value>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="labelDakika.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="labelDakika.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="labelDakika.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 15.75pt, style=Bold</value>
+  <data name="panelControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
-  <data name="labelDakika.Location" type="System.Drawing.Point, System.Drawing">
-    <value>703, 0</value>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>930, 337</value>
   </data>
-  <data name="labelDakika.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="labelDakika.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 25</value>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
   </data>
-  <data name="labelDakika.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="labelDakika.Text" xml:space="preserve">
-    <value>1000 dakika</value>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;labelDakika.Name" xml:space="preserve">
-    <value>labelDakika</value>
-  </data>
-  <data name="&gt;&gt;labelDakika.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelDakika.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelDakika.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="btnGelAl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
-  <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnGelAl.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
   <data name="btnGelAl.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="simpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnGelAl.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="btnGelAl.Location" type="System.Drawing.Point, System.Drawing">
