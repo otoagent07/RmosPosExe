@@ -177,6 +177,7 @@ namespace Pos.Class
         public static bool hesapFisQr { get; set; }
         public static bool hesapFisQrFisno { get; set; }
         public static bool paketotohesapkapat { get; set; }
+        public static bool sepetaktif { get; set; }
         public static bool masatrTutSurukle { get; set; }
         public static bool servispayFooterda { get; set; }
         public static bool servispayOdenmezIkramSil { get; set; }
@@ -243,6 +244,7 @@ namespace Pos.Class
                         ",ISNULL(otomatikOdenmez,0) as otomatikOdenmez " +
                         ",ISNULL(mobilCallerIdAktif,0) as mobilCallerIdAktif " +
                         ",ISNULL(mobileCallerIdMacAdres,'') as mobileCallerIdMacAdres " +
+                        ",ISNULL(sepetaktif,0) as sepetaktif " +
                          " from Pos_Param where Param_Id = '1' ");
 
                 DataTable dtMac = dbtools.SelectTable("SELECT  isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep, ISNULL(P_Sabitkonum,0) as P_Sabitkonum, P_Sabitkonumkodu   FROM  Rmosmuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
@@ -441,6 +443,7 @@ namespace Pos.Class
                     cariindirimAktif = Convert.ToBoolean(dt.Rows[0]["cariindirimAktif"]);
                     hesapFisQr = Convert.ToBoolean(dt.Rows[0]["hesapFisQr"]);
                     paketotohesapkapat = Convert.ToBoolean(dt.Rows[0]["paketotohesapkapat"]);
+                    sepetaktif = Convert.ToBoolean(dt.Rows[0]["sepetaktif"]);
                     hesapFisQrFisno = Convert.ToBoolean(dt.Rows[0]["hesapFisQrFisno"]);
                     masatrTutSurukle = Convert.ToBoolean(dt.Rows[0]["masatrTutSurukle"]);
                     servispayFooterda = Convert.ToBoolean(dt.Rows[0]["servispayFooterda"]);

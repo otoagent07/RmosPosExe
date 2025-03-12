@@ -129,6 +129,7 @@
             this.alertControl3 = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timerMobileCallerId = new System.Windows.Forms.Timer(this.components);
+            this.timerSepet = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -1027,6 +1028,11 @@
             this.timerMobileCallerId.Interval = 1000;
             this.timerMobileCallerId.Tick += new System.EventHandler(this.timerMobileCallerId_Tick);
             // 
+            // timerSepet
+            // 
+            this.timerSepet.Interval = 3000;
+            this.timerSepet.Tick += new System.EventHandler(this.timerSepet_Tick);
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
@@ -1175,5 +1181,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         public System.Windows.Forms.Timer timerMobileCallerId;
         private DevExpress.XtraEditors.SimpleButton btnSifreDegis;
+        public System.Windows.Forms.Timer timerSepet;
     }
 }

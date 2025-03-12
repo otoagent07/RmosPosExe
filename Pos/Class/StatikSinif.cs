@@ -140,6 +140,9 @@ IF COL_LENGTH('Cst_Recete_Satis', 'sepetDurum') IS NULL BEGIN ALTER TABLE Cst_Re
 
 
 IF COL_LENGTH('Cst_Recete_Satis', 'ustgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD ustgrup nvarchar(200) END;
+
+IF COL_LENGTH('Cst_Recete_Satis', 'printjson') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD printjson nvarchar(4000) END;
+
 IF COL_LENGTH('Cst_Recete_Satis', 'sirano') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD sirano int END;
 IF COL_LENGTH('Cst_Recete_Satis', 'altgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD altgrup nvarchar(200) END;
 IF COL_LENGTH('Cst_Recete_Satis', 'konumposta') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD konumposta nvarchar(200) END;
@@ -148,7 +151,10 @@ IF COL_LENGTH('Cst_Recete', 'Rec_DovizliSatis') IS NULL BEGIN ALTER TABLE Cst_Re
 IF COL_LENGTH('Pos_Param', 'kartnoSayisi') IS NULL BEGIN ALTER TABLE Pos_Param ADD kartnoSayisi int END;
 
 IF COL_LENGTH('Pos_Param', 'hesapFisQr') IS NULL BEGIN ALTER TABLE Pos_Param ADD hesapFisQr bit END;
+
+
 IF COL_LENGTH('Pos_Param', 'paketotohesapkapat') IS NULL BEGIN ALTER TABLE Pos_Param ADD paketotohesapkapat bit END;
+IF COL_LENGTH('Pos_Param', 'sepetaktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD sepetaktif bit END;
 
 
 
@@ -162,6 +168,8 @@ IF COL_LENGTH('Pos_Param', 'urunAdinaOdaklan') IS NULL BEGIN ALTER TABLE Pos_Par
 IF COL_LENGTH('Pos_Param', 'ikinciEkranAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD ikinciEkranAktif bit END;
 IF COL_LENGTH('Pos_Param', 'otomatikOdenmez') IS NULL BEGIN ALTER TABLE Pos_Param ADD otomatikOdenmez bit END;
 IF COL_LENGTH('Pos_Param', 'mobilCallerIdAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD mobilCallerIdAktif bit END;
+
+
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_ServisPayiDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_ServisPayiDuzelt] bit END;
 

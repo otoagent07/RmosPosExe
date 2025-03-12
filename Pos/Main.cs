@@ -8,6 +8,7 @@ using Pos.Forms;
 using Pos.Getir;
 using Pos.Getir.Class;
 using Pos.Ingenico;
+using Pos.Models;
 using Pos.Print;
 using Pos.Trendyol;
 using Pos.Update;
@@ -412,7 +413,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.82";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.83";
 
 
 
@@ -513,6 +514,11 @@ namespace Pos
 
                 }
 
+
+                if (Param.sepetaktif)
+                {
+                    timerSepet.Enabled = true;
+                }
 
                 //Sube2Merkez a = new Sube2Merkez();
                 //a.GonderSatis();
@@ -743,7 +749,7 @@ namespace Pos
                 {
                     string deger = dbtools.DegerGetir("select top 1 isnull(ingenicoaktif,0) as ingenicoaktif from  RmosMuh.dbo.Pos_User where P_Kod='" + User.P_Kod + "'");
                     var ingenicoaktif = Convert.ToBoolean(deger);
-                    if (ingenicoaktif==false)
+                    if (ingenicoaktif == false)
                     {
                         return;
                     }
@@ -1805,37 +1811,37 @@ No Cut Seçili Olsun
                     try
                     {
                         pipeServer.WaitForConnection();
-                        string entegrejson;
+                        string PrintJson;
                         sw.WriteLine("Waiting");
                         sw.Flush();
                         pipeServer.WaitForPipeDrain();
-                        entegrejson = sr.ReadLine();
+                        PrintJson = sr.ReadLine();
 
                         Application.DoEvents();
 
                         this.Invoke(new MethodInvoker(() =>
                         {
-                            EntegreJson json = JsonConvert.DeserializeObject<EntegreJson>(entegrejson);
+                            PrintJson json = JsonConvert.DeserializeObject<PrintJson>(PrintJson);
 
+                            // 12.03.2025 tarihinde yorum yapıldı timer ile çözüldü
 
-
-                            switch (json.printTip)
-                            {
-                                case "siparis":
-                                    siparisYazdirHepYeni(json); //  siparisYazdir(json);
-                                    break;
-                                case "paket":
-                                    paketYazdir(json);
-                                    break;
-                                case "hesap":
-                                    hesapYazdir(json);
-                                    break;
-                                case "hesappr":
-                                    sadeceHesapYazdir(json);
-                                    break;
-                                default:
-                                    break;
-                            }
+                            //switch (json.printTip)
+                            //{
+                            //    case "siparis":
+                            //        siparisYazdirHepYeni(json); //  siparisYazdir(json);
+                            //        break;
+                            //    case "paket":
+                            //        paketYazdir(json);
+                            //        break;
+                            //    case "hesap":
+                            //        hesapYazdir(json);
+                            //        break;
+                            //    case "hesappr":
+                            //        sadeceHesapYazdir(json);
+                            //        break;
+                            //    default:
+                            //        break;
+                            //}
 
 
 
@@ -1861,7 +1867,7 @@ No Cut Seçili Olsun
             }
 
         }
-        public void sadeceHesapYazdir(EntegreJson json)
+        public void sadeceHesapYazdir(PrintJson json)
         {
             try
             {
@@ -1875,7 +1881,7 @@ No Cut Seçili Olsun
 
         }
 
-        public void hesapYazdir(EntegreJson json)
+        public void hesapYazdir(PrintJson json)
         {
             try
             {
@@ -1906,7 +1912,7 @@ No Cut Seçili Olsun
             }
 
         }
-        public void paketYazdir(EntegreJson json)
+        public void paketYazdir(PrintJson json)
         {
             try
             {
@@ -1920,7 +1926,7 @@ No Cut Seçili Olsun
             }
 
         }
-        public void siparisYazdir(EntegreJson json)
+        public void siparisYazdir(PrintJson json)
         {
             try
             {
@@ -1958,7 +1964,7 @@ No Cut Seçili Olsun
 
         }
 
-        public void siparisYazdirHepYeni(EntegreJson json)
+        public void siparisYazdirHepYeni(PrintJson json)
         {
             try
             {
@@ -2042,6 +2048,48 @@ No Cut Seçili Olsun
 
             loginOlNew();
             departmanYukleNew();
+        }
+
+        private void timerSepet_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable dataTable = dbtools.SelectTableR("select * from PrintJson where isPrint=0");
+
+                if (dataTable!=null && dataTable.Rows.Count>0)
+                {
+                    string jsontext = JsonConvert.SerializeObject(dataTable);
+
+                    var list = JsonConvert.DeserializeObject<List<PrintJson>>(jsontext);
+
+                    foreach (var json in list)
+                    {
+                        switch (json.printTip)
+                        {
+                            case "siparis":
+                                siparisYazdirHepYeni(json); //  siparisYazdir(json);
+                                break;
+                            case "paket":
+                                paketYazdir(json);
+                                break;
+                            case "hesap":
+                                hesapYazdir(json);
+                                break;
+                            case "hesappr":
+                                sadeceHesapYazdir(json);
+                                break;
+                            default:
+                                break;
+                        }
+
+                        dbtools.execcmdR("update PrintJson set isPrint=1 where id = "+json.id);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

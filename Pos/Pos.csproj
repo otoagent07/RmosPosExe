@@ -384,7 +384,6 @@
     <Compile Include="Class\dbtoolsEfatura.cs" />
     <Compile Include="Class\DbtoolsMerkez.cs" />
     <Compile Include="Class\Departman.cs" />
-    <Compile Include="Class\EntegreJson.cs" />
     <Compile Include="Class\ErrorLog.cs" />
     <Compile Include="Class\FisPr.cs" />
     <Compile Include="Class\Fis_Islem.cs" />
@@ -459,6 +458,7 @@
     <Compile Include="MasaSecForm.Designer.cs">
       <DependentUpon>MasaSecForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\PrintJson.cs" />
     <Compile Include="Print\Abuyer.cs">
       <SubType>Component</SubType>
     </Compile>
