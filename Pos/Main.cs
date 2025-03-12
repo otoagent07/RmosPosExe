@@ -413,7 +413,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.83";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.84";
 
 
 
@@ -517,7 +517,12 @@ namespace Pos
 
                 if (Param.sepetaktif)
                 {
-                    timerSepet.Enabled = true;
+                    string paramMac = Param.mobileCallerIdMacAdres.ToString();
+                    if (macadresim == paramMac)
+                    {
+                        timerSepet.Enabled = true;
+                    }
+
                 }
 
                 //Sube2Merkez a = new Sube2Merkez();
