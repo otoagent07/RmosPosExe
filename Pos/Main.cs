@@ -2061,7 +2061,7 @@ No Cut Seçili Olsun
             {
                 DataTable dataTable = dbtools.SelectTableR("select * from PrintJson where isPrint=0");
 
-                if (dataTable!=null && dataTable.Rows.Count>0)
+                if (dataTable != null && dataTable.Rows.Count > 0)
                 {
                     string jsontext = JsonConvert.SerializeObject(dataTable);
 
@@ -2087,7 +2087,7 @@ No Cut Seçili Olsun
                                 break;
                         }
 
-                        dbtools.execcmdR("update PrintJson set isPrint=1 where id = "+json.id);
+                        dbtools.execcmdR("update PrintJson set isPrint=1 where id = " + json.id);
                     }
                 }
             }
