@@ -3265,7 +3265,6 @@ namespace Pos
 
                     if (klv.yazi.Length == 0)
                     {
-                        MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
                         return;
                     }
 
@@ -4145,7 +4144,6 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
         private void simpleButton2_Click_1(object sender, EventArgs e)
         {
-
             if (Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty)
             {
                 return;
@@ -4157,9 +4155,18 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 return;
             }
 
+            string rsatid = Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id"));
+
+
             Klavye2 klv = new Klavye2();
+            klv.txt_Yazi.Text = dbtools.DegerGetir("select Rsat_Aciklama from Cst_Recete_Satis where Rsat_Id="+ rsatid);
             klv.ShowDialog();
 
+            if (klv.cikisYeni==true)
+            {
+                return;
+            }
+            
             dbtools.execcmd("Update Cst_Recete_Satis Set Rsat_Aciklama = '" + klv.yazi + "' where Rsat_Id = '" + Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) + "'");
 
             Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satis, Log.Log_Islem.Kaydet, "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Reçeteye Açıklama Girildi : " + klv.yazi, Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), 0, "", Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));

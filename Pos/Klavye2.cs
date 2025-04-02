@@ -46,9 +46,11 @@ namespace Pos
         }
 
         public bool cikis = false;
+        public bool cikisYeni = false;
 
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
+            cikisYeni = true;
             this.Close();
         }
         //

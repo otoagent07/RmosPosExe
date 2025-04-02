@@ -413,7 +413,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.84";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.85";
 
 
 
@@ -479,6 +479,11 @@ namespace Pos
         {
             try
             {
+                if (System.Diagnostics.Process.GetProcessesByName("Pos").Length > 1)
+                {
+                    this.Close();
+                }
+
                 macadresim = dbtools.MacAdresi();
                 this.BringToFront();
                 isLogin = false;
