@@ -93,10 +93,14 @@ namespace Pos
         }
 
         public bool urunleriYenile = true;
+        public bool tutarduzeltplus = false;
         public void load(bool urunleriYenile = true)
         {
             try
             {
+                string deger1 = dbtools.DegerGetir("select top 1 isnull(tutarduzeltplus,0) as tutarduzeltplus from  RmosMuh.dbo.Pos_User where P_Kod='" + User.P_Kod + "'");
+                tutarduzeltplus = Convert.ToBoolean(deger1);
+
                 sayac = 0;
                 kisiyiTemizle();
                 this.urunleriYenile = urunleriYenile;
@@ -1913,7 +1917,7 @@ namespace Pos
                     if (Convert.ToString(dt.Rows[i]["Kodlar_Ad"]) == "(*) SIK KULLANILAN")
                     {
                         string[] sizeArraySikKullan = Param.Param_SikKullanSize.Split(';');
-                        btn_AltGrup.Size = new System.Drawing.Size(Convert.ToInt32(sizeArraySikKullan[0]), Convert.ToInt32(sizeArraySikKullan[1]));
+                        //btn_AltGrup.Size = new System.Drawing.Size(Convert.ToInt32(sizeArraySikKullan[0]), Convert.ToInt32(sizeArraySikKullan[1]));
                     }
 
                     btn_AltGrup.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -3414,8 +3418,19 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             {
                 return;
             }
-            if (tutar != Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")))
+
+            decimal eskitutarim = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar"));
+            if (tutar != eskitutarim)
             {
+
+                if (tutarduzeltplus && eskitutarim>tutar)
+                {
+                    MessageBox.Show("Satış tutarından düşük tutar girme yetkiniz yoktur !");
+                    return;
+                }
+
+
+
                 Fis_Islem.Tutar_Duzelt(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), tutar);
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Tutar_Duzelt, Log.Log_Islem.Duzelt, Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + "'nın Fiyatı " + eskitutar + " iken " + tutar.ToString() + " ile Değişti", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));

@@ -60,6 +60,7 @@ namespace Pos.Class
 
         public static bool P_Gunsonu { get; set; }
         public static string P_Departman { get; set; }
+        public static string postema { get; set; }
 
 
         public static bool Pda_Masatakip { get; set; }
@@ -198,7 +199,7 @@ namespace Pos.Class
                     + " ISNULL(R_Raporlar,0) AS R_Raporlar ,ISNULL(R_Detay,0) AS R_Detay ,ISNULL(R_XZ,0) AS R_XZ ,ISNULL(R_Mahsupkes,0) AS R_Mahsupkes ,ISNULL(R_Fisiptal,0) AS R_Fisiptal ,ISNULL(R_Fisiptalgecmis,0) as R_Fisiptalgecmis, "
                     + " ISNULL(A_Ayarlar,0) AS A_Ayarlar ,ISNULL(A_Parametre,0) AS A_Parametre ,ISNULL(A_Print,0) AS A_Print ,ISNULL(A_Odeme,0) AS A_Odeme ,ISNULL(A_Entegre,0) AS A_Entegre , "
                     + " ISNULL(A_Masa,0) AS A_Masa ,ISNULL(A_Cari,0) AS A_Cari ,ISNULL(A_HH,0) AS A_HH ,ISNULL(A_Kullanici,0) AS A_Kullanici ,ISNULL(A_Kasa,0) as A_Kasa, "
-                    + " ISNULL(P_Gunsonu,0) AS P_Gunsonu, P_Departman, "
+                    + " ISNULL(P_Gunsonu,0) AS P_Gunsonu, P_Departman,ISNULL(postema,'Money Twins') AS postema, "
                     + " ISNULL(Pda_Masatakip,0) as Pda_Masatakip,ISNULL(Pos_AdisyonPr,0) as Pos_AdisyonPr, "
                     + " ISNULL(Pda_Satis,0) as Pda_Satis, ISNULL(Pda_Satirsil,0) as Pda_Satirsil, ISNULL(Pda_Miktarduzelt,0) as Pda_Miktarduzelt, "
                     + " ISNULL(Pda_Hesap,0) as Pda_Hesap, ISNULL(Pda_Masatr,0) as Pda_Masatr, ISNULL(Pda_Malztr,0) as Pda_Malztr, ISNULL(Pda_Ozelmasa,0) as Pda_Ozelmasa, ISNULL(Pda_Odakontrol,0) as Pda_Odakontrol, "
@@ -265,6 +266,7 @@ namespace Pos.Class
 
                 P_Gunsonu = Convert.ToBoolean(dt.Rows[0]["P_Gunsonu"]);
                 P_Departman = Convert.ToString(dt.Rows[0]["P_Departman"]);
+                postema = Convert.ToString(dt.Rows[0]["postema"]);
 
                 Pda_Masatakip = Convert.ToBoolean(dt.Rows[0]["Pda_Masatakip"]);
 

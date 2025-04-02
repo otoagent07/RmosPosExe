@@ -177,6 +177,7 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_OdenmezIkramPasif') IS NULL BEGIN ALT
 
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'ingenicoaktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [ingenicoaktif] bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'tutarduzeltplus') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [tutarduzeltplus] bit END;
 
 IF COL_LENGTH('Pos_FolioParam', 'hizmetOdemeKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetOdemeKod nvarchar(200) END;
 IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD HizmetReceteKod nvarchar(200) END;
@@ -275,6 +276,7 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimBakiyeTransfer') IS NULL BEG
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'urunIade') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [urunIade] bit END;
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'xzraporyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [xzraporyazici] nvarchar(250) END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'postema') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [postema] nvarchar(2500) END;
 
 IF COL_LENGTH('Pos_Kodlar', 'hesapDokTutarSifir') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD hesapDokTutarSifir bit END;
 IF COL_LENGTH('Pos_Kodlar', 'saatAralikDurdur') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD saatAralikDurdur nvarchar(500) END;

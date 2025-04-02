@@ -20,8 +20,12 @@ namespace Pos
             InitializeComponent();
         }
 
+     
         private void Klavye1_Load(object sender, EventArgs e)
         {
+            
+
+
             this.BringToFront();
             txt_Sayi.Focus();
             lbl_UrunAdi.Text = "";
@@ -79,7 +83,7 @@ namespace Pos
             }
         }
 
-       public bool iptal = false;
+        public bool iptal = false;
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
             sayi = 1;//Convert.ToDecimal(txt_Sayi.Text);
@@ -110,6 +114,7 @@ namespace Pos
         }
         public void okey()
         {
+
             bool cik = true;
             sayi = Convert.ToDecimal(txt_Sayi.Text.Replace(".", ","));
 

@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors.Controls;
+﻿using DevExpress.Skins;
+using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
@@ -73,6 +74,35 @@ namespace Pos
 
             }
         }
+
+        public void temaYukle()
+        {
+            try
+            {
+
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("ad", typeof(string));
+
+                foreach (SkinContainer skin in SkinManager.Default.Skins)
+                {
+                    dataTable.Rows.Add(skin.SkinName);
+                }
+
+                // LookUpEdit'e veri kaynağını ata
+                postema.Properties.DataSource = dataTable;
+                postema.Properties.ValueMember = "ad";
+                postema.Properties.DisplayMember = "ad";
+
+                // Varsayılan tema: "Money Twins"
+                //lookUpEditTema.EditValue = "Money Twins";
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
         public void yaziciYukleHesap()
         {
             try
@@ -124,6 +154,7 @@ namespace Pos
             txtKendiMac.Text = dbtools.MacAdresi();
             dilYukle();
             yaziciYukle();
+            temaYukle();
             yaziciYukleHesap();
             panelControl1.Visible = false;
             if (User.P_Kod.Equals("999") || User.P_Kart.Equals("999"))
@@ -2848,7 +2879,7 @@ namespace Pos
                         + " G_Zayi,G_Ikram,M_KisiSayisi,R_MasaGeri,M_SiparisTekrar,Pda_HesapDok,H_HizliSatis,R_TopluIsle,And_HesapDokum,And_HesapOdeme,And_MalzTransfer,S_Sp_Sil,ExtraFolio, "
                         + " And_Yarim,And_Tam,And_Bucuk,And_Duble,Pos_SubeTrf,Pos_AdisyonPr,Pos_OdemeDegistir,And_SatisSiparisBtn,Pos_ArtiEksi_Aktif,Pos_MasaAnlikDurum,Pos_MasaUrunSil,Pos_IWERep,Pos_KartF_CheckOut,Pos_SatirSilYetkili,Pos_MasaDirekS,Pos_MasaPaketS, "
                         + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman,Pos_KartfIndirimAktif,Pos_ServisPayiDuzelt,Pos_OdenmezIkramPasif," +
-                        "urunIade,ingenicoaktif) VALUES( "
+                        "urunIade,ingenicoaktif,tutarduzeltplus,postema) VALUES( "
                         + " '" + txt_Kul_kod.Text + "','" + txt_Kul_sifre.EditValue + "','" + txt_Kul_ad.EditValue + "','" + txt_Kul_soyad.EditValue + "','" + txt_Kul_Kart.EditValue + "','" + cmb_Kulturu.SelectedIndex.ToString() + "', "
                         + " '" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', "
                         + " '" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "','" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "','" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', "
@@ -2877,7 +2908,7 @@ namespace Pos
                         + " '" + Pos_AdisyonPr.Checked + "','" + chk_OdemeTipi.Checked + "','" + And_SatisSiparisBtn.Checked + "','" + Pos_ArtiEksi_Aktif.Checked + "','" + Pos_MasaAnlikDurum.Checked + "','" + Pos_MasaUrunSil.Checked + "','" + Pos_IWERep.Checked + "','" + Pos_KartF_CheckOut.Checked + "','" + Pos_SatirSilYetkili.Checked + "', "
                         + " '" + Pos_MasaDirekS.Checked + "','" + Pos_MasaPaketS.Checked + "','" + Pos_YS_YetkiReddet.Checked + "','" + Pos_YarimDubleAlan.Checked + "','" + Pos_ReceteTanimlama.Checked + "','" + Pos_FixMenu.Checked + "', "
                         + " '" + Pos_HesapArti.Checked + "','" + User_AP.Checked + "','" + Pos_OdaKontrol.Checked + "','" + Pos_HesapFisIptal.Checked + "','" + Pos_KartTanimSil.Checked + "','" + backUser + "','" + chk_K_KasaRapor.Checked + "','" + Pos_KartTanimDuzelt.Checked + "','" + Pos_KartTanimTransfer.Checked + "','" + Pos_KartTanimBakiyeTransfer.Checked + "','" + dil + "','" + Pos_Eksileme.Checked + "','" + Pos_XZdepartman.Checked + "','" + Pos_KartfIndirimAktif.Checked + "','" + Pos_ServisPayiDuzelt.Checked + "','" + Pos_OdenmezIkramPasif.Checked 
-                        + "','" + urunIade.Checked + "','" + ingenicoaktif.Checked + "' " +
+                        + "','" + urunIade.Checked + "','" + ingenicoaktif.Checked + "','" + tutarduzeltplus.Checked + "' ,'" + postema.EditValue + "' " +
 
 
                         ") ");
@@ -2926,7 +2957,10 @@ namespace Pos
                         + Pos_KartfIndirimAktif.Checked + "',Pos_ServisPayiDuzelt = '" 
                         + Pos_ServisPayiDuzelt.Checked + "',Pos_OdenmezIkramPasif = '" 
                         + Pos_OdenmezIkramPasif.Checked 
-                        + "',urunIade = '" + urunIade.Checked + "',ingenicoaktif = '" + ingenicoaktif.Checked + "' "
+                        + "',urunIade = '" + urunIade.Checked 
+                        + "',ingenicoaktif = '" + ingenicoaktif.Checked + "' "
+                        + ",tutarduzeltplus = '" + tutarduzeltplus.Checked + "' "
+                        + ",postema = '" + postema.EditValue + "' "
                         + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
 
 
@@ -3005,7 +3039,7 @@ namespace Pos
                     + " ISNULL(Pos_MasaAnlikDurum,0) as Pos_MasaAnlikDurum, ISNULL(Pos_ArtiEksi_Aktif,0) as Pos_ArtiEksi_Aktif, ISNULL(Pos_MasaUrunSil,0) as Pos_MasaUrunSil,ISNULL(Pos_IWERep,0) as Pos_IWERep, ISNULL(Pos_KartF_CheckOut,0) as Pos_KartF_CheckOut, ISNULL(Pos_SatirSilYetkili,0) as Pos_SatirSilYetkili, "
                     + " ISNULL(Pos_MasaPaketS,0) as Pos_MasaPaketS,ISNULL(Pos_MasaDirekS,0) as Pos_MasaDirekS, ISNULL(Pos_YS_YetkiReddet,0) as Pos_YS_YetkiReddet, ISNULL(Pos_YarimDubleAlan,1) as Pos_YarimDubleAlan, ISNULL(Pos_ReceteTanimlama,1) as Pos_ReceteTanimlama,  "
                     + " ISNULL(Pos_FixMenu,0) as Pos_FixMenu, ISNULL(Pos_HesapFisIptal,0) as Pos_HesapFisIptal, ISNULL(Pos_KartTanimSil,0) as Pos_KartTanimSil,ISNULL(Pos_HesapArti,0) as Pos_HesapArti, ISNULL(User_AP,1) as User_AP,U_BackUser,ISNULL(chk_K_KasaRapor,0) as chk_K_KasaRapor,ISNULL(Pos_KartTanimDuzelt,0) as Pos_KartTanimDuzelt,ISNULL(Pos_KartTanimTransfer,0) as Pos_KartTanimTransfer,ISNULL(Pos_KartTanimBakiyeTransfer,0) as Pos_KartTanimBakiyeTransfer,isnull(Pos_dil,'tr-TR') as Pos_dil, ISNULL(Pos_Eksileme,0) as Pos_Eksileme, ISNULL(Pos_XZdepartman,0) as Pos_XZdepartman, ISNULL(Pos_KartfIndirimAktif,0) as Pos_KartfIndirimAktif, ISNULL(Pos_ServisPayiDuzelt,0) as Pos_ServisPayiDuzelt, ISNULL(Pos_OdenmezIkramPasif,0) as Pos_OdenmezIkramPasif" +
-                    ",ISNULL(urunIade,0) as urunIade,ISNULL(ingenicoaktif,0) as ingenicoaktif"
+                    ",ISNULL(urunIade,0) as urunIade,ISNULL(ingenicoaktif,0) as ingenicoaktif,ISNULL(tutarduzeltplus,0) as tutarduzeltplus,ISNULL(postema,'Money Twins') as postema"
                     + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "' " + Filtre + " ");
 
             if (dt.Rows.Count > 0)
@@ -3157,6 +3191,8 @@ namespace Pos
                 Pos_ServisPayiDuzelt.Checked = Convert.ToBoolean(dt.Rows[0]["Pos_ServisPayiDuzelt"]);
                 urunIade.Checked = Convert.ToBoolean(dt.Rows[0]["urunIade"]);
                 ingenicoaktif.Checked = Convert.ToBoolean(dt.Rows[0]["ingenicoaktif"]);
+                tutarduzeltplus.Checked = Convert.ToBoolean(dt.Rows[0]["tutarduzeltplus"]);
+                postema.EditValue = Convert.ToString(dt.Rows[0]["postema"]);
 
 
 
@@ -3370,6 +3406,7 @@ namespace Pos
             Pos_ServisPayiDuzelt.Checked = false;
             urunIade.Checked = false;
             ingenicoaktif.Checked = false;
+            tutarduzeltplus.Checked = false;
 
         }
 
@@ -3524,6 +3561,7 @@ namespace Pos
             Pos_ServisPayiDuzelt.Checked = true;
             urunIade.Checked = true;
             ingenicoaktif.Checked = true;
+            tutarduzeltplus.Checked = true;
             //Pos_FixMenu.Checked = true;
             //Pos_HesapArti.Checked = true;
 

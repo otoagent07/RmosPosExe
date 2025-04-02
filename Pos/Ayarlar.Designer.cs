@@ -276,6 +276,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.sepetaktif = new DevExpress.XtraEditors.CheckEdit();
             this.paketotohesapkapat = new DevExpress.XtraEditors.CheckEdit();
             this.hesapFisQrFisno = new DevExpress.XtraEditors.CheckEdit();
             this.mobilCallerIdAktif = new DevExpress.XtraEditors.CheckEdit();
@@ -992,6 +993,8 @@
             this.textEdit72 = new DevExpress.XtraEditors.TextEdit();
             this.look_HH_Departman5 = new DevExpress.XtraEditors.LookUpEdit();
             this.tab_Kullanici_Ayarlari = new DevExpress.XtraTab.XtraTabPage();
+            this.postema = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit194 = new DevExpress.XtraEditors.TextEdit();
             this.Pos_dil = new DevExpress.XtraEditors.LookUpEdit();
             this.U_BackUser = new DevExpress.XtraEditors.LookUpEdit();
@@ -1009,6 +1012,7 @@
             this.btn_Kul_TumYetki = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.tutarduzeltplus = new DevExpress.XtraEditors.CheckEdit();
             this.ingenicoaktif = new DevExpress.XtraEditors.CheckEdit();
             this.urunIade = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_ServisPayiDuzelt = new DevExpress.XtraEditors.CheckEdit();
@@ -1282,7 +1286,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.sepetaktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1471,6 +1474,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sepetaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paketotohesapkapat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hesapFisQrFisno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mobilCallerIdAktif.Properties)).BeginInit();
@@ -1926,6 +1930,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit72.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_HH_Departman5.Properties)).BeginInit();
             this.tab_Kullanici_Ayarlari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.postema.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit194.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_dil.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.U_BackUser.Properties)).BeginInit();
@@ -1938,6 +1943,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tutarduzeltplus.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenicoaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.urunIade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).BeginInit();
@@ -2149,7 +2155,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sepetaktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4216,6 +4221,12 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             this.xtraTabPage8.Name = "xtraTabPage8";
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
+            // 
+            // sepetaktif
+            // 
+            resources.ApplyResources(this.sepetaktif, "sepetaktif");
+            this.sepetaktif.Name = "sepetaktif";
+            this.sepetaktif.Properties.Caption = resources.GetString("sepetaktif.Properties.Caption");
             // 
             // paketotohesapkapat
             // 
@@ -10421,6 +10432,8 @@
             // 
             // tab_Kullanici_Ayarlari
             // 
+            this.tab_Kullanici_Ayarlari.Controls.Add(this.postema);
+            this.tab_Kullanici_Ayarlari.Controls.Add(this.labelControl18);
             this.tab_Kullanici_Ayarlari.Controls.Add(this.textEdit194);
             this.tab_Kullanici_Ayarlari.Controls.Add(this.Pos_dil);
             this.tab_Kullanici_Ayarlari.Controls.Add(this.U_BackUser);
@@ -10457,6 +10470,21 @@
             this.tab_Kullanici_Ayarlari.Controls.Add(this.txt_Kul_sifre);
             this.tab_Kullanici_Ayarlari.Name = "tab_Kullanici_Ayarlari";
             resources.ApplyResources(this.tab_Kullanici_Ayarlari, "tab_Kullanici_Ayarlari");
+            // 
+            // postema
+            // 
+            resources.ApplyResources(this.postema, "postema");
+            this.postema.Name = "postema";
+            this.postema.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.postema.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEditTema.Properties.Buttons"))))});
+            this.postema.Properties.DropDownRows = 25;
+            this.postema.Properties.NullText = resources.GetString("lookUpEditTema.Properties.NullText");
+            // 
+            // labelControl18
+            // 
+            resources.ApplyResources(this.labelControl18, "labelControl18");
+            this.labelControl18.Name = "labelControl18";
             // 
             // textEdit194
             // 
@@ -10593,6 +10621,7 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.tutarduzeltplus);
             this.xtraTabPage1.Controls.Add(this.ingenicoaktif);
             this.xtraTabPage1.Controls.Add(this.urunIade);
             this.xtraTabPage1.Controls.Add(this.Pos_ServisPayiDuzelt);
@@ -10667,6 +10696,13 @@
             this.xtraTabPage1.Controls.Add(this.chk_D_DirekSatis);
             this.xtraTabPage1.Name = "xtraTabPage1";
             resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
+            // 
+            // tutarduzeltplus
+            // 
+            resources.ApplyResources(this.tutarduzeltplus, "tutarduzeltplus");
+            this.tutarduzeltplus.Name = "tutarduzeltplus";
+            this.tutarduzeltplus.Properties.Appearance.Options.UseFont = true;
+            this.tutarduzeltplus.Properties.Caption = resources.GetString("tutarduzeltplus.Properties.Caption");
             // 
             // ingenicoaktif
             // 
@@ -12753,12 +12789,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // sepetaktif
-            // 
-            resources.ApplyResources(this.sepetaktif, "sepetaktif");
-            this.sepetaktif.Name = "sepetaktif";
-            this.sepetaktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -12959,6 +12989,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sepetaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paketotohesapkapat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hesapFisQrFisno.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mobilCallerIdAktif.Properties)).EndInit();
@@ -13434,6 +13465,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_HH_Departman5.Properties)).EndInit();
             this.tab_Kullanici_Ayarlari.ResumeLayout(false);
             this.tab_Kullanici_Ayarlari.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.postema.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit194.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_dil.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.U_BackUser.Properties)).EndInit();
@@ -13447,6 +13479,7 @@
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tutarduzeltplus.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenicoaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.urunIade.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_ServisPayiDuzelt.Properties)).EndInit();
@@ -13665,7 +13698,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sepetaktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14925,5 +14957,8 @@
         private DevExpress.XtraEditors.CheckEdit ingenicoaktif;
         private DevExpress.XtraEditors.CheckEdit paketotohesapkapat;
         private DevExpress.XtraEditors.CheckEdit sepetaktif;
+        private DevExpress.XtraEditors.CheckEdit tutarduzeltplus;
+        private DevExpress.XtraEditors.LookUpEdit postema;
+        private DevExpress.XtraEditors.LabelControl labelControl18;
     }
 }

@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraBars.Alerter;
+﻿using DevExpress.LookAndFeel;
+using DevExpress.XtraBars.Alerter;
 using DevExpress.XtraReports.UI;
 using Newtonsoft.Json;
 using Pos.Class;
@@ -532,6 +533,9 @@ namespace Pos
 
                 //Sube2Merkez a = new Sube2Merkez();
                 //a.GonderSatis();
+
+
+                UserLookAndFeel.Default.SetSkinStyle(User.postema);
 
             }
             catch (Exception ex)
