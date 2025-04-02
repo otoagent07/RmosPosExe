@@ -1408,7 +1408,7 @@ namespace Pos
         private void timer_Sube2Merkez_Tick(object sender, EventArgs e)
         {
             SubeSaniye++;
-            if (SubeSaniye == (Param.Param_SatisTabloGonderi * 60))
+            if (SubeSaniye == (Param.Param_SatisTabloGonderi * 5))
             {
                 timer_Sube2Merkez.Enabled = false;
                 Sube2Merkez a = new Sube2Merkez();
@@ -1417,6 +1417,8 @@ namespace Pos
                 SubeSaniye = 0;
             }
         }
+
+
 
 
         /*
