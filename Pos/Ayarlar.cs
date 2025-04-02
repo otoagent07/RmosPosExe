@@ -1,4 +1,5 @@
-﻿using DevExpress.Skins;
+﻿using DevExpress.LookAndFeel;
+using DevExpress.Skins;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
@@ -2973,6 +2974,10 @@ namespace Pos
                 }
 
                 User.Yetki_Yukle();
+
+
+                UserLookAndFeel.Default.SetSkinStyle(User.postema);
+
             }
             catch (Exception ex)
             {

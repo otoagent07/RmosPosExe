@@ -3947,7 +3947,6 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                     klv2.ShowDialog();
                     if (klv2.yazi.Length == 0)
                     {
-                        MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
                         return;
                     }
 
