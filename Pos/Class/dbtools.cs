@@ -29,9 +29,10 @@ namespace Pos.Class
 
 
 
-        public void conYenile()
+        public static void conYenile()
         {
             connstr = "Data Source='" + server + "';Initial Catalog=" + database + "; Persist Security Info=True;uid='" + users + "'; pwd='" + pwd + "'";
+            conn = new SqlConnection(connstr);
         }
 
 

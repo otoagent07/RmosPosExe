@@ -994,6 +994,8 @@ namespace Pos
             //System.Threading.Thread.CurrentThread.CurrentCulture = culture;
             //System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
             //Localize.ApplicationLanguage(culture.TwoLetterISOLanguageName);
+
+            btn_Update.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
         }
 
         public static MasaTakip masa_takip;

@@ -1286,6 +1286,9 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.merkezaktif = new DevExpress.XtraEditors.CheckEdit();
+            this.labelSubeCon = new DevExpress.XtraEditors.TextEdit();
+            this.lookUpEditSubeCon = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2155,6 +2158,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.merkezaktif.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4182,6 +4188,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.merkezaktif);
             this.xtraTabPage8.Controls.Add(this.sepetaktif);
             this.xtraTabPage8.Controls.Add(this.paketotohesapkapat);
             this.xtraTabPage8.Controls.Add(this.hesapFisQrFisno);
@@ -10627,6 +10634,8 @@
             // 
             // tab_Kullanici_Ayarlari
             // 
+            this.tab_Kullanici_Ayarlari.Controls.Add(this.labelSubeCon);
+            this.tab_Kullanici_Ayarlari.Controls.Add(this.lookUpEditSubeCon);
             this.tab_Kullanici_Ayarlari.Controls.Add(this.postema);
             this.tab_Kullanici_Ayarlari.Controls.Add(this.labelControl18);
             this.tab_Kullanici_Ayarlari.Controls.Add(this.textEdit194);
@@ -13017,6 +13026,37 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // merkezaktif
+            // 
+            resources.ApplyResources(this.merkezaktif, "merkezaktif");
+            this.merkezaktif.Name = "merkezaktif";
+            this.merkezaktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
+            // labelSubeCon
+            // 
+            resources.ApplyResources(this.labelSubeCon, "labelSubeCon");
+            this.labelSubeCon.Name = "labelSubeCon";
+            this.labelSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.labelSubeCon.Properties.ReadOnly = true;
+            this.labelSubeCon.TabStop = false;
+            // 
+            // lookUpEditSubeCon
+            // 
+            this.lookUpEditSubeCon.EnterMoveNextControl = true;
+            resources.ApplyResources(this.lookUpEditSubeCon, "lookUpEditSubeCon");
+            this.lookUpEditSubeCon.Name = "lookUpEditSubeCon";
+            this.lookUpEditSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.lookUpEditSubeCon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit2.Properties.Buttons"))))});
+            this.lookUpEditSubeCon.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
+            this.lookUpEditSubeCon.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit2.Properties.Columns"), resources.GetString("lookUpEdit2.Properties.Columns1"))});
+            this.lookUpEditSubeCon.Properties.DropDownRows = 10;
+            this.lookUpEditSubeCon.Properties.NullText = resources.GetString("lookUpEdit2.Properties.NullText");
+            this.lookUpEditSubeCon.Properties.ShowFooter = false;
+            this.lookUpEditSubeCon.Properties.ShowHeader = false;
+            this.lookUpEditSubeCon.EditValueChanged += new System.EventHandler(this.lookUpEditSubeCon_EditValueChanged);
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13926,6 +13966,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.merkezaktif.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15188,5 +15231,8 @@
         private DevExpress.XtraEditors.CheckEdit tutarduzeltplus;
         private DevExpress.XtraEditors.LookUpEdit postema;
         private DevExpress.XtraEditors.LabelControl labelControl18;
+        private DevExpress.XtraEditors.CheckEdit merkezaktif;
+        private DevExpress.XtraEditors.TextEdit labelSubeCon;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditSubeCon;
     }
 }
