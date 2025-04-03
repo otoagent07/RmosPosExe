@@ -78,7 +78,10 @@
             this.btn_OK = new DevExpress.XtraEditors.SimpleButton();
             this.txt_Yazi = new DevExpress.XtraEditors.TextEdit();
             this.txtBaslik = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Yazi.Properties)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Space
@@ -465,6 +468,9 @@
             this.txt_Yazi.Name = "txt_Yazi";
             this.txt_Yazi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_Yazi.Properties.Appearance.Font")));
             this.txt_Yazi.Properties.Appearance.Options.UseFont = true;
+            this.txt_Yazi.Properties.Appearance.Options.UseTextOptions = true;
+            this.txt_Yazi.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.txt_Yazi.Properties.AutoHeight = ((bool)(resources.GetObject("txt_Yazi.Properties.AutoHeight")));
             this.txt_Yazi.Properties.NullValuePrompt = resources.GetString("txt_Yazi.Properties.NullValuePrompt");
             this.txt_Yazi.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("txt_Yazi.Properties.NullValuePromptShowForEmptyValue")));
             this.txt_Yazi.EditValueChanged += new System.EventHandler(this.txt_Yazi_EditValueChanged);
@@ -475,66 +481,79 @@
             resources.ApplyResources(this.txtBaslik, "txtBaslik");
             this.txtBaslik.Name = "txtBaslik";
             // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txtBaslik);
+            this.panel1.Controls.Add(this.Btn_1);
+            this.panel1.Controls.Add(this.Btn_2);
+            this.panel1.Controls.Add(this.btn_Cikis);
+            this.panel1.Controls.Add(this.Btn_3);
+            this.panel1.Controls.Add(this.btn_OK);
+            this.panel1.Controls.Add(this.Btn_4);
+            this.panel1.Controls.Add(this.txt_Yazi);
+            this.panel1.Controls.Add(this.Btn_5);
+            this.panel1.Controls.Add(this.Space);
+            this.panel1.Controls.Add(this.Btn_6);
+            this.panel1.Controls.Add(this.Nokta);
+            this.panel1.Controls.Add(this.Btn_7);
+            this.panel1.Controls.Add(this.Btn_Ç);
+            this.panel1.Controls.Add(this.Btn_8);
+            this.panel1.Controls.Add(this.Btn_Ö);
+            this.panel1.Controls.Add(this.Btn_9);
+            this.panel1.Controls.Add(this.Btn_M);
+            this.panel1.Controls.Add(this.Btn_0);
+            this.panel1.Controls.Add(this.Btn_N);
+            this.panel1.Controls.Add(this.Back_Space);
+            this.panel1.Controls.Add(this.Btn_B);
+            this.panel1.Controls.Add(this.Btn_Q);
+            this.panel1.Controls.Add(this.Btn_V);
+            this.panel1.Controls.Add(this.Btn_W);
+            this.panel1.Controls.Add(this.Btn_C);
+            this.panel1.Controls.Add(this.Btn_E);
+            this.panel1.Controls.Add(this.Btn_X);
+            this.panel1.Controls.Add(this.Btn_R);
+            this.panel1.Controls.Add(this.Btn_Z);
+            this.panel1.Controls.Add(this.Btn_T);
+            this.panel1.Controls.Add(this.Btn_İ);
+            this.panel1.Controls.Add(this.Btn_Y);
+            this.panel1.Controls.Add(this.Btn_Ş);
+            this.panel1.Controls.Add(this.Btn_U);
+            this.panel1.Controls.Add(this.Btn_L);
+            this.panel1.Controls.Add(this.Btn_I);
+            this.panel1.Controls.Add(this.Btn_K);
+            this.panel1.Controls.Add(this.Btn_O);
+            this.panel1.Controls.Add(this.Btn_J);
+            this.panel1.Controls.Add(this.Btn_P);
+            this.panel1.Controls.Add(this.Btn_H);
+            this.panel1.Controls.Add(this.Btn_Ğ);
+            this.panel1.Controls.Add(this.Btn_G);
+            this.panel1.Controls.Add(this.Btn_Ü);
+            this.panel1.Controls.Add(this.Btn_F);
+            this.panel1.Controls.Add(this.Btn_A);
+            this.panel1.Controls.Add(this.Btn_D);
+            this.panel1.Controls.Add(this.Btn_S);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
             // Klavye2
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
-            this.Controls.Add(this.txtBaslik);
-            this.Controls.Add(this.btn_Cikis);
-            this.Controls.Add(this.btn_OK);
-            this.Controls.Add(this.txt_Yazi);
-            this.Controls.Add(this.Space);
-            this.Controls.Add(this.Nokta);
-            this.Controls.Add(this.Btn_Ç);
-            this.Controls.Add(this.Btn_Ö);
-            this.Controls.Add(this.Btn_M);
-            this.Controls.Add(this.Btn_N);
-            this.Controls.Add(this.Btn_B);
-            this.Controls.Add(this.Btn_V);
-            this.Controls.Add(this.Btn_C);
-            this.Controls.Add(this.Btn_X);
-            this.Controls.Add(this.Btn_Z);
-            this.Controls.Add(this.Btn_İ);
-            this.Controls.Add(this.Btn_Ş);
-            this.Controls.Add(this.Btn_L);
-            this.Controls.Add(this.Btn_K);
-            this.Controls.Add(this.Btn_J);
-            this.Controls.Add(this.Btn_H);
-            this.Controls.Add(this.Btn_G);
-            this.Controls.Add(this.Btn_F);
-            this.Controls.Add(this.Btn_D);
-            this.Controls.Add(this.Btn_S);
-            this.Controls.Add(this.Btn_A);
-            this.Controls.Add(this.Btn_Ü);
-            this.Controls.Add(this.Btn_Ğ);
-            this.Controls.Add(this.Btn_P);
-            this.Controls.Add(this.Btn_O);
-            this.Controls.Add(this.Btn_I);
-            this.Controls.Add(this.Btn_U);
-            this.Controls.Add(this.Btn_Y);
-            this.Controls.Add(this.Btn_T);
-            this.Controls.Add(this.Btn_R);
-            this.Controls.Add(this.Btn_E);
-            this.Controls.Add(this.Btn_W);
-            this.Controls.Add(this.Btn_Q);
-            this.Controls.Add(this.Back_Space);
-            this.Controls.Add(this.Btn_0);
-            this.Controls.Add(this.Btn_9);
-            this.Controls.Add(this.Btn_8);
-            this.Controls.Add(this.Btn_7);
-            this.Controls.Add(this.Btn_6);
-            this.Controls.Add(this.Btn_5);
-            this.Controls.Add(this.Btn_4);
-            this.Controls.Add(this.Btn_3);
-            this.Controls.Add(this.Btn_2);
-            this.Controls.Add(this.Btn_1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panel1);
             this.Name = "Klavye2";
             this.Load += new System.EventHandler(this.Klavye2_Load);
             this.Shown += new System.EventHandler(this.Klavye2_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.txt_Yazi.Properties)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -589,5 +608,7 @@
         private DevExpress.XtraEditors.SimpleButton btn_OK;
         public DevExpress.XtraEditors.TextEdit txt_Yazi;
         private System.Windows.Forms.Label txtBaslik;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

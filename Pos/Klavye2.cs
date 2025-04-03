@@ -2,6 +2,7 @@
 using Pos.Class;
 using System;
 using System.Data;
+using System.Drawing;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
@@ -12,10 +13,12 @@ namespace Pos
     {
         public string yazi = "";
 
-        public Klavye2()
+        DataTable dataTable = null;
+        public Klavye2(DataTable data=null)
         {
             InitializeComponent();
             this.BringToFront();
+            this.dataTable = data;
         }
 
         int neredenGeldim = 0;
@@ -112,6 +115,8 @@ namespace Pos
         private void Klavye2_Load(object sender, EventArgs e)
         {
             txtBaslik.Text = "";
+            flowLayoutPanel1.AutoScroll = true;
+
             if (this.Tag != null && this.Tag.ToString().Equals("FISIPTAL"))
             {
                 txtBaslik.Text = res_man.GetString("İPTAL NEDENİNİ GİRİNİZ...");
@@ -121,6 +126,39 @@ namespace Pos
             {
                 txtBaslik.Text = baslik;
             }
+
+            if (dataTable != null && dataTable.Rows.Count>0)
+            {
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    string pkodAd =row["Pkod_Ad"].ToString();
+
+                    Button btn = new Button();
+                    btn.Text = pkodAd;
+                    //btn.AutoSize = true;
+                    btn.Height = 70; // Yüksekliği manuel olarak belirle
+                    btn.Width =  105; // İsteğe bağlı: genişlik de ayarlanabilir
+                    btn.Font = new Font(btn.Font.FontFamily, btn.Font.Size, FontStyle.Bold);
+
+                    // Click olayını ata
+                    btn.Click += (s, args) =>
+                    {
+                        txt_Yazi.Text = pkodAd;
+                        setOk();
+                        //if (txt_Yazi.Text != "")
+                        //{
+                        //    txt_Yazi.Text = txt_Yazi.Text + "|" + pkodAd;
+                        //}
+                        //else
+                        //{
+                        //    txt_Yazi.Text = pkodAd;
+                        //}
+                    };
+
+                    // FlowLayoutPanel'e ekle
+                    flowLayoutPanel1.Controls.Add(btn);
+                }
+            }
         }
 
         private void Klavye2_Shown(object sender, EventArgs e)
@@ -128,6 +166,12 @@ namespace Pos
             txt_Yazi.Select();
 
             txt_Yazi.Focus();
+
+
+            if (dataTable==null || dataTable.Rows.Count==0)
+            {
+                this.Size = new Size( 960, 400);
+            }
         }
 
         private void txt_Yazi_EditValueChanged(object sender, EventArgs e)

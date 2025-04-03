@@ -3258,7 +3258,10 @@ namespace Pos
                 string neden = "";
                 if (Rsat_SiparisPr && Departman.Kodlar_YazSipNedSor)
                 {
-                    Klavye2 klv = new Klavye2();
+
+                    DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'SS%' -- ürün iptal");
+
+                    Klavye2 klv = new Klavye2(data:dataTable);
                     klv.ShowDialog();
 
                     if (klv.yazi == null)
@@ -3805,6 +3808,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             //    return;
             //}
 
+            DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'ZZ%' -- ikram");
 
             if (gridView1.RowCount > 0)
             {
@@ -3831,18 +3835,16 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                     }
                     if (Zayi_Miktar < klv1.sayi)
                     {
-                        MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
                         return;
                     }
                     Zayi_Miktar = klv1.sayi;
                 }
 
-                Klavye2 klv = new Klavye2();
+                Klavye2 klv = new Klavye2(data: dataTable);
                 klv.ShowDialog();
 
                 if (klv.yazi.Length == 0)
                 {
-                    MessageBox.Show(res_man.GetString("Hatalı Giriş..."));
                     return;
                 }
 
@@ -3885,6 +3887,8 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             //    return;
             //}
 
+            DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'II%' -- ikram");
+
 
             string neden = "";
             if (gridView1.RowCount > 0)
@@ -3914,7 +3918,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                     ikramlogmiktar = klv.sayi;
 
-                    Klavye2 klv2 = new Klavye2();
+                    Klavye2 klv2 = new Klavye2(data: dataTable);
                     klv2.ShowDialog();
 
                     if (klv2.yazi.Length == 0)
@@ -3943,7 +3947,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 if (miktar == 1)
                 {
 
-                    Klavye2 klv2 = new Klavye2();
+                    Klavye2 klv2 = new Klavye2(data: dataTable);
                     klv2.ShowDialog();
                     if (klv2.yazi.Length == 0)
                     {
