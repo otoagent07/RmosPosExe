@@ -975,6 +975,9 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     return;
                 }
+               
+
+
                 SqlConnection con = dbtools.conn;
                 if (con.State == ConnectionState.Closed) con.Open();
                 SqlCommand com = new SqlCommand();
@@ -995,11 +998,61 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                     FisPr fis = new FisPr();
                     string sonuc = fis.IptalPrNFC(Convert.ToInt32(Fisno));
                 }
+
+
+                merkezeiptalcekgonder(Fisno);
             }
             else
             {
                 MessageBox.Show(res_man.GetString("Sadece Genel Çek Raporundan Fişi İptal Edebilirsiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
+            }
+        }
+
+        public void merkezeiptalcekgonder(string Fisno)
+        {
+            try
+            {
+                if (Param.Param_SatisTabloAktif && Param.Param_SatisTabloGonderi > 0)
+                {
+
+                    DataTable dataTable = dbtools.SelectTableR($"select * from Cst_Satis_Ipt where Rsat_Fisno='{Fisno}'");
+                    if (dataTable == null || dataTable.Rows.Count == 0) return;
+
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        int departman = Convert.ToInt32(row["Rsat_Departman"].ToString());
+                        string fisno = row["Rsat_Fisno"]?.ToString() ?? "";
+                        row["Rsat_Fisno"] = departman + fisno;
+                    }
+
+
+                    Sube2Merkez a = new Sube2Merkez(); // hedef veritabanı bağlantısı
+
+                    using (SqlConnection destinationConnection = new SqlConnection(a.connstr))
+                    {
+                        destinationConnection.Open();
+
+                        using (SqlBulkCopy bulkCopy = new SqlBulkCopy(destinationConnection))
+                        {
+                            bulkCopy.DestinationTableName = "Cst_Satis_Ipt"; // hedef tablo adı
+
+                            // Kolon eşleştirmelerini belirt (eğer adlar birebirse bu adım gerekmez ama önerilir)
+                            foreach (DataColumn column in dataTable.Columns)
+                            {
+                                bulkCopy.ColumnMappings.Add(column.ColumnName, column.ColumnName);
+                            }
+
+                            // Veriyi gönder
+                            bulkCopy.WriteToServer(dataTable);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Hata loglanabilir
+                Console.WriteLine("Hata oluştu: " + ex.Message);
             }
         }
         private void btn_Detay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

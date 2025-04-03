@@ -2921,6 +2921,7 @@ namespace Pos
                 }
                 else
                 {
+                   
                     dbtools.execcmd("update Rmosmuh.dbo.Pos_User set P_Sifre ='" + txt_Kul_sifre.EditValue + "',P_Ad ='" + txt_Kul_ad.EditValue + "',P_Soyad='" + txt_Kul_soyad.EditValue + "',P_Kart='" + txt_Kul_Kart.EditValue + "',P_Kulturu = '" + cmb_Kulturu.SelectedIndex.ToString() + "', "
                         + " G_Miktarduzelt ='" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "', G_Tutarduzelt ='" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "', G_Satirsil ='" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "', "
                         + " G_Indirim_Satis ='" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', G_Hesapdokumu ='" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "', G_Odemeal ='" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "', "
