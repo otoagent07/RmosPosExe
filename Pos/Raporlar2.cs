@@ -27,65 +27,83 @@ namespace Pos
 
         private void Raporlar2_Load(object sender, EventArgs e)
         {
-            this.BringToFront();
+            var dt2 = dbtools.SelectTable("select Kodlar_Kod,Kodlar_Kod +' - '+ Kodlar_Ad AS Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Anadepo = 'False' and Kodlar_Satis = 'True' order by Kodlar_Kod");
 
-            dateEdit1.DateTime = Param.Tarih;
-            dateEdit2.DateTime = Param.Tarih;
-
-            string depSorgu = "select Kodlar_Kod,Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Satis = 1 order by Kodlar_Kod";
-            if (getSadeceDepXz())
-            {
-                depSorgu = "select Kodlar_Kod,Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Satis = 1 and Kodlar_Kod='"+Departman.Dep_Kodu+"' order by Kodlar_Kod";
-            }
-            look_TekDep.Properties.DataSource = dbtools.SelectTable(depSorgu);
-            look_TekDep.Properties.DisplayMember = "Kodlar_Ad";
-            look_TekDep.Properties.ValueMember = "Kodlar_Kod";
-
-            look_TekGarson.Properties.DataSource = dbtools.SelectTable("select P_Kod as P_Kodu,P_Ad +  ' ' + P_Soyad as AdSoyad from Rmosmuh.dbo.Pos_User order by P_Kodu");
-            look_TekGarson.Properties.DisplayMember = "AdSoyad";
-            look_TekGarson.Properties.ValueMember = "P_Kodu";
-
-            look_TekGrup.Properties.DataSource = dbtools.SelectTable("select Kodlar_Id,Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif = '09' order by  Kodlar_Anagrup + Kodlar_Kod");
-            look_TekGrup.Properties.DisplayMember = "Kodlar_Ad";
-            look_TekGrup.Properties.ValueMember = "Kodlar_Id";
-
-            cmb_DetayGrup.Properties.DataSource = dbtools.SelectTable("select Kodlar_Id,Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif = '11' order by Kodlar_Kod");
-            cmb_DetayGrup.Properties.DisplayMember = "Kodlar_Ad";
-            cmb_DetayGrup.Properties.ValueMember = "Kodlar_Id";
-
-            DataTable dtSub = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Sinif = '27' order by Pkod_Kod");
-            if (dtSub.Rows.Count > 0)
-            {
-                chkCombo_Sube.Properties.DataSource = dtSub;
-                chkCombo_Sube.Properties.DisplayMember = "Pkod_Ad";
-                chkCombo_Sube.Properties.ValueMember = "Pkod_Kod";
-            }
+            lookUpEditSubeCon.Visible = Param.merkezaktif;
+            lookUpEditSubeCon.Properties.DataSource = dt2;
+            lookUpEditSubeCon.Properties.DisplayMember = "Kodlar_Ad";
+            lookUpEditSubeCon.Properties.ValueMember = "Kodlar_Kod";
 
 
-            DataTable dataTable = new DataTable();
-            dataTable.Columns.Add("Ad");
-            dataTable.Columns.Add("Kod");
-            DataRow dataRow = dataTable.NewRow();
-            dataRow["Ad"] = "Trendyol";
-            dataRow["Kod"] = "T";
-            dataTable.Rows.Add(dataRow);
-
-            dataRow = dataTable.NewRow();
-            dataRow["Ad"] = "Yemek Sepeti";
-            dataRow["Kod"] = "Y";
-            dataTable.Rows.Add(dataRow);
-
-            dataRow = dataTable.NewRow();
-            dataRow["Ad"] = "Getir";
-            dataRow["Kod"] = "G";
-            dataTable.Rows.Add(dataRow);
-
-
-            checkedComboBoxEditOnlinePaket.Properties.DataSource = dataTable;
-            checkedComboBoxEditOnlinePaket.Properties.DisplayMember = "Ad";
-            checkedComboBoxEditOnlinePaket.Properties.ValueMember = "Kod";
+            loadyukle();
         }
+        public void loadyukle()
+        {
+            try
+            {
+                this.BringToFront();
 
+                dateEdit1.DateTime = Param.Tarih;
+                dateEdit2.DateTime = Param.Tarih;
+
+                string depSorgu = "select Kodlar_Kod,Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Satis = 1 order by Kodlar_Kod";
+                if (getSadeceDepXz())
+                {
+                    depSorgu = "select Kodlar_Kod,Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Satis = 1 and Kodlar_Kod='" + Departman.Dep_Kodu + "' order by Kodlar_Kod";
+                }
+                look_TekDep.Properties.DataSource = dbtools.SelectTable(depSorgu);
+                look_TekDep.Properties.DisplayMember = "Kodlar_Ad";
+                look_TekDep.Properties.ValueMember = "Kodlar_Kod";
+
+                look_TekGarson.Properties.DataSource = dbtools.SelectTable("select P_Kod as P_Kodu,P_Ad +  ' ' + P_Soyad as AdSoyad from Rmosmuh.dbo.Pos_User order by P_Kodu");
+                look_TekGarson.Properties.DisplayMember = "AdSoyad";
+                look_TekGarson.Properties.ValueMember = "P_Kodu";
+
+                look_TekGrup.Properties.DataSource = dbtools.SelectTable("select Kodlar_Id,Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif = '09' order by  Kodlar_Anagrup + Kodlar_Kod");
+                look_TekGrup.Properties.DisplayMember = "Kodlar_Ad";
+                look_TekGrup.Properties.ValueMember = "Kodlar_Id";
+
+                cmb_DetayGrup.Properties.DataSource = dbtools.SelectTable("select Kodlar_Id,Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif = '11' order by Kodlar_Kod");
+                cmb_DetayGrup.Properties.DisplayMember = "Kodlar_Ad";
+                cmb_DetayGrup.Properties.ValueMember = "Kodlar_Id";
+
+                DataTable dtSub = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Sinif = '27' order by Pkod_Kod");
+                if (dtSub.Rows.Count > 0)
+                {
+                    chkCombo_Sube.Properties.DataSource = dtSub;
+                    chkCombo_Sube.Properties.DisplayMember = "Pkod_Ad";
+                    chkCombo_Sube.Properties.ValueMember = "Pkod_Kod";
+                }
+
+
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("Ad");
+                dataTable.Columns.Add("Kod");
+                DataRow dataRow = dataTable.NewRow();
+                dataRow["Ad"] = "Trendyol";
+                dataRow["Kod"] = "T";
+                dataTable.Rows.Add(dataRow);
+
+                dataRow = dataTable.NewRow();
+                dataRow["Ad"] = "Yemek Sepeti";
+                dataRow["Kod"] = "Y";
+                dataTable.Rows.Add(dataRow);
+
+                dataRow = dataTable.NewRow();
+                dataRow["Ad"] = "Getir";
+                dataRow["Kod"] = "G";
+                dataTable.Rows.Add(dataRow);
+
+
+                checkedComboBoxEditOnlinePaket.Properties.DataSource = dataTable;
+                checkedComboBoxEditOnlinePaket.Properties.DisplayMember = "Ad";
+                checkedComboBoxEditOnlinePaket.Properties.ValueMember = "Kod";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void chk_TekDep_CheckedChanged(object sender, EventArgs e)
         {
             look_TekDep.Properties.ReadOnly = !chk_TekDep.Checked;
@@ -623,6 +641,53 @@ order by (Miktar) desc";
         private void checkEditOnlinePaket_CheckedChanged(object sender, EventArgs e)
         {
             checkedComboBoxEditOnlinePaket.Properties.ReadOnly = !checkEditOnlinePaket.Checked;
+        }
+
+        private void lookUpEditSubeCon_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string q1 = $@"select top 1
+                                       Pkod_SubeMac as [SubeMac],
+                                        Pkod_Server as [Server],
+                                        Pkod_Database as [Database],
+                                        Pkod_User as [User],
+                                        Pkod_Password as [Password],Pkod_Kod
+                                        from pos_kodlar
+                                        where
+                                        Pkod_Sinif = 27
+                                        and
+                                        Pkod_MerkezSube = 'S' and Pkod_Kod='{lookUpEditSubeCon.EditValue.ToString()}'";
+
+                dbtools.coneskiyedon();
+
+                DataTable dt = dbtools.SelectTableR(q1);
+
+                if (dt == null || dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Dep kod şube tanımda yok");
+                    return;
+                }
+                var server = dt.Rows[0]["Server"].ToString();
+                var database = dt.Rows[0]["Database"].ToString();
+                var users = dt.Rows[0]["User"].ToString();
+                var pwd = dt.Rows[0]["Password"].ToString();
+
+                dbtools.conYenile(server, database, users, pwd);
+                Departman.Dep_Param_Yukle();
+                Param.Param_Yukle();
+                FisPr.Param_Yukle();
+                loadyukle();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Raporlar2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            dbtools.coneskiyedon();
         }
     }
 }

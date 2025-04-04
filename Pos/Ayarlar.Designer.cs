@@ -276,6 +276,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.merkezaktif = new DevExpress.XtraEditors.CheckEdit();
             this.sepetaktif = new DevExpress.XtraEditors.CheckEdit();
             this.paketotohesapkapat = new DevExpress.XtraEditors.CheckEdit();
             this.hesapFisQrFisno = new DevExpress.XtraEditors.CheckEdit();
@@ -993,6 +994,8 @@
             this.textEdit72 = new DevExpress.XtraEditors.TextEdit();
             this.look_HH_Departman5 = new DevExpress.XtraEditors.LookUpEdit();
             this.tab_Kullanici_Ayarlari = new DevExpress.XtraTab.XtraTabPage();
+            this.labelSubeCon = new DevExpress.XtraEditors.TextEdit();
+            this.lookUpEditSubeCon = new DevExpress.XtraEditors.LookUpEdit();
             this.postema = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit194 = new DevExpress.XtraEditors.TextEdit();
@@ -1286,9 +1289,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.merkezaktif = new DevExpress.XtraEditors.CheckEdit();
-            this.labelSubeCon = new DevExpress.XtraEditors.TextEdit();
-            this.lookUpEditSubeCon = new DevExpress.XtraEditors.LookUpEdit();
+            this.otoDirekSatis = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1477,6 +1478,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.merkezaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sepetaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paketotohesapkapat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hesapFisQrFisno.Properties)).BeginInit();
@@ -1933,6 +1935,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit72.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_HH_Departman5.Properties)).BeginInit();
             this.tab_Kullanici_Ayarlari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postema.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit194.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_dil.Properties)).BeginInit();
@@ -2158,9 +2162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.merkezaktif.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoDirekSatis.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4228,6 +4230,12 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
             this.xtraTabPage8.Name = "xtraTabPage8";
+            // 
+            // merkezaktif
+            // 
+            resources.ApplyResources(this.merkezaktif, "merkezaktif");
+            this.merkezaktif.Name = "merkezaktif";
+            this.merkezaktif.Properties.Caption = resources.GetString("merkezaktif.Properties.Caption");
             // 
             // sepetaktif
             // 
@@ -10675,6 +10683,31 @@
             resources.ApplyResources(this.tab_Kullanici_Ayarlari, "tab_Kullanici_Ayarlari");
             this.tab_Kullanici_Ayarlari.Name = "tab_Kullanici_Ayarlari";
             // 
+            // labelSubeCon
+            // 
+            resources.ApplyResources(this.labelSubeCon, "labelSubeCon");
+            this.labelSubeCon.Name = "labelSubeCon";
+            this.labelSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.labelSubeCon.Properties.ReadOnly = true;
+            this.labelSubeCon.TabStop = false;
+            // 
+            // lookUpEditSubeCon
+            // 
+            this.lookUpEditSubeCon.EnterMoveNextControl = true;
+            resources.ApplyResources(this.lookUpEditSubeCon, "lookUpEditSubeCon");
+            this.lookUpEditSubeCon.Name = "lookUpEditSubeCon";
+            this.lookUpEditSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.lookUpEditSubeCon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEditSubeCon.Properties.Buttons"))))});
+            this.lookUpEditSubeCon.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
+            this.lookUpEditSubeCon.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditSubeCon.Properties.Columns"), resources.GetString("lookUpEditSubeCon.Properties.Columns1"))});
+            this.lookUpEditSubeCon.Properties.DropDownRows = 10;
+            this.lookUpEditSubeCon.Properties.NullText = resources.GetString("lookUpEditSubeCon.Properties.NullText");
+            this.lookUpEditSubeCon.Properties.ShowFooter = false;
+            this.lookUpEditSubeCon.Properties.ShowHeader = false;
+            this.lookUpEditSubeCon.EditValueChanged += new System.EventHandler(this.lookUpEditSubeCon_EditValueChanged);
+            // 
             // postema
             // 
             resources.ApplyResources(this.postema, "postema");
@@ -10825,6 +10858,7 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.otoDirekSatis);
             this.xtraTabPage1.Controls.Add(this.tutarduzeltplus);
             this.xtraTabPage1.Controls.Add(this.ingenicoaktif);
             this.xtraTabPage1.Controls.Add(this.urunIade);
@@ -13026,36 +13060,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // merkezaktif
+            // otoDirekSatis
             // 
-            resources.ApplyResources(this.merkezaktif, "merkezaktif");
-            this.merkezaktif.Name = "merkezaktif";
-            this.merkezaktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
-            // labelSubeCon
-            // 
-            resources.ApplyResources(this.labelSubeCon, "labelSubeCon");
-            this.labelSubeCon.Name = "labelSubeCon";
-            this.labelSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.labelSubeCon.Properties.ReadOnly = true;
-            this.labelSubeCon.TabStop = false;
-            // 
-            // lookUpEditSubeCon
-            // 
-            this.lookUpEditSubeCon.EnterMoveNextControl = true;
-            resources.ApplyResources(this.lookUpEditSubeCon, "lookUpEditSubeCon");
-            this.lookUpEditSubeCon.Name = "lookUpEditSubeCon";
-            this.lookUpEditSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.lookUpEditSubeCon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit2.Properties.Buttons"))))});
-            this.lookUpEditSubeCon.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
-            this.lookUpEditSubeCon.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit2.Properties.Columns"), resources.GetString("lookUpEdit2.Properties.Columns1"))});
-            this.lookUpEditSubeCon.Properties.DropDownRows = 10;
-            this.lookUpEditSubeCon.Properties.NullText = resources.GetString("lookUpEdit2.Properties.NullText");
-            this.lookUpEditSubeCon.Properties.ShowFooter = false;
-            this.lookUpEditSubeCon.Properties.ShowHeader = false;
-            this.lookUpEditSubeCon.EditValueChanged += new System.EventHandler(this.lookUpEditSubeCon_EditValueChanged);
+            resources.ApplyResources(this.otoDirekSatis, "otoDirekSatis");
+            this.otoDirekSatis.Name = "otoDirekSatis";
+            this.otoDirekSatis.Properties.Appearance.Options.UseFont = true;
+            this.otoDirekSatis.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -13064,6 +13074,7 @@
             this.Controls.Add(this.splitContainerControl1);
             this.KeyPreview = true;
             this.Name = "Ayarlar";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Ayarlar_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Ayarlar_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
@@ -13257,6 +13268,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.merkezaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sepetaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paketotohesapkapat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hesapFisQrFisno.Properties)).EndInit();
@@ -13733,6 +13745,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_HH_Departman5.Properties)).EndInit();
             this.tab_Kullanici_Ayarlari.ResumeLayout(false);
             this.tab_Kullanici_Ayarlari.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postema.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit194.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_dil.Properties)).EndInit();
@@ -13966,9 +13980,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.merkezaktif.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.otoDirekSatis.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15234,5 +15246,6 @@
         private DevExpress.XtraEditors.CheckEdit merkezaktif;
         private DevExpress.XtraEditors.TextEdit labelSubeCon;
         private DevExpress.XtraEditors.LookUpEdit lookUpEditSubeCon;
+        private DevExpress.XtraEditors.CheckEdit otoDirekSatis;
     }
 }

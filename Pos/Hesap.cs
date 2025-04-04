@@ -1463,10 +1463,13 @@ namespace Pos
             ind.ShowDialog();
 
 
+            DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'IN%' -- indirim");
+
+
             string neden = "";
             if (Departman.Kodlar_YazSipNedSor && ind.cikisyapti == false)
             {
-                Klavye2 klv = new Klavye2();
+                Klavye2 klv = new Klavye2(data: dataTable);
                 klv.ShowDialog();
                 neden = klv.yazi == null ? "" : klv.yazi;
             }

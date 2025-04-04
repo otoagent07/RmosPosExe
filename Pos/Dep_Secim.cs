@@ -56,6 +56,12 @@ namespace Pos
             }
 
             this.Close();
+            if (User.otoDirekSatis)
+            {
+                Program.main.direktsatisac();
+            }
+
+
         }
     }
 }

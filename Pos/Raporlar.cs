@@ -29,49 +29,74 @@ namespace Pos
         {
             InitializeComponent();
         }
+
+        public bool merkezAktifmi = false;
         private void Raporlar_Load(object sender, EventArgs e)
         {
-            this.BringToFront();
-            //CultureInfo culture = CultureInfo.CreateSpecificCulture("en-EN");
-            //System.Threading.Thread.CurrentThread.CurrentCulture = culture;
-            //System.Threading.Thread.CurrentThread.CurrentUICulture = culture;     
-            // Set this culture as the default culture for all threads in this application. 
-            //// Note: The following properties are supported in the .NET Framework 4.5+
-            //CultureInfo.DefaultThreadCurrentCulture = culture;
-            //CultureInfo.DefaultThreadCurrentUICulture = culture;
-            dateTarih1.DateTime = Param.Tarih.Date;//.AddYears(-2);
-            dateTarih2.DateTime = Param.Tarih.Date;
-            DataTable Fis_Tip = new DataTable();
-            Fis_Tip.Columns.Add("Kod", typeof(string));
-            Fis_Tip.Columns.Add("Ad", typeof(string));
-            Fis_Tip.Rows.Add("S", "Satis");
-            Fis_Tip.Rows.Add("O", "Odenmez");
-            Fis_Tip.Rows.Add("P", "Ikram");
-            Fis_Tip.Rows.Add("V", "Hersey Dahil");
-            Fis_Tip.Rows.Add("N", "Fiyat Analiz");
-            cmb_Fistipi.Properties.DataSource = Fis_Tip;
-            cmb_Fistipi.Properties.DisplayMember = "Ad";
-            cmb_Fistipi.Properties.ValueMember = "Kod";
-            cmb_Fistipi.SetEditValue("S,O,P,V,N");
-            string filter = "";
-            if (User.P_Departman != "")
+            var dt2 = dbtools.SelectTable("select Kodlar_Kod,Kodlar_Kod +' - '+ Kodlar_Ad AS Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Anadepo = 'False' and Kodlar_Satis = 'True' order by Kodlar_Kod");
+
+            lookUpEditSubeCon.Visible = Param.merkezaktif;
+            lookUpEditSubeCon.Properties.DataSource = dt2;
+            lookUpEditSubeCon.Properties.DisplayMember = "Kodlar_Ad";
+            lookUpEditSubeCon.Properties.ValueMember = "Kodlar_Kod";
+
+            merkezAktifmi = Param.merkezaktif;
+            loadyukle();
+
+            //gridyenile();
+        }
+
+        public void loadyukle()
+        {
+            try
             {
-                filter = " AND Kodlar_Kod IN ('" + User.P_Departman.Replace(", ", "','") + "')";
-            }
-            DataTable dt_Dep = dbtools.SelectTable("select Kodlar_Kod, Kodlar_Ad from Stok_Kodlar with(nolock) where Kodlar_Sinif = '01' and Kodlar_Anadepo = 'False' and Kodlar_Satis = 1 " + filter + " order by Kodlar_Kod");
-            cmb_Departman.Properties.DataSource = dt_Dep;
-            cmb_Departman.Properties.DisplayMember = "Kodlar_Ad";
-            cmb_Departman.Properties.ValueMember = "Kodlar_Kod";
-            cmb_Departman.SetEditValue(Departman.Dep_Kodu);
-            DataTable dt_Ana = dbtools.SelectTable("SELECT Kodlar_Id ,Kodlar_Kod, Kodlar_Ad, Kodlar_Sinif  FROM Stok_Kodlar with(nolock) where Kodlar_Sinif = '08' order by Kodlar_Kod");
-            cmb_Anagrup.Properties.DataSource = dt_Ana;
-            cmb_Anagrup.Properties.DisplayMember = "Kodlar_Ad";
-            cmb_Anagrup.Properties.ValueMember = "Kodlar_Kod";
-            DataTable dt_Konum = dbtools.SelectTable("select Pkod_Id,Kodlar_Ad + ' - ' + Pkod_Ad as Ad from Pos_Kodlar left join Stok_Kodlar on Kodlar_Kod = Pkod_Kod and Kodlar_Sinif = '01' where pkod_sinif = '14'");
-            cmb_Konum.Properties.DataSource = dt_Konum;
-            cmb_Konum.Properties.DisplayMember = "Ad";
-            cmb_Konum.Properties.ValueMember = "Pkod_Id";
-            DataTable dt_Garson = dbtools.SelectTable(@"select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad,
+                this.BringToFront();
+                //CultureInfo culture = CultureInfo.CreateSpecificCulture("en-EN");
+                //System.Threading.Thread.CurrentThread.CurrentCulture = culture;
+                //System.Threading.Thread.CurrentThread.CurrentUICulture = culture;     
+                // Set this culture as the default culture for all threads in this application. 
+                //// Note: The following properties are supported in the .NET Framework 4.5+
+                //CultureInfo.DefaultThreadCurrentCulture = culture;
+                //CultureInfo.DefaultThreadCurrentUICulture = culture;
+                dateTarih1.DateTime = Param.Tarih.Date;//.AddYears(-2);
+                dateTarih2.DateTime = Param.Tarih.Date;
+                DataTable Fis_Tip = new DataTable();
+                Fis_Tip.Columns.Add("Kod", typeof(string));
+                Fis_Tip.Columns.Add("Ad", typeof(string));
+                Fis_Tip.Rows.Add("S", "Satis");
+                Fis_Tip.Rows.Add("O", "Odenmez");
+                Fis_Tip.Rows.Add("P", "Ikram");
+                Fis_Tip.Rows.Add("V", "Hersey Dahil");
+                Fis_Tip.Rows.Add("N", "Fiyat Analiz");
+                cmb_Fistipi.Properties.DataSource = Fis_Tip;
+                cmb_Fistipi.Properties.DisplayMember = "Ad";
+                cmb_Fistipi.Properties.ValueMember = "Kod";
+                cmb_Fistipi.SetEditValue("S,O,P,V,N");
+                string filter = "";
+                if (User.P_Departman != "" && merkezAktifmi==false)
+                {
+                    filter = " AND Kodlar_Kod IN ('" + User.P_Departman.Replace(", ", "','") + "')";
+                }
+                string q1 = "select Kodlar_Kod, Kodlar_Ad from Stok_Kodlar with(nolock) where Kodlar_Sinif = '01' and Kodlar_Anadepo = 'False' and Kodlar_Satis = 1 " + filter + " order by Kodlar_Kod";
+                DataTable dt_Dep = dbtools.SelectTable(q1);
+                cmb_Departman.Properties.DataSource = dt_Dep;
+                cmb_Departman.Properties.DisplayMember = "Kodlar_Ad";
+                cmb_Departman.Properties.ValueMember = "Kodlar_Kod";
+                //cmb_Departman.SetEditValue(Departman.Dep_Kodu);
+
+                var allValues = string.Join(",", dt_Dep.AsEnumerable().Select(row => row["Kodlar_Kod"].ToString()));
+                cmb_Departman.SetEditValue(allValues);
+
+
+                DataTable dt_Ana = dbtools.SelectTable("SELECT Kodlar_Id ,Kodlar_Kod, Kodlar_Ad, Kodlar_Sinif  FROM Stok_Kodlar with(nolock) where Kodlar_Sinif = '08' order by Kodlar_Kod");
+                cmb_Anagrup.Properties.DataSource = dt_Ana;
+                cmb_Anagrup.Properties.DisplayMember = "Kodlar_Ad";
+                cmb_Anagrup.Properties.ValueMember = "Kodlar_Kod";
+                DataTable dt_Konum = dbtools.SelectTable("select Pkod_Id,Kodlar_Ad + ' - ' + Pkod_Ad as Ad from Pos_Kodlar left join Stok_Kodlar on Kodlar_Kod = Pkod_Kod and Kodlar_Sinif = '01' where pkod_sinif = '14'");
+                cmb_Konum.Properties.DataSource = dt_Konum;
+                cmb_Konum.Properties.DisplayMember = "Ad";
+                cmb_Konum.Properties.ValueMember = "Pkod_Id";
+                DataTable dt_Garson = dbtools.SelectTable(@"select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad,
 CASE 
         WHEN P_Kulturu = 3 THEN 'YÖNETİCİ'
         WHEN P_Kulturu = 0 THEN 'KASİYER'
@@ -87,33 +112,37 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
         WHEN P_Kulturu = 2 THEN 4
         ELSE 5
     END;");
-            chk_GarsonKasiyer.Properties.DataSource = dt_Garson;
-            chk_GarsonKasiyer.Properties.DisplayMember = "AdSoyad";
-            chk_GarsonKasiyer.Properties.ValueMember = "P_Kod";
+                chk_GarsonKasiyer.Properties.DataSource = dt_Garson;
+                chk_GarsonKasiyer.Properties.DisplayMember = "AdSoyad";
+                chk_GarsonKasiyer.Properties.ValueMember = "P_Kod";
 
 
-            if (Departman.Kodlar_PRSor)
-            {
-                DataTable dt_PR = dbtools.SelectTable("select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad from RmosMuh.dbo.Pos_User where P_Kulturu = 4");
-                if (dt_PR.Rows.Count > 0)
+                if (Departman.Kodlar_PRSor)
                 {
-                    chk_PR.Properties.DataSource = dt_PR;
-                    chk_PR.Properties.DisplayMember = "AdSoyad";
-                    chk_PR.Properties.ValueMember = "P_Kod";
+                    DataTable dt_PR = dbtools.SelectTable("select P_Kod,(P_Ad + ' ' + P_Soyad) as AdSoyad from RmosMuh.dbo.Pos_User where P_Kulturu = 4");
+                    if (dt_PR.Rows.Count > 0)
+                    {
+                        chk_PR.Properties.DataSource = dt_PR;
+                        chk_PR.Properties.DisplayMember = "AdSoyad";
+                        chk_PR.Properties.ValueMember = "P_Kod";
+                    }
                 }
+                chk_Ana.Checked = false;
+                chk_Alt.Checked = false;
+                btn_Detay.Visibility = User.R_Detay == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+                btn_XZ.Visibility = User.R_XZ == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+                btn_Mahsupkes.Visibility = User.R_Mahsupkes == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+                btn_Fisiptal.Visibility = User.R_Fisiptal == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+                btn_MasaGeri.Visibility = Param.RaporMasa_Geri == false ? DevExpress.XtraBars.BarItemVisibility.Never :
+                                                        User.R_MasaGeri == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+                btn_TopluIsleme.Visibility = User.R_TopluIsle == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+                btn_OdemeTipi.Visibility = User.Pos_OdemeDegistir == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+                raporyenile();
             }
-            chk_Ana.Checked = false;
-            chk_Alt.Checked = false;
-            btn_Detay.Visibility = User.R_Detay == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_XZ.Visibility = User.R_XZ == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_Mahsupkes.Visibility = User.R_Mahsupkes == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_Fisiptal.Visibility = User.R_Fisiptal == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_MasaGeri.Visibility = Param.RaporMasa_Geri == false ? DevExpress.XtraBars.BarItemVisibility.Never :
-                                                    User.R_MasaGeri == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_TopluIsleme.Visibility = User.R_TopluIsle == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
-            btn_OdemeTipi.Visibility = User.Pos_OdemeDegistir == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
-            raporyenile();
-            //gridyenile();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void cmb_Anagrup_EditValueChanged(object sender, EventArgs e)
         {
@@ -1505,6 +1534,8 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
             this.Close();
+            dbtools.coneskiyedon();
+
         }
         private void chk_Detay_CheckedChanged(object sender, EventArgs e)
         {
@@ -1854,6 +1885,49 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
         private void btnMuhExcel_Click(object sender, EventArgs e)
         {
             rapor.ShowPreview();
+        }
+
+        private void lookUpEditSubeCon_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string q1 = $@"select top 1
+                                       Pkod_SubeMac as [SubeMac],
+                                        Pkod_Server as [Server],
+                                        Pkod_Database as [Database],
+                                        Pkod_User as [User],
+                                        Pkod_Password as [Password],Pkod_Kod
+                                        from pos_kodlar
+                                        where
+                                        Pkod_Sinif = 27
+                                        and
+                                        Pkod_MerkezSube = 'S' and Pkod_Kod='{lookUpEditSubeCon.EditValue.ToString()}'";
+
+                dbtools.coneskiyedon();
+
+                DataTable dt = dbtools.SelectTableR(q1);
+
+                if (dt == null || dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Dep kod şube tanımda yok");
+                    return;
+                }
+                var server = dt.Rows[0]["Server"].ToString();
+                var database = dt.Rows[0]["Database"].ToString();
+                var users = dt.Rows[0]["User"].ToString();
+                var pwd = dt.Rows[0]["Password"].ToString();
+
+                dbtools.conYenile(server, database, users, pwd);
+                Departman.Dep_Param_Yukle();
+                Param.Param_Yukle();
+                FisPr.Param_Yukle();
+                User.Yetki_Yukle();
+                loadyukle();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

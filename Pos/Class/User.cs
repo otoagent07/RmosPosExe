@@ -51,6 +51,7 @@ namespace Pos.Class
         public static bool A_Parametre { get; set; }
         public static bool A_Print { get; set; }
         public static bool A_Odeme { get; set; }
+        public static bool otoDirekSatis { get; set; }
         public static bool A_Entegre { get; set; }
         public static bool A_Masa { get; set; }
         public static bool A_Cari { get; set; }
@@ -215,6 +216,7 @@ namespace Pos.Class
                     + ", ISNULL(Pos_KartfIndirimAktif,0) as Pos_KartfIndirimAktif "
                     + ", ISNULL(Pos_ServisPayiDuzelt,0) as Pos_ServisPayiDuzelt "
                     + ", ISNULL(urunIade,0) as urunIade "
+                    + ", ISNULL(otoDirekSatis,0) as otoDirekSatis "
                     + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + P_Kod + "'");
 
             if (dt.Rows.Count > 0)
@@ -334,9 +336,10 @@ namespace Pos.Class
                 U_BackUser = Convert.ToString(dt.Rows[0]["U_BackUser"]);
                 Pos_KartfIndirimAktif = Convert.ToBoolean(dt.Rows[0]["Pos_KartfIndirimAktif"]);
                 Pos_ServisPayiDuzelt = Convert.ToBoolean(dt.Rows[0]["Pos_ServisPayiDuzelt"]);
-                
+
                 //MasaTakip_Paket = Convert.ToBoolean(dt.Rows[0]["MasaTakip_Paket"]);
 
+                otoDirekSatis = Convert.ToBoolean(dt.Rows[0]["otoDirekSatis"]);
 
             }
 

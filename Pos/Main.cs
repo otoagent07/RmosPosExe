@@ -414,7 +414,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.85";
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.86";
 
 
 
@@ -537,6 +537,7 @@ namespace Pos
 
                 UserLookAndFeel.Default.SetSkinStyle(User.postema);
 
+                btnSifreDegis.Visible = Param.merkezaktif;
             }
             catch (Exception ex)
             {
@@ -1106,6 +1107,11 @@ namespace Pos
 
         private void btnDirekSatis_Click(object sender, EventArgs e)
         {
+            direktsatisac();
+        }
+
+        public void direktsatisac()
+        {
             Satis sat = new Satis();
             sat.Masa_No = User.P_Sabit_Masa;
             sat.Tag = "D";
@@ -1118,7 +1124,6 @@ namespace Pos
             }
             Main.a.Listele(0);
         }
-
         private void btnRaporlar_Click(object sender, EventArgs e)
         {
             //Sube2Merkez a = new Sube2Merkez();
@@ -1133,7 +1138,6 @@ namespace Pos
                 groupControl4.Visible = true;
                 Anlik();
             }
-
 
         }
 
@@ -1396,6 +1400,10 @@ namespace Pos
         {
             genelAyarlar = new Ayarlar();
             genelAyarlar.ShowDialog();
+
+            dbtools.coneskiyedon();
+
+           
         }
 
         private void bar_yemekSepeti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -1414,7 +1422,7 @@ namespace Pos
         private void timer_Sube2Merkez_Tick(object sender, EventArgs e)
         {
             SubeSaniye++;
-            if (SubeSaniye == (Param.Param_SatisTabloGonderi * 5))
+            if (SubeSaniye == (Param.Param_SatisTabloGonderi * 60))
             {
                 timer_Sube2Merkez.Enabled = false;
                 Sube2Merkez a = new Sube2Merkez();
@@ -1683,6 +1691,7 @@ YS_Panel a = new YS_Panel();
                 }
 
 
+                
                 // receteAc("asdsad","adsasd",(decimal)65.22);
             }
             catch (Exception ex)

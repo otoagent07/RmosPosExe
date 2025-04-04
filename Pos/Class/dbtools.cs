@@ -29,12 +29,19 @@ namespace Pos.Class
 
 
 
-        public static void conYenile()
+        public static void conYenile(string server, string database, string users, string pwd)
         {
-            connstr = "Data Source='" + server + "';Initial Catalog=" + database + "; Persist Security Info=True;uid='" + users + "'; pwd='" + pwd + "'";
-            conn = new SqlConnection(connstr);
+            string conyeni = "Data Source='" + server + "';Initial Catalog=" + database + "; Persist Security Info=True;uid='" + users + "'; pwd='" + pwd + "'";
+            conn = new SqlConnection(conyeni);
         }
 
+        public static void coneskiyedon()
+        {
+            conn = new SqlConnection(connstr);
+            Departman.Dep_Param_Yukle();
+            Param.Param_Yukle();
+            FisPr.Param_Yukle();
+        }
 
         public static string MyClass = "dbtools";
         public static bool execcmd(String cmds)

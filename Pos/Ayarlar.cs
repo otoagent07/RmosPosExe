@@ -152,6 +152,14 @@ namespace Pos
         }
         private void Ayarlar_Load(object sender, EventArgs e)
         {
+            dt2 = dbtools.SelectTable("select Kodlar_Kod,Kodlar_Kod +' - '+ Kodlar_Ad AS Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Anadepo = 'False' and Kodlar_Satis = 'True' order by Kodlar_Kod");
+
+            lookUpEditSubeCon.Visible = Param.merkezaktif;
+            lookUpEditSubeCon.Properties.DataSource = dt2;
+            lookUpEditSubeCon.Properties.DisplayMember = "Kodlar_Ad";
+            lookUpEditSubeCon.Properties.ValueMember = "Kodlar_Kod";
+
+
             loadyukle();
         }
 
@@ -235,12 +243,7 @@ namespace Pos
             lookUpOtoIndirimDep.Properties.ValueMember = "Kodlar_Kod";
 
             labelSubeCon.Visible = Param.merkezaktif;
-            lookUpEditSubeCon.Visible = Param.merkezaktif;
-
-
-            lookUpEditSubeCon.Properties.DataSource = dt2;
-            lookUpEditSubeCon.Properties.DisplayMember = "Kodlar_Ad";
-            lookUpEditSubeCon.Properties.ValueMember = "Kodlar_Kod";
+            
 
 
             MyGridDoldurAyarlar();
@@ -2902,7 +2905,7 @@ namespace Pos
                         + " G_Zayi,G_Ikram,M_KisiSayisi,R_MasaGeri,M_SiparisTekrar,Pda_HesapDok,H_HizliSatis,R_TopluIsle,And_HesapDokum,And_HesapOdeme,And_MalzTransfer,S_Sp_Sil,ExtraFolio, "
                         + " And_Yarim,And_Tam,And_Bucuk,And_Duble,Pos_SubeTrf,Pos_AdisyonPr,Pos_OdemeDegistir,And_SatisSiparisBtn,Pos_ArtiEksi_Aktif,Pos_MasaAnlikDurum,Pos_MasaUrunSil,Pos_IWERep,Pos_KartF_CheckOut,Pos_SatirSilYetkili,Pos_MasaDirekS,Pos_MasaPaketS, "
                         + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman,Pos_KartfIndirimAktif,Pos_ServisPayiDuzelt,Pos_OdenmezIkramPasif," +
-                        "urunIade,ingenicoaktif,tutarduzeltplus,postema) VALUES( "
+                        "urunIade,ingenicoaktif,tutarduzeltplus,postema,otoDirekSatis) VALUES( "
                         + " '" + txt_Kul_kod.Text + "','" + txt_Kul_sifre.EditValue + "','" + txt_Kul_ad.EditValue + "','" + txt_Kul_soyad.EditValue + "','" + txt_Kul_Kart.EditValue + "','" + cmb_Kulturu.SelectedIndex.ToString() + "', "
                         + " '" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', "
                         + " '" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "','" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "','" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', "
@@ -2931,7 +2934,8 @@ namespace Pos
                         + " '" + Pos_AdisyonPr.Checked + "','" + chk_OdemeTipi.Checked + "','" + And_SatisSiparisBtn.Checked + "','" + Pos_ArtiEksi_Aktif.Checked + "','" + Pos_MasaAnlikDurum.Checked + "','" + Pos_MasaUrunSil.Checked + "','" + Pos_IWERep.Checked + "','" + Pos_KartF_CheckOut.Checked + "','" + Pos_SatirSilYetkili.Checked + "', "
                         + " '" + Pos_MasaDirekS.Checked + "','" + Pos_MasaPaketS.Checked + "','" + Pos_YS_YetkiReddet.Checked + "','" + Pos_YarimDubleAlan.Checked + "','" + Pos_ReceteTanimlama.Checked + "','" + Pos_FixMenu.Checked + "', "
                         + " '" + Pos_HesapArti.Checked + "','" + User_AP.Checked + "','" + Pos_OdaKontrol.Checked + "','" + Pos_HesapFisIptal.Checked + "','" + Pos_KartTanimSil.Checked + "','" + backUser + "','" + chk_K_KasaRapor.Checked + "','" + Pos_KartTanimDuzelt.Checked + "','" + Pos_KartTanimTransfer.Checked + "','" + Pos_KartTanimBakiyeTransfer.Checked + "','" + dil + "','" + Pos_Eksileme.Checked + "','" + Pos_XZdepartman.Checked + "','" + Pos_KartfIndirimAktif.Checked + "','" + Pos_ServisPayiDuzelt.Checked + "','" + Pos_OdenmezIkramPasif.Checked 
-                        + "','" + urunIade.Checked + "','" + ingenicoaktif.Checked + "','" + tutarduzeltplus.Checked + "' ,'" + postema.EditValue + "' " +
+                        + "','" + urunIade.Checked + "','" + ingenicoaktif.Checked + "','" + tutarduzeltplus.Checked + "' ,'" + postema.EditValue + "'" +
+                        ",'" + otoDirekSatis.Checked + "' " +
 
 
                         ") ");
@@ -2985,6 +2989,8 @@ namespace Pos
                         + "',ingenicoaktif = '" + ingenicoaktif.Checked + "' "
                         + ",tutarduzeltplus = '" + tutarduzeltplus.Checked + "' "
                         + ",postema = '" + postema.EditValue + "' "
+                        + ",otoDirekSatis = '" + otoDirekSatis.Checked + "' "
+
                         + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
 
 
@@ -3068,7 +3074,7 @@ namespace Pos
                         + " ISNULL(Pos_MasaAnlikDurum,0) as Pos_MasaAnlikDurum, ISNULL(Pos_ArtiEksi_Aktif,0) as Pos_ArtiEksi_Aktif, ISNULL(Pos_MasaUrunSil,0) as Pos_MasaUrunSil,ISNULL(Pos_IWERep,0) as Pos_IWERep, ISNULL(Pos_KartF_CheckOut,0) as Pos_KartF_CheckOut, ISNULL(Pos_SatirSilYetkili,0) as Pos_SatirSilYetkili, "
                         + " ISNULL(Pos_MasaPaketS,0) as Pos_MasaPaketS,ISNULL(Pos_MasaDirekS,0) as Pos_MasaDirekS, ISNULL(Pos_YS_YetkiReddet,0) as Pos_YS_YetkiReddet, ISNULL(Pos_YarimDubleAlan,1) as Pos_YarimDubleAlan, ISNULL(Pos_ReceteTanimlama,1) as Pos_ReceteTanimlama,  "
                         + " ISNULL(Pos_FixMenu,0) as Pos_FixMenu, ISNULL(Pos_HesapFisIptal,0) as Pos_HesapFisIptal, ISNULL(Pos_KartTanimSil,0) as Pos_KartTanimSil,ISNULL(Pos_HesapArti,0) as Pos_HesapArti, ISNULL(User_AP,1) as User_AP,U_BackUser,ISNULL(chk_K_KasaRapor,0) as chk_K_KasaRapor,ISNULL(Pos_KartTanimDuzelt,0) as Pos_KartTanimDuzelt,ISNULL(Pos_KartTanimTransfer,0) as Pos_KartTanimTransfer,ISNULL(Pos_KartTanimBakiyeTransfer,0) as Pos_KartTanimBakiyeTransfer,isnull(Pos_dil,'tr-TR') as Pos_dil, ISNULL(Pos_Eksileme,0) as Pos_Eksileme, ISNULL(Pos_XZdepartman,0) as Pos_XZdepartman, ISNULL(Pos_KartfIndirimAktif,0) as Pos_KartfIndirimAktif, ISNULL(Pos_ServisPayiDuzelt,0) as Pos_ServisPayiDuzelt, ISNULL(Pos_OdenmezIkramPasif,0) as Pos_OdenmezIkramPasif" +
-                        ",ISNULL(urunIade,0) as urunIade,ISNULL(ingenicoaktif,0) as ingenicoaktif,ISNULL(tutarduzeltplus,0) as tutarduzeltplus,ISNULL(postema,'Money Twins') as postema"
+                        ",ISNULL(urunIade,0) as urunIade,ISNULL(ingenicoaktif,0) as ingenicoaktif,ISNULL(tutarduzeltplus,0) as tutarduzeltplus,ISNULL(postema,'Money Twins') as postema,ISNULL(otoDirekSatis,0) as otoDirekSatis"
                         + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "' " + Filtre + " ";
                 DataTable dt = dbtools.SelectTable(ss);
 
@@ -3224,6 +3230,7 @@ namespace Pos
                     tutarduzeltplus.Checked = Convert.ToBoolean(dt.Rows[0]["tutarduzeltplus"]);
                     postema.EditValue = Convert.ToString(dt.Rows[0]["postema"]);
 
+                    otoDirekSatis.Checked = Convert.ToBoolean(dt.Rows[0]["otoDirekSatis"]);
 
 
 
@@ -3442,6 +3449,7 @@ namespace Pos
             urunIade.Checked = false;
             ingenicoaktif.Checked = false;
             tutarduzeltplus.Checked = false;
+            otoDirekSatis.Checked = false;
 
         }
 
@@ -3597,6 +3605,7 @@ namespace Pos
             urunIade.Checked = true;
             ingenicoaktif.Checked = true;
             tutarduzeltplus.Checked = true;
+            otoDirekSatis.Checked = true;
             //Pos_FixMenu.Checked = true;
             //Pos_HesapArti.Checked = true;
 
@@ -3628,7 +3637,7 @@ namespace Pos
             }
 
             txt_Kul_kod.Properties.Items.Clear();
-            DataTable dt = dbtools.SelectTable("select P_Kod,P_Ad +' '+P_Soyad as P_Ad from Rmosmuh.dbo.Pos_User with(nolock) " + filtre + " order by P_Kod");
+            DataTable dt = dbtools.SelectTableR("select P_Kod,P_Ad +' '+P_Soyad as P_Ad from Rmosmuh.dbo.Pos_User  " + filtre + " order by P_Kod");
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 txt_Kul_kod.Properties.Items.Add(dt.Rows[i]["P_Kod"]);
@@ -6053,6 +6062,11 @@ Select InstanceNames from @GetInstances ";
                     break;
 
             }
+
+            if (pageText!= "Kullanıcı Ayarları" && pageText!= "Home")
+            {
+                dbtools.coneskiyedon();
+            }
         }
 
         private void xtraTabControl5_SelectedPageChanged(object sender, DevExpress.XtraTab.TabPageChangedEventArgs e)
@@ -6325,6 +6339,9 @@ Select InstanceNames from @GetInstances ";
                                         Pkod_Sinif = 27
                                         and
                                         Pkod_MerkezSube = 'S' and Pkod_Kod='{lookUpEditSubeCon.EditValue.ToString()}'";
+
+            dbtools.coneskiyedon();
+
             DataTable dt = dbtools.SelectTableR(q1);
 
             if(dt==null || dt.Rows.Count == 0)
@@ -6332,12 +6349,12 @@ Select InstanceNames from @GetInstances ";
                 MessageBox.Show("Dep kod şube tanımda yok");
                 return;
             }
-            dbtools.server = dt.Rows[0]["Server"].ToString();
-            dbtools.database = dt.Rows[0]["Database"].ToString();
-            dbtools.users = dt.Rows[0]["User"].ToString();
-            dbtools.pwd = dt.Rows[0]["Password"].ToString();
+            var server = dt.Rows[0]["Server"].ToString();
+            var database = dt.Rows[0]["Database"].ToString();
+            var users = dt.Rows[0]["User"].ToString();
+            var pwd = dt.Rows[0]["Password"].ToString();
 
-            dbtools.conYenile();
+            dbtools.conYenile(server, database, users, pwd);
             loadyukle();
             kullanicitikla();
         }

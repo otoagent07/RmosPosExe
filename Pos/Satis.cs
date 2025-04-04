@@ -155,7 +155,7 @@ namespace Pos
                 {
                     if (urunleriYenile)
                     {
-                         Ust_Yenile(); // 09.01.2025 de kaldırıldı
+                        Ust_Yenile(); // 09.01.2025 de kaldırıldı
                     }
 
                 }
@@ -243,7 +243,7 @@ namespace Pos
                         txtKisiyeSatis.Select();
                         txtKisiyeSatis.Focus();
                     }
-                        
+
                 }
 
                 dizaynyukle();
@@ -388,7 +388,7 @@ namespace Pos
 
                     Paketci = Convert.ToString(dt.Rows[0]["Rsat_Paketci"]);
                     bartxt_Garson.EditValue = User.Isim_Getir(Paketci);
-                    bar_Cari.Caption = "Cari Bilgisi : " + mCari.Cari_Ad + " " + mCari.Cari_Soyad + " | \nAdres1 : " + mCari.Cari_Adres1+ " | \nAdres2 : " + mCari.Cari_Adres2 + " | Telefon : " + mCari.Cari_Tel;
+                    bar_Cari.Caption = "Cari Bilgisi : " + mCari.Cari_Ad + " " + mCari.Cari_Soyad + " | \nAdres1 : " + mCari.Cari_Adres1 + " | \nAdres2 : " + mCari.Cari_Adres2 + " | Telefon : " + mCari.Cari_Tel;
 
                 }
                 else
@@ -1274,7 +1274,7 @@ namespace Pos
                     else
                     {
                         string toplam = gridColumn4.SummaryText;
-                        if (toplam=="")
+                        if (toplam == "")
                         {
                             toplam = "0";
                         }
@@ -1850,7 +1850,7 @@ namespace Pos
                 txtKisiyeSatis.Select();
                 txtKisiyeSatis.Focus();
             }
-              
+
         }
 
         private void Alt_Yenile()
@@ -1959,7 +1959,7 @@ namespace Pos
                 txtKisiyeSatis.Select();
                 txtKisiyeSatis.Focus();
             }
-              
+
         }
 
         private void Urun_Yenile()
@@ -2086,7 +2086,7 @@ namespace Pos
                 txtKisiyeSatis.Focus();
                 txtKisiyeSatis.Select();
             }
-         
+
         }
 
         private void Siparis_Kontrol()
@@ -2700,7 +2700,7 @@ namespace Pos
 
                 if (klavye.sayi != 0)
                 {
-                    Miktar = Convert.ToDecimal(klavye.sayi)- Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                    Miktar = Convert.ToDecimal(klavye.sayi) - Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
                 }
 
                 if (klavye.iptal == true)
@@ -2790,7 +2790,7 @@ namespace Pos
                     cari.ShowDialog();
 
                     // 22.10.2024 oguzhan istedi
-                    if (cari.CariKod=="")
+                    if (cari.CariKod == "")
                     {
                         return;
                     }
@@ -2868,7 +2868,7 @@ namespace Pos
                         else
                         {
                             FisPr pr = new FisPr();
-                            pr.PaketPr(Convert.ToInt32(bartxt_FisNo.EditValue), " * * * PAKET FİSİ * * * ",parcaliAdres:adres);
+                            pr.PaketPr(Convert.ToInt32(bartxt_FisNo.EditValue), " * * * PAKET FİSİ * * * ", parcaliAdres: adres);
                         }
 
                     }
@@ -3261,7 +3261,7 @@ namespace Pos
 
                     DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'SS%' -- ürün iptal");
 
-                    Klavye2 klv = new Klavye2(data:dataTable);
+                    Klavye2 klv = new Klavye2(data: dataTable);
                     klv.ShowDialog();
 
                     if (klv.yazi == null)
@@ -3392,56 +3392,59 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
         public void tutarDuzelt()
         {
-            decimal deger = Convert.ToDecimal(gridColumn4.SummaryItem.SummaryValue);
-
-            //if (deger == 0)
-            //{
-            //    RHMesaj.MyMessageInformation("Tutar düzeltilemez\nçünkü genel toplam eksiye düşer !");
-            //    return;
-            //}
-
-
-            Klavye1 klv = new Klavye1();
-            klv.UrunAdi = Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad2"));
-            klv.Tag = "TUTARDUZELT";
-            string eskitutar;
-
-            if (Param.Calisma_Sekli == 1)   //Dövizli
+            try
             {
-                eskitutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Doviztutar")).ToString();
-            }
-            else
-            {
-                eskitutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")).ToString();
-            }
-            klv.txt_Sayi.Text = eskitutar;
-            klv.ShowDialog();
-            decimal tutar = klv.sayi;
-            if (klv.iptal)
-            {
-                return;
-            }
+                decimal deger = Convert.ToDecimal(gridColumn4.SummaryItem.SummaryValue);
 
-            decimal eskitutarim = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar"));
-            if (tutar != eskitutarim)
-            {
+                //if (deger == 0)
+                //{
+                //    RHMesaj.MyMessageInformation("Tutar düzeltilemez\nçünkü genel toplam eksiye düşer !");
+                //    return;
+                //}
 
-                if (tutarduzeltplus && eskitutarim>tutar)
+
+                Klavye1 klv = new Klavye1();
+                klv.UrunAdi = Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad2"));
+                klv.Tag = "TUTARDUZELT";
+                string eskitutar;
+
+                if (Param.Calisma_Sekli == 1)   //Dövizli
                 {
-                    MessageBox.Show("Satış tutarından düşük tutar girme yetkiniz yoktur !");
+                    eskitutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Doviztutar")).ToString();
+                }
+                else
+                {
+                    eskitutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")).ToString();
+                }
+                klv.txt_Sayi.Text = eskitutar;
+                klv.ShowDialog();
+                decimal tutar = klv.sayi;
+                if (klv.iptal)
+                {
                     return;
                 }
 
+                //decimal eskitutarim = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar"));
 
+
+                string recgenelkod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
+                decimal rectutar = Convert.ToDecimal(dbtools.DegerGetir($"select top 1 Rec_Fiyat from cst_recete where Rec_Genelkod='{recgenelkod}'"));
+                //if (eskitutarim != rectutar)
+
+                if (tutarduzeltplus && rectutar > tutar)
+                {
+                    MessageBox.Show("Reçete tutarından düşük tutar girme yetkiniz yoktur !");
+                    return;
+                }
 
                 Fis_Islem.Tutar_Duzelt(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), tutar);
-
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Tutar_Duzelt, Log.Log_Islem.Duzelt, Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + "'nın Fiyatı " + eskitutar + " iken " + tutar.ToString() + " ile Değişti", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
-
-
                 Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
-
                 gridyenile();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
 
         }
@@ -3498,8 +3501,8 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                                 MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                              
-                                
+
+
 
 
                                 barkodFocuslan();
@@ -3527,7 +3530,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                                 MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                
+
 
                                 barkodFocuslan();
                                 return;
@@ -3563,7 +3566,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                                 MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                
+
 
                                 barkodFocuslan();
                                 return;
@@ -3604,7 +3607,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                                 MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                
+
 
                                 barkodFocuslan();
                                 return;
@@ -3634,7 +3637,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
 
                             MessageBox.Show(res_man.GetString("Ürün Kodu Bulunamadı..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                           
+
 
                             barkodFocuslan();
                             return;
@@ -4177,14 +4180,14 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
 
             Klavye2 klv = new Klavye2();
-            klv.txt_Yazi.Text = dbtools.DegerGetir("select Rsat_Aciklama from Cst_Recete_Satis where Rsat_Id="+ rsatid);
+            klv.txt_Yazi.Text = dbtools.DegerGetir("select Rsat_Aciklama from Cst_Recete_Satis where Rsat_Id=" + rsatid);
             klv.ShowDialog();
 
-            if (klv.cikisYeni==true)
+            if (klv.cikisYeni == true)
             {
                 return;
             }
-            
+
             dbtools.execcmd("Update Cst_Recete_Satis Set Rsat_Aciklama = '" + klv.yazi + "' where Rsat_Id = '" + Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) + "'");
 
             Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satis, Log.Log_Islem.Kaydet, "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Reçeteye Açıklama Girildi : " + klv.yazi, Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), 0, "", Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
@@ -4757,15 +4760,15 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         public void kisiyiTemizle()
         {
-           
-                txtKisiyeSatis.Text = "";
-                txtKisiyeSatis.Select();
-                txtKisiyeSatis.Focus();
 
-                sayac++;
-                txtKisiyeSatisSayac.Text = sayac + "";
+            txtKisiyeSatis.Text = "";
+            txtKisiyeSatis.Select();
+            txtKisiyeSatis.Focus();
 
-           
+            sayac++;
+            txtKisiyeSatisSayac.Text = sayac + "";
+
+
         }
 
         private void btnKisiyeSatisYap_Click(object sender, EventArgs e)

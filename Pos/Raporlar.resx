@@ -135,7 +135,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl8.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <assembly alias="DevExpress.XtraEditors.v19.1" name="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="gridControl8.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
@@ -150,7 +150,7 @@
     <value>0, 0</value>
   </data>
   <data name="gridControl8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -767,10 +767,10 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1015, 0</value>
+    <value>1421, 0</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
     <value>barDockControlTop</value>
@@ -788,13 +788,13 @@
     <value>Bottom</value>
   </data>
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 711</value>
+    <value>0, 877</value>
   </data>
   <data name="barDockControlBottom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1015, 42</value>
+    <value>1421, 50</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -815,10 +815,10 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlLeft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 711</value>
+    <value>0, 877</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -836,13 +836,13 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1015, 0</value>
+    <value>1421, 0</value>
   </data>
   <data name="barDockControlRight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 711</value>
+    <value>0, 877</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
@@ -860,43 +860,43 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>5, 13</value>
+    <value>7, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1015, 753</value>
+    <value>1421, 927</value>
   </data>
   <data name="xtraTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 156</value>
+    <value>0, 192</value>
   </data>
   <data name="xtraTabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <metadata name="contextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>297, 17</value>
   </metadata>
   <data name="raporDizaynıKaydetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 22</value>
+    <value>221, 24</value>
   </data>
   <data name="raporDizaynıKaydetToolStripMenuItem.Text" xml:space="preserve">
     <value>Rapor Dizaynı Kaydet</value>
   </data>
   <data name="tarihDeğiştirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 22</value>
+    <value>221, 24</value>
   </data>
   <data name="tarihDeğiştirToolStripMenuItem.Text" xml:space="preserve">
     <value>Tarih Değiştir</value>
   </data>
   <data name="kişiSayısıDeğiştirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 22</value>
+    <value>221, 24</value>
   </data>
   <data name="kişiSayısıDeğiştirToolStripMenuItem.Text" xml:space="preserve">
     <value>Kişi Sayısı Değiştir</value>
   </data>
   <data name="contextMenuStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 70</value>
+    <value>222, 76</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip2.Name" xml:space="preserve">
     <value>contextMenuStrip2</value>
@@ -920,7 +920,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl11.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl11.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -947,7 +947,7 @@
     <value>0</value>
   </data>
   <data name="bandedGridColumn41.Width" type="System.Int32, mscorlib">
-    <value>46</value>
+    <value>64</value>
   </data>
   <data name="bandedGridColumn42.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -959,7 +959,7 @@
     <value>1</value>
   </data>
   <data name="bandedGridColumn42.Width" type="System.Int32, mscorlib">
-    <value>58</value>
+    <value>81</value>
   </data>
   <data name="bandedGridColumn44.Caption" xml:space="preserve">
     <value>Fis No</value>
@@ -980,7 +980,7 @@
     <value>2</value>
   </data>
   <data name="bandedGridColumn44.Width" type="System.Int32, mscorlib">
-    <value>48</value>
+    <value>67</value>
   </data>
   <data name="bandedGridColumn43.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -995,7 +995,7 @@
     <value>3</value>
   </data>
   <data name="bandedGridColumn43.Width" type="System.Int32, mscorlib">
-    <value>146</value>
+    <value>204</value>
   </data>
   <data name="gridColumn120.Caption" xml:space="preserve">
     <value>Masa No</value>
@@ -1004,7 +1004,7 @@
     <value>Sum</value>
   </data>
   <data name="gridColumn120.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="bandedGridColumn46.Caption" xml:space="preserve">
     <value>Fiyat</value>
@@ -1019,7 +1019,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn46.Width" type="System.Int32, mscorlib">
-    <value>40</value>
+    <value>56</value>
   </data>
   <data name="bandedGridColumn49.Caption" xml:space="preserve">
     <value>Brut Tutar</value>
@@ -1040,13 +1040,13 @@
     <value>6</value>
   </data>
   <data name="bandedGridColumn49.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn47.Caption" xml:space="preserve">
     <value>Kur Adı</value>
   </data>
   <data name="bandedGridColumn47.Width" type="System.Int32, mscorlib">
-    <value>40</value>
+    <value>56</value>
   </data>
   <data name="bandedGridColumn48.Caption" xml:space="preserve">
     <value>Kur</value>
@@ -1055,7 +1055,7 @@
     <value>Average</value>
   </data>
   <data name="bandedGridColumn48.Width" type="System.Int32, mscorlib">
-    <value>40</value>
+    <value>56</value>
   </data>
   <data name="bandedGridColumn54.Caption" xml:space="preserve">
     <value>Doviz Brüt</value>
@@ -1070,7 +1070,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn54.Width" type="System.Int32, mscorlib">
-    <value>55</value>
+    <value>77</value>
   </data>
   <data name="bandedGridColumn74.Caption" xml:space="preserve">
     <value>Maliyet</value>
@@ -1085,19 +1085,19 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn74.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn75.Caption" xml:space="preserve">
     <value>Satis Tip</value>
   </data>
   <data name="bandedGridColumn75.Width" type="System.Int32, mscorlib">
-    <value>52</value>
+    <value>73</value>
   </data>
   <data name="bandedGridColumn45.Caption" xml:space="preserve">
     <value>Masa</value>
   </data>
   <data name="bandedGridColumn45.Width" type="System.Int32, mscorlib">
-    <value>49</value>
+    <value>69</value>
   </data>
   <data name="gridColumn98.Caption" xml:space="preserve">
     <value>Masa Ad</value>
@@ -1109,7 +1109,7 @@
     <value>4</value>
   </data>
   <data name="gridColumn98.Width" type="System.Int32, mscorlib">
-    <value>45</value>
+    <value>63</value>
   </data>
   <data name="bandedGridColumn77.Caption" xml:space="preserve">
     <value>Kasiyer.Kapanis</value>
@@ -1121,13 +1121,13 @@
     <value>18</value>
   </data>
   <data name="bandedGridColumn77.Width" type="System.Int32, mscorlib">
-    <value>46</value>
+    <value>64</value>
   </data>
   <data name="bandedGridColumn78.Caption" xml:space="preserve">
     <value>Garson</value>
   </data>
   <data name="bandedGridColumn78.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn80.Caption" xml:space="preserve">
     <value>Kisi</value>
@@ -1136,7 +1136,7 @@
     <value>Sum</value>
   </data>
   <data name="bandedGridColumn80.Width" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>66</value>
   </data>
   <data name="bandedGridColumn72.Caption" xml:space="preserve">
     <value>Acilis</value>
@@ -1148,7 +1148,7 @@
     <value>20</value>
   </data>
   <data name="bandedGridColumn72.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn73.Caption" xml:space="preserve">
     <value>Kapanis</value>
@@ -1160,7 +1160,7 @@
     <value>17</value>
   </data>
   <data name="bandedGridColumn73.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn64.Caption" xml:space="preserve">
     <value>Ind_TL</value>
@@ -1175,7 +1175,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn64.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn65.Caption" xml:space="preserve">
     <value>Ind_DovizTutar</value>
@@ -1190,7 +1190,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn65.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn66.Caption" xml:space="preserve">
     <value>HH_TL</value>
@@ -1199,7 +1199,7 @@
     <value>Sum</value>
   </data>
   <data name="bandedGridColumn66.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn67.Caption" xml:space="preserve">
     <value>HH_DovizTutar</value>
@@ -1214,7 +1214,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn67.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn68.Caption" xml:space="preserve">
     <value>Manuel_TL</value>
@@ -1223,7 +1223,7 @@
     <value>Sum</value>
   </data>
   <data name="bandedGridColumn68.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn69.Caption" xml:space="preserve">
     <value>Manuel_DovizTutar</value>
@@ -1238,7 +1238,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn69.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn52.Caption" xml:space="preserve">
     <value>Net Tutar</value>
@@ -1253,7 +1253,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn52.Width" type="System.Int32, mscorlib">
-    <value>50</value>
+    <value>70</value>
   </data>
   <data name="bandedGridColumn53.Caption" xml:space="preserve">
     <value>Kdv Tutar</value>
@@ -1274,7 +1274,7 @@
     <value>19</value>
   </data>
   <data name="bandedGridColumn53.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn50.Caption" xml:space="preserve">
     <value>Indirim Tutar</value>
@@ -1295,7 +1295,7 @@
     <value>7</value>
   </data>
   <data name="bandedGridColumn50.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn51.Caption" xml:space="preserve">
     <value>Toplam Tutar</value>
@@ -1310,7 +1310,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn51.Width" type="System.Int32, mscorlib">
-    <value>60</value>
+    <value>84</value>
   </data>
   <data name="bandedGridColumn59.Caption" xml:space="preserve">
     <value>NAKIT</value>
@@ -1331,7 +1331,7 @@
     <value>8</value>
   </data>
   <data name="bandedGridColumn59.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn60.Caption" xml:space="preserve">
     <value>KREDİKART</value>
@@ -1352,7 +1352,7 @@
     <value>9</value>
   </data>
   <data name="bandedGridColumn60.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="gridColumn100.Caption" xml:space="preserve">
     <value>YEMEK CEKI</value>
@@ -1373,7 +1373,7 @@
     <value>10</value>
   </data>
   <data name="gridColumn100.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn63.Caption" xml:space="preserve">
     <value>CARI</value>
@@ -1394,7 +1394,7 @@
     <value>11</value>
   </data>
   <data name="bandedGridColumn63.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn62.Caption" xml:space="preserve">
     <value>IKRAM</value>
@@ -1415,7 +1415,7 @@
     <value>12</value>
   </data>
   <data name="bandedGridColumn62.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn61.Caption" xml:space="preserve">
     <value>ODENMEZ</value>
@@ -1436,7 +1436,7 @@
     <value>13</value>
   </data>
   <data name="bandedGridColumn61.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn58.Caption" xml:space="preserve">
     <value>KREDI</value>
@@ -1457,7 +1457,7 @@
     <value>14</value>
   </data>
   <data name="bandedGridColumn58.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="gridColumn146.Caption" xml:space="preserve">
     <value>ONLINE</value>
@@ -1478,7 +1478,7 @@
     <value>15</value>
   </data>
   <data name="gridColumn146.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="gridColumn145.Caption" xml:space="preserve">
     <value>HAVALE</value>
@@ -1499,37 +1499,37 @@
     <value>16</value>
   </data>
   <data name="gridColumn145.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>175</value>
   </data>
   <data name="bandedGridColumn55.Caption" xml:space="preserve">
     <value>Oda No</value>
   </data>
   <data name="bandedGridColumn55.Width" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>66</value>
   </data>
   <data name="bandedGridColumn56.Caption" xml:space="preserve">
     <value>Folio</value>
   </data>
   <data name="bandedGridColumn56.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn57.Caption" xml:space="preserve">
     <value>Odenmez</value>
   </data>
   <data name="bandedGridColumn57.Width" type="System.Int32, mscorlib">
-    <value>46</value>
+    <value>64</value>
   </data>
   <data name="bandedGridColumn79.Caption" xml:space="preserve">
     <value>Not</value>
   </data>
   <data name="bandedGridColumn79.Width" type="System.Int32, mscorlib">
-    <value>105</value>
+    <value>147</value>
   </data>
   <data name="bandedGridColumn76.Caption" xml:space="preserve">
     <value>Adisyon</value>
   </data>
   <data name="bandedGridColumn76.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="bandedGridColumn70.Caption" xml:space="preserve">
     <value>Extra_TL</value>
@@ -1544,7 +1544,7 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn70.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn71.Caption" xml:space="preserve">
     <value>Extra_DovizTutar</value>
@@ -1559,25 +1559,25 @@
     <value>{0:N2}</value>
   </data>
   <data name="bandedGridColumn71.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn85.Caption" xml:space="preserve">
     <value>Pda Satısı</value>
   </data>
   <data name="gridColumn85.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn99.Caption" xml:space="preserve">
     <value>Cari</value>
   </data>
   <data name="gridColumn99.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn116.Caption" xml:space="preserve">
     <value>Konum</value>
   </data>
   <data name="gridColumn116.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn119.Caption" xml:space="preserve">
     <value>Masa Ozel</value>
@@ -1589,55 +1589,55 @@
     <value>5</value>
   </data>
   <data name="gridColumn119.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn125.Caption" xml:space="preserve">
     <value>Kart No</value>
   </data>
   <data name="gridColumn125.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn127.Caption" xml:space="preserve">
     <value>Yerli &amp; Yabancı</value>
   </data>
   <data name="gridColumn127.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn136.Caption" xml:space="preserve">
     <value>PR</value>
   </data>
   <data name="gridColumn136.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn137.Caption" xml:space="preserve">
     <value>Döviz Tutar</value>
   </data>
   <data name="gridColumn137.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn138.Caption" xml:space="preserve">
     <value>Döviz Türü</value>
   </data>
   <data name="gridColumn138.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn139.Caption" xml:space="preserve">
     <value>AdisyonPR</value>
   </data>
   <data name="gridColumn139.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn140.Caption" xml:space="preserve">
     <value>GR</value>
   </data>
   <data name="gridColumn140.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn144.Caption" xml:space="preserve">
     <value>Banka</value>
   </data>
   <data name="gridColumn144.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn147.Caption" xml:space="preserve">
     <value>Sıra No</value>
@@ -1649,13 +1649,13 @@
     <value>21</value>
   </data>
   <data name="gridColumn147.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1013, 532</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl11.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1673,10 +1673,10 @@
     <value>0</value>
   </data>
   <data name="tab_Satis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Satis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1013, 532</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Satis.Text" xml:space="preserve">
     <value>Satış Raporu</value>
@@ -1694,7 +1694,7 @@
     <value>0</value>
   </data>
   <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1015, 555</value>
+    <value>1421, 685</value>
   </data>
   <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1703,19 +1703,19 @@
     <value>762, 17</value>
   </metadata>
   <data name="btnGenelCekDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 26</value>
+    <value>279, 26</value>
   </data>
   <data name="btnGenelCekDizaynKaydet.Text" xml:space="preserve">
     <value>Genel Çek Grid Dizayn Kaydet</value>
   </data>
   <data name="btnGenelCekDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 26</value>
+    <value>279, 26</value>
   </data>
   <data name="btnGenelCekDizaynSil.Text" xml:space="preserve">
     <value>Genel Çek Grid Dizayn Sil</value>
   </data>
   <data name="contextMenuStripGenelCek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 56</value>
+    <value>280, 56</value>
   </data>
   <data name="&gt;&gt;contextMenuStripGenelCek.Name" xml:space="preserve">
     <value>contextMenuStripGenelCek</value>
@@ -1739,7 +1739,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -1760,7 +1760,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn1.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn2.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -1769,7 +1769,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn2.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn4.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -1778,7 +1778,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn4.Width" type="System.Int32, mscorlib">
-    <value>68</value>
+    <value>95</value>
   </data>
   <data name="bandedGridColumn3.Caption" xml:space="preserve">
     <value>Fis No</value>
@@ -1787,13 +1787,13 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn3.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn12.Caption" xml:space="preserve">
     <value>Masa</value>
   </data>
   <data name="bandedGridColumn12.Width" type="System.Int32, mscorlib">
-    <value>40</value>
+    <value>56</value>
   </data>
   <data name="bandedGridColumn87.Caption" xml:space="preserve">
     <value>Konum</value>
@@ -1802,7 +1802,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn87.Width" type="System.Int32, mscorlib">
-    <value>56</value>
+    <value>78</value>
   </data>
   <data name="bandedGridColumn88.Caption" xml:space="preserve">
     <value>Masa No</value>
@@ -1811,7 +1811,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn88.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="bandedGridColumn82.Caption" xml:space="preserve">
     <value>Masa Adı</value>
@@ -1820,7 +1820,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn82.Width" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>66</value>
   </data>
   <data name="bandedGridColumn89.Caption" xml:space="preserve">
     <value>Masa Ozel</value>
@@ -1829,7 +1829,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn89.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="bandedGridColumn5.Caption" xml:space="preserve">
     <value>Fiyat</value>
@@ -1847,7 +1847,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn5.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn7.Caption" xml:space="preserve">
     <value>Kur Adı</value>
@@ -1856,7 +1856,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn7.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn8.Caption" xml:space="preserve">
     <value>Kur</value>
@@ -1868,7 +1868,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn8.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn6.Caption" xml:space="preserve">
     <value>Brut Tutar</value>
@@ -1886,7 +1886,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn6.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn26.Caption" xml:space="preserve">
     <value>Indirim Tutar</value>
@@ -1904,7 +1904,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn26.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn27.Caption" xml:space="preserve">
     <value>Toplam Tutar</value>
@@ -1922,7 +1922,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn27.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn24.Caption" xml:space="preserve">
     <value>Net Tutar</value>
@@ -1940,7 +1940,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn24.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn25.Caption" xml:space="preserve">
     <value>Kdv Tutar</value>
@@ -1958,7 +1958,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn25.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="bandedGridColumn9.Caption" xml:space="preserve">
     <value>Doviz Brüt</value>
@@ -1976,7 +1976,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn9.Width" type="System.Int32, mscorlib">
-    <value>54</value>
+    <value>76</value>
   </data>
   <data name="bandedGridColumn34.Caption" xml:space="preserve">
     <value>Oda No</value>
@@ -1985,7 +1985,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn34.Width" type="System.Int32, mscorlib">
-    <value>44</value>
+    <value>62</value>
   </data>
   <data name="bandedGridColumn35.Caption" xml:space="preserve">
     <value>Folio</value>
@@ -1994,7 +1994,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn35.Width" type="System.Int32, mscorlib">
-    <value>40</value>
+    <value>56</value>
   </data>
   <data name="bandedGridColumn36.Caption" xml:space="preserve">
     <value>Odenmez</value>
@@ -2003,7 +2003,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn36.Width" type="System.Int32, mscorlib">
-    <value>51</value>
+    <value>71</value>
   </data>
   <data name="bandedGridColumn83.Caption" xml:space="preserve">
     <value>Cari</value>
@@ -2012,16 +2012,16 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn83.Width" type="System.Int32, mscorlib">
-    <value>43</value>
+    <value>60</value>
   </data>
   <data name="gridBand1.MinWidth" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>24</value>
   </data>
   <data name="gridBand1.Name" xml:space="preserve">
     <value>gridBand1</value>
   </data>
   <data name="gridBand1.Width" type="System.Int32, mscorlib">
-    <value>956</value>
+    <value>1343</value>
   </data>
   <data name="gridBand5.AppearanceHeader.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2045,7 +2045,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn29.Width" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>66</value>
   </data>
   <data name="bandedGridColumn28.Caption" xml:space="preserve">
     <value>NAKIT</value>
@@ -2063,7 +2063,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn28.Width" type="System.Int32, mscorlib">
-    <value>52</value>
+    <value>73</value>
   </data>
   <data name="bandedGridColumn33.Caption" xml:space="preserve">
     <value>KK</value>
@@ -2081,7 +2081,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn33.Width" type="System.Int32, mscorlib">
-    <value>51</value>
+    <value>71</value>
   </data>
   <data name="bandedGridColumn30.Caption" xml:space="preserve">
     <value>ODENMEZ</value>
@@ -2099,7 +2099,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn30.Width" type="System.Int32, mscorlib">
-    <value>48</value>
+    <value>67</value>
   </data>
   <data name="bandedGridColumn31.Caption" xml:space="preserve">
     <value>IKRAM</value>
@@ -2117,7 +2117,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn31.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn32.Caption" xml:space="preserve">
     <value>CARI</value>
@@ -2135,7 +2135,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn32.Width" type="System.Int32, mscorlib">
-    <value>59</value>
+    <value>83</value>
   </data>
   <data name="bandedGridColumn84.Caption" xml:space="preserve">
     <value>YEMEK CEKI</value>
@@ -2153,16 +2153,16 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn84.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridBand5.MinWidth" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>24</value>
   </data>
   <data name="gridBand5.Name" xml:space="preserve">
     <value>gridBand5</value>
   </data>
   <data name="gridBand5.Width" type="System.Int32, mscorlib">
-    <value>361</value>
+    <value>506</value>
   </data>
   <data name="gridBand2.AppearanceHeader.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2186,7 +2186,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn18.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn19.Caption" xml:space="preserve">
     <value>Ind_DovizTutar</value>
@@ -2204,16 +2204,16 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn19.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridBand2.MinWidth" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>24</value>
   </data>
   <data name="gridBand2.Name" xml:space="preserve">
     <value>gridBand2</value>
   </data>
   <data name="gridBand2.Width" type="System.Int32, mscorlib">
-    <value>84</value>
+    <value>118</value>
   </data>
   <data name="gridBand3.AppearanceHeader.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2237,7 +2237,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn20.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn21.Caption" xml:space="preserve">
     <value>HH_DovizTutar</value>
@@ -2255,16 +2255,16 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn21.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridBand3.MinWidth" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>24</value>
   </data>
   <data name="gridBand3.Name" xml:space="preserve">
     <value>gridBand3</value>
   </data>
   <data name="gridBand3.Width" type="System.Int32, mscorlib">
-    <value>84</value>
+    <value>118</value>
   </data>
   <data name="gridBand4.AppearanceHeader.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2288,7 +2288,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn22.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn23.Caption" xml:space="preserve">
     <value>Manuel_DovizTutar</value>
@@ -2306,16 +2306,16 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn23.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridBand4.MinWidth" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>24</value>
   </data>
   <data name="gridBand4.Name" xml:space="preserve">
     <value>gridBand4</value>
   </data>
   <data name="gridBand4.Width" type="System.Int32, mscorlib">
-    <value>84</value>
+    <value>118</value>
   </data>
   <data name="gridBand7.AppearanceHeader.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2339,7 +2339,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn39.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="bandedGridColumn40.Caption" xml:space="preserve">
     <value>Extra_DovizTutar</value>
@@ -2357,16 +2357,16 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn40.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridBand7.MinWidth" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="gridBand7.Name" xml:space="preserve">
     <value>gridBand7</value>
   </data>
   <data name="gridBand7.Width" type="System.Int32, mscorlib">
-    <value>84</value>
+    <value>118</value>
   </data>
   <data name="bandedGridColumn16.Caption" xml:space="preserve">
     <value>Acilis</value>
@@ -2375,7 +2375,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn16.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn17.Caption" xml:space="preserve">
     <value>Kapanis</value>
@@ -2384,7 +2384,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn17.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn10.Caption" xml:space="preserve">
     <value>Maliyet</value>
@@ -2402,7 +2402,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn10.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn11.Caption" xml:space="preserve">
     <value>Satis Tip</value>
@@ -2411,7 +2411,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn11.Width" type="System.Int32, mscorlib">
-    <value>52</value>
+    <value>73</value>
   </data>
   <data name="bandedGridColumn38.Caption" xml:space="preserve">
     <value>Adisyon</value>
@@ -2420,7 +2420,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn38.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="bandedGridColumn13.Caption" xml:space="preserve">
     <value>Kasiyer</value>
@@ -2429,7 +2429,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn13.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn14.Caption" xml:space="preserve">
     <value>Garson</value>
@@ -2438,7 +2438,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn14.Width" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>57</value>
   </data>
   <data name="bandedGridColumn37.Caption" xml:space="preserve">
     <value>Not</value>
@@ -2447,7 +2447,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn37.Width" type="System.Int32, mscorlib">
-    <value>105</value>
+    <value>147</value>
   </data>
   <data name="bandedGridColumn15.Caption" xml:space="preserve">
     <value>Kisi</value>
@@ -2459,7 +2459,7 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn15.Width" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>66</value>
   </data>
   <data name="bandedGridColumn86.Caption" xml:space="preserve">
     <value>Gelir Net Tutar</value>
@@ -2477,34 +2477,34 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn86.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="bandedGridColumn81.Caption" xml:space="preserve">
     <value>Pda Satışı</value>
   </data>
   <data name="bandedGridColumn81.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridBand6.MinWidth" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>24</value>
   </data>
   <data name="gridBand6.Name" xml:space="preserve">
     <value>gridBand6</value>
   </data>
   <data name="gridBand6.Width" type="System.Int32, mscorlib">
-    <value>533</value>
+    <value>745</value>
   </data>
   <data name="bandedGridColumn85.Caption" xml:space="preserve">
     <value>DepartmanKod</value>
   </data>
   <data name="bandedGridColumn85.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="bandedGridColumn90.Caption" xml:space="preserve">
     <value>Yerli &amp; Yabancı</value>
   </data>
   <data name="bandedGridColumn90.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="bandedGridColumn91.Caption" xml:space="preserve">
     <value>Sıra No</value>
@@ -2513,13 +2513,13 @@
     <value>True</value>
   </data>
   <data name="bandedGridColumn91.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2537,10 +2537,10 @@
     <value>0</value>
   </data>
   <data name="tab_Genelrapor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Genelrapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Genelrapor.Text" xml:space="preserve">
     <value>Genel Çek Raporu</value>
@@ -2561,19 +2561,19 @@
     <value>607, 17</value>
   </metadata>
   <data name="btnIptalGridDizanyKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 26</value>
+    <value>243, 26</value>
   </data>
   <data name="btnIptalGridDizanyKaydet.Text" xml:space="preserve">
     <value>İptal Grid Dizayn Kaydet</value>
   </data>
   <data name="btnIptalGridDizanySil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 26</value>
+    <value>243, 26</value>
   </data>
   <data name="btnIptalGridDizanySil.Text" xml:space="preserve">
     <value>İptal Grid Dizayn Sil</value>
   </data>
   <data name="contextMenuStrip_IptalCekRapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 56</value>
+    <value>244, 56</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip_IptalCekRapor.Name" xml:space="preserve">
     <value>contextMenuStrip_IptalCekRapor</value>
@@ -2597,7 +2597,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl2.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl2.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -2621,7 +2621,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn1.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn2.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -2633,7 +2633,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn2.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn3.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -2645,7 +2645,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn3.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn4.Caption" xml:space="preserve">
     <value>Net</value>
@@ -2660,7 +2660,7 @@
     <value>4</value>
   </data>
   <data name="gridColumn4.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn5.Caption" xml:space="preserve">
     <value>Kdv</value>
@@ -2675,7 +2675,7 @@
     <value>5</value>
   </data>
   <data name="gridColumn5.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn6.Caption" xml:space="preserve">
     <value>Tutar</value>
@@ -2690,7 +2690,7 @@
     <value>6</value>
   </data>
   <data name="gridColumn6.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn7.Caption" xml:space="preserve">
     <value>Maliyet</value>
@@ -2705,7 +2705,7 @@
     <value>7</value>
   </data>
   <data name="gridColumn7.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn8.Caption" xml:space="preserve">
     <value>Doviztutar</value>
@@ -2720,7 +2720,7 @@
     <value>8</value>
   </data>
   <data name="gridColumn8.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn9.Caption" xml:space="preserve">
     <value>Satis Tip</value>
@@ -2732,7 +2732,7 @@
     <value>9</value>
   </data>
   <data name="gridColumn9.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn10.Caption" xml:space="preserve">
     <value>Odenmez</value>
@@ -2744,7 +2744,7 @@
     <value>10</value>
   </data>
   <data name="gridColumn10.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn11.Caption" xml:space="preserve">
     <value>Oda no</value>
@@ -2756,7 +2756,7 @@
     <value>11</value>
   </data>
   <data name="gridColumn11.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn12.Caption" xml:space="preserve">
     <value>Folio</value>
@@ -2768,7 +2768,7 @@
     <value>12</value>
   </data>
   <data name="gridColumn12.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn13.Caption" xml:space="preserve">
     <value>Adisyon</value>
@@ -2780,7 +2780,7 @@
     <value>13</value>
   </data>
   <data name="gridColumn13.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn14.Caption" xml:space="preserve">
     <value>Masa</value>
@@ -2792,7 +2792,7 @@
     <value>15</value>
   </data>
   <data name="gridColumn14.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn15.Caption" xml:space="preserve">
     <value>Garson</value>
@@ -2804,7 +2804,7 @@
     <value>17</value>
   </data>
   <data name="gridColumn15.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn16.Caption" xml:space="preserve">
     <value>Kisi</value>
@@ -2816,7 +2816,7 @@
     <value>18</value>
   </data>
   <data name="gridColumn16.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn17.Caption" xml:space="preserve">
     <value>Acilis</value>
@@ -2828,7 +2828,7 @@
     <value>19</value>
   </data>
   <data name="gridColumn17.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn18.Caption" xml:space="preserve">
     <value>Kapanis</value>
@@ -2840,7 +2840,7 @@
     <value>20</value>
   </data>
   <data name="gridColumn18.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn19.Caption" xml:space="preserve">
     <value>Durum</value>
@@ -2852,7 +2852,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn19.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn20.Caption" xml:space="preserve">
     <value>Iptal Zamanı</value>
@@ -2864,7 +2864,7 @@
     <value>21</value>
   </data>
   <data name="gridColumn20.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn21.Caption" xml:space="preserve">
     <value>Iptal Eden</value>
@@ -2876,7 +2876,7 @@
     <value>22</value>
   </data>
   <data name="gridColumn21.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn22.Caption" xml:space="preserve">
     <value>Iptal Not</value>
@@ -2888,7 +2888,7 @@
     <value>23</value>
   </data>
   <data name="gridColumn22.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn23.Caption" xml:space="preserve">
     <value>Kapatma</value>
@@ -2900,7 +2900,7 @@
     <value>24</value>
   </data>
   <data name="gridColumn23.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn121.Caption" xml:space="preserve">
     <value>Masa No</value>
@@ -2912,7 +2912,7 @@
     <value>14</value>
   </data>
   <data name="gridColumn121.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn122.Caption" xml:space="preserve">
     <value>Masa Ozel</value>
@@ -2924,13 +2924,13 @@
     <value>16</value>
   </data>
   <data name="gridColumn122.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 532</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2948,10 +2948,10 @@
     <value>0</value>
   </data>
   <data name="tab_Iptalcekraporu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Iptalcekraporu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 532</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Iptalcekraporu.Text" xml:space="preserve">
     <value>Iptal Çek Raporu</value>
@@ -2984,7 +2984,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl3.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl3.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -3008,7 +3008,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn24.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>55</value>
   </data>
   <data name="gridColumn25.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -3020,7 +3020,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn25.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn26.Caption" xml:space="preserve">
     <value>Fis No</value>
@@ -3032,7 +3032,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn26.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn27.Caption" xml:space="preserve">
     <value>Recete Adı</value>
@@ -3044,7 +3044,7 @@
     <value>4</value>
   </data>
   <data name="gridColumn27.Width" type="System.Int32, mscorlib">
-    <value>133</value>
+    <value>186</value>
   </data>
   <data name="gridColumn28.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -3056,7 +3056,7 @@
     <value>6</value>
   </data>
   <data name="gridColumn28.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn29.Caption" xml:space="preserve">
     <value>Miktar</value>
@@ -3071,7 +3071,7 @@
     <value>7</value>
   </data>
   <data name="gridColumn29.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn30.Caption" xml:space="preserve">
     <value>Doviztutar</value>
@@ -3086,7 +3086,7 @@
     <value>9</value>
   </data>
   <data name="gridColumn30.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn31.Caption" xml:space="preserve">
     <value>Kur</value>
@@ -3098,7 +3098,7 @@
     <value>10</value>
   </data>
   <data name="gridColumn31.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn32.Caption" xml:space="preserve">
     <value>Dovizkur</value>
@@ -3110,7 +3110,7 @@
     <value>11</value>
   </data>
   <data name="gridColumn32.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn33.Caption" xml:space="preserve">
     <value>Tutar</value>
@@ -3125,7 +3125,7 @@
     <value>12</value>
   </data>
   <data name="gridColumn33.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn34.Caption" xml:space="preserve">
     <value>Satistip</value>
@@ -3137,7 +3137,7 @@
     <value>14</value>
   </data>
   <data name="gridColumn34.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn35.Caption" xml:space="preserve">
     <value>Masa</value>
@@ -3149,7 +3149,7 @@
     <value>15</value>
   </data>
   <data name="gridColumn35.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn36.Caption" xml:space="preserve">
     <value>Kisi</value>
@@ -3161,7 +3161,7 @@
     <value>16</value>
   </data>
   <data name="gridColumn36.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn37.Caption" xml:space="preserve">
     <value>Odano</value>
@@ -3173,7 +3173,7 @@
     <value>17</value>
   </data>
   <data name="gridColumn37.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn38.Caption" xml:space="preserve">
     <value>Cari</value>
@@ -3185,7 +3185,7 @@
     <value>18</value>
   </data>
   <data name="gridColumn38.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn39.Caption" xml:space="preserve">
     <value>Uye Ad</value>
@@ -3197,7 +3197,7 @@
     <value>19</value>
   </data>
   <data name="gridColumn39.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn40.Caption" xml:space="preserve">
     <value>Folio</value>
@@ -3209,7 +3209,7 @@
     <value>20</value>
   </data>
   <data name="gridColumn40.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn41.Caption" xml:space="preserve">
     <value>Kapatma</value>
@@ -3221,7 +3221,7 @@
     <value>21</value>
   </data>
   <data name="gridColumn41.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn42.Caption" xml:space="preserve">
     <value>Acilis</value>
@@ -3233,7 +3233,7 @@
     <value>22</value>
   </data>
   <data name="gridColumn42.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn43.Caption" xml:space="preserve">
     <value>Kapanis</value>
@@ -3245,7 +3245,7 @@
     <value>23</value>
   </data>
   <data name="gridColumn43.Width" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>59</value>
   </data>
   <data name="gridColumn101.Caption" xml:space="preserve">
     <value>...</value>
@@ -3257,7 +3257,7 @@
     <value>8</value>
   </data>
   <data name="gridColumn101.Width" type="System.Int32, mscorlib">
-    <value>27</value>
+    <value>38</value>
   </data>
   <data name="gridColumn115.Caption" xml:space="preserve">
     <value>Aciklama</value>
@@ -3269,7 +3269,7 @@
     <value>5</value>
   </data>
   <data name="gridColumn115.Width" type="System.Int32, mscorlib">
-    <value>142</value>
+    <value>199</value>
   </data>
   <data name="gridColumn117.Caption" xml:space="preserve">
     <value>KDV Oran</value>
@@ -3281,7 +3281,7 @@
     <value>13</value>
   </data>
   <data name="gridColumn117.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn118.Caption" xml:space="preserve">
     <value>Recete Kodu</value>
@@ -3293,7 +3293,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn118.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn123.Caption" xml:space="preserve">
     <value>Detay Grup</value>
@@ -3305,7 +3305,7 @@
     <value>24</value>
   </data>
   <data name="gridColumn123.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn124.Caption" xml:space="preserve">
     <value>Kart No</value>
@@ -3317,7 +3317,7 @@
     <value>25</value>
   </data>
   <data name="gridColumn124.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn141.Caption" xml:space="preserve">
     <value>Satış Saati</value>
@@ -3329,7 +3329,7 @@
     <value>26</value>
   </data>
   <data name="gridColumn141.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn142.Caption" xml:space="preserve">
     <value>İndirim</value>
@@ -3350,7 +3350,7 @@
     <value>27</value>
   </data>
   <data name="gridColumn142.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn143.Caption" xml:space="preserve">
     <value>Hapy İndirim Tutar</value>
@@ -3371,13 +3371,13 @@
     <value>28</value>
   </data>
   <data name="gridColumn143.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3395,10 +3395,10 @@
     <value>0</value>
   </data>
   <data name="tab_Cekdetay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Cekdetay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Cekdetay.Text" xml:space="preserve">
     <value>Çek Detay Listesi</value>
@@ -3431,7 +3431,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl10.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl10.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -3455,7 +3455,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn72.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn73.Caption" xml:space="preserve">
     <value>Fis No</value>
@@ -3467,7 +3467,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn73.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn74.Caption" xml:space="preserve">
     <value>Net</value>
@@ -3482,7 +3482,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn74.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn75.Caption" xml:space="preserve">
     <value>Kdv</value>
@@ -3497,7 +3497,7 @@
     <value>4</value>
   </data>
   <data name="gridColumn75.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn76.Caption" xml:space="preserve">
     <value>Tutar</value>
@@ -3512,7 +3512,7 @@
     <value>5</value>
   </data>
   <data name="gridColumn76.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn77.Caption" xml:space="preserve">
     <value>Kur</value>
@@ -3524,7 +3524,7 @@
     <value>6</value>
   </data>
   <data name="gridColumn77.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn78.Caption" xml:space="preserve">
     <value>Döviz Kur</value>
@@ -3536,7 +3536,7 @@
     <value>7</value>
   </data>
   <data name="gridColumn78.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn79.Caption" xml:space="preserve">
     <value>Doviztutar</value>
@@ -3551,7 +3551,7 @@
     <value>8</value>
   </data>
   <data name="gridColumn79.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn80.Caption" xml:space="preserve">
     <value>Odano</value>
@@ -3563,7 +3563,7 @@
     <value>9</value>
   </data>
   <data name="gridColumn80.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn81.Caption" xml:space="preserve">
     <value>Folio</value>
@@ -3575,7 +3575,7 @@
     <value>10</value>
   </data>
   <data name="gridColumn81.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn82.Caption" xml:space="preserve">
     <value>Cari</value>
@@ -3587,7 +3587,7 @@
     <value>11</value>
   </data>
   <data name="gridColumn82.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn83.Caption" xml:space="preserve">
     <value>Odenmez</value>
@@ -3599,7 +3599,7 @@
     <value>12</value>
   </data>
   <data name="gridColumn83.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn84.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -3611,13 +3611,13 @@
     <value>1</value>
   </data>
   <data name="gridColumn84.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl10.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3635,10 +3635,10 @@
     <value>0</value>
   </data>
   <data name="tab_Alacak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Alacak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Alacak.Text" xml:space="preserve">
     <value>Alacak Raporu</value>
@@ -3671,7 +3671,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl4.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl4.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -3692,7 +3692,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn47.Width" type="System.Int32, mscorlib">
-    <value>133</value>
+    <value>186</value>
   </data>
   <data name="gridColumn49.Caption" xml:space="preserve">
     <value>Miktar</value>
@@ -3707,7 +3707,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn49.Width" type="System.Int32, mscorlib">
-    <value>31</value>
+    <value>43</value>
   </data>
   <data name="gridColumn50.Caption" xml:space="preserve">
     <value>Doviztutar</value>
@@ -3722,7 +3722,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn50.Width" type="System.Int32, mscorlib">
-    <value>31</value>
+    <value>43</value>
   </data>
   <data name="gridColumn53.Caption" xml:space="preserve">
     <value>Tutar</value>
@@ -3737,19 +3737,19 @@
     <value>2</value>
   </data>
   <data name="gridColumn53.Width" type="System.Int32, mscorlib">
-    <value>31</value>
+    <value>43</value>
   </data>
   <data name="gridColumn44.Caption" xml:space="preserve">
     <value>Recete Kod</value>
   </data>
   <data name="gridColumn44.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3767,10 +3767,10 @@
     <value>0</value>
   </data>
   <data name="tab_Receteozet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Receteozet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Receteozet.Text" xml:space="preserve">
     <value>Reçete Özet</value>
@@ -3803,7 +3803,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl5.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl5.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -3824,7 +3824,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn45.Width" type="System.Int32, mscorlib">
-    <value>172</value>
+    <value>241</value>
   </data>
   <data name="gridColumn46.Caption" xml:space="preserve">
     <value>Urun</value>
@@ -3836,7 +3836,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn46.Width" type="System.Int32, mscorlib">
-    <value>309</value>
+    <value>433</value>
   </data>
   <data name="gridColumn48.Caption" xml:space="preserve">
     <value>Garson</value>
@@ -3848,7 +3848,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn48.Width" type="System.Int32, mscorlib">
-    <value>219</value>
+    <value>307</value>
   </data>
   <data name="gridColumn51.Caption" xml:space="preserve">
     <value>Miktar</value>
@@ -3860,7 +3860,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn51.Width" type="System.Int32, mscorlib">
-    <value>243</value>
+    <value>340</value>
   </data>
   <data name="gridColumn52.Caption" xml:space="preserve">
     <value>Doviztutar</value>
@@ -3872,7 +3872,7 @@
     <value>4</value>
   </data>
   <data name="gridColumn52.Width" type="System.Int32, mscorlib">
-    <value>243</value>
+    <value>340</value>
   </data>
   <data name="gridColumn54.Caption" xml:space="preserve">
     <value>Tutar</value>
@@ -3884,13 +3884,13 @@
     <value>5</value>
   </data>
   <data name="gridColumn54.Width" type="System.Int32, mscorlib">
-    <value>257</value>
+    <value>360</value>
   </data>
   <data name="gridControl5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3908,10 +3908,10 @@
     <value>0</value>
   </data>
   <data name="tab_Garsonsatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Garsonsatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Garsonsatis.Text" xml:space="preserve">
     <value>Garson Satis Çizelgesi</value>
@@ -3932,19 +3932,19 @@
     <value>142, 17</value>
   </metadata>
   <data name="fatNoDeğiştirToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 22</value>
+    <value>198, 24</value>
   </data>
   <data name="fatNoDeğiştirToolStripMenuItem.Text" xml:space="preserve">
     <value>Fatura No Değiştir</value>
   </data>
   <data name="faturaİptalEtToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 22</value>
+    <value>198, 24</value>
   </data>
   <data name="faturaİptalEtToolStripMenuItem.Text" xml:space="preserve">
     <value>Fatura İptal Et</value>
   </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 48</value>
+    <value>199, 52</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
     <value>contextMenuStrip1</value>
@@ -3968,7 +3968,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl6.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl6.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -3992,13 +3992,13 @@
     <value>0</value>
   </data>
   <data name="gridColumn55.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn56.Caption" xml:space="preserve">
     <value>AdSoyad</value>
   </data>
   <data name="gridColumn56.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn57.Caption" xml:space="preserve">
     <value>Adres</value>
@@ -4010,7 +4010,7 @@
     <value>6</value>
   </data>
   <data name="gridColumn57.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn58.Caption" xml:space="preserve">
     <value>Vergi Daire</value>
@@ -4022,7 +4022,7 @@
     <value>9</value>
   </data>
   <data name="gridColumn58.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn59.Caption" xml:space="preserve">
     <value>Vergi No</value>
@@ -4034,7 +4034,7 @@
     <value>10</value>
   </data>
   <data name="gridColumn59.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn60.Caption" xml:space="preserve">
     <value>Aciklama</value>
@@ -4046,7 +4046,7 @@
     <value>11</value>
   </data>
   <data name="gridColumn60.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn61.Caption" xml:space="preserve">
     <value>Kdvoran</value>
@@ -4058,7 +4058,7 @@
     <value>12</value>
   </data>
   <data name="gridColumn61.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn62.Caption" xml:space="preserve">
     <value>Kdv</value>
@@ -4073,7 +4073,7 @@
     <value>13</value>
   </data>
   <data name="gridColumn62.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn63.Caption" xml:space="preserve">
     <value>Matrah</value>
@@ -4088,7 +4088,7 @@
     <value>14</value>
   </data>
   <data name="gridColumn63.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn64.Caption" xml:space="preserve">
     <value>Toplam</value>
@@ -4103,7 +4103,7 @@
     <value>15</value>
   </data>
   <data name="gridColumn64.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn65.Caption" xml:space="preserve">
     <value>Not</value>
@@ -4115,7 +4115,7 @@
     <value>16</value>
   </data>
   <data name="gridColumn65.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn66.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -4127,7 +4127,7 @@
     <value>17</value>
   </data>
   <data name="gridColumn66.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn67.Caption" xml:space="preserve">
     <value>Kullanıcı</value>
@@ -4139,7 +4139,7 @@
     <value>18</value>
   </data>
   <data name="gridColumn67.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn68.Caption" xml:space="preserve">
     <value>Odeme Kodu</value>
@@ -4151,7 +4151,7 @@
     <value>19</value>
   </data>
   <data name="gridColumn68.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn69.Caption" xml:space="preserve">
     <value>Fis No</value>
@@ -4163,7 +4163,7 @@
     <value>20</value>
   </data>
   <data name="gridColumn69.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn70.Caption" xml:space="preserve">
     <value>Indirim</value>
@@ -4175,7 +4175,7 @@
     <value>21</value>
   </data>
   <data name="gridColumn70.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn71.Caption" xml:space="preserve">
     <value>Fat No</value>
@@ -4187,7 +4187,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn71.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn128.Caption" xml:space="preserve">
     <value>e-Fatura No</value>
@@ -4199,7 +4199,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn128.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn129.Caption" xml:space="preserve">
     <value>Adı</value>
@@ -4211,7 +4211,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn129.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn130.Caption" xml:space="preserve">
     <value>Soyadı</value>
@@ -4223,7 +4223,7 @@
     <value>4</value>
   </data>
   <data name="gridColumn130.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn131.Caption" xml:space="preserve">
     <value>Senaryo</value>
@@ -4235,7 +4235,7 @@
     <value>22</value>
   </data>
   <data name="gridColumn131.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn132.Caption" xml:space="preserve">
     <value>Fatura Tipi</value>
@@ -4247,7 +4247,7 @@
     <value>23</value>
   </data>
   <data name="gridColumn132.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn133.Caption" xml:space="preserve">
     <value>İl</value>
@@ -4259,7 +4259,7 @@
     <value>8</value>
   </data>
   <data name="gridColumn133.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn134.Caption" xml:space="preserve">
     <value>İlçe</value>
@@ -4271,7 +4271,7 @@
     <value>7</value>
   </data>
   <data name="gridColumn134.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn135.Caption" xml:space="preserve">
     <value>e-Mail</value>
@@ -4283,13 +4283,13 @@
     <value>5</value>
   </data>
   <data name="gridColumn135.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl6.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4307,10 +4307,10 @@
     <value>0</value>
   </data>
   <data name="tab_Fatura.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Fatura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Fatura.Text" xml:space="preserve">
     <value>Pos Fatura</value>
@@ -4343,7 +4343,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl7.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl7.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -4358,10 +4358,10 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="gridControl7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl7.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4382,10 +4382,10 @@
     <value>0</value>
   </data>
   <data name="tab_OdemeRaporu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_OdemeRaporu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_OdemeRaporu.Text" xml:space="preserve">
     <value>Ödeme Raporu</value>
@@ -4403,10 +4403,10 @@
     <value>8</value>
   </data>
   <data name="tab_Satisrapor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Satisrapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Satisrapor.Text" xml:space="preserve">
     <value>Satıs Raporu</value>
@@ -4427,19 +4427,19 @@
     <value>452, 17</value>
   </metadata>
   <data name="btnLogGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
+    <value>238, 26</value>
   </data>
   <data name="btnLogGridDizaynKaydet.Text" xml:space="preserve">
     <value>Log Grid Dizayn Kaydet</value>
   </data>
   <data name="btnLogGridDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
+    <value>238, 26</value>
   </data>
   <data name="btnLogGridDizaynSil.Text" xml:space="preserve">
     <value>Log Grid Dizayn Sil</value>
   </data>
   <data name="contextMenuStrip_LogRapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 56</value>
+    <value>239, 56</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip_LogRapor.Name" xml:space="preserve">
     <value>contextMenuStrip_LogRapor</value>
@@ -4463,7 +4463,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl9.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl9.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -4472,13 +4472,13 @@
     <value>Application</value>
   </data>
   <data name="gridControl9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 36</value>
+    <value>0, 44</value>
   </data>
   <data name="gridControl9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 495</value>
+    <value>1419, 613</value>
   </data>
   <data name="gridControl9.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4518,13 +4518,13 @@
 </value>
   </data>
   <data name="btnLogSatirSilRapor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 7</value>
+    <value>13, 9</value>
   </data>
   <data name="btnLogSatirSilRapor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btnLogSatirSilRapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 23</value>
+    <value>178, 28</value>
   </data>
   <data name="btnLogSatirSilRapor.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4551,10 +4551,10 @@
     <value>0, 0</value>
   </data>
   <data name="panelControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 36</value>
+    <value>1419, 44</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4572,10 +4572,10 @@
     <value>1</value>
   </data>
   <data name="tab_Log.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Log.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Log.Text" xml:space="preserve">
     <value>Log Raporu</value>
@@ -4608,7 +4608,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl12.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl12.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -4632,7 +4632,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn86.Width" type="System.Int32, mscorlib">
-    <value>68</value>
+    <value>95</value>
   </data>
   <data name="gridColumn87.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -4644,7 +4644,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn87.Width" type="System.Int32, mscorlib">
-    <value>104</value>
+    <value>146</value>
   </data>
   <data name="gridColumn88.Caption" xml:space="preserve">
     <value>Fisno</value>
@@ -4656,13 +4656,13 @@
     <value>2</value>
   </data>
   <data name="gridColumn88.Width" type="System.Int32, mscorlib">
-    <value>45</value>
+    <value>63</value>
   </data>
   <data name="gridColumn89.Caption" xml:space="preserve">
     <value>UyeId</value>
   </data>
   <data name="gridColumn89.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn90.Caption" xml:space="preserve">
     <value>Kart No</value>
@@ -4674,7 +4674,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn90.Width" type="System.Int32, mscorlib">
-    <value>72</value>
+    <value>101</value>
   </data>
   <data name="gridColumn91.Caption" xml:space="preserve">
     <value>Kart Turu</value>
@@ -4686,7 +4686,7 @@
     <value>4</value>
   </data>
   <data name="gridColumn91.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn92.Caption" xml:space="preserve">
     <value>Ad</value>
@@ -4698,7 +4698,7 @@
     <value>5</value>
   </data>
   <data name="gridColumn92.Width" type="System.Int32, mscorlib">
-    <value>96</value>
+    <value>134</value>
   </data>
   <data name="gridColumn93.Caption" xml:space="preserve">
     <value>Soyad</value>
@@ -4710,7 +4710,7 @@
     <value>6</value>
   </data>
   <data name="gridColumn93.Width" type="System.Int32, mscorlib">
-    <value>81</value>
+    <value>113</value>
   </data>
   <data name="gridColumn94.Caption" xml:space="preserve">
     <value>Doviztutar</value>
@@ -4725,7 +4725,7 @@
     <value>7</value>
   </data>
   <data name="gridColumn94.Width" type="System.Int32, mscorlib">
-    <value>76</value>
+    <value>106</value>
   </data>
   <data name="gridColumn95.Caption" xml:space="preserve">
     <value>Tutar</value>
@@ -4740,7 +4740,7 @@
     <value>8</value>
   </data>
   <data name="gridColumn95.Width" type="System.Int32, mscorlib">
-    <value>70</value>
+    <value>98</value>
   </data>
   <data name="gridColumn96.Caption" xml:space="preserve">
     <value>Acilis</value>
@@ -4752,7 +4752,7 @@
     <value>9</value>
   </data>
   <data name="gridColumn96.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn97.Caption" xml:space="preserve">
     <value>Kapanis</value>
@@ -4764,13 +4764,13 @@
     <value>10</value>
   </data>
   <data name="gridColumn97.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl12.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4788,10 +4788,10 @@
     <value>0</value>
   </data>
   <data name="tab_Uye.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Uye.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Uye.Text" xml:space="preserve">
     <value>Üye Satış Raporu</value>
@@ -4824,7 +4824,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl13.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl13.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -4839,7 +4839,7 @@
     <value>Dep_Kodu</value>
   </data>
   <data name="gridColumn102.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn103.Caption" xml:space="preserve">
     <value>Departman</value>
@@ -4851,7 +4851,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn103.Width" type="System.Int32, mscorlib">
-    <value>134</value>
+    <value>188</value>
   </data>
   <data name="gridColumn104.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -4863,7 +4863,7 @@
     <value>0</value>
   </data>
   <data name="gridColumn104.Width" type="System.Int32, mscorlib">
-    <value>77</value>
+    <value>108</value>
   </data>
   <data name="gridColumn105.Caption" xml:space="preserve">
     <value>Satis</value>
@@ -4884,7 +4884,7 @@
     <value>2</value>
   </data>
   <data name="gridColumn105.Width" type="System.Int32, mscorlib">
-    <value>80</value>
+    <value>112</value>
   </data>
   <data name="gridColumn106.Caption" xml:space="preserve">
     <value>Ödeme</value>
@@ -4905,7 +4905,7 @@
     <value>3</value>
   </data>
   <data name="gridColumn106.Width" type="System.Int32, mscorlib">
-    <value>78</value>
+    <value>109</value>
   </data>
   <data name="gridColumn107.Caption" xml:space="preserve">
     <value>NAKIT</value>
@@ -4926,7 +4926,7 @@
     <value>4</value>
   </data>
   <data name="gridColumn107.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn108.Caption" xml:space="preserve">
     <value>KREDI</value>
@@ -4947,7 +4947,7 @@
     <value>6</value>
   </data>
   <data name="gridColumn108.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn109.Caption" xml:space="preserve">
     <value>ODENMEZ</value>
@@ -4968,7 +4968,7 @@
     <value>8</value>
   </data>
   <data name="gridColumn109.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn110.Caption" xml:space="preserve">
     <value>IKRAM</value>
@@ -4989,7 +4989,7 @@
     <value>9</value>
   </data>
   <data name="gridColumn110.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn111.Caption" xml:space="preserve">
     <value>CARI</value>
@@ -5010,7 +5010,7 @@
     <value>10</value>
   </data>
   <data name="gridColumn111.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn112.Caption" xml:space="preserve">
     <value>KK</value>
@@ -5031,7 +5031,7 @@
     <value>5</value>
   </data>
   <data name="gridColumn112.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn113.Caption" xml:space="preserve">
     <value>MULTINET</value>
@@ -5052,7 +5052,7 @@
     <value>11</value>
   </data>
   <data name="gridColumn113.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn114.Caption" xml:space="preserve">
     <value>INDIRIM</value>
@@ -5064,7 +5064,7 @@
     <value>7</value>
   </data>
   <data name="gridColumn114.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridColumn126.Caption" xml:space="preserve">
     <value>CARI_TAHSILAT</value>
@@ -5076,13 +5076,13 @@
     <value>12</value>
   </data>
   <data name="gridColumn126.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>87</value>
   </data>
   <data name="gridControl13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl13.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5100,10 +5100,10 @@
     <value>0</value>
   </data>
   <data name="tab_DepartmanOzet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_DepartmanOzet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_DepartmanOzet.Text" xml:space="preserve">
     <value>Departman Özet</value>
@@ -5136,7 +5136,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl14.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl14.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -5148,10 +5148,10 @@
     <value>0, 0</value>
   </data>
   <data name="gridControl14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl14.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5169,10 +5169,10 @@
     <value>0</value>
   </data>
   <data name="tab_Zayi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Zayi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Zayi.Text" xml:space="preserve">
     <value>Zayi Raporu</value>
@@ -5205,7 +5205,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl15.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl15.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -5217,10 +5217,10 @@
     <value>0, 0</value>
   </data>
   <data name="gridControl15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl15.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5238,10 +5238,10 @@
     <value>0</value>
   </data>
   <data name="tab_AylikGenelRapor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_AylikGenelRapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_AylikGenelRapor.Text" xml:space="preserve">
     <value>İstatistik Raporu</value>
@@ -5274,7 +5274,7 @@
     <value>NoControl</value>
   </data>
   <data name="gridControl16.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl16.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v19.1">
     <value>None</value>
@@ -5286,10 +5286,10 @@
     <value>0, 0</value>
   </data>
   <data name="gridControl16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControl16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl16.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5307,10 +5307,10 @@
     <value>0</value>
   </data>
   <data name="tab_Ikram.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_Ikram.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_Ikram.Text" xml:space="preserve">
     <value>İkram Edilen Ürünler</value>
@@ -5331,16 +5331,16 @@
     <value>Fill</value>
   </data>
   <data name="gridControlResKullanim.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControlResKullanim.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="gridControlResKullanim.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControlResKullanim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControlResKullanim.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5358,10 +5358,10 @@
     <value>0</value>
   </data>
   <data name="tab_reskullanim.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_reskullanim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_reskullanim.Text" xml:space="preserve">
     <value>Res. Kullanım</value>
@@ -5382,7 +5382,7 @@
     <value>Fill</value>
   </data>
   <data name="gridControlMuh.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControlMuh.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -5391,10 +5391,10 @@
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="gridControlMuh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="gridControlMuh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 465</value>
+    <value>1413, 577</value>
   </data>
   <data name="gridControlMuh.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5415,13 +5415,13 @@
     <value>Fill</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 60</value>
+    <value>0, 74</value>
   </data>
   <data name="panelControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 471</value>
+    <value>1419, 583</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5445,10 +5445,10 @@
     <value>0, 0</value>
   </data>
   <data name="panelControl4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 60</value>
+    <value>1419, 74</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5469,10 +5469,10 @@
     <value>1</value>
   </data>
   <data name="tab_muhasebe.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tab_muhasebe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="tab_muhasebe.Text" xml:space="preserve">
     <value>Muhasebe Rapor</value>
@@ -5533,11 +5533,74 @@
         d8/bGgCAVFlZ2Z2xu//HHRR/A3ZD5WVOmqYwAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="labelSubeCon.EditValue" xml:space="preserve">
+    <value>ŞUBE</value>
+  </data>
+  <data name="labelSubeCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>835, 39</value>
+  </data>
+  <data name="labelSubeCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelSubeCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 25</value>
+  </data>
+  <data name="labelSubeCon.TabIndex" type="System.Int32, mscorlib">
+    <value>353</value>
+  </data>
+  <data name="&gt;&gt;labelSubeCon.Name" xml:space="preserve">
+    <value>labelSubeCon</value>
+  </data>
+  <data name="&gt;&gt;labelSubeCon.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelSubeCon.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;labelSubeCon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lookUpEditSubeCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>912, 39</value>
+  </data>
+  <data name="lookUpEditSubeCon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="lookUpEditSubeCon.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="lookUpEditSubeCon.Properties.Columns" xml:space="preserve">
+    <value>Kodlar_Ad</value>
+  </data>
+  <data name="lookUpEditSubeCon.Properties.Columns1" xml:space="preserve">
+    <value>Kodlar_Ad</value>
+  </data>
+  <data name="lookUpEditSubeCon.Properties.NullText" xml:space="preserve">
+    <value>Seciniz...</value>
+  </data>
+  <data name="lookUpEditSubeCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 25</value>
+  </data>
+  <data name="lookUpEditSubeCon.TabIndex" type="System.Int32, mscorlib">
+    <value>352</value>
+  </data>
+  <data name="&gt;&gt;lookUpEditSubeCon.Name" xml:space="preserve">
+    <value>lookUpEditSubeCon</value>
+  </data>
+  <data name="&gt;&gt;lookUpEditSubeCon.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lookUpEditSubeCon.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;lookUpEditSubeCon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="checkEditPaketHaricHepsi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 130</value>
+    <value>553, 160</value>
   </data>
   <data name="checkEditPaketHaricHepsi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="checkEditPaketHaricHepsi.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -5546,7 +5609,7 @@
     <value>Paket Hariç Hepsi</value>
   </data>
   <data name="checkEditPaketHaricHepsi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 19</value>
+    <value>168, 21</value>
   </data>
   <data name="checkEditPaketHaricHepsi.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -5561,13 +5624,13 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;checkEditPaketHaricHepsi.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="checkEditDirektSatis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 107</value>
+    <value>553, 132</value>
   </data>
   <data name="checkEditDirektSatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="checkEditDirektSatis.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -5576,7 +5639,7 @@
     <value>Direkt Satış</value>
   </data>
   <data name="checkEditDirektSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 19</value>
+    <value>106, 21</value>
   </data>
   <data name="checkEditDirektSatis.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -5591,13 +5654,13 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;checkEditDirektSatis.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="checkEditServisPay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 82</value>
+    <value>553, 101</value>
   </data>
   <data name="checkEditServisPay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="checkEditServisPay.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -5606,7 +5669,7 @@
     <value>Ser.Payı</value>
   </data>
   <data name="checkEditServisPay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 19</value>
+    <value>87, 21</value>
   </data>
   <data name="checkEditServisPay.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -5621,19 +5684,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;checkEditServisPay.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="textEdit10.EditValue" xml:space="preserve">
     <value>PR</value>
   </data>
   <data name="textEdit10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 55</value>
+    <value>284, 68</value>
   </data>
   <data name="textEdit10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit10.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -5648,19 +5711,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit10.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="chk_PR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 55</value>
+    <value>396, 68</value>
   </data>
   <data name="chk_PR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="chk_PR.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="chk_PR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
+    <value>153, 25</value>
   </data>
   <data name="chk_PR.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -5675,19 +5738,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_PR.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="textEdit9.EditValue" xml:space="preserve">
     <value>Garson &amp; Kasiyer</value>
   </data>
   <data name="textEdit9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 32</value>
+    <value>284, 39</value>
   </data>
   <data name="textEdit9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit9.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -5702,22 +5765,22 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit9.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="chk_GarsonKasiyer.EditValue" xml:space="preserve">
     <value />
   </data>
   <data name="chk_GarsonKasiyer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 32</value>
+    <value>396, 39</value>
   </data>
   <data name="chk_GarsonKasiyer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="chk_GarsonKasiyer.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="chk_GarsonKasiyer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
+    <value>153, 25</value>
   </data>
   <data name="chk_GarsonKasiyer.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -5732,19 +5795,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_GarsonKasiyer.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="chk_Detay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 130</value>
+    <value>259, 160</value>
   </data>
   <data name="chk_Detay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="chk_Detay.Properties.Caption" xml:space="preserve">
     <value />
   </data>
   <data name="chk_Detay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 19</value>
+    <value>17, 19</value>
   </data>
   <data name="chk_Detay.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -5759,19 +5822,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Detay.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="cmb_DetayGrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 129</value>
+    <value>396, 159</value>
   </data>
   <data name="cmb_DetayGrup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmb_DetayGrup.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cmb_DetayGrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
+    <value>153, 25</value>
   </data>
   <data name="cmb_DetayGrup.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -5786,19 +5849,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;cmb_DetayGrup.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="textEdit8.EditValue" xml:space="preserve">
     <value>Rec Detay Grup</value>
   </data>
   <data name="textEdit8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 129</value>
+    <value>284, 159</value>
   </data>
   <data name="textEdit8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit8.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -5813,7 +5876,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit8.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="btn_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
@@ -5864,13 +5927,13 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>599, 32</value>
+    <value>1289, 40</value>
   </data>
   <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 95</value>
+    <value>120, 117</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -5888,19 +5951,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="textEdit7.EditValue" xml:space="preserve">
     <value>Konum</value>
   </data>
   <data name="textEdit7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 129</value>
+    <value>7, 159</value>
   </data>
   <data name="textEdit7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit7.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -5915,19 +5978,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit7.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="cmb_Konum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 129</value>
+    <value>119, 159</value>
   </data>
   <data name="cmb_Konum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmb_Konum.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cmb_Konum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 22</value>
+    <value>129, 25</value>
   </data>
   <data name="cmb_Konum.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -5942,16 +6005,16 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;cmb_Konum.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="chk_Kapali.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chk_Kapali.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 60</value>
+    <value>553, 74</value>
   </data>
   <data name="chk_Kapali.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="chk_Kapali.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -5960,7 +6023,7 @@
     <value>Kapalı</value>
   </data>
   <data name="chk_Kapali.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 19</value>
+    <value>67, 21</value>
   </data>
   <data name="chk_Kapali.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -5975,16 +6038,16 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Kapali.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="chk_acik.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chk_acik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 35</value>
+    <value>553, 43</value>
   </data>
   <data name="chk_acik.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="chk_acik.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -5993,7 +6056,7 @@
     <value>Açık</value>
   </data>
   <data name="chk_acik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 19</value>
+    <value>67, 21</value>
   </data>
   <data name="chk_acik.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -6008,13 +6071,13 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_acik.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="rdo_SatisIptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 85</value>
+    <value>668, 105</value>
   </data>
   <data name="rdo_SatisIptal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="rdo_SatisIptal.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -6029,7 +6092,7 @@
     <value>İptal Raporu</value>
   </data>
   <data name="rdo_SatisIptal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 42</value>
+    <value>161, 52</value>
   </data>
   <data name="rdo_SatisIptal.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -6044,16 +6107,16 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;rdo_SatisIptal.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="Rapor_Tipi.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="Rapor_Tipi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>882, 2</value>
+    <value>1235, 2</value>
   </data>
   <data name="Rapor_Tipi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Rapor_Tipi.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -6074,7 +6137,7 @@
     <value>True</value>
   </data>
   <data name="Rapor_Tipi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 20</value>
+    <value>181, 23</value>
   </data>
   <data name="Rapor_Tipi.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -6089,16 +6152,16 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;Rapor_Tipi.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="dateTarih2.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="dateTarih2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 55</value>
+    <value>119, 68</value>
   </data>
   <data name="dateTarih2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="dateTarih2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -6113,7 +6176,7 @@
     <value>DateTimeAdvancingCaret</value>
   </data>
   <data name="dateTarih2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 22</value>
+    <value>129, 25</value>
   </data>
   <data name="dateTarih2.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -6128,16 +6191,16 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dateTarih2.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="dateTarih1.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="dateTarih1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 32</value>
+    <value>119, 39</value>
   </data>
   <data name="dateTarih1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="dateTarih1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -6152,7 +6215,7 @@
     <value>DateTimeAdvancingCaret</value>
   </data>
   <data name="dateTarih1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 22</value>
+    <value>129, 25</value>
   </data>
   <data name="dateTarih1.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -6167,22 +6230,22 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dateTarih1.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="timeSaat2.EditValue" type="System.DateTime, mscorlib">
     <value>06/18/2014 23:59:59</value>
   </data>
   <data name="timeSaat2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 58</value>
+    <value>749, 71</value>
   </data>
   <data name="timeSaat2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="timeSaat2.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTimeAdvancingCaret</value>
   </data>
   <data name="timeSaat2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
+    <value>80, 26</value>
   </data>
   <data name="timeSaat2.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -6197,22 +6260,22 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;timeSaat2.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="timeSaat1.EditValue" type="System.DateTime, mscorlib">
     <value>2014-06-18</value>
   </data>
   <data name="timeSaat1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 58</value>
+    <value>668, 71</value>
   </data>
   <data name="timeSaat1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="timeSaat1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>DateTimeAdvancingCaret</value>
   </data>
   <data name="timeSaat1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 22</value>
+    <value>80, 26</value>
   </data>
   <data name="timeSaat1.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -6227,13 +6290,13 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;timeSaat1.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="rdo_Saat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 32</value>
+    <value>668, 39</value>
   </data>
   <data name="rdo_Saat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="rdo_Saat.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -6248,7 +6311,7 @@
     <value>Kapanış</value>
   </data>
   <data name="rdo_Saat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 25</value>
+    <value>161, 31</value>
   </data>
   <data name="rdo_Saat.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -6263,19 +6326,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;rdo_Saat.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="cmb_Anagrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 83</value>
+    <value>396, 102</value>
   </data>
   <data name="cmb_Anagrup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmb_Anagrup.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cmb_Anagrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
+    <value>153, 25</value>
   </data>
   <data name="cmb_Anagrup.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -6290,19 +6353,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;cmb_Anagrup.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="cmb_Altgrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 106</value>
+    <value>396, 130</value>
   </data>
   <data name="cmb_Altgrup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmb_Altgrup.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cmb_Altgrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
+    <value>153, 25</value>
   </data>
   <data name="cmb_Altgrup.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -6317,19 +6380,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;cmb_Altgrup.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="textEdit4.EditValue" xml:space="preserve">
     <value>Rec Alt Grup</value>
   </data>
   <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 106</value>
+    <value>284, 130</value>
   </data>
   <data name="textEdit4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -6344,19 +6407,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="textEdit2.EditValue" xml:space="preserve">
     <value>Rec Ana Grup</value>
   </data>
   <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 83</value>
+    <value>284, 102</value>
   </data>
   <data name="textEdit2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -6371,19 +6434,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="chk_Alt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 107</value>
+    <value>259, 132</value>
   </data>
   <data name="chk_Alt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="chk_Alt.Properties.Caption" xml:space="preserve">
     <value />
   </data>
   <data name="chk_Alt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 19</value>
+    <value>27, 19</value>
   </data>
   <data name="chk_Alt.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -6398,19 +6461,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Alt.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="chk_Ana.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 84</value>
+    <value>259, 103</value>
   </data>
   <data name="chk_Ana.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="chk_Ana.Properties.Caption" xml:space="preserve">
     <value />
   </data>
   <data name="chk_Ana.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 19</value>
+    <value>27, 19</value>
   </data>
   <data name="chk_Ana.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -6425,19 +6488,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;chk_Ana.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="textEdit6.EditValue" xml:space="preserve">
     <value>Bitis Tarihi</value>
   </data>
   <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 55</value>
+    <value>7, 68</value>
   </data>
   <data name="textEdit6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit6.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -6452,19 +6515,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="textEdit5.EditValue" xml:space="preserve">
     <value>Baslangıc Tarihi</value>
   </data>
   <data name="textEdit5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 32</value>
+    <value>7, 39</value>
   </data>
   <data name="textEdit5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit5.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -6479,19 +6542,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit5.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>31</value>
   </data>
   <data name="textEdit1.EditValue" xml:space="preserve">
     <value>Fis Tipi</value>
   </data>
   <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 83</value>
+    <value>7, 102</value>
   </data>
   <data name="textEdit1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -6506,19 +6569,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>32</value>
   </data>
   <data name="textEdit3.EditValue" xml:space="preserve">
     <value>Departman</value>
   </data>
   <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 106</value>
+    <value>7, 130</value>
   </data>
   <data name="textEdit3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 22</value>
+    <value>111, 25</value>
   </data>
   <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -6533,19 +6596,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>33</value>
   </data>
   <data name="cmb_Fistipi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 83</value>
+    <value>119, 102</value>
   </data>
   <data name="cmb_Fistipi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmb_Fistipi.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cmb_Fistipi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 22</value>
+    <value>129, 25</value>
   </data>
   <data name="cmb_Fistipi.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -6560,19 +6623,19 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;cmb_Fistipi.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>34</value>
   </data>
   <data name="cmb_Departman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 106</value>
+    <value>119, 130</value>
   </data>
   <data name="cmb_Departman.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmb_Departman.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cmb_Departman.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 22</value>
+    <value>129, 25</value>
   </data>
   <data name="cmb_Departman.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -6587,7 +6650,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;cmb_Departman.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>35</value>
   </data>
   <data name="groupControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -6596,10 +6659,10 @@
     <value>0, 0</value>
   </data>
   <data name="groupControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1015, 156</value>
+    <value>1421, 192</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -12510,7 +12573,7 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -14289,7 +14352,7 @@
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="gridControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 531</value>
+    <value>1419, 657</value>
   </data>
   <data name="gridControl8.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

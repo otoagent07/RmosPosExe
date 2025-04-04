@@ -180,6 +180,9 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_OdenmezIkramPasif') IS NULL BEGIN ALT
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'ingenicoaktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [ingenicoaktif] bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'tutarduzeltplus') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [tutarduzeltplus] bit END;
 
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'otoDirekSatis') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [otoDirekSatis] bit END;
+
+
 IF COL_LENGTH('Pos_FolioParam', 'hizmetOdemeKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetOdemeKod nvarchar(200) END;
 IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD HizmetReceteKod nvarchar(200) END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartfIndirimAktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartfIndirimAktif] bit END;
