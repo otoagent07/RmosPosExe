@@ -57,6 +57,11 @@ namespace Pos
 
             radioGroupMerkezSube.Visible = User.merkezsubeaktif;
 
+            if (User.Pos_AdisyonPr)
+            {
+                barSubItem3.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            }
+
             //gridyenile();
         }
 

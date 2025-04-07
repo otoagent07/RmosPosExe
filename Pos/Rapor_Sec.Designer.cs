@@ -46,7 +46,9 @@
             // 
             // btn_Raporlar
             // 
+            this.btn_Raporlar.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btn_Raporlar.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Raporlar.Appearance.Font")));
+            this.btn_Raporlar.Appearance.Options.UseBackColor = true;
             this.btn_Raporlar.Appearance.Options.UseFont = true;
             this.btn_Raporlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Raporlar.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btn_Raporlar, "btn_Raporlar");
@@ -55,7 +57,9 @@
             // 
             // btn_Istatistik
             // 
+            this.btn_Istatistik.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_Istatistik.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Istatistik.Appearance.Font")));
+            this.btn_Istatistik.Appearance.Options.UseBackColor = true;
             this.btn_Istatistik.Appearance.Options.UseFont = true;
             this.btn_Istatistik.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Istatistik.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btn_Istatistik, "btn_Istatistik");
@@ -84,7 +88,9 @@
             // 
             // btn_GunsonuMail
             // 
+            this.btn_GunsonuMail.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn_GunsonuMail.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_GunsonuMail.Appearance.Font")));
+            this.btn_GunsonuMail.Appearance.Options.UseBackColor = true;
             this.btn_GunsonuMail.Appearance.Options.UseFont = true;
             this.btn_GunsonuMail.Appearance.Options.UseTextOptions = true;
             this.btn_GunsonuMail.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
