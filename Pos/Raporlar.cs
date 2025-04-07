@@ -33,15 +33,31 @@ namespace Pos
         public bool merkezAktifmi = false;
         private void Raporlar_Load(object sender, EventArgs e)
         {
-            var dt2 = dbtools.SelectTable("select Kodlar_Kod,Kodlar_Kod +' - '+ Kodlar_Ad AS Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Anadepo = 'False' and Kodlar_Satis = 'True' order by Kodlar_Kod");
 
-            lookUpEditSubeCon.Visible = Param.merkezaktif;
+            string q2 = $@"select
+                                       Pkod_SubeMac as [SubeMac],
+                                        Pkod_Server as [Server],
+                                        Pkod_Database as [Database],
+                                        Pkod_User as [User],
+                                        Pkod_Password as [Password],Pkod_Kod,Pkod_MerkezSube,Pkod_Ad
+                                        from pos_kodlar
+                                        where
+                                        Pkod_Sinif = 27
+                                       and
+                                        Pkod_MerkezSube = 'S'";
+
+            var dt2 = dbtools.SelectTable(q2);
+
             lookUpEditSubeCon.Properties.DataSource = dt2;
-            lookUpEditSubeCon.Properties.DisplayMember = "Kodlar_Ad";
-            lookUpEditSubeCon.Properties.ValueMember = "Kodlar_Kod";
+            lookUpEditSubeCon.Properties.DisplayMember = "Pkod_Ad";
+            lookUpEditSubeCon.Properties.ValueMember = "Pkod_Kod";
 
             merkezAktifmi = Param.merkezaktif;
             loadyukle();
+
+            radioGroupMerkezSube.Visible = User.merkezsubeaktif;
+            labelSubeCon.Visible = User.merkezsubeaktif;
+            lookUpEditSubeCon.Visible = User.merkezsubeaktif;
 
             //gridyenile();
         }
@@ -73,7 +89,7 @@ namespace Pos
                 cmb_Fistipi.Properties.ValueMember = "Kod";
                 cmb_Fistipi.SetEditValue("S,O,P,V,N");
                 string filter = "";
-                if (User.P_Departman != "" && merkezAktifmi==false)
+                if (User.P_Departman != "" && merkezAktifmi == false)
                 {
                     filter = " AND Kodlar_Kod IN ('" + User.P_Departman.Replace(", ", "','") + "')";
                 }
@@ -1004,7 +1020,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     return;
                 }
-               
+
 
 
                 SqlConnection con = dbtools.conn;
@@ -1928,6 +1944,21 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void radioGroup1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (radioGroupMerkezSube.SelectedIndex == 0)
+            {
+                lookUpEditSubeCon.Visible = false;
+                labelSubeCon.Visible = false;
+            }
+            else
+            {
+                lookUpEditSubeCon.Visible = true;
+                labelSubeCon.Visible = true;
+            }
+
         }
     }
 }

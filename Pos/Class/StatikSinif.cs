@@ -181,6 +181,7 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'ingenicoaktif') IS NULL BEGIN ALTER TABLE
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'tutarduzeltplus') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [tutarduzeltplus] bit END;
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'otoDirekSatis') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [otoDirekSatis] bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'merkezsubeaktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [merkezsubeaktif] bit END;
 
 
 IF COL_LENGTH('Pos_FolioParam', 'hizmetOdemeKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetOdemeKod nvarchar(200) END;
