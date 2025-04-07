@@ -5020,16 +5020,16 @@
   <data name="radioGroupMerkezSube.Location" type="System.Drawing.Point, System.Drawing">
     <value>719, 32</value>
   </data>
-  <data name="radioGroup1.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="radioGroupMerkezSube.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="radioGroup1.Properties.Items1" xml:space="preserve">
+  <data name="radioGroupMerkezSube.Properties.Items1" xml:space="preserve">
     <value>MERKEZ</value>
   </data>
-  <data name="radioGroup1.Properties.Items2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="radioGroupMerkezSube.Properties.Items2" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="radioGroup1.Properties.Items3" xml:space="preserve">
+  <data name="radioGroupMerkezSube.Properties.Items3" xml:space="preserve">
     <value>ŞUBE</value>
   </data>
   <data name="radioGroupMerkezSube.Size" type="System.Drawing.Size, System.Drawing">

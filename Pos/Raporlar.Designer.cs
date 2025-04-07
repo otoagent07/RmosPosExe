@@ -83,6 +83,7 @@
             this.gridControl7 = new DevExpress.XtraGrid.GridControl();
             this.gridView7 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.radioGroupMerkezSube = new DevExpress.XtraEditors.RadioGroup();
             this.labelSubeCon = new DevExpress.XtraEditors.TextEdit();
             this.lookUpEditSubeCon = new DevExpress.XtraEditors.LookUpEdit();
             this.checkEditPaketHaricHepsi = new DevExpress.XtraEditors.CheckEdit();
@@ -425,7 +426,6 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.radioGroupMerkezSube = new DevExpress.XtraEditors.RadioGroup();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -435,6 +435,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditPaketHaricHepsi.Properties)).BeginInit();
@@ -534,7 +535,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView8_1
@@ -1007,6 +1007,17 @@
             this.groupControl1.Controls.Add(this.cmb_Departman);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // radioGroupMerkezSube
+            // 
+            resources.ApplyResources(this.radioGroupMerkezSube, "radioGroupMerkezSube");
+            this.radioGroupMerkezSube.MenuManager = this.barManager1;
+            this.radioGroupMerkezSube.Name = "radioGroupMerkezSube";
+            this.radioGroupMerkezSube.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.radioGroupMerkezSube.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroupMerkezSube.Properties.Items"))), resources.GetString("radioGroupMerkezSube.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroupMerkezSube.Properties.Items2"))), resources.GetString("radioGroupMerkezSube.Properties.Items3"))});
+            this.radioGroupMerkezSube.SelectedIndexChanged += new System.EventHandler(this.radioGroup1_SelectedIndexChanged_1);
             // 
             // labelSubeCon
             // 
@@ -1803,8 +1814,6 @@
             // 
             // bandedGridColumn59
             // 
-            this.bandedGridColumn59.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn59.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.bandedGridColumn59, "bandedGridColumn59");
             this.bandedGridColumn59.FieldName = "NAKIT";
             this.bandedGridColumn59.MinWidth = 21;
@@ -1815,8 +1824,6 @@
             // 
             // bandedGridColumn60
             // 
-            this.bandedGridColumn60.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn60.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.bandedGridColumn60, "bandedGridColumn60");
             this.bandedGridColumn60.FieldName = "KK";
             this.bandedGridColumn60.MinWidth = 21;
@@ -1827,8 +1834,6 @@
             // 
             // gridColumn100
             // 
-            this.gridColumn100.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.gridColumn100.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.gridColumn100, "gridColumn100");
             this.gridColumn100.FieldName = "YEMEKCEKI";
             this.gridColumn100.MinWidth = 21;
@@ -1839,8 +1844,6 @@
             // 
             // bandedGridColumn63
             // 
-            this.bandedGridColumn63.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn63.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.bandedGridColumn63, "bandedGridColumn63");
             this.bandedGridColumn63.FieldName = "CARI";
             this.bandedGridColumn63.MinWidth = 21;
@@ -1851,8 +1854,6 @@
             // 
             // bandedGridColumn62
             // 
-            this.bandedGridColumn62.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn62.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.bandedGridColumn62, "bandedGridColumn62");
             this.bandedGridColumn62.FieldName = "IKRAM";
             this.bandedGridColumn62.MinWidth = 21;
@@ -1863,8 +1864,6 @@
             // 
             // bandedGridColumn61
             // 
-            this.bandedGridColumn61.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn61.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.bandedGridColumn61, "bandedGridColumn61");
             this.bandedGridColumn61.FieldName = "ODENMEZ";
             this.bandedGridColumn61.MinWidth = 21;
@@ -1875,8 +1874,6 @@
             // 
             // bandedGridColumn58
             // 
-            this.bandedGridColumn58.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.bandedGridColumn58.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.bandedGridColumn58, "bandedGridColumn58");
             this.bandedGridColumn58.FieldName = "KREDI";
             this.bandedGridColumn58.MinWidth = 21;
@@ -1887,8 +1884,6 @@
             // 
             // gridColumn146
             // 
-            this.gridColumn146.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.gridColumn146.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.gridColumn146, "gridColumn146");
             this.gridColumn146.FieldName = "ONLINE";
             this.gridColumn146.MinWidth = 21;
@@ -1899,8 +1894,6 @@
             // 
             // gridColumn145
             // 
-            this.gridColumn145.AppearanceCell.BackColor = System.Drawing.Color.Lavender;
-            this.gridColumn145.AppearanceCell.Options.UseBackColor = true;
             resources.ApplyResources(this.gridColumn145, "gridColumn145");
             this.gridColumn145.FieldName = "HAVALE";
             this.gridColumn145.MinWidth = 21;
@@ -4639,17 +4632,6 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
-            // radioGroupMerkezSube
-            // 
-            resources.ApplyResources(this.radioGroupMerkezSube, "radioGroupMerkezSube");
-            this.radioGroupMerkezSube.MenuManager = this.barManager1;
-            this.radioGroupMerkezSube.Name = "radioGroupMerkezSube";
-            this.radioGroupMerkezSube.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.radioGroupMerkezSube.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroup1.Properties.Items"))), resources.GetString("radioGroup1.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroup1.Properties.Items2"))), resources.GetString("radioGroup1.Properties.Items3"))});
-            this.radioGroupMerkezSube.SelectedIndexChanged += new System.EventHandler(this.radioGroup1_SelectedIndexChanged_1);
-            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -4673,6 +4655,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditPaketHaricHepsi.Properties)).EndInit();
@@ -4772,7 +4755,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMuh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMuh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
