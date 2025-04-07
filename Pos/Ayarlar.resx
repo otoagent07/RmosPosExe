@@ -25798,6 +25798,9 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
   <data name="merkezsubeaktif.TabIndex" type="System.Int32, mscorlib">
     <value>141</value>
   </data>
+  <data name="merkezsubeaktif.ToolTip" xml:space="preserve">
+    <value>ÖNEMLİ NOT : ŞUBE DEKİ KOD İLE DEP KOD AYNI OLMAK ZORUNDA</value>
+  </data>
   <data name="&gt;&gt;merkezsubeaktif.Name" xml:space="preserve">
     <value>merkezsubeaktif</value>
   </data>

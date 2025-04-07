@@ -27,15 +27,30 @@ namespace Pos
 
         private void Raporlar2_Load(object sender, EventArgs e)
         {
-            var dt2 = dbtools.SelectTable("select Kodlar_Kod,Kodlar_Kod +' - '+ Kodlar_Ad AS Kodlar_Ad from Stok_Kodlar where Kodlar_Sinif ='01' and Kodlar_Anadepo = 'False' and Kodlar_Satis = 'True' order by Kodlar_Kod");
+            string q2 = $@"select
+                                       Pkod_SubeMac as [SubeMac],
+                                        Pkod_Server as [Server],
+                                        Pkod_Database as [Database],
+                                        Pkod_User as [User],
+                                        Pkod_Password as [Password],Pkod_Kod,Pkod_MerkezSube,Pkod_Ad
+                                        from pos_kodlar
+                                        where
+                                        Pkod_Sinif = 27
+                                       and
+                                        Pkod_MerkezSube = 'S'";
 
-            lookUpEditSubeCon.Visible = Param.merkezaktif;
-            lookUpEditSubeCon.Properties.DataSource = dt2;
-            lookUpEditSubeCon.Properties.DisplayMember = "Kodlar_Ad";
-            lookUpEditSubeCon.Properties.ValueMember = "Kodlar_Kod";
+            var data = dbtools.SelectTableR(q2);
+
+
+            lookUpEditSubeCon.Properties.DataSource = data;
+            lookUpEditSubeCon.Properties.DisplayMember = "Pkod_Ad";
+            lookUpEditSubeCon.Properties.ValueMember = "Pkod_Kod";
 
 
             loadyukle();
+
+            radioGroupMerkezSube.Visible = User.merkezsubeaktif;
+
         }
         public void loadyukle()
         {
@@ -645,6 +660,12 @@ order by (Miktar) desc";
 
         private void lookUpEditSubeCon_EditValueChanged(object sender, EventArgs e)
         {
+            string depkod = lookUpEditSubeCon.EditValue.ToString();
+            subeyukle(depkod);
+        }
+
+        public void subeyukle(string depkod)
+        {
             try
             {
                 string q1 = $@"select top 1
@@ -657,7 +678,7 @@ order by (Miktar) desc";
                                         where
                                         Pkod_Sinif = 27
                                         and
-                                        Pkod_MerkezSube = 'S' and Pkod_Kod='{lookUpEditSubeCon.EditValue.ToString()}'";
+                                        Pkod_MerkezSube = 'S' and Pkod_Kod='{depkod}'";
 
                 dbtools.coneskiyedon();
 
@@ -678,6 +699,10 @@ order by (Miktar) desc";
                 Param.Param_Yukle();
                 FisPr.Param_Yukle();
                 loadyukle();
+
+                look_TekDep.EditValue = null;
+                look_TekDep.SetEditValue (null);
+
             }
             catch (Exception ex)
             {
@@ -688,6 +713,34 @@ order by (Miktar) desc";
         private void Raporlar2_FormClosed(object sender, FormClosedEventArgs e)
         {
             dbtools.coneskiyedon();
+        }
+
+        private void radioGroupMerkezSube_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (radioGroupMerkezSube.SelectedIndex == 0)
+                {
+                    lookUpEditSubeCon.Visible = false;
+
+                    string depkod = Departman.Dep_Kodu;
+                    subeyukle(depkod);
+                }
+                else
+                {
+                    lookUpEditSubeCon.Visible = true;
+
+                    if (lookUpEditSubeCon.EditValue == null) return;
+                    string depkod = lookUpEditSubeCon.EditValue.ToString();
+
+                    subeyukle(depkod);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

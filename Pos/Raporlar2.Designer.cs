@@ -90,7 +90,7 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumnMaliyet = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.labelSubeCon = new DevExpress.XtraEditors.TextEdit();
+            this.radioGroupMerkezSube = new DevExpress.XtraEditors.RadioGroup();
             this.lookUpEditSubeCon = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -132,7 +132,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditOnlinePaket.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,14 +140,13 @@
             // 
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
             this.gridColumn1.FieldName = "Grup";
-            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             // 
             // groupControl1
             // 
             this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
-            this.groupControl1.Controls.Add(this.labelSubeCon);
+            this.groupControl1.Controls.Add(this.radioGroupMerkezSube);
             this.groupControl1.Controls.Add(this.lookUpEditSubeCon);
             this.groupControl1.Controls.Add(this.checkEditOnlinePaket);
             this.groupControl1.Controls.Add(this.btnMaliyetSatis);
@@ -618,7 +617,6 @@
             // gridControl1
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
-            this.gridControl1.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl1.EmbeddedNavigator.Margin")));
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.barManager1;
             this.gridControl1.Name = "gridControl1";
@@ -634,7 +632,6 @@
             this.gridColumn4,
             this.gridColumn5,
             this.gridColumnMaliyet});
-            this.gridView1.DetailHeight = 431;
             styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             styleFormatCondition2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font")));
             styleFormatCondition2.Appearance.Options.UseBackColor = true;
@@ -654,7 +651,6 @@
             // 
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
             this.gridColumn2.FieldName = "Kod";
-            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
@@ -662,7 +658,6 @@
             // 
             resources.ApplyResources(this.gridColumn3, "gridColumn3");
             this.gridColumn3.FieldName = "Ad";
-            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             // 
@@ -672,7 +667,6 @@
             this.gridColumn4.DisplayFormat.FormatString = "N2";
             this.gridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn4.FieldName = "Miktar";
-            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             // 
@@ -682,7 +676,6 @@
             this.gridColumn5.DisplayFormat.FormatString = "N2";
             this.gridColumn5.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn5.FieldName = "Tutar";
-            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             // 
@@ -690,20 +683,17 @@
             // 
             resources.ApplyResources(this.gridColumnMaliyet, "gridColumnMaliyet");
             this.gridColumnMaliyet.FieldName = "Rsat_Maliyet";
-            this.gridColumnMaliyet.MinWidth = 23;
             this.gridColumnMaliyet.Name = "gridColumnMaliyet";
             // 
-            // labelSubeCon
+            // radioGroupMerkezSube
             // 
-            resources.ApplyResources(this.labelSubeCon, "labelSubeCon");
-            this.labelSubeCon.Name = "labelSubeCon";
-            this.labelSubeCon.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.labelSubeCon.Properties.AppearanceDisabled.Options.UseBackColor = true;
-            this.labelSubeCon.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.labelSubeCon.Properties.AppearanceReadOnly.Options.UseBackColor = true;
-            this.labelSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.labelSubeCon.Properties.ReadOnly = true;
-            this.labelSubeCon.TabStop = false;
+            resources.ApplyResources(this.radioGroupMerkezSube, "radioGroupMerkezSube");
+            this.radioGroupMerkezSube.Name = "radioGroupMerkezSube";
+            this.radioGroupMerkezSube.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.radioGroupMerkezSube.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroupMerkezSube.Properties.Items"))), resources.GetString("radioGroupMerkezSube.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroupMerkezSube.Properties.Items2"))), resources.GetString("radioGroupMerkezSube.Properties.Items3"))});
+            this.radioGroupMerkezSube.SelectedIndexChanged += new System.EventHandler(this.radioGroupMerkezSube_SelectedIndexChanged);
             // 
             // lookUpEditSubeCon
             // 
@@ -718,6 +708,8 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditSubeCon.Properties.Columns"), resources.GetString("lookUpEditSubeCon.Properties.Columns1"))});
             this.lookUpEditSubeCon.Properties.DropDownRows = 10;
             this.lookUpEditSubeCon.Properties.NullText = resources.GetString("lookUpEditSubeCon.Properties.NullText");
+            this.lookUpEditSubeCon.Properties.NullValuePrompt = resources.GetString("lookUpEditSubeCon.Properties.NullValuePrompt");
+            this.lookUpEditSubeCon.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("lookUpEditSubeCon.Properties.NullValuePromptShowForEmptyValue")));
             this.lookUpEditSubeCon.Properties.ShowFooter = false;
             this.lookUpEditSubeCon.Properties.ShowHeader = false;
             this.lookUpEditSubeCon.EditValueChanged += new System.EventHandler(this.lookUpEditSubeCon_EditValueChanged);
@@ -776,7 +768,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditOnlinePaket.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.labelSubeCon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -844,7 +836,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumnMaliyet;
         private DevExpress.XtraEditors.CheckEdit checkEditOnlinePaket;
         private DevExpress.XtraEditors.LookUpEdit checkedComboBoxEditOnlinePaket;
-        private DevExpress.XtraEditors.TextEdit labelSubeCon;
+        private DevExpress.XtraEditors.RadioGroup radioGroupMerkezSube;
         private DevExpress.XtraEditors.LookUpEdit lookUpEditSubeCon;
     }
 }

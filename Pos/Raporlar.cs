@@ -56,8 +56,6 @@ namespace Pos
             loadyukle();
 
             radioGroupMerkezSube.Visible = User.merkezsubeaktif;
-            labelSubeCon.Visible = User.merkezsubeaktif;
-            lookUpEditSubeCon.Visible = User.merkezsubeaktif;
 
             //gridyenile();
         }
@@ -1905,6 +1903,12 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
 
         private void lookUpEditSubeCon_EditValueChanged(object sender, EventArgs e)
         {
+            string depkod = lookUpEditSubeCon.EditValue.ToString();
+            subeyukle(depkod);
+        }
+
+        public void subeyukle(string depkod)
+        {
             try
             {
                 string q1 = $@"select top 1
@@ -1917,7 +1921,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                                         where
                                         Pkod_Sinif = 27
                                         and
-                                        Pkod_MerkezSube = 'S' and Pkod_Kod='{lookUpEditSubeCon.EditValue.ToString()}'";
+                                        Pkod_MerkezSube = 'S' and Pkod_Kod='{depkod}'";
 
                 dbtools.coneskiyedon();
 
@@ -1939,24 +1943,33 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                 FisPr.Param_Yukle();
                 User.Yetki_Yukle();
                 loadyukle();
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void radioGroup1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (radioGroupMerkezSube.SelectedIndex == 0)
             {
                 lookUpEditSubeCon.Visible = false;
                 labelSubeCon.Visible = false;
+
+                string depkod = Departman.Dep_Kodu;
+                subeyukle(depkod);
             }
             else
             {
                 lookUpEditSubeCon.Visible = true;
                 labelSubeCon.Visible = true;
+
+
+                if (lookUpEditSubeCon.EditValue == null) return;
+                string depkod = lookUpEditSubeCon.EditValue.ToString();
+
+                subeyukle(depkod);
             }
 
         }
