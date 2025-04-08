@@ -10,6 +10,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Reflection;
 using System.Resources;
 using System.Text;
@@ -3866,6 +3867,80 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private void btnPavoKapat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fis_no = Convert.ToInt32(this.Tag);
+
+
+                string q1 = $@"select top 1 Kodlar_pavoUrl,Kodlar_pavoSirketId,Kodlar_Kod from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}' and Kodlar_Pavo=1";
+                DataTable dataTable = dbtools.SelectTableR(q1);
+
+                if (dataTable == null || dataTable.Rows.Count == 0)
+                {
+                    MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
+                    return;
+                }
+                string url = dataTable.Rows[0]["Kodlar_pavoUrl"].ToString();
+                string sirketId = dataTable.Rows[0]["Kodlar_pavoSirketId"].ToString();
+
+                if (url == "" || sirketId == "")
+                {
+                    MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
+                    return;
+                }
+
+
+                string pavoOdemeKod = $"select top 1 ISNULL(pavoOdemeKod,'') as pavoOdemeKod from Pos_Kodlar where Pkod_Sinif = '11'  and Pkod_Kod='{look_Kapatma.EditValue}'";
+
+               
+
+                pavoOdemeKod = dbtools.DegerGetir(pavoOdemeKod);
+
+                if (pavoOdemeKod == "")
+                {
+                    MessageBox.Show("Lütfen ödeme kodlarından pavo yu eşletiriniz !!");
+                    return;
+                }
+
+                var client = new HttpClient();
+                var request = new HttpRequestMessage(HttpMethod.Post, url + "/Pavo/RestaurantSale");
+
+                // JSON'a çevrilecek nesne
+                var payment = new PavoReqModel
+                {
+                    fisno = ""+ fis_no,
+                    depkod = Departman.Dep_Kodu,
+                    paymentTypeId = Convert.ToInt32(pavoOdemeKod),
+                    sirketId = sirketId
+                };
+
+                // Sınıfı JSON string'e dönüştür
+                var json = Newtonsoft.Json.JsonConvert.SerializeObject(payment);
+                var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+                request.Content = content;
+
+                var response = client.SendAsync(request).Result;
+                response.EnsureSuccessStatusCode();
+                string sonuc = response.Content.ReadAsStringAsync().Result;
+
+                if (sonuc=="1")
+                {
+                    MessageBox.Show("Başarılı");
+                }
+                else
+                {
+                    MessageBox.Show("Başarısız");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

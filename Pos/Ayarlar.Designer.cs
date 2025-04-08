@@ -685,6 +685,8 @@
             this.btn_Print_Fatura = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Print_Adisyon = new DevExpress.XtraEditors.SimpleButton();
             this.tab_OdemeKodlari = new DevExpress.XtraTab.XtraTabPage();
+            this.textEdit196 = new DevExpress.XtraEditors.TextEdit();
+            this.lookUpEditPavoOdeme = new DevExpress.XtraEditors.LookUpEdit();
             this.Pkod_E_Adisyon = new DevExpress.XtraEditors.CheckEdit();
             this.txtsaatAralikDurdur = new DevExpress.XtraEditors.TextEdit();
             this.lookUpOtoKurSec = new DevExpress.XtraEditors.LookUpEdit();
@@ -994,6 +996,8 @@
             this.textEdit72 = new DevExpress.XtraEditors.TextEdit();
             this.look_HH_Departman5 = new DevExpress.XtraEditors.LookUpEdit();
             this.tab_Kullanici_Ayarlari = new DevExpress.XtraTab.XtraTabPage();
+            this.radioGroupMerkezSube = new DevExpress.XtraEditors.RadioGroup();
+            this.lookUpEditSubeCon = new DevExpress.XtraEditors.LookUpEdit();
             this.postema = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit194 = new DevExpress.XtraEditors.TextEdit();
@@ -1142,6 +1146,7 @@
             this.chk_Servis = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
+            this.merkezsubeaktif = new DevExpress.XtraEditors.CheckEdit();
             this.lookUpEditHesapDokYazici = new DevExpress.XtraEditors.LookUpEdit();
             this.Pos_OdenmezIkramPasif = new DevExpress.XtraEditors.CheckEdit();
             this.Pos_HesapFisIptal = new DevExpress.XtraEditors.CheckEdit();
@@ -1287,9 +1292,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.merkezsubeaktif = new DevExpress.XtraEditors.CheckEdit();
-            this.radioGroupMerkezSube = new DevExpress.XtraEditors.RadioGroup();
-            this.lookUpEditSubeCon = new DevExpress.XtraEditors.LookUpEdit();
+            this.gridColumn177 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1743,6 +1746,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.tab_OdemeKodlari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit196.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditPavoOdeme.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pkod_E_Adisyon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsaatAralikDurdur.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpOtoKurSec.Properties)).BeginInit();
@@ -1935,6 +1940,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit72.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_HH_Departman5.Properties)).BeginInit();
             this.tab_Kullanici_Ayarlari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postema.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit194.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_dil.Properties)).BeginInit();
@@ -2076,6 +2083,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).BeginInit();
             this.xtraTabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.merkezsubeaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditHesapDokYazici.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_OdenmezIkramPasif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_HesapFisIptal.Properties)).BeginInit();
@@ -2160,9 +2168,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.merkezsubeaktif.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -7730,6 +7735,8 @@
             // 
             // tab_OdemeKodlari
             // 
+            this.tab_OdemeKodlari.Controls.Add(this.textEdit196);
+            this.tab_OdemeKodlari.Controls.Add(this.lookUpEditPavoOdeme);
             this.tab_OdemeKodlari.Controls.Add(this.Pkod_E_Adisyon);
             this.tab_OdemeKodlari.Controls.Add(this.txtsaatAralikDurdur);
             this.tab_OdemeKodlari.Controls.Add(this.lookUpOtoKurSec);
@@ -7775,6 +7782,25 @@
             this.tab_OdemeKodlari.Controls.Add(this.Pkod_Dep);
             this.tab_OdemeKodlari.Name = "tab_OdemeKodlari";
             resources.ApplyResources(this.tab_OdemeKodlari, "tab_OdemeKodlari");
+            // 
+            // textEdit196
+            // 
+            resources.ApplyResources(this.textEdit196, "textEdit196");
+            this.textEdit196.Name = "textEdit196";
+            this.textEdit196.Properties.ReadOnly = true;
+            this.textEdit196.TabStop = false;
+            // 
+            // lookUpEditPavoOdeme
+            // 
+            this.lookUpEditPavoOdeme.EnterMoveNextControl = true;
+            resources.ApplyResources(this.lookUpEditPavoOdeme, "lookUpEditPavoOdeme");
+            this.lookUpEditPavoOdeme.Name = "lookUpEditPavoOdeme";
+            this.lookUpEditPavoOdeme.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEditPavoOdeme.Properties.Buttons"))))});
+            this.lookUpEditPavoOdeme.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditPavoOdeme.Properties.Columns"), resources.GetString("lookUpEditPavoOdeme.Properties.Columns1"), ((int)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns2"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns3"))), resources.GetString("lookUpEditPavoOdeme.Properties.Columns4"), ((bool)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns5"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns6"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns7"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns8")))),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditPavoOdeme.Properties.Columns9"), resources.GetString("lookUpEditPavoOdeme.Properties.Columns10"), ((int)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns11"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns12"))), resources.GetString("lookUpEditPavoOdeme.Properties.Columns13"), ((bool)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns14"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns15"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns16"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns17"))))});
+            this.lookUpEditPavoOdeme.Properties.NullText = resources.GetString("lookUpEditPavoOdeme.Properties.NullText");
             // 
             // Pkod_E_Adisyon
             // 
@@ -8123,7 +8149,8 @@
             this.gridColumn166,
             this.gridColumn167,
             this.gridColumn168,
-            this.gridColumn175});
+            this.gridColumn175,
+            this.gridColumn177});
             this.gridView2.GridControl = this.grd_Odeme;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ColumnAutoWidth = false;
@@ -10488,6 +10515,35 @@
             this.tab_Kullanici_Ayarlari.Name = "tab_Kullanici_Ayarlari";
             resources.ApplyResources(this.tab_Kullanici_Ayarlari, "tab_Kullanici_Ayarlari");
             // 
+            // radioGroupMerkezSube
+            // 
+            resources.ApplyResources(this.radioGroupMerkezSube, "radioGroupMerkezSube");
+            this.radioGroupMerkezSube.Name = "radioGroupMerkezSube";
+            this.radioGroupMerkezSube.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.radioGroupMerkezSube.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroupMerkezSube.Properties.Items"))), resources.GetString("radioGroupMerkezSube.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroupMerkezSube.Properties.Items2"))), resources.GetString("radioGroupMerkezSube.Properties.Items3"))});
+            this.radioGroupMerkezSube.SelectedIndexChanged += new System.EventHandler(this.radioGroupMerkezSube_SelectedIndexChanged);
+            // 
+            // lookUpEditSubeCon
+            // 
+            this.lookUpEditSubeCon.EnterMoveNextControl = true;
+            resources.ApplyResources(this.lookUpEditSubeCon, "lookUpEditSubeCon");
+            this.lookUpEditSubeCon.Name = "lookUpEditSubeCon";
+            this.lookUpEditSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.lookUpEditSubeCon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEditSubeCon.Properties.Buttons"))))});
+            this.lookUpEditSubeCon.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
+            this.lookUpEditSubeCon.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditSubeCon.Properties.Columns"), resources.GetString("lookUpEditSubeCon.Properties.Columns1"))});
+            this.lookUpEditSubeCon.Properties.DropDownRows = 10;
+            this.lookUpEditSubeCon.Properties.NullText = resources.GetString("lookUpEditSubeCon.Properties.NullText");
+            this.lookUpEditSubeCon.Properties.NullValuePrompt = resources.GetString("lookUpEditSubeCon.Properties.NullValuePrompt");
+            this.lookUpEditSubeCon.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("lookUpEditSubeCon.Properties.NullValuePromptShowForEmptyValue")));
+            this.lookUpEditSubeCon.Properties.ShowFooter = false;
+            this.lookUpEditSubeCon.Properties.ShowHeader = false;
+            this.lookUpEditSubeCon.EditValueChanged += new System.EventHandler(this.lookUpEditSubeCon_EditValueChanged);
+            // 
             // postema
             // 
             resources.ApplyResources(this.postema, "postema");
@@ -11593,6 +11649,12 @@
             this.xtraTabPage7.Controls.Add(this.Pos_ArtiEksi_Aktif);
             this.xtraTabPage7.Name = "xtraTabPage7";
             resources.ApplyResources(this.xtraTabPage7, "xtraTabPage7");
+            // 
+            // merkezsubeaktif
+            // 
+            resources.ApplyResources(this.merkezsubeaktif, "merkezsubeaktif");
+            this.merkezsubeaktif.Name = "merkezsubeaktif";
+            this.merkezsubeaktif.Properties.Caption = resources.GetString("merkezsubeaktif.Properties.Caption");
             // 
             // lookUpEditHesapDokYazici
             // 
@@ -12806,40 +12868,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // merkezsubeaktif
+            // gridColumn177
             // 
-            resources.ApplyResources(this.merkezsubeaktif, "merkezsubeaktif");
-            this.merkezsubeaktif.Name = "merkezsubeaktif";
-            this.merkezsubeaktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
-            // radioGroupMerkezSube
-            // 
-            resources.ApplyResources(this.radioGroupMerkezSube, "radioGroupMerkezSube");
-            this.radioGroupMerkezSube.Name = "radioGroupMerkezSube";
-            this.radioGroupMerkezSube.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.radioGroupMerkezSube.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroupMerkezSube.Properties.Items"))), resources.GetString("radioGroupMerkezSube.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroupMerkezSube.Properties.Items2"))), resources.GetString("radioGroupMerkezSube.Properties.Items3"))});
-            this.radioGroupMerkezSube.SelectedIndexChanged += new System.EventHandler(this.radioGroupMerkezSube_SelectedIndexChanged);
-            // 
-            // lookUpEditSubeCon
-            // 
-            this.lookUpEditSubeCon.EnterMoveNextControl = true;
-            resources.ApplyResources(this.lookUpEditSubeCon, "lookUpEditSubeCon");
-            this.lookUpEditSubeCon.Name = "lookUpEditSubeCon";
-            this.lookUpEditSubeCon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.lookUpEditSubeCon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEditSubeCon.Properties.Buttons"))))});
-            this.lookUpEditSubeCon.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
-            this.lookUpEditSubeCon.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditSubeCon.Properties.Columns"), resources.GetString("lookUpEditSubeCon.Properties.Columns1"))});
-            this.lookUpEditSubeCon.Properties.DropDownRows = 10;
-            this.lookUpEditSubeCon.Properties.NullText = resources.GetString("lookUpEditSubeCon.Properties.NullText");
-            this.lookUpEditSubeCon.Properties.NullValuePrompt = resources.GetString("lookUpEditSubeCon.Properties.NullValuePrompt");
-            this.lookUpEditSubeCon.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("lookUpEditSubeCon.Properties.NullValuePromptShowForEmptyValue")));
-            this.lookUpEditSubeCon.Properties.ShowFooter = false;
-            this.lookUpEditSubeCon.Properties.ShowHeader = false;
-            this.lookUpEditSubeCon.EditValueChanged += new System.EventHandler(this.lookUpEditSubeCon_EditValueChanged);
+            resources.ApplyResources(this.gridColumn177, "gridColumn177");
+            this.gridColumn177.FieldName = "pavoOdemeKod";
+            this.gridColumn177.Name = "gridColumn177";
             // 
             // Ayarlar
             // 
@@ -13319,6 +13352,8 @@
             this.panelControl1.ResumeLayout(false);
             this.tab_OdemeKodlari.ResumeLayout(false);
             this.tab_OdemeKodlari.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit196.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditPavoOdeme.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pkod_E_Adisyon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsaatAralikDurdur.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpOtoKurSec.Properties)).EndInit();
@@ -13519,6 +13554,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_HH_Departman5.Properties)).EndInit();
             this.tab_Kullanici_Ayarlari.ResumeLayout(false);
             this.tab_Kullanici_Ayarlari.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postema.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit194.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_dil.Properties)).EndInit();
@@ -13661,6 +13698,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).EndInit();
             this.xtraTabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.merkezsubeaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditHesapDokYazici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_OdenmezIkramPasif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_HesapFisIptal.Properties)).EndInit();
@@ -13752,9 +13790,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.merkezsubeaktif.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroupMerkezSube.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSubeCon.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15021,5 +15056,8 @@
         private DevExpress.XtraEditors.CheckEdit merkezsubeaktif;
         private DevExpress.XtraEditors.RadioGroup radioGroupMerkezSube;
         private DevExpress.XtraEditors.LookUpEdit lookUpEditSubeCon;
+        private DevExpress.XtraEditors.TextEdit textEdit196;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditPavoOdeme;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn177;
     }
 }

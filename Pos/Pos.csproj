@@ -458,6 +458,7 @@
     <Compile Include="MasaSecForm.Designer.cs">
       <DependentUpon>MasaSecForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\PavoReqModel.cs" />
     <Compile Include="Models\PrintJson.cs" />
     <Compile Include="Print\Abuyer.cs">
       <SubType>Component</SubType>
