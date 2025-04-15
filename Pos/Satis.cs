@@ -1917,7 +1917,7 @@ namespace Pos
                     if (Convert.ToString(dt.Rows[i]["Kodlar_Ad"]) == "(*) SIK KULLANILAN")
                     {
                         string[] sizeArraySikKullan = Param.Param_SikKullanSize.Split(';');
-                        //btn_AltGrup.Size = new System.Drawing.Size(Convert.ToInt32(sizeArraySikKullan[0]), Convert.ToInt32(sizeArraySikKullan[1]));
+                        btn_AltGrup.Size = new System.Drawing.Size(Convert.ToInt32(sizeArraySikKullan[0]), Convert.ToInt32(sizeArraySikKullan[1]));
                     }
 
                     btn_AltGrup.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
