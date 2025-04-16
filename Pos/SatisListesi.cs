@@ -82,6 +82,11 @@ namespace Pos
 
             //pictureBox3.Image = Image.FromFile("modulLogo.png");
 
+            layoutView1.OptionsView.ShowHeaderPanel = false;
+            layoutView1.OptionsView.ShowCardCaption = false;
+
+
+
         }
 
 

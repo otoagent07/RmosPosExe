@@ -248,7 +248,7 @@ namespace Pos
             // 
             // gridColumn6
             // 
-            this.gridColumn6.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gridColumn6.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gridColumn6.AppearanceCell.Options.UseFont = true;
             this.gridColumn6.Caption = "Miktar";
             this.gridColumn6.CustomizationCaption = "Miktarı";
@@ -312,7 +312,7 @@ namespace Pos
             this.layoutViewField_gridColumn9.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.layoutViewField_gridColumn9.Location = new System.Drawing.Point(178, 0);
             this.layoutViewField_gridColumn9.Name = "layoutViewField_gridColumn9";
-            this.layoutViewField_gridColumn9.Size = new System.Drawing.Size(150, 52);
+            this.layoutViewField_gridColumn9.Size = new System.Drawing.Size(81, 52);
             this.layoutViewField_gridColumn9.Spacing = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
             this.layoutViewField_gridColumn9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutViewField_gridColumn9.TextVisible = false;
