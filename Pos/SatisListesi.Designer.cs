@@ -66,11 +66,11 @@ namespace Pos
             this.lbl_Kasiyer = new DevExpress.XtraLayout.SimpleLabelItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSlayt = new System.Windows.Forms.Panel();
+            this.pictureBoxSlayt = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelSlayt = new System.Windows.Forms.Panel();
-            this.pictureBoxSlayt = new System.Windows.Forms.PictureBox();
             this.timerSlayt = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_layoutViewColumn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).BeginInit();
@@ -99,11 +99,11 @@ namespace Pos
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_Kasiyer)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panelSlayt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlayt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panelSlayt.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlayt)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutViewColumn2
@@ -393,7 +393,7 @@ namespace Pos
             // 
             this.simpleLabelItem2.AllowHotTrack = false;
             this.simpleLabelItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.simpleLabelItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.DarkGreen;
+            this.simpleLabelItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.MidnightBlue;
             this.simpleLabelItem2.AppearanceItemCaption.Options.UseFont = true;
             this.simpleLabelItem2.AppearanceItemCaption.Options.UseForeColor = true;
             this.simpleLabelItem2.Location = new System.Drawing.Point(0, 494);
@@ -425,7 +425,7 @@ namespace Pos
             // 
             this.lbl_Toplam.AllowHotTrack = false;
             this.lbl_Toplam.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Toplam.AppearanceItemCaption.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lbl_Toplam.AppearanceItemCaption.ForeColor = System.Drawing.Color.MidnightBlue;
             this.lbl_Toplam.AppearanceItemCaption.Options.UseFont = true;
             this.lbl_Toplam.AppearanceItemCaption.Options.UseForeColor = true;
             this.lbl_Toplam.AppearanceItemCaption.Options.UseTextOptions = true;
@@ -586,6 +586,25 @@ namespace Pos
             this.panel1.Size = new System.Drawing.Size(299, 600);
             this.panel1.TabIndex = 1;
             // 
+            // panelSlayt
+            // 
+            this.panelSlayt.Controls.Add(this.pictureBoxSlayt);
+            this.panelSlayt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelSlayt.Location = new System.Drawing.Point(0, 244);
+            this.panelSlayt.Name = "panelSlayt";
+            this.panelSlayt.Size = new System.Drawing.Size(299, 257);
+            this.panelSlayt.TabIndex = 2;
+            // 
+            // pictureBoxSlayt
+            // 
+            this.pictureBoxSlayt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxSlayt.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxSlayt.Name = "pictureBoxSlayt";
+            this.pictureBoxSlayt.Size = new System.Drawing.Size(299, 257);
+            this.pictureBoxSlayt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSlayt.TabIndex = 0;
+            this.pictureBoxSlayt.TabStop = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -615,25 +634,6 @@ namespace Pos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(501, 600);
             this.panel2.TabIndex = 2;
-            // 
-            // panelSlayt
-            // 
-            this.panelSlayt.Controls.Add(this.pictureBoxSlayt);
-            this.panelSlayt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSlayt.Location = new System.Drawing.Point(0, 244);
-            this.panelSlayt.Name = "panelSlayt";
-            this.panelSlayt.Size = new System.Drawing.Size(299, 257);
-            this.panelSlayt.TabIndex = 2;
-            // 
-            // pictureBoxSlayt
-            // 
-            this.pictureBoxSlayt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxSlayt.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxSlayt.Name = "pictureBoxSlayt";
-            this.pictureBoxSlayt.Size = new System.Drawing.Size(299, 257);
-            this.pictureBoxSlayt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSlayt.TabIndex = 0;
-            this.pictureBoxSlayt.TabStop = false;
             // 
             // timerSlayt
             // 
@@ -682,11 +682,11 @@ namespace Pos
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_Kasiyer)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panelSlayt.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlayt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panelSlayt.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlayt)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -694,8 +694,6 @@ namespace Pos
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Layout.LayoutView layoutView1;
         private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn6;
@@ -733,5 +731,7 @@ namespace Pos
         private System.Windows.Forms.Panel panelSlayt;
         private System.Windows.Forms.PictureBox pictureBoxSlayt;
         private System.Windows.Forms.Timer timerSlayt;
+        public DevExpress.XtraGrid.GridControl gridControl1;
+        public DevExpress.XtraGrid.Views.Layout.LayoutView layoutView1;
     }
 }

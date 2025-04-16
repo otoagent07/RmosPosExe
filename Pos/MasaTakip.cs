@@ -3168,7 +3168,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             txtFisnoGit.Focus();
             txtFisnoGit.Select();
 
-            txt_Filtre.Text = "";
+            //txt_Filtre.Text = "";
 
         }
     }

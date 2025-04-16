@@ -3942,6 +3942,17 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnIkinciEkranScrollUp_Click(object sender, EventArgs e)
+        {
+            Main.a.layoutView1.MovePrev();
+        }
+
+        private void btnIkinciEkranScrollDown_Click(object sender, EventArgs e)
+        {
+            Main.a.layoutView1.MoveNext();
+
+        }
     }
 }
 

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hesap));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue3 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule4 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue4 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule5 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue5 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule6 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue6 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -123,6 +123,8 @@
             this.btnUrunIade = new DevExpress.XtraEditors.SimpleButton();
             this.btnCekmeceAc = new DevExpress.XtraEditors.SimpleButton();
             this.btnPavoKapat = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIkinciEkranScrollUp = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIkinciEkranScrollDown = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -412,40 +414,40 @@
             this.gridColumn14,
             this.gridColumn15});
             this.gridView1.DetailHeight = 231;
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn13;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn13;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
-            formatConditionRuleValue1.Appearance.BackColor2 = ((System.Drawing.Color)(resources.GetObject("resource.BackColor2")));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue1.Value1 = "1";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            gridFormatRule2.Column = this.gridColumn15;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn1;
-            gridFormatRule2.Name = "Format1";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue2.Value1 = 1;
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            gridFormatRule3.ApplyToRow = true;
-            gridFormatRule3.Column = this.gridColumn6;
-            gridFormatRule3.ColumnApplyTo = this.gridColumn1;
-            gridFormatRule3.Name = "Format2";
-            formatConditionRuleValue3.Appearance.BorderColor = System.Drawing.Color.Red;
-            formatConditionRuleValue3.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue3.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleValue3.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue3.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue3.Value1 = "A";
-            gridFormatRule3.Rule = formatConditionRuleValue3;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
-            this.gridView1.FormatRules.Add(gridFormatRule2);
-            this.gridView1.FormatRules.Add(gridFormatRule3);
+            gridFormatRule4.ApplyToRow = true;
+            gridFormatRule4.Column = this.gridColumn13;
+            gridFormatRule4.ColumnApplyTo = this.gridColumn13;
+            gridFormatRule4.Name = "Format0";
+            formatConditionRuleValue4.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            formatConditionRuleValue4.Appearance.BackColor2 = ((System.Drawing.Color)(resources.GetObject("resource.BackColor2")));
+            formatConditionRuleValue4.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue4.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue4.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue4.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue4.Value1 = "1";
+            gridFormatRule4.Rule = formatConditionRuleValue4;
+            gridFormatRule5.Column = this.gridColumn15;
+            gridFormatRule5.ColumnApplyTo = this.gridColumn1;
+            gridFormatRule5.Name = "Format1";
+            formatConditionRuleValue5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue5.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue5.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue5.Value1 = 1;
+            gridFormatRule5.Rule = formatConditionRuleValue5;
+            gridFormatRule6.ApplyToRow = true;
+            gridFormatRule6.Column = this.gridColumn6;
+            gridFormatRule6.ColumnApplyTo = this.gridColumn1;
+            gridFormatRule6.Name = "Format2";
+            formatConditionRuleValue6.Appearance.BorderColor = System.Drawing.Color.Red;
+            formatConditionRuleValue6.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue6.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleValue6.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue6.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue6.Value1 = "A";
+            gridFormatRule6.Rule = formatConditionRuleValue6;
+            this.gridView1.FormatRules.Add(gridFormatRule4);
+            this.gridView1.FormatRules.Add(gridFormatRule5);
+            this.gridView1.FormatRules.Add(gridFormatRule6);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsSelection.InvertSelection = true;
@@ -1041,18 +1043,36 @@
             // 
             // btnPavoKapat
             // 
-            this.btnPavoKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnPavoKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPavoKapat.ImageOptions.Image")));
             this.btnPavoKapat.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnPavoKapat.ImageOptions.SvgImageSize = new System.Drawing.Size(12, 12);
             resources.ApplyResources(this.btnPavoKapat, "btnPavoKapat");
             this.btnPavoKapat.Name = "btnPavoKapat";
             this.btnPavoKapat.Click += new System.EventHandler(this.btnPavoKapat_Click);
             // 
+            // btnIkinciEkranScrollUp
+            // 
+            this.btnIkinciEkranScrollUp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnIkinciEkranScrollUp.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter;
+            resources.ApplyResources(this.btnIkinciEkranScrollUp, "btnIkinciEkranScrollUp");
+            this.btnIkinciEkranScrollUp.Name = "btnIkinciEkranScrollUp";
+            this.btnIkinciEkranScrollUp.Click += new System.EventHandler(this.btnIkinciEkranScrollUp_Click);
+            // 
+            // btnIkinciEkranScrollDown
+            // 
+            this.btnIkinciEkranScrollDown.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.btnIkinciEkranScrollDown.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter;
+            resources.ApplyResources(this.btnIkinciEkranScrollDown, "btnIkinciEkranScrollDown");
+            this.btnIkinciEkranScrollDown.Name = "btnIkinciEkranScrollDown";
+            this.btnIkinciEkranScrollDown.Click += new System.EventHandler(this.btnIkinciEkranScrollDown_Click);
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btnIkinciEkranScrollDown);
+            this.Controls.Add(this.btnIkinciEkranScrollUp);
             this.Controls.Add(this.btnPavoKapat);
             this.Controls.Add(this.btnCekmeceAc);
             this.Controls.Add(this.btnUrunIade);
@@ -1254,5 +1274,7 @@
         private DevExpress.XtraEditors.SimpleButton btnUrunIade;
         private DevExpress.XtraEditors.SimpleButton btnCekmeceAc;
         private DevExpress.XtraEditors.SimpleButton btnPavoKapat;
+        private DevExpress.XtraEditors.SimpleButton btnIkinciEkranScrollUp;
+        private DevExpress.XtraEditors.SimpleButton btnIkinciEkranScrollDown;
     }
 }

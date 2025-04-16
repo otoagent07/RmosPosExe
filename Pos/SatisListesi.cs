@@ -53,7 +53,7 @@ namespace Pos
                 lbl_Fisno.Text = Fisno.ToString();
                 lbl_Kasiyer.Text = Convert.ToString(dt.Rows[0]["Kasiyer"]);
                 lbl_Toplam.Text = Tutar.ToString("n2");
-                lbl_Kalan.Text = dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 21,@Fisno = '" + Fisno + "', @Split = '0'");
+                lbl_Kalan.Text = Convert.ToDecimal( dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 21,@Fisno = '" + Fisno + "', @Split = '0'")).ToString("n2");
             }
             else
             {

@@ -409,7 +409,7 @@ namespace Pos
 
                 if (System.Windows.Forms.Screen.AllScreens.Length > 1 && Param.ikinciEkranAktif == false)
                 {
-                    Main.a.Location = Screen.AllScreens[1].Bounds.Location;
+                    Main.a.Location = Screen.AllScreens[0].Bounds.Location;
                     Main.a.Show();
                 }
 
