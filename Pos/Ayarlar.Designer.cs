@@ -751,6 +751,7 @@
             this.gridColumn167 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn168 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn175 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn177 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Chk_Odeme_TekOda = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme_Kasa_Cikis = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme_Kasa_Giris = new DevExpress.XtraEditors.CheckEdit();
@@ -1292,7 +1293,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.gridColumn177 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -8314,6 +8314,12 @@
             this.gridColumn175.FieldName = "Pkod_E_Adisyon";
             this.gridColumn175.Name = "gridColumn175";
             // 
+            // gridColumn177
+            // 
+            resources.ApplyResources(this.gridColumn177, "gridColumn177");
+            this.gridColumn177.FieldName = "pavoOdemeKod";
+            this.gridColumn177.Name = "gridColumn177";
+            // 
             // Chk_Odeme_TekOda
             // 
             resources.ApplyResources(this.Chk_Odeme_TekOda, "Chk_Odeme_TekOda");
@@ -12867,12 +12873,6 @@
             this.textBox26.ForeColor = System.Drawing.Color.Navy;
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
-            // 
-            // gridColumn177
-            // 
-            resources.ApplyResources(this.gridColumn177, "gridColumn177");
-            this.gridColumn177.FieldName = "pavoOdemeKod";
-            this.gridColumn177.Name = "gridColumn177";
             // 
             // Ayarlar
             // 

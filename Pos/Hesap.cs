@@ -3929,11 +3929,11 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                 if (sonuc=="1")
                 {
-                    MessageBox.Show("Başarılı");
+                    this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Başarısız");
+                    MessageBox.Show("Başarısız\n"+ sonuc);
                 }
 
             }

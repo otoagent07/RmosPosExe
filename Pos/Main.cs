@@ -291,6 +291,7 @@ namespace Pos
 
         public frmLogin login;
         public static string MyClass = "Main";
+        CallerId c = null;
 
         public void departmanYukleNew()
         {
@@ -326,15 +327,19 @@ namespace Pos
                 {
                     try
                     {
-                        CallerId c = new CallerId();
-                        c.Show();
-                        c.Visible = false;
-                        c.notifyIcon1.Visible = true;
-                        c.ShowInTaskbar = true;
-                        c.notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                        c.notifyIcon1.BalloonTipTitle = "Caller Id";
-                        c.notifyIcon1.BalloonTipText = "Caller Id Çalışıyor...!!!";
-                        c.notifyIcon1.ShowBalloonTip(50);
+                        if (c == null)
+                        {
+                            c = new CallerId();
+                            c.Show();
+                            c.Visible = false;
+                            c.notifyIcon1.Visible = true;
+                            c.ShowInTaskbar = true;
+                            c.notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+                            c.notifyIcon1.BalloonTipTitle = "Caller Id";
+                            c.notifyIcon1.BalloonTipText = "Caller Id Çalışıyor...!!!";
+                            c.notifyIcon1.ShowBalloonTip(50);
+                        }
+
 
                     }
                     catch (Exception ex)
@@ -414,7 +419,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.91"; // aa
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.92"; // aa
 
 
 
@@ -1403,7 +1408,7 @@ namespace Pos
 
             dbtools.coneskiyedon();
 
-           
+
         }
 
         private void bar_yemekSepeti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -1691,7 +1696,7 @@ YS_Panel a = new YS_Panel();
                 }
 
 
-                
+
                 // receteAc("asdsad","adsasd",(decimal)65.22);
             }
             catch (Exception ex)

@@ -4178,8 +4178,9 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
             string rsatid = Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id"));
 
+            DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'AC%' -- AÇIKLAMA");
 
-            Klavye2 klv = new Klavye2();
+            Klavye2 klv = new Klavye2(data: dataTable);
             klv.txt_Yazi.Text = dbtools.DegerGetir("select Rsat_Aciklama from Cst_Recete_Satis where Rsat_Id=" + rsatid);
             klv.ShowDialog();
 
