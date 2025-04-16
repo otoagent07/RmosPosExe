@@ -252,6 +252,14 @@ namespace Pos
                 }
 
 
+                string q1 = $@"select top 1 Kodlar_pavoUrl,Kodlar_pavoSirketId,Kodlar_Kod from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}' and Kodlar_Pavo=1";
+                dataTablePavo = dbtools.SelectTableR(q1);
+
+                if (dataTablePavo == null || dataTablePavo.Rows.Count == 0)
+                {
+                    btnPavoKapat.Visible = false;
+                }
+
 
             }
             catch (Exception ex)
@@ -260,7 +268,7 @@ namespace Pos
             }
 
         }
-
+        DataTable dataTablePavo = null;
         string yaziciAd = "";
 
         KisiyeSatisController kisiyeSatisController = null;
@@ -3876,16 +3884,16 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 int fis_no = Convert.ToInt32(this.Tag);
 
 
-                string q1 = $@"select top 1 Kodlar_pavoUrl,Kodlar_pavoSirketId,Kodlar_Kod from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}' and Kodlar_Pavo=1";
-                DataTable dataTable = dbtools.SelectTableR(q1);
+                //string q1 = $@"select top 1 Kodlar_pavoUrl,Kodlar_pavoSirketId,Kodlar_Kod from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}' and Kodlar_Pavo=1";
+                //DataTable dataTable = dbtools.SelectTableR(q1);
 
-                if (dataTable == null || dataTable.Rows.Count == 0)
-                {
-                    MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
-                    return;
-                }
-                string url = dataTable.Rows[0]["Kodlar_pavoUrl"].ToString();
-                string sirketId = dataTable.Rows[0]["Kodlar_pavoSirketId"].ToString();
+                //if (dataTable == null || dataTable.Rows.Count == 0)
+                //{
+                //    MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
+                //    return;
+                //}
+                string url = dataTablePavo.Rows[0]["Kodlar_pavoUrl"].ToString();
+                string sirketId = dataTablePavo.Rows[0]["Kodlar_pavoSirketId"].ToString();
 
                 if (url == "" || sirketId == "")
                 {

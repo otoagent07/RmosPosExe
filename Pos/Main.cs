@@ -26,6 +26,7 @@ using System.IO.Pipes;
 using System.Linq;
 using System.Management;
 using System.Media;
+using System.Net.Http;
 using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Resources;
@@ -419,7 +420,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.92"; // aa
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.4.93"; // aa
 
 
 
@@ -543,12 +544,52 @@ namespace Pos
                 UserLookAndFeel.Default.SetSkinStyle(User.postema);
 
                 btnSifreDegis.Visible = Param.merkezaktif;
+
+                 pavon86KabloluPairing();
+
             }
             catch (Exception ex)
             {
                 RHMesaj.MyMessageError(MyClass, "Main_Load", "", ex);
             }
 
+        }
+
+        public async void pavon86KabloluPairing() // cihaz eşleştirme yapılır
+        {
+            try
+            {
+
+                string q1 = $@"select top 1 Kodlar_pavoUrl,Kodlar_pavoSirketId,Kodlar_Kod from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}' and Kodlar_Pavo=1";
+                DataTable dataTable = dbtools.SelectTableR(q1);
+
+                if (dataTable == null || dataTable.Rows.Count == 0)
+                {
+                    //MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
+                    return;
+                }
+                string url = dataTable.Rows[0]["Kodlar_pavoUrl"].ToString();
+                string sirketId = dataTable.Rows[0]["Kodlar_pavoSirketId"].ToString();
+
+                if (url == "" || sirketId == "")
+                {
+                    MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
+                    return;
+                }
+
+                var client = new HttpClient();
+                var request = new HttpRequestMessage(HttpMethod.Post, url + $"/Pavo/Pairing?sirketId={sirketId}");
+                var response = await client.SendAsync(request);
+                response.EnsureSuccessStatusCode();
+                Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         //SimpleTcpClient client;
