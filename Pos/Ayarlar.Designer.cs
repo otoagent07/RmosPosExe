@@ -1293,6 +1293,9 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.textEdit201 = new DevExpress.XtraEditors.TextEdit();
+            this.txtMasaSiranom = new DevExpress.XtraEditors.TextEdit();
+            this.gridColumn178 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2168,6 +2171,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit201.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMasaSiranom.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -7800,6 +7805,7 @@
             this.lookUpEditPavoOdeme.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditPavoOdeme.Properties.Columns"), resources.GetString("lookUpEditPavoOdeme.Properties.Columns1"), ((int)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns2"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns3"))), resources.GetString("lookUpEditPavoOdeme.Properties.Columns4"), ((bool)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns5"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns6"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns7"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns8")))),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditPavoOdeme.Properties.Columns9"), resources.GetString("lookUpEditPavoOdeme.Properties.Columns10"), ((int)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns11"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns12"))), resources.GetString("lookUpEditPavoOdeme.Properties.Columns13"), ((bool)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns14"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns15"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns16"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEditPavoOdeme.Properties.Columns17"))))});
+            this.lookUpEditPavoOdeme.Properties.DropDownRows = 27;
             this.lookUpEditPavoOdeme.Properties.NullText = resources.GetString("lookUpEditPavoOdeme.Properties.NullText");
             // 
             // Pkod_E_Adisyon
@@ -8714,6 +8720,8 @@
             // 
             // xtraTabPage9
             // 
+            this.xtraTabPage9.Controls.Add(this.txtMasaSiranom);
+            this.xtraTabPage9.Controls.Add(this.textEdit201);
             this.xtraTabPage9.Controls.Add(this.textEdit49);
             this.xtraTabPage9.Controls.Add(this.look_MasaTan_Departman);
             this.xtraTabPage9.Controls.Add(this.chk_Masa_Hayal);
@@ -8995,7 +9003,8 @@
             this.gridColumn77,
             this.gridColumn95,
             this.gridColumn99,
-            this.gridColumn100});
+            this.gridColumn100,
+            this.gridColumn178});
             this.gridView7.GridControl = this.grd_MasaTanim;
             this.gridView7.Name = "gridView7";
             this.gridView7.OptionsView.ColumnAutoWidth = false;
@@ -12874,6 +12883,25 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // textEdit201
+            // 
+            resources.ApplyResources(this.textEdit201, "textEdit201");
+            this.textEdit201.Name = "textEdit201";
+            this.textEdit201.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit201.Properties.ReadOnly = true;
+            this.textEdit201.TabStop = false;
+            // 
+            // txtMasaSiranom
+            // 
+            resources.ApplyResources(this.txtMasaSiranom, "txtMasaSiranom");
+            this.txtMasaSiranom.Name = "txtMasaSiranom";
+            // 
+            // gridColumn178
+            // 
+            resources.ApplyResources(this.gridColumn178, "gridColumn178");
+            this.gridColumn178.FieldName = "Masa_Sirano";
+            this.gridColumn178.Name = "gridColumn178";
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13790,6 +13818,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit201.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMasaSiranom.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15059,5 +15089,8 @@
         private DevExpress.XtraEditors.TextEdit textEdit196;
         private DevExpress.XtraEditors.LookUpEdit lookUpEditPavoOdeme;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn177;
+        private DevExpress.XtraEditors.TextEdit txtMasaSiranom;
+        private DevExpress.XtraEditors.TextEdit textEdit201;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn178;
     }
 }

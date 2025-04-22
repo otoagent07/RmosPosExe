@@ -272,6 +272,9 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'chk_K_KasaRapor') IS NULL BEGIN ALTER TAB
 
 IF COL_LENGTH('Pos_Masa', 'Masa_Musait') IS NULL BEGIN ALTER TABLE Pos_Masa ADD Masa_Musait nvarchar(100) END;
 
+IF COL_LENGTH('Pos_Masa', 'Masa_Sirano') IS NULL BEGIN ALTER TABLE Pos_Masa ADD [Masa_Sirano] int END;
+
+
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimDuzelt] bit END;
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_KartTanimTransfer') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_KartTanimTransfer] bit END;

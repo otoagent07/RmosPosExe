@@ -524,11 +524,11 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                     paketFilter = " and Masa_Paket = 0 ";
                 }
 
-                string siralama = " order by ISNULL(Pkod_Sira,-1), Masa_No ";
+                string siralama = " order by ISNULL(Pkod_Sira,-1),isnull(Masa_Sirano,5), Masa_No  ";
 
                 if (Param.Param_OzelMasaSiralama == true)
                 {
-                    siralama = " order by Masa_Ozel Desc,ISNULL(Pkod_Sira,-1), Masa_No ";
+                    siralama = " order by Masa_Ozel Desc,ISNULL(Pkod_Sira,-1),isnull(Masa_Sirano,5), Masa_No ";
                 }
 
                 string Masalar = "";
@@ -594,7 +594,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                             + " left join Pos_Rez on Rez_Dep = '" + Departman.Dep_Kodu + "' and Rez_Masano = Masa_No and Rez_Tarih = '" + Param.Tarih + "' "
                             + " left join Pos_Kodlar as renk on Masa_Konum = Pkod_Konumkod and Pkod_Kod = Masa_Depart and Pkod_Sinif ='14' "
                             + " where Masa_Depart = '" + Departman.Dep_Kodu + "' and (ISNULL(Masa_Parcali,0)<>1 or Masa_Durum=1) and ISNULL(Masa_Hayali,0) = 0  " + KonumFilter + paketFilter + Masalar
-                            + " group by Rsat_Fisno,Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira "
+                            + " group by Rsat_Fisno,Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira,Masa_Sirano "
                             + siralama;
 
                 if (filtre != "")
@@ -618,7 +618,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                                  + " where Masa_Depart = '" + Departman.Dep_Kodu + "' " +
                                  " " + filtre +
                                  " and (ISNULL(Masa_Parcali,0)<>1 or Masa_Durum=1) and ISNULL(Masa_Hayali,0) = 0  " + KonumFilter + paketFilter + Masalar
-                                 + " group by Rsat_Fisno,Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira "
+                                 + " group by Rsat_Fisno,Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira,Masa_Sirano "
                                  + siralama;
                 }
 
@@ -874,7 +874,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                     paketFilter = " and Masa_Paket = 0 ";
                 }
 
-                string siralama = " order by ISNULL(Pkod_Sira,-1), Masa_No ";
+                string siralama = " order by ISNULL(Pkod_Sira,-1),isnull(Masa_Sirano,500), Masa_No  ";
 
                 if (Param.Param_OzelMasaSiralama == true)
                 {
@@ -944,7 +944,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                             + " left join Pos_Rez on Rez_Dep = '" + Departman.Dep_Kodu + "' and Rez_Masano = Masa_No and Rez_Tarih = '" + Param.Tarih.ToString("yyyy-MM-dd") + "' "
                             + " left join Pos_Kodlar as renk on Masa_Konum = Pkod_Konumkod and Pkod_Kod = Masa_Depart and Pkod_Sinif ='14' "
                             + " where (ISNULL(Masa_Parcali,0)<>1 or Masa_Durum=1) and Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Hayali,0) = 0  " + KonumFilter + paketFilter + Masalar
-                            + " group by Rsat_Fisno,Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira "
+                            + " group by Rsat_Fisno,Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira,Masa_Sirano "
                             + siralama;
 
                 if (filtre != "")
@@ -968,7 +968,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                                  + " where (ISNULL(Masa_Parcali,0)<>1 or Masa_Durum=1) and Masa_Depart = '" + Departman.Dep_Kodu + "' " +
                                  " " + filtre +
                                  " and ISNULL(Masa_Hayali,0) = 0  " + KonumFilter + paketFilter + Masalar
-                                 + " group by Rsat_Fisno,Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira "
+                                 + " group by Rsat_Fisno,Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira,Masa_Sirano "
                                  + siralama;
                 }
 

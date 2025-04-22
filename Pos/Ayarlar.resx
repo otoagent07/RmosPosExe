@@ -15586,7 +15586,7 @@ Sıfır Yap</value>
     <value>Pavo Ödeme</value>
   </data>
   <data name="textEdit196.Location" type="System.Drawing.Point, System.Drawing">
-    <value>581, 225</value>
+    <value>580, 225</value>
   </data>
   <data name="textEdit196.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 20</value>
@@ -15607,7 +15607,7 @@ Sıfır Yap</value>
     <value>0</value>
   </data>
   <data name="lookUpEditPavoOdeme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>693, 225</value>
+    <value>687, 225</value>
   </data>
   <data name="lookUpEditPavoOdeme.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -15670,7 +15670,7 @@ Sıfır Yap</value>
     <value />
   </data>
   <data name="lookUpEditPavoOdeme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 20</value>
+    <value>145, 20</value>
   </data>
   <data name="lookUpEditPavoOdeme.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>
@@ -15997,7 +15997,7 @@ Sıfır Yap</value>
     <value>Combo</value>
   </data>
   <data name="Pkod_OdemeBtnRenk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 22</value>
+    <value>166, 22</value>
   </data>
   <data name="Pkod_OdemeBtnRenk.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -17973,6 +17973,54 @@ Sıfır Yap</value>
   <data name="xtraTabControl4.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 64</value>
   </data>
+  <data name="txtMasaSiranom.EditValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtMasaSiranom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 279</value>
+  </data>
+  <data name="txtMasaSiranom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 20</value>
+  </data>
+  <data name="txtMasaSiranom.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="&gt;&gt;txtMasaSiranom.Name" xml:space="preserve">
+    <value>txtMasaSiranom</value>
+  </data>
+  <data name="&gt;&gt;txtMasaSiranom.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtMasaSiranom.Parent" xml:space="preserve">
+    <value>xtraTabPage9</value>
+  </data>
+  <data name="&gt;&gt;txtMasaSiranom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textEdit201.EditValue" xml:space="preserve">
+    <value>Sıra No :</value>
+  </data>
+  <data name="textEdit201.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 278</value>
+  </data>
+  <data name="textEdit201.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 22</value>
+  </data>
+  <data name="textEdit201.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="&gt;&gt;textEdit201.Name" xml:space="preserve">
+    <value>textEdit201</value>
+  </data>
+  <data name="&gt;&gt;textEdit201.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit201.Parent" xml:space="preserve">
+    <value>xtraTabPage9</value>
+  </data>
+  <data name="&gt;&gt;textEdit201.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="textEdit49.EditValue" xml:space="preserve">
     <value>Departman</value>
   </data>
@@ -17995,7 +18043,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;textEdit49.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="look_MasaTan_Departman.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 13</value>
@@ -18028,7 +18076,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;look_MasaTan_Departman.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="chk_Masa_Hayal.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 206</value>
@@ -18052,7 +18100,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;chk_Masa_Hayal.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="textEdit48.EditValue" xml:space="preserve">
     <value>Masa No</value>
@@ -18076,7 +18124,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;textEdit48.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="textEdit102.EditValue" xml:space="preserve">
     <value>Postası</value>
@@ -18100,7 +18148,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;textEdit102.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="txt_Masa_No1.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 41</value>
@@ -18121,7 +18169,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;txt_Masa_No1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="look_Masa_Posta.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 125</value>
@@ -18154,7 +18202,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;look_Masa_Posta.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="textEdit47.EditValue" xml:space="preserve">
     <value>Masa Adı</value>
@@ -18178,7 +18226,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;textEdit47.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="txt_Masaad_Onek.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 252</value>
@@ -18208,7 +18256,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;txt_Masaad_Onek.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="txt_Masa_Ad.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 69</value>
@@ -18229,7 +18277,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;txt_Masa_Ad.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="txt_Masa_Onek.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 231</value>
@@ -18259,7 +18307,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;txt_Masa_Onek.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="look_Konum.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 97</value>
@@ -18292,7 +18340,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;look_Konum.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="checkEdit5.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 231</value>
@@ -18316,7 +18364,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;checkEdit5.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="textEdit46.EditValue" xml:space="preserve">
     <value>Konumu</value>
@@ -18340,7 +18388,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;textEdit46.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="txt_Masa_No2.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 41</value>
@@ -18364,7 +18412,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;txt_Masa_No2.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="textEdit45.EditValue" xml:space="preserve">
     <value>Durumu</value>
@@ -18388,7 +18436,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;textEdit45.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="rdo_Masa_Durum.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 153</value>
@@ -18421,7 +18469,7 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;rdo_Masa_Durum.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="chk_Masa_Paket.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 181</value>
@@ -18445,10 +18493,10 @@ Sıfır Yap</value>
     <value>xtraTabPage9</value>
   </data>
   <data name="&gt;&gt;chk_Masa_Paket.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="xtraTabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 297</value>
+    <value>284, 317</value>
   </data>
   <data name="xtraTabPage9.Text" xml:space="preserve">
     <value>Masa Tanımları</value>
@@ -18466,7 +18514,7 @@ Sıfır Yap</value>
     <value>0</value>
   </data>
   <data name="xtraTabControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 325</value>
+    <value>290, 345</value>
   </data>
   <data name="xtraTabControl4.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -18621,7 +18669,7 @@ H13_3
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_MasaTan_TSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 434</value>
+    <value>9, 454</value>
   </data>
   <data name="btn_MasaTan_TSil.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 27</value>
@@ -18648,7 +18696,7 @@ H13_3
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_MasaTan_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 434</value>
+    <value>170, 454</value>
   </data>
   <data name="btn_MasaTan_Cikis.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 27</value>
@@ -18675,7 +18723,7 @@ H13_3
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_MasaTan_Sil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 395</value>
+    <value>170, 415</value>
   </data>
   <data name="btn_MasaTan_Sil.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 27</value>
@@ -18702,7 +18750,7 @@ H13_3
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="btn_MasaTan_Kaydet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 395</value>
+    <value>9, 415</value>
   </data>
   <data name="btn_MasaTan_Kaydet.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 27</value>
@@ -18814,6 +18862,15 @@ H13_3
   </data>
   <data name="gridColumn100.Caption" xml:space="preserve">
     <value>Id</value>
+  </data>
+  <data name="gridColumn178.Caption" xml:space="preserve">
+    <value>Masa_Sirano</value>
+  </data>
+  <data name="gridColumn178.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn178.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="grd_MasaTanim.Size" type="System.Drawing.Size, System.Drawing">
     <value>383, 553</value>
@@ -30762,6 +30819,12 @@ P &gt; PAKET AÇIKLAMA</value>
   </data>
   <data name="&gt;&gt;fontDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gridColumn178.Name" xml:space="preserve">
+    <value>gridColumn178</value>
+  </data>
+  <data name="&gt;&gt;gridColumn178.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Ayarlar</value>

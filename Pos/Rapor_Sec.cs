@@ -139,10 +139,35 @@ namespace Pos
                 string basTar = "2000-01-01";
                 string bitTar = "3000-01-01";
 
-                string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,isnull(sum(Chrk_Borc-Chrk_Alacak),0) as Bakiye,10 as topHepsi from Pos_Carihrk as hrk 
-left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
-where Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
-group by Cari_Ad,Cari_Soyad,Chrk_Cari";
+                //                string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,isnull(sum(Chrk_Borc-Chrk_Alacak),0) as Bakiye,10 as topHepsi from Pos_Carihrk as hrk 
+                //left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
+                //where Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
+                //group by Cari_Ad,Cari_Soyad,Chrk_Cari";
+
+                // 22.04.2025 de değiştirildi
+                string query = $@"SELECT 
+    Chrk_Cari AS CariId,
+    (CASE 
+        WHEN Cari_Tip = 'C' THEN 'Cari - ' + Cari_Ad
+        WHEN Cari_Tip = 'O' THEN 'Ödenmez - ' + Cari_Ad
+        ELSE Cari_Ad
+     END) AS Ad,
+    Cari_Soyad AS Soyad,
+    ISNULL(SUM(Chrk_Borc - Chrk_Alacak), 0) AS Bakiye,
+    10 AS topHepsi  
+FROM 
+    Pos_Carihrk AS hrk 
+LEFT JOIN 
+    Pos_Cari AS cari 
+    ON CONVERT(VARCHAR(500), cari.Cari_Id) = hrk.Chrk_Cari 
+WHERE 
+    Chrk_Tarih BETWEEN '{basTar}' AND '{bitTar}' 
+GROUP BY 
+    Chrk_Cari,
+    Cari_Tip,
+    Cari_Ad,
+    Cari_Soyad
+";
 
                 DataTable dataTable = dbtools.SelectTableR(query);
 

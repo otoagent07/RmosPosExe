@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraCharts;
 using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
 using DevExpress.XtraSplashScreen;
 using Newtonsoft.Json;
@@ -10,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
@@ -250,10 +252,37 @@ namespace Pos
                 string basTar = "2000-01-01";
                 string bitTar = "3000-01-01";
 
-                string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,isnull(sum(Chrk_Borc-Chrk_Alacak),0) as Bakiye,10 as topHepsi from Pos_Carihrk as hrk 
-left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
-where Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
-group by Cari_Ad,Cari_Soyad,Chrk_Cari";
+                //                string query = @"select Chrk_Cari as CariId,Cari_Ad as Ad,Cari_Soyad as Soyad,isnull(sum(Chrk_Borc-Chrk_Alacak),0) as Bakiye,10 as topHepsi from Pos_Carihrk as hrk 
+                //left join Pos_Cari as cari on CONVERT(varchar(500), cari.Cari_Id)=hrk.Chrk_Cari 
+                //where Chrk_Tarih between '" + basTar + @"' and '" + bitTar + @"' 
+                //group by Cari_Ad,Cari_Soyad,Chrk_Cari";
+
+                // 22.04.2025 de değiştirildi
+                string query = $@"SELECT 
+    Chrk_Cari AS CariId,
+    (CASE 
+        WHEN Cari_Tip = 'C' THEN 'Cari - ' + Cari_Ad
+        WHEN Cari_Tip = 'O' THEN 'Ödenmez - ' + Cari_Ad
+        ELSE Cari_Ad
+     END) AS Ad,
+    Cari_Soyad AS Soyad,
+    ISNULL(SUM(Chrk_Borc - Chrk_Alacak), 0) AS Bakiye,
+    10 AS topHepsi  
+FROM 
+    Pos_Carihrk AS hrk 
+LEFT JOIN 
+    Pos_Cari AS cari 
+    ON CONVERT(VARCHAR(500), cari.Cari_Id) = hrk.Chrk_Cari 
+WHERE 
+    Chrk_Tarih BETWEEN '{basTar}' AND '{bitTar}' 
+GROUP BY 
+    Chrk_Cari,
+    Cari_Tip,
+    Cari_Ad,
+    Cari_Soyad
+";
+
+
 
                 DataTable dataTable = dbtools.SelectTableR(query);
 
@@ -286,6 +315,8 @@ group by Cari_Ad,Cari_Soyad,Chrk_Cari";
                 gridviewCountYaz(gridViewCariRap3);
 
                 gridViewCariRap3.ExportToPdf(path);
+
+
 
                 if (mailGitsin)
                 {
@@ -341,8 +372,17 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                 if (dataTable != null && dataTable.Rows.Count > 0)
                     foreach (DataRow row in dataTable.Rows)
                     {
-                        brutToplam += Convert.ToDecimal(row["Tutar"].ToString());
-                        netToplam += Convert.ToDecimal(row["Net"].ToString());
+                        decimal tutar, net;
+
+                        if (!decimal.TryParse(row["Tutar"]?.ToString(), out tutar))
+                            tutar = 0;
+
+                        if (!decimal.TryParse(row["Net"]?.ToString(), out net))
+                            net = 0;
+
+                        brutToplam += tutar;
+                        netToplam += net;
+
                     }
 
                 rapor.DataSource = dataTable;
@@ -1344,5 +1384,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                 return;
             }
         }
+
+        
     }
 }
