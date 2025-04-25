@@ -486,10 +486,10 @@ namespace Pos
         {
             try
             {
-                if (System.Diagnostics.Process.GetProcessesByName("Pos").Length > 1)
-                {
-                    this.Close();
-                }
+                //if (System.Diagnostics.Process.GetProcessesByName("Pos").Length > 1)
+                //{
+                //    this.Close();
+                //}
 
                 macadresim = dbtools.MacAdresi();
                 this.BringToFront();
