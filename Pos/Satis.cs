@@ -4909,6 +4909,6 @@ where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  "
      */
 
 
-
+        
     }
 }
