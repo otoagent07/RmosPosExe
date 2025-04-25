@@ -761,7 +761,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1218, 0</value>
+    <value>1205, 0</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
     <value>barDockControlTop</value>
@@ -782,7 +782,7 @@
     <value>0, 710</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1218, 43</value>
+    <value>1205, 43</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -821,7 +821,7 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1218, 0</value>
+    <value>1205, 0</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 710</value>
@@ -845,7 +845,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1218, 753</value>
+    <value>1205, 753</value>
   </data>
   <data name="xtraTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1583,7 +1583,7 @@
     <value>21</value>
   </data>
   <data name="gridControl11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1212, 526</value>
+    <value>1199, 526</value>
   </data>
   <data name="gridControl11.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1601,7 +1601,7 @@
     <value>0</value>
   </data>
   <data name="tab_Satis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1212, 526</value>
+    <value>1199, 526</value>
   </data>
   <data name="tab_Satis.Text" xml:space="preserve">
     <value>Satış Raporu</value>
@@ -1619,7 +1619,7 @@
     <value>0</value>
   </data>
   <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1218, 554</value>
+    <value>1205, 554</value>
   </data>
   <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5054,10 +5054,10 @@
     <value>ŞUBE</value>
   </data>
   <data name="labelSubeCon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>811, 32</value>
+    <value>811, 35</value>
   </data>
   <data name="labelSubeCon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
+    <value>37, 22</value>
   </data>
   <data name="labelSubeCon.TabIndex" type="System.Int32, mscorlib">
     <value>353</value>
@@ -5078,7 +5078,7 @@
     <value>1</value>
   </data>
   <data name="lookUpEditSubeCon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>877, 32</value>
+    <value>854, 35</value>
   </data>
   <data name="lookUpEditSubeCon.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -5414,10 +5414,10 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1105, 32</value>
+    <value>854, 81</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 95</value>
+    <value>147, 68</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -5582,7 +5582,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Rapor_Tipi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1059, 2</value>
+    <value>1046, 2</value>
   </data>
   <data name="Rapor_Tipi.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -6074,7 +6074,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1218, 156</value>
+    <value>1205, 156</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

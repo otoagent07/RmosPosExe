@@ -1153,7 +1153,12 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                     btnMasa.Text += "\n" + Convert.ToString(dtMasa.Rows[i]["dak"]);
 
                     btnMasa.Click += new EventHandler(btnMasa_Click);
-                    btnMasa.DoubleClick += new EventHandler(btnMasa_DoubleClick);
+
+                    if (User.M_Satis)
+                    {
+                        btnMasa.DoubleClick += new EventHandler(btnMasa_DoubleClick);
+                    }
+
 
 
                     btnMasa.Name = btnMasa.Tag.ToString();
