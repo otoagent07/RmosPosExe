@@ -55,11 +55,11 @@ namespace Pos
                 btnGarson.Appearance.TextOptions.Trimming = DevExpress.Utils.Trimming.Word;
                 //btnGarson.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
 
-                btnGarson.Appearance.BackColor = Color.DarkGreen;
+                btnGarson.Appearance.BackColor = Color.Red;
 
                 if (i%2==0)
                 {
-                    btnGarson.Appearance.BackColor = Color.DeepPink;
+                    btnGarson.Appearance.BackColor = Color.RoyalBlue;
                 }
                
 

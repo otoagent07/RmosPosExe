@@ -147,10 +147,10 @@
     <value>True</value>
   </data>
   <data name="flp_Garson.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 68</value>
+    <value>13, 130</value>
   </data>
   <data name="flp_Garson.Size" type="System.Drawing.Size, System.Drawing">
-    <value>742, 482</value>
+    <value>742, 420</value>
   </data>
   <data name="flp_Garson.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -336,7 +336,7 @@
     <value>49</value>
   </data>
   <data name="btnPaketciSil.Text" xml:space="preserve">
-    <value>Paketçi Sil</value>
+    <value>SİL</value>
   </data>
   <data name="&gt;&gt;btnPaketciSil.Name" xml:space="preserve">
     <value>btnPaketciSil</value>
