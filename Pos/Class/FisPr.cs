@@ -452,7 +452,7 @@ namespace Pos.Class
 
 
 
-        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false)
+        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false,bool direkSatis=false)
         {
 
             try
@@ -502,6 +502,13 @@ namespace Pos.Class
                     }
 
 
+                    int raportip = 1;
+
+                    if (direkSatis)
+                    {
+                        raportip = 32;
+                    }
+
                     DataTable dtSiparis = new DataTable();
                     SqlConnection con = dbtools.conn;
                     if (con.State == ConnectionState.Closed) con.Open();
@@ -511,7 +518,7 @@ namespace Pos.Class
                     com.CommandTimeout = 0;
                     com.CommandText = "Pos_Satis";
                     com.Parameters.AddWithValue("@Fisno", Fisno);
-                    com.Parameters.AddWithValue("@Rapor_Tipi", 1);
+                    com.Parameters.AddWithValue("@Rapor_Tipi", raportip);
                     com.Parameters.AddWithValue("@Printer", printer);
                     com.Parameters.AddWithValue("@Mars", Mars);
                     com.Parameters.AddWithValue("@Split", Split);

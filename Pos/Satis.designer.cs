@@ -81,6 +81,8 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
+            this.textEditFisnobirlestir1 = new DevExpress.XtraEditors.TextEdit();
             this.btnFiyatBilgisi = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.btnTemizleKisiyeSatis = new DevExpress.XtraEditors.SimpleButton();
@@ -185,6 +187,8 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFisnobirlestir1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).BeginInit();
@@ -234,7 +238,7 @@
             resources.ApplyResources(this.splitContainerControl3.Panel1, "splitContainerControl3.Panel1");
             this.splitContainerControl3.Panel2.Controls.Add(this.splitContainerControl4);
             resources.ApplyResources(this.splitContainerControl3.Panel2, "splitContainerControl3.Panel2");
-            this.splitContainerControl3.SplitterPosition = 38;
+            this.splitContainerControl3.SplitterPosition = 46;
             // 
             // flp_Urun
             // 
@@ -251,7 +255,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 164;
+            this.splitContainerControl4.SplitterPosition = 174;
             // 
             // ana_btnUp
             // 
@@ -278,7 +282,7 @@
             resources.ApplyResources(this.splitContainerControl1.Panel1, "splitContainerControl1.Panel1");
             this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl2);
             resources.ApplyResources(this.splitContainerControl1.Panel2, "splitContainerControl1.Panel2");
-            this.splitContainerControl1.SplitterPosition = 39;
+            this.splitContainerControl1.SplitterPosition = 47;
             // 
             // flp_AltGrup
             // 
@@ -295,7 +299,7 @@
             resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 111;
+            this.splitContainerControl2.SplitterPosition = 119;
             // 
             // alt_btnUp
             // 
@@ -318,6 +322,7 @@
             this.gridColumn6.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn6.AppearanceCell.Font")));
             this.gridColumn6.AppearanceCell.Options.UseFont = true;
             resources.ApplyResources(this.gridColumn6, "gridColumn6");
+            this.gridColumn6.MinWidth = 24;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowFocus = false;
             // 
@@ -325,12 +330,14 @@
             // 
             resources.ApplyResources(this.gridColumn10, "gridColumn10");
             this.gridColumn10.FieldName = "Rec_Miktar_Gr";
+            this.gridColumn10.MinWidth = 24;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn8
             // 
             resources.ApplyResources(this.gridColumn8, "gridColumn8");
+            this.gridColumn8.MinWidth = 24;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowFocus = false;
             // 
@@ -339,6 +346,7 @@
             this.gridColumn2.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn2.AppearanceCell.Font")));
             this.gridColumn2.AppearanceCell.Options.UseFont = true;
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
+            this.gridColumn2.MinWidth = 24;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
@@ -667,6 +675,8 @@
             // 
             // panelControl3
             // 
+            this.panelControl3.Controls.Add(this.txtFisnoGit);
+            this.panelControl3.Controls.Add(this.textEditFisnobirlestir1);
             this.panelControl3.Controls.Add(this.btnFiyatBilgisi);
             this.panelControl3.Controls.Add(this.panelControl4);
             this.panelControl3.Controls.Add(this.panelMenu);
@@ -694,6 +704,29 @@
             this.panelControl3.Controls.Add(this.btn_2);
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
+            // 
+            // txtFisnoGit
+            // 
+            resources.ApplyResources(this.txtFisnoGit, "txtFisnoGit");
+            this.txtFisnoGit.MenuManager = this.barManager1;
+            this.txtFisnoGit.Name = "txtFisnoGit";
+            this.txtFisnoGit.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtFisnoGit.Properties.Appearance.Font")));
+            this.txtFisnoGit.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.txtFisnoGit.Properties.Appearance.Options.UseFont = true;
+            this.txtFisnoGit.Properties.Appearance.Options.UseForeColor = true;
+            this.txtFisnoGit.Properties.NullText = resources.GetString("txtFisnoGit.Properties.NullText");
+            this.txtFisnoGit.Properties.NullValuePrompt = resources.GetString("txtFisnoGit.Properties.NullValuePrompt");
+            this.txtFisnoGit.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("txtFisnoGit.Properties.NullValuePromptShowForEmptyValue")));
+            this.txtFisnoGit.Properties.ShowNullValuePromptWhenFocused = true;
+            this.txtFisnoGit.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFisnoGit_KeyDown);
+            // 
+            // textEditFisnobirlestir1
+            // 
+            resources.ApplyResources(this.textEditFisnobirlestir1, "textEditFisnobirlestir1");
+            this.textEditFisnobirlestir1.Name = "textEditFisnobirlestir1";
+            this.textEditFisnobirlestir1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEditFisnobirlestir1.Properties.ReadOnly = true;
+            this.textEditFisnobirlestir1.TabStop = false;
             // 
             // btnFiyatBilgisi
             // 
@@ -1161,6 +1194,7 @@
             // 
             resources.ApplyResources(this.gridControl1, "gridControl1");
             this.gridControl1.ContextMenuStrip = this.contextMenuSagTik;
+            this.gridControl1.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl1.EmbeddedNavigator.Margin")));
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.barManager1;
             this.gridControl1.Name = "gridControl1";
@@ -1241,6 +1275,7 @@
             this.gridColumn1.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
             this.gridColumn1.ColumnEdit = this.repositoryItemRichTextEdit1;
+            this.gridColumn1.MinWidth = 24;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             this.gridColumn1.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -1253,6 +1288,7 @@
             this.gridColumn3.AppearanceCell.Options.UseFont = true;
             this.gridColumn3.AppearanceCell.Options.UseForeColor = true;
             resources.ApplyResources(this.gridColumn3, "gridColumn3");
+            this.gridColumn3.MinWidth = 24;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             // 
@@ -1263,6 +1299,7 @@
             resources.ApplyResources(this.gridColumn4, "gridColumn4");
             this.gridColumn4.DisplayFormat.FormatString = "n2";
             this.gridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.gridColumn4.MinWidth = 24;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             this.gridColumn4.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -1275,6 +1312,7 @@
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
             this.gridColumn5.DisplayFormat.FormatString = "n2";
             this.gridColumn5.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.gridColumn5.MinWidth = 24;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             this.gridColumn5.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -1284,12 +1322,14 @@
             // 
             resources.ApplyResources(this.gridColumn7, "gridColumn7");
             this.gridColumn7.FieldName = "Rsat_Recete";
+            this.gridColumn7.MinWidth = 24;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn9
             // 
             resources.ApplyResources(this.gridColumn9, "gridColumn9");
+            this.gridColumn9.MinWidth = 24;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
@@ -1297,6 +1337,7 @@
             // 
             resources.ApplyResources(this.gridColumn11, "gridColumn11");
             this.gridColumn11.FieldName = "Rsat_SiparisPr2";
+            this.gridColumn11.MinWidth = 24;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.OptionsColumn.AllowFocus = false;
             // 
@@ -1304,6 +1345,7 @@
             // 
             resources.ApplyResources(this.gridColumn12, "gridColumn12");
             this.gridColumn12.FieldName = "Rec_Ad2";
+            this.gridColumn12.MinWidth = 24;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsColumn.AllowFocus = false;
             // 
@@ -1448,7 +1490,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(836, 721);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(841, 721);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1457,10 +1499,10 @@
             resources.ApplyResources(this.layoutControlItem1, "layoutControlItem1");
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.MaxSize = new System.Drawing.Size(0, 70);
-            this.layoutControlItem1.MinSize = new System.Drawing.Size(201, 66);
+            this.layoutControlItem1.MinSize = new System.Drawing.Size(241, 66);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(836, 66);
+            this.layoutControlItem1.Size = new System.Drawing.Size(841, 66);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1470,10 +1512,10 @@
             this.layoutControlItem2.Control = this.groupControl2;
             resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 66);
-            this.layoutControlItem2.MinSize = new System.Drawing.Size(196, 20);
+            this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(836, 198);
+            this.layoutControlItem2.Size = new System.Drawing.Size(841, 198);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1484,7 +1526,7 @@
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 264);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(836, 78);
+            this.layoutControlItem6.Size = new System.Drawing.Size(841, 78);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1494,7 +1536,7 @@
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 342);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(836, 291);
+            this.layoutControlItem7.Size = new System.Drawing.Size(841, 291);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -1503,7 +1545,7 @@
             this.layoutControlItem3.Control = this.panel1;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 633);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(836, 88);
+            this.layoutControlItem3.Size = new System.Drawing.Size(841, 88);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             this.layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -1570,6 +1612,8 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFisnobirlestir1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).EndInit();
@@ -1747,5 +1791,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynTemizle;
         private DevExpress.XtraEditors.SimpleButton btnFiyatBilgisi;
         public DevExpress.XtraEditors.MemoEdit txt_Not;
+        private DevExpress.XtraEditors.TextEdit textEditFisnobirlestir1;
+        private DevExpress.XtraEditors.TextEdit txtFisnoGit;
     }
 }

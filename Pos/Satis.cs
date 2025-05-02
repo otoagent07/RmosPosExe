@@ -262,6 +262,9 @@ namespace Pos
                     }
                 };
 
+
+                textEditFisnobirlestir1.Visible = Param.hesapFisQrFisno;
+                txtFisnoGit.Visible = Param.hesapFisQrFisno;
             }
             catch (Exception ex)
             {
@@ -1605,6 +1608,11 @@ namespace Pos
             //    txt_Barkod.Focus();
             //    txt_Barkod.Select();
             //}
+
+            if (Param.hesapFisQrFisno)
+            {
+                fisnoBirlestirFocus();
+            }
 
         }
 
@@ -3073,7 +3081,10 @@ namespace Pos
                 }
                 else
                 {
-                    sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text);
+
+                    bool direksatismi = this.Tag.ToString() == "D" ? true : false;
+
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text,direkSatis:direksatismi);
                 }
             }
             else
@@ -4885,30 +4896,74 @@ where  Rsat_Id='" + Rsat_Id + "'";
             klavyeac();
 
         }
-        /*
-        string adsoyad = hesap.gridViewKisiyeSatis.GetFocusedRowCellValue("Ad Soyad").ToString();
 
-    string query = $@"select rec.Rec_Ad as 'Ürün Ad',Rsat_Miktar as Miktar,Rsat_Tutar as Toplam from Cst_Recete_Satis sat
-left join Cst_Recete rec on rec.Rec_Genelkod=sat.Rsat_Recete
-where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  ";
-    DataTable dataTable = dbtools.SelectTableR(query);
-
-
-    if (dataTable != null && dataTable.Rows.Count > 0)
-    {
-        foreach (DataRow dr in dataTable.Rows)
+        private void txtFisnoGit_KeyDown(object sender, KeyEventArgs e)
         {
-            dr["Miktar"] = dr["Miktar"].ToString().Replace(",0000", "");
-            dr["Miktar"] = dr["Miktar"].ToString().Replace(",000", "");
-            dr["Toplam"] = dr["Toplam"].ToString().Replace(",00", "");
-            dr["Toplam"] = dr["Toplam"].ToString().Replace(",000", "");
-            dr["Toplam"] = dr["Toplam"].ToString().Replace(",0000", "");
+            if (e.KeyCode == Keys.Enter)
+            {
+                try
+                {
+                    if (txtFisnoGit.Text == "") return;
+                    int okutulanFisno = Convert.ToInt32(txtFisnoGit.Text.ToString());
+
+
+                    int yenifisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+
+                    string fisvarmi = dbtools.DegerGetir($"select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='{okutulanFisno}'");
+
+                    if (fisvarmi == "0")
+                    {
+                        string text = $"Okutulan Fis No Bulunamadı veya Kapatılmış\nFiş No: {okutulanFisno}";
+                        UyariForm uyariForm = new UyariForm(text);
+                        uyariForm.ShowDialog();
+                        return;
+                    }
+
+
+
+                    dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Fisno='{yenifisno}',Rsat_Durum='A' where Rsat_Fisno='{okutulanFisno}'");
+
+                    gridyenile();
+
+                    fisnoBirlestirFocus();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
-    }
-     */
+        public void fisnoBirlestirFocus()
+        {
+            txtFisnoGit.Text = "";
+            txtFisnoGit.Select();
+            txtFisnoGit.Focus();
+        }
+        /*
+string adsoyad = hesap.gridViewKisiyeSatis.GetFocusedRowCellValue("Ad Soyad").ToString();
+
+string query = $@"select rec.Rec_Ad as 'Ürün Ad',Rsat_Miktar as Miktar,Rsat_Tutar as Toplam from Cst_Recete_Satis sat
+left join Cst_Recete rec on rec.Rec_Genelkod=sat.Rsat_Recete
+where Rsat_Fisno='{fisno}' and kisiyeSatisAdSoyad='{adsoyad}' and Rsat_Ba='B'  ";
+DataTable dataTable = dbtools.SelectTableR(query);
 
 
-        
+if (dataTable != null && dataTable.Rows.Count > 0)
+{
+foreach (DataRow dr in dataTable.Rows)
+{
+   dr["Miktar"] = dr["Miktar"].ToString().Replace(",0000", "");
+   dr["Miktar"] = dr["Miktar"].ToString().Replace(",000", "");
+   dr["Toplam"] = dr["Toplam"].ToString().Replace(",00", "");
+   dr["Toplam"] = dr["Toplam"].ToString().Replace(",000", "");
+   dr["Toplam"] = dr["Toplam"].ToString().Replace(",0000", "");
+}
+
+}
+*/
+
+
+
     }
 }
