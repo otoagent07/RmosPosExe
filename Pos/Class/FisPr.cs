@@ -506,7 +506,7 @@ namespace Pos.Class
 
                     if (direkSatis)
                     {
-                        raportip = 32;
+                        raportip = 31;
                     }
 
                     DataTable dtSiparis = new DataTable();
