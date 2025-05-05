@@ -124,45 +124,51 @@
   <data name="btn_Cikis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAANkE3LLaAgAAABh0RVh0U29m
-        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
+        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
+        9D/7L183gHsC4ekLAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>375, 45</value>
+    <value>312, 45</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 47</value>
+    <value>70, 47</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
@@ -189,33 +195,37 @@
   <data name="btn_Print.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAABh0RVh0U29m
-        dHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAABFxJREFUSEvllHtQVGUYh1kWYqVlQRggisDACzVAWcil
-        C5gJKStmAWrpKggEQYAgMHabnKkZzRkqpxBygGiUpmGUkjFrawwLTAQFDJbLtuwusDcXlssYGBK8/b7D
-        LuSlQvvP3plnZvc73/k9+777nWP1/6jxKxNCEFj08UHvleERQvPyfy+E8sBikAaOgHOHD1fWRkVGFawT
-        x/DM226vOpUa3tDob0+Pjf9ejmAFGAKTgBQ9KoqP2yiLjY1bat5+W2UbGBAYWn386wbT8Og0C76esvKK
-        se0JO/amvZJha77nlsvZ636vkq2S7VMd3YobBIzOLjm99vqbjc+sjoryXbIkpOLzKrFab4roNQy5gnmN
-        kS8SiVLDwyMGqo4dJ4zsGsHQ8Ch9862UNr/40mVXV7cLIpHjL+L1G0yFB4p6Tv/cVAxZNESO5qy/Lx6P
-        5xcQ+HB9XsFuGjCNcCKFQokxfUoSyTbyDwggoYMDYSsH9tN9np60Vhxz9YOPiuUXO3tKIWKd/WNXNgsX
-        Ou/bslUyXnKojNLTM8jf359cXFzIxsZmNvx6+Ljm5uZOWyQJE42tMg0kH4JFuHZt9epN9hfauh4Rxzz3
-        vpu7+2Us3TTw31j+WBC1yVXTkDSDlYCP9ZlSao3hQP7j2aapnLwC8vL25n4hLs0bNj6BnR0dqzlJCJ8C
-        R8FcR91q7apfe/X9Ku0Adfb000GMa9XqSBIKhTcN/Css3N7enpYt86OExGRqbpczCWMQxIGZbvAghgEZ
-        ZKTUGEmlNZK0to7SMjLJw+NeLsgSaoGtOTo6UlDQCtqVv5uqqmuoRTYrYLCxFQAB9nOS5aABUJdKS4o+
-        A/UZBqmtS0lFJaUUHBxKAoGAC7e2tiYnJycKDQ2j/YUH6Kez57nu1brBWQGOtOXzu2DmnYfwpUDKJBa6
-        1TrqN5hIaxymdrmayiqO0Btv7aG397xDXxz9ittjCWWw4B5MQaboIxznP/Bdi/V4YGOReIBSMMFutsC6
-        6tMPkgYipcFI3Vo16erqSHu+mXAiuWAVOmDhHQivrT9HxYfKad/+wuGT359+74T0lDsnYIVAW/Ak+AyM
-        MIGFboi0xiGS6RT0nbKGtNITpKs/QyoEK/ovUQdG9YM5PCc3nzZt3ExJSSlXsnbmntmemJS/JlrsbNZw
-        Ih7wBClAxQQWevoNpLykpxZNO379ANeBvFdP9Y2tXHge/vjklFR6OTWNsrJzKCMzm+LiN42GhIZ94vfg
-        Q65mxVwh9C4QDL4EV5mEoUE3lvkzQWVVNbFXUPqrWVxods4udJJHkm0JkyuCQ+p8fHxj8SZw5/P51ubo
-        GwvBd4NE0AIm1LoBJpgEhqaLHdKY9RuaEpNSxjKzdjLJdMKO5JHHn3iqacEC+xdwu91MyjwK4dbgUVCK
-        Y90KQSV4HohwlN18fRfvXRu9riHy2TWnFj3gk2tnJ7jHfOutFyQOcrUuDOFzfyIKD6QdCIDQB19njuod
-        XFZWfwKt+aR8F3ZKvQAAAABJRU5ErkJggg==
+        dHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAABKJJREFUSEvllH1QFGUcx2+PM5AQfBmOKFMDX6gBylKE
+        XtBMSUXMEl9KURBIkkRBYOxtcqZmNGesnFLIEbJRm4ZRSsYsakwLzBdUIIEHrrvn9oFn7x4P7gHG2HM1
+        /DW7xolLOdif+Z35zuzM7n4++3uencdguCsie5QA2aNE7/x019gZ8dMD9Pf/c2SPIsgeZbzsUbJkj7Jf
+        9ihn9u07cDxhdkLh/MQkQf/8HQVhKvDuP57tka+Uyh7FKnsULnuUa7JHAavNDouTlzQuWpQ8Uf/enWRI
+        dFR0bPnhb0+7O7uvq2B9S0r39qxKXb0l67XsIfqXB5uRYx4cU7wiZVVvU4t1gEAtarbAG2++ffa5WQkJ
+        4RMmTNv7ZVmi6HRPJ4wHE8YHtYw+gYGBa+Ljp7eXHToMPfKVWwS8sxu++74Slr38yuXgYPP5wMCg3xIX
+        LHRv37HTduLXmiLR6Z5HGA/SQwdEEISIqOhHq/MLN0G7u0sTWa0YSko/h5SUlRAZFQUBw4aBwWDQKggC
+        PDB6NMxNTLr60SdFlnpk20MYVye77VSmESNGbl2+IkUu3l0Ca9dmQ2RkJIwaNQpMJpMXrq+PyQRmcwgs
+        T0lVztY1UsL4x4TxcXq4gTjd/ucvNj+WmPTCh+aQkMt60GA7+YkpcNFiv04Yv0AYn0EY9/FKsOSKx5LL
+        8vOpmt7c/EIYM3as9oV6yO2qLp+fry8cqjgKhPFewvjBWyZqEaWZvxNnm11qB2Rrg127S2DmrNkQEBAw
+        AKavCvf394dJkyIgNS0DLjRYVInaDsJ4sncahGkcwrSxRZQAUxfYJRdUHq+CrOx1EBp6vwb6J3hQUBBM
+        mTIVNhZsgrLyCqht9ArUqstWSBj365NMRpieRphCs10CayuDVtYBF5sx7CzeAzExseDn56fBjUYjDB8+
+        HGJj42Db9h3wy6lz2vSio8MrEJ3uvuv3CeM3zjyE6USEaaUq6WuL6IA25gbJ1QkNFhFK9u6Ht97ZDO9u
+        fg++OviN9ky/r9bANuqCRmsr1CPbn6LTLRHGFxPGTX2SUITpHoSp0l+kTtXq7ADq6gTMXNAiieCoqgLp
+        3AUgTrcGtjs6NHiTtRWOV5+Bot2lsHXb9s6jP5744EjlsRDvxiNMhyBMn0aYfoEw7bplIrsEkotDo8MK
+        P+AKkCqPgKP6JNipC6xtl6DJ1gY//Q3PzSuApUuWQXp6pidnQ97JVWnpBXPmJY7sLxIQpqMRppkIU3t/
+        ka2NAb7khFraAKKzXZvAQpxQfbZOg+cXbIKMzDXw6posyFmfC9nr1kPy4qXd02LjPot4+JFgr6Sf7B6E
+        aQzC9GuE6dU+EXXdXH9VcKCsHNQjaO3rORp0fe5GyM3Lh5SVqdemxkyrCgsLX2Q2h4T4+PgY9Q5vEKb3
+        IkzTEKa16l6JjnZVcI0wzmrqmyqTFiysSUvP7FmXs0GVXE9dndH15FPP1Awd6v+SwWDw1fP+NQhTI8L0
+        cfWnsLayOsL4AcL4i4TxQKPRaA4PH79l7rz5p2c/P+fYuIfC8nx9/e7TMwYdhOkwi+iII4zf3MQbJ7ev
+        IAhRRqMxTD1g+9/7f+YvrfmkfKYcM/8AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btn_Print.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 45</value>
+    <value>236, 45</value>
+  </data>
+  <data name="btn_Print.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_Print.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 47</value>
+    <value>70, 47</value>
   </data>
   <data name="btn_Print.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -239,10 +249,13 @@
     <value>Garson</value>
   </data>
   <data name="textEdit3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 93</value>
+    <value>21, 93</value>
+  </data>
+  <data name="textEdit3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="textEdit3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
+    <value>74, 22</value>
   </data>
   <data name="textEdit3.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -260,7 +273,10 @@
     <value>37</value>
   </data>
   <data name="look_Garson.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 93</value>
+    <value>96, 93</value>
+  </data>
+  <data name="look_Garson.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <assembly alias="DevExpress.Utils.v19.1" name="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="look_Garson.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
@@ -282,7 +298,7 @@
     <value>Seciniz</value>
   </data>
   <data name="look_Garson.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+    <value>134, 22</value>
   </data>
   <data name="look_Garson.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -300,9 +316,11 @@
     <value>35</value>
   </data>
   <data name="rdo_X_Z.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 12</value>
+    <value>21, 12</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rdo_X_Z.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="rdo_X_Z.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -316,7 +334,7 @@
     <value>Z Raporu</value>
   </data>
   <data name="rdo_X_Z.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 29</value>
+    <value>209, 29</value>
   </data>
   <data name="rdo_X_Z.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -337,10 +355,13 @@
     <value>Baslangıc Tarihi</value>
   </data>
   <data name="textEdit5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 47</value>
+    <value>21, 47</value>
+  </data>
+  <data name="textEdit5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="textEdit5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
+    <value>74, 22</value>
   </data>
   <data name="textEdit5.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -361,7 +382,10 @@
     <value />
   </data>
   <data name="dateTarih.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 47</value>
+    <value>96, 47</value>
+  </data>
+  <data name="dateTarih.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="dateTarih.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -371,7 +395,7 @@
     <value>DateTimeAdvancingCaret</value>
   </data>
   <data name="dateTarih.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+    <value>134, 22</value>
   </data>
   <data name="dateTarih.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -392,13 +416,16 @@
     <value>True</value>
   </data>
   <data name="chk_Odeme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 300</value>
+    <value>19, 300</value>
+  </data>
+  <data name="chk_Odeme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_Odeme.Properties.Caption" xml:space="preserve">
     <value>Ödeme Tipleri</value>
   </data>
   <data name="chk_Odeme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 19</value>
+    <value>89, 19</value>
   </data>
   <data name="chk_Odeme.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -419,13 +446,16 @@
     <value>True</value>
   </data>
   <data name="chk_Servis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 275</value>
+    <value>19, 275</value>
+  </data>
+  <data name="chk_Servis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_Servis.Properties.Caption" xml:space="preserve">
     <value>Servis Payları(KDV oranı)</value>
   </data>
   <data name="chk_Servis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 19</value>
+    <value>150, 19</value>
   </data>
   <data name="chk_Servis.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -446,13 +476,16 @@
     <value>True</value>
   </data>
   <data name="chk_Cari.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 350</value>
+    <value>19, 350</value>
+  </data>
+  <data name="chk_Cari.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_Cari.Properties.Caption" xml:space="preserve">
     <value>Cari Özetleri</value>
   </data>
   <data name="chk_Cari.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 19</value>
+    <value>75, 19</value>
   </data>
   <data name="chk_Cari.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -473,13 +506,16 @@
     <value>True</value>
   </data>
   <data name="chk_Odenmez.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 375</value>
+    <value>19, 375</value>
+  </data>
+  <data name="chk_Odenmez.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_Odenmez.Properties.Caption" xml:space="preserve">
     <value>Ödenmez Özetleri</value>
   </data>
   <data name="chk_Odenmez.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 19</value>
+    <value>98, 19</value>
   </data>
   <data name="chk_Odenmez.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -500,13 +536,16 @@
     <value>True</value>
   </data>
   <data name="chk_Malzeme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 175</value>
+    <value>173, 175</value>
+  </data>
+  <data name="chk_Malzeme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_Malzeme.Properties.Caption" xml:space="preserve">
     <value>Malzeme Özetleri (Urun Satış)</value>
   </data>
   <data name="chk_Malzeme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 19</value>
+    <value>150, 19</value>
   </data>
   <data name="chk_Malzeme.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -527,13 +566,16 @@
     <value>True</value>
   </data>
   <data name="chk_Anagrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 200</value>
+    <value>173, 200</value>
+  </data>
+  <data name="chk_Anagrup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_Anagrup.Properties.Caption" xml:space="preserve">
     <value>Ana Grup Özetleri</value>
   </data>
   <data name="chk_Anagrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 19</value>
+    <value>98, 19</value>
   </data>
   <data name="chk_Anagrup.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -554,13 +596,16 @@
     <value>True</value>
   </data>
   <data name="chk_Altgrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 225</value>
+    <value>173, 225</value>
+  </data>
+  <data name="chk_Altgrup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_Altgrup.Properties.Caption" xml:space="preserve">
     <value>Alt Grup Özetleri</value>
   </data>
   <data name="chk_Altgrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 19</value>
+    <value>98, 19</value>
   </data>
   <data name="chk_Altgrup.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -581,13 +626,16 @@
     <value>True</value>
   </data>
   <data name="chk_Iptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 300</value>
+    <value>173, 300</value>
+  </data>
+  <data name="chk_Iptal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_Iptal.Properties.Caption" xml:space="preserve">
     <value>Cek İptal Malz</value>
   </data>
   <data name="chk_Iptal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="chk_Iptal.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -608,13 +656,16 @@
     <value>True</value>
   </data>
   <data name="chk_PaketServis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 250</value>
+    <value>19, 250</value>
+  </data>
+  <data name="chk_PaketServis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_PaketServis.Properties.Caption" xml:space="preserve">
     <value>Paket Servis Bilgileri</value>
   </data>
   <data name="chk_PaketServis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 19</value>
+    <value>109, 19</value>
   </data>
   <data name="chk_PaketServis.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -635,13 +686,16 @@
     <value>True</value>
   </data>
   <data name="chk_IndirimMasa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 325</value>
+    <value>19, 325</value>
+  </data>
+  <data name="chk_IndirimMasa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_IndirimMasa.Properties.Caption" xml:space="preserve">
     <value>İndirim Masa Detayları</value>
   </data>
   <data name="chk_IndirimMasa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 19</value>
+    <value>109, 19</value>
   </data>
   <data name="chk_IndirimMasa.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -662,13 +716,16 @@
     <value>True</value>
   </data>
   <data name="chk_YiyecekIcecek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 250</value>
+    <value>173, 250</value>
+  </data>
+  <data name="chk_YiyecekIcecek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_YiyecekIcecek.Properties.Caption" xml:space="preserve">
     <value>Yiyecek Icecek Bilgileri</value>
   </data>
   <data name="chk_YiyecekIcecek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="chk_YiyecekIcecek.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -689,13 +746,16 @@
     <value>True</value>
   </data>
   <data name="chk_MasaKonum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 275</value>
+    <value>173, 275</value>
+  </data>
+  <data name="chk_MasaKonum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_MasaKonum.Properties.Caption" xml:space="preserve">
     <value>Masa Konum Bilgileri</value>
   </data>
   <data name="chk_MasaKonum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="chk_MasaKonum.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -716,13 +776,16 @@
     <value>True</value>
   </data>
   <data name="chk_SiparisIptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 325</value>
+    <value>173, 325</value>
+  </data>
+  <data name="chk_SiparisIptal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_SiparisIptal.Properties.Caption" xml:space="preserve">
     <value>Sipariş İptal Malz</value>
   </data>
   <data name="chk_SiparisIptal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="chk_SiparisIptal.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -743,13 +806,16 @@
     <value>True</value>
   </data>
   <data name="chk_GonderilmemisSiparisIptal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 350</value>
+    <value>173, 350</value>
+  </data>
+  <data name="chk_GonderilmemisSiparisIptal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_GonderilmemisSiparisIptal.Properties.Caption" xml:space="preserve">
     <value>Gönderilmemiş Siparis İptal Malz</value>
   </data>
   <data name="chk_GonderilmemisSiparisIptal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 19</value>
+    <value>149, 19</value>
   </data>
   <data name="chk_GonderilmemisSiparisIptal.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -770,13 +836,16 @@
     <value>True</value>
   </data>
   <data name="chk_SiparisDuzelt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 375</value>
+    <value>173, 375</value>
+  </data>
+  <data name="chk_SiparisDuzelt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_SiparisDuzelt.Properties.Caption" xml:space="preserve">
     <value>Sipariş Düzeltmeleri</value>
   </data>
   <data name="chk_SiparisDuzelt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="chk_SiparisDuzelt.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -797,13 +866,16 @@
     <value>True</value>
   </data>
   <data name="checkEdit8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 450</value>
+    <value>19, 450</value>
+  </data>
+  <data name="checkEdit8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="checkEdit8.Properties.Caption" xml:space="preserve">
     <value>İade Satis Urunleri</value>
   </data>
   <data name="checkEdit8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="checkEdit8.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -827,13 +899,16 @@
     <value>True</value>
   </data>
   <data name="chk_GarsonOzet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 400</value>
+    <value>173, 400</value>
+  </data>
+  <data name="chk_GarsonOzet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_GarsonOzet.Properties.Caption" xml:space="preserve">
     <value>Garson Satis Ozet</value>
   </data>
   <data name="chk_GarsonOzet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="chk_GarsonOzet.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -854,13 +929,16 @@
     <value>True</value>
   </data>
   <data name="chk_GarsonTahsil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 425</value>
+    <value>173, 425</value>
+  </data>
+  <data name="chk_GarsonTahsil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_GarsonTahsil.Properties.Caption" xml:space="preserve">
     <value>Garson Tahsil Ozet</value>
   </data>
   <data name="chk_GarsonTahsil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="chk_GarsonTahsil.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -881,13 +959,16 @@
     <value>True</value>
   </data>
   <data name="chk_SifirTutar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 450</value>
+    <value>173, 450</value>
+  </data>
+  <data name="chk_SifirTutar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_SifirTutar.Properties.Caption" xml:space="preserve">
     <value>Sıfır Tutarlılar</value>
   </data>
   <data name="chk_SifirTutar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
+    <value>118, 19</value>
   </data>
   <data name="chk_SifirTutar.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -908,13 +989,16 @@
     <value>True</value>
   </data>
   <data name="chk_OzetKasa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 175</value>
+    <value>19, 175</value>
+  </data>
+  <data name="chk_OzetKasa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_OzetKasa.Properties.Caption" xml:space="preserve">
     <value>Özet Kasa Raporu</value>
   </data>
   <data name="chk_OzetKasa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 19</value>
+    <value>109, 19</value>
   </data>
   <data name="chk_OzetKasa.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -935,13 +1019,16 @@
     <value>True</value>
   </data>
   <data name="chk_ExtKasaRapor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 200</value>
+    <value>33, 200</value>
+  </data>
+  <data name="chk_ExtKasaRapor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_ExtKasaRapor.Properties.Caption" xml:space="preserve">
     <value>Ext Kasa Raporu</value>
   </data>
   <data name="chk_ExtKasaRapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 19</value>
+    <value>109, 19</value>
   </data>
   <data name="chk_ExtKasaRapor.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -962,13 +1049,16 @@
     <value>True</value>
   </data>
   <data name="chk_ExtKasaDetay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 225</value>
+    <value>33, 225</value>
+  </data>
+  <data name="chk_ExtKasaDetay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_ExtKasaDetay.Properties.Caption" xml:space="preserve">
     <value>Ext Kasa Detayları</value>
   </data>
   <data name="chk_ExtKasaDetay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 19</value>
+    <value>109, 19</value>
   </data>
   <data name="chk_ExtKasaDetay.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -986,10 +1076,13 @@
     <value>10</value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 146</value>
+    <value>21, 146</value>
+  </data>
+  <data name="simpleButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 23</value>
+    <value>74, 23</value>
   </data>
   <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -1010,10 +1103,13 @@
     <value>9</value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 146</value>
+    <value>100, 146</value>
+  </data>
+  <data name="simpleButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 23</value>
+    <value>74, 23</value>
   </data>
   <data name="simpleButton2.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -1037,13 +1133,16 @@
     <value>True</value>
   </data>
   <data name="chk_CariTahsilat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 400</value>
+    <value>19, 400</value>
+  </data>
+  <data name="chk_CariTahsilat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_CariTahsilat.Properties.Caption" xml:space="preserve">
     <value>Cari Tahsilatları</value>
   </data>
   <data name="chk_CariTahsilat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 19</value>
+    <value>98, 19</value>
   </data>
   <data name="chk_CariTahsilat.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -1064,10 +1163,13 @@
     <value>Departman</value>
   </data>
   <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 70</value>
+    <value>21, 70</value>
+  </data>
+  <data name="textEdit1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
+    <value>74, 22</value>
   </data>
   <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -1085,13 +1187,16 @@
     <value>5</value>
   </data>
   <data name="cmb_Departman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 70</value>
+    <value>96, 70</value>
+  </data>
+  <data name="cmb_Departman.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="cmb_Departman.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
   </data>
   <data name="cmb_Departman.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+    <value>134, 22</value>
   </data>
   <data name="cmb_Departman.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -1112,13 +1217,16 @@
     <value>True</value>
   </data>
   <data name="checkEditDepSatis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 485</value>
+    <value>21, 485</value>
+  </data>
+  <data name="checkEditDepSatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="checkEditDepSatis.Properties.Caption" xml:space="preserve">
     <value>Departman Satış Raporu</value>
   </data>
   <data name="checkEditDepSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 19</value>
+    <value>109, 19</value>
   </data>
   <data name="checkEditDepSatis.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1136,7 +1244,10 @@
     <value>4</value>
   </data>
   <data name="lookUpEditYazici.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 117</value>
+    <value>96, 117</value>
+  </data>
+  <data name="lookUpEditYazici.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="lookUpEditYazici.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
     <value>Combo</value>
@@ -1148,7 +1259,7 @@
     <value>Yazıcı seçiniz...</value>
   </data>
   <data name="lookUpEditYazici.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 20</value>
+    <value>134, 20</value>
   </data>
   <data name="lookUpEditYazici.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -1169,10 +1280,13 @@
     <value>Yazıcı</value>
   </data>
   <data name="textEdit2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 116</value>
+    <value>21, 116</value>
+  </data>
+  <data name="textEdit2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
+    <value>74, 22</value>
   </data>
   <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1190,13 +1304,16 @@
     <value>36</value>
   </data>
   <data name="checkEditPdfKaydet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 99</value>
+    <value>237, 99</value>
+  </data>
+  <data name="checkEditPdfKaydet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="checkEditPdfKaydet.Properties.Caption" xml:space="preserve">
     <value>PDF OLARAK KAYDET</value>
   </data>
   <data name="checkEditPdfKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 19</value>
+    <value>127, 19</value>
   </data>
   <data name="checkEditPdfKaydet.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1213,11 +1330,17 @@
   <data name="&gt;&gt;checkEditPdfKaydet.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="gridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>402, 228</value>
+    <value>334, 228</value>
+  </data>
+  <data name="gridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 66</value>
+    <value>48, 66</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
@@ -1241,13 +1364,16 @@
     <value>True</value>
   </data>
   <data name="chk_servispayi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 475</value>
+    <value>173, 475</value>
+  </data>
+  <data name="chk_servispayi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_servispayi.Properties.Caption" xml:space="preserve">
     <value>Servis Payı</value>
   </data>
   <data name="chk_servispayi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 19</value>
+    <value>89, 19</value>
   </data>
   <data name="chk_servispayi.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
@@ -1268,10 +1394,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>5, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>494, 558</value>
+    <value>476, 558</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -7162,6 +7288,9 @@
         Cm5hMQuzNh4KXwAAAAD//wAA7/8AAMGBAAD4+QAA/GEAAPwDAAC4DwAAgYEAAIPjAACwzQAABkkAAAYB
         AAACAQAAMjEAAAIxAACPewAA
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

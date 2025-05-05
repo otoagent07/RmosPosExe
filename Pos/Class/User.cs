@@ -167,10 +167,15 @@ namespace Pos.Class
         public static bool Pos_KartfIndirimAktif { get; set; }
         public static bool Pos_ServisPayiDuzelt { get; set; }
         public static bool cariTahsilatlari { get; set; }
+        public static bool servisPayiKdvOran { get; set; }
+
+
+
+
         //public static bool MasaTakip_Paket { get; set; }
 
 
-       static bool birkere = false;
+        static bool birkere = false;
 
         public static void Yetki_Yukle()
         {
@@ -183,11 +188,11 @@ namespace Pos.Class
                     dbtools.execcmdR(StatikSinif.defaultParametreCalistir());
                     birkere = true;
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
-                    RHMesaj.alertMesaj("StatikSinif.getAlterQuery() "+ex.Message);
+                    RHMesaj.alertMesaj("StatikSinif.getAlterQuery() " + ex.Message);
                 }
-                
+
             }
             DataTable dt = dbtools.SelectTable("select P_Kod  ,P_Sifre, P_Ad ,P_Soyad ,P_Kart ,isnull(P_Kulturu,-1) as P_Kulturu, "
                     + " ISNULL(G_Miktarduzelt,0) AS  G_Miktarduzelt,ISNULL(G_Tutarduzelt,0) AS G_Tutarduzelt,ISNULL(G_Satirsil,0) AS G_Satirsil, "
@@ -346,7 +351,7 @@ namespace Pos.Class
 
             }
 
-            DataTable dtXZ = dbtools.SelectTable("SELECT 0,Id,P_Kod,ISNULL(Odeme,0) as Odeme,ISNULL(Servis,0) as Servis,ISNULL(Cari,0) as Cari,ISNULL(Odenmez,0) as Odenmez,ISNULL(Malzeme,0) as Malzeme,ISNULL(Anagrup,0) as Anagrup,ISNULL(Altgrup,0) as Altgrup,ISNULL(Iptal,0) as Iptal,ISNULL(PaketServis,0) as PaketServis,ISNULL(IndirimMasa,0) as IndirimMasa,ISNULL(YiyecekIcecek,0) as YiyecekIcecek,ISNULL(MasaKonum,0) as MasaKonum,ISNULL(GarsonOzet,0) as GarsonOzet,ISNULL(GarsonTahsil,0) as GarsonTahsil,ISNULL(SifirTutar,0) as SifirTutar,ISNULL(OzetKasa,0) as OzetKasa,ISNULL(ExtKasaRapor,0) as ExtKasaRapor,ISNULL(ExtKasaDetay,0) as ExtKasaDetay,ISNULL(SiparisIptal,0) as SiparisIptal,ISNULL(GonderilmemisSiparisIptal,0) as GonderilmemisSiparisIptal,ISNULL(SiparisDuzelt,0) as SiparisDuzelt,ISNULL(cariTahsilatlari,0) as cariTahsilatlari FROM Rmosmuh.dbo.Pos_User_XZ where P_Kod = '" + P_Kod + "' ");
+            DataTable dtXZ = dbtools.SelectTable("SELECT 0,Id,P_Kod,ISNULL(Odeme,0) as Odeme,ISNULL(Servis,0) as Servis,ISNULL(Cari,0) as Cari,ISNULL(Odenmez,0) as Odenmez,ISNULL(Malzeme,0) as Malzeme,ISNULL(Anagrup,0) as Anagrup,ISNULL(Altgrup,0) as Altgrup,ISNULL(Iptal,0) as Iptal,ISNULL(PaketServis,0) as PaketServis,ISNULL(IndirimMasa,0) as IndirimMasa,ISNULL(YiyecekIcecek,0) as YiyecekIcecek,ISNULL(MasaKonum,0) as MasaKonum,ISNULL(GarsonOzet,0) as GarsonOzet,ISNULL(GarsonTahsil,0) as GarsonTahsil,ISNULL(SifirTutar,0) as SifirTutar,ISNULL(OzetKasa,0) as OzetKasa,ISNULL(ExtKasaRapor,0) as ExtKasaRapor,ISNULL(ExtKasaDetay,0) as ExtKasaDetay,ISNULL(SiparisIptal,0) as SiparisIptal,ISNULL(GonderilmemisSiparisIptal,0) as GonderilmemisSiparisIptal,ISNULL(SiparisDuzelt,0) as SiparisDuzelt,ISNULL(cariTahsilatlari,0) as cariTahsilatlari,ISNULL(servisPayiKdvOran,0) as servisPayiKdvOran FROM Rmosmuh.dbo.Pos_User_XZ where P_Kod = '" + P_Kod + "' ");
             if (dtXZ.Rows.Count > 0)
             {
                 XZ_Odeme = Convert.ToBoolean(dtXZ.Rows[0]["Odeme"]);
@@ -371,6 +376,8 @@ namespace Pos.Class
                 XZ_GonderilmemisSiparisIptal = Convert.ToBoolean(dtXZ.Rows[0]["GonderilmemisSiparisIptal"]);
                 XZ_SiparisDuzelt = Convert.ToBoolean(dtXZ.Rows[0]["SiparisDuzelt"]);
                 cariTahsilatlari = Convert.ToBoolean(dtXZ.Rows[0]["cariTahsilatlari"]);
+                servisPayiKdvOran = Convert.ToBoolean(dtXZ.Rows[0]["servisPayiKdvOran"]);
+
             }
         }
 

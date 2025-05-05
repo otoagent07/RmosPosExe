@@ -545,7 +545,11 @@ namespace Pos
 
                 btnSifreDegis.Visible = Param.merkezaktif;
 
-                 pavon86KabloluPairing();
+                pavon86KabloluPairing();
+
+                barButtonItem2.Enabled = Param.Param_CallerID;
+                barButtonItem3.Enabled = Param.Param_CallerID;
+                simpleButton4.Enabled = Param.Param_CallerID;
 
             }
             catch (Exception ex)

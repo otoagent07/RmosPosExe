@@ -2359,7 +2359,7 @@ namespace Pos
 
                 var aa = gridView7.GetFocusedRowCellValue("Masa_Sirano");
 
-                if (aa==null)
+                if (aa == null)
                 {
                     txtMasaSiranom.Text = "0";
                 }
@@ -2873,7 +2873,7 @@ namespace Pos
                        + " ExtKasaDetay ,"
                        + " SiparisIptal ,"
                        + " GonderilmemisSiparisIptal ,"
-                       + " SiparisDuzelt,xzraporyazici,hesapyazici,cariTahsilatlari )"
+                       + " SiparisDuzelt,xzraporyazici,hesapyazici,cariTahsilatlari ,servisPayiKdvOran)"
                        + " Values( "
                        + " '" + txt_Kul_kod.Text + "', "
                        + " '" + chk_Odeme.Checked + "', "
@@ -2899,7 +2899,8 @@ namespace Pos
                        + " '" + chk_SiparisDuzelt.Checked + "', "
                        + " '" + lookUpEditYazici.EditValue + "', "
                        + " '" + lookUpEditHesapDokYazici.EditValue + "', "
-                       + " '" + cariTahsilatlari.Checked + "'" +
+                       + " '" + cariTahsilatlari.Checked +  "', "
+                       + " '" + servisPayiKdvOran.Checked + "'" +
                        ") ");
                 }
                 else
@@ -2929,7 +2930,9 @@ namespace Pos
                        + " SiparisDuzelt =                    '" + chk_SiparisDuzelt.Checked + "', "
                        + " xzraporyazici =                    '" + lookUpEditYazici.EditValue + "', "
                        + " hesapyazici =                    '" + lookUpEditHesapDokYazici.EditValue + "', "
-                       + " cariTahsilatlari =                    '" + cariTahsilatlari.Checked + "'  "
+                       + " cariTahsilatlari =                   '" + cariTahsilatlari.Checked + "', "
+                       + " servisPayiKdvOran =                   '" + servisPayiKdvOran.Checked + "'  "
+
                        + " where P_Kod = '" + txt_Kul_kod.Text + "' ";
                     dbtools.execcmd(sorgu);
                 }
@@ -3317,7 +3320,7 @@ namespace Pos
 
                 }
 
-                DataTable dtXZ = dbtools.SelectTable("SELECT 0,Id,P_Kod,ISNULL(Odeme,0) as Odeme,ISNULL(Servis,0) as Servis,ISNULL(Cari,0) as Cari,ISNULL(Odenmez,0) as Odenmez,ISNULL(Malzeme,0) as Malzeme,ISNULL(Anagrup,0) as Anagrup,ISNULL(Altgrup,0) as Altgrup,ISNULL(Iptal,0) as Iptal,ISNULL(PaketServis,0) as PaketServis,ISNULL(IndirimMasa,0) as IndirimMasa,ISNULL(YiyecekIcecek,0) as YiyecekIcecek,ISNULL(MasaKonum,0) as MasaKonum,ISNULL(GarsonOzet,0) as GarsonOzet,ISNULL(GarsonTahsil,0) as GarsonTahsil,ISNULL(SifirTutar,0) as SifirTutar,ISNULL(OzetKasa,0) as OzetKasa,ISNULL(ExtKasaRapor,0) as ExtKasaRapor,ISNULL(ExtKasaDetay,0) as ExtKasaDetay,ISNULL(SiparisIptal,0) as SiparisIptal,ISNULL(GonderilmemisSiparisIptal,0) as GonderilmemisSiparisIptal,ISNULL(SiparisDuzelt,0) as SiparisDuzelt,ISNULL(xzraporyazici,0) as xzraporyazici,ISNULL(cariTahsilatlari,0) as cariTahsilatlari,hesapyazici FROM Rmosmuh.dbo.Pos_User_XZ where P_Kod = '" + txt_Kul_kod.Text + "' ");
+                DataTable dtXZ = dbtools.SelectTable("SELECT 0,Id,P_Kod,ISNULL(Odeme,0) as Odeme,ISNULL(Servis,0) as Servis,ISNULL(Cari,0) as Cari,ISNULL(Odenmez,0) as Odenmez,ISNULL(Malzeme,0) as Malzeme,ISNULL(Anagrup,0) as Anagrup,ISNULL(Altgrup,0) as Altgrup,ISNULL(Iptal,0) as Iptal,ISNULL(PaketServis,0) as PaketServis,ISNULL(IndirimMasa,0) as IndirimMasa,ISNULL(YiyecekIcecek,0) as YiyecekIcecek,ISNULL(MasaKonum,0) as MasaKonum,ISNULL(GarsonOzet,0) as GarsonOzet,ISNULL(GarsonTahsil,0) as GarsonTahsil,ISNULL(SifirTutar,0) as SifirTutar,ISNULL(OzetKasa,0) as OzetKasa,ISNULL(ExtKasaRapor,0) as ExtKasaRapor,ISNULL(ExtKasaDetay,0) as ExtKasaDetay,ISNULL(SiparisIptal,0) as SiparisIptal,ISNULL(GonderilmemisSiparisIptal,0) as GonderilmemisSiparisIptal,ISNULL(SiparisDuzelt,0) as SiparisDuzelt,ISNULL(xzraporyazici,0) as xzraporyazici,ISNULL(cariTahsilatlari,0) as cariTahsilatlari,ISNULL(servisPayiKdvOran,0) as servisPayiKdvOran,hesapyazici FROM Rmosmuh.dbo.Pos_User_XZ where P_Kod = '" + txt_Kul_kod.Text + "' ");
                 if (dtXZ.Rows.Count > 0)
                 {
                     chk_Odeme.Checked = Convert.ToBoolean(dtXZ.Rows[0]["Odeme"]);
@@ -3342,6 +3345,8 @@ namespace Pos
                     chk_SiparisIptal.Checked = Convert.ToBoolean(dtXZ.Rows[0]["SiparisIptal"]);
                     chk_GonderilmemisSiparisIptal.Checked = Convert.ToBoolean(dtXZ.Rows[0]["GonderilmemisSiparisIptal"]);
                     chk_SiparisDuzelt.Checked = Convert.ToBoolean(dtXZ.Rows[0]["SiparisDuzelt"]);
+                    servisPayiKdvOran.Checked = Convert.ToBoolean(dtXZ.Rows[0]["servisPayiKdvOran"]);
+
 
                     if (!dtXZ.Rows[0]["xzraporyazici"].ToString().Equals("0"))
                     {
@@ -3459,6 +3464,7 @@ namespace Pos
             chk_Cari.Checked = false;
             chk_Odenmez.Checked = false;
             cariTahsilatlari.Checked = false;
+            servisPayiKdvOran.Checked = false;
             chk_Malzeme.Checked = false;
             chk_Anagrup.Checked = false;
             chk_Altgrup.Checked = false;
@@ -3621,6 +3627,7 @@ namespace Pos
             chk_Cari.Checked = true;
             chk_Odenmez.Checked = true;
             cariTahsilatlari.Checked = true;
+            servisPayiKdvOran.Checked = true;
             chk_Malzeme.Checked = true;
             chk_Anagrup.Checked = true;
             chk_Altgrup.Checked = true;

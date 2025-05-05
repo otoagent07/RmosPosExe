@@ -327,7 +327,9 @@ GROUP BY
                 Gun_Sonu g = new Gun_Sonu();
                 g.Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: path);
 
-                this.Close();
+
+                //Oğuzhan Mendi Mail Gönderdikten Sonra Kapanmasın.
+               // this.Close();
             }
             catch (Exception ex)
             {

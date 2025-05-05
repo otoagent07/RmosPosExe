@@ -81,11 +81,11 @@ group by Pkod_Ad";
 
 
             chk_Odeme.Checked = User.XZ_Odeme;
-            chk_Servis.Checked = User.XZ_Servis;
+            chk_servispayi.Checked = User.XZ_Servis;
             chk_Cari.Checked = User.XZ_Cari;
             chk_Odenmez.Checked = User.XZ_Odenmez;
             chk_CariTahsilat.Checked = User.cariTahsilatlari;
-
+            chk_Servis.Checked = User.servisPayiKdvOran;
             chk_Malzeme.Checked = User.XZ_Malzeme;
             chk_Anagrup.Checked = User.XZ_Anagrup;
             chk_Altgrup.Checked = User.XZ_Altgrup;

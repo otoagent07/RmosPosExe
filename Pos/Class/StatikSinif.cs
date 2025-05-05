@@ -198,6 +198,8 @@ IF COL_LENGTH('Pos_Param', 'masamusait') IS NULL BEGIN ALTER TABLE Pos_Param ADD
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'hesapyazici') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [hesapyazici] nvarchar(250) END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'cariTahsilatlari') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [cariTahsilatlari] bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'servisPayiKdvOran') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User_XZ ADD [servisPayiKdvOran] bit END;
+
 
 
 IF COL_LENGTH('Stok_Kodlar', 'Kodlar_parakasa') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_parakasa nvarchar(200) END;
