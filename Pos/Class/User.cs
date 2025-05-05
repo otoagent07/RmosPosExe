@@ -168,6 +168,7 @@ namespace Pos.Class
         public static bool Pos_ServisPayiDuzelt { get; set; }
         public static bool cariTahsilatlari { get; set; }
         public static bool servisPayiKdvOran { get; set; }
+        public static bool coklugunsonu { get; set; }
 
 
 
@@ -224,6 +225,8 @@ namespace Pos.Class
                     + ", ISNULL(urunIade,0) as urunIade "
                     + ", ISNULL(otoDirekSatis,0) as otoDirekSatis "
                     + ", ISNULL(merkezsubeaktif,0) as merkezsubeaktif "
+                    + ", ISNULL(coklugunsonu,0) as coklugunsonu "
+
                     + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + P_Kod + "'");
 
             if (dt.Rows.Count > 0)
@@ -348,6 +351,7 @@ namespace Pos.Class
 
                 otoDirekSatis = Convert.ToBoolean(dt.Rows[0]["otoDirekSatis"]);
                 merkezsubeaktif = Convert.ToBoolean(dt.Rows[0]["merkezsubeaktif"]);
+                coklugunsonu = Convert.ToBoolean(dt.Rows[0]["coklugunsonu"]);
 
             }
 

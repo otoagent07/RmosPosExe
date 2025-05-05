@@ -35,6 +35,11 @@ namespace Pos
             gridyenile();
             //chk_SubeGonder.Checked = Param.Param_SubeGonder;
             //chk_SubeGonder.Visible = Param.Param_SubeGonder;
+
+            if (User.coklugunsonu)
+            {
+                dateTarih.ReadOnly = false;
+            }
         }
 
         private void gridyenile()
@@ -88,6 +93,21 @@ namespace Pos
 
         private void btn_Gunsonu_Click(object sender, EventArgs e)
         {
+
+            if (User.coklugunsonu)
+            {
+                dateTarih.ReadOnly = false;
+                if (dateTarih.DateTime <= Param.Tarih)
+                {
+                    MessageBox.Show("Geçmiş tarihe gün sonu yapılamaz ! ");
+                    return;
+                }
+
+                dateTarih.DateTime = dateTarih.DateTime.AddDays(-1);
+            }
+            // paremetrik
+
+
             if (User.P_Sifre != txt_Kulsifre.Text)
             {
                 MessageBox.Show(res_man.GetString("Kullanıcı Şifreniz Yanlış..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -182,7 +202,7 @@ namespace Pos
 
 
                 string cariBakiyeKontrolPath = cariRapGoster(true);
-               var muhrapor1 = muhasebeRapor(true);
+                var muhrapor1 = muhasebeRapor(true);
                 //Mail Gönder
 
                 loadingKapat();
@@ -339,7 +359,7 @@ GROUP BY
         }
 
 
-        public MuhasebeRapor  muhasebeRapor(bool mailGitsin = true)
+        public MuhasebeRapor muhasebeRapor(bool mailGitsin = true)
         {
             MuhasebeRapor rapor = new MuhasebeRapor();
 
@@ -407,8 +427,8 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
 
                         string ad = item["Ad"].ToString();
                         string tutar = item["Tutar"].ToString();
-                       
-                        int kalanbosluk = 15- ad.Length;
+
+                        int kalanbosluk = 15 - ad.Length;
                         string bosluk = "";
                         for (int i = 0; i < kalanbosluk; i++)
                         {
@@ -418,7 +438,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                         odemeler = odemeler + ad + bosluk + tutar + "\n";
                     }
                 }
-                odemeler = odemeler + "\nBRÜT TOPLAM :  " + brutToplam+"\n" + "NET TOPLAM  :  " + netToplam;
+                odemeler = odemeler + "\nBRÜT TOPLAM :  " + brutToplam + "\n" + "NET TOPLAM  :  " + netToplam;
                 rapor.txtTumOdeme.Text = odemeler;
 
                 string klasor = "CariRapor";
@@ -447,7 +467,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                 }
 
 
-               
+
             }
             catch (Exception ex)
             {
@@ -481,7 +501,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                 com.CommandTimeout = 0;
                 com.CommandText = "Kurlar_Liste";
                 com.Parameters.AddWithValue("@Tip", 1);
-                com.Parameters.AddWithValue("@Kurlar_Tarih", dateTarih.DateTime.Date.ToString("yyyy-MM-dd"));
+                com.Parameters.AddWithValue("@Kurlar_Tarih", Param.Tarih.Date.ToString("yyyy-MM-dd"));
                 com.Parameters.AddWithValue("@Kurlar_Cesit", Kurlar_Cesit);
                 SqlDataAdapter da = new SqlDataAdapter(com);
                 DataTable dt = new DataTable();
@@ -534,7 +554,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
         }
 
 
-        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "", MuhasebeRapor muhRapor=null)
+        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "", MuhasebeRapor muhRapor = null)
         {
 
             try
@@ -590,7 +610,7 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
 
                             MemoryStream mem = new MemoryStream();
 
-                            if (muhRapor!=null)
+                            if (muhRapor != null)
                             {
                                 gunsonuSon.ExportToPdf(mem);
                             }
@@ -1385,6 +1405,6 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
             }
         }
 
-        
+
     }
 }

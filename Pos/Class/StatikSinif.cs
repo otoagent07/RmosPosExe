@@ -175,6 +175,7 @@ IF COL_LENGTH('Pos_Param', 'mobilCallerIdAktif') IS NULL BEGIN ALTER TABLE Pos_P
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_ServisPayiDuzelt') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_ServisPayiDuzelt] bit END;
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_OdenmezIkramPasif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_OdenmezIkramPasif] bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'coklugunsonu') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [coklugunsonu] bit END;
 
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'ingenicoaktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [ingenicoaktif] bit END;

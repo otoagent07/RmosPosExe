@@ -243,12 +243,12 @@ namespace Pos
                 btnParcaliOde.Visible = Param.Param_ParcaliMasaAktif;
 
 
-                 yaziciAd = dbtools.DegerGetir("Select isnull(Kodlar_parakasa,'') as Kodlar_parakasa From Stok_Kodlar Where Kodlar_Sinif ='01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+                yaziciAd = dbtools.DegerGetir("Select isnull(Kodlar_parakasa,'') as Kodlar_parakasa From Stok_Kodlar Where Kodlar_Sinif ='01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
 
                 if (yaziciAd == "")
                 {
                     btnCekmeceAc.Visible = false;
-                        
+
                 }
 
 
@@ -1888,7 +1888,7 @@ namespace Pos
 
             //dbtools.execcmd("update Pos_Masa set Masa_Durum = '0', Masa_Ozel = '' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
-            dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Garson='"+User.P_Kod+"',sepetDurum=3,Rsat_SistemDate = Getdate(), Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "', E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
+            dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Garson='" + User.P_Kod + "',sepetDurum=3,Rsat_SistemDate = Getdate(), Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "', E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
 
             if (E_AdisyonDurum.Checked) // raporlar için eklendi-> eadisyon ise adisyondur.
             {
@@ -3360,7 +3360,9 @@ namespace Pos
             string neden = "";
             if (Rsat_SiparisPr && Departman.Kodlar_YazSipNedSor)
             {
-                Klavye2 klv = new Klavye2();
+                DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'SP%' -- AÇIKLAMA");
+
+                Klavye2 klv = new Klavye2(data: dataTable);
                 klv.ShowDialog();
 
                 if (klv.yazi == null)
@@ -3478,7 +3480,7 @@ namespace Pos
 
         }
 
-   
+
 
 
         public void otoIndirimYuvarlama()
@@ -3749,9 +3751,9 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                     return;
                 }
 
-               
+
                 bool Rsat_SiparisPr = Convert.ToBoolean(dbtools.DegerGetir("select ISNULL((select ISNULL(Rsat_SiparisPr,0) from Cst_Recete_Satis WHERE Rsat_Id = " + Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")) + "),0)"));
-               
+
 
 
                 if (Rsat_SiparisPr && !User.G_Satirsil_Y)
@@ -3763,7 +3765,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                 string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null and Rsat_Kapatma<>''";
                 string kapatmaVarmi = dbtools.DegerGetir(qq);
-                if (kapatmaVarmi!="0")
+                if (kapatmaVarmi != "0")
                 {
                     MessageBox.Show("Ödeme veya İndirim varken ürün silinemez !");
                     return;
@@ -3847,13 +3849,13 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 if (satirsay == 0)
                 {
                     dbtools.execcmd("update Pos_Masa set Masa_Durum = 0, Masa_Ozel = '' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
-                    dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Fisno = '" + fisno+ "'");
+                    dbtools.execcmd("delete from Cst_Recete_Satis where Rsat_Fisno = '" + fisno + "'");
                 }
 
 
                 gridyenile();
 
-              
+
             }
             catch (Exception ex)
             {
@@ -3904,7 +3906,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
                 string pavoOdemeKod = $"select top 1 ISNULL(pavoOdemeKod,'') as pavoOdemeKod from Pos_Kodlar where Pkod_Sinif = '11'  and Pkod_Kod='{look_Kapatma.EditValue}'";
 
-               
+
 
                 pavoOdemeKod = dbtools.DegerGetir(pavoOdemeKod);
 
@@ -3920,7 +3922,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 // JSON'a çevrilecek nesne
                 var payment = new PavoReqModel
                 {
-                    fisno = ""+ fis_no,
+                    fisno = "" + fis_no,
                     depkod = Departman.Dep_Kodu,
                     paymentTypeId = Convert.ToInt32(pavoOdemeKod),
                     sirketId = sirketId
@@ -3935,13 +3937,13 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 response.EnsureSuccessStatusCode();
                 string sonuc = response.Content.ReadAsStringAsync().Result;
 
-                if (sonuc=="1")
+                if (sonuc == "1")
                 {
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Başarısız\n"+ sonuc);
+                    MessageBox.Show("Başarısız\n" + sonuc);
                 }
 
             }

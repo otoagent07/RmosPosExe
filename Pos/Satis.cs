@@ -4093,7 +4093,9 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             string neden = "";
             if (Rsat_SiparisPr && Departman.Kodlar_YazSipNedSor)
             {
-                Klavye2 klv = new Klavye2();
+                DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'SP%' -- AÇIKLAMA");
+
+                Klavye2 klv = new Klavye2(data: dataTable);
                 klv.ShowDialog();
 
                 if (klv.yazi == null)

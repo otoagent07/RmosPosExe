@@ -572,10 +572,10 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 		as Rsat_Tutar ,";
 
 
-                if (Param.Param_Masa_Garson)
-                {
-                    toplamTutarQuery = "'0' as Rsat_Tutar,";
-                }
+                //if (Param.Param_Masa_Garson)
+                //{
+                //    toplamTutarQuery = "'0' as Rsat_Tutar,";
+                //}
 
                 string query = "select Rsat_Fisno, " + toplamTutarQuery + " Masa_No, ISNULL(Masa_Ozel,'') as Masa_Ozel , "
                             + " MIN(ISNULL(Rsat_MusTipi,'')) as Rsat_MusTipi,ISNULL(Masa_Durum,0) as Masa_Durum,"
@@ -753,7 +753,8 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                     Console.WriteLine("doviz " + Param.Doviz_Kodu);
 
                     string TL = "";
-                    if (Param.Param_Masa_Garson == false)
+                    //if (Param.Param_Masa_Garson == false) // 05.05.2025 de düzeltildi
+                    if (1==1)
                     {
                         if (Param.Calisma_Sekli == 1)
                         {
@@ -922,10 +923,10 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 		as Rsat_Tutar ,";
 
 
-                if (Param.Param_Masa_Garson)
-                {
-                    toplamTutarQuery = "'0' as Rsat_Tutar,";
-                }
+                //if (Param.Param_Masa_Garson)
+                //{
+                //    toplamTutarQuery = "'0' as Rsat_Tutar,";
+                //}
 
                 string query = "select Rsat_Fisno, " + toplamTutarQuery + " Masa_No, ISNULL(Masa_Ozel,'') as Masa_Ozel , "
                             + " MIN(ISNULL(Rsat_MusTipi,'')) as Rsat_MusTipi,ISNULL(Masa_Durum,0) as Masa_Durum,"
@@ -1099,7 +1100,8 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
                     string TL = "";
 
-                    if (Param.Param_Masa_Garson == false)
+                    //if (Param.Param_Masa_Garson == false) // 05.05.2025 de düzeltildi
+                    if (1 == 1)
                     {
 
                         if (Param.Calisma_Sekli == 1)

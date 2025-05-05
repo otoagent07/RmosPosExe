@@ -1125,6 +1125,7 @@
             this.chk_And_Hesap = new DevExpress.XtraEditors.CheckEdit();
             this.chk_And_Satis = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.servisPayiKdvOran = new DevExpress.XtraEditors.CheckEdit();
             this.lookUpEditYazici = new DevExpress.XtraEditors.LookUpEdit();
             this.textEdit193 = new DevExpress.XtraEditors.TextEdit();
             this.chk_ExtKasaDetay = new DevExpress.XtraEditors.CheckEdit();
@@ -1296,7 +1297,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.servisPayiKdvOran = new DevExpress.XtraEditors.CheckEdit();
+            this.coklugunsonu = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2064,6 +2065,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_And_Hesap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_And_Satis.Properties)).BeginInit();
             this.xtraTabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.servisPayiKdvOran.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditYazici.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit193.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_ExtKasaDetay.Properties)).BeginInit();
@@ -2174,7 +2176,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.servisPayiKdvOran.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coklugunsonu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -11696,6 +11698,12 @@
             resources.ApplyResources(this.xtraTabPage4, "xtraTabPage4");
             this.xtraTabPage4.Name = "xtraTabPage4";
             // 
+            // servisPayiKdvOran
+            // 
+            resources.ApplyResources(this.servisPayiKdvOran, "servisPayiKdvOran");
+            this.servisPayiKdvOran.Name = "servisPayiKdvOran";
+            this.servisPayiKdvOran.Properties.Caption = resources.GetString("servisPayiKdvOran.Properties.Caption");
+            // 
             // lookUpEditYazici
             // 
             resources.ApplyResources(this.lookUpEditYazici, "lookUpEditYazici");
@@ -11848,6 +11856,7 @@
             // 
             // xtraTabPage7
             // 
+            this.xtraTabPage7.Controls.Add(this.coklugunsonu);
             this.xtraTabPage7.Controls.Add(this.merkezsubeaktif);
             this.xtraTabPage7.Controls.Add(this.lookUpEditHesapDokYazici);
             this.xtraTabPage7.Controls.Add(this.Pos_OdenmezIkramPasif);
@@ -13109,11 +13118,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // servisPayiKdvOran
+            // coklugunsonu
             // 
-            resources.ApplyResources(this.servisPayiKdvOran, "servisPayiKdvOran");
-            this.servisPayiKdvOran.Name = "servisPayiKdvOran";
-            this.servisPayiKdvOran.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            resources.ApplyResources(this.coklugunsonu, "coklugunsonu");
+            this.coklugunsonu.Name = "coklugunsonu";
+            this.coklugunsonu.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -13916,6 +13925,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_And_Hesap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_And_Satis.Properties)).EndInit();
             this.xtraTabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.servisPayiKdvOran.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditYazici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit193.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_ExtKasaDetay.Properties)).EndInit();
@@ -14033,7 +14043,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.servisPayiKdvOran.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coklugunsonu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15307,5 +15317,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit201;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn178;
         private DevExpress.XtraEditors.CheckEdit servisPayiKdvOran;
+        private DevExpress.XtraEditors.CheckEdit coklugunsonu;
     }
 }
