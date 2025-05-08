@@ -3081,7 +3081,10 @@ namespace Pos
                 }
                 else
                 {
-
+                    if (this.Tag == null)
+                    {
+                        this.Tag = "D";
+                    }
                     bool direksatismi = this.Tag.ToString() == "D" ? true : false;
 
                     sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text,direkSatis:direksatismi);

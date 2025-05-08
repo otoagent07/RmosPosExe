@@ -1151,6 +1151,7 @@
             this.chk_Servis = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
+            this.coklugunsonu = new DevExpress.XtraEditors.CheckEdit();
             this.merkezsubeaktif = new DevExpress.XtraEditors.CheckEdit();
             this.lookUpEditHesapDokYazici = new DevExpress.XtraEditors.LookUpEdit();
             this.Pos_OdenmezIkramPasif = new DevExpress.XtraEditors.CheckEdit();
@@ -1297,7 +1298,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.coklugunsonu = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2091,6 +2091,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).BeginInit();
             this.xtraTabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coklugunsonu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.merkezsubeaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditHesapDokYazici.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_OdenmezIkramPasif.Properties)).BeginInit();
@@ -2176,7 +2177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coklugunsonu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -2188,7 +2188,7 @@
             resources.ApplyResources(this.splitContainerControl1.Panel1, "splitContainerControl1.Panel1");
             this.splitContainerControl1.Panel2.Controls.Add(this.xtraTabControl1);
             resources.ApplyResources(this.splitContainerControl1.Panel2, "splitContainerControl1.Panel2");
-            this.splitContainerControl1.SplitterPosition = 704;
+            this.splitContainerControl1.SplitterPosition = 845;
             // 
             // navBarControl1
             // 
@@ -4633,7 +4633,6 @@
             // 
             resources.ApplyResources(this.gridColumn170, "gridColumn170");
             this.gridColumn170.FieldName = "ayarlar_id";
-            this.gridColumn170.MinWidth = 17;
             this.gridColumn170.Name = "gridColumn170";
             this.gridColumn170.OptionsColumn.AllowEdit = false;
             // 
@@ -4641,7 +4640,6 @@
             // 
             resources.ApplyResources(this.gridColumn171, "gridColumn171");
             this.gridColumn171.FieldName = "ayarlar_key";
-            this.gridColumn171.MinWidth = 17;
             this.gridColumn171.Name = "gridColumn171";
             this.gridColumn171.OptionsColumn.AllowEdit = false;
             // 
@@ -4649,14 +4647,12 @@
             // 
             resources.ApplyResources(this.gridColumn172, "gridColumn172");
             this.gridColumn172.FieldName = "ayarlar_value";
-            this.gridColumn172.MinWidth = 17;
             this.gridColumn172.Name = "gridColumn172";
             // 
             // gridColumn173
             // 
             resources.ApplyResources(this.gridColumn173, "gridColumn173");
             this.gridColumn173.FieldName = "ayarlar_aciklama";
-            this.gridColumn173.MinWidth = 17;
             this.gridColumn173.Name = "gridColumn173";
             this.gridColumn173.OptionsColumn.AllowEdit = false;
             // 
@@ -5224,14 +5220,12 @@
             // gridColumn107
             // 
             resources.ApplyResources(this.gridColumn107, "gridColumn107");
-            this.gridColumn107.MinWidth = 17;
             this.gridColumn107.Name = "gridColumn107";
             this.gridColumn107.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn108
             // 
             resources.ApplyResources(this.gridColumn108, "gridColumn108");
-            this.gridColumn108.MinWidth = 17;
             this.gridColumn108.Name = "gridColumn108";
             this.gridColumn108.OptionsColumn.AllowFocus = false;
             // 
@@ -5364,28 +5358,24 @@
             // gridColumn109
             // 
             resources.ApplyResources(this.gridColumn109, "gridColumn109");
-            this.gridColumn109.MinWidth = 17;
             this.gridColumn109.Name = "gridColumn109";
             this.gridColumn109.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn110
             // 
             resources.ApplyResources(this.gridColumn110, "gridColumn110");
-            this.gridColumn110.MinWidth = 17;
             this.gridColumn110.Name = "gridColumn110";
             this.gridColumn110.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn111
             // 
             resources.ApplyResources(this.gridColumn111, "gridColumn111");
-            this.gridColumn111.MinWidth = 17;
             this.gridColumn111.Name = "gridColumn111";
             this.gridColumn111.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn112
             // 
             resources.ApplyResources(this.gridColumn112, "gridColumn112");
-            this.gridColumn112.MinWidth = 17;
             this.gridColumn112.Name = "gridColumn112";
             this.gridColumn112.OptionsColumn.AllowFocus = false;
             // 
@@ -5545,42 +5535,36 @@
             // gridColumn113
             // 
             resources.ApplyResources(this.gridColumn113, "gridColumn113");
-            this.gridColumn113.MinWidth = 17;
             this.gridColumn113.Name = "gridColumn113";
             this.gridColumn113.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn114
             // 
             resources.ApplyResources(this.gridColumn114, "gridColumn114");
-            this.gridColumn114.MinWidth = 17;
             this.gridColumn114.Name = "gridColumn114";
             this.gridColumn114.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn115
             // 
             resources.ApplyResources(this.gridColumn115, "gridColumn115");
-            this.gridColumn115.MinWidth = 17;
             this.gridColumn115.Name = "gridColumn115";
             this.gridColumn115.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn116
             // 
             resources.ApplyResources(this.gridColumn116, "gridColumn116");
-            this.gridColumn116.MinWidth = 17;
             this.gridColumn116.Name = "gridColumn116";
             this.gridColumn116.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn117
             // 
             resources.ApplyResources(this.gridColumn117, "gridColumn117");
-            this.gridColumn117.MinWidth = 17;
             this.gridColumn117.Name = "gridColumn117";
             this.gridColumn117.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn118
             // 
             resources.ApplyResources(this.gridColumn118, "gridColumn118");
-            this.gridColumn118.MinWidth = 17;
             this.gridColumn118.Name = "gridColumn118";
             this.gridColumn118.OptionsColumn.AllowFocus = false;
             // 
@@ -5861,14 +5845,12 @@
             // gridColumn119
             // 
             resources.ApplyResources(this.gridColumn119, "gridColumn119");
-            this.gridColumn119.MinWidth = 17;
             this.gridColumn119.Name = "gridColumn119";
             this.gridColumn119.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn120
             // 
             resources.ApplyResources(this.gridColumn120, "gridColumn120");
-            this.gridColumn120.MinWidth = 17;
             this.gridColumn120.Name = "gridColumn120";
             this.gridColumn120.OptionsColumn.AllowFocus = false;
             // 
@@ -5876,7 +5858,6 @@
             // 
             resources.ApplyResources(this.gridColumn130, "gridColumn130");
             this.gridColumn130.FieldName = "Pkod_Server";
-            this.gridColumn130.MinWidth = 17;
             this.gridColumn130.Name = "gridColumn130";
             this.gridColumn130.OptionsColumn.AllowFocus = false;
             // 
@@ -5884,7 +5865,6 @@
             // 
             resources.ApplyResources(this.gridColumn131, "gridColumn131");
             this.gridColumn131.FieldName = "Pkod_Database";
-            this.gridColumn131.MinWidth = 17;
             this.gridColumn131.Name = "gridColumn131";
             this.gridColumn131.OptionsColumn.AllowFocus = false;
             // 
@@ -5892,7 +5872,6 @@
             // 
             resources.ApplyResources(this.gridColumn132, "gridColumn132");
             this.gridColumn132.FieldName = "Pkod_User";
-            this.gridColumn132.MinWidth = 17;
             this.gridColumn132.Name = "gridColumn132";
             this.gridColumn132.OptionsColumn.AllowFocus = false;
             // 
@@ -5900,7 +5879,6 @@
             // 
             resources.ApplyResources(this.gridColumn133, "gridColumn133");
             this.gridColumn133.FieldName = "Pkod_Password";
-            this.gridColumn133.MinWidth = 17;
             this.gridColumn133.Name = "gridColumn133";
             this.gridColumn133.OptionsColumn.AllowFocus = false;
             // 
@@ -5908,7 +5886,6 @@
             // 
             resources.ApplyResources(this.gridColumn134, "gridColumn134");
             this.gridColumn134.FieldName = "Pkod_MerkezSube";
-            this.gridColumn134.MinWidth = 17;
             this.gridColumn134.Name = "gridColumn134";
             this.gridColumn134.OptionsColumn.AllowFocus = false;
             // 
@@ -5916,7 +5893,6 @@
             // 
             resources.ApplyResources(this.gridColumn135, "gridColumn135");
             this.gridColumn135.FieldName = "Pkod_SubeMac";
-            this.gridColumn135.MinWidth = 17;
             this.gridColumn135.Name = "gridColumn135";
             this.gridColumn135.OptionsColumn.AllowFocus = false;
             // 
@@ -5924,7 +5900,6 @@
             // 
             resources.ApplyResources(this.gridColumn136, "gridColumn136");
             this.gridColumn136.FieldName = "Pkod_KapatmaKodu";
-            this.gridColumn136.MinWidth = 17;
             this.gridColumn136.Name = "gridColumn136";
             this.gridColumn136.OptionsColumn.AllowFocus = false;
             // 
@@ -5932,7 +5907,6 @@
             // 
             resources.ApplyResources(this.gridColumn137, "gridColumn137");
             this.gridColumn137.FieldName = "Pkod_KapatmaHesabi";
-            this.gridColumn137.MinWidth = 17;
             this.gridColumn137.Name = "gridColumn137";
             this.gridColumn137.OptionsColumn.AllowFocus = false;
             // 
@@ -5940,7 +5914,6 @@
             // 
             resources.ApplyResources(this.gridColumn144, "gridColumn144");
             this.gridColumn144.FieldName = "Pkod_LinkServer";
-            this.gridColumn144.MinWidth = 17;
             this.gridColumn144.Name = "gridColumn144";
             this.gridColumn144.OptionsColumn.AllowFocus = false;
             // 
@@ -6069,7 +6042,6 @@
             // 
             resources.ApplyResources(this.gridColumn121, "gridColumn121");
             this.gridColumn121.FieldName = "subeKod";
-            this.gridColumn121.MinWidth = 17;
             this.gridColumn121.Name = "gridColumn121";
             this.gridColumn121.OptionsColumn.AllowFocus = false;
             // 
@@ -6077,7 +6049,6 @@
             // 
             resources.ApplyResources(this.gridColumn122, "gridColumn122");
             this.gridColumn122.FieldName = "subeAd";
-            this.gridColumn122.MinWidth = 17;
             this.gridColumn122.Name = "gridColumn122";
             this.gridColumn122.OptionsColumn.AllowFocus = false;
             // 
@@ -6085,7 +6056,6 @@
             // 
             resources.ApplyResources(this.gridColumn123, "gridColumn123");
             this.gridColumn123.FieldName = "ilKod";
-            this.gridColumn123.MinWidth = 17;
             this.gridColumn123.Name = "gridColumn123";
             this.gridColumn123.OptionsColumn.AllowFocus = false;
             // 
@@ -6093,7 +6063,6 @@
             // 
             resources.ApplyResources(this.gridColumn124, "gridColumn124");
             this.gridColumn124.FieldName = "idAd";
-            this.gridColumn124.MinWidth = 17;
             this.gridColumn124.Name = "gridColumn124";
             this.gridColumn124.OptionsColumn.AllowFocus = false;
             // 
@@ -6101,7 +6070,6 @@
             // 
             resources.ApplyResources(this.gridColumn125, "gridColumn125");
             this.gridColumn125.FieldName = "ilceKod";
-            this.gridColumn125.MinWidth = 17;
             this.gridColumn125.Name = "gridColumn125";
             this.gridColumn125.OptionsColumn.AllowFocus = false;
             // 
@@ -6109,7 +6077,6 @@
             // 
             resources.ApplyResources(this.gridColumn126, "gridColumn126");
             this.gridColumn126.FieldName = "ilceAd";
-            this.gridColumn126.MinWidth = 17;
             this.gridColumn126.Name = "gridColumn126";
             this.gridColumn126.OptionsColumn.AllowFocus = false;
             // 
@@ -6117,7 +6084,6 @@
             // 
             resources.ApplyResources(this.gridColumn127, "gridColumn127");
             this.gridColumn127.FieldName = "mahalleId";
-            this.gridColumn127.MinWidth = 17;
             this.gridColumn127.Name = "gridColumn127";
             this.gridColumn127.OptionsColumn.AllowFocus = false;
             // 
@@ -6125,7 +6091,6 @@
             // 
             resources.ApplyResources(this.gridColumn128, "gridColumn128");
             this.gridColumn128.FieldName = "mahalleKod";
-            this.gridColumn128.MinWidth = 17;
             this.gridColumn128.Name = "gridColumn128";
             this.gridColumn128.OptionsColumn.AllowFocus = false;
             // 
@@ -6133,7 +6098,6 @@
             // 
             resources.ApplyResources(this.gridColumn129, "gridColumn129");
             this.gridColumn129.FieldName = "mahalleAd";
-            this.gridColumn129.MinWidth = 17;
             this.gridColumn129.Name = "gridColumn129";
             this.gridColumn129.OptionsColumn.AllowFocus = false;
             // 
@@ -6233,7 +6197,6 @@
             // 
             resources.ApplyResources(this.gridColumn90, "gridColumn90");
             this.gridColumn90.FieldName = "Pkod_Ad";
-            this.gridColumn90.MinWidth = 17;
             this.gridColumn90.Name = "gridColumn90";
             this.gridColumn90.OptionsColumn.AllowFocus = false;
             // 
@@ -6241,14 +6204,12 @@
             // 
             resources.ApplyResources(this.gridColumn89, "gridColumn89");
             this.gridColumn89.FieldName = "sec";
-            this.gridColumn89.MinWidth = 17;
             this.gridColumn89.Name = "gridColumn89";
             // 
             // gridColumn98
             // 
             resources.ApplyResources(this.gridColumn98, "gridColumn98");
             this.gridColumn98.FieldName = "Pkod_Kod";
-            this.gridColumn98.MinWidth = 17;
             this.gridColumn98.Name = "gridColumn98";
             this.gridColumn98.OptionsColumn.AllowFocus = false;
             // 
@@ -6334,28 +6295,24 @@
             // gridColumn1
             // 
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
-            this.gridColumn1.MinWidth = 17;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn2
             // 
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
-            this.gridColumn2.MinWidth = 17;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn142
             // 
             resources.ApplyResources(this.gridColumn142, "gridColumn142");
-            this.gridColumn142.MinWidth = 17;
             this.gridColumn142.Name = "gridColumn142";
             this.gridColumn142.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn143
             // 
             resources.ApplyResources(this.gridColumn143, "gridColumn143");
-            this.gridColumn143.MinWidth = 17;
             this.gridColumn143.Name = "gridColumn143";
             this.gridColumn143.OptionsColumn.AllowFocus = false;
             // 
@@ -6724,119 +6681,102 @@
             // gridColumn19
             // 
             resources.ApplyResources(this.gridColumn19, "gridColumn19");
-            this.gridColumn19.MinWidth = 17;
             this.gridColumn19.Name = "gridColumn19";
             this.gridColumn19.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn20
             // 
             resources.ApplyResources(this.gridColumn20, "gridColumn20");
-            this.gridColumn20.MinWidth = 17;
             this.gridColumn20.Name = "gridColumn20";
             this.gridColumn20.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn21
             // 
             resources.ApplyResources(this.gridColumn21, "gridColumn21");
-            this.gridColumn21.MinWidth = 17;
             this.gridColumn21.Name = "gridColumn21";
             this.gridColumn21.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn22
             // 
             resources.ApplyResources(this.gridColumn22, "gridColumn22");
-            this.gridColumn22.MinWidth = 17;
             this.gridColumn22.Name = "gridColumn22";
             this.gridColumn22.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn24
             // 
             resources.ApplyResources(this.gridColumn24, "gridColumn24");
-            this.gridColumn24.MinWidth = 17;
             this.gridColumn24.Name = "gridColumn24";
             this.gridColumn24.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn57
             // 
             resources.ApplyResources(this.gridColumn57, "gridColumn57");
-            this.gridColumn57.MinWidth = 17;
             this.gridColumn57.Name = "gridColumn57";
             this.gridColumn57.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn58
             // 
             resources.ApplyResources(this.gridColumn58, "gridColumn58");
-            this.gridColumn58.MinWidth = 17;
             this.gridColumn58.Name = "gridColumn58";
             this.gridColumn58.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn73
             // 
             resources.ApplyResources(this.gridColumn73, "gridColumn73");
-            this.gridColumn73.MinWidth = 17;
             this.gridColumn73.Name = "gridColumn73";
             this.gridColumn73.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn78
             // 
             resources.ApplyResources(this.gridColumn78, "gridColumn78");
-            this.gridColumn78.MinWidth = 17;
             this.gridColumn78.Name = "gridColumn78";
             this.gridColumn78.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn79
             // 
             resources.ApplyResources(this.gridColumn79, "gridColumn79");
-            this.gridColumn79.MinWidth = 17;
             this.gridColumn79.Name = "gridColumn79";
             this.gridColumn79.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn88
             // 
             resources.ApplyResources(this.gridColumn88, "gridColumn88");
-            this.gridColumn88.MinWidth = 17;
             this.gridColumn88.Name = "gridColumn88";
             this.gridColumn88.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn60
             // 
             resources.ApplyResources(this.gridColumn60, "gridColumn60");
-            this.gridColumn60.MinWidth = 17;
             this.gridColumn60.Name = "gridColumn60";
             this.gridColumn60.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn105
             // 
             resources.ApplyResources(this.gridColumn105, "gridColumn105");
-            this.gridColumn105.MinWidth = 17;
             this.gridColumn105.Name = "gridColumn105";
             this.gridColumn105.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn106
             // 
             resources.ApplyResources(this.gridColumn106, "gridColumn106");
-            this.gridColumn106.MinWidth = 17;
             this.gridColumn106.Name = "gridColumn106";
             this.gridColumn106.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn146
             // 
             resources.ApplyResources(this.gridColumn146, "gridColumn146");
-            this.gridColumn146.MinWidth = 17;
             this.gridColumn146.Name = "gridColumn146";
             this.gridColumn146.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn147
             // 
             resources.ApplyResources(this.gridColumn147, "gridColumn147");
-            this.gridColumn147.MinWidth = 17;
             this.gridColumn147.Name = "gridColumn147";
             this.gridColumn147.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn148
             // 
             resources.ApplyResources(this.gridColumn148, "gridColumn148");
-            this.gridColumn148.MinWidth = 17;
             this.gridColumn148.Name = "gridColumn148";
             this.gridColumn148.OptionsColumn.AllowFocus = false;
             // 
@@ -6844,7 +6784,6 @@
             // 
             resources.ApplyResources(this.gridColumn159, "gridColumn159");
             this.gridColumn159.FieldName = "Pkod_AbuyerIP";
-            this.gridColumn159.MinWidth = 17;
             this.gridColumn159.Name = "gridColumn159";
             this.gridColumn159.OptionsColumn.AllowFocus = false;
             // 
@@ -6852,7 +6791,6 @@
             // 
             resources.ApplyResources(this.gridColumn160, "gridColumn160");
             this.gridColumn160.FieldName = "Pkod_AbuyerPort";
-            this.gridColumn160.MinWidth = 17;
             this.gridColumn160.Name = "gridColumn160";
             this.gridColumn160.OptionsColumn.AllowFocus = false;
             // 
@@ -6860,14 +6798,12 @@
             // 
             resources.ApplyResources(this.gridColumn174, "gridColumn174");
             this.gridColumn174.FieldName = "Pkod_Id";
-            this.gridColumn174.MinWidth = 17;
             this.gridColumn174.Name = "gridColumn174";
             // 
             // gridColumn176
             // 
             resources.ApplyResources(this.gridColumn176, "gridColumn176");
             this.gridColumn176.FieldName = "tumPrinter";
-            this.gridColumn176.MinWidth = 17;
             this.gridColumn176.Name = "gridColumn176";
             // 
             // textEdit30
@@ -7110,98 +7046,84 @@
             // gridColumn67
             // 
             resources.ApplyResources(this.gridColumn67, "gridColumn67");
-            this.gridColumn67.MinWidth = 17;
             this.gridColumn67.Name = "gridColumn67";
             this.gridColumn67.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn68
             // 
             resources.ApplyResources(this.gridColumn68, "gridColumn68");
-            this.gridColumn68.MinWidth = 17;
             this.gridColumn68.Name = "gridColumn68";
             this.gridColumn68.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn69
             // 
             resources.ApplyResources(this.gridColumn69, "gridColumn69");
-            this.gridColumn69.MinWidth = 17;
             this.gridColumn69.Name = "gridColumn69";
             this.gridColumn69.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn70
             // 
             resources.ApplyResources(this.gridColumn70, "gridColumn70");
-            this.gridColumn70.MinWidth = 17;
             this.gridColumn70.Name = "gridColumn70";
             this.gridColumn70.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn71
             // 
             resources.ApplyResources(this.gridColumn71, "gridColumn71");
-            this.gridColumn71.MinWidth = 17;
             this.gridColumn71.Name = "gridColumn71";
             this.gridColumn71.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn72
             // 
             resources.ApplyResources(this.gridColumn72, "gridColumn72");
-            this.gridColumn72.MinWidth = 17;
             this.gridColumn72.Name = "gridColumn72";
             this.gridColumn72.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn80
             // 
             resources.ApplyResources(this.gridColumn80, "gridColumn80");
-            this.gridColumn80.MinWidth = 17;
             this.gridColumn80.Name = "gridColumn80";
             this.gridColumn80.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn81
             // 
             resources.ApplyResources(this.gridColumn81, "gridColumn81");
-            this.gridColumn81.MinWidth = 17;
             this.gridColumn81.Name = "gridColumn81";
             this.gridColumn81.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn82
             // 
             resources.ApplyResources(this.gridColumn82, "gridColumn82");
-            this.gridColumn82.MinWidth = 17;
             this.gridColumn82.Name = "gridColumn82";
             this.gridColumn82.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn83
             // 
             resources.ApplyResources(this.gridColumn83, "gridColumn83");
-            this.gridColumn83.MinWidth = 17;
             this.gridColumn83.Name = "gridColumn83";
             this.gridColumn83.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn84
             // 
             resources.ApplyResources(this.gridColumn84, "gridColumn84");
-            this.gridColumn84.MinWidth = 17;
             this.gridColumn84.Name = "gridColumn84";
             this.gridColumn84.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn85
             // 
             resources.ApplyResources(this.gridColumn85, "gridColumn85");
-            this.gridColumn85.MinWidth = 17;
             this.gridColumn85.Name = "gridColumn85";
             this.gridColumn85.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn86
             // 
             resources.ApplyResources(this.gridColumn86, "gridColumn86");
-            this.gridColumn86.MinWidth = 17;
             this.gridColumn86.Name = "gridColumn86";
             this.gridColumn86.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn87
             // 
             resources.ApplyResources(this.gridColumn87, "gridColumn87");
-            this.gridColumn87.MinWidth = 17;
             this.gridColumn87.Name = "gridColumn87";
             this.gridColumn87.OptionsColumn.AllowFocus = false;
             // 
@@ -8260,77 +8182,66 @@
             // gridColumn3
             // 
             resources.ApplyResources(this.gridColumn3, "gridColumn3");
-            this.gridColumn3.MinWidth = 17;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn4
             // 
             resources.ApplyResources(this.gridColumn4, "gridColumn4");
-            this.gridColumn4.MinWidth = 17;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn5
             // 
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
-            this.gridColumn5.MinWidth = 17;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn6
             // 
             resources.ApplyResources(this.gridColumn6, "gridColumn6");
-            this.gridColumn6.MinWidth = 17;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn7
             // 
             resources.ApplyResources(this.gridColumn7, "gridColumn7");
-            this.gridColumn7.MinWidth = 17;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn8
             // 
             resources.ApplyResources(this.gridColumn8, "gridColumn8");
-            this.gridColumn8.MinWidth = 17;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn9
             // 
             resources.ApplyResources(this.gridColumn9, "gridColumn9");
-            this.gridColumn9.MinWidth = 17;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn10
             // 
             resources.ApplyResources(this.gridColumn10, "gridColumn10");
-            this.gridColumn10.MinWidth = 17;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn14
             // 
             resources.ApplyResources(this.gridColumn14, "gridColumn14");
-            this.gridColumn14.MinWidth = 17;
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn26
             // 
             resources.ApplyResources(this.gridColumn26, "gridColumn26");
-            this.gridColumn26.MinWidth = 17;
             this.gridColumn26.Name = "gridColumn26";
             this.gridColumn26.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn27
             // 
             resources.ApplyResources(this.gridColumn27, "gridColumn27");
-            this.gridColumn27.MinWidth = 17;
             this.gridColumn27.Name = "gridColumn27";
             this.gridColumn27.OptionsColumn.AllowFocus = false;
             // 
@@ -8338,7 +8249,6 @@
             // 
             resources.ApplyResources(this.gridColumn138, "gridColumn138");
             this.gridColumn138.FieldName = "Pkod_DirekBakiye";
-            this.gridColumn138.MinWidth = 17;
             this.gridColumn138.Name = "gridColumn138";
             this.gridColumn138.OptionsColumn.AllowFocus = false;
             // 
@@ -8346,7 +8256,6 @@
             // 
             resources.ApplyResources(this.gridColumn139, "gridColumn139");
             this.gridColumn139.FieldName = "Pkod_MuhasebeAktif";
-            this.gridColumn139.MinWidth = 17;
             this.gridColumn139.Name = "gridColumn139";
             this.gridColumn139.OptionsColumn.AllowFocus = false;
             // 
@@ -8354,7 +8263,6 @@
             // 
             resources.ApplyResources(this.gridColumn140, "gridColumn140");
             this.gridColumn140.FieldName = "Pkod_MuhasebeBorc";
-            this.gridColumn140.MinWidth = 17;
             this.gridColumn140.Name = "gridColumn140";
             this.gridColumn140.OptionsColumn.AllowFocus = false;
             // 
@@ -8362,7 +8270,6 @@
             // 
             resources.ApplyResources(this.gridColumn141, "gridColumn141");
             this.gridColumn141.FieldName = "Pkod_MuhasebeAlacak";
-            this.gridColumn141.MinWidth = 17;
             this.gridColumn141.Name = "gridColumn141";
             this.gridColumn141.OptionsColumn.AllowFocus = false;
             // 
@@ -8370,7 +8277,6 @@
             // 
             resources.ApplyResources(this.gridColumn145, "gridColumn145");
             this.gridColumn145.FieldName = "Pkod_AdisyonPr";
-            this.gridColumn145.MinWidth = 17;
             this.gridColumn145.Name = "gridColumn145";
             this.gridColumn145.OptionsColumn.AllowFocus = false;
             // 
@@ -8378,7 +8284,6 @@
             // 
             resources.ApplyResources(this.gridColumn157, "gridColumn157");
             this.gridColumn157.FieldName = "Pkod_YKasaid";
-            this.gridColumn157.MinWidth = 17;
             this.gridColumn157.Name = "gridColumn157";
             this.gridColumn157.OptionsColumn.AllowFocus = false;
             // 
@@ -8386,7 +8291,6 @@
             // 
             resources.ApplyResources(this.gridColumn158, "gridColumn158");
             this.gridColumn158.FieldName = "Pkod_banka";
-            this.gridColumn158.MinWidth = 17;
             this.gridColumn158.Name = "gridColumn158";
             this.gridColumn158.OptionsColumn.AllowFocus = false;
             // 
@@ -8394,7 +8298,6 @@
             // 
             resources.ApplyResources(this.gridColumn161, "gridColumn161");
             this.gridColumn161.FieldName = "Pkod_YS_OdemeID";
-            this.gridColumn161.MinWidth = 17;
             this.gridColumn161.Name = "gridColumn161";
             this.gridColumn161.OptionsColumn.AllowFocus = false;
             // 
@@ -8402,7 +8305,6 @@
             // 
             resources.ApplyResources(this.gridColumn162, "gridColumn162");
             this.gridColumn162.FieldName = "Pkod_OdemeBtnRenk";
-            this.gridColumn162.MinWidth = 17;
             this.gridColumn162.Name = "gridColumn162";
             this.gridColumn162.OptionsColumn.AllowFocus = false;
             // 
@@ -8410,7 +8312,6 @@
             // 
             resources.ApplyResources(this.gridColumn166, "gridColumn166");
             this.gridColumn166.FieldName = "Pkod_IWEPayment";
-            this.gridColumn166.MinWidth = 17;
             this.gridColumn166.Name = "gridColumn166";
             this.gridColumn166.OptionsColumn.AllowFocus = false;
             // 
@@ -8418,7 +8319,6 @@
             // 
             resources.ApplyResources(this.gridColumn167, "gridColumn167");
             this.gridColumn167.FieldName = "Pkod_Sira";
-            this.gridColumn167.MinWidth = 17;
             this.gridColumn167.Name = "gridColumn167";
             this.gridColumn167.OptionsColumn.AllowFocus = false;
             // 
@@ -8426,7 +8326,6 @@
             // 
             resources.ApplyResources(this.gridColumn168, "gridColumn168");
             this.gridColumn168.FieldName = "Pkod_Dep";
-            this.gridColumn168.MinWidth = 17;
             this.gridColumn168.Name = "gridColumn168";
             this.gridColumn168.OptionsColumn.AllowFocus = false;
             // 
@@ -8434,14 +8333,12 @@
             // 
             resources.ApplyResources(this.gridColumn175, "gridColumn175");
             this.gridColumn175.FieldName = "Pkod_E_Adisyon";
-            this.gridColumn175.MinWidth = 17;
             this.gridColumn175.Name = "gridColumn175";
             // 
             // gridColumn177
             // 
             resources.ApplyResources(this.gridColumn177, "gridColumn177");
             this.gridColumn177.FieldName = "pavoOdemeKod";
-            this.gridColumn177.MinWidth = 17;
             this.gridColumn177.Name = "gridColumn177";
             // 
             // Chk_Odeme_TekOda
@@ -8567,21 +8464,18 @@
             // gridColumn11
             // 
             resources.ApplyResources(this.gridColumn11, "gridColumn11");
-            this.gridColumn11.MinWidth = 17;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn12
             // 
             resources.ApplyResources(this.gridColumn12, "gridColumn12");
-            this.gridColumn12.MinWidth = 17;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn13
             // 
             resources.ApplyResources(this.gridColumn13, "gridColumn13");
-            this.gridColumn13.MinWidth = 17;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.OptionsColumn.AllowFocus = false;
             // 
@@ -8732,21 +8626,18 @@
             // gridColumn15
             // 
             resources.ApplyResources(this.gridColumn15, "gridColumn15");
-            this.gridColumn15.MinWidth = 17;
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn16
             // 
             resources.ApplyResources(this.gridColumn16, "gridColumn16");
-            this.gridColumn16.MinWidth = 17;
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn17
             // 
             resources.ApplyResources(this.gridColumn17, "gridColumn17");
-            this.gridColumn17.MinWidth = 17;
             this.gridColumn17.Name = "gridColumn17";
             this.gridColumn17.OptionsColumn.AllowFocus = false;
             // 
@@ -9156,7 +9047,6 @@
             // gridColumn30
             // 
             resources.ApplyResources(this.gridColumn30, "gridColumn30");
-            this.gridColumn30.MinWidth = 17;
             this.gridColumn30.Name = "gridColumn30";
             this.gridColumn30.OptionsColumn.AllowFocus = false;
             this.gridColumn30.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -9165,62 +9055,53 @@
             // gridColumn31
             // 
             resources.ApplyResources(this.gridColumn31, "gridColumn31");
-            this.gridColumn31.MinWidth = 17;
             this.gridColumn31.Name = "gridColumn31";
             this.gridColumn31.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn32
             // 
             resources.ApplyResources(this.gridColumn32, "gridColumn32");
-            this.gridColumn32.MinWidth = 17;
             this.gridColumn32.Name = "gridColumn32";
             this.gridColumn32.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn33
             // 
             resources.ApplyResources(this.gridColumn33, "gridColumn33");
-            this.gridColumn33.MinWidth = 17;
             this.gridColumn33.Name = "gridColumn33";
             this.gridColumn33.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn34
             // 
             resources.ApplyResources(this.gridColumn34, "gridColumn34");
-            this.gridColumn34.MinWidth = 17;
             this.gridColumn34.Name = "gridColumn34";
             this.gridColumn34.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn35
             // 
             resources.ApplyResources(this.gridColumn35, "gridColumn35");
-            this.gridColumn35.MinWidth = 17;
             this.gridColumn35.Name = "gridColumn35";
             this.gridColumn35.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn77
             // 
             resources.ApplyResources(this.gridColumn77, "gridColumn77");
-            this.gridColumn77.MinWidth = 17;
             this.gridColumn77.Name = "gridColumn77";
             this.gridColumn77.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn95
             // 
             resources.ApplyResources(this.gridColumn95, "gridColumn95");
-            this.gridColumn95.MinWidth = 17;
             this.gridColumn95.Name = "gridColumn95";
             this.gridColumn95.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn99
             // 
             resources.ApplyResources(this.gridColumn99, "gridColumn99");
-            this.gridColumn99.MinWidth = 17;
             this.gridColumn99.Name = "gridColumn99";
             // 
             // gridColumn100
             // 
             resources.ApplyResources(this.gridColumn100, "gridColumn100");
-            this.gridColumn100.MinWidth = 17;
             this.gridColumn100.Name = "gridColumn100";
             this.gridColumn100.OptionsColumn.AllowFocus = false;
             // 
@@ -9228,7 +9109,6 @@
             // 
             resources.ApplyResources(this.gridColumn178, "gridColumn178");
             this.gridColumn178.FieldName = "Masa_Sirano";
-            this.gridColumn178.MinWidth = 17;
             this.gridColumn178.Name = "gridColumn178";
             // 
             // textBox9
@@ -9424,42 +9304,36 @@
             // gridColumn18
             // 
             resources.ApplyResources(this.gridColumn18, "gridColumn18");
-            this.gridColumn18.MinWidth = 17;
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn23
             // 
             resources.ApplyResources(this.gridColumn23, "gridColumn23");
-            this.gridColumn23.MinWidth = 17;
             this.gridColumn23.Name = "gridColumn23";
             this.gridColumn23.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn91
             // 
             resources.ApplyResources(this.gridColumn91, "gridColumn91");
-            this.gridColumn91.MinWidth = 17;
             this.gridColumn91.Name = "gridColumn91";
             this.gridColumn91.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn92
             // 
             resources.ApplyResources(this.gridColumn92, "gridColumn92");
-            this.gridColumn92.MinWidth = 17;
             this.gridColumn92.Name = "gridColumn92";
             this.gridColumn92.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn93
             // 
             resources.ApplyResources(this.gridColumn93, "gridColumn93");
-            this.gridColumn93.MinWidth = 17;
             this.gridColumn93.Name = "gridColumn93";
             this.gridColumn93.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn94
             // 
             resources.ApplyResources(this.gridColumn94, "gridColumn94");
-            this.gridColumn94.MinWidth = 17;
             this.gridColumn94.Name = "gridColumn94";
             this.gridColumn94.OptionsColumn.AllowFocus = false;
             // 
@@ -9467,7 +9341,6 @@
             // 
             resources.ApplyResources(this.gridColumn163, "gridColumn163");
             this.gridColumn163.FieldName = "Pkod_AndroBosrenk";
-            this.gridColumn163.MinWidth = 17;
             this.gridColumn163.Name = "gridColumn163";
             this.gridColumn163.OptionsColumn.AllowFocus = false;
             // 
@@ -9475,7 +9348,6 @@
             // 
             resources.ApplyResources(this.gridColumn164, "gridColumn164");
             this.gridColumn164.FieldName = "Pkod_AndroDolurenk";
-            this.gridColumn164.MinWidth = 17;
             this.gridColumn164.Name = "gridColumn164";
             this.gridColumn164.OptionsColumn.AllowFocus = false;
             // 
@@ -9483,7 +9355,6 @@
             // 
             resources.ApplyResources(this.gridColumn165, "gridColumn165");
             this.gridColumn165.FieldName = "Pkod_AndroHesaprenk";
-            this.gridColumn165.MinWidth = 17;
             this.gridColumn165.Name = "gridColumn165";
             this.gridColumn165.OptionsColumn.AllowFocus = false;
             // 
@@ -9680,28 +9551,24 @@
             // gridColumn63
             // 
             resources.ApplyResources(this.gridColumn63, "gridColumn63");
-            this.gridColumn63.MinWidth = 17;
             this.gridColumn63.Name = "gridColumn63";
             this.gridColumn63.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn64
             // 
             resources.ApplyResources(this.gridColumn64, "gridColumn64");
-            this.gridColumn64.MinWidth = 17;
             this.gridColumn64.Name = "gridColumn64";
             this.gridColumn64.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn65
             // 
             resources.ApplyResources(this.gridColumn65, "gridColumn65");
-            this.gridColumn65.MinWidth = 17;
             this.gridColumn65.Name = "gridColumn65";
             this.gridColumn65.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn66
             // 
             resources.ApplyResources(this.gridColumn66, "gridColumn66");
-            this.gridColumn66.MinWidth = 17;
             this.gridColumn66.Name = "gridColumn66";
             this.gridColumn66.OptionsColumn.AllowFocus = false;
             // 
@@ -9709,7 +9576,6 @@
             // 
             resources.ApplyResources(this.gridColumn169, "gridColumn169");
             this.gridColumn169.FieldName = "Pkod_Sira";
-            this.gridColumn169.MinWidth = 17;
             this.gridColumn169.Name = "gridColumn169";
             // 
             // look_Posta_Dep
@@ -9801,98 +9667,84 @@
             // gridColumn25
             // 
             resources.ApplyResources(this.gridColumn25, "gridColumn25");
-            this.gridColumn25.MinWidth = 17;
             this.gridColumn25.Name = "gridColumn25";
             this.gridColumn25.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn28
             // 
             resources.ApplyResources(this.gridColumn28, "gridColumn28");
-            this.gridColumn28.MinWidth = 17;
             this.gridColumn28.Name = "gridColumn28";
             this.gridColumn28.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn29
             // 
             resources.ApplyResources(this.gridColumn29, "gridColumn29");
-            this.gridColumn29.MinWidth = 17;
             this.gridColumn29.Name = "gridColumn29";
             this.gridColumn29.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn36
             // 
             resources.ApplyResources(this.gridColumn36, "gridColumn36");
-            this.gridColumn36.MinWidth = 17;
             this.gridColumn36.Name = "gridColumn36";
             this.gridColumn36.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn37
             // 
             resources.ApplyResources(this.gridColumn37, "gridColumn37");
-            this.gridColumn37.MinWidth = 17;
             this.gridColumn37.Name = "gridColumn37";
             this.gridColumn37.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn38
             // 
             resources.ApplyResources(this.gridColumn38, "gridColumn38");
-            this.gridColumn38.MinWidth = 17;
             this.gridColumn38.Name = "gridColumn38";
             this.gridColumn38.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn39
             // 
             resources.ApplyResources(this.gridColumn39, "gridColumn39");
-            this.gridColumn39.MinWidth = 17;
             this.gridColumn39.Name = "gridColumn39";
             this.gridColumn39.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn40
             // 
             resources.ApplyResources(this.gridColumn40, "gridColumn40");
-            this.gridColumn40.MinWidth = 17;
             this.gridColumn40.Name = "gridColumn40";
             this.gridColumn40.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn41
             // 
             resources.ApplyResources(this.gridColumn41, "gridColumn41");
-            this.gridColumn41.MinWidth = 17;
             this.gridColumn41.Name = "gridColumn41";
             this.gridColumn41.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn42
             // 
             resources.ApplyResources(this.gridColumn42, "gridColumn42");
-            this.gridColumn42.MinWidth = 17;
             this.gridColumn42.Name = "gridColumn42";
             this.gridColumn42.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn43
             // 
             resources.ApplyResources(this.gridColumn43, "gridColumn43");
-            this.gridColumn43.MinWidth = 17;
             this.gridColumn43.Name = "gridColumn43";
             this.gridColumn43.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn44
             // 
             resources.ApplyResources(this.gridColumn44, "gridColumn44");
-            this.gridColumn44.MinWidth = 17;
             this.gridColumn44.Name = "gridColumn44";
             this.gridColumn44.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn45
             // 
             resources.ApplyResources(this.gridColumn45, "gridColumn45");
-            this.gridColumn45.MinWidth = 17;
             this.gridColumn45.Name = "gridColumn45";
             this.gridColumn45.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn46
             // 
             resources.ApplyResources(this.gridColumn46, "gridColumn46");
-            this.gridColumn46.MinWidth = 17;
             this.gridColumn46.Name = "gridColumn46";
             this.gridColumn46.OptionsColumn.AllowFocus = false;
             // 
@@ -10375,35 +10227,30 @@
             // gridColumn47
             // 
             resources.ApplyResources(this.gridColumn47, "gridColumn47");
-            this.gridColumn47.MinWidth = 17;
             this.gridColumn47.Name = "gridColumn47";
             this.gridColumn47.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn48
             // 
             resources.ApplyResources(this.gridColumn48, "gridColumn48");
-            this.gridColumn48.MinWidth = 17;
             this.gridColumn48.Name = "gridColumn48";
             this.gridColumn48.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn49
             // 
             resources.ApplyResources(this.gridColumn49, "gridColumn49");
-            this.gridColumn49.MinWidth = 17;
             this.gridColumn49.Name = "gridColumn49";
             this.gridColumn49.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn50
             // 
             resources.ApplyResources(this.gridColumn50, "gridColumn50");
-            this.gridColumn50.MinWidth = 17;
             this.gridColumn50.Name = "gridColumn50";
             this.gridColumn50.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn51
             // 
             resources.ApplyResources(this.gridColumn51, "gridColumn51");
-            this.gridColumn51.MinWidth = 17;
             this.gridColumn51.Name = "gridColumn51";
             this.gridColumn51.OptionsColumn.AllowFocus = false;
             this.gridColumn51.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -10414,7 +10261,6 @@
             resources.ApplyResources(this.gridColumn52, "gridColumn52");
             this.gridColumn52.DisplayFormat.FormatString = "n2";
             this.gridColumn52.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.gridColumn52.MinWidth = 17;
             this.gridColumn52.Name = "gridColumn52";
             this.gridColumn52.OptionsColumn.AllowFocus = false;
             this.gridColumn52.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -10423,14 +10269,12 @@
             // gridColumn53
             // 
             resources.ApplyResources(this.gridColumn53, "gridColumn53");
-            this.gridColumn53.MinWidth = 17;
             this.gridColumn53.Name = "gridColumn53";
             this.gridColumn53.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn74
             // 
             resources.ApplyResources(this.gridColumn74, "gridColumn74");
-            this.gridColumn74.MinWidth = 17;
             this.gridColumn74.Name = "gridColumn74";
             this.gridColumn74.OptionsColumn.AllowFocus = false;
             // 
@@ -10612,21 +10456,18 @@
             // gridColumn54
             // 
             resources.ApplyResources(this.gridColumn54, "gridColumn54");
-            this.gridColumn54.MinWidth = 17;
             this.gridColumn54.Name = "gridColumn54";
             this.gridColumn54.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn55
             // 
             resources.ApplyResources(this.gridColumn55, "gridColumn55");
-            this.gridColumn55.MinWidth = 17;
             this.gridColumn55.Name = "gridColumn55";
             this.gridColumn55.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn56
             // 
             resources.ApplyResources(this.gridColumn56, "gridColumn56");
-            this.gridColumn56.MinWidth = 17;
             this.gridColumn56.Name = "gridColumn56";
             this.gridColumn56.OptionsColumn.AllowFocus = false;
             // 
@@ -10827,7 +10668,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_Kul_Kod.Properties.Columns9"), resources.GetString("look_Kul_Kod.Properties.Columns10"), ((int)(resources.GetObject("look_Kul_Kod.Properties.Columns11"))), ((DevExpress.Utils.FormatType)(resources.GetObject("look_Kul_Kod.Properties.Columns12"))), resources.GetString("look_Kul_Kod.Properties.Columns13"), ((bool)(resources.GetObject("look_Kul_Kod.Properties.Columns14"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("look_Kul_Kod.Properties.Columns15"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("look_Kul_Kod.Properties.Columns16"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("look_Kul_Kod.Properties.Columns17"))))});
             this.look_Kul_Kod.Properties.DropDownRows = 15;
             this.look_Kul_Kod.Properties.NullText = resources.GetString("look_Kul_Kod.Properties.NullText");
-            this.look_Kul_Kod.Properties.PopupWidth = 333;
+            this.look_Kul_Kod.Properties.PopupWidth = 400;
             this.look_Kul_Kod.Properties.ShowFooter = false;
             this.look_Kul_Kod.Properties.ShowHeader = false;
             this.look_Kul_Kod.EditValueChanged += new System.EventHandler(this.look_Kul_Kod_EditValueChanged);
@@ -11874,6 +11715,12 @@
             resources.ApplyResources(this.xtraTabPage7, "xtraTabPage7");
             this.xtraTabPage7.Name = "xtraTabPage7";
             // 
+            // coklugunsonu
+            // 
+            resources.ApplyResources(this.coklugunsonu, "coklugunsonu");
+            this.coklugunsonu.Name = "coklugunsonu";
+            this.coklugunsonu.Properties.Caption = resources.GetString("coklugunsonu.Properties.Caption");
+            // 
             // merkezsubeaktif
             // 
             resources.ApplyResources(this.merkezsubeaktif, "merkezsubeaktif");
@@ -12216,49 +12063,42 @@
             // gridColumn59
             // 
             resources.ApplyResources(this.gridColumn59, "gridColumn59");
-            this.gridColumn59.MinWidth = 17;
             this.gridColumn59.Name = "gridColumn59";
             this.gridColumn59.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn61
             // 
             resources.ApplyResources(this.gridColumn61, "gridColumn61");
-            this.gridColumn61.MinWidth = 17;
             this.gridColumn61.Name = "gridColumn61";
             this.gridColumn61.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn62
             // 
             resources.ApplyResources(this.gridColumn62, "gridColumn62");
-            this.gridColumn62.MinWidth = 17;
             this.gridColumn62.Name = "gridColumn62";
             this.gridColumn62.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn101
             // 
             resources.ApplyResources(this.gridColumn101, "gridColumn101");
-            this.gridColumn101.MinWidth = 17;
             this.gridColumn101.Name = "gridColumn101";
             this.gridColumn101.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn102
             // 
             resources.ApplyResources(this.gridColumn102, "gridColumn102");
-            this.gridColumn102.MinWidth = 17;
             this.gridColumn102.Name = "gridColumn102";
             this.gridColumn102.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn103
             // 
             resources.ApplyResources(this.gridColumn103, "gridColumn103");
-            this.gridColumn103.MinWidth = 17;
             this.gridColumn103.Name = "gridColumn103";
             this.gridColumn103.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn104
             // 
             resources.ApplyResources(this.gridColumn104, "gridColumn104");
-            this.gridColumn104.MinWidth = 17;
             this.gridColumn104.Name = "gridColumn104";
             this.gridColumn104.OptionsColumn.AllowFocus = false;
             // 
@@ -12456,14 +12296,12 @@
             // gridColumn75
             // 
             resources.ApplyResources(this.gridColumn75, "gridColumn75");
-            this.gridColumn75.MinWidth = 17;
             this.gridColumn75.Name = "gridColumn75";
             this.gridColumn75.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn76
             // 
             resources.ApplyResources(this.gridColumn76, "gridColumn76");
-            this.gridColumn76.MinWidth = 17;
             this.gridColumn76.Name = "gridColumn76";
             this.gridColumn76.OptionsColumn.AllowFocus = false;
             // 
@@ -12588,14 +12426,12 @@
             // gridColumn96
             // 
             resources.ApplyResources(this.gridColumn96, "gridColumn96");
-            this.gridColumn96.MinWidth = 17;
             this.gridColumn96.Name = "gridColumn96";
             this.gridColumn96.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn97
             // 
             resources.ApplyResources(this.gridColumn97, "gridColumn97");
-            this.gridColumn97.MinWidth = 17;
             this.gridColumn97.Name = "gridColumn97";
             this.gridColumn97.OptionsColumn.AllowFocus = false;
             // 
@@ -12713,7 +12549,6 @@
             // 
             resources.ApplyResources(this.gridColumn149, "gridColumn149");
             this.gridColumn149.FieldName = "Pkod_Kod";
-            this.gridColumn149.MinWidth = 17;
             this.gridColumn149.Name = "gridColumn149";
             this.gridColumn149.OptionsColumn.AllowFocus = false;
             // 
@@ -12721,7 +12556,6 @@
             // 
             resources.ApplyResources(this.gridColumn150, "gridColumn150");
             this.gridColumn150.FieldName = "Pkod_Ad";
-            this.gridColumn150.MinWidth = 17;
             this.gridColumn150.Name = "gridColumn150";
             this.gridColumn150.OptionsColumn.AllowFocus = false;
             // 
@@ -12830,7 +12664,6 @@
             // 
             resources.ApplyResources(this.gridColumn151, "gridColumn151");
             this.gridColumn151.FieldName = "Pkod_Kod";
-            this.gridColumn151.MinWidth = 17;
             this.gridColumn151.Name = "gridColumn151";
             this.gridColumn151.OptionsColumn.AllowFocus = false;
             // 
@@ -12838,7 +12671,6 @@
             // 
             resources.ApplyResources(this.gridColumn152, "gridColumn152");
             this.gridColumn152.FieldName = "Pkod_Ad";
-            this.gridColumn152.MinWidth = 17;
             this.gridColumn152.Name = "gridColumn152";
             this.gridColumn152.OptionsColumn.AllowFocus = false;
             // 
@@ -12946,7 +12778,6 @@
             // 
             resources.ApplyResources(this.gridColumn153, "gridColumn153");
             this.gridColumn153.FieldName = "Pkod_Kod";
-            this.gridColumn153.MinWidth = 17;
             this.gridColumn153.Name = "gridColumn153";
             this.gridColumn153.OptionsColumn.AllowFocus = false;
             // 
@@ -12954,7 +12785,6 @@
             // 
             resources.ApplyResources(this.gridColumn154, "gridColumn154");
             this.gridColumn154.FieldName = "Pkod_Ad";
-            this.gridColumn154.MinWidth = 17;
             this.gridColumn154.Name = "gridColumn154";
             this.gridColumn154.OptionsColumn.AllowFocus = false;
             // 
@@ -13063,7 +12893,6 @@
             // 
             resources.ApplyResources(this.gridColumn155, "gridColumn155");
             this.gridColumn155.FieldName = "Pkod_Kod";
-            this.gridColumn155.MinWidth = 17;
             this.gridColumn155.Name = "gridColumn155";
             this.gridColumn155.OptionsColumn.AllowFocus = false;
             // 
@@ -13071,7 +12900,6 @@
             // 
             resources.ApplyResources(this.gridColumn156, "gridColumn156");
             this.gridColumn156.FieldName = "Pkod_Ad";
-            this.gridColumn156.MinWidth = 17;
             this.gridColumn156.Name = "gridColumn156";
             this.gridColumn156.OptionsColumn.AllowFocus = false;
             // 
@@ -13117,12 +12945,6 @@
             this.textBox26.ForeColor = System.Drawing.Color.Navy;
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
-            // 
-            // coklugunsonu
-            // 
-            resources.ApplyResources(this.coklugunsonu, "coklugunsonu");
-            this.coklugunsonu.Name = "coklugunsonu";
-            this.coklugunsonu.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -13951,6 +13773,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).EndInit();
             this.xtraTabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.coklugunsonu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.merkezsubeaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditHesapDokYazici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pos_OdenmezIkramPasif.Properties)).EndInit();
@@ -14043,7 +13866,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coklugunsonu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
