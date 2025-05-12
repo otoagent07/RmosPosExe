@@ -248,7 +248,6 @@ namespace Pos
                 if (yaziciAd == "")
                 {
                     btnCekmeceAc.Visible = false;
-
                 }
 
 

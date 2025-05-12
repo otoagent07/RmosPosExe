@@ -90,6 +90,8 @@ namespace Pos.Class
         {
             string query = @"
 
+IF COL_LENGTH('Cst_Recete_Satis', 'PaymentCode') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD PaymentCode nvarchar(3500) END;
+IF COL_LENGTH('Cst_Recete_Satis', 'PaymentLinkId') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD PaymentLinkId nvarchar(3500) END;
 
 
 
