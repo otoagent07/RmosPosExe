@@ -71,35 +71,17 @@ namespace Pos
             timer1.Enabled = true;
             System.Threading.Thread.Sleep(3000);
             Baglan();
-            //notifyIcon1.Visible = false;
 
         }
 
-        //string veri = string.Empty;
-        //string cleanData = string.Empty;
         private void Okuma(object s, SerialDataReceivedEventArgs e)
         {
-            //byte[] buffer = new byte[serialPort1.ReadBufferSize];
-            //serialPort1.Read(buffer, 0, serialPort1.ReadBufferSize);
-            //veri = System.Text.Encoding.UTF8.GetString(buffer);
-
-            //char[] Chars = {'\r', '\n'};
-
-            //string[] cleanData = veri.Split(Chars);
-
-
-            //return;
             var veri = serialPort1.ReadLine();
-
             if (veri.StartsWith("S"))
             {
                 string Sonuc = veri.Replace("S", "").Replace("\r", "").Replace("kg", "").Replace("k", "").Trim();
-                //textEdit1.EditValue = Sonuc.ToString();
                 ekranabas(Convert.ToString(Sonuc));
-                //Application.DoEvents();
             }
-
-
         }
 
         public delegate void ricdegis(string text);
