@@ -3,6 +3,7 @@ using Pos.Class;
 using System;
 using System.Drawing;
 using System.IO.Ports;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Pos
@@ -21,7 +22,7 @@ namespace Pos
         decimal Param_StopBits;
         string Param_FlowControl;
 
-        private void Yukle()
+        private async Task YukleAsync()
         {
             Param.Param_Yukle();
             Param_ComPort = Param.Param_ComPort;
@@ -60,6 +61,10 @@ namespace Pos
                 serialPort1.BaudRate = Convert.ToInt32(Param_BaudRate);
                 serialPort1.DataBits = Convert.ToInt32(Param_DataBits);
 
+
+                serialPort1.ReadTimeout = 1000;  // 1 saniye sonra timeout atsın
+                serialPort1.WriteTimeout = 1000;
+
             }
             catch (Exception ex)
             {
@@ -68,21 +73,42 @@ namespace Pos
             }
 
             serialPort1.DataReceived += new SerialDataReceivedEventHandler(Okuma);
-            timer1.Enabled = true;
-            System.Threading.Thread.Sleep(3000);
+            await Task.Delay(3000);
             Baglan();
 
         }
-
-        private void Okuma(object s, SerialDataReceivedEventArgs e)
+        private void Okuma(object sender, SerialDataReceivedEventArgs e)
         {
-            var veri = serialPort1.ReadLine();
-            if (veri.StartsWith("S"))
+            try
             {
-                string Sonuc = veri.Replace("S", "").Replace("\r", "").Replace("kg", "").Replace("k", "").Trim();
-                ekranabas(Convert.ToString(Sonuc));
+                string veri = serialPort1.ReadExisting(); // Alternatif olarak ReadLine yerine kullanılabilir
+                if (string.IsNullOrEmpty(veri)) return;
+
+                if (veri.StartsWith("S"))
+                {
+                    string sonuc = veri.Replace("S", "").Replace("\r", "").Replace("kg", "").Replace("k", "").Trim();
+                    ekranabas(sonuc);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Hata loglaması yapabilirsiniz
+                Invoke((MethodInvoker)(() =>
+                {
+                    MessageBox.Show("Seri Port Okuma Hatası: " + ex.Message);
+                }));
             }
         }
+
+        //private void Okuma(object s, SerialDataReceivedEventArgs e)
+        //{
+        //    var veri = serialPort1.ReadExisting();
+        //    if (veri.StartsWith("S"))
+        //    {
+        //        string Sonuc = veri.Replace("S", "").Replace("\r", "").Replace("kg", "").Replace("k", "").Trim();
+        //        ekranabas(Convert.ToString(Sonuc));
+        //    }
+        //}
 
         public delegate void ricdegis(string text);
 
@@ -129,9 +155,9 @@ namespace Pos
             }
         }
 
-        private void Pos_TeraziEkran_Load(object sender, EventArgs e)
+        private async void Pos_TeraziEkran_Load(object sender, EventArgs e)
         {
-            Yukle();
+            await YukleAsync();
             txt_Sayi.Focus();
         }
 
@@ -174,5 +200,7 @@ namespace Pos
             ilk = true;
             txt_Sayi.Focus();
         }
+
+        
     }
 }

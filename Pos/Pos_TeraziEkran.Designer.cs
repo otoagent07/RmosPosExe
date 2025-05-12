@@ -34,7 +34,6 @@
             this.digitalBackgroundLayerComponent1 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.txt_Sayi = new DevExpress.XtraEditors.TextEdit();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txt_UrunAdi = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
@@ -289,7 +288,6 @@
         private DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent digitalBackgroundLayerComponent1;
         private System.IO.Ports.SerialPort serialPort1;
         private DevExpress.XtraEditors.TextEdit txt_Sayi;
-        private System.Windows.Forms.Timer timer1;
         public DevExpress.XtraEditors.TextEdit txt_UrunAdi;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;

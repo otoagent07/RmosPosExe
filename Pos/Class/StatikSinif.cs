@@ -90,6 +90,9 @@ namespace Pos.Class
         {
             string query = @"
 
+
+
+
 IF COL_LENGTH('Cst_Recete_Satis', 'deger1') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD deger1 nvarchar(3500) END;
 IF COL_LENGTH('Pos_Param', 'tipboxReceteKod') IS NULL BEGIN ALTER TABLE Pos_Param ADD tipboxReceteKod nvarchar(200) END;
 
