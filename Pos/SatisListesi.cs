@@ -1,8 +1,10 @@
-﻿using Pos.Class;
+﻿using AxWMPLib;
+using Pos.Class;
 using System;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Pos
 {
@@ -53,7 +55,7 @@ namespace Pos
                 lbl_Fisno.Text = Fisno.ToString();
                 lbl_Kasiyer.Text = Convert.ToString(dt.Rows[0]["Kasiyer"]);
                 lbl_Toplam.Text = Tutar.ToString("n2");
-                lbl_Kalan.Text = Convert.ToDecimal( dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 21,@Fisno = '" + Fisno + "', @Split = '0'")).ToString("n2");
+                lbl_Kalan.Text = Convert.ToDecimal(dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 21,@Fisno = '" + Fisno + "', @Split = '0'")).ToString("n2");
             }
             else
             {
@@ -86,21 +88,35 @@ namespace Pos
             layoutView1.OptionsView.ShowCardCaption = false;
 
 
-
+            slaytGoster();
         }
 
 
         public void slaytGoster()
         {
-            pictureBoxSlayt.Visible = true;
-            if (File.Exists("sirketSlaytLogo.png"))
+            try
             {
-                pictureBoxSlayt.Image = Image.FromFile("sirketSlaytLogo.png");
+                pictureBoxSlayt.Visible = true;
+                if (File.Exists("sirketSlaytLogo.png"))
+                {
+                    pictureBoxSlayt.Image = Image.FromFile("sirketSlaytLogo.png");
+                }
+                panel2.Visible = false;
+                panel1.Dock = System.Windows.Forms.DockStyle.Fill; // sonradan right olucak
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = false;
+
+
+                if (File.Exists("sirketSlaytLogo.mp4"))
+                {
+                    PlayMp4InPanel();
+                }
+
             }
-            panel2.Visible = false;
-            panel1.Dock = System.Windows.Forms.DockStyle.Fill; // sonradan right olucak
-            pictureBox1.Visible = false;
-            pictureBox2.Visible = false;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void slaytKapat()
@@ -111,6 +127,31 @@ namespace Pos
             pictureBox1.Visible = true;
             pictureBox2.Visible = true;
         }
+
+        bool birkere = false;
+        public void PlayMp4InPanel()
+        {
+            try
+            {
+                if (birkere) return;
+                player.CreateControl();
+                player.Dock = DockStyle.Fill;
+                string videoPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sirketSlaytLogo.mp4");
+                player.URL = videoPath;
+                player.uiMode = "none"; // controls göster
+                player.settings.autoStart = true;
+
+                panelSlayt.Controls.Clear(); // Öncekileri temizle
+                panelSlayt.Controls.Add(this.player);
+                birkere = true;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
         private void timerSlayt_Tick(object sender, EventArgs e)
         {
@@ -129,6 +170,14 @@ namespace Pos
             }
 
 
+        }
+
+        private void player_PlayStateChange(object sender, _WMPOCXEvents_PlayStateChangeEvent e)
+        {
+            if (e.newState == 8)
+            {
+                birkere = false;
+            }
         }
     }
 }

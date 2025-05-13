@@ -528,7 +528,11 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
                 if (Param.Param_OzelMasaSiralama == true)
                 {
-                    siralama = " order by Masa_Ozel Desc,ISNULL(Pkod_Sira,-1),isnull(Masa_Sirano,5), Masa_No ";
+                    string ozelmasaq = $@"
+  CASE WHEN Masa_Ozel IS NULL OR Masa_Ozel = '' THEN 1 ELSE 0 END,
+  Masa_Ozel ASC
+";
+                    siralama = $" order by {ozelmasaq},ISNULL(Pkod_Sira,-1),isnull(Masa_Sirano,5), Masa_No ";
                 }
 
                 string Masalar = "";
@@ -884,7 +888,12 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 
                 if (Param.Param_OzelMasaSiralama == true)
                 {
-                    siralama = " order by Masa_Ozel Desc,ISNULL(Pkod_Sira,-1), Masa_No ";
+                    string ozelmasaq = $@"
+  CASE WHEN Masa_Ozel IS NULL OR Masa_Ozel = '' THEN 1 ELSE 0 END,
+  Masa_Ozel ASC
+";
+
+                    siralama = $" order by {ozelmasaq},ISNULL(Pkod_Sira,-1), Masa_No ";
                 }
 
                 string Masalar = "";
@@ -1340,253 +1349,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
         }
 
 
-        /*
-        private void MasaYenile(int Acik, string filtre = "")
-        {
-            flp_Masa.Controls.Clear();
-            barspn_Refresh.EditValue = Param.Masa_Refresh;
-            Masa_No = String.Empty;
-            Masa_Paket = false;
-            Split = 0;
-            cbtn_0.Checked = true;
-            //lbl_KisiSayisi.Text = String.Empty;
-
-            Color bos = Color.Lime, dolu = Color.OrangeRed, hesap = Color.MediumOrchid;
-
-            Color rezMasaRengi = Color.LavenderBlush;
-            string KonumFilter = String.Empty;
-            if (Masa_Konum != String.Empty)
-            {
-                KonumFilter = " and Masa_Konum = '" + Masa_Konum + "' ";
-
-                //DataTable dtRenk = dbtools.SelectTable("select ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk from Pos_Kodlar where Pkod_Sinif ='14' and Pkod_Kod = '" + Departman.Dep_Kodu + "' and Pkod_Konumkod = '" + Masa_Konum + "'");
-                //bos = System.Drawing.ColorTranslator.FromHtml(Convert.ToString(dtRenk.Rows[0]["Pkod_Bosrenk"]));
-                //dolu = System.Drawing.ColorTranslator.FromHtml(Convert.ToString(dtRenk.Rows[0]["Pkod_Dolurenk"]));
-                //hesap = System.Drawing.ColorTranslator.FromHtml(Convert.ToString(dtRenk.Rows[0]["Pkod_Hesaprenk"]));
-            }
-
-            string paketFilter = "";
-            if (Param.Param_Tum_Paket && Masa_Konum == "")
-            {
-                paketFilter = " and Masa_Paket = 0 ";
-            }
-
-            string siralama = " order by ISNULL(Pkod_Sira,-1), Masa_No ";
-
-            if (Param.Param_OzelMasaSiralama == true)
-            {
-                siralama = " order by Masa_Ozel Desc,ISNULL(Pkod_Sira,-1), Masa_No ";
-            }
-
-            string Masalar = "";
-            if (Acik == 1)
-            {
-                Masalar = " and Masa_Durum <> 0 ";
-            }
-
-            string query = "select Masa_No, ISNULL(Masa_Ozel,'') as Masa_Ozel , "
-                            + " MIN(ISNULL(Rsat_MusTipi,'')) as Rsat_MusTipi,ISNULL(Masa_Durum,0) as Masa_Durum,"
-                            + " MAX(CASE WHEN ISNULL(Rsat_Hesap_Kilit,0)= 1 THEN 1 ELSE 0 END) as Rsat_Hesap_Kilit,"
-                            + " Masa_Ad,"
-                            + " isnull(Masa_Paket,0) as Masa_Paket, "
-                            + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
-                            + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
-                            + " COUNT(Rez_Id) as RezSayisi, "
-                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,(Convert(nvarchar(max),DATEDIFF(MINUTE,MIN(Rsat_Acilis),Convert(time,Getdate()))) + ' DK') as dak "
-                            + " from Pos_Masa WITH(NOLOCK) "
-                            + " left join Cst_Recete_Satis WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
-                            //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
-                            + " left join Rmosmuh.dbo.Pos_User as Kasiyer on Kasiyer.P_Kod = (Select Top(1) Rsat_Garson From Cst_Recete_Satis as s Where Rsat_Durum = 'A' and s.Rsat_Departman = '" + Departman.Dep_Kodu + "' and s.Rsat_Masa = Masa_No and s.Rsat_Fisno = Cst_Recete_Satis.Rsat_Fisno order by 1 desc ) "
-                            + " left join Rmosmuh.dbo.Pos_User as Garson on Rsat_Garson2 = Garson.P_Kod "
-                            + " left join Pos_Rez on Rez_Dep = '" + Departman.Dep_Kodu + "' and Rez_Masano = Masa_No and Rez_Tarih = '" + Param.Tarih + "' "
-                            + " left join Pos_Kodlar as renk on Masa_Konum = Pkod_Konumkod and Pkod_Kod = Masa_Depart and Pkod_Sinif ='14' "
-                            + " where Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Hayali,0) = 0  " + KonumFilter + paketFilter + Masalar
-                            + " group by Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira "
-                            + siralama;
-
-            if (filtre != "")
-            {
-                query = "select Masa_No, ISNULL(Masa_Ozel,'') as Masa_Ozel , "
-                             + " MIN(ISNULL(Rsat_MusTipi,'')) as Rsat_MusTipi,ISNULL(Masa_Durum,0) as Masa_Durum,"
-                             + " MAX(CASE WHEN ISNULL(Rsat_Hesap_Kilit,0)= 1 THEN 1 ELSE 0 END) as Rsat_Hesap_Kilit,"
-                             + " Masa_Ad,"
-                             + " isnull(Masa_Paket,0) as Masa_Paket, "
-                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
-                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
-                             + " COUNT(Rez_Id) as RezSayisi, "
-                             + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,(Convert(nvarchar(max),DATEDIFF(MINUTE,MIN(Rsat_Acilis),Convert(time,Getdate()))) + ' DK') as dak "
-                             + " from Pos_Masa WITH(NOLOCK) "
-                             + " left join Cst_Recete_Satis WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
-                             //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
-                             + " left join Rmosmuh.dbo.Pos_User as Kasiyer on Kasiyer.P_Kod = (Select Top(1) Rsat_Garson From Cst_Recete_Satis as s Where Rsat_Durum = 'A' and s.Rsat_Departman = '" + Departman.Dep_Kodu + "' and s.Rsat_Masa = Masa_No and s.Rsat_Fisno = Cst_Recete_Satis.Rsat_Fisno order by 1 desc ) "
-                             + " left join Rmosmuh.dbo.Pos_User as Garson on Rsat_Garson2 = Garson.P_Kod "
-                             + " left join Pos_Rez on Rez_Dep = '" + Departman.Dep_Kodu + "' and Rez_Masano = Masa_No and Rez_Tarih = '" + Param.Tarih + "' "
-                             + " left join Pos_Kodlar as renk on Masa_Konum = Pkod_Konumkod and Pkod_Kod = Masa_Depart and Pkod_Sinif ='14' "
-                             + " where Masa_Depart = '" + Departman.Dep_Kodu + "' " +
-                             " " + filtre +
-                             " and ISNULL(Masa_Hayali,0) = 0  " + KonumFilter + paketFilter + Masalar
-                             + " group by Masa_No,Masa_Ad,Masa_Ozel,Masa_Durum,Masa_Paket,Pkod_Bosrenk ,Pkod_Dolurenk, Pkod_Hesaprenk, Pkod_Sira "
-                             + siralama;
-            }
-
-            DataTable dtMasa = dbtools.SelectTable(query);
-
-            if (dtMasa.Rows.Count < 1)
-            {
-                //MessageBox.Show("Bu Departmana Ait Masa Tanımı Yapılmamış", res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            string sonMasa = "";
-            if (Param.Param_Sonmasa)
-            {
-                sonMasa = dbtools.DegerGetir("select top 1 Rsat_Masa from Cst_Recete_Satis where Rsat_Tarih = '" + Param.Tarih + "' and Rsat_Departman = '" + Departman.Dep_Kodu + "' and Rsat_Durum = 'A' order by Rsat_Satissaat desc");
-            }
-
-            string masaSize = Param.Param_Masa_Size == "" ? "90;45" : Param.Param_Masa_Size;
-            Size s = new Size(Convert.ToInt32(masaSize.Split(';')[0]), Convert.ToInt32(masaSize.Split(';')[1]));
-
-            for (int i = 0; i < dtMasa.Rows.Count; i++)
-            {
-                bos = System.Drawing.ColorTranslator.FromHtml(Convert.ToString(dtMasa.Rows[i]["Pkod_Bosrenk"]));
-                dolu = System.Drawing.ColorTranslator.FromHtml(Convert.ToString(dtMasa.Rows[i]["Pkod_Dolurenk"]));
-                hesap = System.Drawing.ColorTranslator.FromHtml(Convert.ToString(dtMasa.Rows[i]["Pkod_Hesaprenk"]));
-                bool kilit = Convert.ToBoolean(dtMasa.Rows[i]["Rsat_Hesap_Kilit"]);
-
-
-                SimpleButton btnMasa = new SimpleButton();
-                btnMasa.Size = s;
-                btnMasa.TabIndex = 0;
-                btnMasa.TabStop = false;
-                btnMasa.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
-                btnMasa.Appearance.TextOptions.Trimming = DevExpress.Utils.Trimming.Word;
-                btnMasa.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-                btnMasa.Appearance.Options.UseBackColor = false;
-
-                btnMasa.Tag = Convert.ToString(dtMasa.Rows[i]["Masa_No"]);
-
-
-
-                //Boş Masa
-                if (Convert.ToString(dtMasa.Rows[i]["Masa_Durum"]) == "0")
-                {
-                    btnMasa.Appearance.BackColor = bos;
-                    btnMasa.Text = Convert.ToString(dtMasa.Rows[i]["Masa_Ad"]);
-                }
-
-                //Dolu Masa
-                if (Convert.ToString(dtMasa.Rows[i]["Masa_Durum"]) == "1")
-                {
-                    btnMasa.Appearance.BackColor = dolu;
-                    btnMasa.Text = Convert.ToString(dtMasa.Rows[i]["Masa_Ad"]);
-                }
-
-                if (Convert.ToString(dtMasa.Rows[i]["Masa_Ozel"]) != String.Empty)
-                {
-                    btnMasa.Text = Convert.ToString(dtMasa.Rows[i]["Masa_Ozel"]);
-                    //if (Param.Pos_HesapDkmRenk == false)
-                    //{
-                    btnMasa.Appearance.BackColor = Param.Param_OzelMasaRengi;
-                    //}
-                    //else
-                    //{
-                    //    btnMasa.Appearance.BackColor = hesap;
-                    //}
-
-                }
-
-
-
-                if (!kilit && Convert.ToInt32(dtMasa.Rows[i]["Masa_Durum"]) == 2)
-                {
-                    if (Param.Pos_HesapDkmRenk == false)
-                    {
-                        btnMasa.Appearance.BackColor = dolu;
-                        btnMasa.Text = Convert.ToString(dtMasa.Rows[i]["Masa_Ozel"]) == "" ? Convert.ToString(dtMasa.Rows[i]["Masa_Ad"]) : Convert.ToString(dtMasa.Rows[i]["Masa_Ozel"]);
-                    }
-                    else
-                    {
-                        btnMasa.Appearance.BackColor = hesap;
-                        btnMasa.Text = Convert.ToString(dtMasa.Rows[i]["Masa_Ozel"]) == "" ? Convert.ToString(dtMasa.Rows[i]["Masa_Ad"]) : Convert.ToString(dtMasa.Rows[i]["Masa_Ozel"]);
-                    }
-                }
-
-                //Beklemede Masalar
-                if (kilit && Convert.ToInt32(dtMasa.Rows[i]["Masa_Durum"]) == 2)
-                {
-                    btnMasa.Appearance.BackColor = hesap;
-                    btnMasa.Text = Convert.ToString(dtMasa.Rows[i]["Masa_Ozel"]) == "" ? Convert.ToString(dtMasa.Rows[i]["Masa_Ad"]) : Convert.ToString(dtMasa.Rows[i]["Masa_Ozel"]);
-                }
-
-                if (Convert.ToInt32(dtMasa.Rows[i]["RezSayisi"]) > 0)
-                {
-                    btnMasa.Appearance.BackColor = Param.Param_RezMasaRengi;
-                    btnMasa.Text += "\nREZERVE(" + Convert.ToInt32(dtMasa.Rows[i]["RezSayisi"]) + ")\n" + Convert.ToString(dtMasa.Rows[i]["RezMasaAdi"]);
-                }
-
-                //Pda Acılan Masalar
-                //if (Convert.ToBoolean(dtMasa.Rows[i]["Rsat_Pda"]) == true)
-                //{
-                //    btnMasa.Appearance.ForeColor = Color.AliceBlue;
-                //    btnMasa.Text = Convert.ToString(dtMasa.Rows[i]["Masa_Ad"]);
-                //}
-
-                //Özel Masaların Adı - Rengi 
-
-
-                //Garson Adı Eklenmesi Masaya
-
-                if (Param.Param_Masa_Garson && Convert.ToString(dtMasa.Rows[i]["Garson"]) != "" && !Departman.Garson_Sor)
-                {
-                    btnMasa.Text += "\n" + Convert.ToString(dtMasa.Rows[i]["Garson"]);
-                }
-
-                if (Convert.ToString(dtMasa.Rows[i]["Garson2"]) != "" && Departman.Garson_Sor)
-                {
-                    btnMasa.Text += "\n" + Convert.ToString(dtMasa.Rows[i]["Garson2"]);
-                }
-
-
-                //Paket Masaları
-                if (Convert.ToBoolean(dtMasa.Rows[i]["Masa_Paket"]) && Convert.ToString(dtMasa.Rows[i]["Masa_Durum"]) == "0")
-                {
-                    btnMasa.Appearance.BackColor = Color.Gainsboro;
-                }
-
-                if (sonMasa != "" && sonMasa == Convert.ToString(dtMasa.Rows[i]["Masa_No"]))
-                {
-                    btnMasa.Appearance.BackColor = Param.Param_Sonmasa_Renk;
-                }
-
-
-                if (Convert.ToInt32(dtMasa.Rows[i]["Masa_Durum"]) == 2) // !! burada kaldım
-                {
-                    btnMasa.Appearance.BackColor = hesap;
-                }
-
-
-                btnMasa.Appearance.BorderColor = btnMasa.Appearance.BackColor;
-                btnMasa.Click += new EventHandler(btnMasa_Click);
-                btnMasa.DoubleClick += new EventHandler(btnMasa_DoubleClick);
-                flp_Masa.Controls.Add(btnMasa);
-                //btnMasa.MouseHover += ButtonName_MouseHover;
-
-                // !!!!!
-
-            }
-
-            //Split_Ayarla();
-            gridControl2.DataSource = null;
-            bartxt_FisNo.EditValue = 0;
-
-            DataTable dtBilgi = dbtools.SelectTable("select COUNT(Masa_Durum) as Sayi,MIN(Masa_Durum) as Durum from Pos_Masa WITH(NOLOCK) where Masa_Depart = '" + Departman.Dep_Kodu + "' group by Masa_Durum order by Masa_Durum");
-            bartxt_BosMasa.EditValue = Convert.ToString(dtBilgi.Rows[0]["Sayi"]);
-            bartxt_DoluMasa.EditValue = dtBilgi.Rows.Count > 1 ? Convert.ToString(dtBilgi.Rows[1]["Sayi"]) : "0";
-
-            Main.a.Listele(0);
-
-        }*/
-
+      
         private void btnMasa_DoubleClick(Object sender, EventArgs e)
         {
             satisGit();

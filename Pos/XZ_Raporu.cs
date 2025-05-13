@@ -111,6 +111,35 @@ group by Pkod_Ad";
         {
             List<string> list;
 
+            try
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    string tutarStr = row["Tutar"]?.ToString();
+
+                    if (!string.IsNullOrWhiteSpace(tutarStr) && tutarStr!= "0,00" && tutarStr.Contains(","))
+                    {
+                        // Ondalık ve tam sayı kısmını ayır
+                        string[] parts = tutarStr.Split(',');
+                        string tamKisim = parts[0];
+                        string ondalikKisim = parts.Length > 1 ? parts[1] : "00";
+
+                        // Binlik ayraçları ekle
+                        tamKisim = string.Format("{0:N0}", long.Parse(tamKisim)).Replace(",", ".");
+
+                        // Birleştir
+                        row["Tutar"] = $"{tamKisim},{ondalikKisim.PadRight(2, '0')}";
+                    }
+                }
+            }
+            catch ( Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
+
+
+
             DataTable dt3 = dbtools.SelectTable("SELECT Pkod_Ad, Pkod_Satir FROM Pos_Kodlar  where Pkod_Sinif = '16' and Pkod_Ustgrup = 'HES' and Pkod_Kod = '" + Departman.Dep_Kodu + "' ");
             if (dt3.Rows.Count > 0 )
             {
