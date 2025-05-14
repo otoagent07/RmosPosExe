@@ -35,7 +35,7 @@ namespace Pos
         public void Listele(int Fisno)
         {
             saniye = sabitSaniye;
-
+            //RefreshVideo();
 
             decimal Tutar = 0;
             DataTable dt = dbtools.SelectTable("Exec Pos_Satis @Fisno = '" + Fisno + "',@Rapor_Tipi = '2', @Split = 0");
@@ -88,7 +88,6 @@ namespace Pos
             layoutView1.OptionsView.ShowCardCaption = false;
 
 
-            slaytGoster();
         }
 
 
@@ -106,11 +105,12 @@ namespace Pos
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
 
-
                 if (File.Exists("sirketSlaytLogo.mp4"))
                 {
+                    player.Visible = true;
                     PlayMp4InPanel();
                 }
+                
 
             }
             catch (Exception ex)
@@ -126,6 +126,8 @@ namespace Pos
             panel1.Dock = System.Windows.Forms.DockStyle.Right; // sonradan right olucak
             pictureBox1.Visible = true;
             pictureBox2.Visible = true;
+
+            player.Visible = false;
         }
 
         bool birkere = false;
@@ -134,7 +136,8 @@ namespace Pos
             try
             {
                 if (birkere) return;
-                player.CreateControl();
+                //player.CreateControl();
+
                 player.Dock = DockStyle.Fill;
                 string videoPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sirketSlaytLogo.mp4");
                 player.URL = videoPath;
@@ -171,6 +174,20 @@ namespace Pos
 
 
         }
+
+        public void RefreshVideo()
+        {
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sirketSlaytLogo.mp4");
+            if (File.Exists(path))
+            {
+                player.Ctlcontrols.stop();
+                player.URL = "";
+                player.URL = path;
+                player.Ctlcontrols.play();
+            }
+        }
+
+
 
         private void player_PlayStateChange(object sender, _WMPOCXEvents_PlayStateChangeEvent e)
         {

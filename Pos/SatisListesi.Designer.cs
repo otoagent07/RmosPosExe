@@ -164,10 +164,10 @@ namespace Pos
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 171);
+            this.gridControl1.Location = new System.Drawing.Point(12, 167);
             this.gridControl1.MainView = this.layoutView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(477, 331);
+            this.gridControl1.Size = new System.Drawing.Size(477, 335);
             this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.layoutView1});
@@ -386,9 +386,9 @@ namespace Pos
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.gridControl1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 159);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 155);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(481, 335);
+            this.layoutControlItem1.Size = new System.Drawing.Size(481, 339);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -471,7 +471,7 @@ namespace Pos
             this.lbl_Kasiyer});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 44);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(481, 115);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(481, 111);
             this.layoutControlGroup1.Text = "Bilgiler";
             // 
             // simpleLabelItem4
@@ -485,7 +485,7 @@ namespace Pos
             this.simpleLabelItem4.MaxSize = new System.Drawing.Size(0, 23);
             this.simpleLabelItem4.MinSize = new System.Drawing.Size(200, 23);
             this.simpleLabelItem4.Name = "simpleLabelItem4";
-            this.simpleLabelItem4.Size = new System.Drawing.Size(202, 23);
+            this.simpleLabelItem4.Size = new System.Drawing.Size(204, 23);
             this.simpleLabelItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.simpleLabelItem4.Text = "Fis No :";
             this.simpleLabelItem4.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
@@ -498,7 +498,7 @@ namespace Pos
             this.lbl_Fisno.AppearanceItemCaption.Options.UseFont = true;
             this.lbl_Fisno.AppearanceItemCaption.Options.UseTextOptions = true;
             this.lbl_Fisno.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lbl_Fisno.Location = new System.Drawing.Point(202, 0);
+            this.lbl_Fisno.Location = new System.Drawing.Point(204, 0);
             this.lbl_Fisno.MaxSize = new System.Drawing.Size(200, 23);
             this.lbl_Fisno.MinSize = new System.Drawing.Size(200, 23);
             this.lbl_Fisno.Name = "lbl_Fisno";
@@ -518,7 +518,7 @@ namespace Pos
             this.simpleLabelItem5.MaxSize = new System.Drawing.Size(0, 23);
             this.simpleLabelItem5.MinSize = new System.Drawing.Size(200, 23);
             this.simpleLabelItem5.Name = "simpleLabelItem5";
-            this.simpleLabelItem5.Size = new System.Drawing.Size(202, 23);
+            this.simpleLabelItem5.Size = new System.Drawing.Size(204, 23);
             this.simpleLabelItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.simpleLabelItem5.Text = "Masa :";
             this.simpleLabelItem5.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
@@ -531,7 +531,7 @@ namespace Pos
             this.lbl_Masa.AppearanceItemCaption.Options.UseFont = true;
             this.lbl_Masa.AppearanceItemCaption.Options.UseTextOptions = true;
             this.lbl_Masa.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lbl_Masa.Location = new System.Drawing.Point(202, 23);
+            this.lbl_Masa.Location = new System.Drawing.Point(204, 23);
             this.lbl_Masa.MaxSize = new System.Drawing.Size(253, 23);
             this.lbl_Masa.MinSize = new System.Drawing.Size(253, 23);
             this.lbl_Masa.Name = "lbl_Masa";
@@ -551,7 +551,7 @@ namespace Pos
             this.simpleLabelItem7.MaxSize = new System.Drawing.Size(0, 23);
             this.simpleLabelItem7.MinSize = new System.Drawing.Size(200, 23);
             this.simpleLabelItem7.Name = "simpleLabelItem7";
-            this.simpleLabelItem7.Size = new System.Drawing.Size(202, 23);
+            this.simpleLabelItem7.Size = new System.Drawing.Size(204, 23);
             this.simpleLabelItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.simpleLabelItem7.Text = "Kasiyer :";
             this.simpleLabelItem7.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
@@ -564,7 +564,7 @@ namespace Pos
             this.lbl_Kasiyer.AppearanceItemCaption.Options.UseFont = true;
             this.lbl_Kasiyer.AppearanceItemCaption.Options.UseTextOptions = true;
             this.lbl_Kasiyer.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lbl_Kasiyer.Location = new System.Drawing.Point(202, 46);
+            this.lbl_Kasiyer.Location = new System.Drawing.Point(204, 46);
             this.lbl_Kasiyer.MaxSize = new System.Drawing.Size(253, 23);
             this.lbl_Kasiyer.MinSize = new System.Drawing.Size(253, 23);
             this.lbl_Kasiyer.Name = "lbl_Kasiyer";
@@ -602,11 +602,12 @@ namespace Pos
             // player
             // 
             this.player.Enabled = true;
-            this.player.Location = new System.Drawing.Point(120, 50);
+            this.player.Location = new System.Drawing.Point(110, 49);
             this.player.Name = "player";
             this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            this.player.Size = new System.Drawing.Size(127, 137);
+            this.player.Size = new System.Drawing.Size(135, 120);
             this.player.TabIndex = 1;
+            this.player.Visible = false;
             this.player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.player_PlayStateChange);
             // 
             // pictureBoxSlayt
