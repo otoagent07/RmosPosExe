@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -112,7 +112,6 @@
             this.btn_SatirSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_MiktarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Tutarduzelt = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Ikram = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Zayi = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Indirim = new DevExpress.XtraEditors.SimpleButton();
@@ -165,6 +164,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -196,8 +196,6 @@
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
             this.panelControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
-            this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Not.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Barkod.Properties)).BeginInit();
@@ -227,6 +225,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
+            this.tablePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerControl3
@@ -686,7 +686,6 @@
             this.panelControl3.Controls.Add(this.btn_8);
             this.panelControl3.Controls.Add(this.btn_3);
             this.panelControl3.Controls.Add(this.panelControl6);
-            this.panelControl3.Controls.Add(this.panelControl5);
             this.panelControl3.Controls.Add(this.rdo_EMiktar);
             this.panelControl3.Controls.Add(this.btn_7);
             this.panelControl3.Controls.Add(this.btn_Mars);
@@ -955,120 +954,124 @@
             // 
             // panelControl6
             // 
-            this.panelControl6.Controls.Add(this.btn_Bindirim);
-            this.panelControl6.Controls.Add(this.btnMenuAc);
-            this.panelControl6.Controls.Add(this.simpleButton2);
-            this.panelControl6.Controls.Add(this.btn_SatirSil);
-            this.panelControl6.Controls.Add(this.btn_MiktarDuzelt);
-            this.panelControl6.Controls.Add(this.btn_Tutarduzelt);
+            this.panelControl6.Controls.Add(this.tablePanel1);
             resources.ApplyResources(this.panelControl6, "panelControl6");
             this.panelControl6.Name = "panelControl6";
             // 
             // btn_Bindirim
             // 
-            resources.ApplyResources(this.btn_Bindirim, "btn_Bindirim");
             this.btn_Bindirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Bindirim.Appearance.Font")));
             this.btn_Bindirim.Appearance.Options.UseFont = true;
+            this.tablePanel1.SetColumn(this.btn_Bindirim, 2);
+            resources.ApplyResources(this.btn_Bindirim, "btn_Bindirim");
             this.btn_Bindirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Bindirim.ImageOptions.Image")));
             this.btn_Bindirim.Name = "btn_Bindirim";
+            this.tablePanel1.SetRow(this.btn_Bindirim, 1);
             this.btn_Bindirim.Click += new System.EventHandler(this.btn_Bindirim_Click);
             // 
             // btnMenuAc
             // 
-            resources.ApplyResources(this.btnMenuAc, "btnMenuAc");
             this.btnMenuAc.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnMenuAc.Appearance.Font")));
             this.btnMenuAc.Appearance.Options.UseFont = true;
             this.btnMenuAc.Appearance.Options.UseTextOptions = true;
             this.btnMenuAc.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btnMenuAc, 2);
+            resources.ApplyResources(this.btnMenuAc, "btnMenuAc");
             this.btnMenuAc.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnMenuAc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMenuAc.ImageOptions.SvgImage")));
             this.btnMenuAc.Name = "btnMenuAc";
+            this.tablePanel1.SetRow(this.btnMenuAc, 0);
             this.btnMenuAc.Click += new System.EventHandler(this.btnMenuAc_Click);
             // 
             // simpleButton2
             // 
-            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.Appearance.Options.UseTextOptions = true;
             this.simpleButton2.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.simpleButton2, 1);
+            resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Name = "simpleButton2";
+            this.tablePanel1.SetRow(this.simpleButton2, 1);
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click_1);
             // 
             // btn_SatirSil
             // 
-            resources.ApplyResources(this.btn_SatirSil, "btn_SatirSil");
             this.btn_SatirSil.Appearance.BackColor = System.Drawing.Color.Indigo;
             this.btn_SatirSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_SatirSil.Appearance.Font")));
             this.btn_SatirSil.Appearance.Options.UseBackColor = true;
             this.btn_SatirSil.Appearance.Options.UseFont = true;
             this.btn_SatirSil.Appearance.Options.UseTextOptions = true;
             this.btn_SatirSil.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_SatirSil, 1);
+            resources.ApplyResources(this.btn_SatirSil, "btn_SatirSil");
             this.btn_SatirSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_SatirSil.ImageOptions.Image")));
             this.btn_SatirSil.Name = "btn_SatirSil";
+            this.tablePanel1.SetRow(this.btn_SatirSil, 0);
             this.btn_SatirSil.Click += new System.EventHandler(this.btn_SatirSil_Click);
             // 
             // btn_MiktarDuzelt
             // 
-            resources.ApplyResources(this.btn_MiktarDuzelt, "btn_MiktarDuzelt");
             this.btn_MiktarDuzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MiktarDuzelt.Appearance.Font")));
             this.btn_MiktarDuzelt.Appearance.Options.UseFont = true;
             this.btn_MiktarDuzelt.Appearance.Options.UseTextOptions = true;
             this.btn_MiktarDuzelt.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_MiktarDuzelt, 0);
+            resources.ApplyResources(this.btn_MiktarDuzelt, "btn_MiktarDuzelt");
             this.btn_MiktarDuzelt.Name = "btn_MiktarDuzelt";
+            this.tablePanel1.SetRow(this.btn_MiktarDuzelt, 1);
             this.btn_MiktarDuzelt.Click += new System.EventHandler(this.btn_MiktarDuzelt_Click);
             // 
             // btn_Tutarduzelt
             // 
-            resources.ApplyResources(this.btn_Tutarduzelt, "btn_Tutarduzelt");
             this.btn_Tutarduzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Tutarduzelt.Appearance.Font")));
             this.btn_Tutarduzelt.Appearance.Options.UseFont = true;
             this.btn_Tutarduzelt.Appearance.Options.UseTextOptions = true;
             this.btn_Tutarduzelt.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_Tutarduzelt, 0);
+            resources.ApplyResources(this.btn_Tutarduzelt, "btn_Tutarduzelt");
             this.btn_Tutarduzelt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Tutarduzelt.ImageOptions.Image")));
             this.btn_Tutarduzelt.Name = "btn_Tutarduzelt";
+            this.tablePanel1.SetRow(this.btn_Tutarduzelt, 0);
             this.btn_Tutarduzelt.Click += new System.EventHandler(this.btn_Tutarduzelt_Click);
-            // 
-            // panelControl5
-            // 
-            this.panelControl5.Controls.Add(this.btn_Ikram);
-            this.panelControl5.Controls.Add(this.btn_Zayi);
-            this.panelControl5.Controls.Add(this.btn_Indirim);
-            resources.ApplyResources(this.panelControl5, "panelControl5");
-            this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl5_Paint);
             // 
             // btn_Ikram
             // 
-            resources.ApplyResources(this.btn_Ikram, "btn_Ikram");
             this.btn_Ikram.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Ikram.Appearance.Font")));
             this.btn_Ikram.Appearance.Options.UseFont = true;
             this.btn_Ikram.Appearance.Options.UseTextOptions = true;
             this.btn_Ikram.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_Ikram, 1);
+            resources.ApplyResources(this.btn_Ikram, "btn_Ikram");
             this.btn_Ikram.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ikram.ImageOptions.Image")));
             this.btn_Ikram.Name = "btn_Ikram";
+            this.tablePanel1.SetRow(this.btn_Ikram, 2);
             this.btn_Ikram.Click += new System.EventHandler(this.btn_Ikram_Click);
             // 
             // btn_Zayi
             // 
-            resources.ApplyResources(this.btn_Zayi, "btn_Zayi");
             this.btn_Zayi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Zayi.Appearance.Font")));
             this.btn_Zayi.Appearance.Options.UseFont = true;
             this.btn_Zayi.Appearance.Options.UseTextOptions = true;
             this.btn_Zayi.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_Zayi, 2);
+            resources.ApplyResources(this.btn_Zayi, "btn_Zayi");
             this.btn_Zayi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Zayi.ImageOptions.Image")));
             this.btn_Zayi.Name = "btn_Zayi";
+            this.tablePanel1.SetRow(this.btn_Zayi, 2);
             this.btn_Zayi.Click += new System.EventHandler(this.btn_Zayi_Click);
             // 
             // btn_Indirim
             // 
-            resources.ApplyResources(this.btn_Indirim, "btn_Indirim");
             this.btn_Indirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Indirim.Appearance.Font")));
             this.btn_Indirim.Appearance.Options.UseFont = true;
             this.btn_Indirim.Appearance.Options.UseTextOptions = true;
             this.btn_Indirim.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_Indirim, 0);
+            resources.ApplyResources(this.btn_Indirim, "btn_Indirim");
             this.btn_Indirim.Name = "btn_Indirim";
+            this.tablePanel1.SetRow(this.btn_Indirim, 2);
             this.btn_Indirim.Click += new System.EventHandler(this.btn_Indirim_Click);
             // 
             // rdo_EMiktar
@@ -1244,18 +1247,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn6;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn6;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -1570,6 +1573,28 @@
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // tablePanel1
+            // 
+            this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 37F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 37F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 37F)});
+            this.tablePanel1.Controls.Add(this.btn_Zayi);
+            this.tablePanel1.Controls.Add(this.btn_Ikram);
+            this.tablePanel1.Controls.Add(this.btn_Tutarduzelt);
+            this.tablePanel1.Controls.Add(this.btn_Bindirim);
+            this.tablePanel1.Controls.Add(this.btn_Indirim);
+            this.tablePanel1.Controls.Add(this.btn_SatirSil);
+            this.tablePanel1.Controls.Add(this.btnMenuAc);
+            this.tablePanel1.Controls.Add(this.btn_MiktarDuzelt);
+            this.tablePanel1.Controls.Add(this.simpleButton2);
+            resources.ApplyResources(this.tablePanel1, "tablePanel1");
+            this.tablePanel1.Name = "tablePanel1";
+            this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 57F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 53F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            // 
             // Satis
             // 
             resources.ApplyResources(this, "$this");
@@ -1621,8 +1646,6 @@
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
-            this.panelControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Not.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Barkod.Properties)).EndInit();
@@ -1653,6 +1676,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
+            this.tablePanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1719,7 +1744,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_7;
         private DevExpress.XtraEditors.SimpleButton btn_6;
         private DevExpress.XtraEditors.RadioGroup rdo_EMiktar;
-        private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.SimpleButton btn_Zayi;
         private DevExpress.XtraEditors.SimpleButton btn_Indirim;
         private DevExpress.XtraEditors.SimpleButton btn_Ikram;
@@ -1793,5 +1817,6 @@
         public DevExpress.XtraEditors.MemoEdit txt_Not;
         private DevExpress.XtraEditors.TextEdit textEditFisnobirlestir1;
         private DevExpress.XtraEditors.TextEdit txtFisnoGit;
+        private DevExpress.Utils.Layout.TablePanel tablePanel1;
     }
 }

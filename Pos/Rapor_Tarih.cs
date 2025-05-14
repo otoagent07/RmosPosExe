@@ -25,8 +25,8 @@ namespace Pos
                 lookUpEdit1.Properties.DataSource = dt;
                 lookUpEdit1.Properties.DisplayMember = "Adi";
                 lookUpEdit1.Properties.ValueMember = "Kodu";
-                //lookUpEdit1.CheckAll();
-                lookUpEdit1.SetEditValue(Departman.Dep_Kodu);
+                lookUpEdit1.CheckAll();
+                //lookUpEdit1.SetEditValue(Departman.Dep_Kodu);
 
                 lookUpEdit1.Enabled = true;
             }
