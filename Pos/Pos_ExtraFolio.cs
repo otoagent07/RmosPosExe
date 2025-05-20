@@ -748,22 +748,39 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
         private void BakiyeYukle(int folio)
         {
 
-            decimal tutar = 0, doviztutar = 0;
-            decimal kur = Param.Doviz_Kuru;
-            string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
-            decimal Parite = 0;
-
-            if (Param.Tesis_Tipi == 0)   //Otel 
+            try
             {
-                if (Param.Calisma_Sekli == 1)   //Dövizli
+                decimal tutar = 0, doviztutar = 0;
+                decimal kur = Param.Doviz_Kuru;
+                string kur_cesit = Departman.MKodlar_P_DovizCins == "1" ? "E" : "M";
+                decimal Parite = 0;
+
+                if (Param.Tesis_Tipi == 0)   //Otel 
                 {
-                    if (Param.Doviz_Cinsi == 2) //Müşteri Giriş Günü Kuru
+                    if (Param.Calisma_Sekli == 1)   //Dövizli
                     {
-                        int Master_folio = Convert.ToInt32(Fronttools.DegerGetir("select top 1 isnull(Rez_Master_id,Rez_Id) from Rez WITH(NOLOCK) where Rez_Id = '" + folio.ToString() + "' "));
-                        DateTime Giris_tarihi = Convert.ToDateTime(Fronttools.DegerGetir("select top 1 Rez_Giris_tarihi from Rez WITH(NOLOCK) where Rez_Id = '" + Master_folio.ToString() + "' "));
-                        kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and  Convert(date,Kurlar_Tarih,105) = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
-                        Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
-                        //tutar = doviztutar * kur;
+                        if (Param.Doviz_Cinsi == 2) //Müşteri Giriş Günü Kuru
+                        {
+                            int Master_folio = Convert.ToInt32(Fronttools.DegerGetir("select top 1 isnull(Rez_Master_id,Rez_Id) from Rez WITH(NOLOCK) where Rez_Id = '" + folio.ToString() + "' "));
+                            DateTime Giris_tarihi = Convert.ToDateTime(Fronttools.DegerGetir("select top 1 Rez_Giris_tarihi from Rez WITH(NOLOCK) where Rez_Id = '" + Master_folio.ToString() + "' "));
+                            kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and  Convert(date,Kurlar_Tarih,105) = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
+                            Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Giris_tarihi.Date.ToString("yyyy-MM-dd") + "'"));
+                            //tutar = doviztutar * kur;
+                        }
+                        else
+                        {
+                            if (Param.Kurlar_Nerden == 0) // otel
+                            {
+                                kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                                Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                            }
+                            else
+                            {
+                                kur = Convert.ToDecimal(dbtools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                                Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+                            }
+                            //tutar = doviztutar * kur;
+                        }
                     }
                     else
                     {
@@ -771,6 +788,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                         {
                             kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
                             Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
+
                         }
                         else
                         {
@@ -782,84 +800,73 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                 }
                 else
                 {
-                    if (Param.Kurlar_Nerden == 0) // otel
-                    {
-                        kur = Convert.ToDecimal(Fronttools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
-                        Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
-
-                    }
-                    else
-                    {
-                        kur = Convert.ToDecimal(dbtools.DegerGetir("select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
-                        Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
-                    }
+                    string dovizXml = dbtools.DegerGetir("select Mkodlar_Xml from Muh_Kodlar where Mkodlar_Sinif = '02' and Mkodlar_Kod = '" + look_DovizKod.EditValue + "'");
+                    //if (!(dovizXml == "" || dovizXml == "TL"))
+                    //{
+                    kur = Convert.ToDecimal(dbtools.DegerGetir("select isnull((select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'),1)"));
+                    Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
                     //tutar = doviztutar * kur;
+                    //}
                 }
-            }
-            else
-            {
-                string dovizXml = dbtools.DegerGetir("select Mkodlar_Xml from Muh_Kodlar where Mkodlar_Sinif = '02' and Mkodlar_Kod = '" + look_DovizKod.EditValue + "'");
-                //if (!(dovizXml == "" || dovizXml == "TL"))
-                //{
-                kur = Convert.ToDecimal(dbtools.DegerGetir("select isnull((select " + Param.Doviz_Turu + "  from Kurlar where Kurlar_Cesit = '" + kur_cesit + "' and Kurlar_Kodu = '" + look_DovizKod.EditValue + "' and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'),1)"));
-                Parite = Convert.ToDecimal(Fronttools.DegerGetir(@"select ISNULL(Kurlar_Parite,0)  from Kurlar with(NOLOCK) where Kurlar_Kodu =  '" + look_DovizKod.EditValue + "' and Kurlar_Cesit  = '" + kur_cesit + "' and Kurlar_Tarih  = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "'"));
-                //tutar = doviztutar * kur;
-                //}
-            }
 
 
 
-            this.Cursor = Cursors.WaitCursor;
+                this.Cursor = Cursors.WaitCursor;
 
-            SqlConnection con = Fronttools.conn;
-            if (con.State == ConnectionState.Closed) { con.Open(); }
+                SqlConnection con = Fronttools.conn;
+                if (con.State == ConnectionState.Closed) { con.Open(); }
 
-            try
-            {
-                using (SqlCommand cmd = new SqlCommand("StpKumhrk_Kaydet", Fronttools.conn) { CommandType = CommandType.StoredProcedure })
+                try
                 {
-                    cmd.Parameters.AddWithValue("@Kumhrk_Tarih", Param.Tarih);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Dep_kodu", look_OdemeDep.EditValue);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Rez_id", txt_BakiyeFolioID.Text);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Oda", txt_BakiyeOda.Text);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Doviz_kodu", look_DovizKod.EditValue);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Kur", kur);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Tutar", Convert.ToDecimal(txt_BakiyeLimit.EditValue) * kur);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Doviz_tutar", Convert.ToDecimal(txt_BakiyeLimit.EditValue));
-                    cmd.Parameters.AddWithValue("@Kumhrk_Def_doviz", Convert.ToDecimal(txt_BakiyeLimit.EditValue) * Parite);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Tipi", "S");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Bfd", "D");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Ba", "A");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Re", "E");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Me", "M");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Cekno", "");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Posting_kodu", "B");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Zaman", DateTime.Now.ToShortTimeString());
-                    cmd.Parameters.AddWithValue("@Kumhrk_Yil_kodu", Param.Tarih.Year);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Sirket", Fronttools.Sirket_Kodu);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Otel", Fronttools.Otel_Kodu);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Kulanici_id", User.ID_Getir(User.P_Kod));
-                    cmd.Parameters.AddWithValue("@Kumhrk_Kulanici_kodu", User.P_Kod);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Fatura_bolum", "");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Gunluk_aylik", "");
-                    cmd.Parameters.AddWithValue("@Kumhrk_Kartno", txt_BakiyeKartNo.Text);
-                    cmd.Parameters.AddWithValue("@Kumhrk_Islem_tarihi", Convert.ToDateTime(dbtools.DegerGetir("select getdate()")));
-                    cmd.Parameters.AddWithValue("@Kumhrk_Sistem_tarihi", Convert.ToDateTime(dbtools.DegerGetir("select getdate()")));
-                    cmd.Parameters.AddWithValue("@Kumhrk_Kart_id", KartID);
+                    using (SqlCommand cmd = new SqlCommand("StpKumhrk_Kaydet", Fronttools.conn) { CommandType = CommandType.StoredProcedure })
+                    {
+                        cmd.Parameters.AddWithValue("@Kumhrk_Tarih", Param.Tarih);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Dep_kodu", look_OdemeDep.EditValue);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Rez_id", txt_BakiyeFolioID.Text);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Oda", txt_BakiyeOda.Text);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Doviz_kodu", look_DovizKod.EditValue);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Kur", kur);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Tutar", Convert.ToDecimal(txt_BakiyeLimit.EditValue) * kur);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Doviz_tutar", Convert.ToDecimal(txt_BakiyeLimit.EditValue));
+                        cmd.Parameters.AddWithValue("@Kumhrk_Def_doviz", Convert.ToDecimal(txt_BakiyeLimit.EditValue) * Parite);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Tipi", "S");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Bfd", "D");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Ba", "A");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Re", "E");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Me", "M");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Cekno", "");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Posting_kodu", "B");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Zaman", DateTime.Now.ToShortTimeString());
+                        cmd.Parameters.AddWithValue("@Kumhrk_Yil_kodu", Param.Tarih.Year);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Sirket", Fronttools.Sirket_Kodu);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Otel", Fronttools.Otel_Kodu);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Kulanici_id", User.ID_Getir(User.P_Kod));
+                        cmd.Parameters.AddWithValue("@Kumhrk_Kulanici_kodu", User.P_Kod);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Fatura_bolum", "");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Gunluk_aylik", "");
+                        cmd.Parameters.AddWithValue("@Kumhrk_Kartno", txt_BakiyeKartNo.Text);
+                        cmd.Parameters.AddWithValue("@Kumhrk_Islem_tarihi", Convert.ToDateTime(dbtools.DegerGetir("select getdate()")));
+                        cmd.Parameters.AddWithValue("@Kumhrk_Sistem_tarihi", Convert.ToDateTime(dbtools.DegerGetir("select getdate()")));
+                        cmd.Parameters.AddWithValue("@Kumhrk_Kart_id", KartID);
 
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
 
+                    }
                 }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
-            this.Cursor = Cursors.Default;
-            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Kart, Log.Log_Islem.Kaydet, txt_BakiyeKartNo.Text + " Nolu Karta " + txt_BakiyeLimit.EditValue + " TL Bakiye Yüklenmiştir.", "", Convert.ToString(lookCardF_FolioID.EditValue));
+                this.Cursor = Cursors.Default;
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Kart, Log.Log_Islem.Kaydet, txt_BakiyeKartNo.Text + " Nolu Karta " + txt_BakiyeLimit.EditValue + " TL Bakiye Yüklenmiştir.", "", Convert.ToString(lookCardF_FolioID.EditValue));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void otomatikReceteSatis()
@@ -891,44 +898,51 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
         {
 
 
-            if (Convert.ToString(look_OdemeDep.EditValue) == "")
+            try
             {
-                MessageBox.Show(res_man.GetString("Bakiye Yüklemek için Ödeme Departmanını Seçiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
-                return;
-            }
-
-            if (txt_BakiyeKartNo.Text == "" || txt_BakiyeFolioID.Text == "" || txt_BakiyeOda.Text == "")
-            {
-                MessageBox.Show(res_man.GetString("Kart Okutunuz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
-                return;
-            }
-
-            KartNoSor();
-
-            if (Convert.ToDecimal(txt_BakiyeLimit.Text) > 0)
-            {
-                BakiyeYukle(Convert.ToInt32(txt_BakiyeFolioID.Text));
-                Bakiye(txt_BakiyeFolioID.Text, KartID);
-                FolioListele(txt_BakiyeFolioID.Text, dateEdit4.DateTime.Date, dateEdit1.DateTime.Date, KartID);
-
-                for (int i = 0; i < 2; i++)
+                if (Convert.ToString(look_OdemeDep.EditValue) == "")
                 {
-                    FisPr pr = new FisPr();
-                    pr.ExtraFolioPr(txt_BakiyeKartNo.Text, Convert.ToInt32(txt_BakiyeFolioID.Text), "BİLGİ FİŞİ", Convert.ToDecimal(txt_BakiyeLimit.EditValue), "Yüklenen", chk_Altbilgi.Checked, (string)look_DovizKod.EditValue);
+                    MessageBox.Show(res_man.GetString("Bakiye Yüklemek için Ödeme Departmanını Seçiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
+                    return;
+                }
+
+                if (txt_BakiyeKartNo.Text == "" || txt_BakiyeFolioID.Text == "" || txt_BakiyeOda.Text == "")
+                {
+                    MessageBox.Show(res_man.GetString("Kart Okutunuz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
+                    return;
+                }
+
+                KartNoSor();
+
+                if (Convert.ToDecimal(txt_BakiyeLimit.Text) > 0)
+                {
+                    BakiyeYukle(Convert.ToInt32(txt_BakiyeFolioID.Text));
+                    Bakiye(txt_BakiyeFolioID.Text, KartID);
+                    FolioListele(txt_BakiyeFolioID.Text, dateEdit4.DateTime.Date, dateEdit1.DateTime.Date, KartID);
+
+                    for (int i = 0; i < 2; i++)
+                    {
+                        FisPr pr = new FisPr();
+                        pr.ExtraFolioPr(txt_BakiyeKartNo.Text, Convert.ToInt32(txt_BakiyeFolioID.Text), "BİLGİ FİŞİ", Convert.ToDecimal(txt_BakiyeLimit.EditValue), "Yüklenen", chk_Altbilgi.Checked, (string)look_DovizKod.EditValue);
+                    }
+
+
+                    MessageBox.Show(res_man.GetString("Bakiye Yüklenmiştir..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(res_man.GetString("Yüklenecek Limit Tutarını Giriniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
+                    return;
                 }
 
 
-                MessageBox.Show(res_man.GetString("Bakiye Yüklenmiştir..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Close();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show(res_man.GetString("Yüklenecek Limit Tutarını Giriniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK);
-                return;
+                MessageBox.Show(ex.Message);
             }
-
-
-
-            this.Close();
 
         }
 

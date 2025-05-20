@@ -78,11 +78,11 @@
             // 
             // lbl_AdSoyad
             // 
-            resources.ApplyResources(this.lbl_AdSoyad, "lbl_AdSoyad");
             this.lbl_AdSoyad.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lbl_AdSoyad.Appearance.Font")));
             this.lbl_AdSoyad.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbl_AdSoyad.Appearance.Options.UseFont = true;
             this.lbl_AdSoyad.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.lbl_AdSoyad, "lbl_AdSoyad");
             this.lbl_AdSoyad.Name = "lbl_AdSoyad";
             // 
             // txt_SatisTutar
@@ -111,9 +111,9 @@
             // 
             // btn_OK
             // 
-            resources.ApplyResources(this.btn_OK, "btn_OK");
             this.btn_OK.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_OK.Appearance.Font")));
             this.btn_OK.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_OK, "btn_OK");
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
             this.btn_OK.Name = "btn_OK";
             this.btn_OK.TabStop = false;
@@ -121,10 +121,10 @@
             // 
             // btn_Cikis
             // 
-            resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cikis.ImageOptions.Image")));
+            resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
             this.btn_Cikis.Name = "btn_Cikis";
             this.btn_Cikis.TabStop = false;
             this.btn_Cikis.Click += new System.EventHandler(this.btn_Cikis_Click);
