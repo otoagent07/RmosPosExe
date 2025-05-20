@@ -14,9 +14,9 @@ namespace Pos.Ingenico
     public partial class IngenicoServer : Form
     {
         SimpleTcpClient client;
-        decimal bakiye=0;
+        decimal bakiye = 0;
         DataTable dtGelen;
-        public IngenicoServer(DataTable dtGelen,decimal bakiye)
+        public IngenicoServer(DataTable dtGelen, decimal bakiye)
         {
             InitializeComponent();
 
@@ -45,29 +45,37 @@ namespace Pos.Ingenico
             if (!client.TcpClient.Connected)
                 client.Connect(Departman.Kodlar_Ingenico_IP, Departman.Kodlar_Ingenico_Port);
 
-            Json = FisGetir(Fisno, 2);
 
+            if (Param.ingenico2)
+            {
+                string text = $@"SATIS;2;{Param.Tarih.ToString("yyyy-MM-dd")};{Fisno}";
+                client.WriteLine(text);
+            }
+            else
+            {
+                Json = FisGetir(Fisno, 2);
+                client.WriteLine("SATIS;" + Json);
+            }
 
-            client.WriteLine("SATIS;" + Json);
 
         }
 
-         void client_DataReceivedAsync(object sender, SimpleTCP.Message e)
+        void client_DataReceivedAsync(object sender, SimpleTCP.Message e)
         {
 
             //System.Windows.Forms.Form.CheckForIllegalCrossThreadCalls = false;
             //if (!IsHandleCreated)
             //   CreateControl();
 
-            
-                 Task.Run(() => MyAsyncMethod(e.MessageString));
+
+            Task.Run(() => MyAsyncMethod(e.MessageString));
 
             //System.Threading.Tasks.Task.Factory.StartNew(() =>
             //     {
 
             //         this.Invoke(new MethodInvoker(async () =>
             //         {
-                         
+
 
             //         }));
 
@@ -81,7 +89,7 @@ namespace Pos.Ingenico
 
         private async Task MyAsyncMethod(string text)
         {
-            await Task.Delay(100); 
+            await Task.Delay(100);
             UpdateUI(text);
         }
 
@@ -95,7 +103,31 @@ namespace Pos.Ingenico
                     {
                         setAllEnable(false);
 
+                       
+
                         txtStatus.Text = text;
+
+                        if (Param.ingenico2 && text.Contains(";"))
+                        {
+                            string[] data = text.Split(';');
+                            if (data[0] == "OK")
+                            {
+                                Finish(data[1]);
+                            }
+                            else
+                            {
+                                setAllEnable(true);
+                                RHMesaj.alertMesaj(data[1]); // hata;hatamesajı
+
+
+                                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Ingenico2, Log.Log_Islem.Kaydet, data[1], Fisno+"", "", "", 1);
+
+                            }
+
+                            return;
+                        }
+
+
 
                         txtStatus.Text = txtStatus.Text.Remove(txtStatus.Text.Length - 1);
                         if (txtStatus.Text == "2067")
@@ -149,7 +181,7 @@ namespace Pos.Ingenico
 
             try
             {
-                if(text!=null && text != "" && text.Contains("BankaIdGuncelle"))
+                if (text != null && text != "" && text.Contains("BankaIdGuncelle"))
                 {
                     string bankaId = text.Split(';')[1];
                 }
@@ -167,10 +199,10 @@ namespace Pos.Ingenico
             m_btnVoidAllTicket_059.Enabled = setVisible;
         }
 
-      public  SonucTicket sonucTicket = new SonucTicket();
+        public SonucTicket sonucTicket = new SonucTicket();
         private void Finish(string Sonuc)
         {
-            
+
             sonucTicket = JsonConvert.DeserializeObject<SonucTicket>(Sonuc);
             if (sonucTicket.EJNo != 0)
             {
@@ -192,7 +224,7 @@ namespace Pos.Ingenico
         }
 
 
-        
+
 
         public bool DonenDeger = false;
 
@@ -256,12 +288,25 @@ namespace Pos.Ingenico
             }
         }
 
+
+
+
         private void m_btn_043_Click(object sender, EventArgs e)
         {
             setAllEnable(false);
 
-            Json = FisGetir(Fisno, 2);
-            client.WriteLine("ODEME;" + Json);
+            if (Param.ingenico2)
+            {
+                string text = $@"SATIS;21;{Param.Tarih.ToString("yyyy-MM-dd")};{Fisno}";
+                client.WriteLine(text);
+            }
+            else
+            {
+                Json = FisGetir(Fisno, 2);
+                client.WriteLine("ODEME;" + Json);
+            }
+           
+
             lbl_Durum.Text = "ÖDEME TEKRAR GÖNDERİLİYOR...";
         }
 
@@ -333,10 +378,10 @@ namespace Pos.Ingenico
 
         private void IngenicoServer_Shown(object sender, EventArgs e)
         {
-            
+
 
         }
 
-       
+
     }
 }

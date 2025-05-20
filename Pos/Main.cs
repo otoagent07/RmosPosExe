@@ -10,6 +10,7 @@ using Pos.Getir;
 using Pos.Getir.Class;
 using Pos.Ingenico;
 using Pos.Models;
+using Pos.PavoModels;
 using Pos.Print;
 using Pos.Trendyol;
 using Pos.Update;
@@ -420,7 +421,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.6"; // aaaa
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.8"; // aaaa
 
 
 
@@ -584,8 +585,14 @@ namespace Pos
                 var client = new HttpClient();
                 var request = new HttpRequestMessage(HttpMethod.Post, url + $"/Pavo/Pairing?sirketId={sirketId}");
                 var response = await client.SendAsync(request);
-                response.EnsureSuccessStatusCode();
-                Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                string sonuc = response.Content.ReadAsStringAsync().Result;
+
+                var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
+                if (model == null) { MessageBox.Show("Model is null"); return; }
+                if (model.success==false)
+                {
+                   RHMesaj.alertMesaj("Pavo Başarısız\n" + model.message);
+                }
 
 
             }
@@ -803,6 +810,12 @@ namespace Pos
 
         private void IngenicoKullan()
         {
+            if (Param.ingenico2)
+            {
+                return;
+            }
+
+
             if (Departman.Kodlar_Ingenico)
             {
                 if (Departman.Kodlar_IngenicoCon == 0)

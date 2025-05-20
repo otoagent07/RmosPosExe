@@ -161,6 +161,7 @@ IF COL_LENGTH('Pos_Param', 'hesapFisQr') IS NULL BEGIN ALTER TABLE Pos_Param ADD
 IF COL_LENGTH('Pos_Param', 'paketotohesapkapat') IS NULL BEGIN ALTER TABLE Pos_Param ADD paketotohesapkapat bit END;
 IF COL_LENGTH('Pos_Param', 'sepetaktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD sepetaktif bit END;
 IF COL_LENGTH('Pos_Param', 'merkezaktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD merkezaktif bit END;
+IF COL_LENGTH('Pos_Param', 'ingenico2') IS NULL BEGIN ALTER TABLE Pos_Param ADD ingenico2 bit END;
 
 
 

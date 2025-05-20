@@ -61,7 +61,8 @@ namespace Pos.Class
             Urun_Tahsilat,
             Print,
             ikram,
-            UrunIade
+            UrunIade,
+            Ingenico2,
         };
 
         public enum Log_Islem

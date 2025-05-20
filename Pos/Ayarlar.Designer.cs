@@ -1298,6 +1298,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.ingenico2 = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2177,6 +2178,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenico2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4204,6 +4206,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.ingenico2);
             this.xtraTabPage8.Controls.Add(this.merkezaktif);
             this.xtraTabPage8.Controls.Add(this.sepetaktif);
             this.xtraTabPage8.Controls.Add(this.paketotohesapkapat);
@@ -12946,6 +12949,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // ingenico2
+            // 
+            resources.ApplyResources(this.ingenico2, "ingenico2");
+            this.ingenico2.Name = "ingenico2";
+            this.ingenico2.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13866,6 +13875,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ingenico2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15140,5 +15150,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn178;
         private DevExpress.XtraEditors.CheckEdit servisPayiKdvOran;
         private DevExpress.XtraEditors.CheckEdit coklugunsonu;
+        private DevExpress.XtraEditors.CheckEdit ingenico2;
     }
 }

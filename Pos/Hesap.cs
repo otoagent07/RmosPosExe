@@ -1,8 +1,10 @@
 ﻿using DevExpress.XtraReports.UI;
+using Newtonsoft.Json;
 using Pos.Class;
 using Pos.Controllers;
 using Pos.Ingenico;
 using Pos.Models;
+using Pos.PavoModels;
 using Pos.Print;
 using SimpleTCP;
 using System;
@@ -2769,7 +2771,15 @@ namespace Pos
                     {
                         IngenicoForm a = new IngenicoForm();
                         a.Fisno = Convert.ToInt32(this.Tag);
+
                         a.Islem = "SATIS";
+
+                        if (Param.ingenico2)
+                        {
+                            a.Islem = $@"SATIS;2;{Param.Tarih.ToString("yyyy-MM-dd")};{a.Fisno}";
+                        }
+
+
                         a.ShowDialog();
 
                         if (a.DonenDeger == false)
@@ -2892,6 +2902,8 @@ namespace Pos
 
                     this.Close();
                 }
+
+
             }
         }
 
@@ -3936,13 +3948,15 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 response.EnsureSuccessStatusCode();
                 string sonuc = response.Content.ReadAsStringAsync().Result;
 
-                if (sonuc == "1")
+                var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
+                if (model == null) { MessageBox.Show("Model is null"); return; }
+                if (model.success)
                 {
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Başarısız\n" + sonuc);
+                    MessageBox.Show("Pavo Başarısız\n" + model.message);
                 }
 
             }
