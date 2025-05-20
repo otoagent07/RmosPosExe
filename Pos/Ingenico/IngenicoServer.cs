@@ -103,7 +103,7 @@ namespace Pos.Ingenico
                     {
                         setAllEnable(false);
 
-                       
+
 
                         txtStatus.Text = text;
 
@@ -112,7 +112,7 @@ namespace Pos.Ingenico
                             string[] data = text.Split(';');
                             if (data[0] == "OK")
                             {
-                                Finish(data[1]);
+                                Finish(text);
                             }
                             else
                             {
@@ -120,7 +120,7 @@ namespace Pos.Ingenico
                                 RHMesaj.alertMesaj(data[1]); // hata;hatamesajı
 
 
-                                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Ingenico2, Log.Log_Islem.Kaydet, data[1], Fisno+"", "", "", 1);
+                                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Ingenico2, Log.Log_Islem.Kaydet, data[1], Fisno + "", "", "", 1);
 
                             }
 
@@ -202,11 +202,42 @@ namespace Pos.Ingenico
         public SonucTicket sonucTicket = new SonucTicket();
         private void Finish(string Sonuc)
         {
-
-            sonucTicket = JsonConvert.DeserializeObject<SonucTicket>(Sonuc);
-            if (sonucTicket.EJNo != 0)
+            try
             {
-                dbtools.execcmd(@"INSERT INTO [dbo].[Pos_Ingenico]
+                if (Param.ingenico2)
+                {
+                    // sonuc = "OK;" + sonTicket.FNo.ToString() + ";" + sonTicket.ZNo.ToString() + ";" + sonTicket.EJNo.ToString();
+                    string[] splits = Sonuc.Split(';');
+                    if (splits.Length > 3)
+                    {
+                        string fno = splits[1];
+                        string zno = splits[2];
+                        string ejno = splits[3];
+
+                        dbtools.execcmd(@"INSERT INTO [dbo].[Pos_Ingenico]
+           ([Tarih]
+           ,[Fisno]
+           ,[Sonuc]
+           ,[Kullanici]
+           ,[SistemTarih]
+            ,[ZNo]
+            ,[YFisno]
+            ,[EJNo])
+              VALUES('" + Param.Tarih.Date + @"', '" + Fisno + "','ingenico2','" + User.P_Kod + "',Getdate(),'" + zno + "','" + fno + "','" + ejno + "')");
+
+                        DonenDeger = true;
+
+
+                    }
+
+                    this.Close();
+                }
+                else
+                {
+                    sonucTicket = JsonConvert.DeserializeObject<SonucTicket>(Sonuc);
+                    if (sonucTicket.EJNo != 0)
+                    {
+                        dbtools.execcmd(@"INSERT INTO [dbo].[Pos_Ingenico]
            ([Tarih]
            ,[Fisno]
            ,[Sonuc]
@@ -217,9 +248,16 @@ namespace Pos.Ingenico
             ,[EJNo])
               VALUES('" + Param.Tarih.Date + @"', '" + Fisno + "','" + Sonuc + "','" + User.P_Kod + "',Getdate(),'" + sonucTicket.ZNo.ToString() + "','" + sonucTicket.FNo.ToString() + "','" + sonucTicket.EJNo.ToString() + sonucTicket.BkmID + "')");
 
-                DonenDeger = true;
+                        DonenDeger = true;
 
-                this.Close();
+                        this.Close();
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -305,7 +343,7 @@ namespace Pos.Ingenico
                 Json = FisGetir(Fisno, 2);
                 client.WriteLine("ODEME;" + Json);
             }
-           
+
 
             lbl_Durum.Text = "ÖDEME TEKRAR GÖNDERİLİYOR...";
         }
