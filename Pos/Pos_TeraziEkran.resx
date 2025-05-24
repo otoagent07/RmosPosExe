@@ -145,7 +145,7 @@
     <value>Numeric</value>
   </data>
   <data name="txt_Sayi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>417, 166</value>
+    <value>501, 166</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txt_Sayi.TabIndex" type="System.Int32, mscorlib">
@@ -179,7 +179,7 @@
     <value>Tahoma, 20pt</value>
   </data>
   <data name="txt_UrunAdi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>421, 40</value>
+    <value>505, 40</value>
   </data>
   <data name="txt_UrunAdi.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -206,7 +206,7 @@
     <value>2, 3, 2, 3</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>421, 190</value>
+    <value>505, 190</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -230,13 +230,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 28</value>
+    <value>7, 28</value>
   </data>
   <data name="simpleButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 65</value>
+    <value>206, 65</value>
   </data>
   <data name="simpleButton3.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -333,13 +333,13 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 383</value>
+    <value>150, 383</value>
   </data>
   <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -360,13 +360,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 312</value>
+    <value>149, 312</value>
   </data>
   <data name="simpleButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton4.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -390,13 +390,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="btn_00.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 312</value>
+    <value>78, 312</value>
   </data>
   <data name="btn_00.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_00.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="btn_00.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -472,13 +472,13 @@
 </value>
   </data>
   <data name="btn_OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 383</value>
+    <value>7, 383</value>
   </data>
   <data name="btn_OK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="btn_OK.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -499,13 +499,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 312</value>
+    <value>7, 312</value>
   </data>
   <data name="simpleButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton5.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -529,13 +529,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 241</value>
+    <value>149, 241</value>
   </data>
   <data name="simpleButton6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton6.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -559,13 +559,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 241</value>
+    <value>78, 241</value>
   </data>
   <data name="simpleButton7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton7.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -589,13 +589,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 241</value>
+    <value>7, 241</value>
   </data>
   <data name="simpleButton8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton8.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -619,13 +619,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 170</value>
+    <value>149, 170</value>
   </data>
   <data name="simpleButton9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton9.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -649,13 +649,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 170</value>
+    <value>78, 170</value>
   </data>
   <data name="simpleButton10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton10.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -679,13 +679,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 170</value>
+    <value>7, 170</value>
   </data>
   <data name="simpleButton11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton11.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -709,13 +709,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 99</value>
+    <value>149, 99</value>
   </data>
   <data name="simpleButton12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton12.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -739,13 +739,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 99</value>
+    <value>78, 99</value>
   </data>
   <data name="simpleButton13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton13.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -769,13 +769,13 @@
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
   <data name="simpleButton14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 99</value>
+    <value>7, 99</value>
   </data>
   <data name="simpleButton14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 65</value>
+    <value>65, 65</value>
   </data>
   <data name="simpleButton14.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -799,13 +799,13 @@
     <value>Right</value>
   </data>
   <data name="groupControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 0</value>
+    <value>505, 0</value>
   </data>
   <data name="groupControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="groupControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 459</value>
+    <value>221, 459</value>
   </data>
   <data name="groupControl2.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -826,10 +826,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>5, 13</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>605, 459</value>
+    <value>726, 459</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>

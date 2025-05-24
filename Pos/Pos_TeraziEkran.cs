@@ -24,7 +24,7 @@ namespace Pos
 
         private async Task YukleAsync()
         {
-            Param.Param_Yukle();
+            //Param.Param_Yukle();
             Param_ComPort = Param.Param_ComPort;
             Param_BaudRate = Convert.ToInt32(Param.Param_BaudRate);
             Param_DataBits = Convert.ToInt32(Param.Param_DataBits);
@@ -73,7 +73,7 @@ namespace Pos
             }
 
             serialPort1.DataReceived += new SerialDataReceivedEventHandler(Okuma);
-            await Task.Delay(3000);
+            //await Task.Delay(3000);
             Baglan();
 
         }
@@ -110,6 +110,10 @@ namespace Pos
         //    }
         //}
 
+
+
+
+        // yedek 23.05.2025
         public delegate void ricdegis(string text);
 
         public void ekranabas(string s)
@@ -130,6 +134,8 @@ namespace Pos
         int controller = 1;
         private void Baglan()
         {
+            this.Text = "Bağlanıyor... Lütfen Bekleyiniz....!";
+            this.BackColor = Color.Gray;
             if (controller > 0)
             {
                 controller *= -1;
@@ -144,11 +150,13 @@ namespace Pos
                 catch
                 {
                     this.Text = "Baglantı Yok...";
-                    //this.BackColor = Color.Red;
+                    //this.BackColor = Color.Red; 
+                    this.BackColor = Color.Red;
                     return;
                 }
 
                 this.Text = "Baglandı...     ";
+                this.BackColor = Color.LimeGreen;
                 //this.BackColor = Color.LightGreen;
 
 
@@ -201,6 +209,6 @@ namespace Pos
             txt_Sayi.Focus();
         }
 
-        
+
     }
 }
