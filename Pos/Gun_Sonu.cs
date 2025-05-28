@@ -373,17 +373,19 @@ where  Rsat_Tarih='" + tarih + @"' AND Satis.Rsat_Ba = 'B' )  declare @Katsayi d
 WITH(NOLOCK)  LEFT JOIN Pos_Kodlar as  kodlar 
 WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' 
 where Rsat_Tarih='" + tarih + @"' and Pkod_Ozelkod <> '4' and Rsat_Ba = 'A'  group by Pkod_Fatura) / @Fis_Tutar )  
-if @Katsayi = 0 begin set @Katsayi = 1 end  SELECT MIN(convert(date,Rsat_Tarih)) as Rsat_Tarih,
-Kodlar_Ad + ' BEDELI' as Aciklama,
+if @Katsayi = 0 begin set @Katsayi = 1 end  
+SELECT s.Kodlar_Ad,s.Kodlar_Kod,MIN(convert(date,Rsat_Tarih)) as Rsat_Tarih,
+ss.Kodlar_Ad + ' BEDELI' as Aciklama,
 MIN(Rsat_Kdvoran) as Rec_Kdv,      
 ((SUM(Rsat_Tutar) * 100 / (100 + MIN(Rsat_Kdvoran))) * MIN(Rsat_Kdvoran) / 100) * @Katsayi as Kdv,       
 (SUM(Rsat_Tutar) * 100 / (100 + MIN(Rsat_Kdvoran))) * @Katsayi as Net,      
 (SUM(Rsat_Tutar)) * @Katsayi as Tutar
 FROM Cst_Recete_Satis WITH(NOLOCK)      
 LEFT JOIN Cst_Recete WITH(NOLOCK) on Rec_Genelkod = Rsat_Recete      
-LEFT JOIN Stok_Kodlar WITH(NOLOCK) on Rec_Urungrup = Kodlar_Kod AND Kodlar_Sinif = '10'  
+LEFT JOIN Stok_Kodlar as ss WITH(NOLOCK) on Rec_Urungrup = Kodlar_Kod AND Kodlar_Sinif = '10'  
+LEFT JOIN Stok_Kodlar as s  on Rsat_Departman=s.Kodlar_Kod and s.Kodlar_Sinif = 01
 WHERE Rsat_Tarih='" + tarih + @"' AND Rsat_Ba = 'B' and Rsat_Satistip<>'O'
-GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
+GROUP BY s.Kodlar_Ad,s.Kodlar_Kod,ss.Kodlar_Ad,Rsat_Departman  ORDER BY s.Kodlar_Ad desc";
 
                 DataTable dataTable = dbtools.SelectTableR(query);
 
