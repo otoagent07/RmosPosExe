@@ -14706,42 +14706,6 @@ Sıfır Yap</value>
   <data name="&gt;&gt;textEdit26.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
-  <data name="look_PrintAyar_Posta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 62</value>
-  </data>
-  <data name="look_PrintAyar_Posta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="look_PrintAyar_Posta.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
-    <value>Combo</value>
-  </data>
-  <data name="look_PrintAyar_Posta.Properties.Columns" xml:space="preserve">
-    <value>Pkod_Ad</value>
-  </data>
-  <data name="look_PrintAyar_Posta.Properties.Columns1" xml:space="preserve">
-    <value>Pkod_Ad</value>
-  </data>
-  <data name="look_PrintAyar_Posta.Properties.NullText" xml:space="preserve">
-    <value>Seciniz...</value>
-  </data>
-  <data name="look_PrintAyar_Posta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="look_PrintAyar_Posta.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;look_PrintAyar_Posta.Name" xml:space="preserve">
-    <value>look_PrintAyar_Posta</value>
-  </data>
-  <data name="&gt;&gt;look_PrintAyar_Posta.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;look_PrintAyar_Posta.Parent" xml:space="preserve">
-    <value>tab_PrintAyarlari</value>
-  </data>
-  <data name="&gt;&gt;look_PrintAyar_Posta.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
   <data name="textEdit117.EditValue" xml:space="preserve">
     <value>Posta</value>
   </data>
@@ -14767,7 +14731,7 @@ Sıfır Yap</value>
     <value>tab_PrintAyarlari</value>
   </data>
   <data name="&gt;&gt;textEdit117.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>31</value>
   </data>
   <data name="look_PrintAyar_dep.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 39</value>
@@ -14803,7 +14767,7 @@ Sıfır Yap</value>
     <value>tab_PrintAyarlari</value>
   </data>
   <data name="&gt;&gt;look_PrintAyar_dep.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>32</value>
   </data>
   <data name="textEdit29.EditValue" xml:space="preserve">
     <value>Departman</value>
@@ -14830,7 +14794,7 @@ Sıfır Yap</value>
     <value>tab_PrintAyarlari</value>
   </data>
   <data name="&gt;&gt;textEdit29.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>33</value>
   </data>
   <data name="look_PrintAyar_AltGrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 108</value>
@@ -14866,7 +14830,7 @@ Sıfır Yap</value>
     <value>tab_PrintAyarlari</value>
   </data>
   <data name="&gt;&gt;look_PrintAyar_AltGrup.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>34</value>
   </data>
   <data name="cmb_PrintAyar_Printer.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 131</value>
@@ -14893,6 +14857,36 @@ Sıfır Yap</value>
     <value>tab_PrintAyarlari</value>
   </data>
   <data name="&gt;&gt;cmb_PrintAyar_Printer.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="look_PrintAyar_Posta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 62</value>
+  </data>
+  <data name="look_PrintAyar_Posta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="look_PrintAyar_Posta.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="look_PrintAyar_Posta.Properties.NullText" xml:space="preserve">
+    <value>Seciniz...</value>
+  </data>
+  <data name="look_PrintAyar_Posta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="look_PrintAyar_Posta.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;look_PrintAyar_Posta.Name" xml:space="preserve">
+    <value>look_PrintAyar_Posta</value>
+  </data>
+  <data name="&gt;&gt;look_PrintAyar_Posta.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_PrintAyar_Posta.Parent" xml:space="preserve">
+    <value>tab_PrintAyarlari</value>
+  </data>
+  <data name="&gt;&gt;look_PrintAyar_Posta.ZOrder" xml:space="preserve">
     <value>36</value>
   </data>
   <data name="tab_PrintAyarlari.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">

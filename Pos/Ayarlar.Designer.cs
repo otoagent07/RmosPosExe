@@ -583,7 +583,6 @@
             this.textEdit30 = new DevExpress.XtraEditors.TextEdit();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textEdit26 = new DevExpress.XtraEditors.TextEdit();
-            this.look_PrintAyar_Posta = new DevExpress.XtraEditors.LookUpEdit();
             this.textEdit117 = new DevExpress.XtraEditors.TextEdit();
             this.look_PrintAyar_dep = new DevExpress.XtraEditors.LookUpEdit();
             this.textEdit29 = new DevExpress.XtraEditors.TextEdit();
@@ -1300,6 +1299,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.look_PrintAyar_Posta = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1699,7 +1699,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit30.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit26.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_Posta.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit117.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_dep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit29.Properties)).BeginInit();
@@ -2181,6 +2180,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_Posta.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -6409,12 +6409,12 @@
             this.tab_PrintAyarlari.Controls.Add(this.textEdit30);
             this.tab_PrintAyarlari.Controls.Add(this.textBox1);
             this.tab_PrintAyarlari.Controls.Add(this.textEdit26);
-            this.tab_PrintAyarlari.Controls.Add(this.look_PrintAyar_Posta);
             this.tab_PrintAyarlari.Controls.Add(this.textEdit117);
             this.tab_PrintAyarlari.Controls.Add(this.look_PrintAyar_dep);
             this.tab_PrintAyarlari.Controls.Add(this.textEdit29);
             this.tab_PrintAyarlari.Controls.Add(this.look_PrintAyar_AltGrup);
             this.tab_PrintAyarlari.Controls.Add(this.cmb_PrintAyar_Printer);
+            this.tab_PrintAyarlari.Controls.Add(this.look_PrintAyar_Posta);
             resources.ApplyResources(this.tab_PrintAyarlari, "tab_PrintAyarlari");
             this.tab_PrintAyarlari.Name = "tab_PrintAyarlari";
             // 
@@ -6848,23 +6848,6 @@
             this.textEdit26.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit26.Properties.ReadOnly = true;
             this.textEdit26.TabStop = false;
-            // 
-            // look_PrintAyar_Posta
-            // 
-            this.look_PrintAyar_Posta.EnterMoveNextControl = true;
-            resources.ApplyResources(this.look_PrintAyar_Posta, "look_PrintAyar_Posta");
-            this.look_PrintAyar_Posta.Name = "look_PrintAyar_Posta";
-            this.look_PrintAyar_Posta.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.look_PrintAyar_Posta.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_PrintAyar_Posta.Properties.Buttons"))))});
-            this.look_PrintAyar_Posta.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
-            this.look_PrintAyar_Posta.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_PrintAyar_Posta.Properties.Columns"), resources.GetString("look_PrintAyar_Posta.Properties.Columns1"))});
-            this.look_PrintAyar_Posta.Properties.DropDownRows = 10;
-            this.look_PrintAyar_Posta.Properties.NullText = resources.GetString("look_PrintAyar_Posta.Properties.NullText");
-            this.look_PrintAyar_Posta.Properties.ShowFooter = false;
-            this.look_PrintAyar_Posta.Properties.ShowHeader = false;
-            this.look_PrintAyar_Posta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.look_PrintAyar_Posta_KeyDown);
             // 
             // textEdit117
             // 
@@ -12964,6 +12947,17 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // look_PrintAyar_Posta
+            // 
+            resources.ApplyResources(this.look_PrintAyar_Posta, "look_PrintAyar_Posta");
+            this.look_PrintAyar_Posta.Name = "look_PrintAyar_Posta";
+            this.look_PrintAyar_Posta.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.look_PrintAyar_Posta.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_PrintAyar_Posta.Properties.Buttons"))))});
+            this.look_PrintAyar_Posta.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
+            this.look_PrintAyar_Posta.Properties.NullText = resources.GetString("look_PrintAyar_Posta.Properties.NullText");
+            this.look_PrintAyar_Posta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.look_PrintAyar_Posta_KeyDown);
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13385,7 +13379,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit30.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit26.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_Posta.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit117.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_dep.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit29.Properties)).EndInit();
@@ -13886,6 +13879,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_Posta.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14618,7 +14612,6 @@
         private DevExpress.XtraEditors.CheckEdit chk_Kul_Ikram;
         private DevExpress.XtraEditors.CheckEdit chk_Prm_PaketForm;
         private DevExpress.XtraEditors.CheckEdit chk_Prm_PaketKisi;
-        private DevExpress.XtraEditors.LookUpEdit look_PrintAyar_Posta;
         private DevExpress.XtraEditors.TextEdit textEdit117;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn60;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn105;
@@ -15162,5 +15155,6 @@
         private DevExpress.XtraEditors.CheckEdit coklugunsonu;
         private DevExpress.XtraEditors.CheckEdit ingenico2;
         private DevExpress.XtraEditors.CheckEdit Param_StokAnlikAtmasin;
+        private DevExpress.XtraEditors.CheckedComboBoxEdit look_PrintAyar_Posta;
     }
 }

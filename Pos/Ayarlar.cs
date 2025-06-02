@@ -1290,11 +1290,11 @@ namespace Pos
                     + " '" + Param_ParaUstuIngenico.Checked + "','" + Param_SatisTabloGonderi.EditValue + "','" + Param_SatisTabloID.EditValue + "','" + Param_SatisTabloAktif.Checked + "','" + Param_AcilistaMenu.Checked + "','" + Param_IngenicoSPR.Checked + "','" + Param_SiparisFisFont.Checked + "', "
                     + " '" + Param_HizliSatisCekAc.Checked + "','" + Param_KartfGBCheckOut.Checked + "','" + Param_YeniHesapDkm.Checked + "','" + Param_YeniSiparisDkm.Checked + "','" + Param_OdaKrediCompOdenmez.Checked + "','" + Param_KurTransfer.Checked + "', "
                     + " '" + Param_CallCenterPaket.Checked + "','" + Param_PaketDipTotal.Checked + "','" + Param_HesapKapamaAds.Checked + "','" + Param_HesapDkmAciklama.Checked + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "','" + Param_AndroGeriYazdir.Checked + "','" + Param_PaketKucukEkran.Checked + "','" + Param_GetirTest.Checked + "','" + Param_GetirOtomatikOnay.Checked + "','" + Param_SatisCikisButton.Checked + "','" + Param_nfcBarkodAktif.Checked + "','" + Param_ParcaliMasaAktif.Checked + "','" + yazdirilmamissiparis.Checked + "','" + masamusait.Checked + "','" + masatakiphesappasif.Checked + "','" + kisivegarsonbirkeresoraktif.Checked + "','" + satirsilfiscikmasinaktif.Checked + "','" + onburoikramsifiryazaktif.Checked + "','" + txtKartnoSayisi.Text + "','" + cariindirimAktif.Checked + "','" + lookUpEdit_tipbox.EditValue + "','" + hesapFisQr.Checked + "','" + masatrTutSurukle.Checked + "','" + servispayFooterda.Checked + "','" + servispayOdenmezIkramSil.Checked + "','" + txtSiparisTekrarPrintName.Text + "','" + tumPrinter.Checked + "','" + urunAdinaOdaklan.Checked + "','" + ikinciEkranAktif.Checked + "','" + otomatikOdenmez.Checked + "','" + mobilCallerIdAktif.Checked + "','" + mobileCallerIdMacAdres.Text
-                    + "','" + hesapFisQrFisno.Checked + "','" + paketotohesapkapat.Checked + "','" + sepetaktif.Checked + "','" + merkezaktif.Checked 
-                    + "','" + ingenico2.Checked + "'" 
-                    + "','" + Param_StokAnlikAtmasin.Checked + "'" 
-                    +""+""
-                    +"  )");
+                    + "','" + hesapFisQrFisno.Checked + "','" + paketotohesapkapat.Checked + "','" + sepetaktif.Checked + "','" + merkezaktif.Checked
+                    + "','" + ingenico2.Checked + "'"
+                    + "','" + Param_StokAnlikAtmasin.Checked + "'"
+                    + "" + ""
+                    + "  )");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_Genel, Log.Log_Islem.Kaydet, "Genel Parametreler Kaydedildi", String.Empty, "1");
             }
@@ -1341,7 +1341,7 @@ namespace Pos
                        + " Param_PaketDipTotal = '" + Param_PaketDipTotal.Checked + "', Param_HesapKapamaAds = '" + Param_HesapKapamaAds.Checked + "',Param_HesapDkmAciklama = '" + Param_HesapDkmAciklama.Checked + "',Param_OzelMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_OzelMasaRengi.Color) + "' , Param_RezMasaRengi = '" + System.Drawing.ColorTranslator.ToHtml(Pkod_RezMasaRengi.Color) + "',Param_AndroGeriYazdir = '" + Param_AndroGeriYazdir.Checked + "',Param_PaketKucukEkran = '" + Param_PaketKucukEkran.Checked + "',Param_GetirTest = '" + Param_GetirTest.Checked + "',Param_GetirOtomatikOnay = '" + Param_GetirOtomatikOnay.Checked + "',Param_SatisCikisButton = '" + Param_SatisCikisButton.Checked + "',Param_nfcBarkodAktif = '" + Param_nfcBarkodAktif.Checked + "',Param_ParcaliMasaAktif = '" + Param_ParcaliMasaAktif.Checked + "',yazdirilmamissiparis = '" + yazdirilmamissiparis.Checked + "',masamusait = '" + masamusait.Checked + "',masatakiphesappasif = '" + masatakiphesappasif.Checked + "',kisivegarsonbirkeresoraktif = '" + kisivegarsonbirkeresoraktif.Checked + "',satirsilfiscikmasinaktif = '" + satirsilfiscikmasinaktif.Checked + "',onburoikramsifiryazaktif = '" + onburoikramsifiryazaktif.Checked + "',kartnoSayisi = '" + txtKartnoSayisi.Text + "',cariindirimAktif = '" + cariindirimAktif.Checked + "',tipboxReceteKod = '" + lookUpEdit_tipbox.EditValue.ToString() + "',hesapFisQr = '" + hesapFisQr.Checked + "',masatrTutSurukle = '" + masatrTutSurukle.Checked + "',servispayFooterda = '" + servispayFooterda.Checked + "',servispayOdenmezIkramSil = '" + servispayOdenmezIkramSil.Checked + "',siparisTekrarPrintName = '" + txtSiparisTekrarPrintName.Text + "',tumPrinter = '" + tumPrinter.Checked + "',urunAdinaOdaklan = '" + urunAdinaOdaklan.Checked + "',ikinciEkranAktif = '" + ikinciEkranAktif.Checked + "',otomatikOdenmez = '" + otomatikOdenmez.Checked + "',mobilCallerIdAktif = '" + mobilCallerIdAktif.Checked + "',mobileCallerIdMacAdres = '" + mobileCallerIdMacAdres.Text + "',hesapFisQrFisno = '" + hesapFisQrFisno.Checked + "',paketotohesapkapat = '" + paketotohesapkapat.Checked
                        + "'" +
                        ",sepetaktif = '" + sepetaktif.Checked + "' " +
-                       ",merkezaktif = '" + merkezaktif.Checked 
+                       ",merkezaktif = '" + merkezaktif.Checked
                        + "',ingenico2 = '" + ingenico2.Checked + "'"
                        + ",Param_StokAnlikAtmasin = '" + Param_StokAnlikAtmasin.Checked + "'"
                        + " where Param_Id = '1' ";
@@ -1592,35 +1592,59 @@ namespace Pos
         #region Print Ayarları
         private void btn_PrintAyar_Kaydet_Click(object sender, EventArgs e)
         {
-            if (Convert.ToString(look_PrintAyar_dep.EditValue) == "")
+            // Convert.ToString(look_PrintAyar_Posta.EditValue) 
+
+            foreach (CheckedListBoxItem item in look_PrintAyar_Posta.Properties.Items)
             {
-                MessageBox.Show(res_man.GetString("Departman Bos Geçilemez...?"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Question);
-                return;
+                if (item.CheckState == CheckState.Checked)
+                {
+                    string deger = item.Value.ToString();
+                    printKaydet(deger);
+
+                }
             }
-            if (Convert.ToString(look_PrintAyar_AnaGrup.EditValue) == "")
-            {
-                MessageBox.Show(res_man.GetString("Ana Grup Boş Geçilemez...?"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Question);
-                return;
-            }
 
-            DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and  Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + Convert.ToString(look_PrintAyar_Posta.EditValue) + "' and Pkod_Ad = '" + Convert.ToString(cmb_PrintAyar_Printer.Text) + "' ");
-            if (dt.Rows.Count < 1)
-            {
-                dbtools.execcmdR("INSERT INTO Pos_Kodlar (Pkod_Kod, Pkod_Ustgrup,Pkod_Altgrup,Pkod_Ad,Pkod_Sinif,Pkod_Satir,Pkod_Printer,Pkod_Ip,Pkod_Port,Pkod_Ekran,Pkod_Posta,Pkod_AbuyerPr,Pkod_AbuyerPr2,Pkod_AbuyerPr3,Pkod_AbuyerPr4,Pkod_AbuyerIP,Pkod_AbuyerPort,tumPrinter) VALUES ('" + look_PrintAyar_dep.EditValue + "','" + look_PrintAyar_AnaGrup.EditValue + "','" + look_PrintAyar_AltGrup.EditValue + "','" + cmb_PrintAyar_Printer.EditValue + "','16','" + spn_PrintAyar_BosSatir.Value + "','" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "','" + txt_PrintAyar_Ip.Text + "'," + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + ",'" + txt_PrintAyar_Ekran.Text + "','" + Convert.ToString(look_PrintAyar_Posta.EditValue) + "','" + cmb_PrintAyar_AbuyerPr.EditValue + "','" + cmb_PrintAyar_AbuyerPr2.EditValue + "','" + cmb_PrintAyar_AbuyerPr3.EditValue + "','" + cmb_PrintAyar_AbuyerPr4.EditValue + "','" + Pkod_AbuyerIP.Text + "','" + Pkod_AbuyerPort.Text + "','" + checkEditTumPrinter.Checked + "')");
-
-
-
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Kaydet, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + Convert.ToString(look_PrintAyar_AltGrup.EditValue) + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
-            }
-            else
-            {
-                dbtools.execcmdR("Update Pos_Kodlar set Pkod_Ad =  '" + cmb_PrintAyar_Printer.EditValue + "', Pkod_Satir = '" + spn_PrintAyar_BosSatir.Value + "',Pkod_Printer = '" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "',Pkod_Ip = '" + txt_PrintAyar_Ip.Text + "',Pkod_Port = '" + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + "',Pkod_Ekran = '" + txt_PrintAyar_Ekran.Text + "',Pkod_AbuyerPr = '" + cmb_PrintAyar_AbuyerPr.EditValue + "' ,Pkod_AbuyerPr2 = '" + cmb_PrintAyar_AbuyerPr2.EditValue + "',Pkod_AbuyerPr3 = '" + cmb_PrintAyar_AbuyerPr3.EditValue + "' ,Pkod_AbuyerPr4 = '" + cmb_PrintAyar_AbuyerPr4.EditValue + "',Pkod_AbuyerIP = '" + Pkod_AbuyerIP.Text + "',Pkod_AbuyerPort = '" + Pkod_AbuyerPort.EditValue + "',tumPrinter = '" + checkEditTumPrinter.Checked + "'  where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + Convert.ToString(look_PrintAyar_Posta.EditValue) + "' and Pkod_Ad = '" + cmb_PrintAyar_Printer.Text + "' ");
-
-
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Duzelt, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + Convert.ToString(look_PrintAyar_AltGrup.EditValue) + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
-            }
 
             Print_Yenile();
+        }
+
+        public void printKaydet(string postaKod)
+        {
+            try
+            {
+                if (Convert.ToString(look_PrintAyar_dep.EditValue) == "")
+                {
+                    MessageBox.Show(res_man.GetString("Departman Bos Geçilemez...?"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    return;
+                }
+                if (Convert.ToString(look_PrintAyar_AnaGrup.EditValue) == "")
+                {
+                    MessageBox.Show(res_man.GetString("Ana Grup Boş Geçilemez...?"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    return;
+                }
+
+                DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and  Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + postaKod + "' and Pkod_Ad = '" + Convert.ToString(cmb_PrintAyar_Printer.Text) + "' ");
+                if (dt.Rows.Count < 1)
+                {
+                    dbtools.execcmdR("INSERT INTO Pos_Kodlar (Pkod_Kod, Pkod_Ustgrup,Pkod_Altgrup,Pkod_Ad,Pkod_Sinif,Pkod_Satir,Pkod_Printer,Pkod_Ip,Pkod_Port,Pkod_Ekran,Pkod_Posta,Pkod_AbuyerPr,Pkod_AbuyerPr2,Pkod_AbuyerPr3,Pkod_AbuyerPr4,Pkod_AbuyerIP,Pkod_AbuyerPort,tumPrinter) VALUES ('" + look_PrintAyar_dep.EditValue + "','" + look_PrintAyar_AnaGrup.EditValue + "','" + look_PrintAyar_AltGrup.EditValue + "','" + cmb_PrintAyar_Printer.EditValue + "','16','" + spn_PrintAyar_BosSatir.Value + "','" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "','" + txt_PrintAyar_Ip.Text + "'," + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + ",'" + txt_PrintAyar_Ekran.Text + "','" + postaKod + "','" + cmb_PrintAyar_AbuyerPr.EditValue + "','" + cmb_PrintAyar_AbuyerPr2.EditValue + "','" + cmb_PrintAyar_AbuyerPr3.EditValue + "','" + cmb_PrintAyar_AbuyerPr4.EditValue + "','" + Pkod_AbuyerIP.Text + "','" + Pkod_AbuyerPort.Text + "','" + checkEditTumPrinter.Checked + "')");
+
+
+
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Kaydet, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + Convert.ToString(look_PrintAyar_AltGrup.EditValue) + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
+                }
+                else
+                {
+                    dbtools.execcmdR("Update Pos_Kodlar set Pkod_Ad =  '" + cmb_PrintAyar_Printer.EditValue + "', Pkod_Satir = '" + spn_PrintAyar_BosSatir.Value + "',Pkod_Printer = '" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "',Pkod_Ip = '" + txt_PrintAyar_Ip.Text + "',Pkod_Port = '" + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + "',Pkod_Ekran = '" + txt_PrintAyar_Ekran.Text + "',Pkod_AbuyerPr = '" + cmb_PrintAyar_AbuyerPr.EditValue + "' ,Pkod_AbuyerPr2 = '" + cmb_PrintAyar_AbuyerPr2.EditValue + "',Pkod_AbuyerPr3 = '" + cmb_PrintAyar_AbuyerPr3.EditValue + "' ,Pkod_AbuyerPr4 = '" + cmb_PrintAyar_AbuyerPr4.EditValue + "',Pkod_AbuyerIP = '" + Pkod_AbuyerIP.Text + "',Pkod_AbuyerPort = '" + Pkod_AbuyerPort.EditValue + "',tumPrinter = '" + checkEditTumPrinter.Checked + "'  where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + postaKod + "' and Pkod_Ad = '" + cmb_PrintAyar_Printer.Text + "' ");
+
+
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Duzelt, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + Convert.ToString(look_PrintAyar_AltGrup.EditValue) + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void look_PrintAyar_AnaGrup_EditValueChanged(object sender, EventArgs e)
@@ -1689,6 +1713,11 @@ namespace Pos
 
         private void btn_PrintAyar_Sil_Click(object sender, EventArgs e)
         {
+            printSil();
+        }
+
+        public void printSil()
+        {
             try
             {
                 DialogResult c;
@@ -1702,11 +1731,10 @@ namespace Pos
             }
             catch (Exception ex)
             {
-                Console.WriteLine("HATA " + ex.Message);
+                MessageBox.Show("HATA " + ex.Message);
             }
 
         }
-
         private void gridView5_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
             if (gridView5.RowCount > 0)
@@ -2908,7 +2936,7 @@ namespace Pos
                        + " '" + chk_SiparisDuzelt.Checked + "', "
                        + " '" + lookUpEditYazici.EditValue + "', "
                        + " '" + lookUpEditHesapDokYazici.EditValue + "', "
-                       + " '" + cariTahsilatlari.Checked +  "', "
+                       + " '" + cariTahsilatlari.Checked + "', "
                        + " '" + servisPayiKdvOran.Checked + "'" +
                        ") ");
                 }
@@ -3080,7 +3108,7 @@ namespace Pos
                         + ",postema = '" + postema.EditValue + "' "
                         + ",otoDirekSatis = '" + otoDirekSatis.Checked + "' "
                         + ",merkezsubeaktif = '" + merkezsubeaktif.Checked + "' "
-                        +  ",coklugunsonu = '" + coklugunsonu.Checked + "' "
+                        + ",coklugunsonu = '" + coklugunsonu.Checked + "' "
 
                         + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
 
