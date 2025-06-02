@@ -87,6 +87,7 @@
             this.btn_Prm_Kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.Param_StokAnlikAtmasin = new DevExpress.XtraEditors.CheckEdit();
             this.btnIndexYenile = new DevExpress.XtraEditors.SimpleButton();
             this.btnRecAlfebetik = new DevExpress.XtraEditors.SimpleButton();
             this.btnSqlStopStart = new DevExpress.XtraEditors.SimpleButton();
@@ -1310,6 +1311,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
             this.xtraTabControl3.SuspendLayout();
             this.xtraTabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Param_StokAnlikAtmasin.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Hesap_DovizOzetToplam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Prm_MasaacanGarson.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_HesapSor.Properties)).BeginInit();
@@ -2667,6 +2669,7 @@
             // 
             // xtraTabPage5
             // 
+            this.xtraTabPage5.Controls.Add(this.Param_StokAnlikAtmasin);
             this.xtraTabPage5.Controls.Add(this.btnIndexYenile);
             this.xtraTabPage5.Controls.Add(this.btnRecAlfebetik);
             this.xtraTabPage5.Controls.Add(this.btnSqlStopStart);
@@ -2760,6 +2763,12 @@
             this.xtraTabPage5.Controls.Add(this.chk_Prm_MiktarDuzelt);
             resources.ApplyResources(this.xtraTabPage5, "xtraTabPage5");
             this.xtraTabPage5.Name = "xtraTabPage5";
+            // 
+            // Param_StokAnlikAtmasin
+            // 
+            resources.ApplyResources(this.Param_StokAnlikAtmasin, "Param_StokAnlikAtmasin");
+            this.Param_StokAnlikAtmasin.Name = "Param_StokAnlikAtmasin";
+            this.Param_StokAnlikAtmasin.Properties.Caption = resources.GetString("Param_StokAnlikAtmasin.Properties.Caption");
             // 
             // btnIndexYenile
             // 
@@ -12977,6 +12986,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
             this.xtraTabControl3.ResumeLayout(false);
             this.xtraTabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Param_StokAnlikAtmasin.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Hesap_DovizOzetToplam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Prm_MasaacanGarson.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_HesapSor.Properties)).EndInit();
@@ -15151,5 +15161,6 @@
         private DevExpress.XtraEditors.CheckEdit servisPayiKdvOran;
         private DevExpress.XtraEditors.CheckEdit coklugunsonu;
         private DevExpress.XtraEditors.CheckEdit ingenico2;
+        private DevExpress.XtraEditors.CheckEdit Param_StokAnlikAtmasin;
     }
 }

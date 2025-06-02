@@ -272,7 +272,12 @@ ALTER TABLE Pos_Cari ALTER COLUMN Cari_YS_AddressId nvarchar(2000);
 
 IF COL_LENGTH('Pos_Param', 'Param_SatisCikisButton') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_SatisCikisButton] bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'U_BackUser') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [U_BackUser] nvarchar(50) END;
+
+
 IF COL_LENGTH('Pos_Param', 'Param_nfcBarkodAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_nfcBarkodAktif] bit END;
+
+IF COL_LENGTH('Pos_Param', 'Param_StokAnlikAtmasin') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_StokAnlikAtmasin] bit END;
+
 
 IF COL_LENGTH('Pos_Param', 'Param_ParcaliMasaAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD [Param_ParcaliMasaAktif] bit END;
 IF COL_LENGTH('Pos_Masa', 'Masa_Parcali') IS NULL BEGIN ALTER TABLE Pos_Masa ADD [Masa_Parcali] bit END;
