@@ -353,6 +353,7 @@
             this.dateEditRap3BitTar = new DevExpress.XtraEditors.DateEdit();
             this.dateEditRap3BasTar = new DevExpress.XtraEditors.DateEdit();
             this.btnCariRap3Listele = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCekDetayPrint = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Cari_Hesap.SuspendLayout();
@@ -575,6 +576,7 @@
             // 
             // tab_Cari_Hesap
             // 
+            this.tab_Cari_Hesap.Controls.Add(this.btnCekDetayPrint);
             this.tab_Cari_Hesap.Controls.Add(this.dateEditCariBit);
             this.tab_Cari_Hesap.Controls.Add(this.dateEditCariBas);
             this.tab_Cari_Hesap.Controls.Add(this.simpleButton10);
@@ -3528,6 +3530,17 @@
             this.btnCariRap3Listele.Name = "btnCariRap3Listele";
             this.btnCariRap3Listele.Click += new System.EventHandler(this.btnCariRap3Listele_Click);
             // 
+            // btnCekDetayPrint
+            // 
+            this.btnCekDetayPrint.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton21.Appearance.Font")));
+            this.btnCekDetayPrint.Appearance.Options.UseFont = true;
+            this.btnCekDetayPrint.Appearance.Options.UseTextOptions = true;
+            this.btnCekDetayPrint.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btnCekDetayPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton21.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCekDetayPrint, "btnCekDetayPrint");
+            this.btnCekDetayPrint.Name = "btnCekDetayPrint";
+            this.btnCekDetayPrint.Click += new System.EventHandler(this.btnCekDetayPrint_Click);
+            // 
             // CariHesap
             // 
             resources.ApplyResources(this, "$this");
@@ -4041,5 +4054,6 @@
         private System.Windows.Forms.RadioButton adres2Aktif;
         private System.Windows.Forms.RadioButton adres1Aktif;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn81;
+        private DevExpress.XtraEditors.SimpleButton btnCekDetayPrint;
     }
 }

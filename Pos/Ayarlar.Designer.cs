@@ -530,6 +530,8 @@
             this.txt_PrintGrup_Aciklama = new DevExpress.XtraEditors.TextEdit();
             this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
             this.tab_PrintAyarlari = new DevExpress.XtraTab.XtraTabPage();
+            this.btnPrintYenile2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnTumunuSilPrint = new DevExpress.XtraEditors.SimpleButton();
             this.checkEditTumPrinter = new DevExpress.XtraEditors.CheckEdit();
             this.Pkod_AbuyerPort = new DevExpress.XtraEditors.SpinEdit();
             this.textEdit178 = new DevExpress.XtraEditors.TextEdit();
@@ -586,8 +588,9 @@
             this.textEdit117 = new DevExpress.XtraEditors.TextEdit();
             this.look_PrintAyar_dep = new DevExpress.XtraEditors.LookUpEdit();
             this.textEdit29 = new DevExpress.XtraEditors.TextEdit();
-            this.look_PrintAyar_AltGrup = new DevExpress.XtraEditors.LookUpEdit();
             this.cmb_PrintAyar_Printer = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.look_PrintAyar_Posta = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            this.look_PrintAyar_AltGrup = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.tab_PrinterTanim = new DevExpress.XtraTab.XtraTabPage();
             this.spn_TanimEk3_Port = new DevExpress.XtraEditors.SpinEdit();
             this.txt_TanimEk3_Ip = new DevExpress.XtraEditors.TextEdit();
@@ -1241,7 +1244,6 @@
             this.gridColumn96 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn97 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit110 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_AciklamaItem_Ad = new DevExpress.XtraEditors.TextEdit();
             this.textEdit112 = new DevExpress.XtraEditors.TextEdit();
             this.txt_AciklamaItem_Kod = new DevExpress.XtraEditors.TextEdit();
             this.textBox17 = new System.Windows.Forms.TextBox();
@@ -1299,7 +1301,9 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.look_PrintAyar_Posta = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            this.txt_AciklamaItem_Ad = new DevExpress.XtraEditors.MemoEdit();
+            this.btnParcaliMasalariSil = new DevExpress.XtraEditors.SimpleButton();
+            this.btnMasalariYenile2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1702,8 +1706,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit117.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_dep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit29.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_AltGrup.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_PrintAyar_Printer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_Posta.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_AltGrup.Properties)).BeginInit();
             this.tab_PrinterTanim.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spn_TanimEk3_Port.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TanimEk3_Ip.Properties)).BeginInit();
@@ -2149,7 +2154,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grd_AciklamaItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit110.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Ad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit112.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Kod.Properties)).BeginInit();
             this.OdemeTipleri.SuspendLayout();
@@ -2180,7 +2184,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_Posta.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Ad.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -6378,6 +6382,8 @@
             // 
             // tab_PrintAyarlari
             // 
+            this.tab_PrintAyarlari.Controls.Add(this.btnPrintYenile2);
+            this.tab_PrintAyarlari.Controls.Add(this.btnTumunuSilPrint);
             this.tab_PrintAyarlari.Controls.Add(this.checkEditTumPrinter);
             this.tab_PrintAyarlari.Controls.Add(this.Pkod_AbuyerPort);
             this.tab_PrintAyarlari.Controls.Add(this.textEdit178);
@@ -6412,11 +6418,27 @@
             this.tab_PrintAyarlari.Controls.Add(this.textEdit117);
             this.tab_PrintAyarlari.Controls.Add(this.look_PrintAyar_dep);
             this.tab_PrintAyarlari.Controls.Add(this.textEdit29);
-            this.tab_PrintAyarlari.Controls.Add(this.look_PrintAyar_AltGrup);
             this.tab_PrintAyarlari.Controls.Add(this.cmb_PrintAyar_Printer);
             this.tab_PrintAyarlari.Controls.Add(this.look_PrintAyar_Posta);
+            this.tab_PrintAyarlari.Controls.Add(this.look_PrintAyar_AltGrup);
             resources.ApplyResources(this.tab_PrintAyarlari, "tab_PrintAyarlari");
             this.tab_PrintAyarlari.Name = "tab_PrintAyarlari";
+            // 
+            // btnPrintYenile2
+            // 
+            this.btnPrintYenile2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnPrintYenile2.Appearance.Font")));
+            this.btnPrintYenile2.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnPrintYenile2, "btnPrintYenile2");
+            this.btnPrintYenile2.Name = "btnPrintYenile2";
+            this.btnPrintYenile2.Click += new System.EventHandler(this.btnPrintYenile2_Click);
+            // 
+            // btnTumunuSilPrint
+            // 
+            this.btnTumunuSilPrint.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnTumunuSilPrint.Appearance.Font")));
+            this.btnTumunuSilPrint.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnTumunuSilPrint, "btnTumunuSilPrint");
+            this.btnTumunuSilPrint.Name = "btnTumunuSilPrint";
+            this.btnTumunuSilPrint.Click += new System.EventHandler(this.btnTumunuSilPrint_Click);
             // 
             // checkEditTumPrinter
             // 
@@ -6691,6 +6713,8 @@
             this.gridColumn176});
             this.gridView5.GridControl = this.grd_PrintAyar;
             this.gridView5.Name = "gridView5";
+            this.gridView5.OptionsSelection.MultiSelect = true;
+            this.gridView5.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.gridView5.OptionsView.ColumnAutoWidth = false;
             this.gridView5.OptionsView.ShowAutoFilterRow = true;
             this.gridView5.OptionsView.ShowGroupPanel = false;
@@ -6882,22 +6906,6 @@
             this.textEdit29.Properties.ReadOnly = true;
             this.textEdit29.TabStop = false;
             // 
-            // look_PrintAyar_AltGrup
-            // 
-            this.look_PrintAyar_AltGrup.EnterMoveNextControl = true;
-            resources.ApplyResources(this.look_PrintAyar_AltGrup, "look_PrintAyar_AltGrup");
-            this.look_PrintAyar_AltGrup.Name = "look_PrintAyar_AltGrup";
-            this.look_PrintAyar_AltGrup.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.look_PrintAyar_AltGrup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_PrintAyar_AltGrup.Properties.Buttons"))))});
-            this.look_PrintAyar_AltGrup.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
-            this.look_PrintAyar_AltGrup.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("look_PrintAyar_AltGrup.Properties.Columns"), resources.GetString("look_PrintAyar_AltGrup.Properties.Columns1"))});
-            this.look_PrintAyar_AltGrup.Properties.DropDownRows = 25;
-            this.look_PrintAyar_AltGrup.Properties.NullText = resources.GetString("look_PrintAyar_AltGrup.Properties.NullText");
-            this.look_PrintAyar_AltGrup.Properties.ShowFooter = false;
-            this.look_PrintAyar_AltGrup.Properties.ShowHeader = false;
-            // 
             // cmb_PrintAyar_Printer
             // 
             this.cmb_PrintAyar_Printer.EnterMoveNextControl = true;
@@ -6907,6 +6915,27 @@
             this.cmb_PrintAyar_Printer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("cmb_PrintAyar_Printer.Properties.Buttons"))))});
             this.cmb_PrintAyar_Printer.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            // 
+            // look_PrintAyar_Posta
+            // 
+            resources.ApplyResources(this.look_PrintAyar_Posta, "look_PrintAyar_Posta");
+            this.look_PrintAyar_Posta.Name = "look_PrintAyar_Posta";
+            this.look_PrintAyar_Posta.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.look_PrintAyar_Posta.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_PrintAyar_Posta.Properties.Buttons"))))});
+            this.look_PrintAyar_Posta.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
+            this.look_PrintAyar_Posta.Properties.NullText = resources.GetString("look_PrintAyar_Posta.Properties.NullText");
+            this.look_PrintAyar_Posta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.look_PrintAyar_Posta_KeyDown);
+            // 
+            // look_PrintAyar_AltGrup
+            // 
+            resources.ApplyResources(this.look_PrintAyar_AltGrup, "look_PrintAyar_AltGrup");
+            this.look_PrintAyar_AltGrup.Name = "look_PrintAyar_AltGrup";
+            this.look_PrintAyar_AltGrup.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.look_PrintAyar_AltGrup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_PrintAyar_AltGrup.Properties.Buttons"))))});
+            this.look_PrintAyar_AltGrup.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
+            this.look_PrintAyar_AltGrup.Properties.NullText = resources.GetString("look_PrintAyar_AltGrup.Properties.NullText");
             // 
             // tab_PrinterTanim
             // 
@@ -8717,6 +8746,7 @@
             // 
             // tab_Masa_Tanim
             // 
+            this.tab_Masa_Tanim.Controls.Add(this.btnMasalariYenile2);
             this.tab_Masa_Tanim.Controls.Add(this.xtraTabControl4);
             this.tab_Masa_Tanim.Controls.Add(this.btn_MasaTan_TSil);
             this.tab_Masa_Tanim.Controls.Add(this.btn_MasaTan_Cikis);
@@ -8937,6 +8967,7 @@
             // 
             // xtraTabPage10
             // 
+            this.xtraTabPage10.Controls.Add(this.btnParcaliMasalariSil);
             this.xtraTabPage10.Controls.Add(this.textEdit186);
             this.xtraTabPage10.Controls.Add(this.txtParcaliDepartmanSec);
             this.xtraTabPage10.Controls.Add(this.txtParcaliMasaSayisi);
@@ -8986,6 +9017,7 @@
             // 
             this.btn_MasaTan_TSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaTan_TSil.Appearance.Font")));
             this.btn_MasaTan_TSil.Appearance.Options.UseFont = true;
+            this.btn_MasaTan_TSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaTan_TSil.ImageOptions.Image")));
             resources.ApplyResources(this.btn_MasaTan_TSil, "btn_MasaTan_TSil");
             this.btn_MasaTan_TSil.Name = "btn_MasaTan_TSil";
             this.btn_MasaTan_TSil.Click += new System.EventHandler(this.btn_MasaTan_TSil_Click);
@@ -8994,6 +9026,7 @@
             // 
             this.btn_MasaTan_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaTan_Cikis.Appearance.Font")));
             this.btn_MasaTan_Cikis.Appearance.Options.UseFont = true;
+            this.btn_MasaTan_Cikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaTan_Cikis.ImageOptions.Image")));
             resources.ApplyResources(this.btn_MasaTan_Cikis, "btn_MasaTan_Cikis");
             this.btn_MasaTan_Cikis.Name = "btn_MasaTan_Cikis";
             this.btn_MasaTan_Cikis.Click += new System.EventHandler(this.btn_MasaTan_Cikis_Click);
@@ -9002,6 +9035,7 @@
             // 
             this.btn_MasaTan_Sil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaTan_Sil.Appearance.Font")));
             this.btn_MasaTan_Sil.Appearance.Options.UseFont = true;
+            this.btn_MasaTan_Sil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaTan_Sil.ImageOptions.Image")));
             resources.ApplyResources(this.btn_MasaTan_Sil, "btn_MasaTan_Sil");
             this.btn_MasaTan_Sil.Name = "btn_MasaTan_Sil";
             this.btn_MasaTan_Sil.Click += new System.EventHandler(this.btn_MasaTan_Sil_Click);
@@ -9010,6 +9044,7 @@
             // 
             this.btn_MasaTan_Kaydet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaTan_Kaydet.Appearance.Font")));
             this.btn_MasaTan_Kaydet.Appearance.Options.UseFont = true;
+            this.btn_MasaTan_Kaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaTan_Kaydet.ImageOptions.Image")));
             resources.ApplyResources(this.btn_MasaTan_Kaydet, "btn_MasaTan_Kaydet");
             this.btn_MasaTan_Kaydet.Name = "btn_MasaTan_Kaydet";
             this.btn_MasaTan_Kaydet.Click += new System.EventHandler(this.btn_MasaTan_Kaydet_Click);
@@ -12361,13 +12396,13 @@
             // 
             // tab_AciklamaItem
             // 
+            this.tab_AciklamaItem.Controls.Add(this.txt_AciklamaItem_Ad);
             this.tab_AciklamaItem.Controls.Add(this.labelControl16);
             this.tab_AciklamaItem.Controls.Add(this.btn_AciklamaItem_Cikis);
             this.tab_AciklamaItem.Controls.Add(this.btn_AciklamaItem_Sil);
             this.tab_AciklamaItem.Controls.Add(this.btn_AciklamaItem_Kaydet);
             this.tab_AciklamaItem.Controls.Add(this.grd_AciklamaItem);
             this.tab_AciklamaItem.Controls.Add(this.textEdit110);
-            this.tab_AciklamaItem.Controls.Add(this.txt_AciklamaItem_Ad);
             this.tab_AciklamaItem.Controls.Add(this.textEdit112);
             this.tab_AciklamaItem.Controls.Add(this.txt_AciklamaItem_Kod);
             this.tab_AciklamaItem.Controls.Add(this.textBox17);
@@ -12383,7 +12418,9 @@
             // 
             // btn_AciklamaItem_Cikis
             // 
+            this.btn_AciklamaItem_Cikis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
             this.btn_AciklamaItem_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_AciklamaItem_Cikis.Appearance.Font")));
+            this.btn_AciklamaItem_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_AciklamaItem_Cikis.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_AciklamaItem_Cikis, "btn_AciklamaItem_Cikis");
             this.btn_AciklamaItem_Cikis.Name = "btn_AciklamaItem_Cikis";
@@ -12391,7 +12428,9 @@
             // 
             // btn_AciklamaItem_Sil
             // 
+            this.btn_AciklamaItem_Sil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_AciklamaItem_Sil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_AciklamaItem_Sil.Appearance.Font")));
+            this.btn_AciklamaItem_Sil.Appearance.Options.UseBackColor = true;
             this.btn_AciklamaItem_Sil.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_AciklamaItem_Sil, "btn_AciklamaItem_Sil");
             this.btn_AciklamaItem_Sil.Name = "btn_AciklamaItem_Sil";
@@ -12399,7 +12438,9 @@
             // 
             // btn_AciklamaItem_Kaydet
             // 
+            this.btn_AciklamaItem_Kaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btn_AciklamaItem_Kaydet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_AciklamaItem_Kaydet.Appearance.Font")));
+            this.btn_AciklamaItem_Kaydet.Appearance.Options.UseBackColor = true;
             this.btn_AciklamaItem_Kaydet.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_AciklamaItem_Kaydet, "btn_AciklamaItem_Kaydet");
             this.btn_AciklamaItem_Kaydet.Name = "btn_AciklamaItem_Kaydet";
@@ -12444,14 +12485,6 @@
             this.textEdit110.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit110.Properties.ReadOnly = true;
             this.textEdit110.TabStop = false;
-            // 
-            // txt_AciklamaItem_Ad
-            // 
-            this.txt_AciklamaItem_Ad.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_AciklamaItem_Ad, "txt_AciklamaItem_Ad");
-            this.txt_AciklamaItem_Ad.Name = "txt_AciklamaItem_Ad";
-            this.txt_AciklamaItem_Ad.Properties.Appearance.Options.UseFont = true;
-            this.txt_AciklamaItem_Ad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // textEdit112
             // 
@@ -12947,16 +12980,27 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // look_PrintAyar_Posta
+            // txt_AciklamaItem_Ad
             // 
-            resources.ApplyResources(this.look_PrintAyar_Posta, "look_PrintAyar_Posta");
-            this.look_PrintAyar_Posta.Name = "look_PrintAyar_Posta";
-            this.look_PrintAyar_Posta.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.look_PrintAyar_Posta.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("look_PrintAyar_Posta.Properties.Buttons"))))});
-            this.look_PrintAyar_Posta.Properties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F1);
-            this.look_PrintAyar_Posta.Properties.NullText = resources.GetString("look_PrintAyar_Posta.Properties.NullText");
-            this.look_PrintAyar_Posta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.look_PrintAyar_Posta_KeyDown);
+            resources.ApplyResources(this.txt_AciklamaItem_Ad, "txt_AciklamaItem_Ad");
+            this.txt_AciklamaItem_Ad.Name = "txt_AciklamaItem_Ad";
+            // 
+            // btnParcaliMasalariSil
+            // 
+            this.btnParcaliMasalariSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font1")));
+            this.btnParcaliMasalariSil.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnParcaliMasalariSil, "btnParcaliMasalariSil");
+            this.btnParcaliMasalariSil.Name = "btnParcaliMasalariSil";
+            this.btnParcaliMasalariSil.Click += new System.EventHandler(this.btnParcaliMasalariSil_Click);
+            // 
+            // btnMasalariYenile2
+            // 
+            this.btnMasalariYenile2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.btnMasalariYenile2.Appearance.Options.UseFont = true;
+            this.btnMasalariYenile2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMasalariYenile2.ImageOptions.Image")));
+            resources.ApplyResources(this.btnMasalariYenile2, "btnMasalariYenile2");
+            this.btnMasalariYenile2.Name = "btnMasalariYenile2";
+            this.btnMasalariYenile2.Click += new System.EventHandler(this.btnMasalariYenile2_Click);
             // 
             // Ayarlar
             // 
@@ -13382,8 +13426,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit117.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_dep.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit29.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_AltGrup.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmb_PrintAyar_Printer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_Posta.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_AltGrup.Properties)).EndInit();
             this.tab_PrinterTanim.ResumeLayout(false);
             this.tab_PrinterTanim.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spn_TanimEk3_Port.Properties)).EndInit();
@@ -13844,7 +13889,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grd_AciklamaItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit110.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Ad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit112.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Kod.Properties)).EndInit();
             this.OdemeTipleri.ResumeLayout(false);
@@ -13879,7 +13923,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.look_PrintAyar_Posta.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Ad.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -14171,7 +14215,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit26;
         private DevExpress.XtraEditors.LookUpEdit look_PrintAyar_dep;
         private DevExpress.XtraEditors.TextEdit textEdit29;
-        private DevExpress.XtraEditors.LookUpEdit look_PrintAyar_AltGrup;
         private DevExpress.XtraEditors.ComboBoxEdit cmb_PrintAyar_Printer;
         private DevExpress.XtraEditors.CheckEdit checkEdit5;
         private DevExpress.XtraEditors.TextEdit txt_Masa_No2;
@@ -14546,7 +14589,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn96;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn97;
         private DevExpress.XtraEditors.TextEdit textEdit110;
-        public DevExpress.XtraEditors.TextEdit txt_AciklamaItem_Ad;
         private System.Windows.Forms.TextBox textBox17;
         private DevExpress.XtraEditors.TextEdit textEdit112;
         public DevExpress.XtraEditors.TextEdit txt_AciklamaItem_Kod;
@@ -15156,5 +15198,11 @@
         private DevExpress.XtraEditors.CheckEdit ingenico2;
         private DevExpress.XtraEditors.CheckEdit Param_StokAnlikAtmasin;
         private DevExpress.XtraEditors.CheckedComboBoxEdit look_PrintAyar_Posta;
+        private DevExpress.XtraEditors.CheckedComboBoxEdit look_PrintAyar_AltGrup;
+        private DevExpress.XtraEditors.SimpleButton btnTumunuSilPrint;
+        private DevExpress.XtraEditors.SimpleButton btnPrintYenile2;
+        private DevExpress.XtraEditors.MemoEdit txt_AciklamaItem_Ad;
+        private DevExpress.XtraEditors.SimpleButton btnParcaliMasalariSil;
+        private DevExpress.XtraEditors.SimpleButton btnMasalariYenile2;
     }
 }

@@ -145,6 +145,9 @@ namespace Pos
             btnHesapDokum.Enabled = User.G_Hesapdokumu;
             btnOdemeSil.Enabled = User.G_Odemesil;
             btnIndirim.Enabled = User.G_Indirim_Hesap;
+
+            altmasaclick(btnAltMasa1);
+
         }
 
         private void gridViewAna_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
@@ -194,8 +197,7 @@ namespace Pos
 
         }
 
-
-        private void btnAltMasa1_Click(object sender, EventArgs e)
+        public void altmasaclick(object sender)
         {
             try
             {
@@ -222,6 +224,11 @@ namespace Pos
             {
                 RHMesaj.MyMessageError(MyClass, "btnAltMasa1_Click", "", ex);
             }
+        }
+
+        private void btnAltMasa1_Click(object sender, EventArgs e)
+        {
+            altmasaclick(sender);
         }
 
         public void altmasayenile()

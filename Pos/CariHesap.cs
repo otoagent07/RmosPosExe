@@ -41,6 +41,9 @@ namespace Pos
 
         private void Cari_Load(object sender, EventArgs e)
         {
+
+            date_CariHes.Properties.MinValue = Param.Tarih;
+
             dateEditRap3BasTar.EditValue = Param.Tarih;
             dateEditRap3BitTar.EditValue = Param.Tarih;
 
@@ -2073,5 +2076,23 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
 
         }
 
+        private void btnCekDetayPrint_Click(object sender, EventArgs e)
+        {
+            var aa = Convert.ToInt32(gridView9.GetFocusedRowCellValue("Chrk_Cek"));
+            if(aa==0)
+            {
+                MessageBox.Show("Sadece Hesaplar Dökülebilir...!");
+                return;
+            }
+            FisPr pr = new FisPr();
+            if (Param.Param_YeniHesapDkm)
+            {
+                pr.newHesapDokum(true, aa, 0, "* * * HESAP DÖKÜM FİŞİ * * *");
+            }
+            else
+            {
+                pr.HesapDokum(true, aa, 0);
+            }
+        }
     }
 }

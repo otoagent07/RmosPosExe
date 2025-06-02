@@ -788,6 +788,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                             TL = dtMasa.Rows[i]["Rsat_Tutar"].ToString().Trim();
                             if (!TL.Equals(""))
                             {
+                                TL = TurkceParaFormatla(TL);
                                 TL = TL + " ₺";
                             }
                         }
@@ -848,6 +849,24 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                 Cursor.Current = Cursors.Default;
             }
         }
+
+        public static string TurkceParaFormatla(string text)
+        {
+            try
+            {
+                if (decimal.TryParse(text, out decimal value))
+                {
+                    return value.ToString("#,##0.00", new System.Globalization.CultureInfo("tr-TR"));
+                }
+            }
+            catch
+            {
+                // hata olursa işlem yapma
+            }
+            return text;
+        }
+
+
         private void MasaYenileIlkAcilis(int Acik, string filtre = "") // orjinali hiç değişmedi aa
         {
             try
@@ -1142,6 +1161,8 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
                             TL = dtMasa.Rows[i]["Rsat_Tutar"].ToString().Trim();
                             if (!TL.Equals(""))
                             {
+                                TL = TurkceParaFormatla(TL);
+
                                 TL = TL + " ₺";
                             }
                         }

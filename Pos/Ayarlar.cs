@@ -1593,22 +1593,20 @@ namespace Pos
         private void btn_PrintAyar_Kaydet_Click(object sender, EventArgs e)
         {
             // Convert.ToString(look_PrintAyar_Posta.EditValue) 
-
-            foreach (CheckedListBoxItem item in look_PrintAyar_Posta.Properties.Items)
+            // look_PrintAyar_AltGrup.EditValue
+            foreach (var item in look_PrintAyar_Posta.Properties.GetCheckedItems().ToString().Split(','))
             {
-                if (item.CheckState == CheckState.Checked)
+                string posta = item.Trim();
+                foreach (var item1 in look_PrintAyar_AltGrup.Properties.GetCheckedItems().ToString().Split(','))
                 {
-                    string deger = item.Value.ToString();
-                    printKaydet(deger);
-
+                    string altgrup = item1.Trim();
+                    printKaydet(posta, altgrup);
                 }
             }
-
-
             Print_Yenile();
         }
 
-        public void printKaydet(string postaKod)
+        public void printKaydet(string postaKod, string altgrup)
         {
             try
             {
@@ -1623,21 +1621,21 @@ namespace Pos
                     return;
                 }
 
-                DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and  Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + postaKod + "' and Pkod_Ad = '" + Convert.ToString(cmb_PrintAyar_Printer.Text) + "' ");
+                DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + altgrup + "' and  Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + postaKod + "' and Pkod_Ad = '" + Convert.ToString(cmb_PrintAyar_Printer.Text) + "' ");
                 if (dt.Rows.Count < 1)
                 {
-                    dbtools.execcmdR("INSERT INTO Pos_Kodlar (Pkod_Kod, Pkod_Ustgrup,Pkod_Altgrup,Pkod_Ad,Pkod_Sinif,Pkod_Satir,Pkod_Printer,Pkod_Ip,Pkod_Port,Pkod_Ekran,Pkod_Posta,Pkod_AbuyerPr,Pkod_AbuyerPr2,Pkod_AbuyerPr3,Pkod_AbuyerPr4,Pkod_AbuyerIP,Pkod_AbuyerPort,tumPrinter) VALUES ('" + look_PrintAyar_dep.EditValue + "','" + look_PrintAyar_AnaGrup.EditValue + "','" + look_PrintAyar_AltGrup.EditValue + "','" + cmb_PrintAyar_Printer.EditValue + "','16','" + spn_PrintAyar_BosSatir.Value + "','" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "','" + txt_PrintAyar_Ip.Text + "'," + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + ",'" + txt_PrintAyar_Ekran.Text + "','" + postaKod + "','" + cmb_PrintAyar_AbuyerPr.EditValue + "','" + cmb_PrintAyar_AbuyerPr2.EditValue + "','" + cmb_PrintAyar_AbuyerPr3.EditValue + "','" + cmb_PrintAyar_AbuyerPr4.EditValue + "','" + Pkod_AbuyerIP.Text + "','" + Pkod_AbuyerPort.Text + "','" + checkEditTumPrinter.Checked + "')");
+                    dbtools.execcmdR("INSERT INTO Pos_Kodlar (Pkod_Kod, Pkod_Ustgrup,Pkod_Altgrup,Pkod_Ad,Pkod_Sinif,Pkod_Satir,Pkod_Printer,Pkod_Ip,Pkod_Port,Pkod_Ekran,Pkod_Posta,Pkod_AbuyerPr,Pkod_AbuyerPr2,Pkod_AbuyerPr3,Pkod_AbuyerPr4,Pkod_AbuyerIP,Pkod_AbuyerPort,tumPrinter) VALUES ('" + look_PrintAyar_dep.EditValue + "','" + look_PrintAyar_AnaGrup.EditValue + "','" + altgrup + "','" + cmb_PrintAyar_Printer.EditValue + "','16','" + spn_PrintAyar_BosSatir.Value + "','" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "','" + txt_PrintAyar_Ip.Text + "'," + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + ",'" + txt_PrintAyar_Ekran.Text + "','" + postaKod + "','" + cmb_PrintAyar_AbuyerPr.EditValue + "','" + cmb_PrintAyar_AbuyerPr2.EditValue + "','" + cmb_PrintAyar_AbuyerPr3.EditValue + "','" + cmb_PrintAyar_AbuyerPr4.EditValue + "','" + Pkod_AbuyerIP.Text + "','" + Pkod_AbuyerPort.Text + "','" + checkEditTumPrinter.Checked + "')");
 
 
 
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Kaydet, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + Convert.ToString(look_PrintAyar_AltGrup.EditValue) + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Kaydet, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + altgrup + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
                 }
                 else
                 {
-                    dbtools.execcmdR("Update Pos_Kodlar set Pkod_Ad =  '" + cmb_PrintAyar_Printer.EditValue + "', Pkod_Satir = '" + spn_PrintAyar_BosSatir.Value + "',Pkod_Printer = '" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "',Pkod_Ip = '" + txt_PrintAyar_Ip.Text + "',Pkod_Port = '" + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + "',Pkod_Ekran = '" + txt_PrintAyar_Ekran.Text + "',Pkod_AbuyerPr = '" + cmb_PrintAyar_AbuyerPr.EditValue + "' ,Pkod_AbuyerPr2 = '" + cmb_PrintAyar_AbuyerPr2.EditValue + "',Pkod_AbuyerPr3 = '" + cmb_PrintAyar_AbuyerPr3.EditValue + "' ,Pkod_AbuyerPr4 = '" + cmb_PrintAyar_AbuyerPr4.EditValue + "',Pkod_AbuyerIP = '" + Pkod_AbuyerIP.Text + "',Pkod_AbuyerPort = '" + Pkod_AbuyerPort.EditValue + "',tumPrinter = '" + checkEditTumPrinter.Checked + "'  where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + look_PrintAyar_AltGrup.EditValue + "' and Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + postaKod + "' and Pkod_Ad = '" + cmb_PrintAyar_Printer.Text + "' ");
+                    dbtools.execcmdR("Update Pos_Kodlar set Pkod_Ad =  '" + cmb_PrintAyar_Printer.EditValue + "', Pkod_Satir = '" + spn_PrintAyar_BosSatir.Value + "',Pkod_Printer = '" + Convert.ToString(look_PrintAyar_Pr.EditValue) + "',Pkod_Ip = '" + txt_PrintAyar_Ip.Text + "',Pkod_Port = '" + Convert.ToInt32(spn_PrintAyar_Port.EditValue) + "',Pkod_Ekran = '" + txt_PrintAyar_Ekran.Text + "',Pkod_AbuyerPr = '" + cmb_PrintAyar_AbuyerPr.EditValue + "' ,Pkod_AbuyerPr2 = '" + cmb_PrintAyar_AbuyerPr2.EditValue + "',Pkod_AbuyerPr3 = '" + cmb_PrintAyar_AbuyerPr3.EditValue + "' ,Pkod_AbuyerPr4 = '" + cmb_PrintAyar_AbuyerPr4.EditValue + "',Pkod_AbuyerIP = '" + Pkod_AbuyerIP.Text + "',Pkod_AbuyerPort = '" + Pkod_AbuyerPort.EditValue + "',tumPrinter = '" + checkEditTumPrinter.Checked + "'  where Pkod_Kod = '" + look_PrintAyar_dep.EditValue + "' and Pkod_Ustgrup= '" + look_PrintAyar_AnaGrup.EditValue + "' and Pkod_Altgrup = '" + altgrup + "' and Pkod_Sinif = '16' and ISNULL(Pkod_Posta,'') = '" + postaKod + "' and Pkod_Ad = '" + cmb_PrintAyar_Printer.Text + "' ");
 
 
-                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Duzelt, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + Convert.ToString(look_PrintAyar_AltGrup.EditValue) + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Duzelt, "Departman :" + look_PrintAyar_dep.EditValue.ToString() + " Ana Grup :" + look_PrintAyar_AnaGrup.EditValue.ToString() + " Alt Grup :" + altgrup + " Printer :" + cmb_PrintAyar_Printer.EditValue + " - " + Convert.ToString(look_PrintAyar_Pr.EditValue) + " Bos Satir :" + spn_PrintAyar_BosSatir.Value.ToString(), String.Empty, String.Empty);
                 }
 
             }
@@ -1715,8 +1713,37 @@ namespace Pos
         {
             printSil();
         }
-
         public void printSil()
+        {
+            try
+            {
+                DialogResult c;
+                c = MessageBox.Show(res_man.GetString("Secili Satırı Silmek İstediğineze Emin misiniz...?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (c == DialogResult.Yes)
+                {
+
+                    foreach (int rowHandle in gridView5.GetSelectedRows())
+                    {
+                        object value = gridView5.GetRowCellValue(rowHandle, "Pkod_Id");
+                        if (value != null)
+                        {
+                            string Pkod_Id = value.ToString();
+                            dbtools.execcmdR($"delete from Pos_Kodlar where Pkod_Id ={Pkod_Id} ");
+                            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_PrintAyar, Log.Log_Islem.Sil, "Silinen Printer Ayarları Pkod_id " + Pkod_Id, String.Empty, String.Empty);
+                        }
+                    }
+
+
+                    Print_Yenile();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("HATA " + ex.Message);
+            }
+
+        }
+        public void printSileski()
         {
             try
             {
@@ -2171,7 +2198,7 @@ namespace Pos
         {
             try
             {
-                DataTable dt = dbtools.SelectTable("select * from Pos_Masa where Masa_Depart = '" + Convert.ToString(txtParcaliDepartmanSec.EditValue) + "' and ISNULL(Masa_Parcali,0)<>1");
+                DataTable dt = dbtools.SelectTable("select * from Pos_Masa where Masa_Depart = '" + Convert.ToString(txtParcaliDepartmanSec.EditValue) + "' and ISNULL(Masa_Parcali,0)<>1 and isnull(Masa_Paket,0)=0");
 
                 int sayi = Convert.ToInt32(txtParcaliMasaSayisi.Text);
                 foreach (DataRow item in dt.Rows)
@@ -5687,6 +5714,7 @@ order by mah.Adres_Ad");
                 if (admin.aktif)
                 {
                     Param_AcilisCekSil.Visible = true;
+                    btnTumunuSilPrint.Visible = true;
                 }
             }
         }
@@ -6528,6 +6556,30 @@ Select InstanceNames from @GetInstances ";
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnTumunuSilPrint_Click(object sender, EventArgs e)
+        {
+            dbtools.execcmdR("delete from Pos_Kodlar where Pkod_Sinif = 16");
+        }
+
+        private void btnPrintYenile2_Click(object sender, EventArgs e)
+        {
+            Print_Yenile();
+        }
+
+        private void btnParcaliMasalariSil_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Parçalı masalar silinecek Emin misiniz?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                dbtools.execcmdR("delete from Pos_Masa where Masa_Parcali=1");
+            }
+
+        }
+
+        private void btnMasalariYenile2_Click(object sender, EventArgs e)
+        {
+            gridyenile_MasaTanim();
         }
 
         private void gridyenile_SubeAdres()

@@ -413,8 +413,8 @@ namespace Pos
 
                     Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Malz_Transfer, Log.Log_Islem.Duzelt, Convert.ToString(gridView4.GetRowCellValue(index, "Rec_Ad")) + " ürünü " + deger.ToString() + " miktarı " + txt_Masano.Text.ToString() + " NL masaya transfer oldu." + "Eski Masa :" + txt_Masano.Text, Main.masa_takip.bartxt_FisNo.EditValue.ToString(), "");
 
-
-                    dbtools.execcmd("update Pos_Masa set Masa_Ozel='" + ozelMasaAd + "' where Masa_No='" + masaNo + "' and Masa_No<>'" + ozelMasaAd + "'");
+                    
+                    //dbtools.execcmd("update Pos_Masa set Masa_Ozel='" + ozelMasaAd + "' where Masa_No='" + masaNo + "' and Masa_No<>'" + ozelMasaAd + "'");
                 }
                 else
                 {
@@ -626,7 +626,7 @@ namespace Pos
                 {
                     dbtools.execcmd("update Pos_Masa set Masa_Ozel= '' , Masa_Durum = 0 where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "'");
 
-                    dbtools.execcmd("update Pos_Masa set Masa_Ozel = case when ISNULL(Masa_Ozel,'') != '' then '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "' end where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(txt_Masano.Text) + "'");
+                    //dbtools.execcmd("update Pos_Masa set Masa_Ozel = case when ISNULL(Masa_Ozel,'') != '' then '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "' end where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(txt_Masano.Text) + "'");
 
                     dbtools.execcmd("update Cst_Recete_Satis set Rsat_OzelMasaAdi = Case when ISNULL(Rsat_OzelMasaAdi,'') != '' then '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "' end where Rsat_Fisno = '" + Fisno + "' and Rsat_Departman ='" + Departman.Dep_Kodu + "'");
                 }
