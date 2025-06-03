@@ -798,6 +798,7 @@
             this.textEdit36 = new DevExpress.XtraEditors.TextEdit();
             this.look_EntCost_Departman = new DevExpress.XtraEditors.LookUpEdit();
             this.tab_Masa_Tanim = new DevExpress.XtraTab.XtraTabPage();
+            this.btnMasalariYenile2 = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl4 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage9 = new DevExpress.XtraTab.XtraTabPage();
             this.txtMasaSiranom = new DevExpress.XtraEditors.TextEdit();
@@ -821,6 +822,7 @@
             this.rdo_Masa_Durum = new DevExpress.XtraEditors.RadioGroup();
             this.chk_Masa_Paket = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage10 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnParcaliMasalariSil = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit186 = new DevExpress.XtraEditors.TextEdit();
             this.txtParcaliDepartmanSec = new DevExpress.XtraEditors.LookUpEdit();
             this.txtParcaliMasaSayisi = new DevExpress.XtraEditors.SpinEdit();
@@ -1235,6 +1237,7 @@
             this.rdo_Kasagc = new DevExpress.XtraEditors.RadioGroup();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.tab_AciklamaItem = new DevExpress.XtraTab.XtraTabPage();
+            this.txt_AciklamaItem_Ad = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.btn_AciklamaItem_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_AciklamaItem_Sil = new DevExpress.XtraEditors.SimpleButton();
@@ -1301,9 +1304,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.txt_AciklamaItem_Ad = new DevExpress.XtraEditors.MemoEdit();
-            this.btnParcaliMasalariSil = new DevExpress.XtraEditors.SimpleButton();
-            this.btnMasalariYenile2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2151,6 +2151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Kasagc_Kod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdo_Kasagc.Properties)).BeginInit();
             this.tab_AciklamaItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Ad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grd_AciklamaItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit110.Properties)).BeginInit();
@@ -2184,7 +2185,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Ad.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -8757,6 +8757,15 @@
             resources.ApplyResources(this.tab_Masa_Tanim, "tab_Masa_Tanim");
             this.tab_Masa_Tanim.Name = "tab_Masa_Tanim";
             // 
+            // btnMasalariYenile2
+            // 
+            this.btnMasalariYenile2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnMasalariYenile2.Appearance.Font")));
+            this.btnMasalariYenile2.Appearance.Options.UseFont = true;
+            this.btnMasalariYenile2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMasalariYenile2.ImageOptions.Image")));
+            resources.ApplyResources(this.btnMasalariYenile2, "btnMasalariYenile2");
+            this.btnMasalariYenile2.Name = "btnMasalariYenile2";
+            this.btnMasalariYenile2.Click += new System.EventHandler(this.btnMasalariYenile2_Click);
+            // 
             // xtraTabControl4
             // 
             resources.ApplyResources(this.xtraTabControl4, "xtraTabControl4");
@@ -8974,6 +8983,14 @@
             this.xtraTabPage10.Controls.Add(this.txtParcaliMasaAktif);
             resources.ApplyResources(this.xtraTabPage10, "xtraTabPage10");
             this.xtraTabPage10.Name = "xtraTabPage10";
+            // 
+            // btnParcaliMasalariSil
+            // 
+            this.btnParcaliMasalariSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnParcaliMasalariSil.Appearance.Font")));
+            this.btnParcaliMasalariSil.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnParcaliMasalariSil, "btnParcaliMasalariSil");
+            this.btnParcaliMasalariSil.Name = "btnParcaliMasalariSil";
+            this.btnParcaliMasalariSil.Click += new System.EventHandler(this.btnParcaliMasalariSil_Click);
             // 
             // textEdit186
             // 
@@ -12409,6 +12426,11 @@
             resources.ApplyResources(this.tab_AciklamaItem, "tab_AciklamaItem");
             this.tab_AciklamaItem.Name = "tab_AciklamaItem";
             // 
+            // txt_AciklamaItem_Ad
+            // 
+            resources.ApplyResources(this.txt_AciklamaItem_Ad, "txt_AciklamaItem_Ad");
+            this.txt_AciklamaItem_Ad.Name = "txt_AciklamaItem_Ad";
+            // 
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl16.Appearance.Font")));
@@ -12979,28 +13001,6 @@
             this.textBox26.ForeColor = System.Drawing.Color.Navy;
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
-            // 
-            // txt_AciklamaItem_Ad
-            // 
-            resources.ApplyResources(this.txt_AciklamaItem_Ad, "txt_AciklamaItem_Ad");
-            this.txt_AciklamaItem_Ad.Name = "txt_AciklamaItem_Ad";
-            // 
-            // btnParcaliMasalariSil
-            // 
-            this.btnParcaliMasalariSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font1")));
-            this.btnParcaliMasalariSil.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnParcaliMasalariSil, "btnParcaliMasalariSil");
-            this.btnParcaliMasalariSil.Name = "btnParcaliMasalariSil";
-            this.btnParcaliMasalariSil.Click += new System.EventHandler(this.btnParcaliMasalariSil_Click);
-            // 
-            // btnMasalariYenile2
-            // 
-            this.btnMasalariYenile2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.btnMasalariYenile2.Appearance.Options.UseFont = true;
-            this.btnMasalariYenile2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMasalariYenile2.ImageOptions.Image")));
-            resources.ApplyResources(this.btnMasalariYenile2, "btnMasalariYenile2");
-            this.btnMasalariYenile2.Name = "btnMasalariYenile2";
-            this.btnMasalariYenile2.Click += new System.EventHandler(this.btnMasalariYenile2_Click);
             // 
             // Ayarlar
             // 
@@ -13886,6 +13886,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdo_Kasagc.Properties)).EndInit();
             this.tab_AciklamaItem.ResumeLayout(false);
             this.tab_AciklamaItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Ad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grd_AciklamaItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit110.Properties)).EndInit();
@@ -13923,7 +13924,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_AciklamaItem_Ad.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
