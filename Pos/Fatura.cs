@@ -32,6 +32,12 @@ namespace Pos
         private void Fatura_Load(object sender, EventArgs e)
         {
             this.BringToFront();
+            txt_Fatno.Text = DateTime.Now.ToString("yyyyMMddHHmmss");
+            PFat_Senaryo.SelectedIndex = 0;
+            PFat_Efatura.SelectedIndex = 2;
+            PFat_Sk.SelectedIndex = 1;
+
+
 
             DataTable dt = dbtools.SelectTable("select * from rmosmuh..il where ulke_id = 1 order by ad");
             if (dt.Rows.Count > 0)
@@ -43,11 +49,15 @@ namespace Pos
 
             if (Tip != "F")
             {
-                DataTable dtf = Fronttools.SelectTable("Select CardF_Ad,CardF_Soyad From KartF Where ID = '" + Convert.ToString(this.Tag) + "'");
+                string aa = "Select CardF_Ad,CardF_Soyad,CardF_Fat_VKN,CardF_Fat_VD From KartF Where ID = '" + Convert.ToString(this.Tag) + "'";
+                DataTable dtf = Fronttools.SelectTable(aa);
                 if (dtf.Rows.Count > 0)
                 {
                     PFat_Ad.Text = Convert.ToString(dtf.Rows[0]["CardF_Ad"]);
                     PFat_Soyad.Text = Convert.ToString(dtf.Rows[0]["CardF_Soyad"]);
+                    txt_Vergino.Text = Convert.ToString(dtf.Rows[0]["CardF_Fat_VKN"]);
+                    txt_Vergidaire.Text = Convert.ToString(dtf.Rows[0]["CardF_Fat_VD"]);
+
                 }
             }
 
@@ -547,6 +557,21 @@ namespace Pos
             {
                 PFat_Efatura.SelectedIndex = 1;
             }
+        }
+
+        private void Fatura_Shown(object sender, EventArgs e) 
+        {
+            
+        }
+
+        private void btnOtoCari_Click(object sender, EventArgs e)
+        {
+            txt_Vergino.Text = "";
+        }
+
+        private void btnFatTemizle_Click(object sender, EventArgs e)
+        {
+            txt_Fatno.Text = "";
         }
     }
 }

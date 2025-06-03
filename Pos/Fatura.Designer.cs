@@ -90,6 +90,8 @@
             this.PFat_Sehir = new DevExpress.XtraEditors.LookUpEdit();
             this.PFat_Sk = new DevExpress.XtraEditors.RadioGroup();
             this.txt_Vergino = new DevExpress.XtraEditors.TextEdit();
+            this.btnOtoCari = new DevExpress.XtraEditors.SimpleButton();
+            this.btnFatTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Faturun.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Fatno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
@@ -716,10 +718,26 @@
             this.txt_Vergino.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txt_Vergino.Leave += new System.EventHandler(this.txt_Vergino_Leave);
             // 
+            // btnOtoCari
+            // 
+            this.btnOtoCari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOtoCari.ImageOptions.Image")));
+            resources.ApplyResources(this.btnOtoCari, "btnOtoCari");
+            this.btnOtoCari.Name = "btnOtoCari";
+            this.btnOtoCari.Click += new System.EventHandler(this.btnOtoCari_Click);
+            // 
+            // btnFatTemizle
+            // 
+            this.btnFatTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            resources.ApplyResources(this.btnFatTemizle, "btnFatTemizle");
+            this.btnFatTemizle.Name = "btnFatTemizle";
+            this.btnFatTemizle.Click += new System.EventHandler(this.btnFatTemizle_Click);
+            // 
             // Fatura
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnFatTemizle);
+            this.Controls.Add(this.btnOtoCari);
             this.Controls.Add(this.PFat_Sk);
             this.Controls.Add(this.PFat_Ilce);
             this.Controls.Add(this.textEdit14);
@@ -775,6 +793,7 @@
             this.Controls.Add(this.PFat_Sehir);
             this.Name = "Fatura";
             this.Load += new System.EventHandler(this.Fatura_Load);
+            this.Shown += new System.EventHandler(this.Fatura_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.chk_Faturun.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Fatno.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
@@ -894,5 +913,7 @@
         private DevExpress.XtraEditors.LookUpEdit PFat_Sehir;
         private DevExpress.XtraEditors.RadioGroup PFat_Sk;
         private DevExpress.XtraEditors.TextEdit txt_Vergino;
+        private DevExpress.XtraEditors.SimpleButton btnOtoCari;
+        private DevExpress.XtraEditors.SimpleButton btnFatTemizle;
     }
 }
