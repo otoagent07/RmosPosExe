@@ -495,7 +495,7 @@ namespace Pos
             look_PrintAyar_AnaGrup.Properties.DisplayMember = "Kodlar_Ad";
             look_PrintAyar_AnaGrup.Properties.ValueMember = "Kodlar_Kod";
 
-            String pkInstalledPrinters;
+            string pkInstalledPrinters;
             for (int i = 0; i < PrinterSettings.InstalledPrinters.Count; i++)
             {
                 pkInstalledPrinters = PrinterSettings.InstalledPrinters[i];
