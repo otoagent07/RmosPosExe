@@ -1,4 +1,6 @@
-﻿using DevExpress.XtraReports.UI;
+﻿using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraReports.UI;
 using Pos.Class;
 using System;
 using System.Data;
@@ -62,7 +64,37 @@ namespace Pos
             }
 
             gridyenile();
+
+
+            
         }
+
+        //public void buttonEkle(string columnName)
+        //{
+        //    try
+        //    {
+        //        GridView gridView = gridControl1.MainView as GridView;
+        //        RepositoryItemButtonEdit repositoryButton = new RepositoryItemButtonEdit();
+        //        repositoryButton.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+        //        repositoryButton.Buttons[0].Caption = columnName;
+        //        repositoryButton.Buttons[0].Kind = DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph;
+        //        repositoryButton.ButtonClick += RepositoryButton_ButtonClick;
+        //        gridView.Columns[columnName].ColumnEdit = repositoryButton;
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //    }
+        //}
+        //private void RepositoryButton_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        //{
+        //    GridView gridView = gridControl1.FocusedView as GridView;
+
+        //    if (gridView != null && gridView.FocusedRowHandle >= 0)
+        //    {
+        //        gridView.DeleteRow(gridView.FocusedRowHandle);
+        //    }
+        //}
 
         private void gridyenile()
         {
@@ -135,6 +167,11 @@ namespace Pos
             dt.Columns["Net"].DefaultValue = 0.00;
             dt.Columns["Kdv"].DefaultValue = 0.00;
             dt.Columns["Tutar"].DefaultValue = 0.00;
+
+
+            //string columname = "SİL";
+            //dt.Columns.Add(columname, typeof(string));
+            //buttonEkle(columname);
 
             gridControl1.DataSource = dt;
 

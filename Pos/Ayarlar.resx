@@ -283,7 +283,7 @@
     <value>215</value>
   </data>
   <data name="navBarControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 717</value>
+    <value>215, 721</value>
   </data>
   <data name="navBarControl1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -481,13 +481,13 @@
     <value>Bottom</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 581</value>
+    <value>0, 589</value>
   </data>
   <data name="panelControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 34</value>
+    <value>843, 34</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>306</value>
@@ -4010,7 +4010,7 @@ Sıfır Yap</value>
     <value>2, 3, 2, 3</value>
   </data>
   <data name="xtraTabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 526</value>
+    <value>821, 531</value>
   </data>
   <data name="xtraTabPage5.Text" xml:space="preserve">
     <value>Genel Parametreler 1</value>
@@ -8460,7 +8460,7 @@ Sıfır Yap</value>
     <value>2, 3, 2, 3</value>
   </data>
   <data name="tab_Parametre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 615</value>
+    <value>843, 623</value>
   </data>
   <data name="tab_Parametre.Text" xml:space="preserve">
     <value>Parametre</value>
@@ -20804,7 +20804,7 @@ Sıfır Yap</value>
     <value>2, 3, 2, 3</value>
   </data>
   <data name="xtraTabPage9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 317</value>
+    <value>287, 322</value>
   </data>
   <data name="xtraTabPage9.Text" xml:space="preserve">
     <value>Masa Tanımları</value>
@@ -27848,7 +27848,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>2, 3, 2, 3</value>
   </data>
   <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>809, 329</value>
+    <value>813, 334</value>
   </data>
   <data name="xtraTabPage1.Text" xml:space="preserve">
     <value>Pos Yetkileri</value>
@@ -30754,7 +30754,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>2, 3, 2, 3</value>
   </data>
   <data name="grd_MacPr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 304</value>
+    <value>488, 309</value>
   </data>
   <data name="grd_MacPr.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -30982,7 +30982,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>2, 3, 2, 3</value>
   </data>
   <data name="xtraTabPage11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>662, 477</value>
+    <value>666, 482</value>
   </data>
   <data name="xtraTabPage11.Text" xml:space="preserve">
     <value>MAC PRINTER AYARLARI</value>
@@ -33159,7 +33159,7 @@ SP -&gt; SERVİS PAYI SİL AÇIKLAMA
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1067, 717</value>
+    <value>1067, 721</value>
   </data>
   <data name="splitContainerControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -33189,7 +33189,7 @@ SP -&gt; SERVİS PAYI SİL AÇIKLAMA
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1067, 717</value>
+    <value>1069, 721</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>

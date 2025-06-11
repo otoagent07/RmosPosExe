@@ -230,12 +230,10 @@
             // 
             resources.ApplyResources(this.date_Tarih, "date_Tarih");
             this.date_Tarih.Name = "date_Tarih";
-            this.date_Tarih.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.date_Tarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("date_Tarih.Properties.Buttons"))))});
             this.date_Tarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.date_Tarih.Properties.ReadOnly = true;
             this.date_Tarih.TabStop = false;
             // 
             // textEdit7
@@ -622,6 +620,7 @@
             // 
             // btn_Satirsil
             // 
+            this.btn_Satirsil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Satirsil.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Satirsil, "btn_Satirsil");
             this.btn_Satirsil.Name = "btn_Satirsil";
             this.btn_Satirsil.TabStop = false;
@@ -727,7 +726,7 @@
             // 
             // btnFatTemizle
             // 
-            this.btnFatTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnFatTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFatTemizle.ImageOptions.Image")));
             resources.ApplyResources(this.btnFatTemizle, "btnFatTemizle");
             this.btnFatTemizle.Name = "btnFatTemizle";
             this.btnFatTemizle.Click += new System.EventHandler(this.btnFatTemizle_Click);
