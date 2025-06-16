@@ -1888,7 +1888,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             }
         }
 
-        private void TopluGelirIade(bool Kart)
+        private void TopluGelirIade(bool Kart) // burada kaldık
         {
             this.Cursor = Cursors.WaitCursor;
 
