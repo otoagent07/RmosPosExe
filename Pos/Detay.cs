@@ -22,6 +22,12 @@ namespace Pos
         {
             this.BringToFront();
             gridyenile();
+
+            string q = $@"select top 1 (u.P_Ad+' '+u.P_Soyad) as adSoyad from Cst_Recete_Satis s
+left join RmosMuh..Pos_User as u on u.P_Kod=s.Rsat_Garson
+where Rsat_Fisno='{spn_Fisno.EditValue.ToString()}'";
+
+            txtAcilisGarson.Text = "Açan Garson: "  + dbtools.DegerGetir(q);
         }
 
         private void gridyenile()

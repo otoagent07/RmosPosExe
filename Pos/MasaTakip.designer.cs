@@ -90,6 +90,7 @@
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -649,7 +650,8 @@
             this.gridColumn7,
             this.gridColumn8,
             this.gridColumn10,
-            this.gridColumn11});
+            this.gridColumn11,
+            this.gridColumn12});
             gridFormatRule1.ApplyToRow = true;
             gridFormatRule1.Column = this.gridColumn10;
             gridFormatRule1.ColumnApplyTo = this.gridColumn10;
@@ -745,6 +747,12 @@
             resources.ApplyResources(this.gridColumn11, "gridColumn11");
             this.gridColumn11.FieldName = "Rsat_Id";
             this.gridColumn11.Name = "gridColumn11";
+            // 
+            // gridColumn12
+            // 
+            resources.ApplyResources(this.gridColumn12, "gridColumn12");
+            this.gridColumn12.FieldName = "Rsat_Acilis";
+            this.gridColumn12.Name = "gridColumn12";
             // 
             // gridControl1
             // 
@@ -1604,5 +1612,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnGridDizaynTemizle;
         private DevExpress.XtraEditors.SimpleButton btnFisnoTemizle;
         private DevExpress.XtraEditors.TextEdit txtFisnoGit;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
     }
 }

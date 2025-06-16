@@ -107,15 +107,15 @@
             this.btn_3 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
-            this.btn_Bindirim = new DevExpress.XtraEditors.SimpleButton();
-            this.btnMenuAc = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_SatirSil = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_MiktarDuzelt = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Tutarduzelt = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Ikram = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Zayi = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Ikram = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Tutarduzelt = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Bindirim = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Indirim = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_SatirSil = new DevExpress.XtraEditors.SimpleButton();
+            this.btnMenuAc = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_MiktarDuzelt = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.rdo_EMiktar = new DevExpress.XtraEditors.RadioGroup();
             this.btn_7 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Mars = new DevExpress.XtraEditors.SimpleButton();
@@ -255,7 +255,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 174;
+            this.splitContainerControl4.SplitterPosition = 178;
             // 
             // ana_btnUp
             // 
@@ -299,7 +299,7 @@
             resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 120;
+            this.splitContainerControl2.SplitterPosition = 123;
             // 
             // alt_btnUp
             // 
@@ -980,6 +980,45 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 53F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
             // 
+            // btn_Zayi
+            // 
+            this.btn_Zayi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Zayi.Appearance.Font")));
+            this.btn_Zayi.Appearance.Options.UseFont = true;
+            this.btn_Zayi.Appearance.Options.UseTextOptions = true;
+            this.btn_Zayi.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_Zayi, 2);
+            resources.ApplyResources(this.btn_Zayi, "btn_Zayi");
+            this.btn_Zayi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Zayi.ImageOptions.Image")));
+            this.btn_Zayi.Name = "btn_Zayi";
+            this.tablePanel1.SetRow(this.btn_Zayi, 2);
+            this.btn_Zayi.Click += new System.EventHandler(this.btn_Zayi_Click);
+            // 
+            // btn_Ikram
+            // 
+            this.btn_Ikram.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Ikram.Appearance.Font")));
+            this.btn_Ikram.Appearance.Options.UseFont = true;
+            this.btn_Ikram.Appearance.Options.UseTextOptions = true;
+            this.btn_Ikram.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_Ikram, 1);
+            resources.ApplyResources(this.btn_Ikram, "btn_Ikram");
+            this.btn_Ikram.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ikram.ImageOptions.Image")));
+            this.btn_Ikram.Name = "btn_Ikram";
+            this.tablePanel1.SetRow(this.btn_Ikram, 2);
+            this.btn_Ikram.Click += new System.EventHandler(this.btn_Ikram_Click);
+            // 
+            // btn_Tutarduzelt
+            // 
+            this.btn_Tutarduzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Tutarduzelt.Appearance.Font")));
+            this.btn_Tutarduzelt.Appearance.Options.UseFont = true;
+            this.btn_Tutarduzelt.Appearance.Options.UseTextOptions = true;
+            this.btn_Tutarduzelt.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_Tutarduzelt, 0);
+            resources.ApplyResources(this.btn_Tutarduzelt, "btn_Tutarduzelt");
+            this.btn_Tutarduzelt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Tutarduzelt.ImageOptions.Image")));
+            this.btn_Tutarduzelt.Name = "btn_Tutarduzelt";
+            this.tablePanel1.SetRow(this.btn_Tutarduzelt, 0);
+            this.btn_Tutarduzelt.Click += new System.EventHandler(this.btn_Tutarduzelt_Click);
+            // 
             // btn_Bindirim
             // 
             this.btn_Bindirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Bindirim.Appearance.Font")));
@@ -991,32 +1030,17 @@
             this.tablePanel1.SetRow(this.btn_Bindirim, 1);
             this.btn_Bindirim.Click += new System.EventHandler(this.btn_Bindirim_Click);
             // 
-            // btnMenuAc
+            // btn_Indirim
             // 
-            this.btnMenuAc.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnMenuAc.Appearance.Font")));
-            this.btnMenuAc.Appearance.Options.UseFont = true;
-            this.btnMenuAc.Appearance.Options.UseTextOptions = true;
-            this.btnMenuAc.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.tablePanel1.SetColumn(this.btnMenuAc, 2);
-            resources.ApplyResources(this.btnMenuAc, "btnMenuAc");
-            this.btnMenuAc.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnMenuAc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMenuAc.ImageOptions.SvgImage")));
-            this.btnMenuAc.Name = "btnMenuAc";
-            this.tablePanel1.SetRow(this.btnMenuAc, 0);
-            this.btnMenuAc.Click += new System.EventHandler(this.btnMenuAc_Click);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseTextOptions = true;
-            this.simpleButton2.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.tablePanel1.SetColumn(this.simpleButton2, 1);
-            resources.ApplyResources(this.simpleButton2, "simpleButton2");
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Name = "simpleButton2";
-            this.tablePanel1.SetRow(this.simpleButton2, 1);
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click_1);
+            this.btn_Indirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Indirim.Appearance.Font")));
+            this.btn_Indirim.Appearance.Options.UseFont = true;
+            this.btn_Indirim.Appearance.Options.UseTextOptions = true;
+            this.btn_Indirim.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btn_Indirim, 0);
+            resources.ApplyResources(this.btn_Indirim, "btn_Indirim");
+            this.btn_Indirim.Name = "btn_Indirim";
+            this.tablePanel1.SetRow(this.btn_Indirim, 2);
+            this.btn_Indirim.Click += new System.EventHandler(this.btn_Indirim_Click);
             // 
             // btn_SatirSil
             // 
@@ -1033,6 +1057,20 @@
             this.tablePanel1.SetRow(this.btn_SatirSil, 0);
             this.btn_SatirSil.Click += new System.EventHandler(this.btn_SatirSil_Click);
             // 
+            // btnMenuAc
+            // 
+            this.btnMenuAc.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnMenuAc.Appearance.Font")));
+            this.btnMenuAc.Appearance.Options.UseFont = true;
+            this.btnMenuAc.Appearance.Options.UseTextOptions = true;
+            this.btnMenuAc.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.btnMenuAc, 2);
+            resources.ApplyResources(this.btnMenuAc, "btnMenuAc");
+            this.btnMenuAc.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnMenuAc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMenuAc.ImageOptions.SvgImage")));
+            this.btnMenuAc.Name = "btnMenuAc";
+            this.tablePanel1.SetRow(this.btnMenuAc, 0);
+            this.btnMenuAc.Click += new System.EventHandler(this.btnMenuAc_Click);
+            // 
             // btn_MiktarDuzelt
             // 
             this.btn_MiktarDuzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MiktarDuzelt.Appearance.Font")));
@@ -1045,56 +1083,18 @@
             this.tablePanel1.SetRow(this.btn_MiktarDuzelt, 1);
             this.btn_MiktarDuzelt.Click += new System.EventHandler(this.btn_MiktarDuzelt_Click);
             // 
-            // btn_Tutarduzelt
+            // simpleButton2
             // 
-            this.btn_Tutarduzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Tutarduzelt.Appearance.Font")));
-            this.btn_Tutarduzelt.Appearance.Options.UseFont = true;
-            this.btn_Tutarduzelt.Appearance.Options.UseTextOptions = true;
-            this.btn_Tutarduzelt.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.tablePanel1.SetColumn(this.btn_Tutarduzelt, 0);
-            resources.ApplyResources(this.btn_Tutarduzelt, "btn_Tutarduzelt");
-            this.btn_Tutarduzelt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Tutarduzelt.ImageOptions.Image")));
-            this.btn_Tutarduzelt.Name = "btn_Tutarduzelt";
-            this.tablePanel1.SetRow(this.btn_Tutarduzelt, 0);
-            this.btn_Tutarduzelt.Click += new System.EventHandler(this.btn_Tutarduzelt_Click);
-            // 
-            // btn_Ikram
-            // 
-            this.btn_Ikram.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Ikram.Appearance.Font")));
-            this.btn_Ikram.Appearance.Options.UseFont = true;
-            this.btn_Ikram.Appearance.Options.UseTextOptions = true;
-            this.btn_Ikram.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.tablePanel1.SetColumn(this.btn_Ikram, 1);
-            resources.ApplyResources(this.btn_Ikram, "btn_Ikram");
-            this.btn_Ikram.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ikram.ImageOptions.Image")));
-            this.btn_Ikram.Name = "btn_Ikram";
-            this.tablePanel1.SetRow(this.btn_Ikram, 2);
-            this.btn_Ikram.Click += new System.EventHandler(this.btn_Ikram_Click);
-            // 
-            // btn_Zayi
-            // 
-            this.btn_Zayi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Zayi.Appearance.Font")));
-            this.btn_Zayi.Appearance.Options.UseFont = true;
-            this.btn_Zayi.Appearance.Options.UseTextOptions = true;
-            this.btn_Zayi.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.tablePanel1.SetColumn(this.btn_Zayi, 2);
-            resources.ApplyResources(this.btn_Zayi, "btn_Zayi");
-            this.btn_Zayi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Zayi.ImageOptions.Image")));
-            this.btn_Zayi.Name = "btn_Zayi";
-            this.tablePanel1.SetRow(this.btn_Zayi, 2);
-            this.btn_Zayi.Click += new System.EventHandler(this.btn_Zayi_Click);
-            // 
-            // btn_Indirim
-            // 
-            this.btn_Indirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Indirim.Appearance.Font")));
-            this.btn_Indirim.Appearance.Options.UseFont = true;
-            this.btn_Indirim.Appearance.Options.UseTextOptions = true;
-            this.btn_Indirim.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.tablePanel1.SetColumn(this.btn_Indirim, 0);
-            resources.ApplyResources(this.btn_Indirim, "btn_Indirim");
-            this.btn_Indirim.Name = "btn_Indirim";
-            this.tablePanel1.SetRow(this.btn_Indirim, 2);
-            this.btn_Indirim.Click += new System.EventHandler(this.btn_Indirim_Click);
+            this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Appearance.Options.UseTextOptions = true;
+            this.simpleButton2.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.tablePanel1.SetColumn(this.simpleButton2, 1);
+            resources.ApplyResources(this.simpleButton2, "simpleButton2");
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Name = "simpleButton2";
+            this.tablePanel1.SetRow(this.simpleButton2, 1);
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click_1);
             // 
             // rdo_EMiktar
             // 
@@ -1515,7 +1515,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(840, 721);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(840, 729);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1527,7 +1527,7 @@
             this.layoutControlItem1.MinSize = new System.Drawing.Size(241, 66);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(840, 69);
+            this.layoutControlItem1.Size = new System.Drawing.Size(840, 70);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1536,11 +1536,11 @@
             // 
             this.layoutControlItem2.Control = this.groupControl2;
             resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 69);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 70);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(840, 197);
+            this.layoutControlItem2.Size = new System.Drawing.Size(840, 199);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1549,9 +1549,9 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 266);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 269);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(840, 77);
+            this.layoutControlItem6.Size = new System.Drawing.Size(840, 78);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1559,18 +1559,18 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 343);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 347);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(840, 290);
+            this.layoutControlItem7.Size = new System.Drawing.Size(840, 293);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 633);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 640);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(840, 88);
+            this.layoutControlItem3.Size = new System.Drawing.Size(840, 89);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             this.layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;

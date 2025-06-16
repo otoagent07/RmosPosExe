@@ -105,6 +105,10 @@ IF COL_LENGTH('Pos_Param', 'mobileCallerIdMacAdres') IS NULL BEGIN ALTER TABLE P
 ALTER TABLE Pos_Log ALTER COLUMN Log_Recete VARCHAR(3500);
 
 IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKodCocuk') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD HizmetReceteKodCocuk nvarchar(200) END;
+
+IF COL_LENGTH('Pos_FolioParam', 'GelirReceteKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD GelirReceteKod nvarchar(2000) END;
+
+
 IF COL_LENGTH('Pos_Cari', 'Cari_indirimOran') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_indirimOran decimal(18, 2) END;
 IF COL_LENGTH('Pos_FolioParam', 'hizmetBedeliAktif') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetBedeliAktif bit END;
 

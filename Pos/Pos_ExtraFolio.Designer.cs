@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pos_ExtraFolio));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint(0D, new object[] {
@@ -308,6 +308,8 @@
             this.chk_Param = new DevExpress.XtraEditors.CheckButton();
             this.chk_Rapor = new DevExpress.XtraEditors.CheckButton();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.GelirReceteKod = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit46 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_OdemeDep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
@@ -479,6 +481,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GelirReceteKod.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit46.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bandedGridColumn41
@@ -1810,20 +1814,20 @@
             this.gridColumn31,
             this.gridColumn32,
             this.gridColumn33});
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.Options.UseBackColor = true;
-            styleFormatCondition1.Column = this.bandedGridColumn41;
-            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition1.Value1 = "Acik";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            styleFormatCondition2.Appearance.Options.UseBackColor = true;
-            styleFormatCondition2.ApplyToRow = true;
-            styleFormatCondition2.Column = this.gridColumn85;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Value1 = true;
+            styleFormatCondition3.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition3.Appearance.Options.UseBackColor = true;
+            styleFormatCondition3.Column = this.bandedGridColumn41;
+            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition3.Value1 = "Acik";
+            styleFormatCondition4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            styleFormatCondition4.Appearance.Options.UseBackColor = true;
+            styleFormatCondition4.ApplyToRow = true;
+            styleFormatCondition4.Column = this.gridColumn85;
+            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition4.Value1 = true;
             this.gridView11.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1,
-            styleFormatCondition2});
+            styleFormatCondition3,
+            styleFormatCondition4});
             this.gridView11.GridControl = this.gridControl11;
             this.gridView11.Name = "gridView11";
             this.gridView11.OptionsLayout.Columns.AddNewColumns = false;
@@ -2831,6 +2835,8 @@
             // 
             // tab_Param
             // 
+            this.tab_Param.Controls.Add(this.GelirReceteKod);
+            this.tab_Param.Controls.Add(this.textEdit46);
             this.tab_Param.Controls.Add(this.HizmetReceteKodCocuk);
             this.tab_Param.Controls.Add(this.textEdit45);
             this.tab_Param.Controls.Add(this.hizmetBedeliAktif);
@@ -3219,6 +3225,27 @@
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
             // 
+            // GelirReceteKod
+            // 
+            resources.ApplyResources(this.GelirReceteKod, "GelirReceteKod");
+            this.GelirReceteKod.Name = "GelirReceteKod";
+            this.GelirReceteKod.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
+            this.GelirReceteKod.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns"), resources.GetString("lookUpEdit1.Properties.Columns1")),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns2"), resources.GetString("lookUpEdit1.Properties.Columns3"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns4"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns5"))), resources.GetString("lookUpEdit1.Properties.Columns6"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns7"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns8"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEdit1.Properties.Columns9"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEdit1.Properties.Columns10"))))});
+            this.GelirReceteKod.Properties.DropDownRows = 18;
+            this.GelirReceteKod.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
+            this.GelirReceteKod.Properties.ShowFooter = false;
+            this.GelirReceteKod.Properties.ShowHeader = false;
+            // 
+            // textEdit46
+            // 
+            resources.ApplyResources(this.textEdit46, "textEdit46");
+            this.textEdit46.Name = "textEdit46";
+            this.textEdit46.Properties.ReadOnly = true;
+            this.textEdit46.TabStop = false;
+            // 
             // Pos_ExtraFolio
             // 
             resources.ApplyResources(this, "$this");
@@ -3399,6 +3426,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.look_Kapatma.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GelirReceteKod.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit46.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3667,5 +3696,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl3;
+        private DevExpress.XtraEditors.LookUpEdit GelirReceteKod;
+        private DevExpress.XtraEditors.TextEdit textEdit46;
     }
 }

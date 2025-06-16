@@ -48,10 +48,12 @@
             this.btnHesapDokum = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdisyonR = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdisyonG = new DevExpress.XtraEditors.SimpleButton();
+            this.txtAcilisGarson = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spn_Fisno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAcilisGarson.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn6
@@ -219,22 +221,31 @@
             // 
             // btnAdisyonR
             // 
-            this.btnAdisyonR.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnAdisyonR.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdisyonR.ImageOptions.Image")));
             resources.ApplyResources(this.btnAdisyonR, "btnAdisyonR");
             this.btnAdisyonR.Name = "btnAdisyonR";
             this.btnAdisyonR.Click += new System.EventHandler(this.btnAdisyonR_Click);
             // 
             // btnAdisyonG
             // 
-            this.btnAdisyonG.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnAdisyonG.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdisyonG.ImageOptions.Image")));
             resources.ApplyResources(this.btnAdisyonG, "btnAdisyonG");
             this.btnAdisyonG.Name = "btnAdisyonG";
             this.btnAdisyonG.Click += new System.EventHandler(this.btnAdisyonG_Click);
+            // 
+            // txtAcilisGarson
+            // 
+            resources.ApplyResources(this.txtAcilisGarson, "txtAcilisGarson");
+            this.txtAcilisGarson.Name = "txtAcilisGarson";
+            this.txtAcilisGarson.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtAcilisGarson.Properties.ReadOnly = true;
+            this.txtAcilisGarson.TabStop = false;
             // 
             // Detay
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtAcilisGarson);
             this.Controls.Add(this.btnAdisyonG);
             this.Controls.Add(this.btnAdisyonR);
             this.Controls.Add(this.btnHesapDokum);
@@ -252,6 +263,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spn_Fisno.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAcilisGarson.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,5 +288,6 @@
         public DevExpress.XtraEditors.SimpleButton btnHesapDokum;
         private DevExpress.XtraEditors.SimpleButton btnAdisyonR;
         private DevExpress.XtraEditors.SimpleButton btnAdisyonG;
+        private DevExpress.XtraEditors.TextEdit txtAcilisGarson;
     }
 }

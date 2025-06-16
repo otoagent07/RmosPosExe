@@ -1978,5 +1978,26 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
             }
 
         }
+
+        private void gridView6_RowStyle(object sender, RowStyleEventArgs e)
+        {
+            GridView view = sender as GridView;
+            if (e.RowHandle >= 0)
+            {
+                string efatNo = view.GetRowCellDisplayText(e.RowHandle, view.Columns["PFat_EFatno"]);
+                if (!string.IsNullOrWhiteSpace(efatNo))
+                {
+                    // Doluysa kırmızı
+                    e.Appearance.BackColor = Color.LightGreen;
+                    e.Appearance.ForeColor = Color.White;
+                }
+                else
+                {
+                    // Boşsa yeşil
+                    e.Appearance.BackColor = Color.Red;
+                    e.Appearance.ForeColor = Color.White;
+                }
+            }
+        }
     }
 }

@@ -1601,6 +1601,11 @@ namespace Pos
                 {
                     string altgrup = item1.Trim();
                     printKaydet(posta, altgrup);
+
+                    if (look_PrintAyar_AltGrup.Visible==false)
+                    {
+                        break;
+                    }
                 }
             }
             Print_Yenile();

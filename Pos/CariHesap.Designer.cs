@@ -41,6 +41,7 @@
             this.gridColumn30 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tab_Cari_Hesap = new DevExpress.XtraTab.XtraTabPage();
+            this.btnCekDetayPrint = new DevExpress.XtraEditors.SimpleButton();
             this.dateEditCariBit = new DevExpress.XtraEditors.DateEdit();
             this.dateEditCariBas = new DevExpress.XtraEditors.DateEdit();
             this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
@@ -353,7 +354,6 @@
             this.dateEditRap3BitTar = new DevExpress.XtraEditors.DateEdit();
             this.dateEditRap3BasTar = new DevExpress.XtraEditors.DateEdit();
             this.btnCariRap3Listele = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCekDetayPrint = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Cari_Hesap.SuspendLayout();
@@ -606,6 +606,17 @@
             this.tab_Cari_Hesap.Controls.Add(this.textEdit69);
             this.tab_Cari_Hesap.Name = "tab_Cari_Hesap";
             resources.ApplyResources(this.tab_Cari_Hesap, "tab_Cari_Hesap");
+            // 
+            // btnCekDetayPrint
+            // 
+            this.btnCekDetayPrint.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnCekDetayPrint.Appearance.Font")));
+            this.btnCekDetayPrint.Appearance.Options.UseFont = true;
+            this.btnCekDetayPrint.Appearance.Options.UseTextOptions = true;
+            this.btnCekDetayPrint.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btnCekDetayPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCekDetayPrint.ImageOptions.Image")));
+            resources.ApplyResources(this.btnCekDetayPrint, "btnCekDetayPrint");
+            this.btnCekDetayPrint.Name = "btnCekDetayPrint";
+            this.btnCekDetayPrint.Click += new System.EventHandler(this.btnCekDetayPrint_Click);
             // 
             // dateEditCariBit
             // 
@@ -972,6 +983,7 @@
             this.gridView9.GridControl = this.grd_CariHesap;
             this.gridView9.Name = "gridView9";
             this.gridView9.OptionsView.ColumnAutoWidth = false;
+            this.gridView9.OptionsView.ShowAutoFilterRow = true;
             this.gridView9.OptionsView.ShowFooter = true;
             this.gridView9.OptionsView.ShowGroupPanel = false;
             this.gridView9.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView9_RowCellClick);
@@ -3529,17 +3541,6 @@
             resources.ApplyResources(this.btnCariRap3Listele, "btnCariRap3Listele");
             this.btnCariRap3Listele.Name = "btnCariRap3Listele";
             this.btnCariRap3Listele.Click += new System.EventHandler(this.btnCariRap3Listele_Click);
-            // 
-            // btnCekDetayPrint
-            // 
-            this.btnCekDetayPrint.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton21.Appearance.Font")));
-            this.btnCekDetayPrint.Appearance.Options.UseFont = true;
-            this.btnCekDetayPrint.Appearance.Options.UseTextOptions = true;
-            this.btnCekDetayPrint.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.btnCekDetayPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton21.ImageOptions.Image")));
-            resources.ApplyResources(this.btnCekDetayPrint, "btnCekDetayPrint");
-            this.btnCekDetayPrint.Name = "btnCekDetayPrint";
-            this.btnCekDetayPrint.Click += new System.EventHandler(this.btnCekDetayPrint_Click);
             // 
             // CariHesap
             // 

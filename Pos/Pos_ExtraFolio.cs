@@ -372,6 +372,12 @@ namespace Pos
             HizmetReceteKod.Properties.DisplayMember = "Rec_Ad";
             HizmetReceteKod.Properties.ValueMember = "Rec_Genelkod";
 
+
+            GelirReceteKod.Properties.DataSource = dtRecete;
+            GelirReceteKod.Properties.DisplayMember = "Rec_Ad";
+            GelirReceteKod.Properties.ValueMember = "Rec_Genelkod";
+
+
             DataTable dtReceteCocuk = dbtools.SelectTable("select Rec_Genelkod,Rec_Ad from Cst_Recete WITH(NOLOCK) order by Rec_Genelkod");
             HizmetReceteKodCocuk.Properties.DataSource = dtReceteCocuk;
             HizmetReceteKodCocuk.Properties.DisplayMember = "Rec_Ad";
@@ -452,6 +458,7 @@ namespace Pos
             look_Kapatma.EditValue = Param_ExtraFolio.Front_Kapatma;
             look_GelirIade.EditValue = Param_ExtraFolio.Front_GelirIade;
             HizmetReceteKod.EditValue = Param_ExtraFolio.HizmetReceteKod;
+            GelirReceteKod.EditValue = Param_ExtraFolio.GelirReceteKod;
             HizmetReceteKodCocuk.EditValue = Param_ExtraFolio.HizmetReceteKodCocuk;
             hizmetOdemeKod.EditValue = Param_ExtraFolio.hizmetOdemeKod;
             hizmetBedeliAktif.Checked = Param_ExtraFolio.hizmetBedeliAktif;
@@ -663,11 +670,11 @@ namespace Pos
                                 ,[Front_KartF_Odano]
                                 ,Front_Kapatma
                                 ,Front_IadeKK
-                                ,Front_GelirIade,HizmetReceteKod,hizmetOdemeKod,hizmetBedeliAktif,HizmetReceteKodCocuk) 
+                                ,Front_GelirIade,HizmetReceteKod,hizmetOdemeKod,hizmetBedeliAktif,HizmetReceteKodCocuk,GelirReceteKod) 
 
 VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + look_OdemeSekli.EditValue + "','" + look_KurKodu.EditValue + "','"
     + look_Konaklama.EditValue + "','" + look_MusteriTipi + "','" + Departman.Dep_Kodu + "','" + look_IadeNkt.EditValue + "','" + rdb_Kart_Onburo.EditValue + "','" + txtParam_OdaNo.Text + "','"
-    + look_Kapatma.EditValue + "','" + look_IadeKK.EditValue + "','" + look_GelirIade.EditValue + "','" + HizmetReceteKod.EditValue + "','" + hizmetOdemeKod.EditValue + "','" + durum + "','" + HizmetReceteKodCocuk.EditValue + "')");
+    + look_Kapatma.EditValue + "','" + look_IadeKK.EditValue + "','" + look_GelirIade.EditValue + "','" + HizmetReceteKod.EditValue + "','" + hizmetOdemeKod.EditValue + "','" + durum + "','" + HizmetReceteKodCocuk.EditValue + "','" + GelirReceteKod.EditValue + "')");
 
 
             }
@@ -691,6 +698,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                                         ,[hizmetOdemeKod] = '" + hizmetOdemeKod.EditValue + @"'
                                         ,[hizmetBedeliAktif] = '" + durum + @"'
                                         ,[HizmetReceteKodCocuk] = '" + HizmetReceteKodCocuk.EditValue + @"'
+                                        ,[GelirReceteKod] = '" + GelirReceteKod.EditValue + @"'
                                  WHERE Front_Departman = '" + Departman.Dep_Kodu + "'");
             }
 
@@ -1125,6 +1133,101 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             CardF_CheckOut();
             Temizle(tab_KartF);
             gridControl2.DataSource = null;
+
+
+            try
+            {
+                var tutar = Math.Abs(Convert.ToDecimal(txt_BakiyeBakiye.EditValue));
+
+                if (tutar<1)
+                {
+                    return;
+                }
+
+
+                int kartId = ID;
+                string Kart_No = txt_BakiyeKartNo.Text.ToString();
+                string satisFisno = dbtools.DegerGetir("execute Cost_Fis_No");
+                string Urun_Kodu = Param_ExtraFolio.GelirReceteKod;
+                decimal Rec_Kdv =Convert.ToDecimal( dbtools.DegerGetir($"select Rec_Kdv from Cst_Recete where Rec_Genelkod='{Urun_Kodu}'"));
+                decimal Rsat_Tutar = tutar;
+                decimal Rec_Fiyat = tutar;
+                decimal Rec_Dovifiyat = tutar;
+                var Rsat_Net = ((Rsat_Tutar * 100) / (100 + Rec_Kdv));
+                var Rsat_Kdv = Rsat_Tutar - Rsat_Net;
+
+
+
+                SqlConnection con = dbtools.conn;
+                if (con.State == ConnectionState.Closed) con.Open();
+                SqlCommand com = new SqlCommand();
+                com.Connection = con;
+                com.CommandType = CommandType.StoredProcedure;
+                com.CommandTimeout = 0;
+                com.CommandText = "Pos_Satis_Ekle";
+
+                com.Parameters.AddWithValue("@Rsat_Fisno", satisFisno);
+                com.Parameters.AddWithValue("@Rsat_Tarih", Param.Tarih);
+                com.Parameters.AddWithValue("@Rsat_Departman", Departman.Dep_Kodu);
+                com.Parameters.AddWithValue("@Rsat_Recete", Urun_Kodu);
+                com.Parameters.AddWithValue("@Rsat_Kdvoran", Rec_Kdv.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Rsat_Miktar", 1);
+                com.Parameters.AddWithValue("@Rsat_Fiyat", Rec_Fiyat.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Rsat_Net", Rsat_Net.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Rsat_Kdv", Rsat_Kdv.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Rsat_Tutar", Rsat_Tutar.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Rsat_Dovizkodu", Param.Doviz_Kodu);
+                com.Parameters.AddWithValue("@Rsat_Doviztutar", Rec_Dovifiyat.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Rsat_Odano", "");
+                com.Parameters.AddWithValue("@Rsat_Folio", 0);
+                com.Parameters.AddWithValue("@Rsat_Adisyon", "");
+                com.Parameters.AddWithValue("@Rsat_Masa", "");
+                com.Parameters.AddWithValue("@Rsat_Garson", User.P_Kod);
+                com.Parameters.AddWithValue("@Rsat_Kisi", 1);
+                com.Parameters.AddWithValue("@Rsat_Cari", "");
+                com.Parameters.AddWithValue("@Rsat_Split", 0);
+                com.Parameters.AddWithValue("@Rsat_Aciklama", "");
+                com.Parameters.AddWithValue("@Rsat_Paketci", "");
+                com.Parameters.AddWithValue("@Rsat_Emiktar", "T");
+                com.Parameters.AddWithValue("@Rsat_Garson2", "");
+                com.Parameters.AddWithValue("@Rsat_Uye_Kart_Turu", "");
+                com.Parameters.AddWithValue("@Rsat_Pansiyon", "");
+                com.Parameters.AddWithValue("@Rsat_MusTipi", "");
+                com.Parameters.AddWithValue("@Rsat_Uye_Id", 0);
+                com.Parameters.AddWithValue("@Rsat_Uye_Ad", "");
+                com.Parameters.AddWithValue("@Rsat_Indkodu", "");
+                com.Parameters.AddWithValue("@Rsat_Indoran", 0);
+                com.Parameters.AddWithValue("@Rsat_Onbdep", "");
+                com.Parameters.AddWithValue("@Rsat_Dovizkur", Param.Doviz_Kuru.ToString().Replace(",", "."));
+                com.Parameters.AddWithValue("@Rsat_Not", "");
+                com.Parameters.AddWithValue("@Rsat_Pda", Convert.ToBoolean(false));
+                com.Parameters.AddWithValue("@Rsat_Splitad", "");
+                com.Parameters.AddWithValue("@Rsat_SiparisPr", 1);
+                com.Parameters.AddWithValue("@Rsat_Yapma", 0);
+                com.Parameters.AddWithValue("@Rsat_AbuyerPr", 0);
+                com.Parameters.AddWithValue("@Rsat_AbuyerPr2", 0);
+                com.Parameters.AddWithValue("@Rsat_AbuyerPr3", 0);
+                com.Parameters.AddWithValue("@Rsat_AbuyerPr4", 0);
+                com.Parameters.AddWithValue("@Rsat_Sube", Departman.Kodlar_PosSubeKod);
+                com.Parameters.AddWithValue("@Rsat_OzelMasaAdi", "");
+                com.Parameters.AddWithValue("@PaketFiyatTipi", "");
+                com.Parameters.AddWithValue("@Rsat_Duzeltme", 0);
+                com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", "");
+
+                if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kart_ID", kartId);
+                if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kartno", Kart_No);
+
+
+                com.ExecuteNonQuery();
+                con.Close();
+
+                TopluGelirIade(true);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Satis eklerken sorun oluştu."+ex.Message);
+            }
+
         }
 
         private void CardF_CheckOut()
@@ -1359,7 +1462,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             gridControl3.DataSource = Fronttools.SelectTable(@"SELECT [ID]
                                           ,[CardF_No]
                                  ,case when CardF_MusteriTipi ='GB' then 
-										  (select SUM(Kumhrk_Tutar) as Tahsilat from kumhrk where Kumhrk_Kartno=CardF_No  and kumhrk_ba='A' and Kumhrk_Tarih between '"+ girTar + @"' and '"+cikTar+@"' )
+										  (select SUM(Kumhrk_Tutar) as Tahsilat from kumhrk where Kumhrk_Kartno=CardF_No  and kumhrk_ba='A' and Kumhrk_Tarih between '" + girTar + @"' and '" + cikTar + @"' )
 										  else '0'
 										  end as Tahsilat
                                           ,[CardF_RezID]
@@ -1721,6 +1824,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
         }
 
         bool Gitme = true;
+        int ID = 0;
         private void gridView3_DoubleClick(object sender, EventArgs e)
         {
             if (gridView3.FocusedRowHandle < 0)
@@ -1729,6 +1833,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             }
 
             KartID = Convert.ToInt32(gridView3.GetFocusedRowCellValue("ID"));
+            ID = Convert.ToInt32(gridView3.GetFocusedRowCellValue("ID"));
 
             chk_Folio.Checked = false;
             chk_Bakiye.Checked = true;
@@ -1794,7 +1899,7 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
 
                 if (Kart)
                 {
-                    execc = "exec Pos_NFCBakiye_Onburo @SirketKod=N'" + Departman.MKodlar_P_SirketKodu + "',@Tarih=N'" + dateEdit2.DateTime.ToString("yyyy-MM-dd") + "',@KapatmaKodu=N'" + Param_ExtraFolio.Front_GelirIade + "',@Rsat_Garson=N'" + User.P_Kod + "',@Departman=N'" + Departman.Dep_Kodu + "',@PariteDovizKodu=N'" + Param_ExtraFolio.Front_KurKodu + "', @CardID='" + KartID + "'";
+                    execc = "exec Pos_NFCBakiye_Onburo @SirketKod=N'" + Departman.MKodlar_P_SirketKodu + "',@Tarih=N'" + dateEdit2.DateTime.ToString("yyyy-MM-dd") + "',@KapatmaKodu=N'" + Param_ExtraFolio.Front_GelirIade + "',@Rsat_Garson=N'" + User.P_Kod + "',@Departman=N'" + Departman.Dep_Kodu + "',@PariteDovizKodu=N'" + Param_ExtraFolio.Front_KurKodu + "', @CardID='" + ID + "'";
                 }
 
                 dbtools.execcmdR(execc);

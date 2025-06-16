@@ -3820,6 +3820,7 @@
             this.gridView6.OptionsView.ShowFooter = true;
             this.gridView6.OptionsView.ShowGroupPanel = false;
             this.gridView6.RowHeight = 25;
+            this.gridView6.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.gridView6_RowStyle);
             // 
             // gridColumn55
             // 
