@@ -5,6 +5,8 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
 using Pos.Class;
+using Pos.Controllers;
+using Pos.Models;
 using Pos.Print;
 using System;
 using System.Collections.Generic;
@@ -1135,11 +1137,22 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             gridControl2.DataSource = null;
 
 
+        }
+
+
+        public void gelirIadeKapat1tane()
+        {
             try
             {
+
+                if (Param_ExtraFolio.GelirReceteKod == "")
+                {
+                    return;
+                }
+
                 var tutar = Math.Abs(Convert.ToDecimal(txt_BakiyeBakiye.EditValue));
 
-                if (tutar<1)
+                if (tutar < 1)
                 {
                     return;
                 }
@@ -1149,86 +1162,97 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                 string Kart_No = txt_BakiyeKartNo.Text.ToString();
                 string satisFisno = dbtools.DegerGetir("execute Cost_Fis_No");
                 string Urun_Kodu = Param_ExtraFolio.GelirReceteKod;
-                decimal Rec_Kdv =Convert.ToDecimal( dbtools.DegerGetir($"select Rec_Kdv from Cst_Recete where Rec_Genelkod='{Urun_Kodu}'"));
+                decimal Rec_Kdv = Convert.ToDecimal(dbtools.DegerGetir($"select Rec_Kdv from Cst_Recete where Rec_Genelkod='{Urun_Kodu}'"));
                 decimal Rsat_Tutar = tutar;
                 decimal Rec_Fiyat = tutar;
                 decimal Rec_Dovifiyat = tutar;
                 var Rsat_Net = ((Rsat_Tutar * 100) / (100 + Rec_Kdv));
                 var Rsat_Kdv = Rsat_Tutar - Rsat_Net;
 
+                string kapatmakodu = dbtools.DegerGetir("select top 1 isnull(Pkod_Kod,'08') as Pkod_Kod from Pos_Kodlar where Pkod_Ozelkod='1' ");
 
+                SatisController satisCont = new SatisController();
+                SatisYapModel model = new SatisYapModel();
+                model.kartId = kartId;
+                model.Kart_No = Kart_No;
+                model.satisFisno = satisFisno;
+                model.Urun_Kodu = Urun_Kodu;
+                model.Rec_Kdv = Rec_Kdv;
+                model.Rec_Fiyat = Rec_Fiyat;
+                model.Rsat_Tutar = Rsat_Tutar;
+                model.Rec_Dovifiyat = Rec_Dovifiyat;
+                model.Rsat_Net = Rsat_Net;
+                model.Rsat_Kdv = Rsat_Kdv;
+                model.Rsat_Ba = "B";
+                model.Rsat_Durum = "K";
+                satisCont.satisYap(model);
 
-                SqlConnection con = dbtools.conn;
-                if (con.State == ConnectionState.Closed) con.Open();
-                SqlCommand com = new SqlCommand();
-                com.Connection = con;
-                com.CommandType = CommandType.StoredProcedure;
-                com.CommandTimeout = 0;
-                com.CommandText = "Pos_Satis_Ekle";
+                model.Rsat_Ba = "A";
+                model.Rsat_Kapatma = kapatmakodu;
+                satisCont.satisYap(model);
 
-                com.Parameters.AddWithValue("@Rsat_Fisno", satisFisno);
-                com.Parameters.AddWithValue("@Rsat_Tarih", Param.Tarih);
-                com.Parameters.AddWithValue("@Rsat_Departman", Departman.Dep_Kodu);
-                com.Parameters.AddWithValue("@Rsat_Recete", Urun_Kodu);
-                com.Parameters.AddWithValue("@Rsat_Kdvoran", Rec_Kdv.ToString().Replace(",", "."));
-                com.Parameters.AddWithValue("@Rsat_Miktar", 1);
-                com.Parameters.AddWithValue("@Rsat_Fiyat", Rec_Fiyat.ToString().Replace(",", "."));
-                com.Parameters.AddWithValue("@Rsat_Net", Rsat_Net.ToString().Replace(",", "."));
-                com.Parameters.AddWithValue("@Rsat_Kdv", Rsat_Kdv.ToString().Replace(",", "."));
-                com.Parameters.AddWithValue("@Rsat_Tutar", Rsat_Tutar.ToString().Replace(",", "."));
-                com.Parameters.AddWithValue("@Rsat_Dovizkodu", Param.Doviz_Kodu);
-                com.Parameters.AddWithValue("@Rsat_Doviztutar", Rec_Dovifiyat.ToString().Replace(",", "."));
-                com.Parameters.AddWithValue("@Rsat_Odano", "");
-                com.Parameters.AddWithValue("@Rsat_Folio", 0);
-                com.Parameters.AddWithValue("@Rsat_Adisyon", "");
-                com.Parameters.AddWithValue("@Rsat_Masa", "");
-                com.Parameters.AddWithValue("@Rsat_Garson", User.P_Kod);
-                com.Parameters.AddWithValue("@Rsat_Kisi", 1);
-                com.Parameters.AddWithValue("@Rsat_Cari", "");
-                com.Parameters.AddWithValue("@Rsat_Split", 0);
-                com.Parameters.AddWithValue("@Rsat_Aciklama", "");
-                com.Parameters.AddWithValue("@Rsat_Paketci", "");
-                com.Parameters.AddWithValue("@Rsat_Emiktar", "T");
-                com.Parameters.AddWithValue("@Rsat_Garson2", "");
-                com.Parameters.AddWithValue("@Rsat_Uye_Kart_Turu", "");
-                com.Parameters.AddWithValue("@Rsat_Pansiyon", "");
-                com.Parameters.AddWithValue("@Rsat_MusTipi", "");
-                com.Parameters.AddWithValue("@Rsat_Uye_Id", 0);
-                com.Parameters.AddWithValue("@Rsat_Uye_Ad", "");
-                com.Parameters.AddWithValue("@Rsat_Indkodu", "");
-                com.Parameters.AddWithValue("@Rsat_Indoran", 0);
-                com.Parameters.AddWithValue("@Rsat_Onbdep", "");
-                com.Parameters.AddWithValue("@Rsat_Dovizkur", Param.Doviz_Kuru.ToString().Replace(",", "."));
-                com.Parameters.AddWithValue("@Rsat_Not", "");
-                com.Parameters.AddWithValue("@Rsat_Pda", Convert.ToBoolean(false));
-                com.Parameters.AddWithValue("@Rsat_Splitad", "");
-                com.Parameters.AddWithValue("@Rsat_SiparisPr", 1);
-                com.Parameters.AddWithValue("@Rsat_Yapma", 0);
-                com.Parameters.AddWithValue("@Rsat_AbuyerPr", 0);
-                com.Parameters.AddWithValue("@Rsat_AbuyerPr2", 0);
-                com.Parameters.AddWithValue("@Rsat_AbuyerPr3", 0);
-                com.Parameters.AddWithValue("@Rsat_AbuyerPr4", 0);
-                com.Parameters.AddWithValue("@Rsat_Sube", Departman.Kodlar_PosSubeKod);
-                com.Parameters.AddWithValue("@Rsat_OzelMasaAdi", "");
-                com.Parameters.AddWithValue("@PaketFiyatTipi", "");
-                com.Parameters.AddWithValue("@Rsat_Duzeltme", 0);
-                com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", "");
-
-                if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kart_ID", kartId);
-                if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kartno", Kart_No);
-
-
-                com.ExecuteNonQuery();
-                con.Close();
 
                 TopluGelirIade(true);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Satis eklerken sorun oluştu."+ex.Message);
+                MessageBox.Show("Satis eklerken sorun oluştu." + ex.Message);
             }
 
         }
+
+        private void TopluGelirIade(bool Kart) // burada kaldık
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            try
+            {
+
+                string execc = "exec Pos_NFCBakiye_Onburo @SirketKod=N'" + Departman.MKodlar_P_SirketKodu + "',@Tarih=N'" + dateEdit2.DateTime.ToString("yyyy-MM-dd") + "',@KapatmaKodu=N'" + Param_ExtraFolio.Front_GelirIade + "',@Rsat_Garson=N'" + User.P_Kod + "',@Departman=N'" + Departman.Dep_Kodu + "',@PariteDovizKodu=N'" + Param_ExtraFolio.Front_KurKodu + "'";
+
+                if (Kart)
+                {
+                    execc = "exec Pos_NFCBakiye_Onburo @SirketKod=N'" + Departman.MKodlar_P_SirketKodu + "',@Tarih=N'" + dateEdit2.DateTime.ToString("yyyy-MM-dd") + "',@KapatmaKodu=N'" + Param_ExtraFolio.Front_GelirIade + "',@Rsat_Garson=N'" + User.P_Kod + "',@Departman=N'" + Departman.Dep_Kodu + "',@PariteDovizKodu=N'" + Param_ExtraFolio.Front_KurKodu + "', @CardID='" + ID + "'";
+                }
+
+                dbtools.execcmdR(execc);
+                //SqlConnection con = dbtools.conn;
+                //if (con.State == ConnectionState.Closed) { con.Open(); }
+
+
+                //using (SqlCommand cmd = new SqlCommand("Pos_NFCBakiye_Onburo", dbtools.conn) { CommandType = CommandType.StoredProcedure })
+                //{
+                //    cmd.Parameters.AddWithValue("@SirketKod", Departman.MKodlar_P_SirketKodu);
+                //    cmd.Parameters.AddWithValue("@Tarih", dateEdit2.DateTime.ToString("yyyy-MM-dd"));
+                //    cmd.Parameters.AddWithValue("@KapatmaKodu", Param_ExtraFolio.Front_GelirIade);
+                //    cmd.Parameters.AddWithValue("@Rsat_Garson", User.P_Kod);
+                //    cmd.Parameters.AddWithValue("@Departman", Departman.Dep_Kodu);
+                //    cmd.Parameters.AddWithValue("@PariteDovizKodu", Param_ExtraFolio.Front_KurKodu);
+                //    if (Kart == true) cmd.Parameters.AddWithValue("@CardID", KartID);
+
+                //    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //    DataTable dt = new DataTable();
+                //    da.Fill(dt);
+                //}
+
+
+
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message);
+
+            }
+            finally
+            {
+                MessageBox.Show(res_man.GetString("İşlem Tamamlandı."));
+
+                this.Cursor = Cursors.Default;
+
+            }
+
+        }
+
 
         private void CardF_CheckOut()
         {
@@ -1261,6 +1285,9 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
                                 FisPr pr = new FisPr();
                                 pr.ExtraFolioDokumPr(txt_BakiyeKartNo.Text, Convert.ToInt32(txt_BakiyeFolioID.Text), Tarih1, Tarih2);
                             }
+
+                            gelirIadeKapat1tane();
+
                         }
                     }
                 }
@@ -1888,57 +1915,6 @@ VALUES('" + look_Acenta.EditValue + "','" + look_DovizSekli.EditValue + "','" + 
             }
         }
 
-        private void TopluGelirIade(bool Kart) // burada kaldık
-        {
-            this.Cursor = Cursors.WaitCursor;
-
-            try
-            {
-
-                string execc = "exec Pos_NFCBakiye_Onburo @SirketKod=N'" + Departman.MKodlar_P_SirketKodu + "',@Tarih=N'" + dateEdit2.DateTime.ToString("yyyy-MM-dd") + "',@KapatmaKodu=N'" + Param_ExtraFolio.Front_GelirIade + "',@Rsat_Garson=N'" + User.P_Kod + "',@Departman=N'" + Departman.Dep_Kodu + "',@PariteDovizKodu=N'" + Param_ExtraFolio.Front_KurKodu + "'";
-
-                if (Kart)
-                {
-                    execc = "exec Pos_NFCBakiye_Onburo @SirketKod=N'" + Departman.MKodlar_P_SirketKodu + "',@Tarih=N'" + dateEdit2.DateTime.ToString("yyyy-MM-dd") + "',@KapatmaKodu=N'" + Param_ExtraFolio.Front_GelirIade + "',@Rsat_Garson=N'" + User.P_Kod + "',@Departman=N'" + Departman.Dep_Kodu + "',@PariteDovizKodu=N'" + Param_ExtraFolio.Front_KurKodu + "', @CardID='" + ID + "'";
-                }
-
-                dbtools.execcmdR(execc);
-                //SqlConnection con = dbtools.conn;
-                //if (con.State == ConnectionState.Closed) { con.Open(); }
-
-
-                //using (SqlCommand cmd = new SqlCommand("Pos_NFCBakiye_Onburo", dbtools.conn) { CommandType = CommandType.StoredProcedure })
-                //{
-                //    cmd.Parameters.AddWithValue("@SirketKod", Departman.MKodlar_P_SirketKodu);
-                //    cmd.Parameters.AddWithValue("@Tarih", dateEdit2.DateTime.ToString("yyyy-MM-dd"));
-                //    cmd.Parameters.AddWithValue("@KapatmaKodu", Param_ExtraFolio.Front_GelirIade);
-                //    cmd.Parameters.AddWithValue("@Rsat_Garson", User.P_Kod);
-                //    cmd.Parameters.AddWithValue("@Departman", Departman.Dep_Kodu);
-                //    cmd.Parameters.AddWithValue("@PariteDovizKodu", Param_ExtraFolio.Front_KurKodu);
-                //    if (Kart == true) cmd.Parameters.AddWithValue("@CardID", KartID);
-
-                //    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                //    DataTable dt = new DataTable();
-                //    da.Fill(dt);
-                //}
-
-
-
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.Message);
-
-            }
-            finally
-            {
-                MessageBox.Show(res_man.GetString("İşlem Tamamlandı."));
-
-                this.Cursor = Cursors.Default;
-
-            }
-
-        }
 
         private void departmanKoduDeğiştirToolStripMenuItem_Click(object sender, EventArgs e)
         {

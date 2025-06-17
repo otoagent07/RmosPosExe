@@ -118,11 +118,20 @@ namespace Pos
                     declare @Fis_Tutar decimal(18,2) = (select SUM(Satis.Rsat_Tutar)   
                     FROM Cst_Recete_Satis as satis WITH(NOLOCK) 
                     LEFT JOIN Pos_Kodlar as  kodlar WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' and Pkod_Ozelkod <> '4'
-                    where Satis.Rsat_Fisno = '" + Convert.ToString(this.Tag) + @"' and Satis.Rsat_Ba = 'B' ) "
+                    where Satis.Rsat_Fisno = '" + Convert.ToString(this.Tag) + @"' and Satis.Rsat_Ba = 'B' )
+
+
+
+                          "
 
 
                         + " declare @Katsayi decimal(18,8) = (" + (TL_Tutar).ToString().Replace(",", ".") + " / @Fis_Tutar ) "
-                        + " if @Katsayi = 0 begin set @Katsayi = 1 end "
+                        + " if @Katsayi = 0 begin set @Katsayi = 1 end " +
+                        "" +
+                        "" +
+                        "" +
+                        "" +
+                        ""
                         + " SELECT MIN(Rsat_Tarih) as Rsat_Tarih,MIN(Rsat_Fisno) as Rsat_Fisno,Kodlar_Ad + ' BEDELI' as Aciklama,MIN(Rsat_Kdvoran) as Rec_Kdv, "
                         + "     ((SUM(Rsat_Tutar) * 100 / (100 + MIN(Rsat_Kdvoran))) * MIN(Rsat_Kdvoran) / 100) * @Katsayi as Kdv,  "
                         + "     (SUM(Rsat_Tutar) * 100 / (100 + MIN(Rsat_Kdvoran))) * @Katsayi as Net, "

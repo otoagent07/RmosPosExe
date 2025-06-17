@@ -460,6 +460,7 @@
     </Compile>
     <Compile Include="Models\PavoReqModel.cs" />
     <Compile Include="Models\PrintJson.cs" />
+    <Compile Include="Models\SatisYapModel.cs" />
     <Compile Include="PavoModels\PavoResponse.cs" />
     <Compile Include="Print\Abuyer.cs">
       <SubType>Component</SubType>

@@ -1,8 +1,10 @@
 ﻿using Pos.Class;
 using Pos.Entities;
+using Pos.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -147,6 +149,75 @@ where Rec_Genelkod='" + urun.recId + @"'");
             {
                 RHMesaj.MyMessageError(MyClass, "siparisGonder", "", ex);
             }
+        }
+
+        public void satisYap(SatisYapModel model)
+        {
+            SqlConnection con = dbtools.conn;
+            if (con.State == ConnectionState.Closed) con.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandTimeout = 0;
+            com.CommandText = "Pos_Satis_Ekle";
+
+            com.Parameters.AddWithValue("@Rsat_Fisno", model.satisFisno);
+            com.Parameters.AddWithValue("@Rsat_Tarih", Param.Tarih);
+            com.Parameters.AddWithValue("@Rsat_Departman", Departman.Dep_Kodu);
+            com.Parameters.AddWithValue("@Rsat_Recete", model.Urun_Kodu);
+            com.Parameters.AddWithValue("@Rsat_Kdvoran", model.Rec_Kdv.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Rsat_Miktar", 1);
+            com.Parameters.AddWithValue("@Rsat_Fiyat", model.Rec_Fiyat.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Rsat_Net", model.Rsat_Net.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Rsat_Kdv", model.Rsat_Kdv.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Rsat_Tutar", model.Rsat_Tutar.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Rsat_Dovizkodu", Param.Doviz_Kodu);
+            com.Parameters.AddWithValue("@Rsat_Doviztutar", model.Rec_Dovifiyat.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Rsat_Odano", "");
+            com.Parameters.AddWithValue("@Rsat_Folio", 0);
+            com.Parameters.AddWithValue("@Rsat_Adisyon", "");
+            com.Parameters.AddWithValue("@Rsat_Masa", "");
+            com.Parameters.AddWithValue("@Rsat_Garson", User.P_Kod);
+            com.Parameters.AddWithValue("@Rsat_Kisi", 1);
+            com.Parameters.AddWithValue("@Rsat_Cari", "");
+            com.Parameters.AddWithValue("@Rsat_Split", 0);
+            com.Parameters.AddWithValue("@Rsat_Aciklama", "");
+            com.Parameters.AddWithValue("@Rsat_Paketci", "");
+            com.Parameters.AddWithValue("@Rsat_Emiktar", "T");
+            com.Parameters.AddWithValue("@Rsat_Garson2", "");
+            com.Parameters.AddWithValue("@Rsat_Uye_Kart_Turu", "");
+            com.Parameters.AddWithValue("@Rsat_Pansiyon", "");
+            com.Parameters.AddWithValue("@Rsat_MusTipi", "");
+            com.Parameters.AddWithValue("@Rsat_Uye_Id", 0);
+            com.Parameters.AddWithValue("@Rsat_Uye_Ad", "");
+            com.Parameters.AddWithValue("@Rsat_Indkodu", "");
+            com.Parameters.AddWithValue("@Rsat_Indoran", 0);
+            com.Parameters.AddWithValue("@Rsat_Onbdep", "");
+            com.Parameters.AddWithValue("@Rsat_Dovizkur", Param.Doviz_Kuru.ToString().Replace(",", "."));
+            com.Parameters.AddWithValue("@Rsat_Not", "");
+            com.Parameters.AddWithValue("@Rsat_Pda", Convert.ToBoolean(false));
+            com.Parameters.AddWithValue("@Rsat_Splitad", "");
+            com.Parameters.AddWithValue("@Rsat_SiparisPr", 1);
+            com.Parameters.AddWithValue("@Rsat_Yapma", 0);
+            com.Parameters.AddWithValue("@Rsat_AbuyerPr", 0);
+            com.Parameters.AddWithValue("@Rsat_AbuyerPr2", 0);
+            com.Parameters.AddWithValue("@Rsat_AbuyerPr3", 0);
+            com.Parameters.AddWithValue("@Rsat_AbuyerPr4", 0);
+            com.Parameters.AddWithValue("@Rsat_Sube", Departman.Kodlar_PosSubeKod);
+            com.Parameters.AddWithValue("@Rsat_OzelMasaAdi", "");
+            com.Parameters.AddWithValue("@PaketFiyatTipi", "");
+            com.Parameters.AddWithValue("@Rsat_Duzeltme", 0);
+            com.Parameters.AddWithValue("@Rsat_Ba", model.Rsat_Ba);
+            com.Parameters.AddWithValue("@Rsat_Durum", model.Rsat_Durum);
+            com.Parameters.AddWithValue("@Rsat_Kapatma", model.Rsat_Kapatma);
+            com.Parameters.AddWithValue("@kisiyeSatisAdSoyad", "");
+
+            if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kart_ID", model.kartId);
+            if (Departman.Kodlar_AndPos_NFC == true) com.Parameters.AddWithValue("@Rsat_Kartno", model.Kart_No);
+
+
+            com.ExecuteNonQuery();
+            con.Close();
         }
     }
 }
