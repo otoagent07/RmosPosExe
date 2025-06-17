@@ -32,38 +32,38 @@ namespace Pos
             if (Convert.ToString(this.Tag) == "FARKLIMIKTAR")
             {
                 lbl_UrunAdi.Text = UrunAdi;
-                lbl_Baslik.Text = res_man.GetString("Miktar Giriniz...");
+                lbl_Baslik.Text = ("Miktar Giriniz...");
             }
 
             if (Convert.ToString(this.Tag) == "MIKTARDUZELT")
             {
                 lbl_UrunAdi.Text = UrunAdi;
-                lbl_Baslik.Text = res_man.GetString("Miktar Giriniz...");
+                lbl_Baslik.Text = ("Miktar Giriniz...");
             }
 
             if (Convert.ToString(this.Tag) == "ODEMETUTAR")
             {
-                lbl_Baslik.Text = res_man.GetString("Odeme Tutarını Giriniz...");
+                lbl_Baslik.Text = ("Odeme Tutarını Giriniz...");
             }
             if (Convert.ToString(this.Tag) == "KISISAYISI")
             {
-                lbl_Baslik.Text = res_man.GetString("Kişi Sayısı Giriniz...");
+                lbl_Baslik.Text = ("Kişi Sayısı Giriniz...");
                 btn_Cikis.Visible = false;
             }
             if (Convert.ToString(this.Tag) == "TUTARDUZELT")
             {
                 lbl_UrunAdi.Text = UrunAdi;
-                lbl_Baslik.Text = res_man.GetString("Tutar Giriniz...");
+                lbl_Baslik.Text = ("Tutar Giriniz...");
             }
             if (Convert.ToString(this.Tag) == "GRAMSOR")
             {
-                if (MiktarGR) lbl_Baslik.Text = res_man.GetString("GRAM Giriniz...");
-                else lbl_Baslik.Text = res_man.GetString("Miktar Giriniz...");
+                if (MiktarGR) lbl_Baslik.Text = ("GRAM Giriniz...");
+                else lbl_Baslik.Text = ("Miktar Giriniz...");
             }
             if (Convert.ToString(this.Tag) == "MALZEMETR")
             {
                 lbl_UrunAdi.Text = UrunAdi;
-                lbl_Baslik.Text = res_man.GetString("Miktar Giriniz...");
+                lbl_Baslik.Text = ("Miktar Giriniz...");
             }
             if (Convert.ToString(this.Tag) == "SATIRSIL")
             {
@@ -73,13 +73,13 @@ namespace Pos
             if (Convert.ToString(this.Tag) == "ZAYISIL")
             {
                 lbl_UrunAdi.Text = UrunAdi;
-                lbl_Baslik.Text = res_man.GetString("Miktar Giriniz...");
+                lbl_Baslik.Text = ("Miktar Giriniz...");
             }
 
             //Dil Çeviri IKRAM Eklenmemiş: Dil karşılığı olarak ekledim.
             if (lbl_Baslik.Text == "Tutar Giriniz...")
             {
-                lbl_Baslik.Text = res_man.GetString("Tutar Giriniz...");
+                lbl_Baslik.Text = ("Tutar Giriniz...");
             }
         }
 
@@ -128,7 +128,7 @@ namespace Pos
 
                 if (sayi > Param.Max_Miktar)
                 {
-                    if (MessageBox.Show("Max Miktarı Geçtiniz..." + "\n" + "Devam etmek İstiyor Musunuz...?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
+                    if (MessageBox.Show("Max Miktarı Geçtiniz..." + "\n" + "Devam etmek İstiyor Musunuz...?", ("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
                     {
                         sayi = 1;
                     }
@@ -145,7 +145,7 @@ namespace Pos
 
                 if (sayi > Param.Max_Miktar)
                 {
-                    if (MessageBox.Show("Max Miktarı Geçtiniz..." + "\n" + "Devam etmek İstiyor Musunuz...?", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
+                    if (MessageBox.Show("Max Miktarı Geçtiniz..." + "\n" + "Devam etmek İstiyor Musunuz...?", ("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
                     {
                         return;
                     }
@@ -160,7 +160,7 @@ namespace Pos
             {
                 if (sayi > 10)
                 {
-                    DialogResult c = MessageBox.Show(res_man.GetString("Kişi Sayısını 10nun üzerindendir. Devam Etmek İstiyormusunuz?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    DialogResult c = MessageBox.Show(("Kişi Sayısını 10nun üzerindendir. Devam Etmek İstiyormusunuz?"), ("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (c == DialogResult.No)
                     {
                         return;

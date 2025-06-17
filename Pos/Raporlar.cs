@@ -1218,7 +1218,10 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             }
             else
             {
-                MessageBox.Show(res_man.GetString("Sadece Genel Çek Raporundan Masa Geri Alabilirsiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sadece Genel Çek Raporundan Masa Geri Alabilirsiniz...  YÖNLENİYOR...! MASAYI TEKRAR DAN GERİ ALMAYI DENEYİN..!", res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                xtraTabControl1.SelectedTabPage = tab_Genelrapor;
+
             }
         }
         private void raporyenile()

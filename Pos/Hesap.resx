@@ -2039,7 +2039,7 @@
     <value>Top, Right</value>
   </data>
   <data name="btnSpSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
+    <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="btnSpSil.Location" type="System.Drawing.Point, System.Drawing">
     <value>821, 368</value>
@@ -2341,39 +2341,6 @@
   <data name="&gt;&gt;gridControlFis.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 116</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>128</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2407,38 +2374,26 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txt2kisi.Name" xml:space="preserve">
-    <value>txt2kisi</value>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 116</value>
   </data>
-  <data name="&gt;&gt;txt2kisi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
   </data>
-  <data name="&gt;&gt;txt2kisi.Parent" xml:space="preserve">
-    <value>panelControl2</value>
-  </data>
-  <data name="&gt;&gt;txt2kisi.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 135</value>
-  </data>
-  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 24</value>
-  </data>
-  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
-    <value>panelControl2</value>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="txt2kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2473,38 +2428,26 @@
   <data name="&gt;&gt;txt2kisi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txt3kisi.Name" xml:space="preserve">
-    <value>txt3kisi</value>
+  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 135</value>
   </data>
-  <data name="&gt;&gt;txt3kisi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt3kisi.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;txt3kisi.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 135</value>
-  </data>
-  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 24</value>
   </data>
-  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
-    <value>129</value>
+  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
   </data>
-  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
-    <value>panelControl3</value>
+  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
+    <value>panelControl2</value>
   </data>
-  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="txt3kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2539,38 +2482,26 @@
   <data name="&gt;&gt;txt3kisi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 135</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panelControl4</value>
+  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 116</value>
-  </data>
-  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2605,38 +2536,26 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txt5kisi.Name" xml:space="preserve">
-    <value>txt5kisi</value>
+  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 116</value>
   </data>
-  <data name="&gt;&gt;txt5kisi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
   </data>
-  <data name="&gt;&gt;txt5kisi.Parent" xml:space="preserve">
-    <value>panelControl5</value>
+  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
   </data>
-  <data name="&gt;&gt;txt5kisi.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
+    <value>panelControl4</value>
   </data>
-  <data name="panelControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>589, 135</value>
-  </data>
-  <data name="panelControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 24</value>
-  </data>
-  <data name="panelControl5.TabIndex" type="System.Int32, mscorlib">
-    <value>133</value>
-  </data>
-  <data name="&gt;&gt;panelControl5.Name" xml:space="preserve">
-    <value>panelControl5</value>
-  </data>
-  <data name="&gt;&gt;panelControl5.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl5.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="txt5kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2671,38 +2590,26 @@
   <data name="&gt;&gt;txt5kisi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="panelControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 135</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>panelControl6</value>
+  <data name="panelControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl5.Name" xml:space="preserve">
+    <value>panelControl5</value>
   </data>
-  <data name="panelControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>589, 116</value>
-  </data>
-  <data name="panelControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="panelControl6.TabIndex" type="System.Int32, mscorlib">
-    <value>134</value>
-  </data>
-  <data name="&gt;&gt;panelControl6.Name" xml:space="preserve">
-    <value>panelControl6</value>
-  </data>
-  <data name="&gt;&gt;panelControl6.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl5.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl6.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;panelControl5.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2737,38 +2644,26 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txt4kisi.Name" xml:space="preserve">
-    <value>txt4kisi</value>
+  <data name="panelControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 116</value>
   </data>
-  <data name="&gt;&gt;txt4kisi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
   </data>
-  <data name="&gt;&gt;txt4kisi.Parent" xml:space="preserve">
-    <value>panelControl7</value>
+  <data name="panelControl6.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
   </data>
-  <data name="&gt;&gt;txt4kisi.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl6.Name" xml:space="preserve">
+    <value>panelControl6</value>
   </data>
-  <data name="panelControl7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 135</value>
-  </data>
-  <data name="panelControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 24</value>
-  </data>
-  <data name="panelControl7.TabIndex" type="System.Int32, mscorlib">
-    <value>131</value>
-  </data>
-  <data name="&gt;&gt;panelControl7.Name" xml:space="preserve">
-    <value>panelControl7</value>
-  </data>
-  <data name="&gt;&gt;panelControl7.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl6.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl6.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl7.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;panelControl6.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="txt4kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2803,38 +2698,26 @@
   <data name="&gt;&gt;txt4kisi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="panelControl7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 135</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>panelControl8</value>
+  <data name="panelControl7.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl7.Name" xml:space="preserve">
+    <value>panelControl7</value>
   </data>
-  <data name="panelControl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 116</value>
-  </data>
-  <data name="panelControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="panelControl8.TabIndex" type="System.Int32, mscorlib">
-    <value>132</value>
-  </data>
-  <data name="&gt;&gt;panelControl8.Name" xml:space="preserve">
-    <value>panelControl8</value>
-  </data>
-  <data name="&gt;&gt;panelControl8.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl7.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl7.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl8.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;panelControl7.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2868,6 +2751,27 @@
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="panelControl8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 116</value>
+  </data>
+  <data name="panelControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
+  </data>
+  <data name="panelControl8.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="&gt;&gt;panelControl8.Name" xml:space="preserve">
+    <value>panelControl8</value>
+  </data>
+  <data name="&gt;&gt;panelControl8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl8.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="btnUrunIade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3008,38 +2912,38 @@
   <data name="&gt;&gt;btnPavoKapat.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="simpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnIkinciEkranScrollUp.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
-        b9clzJvEhHYAAAAASUVORK5CYII=
+        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
+        RU5ErkJggg==
 </value>
   </data>
   <data name="btnIkinciEkranScrollUp.Location" type="System.Drawing.Point, System.Drawing">
@@ -3063,39 +2967,39 @@
   <data name="&gt;&gt;btnIkinciEkranScrollUp.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="simpleButton6.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnIkinciEkranScrollDown.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABF0RVh0VGl0
+        bGUARG93bjtBcnJvdzu9/IJYAAAGwUlEQVRYR8WWe1BTVx7Hj22ttdq1urOt/zh12v7hWOv0Mba7bUdb
+        nTp9rba749KXrV0rLi0VfLT4ABSIWjvQ1SJCYZUtpZAQAuGR8AgqVAFFgYAh5IGAvMnLYCAgSfx2fif3
+        OtqOQrad7pn5zuTeyf19P+ec7+/cywCw/6d+ceP31s0Xkx9TbqPbjv8VgArfIejOCUT/uSXIpAD25zaz
+        fXJSE9srb6Jbd0hk2tK9Mi0ksiZIZFrESf2K5WpEbHYjYrIaEJ70Y5kAMiX8yCkWluRXQAB7c5rYqPca
+        c3uv0SXN5s44WSPc3muCfBjx+jDsuVkujw9hSaeo0FR6buiqlzmvelnoN1WBAcTJtNzc7fWJAFP3ZDXC
+        NuZF5cAI18m+ERzvG0FF7zA0PS6Udbmgc4wiNLGKCk2jVXOOeRkp5GBlYAAxWY1s2OPjEgDujs6sx+Co
+        Fyf6hnG8dxgVvS6Ud7tQ1u1C6aUrUHcOodk2ipBDlVToHgJwjHmYfdTDghNOBAawO7PhRgAK1bTIjPPo
+        d3u4KTfuuiIYX4GqfQhFF52ot4wgOOEkFZpOz9lGPczq9rD1X2kCA4jMOM9cHh9zjV8HuGdHeh36Rsa5
+        aUnnEFQdQyhud6LwohMFbZehNF1GXf8wPv5KQ4XuFYM4MDLO1u0rDwhA7Gex7e6ighFHz6LLdRXFwmwL
+        BON8kwMKowO5Bjtqel1Yt6+cCt0nBFFsy+utOREATzztubCMNJOZjLHZW7+tRbvzKpRmB/JMDuRxUwfk
+        rXbk6G2Q6qyounQFa+NKqdCfGGOzBBB6njJBE5kyGYC7t6aeARluSanB5pQahCdXc5kvj/GZkqlMb4Os
+        xYZsnRU/NFuQ2WRBRbsTIf+uwsav/QpOqOSZ2BDPc8GDOREAD9ymb6qKqg0W2NweWN3jXBb3OFrtbkh1
+        NmRdsCLrggWZzYP4XjuI7xoHkN4wgBKTA3qrG11DY+h0jqHj8hhU9T34R5SyVAzmRAC8519bL1kQkVo7
+        ojE7rs9QnOX3TYPI0FqQ0TiI/zYM4Fh9P/5zrh9pdf349mwfkmt7kFTTg8PV3Th2phcf7C1zL3lj0yLh
+        bJhwC2hQBqZ/EKPYkaDUIeNcH9LO9XEzUnp9P46e9yutro+bppzpxZGaHiRV9yDxVDcSTnbi4MlLCE+t
+        xauhx6KFHFDdm/xuBcBXYfbc+XPWH9BcyKjuQvzxDnypacfBykt8Zoere3CkltSLxNPdOFjVhYQTnfiy
+        vB0xxWbEqszYX2jEqq1y/Yz75z4ghHpSXSAOysL0lesPLN+SXO2jpZSUtHHFqS8irqQNsWq/YlRm7CEV
+        mRBdZEJUoQnxFe14J1bte3pVxErG2AyhHh+TBSBaaps/rNkhSzuQp0O8poMbkSE3LTZjd7EZ0cWisRGR
+        BSZI1G0ITz2LlzakpVP7ii+mgADel/CTi3fEw0+unL9WUjqYXNnJAaIL/bMURaa7lEbsVBoRqTQittCA
+        V8OklrmP/uURsfWWh2Rfrz0pgHf2lLKGHhf9pODMXPHPr9d9drga8RUdiCwwYpcgMt2Zb8AOUp6Bb8nb
+        MWo8tXp3MK0ereIJs4Mt3ZAZGMCaKDWr6xqin/xgYoz98Y3N2ZoYuQ67i0zccHu+EdvzDIhQtCJCYcCu
+        fBPCjp7Dc2tT6NVHweNtV2aws+c/+i4wgL/tVLGajiEuYStmLHjhvSVB0SXu/eo2bFf4jb9QtOLzXD0+
+        l+sRlW/Aik+zR+c9sfpZse1KWu1M3Wpnf/6Q4hAAwOqIInbqopP92O6kS96WFKilHx6K25h4GlFKE7bJ
+        9diWo8fWHD1f/qC4ciz+q2Q/rZYYvKIWKyvUWdkz7x4LDOD1bUpGeydKbMtpM+fMezk0W79d2swBtsha
+        OMBn6fVY8m6ycer0WQ+JR26BzsqUOivLa7awp4JSAwN4ZXM+0xgdXOUGO6N9FAI5a+GKT1e9tUvlo20I
+        k+rwhVyP5Z9k+R5a8v6bjLH7xbceGSuaLEyhtbAn1qQEBvBymILR/pFUejtTtXIA2goK1oPPvpeY+dGh
+        09gsbUHQPg0WviahPpsrBk+utbBcrYXJGv1a/PcjgQEsD81lxS02VqSz8T0svGAVAXhbzp63eNGLIdnW
+        TZnNeDoo2TbzgQWP33DeT/EbDzJpg1+L3goQ4MVPctiyEDlbFpLDlv1LxpZuzGFLN8pECArYnMdejwx+
+        foMU818Io56fIwZv0ZuHmajHblBAALcZ4qcanQ30xSN++fDP8BuP3FuNXwtAg0zEdwXNmoduMuY0fgsA
+        cYimkzIWx88BfgLDjrGm5yiGDgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btnIkinciEkranScrollDown.Location" type="System.Drawing.Point, System.Drawing">
