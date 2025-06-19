@@ -255,7 +255,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 175;
+            this.splitContainerControl4.SplitterPosition = 179;
             // 
             // ana_btnUp
             // 
@@ -299,7 +299,7 @@
             resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 121;
+            this.splitContainerControl2.SplitterPosition = 124;
             // 
             // alt_btnUp
             // 
@@ -982,7 +982,9 @@
             // 
             // btn_Zayi
             // 
+            this.btn_Zayi.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_Zayi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Zayi.Appearance.Font")));
+            this.btn_Zayi.Appearance.Options.UseBackColor = true;
             this.btn_Zayi.Appearance.Options.UseFont = true;
             this.btn_Zayi.Appearance.Options.UseTextOptions = true;
             this.btn_Zayi.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -995,7 +997,9 @@
             // 
             // btn_Ikram
             // 
+            this.btn_Ikram.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Ikram.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Ikram.Appearance.Font")));
+            this.btn_Ikram.Appearance.Options.UseBackColor = true;
             this.btn_Ikram.Appearance.Options.UseFont = true;
             this.btn_Ikram.Appearance.Options.UseTextOptions = true;
             this.btn_Ikram.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1008,7 +1012,9 @@
             // 
             // btn_Tutarduzelt
             // 
+            this.btn_Tutarduzelt.Appearance.BackColor = System.Drawing.Color.Brown;
             this.btn_Tutarduzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Tutarduzelt.Appearance.Font")));
+            this.btn_Tutarduzelt.Appearance.Options.UseBackColor = true;
             this.btn_Tutarduzelt.Appearance.Options.UseFont = true;
             this.btn_Tutarduzelt.Appearance.Options.UseTextOptions = true;
             this.btn_Tutarduzelt.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1021,7 +1027,9 @@
             // 
             // btn_Bindirim
             // 
+            this.btn_Bindirim.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_Bindirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Bindirim.Appearance.Font")));
+            this.btn_Bindirim.Appearance.Options.UseBackColor = true;
             this.btn_Bindirim.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.btn_Bindirim, 2);
             resources.ApplyResources(this.btn_Bindirim, "btn_Bindirim");
@@ -1032,7 +1040,9 @@
             // 
             // btn_Indirim
             // 
+            this.btn_Indirim.Appearance.BackColor = System.Drawing.Color.Aqua;
             this.btn_Indirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Indirim.Appearance.Font")));
+            this.btn_Indirim.Appearance.Options.UseBackColor = true;
             this.btn_Indirim.Appearance.Options.UseFont = true;
             this.btn_Indirim.Appearance.Options.UseTextOptions = true;
             this.btn_Indirim.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1073,7 +1083,9 @@
             // 
             // btn_MiktarDuzelt
             // 
+            this.btn_MiktarDuzelt.Appearance.BackColor = System.Drawing.Color.Teal;
             this.btn_MiktarDuzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MiktarDuzelt.Appearance.Font")));
+            this.btn_MiktarDuzelt.Appearance.Options.UseBackColor = true;
             this.btn_MiktarDuzelt.Appearance.Options.UseFont = true;
             this.btn_MiktarDuzelt.Appearance.Options.UseTextOptions = true;
             this.btn_MiktarDuzelt.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1085,7 +1097,9 @@
             // 
             // simpleButton2
             // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.simpleButton2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.Appearance.Options.UseTextOptions = true;
             this.simpleButton2.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1515,7 +1529,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(842, 725);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(842, 733);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1540,7 +1554,7 @@
             this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(842, 198);
+            this.layoutControlItem2.Size = new System.Drawing.Size(842, 200);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1549,9 +1563,9 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 268);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 270);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(842, 77);
+            this.layoutControlItem6.Size = new System.Drawing.Size(842, 78);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1559,18 +1573,18 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 345);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 348);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(842, 291);
+            this.layoutControlItem7.Size = new System.Drawing.Size(842, 295);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 636);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 643);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(842, 89);
+            this.layoutControlItem3.Size = new System.Drawing.Size(842, 90);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             this.layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;

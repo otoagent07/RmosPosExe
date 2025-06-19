@@ -475,6 +475,8 @@
             this.btnHesapDokumEski.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnHesapDokumEski.Appearance.Font")));
             this.btnHesapDokumEski.Appearance.Options.UseBackColor = true;
             this.btnHesapDokumEski.Appearance.Options.UseFont = true;
+            this.btnHesapDokumEski.Appearance.Options.UseTextOptions = true;
+            this.btnHesapDokumEski.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             resources.ApplyResources(this.btnHesapDokumEski, "btnHesapDokumEski");
             this.btnHesapDokumEski.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapDokumEski.ImageOptions.Image")));
             this.btnHesapDokumEski.Name = "btnHesapDokumEski";
@@ -550,7 +552,9 @@
             // 
             // btn_HesapBak
             // 
+            this.btn_HesapBak.Appearance.BackColor = System.Drawing.Color.DarkGray;
             this.btn_HesapBak.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_HesapBak.Appearance.Font")));
+            this.btn_HesapBak.Appearance.Options.UseBackColor = true;
             this.btn_HesapBak.Appearance.Options.UseFont = true;
             this.btn_HesapBak.Appearance.Options.UseTextOptions = true;
             this.btn_HesapBak.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -1002,6 +1006,10 @@
             this.bar_HesapBak.Id = 1;
             this.bar_HesapBak.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bar_HesapBak.ImageOptions.SvgImage")));
             this.bar_HesapBak.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
+            this.bar_HesapBak.ItemAppearance.Normal.BackColor = System.Drawing.Color.DarkGray;
+            this.bar_HesapBak.ItemAppearance.Normal.ForeColor = System.Drawing.Color.White;
+            this.bar_HesapBak.ItemAppearance.Normal.Options.UseBackColor = true;
+            this.bar_HesapBak.ItemAppearance.Normal.Options.UseForeColor = true;
             this.bar_HesapBak.Name = "bar_HesapBak";
             this.bar_HesapBak.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
             // 

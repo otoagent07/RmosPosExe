@@ -334,13 +334,13 @@
     <value>Left</value>
   </data>
   <data name="btn_SplitBol.Location" type="System.Drawing.Point, System.Drawing">
-    <value>620, 3</value>
+    <value>619, 2</value>
   </data>
   <data name="btn_SplitBol.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="btn_SplitBol.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 30</value>
+    <value>95, 32</value>
   </data>
   <data name="btn_SplitBol.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -367,13 +367,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 3</value>
+    <value>561, 2</value>
   </data>
   <data name="cbtn_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_9.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -400,13 +400,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 3</value>
+    <value>503, 2</value>
   </data>
   <data name="cbtn_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_8.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -433,13 +433,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 3</value>
+    <value>445, 2</value>
   </data>
   <data name="cbtn_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_7.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -466,13 +466,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>388, 3</value>
+    <value>387, 2</value>
   </data>
   <data name="cbtn_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_6.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -499,13 +499,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 3</value>
+    <value>329, 2</value>
   </data>
   <data name="cbtn_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -532,13 +532,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 3</value>
+    <value>271, 2</value>
   </data>
   <data name="cbtn_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -565,13 +565,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 3</value>
+    <value>213, 2</value>
   </data>
   <data name="cbtn_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -598,13 +598,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 3</value>
+    <value>155, 2</value>
   </data>
   <data name="cbtn_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -631,13 +631,13 @@
     <value>Left</value>
   </data>
   <data name="cbtn_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 3</value>
+    <value>97, 2</value>
   </data>
   <data name="cbtn_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="cbtn_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 30</value>
+    <value>58, 32</value>
   </data>
   <data name="cbtn_1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -664,10 +664,10 @@
     <value>Left</value>
   </data>
   <data name="cbtn_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="cbtn_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 30</value>
+    <value>95, 32</value>
   </data>
   <data name="cbtn_0.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -721,10 +721,10 @@
     <value>Fill</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 119</value>
+    <value>682, 121</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -797,10 +797,10 @@
 </value>
   </data>
   <data name="btnParcaliOdemeEski.Location" type="System.Drawing.Point, System.Drawing">
-    <value>683, 3</value>
+    <value>684, 2</value>
   </data>
   <data name="btnParcaliOdemeEski.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 119</value>
+    <value>95, 121</value>
   </data>
   <data name="btnParcaliOdemeEski.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -1324,10 +1324,10 @@
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>956, 22</value>
+    <value>956, 20</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 52</value>
+    <value>77, 54</value>
   </data>
   <data name="simpleButton3.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1371,10 +1371,10 @@
 </value>
   </data>
   <data name="btn_Relogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>877, 22</value>
+    <value>877, 20</value>
   </data>
   <data name="btn_Relogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 52</value>
+    <value>79, 54</value>
   </data>
   <data name="btn_Relogin.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -1445,17 +1445,16 @@
 </value>
   </data>
   <data name="btnHesapDokumEski.Location" type="System.Drawing.Point, System.Drawing">
-    <value>785, 22</value>
+    <value>785, 20</value>
   </data>
   <data name="btnHesapDokumEski.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 52</value>
+    <value>92, 54</value>
   </data>
   <data name="btnHesapDokumEski.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
   </data>
   <data name="btnHesapDokumEski.Text" xml:space="preserve">
-    <value>Hesap
-(F4)</value>
+    <value>Hesap Yaz</value>
   </data>
   <data name="&gt;&gt;btnHesapDokumEski.Name" xml:space="preserve">
     <value>btnHesapDokumEski</value>
@@ -1518,10 +1517,10 @@
 </value>
   </data>
   <data name="btn_Rapor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 22</value>
+    <value>702, 20</value>
   </data>
   <data name="btn_Rapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 52</value>
+    <value>83, 54</value>
   </data>
   <data name="btn_Rapor.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -1595,10 +1594,10 @@
 </value>
   </data>
   <data name="btn_KisiSayisi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>586, 22</value>
+    <value>586, 20</value>
   </data>
   <data name="btn_KisiSayisi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 52</value>
+    <value>116, 54</value>
   </data>
   <data name="btn_KisiSayisi.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1647,10 +1646,10 @@ DEĞİŞTİR</value>
 </value>
   </data>
   <data name="btn_Yenile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 22</value>
+    <value>508, 20</value>
   </data>
   <data name="btn_Yenile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 52</value>
+    <value>78, 54</value>
   </data>
   <data name="btn_Yenile.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -1711,10 +1710,10 @@ DEĞİŞTİR</value>
 </value>
   </data>
   <data name="btn_MasaIslem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 22</value>
+    <value>417, 20</value>
   </data>
   <data name="btn_MasaIslem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 52</value>
+    <value>91, 54</value>
   </data>
   <data name="btn_MasaIslem.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1774,10 +1773,10 @@ DEĞİŞTİR</value>
 </value>
   </data>
   <data name="btn_MalzemeTransfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 22</value>
+    <value>332, 20</value>
   </data>
   <data name="btn_MalzemeTransfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 52</value>
+    <value>85, 54</value>
   </data>
   <data name="btn_MalzemeTransfer.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -1894,10 +1893,10 @@ Trf.</value>
 </value>
   </data>
   <data name="btn_MasaTransfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 22</value>
+    <value>250, 20</value>
   </data>
   <data name="btn_MasaTransfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 52</value>
+    <value>82, 54</value>
   </data>
   <data name="btn_MasaTransfer.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -1953,10 +1952,10 @@ Trf.</value>
 </value>
   </data>
   <data name="btn_OzelMasa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 22</value>
+    <value>175, 20</value>
   </data>
   <data name="btn_OzelMasa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 52</value>
+    <value>75, 54</value>
   </data>
   <data name="btn_OzelMasa.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -2017,10 +2016,10 @@ Masa</value>
 </value>
   </data>
   <data name="btn_HesapBak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 22</value>
+    <value>93, 20</value>
   </data>
   <data name="btn_HesapBak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 52</value>
+    <value>82, 54</value>
   </data>
   <data name="btn_HesapBak.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -2073,10 +2072,10 @@ Masa</value>
 </value>
   </data>
   <data name="btn_Satis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 22</value>
+    <value>2, 20</value>
   </data>
   <data name="btn_Satis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 52</value>
+    <value>91, 54</value>
   </data>
   <data name="btn_Satis.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>

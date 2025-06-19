@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraReports.UI;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraReports.UI;
 using Newtonsoft.Json;
 using Pos.Class;
 using Pos.Controllers;
@@ -11,6 +12,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Net.Http;
 using System.Reflection;
@@ -3976,6 +3978,30 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             Main.a.layoutView1.MoveNext();
 
         }
+
+       
+
+        private void gridView1_RowStyle(object sender, RowStyleEventArgs e)
+        {
+
+        }
+
+        private void gridView1_RowCellStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowCellStyleEventArgs e)
+        {
+            GridView view = sender as GridView;
+
+            if (e.RowHandle >= 0 && e.Column.FieldName == "Rec_Ad")
+            {
+                string receteKod = view.GetRowCellValue(e.RowHandle, "Rsat_Recete")?.ToString();
+
+                if (receteKod == Param.Param_Bindirim)
+                {
+                    e.Appearance.BackColor = Color.DeepPink;
+                    e.Appearance.ForeColor = Color.White;
+                }
+            }
+        }
+
     }
 }
 

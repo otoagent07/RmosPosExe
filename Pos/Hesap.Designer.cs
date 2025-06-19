@@ -180,6 +180,7 @@
             this.gridColumn1.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn1.AppearanceCell.Font")));
             this.gridColumn1.AppearanceCell.Options.UseFont = true;
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
+            this.gridColumn1.FieldName = "Rec_Ad";
             this.gridColumn1.MinWidth = 15;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
@@ -337,7 +338,7 @@
             // btn_Odemeal
             // 
             resources.ApplyResources(this.btn_Odemeal, "btn_Odemeal");
-            this.btn_Odemeal.Appearance.BackColor = System.Drawing.Color.Snow;
+            this.btn_Odemeal.Appearance.BackColor = System.Drawing.Color.SandyBrown;
             this.btn_Odemeal.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Odemeal.Appearance.Font")));
             this.btn_Odemeal.Appearance.Options.UseBackColor = true;
             this.btn_Odemeal.Appearance.Options.UseFont = true;
@@ -350,7 +351,7 @@
             // btn_Odemesil
             // 
             resources.ApplyResources(this.btn_Odemesil, "btn_Odemesil");
-            this.btn_Odemesil.Appearance.BackColor = System.Drawing.Color.Snow;
+            this.btn_Odemesil.Appearance.BackColor = System.Drawing.Color.OrangeRed;
             this.btn_Odemesil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Odemesil.Appearance.Font")));
             this.btn_Odemesil.Appearance.Options.UseBackColor = true;
             this.btn_Odemesil.Appearance.Options.UseFont = true;
@@ -361,7 +362,9 @@
             // btn_Indirim
             // 
             resources.ApplyResources(this.btn_Indirim, "btn_Indirim");
+            this.btn_Indirim.Appearance.BackColor = System.Drawing.Color.BlueViolet;
             this.btn_Indirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Indirim.Appearance.Font")));
+            this.btn_Indirim.Appearance.Options.UseBackColor = true;
             this.btn_Indirim.Appearance.Options.UseFont = true;
             this.btn_Indirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Indirim.ImageOptions.Image")));
             this.btn_Indirim.Name = "btn_Indirim";
@@ -457,6 +460,7 @@
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
             this.gridView1.RowHeight = 24;
+            this.gridView1.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView1_RowCellStyle);
             this.gridView1.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.gridView1_SelectionChanged);
             // 
             // gridColumn2
@@ -569,7 +573,9 @@
             // btn_Bindirim
             // 
             resources.ApplyResources(this.btn_Bindirim, "btn_Bindirim");
+            this.btn_Bindirim.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_Bindirim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Bindirim.Appearance.Font")));
+            this.btn_Bindirim.Appearance.Options.UseBackColor = true;
             this.btn_Bindirim.Appearance.Options.UseFont = true;
             this.btn_Bindirim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Bindirim.ImageOptions.Image")));
             this.btn_Bindirim.Name = "btn_Bindirim";
@@ -784,7 +790,9 @@
             // simpleButton3
             // 
             resources.ApplyResources(this.simpleButton3, "simpleButton3");
+            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.Gray;
             this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
             this.simpleButton3.Appearance.Options.UseFont = true;
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.Name = "simpleButton3";
@@ -824,7 +832,9 @@
             // btnFisIptal
             // 
             resources.ApplyResources(this.btnFisIptal, "btnFisIptal");
+            this.btnFisIptal.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnFisIptal.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnFisIptal.Appearance.Font")));
+            this.btnFisIptal.Appearance.Options.UseBackColor = true;
             this.btnFisIptal.Appearance.Options.UseFont = true;
             this.btnFisIptal.Appearance.Options.UseTextOptions = true;
             this.btnFisIptal.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -889,7 +899,9 @@
             // btnTipBox
             // 
             resources.ApplyResources(this.btnTipBox, "btnTipBox");
+            this.btnTipBox.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnTipBox.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnTipBox.Appearance.Font")));
+            this.btnTipBox.Appearance.Options.UseBackColor = true;
             this.btnTipBox.Appearance.Options.UseFont = true;
             this.btnTipBox.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTipBox.ImageOptions.Image")));
             this.btnTipBox.Name = "btnTipBox";
