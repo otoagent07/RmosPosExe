@@ -421,7 +421,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.22"; // aaaa
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.23"; // aaaa
 
 
 
@@ -589,9 +589,9 @@ namespace Pos
 
                 var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
                 if (model == null) { MessageBox.Show("Model is null"); return; }
-                if (model.success==false)
+                if (model.success == false)
                 {
-                   RHMesaj.alertMesaj("Pavo Başarısız\n" + model.message);
+                    RHMesaj.alertMesaj("Pavo Başarısız\n" + model.message);
                 }
 
 
@@ -1157,6 +1157,7 @@ namespace Pos
 
             player.Play();
 
+            return; // 20.06.2025 oğuzhan mendi. yurtbay kasap & mangal için yorum yapıldı
             paketCallCenterAc();
 
         }
@@ -1647,33 +1648,41 @@ YS_Panel a = new YS_Panel();
 
         public void paketCallCenterAc()
         {
-            if (paketCallCenter == null)
+            try
             {
-                if (Program.main.toastNotificationsManager2.Notifications[0].Body.Contains("TRENDYOL"))
+
+                if (paketCallCenter == null)
                 {
-                    paketCallCenter = new PaketCallCenter(false);
+                    if (Program.main.toastNotificationsManager2.Notifications[0].Body.Contains("TRENDYOL"))
+                    {
+                        paketCallCenter = new PaketCallCenter(false);
+                    }
+                    else // getir
+                    {
+                        paketCallCenter = new PaketCallCenter(true);
+                    }
+
+                    paketCallCenter.ShowDialog();
                 }
-                else // getir
+                else
                 {
-                    paketCallCenter = new PaketCallCenter(true);
+                    paketCallCenter.BringToFront();
+
+                    if (Program.main.toastNotificationsManager2.Notifications[0].Body.Contains("TRENDYOL"))
+                    {
+                        paketCallCenter.xtraTabControl1.SelectedTabPage = paketCallCenter.xtraTabPage4;
+                    }
+                    else // getir
+                    {
+                        //paketCallCenter.xtraTabControl1.SelectedTabPage = paketCallCenter.xtraTabPage3;
+                    }
                 }
 
-                paketCallCenter.ShowDialog();
+
             }
-            else
+            catch (Exception ex)
             {
-                paketCallCenter.BringToFront();
-
-                if (Program.main.toastNotificationsManager2.Notifications[0].Body.Contains("TRENDYOL"))
-                {
-                    paketCallCenter.xtraTabControl1.SelectedTabPage = paketCallCenter.xtraTabPage4;
-                }
-                else // getir
-                {
-                    //paketCallCenter.xtraTabControl1.SelectedTabPage = paketCallCenter.xtraTabPage3;
-                }
-
-
+                MessageBox.Show(ex.Message);
             }
         }
 
