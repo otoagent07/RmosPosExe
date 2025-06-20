@@ -593,6 +593,232 @@ order by Caller_Id desc";
                 string value = "";
                 for (int i = 0; i < dtSatis.Rows.Count; i++)
                 {
+                    value = ""; // her satırda sıfırla
+
+                    for (int j = 0; j < dtSatis.Columns.Count; j++)
+                    {
+                        string colName = dtSatis.Columns[j].ColumnName;
+                        string colValue = Convert.ToString(dtSatis.Rows[i][j]).Replace(",", "."); // virgülü noktaya çevir
+
+                        if (colName == "Rsat_Id") continue;
+
+                        if (colName == "Rsat_Masa")
+                        {
+                            value += "'" + Masano + "',";
+                            continue;
+                        }
+                        if (colName == "Rsat_Fisno")
+                        {
+                            value += "'" + Fisno + "',";
+                            continue;
+                        }
+                        if (colName == "Rsat_Durum")
+                        {
+                            value += "'A',";
+                            continue;
+                        }
+                        if (colName == "Rsat_Cari")
+                        {
+                            value += "'" + cariKod + "',";
+                            continue;
+                        }
+                        if (colName == "Rsat_Ind" || colName == "Rsat_HapyhourTutar" || colName == "Rsat_EntegreToplamFiyat")
+                        {
+                            value += "0,";
+                            continue;
+                        }
+                        if (colName == "Rsat_SiparisPr")
+                        {
+                            value += "0,";
+                            continue;
+                        }
+                        if (colName == "Rsat_Sube")
+                        {
+                            value += "'" + Departman.Kodlar_PosSubeKod + "',";
+                            continue;
+                        }
+
+                        // Sütun tipi kontrolü (örn: bit, decimal, int gibi)
+                        var colType = dtSatis.Columns[j].DataType;
+
+                        if (colType == typeof(bool) || colType == typeof(Boolean))
+                        {
+                            // True/False yazılı string'ler varsa dönüştür
+                            if (colValue.ToLower() == "false")
+                                value += "0,";
+                            else if (colValue.ToLower() == "true")
+                                value += "1,";
+                            else
+                                value += string.IsNullOrWhiteSpace(colValue) ? "NULL," : colValue + ",";
+                        }
+                        else if (colType == typeof(int) || colType == typeof(decimal) || colType == typeof(double) || colType == typeof(float))
+                        {
+                            value += string.IsNullOrWhiteSpace(colValue) ? "NULL," : colValue + ",";
+                        }
+                        else
+                        {
+                            value += string.IsNullOrWhiteSpace(colValue) ? "NULL," : "'" + colValue + "',";
+                        }
+                    }
+
+                    // Sondaki virgülü kaldır
+                    value = value.TrimEnd(',');
+
+                    string q = @"INSERT INTO [dbo].[Cst_Recete_Satis](" + col + ") VALUES(" + value + ")";
+                    dbtools.execcmd(q);
+
+
+                    dbtools.execcmd(@"update Pos_Masa set Masa_Durum = 1 where Masa_No = '" + Masano + @"' and Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1");
+
+                    //col = String.Empty;
+                    value = String.Empty;
+
+
+
+                }
+                #endregion
+
+                dbtools.execcmd(@"Update Pos_CallCenter Set Center_Pasif = 1 Where Center_Id = '" + id + "'");
+                xtraTabControl1_SelectedPageChanged(null, null);
+
+                FisPr pr = new FisPr();
+                pr.SiparisPr(Fisno, false, 0);
+                pr.PaketPr(Fisno, " * * * PAKET FİSİ * * * ");
+
+
+
+                //DataTable dtMerkez = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_MerkezSube = 'M' and  Pkod_Sinif = '27'  ");
+                //if (dtMerkez.Rows.Count > 0)
+                //{
+                //    string merkezConnectionString = "Data Source='" + Convert.ToString(dtMerkez.Rows[0]["Pkod_Server"]) + "';Initial Catalog=" + Convert.ToString(dtMerkez.Rows[0]["Pkod_Database"]) + "; Persist Security Info=True;uid='" + Convert.ToString(dtMerkez.Rows[0]["Pkod_User"]) + "'; pwd='" + Convert.ToString(dtMerkez.Rows[0]["Pkod_Password"]) + "'";
+
+
+                //    SqlConnection con = new SqlConnection(merkezConnectionString);
+                //    SqlCommand cmd = new SqlCommand("update Cst_Recete_satis set Rsat_SubeDurum = 'Sipariş Hazırlanıyor' where Rsat_Fisno = '" + dtSatis.Rows[0]["Rsat_Fisno"] + "'", con);
+                //    if (con.State != ConnectionState.Open) con.Open();
+                //    cmd.ExecuteNonQuery();
+                //    if (con.State != ConnectionState.Closed) con.Close();
+                //}
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+
+        private void gridView5_DoubleClick2(object sender, EventArgs e)
+        {
+            try
+            {
+                if (gridView5.RowCount == 0) return;
+
+                string jsonSatis = Convert.ToString(gridView5.GetFocusedRowCellValue("Center_Data"));
+                string jsonCari = Convert.ToString(gridView5.GetFocusedRowCellValue("Center_Cari"));
+                string id = Convert.ToString(gridView5.GetFocusedRowCellValue("Center_Id"));
+
+                DataTable dtSatis = (DataTable)JsonConvert.DeserializeObject(jsonSatis, (typeof(DataTable)));
+                DataTable dtCari = (DataTable)JsonConvert.DeserializeObject(jsonCari, (typeof(DataTable)));
+
+
+                DataTable dtMasa = dbtools.SelectTable("select * from Pos_Masa where Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1 and Masa_Durum = 0 order by Masa_No");
+
+                if (dtMasa.Rows.Count < 1)
+                {
+                    MessageBox.Show(res_man.GetString("Boş Paket Masanız Bulunmamaktadır."));
+                    return;
+                }
+
+
+                #region Cari
+                bool cari_kaydet = true;
+
+                string cariKod = Convert.ToString(dtCari.Rows[0]["Cari_Kod"]);
+
+                DataTable dt1 = dbtools.SelectTable(@"select [Cari_Id]
+        ,ISNULL([Cari_Kod],'') as Cari_Kod
+      ,ISNULL([Cari_Ad],'') as Cari_Ad
+      ,ISNULL([Cari_Soyad],'') as Cari_Soyad
+      ,ISNULL([Cari_Tel],'') as Cari_Tel
+      ,ISNULL([Cari_Adres1],'') as Cari_Adres1
+      ,ISNULL([Cari_Adres2],'') as Cari_Adres2
+      ,ISNULL([Cari_Adres3],'') as Cari_Adres3
+      ,ISNULL([Cari_Funvan],'') as Cari_Funvan
+      ,ISNULL([Cari_Fadres1],'') as Cari_Fadres1
+      ,ISNULL([Cari_Fadres2],'') as Cari_Fadres2
+      ,ISNULL([Cari_Vergidarie],'') as Cari_Vergidarie
+      ,ISNULL([Cari_Vergino],'') as Cari_Vergino
+      ,ISNULL([Cari_Mail],'') as Cari_Mail
+      ,ISNULL([Cari_Kart],'') as Cari_Kart
+      ,ISNULL([Cari_Tel2],'') as Cari_Tel2
+      ,ISNULL([Cari_Email],'') as Cari_Email
+      ,ISNULL([Cari_Tip],'') as Cari_Tip
+      ,ISNULL([Cari_Limit],0)  as Cari_Limit
+      ,ISNULL([Cari_LimitTutar],0) as Cari_LimitTutar
+      ,ISNULL([Cari_Il],'') as Cari_Il
+      ,ISNULL([Cari_Ilce],'') as Cari_Ilce
+      ,ISNULL([Cari_Mahalle],'') as Cari_Mahalle
+       from Pos_Cari where Cari_Tel = '" + Convert.ToString(dtCari.Rows[0]["Cari_Tel"]) + "'");
+                if (dt1.Rows.Count > 0)
+                {
+                    cariKod = Convert.ToString(dt1.Rows[0]["Cari_Kod"]);
+                    cari_kaydet = false;
+                }
+
+
+                if (cari_kaydet)
+                {
+
+                    string colCari = "";
+                    for (int i = 0; i < dtCari.Columns.Count; i++)
+                    {
+                        if (dtCari.Columns[i].ColumnName == "Cari_Id") continue;
+
+                        colCari += dtCari.Columns[i].ColumnName + ",";
+                    }
+                    colCari = colCari.Substring(0, colCari.Length - 1);
+
+                    string valueCari = "";
+                    for (int j = 0; j < dtCari.Columns.Count; j++)
+                    {
+                        if (dtCari.Columns[j].ColumnName == "Cari_Id") continue;
+
+                        if (dtCari.Columns[j].ColumnName == "Cari_LimitTutar")
+                        {
+                            valueCari += "'0',";
+                            continue;
+                        }
+
+                        valueCari += "'" + Convert.ToString(dtCari.Rows[0][j]).Replace(",", ".") + "',";
+                    }
+                    valueCari = valueCari.Substring(0, valueCari.Length - 1);
+
+                    cariKod = dbtools.DegerGetir(@"INSERT INTO [dbo].[Pos_Cari](" + colCari + @")VALUES(" + valueCari + @")
+                        declare @id int = (select SCOPE_IDENTITY())
+                        update Pos_Cari set Cari_Kod = @id where Cari_Id = @id
+                        select @id");
+
+                }
+                #endregion
+
+                #region Satıs
+                string Masano = Convert.ToString(dtMasa.Rows[0]["Masa_No"]);
+                int Fisno = Convert.ToInt32(dbtools.DegerGetir("execute Cost_Fis_No"));
+                StatikSinif.siranoarttir();
+
+                string col = "";
+                for (int i = 0; i < dtSatis.Columns.Count; i++)
+                {
+                    if (dtSatis.Columns[i].ColumnName == "Rsat_Id") continue;
+
+                    col += dtSatis.Columns[i].ColumnName + ",";
+                }
+                col = col.Substring(0, col.Length - 1);
+
+                string value = "";
+                for (int i = 0; i < dtSatis.Rows.Count; i++)
+                {
                     for (int j = 0; j < dtSatis.Columns.Count; j++)
                     {
                         if (dtSatis.Columns[j].ColumnName == "Rsat_Id") continue;
@@ -652,7 +878,10 @@ order by Caller_Id desc";
                     }
                     value = value.Substring(0, value.Length - 1);
 
-                    dbtools.execcmd(@"INSERT INTO [dbo].[Cst_Recete_Satis](" + col + ")VALUES(" + value + ")");
+
+                    string q = @"INSERT INTO [dbo].[Cst_Recete_Satis](" + col + ")VALUES(" + value + ")";
+
+                    dbtools.execcmd(q);
 
 
                     dbtools.execcmd(@"update Pos_Masa set Masa_Durum = 1 where Masa_No = '" + Masano + @"' and Masa_Depart = '" + Departman.Dep_Kodu + "' and ISNULL(Masa_Paket,0) = 1");
@@ -693,6 +922,7 @@ order by Caller_Id desc";
                 MessageBox.Show(ex.ToString());
             }
         }
+
         #endregion
 
         #region Kapalı Paket Raporu
