@@ -695,7 +695,11 @@ order by Caller_Id desc";
                 xtraTabControl1_SelectedPageChanged(null, null);
 
                 FisPr pr = new FisPr();
-                pr.SiparisPr(Fisno, false, 0);
+                //pr.SiparisPr(Fisno, false, 0);
+
+                 pr.newSiparisPr(Convert.ToInt32(Fisno), false, 0);
+
+
                 pr.PaketPr(Fisno, " * * * PAKET FİSİ * * * ");
 
 

@@ -46,7 +46,7 @@ namespace Pos
         {
             string Param_PaketKucukEkran = dbtools.DegerGetir("select isnull(Param_PaketKucukEkran,0) as Param_PaketKucukEkran from Pos_Param where Param_Id = '1'");
 
-            aktifmi= Convert.ToBoolean(Param_PaketKucukEkran);
+            aktifmi = Convert.ToBoolean(Param_PaketKucukEkran);
         }
 
         public bool aktifmi = false;
@@ -230,7 +230,7 @@ namespace Pos
             cari = Cari.Cari_Getir(Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Kod")));
             string adres = Convert.ToString(gridView1.GetFocusedRowCellValue("Cari_Adres"));
 
-            adressecenekGuncelle(cari.Cari_Kod,adres);
+            adressecenekGuncelle(cari.Cari_Kod, adres);
 
 
             if (cari.Cari_Kod != null)
@@ -257,7 +257,7 @@ namespace Pos
                         //satis.Sube = subeKod;
                         this.Close();
                         satis.ShowDialog();
-                       
+
                         return;
                     }
                 }
@@ -286,10 +286,10 @@ namespace Pos
                 satis.ShowDialog();
             }
 
-           
+
         }
 
-        public void adressecenekGuncelle(string carikod,string adres)
+        public void adressecenekGuncelle(string carikod, string adres)
         {
             try
             {
@@ -394,7 +394,7 @@ namespace Pos
 
         private void CallerCallCenter_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (aktifmi&&formYukseklik > 0)
+            if (aktifmi && formYukseklik > 0)
             {
                 formYukseklik = formYukseklik - this.Height;
             }
@@ -471,7 +471,9 @@ namespace Pos
                 return;
             }
 
-          var  Masa_No = Convert.ToString(dtMasa.Rows[0]["Masa_No"]);
+            var Masa_No = Convert.ToString(dtMasa.Rows[0]["Masa_No"]);
+
+            string Cari_Adres = gridView1.GetFocusedRowCellValue("Cari_Adres").ToString();
 
             satis = new Satis();
             satis.Tag = "M";
@@ -482,6 +484,7 @@ namespace Pos
             satis.Ozel_Masa = "";
             satis.Split = 0;
             satis.Splitad = "";
+            satis.txt_Not.Text = Cari_Adres;
             satis.ShowDialog();
         }
 
