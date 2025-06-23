@@ -127,6 +127,9 @@
   <data name="yemeksepetigo25x25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yemeksepetigo25x25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="no-tax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\benioku\no-tax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="yemeksepetigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yemeksepetigo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,5 +186,8 @@
   </data>
   <data name="kasa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kasa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no-tax 16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\benioku\no-tax 16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

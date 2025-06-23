@@ -853,6 +853,8 @@
             this.btnSpSil.Appearance.Options.UseFont = true;
             this.btnSpSil.Appearance.Options.UseTextOptions = true;
             this.btnSpSil.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btnSpSil.ImageOptions.Image = global::Pos.Properties.Resources.no_tax;
+            this.btnSpSil.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btnSpSil.Name = "btnSpSil";
             this.btnSpSil.Click += new System.EventHandler(this.btnSpSil_Click);
             // 
