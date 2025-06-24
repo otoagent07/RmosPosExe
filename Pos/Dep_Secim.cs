@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using Pos.Class;
+using Pos.Controllers;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -49,6 +50,9 @@ namespace Pos
             {
                 Param.Param_Yukle();
                 FisPr.Param_Yukle();
+
+                PavoController pavoController = new PavoController();
+                pavoController.pavon86KabloluPairing();
             }
             else
             {

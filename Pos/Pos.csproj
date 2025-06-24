@@ -417,6 +417,7 @@
     <Compile Include="Controllers\KisiyeSatisController.cs" />
     <Compile Include="Controllers\OdemeTipController.cs" />
     <Compile Include="Controllers\CariController.cs" />
+    <Compile Include="Controllers\PavoController.cs" />
     <Compile Include="Controllers\TrendyolController.cs" />
     <Compile Include="Entities\Cst_Recete_Satis.cs">
       <DependentUpon>Model1.tt</DependentUpon>

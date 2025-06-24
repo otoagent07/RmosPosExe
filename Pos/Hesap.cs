@@ -942,6 +942,9 @@ namespace Pos
             }
         }
 
+
+        PavoController pavoController = new PavoController();
+
         private void btn_HesapDokumu_Click(object sender, EventArgs e)
         {
             try
@@ -953,7 +956,16 @@ namespace Pos
                 }
 
                 bool sifirmi = getTutarsifirmi();
+
+                string fisno = Convert.ToString(this.Tag);
+
+                pavoController.sendPaymentLink(fisno + "");
+
+
                 hesapDokum(sifirmi);
+
+
+               
             }
             catch (Exception ex)
             {

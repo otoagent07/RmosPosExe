@@ -546,7 +546,8 @@ namespace Pos
 
                 btnSifreDegis.Visible = Param.merkezaktif;
 
-                pavon86KabloluPairing();
+                PavoController pavoController = new PavoController();
+                pavoController. pavon86KabloluPairing();
 
                 barButtonItem2.Enabled = Param.Param_CallerID;
                 barButtonItem3.Enabled = Param.Param_CallerID;
@@ -560,48 +561,7 @@ namespace Pos
 
         }
 
-        public async void pavon86KabloluPairing() // cihaz eşleştirme yapılır
-        {
-            try
-            {
-
-                string q1 = $@"select top 1 Kodlar_pavoUrl,Kodlar_pavoSirketId,Kodlar_Kod from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}' and Kodlar_Pavo=1";
-                DataTable dataTable = dbtools.SelectTableR(q1);
-
-                if (dataTable == null || dataTable.Rows.Count == 0)
-                {
-                    //MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
-                    return;
-                }
-                string url = dataTable.Rows[0]["Kodlar_pavoUrl"].ToString();
-                string sirketId = dataTable.Rows[0]["Kodlar_pavoSirketId"].ToString();
-
-                if (url == "" || sirketId == "")
-                {
-                    MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
-                    return;
-                }
-
-                var client = new HttpClient();
-                var request = new HttpRequestMessage(HttpMethod.Post, url + $"/Pavo/Pairing?sirketId={sirketId}");
-                var response = await client.SendAsync(request);
-                string sonuc = response.Content.ReadAsStringAsync().Result;
-
-                var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
-                if (model == null) { MessageBox.Show("Model is null"); return; }
-                if (model.success == false)
-                {
-                    RHMesaj.alertMesaj("Pavo Başarısız\n" + model.message);
-                }
-
-
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-        }
+        
 
         //SimpleTcpClient client;
 

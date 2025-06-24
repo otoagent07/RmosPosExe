@@ -3,6 +3,7 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraLayout.Utils;
 using DevExpress.XtraPrinting.Drawing;
 using DevExpress.XtraReports.UI;
+using Pos.Controllers;
 using Pos.Print;
 using System;
 using System.Collections.Generic;
@@ -452,7 +453,7 @@ namespace Pos.Class
 
 
 
-        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false,bool direkSatis=false)
+        public string newSiparisPr(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false, bool direkSatis = false)
         {
 
             try
@@ -1450,7 +1451,7 @@ namespace Pos.Class
             return "OK";
         }
 
-        public string PaketPr(int Fisno, string Baslik, string siparisFisi = "", string GetirYemek_Order_ID = "",string parcaliAdres="")
+        public string PaketPr(int Fisno, string Baslik, string siparisFisi = "", string GetirYemek_Order_ID = "", string parcaliAdres = "")
         {
 
             try
@@ -1637,7 +1638,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     //}
 
                     // 05.03.2025 emre atalay istedi
-                    string aktifAdres = dbtools.DegerGetir("select top 1 isnull(adressecenek,1) as adressecenek from Pos_Cari where Cari_Kod='"+ dtPaket.Rows[0]["Cari_Kod"] + "'");
+                    string aktifAdres = dbtools.DegerGetir("select top 1 isnull(adressecenek,1) as adressecenek from Pos_Cari where Cari_Kod='" + dtPaket.Rows[0]["Cari_Kod"] + "'");
 
                     switch (aktifAdres)
                     {
@@ -1660,7 +1661,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
 
 
-                   paket.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]".ToString().Replace("|", "\n")));
+                    paket.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]".ToString().Replace("|", "\n")));
                     paket.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
                     paket.xr_Tutar.Text = "[Rsat_Tutar]";
 
@@ -1693,7 +1694,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                     DataTable lat1 = dbtools.SelectTableR("select top 1 isnull(latitude,'') as latitude,isnull(longitude,'') as longitude from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and latitude<>'' and latitude is not null");
 
-                    if (lat1!=null && lat1.Rows.Count>0)
+                    if (lat1 != null && lat1.Rows.Count > 0)
                     {
                         string latitude = lat1.Rows[0][0].ToString();
                         string longitude = lat1.Rows[0][1].ToString();
@@ -1705,7 +1706,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         paket.txtQr.Visible = false;
                         paket.PageFooter.HeightF = (float)128;
                     }
-      
+
 
                     for (int i = 0; i < Paket_Ciktisayisi; i++)
                     {
@@ -1865,7 +1866,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     paket.xr_Not.Text = Convert.ToString(dtPaket.Rows[0]["Rsat_Not"]);
                     paket.xr_Paketci.Text = Convert.ToString(dtPaket.Rows[0]["Paketci"]);
 
-                    DataTable lat1 = dbtools.SelectTableR("select top 1 isnull(latitude,'') as latitude,isnull(longitude,'') as longitude from Cst_Recete_Satis where Rsat_Fisno='"+Fisno+"' and latitude<>'' and latitude is not null");
+                    DataTable lat1 = dbtools.SelectTableR("select top 1 isnull(latitude,'') as latitude,isnull(longitude,'') as longitude from Cst_Recete_Satis where Rsat_Fisno='" + Fisno + "' and latitude<>'' and latitude is not null");
 
                     string latitude = lat1.Rows[0][0].ToString();
                     string longitude = lat1.Rows[0][1].ToString();
@@ -3245,13 +3246,13 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
                 for (int k = 0; k < Mars_Ciktisayisi; k++)
                 {
-                   
+
                     try
                     {
                         Mars marsReport = new Mars();
 
 
-                       
+
 
                         xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), marsReport);
                         marsReport.PrinterName = printer;
@@ -3268,7 +3269,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         marsReport.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
                         //mars.txtSiraNo.Text = sirano;
 
-                        if ( marsReport.PrinterName != "") //  marsReport.PrinterName != "Microsoft Print to PDF" &&
+                        if (marsReport.PrinterName != "") //  marsReport.PrinterName != "Microsoft Print to PDF" &&
                         {
                             marsReport.Print();
                         }
@@ -3758,11 +3759,13 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
         }
 
 
-     
+        PavoController pavoController = new PavoController();
+
         public string newHesapDokum(bool hesapDokum, int Fisno, int Split, string Baslik, bool sifirli = false, bool parcalimi = false, string parcamasano = "")
         {
             try
             {
+
                 string sirano = StatikSinif.getSira(Fisno.ToString());
                 string printer = String.Empty;
                 int bosSatir = 0;
@@ -3852,9 +3855,10 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     hsp.txtQr.Visible = true;
                     hsp.ReportFooter.HeightF = (float)388.3324;
                     hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
-                }else if (Param.hesapFisQrFisno)
+                }
+                else if (Param.hesapFisQrFisno)
                 {
-                    hsp.txtQr.Text = Fisno+"";
+                    hsp.txtQr.Text = Fisno + "";
                     hsp.txtQr.Visible = true;
                     hsp.ReportFooter.HeightF = (float)388.3324;
                     hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
@@ -3898,6 +3902,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 }
 
                 hsp.xr_MasaNo.Text = masaAd;
+
+                hsp.txtPaymentKod.Text = dbtools.DegerGetir($"Select top 1 isnull(PaymentCode,'') as PaymentCode from Cst_Recete_Satis where Rsat_Fisno='{Fisno}'");
 
 
 
@@ -4227,6 +4233,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
 
 
+
                 DataTable dtUrungrup = new DataTable();
                 dtUrungrup = UrunGrupBul(Fisno);
                 if (kisiyeSatis == false)
@@ -4339,7 +4346,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 {
                     string cariKod = dtHesap.Rows[0]["Rsat_Cari"].ToString();
                     string bakiye = hsp.xr_Bakiye.Text;
-                    if (bakiye== "Bakiye")
+                    if (bakiye == "Bakiye")
                     {
                         var cari1 = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 23, @Cari = '" + cariKod + "' ");
 
@@ -4361,7 +4368,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         bakiye1 = toplamBorc - toplamAlacak;
                         if (bakiye1 != 0)
                         {
-                            hsp.xr_Bakiye.Text ="[" + bakiye1 + "]";
+                            hsp.xr_Bakiye.Text = "[" + bakiye1 + "]";
                         }
 
                     }
@@ -4370,7 +4377,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 {
 
                 }
-               
+
 
                 if (dtPrinter.Rows.Count > 0 && dtMacPrinter.Rows.Count == 0)
                 {
@@ -7447,7 +7454,7 @@ where  Rsat_Fisno='" + Fisno + @"' and rec.Rec_SiparisCikmasin=0 and Rsat_Sipari
         }
 
 
-        public void yazdirAbuyerNew(DataTable dtAbuyer, string printer, int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis,string abuyerPrintName_2,string abuyerPrintName_3,string abuyerPrintName_4)
+        public void yazdirAbuyerNew(DataTable dtAbuyer, string printer, int Fisno, bool Mars, int Split, string baslik, string kartDetay1, string kartdetay2, bool hizliSatis, string abuyerPrintName_2, string abuyerPrintName_3, string abuyerPrintName_4)
         {
             int abuyerCiktisayisi = 1;
 
@@ -7523,7 +7530,7 @@ where  Rsat_Fisno='" + Fisno + @"' and rec.Rec_SiparisCikmasin=0 and Rsat_Sipari
                             abuyer1.Print();
                         }
 
-                        if (abuyerPrintName_2!="" && abuyerPrintName_2!= "Microsoft Print to PDF")
+                        if (abuyerPrintName_2 != "" && abuyerPrintName_2 != "Microsoft Print to PDF")
                         {
                             abuyer1.PrinterName = abuyerPrintName_2;
                             abuyer1.CreateDocument();

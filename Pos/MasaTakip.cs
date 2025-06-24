@@ -1673,6 +1673,8 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             {
                 MasaYenile(0);
                 Param.Param_Yukle();
+
+                pavoController.pavoHesapKapat();
             }
         }
 
@@ -2597,6 +2599,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         }
 
+        PavoController pavoController = new PavoController();
         public void HesapDokum() // buraya bak
         {
             try
@@ -2616,6 +2619,9 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
                 Yuvarlama();
                 otoIndirimYuvarlama();
+
+
+                pavoController.sendPaymentLink(fisno + "");
 
                 FisPr pr = new FisPr();
                 if (Param.Param_YeniHesapDkm)
@@ -2642,6 +2648,11 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 }
 
                 MasaYenile(0);
+
+
+
+               
+
             }
             catch (Exception ex)
             {
