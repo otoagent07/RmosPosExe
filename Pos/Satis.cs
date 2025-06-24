@@ -1785,6 +1785,9 @@ namespace Pos
             barkodFocuslan();
         }
 
+
+
+
         private void Ust_Yenile()
         {
             flp_AltGrup.Controls.Clear();
@@ -3087,7 +3090,7 @@ namespace Pos
                     }
                     bool direksatismi = this.Tag.ToString() == "D" ? true : false;
 
-                    sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text,direkSatis:direksatismi);
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(bartxt_FisNo.EditValue), Mars, Split, garsonsor: garson, kisiyeSatis: txtKisiyeSatis.Text, direkSatis: direksatismi);
                 }
             }
             else
