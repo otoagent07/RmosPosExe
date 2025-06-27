@@ -1903,7 +1903,10 @@ namespace Pos
 
             //dbtools.execcmd("update Pos_Masa set Masa_Durum = '0', Masa_Ozel = '' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
-            dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Garson='" + User.P_Kod + "',sepetDurum=3,Rsat_SistemDate = Getdate(), Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "', E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
+           
+            dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Garson='" + User.P_Kod + "',sepetDurum=3,Rsat_SistemDate = Getdate(), E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
+
+            dbtools.execcmd("Update Cst_Recete_Satis set Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "' where Rsat_Fisno = '" + fis_no + "' and Rsat_Ingenico_Status<>3");
 
             if (E_AdisyonDurum.Checked) // raporlar için eklendi-> eadisyon ise adisyondur.
             {
