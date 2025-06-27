@@ -23,6 +23,7 @@ namespace Pos
         public decimal tutar = 0;
 
         public decimal toplamTutar = 0;
+        public decimal toplamTutar2 = 0;
 
         public TipboxForm()
         {
@@ -86,6 +87,12 @@ namespace Pos
             indTipi = String.Empty;
             indSayi = 0;
             this.Close();
+        }
+
+        private void txtAlinanTutar_EditValueChanged(object sender, EventArgs e)
+        {
+            var sayi = Convert.ToDecimal(txt_Sayi.Text);
+            txt_Sayi.Text = (Convert.ToDecimal(txtAlinanTutar.Text) - toplamTutar2)+"";
         }
     }
 }

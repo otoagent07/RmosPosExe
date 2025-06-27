@@ -3649,6 +3649,7 @@ namespace Pos
                 TipboxForm ind = new TipboxForm();
                 ind.Tag = "B";
                 ind.toplamTutar = 0;
+                ind.toplamTutar2 = Convert.ToDecimal(txt_Odemetutari.EditValue);
                 ind.ShowDialog();
 
                 decimal tutar = 0, doviztutar = 0, oran = 0;

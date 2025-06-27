@@ -45,7 +45,9 @@
             this.btn_9 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_8 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_7 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtAlinanTutar = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Sayi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAlinanTutar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Cikis
@@ -186,11 +188,26 @@
             this.btn_7.Name = "btn_7";
             this.btn_7.Click += new System.EventHandler(this.btn_Sayi_Click);
             // 
+            // txtAlinanTutar
+            // 
+            resources.ApplyResources(this.txtAlinanTutar, "txtAlinanTutar");
+            this.txtAlinanTutar.Name = "txtAlinanTutar";
+            this.txtAlinanTutar.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("textEdit1.Properties.Appearance.Font")));
+            this.txtAlinanTutar.Properties.Appearance.Options.UseFont = true;
+            this.txtAlinanTutar.Properties.DisplayFormat.FormatString = "f2";
+            this.txtAlinanTutar.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.txtAlinanTutar.Properties.EditFormat.FormatString = "f2";
+            this.txtAlinanTutar.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.txtAlinanTutar.Properties.Mask.EditMask = resources.GetString("textEdit1.Properties.Mask.EditMask");
+            this.txtAlinanTutar.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("textEdit1.Properties.Mask.MaskType")));
+            this.txtAlinanTutar.EditValueChanged += new System.EventHandler(this.txtAlinanTutar_EditValueChanged);
+            // 
             // TipboxForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.txtAlinanTutar);
             this.Controls.Add(this.btn_Cikis);
             this.Controls.Add(this.txt_Sayi);
             this.Controls.Add(this.btn_V);
@@ -210,6 +227,7 @@
             this.Name = "TipboxForm";
             this.Load += new System.EventHandler(this.Indirim_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txt_Sayi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAlinanTutar.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +250,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_8;
         private DevExpress.XtraEditors.SimpleButton btn_7;
         private DevExpress.XtraEditors.TextEdit txt_Sayi;
+        private DevExpress.XtraEditors.TextEdit txtAlinanTutar;
     }
 }
