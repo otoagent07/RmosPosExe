@@ -3372,17 +3372,29 @@ group by Rsat_Fiyat,Rsat_Tutar,Rsat_Doviztutar";
                     decimal Rsat_Tutar = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Tutar"].ToString());
                     decimal Rsat_Doviztutar = Convert.ToDecimal(indirimTable2.Rows[0]["Rsat_Doviztutar"].ToString());
 
-                    string deger = dbtools.DegerGetir(@"select 
-(select top 1 isnull(Rec_HappyHourFiyat,0) as Rec_HappyHourFiyat from Cst_Recete where Rec_Genelkod=satis.Rsat_Recete and Rec_HappyHour='1')*" + Sil_Miktar + @"
+                    string qq = @"select 
+(select top 1 CASE 
+        WHEN Rec_HappyHourFiyat IS NULL OR Rec_HappyHourFiyat = 0 THEN Rec_Fiyat 
+        ELSE Rec_HappyHourFiyat 
+    END AS Rec_HappyHourFiyat from Cst_Recete where Rec_Genelkod=satis.Rsat_Recete and Rec_HappyHour='1')*" + Sil_Miktar + @"
 as uygulanacakindirim
-from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
+from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
+                    string deger = dbtools.DegerGetir(qq);
 
                     if (deger != null && deger != "" && deger != "0")
                     {
                         decimal Rsat_Kdvoran = Convert.ToDecimal(dbtools.DegerGetir("select top 1 Rsat_Kdvoran from Cst_Recete_Satis where Rsat_Id='" + satirId + "'"));
 
-
+                        var oranAktifmi = dbtools.DegerGetir("select Pkod_Hh_Oran from Pos_Kodlar where Pkod_Sinif='20' and Pkod_Hh_Oran>0");
+                        
                         decimal uygulanacakindirim = Convert.ToDecimal(deger);
+
+                        if (oranAktifmi!="" && oranAktifmi!="0")
+                        {
+                            uygulanacakindirim = uygulanacakindirim * (Convert.ToDecimal(oranAktifmi) / 100);
+                        }
+
+
                         decimal fiyat = Rsat_Fiyat - uygulanacakindirim;
                         decimal tutar = Rsat_Tutar - uygulanacakindirim;
                         decimal doviztutar = Rsat_Doviztutar - uygulanacakindirim;
