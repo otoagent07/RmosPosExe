@@ -3848,6 +3848,12 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), hsp);
 
+
+
+                string paymentCode = dbtools.DegerGetir($"Select top 1 isnull(PaymentCode,'') as PaymentCode from Cst_Recete_Satis where Rsat_Fisno='{Fisno}'");
+                hsp.txtPaymentKod.Text = paymentCode;
+
+
                 if (Param.hesapFisQr)
                 {
                     string gunsonutar = Param.Tarih.ToString("yyyy-MM-dd");
@@ -3862,7 +3868,16 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     hsp.txtQr.Visible = true;
                     hsp.ReportFooter.HeightF = (float)388.3324;
                     hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
+                }else if (paymentCode != null && paymentCode != "")
+                {
+                    hsp.txtQr.Text = paymentCode + "";
+                    hsp.txtQr.Visible = true;
+                    hsp.ReportFooter.HeightF = (float)388.3324;
+                    hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
                 }
+
+
+
 
 
                 hsp.PrinterName = printer;
@@ -3903,7 +3918,10 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 hsp.xr_MasaNo.Text = masaAd;
 
-                hsp.txtPaymentKod.Text = dbtools.DegerGetir($"Select top 1 isnull(PaymentCode,'') as PaymentCode from Cst_Recete_Satis where Rsat_Fisno='{Fisno}'");
+
+
+
+
 
 
 

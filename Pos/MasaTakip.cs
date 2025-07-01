@@ -1671,10 +1671,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             barspn_Refresh.EditValue = Convert.ToInt32(barspn_Refresh.EditValue) - 1;
             if (Convert.ToInt32(barspn_Refresh.EditValue) == 0)
             {
+                pavoController.pavoHesapKapat();
+
                 MasaYenile(0);
                 Param.Param_Yukle();
-
-                pavoController.pavoHesapKapat();
             }
         }
 

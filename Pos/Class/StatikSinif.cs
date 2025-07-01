@@ -124,6 +124,9 @@ IF COL_LENGTH('Pos_Kodlar', 'Pkod_E_Adisyon') IS NULL BEGIN ALTER TABLE Pos_Kodl
 IF COL_LENGTH('Pos_Kodlar', 'tumPrinter') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD tumPrinter bit END;
 
 
+IF COL_LENGTH('Pos_Kodlar', 'Pkod_OdemeAktif') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD Pkod_OdemeAktif bit END;
+
+
 IF COL_LENGTH('Pos_CallerId', 'Caller_Durum') IS NULL BEGIN ALTER TABLE Pos_CallerId ADD Caller_Durum int END;
 
 

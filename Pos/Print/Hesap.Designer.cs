@@ -37,6 +37,9 @@
             this.xr_Miktar = new DevExpress.XtraReports.UI.XRLabel();
             this.xr_Tutar = new DevExpress.XtraReports.UI.XRLabel();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.txtPaymentKod = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel57 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel59 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel50 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel51 = new DevExpress.XtraReports.UI.XRLabel();
             this.txtSiraNo = new DevExpress.XtraReports.UI.XRLabel();
@@ -152,9 +155,6 @@
             this.xrLabel45 = new DevExpress.XtraReports.UI.XRLabel();
             this.xr_UrunToplamTr = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.txtPaymentKod = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel57 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel59 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.table_Odeme)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_UrunGrup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table_Doviz)).BeginInit();
@@ -297,6 +297,44 @@
             this.xr_Baslik});
             this.PageHeader.HeightF = 293.4771F;
             this.PageHeader.Name = "PageHeader";
+            // 
+            // txtPaymentKod
+            // 
+            this.txtPaymentKod.Font = new System.Drawing.Font("Calibri", 8F);
+            this.txtPaymentKod.LocationFloat = new DevExpress.Utils.PointFloat(79.22251F, 250.7501F);
+            this.txtPaymentKod.Multiline = true;
+            this.txtPaymentKod.Name = "txtPaymentKod";
+            this.txtPaymentKod.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.txtPaymentKod.SizeF = new System.Drawing.SizeF(186.8751F, 16.75F);
+            this.txtPaymentKod.StylePriority.UseFont = false;
+            this.txtPaymentKod.StylePriority.UseTextAlignment = false;
+            this.txtPaymentKod.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel57
+            // 
+            this.xrLabel57.Font = new System.Drawing.Font("Calibri", 8F);
+            this.xrLabel57.LocationFloat = new DevExpress.Utils.PointFloat(65.13897F, 250.7502F);
+            this.xrLabel57.Multiline = true;
+            this.xrLabel57.Name = "xrLabel57";
+            this.xrLabel57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel57.SizeF = new System.Drawing.SizeF(14.08341F, 16.75F);
+            this.xrLabel57.StylePriority.UseFont = false;
+            this.xrLabel57.StylePriority.UseTextAlignment = false;
+            this.xrLabel57.Text = ":";
+            this.xrLabel57.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel59
+            // 
+            this.xrLabel59.Font = new System.Drawing.Font("Calibri", 8F);
+            this.xrLabel59.LocationFloat = new DevExpress.Utils.PointFloat(0.01391658F, 250.7502F);
+            this.xrLabel59.Multiline = true;
+            this.xrLabel59.Name = "xrLabel59";
+            this.xrLabel59.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel59.SizeF = new System.Drawing.SizeF(65.12508F, 16.75F);
+            this.xrLabel59.StylePriority.UseFont = false;
+            this.xrLabel59.StylePriority.UseTextAlignment = false;
+            this.xrLabel59.Text = "Payment Kod";
+            this.xrLabel59.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel50
             // 
@@ -1624,6 +1662,7 @@
             this.txtQr.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
             this.txtQr.ShowText = false;
             this.txtQr.SizeF = new System.Drawing.SizeF(139.2886F, 2.083344F);
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
             this.txtQr.Symbology = qrCodeGenerator1;
             this.txtQr.Text = "2024-02-28";
             this.txtQr.Visible = false;
@@ -1749,44 +1788,6 @@
             // 
             this.PageFooter.HeightF = 48.21447F;
             this.PageFooter.Name = "PageFooter";
-            // 
-            // txtPaymentKod
-            // 
-            this.txtPaymentKod.Font = new System.Drawing.Font("Calibri", 8F);
-            this.txtPaymentKod.LocationFloat = new DevExpress.Utils.PointFloat(79.22251F, 250.7501F);
-            this.txtPaymentKod.Multiline = true;
-            this.txtPaymentKod.Name = "txtPaymentKod";
-            this.txtPaymentKod.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.txtPaymentKod.SizeF = new System.Drawing.SizeF(186.8751F, 16.75F);
-            this.txtPaymentKod.StylePriority.UseFont = false;
-            this.txtPaymentKod.StylePriority.UseTextAlignment = false;
-            this.txtPaymentKod.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel57
-            // 
-            this.xrLabel57.Font = new System.Drawing.Font("Calibri", 8F);
-            this.xrLabel57.LocationFloat = new DevExpress.Utils.PointFloat(65.13897F, 250.7502F);
-            this.xrLabel57.Multiline = true;
-            this.xrLabel57.Name = "xrLabel57";
-            this.xrLabel57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel57.SizeF = new System.Drawing.SizeF(14.08341F, 16.75F);
-            this.xrLabel57.StylePriority.UseFont = false;
-            this.xrLabel57.StylePriority.UseTextAlignment = false;
-            this.xrLabel57.Text = ":";
-            this.xrLabel57.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel59
-            // 
-            this.xrLabel59.Font = new System.Drawing.Font("Calibri", 8F);
-            this.xrLabel59.LocationFloat = new DevExpress.Utils.PointFloat(0.01391658F, 250.7502F);
-            this.xrLabel59.Multiline = true;
-            this.xrLabel59.Name = "xrLabel59";
-            this.xrLabel59.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel59.SizeF = new System.Drawing.SizeF(65.12508F, 16.75F);
-            this.xrLabel59.StylePriority.UseFont = false;
-            this.xrLabel59.StylePriority.UseTextAlignment = false;
-            this.xrLabel59.Text = "Payment Kod";
-            this.xrLabel59.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // Hesap
             // 

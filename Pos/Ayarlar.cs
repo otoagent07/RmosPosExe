@@ -1893,12 +1893,12 @@ namespace Pos
             DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + txt_Odeme_Kod.EditValue + "' and Pkod_Sinif = '11' ");
             if (dt.Rows.Count < 1)
             { // System.Drawing.ColorTranslator.ToHtml(clr_Masakon_Bos.Color)
-                dbtools.execcmdR("INSERT INTO Pos_Kodlar (Pkod_Kod,Pkod_Ad,Pkod_Sinif,Pkod_Kasagiris,Pkod_Kasacikis,Pkod_Tekoda,Pkod_Odano,Pkod_Ozelkod,Pkod_Fatura,Pkod_OnBuroKapatma,Pkod_OnBuroKapatma_Departman,Pkod_FisTipi,Pkod_PaketNot,Pkod_DirekBakiye,Pkod_MuhasebeAktif,Pkod_MuhasebeBorc,Pkod_MuhasebeAlacak,Pkod_AdisyonPr,Pkod_YKasaid,Pkod_banka,Pkod_YS_OdemeID,Pkod_OdemeBtnRenk,Pkod_IWEPayment,Pkod_Sira,Pkod_Dep,Pkod_otoKur,hesapDokTutarSifir,saatAralikDurdur,Pkod_E_Adisyon,pavoOdemeKod) VALUES ( "
+                dbtools.execcmdR("INSERT INTO Pos_Kodlar (Pkod_Kod,Pkod_Ad,Pkod_Sinif,Pkod_Kasagiris,Pkod_Kasacikis,Pkod_Tekoda,Pkod_Odano,Pkod_Ozelkod,Pkod_Fatura,Pkod_OnBuroKapatma,Pkod_OnBuroKapatma_Departman,Pkod_FisTipi,Pkod_PaketNot,Pkod_DirekBakiye,Pkod_MuhasebeAktif,Pkod_MuhasebeBorc,Pkod_MuhasebeAlacak,Pkod_AdisyonPr,Pkod_YKasaid,Pkod_banka,Pkod_YS_OdemeID,Pkod_OdemeBtnRenk,Pkod_IWEPayment,Pkod_Sira,Pkod_Dep,Pkod_otoKur,hesapDokTutarSifir,saatAralikDurdur,Pkod_E_Adisyon,pavoOdemeKod,Pkod_OdemeAktif) VALUES ( "
                     + " '" + txt_Odeme_Kod.EditValue + "','" + txt_Odeme_Ad.EditValue + "','11','" + Convert.ToBoolean(chk_Odeme_Kasa_Giris.Checked) + "', "
                     + " '" + Convert.ToBoolean(chk_Odeme_Kasa_Cikis.Checked) + "', '" + Convert.ToBoolean(Chk_Odeme_TekOda.Checked) + "','" + txt_Odeme_Odano.EditValue + "','" + rdo_Odeme_OzelKod.SelectedIndex + "', '" + Convert.ToBoolean(chk_Odeme_Fatura.Checked) + "', "
                     + " '" + Convert.ToBoolean(chk_Prm_OnBuroKapatma.Checked) + "', '" + look_Odeme_OnbDepartman.EditValue + "','" + look_Odeme_FisTipi.EditValue + "','" + Convert.ToBoolean(chk_Odeme_paketNot.Checked) + "','" + Pkod_DirekBakiye.Checked + "', "
                     + " '" + Pkod_MuhasebeAktif.Checked + "', '" + Pkod_MuhasebeBorc.EditValue + "', '" + Pkod_MuhasebeAlacak.EditValue + "','" + Pkod_AdisyonPr.Checked + "', "
-                    + " '" + look_Ykkodu.EditValue + "','" + look_Bankakodu.EditValue + "', '" + Pkod_YS_OdemeID.EditValue + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OdemeBtnRenk.Color) + "','" + Pkod_IWEPayment.EditValue + "','" + odeme_Sira.EditValue + "','" + Pkod_Dep.EditValue + "','" + lookUpOtoKurSec.EditValue + "','" + hesapDokTutarSifir.Checked + "','" + txtsaatAralikDurdur.Text + "','" + Pkod_E_Adisyon.Checked + "','" + lookUpEditPavoOdeme.EditValue + "' )");
+                    + " '" + look_Ykkodu.EditValue + "','" + look_Bankakodu.EditValue + "', '" + Pkod_YS_OdemeID.EditValue + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OdemeBtnRenk.Color) + "','" + Pkod_IWEPayment.EditValue + "','" + odeme_Sira.EditValue + "','" + Pkod_Dep.EditValue + "','" + lookUpOtoKurSec.EditValue + "','" + hesapDokTutarSifir.Checked + "','" + txtsaatAralikDurdur.Text + "','" + Pkod_E_Adisyon.Checked + "','" + lookUpEditPavoOdeme.EditValue + "','" + Convert.ToBoolean(checkEditOdemeTipAktif.Checked) + "' )");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_OdemeKodu, Log.Log_Islem.Kaydet, txt_Odeme_Kod.EditValue + " Kodlu " + txt_Odeme_Ad.EditValue + " Adlı Odeme Kodu Kaydedildi", String.Empty, String.Empty);
             }
@@ -1915,6 +1915,7 @@ namespace Pos
                 + " Pkod_Sira = '" + odeme_Sira.EditValue + "', Pkod_Dep= '" + Pkod_Dep.EditValue + "', Pkod_otoKur= '" + lookUpOtoKurSec.EditValue + "', hesapDokTutarSifir= '" + hesapDokTutarSifir.Checked + "', saatAralikDurdur= '" + txtsaatAralikDurdur.Text + "'"
                 + " ,Pkod_E_Adisyon = '" + Pkod_E_Adisyon.Checked + "' "
                 + " ,pavoOdemeKod = '" + lookUpEditPavoOdeme.EditValue + "' "
+                + " ,Pkod_OdemeAktif = '" + Convert.ToBoolean(checkEditOdemeTipAktif.Checked) + "' "
                 + " where Pkod_Kod = '" + txt_Odeme_Kod.EditValue + "' and Pkod_Sinif = '11'");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_OdemeKodu, Log.Log_Islem.Duzelt, txt_Odeme_Kod.EditValue + " Kodlu " + txt_Odeme_Ad.EditValue + " Adlı Odeme Kodu Duzeltildi", String.Empty, String.Empty);
@@ -1984,78 +1985,91 @@ namespace Pos
 
         private void gridView2_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-            if (gridView2.RowCount > 0)
+            try
             {
-                txt_Odeme_Kod.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Kod"));
-                txt_Odeme_Ad.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Ad"));
-                chk_Odeme_Kasa_Giris.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_Kasagiris"));
-                chk_Odeme_Kasa_Cikis.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_Kasacikis"));
-                Chk_Odeme_TekOda.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_Tekoda"));
-                txt_Odeme_Odano.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Odano"));
-                rdo_Odeme_OzelKod.SelectedIndex = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_Ozelkod"));
-                chk_Odeme_Fatura.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Fatura"));
-                chk_Prm_OnBuroKapatma.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_OnBuroKapatma"));
-                look_Odeme_OnbDepartman.EditValue = gridView2.GetFocusedRowCellValue("Pkod_OnBuroKapatma_Departman");
-                look_Odeme_FisTipi.EditValue = gridView2.GetFocusedRowCellValue("Pkod_FisTipi");
-                chk_Odeme_paketNot.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_PaketNot2"));
-                Pkod_DirekBakiye.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_DirekBakiye")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_DirekBakiye"));
-                Pkod_MuhasebeAktif.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeAktif")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeAktif"));
-                Pkod_MuhasebeBorc.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeBorc"));
-                Pkod_MuhasebeAlacak.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeAlacak"));
-                Pkod_AdisyonPr.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_AdisyonPr")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_AdisyonPr"));
-
-                Pkod_E_Adisyon.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_E_Adisyon")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_E_Adisyon"));
-
-
-                string pavo = Convert.ToString(gridView2.GetFocusedRowCellValue("pavoOdemeKod"));
-
-                if (pavo == "")
+                if (gridView2.RowCount > 0)
                 {
-                    lookUpEditPavoOdeme.EditValue = null;
-                }
-                else
-                {
-                    lookUpEditPavoOdeme.EditValue = Convert.ToInt32(pavo);
+                    txt_Odeme_Kod.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Kod"));
+                    txt_Odeme_Ad.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Ad"));
+                    chk_Odeme_Kasa_Giris.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_Kasagiris"));
+                    chk_Odeme_Kasa_Cikis.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_Kasacikis"));
+
+
+                    Chk_Odeme_TekOda.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_Tekoda"));
+                    txt_Odeme_Odano.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Odano"));
+                    rdo_Odeme_OzelKod.SelectedIndex = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_Ozelkod"));
+                    chk_Odeme_Fatura.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Fatura"));
+                    chk_Prm_OnBuroKapatma.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_OnBuroKapatma"));
+                    look_Odeme_OnbDepartman.EditValue = gridView2.GetFocusedRowCellValue("Pkod_OnBuroKapatma_Departman");
+                    look_Odeme_FisTipi.EditValue = gridView2.GetFocusedRowCellValue("Pkod_FisTipi");
+                    chk_Odeme_paketNot.Checked = Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_PaketNot2"));
+                    Pkod_DirekBakiye.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_DirekBakiye")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_DirekBakiye"));
+                    Pkod_MuhasebeAktif.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeAktif")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeAktif"));
+                    Pkod_MuhasebeBorc.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeBorc"));
+                    Pkod_MuhasebeAlacak.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_MuhasebeAlacak"));
+                    Pkod_AdisyonPr.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_AdisyonPr")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_AdisyonPr"));
+
+                    Pkod_E_Adisyon.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_E_Adisyon")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("Pkod_E_Adisyon"));
+
+
+                    var deger2 = gridView2.GetFocusedRowCellValue("Pkod_OdemeAktif").ToString();
+                    checkEditOdemeTipAktif.Checked = deger2 == "" ? false : Convert.ToBoolean(deger2);
+
+
+                    string pavo = Convert.ToString(gridView2.GetFocusedRowCellValue("pavoOdemeKod"));
+
+                    if (pavo == "")
+                    {
+                        lookUpEditPavoOdeme.EditValue = null;
+                    }
+                    else
+                    {
+                        lookUpEditPavoOdeme.EditValue = Convert.ToInt32(pavo);
+
+                    }
+
+                    try
+                    {
+                        look_Ykkodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_YKasaid"));
+
+                    }
+                    catch (Exception ex)
+                    {
+                        look_Ykkodu.EditValue = 0;
+                    }
+
+                    try
+                    {
+                        look_Bankakodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_banka"));
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+
+
+                    string deger = gridView2.GetFocusedRowCellValue("Pkod_YS_OdemeID").ToString();
+                    Pkod_YS_OdemeID.EditValue = deger;
+
+                    Pkod_OdemeBtnRenk.Color = System.Drawing.ColorTranslator.FromHtml(Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_OdemeBtnRenk")));
+                    Pkod_IWEPayment.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_IWEPayment"));
+
+                    odeme_Sira.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Sira")) == "" ? "0" : Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Sira"));
+
+                    Pkod_Dep.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Dep"));
+
+                    lookUpOtoKurSec.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_otoKur"));
+
+
+                    hesapDokTutarSifir.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("hesapDokTutarSifir")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("hesapDokTutarSifir"));
+
+                    txtsaatAralikDurdur.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("saatAralikDurdur"));
 
                 }
-
-                try
-                {
-                    look_Ykkodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_YKasaid"));
-
-                }
-                catch (Exception ex)
-                {
-                    look_Ykkodu.EditValue = 0;
-                }
-
-                try
-                {
-                    look_Bankakodu.EditValue = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Pkod_banka"));
-                }
-                catch (Exception ex)
-                {
-
-                }
-
-
-                string deger = gridView2.GetFocusedRowCellValue("Pkod_YS_OdemeID").ToString();
-                Pkod_YS_OdemeID.EditValue = deger;
-
-                Pkod_OdemeBtnRenk.Color = System.Drawing.ColorTranslator.FromHtml(Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_OdemeBtnRenk")));
-                Pkod_IWEPayment.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_IWEPayment"));
-
-                odeme_Sira.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Sira")) == "" ? "0" : Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Sira"));
-
-                Pkod_Dep.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_Dep"));
-
-                lookUpOtoKurSec.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("Pkod_otoKur"));
-
-
-                hesapDokTutarSifir.Checked = Convert.ToString(gridView2.GetFocusedRowCellValue("hesapDokTutarSifir")) == "" ? false : Convert.ToBoolean(gridView2.GetFocusedRowCellValue("hesapDokTutarSifir"));
-
-                txtsaatAralikDurdur.EditValue = Convert.ToString(gridView2.GetFocusedRowCellValue("saatAralikDurdur"));
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
         #endregion

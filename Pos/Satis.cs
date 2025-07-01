@@ -3177,13 +3177,13 @@ namespace Pos
                 }
 
 
-                string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null and Rsat_Kapatma<>''";
-                string kapatmaVarmi = dbtools.DegerGetir(qq);
-                if (kapatmaVarmi != "0")
-                {
-                    MessageBox.Show("Ödeme veya İndirim varken ürün silinemez !");
-                    return;
-                }
+                //string qq = $@"select count(*) as kapatmaVarmi from Cst_Recete_Satis where Rsat_Fisno={fisno} and Rsat_Kapatma is not null and Rsat_Kapatma<>''";
+                //string kapatmaVarmi = dbtools.DegerGetir(qq);
+                //if (kapatmaVarmi != "0")
+                //{
+                //    MessageBox.Show("Ödeme veya İndirim varken ürün silinemez !");
+                //    return;
+                //}
 
                 string receteKod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
                 string bindirimReceteKod = dbtools.DegerGetir("select top 1 Param_Bindirim  from Pos_Param where Param_Id = '1'");
@@ -3708,11 +3708,11 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 }
 
                 decimal eskiMiktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
-                //if (eskiMiktar == 1)
-                //{
-                //    MessageBox.Show(res_man.GetString("Son Ürün Eksiltilemez..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
+                if (eskiMiktar == 1)
+                {
+                    MessageBox.Show(res_man.GetString("Son Ürün Eksiltilemez..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
 
 

@@ -1794,6 +1794,13 @@ namespace Pos
 
         private void btn_Yazdirmadankapat_Click(object sender, EventArgs e)
         {
+
+            var data = Convert.ToDecimal(gridColumn4.SummaryText);
+            if (data<0)
+            {
+                MessageBox.Show("Eksi ödeme alınamaz! İlk önce ödemeleri siliniz !!!");
+                return;
+            }
             yazdirmadankapat();
         }
 
@@ -2319,6 +2326,13 @@ namespace Pos
         }
         private void btn_Yazdirkapat_Click(object sender, EventArgs e)
         {
+            var data = Convert.ToDecimal(gridColumn4.SummaryText);
+            if (data < 0)
+            {
+                MessageBox.Show("Eksi ödeme alınamaz! İlk önce ödemeleri siliniz !!!");
+                return;
+            }
+
             if (E_AdisyonDurum.Checked && cari_A == "")
             {
                 MessageBox.Show("E adisyon işaretliyken cari seçili olmak zorunda !");

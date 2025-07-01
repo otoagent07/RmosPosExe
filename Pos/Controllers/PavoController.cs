@@ -93,6 +93,50 @@ namespace Pos.Controllers
             }
         }
 
+
+
+        public async void pavon86KablosuzPairing() // cihaz eşleştirme yapılır
+        {
+            try
+            {
+
+                PavoController pavoController = new PavoController();
+                var varmi = pavoController.pavoDepartmanYukle();
+
+                if (varmi == false || aktif == false)
+                {
+                    return;
+                }
+
+                if (varmi == true && (PavoController.Kodlar_pavoUrl == "" || PavoController.Kodlar_pavoSirketId == ""))
+                {
+                    MessageBox.Show("Stok kodlar pavo ayarları kayıtlı değil");
+                    return;
+                }
+
+                var client = new HttpClient();
+                var request = new HttpRequestMessage(HttpMethod.Post, PavoController.Kodlar_pavoUrl + $"/Pavo/AuthenticateAsync?sirketId={PavoController.Kodlar_pavoSirketId}");
+                var response = await client.SendAsync(request);
+                string sonuc = response.Content.ReadAsStringAsync().Result;
+
+                var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
+                if (model == null) { MessageBox.Show("Model is null"); return; }
+                if (model.success == false)
+                {
+                    RHMesaj.alertMesaj("Pavo Başarısız\n" + model.message);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+
         public void sendPaymentLink(string fisno)
         {
             try

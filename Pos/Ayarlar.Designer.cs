@@ -1304,6 +1304,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.checkEditOdemeTipAktif = new DevExpress.XtraEditors.CheckEdit();
+            this.gridColumn179 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2185,6 +2187,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditOdemeTipAktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -7784,6 +7787,7 @@
             // 
             // tab_OdemeKodlari
             // 
+            this.tab_OdemeKodlari.Controls.Add(this.checkEditOdemeTipAktif);
             this.tab_OdemeKodlari.Controls.Add(this.textEdit196);
             this.tab_OdemeKodlari.Controls.Add(this.lookUpEditPavoOdeme);
             this.tab_OdemeKodlari.Controls.Add(this.Pkod_E_Adisyon);
@@ -8201,7 +8205,8 @@
             this.gridColumn167,
             this.gridColumn168,
             this.gridColumn175,
-            this.gridColumn177});
+            this.gridColumn177,
+            this.gridColumn179});
             this.gridView2.GridControl = this.grd_Odeme;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ColumnAutoWidth = false;
@@ -13002,6 +13007,18 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // checkEditOdemeTipAktif
+            // 
+            resources.ApplyResources(this.checkEditOdemeTipAktif, "checkEditOdemeTipAktif");
+            this.checkEditOdemeTipAktif.Name = "checkEditOdemeTipAktif";
+            this.checkEditOdemeTipAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
+            // gridColumn179
+            // 
+            resources.ApplyResources(this.gridColumn179, "gridColumn179");
+            this.gridColumn179.FieldName = "Pkod_OdemeAktif";
+            this.gridColumn179.Name = "gridColumn179";
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13924,6 +13941,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEditOdemeTipAktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15204,5 +15222,7 @@
         private DevExpress.XtraEditors.MemoEdit txt_AciklamaItem_Ad;
         private DevExpress.XtraEditors.SimpleButton btnParcaliMasalariSil;
         private DevExpress.XtraEditors.SimpleButton btnMasalariYenile2;
+        private DevExpress.XtraEditors.CheckEdit checkEditOdemeTipAktif;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn179;
     }
 }

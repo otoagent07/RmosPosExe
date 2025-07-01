@@ -421,7 +421,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.27"; // aaaa
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.28"; // aaaa
 
 
 
@@ -511,7 +511,7 @@ namespace Pos
 
                 backgroundWorker1.RunWorkerAsync();
 
-
+                dbtools.execcmdRMesajsiz("update Pos_Kodlar set Pkod_OdemeAktif=1 where  Pkod_Sinif = '11' and Pkod_OdemeAktif is null");
 
                 try
                 {
@@ -547,11 +547,15 @@ namespace Pos
                 btnSifreDegis.Visible = Param.merkezaktif;
 
                 PavoController pavoController = new PavoController();
-                pavoController. pavon86KabloluPairing();
+                pavoController.pavon86KabloluPairing();
+                pavoController.pavon86KablosuzPairing();
+
 
                 barButtonItem2.Enabled = Param.Param_CallerID;
                 barButtonItem3.Enabled = Param.Param_CallerID;
                 simpleButton4.Enabled = Param.Param_CallerID;
+
+
 
             }
             catch (Exception ex)
@@ -561,7 +565,7 @@ namespace Pos
 
         }
 
-        
+
 
         //SimpleTcpClient client;
 
