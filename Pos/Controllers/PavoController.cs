@@ -191,7 +191,7 @@ namespace Pos.Controllers
 
                 DataTable dataTable = dbtools.SelectTableR($@"select Rsat_Fisno from Cst_Recete_Satis  as s
 left join Pos_Masa as m on m.Masa_No=s.Rsat_Masa
-where  Rsat_Durum='A' and m.Masa_Durum=2
+where  Rsat_Durum='A' and m.Masa_Durum=2 and PaymentLinkId !=''
 group by Rsat_Fisno");
 
                 if (dataTable != null && dataTable.Rows.Count > 0)

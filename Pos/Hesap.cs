@@ -161,7 +161,17 @@ namespace Pos
                 gridyenile();
                 Bakiye_Kontrol();
 
-                look_DovizKod.Properties.DataSource = dbtools.SelectTable("select Mkodlar_Kod as kod,Mkodlar_Ad as ad from Muh_Kodlar where Mkodlar_sinif = '02' order by Mkodlar_Kod");
+
+                string calismaSekli = dbtools.DegerGetir("select top 1 Param_CalismaSekli from Pos_Param"); // 1 ise dövizli
+
+                string q = "select Mkodlar_Kod as kod,Mkodlar_Ad as ad from Muh_Kodlar where Mkodlar_sinif = '02' ";
+                if (calismaSekli=="1" || calismaSekli.ToLower()=="true")
+                {
+                    q = q + " and Mkodlar_Kod  in (select top 1 Param_Dovizkod from Pos_Param)";
+                }
+
+                q = q + " order by Mkodlar_Kod";
+                look_DovizKod.Properties.DataSource = dbtools.SelectTable(q);
                 look_DovizKod.Properties.DisplayMember = "ad";
                 look_DovizKod.Properties.ValueMember = "kod";
 
