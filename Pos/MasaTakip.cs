@@ -489,6 +489,8 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
         {
             try
             {
+                pavoController.pavoHesapKapat();
+
                 yaziciKapaliysaAc();
                 masaDurumUpdate();
 
@@ -1671,7 +1673,6 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             barspn_Refresh.EditValue = Convert.ToInt32(barspn_Refresh.EditValue) - 1;
             if (Convert.ToInt32(barspn_Refresh.EditValue) == 0)
             {
-                pavoController.pavoHesapKapat();
 
                 MasaYenile(0);
                 Param.Param_Yukle();
@@ -2306,6 +2307,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         private void btn_Yenile_Click(object sender, EventArgs e)
         {
             MasaYenile(0);
+          
         }
 
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

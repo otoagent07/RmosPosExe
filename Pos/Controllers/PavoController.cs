@@ -5,6 +5,7 @@ using Pos.PavoModels;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -45,7 +46,8 @@ namespace Pos.Controllers
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                RHMesaj.alertMesaj(ex.Message);
+                LogHata(ex.Message);
 
             }
 
@@ -89,7 +91,8 @@ namespace Pos.Controllers
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                RHMesaj.alertMesaj(ex.Message);
+                LogHata(ex.Message);
             }
         }
 
@@ -131,7 +134,8 @@ namespace Pos.Controllers
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                RHMesaj.alertMesaj(ex.Message);
+                LogHata(ex.Message);
             }
         }
 
@@ -168,7 +172,10 @@ namespace Pos.Controllers
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
+                RHMesaj.alertMesaj(ex.Message);
+                LogHata(ex.Message);
+
             }
         }
 
@@ -187,7 +194,7 @@ left join Pos_Masa as m on m.Masa_No=s.Rsat_Masa
 where  Rsat_Durum='A' and m.Masa_Durum=2
 group by Rsat_Fisno");
 
-                if (dataTable!=null && dataTable.Rows.Count>0)
+                if (dataTable != null && dataTable.Rows.Count > 0)
                 {
                     foreach (DataRow item in dataTable.Rows)
                     {
@@ -212,14 +219,51 @@ group by Rsat_Fisno");
                         string sonuc = response.Content.ReadAsStringAsync().Result;
                     }
                 }
-                
+
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                // MessageBox.Show(ex.Message);
+                RHMesaj.alertMesaj(ex.Message);
+                LogHata(ex.Message);
             }
         }
+
+
+      public  void LogHata(string hataMesaji)
+        {
+            try
+            {
+                string dosyaYolu = "Pavohatalar.txt";
+
+                // 1️⃣ Şu anki tarih ve saat
+                string zaman = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                // 2️⃣ Yazılacak yeni kayıt
+                string yeniKayit = $"{zaman} - {hataMesaji}{Environment.NewLine}{Environment.NewLine}";
+
+                // 3️⃣ Eski içeriği oku
+                string eskiIcerik = "";
+                if (File.Exists(dosyaYolu))
+                {
+                    eskiIcerik = File.ReadAllText(dosyaYolu);
+                }
+
+                // 4️⃣ Yeni hata mesajını en üstte olacak şekilde birleştir
+                string tumIcerik = yeniKayit + eskiIcerik;
+
+                // 5️⃣ Dosyaya yaz
+                File.WriteAllText(dosyaYolu, tumIcerik);
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
+
+
 
 
     }
