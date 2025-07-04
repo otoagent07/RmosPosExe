@@ -84,6 +84,7 @@ namespace Pos.Controllers
                 if (model.success == false)
                 {
                     RHMesaj.alertMesaj("Pavo Başarısız\n" + model.message);
+                    LogHata(sonuc);
                 }
 
 
@@ -127,6 +128,7 @@ namespace Pos.Controllers
                 if (model.success == false)
                 {
                     RHMesaj.alertMesaj("Pavo Başarısız\n" + model.message);
+                    LogHata(sonuc);
                 }
 
 
@@ -168,7 +170,11 @@ namespace Pos.Controllers
                 var response = client.SendAsync(request).Result;
                 response.EnsureSuccessStatusCode();
                 string sonuc = response.Content.ReadAsStringAsync().Result;
-
+                var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
+                if (model.success == false)
+                {
+                    LogHata(sonuc);
+                }
             }
             catch (Exception ex)
             {
@@ -217,6 +223,11 @@ group by Rsat_Fisno");
                         var response = client.SendAsync(request).Result;
                         response.EnsureSuccessStatusCode();
                         string sonuc = response.Content.ReadAsStringAsync().Result;
+                        var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
+                        if (model.success == false)
+                        {
+                            LogHata(sonuc);
+                        }
                     }
                 }
 
@@ -231,7 +242,7 @@ group by Rsat_Fisno");
         }
 
 
-      public  void LogHata(string hataMesaji)
+        public void LogHata(string hataMesaji)
         {
             try
             {
