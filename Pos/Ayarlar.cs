@@ -177,6 +177,7 @@ namespace Pos
             radioGroupMerkezSube.Visible = User.merkezsubeaktif;
             //lookUpEditSubeCon.Visible = User.merkezsubeaktif;
 
+            chk_Kul_SiparisTekrar.Visible = false; // kodda hata oldugu için oğuzhan mendi 14.07.2025 ekledi 
         }
 
 
@@ -352,6 +353,7 @@ namespace Pos
                 Terazi_FlowControl.Text = Param.Param_FlowControl;
                 txt_Yukseklik.Text = Param.Param_bSizeH.ToString();
                 txtSiparisTekrarPrintName.Text = Param.siparisTekrarPrintName.ToString();
+                masatakipKonumYukseklik.Text = Param.masatakipKonumYukseklik.ToString();
                 mobileCallerIdMacAdres.Text = Param.mobileCallerIdMacAdres.ToString();
                 txt_Genişlik.Text = Param.Param_bSizeW.ToString();
                 chk_SatisArama.Checked = Param.Param_SatisArama;
@@ -1261,7 +1263,7 @@ namespace Pos
                     + " Param_OzelMasaSiralama,Param_HesapFisiDokum,Param_HspFontAlgilama,Param_AdisyonFolioAdi,Param_FullPos,Param_CikisKapa,Param_DirekAdisyonZor,Param_DirekAdisyonPrSor,Param_KGAlgilama,Param_ExtraFolioAcma,Param_SiparisAna,Param_iadeKontrol,Param_iadeLimit, Pos_HesapDkmRenk, Param_AdisyonDegis, Param_AdisyonIndAd,Param_SiparisTutar,Param_AnaEkranCiro,Param_MasaTakipCiro,Param_AcilisCekSil,Param_CariAdSoyad,Param_OdenmezAc, "
                     + " Param_SatirSil,Param_SatirSilUser,Param_MasaTakipMenu,Param_ParaUstuIngenico,Param_SatisTabloGonderi, Param_SatisTabloID, Param_SatisTabloAktif, Param_AcilistaMenu,Param_IngenicoSPR,Param_SiparisFisFont,Param_HizliSatisCekAc,Param_KartfGBCheckOut, "
                     + " Param_YeniHesapDkm,Param_YeniSiparisDkm,Param_OdaKrediCompOdenmez,Param_KurTransfer,Param_CallCenterPaket, "
-                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif,otomatikOdenmez,mobilCallerIdAktif,mobileCallerIdMacAdres,hesapFisQrFisno,paketotohesapkapat,sepetaktif,merkezaktif,ingenico2,Param_StokAnlikAtmasin )"
+                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif,otomatikOdenmez,mobilCallerIdAktif,mobileCallerIdMacAdres,hesapFisQrFisno,paketotohesapkapat,sepetaktif,merkezaktif,ingenico2,Param_StokAnlikAtmasin,masatakipKonumYukseklik )"
 
                     + " VALUES ( "
                     + " '1', '" + txt_Prm_Tesis_Adi.Text + "', '" + Convert.ToBoolean(chk_Prm_Onburo.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Cost.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Muh.Checked) + "','" + rdo_Prm_Calisma.SelectedIndex + "','" + rdo_Prm_Tarih_Nereden.SelectedIndex + "', "
@@ -1293,6 +1295,7 @@ namespace Pos
                     + "','" + hesapFisQrFisno.Checked + "','" + paketotohesapkapat.Checked + "','" + sepetaktif.Checked + "','" + merkezaktif.Checked
                     + "','" + ingenico2.Checked + "'"
                     + "','" + Param_StokAnlikAtmasin.Checked + "'"
+                    + "','" + masatakipKonumYukseklik.Text + "'"
                     + "" + ""
                     + "  )");
 
@@ -1344,6 +1347,7 @@ namespace Pos
                        ",merkezaktif = '" + merkezaktif.Checked
                        + "',ingenico2 = '" + ingenico2.Checked + "'"
                        + ",Param_StokAnlikAtmasin = '" + Param_StokAnlikAtmasin.Checked + "'"
+                       + ",masatakipKonumYukseklik = '" + masatakipKonumYukseklik.Text + "'"
                        + " where Param_Id = '1' ";
                 dbtools.execcmdR(q);
 
@@ -5734,6 +5738,7 @@ order by mah.Adres_Ad");
                 {
                     Param_AcilisCekSil.Visible = true;
                     btnTumunuSilPrint.Visible = true;
+                    chk_Kul_SiparisTekrar.Visible = true;
                 }
             }
         }

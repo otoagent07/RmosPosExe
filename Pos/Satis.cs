@@ -526,7 +526,8 @@ namespace Pos
                 }
 
 
-                if (Departman.Kodlar_Kuver_Sat)
+                // && Kisi_Sayisi>0 sonradan eklendi
+                if (Departman.Kodlar_Kuver_Sat && Kisi_Sayisi>0)
                 {
                     Miktar = Kisi_Sayisi;
                     Urun_Sat(Departman.Kodlar_Kuver_Recete);

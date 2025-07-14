@@ -63,7 +63,7 @@ namespace Pos
             fisnotemizle();
 
 
-
+            gridControl1.Size = new Size(gridControl1.Size.Width, Convert.ToInt32(Param.masatakipKonumYukseklik)); // 341
 
         }
 
