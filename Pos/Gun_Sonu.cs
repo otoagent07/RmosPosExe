@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraCharts;
+using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
@@ -208,7 +209,7 @@ namespace Pos
                 loadingKapat();
 
 
-                Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: cariBakiyeKontrolPath, muhRapor: muhrapor1);
+                Mail_Gonder(r.date_Tarih1.DateTime.Date, Convert.ToString(r.lookUpEdit1.EditValue), Convert.ToString(r.chkCombo_Sube.EditValue), atachmentPath: cariBakiyeKontrolPath, muhRapor: muhrapor1, r: r);
 
                 StatikSinif.shrinkData();
 
@@ -556,7 +557,7 @@ GROUP BY s.Kodlar_Ad,s.Kodlar_Kod,ss.Kodlar_Ad,Rsat_Departman  ORDER BY s.Kodlar
         }
 
 
-        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "", MuhasebeRapor muhRapor = null)
+        public void Mail_Gonder(DateTime tarih, string Departman, string Sube, string atachmentPath = "", MuhasebeRapor muhRapor = null, Rapor_Tarih r = null)
         {
 
             try
@@ -631,6 +632,9 @@ GROUP BY s.Kodlar_Ad,s.Kodlar_Kod,ss.Kodlar_Ad,Rsat_Departman  ORDER BY s.Kodlar
                             gunsonu2.ExportToPdf(mem2);
                             mem2.Seek(0, System.IO.SeekOrigin.Begin);
                             Attachment att2 = new Attachment(mem2, "Gunsonu2.pdf", "application/pdf");
+
+
+
 
 
                             FisPr pr = new FisPr();
@@ -711,6 +715,33 @@ GROUP BY s.Kodlar_Ad,s.Kodlar_Kod,ss.Kodlar_Ad,Rsat_Departman  ORDER BY s.Kodlar
                             ePosta.Attachments.Add(att2);
                             ePosta.Attachments.Add(att3);
                             ePosta.Attachments.Add(attKasa);
+
+
+                            if (r != null)
+                            {
+                                Gun_Sonu g = new Gun_Sonu();
+
+                                foreach (CheckedListBoxItem item in r.lookUpEdit1.Properties.Items)
+                                {
+                                    if (item.CheckState == CheckState.Checked)
+                                    {
+                                        string depkod = item.Value.ToString();
+
+                                        var gunsonuDep = g.Rapor_Gunsonu_Pr(r.date_Tarih1.DateTime.Date, depkod, Convert.ToString(r.chkCombo_Sube.EditValue));
+
+
+                                        MemoryStream mem21 = new MemoryStream();
+                                        gunsonuDep.ExportToPdf(mem21);
+                                        mem21.Seek(0, System.IO.SeekOrigin.Begin);
+                                        Attachment att21 = new Attachment(mem21, depkod + ".pdf", "application/pdf");
+
+                                        ePosta.Attachments.Add(att21);
+
+                                    }
+                                }
+
+                            }
+
 
                             if (atachmentPath != "")
                             {
