@@ -433,7 +433,7 @@ namespace Pos
         {
             if (Departman.Kodlar_AndPos_NFC == true)
             {
-                dbtools.execcmd("Update Pos_Masa Set Masa_NFC = 0, Masa_Durum = 0 where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_NFC = 1 and Masa_No = '" + Masa_No + "'");
+                dbtools.execcmd("Update Pos_Masa Set Masa_NFC = 0, Masa_Durum = 0,Masa_Musait=0 where Masa_Depart = '" + Departman.Dep_Kodu + "'  and Masa_No = '" + Masa_No + "'"); // and Masa_NFC = 1
 
                 if (User.Pos_MasaUrunSil)
                 {
@@ -510,7 +510,7 @@ namespace Pos
                 string fisNo = dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + masaNo + "'");
                 if (fisNo=="0")
                 {
-                    dbtools.execcmd("Update Pos_Masa Set Masa_NFC = 0, Masa_Durum = 0 where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_NFC = 1 and Masa_No = '" + masaNo + "'");
+                    dbtools.execcmd("Update Pos_Masa Set Masa_NFC = 0, Masa_Durum = 0,Masa_Musait=0 where Masa_Depart = '" + Departman.Dep_Kodu + "'  and Masa_No = '" + masaNo + "'"); // and Masa_NFC = 1
                 }
             }
 
