@@ -208,8 +208,19 @@ namespace Pos.Class
                 merkezdenKendineAnaGrupAc();
                 merkezdenKendineAraGrupAc();
                 SqlConnection con = dbtools.conn;
-           
-                if (CheckConnectionIP(connstr))
+            /*
+             * 17.07.2025 oguzhan mendi yorum yaptırdı.
+             * 
+             case ISNULL(@Kodlar_KategoriFiyatTur,0) 
+             when 0 Then ISNULL(Rec_Fiyat,0) 
+ when 1 Then ISNULL(NULLIF(Rec_KategoriFiyat1,0),ISNULL(Rec_Fiyat,0))
+ when 2 Then ISNULL(NULLIF(Rec_KategoriFiyat2,0),ISNULL(Rec_Fiyat,0))
+ when 3 Then ISNULL(NULLIF(Rec_KategoriFiyat3,0),ISNULL(Rec_Fiyat,0))
+ when 4 Then ISNULL(NULLIF(Rec_KategoriFiyat4,0),ISNULL(Rec_Fiyat,0))
+ when 5 Then ISNULL(NULLIF(Rec_KategoriFiyat5,0),ISNULL(Rec_Fiyat,0))
+ else ISNULL(Rec_Fiyat,0) end Rec_Fiyat
+             */
+            if (CheckConnectionIP(connstr))
                 {
                     dt = new DataTable();
                     string query = @"
@@ -224,14 +235,7 @@ declare @Kodlar_KategoriFiyatTur int = (Select ISNULL(Kodlar_KategoriFiyatTur,0)
                           ,[Rec_Genelkod]
                           ,[Rec_Ad]
                           ,[Rec_Kisi]
-                          ,case ISNULL(@Kodlar_KategoriFiyatTur,0) 
-when 0 Then ISNULL(Rec_Fiyat,0) 
-when 1 Then ISNULL(NULLIF(Rec_KategoriFiyat1,0),ISNULL(Rec_Fiyat,0))
-when 2 Then ISNULL(NULLIF(Rec_KategoriFiyat2,0),ISNULL(Rec_Fiyat,0))
-when 3 Then ISNULL(NULLIF(Rec_KategoriFiyat3,0),ISNULL(Rec_Fiyat,0))
-when 4 Then ISNULL(NULLIF(Rec_KategoriFiyat4,0),ISNULL(Rec_Fiyat,0))
-when 5 Then ISNULL(NULLIF(Rec_KategoriFiyat5,0),ISNULL(Rec_Fiyat,0))
-else ISNULL(Rec_Fiyat,0) end Rec_Fiyat
+                          ,[Rec_Fiyat]
                           ,[Rec_Kdv]
                           ,[Rec_Net]
                           ,[Rec_Dovizkodu]
@@ -284,7 +288,15 @@ else ISNULL(Rec_Fiyat,0) end Rec_Fiyat
                           ,[Rec_AciklamaAP]
                           ,[Rec_AciklamaGrup]
                           ,[Rec_GetirMenuID]
-                          ,[Rec_OptionID] From Cst_Recete ";
+                          ,[Rec_OptionID] 
+
+                          ,[Rec_KategoriFiyat1] 
+                          ,[Rec_KategoriFiyat2] 
+                          ,[Rec_KategoriFiyat3] 
+                          ,[Rec_KategoriFiyat4] 
+                          ,[Rec_KategoriFiyat5] 
+
+                          From Cst_Recete ";
 
 
 
@@ -350,6 +362,12 @@ else ISNULL(Rec_Fiyat,0) end Rec_Fiyat
                                     cmd.Parameters.AddWithValue("@Rec_YkasaBirim", dt.Rows[i]["Rec_YkasaBirim"]);
                                     cmd.Parameters.AddWithValue("@Rec_UretimMiktar", dt.Rows[i]["Rec_UretimMiktar"]);
                                     cmd.Parameters.AddWithValue("@Rec_UretimBirim", dt.Rows[i]["Rec_UretimBirim"]);
+
+                                    cmd.Parameters.AddWithValue("@Rec_KategoriFiyat1", dt.Rows[i]["Rec_KategoriFiyat1"]);
+                                    cmd.Parameters.AddWithValue("@Rec_KategoriFiyat2", dt.Rows[i]["Rec_KategoriFiyat2"]);
+                                    cmd.Parameters.AddWithValue("@Rec_KategoriFiyat3", dt.Rows[i]["Rec_KategoriFiyat3"]);
+                                    cmd.Parameters.AddWithValue("@Rec_KategoriFiyat4", dt.Rows[i]["Rec_KategoriFiyat4"]);
+                                    cmd.Parameters.AddWithValue("@Rec_KategoriFiyat5", dt.Rows[i]["Rec_KategoriFiyat5"]);
                                     cmd.ExecuteNonQuery();
                                 }
                             }
@@ -409,6 +427,13 @@ else ISNULL(Rec_Fiyat,0) end Rec_Fiyat
                                         cmd.Parameters.AddWithValue("@Rec_YkasaBirim", dt.Rows[i]["Rec_YkasaBirim"]);
                                         cmd.Parameters.AddWithValue("@Rec_UretimMiktar", dt.Rows[i]["Rec_UretimMiktar"]);
                                         cmd.Parameters.AddWithValue("@Rec_UretimBirim", dt.Rows[i]["Rec_UretimBirim"]);
+
+
+                                        cmd.Parameters.AddWithValue("@Rec_KategoriFiyat1", dt.Rows[i]["Rec_KategoriFiyat1"]);
+                                        cmd.Parameters.AddWithValue("@Rec_KategoriFiyat2", dt.Rows[i]["Rec_KategoriFiyat2"]);
+                                        cmd.Parameters.AddWithValue("@Rec_KategoriFiyat3", dt.Rows[i]["Rec_KategoriFiyat3"]);
+                                        cmd.Parameters.AddWithValue("@Rec_KategoriFiyat4", dt.Rows[i]["Rec_KategoriFiyat4"]);
+                                        cmd.Parameters.AddWithValue("@Rec_KategoriFiyat5", dt.Rows[i]["Rec_KategoriFiyat5"]);
                                         cmd.ExecuteNonQuery();
                                     }
                                 }
