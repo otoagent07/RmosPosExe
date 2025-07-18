@@ -277,6 +277,8 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.textEdit206 = new DevExpress.XtraEditors.TextEdit();
+            this.masatakipKonumYukseklik = new DevExpress.XtraEditors.TextEdit();
             this.ingenico2 = new DevExpress.XtraEditors.CheckEdit();
             this.merkezaktif = new DevExpress.XtraEditors.CheckEdit();
             this.sepetaktif = new DevExpress.XtraEditors.CheckEdit();
@@ -1306,8 +1308,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.masatakipKonumYukseklik = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit206 = new DevExpress.XtraEditors.TextEdit();
+            this.cariTarihGecmisAktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1497,6 +1498,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit206.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masatakipKonumYukseklik.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenico2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.merkezaktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sepetaktif.Properties)).BeginInit();
@@ -2190,8 +2193,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masatakipKonumYukseklik.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit206.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cariTarihGecmisAktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4269,6 +4271,19 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
             this.xtraTabPage8.Name = "xtraTabPage8";
+            // 
+            // textEdit206
+            // 
+            resources.ApplyResources(this.textEdit206, "textEdit206");
+            this.textEdit206.Name = "textEdit206";
+            this.textEdit206.Properties.ReadOnly = true;
+            this.textEdit206.TabStop = false;
+            // 
+            // masatakipKonumYukseklik
+            // 
+            resources.ApplyResources(this.masatakipKonumYukseklik, "masatakipKonumYukseklik");
+            this.masatakipKonumYukseklik.Name = "masatakipKonumYukseklik";
+            this.masatakipKonumYukseklik.Properties.MaxLength = 100;
             // 
             // ingenico2
             // 
@@ -11952,6 +11967,7 @@
             // 
             // xtraTabPage7
             // 
+            this.xtraTabPage7.Controls.Add(this.cariTarihGecmisAktif);
             this.xtraTabPage7.Controls.Add(this.coklugunsonu);
             this.xtraTabPage7.Controls.Add(this.merkezsubeaktif);
             this.xtraTabPage7.Controls.Add(this.lookUpEditHesapDokYazici);
@@ -13230,18 +13246,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // masatakipKonumYukseklik
+            // cariTarihGecmisAktif
             // 
-            resources.ApplyResources(this.masatakipKonumYukseklik, "masatakipKonumYukseklik");
-            this.masatakipKonumYukseklik.Name = "masatakipKonumYukseklik";
-            this.masatakipKonumYukseklik.Properties.MaxLength = 100;
-            // 
-            // textEdit206
-            // 
-            resources.ApplyResources(this.textEdit206, "textEdit206");
-            this.textEdit206.Name = "textEdit206";
-            this.textEdit206.Properties.ReadOnly = true;
-            this.textEdit206.TabStop = false;
+            resources.ApplyResources(this.cariTarihGecmisAktif, "cariTarihGecmisAktif");
+            this.cariTarihGecmisAktif.Name = "cariTarihGecmisAktif";
+            this.cariTarihGecmisAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -13445,6 +13454,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit206.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masatakipKonumYukseklik.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenico2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.merkezaktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sepetaktif.Properties)).EndInit();
@@ -14166,8 +14177,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masatakipKonumYukseklik.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit206.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cariTarihGecmisAktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15452,5 +15462,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn179;
         private DevExpress.XtraEditors.TextEdit textEdit206;
         private DevExpress.XtraEditors.TextEdit masatakipKonumYukseklik;
+        private DevExpress.XtraEditors.CheckEdit cariTarihGecmisAktif;
     }
 }

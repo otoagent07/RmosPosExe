@@ -42,7 +42,12 @@ namespace Pos
         private void Cari_Load(object sender, EventArgs e)
         {
 
-            date_CariHes.Properties.MinValue = Param.Tarih;
+
+            bool gecmistarihaktifmi = Convert.ToBoolean(dbtools.DegerGetir("select top 1 isnull(cariTarihGecmisAktif,0) as cariTarihGecmisAktif from Rmosmuh.dbo.Pos_User where P_Kod='" + User.P_Kod + "'"));
+            if (gecmistarihaktifmi==false)
+            {
+                date_CariHes.Properties.MinValue = Param.Tarih;
+            }
 
             dateEditRap3BasTar.EditValue = Param.Tarih;
             dateEditRap3BitTar.EditValue = Param.Tarih;
