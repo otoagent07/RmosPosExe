@@ -2506,7 +2506,8 @@ namespace Pos
 
                 if (Ozel_Masa != String.Empty) dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 11, @Dep_Kodu = '" + Departman.Dep_Kodu + "', @Masano = '" + Masa_No + "', @Ozel_Masa = '" + Ozel_Masa + "'");
 
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satis, (chk_Fix.Checked == false ? Log.Log_Islem.Kaydet : Log.Log_Islem.FixKaydet), Departman.Dep_Adi + " Urun:" + Urun_Kodu + "-" + Rec_Ad + " Miktar:" + Miktar.ToString() + " Tutar:" + Rsat_Tutar.ToString("N2"), Convert.ToInt32(bartxt_FisNo.EditValue).ToString(), "", Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")), Miktar, "", Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satis, (chk_Fix.Checked == false ? Log.Log_Islem.Kaydet : Log.Log_Islem.FixKaydet), Departman.Dep_Adi + " Urun:" + Urun_Kodu + "-" + Rec_Ad + " Miktar:" + Miktar.ToString() + " Tutar:" + Rsat_Tutar.ToString("N2"), Convert.ToInt32(bartxt_FisNo.EditValue).ToString(), "", Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")), Miktar, "", Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")),recete: Urun_Kodu,urunad:Rec_Ad);
 
 
 
@@ -2859,7 +2860,12 @@ namespace Pos
                 {
                     Siparis_Gonder(false);
 
-                    dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + bartxt_FisNo.EditValue.ToString() + "' and Log_Bolum<>'Satir_Sil' and Log_Aciklama NOT LIKE '%Yazdırılmamış%'");
+                    //dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + bartxt_FisNo.EditValue.ToString() + "' and Log_Bolum<>'Satir_Sil' and Log_Aciklama NOT LIKE '%Yazdırılmamış%'");
+
+                    string q = "update Pos_Log set Log_Yazdirilmis='E' where Log_Recete in (select Rsat_Recete  from Cst_Recete_Satis where Rsat_Fisno='" + bartxt_FisNo.EditValue.ToString() + "' and Rsat_Recete is not null and Rsat_Recete<>'' ) and Log_FisNo='" + bartxt_FisNo.EditValue.ToString() + "' and Log_Bolum<>'Satir_Sil' and Log_Aciklama NOT LIKE '%Yazdırılmamış%'";
+
+
+                    dbtools.execcmdR(q);
 
                     if (Departman.Kodlar_AndPos_NFC == true)
                     {
@@ -2910,6 +2916,7 @@ namespace Pos
                 MessageBox.Show("HATA " + ex.Message);
             }
         }
+
 
         string DovizKodu = "";
         string OdenmezKodu = "";

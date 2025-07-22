@@ -3287,8 +3287,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                         }
 
 
+                        /* ,Log_Yazdirilmis='E' 22.07.2025 de mendi web rapor patladı . o yüzden yorum yapıldı
 
-                        dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + Fisno + "'");
+                        dbtools.execcmdR("update Pos_Log set Log_Yazdirilmis='E'  where Log_FisNo='" + Fisno + "'");*/
+
+
 
                     }
                     catch (Exception err)
@@ -4448,8 +4451,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 }
 
 
-
-                dbtools.execcmdR("update Pos_Log set Log_HesapDokumu='E',Log_Yazdirilmis='E'  where Log_FisNo='" + Fisno + "'");
+                // ,Log_Yazdirilmis='E' 22.07.2025 de mendi web rapor patladı . o yüzden yorum yapıldı
+                dbtools.execcmdR("update Pos_Log set Log_HesapDokumu='E'  where Log_FisNo='" + Fisno + "'"); 
             }
             catch (Exception ex)
             {

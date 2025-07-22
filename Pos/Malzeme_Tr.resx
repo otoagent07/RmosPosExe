@@ -178,7 +178,7 @@
     <value>Fill</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 310</value>
+    <value>2, 309</value>
   </data>
   <data name="gridColumn1.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 15.75pt, style=Bold</value>
@@ -198,6 +198,9 @@
   <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="gridColumn2.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
   <data name="gridColumn16.Caption" xml:space="preserve">
     <value>Masa Adı</value>
   </data>
@@ -207,8 +210,11 @@
   <data name="gridColumn16.VisibleIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="gridColumn16.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 375</value>
+    <value>436, 377</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -229,7 +235,7 @@
     <value>Top</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 73</value>
+    <value>2, 72</value>
   </data>
   <data name="gridColumn8.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 15.75pt, style=Bold</value>
@@ -250,7 +256,7 @@
     <value>0</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 237</value>
+    <value>436, 237</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -271,7 +277,7 @@
     <value>Top</value>
   </data>
   <data name="gridControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 0</value>
+    <value>440, 0</value>
   </data>
   <data name="gridColumn3.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -353,7 +359,7 @@
     <value>4</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 243</value>
+    <value>615, 243</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -393,10 +399,10 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>676, 3</value>
+    <value>519, 2</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 78</value>
+    <value>94, 80</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -420,7 +426,7 @@
     <value>Fill</value>
   </data>
   <data name="gridControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 327</value>
+    <value>440, 327</value>
   </data>
   <data name="gridColumn7.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -498,7 +504,7 @@
     <value>4</value>
   </data>
   <data name="gridControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 361</value>
+    <value>615, 361</value>
   </data>
   <data name="gridControl4.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -591,10 +597,10 @@
 </value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 0</value>
+    <value>15, 3</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 84</value>
+    <value>94, 79</value>
   </data>
   <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -639,10 +645,10 @@
 </value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 0</value>
+    <value>199, 3</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 84</value>
+    <value>94, 79</value>
   </data>
   <data name="simpleButton2.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -666,10 +672,10 @@
     <value>Top</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 70</value>
+    <value>436, 70</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -693,7 +699,7 @@
     <value>0, 0</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 688</value>
+    <value>440, 688</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -714,10 +720,10 @@
     <value>Top</value>
   </data>
   <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 243</value>
+    <value>440, 243</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 84</value>
+    <value>615, 84</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>

@@ -101,6 +101,29 @@ namespace Pos.Class
             com.ExecuteNonQuery();
             if (con.State == ConnectionState.Open) con.Close();
         }
+
+        public static void Log_KaydetUrun(Log_Program Program, Log_Bolum Bolum, Log_Islem Islem, string Aciklama, string Fisno, string Islem_ID,string Log_Recete="",string Log_Urun="")
+        {
+            SqlConnection con = dbtools.conn;
+            if (con.State == ConnectionState.Closed) con.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandTimeout = 0;
+            com.CommandText = "Pos_Log_Ekle";
+            com.Parameters.AddWithValue("@Log_Prog", Program.ToString());
+            com.Parameters.AddWithValue("@Log_Bolum", Bolum.ToString());
+            com.Parameters.AddWithValue("@Log_Islem", Islem.ToString());
+            com.Parameters.AddWithValue("@Log_User", User.P_Kod);
+            com.Parameters.AddWithValue("@Log_Bilg", SystemInformation.ComputerName);
+            com.Parameters.AddWithValue("@Log_Aciklama", Aciklama);
+            com.Parameters.AddWithValue("@Log_FisNo", Fisno);
+            com.Parameters.AddWithValue("@Log_IslemId", Islem_ID);
+            com.Parameters.AddWithValue("@Log_Recete", Log_Recete);
+            com.Parameters.AddWithValue("@Log_Urun", Log_Urun);
+            com.ExecuteNonQuery();
+            if (con.State == ConnectionState.Open) con.Close();
+        }
         public static void Log_Kaydet(Log_Program Program, Log_Bolum Bolum, Log_Islem Islem, string Aciklama, string Fisno, string Islem_ID,string neden="")
         {
             SqlConnection con = dbtools.conn;
@@ -168,7 +191,7 @@ namespace Pos.Class
             if (con.State == ConnectionState.Open) con.Close();
         }
 
-        public static void Log_Kaydet(Log_Program Program, Log_Bolum Bolum, Log_Islem Islem, string Aciklama, string Fisno, string Islem_ID, string urun, decimal miktar, string neden, decimal Tutar)
+        public static void Log_Kaydet(Log_Program Program, Log_Bolum Bolum, Log_Islem Islem, string Aciklama, string Fisno, string Islem_ID, string urun, decimal miktar, string neden, decimal Tutar,string recete="",string urunad="")
         {
             SqlConnection con = dbtools.conn;
             if (con.State == ConnectionState.Closed) con.Open();
@@ -185,10 +208,10 @@ namespace Pos.Class
             com.Parameters.AddWithValue("@Log_Aciklama", Aciklama);
             com.Parameters.AddWithValue("@Log_FisNo", Fisno);
             com.Parameters.AddWithValue("@Log_IslemId", Islem_ID);
-            com.Parameters.AddWithValue("@Log_Urun", urun);
+            com.Parameters.AddWithValue("@Log_Urun", urunad);
             com.Parameters.AddWithValue("@Log_Miktar", miktar);
             com.Parameters.AddWithValue("@Log_Neden", neden);
-            com.Parameters.AddWithValue("@Log_Recete", urun);
+            com.Parameters.AddWithValue("@Log_Recete", recete);
             com.Parameters.AddWithValue("@Log_Tutar", Tutar);
 
             com.ExecuteNonQuery();

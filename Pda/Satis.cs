@@ -362,7 +362,7 @@ namespace Pda
 
             if (Ozel_Masa != String.Empty) dbtools.execcmd("update Pos_Masa set Masa_Ozel = '" + Ozel_Masa + "' where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Masa_No + "' ");
 
-            Log.Log_Kaydet(Log.Log_Program.Pda, Log.Log_Bolum.Satis, Log.Log_Islem.Kaydet, Departman.Dep_Adi + " Urun:" + Urun_Kodu + "-" + Rec_Ad + " Miktar:" + Miktar.ToString() + " Tutar:" + Rsat_Tutar.ToString("N2"), Fisno.ToString(), "");
+            Log.Log_KaydetUrun(Log.Log_Program.Pda, Log.Log_Bolum.Satis, Log.Log_Islem.Kaydet, Departman.Dep_Adi + " Urun:" + Urun_Kodu + "-" + Rec_Ad + " Miktar:" + Miktar.ToString() + " Tutar:" + Rsat_Tutar.ToString("N2"), Fisno.ToString(), "",Log_Recete: Urun_Kodu, Log_Urun: Rec_Ad);
 
             gridyenile();
             btn_M_1.Checked = true;
