@@ -2289,7 +2289,7 @@ namespace Pos
                         if (Param.Param_YeniHesapDkm)
                         {
                             bool sifirmi = getTutarsifirmi();
-                            if (Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1)
+                            if (Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1) // 
                             {
 
                                 cevap = pr.newHesapDokum2(true, Convert.ToInt32(this.Tag), Split, "* * * HESAP KAPATMA FİŞİ * * *", gridView2);

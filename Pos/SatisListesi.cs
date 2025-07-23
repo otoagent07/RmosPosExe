@@ -72,20 +72,27 @@ namespace Pos
         private void SatisListesi_Load(object sender, EventArgs e)
         {
             //timer1.Enabled = true;
-            lbl_TesisAdi.Text = Param.Tesis_Adi.Replace("&", "&&");
-            if (File.Exists("sirketLogo.png"))
+            try
             {
-                pictureBox1.Image = Image.FromFile("sirketLogo.png");
+                lbl_TesisAdi.Text = Param.Tesis_Adi.Replace("&", "&&");
+                if (File.Exists("sirketLogo.png"))
+                {
+                    pictureBox1.Image = Image.FromFile("sirketLogo.png");
+                }
+                if (File.Exists("rmosLogo.png"))
+                {
+                    pictureBox2.Image = Image.FromFile("rmosLogo.png");
+                }
+
+                //pictureBox3.Image = Image.FromFile("modulLogo.png");
+
+                layoutView1.OptionsView.ShowHeaderPanel = false;
+                layoutView1.OptionsView.ShowCardCaption = false;
             }
-            if (File.Exists("rmosLogo.png"))
+            catch (Exception ex)
             {
-                pictureBox2.Image = Image.FromFile("rmosLogo.png");
+                MessageBox.Show(ex.Message);
             }
-
-            //pictureBox3.Image = Image.FromFile("modulLogo.png");
-
-            layoutView1.OptionsView.ShowHeaderPanel = false;
-            layoutView1.OptionsView.ShowCardCaption = false;
 
 
         }

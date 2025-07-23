@@ -4251,8 +4251,38 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 hsp.xr_UrunToplamTr.Text += " ₺";
                 hsp.xr_KalanToplamTr.Text += " ₺";
 
+                if (Param.Calisma_Sekli==1)
+                {
+                    string toplamdovizGenel = $@"SELECT
+  ISNULL((
+    SELECT SUM(Rsat_Doviztutar)
+    FROM Cst_Recete_Satis
+    WHERE Rsat_Fisno = '{Fisno}' AND Rsat_Ba = 'B'
+  ), 0) -
+  ISNULL((
+    SELECT SUM(Rsat_Doviztutar)
+    FROM Cst_Recete_Satis
+    WHERE Rsat_Fisno = '{Fisno}' AND Rsat_Ba = 'A' and Rsat_Indkodu is not null and Rsat_Indkodu<>''
+  ), 0) AS DovizTutarFarki;";
+
+                    string kalanDoviz = dbtools.DegerGetir(toplamdovizGenel);
+                    hsp.xr_KalanToplam.Text = kalanDoviz+ dovizIcon;
 
 
+                    string indirim = dbtools.DegerGetir($"select sum(Rsat_Tutar) as toplam from Cst_Recete_Satis where Rsat_Fisno='{Fisno}' and Rsat_Indkodu is not null and Rsat_Indkodu<>''");
+
+                    hsp.xr_KalanToplamTr.Text = UrunToplamTr.ToString() + " ₺";
+
+                    if (indirim!="")
+                    {
+                        decimal sonuc = Convert.ToDecimal(UrunToplamTr) - Convert.ToDecimal(indirim);
+
+                        hsp.xr_KalanToplamTr.Text = sonuc.ToString() + " ₺";
+
+                    }
+
+
+                }
 
 
                 DataTable dtUrungrup = new DataTable();
@@ -5041,6 +5071,9 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
             //    hsp.xr_Bakiye.Text = (Fronttools.NFCBakiye(Convert.ToInt32(dtHesap.Rows[0]["Rsat_Folio"]), Convert.ToInt32(dtHesap.Rows[0]["Rsat_Kart_ID"]))).ToString();
             //}
+
+
+
 
 
             if (dtPrinter.Rows.Count > 0 && dtMacPrinter.Rows.Count == 0)
