@@ -1515,6 +1515,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 h.Tag = Fisno;
                 h.tip = "O";
                 h.ShowDialog();
+
                 gridyenile();
             }
         }
