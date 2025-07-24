@@ -2028,7 +2028,15 @@ namespace Pos
                 }
 
 
-                bakiye = Math.Abs(bakiye) < Convert.ToDecimal(0.03) ? 0 : bakiye;
+                
+                if (Param.Calisma_Sekli == 1 )
+                {
+                    bakiye = Math.Abs(bakiye) < Convert.ToDecimal(1) ? 0 : bakiye;
+                }
+                else
+                {
+                    bakiye = Math.Abs(bakiye) < Convert.ToDecimal(0.03) ? 0 : bakiye;
+                }
                 return bakiye;
             }
 
