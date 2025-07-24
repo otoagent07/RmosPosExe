@@ -112,6 +112,16 @@ namespace Pos
         {
             try
             {
+
+
+                if (Param.Calisma_Sekli == 1) // 24.07.2025 tarihinde tropic restoran dövizli çalışma. kur farkı için . fatih şahin eklettirdi.
+                {
+                    int ffisno = Convert.ToInt32(this.Tag);
+                    string dovizkur = Param.Doviz_Kuru.ToString().Replace(",",".");
+                    string q12 = $"update Cst_Recete_Satis set Rsat_Dovizkur={dovizkur}, Rsat_Fiyat=Rsat_Doviztutar*{dovizkur},Rsat_Net=Rsat_Doviztutar*{dovizkur},Rsat_Tutar=Rsat_Doviztutar*{dovizkur}  where Rsat_Fisno='{ffisno}' ";
+                    dbtools.execcmdR(q12);
+                }
+
                 string kisiyeSatisAktifmi = dbtools.DegerGetir($"select isnull(Kodlar_KisiyeSatis,0) as Kodlar_KisiyeSatis from Stok_Kodlar where Kodlar_Sinif='01' and Kodlar_Kod='{Departman.Dep_Kodu}'");
 
                 if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
