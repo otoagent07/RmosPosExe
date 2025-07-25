@@ -421,7 +421,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.40"; // aaaa
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.41"; // aaaa
 
 
 
@@ -1062,6 +1062,11 @@ namespace Pos
 
         private void btn_HizliSatis_Click(object sender, EventArgs e)
         {
+            if (Sabitler.otomatikGunsonuKontrol() == false)
+            {
+                return;
+            }
+
 
             Satis sat = new Satis();
             sat.Tag = "H";
