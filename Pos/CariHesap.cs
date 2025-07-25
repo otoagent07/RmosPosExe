@@ -32,6 +32,7 @@ namespace Pos
 
         public Cari carim = null; // 04.11.2024 de değerler dolması için eklendi
 
+        public int Odeme_Ozelkod = 0; // 25.07.2025 de eklendi
         public CariHesap()
         {
             InitializeComponent();
@@ -135,6 +136,10 @@ namespace Pos
             {
                 txt_Cari_Kod.Focus();
             }
+
+            // 25.07.2025 de eklendi
+            if (Odeme_Ozelkod==2) look_Cari_Tip.EditValue = "O";
+            if (Odeme_Ozelkod == 3) look_Cari_Tip.EditValue = "P";
         }
 
         #region Cari Tanımları

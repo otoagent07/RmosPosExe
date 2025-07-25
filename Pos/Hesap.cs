@@ -53,6 +53,7 @@ namespace Pos
 
         public string tip = "";
 
+        public bool odemetipiDegistirdenmigeldi = false;
 
         public Hesap()
         {
@@ -117,7 +118,7 @@ namespace Pos
                 if (Param.Calisma_Sekli == 1) // 24.07.2025 tarihinde tropic restoran dövizli çalışma. kur farkı için . fatih şahin eklettirdi.
                 {
                     int ffisno = Convert.ToInt32(this.Tag);
-                    string dovizkur = Param.Doviz_Kuru.ToString().Replace(",",".");
+                    string dovizkur = Param.Doviz_Kuru.ToString().Replace(",", ".");
                     string q12 = $"update Cst_Recete_Satis set Rsat_Dovizkur={dovizkur}, Rsat_Fiyat=Rsat_Doviztutar*{dovizkur},Rsat_Net=Rsat_Doviztutar*{dovizkur},Rsat_Tutar=Rsat_Doviztutar*{dovizkur}  where Rsat_Fisno='{ffisno}' ";
                     dbtools.execcmdR(q12);
                 }
@@ -638,7 +639,7 @@ namespace Pos
         public int fisno = 0;
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
-
+            canClose = false;
             if (Convert.ToString(dbtools.DegerGetir("select COUNT(*) from cst_Recete_Satis where Rsat_Fisno = '" + this.Tag + "' and Rsat_Durum = 'K'")) != "0")
             {
                 gridyenile();
@@ -649,7 +650,6 @@ namespace Pos
             }
 
             cikis = false;
-            canClose = true;
             fisno = Convert.ToInt32(this.Tag);
             this.Close();
         }
@@ -985,7 +985,7 @@ namespace Pos
                 hesapDokum(sifirmi);
 
 
-               
+
             }
             catch (Exception ex)
             {
@@ -1814,9 +1814,9 @@ namespace Pos
 
         private void btn_Yazdirmadankapat_Click(object sender, EventArgs e)
         {
-
+            canClose = false;
             var data = Convert.ToDecimal(gridColumn4.SummaryText);
-            if (data<0)
+            if (data < 0)
             {
                 MessageBox.Show("Eksi ödeme alınamaz! İlk önce ödemeleri siliniz !!!");
                 return;
@@ -1930,7 +1930,7 @@ namespace Pos
 
             //dbtools.execcmd("update Pos_Masa set Masa_Durum = '0', Masa_Ozel = '' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
             dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 16,@Masano = '" + Masa_No + "',@Dep_Kodu = '" + Departman.Dep_Kodu + "'");
-           
+
             dbtools.execcmd("Update Cst_Recete_Satis set sepetDurum=3,Rsat_SistemDate = Getdate(), E_AdisyonDurum = '" + Convert.ToInt32(E_AdisyonDurum.Checked) + "' where Rsat_Fisno = '" + fis_no + "'");
 
 
@@ -2032,8 +2032,8 @@ namespace Pos
                 }
 
 
-                
-                if (Param.Calisma_Sekli == 1 )
+
+                if (Param.Calisma_Sekli == 1)
                 {
                     bakiye = Math.Abs(bakiye) < Convert.ToDecimal(1) ? 0 : bakiye;
                 }
@@ -2358,6 +2358,8 @@ namespace Pos
         }
         private void btn_Yazdirkapat_Click(object sender, EventArgs e)
         {
+            canClose = false;
+
             var data = Convert.ToDecimal(gridColumn4.SummaryText);
             if (data < 0)
             {
@@ -3225,10 +3227,17 @@ namespace Pos
             }
         }
 
-        bool canClose = false;
+        public bool canClose = true;
         private void Hesap_FormClosing(object sender, FormClosingEventArgs e)
         {
             //e.Cancel = !canClose;
+
+            if (odemetipiDegistirdenmigeldi && canClose)
+            {
+                MessageBox.Show("LÜTFEN YAZDIR KAPAT VEYA YAZDIRMADAN KAPAT BUTONLARINI KULLANINIZ");
+                e.Cancel = true;
+               
+            }
         }
 
         private void txt_Odemetutari_CustomDisplayText(object sender, DevExpress.XtraEditors.Controls.CustomDisplayTextEventArgs e)
@@ -4041,7 +4050,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
         }
 
-       
+
 
         private void gridView1_RowStyle(object sender, RowStyleEventArgs e)
         {

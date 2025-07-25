@@ -144,7 +144,7 @@
     <value>panelControl2</value>
   </data>
   <data name="&gt;&gt;txt_Masano.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="textEdit8.EditValue" xml:space="preserve">
     <value>Masa No</value>
@@ -171,14 +171,14 @@
     <value>panelControl2</value>
   </data>
   <data name="&gt;&gt;textEdit8.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="gridControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 309</value>
+    <value>2, 338</value>
   </data>
   <data name="gridColumn1.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 15.75pt, style=Bold</value>
@@ -214,7 +214,7 @@
     <value>130</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>436, 377</value>
+    <value>436, 348</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -235,7 +235,7 @@
     <value>Top</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 72</value>
+    <value>2, 101</value>
   </data>
   <data name="gridColumn8.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 15.75pt, style=Bold</value>
@@ -543,7 +543,7 @@
     <value>panelControl2</value>
   </data>
   <data name="&gt;&gt;txt_MasaOzel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="textEdit2.EditValue" xml:space="preserve">
     <value>Masa Ozel</value>
@@ -570,7 +570,7 @@
     <value>panelControl2</value>
   </data>
   <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11.25pt, style=Bold</value>
@@ -668,6 +668,33 @@
   <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="txtSecilenMasa.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecilenMasa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 64</value>
+  </data>
+  <data name="textEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="txtSecilenMasa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 32</value>
+  </data>
+  <data name="txtSecilenMasa.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;txtSecilenMasa.Name" xml:space="preserve">
+    <value>txtSecilenMasa</value>
+  </data>
+  <data name="&gt;&gt;txtSecilenMasa.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtSecilenMasa.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;txtSecilenMasa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -675,7 +702,7 @@
     <value>2, 2</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>436, 70</value>
+    <value>436, 99</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

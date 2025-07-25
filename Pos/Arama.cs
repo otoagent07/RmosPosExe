@@ -672,6 +672,7 @@ namespace Pos
         private void btn_CariEkle_Click(object sender, EventArgs e)
         {
             CariHesap cari = new CariHesap();
+            cari.Odeme_Ozelkod = Odeme_Ozelkod;
             cari.xtraTabControl1.SelectedTabPageIndex = 1;
             cari.ShowDialog();
         }

@@ -59,9 +59,7 @@ namespace Pos.Controllers
         {
             try
             {
-
-                PavoController pavoController = new PavoController();
-                var varmi = pavoController.pavoDepartmanYukle();
+                var varmi = pavoDepartmanYukle();
 
                 if (varmi == false || aktif == false)
                 {
@@ -88,6 +86,7 @@ namespace Pos.Controllers
                 }
 
 
+                Console.WriteLine("aaa2");
             }
             catch (Exception ex)
             {
@@ -131,7 +130,6 @@ namespace Pos.Controllers
                     LogHata(sonuc);
                 }
 
-
             }
             catch (Exception ex)
             {
@@ -152,62 +150,13 @@ namespace Pos.Controllers
                     return;
                 }
 
-                var client = new HttpClient();
-                var request = new HttpRequestMessage(HttpMethod.Post, Kodlar_pavoUrl + "/Pavo/PaymentLinkRequest");
-
-                var payment = new PavoReqModel
+                System.Threading.Tasks.Task.Factory.StartNew(() =>
                 {
-                    fisno = fisno,
-                    depkod = Departman.Dep_Kodu,
-                    paymentTypeId = 0,
-                    sirketId = Kodlar_pavoSirketId
-                };
-
-                var json = Newtonsoft.Json.JsonConvert.SerializeObject(payment);
-                var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-                request.Content = content;
-
-                var response = client.SendAsync(request).Result;
-                response.EnsureSuccessStatusCode();
-                string sonuc = response.Content.ReadAsStringAsync().Result;
-                var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
-                if (model.success == false)
-                {
-                    LogHata(sonuc);
-                }
-            }
-            catch (Exception ex)
-            {
-                //MessageBox.Show(ex.Message);
-                RHMesaj.alertMesaj(ex.Message);
-                LogHata(ex.Message);
-
-            }
-        }
-
-
-        public void pavoHesapKapat()
-        {
-            try
-            {
-                if (Kodlar_pavoUrl == "" || aktif == false)
-                {
-                    return;
-                }
-
-                DataTable dataTable = dbtools.SelectTableR($@"select Rsat_Fisno from Cst_Recete_Satis  as s
-left join Pos_Masa as m on m.Masa_No=s.Rsat_Masa
-where  Rsat_Durum='A' and (m.Masa_Durum=1 or m.Masa_Durum=2) and PaymentLinkId !=''
-group by Rsat_Fisno");
-
-                if (dataTable != null && dataTable.Rows.Count > 0)
-                {
-                    foreach (DataRow item in dataTable.Rows)
+                    try
                     {
                         var client = new HttpClient();
-                        var request = new HttpRequestMessage(HttpMethod.Post, Kodlar_pavoUrl + "/Pavo/CheckLinkRequest");
+                        var request = new HttpRequestMessage(HttpMethod.Post, Kodlar_pavoUrl + "/Pavo/PaymentLinkRequest");
 
-                        string fisno = item["Rsat_Fisno"].ToString();
                         var payment = new PavoReqModel
                         {
                             fisno = fisno,
@@ -229,7 +178,74 @@ group by Rsat_Fisno");
                             LogHata(sonuc);
                         }
                     }
+                    catch (Exception ex)
+                    {
+
+                        RHMesaj.alertMesaj(ex.Message);
+                        LogHata(ex.Message);
+                    }
+
+                });
+
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+                RHMesaj.alertMesaj(ex.Message);
+                LogHata(ex.Message);
+
+            }
+        }
+
+
+        public void pavoHesapKapat()
+        {
+            try
+            {
+                if (Kodlar_pavoUrl == "" || aktif == false)
+                {
+                    return;
                 }
+                string q = $@"select Rsat_Fisno from Cst_Recete_Satis  as s
+left join Pos_Masa as m on m.Masa_No=s.Rsat_Masa
+where  Rsat_Durum='A' and (m.Masa_Durum=1 or m.Masa_Durum=2) and PaymentLinkId !=''
+group by Rsat_Fisno";
+                DataTable dataTable = dbtools.SelectTableR(q);
+
+                System.Threading.Tasks.Task.Factory.StartNew(() =>
+                {
+
+                    if (dataTable != null && dataTable.Rows.Count > 0)
+                    {
+                        foreach (DataRow item in dataTable.Rows)
+                        {
+                            var client = new HttpClient();
+                            var request = new HttpRequestMessage(HttpMethod.Post, Kodlar_pavoUrl + "/Pavo/CheckLinkRequest");
+
+                            string fisno = item["Rsat_Fisno"].ToString();
+                            var payment = new PavoReqModel
+                            {
+                                fisno = fisno,
+                                depkod = Departman.Dep_Kodu,
+                                paymentTypeId = 0,
+                                sirketId = Kodlar_pavoSirketId
+                            };
+
+                            var json = Newtonsoft.Json.JsonConvert.SerializeObject(payment);
+                            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+                            request.Content = content;
+
+                            var response = client.SendAsync(request).Result;
+                            response.EnsureSuccessStatusCode();
+                            string sonuc = response.Content.ReadAsStringAsync().Result;
+                            var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
+                            if (model.success == false)
+                            {
+                                LogHata(sonuc);
+                            }
+                        }
+                    }
+                });
 
 
             }

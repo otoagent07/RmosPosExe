@@ -58,6 +58,11 @@ namespace Pos
 
         private void MasaTakip_Load(object sender, EventArgs e)
         {
+            if (Sabitler.otomatikGunsonuKontrol() == false)
+            {
+                this.Close();
+                return;
+            }
 
             loadYukle();
             fisnotemizle();

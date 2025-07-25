@@ -527,7 +527,7 @@ namespace Pos
 
 
                 // && Kisi_Sayisi>0 sonradan eklendi
-                if (Departman.Kodlar_Kuver_Sat && Kisi_Sayisi>0)
+                if (Departman.Kodlar_Kuver_Sat && Kisi_Sayisi > 0)
                 {
                     Miktar = Kisi_Sayisi;
                     Urun_Sat(Departman.Kodlar_Kuver_Recete);
@@ -2061,8 +2061,16 @@ namespace Pos
             }
         }
 
+       
         void btn_Urun_Click(object sender, EventArgs e)
         {
+            if (Sabitler.otomatikGunsonuKontrol() == false)
+            {
+                this.Close();
+                return;
+            }
+
+
             SimpleButton btn_Urun = (SimpleButton)sender;
 
             if (Convert.ToString(this.Tag) == "D" && Param.Param_DirekAdisyonZor == true && Convert.ToString(txtAdisyon.EditValue) == "")
@@ -2507,7 +2515,7 @@ namespace Pos
                 if (Ozel_Masa != String.Empty) dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 11, @Dep_Kodu = '" + Departman.Dep_Kodu + "', @Masano = '" + Masa_No + "', @Ozel_Masa = '" + Ozel_Masa + "'");
 
 
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satis, (chk_Fix.Checked == false ? Log.Log_Islem.Kaydet : Log.Log_Islem.FixKaydet), Departman.Dep_Adi + " Urun:" + Urun_Kodu + "-" + Rec_Ad + " Miktar:" + Miktar.ToString() + " Tutar:" + Rsat_Tutar.ToString("N2"), Convert.ToInt32(bartxt_FisNo.EditValue).ToString(), "", Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")), Miktar, "", Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")),recete: Urun_Kodu,urunad:Rec_Ad);
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satis, (chk_Fix.Checked == false ? Log.Log_Islem.Kaydet : Log.Log_Islem.FixKaydet), Departman.Dep_Adi + " Urun:" + Urun_Kodu + "-" + Rec_Ad + " Miktar:" + Miktar.ToString() + " Tutar:" + Rsat_Tutar.ToString("N2"), Convert.ToInt32(bartxt_FisNo.EditValue).ToString(), "", Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Recete")), Miktar, "", Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")), recete: Urun_Kodu, urunad: Rec_Ad);
 
 
 
@@ -3394,10 +3402,10 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
                         decimal Rsat_Kdvoran = Convert.ToDecimal(dbtools.DegerGetir("select top 1 Rsat_Kdvoran from Cst_Recete_Satis where Rsat_Id='" + satirId + "'"));
 
                         var oranAktifmi = dbtools.DegerGetir("select Pkod_Hh_Oran from Pos_Kodlar where Pkod_Sinif='20' and Pkod_Hh_Oran>0");
-                        
+
                         decimal uygulanacakindirim = Convert.ToDecimal(deger);
 
-                        if (oranAktifmi!="" && oranAktifmi!="0")
+                        if (oranAktifmi != "" && oranAktifmi != "0")
                         {
                             uygulanacakindirim = uygulanacakindirim * (Convert.ToDecimal(oranAktifmi) / 100);
                         }

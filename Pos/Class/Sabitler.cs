@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pos.Forms;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -12,11 +13,77 @@ namespace Pos.Class
     public class Sabitler
     {
 
+        public static bool otomatikGunsonuKontrol()
+        {
+            try
+            {
+                if (Param.gunsonubitissaat != "11:11")
+                {
+                    DateTime posTarih = Param.Tarih.Date;          // POS'un tuttuğu tarih
+                    DateTime sistemTarih = DateTime.Now.Date;      // Sistem tarihi
+                    int gunFarki = (sistemTarih - posTarih).Days;  // Gün farkı
 
-		/*
+                    TimeSpan bitisSaati = TimeSpan.Parse(Param.gunsonubitissaat);
+                    TimeSpan simdikiSaat = DateTime.Now.TimeOfDay;
+
+                    // 1) Eğer fark 1 günden fazlaysa → direkt uyarı
+                    if (gunFarki > 1)
+                    {
+                        return GunSonuUyarisi(posTarih, sistemTarih);
+                    }
+
+                    // 2) Eğer fark 1 günse → saat kontrolü
+                    if (gunFarki == 1)
+                    {
+                        if (simdikiSaat >= bitisSaati) // saat bitiş saatini geçtiyse uyar
+                        {
+                            return GunSonuUyarisi(posTarih, sistemTarih);
+                        }
+                        else
+                        {
+                            // Saat henüz bitiş saatine gelmemiş → sorun yok
+                            return true;
+                        }
+                    }
+
+                    // 3) Gün farkı yoksa → sorun yok
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Hata loglanabilir
+            }
+
+            return true;
+        }
+
+        // Uyarı ve gün sonu alma işlemi için ayrı metod
+        private static bool GunSonuUyarisi(DateTime posTarih, DateTime sistemTarih)
+        {
+            string posTar = posTarih.ToLongDateString();
+            string sysTar = sistemTarih.ToLongDateString();
+
+            string en = "Otomatik Günsonu Aktif" + Environment.NewLine +
+                        "Sistem Tarihi ile Pos Tarihi Aynı Değil Kontrol Ediniz!!!";
+            string mesaj = en + Environment.NewLine + "SistemTar:" + sysTar +
+                           Environment.NewLine + "PosTar:" + posTar;
+
+            ConfirmationForm confirmationForm = new ConfirmationForm(mesaj);
+            confirmationForm.ShowDialog();
+
+            Gun_Sonu gun = new Gun_Sonu();
+            gun.ShowDialog();
+
+            return false;
+        }
+
+
+
+        /*
          Pkod_FisTipi P ise ikram O ise ödenmez
          */
-		public static string MyGetMacAddress()
+        public static string MyGetMacAddress()
 		{
 			string mac=  NetworkInterface
 			   .GetAllNetworkInterfaces()

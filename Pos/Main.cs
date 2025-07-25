@@ -838,6 +838,11 @@ namespace Pos
         public static MasaTakip masa_takip;
         private void btnMasaTakip_Click(object sender, EventArgs e)
         {
+            if (Sabitler.otomatikGunsonuKontrol() == false)
+            {
+                return;
+            }
+
             masa_takip = new MasaTakip();
             masa_takip.ShowDialog();
 
@@ -944,6 +949,11 @@ namespace Pos
 
         private void btnDirekSatis_Click(object sender, EventArgs e)
         {
+            if (Sabitler.otomatikGunsonuKontrol() == false)
+            {
+                return;
+            }
+
             direktsatisac();
         }
 

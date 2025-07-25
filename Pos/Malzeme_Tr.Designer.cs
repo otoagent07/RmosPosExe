@@ -72,6 +72,7 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.txtSecilenMasa = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Masano.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -90,6 +91,7 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSecilenMasa.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn13
@@ -473,6 +475,7 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.txtSecilenMasa);
             this.panelControl2.Controls.Add(this.textEdit8);
             this.panelControl2.Controls.Add(this.txt_Masano);
             this.panelControl2.Controls.Add(this.textEdit2);
@@ -487,6 +490,20 @@
             this.panelControl3.Controls.Add(this.btn_Cikis);
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
+            // 
+            // txtSecilenMasa
+            // 
+            resources.ApplyResources(this.txtSecilenMasa, "txtSecilenMasa");
+            this.txtSecilenMasa.Name = "txtSecilenMasa";
+            this.txtSecilenMasa.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("textEdit1.Properties.Appearance.Font")));
+            this.txtSecilenMasa.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtSecilenMasa.Properties.Appearance.Options.UseFont = true;
+            this.txtSecilenMasa.Properties.Appearance.Options.UseForeColor = true;
+            this.txtSecilenMasa.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtSecilenMasa.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtSecilenMasa.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtSecilenMasa.Properties.ReadOnly = true;
+            this.txtSecilenMasa.TabStop = false;
             // 
             // Malzeme_Tr
             // 
@@ -517,6 +534,7 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtSecilenMasa.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -562,5 +580,6 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl3;
+        private DevExpress.XtraEditors.TextEdit txtSecilenMasa;
     }
 }

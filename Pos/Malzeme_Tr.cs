@@ -129,11 +129,15 @@ namespace Pos
             gridColumn10.FieldName = "Rec_Ad";
             gridColumn11.FieldName = "Rsat_Miktar";
             gridColumn12.FieldName = "Rsat_Tutar";
-
+            string secilenMAsa = gridView2.GetFocusedRowCellValue("Masa_No").ToString();
             gridControl4.DataSource = dbtools.SelectTable("select Rsat_Id,Rec_Ad,Rsat_Miktar,Rsat_Tutar,Rsat_Recete,Rsat_Masa,Rsat_Emiktar "
                                                           + "  from Cst_Recete_Satis "
                                                           + "      left join Cst_Recete on Rec_Genelkod = Rsat_Recete "
-                                                          + "  where Rsat_Ba = 'B' and Rsat_Masa = '" + gridView2.GetFocusedRowCellValue("Masa_No").ToString() + "' and Rsat_Durum='A' and Rsat_Departman = '" + Departman.Dep_Kodu + "'");
+                                                          + "  where Rsat_Ba = 'B' and Rsat_Masa = '" + secilenMAsa + "' and Rsat_Durum='A' and Rsat_Departman = '" + Departman.Dep_Kodu + "'");
+
+
+            txtSecilenMasa.Text ="SEÇİLEN MASA : "+ secilenMAsa;
+
         }
 
         private void gridyenile_HedefUrun_Yukari(string Masa)

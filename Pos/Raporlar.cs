@@ -1513,6 +1513,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 Hesap h = new Hesap();
                 h.fisno = Fisno;
                 h.Tag = Fisno;
+                h.odemetipiDegistirdenmigeldi = true;
                 h.tip = "O";
                 h.ShowDialog();
 
