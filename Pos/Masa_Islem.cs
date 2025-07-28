@@ -514,6 +514,9 @@ namespace Pos
                 }
             }
 
+
+            dbtools.execcmd($"Update Pos_Masa Set Masa_NFC = 0, Masa_Durum = 0,Masa_Musait=0 where Masa_Depart = '{Departman.Dep_Kodu}'");
+
             MessageBox.Show("Siparişi Olmayan ve Fiş No almayan TÜM Masaların İzni Açıldı !");
 
         }
