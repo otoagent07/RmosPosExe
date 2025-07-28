@@ -2950,6 +2950,9 @@
   <data name="&gt;&gt;btnCekmeceAc.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="btnPavoKapat.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
   <data name="btnPavoKapat.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACZ0RVh0VGl0
@@ -2994,13 +2997,16 @@
 </value>
   </data>
   <data name="btnPavoKapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 78</value>
+    <value>461, 78</value>
   </data>
   <data name="btnPavoKapat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 33</value>
+    <value>139, 33</value>
   </data>
   <data name="btnPavoKapat.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>
+  </data>
+  <data name="btnPavoKapat.Text" xml:space="preserve">
+    <value>PAVO KAPAT</value>
   </data>
   <data name="&gt;&gt;btnPavoKapat.Name" xml:space="preserve">
     <value>btnPavoKapat</value>

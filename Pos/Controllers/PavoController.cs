@@ -150,42 +150,41 @@ namespace Pos.Controllers
                     return;
                 }
 
-                System.Threading.Tasks.Task.Factory.StartNew(() =>
+
+                try
                 {
-                    try
+                    var client = new HttpClient();
+                    var request = new HttpRequestMessage(HttpMethod.Post, Kodlar_pavoUrl + "/Pavo/PaymentLinkRequest");
+
+                    var payment = new PavoReqModel
                     {
-                        var client = new HttpClient();
-                        var request = new HttpRequestMessage(HttpMethod.Post, Kodlar_pavoUrl + "/Pavo/PaymentLinkRequest");
+                        fisno = fisno,
+                        depkod = Departman.Dep_Kodu,
+                        paymentTypeId = 0,
+                        sirketId = Kodlar_pavoSirketId
+                    };
 
-                        var payment = new PavoReqModel
-                        {
-                            fisno = fisno,
-                            depkod = Departman.Dep_Kodu,
-                            paymentTypeId = 0,
-                            sirketId = Kodlar_pavoSirketId
-                        };
+                    var json = Newtonsoft.Json.JsonConvert.SerializeObject(payment);
+                    var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+                    request.Content = content;
 
-                        var json = Newtonsoft.Json.JsonConvert.SerializeObject(payment);
-                        var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-                        request.Content = content;
-
-                        var response = client.SendAsync(request).Result;
-                        response.EnsureSuccessStatusCode();
-                        string sonuc = response.Content.ReadAsStringAsync().Result;
-                        var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
-                        if (model.success == false)
-                        {
-                            LogHata(sonuc);
-                        }
-                    }
-                    catch (Exception ex)
+                    var response = client.SendAsync(request).Result;
+                    response.EnsureSuccessStatusCode();
+                    string sonuc = response.Content.ReadAsStringAsync().Result;
+                    var model = JsonConvert.DeserializeObject<PavoResponse>(sonuc);
+                    if (model.success == false)
                     {
-
-                        RHMesaj.alertMesaj(ex.Message);
-                        LogHata(ex.Message);
+                        LogHata(sonuc);
                     }
+                }
+                catch (Exception ex)
+                {
 
-                });
+                    RHMesaj.alertMesaj(ex.Message);
+                    LogHata(ex.Message);
+                }
+
+
 
             }
             catch (Exception ex)

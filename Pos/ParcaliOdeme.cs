@@ -286,8 +286,20 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 string neredenMasa = anamasano;
                 string nereyeMasa = altmasano;
 
+                string fisnovarmi = dbtools.DegerGetir($"select isnull(Rsat_Fisno,0) as Rsat_Fisno from Cst_Recete_Satis  where Rsat_Masa='{nereyeMasa}' and Rsat_Durum='A'");
 
-                aktarim(neredenRow, neredenMasa, nereyeMasa, 0);
+                int fisno = 0;
+                if (fisnovarmi != "" && fisnovarmi != "0")
+                {
+                    fisno = Convert.ToInt32(fisnovarmi);
+                }
+                else
+                {
+                    fisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+
+                }
+
+                aktarim(neredenRow, neredenMasa, nereyeMasa, fisno);
 
 
             }
@@ -353,7 +365,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 if (nesne != null)
                 {
                     decimal rsattutar = Convert.ToDecimal(neredenRow["Rsat_Tutar"].ToString());
-                    
+
                     //decimal rsatmiktar = Convert.ToDecimal(neredenRow["Rsat_Miktar"].ToString());
                     decimal rsatmiktar = nesne.Rsat_Miktar.Value;
 
@@ -732,7 +744,12 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
             DataTable dtDeger = new DataTable();
             try
             {
-                string query = @"select 
+
+                string fisno = gridViewAlt.GetFocusedRowCellValue("Rsat_Fisno").ToString();
+
+              
+
+                string query = $@"select 
                                         sum(Rsat_Fiyat) as Rsat_Fiyat,
                                         isnull((max(Rsat_Kdvoran)),1) as Rsat_Kdvoran,
                                         sum(Rsat_Net) as Rsat_Net,
@@ -740,7 +757,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                                         sum(Rsat_Tutar) as Rsat_Tutar,
                                         sum(Rsat_Doviztutar) as Rsat_Doviztutar
                                         from Cst_Recete_Satis 
-                                        where Rsat_Masa='" + altmasano + "' and Rsat_Ba='" + ba + "' and Rsat_Durum='A' and Rsat_Fisno='0' having sum(Rsat_Fiyat) is not null";
+                                        where Rsat_Masa='{altmasano}' and Rsat_Ba='{ba}' and Rsat_Durum='A' and Rsat_Fisno='{fisno}' having sum(Rsat_Fiyat) is not null";
 
                 dtDeger = dbtools.SelectTableR(query);
 
@@ -823,7 +840,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
 
 
-                    int fisno = 0;
+                    int fisno = Convert.ToInt32( gridViewAlt.GetFocusedRowCellValue("Rsat_Fisno").ToString() );
                     if (araodememi)
                     {
                         decimal fiyat = Convert.ToDecimal(txtOdemeTutar.Text);
@@ -835,13 +852,13 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                         nesne.Rsat_Tutar = fiyat;
                         nesne.Rsat_Doviztutar = fiyat;
-                        nesne.Rsat_Fisno = 0;
+                        //nesne.Rsat_Fisno = 0;
                     }
                     else
                     {
-                        fisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+                        //fisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
                         StatikSinif.siranoarttir();
-                        nesne.Rsat_Fisno = fisno;
+                        //nesne.Rsat_Fisno = fisno;
 
                         nesne.Rsat_Fiyat = Convert.ToDecimal(dtDeger.Rows[0]["Rsat_Fiyat"].ToString());
                         nesne.Rsat_Kdvoran = Convert.ToDecimal(dtDeger.Rows[0]["Rsat_Kdvoran"].ToString());
@@ -874,6 +891,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                     nesne.Rsat_OzelMasaAdi = null;
 
 
+                    nesne.Rsat_Fisno = fisno;
 
                     /*
                  NOT EĞER TUTAR SIFIRSA YAZDIR KAPAT DİYİNCEDE SATIR ATIYOR HALBUKİ ARA ÖDEMELERLE TÜM TUTARI ALMIŞTI
@@ -907,7 +925,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                         Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
 
 
-                        cariyeEkle(fisno);
+                        cariyeEkle(nesne.Rsat_Fisno.Value);
 
                     }
                     else
@@ -919,7 +937,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                     if (yazdirilsinmi)
                     {
-                        yaziciyaGonder(fisno);
+                        yaziciyaGonder(nesne.Rsat_Fisno.Value);
                     }
 
                     //if (araodememi == false)

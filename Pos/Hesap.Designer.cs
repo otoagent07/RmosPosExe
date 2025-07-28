@@ -1061,6 +1061,8 @@
             // 
             // btnPavoKapat
             // 
+            this.btnPavoKapat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnPavoKapat.Appearance.Font")));
+            this.btnPavoKapat.Appearance.Options.UseFont = true;
             this.btnPavoKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPavoKapat.ImageOptions.Image")));
             this.btnPavoKapat.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnPavoKapat.ImageOptions.SvgImageSize = new System.Drawing.Size(12, 12);

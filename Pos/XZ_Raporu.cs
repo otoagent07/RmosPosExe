@@ -153,10 +153,11 @@ group by Pkod_Ad";
                 if (rdo_X_Z.SelectedIndex == 0) list.Add("    ***  X RAPORU  ***");
                 if (rdo_X_Z.SelectedIndex == 1) list.Add("    ***  Z RAPORU  ***");
                 list.Add(". ");
-                list.Add("    " + tesis_Adi);
-                list.Add("    " + dateTarih.DateTime.ToShortDateString());
+                list.Add("     " + tesis_Adi);
+                list.Add("#########################");
+                list.Add("Çalışma Tarih : " + dateTarih.DateTime.ToShortDateString());
+                list.Add("Döküm Tarihi  : " + DateTime.Now.ToShortDateString()+" "+ DateTime.Now.ToShortTimeString());
                 if (rdo_X_Z.SelectedIndex == 0) list.Add("    " + "Garson: " + look_Garson.Text);
-                list.Add("    " + DateTime.Now.ToShortTimeString());
                 list.Add(".");
                 list.Add("--------------------------------");
 
