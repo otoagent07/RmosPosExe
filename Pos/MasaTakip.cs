@@ -572,7 +572,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 		union all
 		
 		select MIN(Rsat_Id),'',Pkod_Ad,Pkod_Ad,0,'',
-		sum(Rsat_Tutar) * -1,sum(Rsat_Doviztutar) * -1,'',min(Rsat_Ba),
+		sum(Rsat_Tutar) * -1*0,sum(Rsat_Doviztutar) * -1,'',min(Rsat_Ba),
 		'','',0,'false',0,Null,null,0,null,0,0,'',0,0
 		from Cst_Recete_Satis satis2
 		left join Pos_Kodlar on Rsat_Kapatma = Pkod_Kod and Pkod_Sinif = '11'
@@ -952,7 +952,7 @@ where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
 		union all
 		
 		select MIN(Rsat_Id),'',Pkod_Ad,Pkod_Ad,0,'',
-		sum(Rsat_Tutar) * -1,sum(Rsat_Doviztutar) * -1,'',min(Rsat_Ba),
+		sum(Rsat_Tutar) * -1*0,sum(Rsat_Doviztutar) * -1,'',min(Rsat_Ba),
 		'','',0,'false',0,Null,null,0,null,0,0,'',0,0
 		from Cst_Recete_Satis satis2
 		left join Pos_Kodlar on Rsat_Kapatma = Pkod_Kod and Pkod_Sinif = '11'
