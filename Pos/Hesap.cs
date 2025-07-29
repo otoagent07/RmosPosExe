@@ -4025,6 +4025,14 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 if (model == null) { MessageBox.Show("Model is null"); return; }
                 if (model.success)
                 {
+
+                    FisPr fis = new FisPr();
+
+                    if (Param.Param_YeniHesapDkm) // 21.05.2024 eklendi
+                    {
+                        fis.newHesapDokum(true, Convert.ToInt32(this.Tag), Split, "* * * HESAP DÖKÜM FİŞİ * * *");
+                    }
+
                     this.Close();
                 }
                 else
