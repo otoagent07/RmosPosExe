@@ -681,6 +681,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                         if (renk != "" && kod == item.Tag.ToString())
                         {
                             kontrol = true;
+
+                            
                             break;
                         }
 
@@ -708,6 +710,9 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                 cariOdenmezAc();
 
+                string eadis = dbtools.DegerGetir($"select ISNULL(Pkod_AdisyonPr,0) as Pkod_AdisyonPr from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='{odemetip}'");
+                 bool Pkod_AdisyonPr = Convert.ToBoolean(eadis);
+                            chk_AdisyonGR.Checked = Pkod_AdisyonPr;
             }
             catch (Exception ex)
             {
@@ -920,6 +925,9 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                         dbtools.SelectTableR(fisnoyaGoreQuery);
 
 
+                        dbtools.execcmd("Update Cst_Recete_Satis set Rsat_AdisyonTR = '" + Convert.ToInt32(chk_AdisyonGR.Checked) + "' where Rsat_Fisno = '" + fisno + "' and Rsat_Ingenico_Status<>3");
+
+
                         string aciklama = "Fiş Kapatma. Fisno:" + fisno + " Masano:" + altmasano + " Ödeme Şekli:" + odemetip + " Hesap No:" + hesapno;
 
                         Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
@@ -1002,8 +1010,10 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                     return;
                 }
 
+                int fisno = Convert.ToInt32(gridViewAlt.GetFocusedRowCellValue("Rsat_Fisno").ToString());
+
                 FisPr pr = new FisPr();
-                string cevap = pr.newHesapDokum(true, 0, Split, "* * * HESAP KAPATMA FİŞİ * * *", parcalimi: true, parcamasano: altmasano);
+                string cevap = pr.newHesapDokum(true, fisno, Split, "* * * HESAP KAPATMA FİŞİ * * *", parcalimi: true, parcamasano: altmasano);
             }
             catch (Exception ex)
             {

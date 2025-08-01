@@ -421,7 +421,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.44"; // aaaa
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.45"; // aaaa
 
 
 

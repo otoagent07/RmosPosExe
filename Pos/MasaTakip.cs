@@ -353,6 +353,12 @@ namespace Pos
             MasaYenile(0);
 
             timer1.Enabled = true;
+
+            if (User.M_SatisRelogin)
+            {
+                Relogin();
+            }
+
         }
 
         private void gridyenile_Konumlar()

@@ -108,6 +108,7 @@ namespace Pos
             this.btnOdeme3 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme1 = new DevExpress.XtraEditors.SimpleButton();
+            this.chk_AdisyonGR = new DevExpress.XtraEditors.CheckButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAna)).BeginInit();
             this.groupControlAna.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAna)).BeginInit();
@@ -712,6 +713,7 @@ namespace Pos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chk_AdisyonGR);
             this.groupBox1.Controls.Add(this.btnSpSil);
             this.groupBox1.Controls.Add(this.btnYazdirmadanKapat);
             this.groupBox1.Controls.Add(this.btnBindirim);
@@ -1014,6 +1016,21 @@ namespace Pos
             this.btnOdeme1.Visible = false;
             this.btnOdeme1.Click += new System.EventHandler(this.btnOdeme1_Click);
             // 
+            // chk_AdisyonGR
+            // 
+            this.chk_AdisyonGR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chk_AdisyonGR.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.chk_AdisyonGR.Appearance.Options.UseFont = true;
+            this.chk_AdisyonGR.Appearance.Options.UseTextOptions = true;
+            this.chk_AdisyonGR.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.chk_AdisyonGR.Location = new System.Drawing.Point(110, 320);
+            this.chk_AdisyonGR.LookAndFeel.SkinName = "iMaginary";
+            this.chk_AdisyonGR.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.chk_AdisyonGR.Name = "chk_AdisyonGR";
+            this.chk_AdisyonGR.Size = new System.Drawing.Size(107, 43);
+            this.chk_AdisyonGR.TabIndex = 120;
+            this.chk_AdisyonGR.Text = "Adisyon R";
+            // 
             // ParcaliOdeme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1130,5 +1147,6 @@ namespace Pos
         private DevExpress.XtraEditors.SimpleButton btnBindirim;
         private DevExpress.XtraEditors.SimpleButton btnSpSil;
         private DevExpress.XtraEditors.SimpleButton btnCikis;
+        private DevExpress.XtraEditors.CheckButton chk_AdisyonGR;
     }
 }

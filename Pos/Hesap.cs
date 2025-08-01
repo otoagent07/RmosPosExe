@@ -4081,6 +4081,10 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             }
         }
 
+        private void chk_AdisyonGR_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -2347,39 +2347,6 @@
   <data name="&gt;&gt;gridControlFis.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 116</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>128</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2413,38 +2380,26 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txt2kisi.Name" xml:space="preserve">
-    <value>txt2kisi</value>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 116</value>
   </data>
-  <data name="&gt;&gt;txt2kisi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
   </data>
-  <data name="&gt;&gt;txt2kisi.Parent" xml:space="preserve">
-    <value>panelControl2</value>
-  </data>
-  <data name="&gt;&gt;txt2kisi.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 135</value>
-  </data>
-  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 24</value>
-  </data>
-  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
-    <value>panelControl2</value>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="txt2kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2479,38 +2434,26 @@
   <data name="&gt;&gt;txt2kisi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txt3kisi.Name" xml:space="preserve">
-    <value>txt3kisi</value>
+  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 135</value>
   </data>
-  <data name="&gt;&gt;txt3kisi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt3kisi.Parent" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;txt3kisi.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 135</value>
-  </data>
-  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 24</value>
   </data>
-  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
-    <value>129</value>
+  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
   </data>
-  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
-    <value>panelControl3</value>
+  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
+    <value>panelControl2</value>
   </data>
-  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="txt3kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2545,38 +2488,26 @@
   <data name="&gt;&gt;txt3kisi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 135</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panelControl4</value>
+  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
+    <value>panelControl3</value>
   </data>
-  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 116</value>
-  </data>
-  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2611,38 +2542,26 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txt5kisi.Name" xml:space="preserve">
-    <value>txt5kisi</value>
+  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 116</value>
   </data>
-  <data name="&gt;&gt;txt5kisi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
   </data>
-  <data name="&gt;&gt;txt5kisi.Parent" xml:space="preserve">
-    <value>panelControl5</value>
+  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
   </data>
-  <data name="&gt;&gt;txt5kisi.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
+    <value>panelControl4</value>
   </data>
-  <data name="panelControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>589, 135</value>
-  </data>
-  <data name="panelControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 24</value>
-  </data>
-  <data name="panelControl5.TabIndex" type="System.Int32, mscorlib">
-    <value>133</value>
-  </data>
-  <data name="&gt;&gt;panelControl5.Name" xml:space="preserve">
-    <value>panelControl5</value>
-  </data>
-  <data name="&gt;&gt;panelControl5.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl5.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="txt5kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2677,38 +2596,26 @@
   <data name="&gt;&gt;txt5kisi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="panelControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 135</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>panelControl6</value>
+  <data name="panelControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl5.Name" xml:space="preserve">
+    <value>panelControl5</value>
   </data>
-  <data name="panelControl6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>589, 116</value>
-  </data>
-  <data name="panelControl6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="panelControl6.TabIndex" type="System.Int32, mscorlib">
-    <value>134</value>
-  </data>
-  <data name="&gt;&gt;panelControl6.Name" xml:space="preserve">
-    <value>panelControl6</value>
-  </data>
-  <data name="&gt;&gt;panelControl6.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl5.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl6.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;panelControl5.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2743,38 +2650,26 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txt4kisi.Name" xml:space="preserve">
-    <value>txt4kisi</value>
+  <data name="panelControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 116</value>
   </data>
-  <data name="&gt;&gt;txt4kisi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
   </data>
-  <data name="&gt;&gt;txt4kisi.Parent" xml:space="preserve">
-    <value>panelControl7</value>
+  <data name="panelControl6.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
   </data>
-  <data name="&gt;&gt;txt4kisi.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl6.Name" xml:space="preserve">
+    <value>panelControl6</value>
   </data>
-  <data name="panelControl7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 135</value>
-  </data>
-  <data name="panelControl7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 24</value>
-  </data>
-  <data name="panelControl7.TabIndex" type="System.Int32, mscorlib">
-    <value>131</value>
-  </data>
-  <data name="&gt;&gt;panelControl7.Name" xml:space="preserve">
-    <value>panelControl7</value>
-  </data>
-  <data name="&gt;&gt;panelControl7.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl6.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl6.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl7.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;panelControl6.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="txt4kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2809,38 +2704,26 @@
   <data name="&gt;&gt;txt4kisi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="panelControl7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 135</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelControl7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 24</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>panelControl8</value>
+  <data name="panelControl7.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelControl7.Name" xml:space="preserve">
+    <value>panelControl7</value>
   </data>
-  <data name="panelControl8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 116</value>
-  </data>
-  <data name="panelControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
-  </data>
-  <data name="panelControl8.TabIndex" type="System.Int32, mscorlib">
-    <value>132</value>
-  </data>
-  <data name="&gt;&gt;panelControl8.Name" xml:space="preserve">
-    <value>panelControl8</value>
-  </data>
-  <data name="&gt;&gt;panelControl8.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelControl7.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl7.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelControl8.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;panelControl7.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2874,6 +2757,27 @@
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="panelControl8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 116</value>
+  </data>
+  <data name="panelControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
+  </data>
+  <data name="panelControl8.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="&gt;&gt;panelControl8.Name" xml:space="preserve">
+    <value>panelControl8</value>
+  </data>
+  <data name="&gt;&gt;panelControl8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl8.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="btnUrunIade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
