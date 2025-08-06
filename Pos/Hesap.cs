@@ -2535,9 +2535,9 @@ namespace Pos
 
                         decimal oran23 = (tutar / toplamTutar23) * 100;
 
-                        if (oran23 > User.P_Indirim_Yuzde)
+                        if (oran23 > User.P_Bindirim_Yuzde)
                         {
-                            MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
+                            MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Bindirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
                             return;
                         }
                     }

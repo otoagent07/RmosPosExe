@@ -52,6 +52,7 @@ namespace Pos.Class
         public static bool A_Print { get; set; }
         public static bool A_Odeme { get; set; }
         public static bool otoDirekSatis { get; set; }
+        public static bool satisYapma { get; set; }
         public static bool merkezsubeaktif { get; set; }
         public static bool A_Entegre { get; set; }
         public static bool A_Masa { get; set; }
@@ -226,6 +227,7 @@ namespace Pos.Class
                     + ", ISNULL(otoDirekSatis,0) as otoDirekSatis "
                     + ", ISNULL(merkezsubeaktif,0) as merkezsubeaktif "
                     + ", ISNULL(coklugunsonu,0) as coklugunsonu "
+                    + ", ISNULL(satisYapma,0) as satisYapma "
 
                     + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + P_Kod + "'");
 
@@ -350,6 +352,7 @@ namespace Pos.Class
                 //MasaTakip_Paket = Convert.ToBoolean(dt.Rows[0]["MasaTakip_Paket"]);
 
                 otoDirekSatis = Convert.ToBoolean(dt.Rows[0]["otoDirekSatis"]);
+                satisYapma = Convert.ToBoolean(dt.Rows[0]["satisYapma"]);
                 merkezsubeaktif = Convert.ToBoolean(dt.Rows[0]["merkezsubeaktif"]);
                 coklugunsonu = Convert.ToBoolean(dt.Rows[0]["coklugunsonu"]);
 

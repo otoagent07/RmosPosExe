@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasaTakip));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -462,7 +462,9 @@
             // 
             // btn_Relogin
             // 
+            this.btn_Relogin.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_Relogin.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Relogin.Appearance.Font")));
+            this.btn_Relogin.Appearance.Options.UseBackColor = true;
             this.btn_Relogin.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Relogin, "btn_Relogin");
             this.btn_Relogin.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Relogin.ImageOptions.Image")));
@@ -484,7 +486,9 @@
             // 
             // btn_Rapor
             // 
+            this.btn_Rapor.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_Rapor.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Rapor.Appearance.Font")));
+            this.btn_Rapor.Appearance.Options.UseBackColor = true;
             this.btn_Rapor.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Rapor, "btn_Rapor");
             this.btn_Rapor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Rapor.ImageOptions.Image")));
@@ -534,7 +538,9 @@
             // 
             // btn_MasaTransfer
             // 
+            this.btn_MasaTransfer.Appearance.BackColor = System.Drawing.Color.LightGreen;
             this.btn_MasaTransfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaTransfer.Appearance.Font")));
+            this.btn_MasaTransfer.Appearance.Options.UseBackColor = true;
             this.btn_MasaTransfer.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_MasaTransfer, "btn_MasaTransfer");
             this.btn_MasaTransfer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaTransfer.ImageOptions.Image")));
@@ -543,7 +549,9 @@
             // 
             // btn_OzelMasa
             // 
+            this.btn_OzelMasa.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
             this.btn_OzelMasa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_OzelMasa.Appearance.Font")));
+            this.btn_OzelMasa.Appearance.Options.UseBackColor = true;
             this.btn_OzelMasa.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_OzelMasa, "btn_OzelMasa");
             this.btn_OzelMasa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OzelMasa.ImageOptions.Image")));
@@ -656,18 +664,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn10;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn10;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView2.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn10;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn10;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView2.FormatRules.Add(gridFormatRule2);
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -1376,7 +1384,9 @@
             // 
             // btnParcaliOdemeEski
             // 
+            this.btnParcaliOdemeEski.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
             this.btnParcaliOdemeEski.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnParcaliOdemeEski.Appearance.Font")));
+            this.btnParcaliOdemeEski.Appearance.Options.UseBackColor = true;
             this.btnParcaliOdemeEski.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnParcaliOdemeEski, "btnParcaliOdemeEski");
             this.btnParcaliOdemeEski.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnParcaliOdemeEski.ImageOptions.Image")));

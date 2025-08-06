@@ -70,6 +70,9 @@ namespace Pos
 
             gridControl1.Size = new Size(gridControl1.Size.Width, Convert.ToInt32(Param.masatakipKonumYukseklik)); // 341
 
+
+            this.Text = "Masa Takip        " + $"    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}";
+
         }
 
         public void loadYukle()

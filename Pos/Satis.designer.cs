@@ -81,16 +81,17 @@
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.rdo_EMiktar = new DevExpress.XtraEditors.RadioGroup();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
-            this.btn_9 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_8 = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_3 = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_7 = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_4 = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_6 = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_5 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_3 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_4 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_5 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_9 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_6 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_7 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_8 = new DevExpress.XtraEditors.SimpleButton();
             this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
             this.textEditFisnobirlestir1 = new DevExpress.XtraEditors.TextEdit();
             this.btnFiyatBilgisi = new DevExpress.XtraEditors.SimpleButton();
@@ -122,7 +123,6 @@
             this.btnMenuAc = new DevExpress.XtraEditors.SimpleButton();
             this.btn_MiktarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.rdo_EMiktar = new DevExpress.XtraEditors.RadioGroup();
             this.btn_Mars = new DevExpress.XtraEditors.SimpleButton();
             this.txt_Not = new DevExpress.XtraEditors.MemoEdit();
             this.txt_Barkod = new DevExpress.XtraEditors.ButtonEdit();
@@ -188,6 +188,7 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
             this.tablePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).BeginInit();
@@ -201,7 +202,6 @@
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Not.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Barkod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
@@ -258,7 +258,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 180;
+            this.splitContainerControl4.SplitterPosition = 177;
             // 
             // ana_btnUp
             // 
@@ -302,7 +302,7 @@
             resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 125;
+            this.splitContainerControl2.SplitterPosition = 123;
             // 
             // alt_btnUp
             // 
@@ -706,6 +706,22 @@
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
             // 
+            // rdo_EMiktar
+            // 
+            resources.ApplyResources(this.rdo_EMiktar, "rdo_EMiktar");
+            this.rdo_EMiktar.MenuManager = this.barManager1;
+            this.rdo_EMiktar.Name = "rdo_EMiktar";
+            this.rdo_EMiktar.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("rdo_EMiktar.Properties.Appearance.Font")));
+            this.rdo_EMiktar.Properties.Appearance.Options.UseFont = true;
+            this.rdo_EMiktar.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.rdo_EMiktar.Properties.ItemHorzAlignment = DevExpress.XtraEditors.RadioItemHorzAlignment.Near;
+            this.rdo_EMiktar.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items"), resources.GetString("rdo_EMiktar.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items2"), resources.GetString("rdo_EMiktar.Properties.Items3")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items4"), resources.GetString("rdo_EMiktar.Properties.Items5")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items6"), resources.GetString("rdo_EMiktar.Properties.Items7"))});
+            this.rdo_EMiktar.SelectedIndexChanged += new System.EventHandler(this.rdo_EMiktar_SelectedIndexChanged);
+            // 
             // tablePanel2
             // 
             resources.ApplyResources(this.tablePanel2, "tablePanel2");
@@ -732,18 +748,6 @@
             this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
             // 
-            // btn_9
-            // 
-            this.btn_9.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_9.Appearance.Font")));
-            this.btn_9.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btn_9.Appearance.Options.UseFont = true;
-            this.btn_9.Appearance.Options.UseForeColor = true;
-            this.tablePanel2.SetColumn(this.btn_9, 8);
-            resources.ApplyResources(this.btn_9, "btn_9");
-            this.btn_9.Name = "btn_9";
-            this.tablePanel2.SetRow(this.btn_9, 0);
-            this.btn_9.Click += new System.EventHandler(this.btn_Miktar_Click);
-            // 
             // btn_1
             // 
             this.btn_1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_1.Appearance.Font")));
@@ -756,17 +760,17 @@
             this.tablePanel2.SetRow(this.btn_1, 0);
             this.btn_1.Click += new System.EventHandler(this.btn_Miktar_Click);
             // 
-            // btn_8
+            // btn_2
             // 
-            this.btn_8.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_8.Appearance.Font")));
-            this.btn_8.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btn_8.Appearance.Options.UseFont = true;
-            this.btn_8.Appearance.Options.UseForeColor = true;
-            this.tablePanel2.SetColumn(this.btn_8, 7);
-            resources.ApplyResources(this.btn_8, "btn_8");
-            this.btn_8.Name = "btn_8";
-            this.tablePanel2.SetRow(this.btn_8, 0);
-            this.btn_8.Click += new System.EventHandler(this.btn_Miktar_Click);
+            this.btn_2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_2.Appearance.Font")));
+            this.btn_2.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btn_2.Appearance.Options.UseFont = true;
+            this.btn_2.Appearance.Options.UseForeColor = true;
+            this.tablePanel2.SetColumn(this.btn_2, 1);
+            resources.ApplyResources(this.btn_2, "btn_2");
+            this.btn_2.Name = "btn_2";
+            this.tablePanel2.SetRow(this.btn_2, 0);
+            this.btn_2.Click += new System.EventHandler(this.btn_Miktar_Click);
             // 
             // btn_3
             // 
@@ -780,18 +784,6 @@
             this.tablePanel2.SetRow(this.btn_3, 0);
             this.btn_3.Click += new System.EventHandler(this.btn_Miktar_Click);
             // 
-            // btn_7
-            // 
-            this.btn_7.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_7.Appearance.Font")));
-            this.btn_7.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btn_7.Appearance.Options.UseFont = true;
-            this.btn_7.Appearance.Options.UseForeColor = true;
-            this.tablePanel2.SetColumn(this.btn_7, 6);
-            resources.ApplyResources(this.btn_7, "btn_7");
-            this.btn_7.Name = "btn_7";
-            this.tablePanel2.SetRow(this.btn_7, 0);
-            this.btn_7.Click += new System.EventHandler(this.btn_Miktar_Click);
-            // 
             // btn_4
             // 
             this.btn_4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_4.Appearance.Font")));
@@ -803,18 +795,6 @@
             this.btn_4.Name = "btn_4";
             this.tablePanel2.SetRow(this.btn_4, 0);
             this.btn_4.Click += new System.EventHandler(this.btn_Miktar_Click);
-            // 
-            // btn_6
-            // 
-            this.btn_6.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_6.Appearance.Font")));
-            this.btn_6.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btn_6.Appearance.Options.UseFont = true;
-            this.btn_6.Appearance.Options.UseForeColor = true;
-            this.tablePanel2.SetColumn(this.btn_6, 5);
-            resources.ApplyResources(this.btn_6, "btn_6");
-            this.btn_6.Name = "btn_6";
-            this.tablePanel2.SetRow(this.btn_6, 0);
-            this.btn_6.Click += new System.EventHandler(this.btn_Miktar_Click);
             // 
             // btn_5
             // 
@@ -828,17 +808,53 @@
             this.tablePanel2.SetRow(this.btn_5, 0);
             this.btn_5.Click += new System.EventHandler(this.btn_Miktar_Click);
             // 
-            // btn_2
+            // btn_9
             // 
-            this.btn_2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_2.Appearance.Font")));
-            this.btn_2.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btn_2.Appearance.Options.UseFont = true;
-            this.btn_2.Appearance.Options.UseForeColor = true;
-            this.tablePanel2.SetColumn(this.btn_2, 1);
-            resources.ApplyResources(this.btn_2, "btn_2");
-            this.btn_2.Name = "btn_2";
-            this.tablePanel2.SetRow(this.btn_2, 0);
-            this.btn_2.Click += new System.EventHandler(this.btn_Miktar_Click);
+            this.btn_9.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_9.Appearance.Font")));
+            this.btn_9.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btn_9.Appearance.Options.UseFont = true;
+            this.btn_9.Appearance.Options.UseForeColor = true;
+            this.tablePanel2.SetColumn(this.btn_9, 8);
+            resources.ApplyResources(this.btn_9, "btn_9");
+            this.btn_9.Name = "btn_9";
+            this.tablePanel2.SetRow(this.btn_9, 0);
+            this.btn_9.Click += new System.EventHandler(this.btn_Miktar_Click);
+            // 
+            // btn_6
+            // 
+            this.btn_6.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_6.Appearance.Font")));
+            this.btn_6.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btn_6.Appearance.Options.UseFont = true;
+            this.btn_6.Appearance.Options.UseForeColor = true;
+            this.tablePanel2.SetColumn(this.btn_6, 5);
+            resources.ApplyResources(this.btn_6, "btn_6");
+            this.btn_6.Name = "btn_6";
+            this.tablePanel2.SetRow(this.btn_6, 0);
+            this.btn_6.Click += new System.EventHandler(this.btn_Miktar_Click);
+            // 
+            // btn_7
+            // 
+            this.btn_7.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_7.Appearance.Font")));
+            this.btn_7.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btn_7.Appearance.Options.UseFont = true;
+            this.btn_7.Appearance.Options.UseForeColor = true;
+            this.tablePanel2.SetColumn(this.btn_7, 6);
+            resources.ApplyResources(this.btn_7, "btn_7");
+            this.btn_7.Name = "btn_7";
+            this.tablePanel2.SetRow(this.btn_7, 0);
+            this.btn_7.Click += new System.EventHandler(this.btn_Miktar_Click);
+            // 
+            // btn_8
+            // 
+            this.btn_8.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_8.Appearance.Font")));
+            this.btn_8.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btn_8.Appearance.Options.UseFont = true;
+            this.btn_8.Appearance.Options.UseForeColor = true;
+            this.tablePanel2.SetColumn(this.btn_8, 7);
+            resources.ApplyResources(this.btn_8, "btn_8");
+            this.btn_8.Name = "btn_8";
+            this.tablePanel2.SetRow(this.btn_8, 0);
+            this.btn_8.Click += new System.EventHandler(this.btn_Miktar_Click);
             // 
             // txtFisnoGit
             // 
@@ -1206,22 +1222,6 @@
             this.tablePanel1.SetRow(this.simpleButton2, 1);
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click_1);
             // 
-            // rdo_EMiktar
-            // 
-            resources.ApplyResources(this.rdo_EMiktar, "rdo_EMiktar");
-            this.rdo_EMiktar.MenuManager = this.barManager1;
-            this.rdo_EMiktar.Name = "rdo_EMiktar";
-            this.rdo_EMiktar.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("rdo_EMiktar.Properties.Appearance.Font")));
-            this.rdo_EMiktar.Properties.Appearance.Options.UseFont = true;
-            this.rdo_EMiktar.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.rdo_EMiktar.Properties.ItemHorzAlignment = DevExpress.XtraEditors.RadioItemHorzAlignment.Near;
-            this.rdo_EMiktar.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items"), resources.GetString("rdo_EMiktar.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items2"), resources.GetString("rdo_EMiktar.Properties.Items3")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items4"), resources.GetString("rdo_EMiktar.Properties.Items5")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items6"), resources.GetString("rdo_EMiktar.Properties.Items7"))});
-            this.rdo_EMiktar.SelectedIndexChanged += new System.EventHandler(this.rdo_EMiktar_SelectedIndexChanged);
-            // 
             // btn_Mars
             // 
             resources.ApplyResources(this.btn_Mars, "btn_Mars");
@@ -1575,7 +1575,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(842, 733);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(842, 725);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1587,7 +1587,7 @@
             this.layoutControlItem1.MinSize = new System.Drawing.Size(241, 66);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(842, 70);
+            this.layoutControlItem1.Size = new System.Drawing.Size(842, 69);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1596,11 +1596,11 @@
             // 
             this.layoutControlItem2.Control = this.groupControl2;
             resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 70);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 69);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(842, 200);
+            this.layoutControlItem2.Size = new System.Drawing.Size(842, 198);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1609,9 +1609,9 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 270);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 267);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(842, 78);
+            this.layoutControlItem6.Size = new System.Drawing.Size(842, 77);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1619,18 +1619,18 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 348);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 344);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(842, 295);
+            this.layoutControlItem7.Size = new System.Drawing.Size(842, 292);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 643);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 636);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(842, 90);
+            this.layoutControlItem3.Size = new System.Drawing.Size(842, 89);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             this.layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -1697,6 +1697,7 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
             this.tablePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).EndInit();
@@ -1710,7 +1711,6 @@
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Not.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Barkod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();

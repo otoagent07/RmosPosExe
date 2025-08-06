@@ -67,11 +67,11 @@ namespace Pos
         {
             if (ilk)
             {
-                txt_Sayi.Text = String.Empty;
+                txtAlinanTutar.Text = String.Empty;
             }
 
             SimpleButton btn = (SimpleButton)sender;
-            txt_Sayi.Text += btn.Text;
+            txtAlinanTutar.Text += btn.Text;
             ilk = false;
         }
 
@@ -91,6 +91,7 @@ namespace Pos
 
         private void txtAlinanTutar_EditValueChanged(object sender, EventArgs e)
         {
+            if (txtAlinanTutar.Text == "") return;
             var sayi = Convert.ToDecimal(txt_Sayi.Text);
             txt_Sayi.Text = (Convert.ToDecimal(txtAlinanTutar.Text) - toplamTutar2)+"";
         }

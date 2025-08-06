@@ -72,6 +72,7 @@
             this.txt_Sayi.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.txt_Sayi.Properties.Mask.EditMask = resources.GetString("txt_Sayi.Properties.Mask.EditMask");
             this.txt_Sayi.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("txt_Sayi.Properties.Mask.MaskType")));
+            this.txt_Sayi.Properties.ReadOnly = true;
             // 
             // btn_V
             // 
@@ -192,14 +193,14 @@
             // 
             resources.ApplyResources(this.txtAlinanTutar, "txtAlinanTutar");
             this.txtAlinanTutar.Name = "txtAlinanTutar";
-            this.txtAlinanTutar.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("textEdit1.Properties.Appearance.Font")));
+            this.txtAlinanTutar.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtAlinanTutar.Properties.Appearance.Font")));
             this.txtAlinanTutar.Properties.Appearance.Options.UseFont = true;
             this.txtAlinanTutar.Properties.DisplayFormat.FormatString = "f2";
             this.txtAlinanTutar.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.txtAlinanTutar.Properties.EditFormat.FormatString = "f2";
             this.txtAlinanTutar.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.txtAlinanTutar.Properties.Mask.EditMask = resources.GetString("textEdit1.Properties.Mask.EditMask");
-            this.txtAlinanTutar.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("textEdit1.Properties.Mask.MaskType")));
+            this.txtAlinanTutar.Properties.Mask.EditMask = resources.GetString("txtAlinanTutar.Properties.Mask.EditMask");
+            this.txtAlinanTutar.Properties.Mask.MaskType = ((DevExpress.XtraEditors.Mask.MaskType)(resources.GetObject("txtAlinanTutar.Properties.Mask.MaskType")));
             this.txtAlinanTutar.EditValueChanged += new System.EventHandler(this.txtAlinanTutar_EditValueChanged);
             // 
             // TipboxForm

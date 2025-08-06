@@ -2118,7 +2118,7 @@
 </value>
   </data>
   <data name="btnParcaliOde.Location" type="System.Drawing.Point, System.Drawing">
-    <value>816, 127</value>
+    <value>825, 127</value>
   </data>
   <data name="btnParcaliOde.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 43</value>
@@ -2347,27 +2347,6 @@
   <data name="&gt;&gt;gridControlFis.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 4</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 14</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>2 Kişi</value>
-  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
@@ -2401,26 +2380,38 @@
   <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="txt2kisi.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txt2kisi.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="txt2kisi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="txt2kisi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 7</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 4</value>
   </data>
-  <data name="txt2kisi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 14</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 14</value>
   </data>
-  <data name="txt2kisi.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="txt2kisi.Text" xml:space="preserve">
-    <value>1105,32</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>2 Kişi</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txt2kisi.Name" xml:space="preserve">
     <value>txt2kisi</value>
@@ -2455,26 +2446,38 @@
   <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="txt3kisi.AutoSize" type="System.Boolean, mscorlib">
+  <data name="txt2kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txt3kisi.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txt2kisi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="txt3kisi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="txt2kisi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="txt3kisi.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txt2kisi.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 7</value>
   </data>
-  <data name="txt3kisi.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txt2kisi.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 14</value>
   </data>
-  <data name="txt3kisi.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt2kisi.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="txt3kisi.Text" xml:space="preserve">
+  <data name="txt2kisi.Text" xml:space="preserve">
     <value>1105,32</value>
+  </data>
+  <data name="&gt;&gt;txt2kisi.Name" xml:space="preserve">
+    <value>txt2kisi</value>
+  </data>
+  <data name="&gt;&gt;txt2kisi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt2kisi.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;txt2kisi.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txt3kisi.Name" xml:space="preserve">
     <value>txt3kisi</value>
@@ -2509,26 +2512,38 @@
   <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="txt3kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txt3kisi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="txt3kisi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 4</value>
+  <data name="txt3kisi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 7</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 14</value>
+  <data name="txt3kisi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 14</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt3kisi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txt3kisi.Text" xml:space="preserve">
+    <value>1105,32</value>
+  </data>
+  <data name="&gt;&gt;txt3kisi.Name" xml:space="preserve">
+    <value>txt3kisi</value>
+  </data>
+  <data name="&gt;&gt;txt3kisi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt3kisi.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;txt3kisi.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>3 Kişi</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -2563,26 +2578,38 @@
   <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="txt5kisi.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txt5kisi.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="txt5kisi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="txt5kisi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 7</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 4</value>
   </data>
-  <data name="txt5kisi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 14</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 14</value>
   </data>
-  <data name="txt5kisi.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="txt5kisi.Text" xml:space="preserve">
-    <value>1105,32</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>3 Kişi</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txt5kisi.Name" xml:space="preserve">
     <value>txt5kisi</value>
@@ -2617,26 +2644,38 @@
   <data name="&gt;&gt;panelControl5.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="txt5kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txt5kisi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="txt5kisi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 4</value>
+  <data name="txt5kisi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 7</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 14</value>
+  <data name="txt5kisi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 14</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt5kisi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txt5kisi.Text" xml:space="preserve">
+    <value>1105,32</value>
+  </data>
+  <data name="&gt;&gt;txt5kisi.Name" xml:space="preserve">
+    <value>txt5kisi</value>
+  </data>
+  <data name="&gt;&gt;txt5kisi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt5kisi.Parent" xml:space="preserve">
+    <value>panelControl5</value>
+  </data>
+  <data name="&gt;&gt;txt5kisi.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>5 Kişi</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -2671,26 +2710,38 @@
   <data name="&gt;&gt;panelControl6.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="txt4kisi.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txt4kisi.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="txt4kisi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="txt4kisi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 7</value>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 4</value>
   </data>
-  <data name="txt4kisi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 14</value>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 14</value>
   </data>
-  <data name="txt4kisi.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="txt4kisi.Text" xml:space="preserve">
-    <value>1105,32</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>5 Kişi</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panelControl6</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txt4kisi.Name" xml:space="preserve">
     <value>txt4kisi</value>
@@ -2725,26 +2776,38 @@
   <data name="&gt;&gt;panelControl7.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+  <data name="txt4kisi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txt4kisi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="txt4kisi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 4</value>
+  <data name="txt4kisi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 7</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 14</value>
+  <data name="txt4kisi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 14</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt4kisi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txt4kisi.Text" xml:space="preserve">
+    <value>1105,32</value>
+  </data>
+  <data name="&gt;&gt;txt4kisi.Name" xml:space="preserve">
+    <value>txt4kisi</value>
+  </data>
+  <data name="&gt;&gt;txt4kisi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt4kisi.Parent" xml:space="preserve">
+    <value>panelControl7</value>
+  </data>
+  <data name="&gt;&gt;txt4kisi.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>4 Kişi</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -2778,6 +2841,39 @@
   </data>
   <data name="&gt;&gt;panelControl8.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 4</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 14</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>4 Kişi</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panelControl8</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnUrunIade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>

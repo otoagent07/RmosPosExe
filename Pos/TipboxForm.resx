@@ -659,13 +659,13 @@
   <data name="txtAlinanTutar.Location" type="System.Drawing.Point, System.Drawing">
     <value>188, 12</value>
   </data>
-  <data name="textEdit1.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtAlinanTutar.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 24pt</value>
   </data>
-  <data name="textEdit1.Properties.Mask.EditMask" xml:space="preserve">
+  <data name="txtAlinanTutar.Properties.Mask.EditMask" xml:space="preserve">
     <value>n2</value>
   </data>
-  <data name="textEdit1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
+  <data name="txtAlinanTutar.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v19.1">
     <value>Numeric</value>
   </data>
   <data name="txtAlinanTutar.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">

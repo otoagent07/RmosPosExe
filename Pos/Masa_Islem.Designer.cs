@@ -128,7 +128,9 @@
             // 
             // btn_Kilit_Ac
             // 
+            this.btn_Kilit_Ac.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btn_Kilit_Ac.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Kilit_Ac.Appearance.Font")));
+            this.btn_Kilit_Ac.Appearance.Options.UseBackColor = true;
             this.btn_Kilit_Ac.Appearance.Options.UseFont = true;
             this.btn_Kilit_Ac.Appearance.Options.UseTextOptions = true;
             this.btn_Kilit_Ac.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;

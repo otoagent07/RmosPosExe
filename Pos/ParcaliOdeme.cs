@@ -1016,6 +1016,17 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 string cevap = pr.newHesapDokum(true, fisno, Split, "* * * HESAP KAPATMA FİŞİ * * *", parcalimi: true, parcamasano: altmasano);
 
                 dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Ingenico_Status=1 where Rsat_Fisno={fisno}");
+
+
+                dbtools.execcmd("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + altmasano + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+
+
+                if (Param.Param_Hesap_Kilit)
+                {
+                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_Hesap_Kilit = 1 where Rsat_Fisno = '" + fisno + "'");
+                }
+
+
             }
             catch (Exception ex)
             {

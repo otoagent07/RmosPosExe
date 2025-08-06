@@ -90,6 +90,9 @@ namespace Pos
         {
 
             load();
+
+
+
         }
 
         public bool urunleriYenile = true;
@@ -265,6 +268,9 @@ namespace Pos
 
                 textEditFisnobirlestir1.Visible = Param.hesapFisQrFisno;
                 txtFisnoGit.Visible = Param.hesapFisQrFisno;
+
+
+                chk_Yapma.Visible = User.satisYapma;
             }
             catch (Exception ex)
             {

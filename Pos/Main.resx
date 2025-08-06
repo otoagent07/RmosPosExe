@@ -132,7 +132,7 @@
     <value>Tahoma, 21.75pt, style=Bold</value>
   </data>
   <data name="Main_Tarih.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 695</value>
+    <value>21, 699</value>
   </data>
   <data name="Main_Tarih.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 35</value>
@@ -435,7 +435,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1231, 0</value>
+    <value>1233, 0</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
     <value>barDockControlTop</value>
@@ -453,10 +453,10 @@
     <value>Bottom</value>
   </data>
   <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 766</value>
+    <value>0, 770</value>
   </data>
   <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1231, 49</value>
+    <value>1233, 49</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -477,7 +477,7 @@
     <value>0, 0</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 766</value>
+    <value>0, 770</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -495,10 +495,10 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1231, 0</value>
+    <value>1233, 0</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 766</value>
+    <value>0, 770</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
@@ -522,7 +522,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1231, 815</value>
+    <value>1233, 819</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -7479,7 +7479,7 @@ Sepeti
     <value>Consolas, 15.75pt</value>
   </data>
   <data name="m_txtInputData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 134</value>
+    <value>111, 136</value>
   </data>
   <data name="m_txtInputData.MaxLength" type="System.Int32, mscorlib">
     <value>12</value>
@@ -7488,7 +7488,7 @@ Sepeti
     <value>True</value>
   </data>
   <data name="m_txtInputData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>455, 25</value>
+    <value>457, 25</value>
   </data>
   <data name="m_txtInputData.TabIndex" type="System.Int32, mscorlib">
     <value>190</value>
@@ -7578,7 +7578,7 @@ Sepeti
     <value>True</value>
   </data>
   <data name="lbl_AktifHandle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 131</value>
+    <value>67, 133</value>
   </data>
   <data name="lbl_AktifHandle.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 13</value>
@@ -7644,7 +7644,7 @@ Sepeti
     <value>7</value>
   </data>
   <data name="lbl_Zaman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 114</value>
+    <value>5, 116</value>
   </data>
   <data name="lbl_Zaman.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
@@ -7668,7 +7668,7 @@ Sepeti
     <value>8</value>
   </data>
   <data name="lbl_Tarih_In.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 131</value>
+    <value>5, 133</value>
   </data>
   <data name="lbl_Tarih_In.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 13</value>
@@ -7692,7 +7692,7 @@ Sepeti
     <value>9</value>
   </data>
   <data name="lblHata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 149</value>
+    <value>5, 151</value>
   </data>
   <data name="lblHata.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 13</value>
@@ -7722,7 +7722,7 @@ Sepeti
     <value>2, 103</value>
   </data>
   <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>838, 69</value>
+    <value>840, 69</value>
   </data>
   <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -7743,10 +7743,10 @@ Sepeti
     <value>Bottom</value>
   </data>
   <data name="groupControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 592</value>
+    <value>0, 596</value>
   </data>
   <data name="groupControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>842, 174</value>
+    <value>844, 174</value>
   </data>
   <data name="groupControl5.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -8127,7 +8127,7 @@ Sepeti
     <value>0, 0</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>842, 766</value>
+    <value>844, 770</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -8633,7 +8633,7 @@ Sepeti
     <value>0, 359</value>
   </data>
   <data name="groupControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 407</value>
+    <value>195, 411</value>
   </data>
   <data name="groupControl3.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -9038,7 +9038,7 @@ Sepeti
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1043, 766</value>
+    <value>1045, 770</value>
   </data>
   <data name="splitContainerControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9062,7 +9062,7 @@ Sepeti
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1231, 766</value>
+    <value>1233, 770</value>
   </data>
   <data name="splitContainerControl1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>

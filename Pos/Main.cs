@@ -421,7 +421,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.46"; // aaaa
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.56"; // aaaa
 
 
 
@@ -544,7 +544,7 @@ namespace Pos
 
                 UserLookAndFeel.Default.SetSkinStyle(User.postema);
 
-                btnSifreDegis.Visible = Param.merkezaktif;
+                btnSifreDegis.Visible = !Param.merkezaktif;
 
                 PavoController pavoController = new PavoController();
                 pavoController.pavon86KabloluPairing();
@@ -565,7 +565,7 @@ namespace Pos
 
         }
 
-       
+
         public void entegreAyarlarYenile()
         {
             TrendyolApi trendyolApi = new TrendyolApi();

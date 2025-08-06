@@ -548,7 +548,9 @@
             // 
             // btnGunSonu
             // 
+            this.btnGunSonu.Appearance.BackColor = System.Drawing.Color.Aqua;
             this.btnGunSonu.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnGunSonu.Appearance.Font")));
+            this.btnGunSonu.Appearance.Options.UseBackColor = true;
             this.btnGunSonu.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btnGunSonu, "btnGunSonu");
             this.btnGunSonu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGunSonu.ImageOptions.SvgImage")));
