@@ -86,6 +86,7 @@ namespace Pos
             this.gridColumn33 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chk_AdisyonGR = new DevExpress.XtraEditors.CheckButton();
             this.btnSpSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnYazdirmadanKapat = new DevExpress.XtraEditors.SimpleButton();
             this.btnBindirim = new DevExpress.XtraEditors.SimpleButton();
@@ -108,7 +109,7 @@ namespace Pos
             this.btnOdeme3 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme1 = new DevExpress.XtraEditors.SimpleButton();
-            this.chk_AdisyonGR = new DevExpress.XtraEditors.CheckButton();
+            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAna)).BeginInit();
             this.groupControlAna.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAna)).BeginInit();
@@ -304,6 +305,7 @@ namespace Pos
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.btnCikis);
+            this.groupControl2.Controls.Add(this.btnYenile);
             this.groupControl2.Controls.Add(this.btnAlttanAnaya);
             this.groupControl2.Controls.Add(this.btnAnadanAlta);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -732,6 +734,21 @@ namespace Pos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "İŞLEMLER";
             // 
+            // chk_AdisyonGR
+            // 
+            this.chk_AdisyonGR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chk_AdisyonGR.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.chk_AdisyonGR.Appearance.Options.UseFont = true;
+            this.chk_AdisyonGR.Appearance.Options.UseTextOptions = true;
+            this.chk_AdisyonGR.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.chk_AdisyonGR.Location = new System.Drawing.Point(110, 320);
+            this.chk_AdisyonGR.LookAndFeel.SkinName = "iMaginary";
+            this.chk_AdisyonGR.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.chk_AdisyonGR.Name = "chk_AdisyonGR";
+            this.chk_AdisyonGR.Size = new System.Drawing.Size(107, 43);
+            this.chk_AdisyonGR.TabIndex = 120;
+            this.chk_AdisyonGR.Text = "Adisyon R";
+            // 
             // btnSpSil
             // 
             this.btnSpSil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1016,20 +1033,20 @@ namespace Pos
             this.btnOdeme1.Visible = false;
             this.btnOdeme1.Click += new System.EventHandler(this.btnOdeme1_Click);
             // 
-            // chk_AdisyonGR
+            // btnYenile
             // 
-            this.chk_AdisyonGR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chk_AdisyonGR.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.chk_AdisyonGR.Appearance.Options.UseFont = true;
-            this.chk_AdisyonGR.Appearance.Options.UseTextOptions = true;
-            this.chk_AdisyonGR.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.chk_AdisyonGR.Location = new System.Drawing.Point(110, 320);
-            this.chk_AdisyonGR.LookAndFeel.SkinName = "iMaginary";
-            this.chk_AdisyonGR.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.chk_AdisyonGR.Name = "chk_AdisyonGR";
-            this.chk_AdisyonGR.Size = new System.Drawing.Size(107, 43);
-            this.chk_AdisyonGR.TabIndex = 120;
-            this.chk_AdisyonGR.Text = "Adisyon R";
+            this.btnYenile.Appearance.BackColor = System.Drawing.Color.Fuchsia;
+            this.btnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYenile.Appearance.Options.UseBackColor = true;
+            this.btnYenile.Appearance.Options.UseFont = true;
+            this.btnYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnYenile.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btnYenile.Location = new System.Drawing.Point(2, 501);
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Size = new System.Drawing.Size(74, 93);
+            this.btnYenile.TabIndex = 0;
+            this.btnYenile.Text = "YENİLE";
+            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
             // 
             // ParcaliOdeme
             // 
@@ -1148,5 +1165,6 @@ namespace Pos
         private DevExpress.XtraEditors.SimpleButton btnSpSil;
         private DevExpress.XtraEditors.SimpleButton btnCikis;
         private DevExpress.XtraEditors.CheckButton chk_AdisyonGR;
+        private DevExpress.XtraEditors.SimpleButton btnYenile;
     }
 }

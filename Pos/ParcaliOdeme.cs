@@ -1014,6 +1014,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                 FisPr pr = new FisPr();
                 string cevap = pr.newHesapDokum(true, fisno, Split, "* * * HESAP KAPATMA FİŞİ * * *", parcalimi: true, parcamasano: altmasano);
+
+                dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Ingenico_Status=1 where Rsat_Fisno={fisno}");
             }
             catch (Exception ex)
             {
@@ -1379,6 +1381,12 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
             {
                 e.Cancel = true;
             }
+        }
+
+        private void btnYenile_Click(object sender, EventArgs e)
+        {
+            altmasayenile();
+
         }
     }
 }
