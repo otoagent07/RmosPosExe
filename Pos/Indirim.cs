@@ -72,6 +72,7 @@ namespace Pos
         }
 
         public bool cikisyapti = false;
+        public bool degergirildi = false;
 
         private void btn_Y_Cikis_Click(object sender, EventArgs e)
         {
@@ -124,6 +125,7 @@ namespace Pos
                 }
             }
 
+            degergirildi = true;
             this.Close();
         }
 
@@ -180,6 +182,7 @@ namespace Pos
             }
 
             indSayi = Convert.ToDecimal(txt_Sayi.Text);
+            degergirildi = true;
 
             this.Close();
         }
@@ -217,6 +220,7 @@ namespace Pos
             }
 
             indTipi = "MY";
+            degergirildi = true;
             this.Close();
         }
 

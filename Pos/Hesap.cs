@@ -1506,12 +1506,16 @@ namespace Pos
             ind.tutar = Convert.ToDecimal(gridColumn4.SummaryText);
             ind.ShowDialog();
 
+            if (ind.degergirildi == false)
+            {
+                return;
+            }
 
             DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'IN%' -- indirim");
 
 
             string neden = "";
-            if (Departman.Kodlar_YazSipNedSor && ind.cikisyapti == false)
+            if (Departman.Kodlar_YazSipNedSor)
             {
                 Klavye2 klv = new Klavye2(data: dataTable);
                 klv.ShowDialog();
@@ -3236,7 +3240,7 @@ namespace Pos
             {
                 MessageBox.Show("LÜTFEN YAZDIR KAPAT VEYA YAZDIRMADAN KAPAT BUTONLARINI KULLANINIZ");
                 e.Cancel = true;
-               
+
             }
         }
 
