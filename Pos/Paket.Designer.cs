@@ -284,7 +284,9 @@
             // 
             // simpleButton11
             // 
+            this.simpleButton11.Appearance.BackColor = System.Drawing.Color.Silver;
             this.simpleButton11.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton11.Appearance.Font")));
+            this.simpleButton11.Appearance.Options.UseBackColor = true;
             this.simpleButton11.Appearance.Options.UseFont = true;
             this.simpleButton11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.ImageOptions.Image")));
             resources.ApplyResources(this.simpleButton11, "simpleButton11");
@@ -293,7 +295,9 @@
             // 
             // btn_Cikis
             // 
+            this.btn_Cikis.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
+            this.btn_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cikis.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
@@ -707,7 +711,9 @@
             // 
             // simpleButton4
             // 
+            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.Sienna;
             this.simpleButton4.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton4.Appearance.Font")));
+            this.simpleButton4.Appearance.Options.UseBackColor = true;
             this.simpleButton4.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.simpleButton4, "simpleButton4");
             this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
@@ -745,7 +751,9 @@
             // 
             // btn_Yenile
             // 
+            this.btn_Yenile.Appearance.BackColor = System.Drawing.Color.Purple;
             this.btn_Yenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Yenile.Appearance.Font")));
+            this.btn_Yenile.Appearance.Options.UseBackColor = true;
             this.btn_Yenile.Appearance.Options.UseFont = true;
             this.btn_Yenile.Appearance.Options.UseTextOptions = true;
             this.btn_Yenile.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;

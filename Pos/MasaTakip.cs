@@ -71,9 +71,16 @@ namespace Pos
             gridControl1.Size = new Size(gridControl1.Size.Width, Convert.ToInt32(Param.masatakipKonumYukseklik)); // 341
 
 
-            this.Text = "Masa Takip        " + $"    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}";
 
+            textDegis();
         }
+
+
+        public  void textDegis()
+        {
+            this.Text = "Masa Takip        " + $"    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}" + "   " + "Kullanici :" + $"    {User.P_Kod}";
+        }
+
 
         public void loadYukle()
         {
@@ -2079,6 +2086,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         private void btn_Relogin_Click(object sender, EventArgs e)
         {
             Relogin();
+            textDegis();
         }
 
         private void Relogin()
