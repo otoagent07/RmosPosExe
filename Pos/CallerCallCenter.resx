@@ -150,7 +150,7 @@
     <value>2, 3, 2, 3</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 39</value>
+    <value>3, 40</value>
   </data>
   <data name="gridView1.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -292,7 +292,7 @@
     <value>2, 3, 2, 3</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>926, 296</value>
+    <value>924, 294</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -384,7 +384,7 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>844, 0</value>
+    <value>842, 0</value>
   </data>
   <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -628,7 +628,7 @@ Adres</value>
     <value>Tahoma, 15.75pt, style=Bold</value>
   </data>
   <data name="labelDakika.Location" type="System.Drawing.Point, System.Drawing">
-    <value>703, 0</value>
+    <value>701, 0</value>
   </data>
   <data name="labelDakika.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -658,13 +658,13 @@ Adres</value>
     <value>Top</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 3</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>926, 37</value>
+    <value>924, 37</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>

@@ -682,7 +682,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                         {
                             kontrol = true;
 
-                            
+
                             break;
                         }
 
@@ -711,8 +711,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 cariOdenmezAc();
 
                 string eadis = dbtools.DegerGetir($"select ISNULL(Pkod_AdisyonPr,0) as Pkod_AdisyonPr from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='{odemetip}'");
-                 bool Pkod_AdisyonPr = Convert.ToBoolean(eadis);
-                            chk_AdisyonGR.Checked = Pkod_AdisyonPr;
+                bool Pkod_AdisyonPr = Convert.ToBoolean(eadis);
+                chk_AdisyonGR.Checked = Pkod_AdisyonPr;
             }
             catch (Exception ex)
             {
@@ -752,7 +752,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                 string fisno = gridViewAlt.GetFocusedRowCellValue("Rsat_Fisno").ToString();
 
-              
+
 
                 string query = $@"select 
                                         sum(Rsat_Fiyat) as Rsat_Fiyat,
@@ -845,7 +845,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
 
 
-                    int fisno = Convert.ToInt32( gridViewAlt.GetFocusedRowCellValue("Rsat_Fisno").ToString() );
+                    int fisno = Convert.ToInt32(gridViewAlt.GetFocusedRowCellValue("Rsat_Fisno").ToString());
                     if (araodememi)
                     {
                         decimal fiyat = Convert.ToDecimal(txtOdemeTutar.Text);
@@ -1376,6 +1376,14 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
         {
             try
             {
+                string acikvarmi = dbtools.DegerGetir($"select count(*) as toplam from Cst_Recete_Satis where Rsat_Masa like '{anamasano}_%' and Rsat_Durum='A'");
+
+                if (acikvarmi != "0")
+                {
+                    MessageBox.Show("Açık Parçalı masa var kapatılamaz!");
+                    return;
+                }
+
                 this.Close();
             }
             catch (Exception ex)
@@ -1383,7 +1391,6 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                 RHMesaj.MyMessageError(MyClass, "btnCikis_Click", "", ex);
             }
-
         }
 
         private void ParcaliOdeme_FormClosing(object sender, FormClosingEventArgs e)

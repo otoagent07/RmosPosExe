@@ -3479,7 +3479,32 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
 
 
                 string recgenelkod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
+
+
                 decimal rectutar = Convert.ToDecimal(dbtools.DegerGetir($"select top 1 Rec_Fiyat from cst_recete where Rec_Genelkod='{recgenelkod}'"));
+
+               int tur = Convert.ToInt32( dbtools.DegerGetir($"Select ISNULL(Kodlar_KategoriFiyatTur,0) as tur From Stok_Kodlar where Kodlar_Sinif = 1 and Kodlar_Kod = '{Departman.Dep_Kodu}'"));
+
+                switch (tur)
+                {
+                    case 0:
+                        break;
+                    case 1:
+                        rectutar = Convert.ToDecimal(dbtools.DegerGetir($"select top 1 isnull(Rec_KategoriFiyat1,Rec_Fiyat) as Rec_Fiyat from cst_recete where Rec_Genelkod='{recgenelkod}'"));
+                        break;
+                    case 2:
+                        rectutar = Convert.ToDecimal(dbtools.DegerGetir($"select top 1 isnull(Rec_KategoriFiyat2,Rec_Fiyat) as Rec_Fiyat from cst_recete where Rec_Genelkod='{recgenelkod}'"));
+                        break;
+                    case 3:
+                        rectutar = Convert.ToDecimal(dbtools.DegerGetir($"select top 1 isnull(Rec_KategoriFiyat3,Rec_Fiyat) as Rec_Fiyat from cst_recete where Rec_Genelkod='{recgenelkod}'"));
+                        break;
+                    case 4:
+                        rectutar = Convert.ToDecimal(dbtools.DegerGetir($"select top 1 isnull(Rec_KategoriFiyat4,Rec_Fiyat) as Rec_Fiyat from cst_recete where Rec_Genelkod='{recgenelkod}'"));
+                        break;
+                    default:
+                        break;
+                }
+
                 //if (eskitutarim != rectutar)
 
                 if (tutarduzeltplus && rectutar > tutar)

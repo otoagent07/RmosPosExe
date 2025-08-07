@@ -484,7 +484,7 @@ namespace Pos
             satis.Ozel_Masa = "";
             satis.Split = 0;
             satis.Splitad = "";
-            satis.txt_Not.Text = Cari_Adres;
+            satis.txt_Not.Text = "Telefon No :" +  Tel + "\n"+ Cari_Adres;
             satis.ShowDialog();
         }
 
