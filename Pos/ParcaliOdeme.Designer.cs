@@ -51,6 +51,7 @@ namespace Pos
             this.gridColumn31 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnCikis = new DevExpress.XtraEditors.SimpleButton();
+            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
             this.btnAlttanAnaya = new DevExpress.XtraEditors.SimpleButton();
             this.btnAnadanAlta = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -109,7 +110,6 @@ namespace Pos
             this.btnOdeme3 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAna)).BeginInit();
             this.groupControlAna.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAna)).BeginInit();
@@ -324,6 +324,21 @@ namespace Pos
             this.btnCikis.Size = new System.Drawing.Size(76, 53);
             this.btnCikis.TabIndex = 1;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
+            // btnYenile
+            // 
+            this.btnYenile.Appearance.BackColor = System.Drawing.Color.Fuchsia;
+            this.btnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYenile.Appearance.Options.UseBackColor = true;
+            this.btnYenile.Appearance.Options.UseFont = true;
+            this.btnYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYenile.ImageOptions.Image")));
+            this.btnYenile.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btnYenile.Location = new System.Drawing.Point(2, 501);
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Size = new System.Drawing.Size(74, 93);
+            this.btnYenile.TabIndex = 0;
+            this.btnYenile.Text = "YENİLE";
+            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
             // 
             // btnAlttanAnaya
             // 
@@ -574,8 +589,6 @@ namespace Pos
             this.gridColumn16.Caption = "İd";
             this.gridColumn16.FieldName = "Rsat_Id";
             this.gridColumn16.Name = "gridColumn16";
-            this.gridColumn16.Visible = true;
-            this.gridColumn16.VisibleIndex = 0;
             this.gridColumn16.Width = 45;
             // 
             // gridColumn17
@@ -612,9 +625,11 @@ namespace Pos
             // 
             // gridColumn20
             // 
-            this.gridColumn20.Caption = "Rsat_Fisno";
+            this.gridColumn20.Caption = "Fişno";
             this.gridColumn20.FieldName = "Rsat_Fisno";
             this.gridColumn20.Name = "gridColumn20";
+            this.gridColumn20.Visible = true;
+            this.gridColumn20.VisibleIndex = 0;
             // 
             // gridColumn21
             // 
@@ -1032,21 +1047,6 @@ namespace Pos
             this.btnOdeme1.Text = "G01_1";
             this.btnOdeme1.Visible = false;
             this.btnOdeme1.Click += new System.EventHandler(this.btnOdeme1_Click);
-            // 
-            // btnYenile
-            // 
-            this.btnYenile.Appearance.BackColor = System.Drawing.Color.Fuchsia;
-            this.btnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnYenile.Appearance.Options.UseBackColor = true;
-            this.btnYenile.Appearance.Options.UseFont = true;
-            this.btnYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnYenile.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnYenile.Location = new System.Drawing.Point(2, 501);
-            this.btnYenile.Name = "btnYenile";
-            this.btnYenile.Size = new System.Drawing.Size(74, 93);
-            this.btnYenile.TabIndex = 0;
-            this.btnYenile.Text = "YENİLE";
-            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
             // 
             // ParcaliOdeme
             // 

@@ -757,8 +757,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 string query = $@"select 
                                         sum(Rsat_Fiyat) as Rsat_Fiyat,
                                         isnull((max(Rsat_Kdvoran)),1) as Rsat_Kdvoran,
-                                        sum(Rsat_Net) as Rsat_Net,
-                                        sum(Rsat_Kdv) as Rsat_Kdv,
+                                        sum(isnull(Rsat_Net,0)) as Rsat_Net,
+                                        sum(isnull(Rsat_Kdv,0)) as Rsat_Kdv,
                                         sum(Rsat_Tutar) as Rsat_Tutar,
                                         sum(Rsat_Doviztutar) as Rsat_Doviztutar
                                         from Cst_Recete_Satis 
