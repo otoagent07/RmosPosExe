@@ -471,11 +471,29 @@ namespace Pos
 
         public void masaDurumUpdate()
         {
-            dbtools.execcmdR(@"update Pos_Masa set Masa_Durum='1' where Masa_Id in(
-select masa.Masa_Id from Pos_Masa masa
-left join Cst_Recete_Satis satis on masa.Masa_No=satis.Rsat_Masa and masa.Masa_Depart=satis.Rsat_Departman
-where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
-)");
+
+//            string sorgu = @"update Pos_Masa set Masa_Durum='1' where Masa_Id in(
+//select masa.Masa_Id from Pos_Masa masa
+//left join Cst_Recete_Satis satis on masa.Masa_No=satis.Rsat_Masa and masa.Masa_Depart=satis.Rsat_Departman
+//where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
+//)";
+            // 11.08.2025 de değişti
+            string sorgu = $@"UPDATE Pos_Masa WITH (ROWLOCK, UPDLOCK)
+SET Masa_Durum='1'
+WHERE Masa_Id IN (
+    SELECT masa.Masa_Id
+    FROM Pos_Masa masa WITH (READPAST)
+    LEFT JOIN Cst_Recete_Satis satis WITH (READPAST)
+        ON masa.Masa_No = satis.Rsat_Masa
+       AND masa.Masa_Depart = satis.Rsat_Departman
+    WHERE satis.Rsat_Durum='A'
+      AND masa.Masa_Durum<>'2'
+    GROUP BY masa.Masa_Id
+)
+OPTION (MAXDOP 1, RECOMPILE);";
+
+
+            dbtools.execcmdR(sorgu);
         }
 
         public void yaziciKapaliysaAc()
