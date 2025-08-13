@@ -257,6 +257,9 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                 txtOdemeTutar.Text = gridViewAlt.Columns["Rsat_Tutar"].SummaryItem.SummaryValue.ToString();
 
+
+
+
             }
             catch (Exception ex)
             {
@@ -266,6 +269,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
         private void btnAnadanAlta_Click(object sender, EventArgs e)
         {
+            string neredenMasa = "";
+            string nereyeMasa = "";
             try
             {
                 if (aktarimKontrol(gridViewAna) == false)
@@ -283,23 +288,23 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 DataRow neredenRow = gridViewAna.GetDataRow(gridViewAna.FocusedRowHandle);
 
 
-                string neredenMasa = anamasano;
-                string nereyeMasa = altmasano;
+                neredenMasa= anamasano;
+                nereyeMasa= altmasano;
 
                 string fisnovarmi = dbtools.DegerGetir($"select isnull(Rsat_Fisno,0) as Rsat_Fisno from Cst_Recete_Satis  where Rsat_Masa='{nereyeMasa}' and Rsat_Durum='A'");
 
-                int fisno = 0;
+                int fisnom = 0;
                 if (fisnovarmi != "" && fisnovarmi != "0")
                 {
-                    fisno = Convert.ToInt32(fisnovarmi);
+                    fisnom = Convert.ToInt32(fisnovarmi);
                 }
                 else
                 {
-                    fisno = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
+                    fisnom = Convert.ToInt32(dbtools.DegerGetir("exec Cost_Fis_No"));
 
                 }
 
-                aktarim(neredenRow, neredenMasa, nereyeMasa, fisno);
+                aktarim(neredenRow, neredenMasa, nereyeMasa, fisnom);
 
 
             }
@@ -326,6 +331,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                     dbtools.SelectTableR(fisnoyaGoreQuery);
                 }
+
+                servispayiuygula(neredenMasa, nereyeMasa);
 
             }
 
@@ -531,6 +538,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
         }
         private void btnAlttanAnaya_Click(object sender, EventArgs e)
         {
+            string neredenMasa = "";
+            string nereyeMasa = "";
             try
             {
                 if (aktarimKontrol(gridViewAlt) == false)
@@ -549,11 +558,10 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 DataRow neredenRow = gridViewAlt.GetDataRow(gridViewAlt.FocusedRowHandle);
 
 
-                string neredenMasa = altmasano;
-                string nereyeMasa = anamasano;
+                 neredenMasa = altmasano;
+                 nereyeMasa  = anamasano;
 
                 aktarim(neredenRow, neredenMasa, nereyeMasa, Convert.ToInt32(fisno));
-
 
             }
             catch (Exception ex)
@@ -573,9 +581,65 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                     string masakapatmaquery = "update Pos_Masa set Masa_Durum = 0, Masa_Ozel = '', Masa_NFC = 0 where Masa_No = '" + altmasano + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'";
                     dbtools.SelectTableR(masakapatmaquery);
                 }
+
+                servispayiuygula(neredenMasa, nereyeMasa);
+
             }
         }
 
+
+        public void servispayiuygula(string neredenMasa, string nereyeMasa)
+        {
+            try
+            {
+                if (neredenMasa=="" || nereyeMasa=="")
+                {
+                    return;
+                }
+                if (Departman.Kodlar_ServisPayi)
+                {
+                    string bindirimReceteKod = dbtools.DegerGetir("select top 1 Param_Bindirim  from Pos_Param where Param_Id = '1'");
+
+
+                    if (gridViewAlt.RowCount > 0)
+                    {
+                        DataTable dataTable = (gridControlAlt.DataSource as DataTable);
+
+                        string altfisno = dataTable.Rows[0]["Rsat_Fisno"].ToString();
+                        string Rsat_Id = dataTable.Rows[0]["Rsat_Id"].ToString();
+                        string Rsat_Masa = dataTable.Rows[0]["Rsat_Masa"].ToString();
+                        string recete = dataTable.Rows[0]["Rsat_Recete"].ToString();
+                        if (dataTable.Rows.Count==1 && recete == bindirimReceteKod) // Rsat_Recete
+                        {
+                            dbtools.execcmdR($"delete from Cst_Recete_Satis where Rsat_Id='{Rsat_Id}' ");
+                        }
+                        else
+                        {
+                            dbtools.execcmd("Exec Pos_ServisPayi @Fisno = '" + altfisno + "', @MasaNo ='" + Rsat_Masa + "'");
+                        }
+
+
+                    }
+
+                    if (gridViewAna.RowCount > 0)
+                    {
+                        DataTable dataTable = (gridControlAna.DataSource as DataTable);
+
+                        string anafisno = dataTable.Rows[0]["Rsat_Fisno"].ToString();
+                        string Rsat_Masa = dataTable.Rows[0]["Rsat_Masa"].ToString();
+                        dbtools.execcmd("Exec Pos_ServisPayi @Fisno = '" + anafisno + "', @MasaNo ='" + Rsat_Masa + "'");
+                    }
+
+                    anaListele();
+                    altmasayenile();
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         public void cariyeEkle(int fisno)
         {
             try
@@ -1114,7 +1178,10 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 ind.Tag = "I";
                 ind.tutar = Convert.ToDecimal(txtOdemeTutar.Text);
                 ind.ShowDialog();
-
+                if (ind.degergirildi == false)
+                {
+                    return;
+                }
 
                 string neden = "";
                 if (Departman.Kodlar_YazSipNedSor && ind.cikisyapti == false)
@@ -1155,7 +1222,9 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                 if (oran > 0 || tutar > 0)
                 {
-                    int fisno = 0;
+                    int fisno = Convert.ToInt32(gridViewAlt.GetFocusedRowCellValue("Rsat_Fisno").ToString());
+                    dbtools.execcmdR($"delete from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Indkodu='MANUEL'");
+
                     Fis_Islem.Manuel_IndirimParcali(fisno, ind.indTipi, tutar, doviztutar, oran, Split, neden: neden, masano: altmasano);
 
                     decimal toplamTutar = Convert.ToDecimal(gridViewAlt.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
@@ -1199,7 +1268,10 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 ind.Tag = "B";
                 ind.toplamTutar = 0;
                 ind.ShowDialog();
-
+                if (ind.degergirildi == false)
+                {
+                    return;
+                }
                 decimal tutar = 0, doviztutar = 0, oran = 0;
                 if (ind.indTipi == "T")
                 {
@@ -1210,9 +1282,9 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                     decimal oran23 = (tutar / toplamTutar23) * 100;
 
-                    if (oran23 > User.P_Indirim_Yuzde)
+                    if (oran23 > User.P_Bindirim_Yuzde)
                     {
-                        MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
+                        MessageBox.Show("Max Bindirim Yuzdesini Aştınız..." + "\n" + "Max Bindirim Yüzdeniz : %" + User.P_Bindirim_Yuzde.ToString() + "\n" + "Şuan ki Bindirim Oranı : %" + oran23.ToString("n2"));
                         return;
                     }
 
@@ -1232,7 +1304,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
 
                 if (oran > 0 || tutar > 0)
                 {
-                    int fisno = 0;
+                    int fisno = Convert.ToInt32(gridViewAlt.GetFocusedRowCellValue("Rsat_Fisno").ToString());
                     Fis_Islem.Bindirim_UygulaParcali(fisno, ind.indTipi, tutar, doviztutar, oran, masano: altmasano);
 
                     decimal toplamTutar = Convert.ToDecimal(gridViewAlt.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
@@ -1314,7 +1386,8 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 if (Departman.Siparis)
                 {
                     FisPr fis = new FisPr();
-                    string sonuc = fis.IptalPr(Convert.ToInt32(gridViewAlt.GetFocusedRowCellValue("Rsat_Id")), Sil_Miktar);
+                    int fisid = Convert.ToInt32(gridViewAlt.GetFocusedRowCellValue("Rsat_Id"));
+                    string sonuc = fis.IptalPr(fisid, Sil_Miktar);
                     if (sonuc != "OK")
                     {
                         MessageBox.Show(sonuc);

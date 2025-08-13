@@ -3153,6 +3153,11 @@ namespace Pos
             ind.tutar = Convert.ToDecimal(gridColumn4.SummaryItem.SummaryValue);
             ind.ShowDialog();
 
+            if (ind.degergirildi == false)
+            {
+                return;
+            }
+
             decimal tutar = 0, doviztutar = 0, oran = 0;
             if (ind.indTipi == "T")
             {
@@ -3180,7 +3185,9 @@ namespace Pos
 
             if (oran > 0 || tutar > 0)
             {
-                Fis_Islem.Manuel_Indirim(Convert.ToInt32(bartxt_FisNo.EditValue), ind.indTipi, tutar, doviztutar, oran, Split);
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+                dbtools.execcmdR($"delete from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Indkodu='MANUEL'");
+                Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split);
 
                 Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
                 gridyenile();
@@ -4790,9 +4797,9 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                     decimal oran23 = (tutar / toplamTutar23) * 100;
 
-                    if (oran23 > User.P_Indirim_Yuzde)
+                    if (oran23 > User.P_Bindirim_Yuzde)
                     {
-                        MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
+                        MessageBox.Show("Max Bindirim Yuzdesini Aştınız..." + "\n" + "Max Bindirim Yüzdeniz : %" + User.P_Bindirim_Yuzde.ToString() + "\n" + "Şuan ki Bindirim Oranı : %" + oran23.ToString("n2"));
                         return;
                     }
                 }

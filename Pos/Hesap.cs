@@ -1579,6 +1579,8 @@ namespace Pos
 
             if (oran > 0 || tutar > 0)
             {
+                dbtools.execcmdR($"delete from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Indkodu='MANUEL'");
+
                 Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split, neden: neden);
 
                 decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);

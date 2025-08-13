@@ -194,8 +194,6 @@ namespace Pos
             this.gridColumn4.Caption = "İd";
             this.gridColumn4.FieldName = "Rsat_Id";
             this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 0;
             this.gridColumn4.Width = 45;
             // 
             // gridColumn1
@@ -232,9 +230,11 @@ namespace Pos
             // 
             // gridColumn5
             // 
-            this.gridColumn5.Caption = "Rsat_Fisno";
+            this.gridColumn5.Caption = "Fişno";
             this.gridColumn5.FieldName = "Rsat_Fisno";
             this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 0;
             // 
             // gridColumn6
             // 
