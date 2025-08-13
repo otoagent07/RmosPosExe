@@ -169,6 +169,7 @@ namespace Pos
             if (xtraTabControl1.SelectedTabPage.Name== "tab_Tutar")
             {
                 indSayi = Convert.ToDecimal(txt_Sayi.Text);
+                degergirildi = true;
                 this.Close();
                 return;
             }
