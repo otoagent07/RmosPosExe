@@ -67,11 +67,11 @@ namespace Pos
         {
             if (ilk)
             {
-                txtAlinanTutar.Text = String.Empty;
+                txt_Sayi.Text = String.Empty;
             }
 
             SimpleButton btn = (SimpleButton)sender;
-            txtAlinanTutar.Text += btn.Text;
+            txt_Sayi.Text += btn.Text;
             ilk = false;
         }
 
