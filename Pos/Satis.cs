@@ -3167,7 +3167,13 @@ namespace Pos
                     doviztutar = tutar / Param.Doviz_Kuru;
                 }
             }
-            if (ind.indTipi == "Y")
+
+            if (ind.indTipi == "MY")
+            {
+                ind.indTipi = "Y";
+
+            }
+            if (ind.indTipi == "Y" )
             {
                 oran = ind.indSayi;
             }
