@@ -94,7 +94,8 @@ namespace Pos
             SimpleButton btn = (SimpleButton)sender;
 
             indTipi = "Y";
-            indSayi = Convert.ToDecimal(btn.Tag);
+            string sayi = btn.Tag.ToString();
+            indSayi = Convert.ToDecimal(sayi);
 
             if (Convert.ToString(this.Tag) == "I")
             {

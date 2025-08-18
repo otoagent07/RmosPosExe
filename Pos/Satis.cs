@@ -5020,6 +5020,18 @@ where  Rsat_Id='" + Rsat_Id + "'";
             txtFisnoGit.Select();
             txtFisnoGit.Focus();
         }
+
+        private void btn_Not_Gonder_Click(object sender, EventArgs e)
+        {
+            int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+
+            if (fisno > 0 && Masa_No != String.Empty)
+            {
+                Siparis_Not not = new Siparis_Not();
+                not.Fisno = fisno;
+                not.ShowDialog();
+            }
+        }
         /*
 string adsoyad = hesap.gridViewKisiyeSatis.GetFocusedRowCellValue("Ad Soyad").ToString();
 
@@ -5033,11 +5045,11 @@ if (dataTable != null && dataTable.Rows.Count > 0)
 {
 foreach (DataRow dr in dataTable.Rows)
 {
-   dr["Miktar"] = dr["Miktar"].ToString().Replace(",0000", "");
-   dr["Miktar"] = dr["Miktar"].ToString().Replace(",000", "");
-   dr["Toplam"] = dr["Toplam"].ToString().Replace(",00", "");
-   dr["Toplam"] = dr["Toplam"].ToString().Replace(",000", "");
-   dr["Toplam"] = dr["Toplam"].ToString().Replace(",0000", "");
+dr["Miktar"] = dr["Miktar"].ToString().Replace(",0000", "");
+dr["Miktar"] = dr["Miktar"].ToString().Replace(",000", "");
+dr["Toplam"] = dr["Toplam"].ToString().Replace(",00", "");
+dr["Toplam"] = dr["Toplam"].ToString().Replace(",000", "");
+dr["Toplam"] = dr["Toplam"].ToString().Replace(",0000", "");
 }
 
 }

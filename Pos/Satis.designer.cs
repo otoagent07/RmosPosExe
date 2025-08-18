@@ -166,6 +166,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_Not_Gonder = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -258,7 +259,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 177;
+            this.splitContainerControl4.SplitterPosition = 181;
             // 
             // ana_btnUp
             // 
@@ -302,7 +303,7 @@
             resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 123;
+            this.splitContainerControl2.SplitterPosition = 126;
             // 
             // alt_btnUp
             // 
@@ -940,6 +941,7 @@
             // 
             // panelMenu
             // 
+            this.panelMenu.Controls.Add(this.btn_Not_Gonder);
             this.panelMenu.Controls.Add(this.btnServisTutarDuzelt);
             this.panelMenu.Controls.Add(this.btnJokerAciklama);
             this.panelMenu.Controls.Add(this.btnTopluSil);
@@ -1575,7 +1577,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(842, 725);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(842, 733);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1587,7 +1589,7 @@
             this.layoutControlItem1.MinSize = new System.Drawing.Size(241, 66);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(842, 69);
+            this.layoutControlItem1.Size = new System.Drawing.Size(842, 70);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1596,11 +1598,11 @@
             // 
             this.layoutControlItem2.Control = this.groupControl2;
             resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 69);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 70);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(842, 198);
+            this.layoutControlItem2.Size = new System.Drawing.Size(842, 200);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1609,9 +1611,9 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 267);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 270);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(842, 77);
+            this.layoutControlItem6.Size = new System.Drawing.Size(842, 78);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1619,18 +1621,18 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 344);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 348);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(842, 292);
+            this.layoutControlItem7.Size = new System.Drawing.Size(842, 295);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 636);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 643);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(842, 89);
+            this.layoutControlItem3.Size = new System.Drawing.Size(842, 90);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             this.layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
@@ -1654,6 +1656,17 @@
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // btn_Not_Gonder
+            // 
+            this.btn_Not_Gonder.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Not_Gonder.Appearance.Font")));
+            this.btn_Not_Gonder.Appearance.Options.UseFont = true;
+            this.btn_Not_Gonder.Appearance.Options.UseTextOptions = true;
+            this.btn_Not_Gonder.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btn_Not_Gonder.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Not_Gonder.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_Not_Gonder, "btn_Not_Gonder");
+            this.btn_Not_Gonder.Name = "btn_Not_Gonder";
+            this.btn_Not_Gonder.Click += new System.EventHandler(this.btn_Not_Gonder_Click);
             // 
             // Satis
             // 
@@ -1881,5 +1894,6 @@
         private DevExpress.XtraEditors.TextEdit txtFisnoGit;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
+        private DevExpress.XtraEditors.SimpleButton btn_Not_Gonder;
     }
 }

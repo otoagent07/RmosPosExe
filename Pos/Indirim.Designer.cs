@@ -82,6 +82,8 @@
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
             this.chk_MY = new DevExpress.XtraEditors.CheckButton();
+            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Yuzde.SuspendLayout();
@@ -89,6 +91,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Sayi.Properties)).BeginInit();
             this.tab_MY.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ManuelYuzde.Properties)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chk_Yuzde
@@ -124,6 +127,7 @@
             // 
             // tab_Yuzde
             // 
+            this.tab_Yuzde.Controls.Add(this.panel1);
             this.tab_Yuzde.Controls.Add(this.labelControl1);
             this.tab_Yuzde.Controls.Add(this.btn_Y_Cikis);
             this.tab_Yuzde.Controls.Add(this.btn_Y_80);
@@ -595,6 +599,22 @@
             this.chk_MY.Name = "chk_MY";
             this.chk_MY.CheckedChanged += new System.EventHandler(this.chk_Secim_CheckedChanged);
             // 
+            // simpleButton16
+            // 
+            this.simpleButton16.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton16.Appearance.Font")));
+            this.simpleButton16.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton16, "simpleButton16");
+            this.simpleButton16.Name = "simpleButton16";
+            this.simpleButton16.Tag = "12,5";
+            this.simpleButton16.Click += new System.EventHandler(this.btn_Y_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.simpleButton16);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
             // Indirim
             // 
             resources.ApplyResources(this, "$this");
@@ -616,6 +636,7 @@
             this.tab_MY.ResumeLayout(false);
             this.tab_MY.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ManuelYuzde.Properties)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -675,5 +696,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton15;
         private DevExpress.XtraEditors.CheckButton chk_MY;
+        private DevExpress.XtraEditors.SimpleButton simpleButton16;
+        private System.Windows.Forms.Panel panel1;
     }
 }
