@@ -130,6 +130,8 @@ namespace Pos
                 gridyenile_KasaGirCik();
 
 
+                txt_Ad.Text = User.P_Ad;
+                txt_Soyad.Text = User.P_Soyad;
             }
             catch (Exception ex)
             {
@@ -315,8 +317,8 @@ namespace Pos
 
             gridControl5.DataSource = dataTable;
             Pkasa_Id = 0;
-            txt_Ad.Text = String.Empty;
-            txt_Soyad.Text = String.Empty;
+            //txt_Ad.Text = String.Empty;
+            //txt_Soyad.Text = String.Empty;
             look_GC.EditValue = null;
             txt_Tutar.Text = "0,00";
             txt_Aciklama.Text = String.Empty;

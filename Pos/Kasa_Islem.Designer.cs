@@ -304,8 +304,8 @@
             // tab_KasaRapor
             // 
             this.tab_KasaRapor.Controls.Add(this.xtraTabControl2);
-            resources.ApplyResources(this.tab_KasaRapor, "tab_KasaRapor");
             this.tab_KasaRapor.Name = "tab_KasaRapor";
+            resources.ApplyResources(this.tab_KasaRapor, "tab_KasaRapor");
             // 
             // xtraTabControl2
             // 
@@ -340,8 +340,8 @@
             this.tab_Rpr_Genel.Controls.Add(this.gridControl4);
             this.tab_Rpr_Genel.Controls.Add(this.gridControl2);
             this.tab_Rpr_Genel.Controls.Add(this.gridControl1);
-            resources.ApplyResources(this.tab_Rpr_Genel, "tab_Rpr_Genel");
             this.tab_Rpr_Genel.Name = "tab_Rpr_Genel";
+            resources.ApplyResources(this.tab_Rpr_Genel, "tab_Rpr_Genel");
             // 
             // btnGenelRaporPrint
             // 
@@ -405,7 +405,6 @@
             // 
             // gridControl7
             // 
-            this.gridControl7.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl7.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl7, "gridControl7");
             this.gridControl7.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl7.MainView = this.gridView7;
@@ -423,7 +422,6 @@
             this.gridColumn28,
             this.gridColumn29,
             this.gridColumn30});
-            this.gridView7.DetailHeight = 431;
             this.gridView7.GridControl = this.gridControl7;
             this.gridView7.Name = "gridView7";
             this.gridView7.OptionsView.ShowFooter = true;
@@ -435,7 +433,6 @@
             // 
             resources.ApplyResources(this.gridColumn28, "gridColumn28");
             this.gridColumn28.FieldName = "Pkod_Kod";
-            this.gridColumn28.MinWidth = 23;
             this.gridColumn28.Name = "gridColumn28";
             this.gridColumn28.OptionsColumn.AllowFocus = false;
             // 
@@ -443,7 +440,6 @@
             // 
             resources.ApplyResources(this.gridColumn29, "gridColumn29");
             this.gridColumn29.FieldName = "Pkod_Ad";
-            this.gridColumn29.MinWidth = 23;
             this.gridColumn29.Name = "gridColumn29";
             this.gridColumn29.OptionsColumn.AllowFocus = false;
             // 
@@ -453,7 +449,6 @@
             this.gridColumn30.DisplayFormat.FormatString = "N2";
             this.gridColumn30.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn30.FieldName = "Tutar";
-            this.gridColumn30.MinWidth = 23;
             this.gridColumn30.Name = "gridColumn30";
             this.gridColumn30.OptionsColumn.AllowFocus = false;
             this.gridColumn30.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -461,7 +456,6 @@
             // 
             // gridControl6
             // 
-            this.gridControl6.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl6.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl6, "gridControl6");
             this.gridControl6.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl6.MainView = this.gridView6;
@@ -479,7 +473,6 @@
             this.gridColumn25,
             this.gridColumn26,
             this.gridColumn27});
-            this.gridView6.DetailHeight = 431;
             this.gridView6.GridControl = this.gridControl6;
             this.gridView6.Name = "gridView6";
             this.gridView6.OptionsView.ShowFooter = true;
@@ -491,7 +484,6 @@
             // 
             resources.ApplyResources(this.gridColumn25, "gridColumn25");
             this.gridColumn25.FieldName = "Pkod_Kod";
-            this.gridColumn25.MinWidth = 23;
             this.gridColumn25.Name = "gridColumn25";
             this.gridColumn25.OptionsColumn.AllowFocus = false;
             // 
@@ -499,7 +491,6 @@
             // 
             resources.ApplyResources(this.gridColumn26, "gridColumn26");
             this.gridColumn26.FieldName = "Pkod_Ad";
-            this.gridColumn26.MinWidth = 23;
             this.gridColumn26.Name = "gridColumn26";
             this.gridColumn26.OptionsColumn.AllowFocus = false;
             // 
@@ -509,7 +500,6 @@
             this.gridColumn27.DisplayFormat.FormatString = "N2";
             this.gridColumn27.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn27.FieldName = "Tutar";
-            this.gridColumn27.MinWidth = 23;
             this.gridColumn27.Name = "gridColumn27";
             this.gridColumn27.OptionsColumn.AllowFocus = false;
             this.gridColumn27.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -604,7 +594,6 @@
             // 
             // gridControl3
             // 
-            this.gridControl3.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl3.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl3, "gridControl3");
             this.gridControl3.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl3.MainView = this.gridView3;
@@ -622,7 +611,6 @@
             this.gridColumn9,
             this.gridColumn10,
             this.gridColumn11});
-            this.gridView3.DetailHeight = 431;
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowFooter = true;
@@ -634,7 +622,6 @@
             // 
             resources.ApplyResources(this.gridColumn9, "gridColumn9");
             this.gridColumn9.FieldName = "Pkod_Kod";
-            this.gridColumn9.MinWidth = 23;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
@@ -642,7 +629,6 @@
             // 
             resources.ApplyResources(this.gridColumn10, "gridColumn10");
             this.gridColumn10.FieldName = "Pkod_Ad";
-            this.gridColumn10.MinWidth = 23;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.OptionsColumn.AllowFocus = false;
             // 
@@ -652,7 +638,6 @@
             this.gridColumn11.DisplayFormat.FormatString = "N2";
             this.gridColumn11.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn11.FieldName = "Pkasa_Tutar";
-            this.gridColumn11.MinWidth = 23;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.OptionsColumn.AllowFocus = false;
             this.gridColumn11.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -660,7 +645,6 @@
             // 
             // gridControl4
             // 
-            this.gridControl4.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl4.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl4, "gridControl4");
             this.gridControl4.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl4.MainView = this.gridView4;
@@ -678,7 +662,6 @@
             this.gridColumn13,
             this.gridColumn14,
             this.gridColumn15});
-            this.gridView4.DetailHeight = 431;
             this.gridView4.GridControl = this.gridControl4;
             this.gridView4.Name = "gridView4";
             this.gridView4.OptionsView.ShowFooter = true;
@@ -690,7 +673,6 @@
             // 
             resources.ApplyResources(this.gridColumn13, "gridColumn13");
             this.gridColumn13.FieldName = "Pkod_Kod";
-            this.gridColumn13.MinWidth = 23;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.OptionsColumn.AllowFocus = false;
             // 
@@ -698,7 +680,6 @@
             // 
             resources.ApplyResources(this.gridColumn14, "gridColumn14");
             this.gridColumn14.FieldName = "Pkod_Ad";
-            this.gridColumn14.MinWidth = 23;
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowFocus = false;
             // 
@@ -708,7 +689,6 @@
             this.gridColumn15.DisplayFormat.FormatString = "N2";
             this.gridColumn15.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn15.FieldName = "Pkasa_Tutar";
-            this.gridColumn15.MinWidth = 23;
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.OptionsColumn.AllowFocus = false;
             this.gridColumn15.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -716,7 +696,6 @@
             // 
             // gridControl2
             // 
-            this.gridControl2.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl2.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl2, "gridControl2");
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
@@ -735,7 +714,6 @@
             this.gridColumn7,
             this.gridColumn8,
             this.gridColumn16});
-            this.gridView2.DetailHeight = 431;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowFooter = true;
@@ -747,7 +725,6 @@
             // 
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
             this.gridColumn5.FieldName = "Pkod_Kod";
-            this.gridColumn5.MinWidth = 23;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             // 
@@ -755,7 +732,6 @@
             // 
             resources.ApplyResources(this.gridColumn6, "gridColumn6");
             this.gridColumn6.FieldName = "Pkod_Ad";
-            this.gridColumn6.MinWidth = 23;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowFocus = false;
             // 
@@ -765,7 +741,6 @@
             this.gridColumn7.DisplayFormat.FormatString = "N2";
             this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn7.FieldName = "Rsat_Tutar";
-            this.gridColumn7.MinWidth = 23;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             this.gridColumn7.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -777,7 +752,6 @@
             this.gridColumn8.DisplayFormat.FormatString = "N2";
             this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn8.FieldName = "Rsat_Doviztutar";
-            this.gridColumn8.MinWidth = 23;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowFocus = false;
             // 
@@ -785,13 +759,11 @@
             // 
             resources.ApplyResources(this.gridColumn16, "gridColumn16");
             this.gridColumn16.FieldName = "Dovizad";
-            this.gridColumn16.MinWidth = 23;
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.OptionsColumn.AllowFocus = false;
             // 
             // gridControl1
             // 
-            this.gridControl1.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl1.EmbeddedNavigator.Margin")));
             resources.ApplyResources(this.gridControl1, "gridControl1");
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -810,7 +782,6 @@
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn12});
-            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowFooter = true;
@@ -822,7 +793,6 @@
             // 
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
             this.gridColumn1.FieldName = "Pkod_Kod";
-            this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             // 
@@ -830,7 +800,6 @@
             // 
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
             this.gridColumn2.FieldName = "Pkod_Ad";
-            this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
@@ -840,7 +809,6 @@
             this.gridColumn3.DisplayFormat.FormatString = "N2";
             this.gridColumn3.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn3.FieldName = "Rsat_Tutar";
-            this.gridColumn3.MinWidth = 23;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             this.gridColumn3.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -852,7 +820,6 @@
             this.gridColumn4.DisplayFormat.FormatString = "N2";
             this.gridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn4.FieldName = "Rsat_Doviztutar";
-            this.gridColumn4.MinWidth = 23;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             // 
@@ -862,7 +829,6 @@
             this.gridColumn12.DisplayFormat.FormatString = "N2";
             this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn12.FieldName = "Dovizad";
-            this.gridColumn12.MinWidth = 23;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsColumn.AllowFocus = false;
             // 
@@ -870,13 +836,12 @@
             // 
             this.xtraTabPage1.Controls.Add(this.gridControl8);
             this.xtraTabPage1.Controls.Add(this.groupControl1);
-            resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             this.xtraTabPage1.Name = "xtraTabPage1";
+            resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             // 
             // gridControl8
             // 
             resources.ApplyResources(this.gridControl8, "gridControl8");
-            this.gridControl8.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl8.EmbeddedNavigator.Margin")));
             this.gridControl8.MainView = this.gridView8;
             this.gridControl8.Name = "gridControl8";
             this.gridControl8.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -892,7 +857,6 @@
             this.gridColumn35,
             this.gridColumn36,
             this.gridColumn37});
-            this.gridView8.DetailHeight = 431;
             this.gridView8.GridControl = this.gridControl8;
             this.gridView8.Name = "gridView8";
             this.gridView8.OptionsView.ShowGroupPanel = false;
@@ -901,7 +865,6 @@
             // 
             resources.ApplyResources(this.gridColumn31, "gridColumn31");
             this.gridColumn31.FieldName = "Tarih";
-            this.gridColumn31.MinWidth = 23;
             this.gridColumn31.Name = "gridColumn31";
             this.gridColumn31.OptionsColumn.AllowFocus = false;
             // 
@@ -909,7 +872,6 @@
             // 
             resources.ApplyResources(this.gridColumn32, "gridColumn32");
             this.gridColumn32.FieldName = "Nakit_Satis";
-            this.gridColumn32.MinWidth = 23;
             this.gridColumn32.Name = "gridColumn32";
             this.gridColumn32.OptionsColumn.AllowFocus = false;
             // 
@@ -917,7 +879,6 @@
             // 
             resources.ApplyResources(this.gridColumn33, "gridColumn33");
             this.gridColumn33.FieldName = "Nakit_Cari";
-            this.gridColumn33.MinWidth = 23;
             this.gridColumn33.Name = "gridColumn33";
             this.gridColumn33.OptionsColumn.AllowFocus = false;
             // 
@@ -925,7 +886,6 @@
             // 
             resources.ApplyResources(this.gridColumn34, "gridColumn34");
             this.gridColumn34.FieldName = "Nakit_Kasa_Girisi";
-            this.gridColumn34.MinWidth = 23;
             this.gridColumn34.Name = "gridColumn34";
             this.gridColumn34.OptionsColumn.AllowFocus = false;
             // 
@@ -933,7 +893,6 @@
             // 
             resources.ApplyResources(this.gridColumn35, "gridColumn35");
             this.gridColumn35.FieldName = "Toplam_Nakit_Girisi";
-            this.gridColumn35.MinWidth = 23;
             this.gridColumn35.Name = "gridColumn35";
             this.gridColumn35.OptionsColumn.AllowFocus = false;
             // 
@@ -941,7 +900,6 @@
             // 
             resources.ApplyResources(this.gridColumn36, "gridColumn36");
             this.gridColumn36.FieldName = "Nakit_Kasa_Cikisi";
-            this.gridColumn36.MinWidth = 23;
             this.gridColumn36.Name = "gridColumn36";
             this.gridColumn36.OptionsColumn.AllowFocus = false;
             // 
@@ -949,7 +907,6 @@
             // 
             resources.ApplyResources(this.gridColumn37, "gridColumn37");
             this.gridColumn37.FieldName = "Nakit_KasaToplam";
-            this.gridColumn37.MinWidth = 23;
             this.gridColumn37.Name = "gridColumn37";
             this.gridColumn37.OptionsColumn.AllowFocus = false;
             // 
@@ -1024,13 +981,12 @@
             // 
             this.xtraTabPage2.Controls.Add(this.gridControl9);
             this.xtraTabPage2.Controls.Add(this.groupControl2);
-            resources.ApplyResources(this.xtraTabPage2, "xtraTabPage2");
             this.xtraTabPage2.Name = "xtraTabPage2";
+            resources.ApplyResources(this.xtraTabPage2, "xtraTabPage2");
             // 
             // gridControl9
             // 
             resources.ApplyResources(this.gridControl9, "gridControl9");
-            this.gridControl9.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl9.EmbeddedNavigator.Margin")));
             this.gridControl9.MainView = this.gridView9;
             this.gridControl9.Name = "gridControl9";
             this.gridControl9.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1048,7 +1004,6 @@
             this.gridColumn44,
             this.gridColumn45,
             this.gridColumn46});
-            this.gridView9.DetailHeight = 431;
             this.gridView9.GridControl = this.gridControl9;
             this.gridView9.Name = "gridView9";
             this.gridView9.OptionsView.ShowGroupPanel = false;
@@ -1057,7 +1012,6 @@
             // 
             resources.ApplyResources(this.gridColumn38, "gridColumn38");
             this.gridColumn38.FieldName = "Tarih";
-            this.gridColumn38.MinWidth = 23;
             this.gridColumn38.Name = "gridColumn38";
             this.gridColumn38.OptionsColumn.AllowFocus = false;
             // 
@@ -1065,7 +1019,6 @@
             // 
             resources.ApplyResources(this.gridColumn39, "gridColumn39");
             this.gridColumn39.FieldName = "Nakit_Satis";
-            this.gridColumn39.MinWidth = 23;
             this.gridColumn39.Name = "gridColumn39";
             this.gridColumn39.OptionsColumn.AllowFocus = false;
             // 
@@ -1073,7 +1026,6 @@
             // 
             resources.ApplyResources(this.gridColumn40, "gridColumn40");
             this.gridColumn40.FieldName = "Nakit_Cari";
-            this.gridColumn40.MinWidth = 23;
             this.gridColumn40.Name = "gridColumn40";
             this.gridColumn40.OptionsColumn.AllowFocus = false;
             // 
@@ -1081,7 +1033,6 @@
             // 
             resources.ApplyResources(this.gridColumn41, "gridColumn41");
             this.gridColumn41.FieldName = "Nakit_Kasa_Girisi";
-            this.gridColumn41.MinWidth = 23;
             this.gridColumn41.Name = "gridColumn41";
             this.gridColumn41.OptionsColumn.AllowFocus = false;
             // 
@@ -1089,7 +1040,6 @@
             // 
             resources.ApplyResources(this.gridColumn42, "gridColumn42");
             this.gridColumn42.FieldName = "Toplam_Nakit_Girisi";
-            this.gridColumn42.MinWidth = 23;
             this.gridColumn42.Name = "gridColumn42";
             this.gridColumn42.OptionsColumn.AllowFocus = false;
             // 
@@ -1097,7 +1047,6 @@
             // 
             resources.ApplyResources(this.gridColumn43, "gridColumn43");
             this.gridColumn43.FieldName = "Nakit_Kasa_Cikisi";
-            this.gridColumn43.MinWidth = 23;
             this.gridColumn43.Name = "gridColumn43";
             this.gridColumn43.OptionsColumn.AllowFocus = false;
             // 
@@ -1105,7 +1054,6 @@
             // 
             resources.ApplyResources(this.gridColumn44, "gridColumn44");
             this.gridColumn44.FieldName = "Nakit_KasaToplam";
-            this.gridColumn44.MinWidth = 23;
             this.gridColumn44.Name = "gridColumn44";
             this.gridColumn44.OptionsColumn.AllowFocus = false;
             // 
@@ -1113,7 +1061,6 @@
             // 
             resources.ApplyResources(this.gridColumn45, "gridColumn45");
             this.gridColumn45.FieldName = "Pkasa_Aciklama_Giris";
-            this.gridColumn45.MinWidth = 23;
             this.gridColumn45.Name = "gridColumn45";
             this.gridColumn45.OptionsColumn.AllowFocus = false;
             // 
@@ -1121,7 +1068,6 @@
             // 
             resources.ApplyResources(this.gridColumn46, "gridColumn46");
             this.gridColumn46.FieldName = "Pkasa_Aciklama_Cikis";
-            this.gridColumn46.MinWidth = 23;
             this.gridColumn46.Name = "gridColumn46";
             this.gridColumn46.OptionsColumn.AllowFocus = false;
             // 
@@ -1211,12 +1157,14 @@
             this.tab_KasaHareket.Controls.Add(this.textEdit1);
             this.tab_KasaHareket.Controls.Add(this.textEdit9);
             this.tab_KasaHareket.Controls.Add(this.txt_KasaHrkBaslik);
-            resources.ApplyResources(this.tab_KasaHareket, "tab_KasaHareket");
             this.tab_KasaHareket.Name = "tab_KasaHareket";
+            resources.ApplyResources(this.tab_KasaHareket, "tab_KasaHareket");
             // 
             // btn_Print
             // 
+            this.btn_Print.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
             this.btn_Print.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Print.Appearance.Font")));
+            this.btn_Print.Appearance.Options.UseBackColor = true;
             this.btn_Print.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Print, "btn_Print");
             this.btn_Print.Name = "btn_Print";
@@ -1224,7 +1172,9 @@
             // 
             // btn_Cikis2
             // 
+            this.btn_Cikis2.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_Cikis2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis2.Appearance.Font")));
+            this.btn_Cikis2.Appearance.Options.UseBackColor = true;
             this.btn_Cikis2.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Cikis2, "btn_Cikis2");
             this.btn_Cikis2.Name = "btn_Cikis2";
@@ -1232,7 +1182,9 @@
             // 
             // btn_Sil
             // 
+            this.btn_Sil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
             this.btn_Sil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Sil.Appearance.Font")));
+            this.btn_Sil.Appearance.Options.UseBackColor = true;
             this.btn_Sil.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Sil, "btn_Sil");
             this.btn_Sil.Name = "btn_Sil";
@@ -1240,7 +1192,9 @@
             // 
             // btn_Kaydet
             // 
+            this.btn_Kaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btn_Kaydet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Kaydet.Appearance.Font")));
+            this.btn_Kaydet.Appearance.Options.UseBackColor = true;
             this.btn_Kaydet.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Kaydet, "btn_Kaydet");
             this.btn_Kaydet.Name = "btn_Kaydet";
@@ -1249,7 +1203,6 @@
             // gridControl5
             // 
             resources.ApplyResources(this.gridControl5, "gridControl5");
-            this.gridControl5.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl5.EmbeddedNavigator.Margin")));
             this.gridControl5.MainView = this.gridView5;
             this.gridControl5.Name = "gridControl5";
             this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1267,7 +1220,6 @@
             this.gridColumn23,
             this.gridColumn24,
             this.gridColumn47});
-            this.gridView5.DetailHeight = 431;
             this.gridView5.GridControl = this.gridControl5;
             this.gridView5.Name = "gridView5";
             this.gridView5.OptionsView.ShowAutoFilterRow = true;
@@ -1279,7 +1231,6 @@
             // 
             resources.ApplyResources(this.gridColumn17, "gridColumn17");
             this.gridColumn17.FieldName = "Pkasa_Id";
-            this.gridColumn17.MinWidth = 23;
             this.gridColumn17.Name = "gridColumn17";
             this.gridColumn17.OptionsColumn.AllowFocus = false;
             // 
@@ -1287,7 +1238,6 @@
             // 
             resources.ApplyResources(this.gridColumn18, "gridColumn18");
             this.gridColumn18.FieldName = "Pkasa_Tarih";
-            this.gridColumn18.MinWidth = 23;
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.OptionsColumn.AllowFocus = false;
             this.gridColumn18.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -1297,7 +1247,6 @@
             // 
             resources.ApplyResources(this.gridColumn19, "gridColumn19");
             this.gridColumn19.FieldName = "Pkasa_GC";
-            this.gridColumn19.MinWidth = 23;
             this.gridColumn19.Name = "gridColumn19";
             this.gridColumn19.OptionsColumn.AllowFocus = false;
             // 
@@ -1305,7 +1254,6 @@
             // 
             resources.ApplyResources(this.gridColumn20, "gridColumn20");
             this.gridColumn20.FieldName = "Pkasa_Kod";
-            this.gridColumn20.MinWidth = 23;
             this.gridColumn20.Name = "gridColumn20";
             this.gridColumn20.OptionsColumn.AllowFocus = false;
             // 
@@ -1313,7 +1261,6 @@
             // 
             resources.ApplyResources(this.gridColumn21, "gridColumn21");
             this.gridColumn21.FieldName = "Pkasa_User_Ad";
-            this.gridColumn21.MinWidth = 23;
             this.gridColumn21.Name = "gridColumn21";
             this.gridColumn21.OptionsColumn.AllowFocus = false;
             // 
@@ -1321,7 +1268,6 @@
             // 
             resources.ApplyResources(this.gridColumn22, "gridColumn22");
             this.gridColumn22.FieldName = "Pkasa_User_Soyad";
-            this.gridColumn22.MinWidth = 23;
             this.gridColumn22.Name = "gridColumn22";
             this.gridColumn22.OptionsColumn.AllowFocus = false;
             // 
@@ -1329,7 +1275,6 @@
             // 
             resources.ApplyResources(this.gridColumn23, "gridColumn23");
             this.gridColumn23.FieldName = "Pkasa_Tutar";
-            this.gridColumn23.MinWidth = 23;
             this.gridColumn23.Name = "gridColumn23";
             this.gridColumn23.OptionsColumn.AllowFocus = false;
             this.gridColumn23.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -1339,7 +1284,6 @@
             // 
             resources.ApplyResources(this.gridColumn24, "gridColumn24");
             this.gridColumn24.FieldName = "Pkasa_Aciklama";
-            this.gridColumn24.MinWidth = 23;
             this.gridColumn24.Name = "gridColumn24";
             this.gridColumn24.OptionsColumn.AllowFocus = false;
             // 
@@ -1347,7 +1291,6 @@
             // 
             resources.ApplyResources(this.gridColumn47, "gridColumn47");
             this.gridColumn47.FieldName = "Pkasa_dep";
-            this.gridColumn47.MinWidth = 23;
             this.gridColumn47.Name = "gridColumn47";
             // 
             // txt_Aciklama
@@ -1481,6 +1424,7 @@
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.panelControl1);
             this.Name = "Kasa_Islem";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Kasa_Islem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
