@@ -530,6 +530,7 @@ namespace Pos.Class
 
                     siparisYazdirUrunBazli(dtSiparis, dtDizayn, printer, con, kisiyeSatis, sirano, garsonsor, fisBaslik, "urunbazliprinter");
 
+                    // 18.08.2025 de oğuzhan mendi yeni satış için eklettirdi.
                     siparisYazdirUrunBazli(dtSiparis, dtDizayn, printer, con, kisiyeSatis, sirano, garsonsor, fisBaslik, "urunbazliprinter2");
                 }
 
@@ -550,14 +551,18 @@ namespace Pos.Class
             {
                 if (dtSiparis.Rows.Count > 0)
                 {
-                    foreach (DataRow boslaridoldur in dtSiparis.Rows)
+                    if (urunbazliprinter != "urunbazliprinter2")
                     {
-                        string yaziciismi = boslaridoldur[urunbazliprinter].ToString();
-                        if (yaziciismi == "")
+                        foreach (DataRow boslaridoldur in dtSiparis.Rows)
                         {
-                            boslaridoldur[urunbazliprinter] = printer;
+                            string yaziciismi = boslaridoldur[urunbazliprinter].ToString();
+                            if (yaziciismi == "")
+                            {
+                                boslaridoldur[urunbazliprinter] = printer;
+                            }
                         }
                     }
+                   
 
 
                     var yazicilar = dtSiparis.AsEnumerable()
@@ -584,7 +589,18 @@ namespace Pos.Class
 
                         Print.Siparis siparis = new Print.Siparis();
                         xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
-                        siparis.PrinterName = yaziciismi == "" ? printer : yaziciismi;
+
+
+
+                        if(urunbazliprinter != "urunbazliprinter2")
+                        {
+                            siparis.PrinterName = yaziciismi == "" ? printer : yaziciismi;
+                        }
+                        else
+                        {
+                            if (yaziciismi == "") continue;
+                            siparis.PrinterName = yaziciismi;
+                        }
                         siparis.DataSource = yazilacaklar;//dtSiparis;
 
                         if (Param.Param_SiparisAna)
