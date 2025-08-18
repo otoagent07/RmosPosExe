@@ -82,7 +82,7 @@ namespace Pos.Class
         public static bool K_Kasa { get; set; }
 
         public static int P_Indirim_Yuzde { get; set; }
-        public static int P_Bindirim_Yuzde { get; set; }
+        public static decimal P_Bindirim_Yuzde { get; set; }
         public static string P_Sabit_Masa { get; set; }
         public static bool M_MasaAc { get; set; }
         public static bool M_BaskaMasa { get; set; }
@@ -299,7 +299,7 @@ namespace Pos.Class
                 K_Kasa = Convert.ToBoolean(dt.Rows[0]["K_Kasa"]);
 
                 P_Indirim_Yuzde = Convert.ToInt32(dt.Rows[0]["P_Indirim_Yuzde"]);
-                P_Bindirim_Yuzde = Convert.ToInt32(dt.Rows[0]["P_Bindirim_Yuzde"]);
+                P_Bindirim_Yuzde = Convert.ToDecimal(dt.Rows[0]["P_Bindirim_Yuzde"]);
                 P_Sabit_Masa = Convert.ToString(dt.Rows[0]["P_Sabit_Masa"]);
                 M_MasaAc = Convert.ToBoolean(dt.Rows[0]["M_MasaAc"]);
                 M_BaskaMasa = Convert.ToBoolean(dt.Rows[0]["M_BaskaMasa"]);

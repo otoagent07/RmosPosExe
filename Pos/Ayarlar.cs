@@ -3143,7 +3143,7 @@ namespace Pos
                         + " K_Kasa = '" + Convert.ToBoolean(chk_K_Kasa.Checked) + "', "
                         + " And_Satis = '" + Convert.ToBoolean(chk_And_Satis.Checked) + "',And_Satirsil = '" + Convert.ToBoolean(chk_And_Satirsil.Checked) + "',And_Miktarduzelt = '" + Convert.ToBoolean(chk_And_MiktarD.Checked) + "',And_Tutarduzelt = '" + Convert.ToBoolean(chk_And_TutarD.Checked) + "', "
                         + " And_Hesap = '" + Convert.ToBoolean(chk_And_Hesap.Checked) + "',And_Ozelmasa = '" + Convert.ToBoolean(chk_And_Ozelmasa.Checked) + "',And_MasaTr = '" + Convert.ToBoolean(chk_And_MasaTr.Checked) + "',And_Giris = '" + Convert.ToBoolean(chk_And_Giris.Checked) + "', "
-                        + " P_Posta = '" + Convert.ToString(chkUser_Posta.EditValue) + "',P_Indirim_Yuzde = '" + Convert.ToInt32(spn_Kul_Indirim.Value) + "',P_Bindirim_Yuzde = '" + Convert.ToInt32(spn_Kul_Bindirim.Value) + "',P_Sabit_Masa = '" + Convert.ToString(txt_Kul_Masa.Text) + "',M_MasaAc = '" + Convert.ToBoolean(chk_Kul_MasaAc.Checked) + "', "
+                        + " P_Posta = '" + Convert.ToString(chkUser_Posta.EditValue) + "',P_Indirim_Yuzde = '" + Convert.ToInt32(spn_Kul_Indirim.Value) + "',P_Bindirim_Yuzde = '" +Convert.ToString( Convert.ToDecimal(spn_Kul_Bindirim.Value)).Replace(",",".") + "',P_Sabit_Masa = '" + Convert.ToString(txt_Kul_Masa.Text) + "',M_MasaAc = '" + Convert.ToBoolean(chk_Kul_MasaAc.Checked) + "', "
                         + " M_BaskaMasa = '" + Convert.ToBoolean(chk_M_Baskamasa.Checked) + "',G_Satirsil_Y = '" + Convert.ToBoolean(chk_G_SatirSilY.Checked) + "',M_GarsonDegistir = '" + chk_Kul_GarsonDegistir.Checked + "',G_Zayi = '" + Convert.ToBoolean(chk_Kul_Zayi.Checked) + "',G_Ikram = '" + Convert.ToBoolean(chk_Kul_Ikram.Checked) + "', "
                         + " M_KisiSayisi = '" + Convert.ToBoolean(chk_Kul_KisiSayisi.Checked) + "',R_MasaGeri = '" + Convert.ToBoolean(chk_Kul_MasaGeri.Checked) + "',M_SiparisTekrar = '" + Convert.ToBoolean(chk_Kul_SiparisTekrar.Checked) + "',Pda_HesapDok = '" + Convert.ToBoolean(chk_Pda_HesapDok.Checked) + "',H_HizliSatis = '" + Convert.ToBoolean(chk_H_HizliSatis.Checked) + "', "
                         + " R_TopluIsle = '" + Convert.ToBoolean(chk_R_TopluIsle.Checked) + "',And_HesapDokum = '" + Convert.ToBoolean(chk_And_HesapDokum.Checked) + "',And_HesapOdeme = '" + Convert.ToBoolean(chk_And_HesapOdeme.Checked) + "',And_MalzTransfer = '" + Convert.ToBoolean(chk_And_MalzTransfer.Checked) + @"', "
@@ -3242,7 +3242,7 @@ namespace Pos
                         + " ISNULL(K_Kasa,0) as K_Kasa,ISNULL(Pos_OdaKontrol,0) as Pos_OdaKontrol, "
                         + " ISNULL(And_Satis,0) as And_Satis,ISNULL(And_Satirsil,0) as And_Satirsil,ISNULL(And_Miktarduzelt,0) as And_Miktarduzelt,ISNULL(And_Tutarduzelt,0) as And_Tutarduzelt, "
                         + " ISNULL(And_Hesap,0) as And_Hesap,ISNULL(And_Ozelmasa,0) as And_Ozelmasa,ISNULL(And_MasaTr,0) as And_MasaTr,ISNULL(And_Giris,0) as And_Giris, "
-                        + " P_Posta,ISNULL(P_Indirim_Yuzde,100) as P_Indirim_Yuzde,ISNULL(P_Bindirim_Yuzde,100) as P_Bindirim_Yuzde,P_Sabit_Masa,ISNULL(M_MasaAc,0) as M_MasaAc,ISNULL(M_BaskaMasa,0) as M_BaskaMasa, "
+                        + " P_Posta,ISNULL(P_Indirim_Yuzde,100) as P_Indirim_Yuzde,ISNULL(P_Bindirim_Yuzde,100.0) as P_Bindirim_Yuzde,P_Sabit_Masa,ISNULL(M_MasaAc,0) as M_MasaAc,ISNULL(M_BaskaMasa,0) as M_BaskaMasa, "
                         + " ISNULL(G_Satirsil_Y,0) as G_Satirsil_Y,ISNULL(M_GarsonDegistir,0) as M_GarsonDegistir,ISNULL(G_Zayi,0) as G_Zayi,ISNULL(G_Ikram,0) as G_Ikram, ISNULL(M_KisiSayisi,0) as M_KisiSayisi, "
                         + " ISNULL(R_MasaGeri,0) as R_MasaGeri,ISNULL(M_SiparisTekrar,0) as M_SiparisTekrar,ISNULL(Pda_HesapDok,0) as Pda_HesapDok,ISNULL(H_HizliSatis,0) as H_HizliSatis,ISNULL(R_TopluIsle,0) as R_TopluIsle, "
                         + " ISNULL(And_HesapDokum,0) as And_HesapDokum,ISNULL(And_HesapOdeme,0) as And_HesapOdeme,ISNULL(And_MalzTransfer,0) as And_MalzTransfer, "
@@ -3341,7 +3341,7 @@ namespace Pos
 
                     chkUser_Posta.SetEditValue(Convert.ToString(dt.Rows[0]["P_Posta"]));
                     spn_Kul_Indirim.Value = Convert.ToInt32(dt.Rows[0]["P_Indirim_Yuzde"]);
-                    spn_Kul_Bindirim.Value = Convert.ToInt32(dt.Rows[0]["P_Bindirim_Yuzde"]);
+                    spn_Kul_Bindirim.Value = Convert.ToDecimal(dt.Rows[0]["P_Bindirim_Yuzde"]);
                     txt_Kul_Masa.Text = Convert.ToString(dt.Rows[0]["P_Sabit_Masa"]);
                     chk_Kul_MasaAc.Checked = Convert.ToBoolean(dt.Rows[0]["M_MasaAc"]);
                     chk_M_Baskamasa.Checked = Convert.ToBoolean(dt.Rows[0]["M_BaskaMasa"]);

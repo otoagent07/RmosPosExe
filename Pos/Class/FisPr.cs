@@ -6174,7 +6174,12 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 }
 
                 string reckod = dbtools.DegerGetir("select isnull(Rsat_Recete,'') as Rsat_Recete from Cst_Recete_Satis where Rsat_Id='" + SatirId + "'");
+
+
                 string yaziciismi = dbtools.DegerGetir("select top 1 isnull(Rec_Printer,'') as Rec_Printer from Cst_Recete where Rec_Genelkod='" + reckod + "'");
+
+
+                
 
 
                 iptal.PrinterName = printer;
