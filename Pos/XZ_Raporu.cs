@@ -226,7 +226,30 @@ group by Pkod_Ad";
 
                         Printer = lookUpEditYazici.EditValue.ToString();
                         pd.PrinterSettings.PrinterName = Printer;
-                        pd.Print();
+
+                        if (goruntule==false)
+                        {
+                            pd.Print();
+                        }
+                        else
+                        {
+                            PrintPreviewDialog previewDialog = new PrintPreviewDialog();
+                            previewDialog.Document = pd;
+                            previewDialog.WindowState = FormWindowState.Maximized; // Tam ekran
+
+                            // PrintPreviewControl bul
+                            foreach (Control ctrl in previewDialog.Controls)
+                            {
+                                if (ctrl is PrintPreviewControl previewControl)
+                                {
+                                    previewControl.AutoZoom = false;  // Otomatik yakınlaştırmayı kapat
+                                    previewControl.Zoom = 1.5;        // %150 zoom
+                                    break;
+                                }
+                            }
+
+                            previewDialog.ShowDialog();
+                        }
                     }
                   
                 }
@@ -358,6 +381,14 @@ group by Pkod_Ad";
 
         private void btn_Print_Click(object sender, EventArgs e)
         {
+            goruntule = false;
+
+            fisyazdir();
+        }
+
+
+        public void fisyazdir()
+        {
             this.Cursor = Cursors.WaitCursor;
 
             SqlConnection con = dbtools.conn;
@@ -428,7 +459,7 @@ group by Pkod_Ad";
 
                 foreach (DataRow item in dt.Rows)
                 {
-                   
+
 
                     if (item["Aciklama"].ToString().Contains("#Yazdırılmamış Sipariş-> Recete :"))
                     {
@@ -472,7 +503,6 @@ group by Pkod_Ad";
 
             this.Cursor = Cursors.Default;
         }
-
       
 
         public void sadeceDeptKasa(DataTable dt, string date)
@@ -651,6 +681,11 @@ and Pkod_Kasacikis = 1";
         }
 
 
-
+        bool goruntule = false;
+        private void btnGoruntule_Click(object sender, EventArgs e)
+        {
+            goruntule = true;
+            fisyazdir();
+        }
     }
 }

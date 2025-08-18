@@ -528,104 +528,9 @@ namespace Pos.Class
                     da.Fill(dtSiparis);
 
 
+                    siparisYazdirUrunBazli(dtSiparis, dtDizayn, printer, con, kisiyeSatis, sirano, garsonsor, fisBaslik, "urunbazliprinter");
 
-                    if (dtSiparis.Rows.Count > 0)
-                    {
-                        foreach (DataRow boslaridoldur in dtSiparis.Rows)
-                        {
-                            string yaziciismi = boslaridoldur["urunbazliprinter"].ToString();
-                            if (yaziciismi == "")
-                            {
-                                boslaridoldur["urunbazliprinter"] = printer;
-                            }
-                        }
-
-
-                        var yazicilar = dtSiparis.AsEnumerable()
-              .GroupBy(r => new { Col1 = r["urunbazliprinter"] })
-              .Select(g => g.OrderBy(r => r["urunbazliprinter"]).First())
-              .CopyToDataTable();
-
-
-
-                        foreach (DataRow itemYazici in yazicilar.Rows) // 2 kere doncek
-                        {
-                            string yaziciismi = itemYazici["urunbazliprinter"].ToString();
-
-
-
-                            var yazilacaklar = dtSiparis.Select("urunbazliprinter='" + yaziciismi + "'").CopyToDataTable();
-
-
-                            foreach (DataRow item in dtSiparis.Rows)
-                            {
-                                item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "").Replace(",000", "").Replace(",00", "");
-                            }
-
-
-                            Print.Siparis siparis = new Print.Siparis();
-                            xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
-                            siparis.PrinterName = yaziciismi == "" ? printer : yaziciismi;
-                            siparis.DataSource = yazilacaklar;//dtSiparis;
-
-                            if (Param.Param_SiparisAna)
-                            {
-                                DataView dv = dtSiparis.DefaultView;
-                                dv.Sort = "AnaGrupAdi desc";
-                                dtSiparis = dv.ToTable();
-                            }
-
-                            if (con.State != ConnectionState.Closed) con.Close();
-
-                            if (Param.Param_Printer_Tanim) printer = Convert.ToString(dtSiparis.Rows[0]["Pkod_Printer"]);
-
-
-                            TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
-
-
-                            siparis.xr_MasaNo.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Masa"]);
-
-                            if (kisiyeSatis != "")
-                            {
-                                siparis.xr_MasaNo.Text = siparis.xr_MasaNo.Text + "[" + kisiyeSatis + "]";
-                            }
-
-                            siparis.xr_Konum.Text = Convert.ToString(dtSiparis.Rows[0]["MasaKonumAdi"]);
-                            siparis.xr_KisiSayisi.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Kisi"]);
-                            siparis.xr_Tarih.Text = Convert.ToDateTime(dtSiparis.Rows[0]["Rsat_Tarih"]).ToShortDateString();
-                            siparis.xr_Acilis.Text = Convert.ToString(timeSpan);
-                            siparis.txtDepartman.Text = Departman.Dep_Adi;
-                            siparis.txtSiraNo.Text = sirano;
-
-                            if (garsonsor.Equals(""))
-                            {
-                                siparis.xr_Garson.Text = Convert.ToString(dtSiparis.Rows[0]["Garson"]);
-                            }
-                            else
-                            {
-                                siparis.xr_Garson.Text = garsonsor;
-                            }
-
-                            siparis.xr_Cek.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Fisno"]);
-
-                            siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
-                            siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
-
-                            if (fisBaslik != "")
-                            {
-                                siparis.xr_Baslik.Text = fisBaslik;
-                            }
-
-                            if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "") // 
-                            {
-                                siparis.Print();
-
-
-                            }
-
-                        }
-                    }
-
+                    siparisYazdirUrunBazli(dtSiparis, dtDizayn, printer, con, kisiyeSatis, sirano, garsonsor, fisBaslik, "urunbazliprinter2");
                 }
 
                 AbuyerPr(Fisno, Mars, Split, abuyerBaslik, kartDetay1, kartdetay2, hizliSatis);
@@ -637,6 +542,115 @@ namespace Pos.Class
             }
 
             return "OK";
+        }
+
+        public void siparisYazdirUrunBazli(DataTable dtSiparis, DataTable dtDizayn, string printer, SqlConnection con,string kisiyeSatis,string sirano,string garsonsor,string fisBaslik,string urunbazliprinter)
+        {
+            try
+            {
+                if (dtSiparis.Rows.Count > 0)
+                {
+                    foreach (DataRow boslaridoldur in dtSiparis.Rows)
+                    {
+                        string yaziciismi = boslaridoldur[urunbazliprinter].ToString();
+                        if (yaziciismi == "")
+                        {
+                            boslaridoldur[urunbazliprinter] = printer;
+                        }
+                    }
+
+
+                    var yazicilar = dtSiparis.AsEnumerable()
+          .GroupBy(r => new { Col1 = r[urunbazliprinter] })
+          .Select(g => g.OrderBy(r => r[urunbazliprinter]).First())
+          .CopyToDataTable();
+
+
+
+                    foreach (DataRow itemYazici in yazicilar.Rows) // 2 kere doncek
+                    {
+                        string yaziciismi = itemYazici[urunbazliprinter].ToString();
+
+
+
+                        var yazilacaklar = dtSiparis.Select(urunbazliprinter + "='" + yaziciismi + "'").CopyToDataTable();
+
+
+                        foreach (DataRow item in dtSiparis.Rows)
+                        {
+                            item["Rsat_Miktar"] = item["Rsat_Miktar"].ToString().Replace(",0000", "").Replace(",000", "").Replace(",00", "");
+                        }
+
+
+                        Print.Siparis siparis = new Print.Siparis();
+                        xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
+                        siparis.PrinterName = yaziciismi == "" ? printer : yaziciismi;
+                        siparis.DataSource = yazilacaklar;//dtSiparis;
+
+                        if (Param.Param_SiparisAna)
+                        {
+                            DataView dv = dtSiparis.DefaultView;
+                            dv.Sort = "AnaGrupAdi desc";
+                            dtSiparis = dv.ToTable();
+                        }
+
+                        if (con.State != ConnectionState.Closed) con.Close();
+
+                        if (Param.Param_Printer_Tanim) printer = Convert.ToString(dtSiparis.Rows[0]["Pkod_Printer"]);
+
+
+                        TimeSpan timeSpan = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+
+
+                        siparis.xr_MasaNo.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Masa"]);
+
+                        if (kisiyeSatis != "")
+                        {
+                            siparis.xr_MasaNo.Text = siparis.xr_MasaNo.Text + "[" + kisiyeSatis + "]";
+                        }
+
+                        siparis.xr_Konum.Text = Convert.ToString(dtSiparis.Rows[0]["MasaKonumAdi"]);
+                        siparis.xr_KisiSayisi.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Kisi"]);
+                        siparis.xr_Tarih.Text = Convert.ToDateTime(dtSiparis.Rows[0]["Rsat_Tarih"]).ToShortDateString();
+                        siparis.xr_Acilis.Text = Convert.ToString(timeSpan);
+                        siparis.txtDepartman.Text = Departman.Dep_Adi;
+                        siparis.txtSiraNo.Text = sirano;
+
+                        if (garsonsor.Equals(""))
+                        {
+                            siparis.xr_Garson.Text = Convert.ToString(dtSiparis.Rows[0]["Garson"]);
+                        }
+                        else
+                        {
+                            siparis.xr_Garson.Text = garsonsor;
+                        }
+
+                        siparis.xr_Cek.Text = Convert.ToString(dtSiparis.Rows[0]["Rsat_Fisno"]);
+
+                        siparis.xr_Miktar.Text = "[Rsat_Miktar]" + " " + "[Rsat_Emiktar]";
+                        siparis.xr_Urun.Text = "[Rec_Ad]" + ("[Rsat_Aciklama]" == "" ? "" : ("\n" + "[Rsat_Aciklama]"));
+
+                        if (fisBaslik != "")
+                        {
+                            siparis.xr_Baslik.Text = fisBaslik;
+                        }
+
+                        if (siparis.PrinterName != "Microsoft Print to PDF" && siparis.PrinterName != "") // 
+                        {
+                            siparis.Print();
+
+
+                        }
+
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
         }
 
         public string newSiparisPr_Tumsiparis(int Fisno, bool Mars, int Split, string abuyerBaslik = "   * * * ABUYER FISI * * *   ", string kartDetay1 = "", string kartdetay2 = "", bool hizliSatis = false, string garsonsor = "", string fisBaslik = "", string kisiyeSatis = "", bool tumsiparisiTekrarGonder = false)

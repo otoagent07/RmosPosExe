@@ -70,6 +70,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.chk_servispayi = new DevExpress.XtraEditors.CheckEdit();
+            this.btnGoruntule = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.look_Garson.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdo_X_Z.Properties)).BeginInit();
@@ -398,10 +399,20 @@
             this.chk_servispayi.Name = "chk_servispayi";
             this.chk_servispayi.Properties.Caption = resources.GetString("chk_servispayi.Properties.Caption");
             // 
+            // btnGoruntule
+            // 
+            this.btnGoruntule.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.btnGoruntule.Appearance.Options.UseFont = true;
+            this.btnGoruntule.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            resources.ApplyResources(this.btnGoruntule, "btnGoruntule");
+            this.btnGoruntule.Name = "btnGoruntule";
+            this.btnGoruntule.Click += new System.EventHandler(this.btnGoruntule_Click);
+            // 
             // XZ_Raporu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnGoruntule);
             this.Controls.Add(this.chk_servispayi);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.checkEditPdfKaydet);
@@ -529,5 +540,6 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.CheckEdit chk_servispayi;
+        private DevExpress.XtraEditors.SimpleButton btnGoruntule;
     }
 }
