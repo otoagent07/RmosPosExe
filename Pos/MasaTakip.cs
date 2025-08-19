@@ -1088,7 +1088,22 @@ OPTION (MAXDOP 1, RECOMPILE);";
                     btnMasa.Size = s;
                     btnMasa.TabIndex = 0;
                     btnMasa.TabStop = false;
+
+
                     btnMasa.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, (byte)162);
+
+
+                    string XZ_Font = dbtools.DegerGetir("select Pkod_Font from Pos_Kodlar where Pkod_Sinif = '17'  and Pkod_Kod = 'MTakipFont'");
+                    System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
+                    Font fnt = (Font)converter.ConvertFromString(XZ_Font);
+
+                    if (fnt != null)
+                    {
+                        btnMasa.Font = fnt;
+                    }
+
+
+
                     btnMasa.Appearance.TextOptions.Trimming = DevExpress.Utils.Trimming.Word;
                     btnMasa.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
                     btnMasa.Appearance.Options.UseBackColor = false;

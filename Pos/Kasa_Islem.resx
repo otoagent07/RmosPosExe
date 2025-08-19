@@ -200,67 +200,6 @@
   <data name="&gt;&gt;chk_KasaCikis.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;textEdit15.Name" xml:space="preserve">
-    <value>textEdit15</value>
-  </data>
-  <data name="&gt;&gt;textEdit15.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit15.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;textEdit15.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmb_Departman.Name" xml:space="preserve">
-    <value>cmb_Departman</value>
-  </data>
-  <data name="&gt;&gt;cmb_Departman.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;cmb_Departman.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;cmb_Departman.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis.Name" xml:space="preserve">
-    <value>btn_Cikis</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1020, 49</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="textEdit15.EditValue" xml:space="preserve">
     <value>Departman</value>
   </data>
@@ -354,281 +293,36 @@
   <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1020, 49</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="xtraTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 49</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Name" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Parent" xml:space="preserve">
-    <value>tab_KasaRapor</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tab_KasaRapor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1014, 671</value>
-  </data>
-  <data name="tab_KasaRapor.Text" xml:space="preserve">
-    <value>Kasa Rapor</value>
-  </data>
-  <data name="&gt;&gt;tab_KasaRapor.Name" xml:space="preserve">
-    <value>tab_KasaRapor</value>
-  </data>
-  <data name="&gt;&gt;tab_KasaRapor.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_KasaRapor.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_KasaRapor.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1020, 699</value>
-  </data>
-  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btn_Print.Name" xml:space="preserve">
-    <value>btn_Print</value>
-  </data>
-  <data name="&gt;&gt;btn_Print.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Print.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;btn_Print.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis2.Name" xml:space="preserve">
-    <value>btn_Cikis2</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis2.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_Sil.Name" xml:space="preserve">
-    <value>btn_Sil</value>
-  </data>
-  <data name="&gt;&gt;btn_Sil.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Sil.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;btn_Sil.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_Kaydet.Name" xml:space="preserve">
-    <value>btn_Kaydet</value>
-  </data>
-  <data name="&gt;&gt;btn_Kaydet.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Kaydet.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;btn_Kaydet.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;gridControl5.Name" xml:space="preserve">
-    <value>gridControl5</value>
-  </data>
-  <data name="&gt;&gt;gridControl5.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl5.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;gridControl5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txt_Aciklama.Name" xml:space="preserve">
-    <value>txt_Aciklama</value>
-  </data>
-  <data name="&gt;&gt;txt_Aciklama.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Aciklama.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;txt_Aciklama.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txt_Tutar.Name" xml:space="preserve">
-    <value>txt_Tutar</value>
-  </data>
-  <data name="&gt;&gt;txt_Tutar.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Tutar.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;txt_Tutar.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;txt_Soyad.Name" xml:space="preserve">
-    <value>txt_Soyad</value>
-  </data>
-  <data name="&gt;&gt;txt_Soyad.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Soyad.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;txt_Soyad.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;txt_Ad.Name" xml:space="preserve">
-    <value>txt_Ad</value>
-  </data>
-  <data name="&gt;&gt;txt_Ad.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Ad.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;txt_Ad.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;look_GC.Name" xml:space="preserve">
-    <value>look_GC</value>
-  </data>
-  <data name="&gt;&gt;look_GC.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;look_GC.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;look_GC.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;date_Tarih.Name" xml:space="preserve">
-    <value>date_Tarih</value>
-  </data>
-  <data name="&gt;&gt;date_Tarih.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;date_Tarih.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;date_Tarih.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;textEdit11.Name" xml:space="preserve">
-    <value>textEdit11</value>
-  </data>
-  <data name="&gt;&gt;textEdit11.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit11.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;textEdit11.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;textEdit10.Name" xml:space="preserve">
-    <value>textEdit10</value>
-  </data>
-  <data name="&gt;&gt;textEdit10.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit10.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;textEdit10.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;textEdit2.Name" xml:space="preserve">
-    <value>textEdit2</value>
-  </data>
-  <data name="&gt;&gt;textEdit2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit2.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
-    <value>textEdit1</value>
-  </data>
-  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;textEdit9.Name" xml:space="preserve">
-    <value>textEdit9</value>
-  </data>
-  <data name="&gt;&gt;textEdit9.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit9.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;textEdit9.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaHrkBaslik.Name" xml:space="preserve">
-    <value>txt_KasaHrkBaslik</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaHrkBaslik.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaHrkBaslik.Parent" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaHrkBaslik.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="tab_KasaHareket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1014, 671</value>
-  </data>
-  <data name="tab_KasaHareket.Text" xml:space="preserve">
-    <value>Kasa Hareket</value>
-  </data>
-  <data name="&gt;&gt;tab_KasaHareket.Name" xml:space="preserve">
-    <value>tab_KasaHareket</value>
-  </data>
-  <data name="&gt;&gt;tab_KasaHareket.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_KasaHareket.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_KasaHareket.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="xtraTabControl2.AppearancePage.Header.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 11pt</value>
@@ -638,357 +332,6 @@
   </data>
   <data name="xtraTabControl2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;btnGenelRaporPrint.Name" xml:space="preserve">
-    <value>btnGenelRaporPrint</value>
-  </data>
-  <data name="&gt;&gt;btnGenelRaporPrint.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnGenelRaporPrint.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;btnGenelRaporPrint.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;simpleButton5.Name" xml:space="preserve">
-    <value>simpleButton5</value>
-  </data>
-  <data name="&gt;&gt;simpleButton5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton5.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;simpleButton5.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Tarih2.Name" xml:space="preserve">
-    <value>Tarih2</value>
-  </data>
-  <data name="&gt;&gt;Tarih2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;Tarih2.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;Tarih2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Tarih1.Name" xml:space="preserve">
-    <value>Tarih1</value>
-  </data>
-  <data name="&gt;&gt;Tarih1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;Tarih1.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;Tarih1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;textEdit13.Name" xml:space="preserve">
-    <value>textEdit13</value>
-  </data>
-  <data name="&gt;&gt;textEdit13.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit13.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;textEdit13.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textEdit14.Name" xml:space="preserve">
-    <value>textEdit14</value>
-  </data>
-  <data name="&gt;&gt;textEdit14.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit14.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;textEdit14.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;gridControl7.Name" xml:space="preserve">
-    <value>gridControl7</value>
-  </data>
-  <data name="&gt;&gt;gridControl7.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl7.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;gridControl7.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;gridControl6.Name" xml:space="preserve">
-    <value>gridControl6</value>
-  </data>
-  <data name="&gt;&gt;gridControl6.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl6.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;gridControl6.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btn_OzetPrint.Name" xml:space="preserve">
-    <value>btn_OzetPrint</value>
-  </data>
-  <data name="&gt;&gt;btn_OzetPrint.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_OzetPrint.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;btn_OzetPrint.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaGenel.Name" xml:space="preserve">
-    <value>txt_KasaGenel</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaGenel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaGenel.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaGenel.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;textEdit8.Name" xml:space="preserve">
-    <value>textEdit8</value>
-  </data>
-  <data name="&gt;&gt;textEdit8.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit8.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;textEdit8.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaCikis.Name" xml:space="preserve">
-    <value>txt_KasaCikis</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaCikis.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaCikis.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaCikis.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaGiris.Name" xml:space="preserve">
-    <value>txt_KasaGiris</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaGiris.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaGiris.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;txt_KasaGiris.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
-    <value>textEdit4</value>
-  </data>
-  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;textEdit3.Name" xml:space="preserve">
-    <value>textEdit3</value>
-  </data>
-  <data name="&gt;&gt;textEdit3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEdit3.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;textEdit3.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;gridControl3.Name" xml:space="preserve">
-    <value>gridControl3</value>
-  </data>
-  <data name="&gt;&gt;gridControl3.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl3.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;gridControl3.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;gridControl4.Name" xml:space="preserve">
-    <value>gridControl4</value>
-  </data>
-  <data name="&gt;&gt;gridControl4.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl4.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;gridControl4.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
-    <value>gridControl2</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
-    <value>gridControl1</value>
-  </data>
-  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="tab_Rpr_Genel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 638</value>
-  </data>
-  <data name="tab_Rpr_Genel.Text" xml:space="preserve">
-    <value>Genel Rapor</value>
-  </data>
-  <data name="&gt;&gt;tab_Rpr_Genel.Name" xml:space="preserve">
-    <value>tab_Rpr_Genel</value>
-  </data>
-  <data name="&gt;&gt;tab_Rpr_Genel.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_Rpr_Genel.Parent" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;tab_Rpr_Genel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="xtraTabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1014, 671</value>
-  </data>
-  <data name="xtraTabControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridControl8.Name" xml:space="preserve">
-    <value>gridControl8</value>
-  </data>
-  <data name="&gt;&gt;gridControl8.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl8.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;gridControl8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
-    <value>groupControl1</value>
-  </data>
-  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 639</value>
-  </data>
-  <data name="xtraTabPage1.Text" xml:space="preserve">
-    <value>Kasa Raporu</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;gridControl9.Name" xml:space="preserve">
-    <value>gridControl9</value>
-  </data>
-  <data name="&gt;&gt;gridControl9.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridControl9.Parent" xml:space="preserve">
-    <value>xtraTabPage2</value>
-  </data>
-  <data name="&gt;&gt;gridControl9.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;groupControl2.Name" xml:space="preserve">
-    <value>groupControl2</value>
-  </data>
-  <data name="&gt;&gt;groupControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;groupControl2.Parent" xml:space="preserve">
-    <value>xtraTabPage2</value>
-  </data>
-  <data name="&gt;&gt;groupControl2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 639</value>
-  </data>
-  <data name="xtraTabPage2.Text" xml:space="preserve">
-    <value>Kasa Raporu 2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage2.Name" xml:space="preserve">
-    <value>xtraTabPage2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage2.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage2.Parent" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="xtraTabControl2.TabPageWidth" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Name" xml:space="preserve">
-    <value>xtraTabControl2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.Parent" xml:space="preserve">
-    <value>tab_KasaRapor</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl2.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btnGenelRaporPrint.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -1877,6 +1220,30 @@
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <data name="tab_Rpr_Genel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 638</value>
+  </data>
+  <data name="tab_Rpr_Genel.Text" xml:space="preserve">
+    <value>Genel Rapor</value>
+  </data>
+  <data name="&gt;&gt;tab_Rpr_Genel.Name" xml:space="preserve">
+    <value>tab_Rpr_Genel</value>
+  </data>
+  <data name="&gt;&gt;tab_Rpr_Genel.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_Rpr_Genel.Parent" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;tab_Rpr_Genel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtraTabControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 671</value>
+  </data>
+  <data name="xtraTabControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="gridControl8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1947,7 +1314,7 @@
     <value>6</value>
   </data>
   <data name="gridControl8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 562</value>
+    <value>1008, 561</value>
   </data>
   <data name="gridControl8.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2190,6 +1557,24 @@
   <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 638</value>
+  </data>
+  <data name="xtraTabPage1.Text" xml:space="preserve">
+    <value>Kasa Raporu</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="gridControl9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -2278,7 +1663,7 @@
     <value>7</value>
   </data>
   <data name="gridControl9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 562</value>
+    <value>1008, 561</value>
   </data>
   <data name="gridControl9.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2520,6 +1905,63 @@
   </data>
   <data name="&gt;&gt;groupControl2.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 638</value>
+  </data>
+  <data name="xtraTabPage2.Text" xml:space="preserve">
+    <value>Kasa Raporu 2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Name" xml:space="preserve">
+    <value>xtraTabPage2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Parent" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xtraTabControl2.TabPageWidth" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Name" xml:space="preserve">
+    <value>xtraTabControl2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.Parent" xml:space="preserve">
+    <value>tab_KasaRapor</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tab_KasaRapor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 671</value>
+  </data>
+  <data name="tab_KasaRapor.Text" xml:space="preserve">
+    <value>Kasa Rapor</value>
+  </data>
+  <data name="&gt;&gt;tab_KasaRapor.Name" xml:space="preserve">
+    <value>tab_KasaRapor</value>
+  </data>
+  <data name="&gt;&gt;tab_KasaRapor.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_KasaRapor.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_KasaRapor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1020, 699</value>
+  </data>
+  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="btn_Print.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3087,6 +2529,36 @@
   </data>
   <data name="&gt;&gt;txt_KasaHrkBaslik.ZOrder" xml:space="preserve">
     <value>16</value>
+  </data>
+  <data name="tab_KasaHareket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1014, 671</value>
+  </data>
+  <data name="tab_KasaHareket.Text" xml:space="preserve">
+    <value>Kasa Hareket</value>
+  </data>
+  <data name="&gt;&gt;tab_KasaHareket.Name" xml:space="preserve">
+    <value>tab_KasaHareket</value>
+  </data>
+  <data name="&gt;&gt;tab_KasaHareket.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_KasaHareket.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_KasaHareket.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

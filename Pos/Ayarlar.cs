@@ -4185,6 +4185,20 @@ namespace Pos
                         + " values ('CARIHESAP','17','" + txt_Cari_Font.Text + "') ");
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_SiparisFis, Log.Log_Islem.Kaydet, "CARIHESAP Font" + txt_Cari_Font.Text, String.Empty, String.Empty);
             }
+
+
+            //MASA TAKİP FONT
+            if (Convert.ToInt32(dbtools.DegerGetir("select count(*) from Pos_Kodlar where Pkod_Sinif = '17'  and Pkod_Kod = 'MTakipFont' ")) > 0)
+            {
+                dbtools.execcmdR("update Pos_Kodlar set Pkod_Font = '" + txtMTakipFont.Text + "' where Pkod_Sinif = '17' and Pkod_Kod = 'MTakipFont'");
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_SiparisFis, Log.Log_Islem.Duzelt, "MTakipFont Font" + txtMTakipFont.Text, String.Empty, String.Empty);
+            }
+            else
+            {
+                dbtools.execcmdR(" insert into Pos_Kodlar(Pkod_Kod,Pkod_Sinif,Pkod_Font) "
+                        + " values ('MTakipFont','17','" + txtMTakipFont.Text + "') ");
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_SiparisFis, Log.Log_Islem.Kaydet, "MTakipFont Font" + txtMTakipFont.Text, String.Empty, String.Empty);
+            }
         }
 
         private void Hesap_Yenile()
@@ -4290,6 +4304,19 @@ namespace Pos
             {
                 txt_Cari_Font.Text = "";
             }
+
+
+            DataTable dtMTakipFont = dbtools.SelectTable("select Pkod_Kod,Pkod_Sinif,Pkod_Font from Pos_Kodlar where Pkod_Sinif = '17'  and Pkod_Kod = 'MTakipFont'");
+            if (dtMTakipFont.Rows.Count > 0)
+            {
+                txtMTakipFont.Text = Convert.ToString(dtMTakipFont.Rows[0]["Pkod_Font"]);
+            }
+            else
+            {
+                txtMTakipFont.Text = "Tahoma ; 9pt; style=Bold";
+            }
+
+
         }
 
 
@@ -6621,6 +6648,18 @@ Select InstanceNames from @GetInstances ";
         private void btnMasalariYenile2_Click(object sender, EventArgs e)
         {
             gridyenile_MasaTanim();
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
+            Font fnt = (Font)converter.ConvertFromString(txt_Cari_Font.Text);
+            fontDialog1.Font = fnt;
+
+            if (fontDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                txtMTakipFont.Text = converter.ConvertToString(fontDialog1.Font);
+            }
         }
 
         private void gridyenile_SubeAdres()

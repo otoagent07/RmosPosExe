@@ -1312,6 +1312,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.txtMTakipFont = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2200,6 +2202,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMTakipFont.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -7347,6 +7350,8 @@
             // 
             // tab_Print_Hesap
             // 
+            this.tab_Print_Hesap.Controls.Add(this.txtMTakipFont);
+            this.tab_Print_Hesap.Controls.Add(this.simpleButton3);
             this.tab_Print_Hesap.Controls.Add(this.spinEditAbuyerCiktiSayisi);
             this.tab_Print_Hesap.Controls.Add(this.textEdit197);
             this.tab_Print_Hesap.Controls.Add(this.txt_Cari_Font);
@@ -13075,6 +13080,22 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // txtMTakipFont
+            // 
+            resources.ApplyResources(this.txtMTakipFont, "txtMTakipFont");
+            this.txtMTakipFont.Name = "txtMTakipFont";
+            this.txtMTakipFont.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtMTakipFont.Properties.ReadOnly = true;
+            this.txtMTakipFont.TabStop = false;
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton3, "simpleButton3");
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -14004,6 +14025,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMTakipFont.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15292,5 +15314,7 @@
         private DevExpress.XtraEditors.TextEdit gunsonubitissaat;
         private DevExpress.XtraEditors.TextEdit textEdit205;
         private DevExpress.XtraEditors.CheckEdit satisYapma;
+        private DevExpress.XtraEditors.TextEdit txtMTakipFont;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }

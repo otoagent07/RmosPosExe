@@ -115,7 +115,7 @@ namespace Pos
                 if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
                 {
                     panelControl4.Visible = false;
-                    txt_Not.Size = new Size(txt_Not.Size.Width, 50);
+                    txt_Not.Size = new Size(txt_Not.Size.Width, 35);
                     btnMasaSec.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
 
                 }
@@ -164,7 +164,15 @@ namespace Pos
                 }
 
                 btn_Siparis.Enabled = Departman.Siparis;
-                btn_Mars.Enabled = Departman.Kodlar_Mars;
+
+
+                btn_Mars.Visible = Departman.Kodlar_Mars;
+
+                if (btn_Mars.Visible==false)
+                {
+                    btn_Siparis.Size = new Size(170,btn_Siparis.Height);
+                }
+
                 btn_MiktarDuzelt.Enabled = User.G_Miktarduzelt;
                 btn_Tutarduzelt.Enabled = User.G_Tutarduzelt;
                 btn_SatirSil.Enabled = User.G_Satirsil;
@@ -227,7 +235,7 @@ namespace Pos
                 if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
                 {
                     panelControl4.Visible = false;
-                    txt_Not.Size = new Size(txt_Not.Size.Width, 50);
+                    txt_Not.Size = new Size(txt_Not.Size.Width, 35);
                 }
                 else
                 {

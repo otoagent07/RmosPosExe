@@ -1426,6 +1426,7 @@
             this.Name = "Kasa_Islem";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Kasa_Islem_Load);
+            this.Shown += new System.EventHandler(this.Kasa_Islem_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).EndInit();

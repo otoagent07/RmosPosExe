@@ -301,9 +301,13 @@ namespace Pos
         private void GC_Doldur()
         {
             string filter = Pkasa_GC == "G" ? " and Pkod_Kasagiris = 1 " : " and Pkod_Kasacikis = 1 ";
-            look_GC.Properties.DataSource = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '22' " + filter);
+            DataTable dt = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad from Pos_Kodlar WITH(NOLOCK) where Pkod_Sinif = '22' " + filter);
+            look_GC.Properties.DataSource = dt;
             look_GC.Properties.DisplayMember = "Pkod_Ad";
             look_GC.Properties.ValueMember = "Pkod_Kod";
+
+
+            look_GC.EditValue = dt.Rows[0]["Pkod_Kod"];
         }
 
         private void btn_Cikis2_Click(object sender, EventArgs e)
@@ -319,7 +323,7 @@ namespace Pos
             Pkasa_Id = 0;
             //txt_Ad.Text = String.Empty;
             //txt_Soyad.Text = String.Empty;
-            look_GC.EditValue = null;
+            //look_GC.EditValue = null;
             txt_Tutar.Text = "0,00";
             txt_Aciklama.Text = String.Empty;
         }
@@ -572,6 +576,10 @@ order by Pkod_Kod";
                 RHMesaj.MyMessageError(MyClass,"","",ex);
             }
 
+        }
+
+        private void Kasa_Islem_Shown(object sender, EventArgs e)
+        {
         }
     }
 }

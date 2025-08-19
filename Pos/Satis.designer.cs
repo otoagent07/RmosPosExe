@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -101,6 +101,7 @@
             this.txtKisiyeSatisSayac = new DevExpress.XtraEditors.TextEdit();
             this.btnKisiyeSatisYap = new DevExpress.XtraEditors.SimpleButton();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btn_Not_Gonder = new DevExpress.XtraEditors.SimpleButton();
             this.btnServisTutarDuzelt = new DevExpress.XtraEditors.SimpleButton();
             this.btnJokerAciklama = new DevExpress.XtraEditors.SimpleButton();
             this.btnTopluSil = new DevExpress.XtraEditors.SimpleButton();
@@ -166,7 +167,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_Not_Gonder = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -955,6 +955,17 @@
             resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
             // 
+            // btn_Not_Gonder
+            // 
+            this.btn_Not_Gonder.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Not_Gonder.Appearance.Font")));
+            this.btn_Not_Gonder.Appearance.Options.UseFont = true;
+            this.btn_Not_Gonder.Appearance.Options.UseTextOptions = true;
+            this.btn_Not_Gonder.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btn_Not_Gonder.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Not_Gonder.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_Not_Gonder, "btn_Not_Gonder");
+            this.btn_Not_Gonder.Name = "btn_Not_Gonder";
+            this.btn_Not_Gonder.Click += new System.EventHandler(this.btn_Not_Gonder_Click);
+            // 
             // btnServisTutarDuzelt
             // 
             this.btnServisTutarDuzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnServisTutarDuzelt.Appearance.Font")));
@@ -1341,18 +1352,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn6;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn6;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -1450,7 +1461,9 @@
             // 
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
+            this.btn_Cikis.Appearance.ForeColor = System.Drawing.Color.Red;
             this.btn_Cikis.Appearance.Options.UseFont = true;
+            this.btn_Cikis.Appearance.Options.UseForeColor = true;
             this.btn_Cikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cikis.ImageOptions.Image")));
             this.btn_Cikis.Name = "btn_Cikis";
             this.btn_Cikis.Click += new System.EventHandler(this.btn_Cikis_Click);
@@ -1656,17 +1669,6 @@
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // btn_Not_Gonder
-            // 
-            this.btn_Not_Gonder.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Not_Gonder.Appearance.Font")));
-            this.btn_Not_Gonder.Appearance.Options.UseFont = true;
-            this.btn_Not_Gonder.Appearance.Options.UseTextOptions = true;
-            this.btn_Not_Gonder.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.btn_Not_Gonder.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Not_Gonder.ImageOptions.SvgImage")));
-            resources.ApplyResources(this.btn_Not_Gonder, "btn_Not_Gonder");
-            this.btn_Not_Gonder.Name = "btn_Not_Gonder";
-            this.btn_Not_Gonder.Click += new System.EventHandler(this.btn_Not_Gonder_Click);
             // 
             // Satis
             // 
