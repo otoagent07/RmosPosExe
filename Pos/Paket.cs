@@ -1462,6 +1462,16 @@ order by Caller_Id desc";
 
         private void btnKuryeOzet_Click(object sender, EventArgs e)
         {
+            // 21.08.2025 basic kod ile test edebilirsin
+            /*
+             select isnull((u.P_Ad+' '+u.P_Soyad),'ATANMAMIŞ') as adsoyad ,count(distinct s.Rsat_Fisno) as adet,sum(s.Rsat_Tutar) as tutar from Cst_Recete_Satis s
+left join Rmosmuh.dbo.Pos_User u on P_Kod = Rsat_Paketci
+where 
+Rsat_Ba='B' and 
+s.Rsat_Tarih between '2025-08-20' and '2025-08-20'
+group by (u.P_Ad+' '+u.P_Soyad)
+             */
+
 
             string date = dateEdit1.DateTime.ToString("yyyy-MM-dd");
 
@@ -1476,7 +1486,7 @@ isnull(max(P_Ad + ' ' + P_Soyad),'ATANMAMIŞ') as 'adsoyad',
 count(distinct Satis.Rsat_Fisno) as 'adet',
 SUM(Satis.Rsat_Tutar) as 'tutar'
 from Cst_Recete_Satis as Satis
-left join Pos_Masa on Rsat_Masa = Masa_No 
+--left join Pos_Masa on Rsat_Masa = Masa_No  -- çiftlediği için 21.08.2025 de yorum yaptık
 left join Pos_Cari on Rsat_Cari = Cari_Kod
 left join Rmosmuh.dbo.Pos_User on P_Kod = Rsat_Paketci
 left join Cst_Recete_Satis  as Indirim on Satis.Rsat_Fisno = Indirim.Rsat_Fisno and Indirim.Rsat_Ba = 'A' and Indirim.Rsat_Kapatma = @Indkapatma
@@ -1487,7 +1497,7 @@ left join Stok_Kodlar AS Departman WITH(NOLOCK) ON Satis.Rsat_Departman = Depart
 where (CONVERT(date,Satis.Rsat_Tarih) >= CONVERT(DATE,@Tarih1) OR @Tarih1 IS NULL)
 AND (CONVERT(DATE,Satis.Rsat_Tarih) <= CONVERT(DATE,@Tarih2) or @Tarih2 is null) 
 AND ((Satis.Rsat_Durum  = 'A' AND 0 = 1) OR (Satis.Rsat_Durum  = 'K' AND 1 = 1))
-AND Masa_Konum = 'P' 
+--AND Masa_Konum = 'P' 
 and satis.Rsat_Ba = 'B'
 group by (P_Ad + ' ' + P_Soyad)
 order by count(distinct Satis.Rsat_Fisno) desc";

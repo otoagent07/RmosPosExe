@@ -117,7 +117,7 @@ IF COL_LENGTH('Pos_FolioParam', 'HizmetReceteKodCocuk') IS NULL BEGIN ALTER TABL
 
 IF COL_LENGTH('Pos_FolioParam', 'GelirReceteKod') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD GelirReceteKod nvarchar(2000) END;
 
-ALTER TABLE RmosMuh..Pos_User ALTER COLUMN P_Bindirim_Yuzde DECIMAL(18,2);
+ALTER TABLE RmosMuh..Pos_User ALTER COLUMN P_Bindirim_Yuzde int;
 
 
 IF COL_LENGTH('Pos_Cari', 'Cari_indirimOran') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_indirimOran decimal(18, 2) END;

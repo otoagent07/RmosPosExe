@@ -3242,7 +3242,7 @@ namespace Pos
                         + " ISNULL(K_Kasa,0) as K_Kasa,ISNULL(Pos_OdaKontrol,0) as Pos_OdaKontrol, "
                         + " ISNULL(And_Satis,0) as And_Satis,ISNULL(And_Satirsil,0) as And_Satirsil,ISNULL(And_Miktarduzelt,0) as And_Miktarduzelt,ISNULL(And_Tutarduzelt,0) as And_Tutarduzelt, "
                         + " ISNULL(And_Hesap,0) as And_Hesap,ISNULL(And_Ozelmasa,0) as And_Ozelmasa,ISNULL(And_MasaTr,0) as And_MasaTr,ISNULL(And_Giris,0) as And_Giris, "
-                        + " P_Posta,ISNULL(P_Indirim_Yuzde,100) as P_Indirim_Yuzde,ISNULL(P_Bindirim_Yuzde,100.0) as P_Bindirim_Yuzde,P_Sabit_Masa,ISNULL(M_MasaAc,0) as M_MasaAc,ISNULL(M_BaskaMasa,0) as M_BaskaMasa, "
+                        + " P_Posta,ISNULL(P_Indirim_Yuzde,100) as P_Indirim_Yuzde,ISNULL(P_Bindirim_Yuzde,100) as P_Bindirim_Yuzde,P_Sabit_Masa,ISNULL(M_MasaAc,0) as M_MasaAc,ISNULL(M_BaskaMasa,0) as M_BaskaMasa, "
                         + " ISNULL(G_Satirsil_Y,0) as G_Satirsil_Y,ISNULL(M_GarsonDegistir,0) as M_GarsonDegistir,ISNULL(G_Zayi,0) as G_Zayi,ISNULL(G_Ikram,0) as G_Ikram, ISNULL(M_KisiSayisi,0) as M_KisiSayisi, "
                         + " ISNULL(R_MasaGeri,0) as R_MasaGeri,ISNULL(M_SiparisTekrar,0) as M_SiparisTekrar,ISNULL(Pda_HesapDok,0) as Pda_HesapDok,ISNULL(H_HizliSatis,0) as H_HizliSatis,ISNULL(R_TopluIsle,0) as R_TopluIsle, "
                         + " ISNULL(And_HesapDokum,0) as And_HesapDokum,ISNULL(And_HesapOdeme,0) as And_HesapOdeme,ISNULL(And_MalzTransfer,0) as And_MalzTransfer, "
@@ -6653,7 +6653,7 @@ Select InstanceNames from @GetInstances ";
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
-            Font fnt = (Font)converter.ConvertFromString(txt_Cari_Font.Text);
+            Font fnt = (Font)converter.ConvertFromString(txtMTakipFont.Text);
             fontDialog1.Font = fnt;
 
             if (fontDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
