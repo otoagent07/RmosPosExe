@@ -640,32 +640,7 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Log)
                 {
-                    SqlConnection con = dbtools.conn;
-                    if (con.State == ConnectionState.Closed) con.Open();
-                    SqlCommand com = new SqlCommand();
-                    com.Connection = con;
-                    com.CommandType = CommandType.StoredProcedure;
-                    com.CommandTimeout = 0;
-                    com.CommandText = "Pos_Satis_Rapor";
-                    com.Parameters.AddWithValue("@Rapor_Tipi", 8);
-                    com.Parameters.AddWithValue("@Tarih1", dateTarih1.DateTime.Date);
-                    com.Parameters.AddWithValue("@Tarih2", dateTarih2.DateTime.Date);
-                    com.Parameters.AddWithValue("@Kullanici", User.P_Kod);
-                    if (User.Pos_IWERep == true) com.Parameters.AddWithValue("@IWERep", 1);
-                    SqlDataAdapter da = new SqlDataAdapter(com);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    con.Close();
-                    gridControl9.DataSource = dt;
-                    string fileName = getLogDizaynPath();
-                    if (File.Exists(fileName))
-                    {
-                        gridView9.RestoreLayoutFromXml(fileName);
-                    }
-                    else
-                    {
-                        gridView9.BestFitColumns();
-                    }
+                    lograpor();
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Alacak)
                 {
@@ -801,6 +776,36 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                 RHMesaj.MyMessageError(MyClass, "gridyenile", "", ex);
             }
             loadingKapat();
+        }
+
+        public void lograpor()
+        {
+            SqlConnection con = dbtools.conn;
+            if (con.State == ConnectionState.Closed) con.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandTimeout = 0;
+            com.CommandText = "Pos_Satis_Rapor";
+            com.Parameters.AddWithValue("@Rapor_Tipi", 8);
+            com.Parameters.AddWithValue("@Tarih1", dateTarih1.DateTime.Date);
+            com.Parameters.AddWithValue("@Tarih2", dateTarih2.DateTime.Date);
+            com.Parameters.AddWithValue("@Kullanici", User.P_Kod);
+            if (User.Pos_IWERep == true) com.Parameters.AddWithValue("@IWERep", 1);
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            gridControl9.DataSource = dt;
+            string fileName = getLogDizaynPath();
+            if (File.Exists(fileName))
+            {
+                gridView9.RestoreLayoutFromXml(fileName);
+            }
+            else
+            {
+                gridView9.BestFitColumns();
+            }
         }
         public void reskullanimListele()
         {
@@ -1602,6 +1607,10 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
         }
         private void btnLogSatirSilRapor_Click(object sender, EventArgs e)
         {
+            gridControl9.DataSource = null;
+            gridView9.Columns.Clear();
+
+
             SqlConnection con = dbtools.conn;
             if (con.State == ConnectionState.Closed) con.Open();
             SqlCommand com = new SqlCommand();
@@ -2003,6 +2012,88 @@ GROUP BY Kodlar_Ad  ORDER BY Kodlar_Ad desc";
                     e.Appearance.ForeColor = Color.White;
                 }
             }
+        }
+
+        private void btnYazdirilmisIpt_Click(object sender, EventArgs e)
+        {
+            string q1 = $@"select * 
+                          from Pos_log WITH (NOLOCK) 
+                           where Log_Islem='Sil' 
+                            and Log_Bolum='Satir_Sil' 
+                            and  Log_Yazdirilmis='E' 
+                            and Log_Aciklama LIKE '%yazdırılmış%'
+                            and Log_Pos_Tarih between '{dateTarih1.DateTime.ToString("yyyy-MM-dd")}' and '{dateTarih2.DateTime.ToString("yyyy-MM-dd")}'
+                          order by Log_Pos_Tarih desc ";
+            DataTable data = dbtools.SelectTableR(q1);
+
+            gridControl9.DataSource = null;
+            gridView9.Columns.Clear();
+
+            gridControl9.DataSource = data;
+        }
+
+        private void btnTutarDuzeltmis_Click(object sender, EventArgs e)
+        {
+            string q1 = $@"select * 
+from Pos_log WITH (NOLOCK) 
+where Log_Islem='Duzelt' 
+  and Log_Bolum='Tutar_Duzelt' 
+                            and Log_Pos_Tarih between '{dateTarih1.DateTime.ToString("yyyy-MM-dd")}' and '{dateTarih2.DateTime.ToString("yyyy-MM-dd")}'
+                          order by Log_Pos_Tarih desc ";
+            DataTable data = dbtools.SelectTableR(q1);
+
+            gridControl9.DataSource = null;
+            gridView9.Columns.Clear();
+
+            gridControl9.DataSource = data;
+        }
+
+        private void btnMasaTransf_Click(object sender, EventArgs e)
+        {
+            string q1 = $@"select * 
+from Pos_log WITH (NOLOCK) 
+where Log_Islem='Duzelt' 
+  and Log_Bolum='Masa_Transfer' 
+                            and Log_Pos_Tarih between '{dateTarih1.DateTime.ToString("yyyy-MM-dd")}' and '{dateTarih2.DateTime.ToString("yyyy-MM-dd")}'
+                          order by Log_Pos_Tarih desc ";
+            DataTable data = dbtools.SelectTableR(q1);
+
+            gridControl9.DataSource = null;
+            gridView9.Columns.Clear();
+
+            gridControl9.DataSource = data;
+        }
+
+        private void btnUrunTransf_Click(object sender, EventArgs e)
+        {
+            string q1 = $@"select * 
+from Pos_log WITH (NOLOCK) 
+where Log_Islem='Duzelt' 
+  and Log_Bolum='Malz_Transfer' 
+                            and Log_Pos_Tarih between '{dateTarih1.DateTime.ToString("yyyy-MM-dd")}' and '{dateTarih2.DateTime.ToString("yyyy-MM-dd")}'
+                          order by Log_Pos_Tarih desc ";
+            DataTable data = dbtools.SelectTableR(q1);
+
+            gridControl9.DataSource = null;
+            gridView9.Columns.Clear();
+
+            gridControl9.DataSource = data;
+        }
+
+        private void btnIndirimMasa_Click(object sender, EventArgs e)
+        {
+            string q1 = $@"select * 
+from Pos_log WITH (NOLOCK) 
+where Log_Islem='Kaydet' 
+  and Log_Bolum='Indirim_Uygula' 
+                            and Log_Pos_Tarih between '{dateTarih1.DateTime.ToString("yyyy-MM-dd")}' and '{dateTarih2.DateTime.ToString("yyyy-MM-dd")}'
+                          order by Log_Pos_Tarih desc ";
+            DataTable data = dbtools.SelectTableR(q1);
+
+            gridControl9.DataSource = null;
+            gridView9.Columns.Clear();
+
+            gridControl9.DataSource = data;
         }
     }
 }

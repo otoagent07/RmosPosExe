@@ -143,6 +143,7 @@
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Siparis = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Yapma = new DevExpress.XtraEditors.CheckButton();
@@ -981,6 +982,7 @@
             this.btnJokerAciklama.Appearance.Options.UseFont = true;
             this.btnJokerAciklama.Appearance.Options.UseTextOptions = true;
             this.btnJokerAciklama.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btnJokerAciklama.ImageOptions.Image = global::Pos.Properties.Resources.printerCancel;
             resources.ApplyResources(this.btnJokerAciklama, "btnJokerAciklama");
             this.btnJokerAciklama.Name = "btnJokerAciklama";
             this.btnJokerAciklama.Click += new System.EventHandler(this.simpleButton4_Click_1);
@@ -1351,7 +1353,8 @@
             this.gridColumn9,
             this.gridColumn10,
             this.gridColumn11,
-            this.gridColumn12});
+            this.gridColumn12,
+            this.gridColumn13});
             gridFormatRule2.ApplyToRow = true;
             gridFormatRule2.Column = this.gridColumn6;
             gridFormatRule2.ColumnApplyTo = this.gridColumn6;
@@ -1373,7 +1376,9 @@
             this.gridView1.OptionsView.ShowIndicator = false;
             this.gridView1.RowHeight = 40;
             this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
+            this.gridView1.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.gridView1_CustomDrawCell);
             this.gridView1.CustomDrawFooterCell += new DevExpress.XtraGrid.Views.Grid.FooterCellCustomDrawEventHandler(this.gridView1_CustomDrawFooterCell);
+            this.gridView1.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView1_RowCellStyle);
             // 
             // gridColumn1
             // 
@@ -1456,6 +1461,12 @@
             this.gridColumn12.MinWidth = 24;
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn13
+            // 
+            resources.ApplyResources(this.gridColumn13, "gridColumn13");
+            this.gridColumn13.FieldName = "Rsat_SiparisPr";
+            this.gridColumn13.Name = "gridColumn13";
             // 
             // btn_Cikis
             // 
@@ -1897,5 +1908,6 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
         private DevExpress.XtraEditors.SimpleButton btn_Not_Gonder;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
     }
 }

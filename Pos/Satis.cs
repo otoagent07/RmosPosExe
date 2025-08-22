@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraReports.UI;
 using Pos.Class;
 using Pos.Controllers;
@@ -5040,6 +5041,54 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 not.ShowDialog();
             }
         }
+
+        private void gridView1_RowCellStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowCellStyleEventArgs e)
+        {
+            return;
+
+            if (e.RowHandle < 0) return;
+
+            GridView view = sender as GridView;
+
+            // DataTable'dan ilgili değeri al
+            object val = view.GetRowCellValue(e.RowHandle, "Rsat_SiparisPr");
+            if (val == null || val == DBNull.Value) return;
+
+            bool siparisPr = Convert.ToBoolean(val);
+
+            // Tüm satır renklensin istiyorsan sadece RowHandle kontrolü yeterli
+            if (!siparisPr) // false ise
+            {
+                e.Appearance.BackColor = Color.DarkGreen;
+                e.Appearance.ForeColor = Color.White;
+            }
+        }
+
+        private void gridView1_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
+        {
+            if (e.RowHandle < 0) return;
+
+            GridView view = sender as GridView;
+            object val = view.GetRowCellValue(e.RowHandle, "Rsat_SiparisPr");
+            if (val == null || val == DBNull.Value) return;
+
+            bool siparisPr = Convert.ToBoolean(val);
+
+            if (e.Column.FieldName == "Rsat_Emiktar") // örnek: Masa kolonunun başına ikon koyalım
+            {
+                e.DefaultDraw();
+
+                Image img = siparisPr
+                    ? Properties.Resources.print_ok   // ✅ True
+                    : Properties.Resources.printerCancel; // ❌ False
+
+                int x = e.Bounds.Right - img.Width - 10;
+                int y = e.Bounds.Y + (e.Bounds.Height - img.Height) / 2;
+
+                e.Cache.DrawImage(img, new Rectangle(x, y, img.Width, img.Height));
+            }
+        }
+
         /*
 string adsoyad = hesap.gridViewKisiyeSatis.GetFocusedRowCellValue("Ad Soyad").ToString();
 

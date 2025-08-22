@@ -2233,6 +2233,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\printerCancel.png" />
+    <None Include="Resources\print_ok.png" />
     <None Include="Resources\kasa.png" />
     <None Include="Resources\sepet25.png" />
     <None Include="Resources\online.png" />

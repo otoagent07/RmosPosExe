@@ -378,6 +378,7 @@
             this.btnLogGridDizaynSil = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView9 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnYazdirilmisIpt = new DevExpress.XtraEditors.SimpleButton();
             this.btnLogSatirSilRapor = new DevExpress.XtraEditors.SimpleButton();
             this.tab_Uye = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl12 = new DevExpress.XtraGrid.GridControl();
@@ -426,6 +427,10 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.btnTutarDuzeltmis = new DevExpress.XtraEditors.SimpleButton();
+            this.btnMasaTransf = new DevExpress.XtraEditors.SimpleButton();
+            this.btnUrunTransf = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIndirimMasa = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -4110,9 +4115,21 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnIndirimMasa);
+            this.panelControl1.Controls.Add(this.btnUrunTransf);
+            this.panelControl1.Controls.Add(this.btnMasaTransf);
+            this.panelControl1.Controls.Add(this.btnTutarDuzeltmis);
+            this.panelControl1.Controls.Add(this.btnYazdirilmisIpt);
             this.panelControl1.Controls.Add(this.btnLogSatirSilRapor);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
+            // 
+            // btnYazdirilmisIpt
+            // 
+            this.btnYazdirilmisIpt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            resources.ApplyResources(this.btnYazdirilmisIpt, "btnYazdirilmisIpt");
+            this.btnYazdirilmisIpt.Name = "btnYazdirilmisIpt";
+            this.btnYazdirilmisIpt.Click += new System.EventHandler(this.btnYazdirilmisIpt_Click);
             // 
             // btnLogSatirSilRapor
             // 
@@ -4633,6 +4650,34 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
+            // btnTutarDuzeltmis
+            // 
+            this.btnTutarDuzeltmis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            resources.ApplyResources(this.btnTutarDuzeltmis, "btnTutarDuzeltmis");
+            this.btnTutarDuzeltmis.Name = "btnTutarDuzeltmis";
+            this.btnTutarDuzeltmis.Click += new System.EventHandler(this.btnTutarDuzeltmis_Click);
+            // 
+            // btnMasaTransf
+            // 
+            this.btnMasaTransf.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            resources.ApplyResources(this.btnMasaTransf, "btnMasaTransf");
+            this.btnMasaTransf.Name = "btnMasaTransf";
+            this.btnMasaTransf.Click += new System.EventHandler(this.btnMasaTransf_Click);
+            // 
+            // btnUrunTransf
+            // 
+            this.btnUrunTransf.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            resources.ApplyResources(this.btnUrunTransf, "btnUrunTransf");
+            this.btnUrunTransf.Name = "btnUrunTransf";
+            this.btnUrunTransf.Click += new System.EventHandler(this.btnUrunTransf_Click);
+            // 
+            // btnIndirimMasa
+            // 
+            this.btnIndirimMasa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            resources.ApplyResources(this.btnIndirimMasa, "btnIndirimMasa");
+            this.btnIndirimMasa.Name = "btnIndirimMasa";
+            this.btnIndirimMasa.Click += new System.EventHandler(this.btnIndirimMasa_Click);
+            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -5145,5 +5190,10 @@
         private DevExpress.XtraEditors.TextEdit labelSubeCon;
         private DevExpress.XtraEditors.LookUpEdit lookUpEditSubeCon;
         private DevExpress.XtraEditors.RadioGroup radioGroupMerkezSube;
+        private DevExpress.XtraEditors.SimpleButton btnYazdirilmisIpt;
+        private DevExpress.XtraEditors.SimpleButton btnTutarDuzeltmis;
+        private DevExpress.XtraEditors.SimpleButton btnMasaTransf;
+        private DevExpress.XtraEditors.SimpleButton btnIndirimMasa;
+        private DevExpress.XtraEditors.SimpleButton btnUrunTransf;
     }
 }
