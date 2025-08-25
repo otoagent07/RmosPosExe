@@ -73,12 +73,83 @@ namespace Pos
 
 
             textDegis();
+
+            sagtik();
         }
 
-
-        public  void textDegis()
+        public void sagtik()
         {
-            this.Text = "Masa Takip        " + $"    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}" + "   " + "Kullanici :" + $"    {User.P_Kod}";
+            ContextMenuStrip cms = new ContextMenuStrip();
+            cms.Font = new Font("Tahoma", 12, FontStyle.Bold);
+
+
+            if (User.K_Kasa)
+            {
+                cms.Items.Add("KASA İŞLEMLERİ", Properties.Resources.kasa, kasaIslemleri_Click);
+            }
+
+            if (User.A_Cari)
+            {
+                cms.Items.Add("CARİ İŞLEMLERİ ", Properties.Resources.no_tax, cariIslemleri_Click);
+            }
+
+
+            if (User.R_Raporlar)
+            {
+                cms.Items.Add("GENEL İSTATİSTİK RAPORU ", Properties.Resources.no_tax, genelIstatistik_click);
+            }
+
+
+            if (User.P_Gunsonu)
+            {
+                cms.Items.Add("GÜN SONU ", Properties.Resources.online, gunsonuIslemleri_Click);
+            }
+            if (User.P_Kod.ToLower() == "rmos")
+            {
+                cms.Items.Add("PARAMETRE", Properties.Resources.online, ayarlar_click);
+            }
+
+            cms.Items.Add("UZAK BAĞLANTI", Properties.Resources.online, uzak_click);
+
+            flp_Masa.ContextMenuStrip = cms;
+        }
+        private void kasaIslemleri_Click(object sender, EventArgs e)
+        {
+            Kasa_Islem kasa = new Kasa_Islem();
+            kasa.ShowDialog();
+        }
+        private void cariIslemleri_Click(object sender, EventArgs e)
+        {
+            CariHesap c = new CariHesap();
+            c.ShowDialog();
+        }
+        private void gunsonuIslemleri_Click(object sender, EventArgs e)
+        {
+            Gun_Sonu gun = new Gun_Sonu();
+            gun.ShowDialog();
+        }
+        private void ayarlar_click(object sender, EventArgs e)
+        {
+            var genelAyarlar = new Ayarlar();
+            genelAyarlar.ShowDialog();
+            dbtools.coneskiyedon();
+        }
+
+        private void uzak_click(object sender, EventArgs e)
+        {
+            Uzak uzak = new Uzak();
+            uzak.Show();
+        }
+
+        private void genelIstatistik_click(object sender, EventArgs e)
+        {
+            Raporlar2 r = new Raporlar2();
+            r.ShowDialog();
+        }
+
+        public void textDegis()
+        {
+            this.Text = "Masa Takip        " + $"    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}" + "   " + "Kullanici :" + $"{User.P_Ad} {User.P_Soyad}";
         }
 
 
@@ -86,7 +157,7 @@ namespace Pos
         {
             try
             {
-                if (flp_Kapatma!=null && flp_Kapatma.Controls.Count>0)
+                if (flp_Kapatma != null && flp_Kapatma.Controls.Count > 0)
                 {
                     flp_Kapatma.Controls.Clear();
                 }
@@ -144,7 +215,7 @@ namespace Pos
 
 
                 btnParcaliOdemeEski.Visible = Param.Param_ParcaliMasaAktif;
-                btnParcaliOdeme.Visibility = Param.Param_ParcaliMasaAktif?DevExpress.XtraBars.BarItemVisibility.Always:DevExpress.XtraBars.BarItemVisibility.Never;
+                btnParcaliOdeme.Visibility = Param.Param_ParcaliMasaAktif ? DevExpress.XtraBars.BarItemVisibility.Always : DevExpress.XtraBars.BarItemVisibility.Never;
 
 
                 gridView2.CustomColumnDisplayText += (s, e) =>
@@ -472,11 +543,11 @@ namespace Pos
         public void masaDurumUpdate()
         {
 
-//            string sorgu = @"update Pos_Masa set Masa_Durum='1' where Masa_Id in(
-//select masa.Masa_Id from Pos_Masa masa
-//left join Cst_Recete_Satis satis on masa.Masa_No=satis.Rsat_Masa and masa.Masa_Depart=satis.Rsat_Departman
-//where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
-//)";
+            //            string sorgu = @"update Pos_Masa set Masa_Durum='1' where Masa_Id in(
+            //select masa.Masa_Id from Pos_Masa masa
+            //left join Cst_Recete_Satis satis on masa.Masa_No=satis.Rsat_Masa and masa.Masa_Depart=satis.Rsat_Departman
+            //where Rsat_Durum='A' and masa.Masa_Durum<>'2' group by masa.Masa_Id
+            //)";
             // 11.08.2025 de değişti
             string sorgu = $@"UPDATE Pos_Masa WITH (ROWLOCK, UPDLOCK)
 SET Masa_Durum='1'
@@ -635,7 +706,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                             + " COUNT(Rez_Id) as RezSayisi, "
-                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi , "+ sure + ""
+                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi , " + sure + ""
                             + " from Pos_Masa WITH(NOLOCK) "
                             + " left join Cst_Recete_Satis as satis3 WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                             //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -657,7 +728,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
                                  + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                                  + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                                  + " COUNT(Rez_Id) as RezSayisi, "
-                                 + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,"+sure+" "
+                                 + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi," + sure + " "
                                  + " from Pos_Masa WITH(NOLOCK) "
                                  + " left join Cst_Recete_Satis as satis3 WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                                  //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -804,7 +875,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
 
                     string TL = "";
                     //if (Param.Param_Masa_Garson == false) // 05.05.2025 de düzeltildi
-                    if (1==1)
+                    if (1 == 1)
                     {
                         if (Param.Calisma_Sekli == 1)
                         {
@@ -1014,7 +1085,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                             + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                             + " COUNT(Rez_Id) as RezSayisi, "
-                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,"+sure+" "
+                            + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi," + sure + " "
                             + " from Pos_Masa WITH(NOLOCK) "
                             + " left join Cst_Recete_Satis as satis3 WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                             //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -1036,7 +1107,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
                                  + " case when Masa_Durum <> 0 then MIN(ISNULL(Kasiyer.P_Ad,'')) + ' ' +  MIN(ISNULL(Kasiyer.P_Soyad,'')) else '' end as Garson, "
                                  + " case when Masa_Durum <> 0 then MIN(ISNULL(Garson.P_Ad,'')) + ' ' +  MIN(ISNULL(Garson.P_Soyad,'')) else '' end as Garson2, "
                                  + " COUNT(Rez_Id) as RezSayisi, "
-                                 + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi,"+sure+" "
+                                 + " ISNULL(Pkod_Bosrenk,'#00FF00') as Pkod_Bosrenk,ISNULL(Pkod_Dolurenk,'#FF4500') as Pkod_Dolurenk,ISNULL(Pkod_Hesaprenk,'#BA55D3') as Pkod_Hesaprenk, (Max(Pos_Rez.Rez_Adi) + ' ' +  Max(Pos_Rez.Rez_Soyadi)) as RezMasaAdi," + sure + " "
                                  + " from Pos_Masa WITH(NOLOCK) "
                                  + " left join Cst_Recete_Satis as satis3 WITH(NOLOCK) on Masa_No = Rsat_Masa and Rsat_Durum = 'A'  and Rsat_Departman = Masa_Depart  "
                                  //+ "     left join Rmosmuh.dbo.Pos_User as Kasiyer on Rsat_Garson = Kasiyer.P_Kod "
@@ -1426,7 +1497,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
         }
 
 
-      
+
         private void btnMasa_DoubleClick(Object sender, EventArgs e)
         {
             satisGit();
@@ -1657,7 +1728,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
 
 
-            
+
 
             gridControl2.DataSource = dtCloned;
             //gridView2.BestFitColumns();
@@ -1846,13 +1917,13 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         private void HesapBak(string fisno)
         {
 
-           
+
 
             string query = $"exec Ingenico_Islem @Fisno={fisno}";
 
             string ingenicoislemdemi = dbtools.DegerGetir(query);
 
-            if (ingenicoislemdemi!="0")
+            if (ingenicoislemdemi != "0")
             {
                 MessageBox.Show("Fiş Yazarkasa da işlem görüyor...");
                 return;
@@ -1863,7 +1934,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 return;
             }
 
-            if (Param.hesapFisQrFisno==false) //21.02.2025 tarihinde hızlı satışta masa no olmadığı için qr okutma için eklendi (gökhan)
+            if (Param.hesapFisQrFisno == false) //21.02.2025 tarihinde hızlı satışta masa no olmadığı için qr okutma için eklendi (gökhan)
             {
                 if (Masa_No == String.Empty || gridView2.RowCount == 0)
                 {
@@ -2362,7 +2433,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         private void btn_Yenile_Click(object sender, EventArgs e)
         {
             MasaYenile(0);
-          
+
         }
 
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -2708,7 +2779,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
 
-               
+
 
             }
             catch (Exception ex)
@@ -3013,7 +3084,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
                 gridyenile(fisno);
-                HesapBak(fisno+"");
+                HesapBak(fisno + "");
                 Main.a.Listele(0);
 
                 fisnotemizle();
@@ -3022,7 +3093,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void btnFisnoTemizle_Click(object sender, EventArgs e)
