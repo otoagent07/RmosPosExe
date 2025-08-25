@@ -4963,7 +4963,19 @@ where  Rsat_Id='" + Rsat_Id + "'";
         {
             try
             {
-                return;
+                //return;
+
+                Klavye2 klavye = new Klavye2();
+
+                klavye.txt_Yazi.Text = txt_Not.Text;
+                klavye.ShowDialog();
+
+                if (klavye.cikis == true)
+                {
+                    txt_Not.Text = klavye.yazi;
+                }
+
+                    return;
                 bool bWow64 = false;
                 IsWow64Process(Process.GetCurrentProcess().Handle, out bWow64);
                 if (bWow64)
