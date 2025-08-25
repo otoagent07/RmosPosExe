@@ -304,7 +304,7 @@
             resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 136;
+            this.splitContainerControl2.SplitterPosition = 139;
             // 
             // alt_btnUp
             // 
@@ -1548,6 +1548,8 @@
             // 
             this.btnBakiye.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnBakiye.Appearance.Font")));
             this.btnBakiye.Appearance.Options.UseFont = true;
+            this.btnBakiye.Appearance.Options.UseTextOptions = true;
+            this.btnBakiye.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Bottom;
             resources.ApplyResources(this.btnBakiye, "btnBakiye");
             this.btnBakiye.Name = "btnBakiye";
             // 
@@ -1615,7 +1617,7 @@
             this.layoutControlItem1.MinSize = new System.Drawing.Size(241, 66);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(842, 69);
+            this.layoutControlItem1.Size = new System.Drawing.Size(842, 66);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1624,11 +1626,11 @@
             // 
             this.layoutControlItem2.Control = this.groupControl2;
             resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 69);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 66);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(842, 198);
+            this.layoutControlItem2.Size = new System.Drawing.Size(842, 201);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
