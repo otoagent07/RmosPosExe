@@ -94,21 +94,21 @@ namespace Pos
             }
 
 
-            if (User.R_Raporlar)
-            {
-                cms.Items.Add("GENEL İSTATİSTİK RAPORU ", Properties.Resources.no_tax, genelIstatistik_click);
-            }
+            
 
 
             if (User.P_Gunsonu)
             {
                 cms.Items.Add("GÜN SONU ", Properties.Resources.online, gunsonuIslemleri_Click);
             }
-            if (User.P_Kod.ToLower() == "rmos")
+            if (User.P_Kod.ToLower() == "rmos" || User.P_Kod.ToLower() == "999")
             {
                 cms.Items.Add("PARAMETRE", Properties.Resources.online, ayarlar_click);
             }
-
+            if (User.Pos_ReceteTanimlama)
+            {
+                cms.Items.Add("ÜRÜN TANIMLAMA", Properties.Resources.online, Uruntanimlama_click);
+            }
             cms.Items.Add("UZAK BAĞLANTI", Properties.Resources.online, uzak_click);
 
             flp_Masa.ContextMenuStrip = cms;
@@ -141,15 +141,43 @@ namespace Pos
             uzak.Show();
         }
 
-        private void genelIstatistik_click(object sender, EventArgs e)
+       
+
+        private void Uruntanimlama_click(object sender, EventArgs e)
         {
-            Raporlar2 r = new Raporlar2();
-            r.ShowDialog();
+            receteAcYeni();
+        }
+
+
+        public void receteAcYeni()
+        {
+            try
+            {
+                Rmosback.dbtools.conn = dbtools.conn;
+                Rmosback.Classes.Constants.cnnBack = dbtools.conn.ConnectionString;
+                Rmosback.Classes.Constants.cnnRmosMuh = Rmosmuh.conn.ConnectionString;
+
+                Rmosback.dbtools.Kullanici_Kodu = User.U_BackUser;
+                Rmosback.Classes.Constants.KullaniciKod = User.U_BackUser;
+
+                Rmosback.Classes.Constants.MuhSirketDb = dbtools.database;
+
+                Rmosback.Service.RmosMuh.SirketService sirketService = new Rmosback.Service.RmosMuh.SirketService();
+                Rmosback.Classes.Constants.MuhSirketKod = sirketService.GetAll().Where(x => x.Sirket_Database.ToUpper() == dbtools.database.ToUpper()).FirstOrDefault().Sirket_Kod;
+
+
+                Rmosback.Cst_Recete rec = new Rmosback.Cst_Recete();
+                rec.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "receteAc", "Kullanıcı Tanımlarından Back Kullanıcısını Seçin !", ex);
+            }
         }
 
         public void textDegis()
         {
-            this.Text = "Masa Takip        " + $"    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}" + "   " + "Kullanici :" + $"{User.P_Ad} {User.P_Soyad}";
+            this.Text = $"Masa Takip   {Main.versiyonno}   - [{dbtools.database}] -    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}" + "   " + "Kullanici :" + $"{User.P_Ad} {User.P_Soyad}";
         }
 
 

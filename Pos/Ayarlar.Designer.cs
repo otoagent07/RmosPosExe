@@ -638,6 +638,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tab_Print_Hesap = new DevExpress.XtraTab.XtraTabPage();
+            this.txtMTakipFont = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.spinEditAbuyerCiktiSayisi = new DevExpress.XtraEditors.SpinEdit();
             this.textEdit197 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Cari_Font = new DevExpress.XtraEditors.TextEdit();
@@ -1312,8 +1314,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.txtMTakipFont = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1747,6 +1747,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit22.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
             this.tab_Print_Hesap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMTakipFont.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEditAbuyerCiktiSayisi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit197.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Cari_Font.Properties)).BeginInit();
@@ -2202,7 +2203,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMTakipFont.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -7386,6 +7386,22 @@
             this.tab_Print_Hesap.Controls.Add(this.textBox2);
             resources.ApplyResources(this.tab_Print_Hesap, "tab_Print_Hesap");
             this.tab_Print_Hesap.Name = "tab_Print_Hesap";
+            // 
+            // txtMTakipFont
+            // 
+            resources.ApplyResources(this.txtMTakipFont, "txtMTakipFont");
+            this.txtMTakipFont.Name = "txtMTakipFont";
+            this.txtMTakipFont.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txtMTakipFont.Properties.ReadOnly = true;
+            this.txtMTakipFont.TabStop = false;
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton3, "simpleButton3");
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // spinEditAbuyerCiktiSayisi
             // 
@@ -13080,22 +13096,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // txtMTakipFont
-            // 
-            resources.ApplyResources(this.txtMTakipFont, "txtMTakipFont");
-            this.txtMTakipFont.Name = "txtMTakipFont";
-            this.txtMTakipFont.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txtMTakipFont.Properties.ReadOnly = true;
-            this.txtMTakipFont.TabStop = false;
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.simpleButton3, "simpleButton3");
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13553,6 +13553,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
             this.tab_Print_Hesap.ResumeLayout(false);
             this.tab_Print_Hesap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMTakipFont.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEditAbuyerCiktiSayisi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit197.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Cari_Font.Properties)).EndInit();
@@ -14025,7 +14026,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMTakipFont.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

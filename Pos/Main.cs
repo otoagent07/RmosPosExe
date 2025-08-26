@@ -295,6 +295,7 @@ namespace Pos
         public static string MyClass = "Main";
         CallerId c = null;
 
+        public static string versiyonno = "v0.5.72";
         public void departmanYukleNew()
         {
             try
@@ -421,7 +422,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] v0.5.72"; // aaaa ss
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] "+versiyonno; // aaaa ss
 
 
 
