@@ -58,6 +58,10 @@ namespace Pos
 
         private void MasaTakip_Load(object sender, EventArgs e)
         {
+     
+
+
+
             if (Sabitler.otomatikGunsonuKontrol() == false)
             {
                 this.Close();
@@ -75,6 +79,9 @@ namespace Pos
             textDegis();
 
             sagtik();
+
+
+            
         }
 
         public void sagtik()
@@ -3137,6 +3144,12 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
             //txt_Filtre.Text = "";
 
+        }
+
+        private void MasaTakip_Shown(object sender, EventArgs e)
+        {
+            //flp_Masa.BackgroundImage = Properties.Resources.rmosultimate;
+            //flp_Masa.BackgroundImageLayout = ImageLayout.Stretch;
         }
     }
 }

@@ -1463,11 +1463,13 @@
             this.Controls.Add(this.barDockControl16);
             this.Controls.Add(this.barDockControl14);
             this.Controls.Add(this.barDockControl13);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "MasaTakip";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MasaTakip_FormClosed);
             this.Load += new System.EventHandler(this.MasaTakip_Load);
+            this.Shown += new System.EventHandler(this.MasaTakip_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MasaTakip_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).EndInit();

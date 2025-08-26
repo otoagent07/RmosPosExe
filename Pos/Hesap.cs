@@ -377,13 +377,19 @@ namespace Pos
                 indKodu_A = ara.Ind_Kodu;
                 indOran_A = ara.Ind_Oran;
                 odemeKodu_A = ara.Odeme_Kodu;
-                lbl_CariAdi.Text = ara.CariAdi;
+                //lbl_CariAdi.Text = ara.CariAdi;
+                txtCariAd.Text = ara.CariAdi; // a2
+
+
+                CariKodu = ara.Cari_Kod;
                 FolioKart_No = ara.Kart_No;
 
 
                 txt_Hesapno.EditValue = odaNo_A;
                 lbl_Bilgi.Text = ara.Bilgi;
 
+
+                bakiyeYaz(CariKodu);
             }
             catch (Exception ex)
             {

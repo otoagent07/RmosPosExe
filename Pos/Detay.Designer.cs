@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Detay));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.spn_Fisno = new DevExpress.XtraEditors.SpinEdit();
@@ -49,6 +49,7 @@
             this.btnAdisyonR = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdisyonG = new DevExpress.XtraEditors.SimpleButton();
             this.txtAcilisGarson = new DevExpress.XtraEditors.TextEdit();
+            this.btn_GarsonDegistir = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spn_Fisno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -124,14 +125,14 @@
             this.gridColumn4,
             this.gridColumn5,
             this.gridColumn6});
-            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Red;
-            styleFormatCondition2.Appearance.Options.UseForeColor = true;
-            styleFormatCondition2.ApplyToRow = true;
-            styleFormatCondition2.Column = this.gridColumn6;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Value1 = "A";
+            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.Options.UseForeColor = true;
+            styleFormatCondition1.ApplyToRow = true;
+            styleFormatCondition1.Column = this.gridColumn6;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition1.Value1 = "A";
             this.gridView1.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition2});
+            styleFormatCondition1});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowFooter = true;
@@ -241,10 +242,22 @@
             this.txtAcilisGarson.Properties.ReadOnly = true;
             this.txtAcilisGarson.TabStop = false;
             // 
+            // btn_GarsonDegistir
+            // 
+            this.btn_GarsonDegistir.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_GarsonDegistir.Appearance.Font")));
+            this.btn_GarsonDegistir.Appearance.Options.UseFont = true;
+            this.btn_GarsonDegistir.Appearance.Options.UseTextOptions = true;
+            this.btn_GarsonDegistir.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btn_GarsonDegistir.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_GarsonDegistir.ImageOptions.SvgImage")));
+            resources.ApplyResources(this.btn_GarsonDegistir, "btn_GarsonDegistir");
+            this.btn_GarsonDegistir.Name = "btn_GarsonDegistir";
+            this.btn_GarsonDegistir.Click += new System.EventHandler(this.btn_GarsonDegistir_Click);
+            // 
             // Detay
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_GarsonDegistir);
             this.Controls.Add(this.txtAcilisGarson);
             this.Controls.Add(this.btnAdisyonG);
             this.Controls.Add(this.btnAdisyonR);
@@ -289,5 +302,6 @@
         private DevExpress.XtraEditors.SimpleButton btnAdisyonR;
         private DevExpress.XtraEditors.SimpleButton btnAdisyonG;
         private DevExpress.XtraEditors.TextEdit txtAcilisGarson;
+        private DevExpress.XtraEditors.SimpleButton btn_GarsonDegistir;
     }
 }

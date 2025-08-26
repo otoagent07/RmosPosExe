@@ -163,7 +163,7 @@ namespace Pos
         private void Kapatma_Yenile()
         {
             flp_Kapatma.Controls.Clear();
-            DataTable dt = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad,isnull(Pkod_OdemeBtnRenk,'') as renk  from Pos_Kodlar with(nolock) where Pkod_Sinif = '11' and Pkod_Ozelkod <> '4' and Pkod_Ozelkod <> '8' order by Pkod_Sira");
+            DataTable dt = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad,isnull(Pkod_OdemeBtnRenk,'') as renk  from Pos_Kodlar with(nolock) where Pkod_OdemeAktif=1 and Pkod_Sinif = '11' and Pkod_Ozelkod <> '4' and Pkod_Ozelkod <> '8' order by Pkod_Sira");
             if (dt.Rows.Count > 0)
             {
                 for (int i = 0; i < dt.Rows.Count; i++)

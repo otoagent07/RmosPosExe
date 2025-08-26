@@ -1125,6 +1125,9 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 {
                     detay.spn_Fisno.EditValue = Convert.ToInt32(gridView11.GetFocusedRowCellValue("Rsat_Fisno"));
                 }
+                detay.masano = gridView11.GetFocusedRowCellValue("Masa_No").ToString();
+
+                
                 detay.ShowDialog();
             }
             else if (xtraTabControl1.SelectedTabPage == tab_Iptalcekraporu)

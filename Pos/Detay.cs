@@ -96,7 +96,7 @@ where Rsat_Fisno='{spn_Fisno.EditValue.ToString()}'";
         {
             this.Close();
         }
-
+        public string masano = "";
         private void btn_Faturapr_Click(object sender, EventArgs e)
         {
             Fis_Islem.Fatura_Kes(Convert.ToInt32(spn_Fisno.EditValue), false, true, "F");
@@ -130,6 +130,14 @@ where Rsat_Fisno='{spn_Fisno.EditValue.ToString()}'";
         {
             dbtools.execcmd("Update Cst_Recete_Satis set  Rsat_AdisyonTR = '0' where Rsat_Fisno = '" + spn_Fisno.Text + "'");
             MessageBox.Show("Güncellendi");
+        }
+
+        private void btn_GarsonDegistir_Click(object sender, EventArgs e)
+        {
+            GarsonDegistir gde = new GarsonDegistir();
+            gde.Masa_No = masano;
+            gde.ShowDialog();
+            this.Close();
         }
     }
 }

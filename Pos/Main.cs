@@ -493,6 +493,7 @@ namespace Pos
                 //    this.Close();
                 //}
 
+         
                 macadresim = dbtools.MacAdresi();
                 this.BringToFront();
                 isLogin = false;
