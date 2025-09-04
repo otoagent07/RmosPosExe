@@ -282,6 +282,9 @@
   <data name="btn_Cari_Kaydet.Text" xml:space="preserve">
     <value>Kaydet</value>
   </data>
+  <data name="btn_Cari_Kaydet.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;btn_Cari_Kaydet.Name" xml:space="preserve">
     <value>btn_Cari_Kaydet</value>
   </data>

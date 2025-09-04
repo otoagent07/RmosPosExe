@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
@@ -300,6 +301,16 @@ namespace Pos
             if (chk_Listele.Checked)
             {
                 gridyenile2();
+            }
+        }
+
+        private void gv_Cari_RowCellStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowCellStyleEventArgs e)
+        {
+            // Cari_Tel
+            if (e.Column.FieldName == "Cari_Tel") // Kolon adı
+            {
+                //e.Appearance.BackColor = Color.Red;
+                e.Appearance.ForeColor = Color.Red;
             }
         }
     }
