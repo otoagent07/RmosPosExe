@@ -80,6 +80,10 @@ namespace Pos
 
         public Satis()
         {
+            if (Param.Param_FullPos == true)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+            }
             InitializeComponent();
         }
 
@@ -89,10 +93,7 @@ namespace Pos
         string kisiyeSatisAktifmi = "0";
         private void Satis_Load(object sender, EventArgs e)
         {
-            if (Param.Param_FullPos == true)
-            {
-                this.FormBorderStyle = FormBorderStyle.None;
-            }
+           
             load();
 
 
