@@ -27,13 +27,17 @@ namespace Pos
     {
         public Raporlar()
         {
+            if (Param.Param_FullPos == true)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+            }
             InitializeComponent();
         }
 
         public bool merkezAktifmi = false;
         private void Raporlar_Load(object sender, EventArgs e)
         {
-
+           
             string q2 = $@"select
                                        Pkod_SubeMac as [SubeMac],
                                         Pkod_Server as [Server],

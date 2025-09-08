@@ -1463,7 +1463,6 @@
             this.Controls.Add(this.barDockControl16);
             this.Controls.Add(this.barDockControl14);
             this.Controls.Add(this.barDockControl13);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "MasaTakip";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

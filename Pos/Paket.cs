@@ -29,12 +29,19 @@ namespace Pos
 
         public Paket()
         {
+            if (Param.Param_FullPos == true)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+            }
             InitializeComponent();
         }
 
         private void Paket_Load(object sender, EventArgs e)
         {
             //Param.Param_Yukle();
+
+           
+
             paketForm = this;
             xtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
 

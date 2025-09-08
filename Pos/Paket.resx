@@ -857,7 +857,7 @@ Tel No</value>
     <value>13</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>763, 550</value>
+    <value>759, 545</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -911,7 +911,7 @@ Tel No</value>
     <value>Cari Kod</value>
   </data>
   <data name="gridControlSon5Call.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 225</value>
+    <value>129, 220</value>
   </data>
   <data name="gridControlSon5Call.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -986,7 +986,7 @@ Tel No</value>
     <value>0, 61</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 550</value>
+    <value>129, 545</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1010,10 +1010,10 @@ Tel No</value>
     <value>Fill</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 53</value>
+    <value>2, 52</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 494</value>
+    <value>122, 491</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1080,10 +1080,10 @@ Tel No</value>
 </value>
   </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 50</value>
+    <value>122, 50</value>
   </data>
   <data name="simpleButton4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1107,10 +1107,10 @@ Tel No</value>
     <value>Right</value>
   </data>
   <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>892, 61</value>
+    <value>888, 61</value>
   </data>
   <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 550</value>
+    <value>126, 545</value>
   </data>
   <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1681,7 +1681,7 @@ Fişi</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 61</value>
+    <value>1014, 61</value>
   </data>
   <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1699,7 +1699,7 @@ Fişi</value>
     <value>3</value>
   </data>
   <data name="tab_Paket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 611</value>
+    <value>1014, 606</value>
   </data>
   <data name="tab_Paket.Text" xml:space="preserve">
     <value>Paket Satış</value>
@@ -1783,7 +1783,7 @@ Fişi</value>
     <value>4</value>
   </data>
   <data name="gridControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 549</value>
+    <value>1014, 544</value>
   </data>
   <data name="gridControl4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1911,7 +1911,7 @@ Fişi</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 62</value>
+    <value>1014, 62</value>
   </data>
   <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1929,7 +1929,7 @@ Fişi</value>
     <value>1</value>
   </data>
   <data name="tab_CallerId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 611</value>
+    <value>1014, 606</value>
   </data>
   <data name="tab_CallerId.Text" xml:space="preserve">
     <value>Caller Id</value>
@@ -2016,7 +2016,7 @@ Fişi</value>
     <value>5</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 611</value>
+    <value>1014, 606</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2034,7 +2034,7 @@ Fişi</value>
     <value>0</value>
   </data>
   <data name="tab_KayitliTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 611</value>
+    <value>1014, 606</value>
   </data>
   <data name="tab_KayitliTel.Text" xml:space="preserve">
     <value>Kayıtlı Tel No</value>
@@ -2421,7 +2421,7 @@ Fişi</value>
     <value>0</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 540</value>
+    <value>1014, 535</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3095,7 +3095,7 @@ Başlat</value>
     <value>0, 0</value>
   </data>
   <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 71</value>
+    <value>1014, 71</value>
   </data>
   <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3113,7 +3113,7 @@ Başlat</value>
     <value>2</value>
   </data>
   <data name="tab_KapaliPaket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 611</value>
+    <value>1014, 606</value>
   </data>
   <data name="tab_KapaliPaket.Text" xml:space="preserve">
     <value>Kapalı Paketler</value>

@@ -30,6 +30,11 @@ namespace Pos
 
         public MasaTakip()
         {
+            if (Param.Param_FullPos == true)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+            }
+
             InitializeComponent();
         }
 
@@ -58,8 +63,7 @@ namespace Pos
 
         private void MasaTakip_Load(object sender, EventArgs e)
         {
-     
-
+         
 
 
             if (Sabitler.otomatikGunsonuKontrol() == false)
@@ -3150,6 +3154,9 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             //flp_Masa.BackgroundImage = Properties.Resources.rmosultimate;
             //flp_Masa.BackgroundImageLayout = ImageLayout.Stretch;
+
+         
+
         }
     }
 }

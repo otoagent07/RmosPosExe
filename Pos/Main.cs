@@ -51,6 +51,7 @@ namespace Pos
 
         public Main()
         {
+          
             InitializeComponent();
         }
 
@@ -362,10 +363,14 @@ namespace Pos
                 }
                 barButtonItem4.Enabled = User.Pos_SubeTrf;
                 Main_Tarih.Text = Param.Tarih.ToString("dd.MM.yyyy") + "\n" + Param.Tarih.ToString("dddd");
-                if (Param.Param_FullPos == true)
-                {
-                    this.FormBorderStyle = FormBorderStyle.None;
-                }
+
+
+                //if (Param.Param_FullPos == true)
+                //{
+                //    this.FormBorderStyle = FormBorderStyle.None;
+                //}
+
+
                 IngenicoKullan();
                 if (Param.Param_AnaEkranCiro)
                 {
