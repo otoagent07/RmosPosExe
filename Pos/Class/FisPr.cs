@@ -545,8 +545,8 @@ namespace Pos.Class
             return "OK";
         }
 
-        public static Print.Siparis siparis = null;
-        public void siparisYazdirUrunBazli(DataTable dtSiparis, DataTable dtDizayn, string printer, SqlConnection con,string kisiyeSatis,string sirano,string garsonsor,string fisBaslik,string urunbazliprinter)
+        //public static Print.Siparis siparis = null;
+        public void siparisYazdirUrunBazli(DataTable dtSiparis, DataTable dtDizayn, string printer, SqlConnection con, string kisiyeSatis, string sirano, string garsonsor, string fisBaslik, string urunbazliprinter)
         {
             try
             {
@@ -563,7 +563,7 @@ namespace Pos.Class
                             }
                         }
                     }
-                   
+
 
 
                     var yazicilar = dtSiparis.AsEnumerable()
@@ -588,16 +588,17 @@ namespace Pos.Class
                         }
 
 
-                        if (siparis==null) // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
-                        {
-                            siparis = new Print.Siparis(); 
-                            xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
-                        }
-                  
+                        //if (siparis == null) // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
+                        //{
+
+                        //}
+
+                        var siparis = new Print.Siparis();
+                        xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
 
 
 
-                        if(urunbazliprinter != "urunbazliprinter2")
+                        if (urunbazliprinter != "urunbazliprinter2")
                         {
                             siparis.PrinterName = yaziciismi == "" ? printer : yaziciismi;
                         }
@@ -609,7 +610,7 @@ namespace Pos.Class
 
 
                         siparis.DataSource = yazilacaklar;//dtSiparis;
-                        siparis.CreateDocument(); // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
+                                                          // siparis.CreateDocument(); // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
 
 
                         if (Param.Param_SiparisAna)
@@ -3910,7 +3911,8 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     hsp.txtQr.Visible = true;
                     hsp.ReportFooter.HeightF = (float)388.3324;
                     hsp.txtQr.SizeF = new SizeF((float)139.29, (float)125.98);
-                }else if (paymentCode != null && paymentCode != "")
+                }
+                else if (paymentCode != null && paymentCode != "")
                 {
                     hsp.txtQr.Text = paymentCode + "";
                     hsp.txtQr.Visible = true;
@@ -4290,7 +4292,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 hsp.xr_UrunToplamTr.Text += " ₺";
                 hsp.xr_KalanToplamTr.Text += " ₺";
 
-                if (Param.Calisma_Sekli==1)
+                if (Param.Calisma_Sekli == 1)
                 {
                     string toplamdovizGenel = $@"SELECT
   ISNULL((
@@ -4305,14 +4307,14 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
   ), 0) AS DovizTutarFarki;";
 
                     string kalanDoviz = dbtools.DegerGetir(toplamdovizGenel);
-                    hsp.xr_KalanToplam.Text = kalanDoviz+ dovizIcon;
+                    hsp.xr_KalanToplam.Text = kalanDoviz + dovizIcon;
 
 
                     string indirim = dbtools.DegerGetir($"select sum(Rsat_Tutar) as toplam from Cst_Recete_Satis where Rsat_Fisno='{Fisno}' and Rsat_Indkodu is not null and Rsat_Indkodu<>''");
 
                     hsp.xr_KalanToplamTr.Text = UrunToplamTr.ToString() + " ₺";
 
-                    if (indirim!="")
+                    if (indirim != "")
                     {
                         decimal sonuc = Convert.ToDecimal(UrunToplamTr) - Convert.ToDecimal(indirim);
 
@@ -4521,7 +4523,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
 
                 // ,Log_Yazdirilmis='E' 22.07.2025 de mendi web rapor patladı . o yüzden yorum yapıldı
-                dbtools.execcmdR("update Pos_Log set Log_HesapDokumu='E'  where Log_FisNo='" + Fisno + "'"); 
+                dbtools.execcmdR("update Pos_Log set Log_HesapDokumu='E'  where Log_FisNo='" + Fisno + "'");
             }
             catch (Exception ex)
             {
@@ -6218,7 +6220,7 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                 string yaziciismi = dbtools.DegerGetir("select top 1 isnull(Rec_Printer,'') as Rec_Printer from Cst_Recete where Rec_Genelkod='" + reckod + "'");
 
 
-                
+
 
 
                 iptal.PrinterName = printer;
