@@ -545,7 +545,7 @@ namespace Pos.Class
             return "OK";
         }
 
-        //public static Print.Siparis siparis = null;
+        public static Print.Siparis siparis = null;
         public void siparisYazdirUrunBazli(DataTable dtSiparis, DataTable dtDizayn, string printer, SqlConnection con, string kisiyeSatis, string sirano, string garsonsor, string fisBaslik, string urunbazliprinter)
         {
             try
@@ -588,13 +588,21 @@ namespace Pos.Class
                         }
 
 
-                        //if (siparis == null) // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
-                        //{
+                        if (siparis == null) // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
+                        {
+                            siparis = new Print.Siparis();
+                            xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
 
-                        //}
+                            siparis.DataSource = null;
+                            siparis.DataSource = yazilacaklar;//dtSiparis;
 
-                        var siparis = new Print.Siparis();
-                        xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
+                        }
+                        else
+                        {
+                            siparis.DataSource = yazilacaklar;//dtSiparis;
+                            siparis.CreateDocument(); // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
+
+                        }
 
 
 
@@ -608,9 +616,7 @@ namespace Pos.Class
                             siparis.PrinterName = yaziciismi;
                         }
 
-
-                        siparis.DataSource = yazilacaklar;//dtSiparis;
-                                                          // siparis.CreateDocument(); // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
+                      
 
 
                         if (Param.Param_SiparisAna)
