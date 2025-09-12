@@ -1805,6 +1805,7 @@
             this.PageWidth = 290;
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
             this.RollPaper = true;
+            this.ShowPreviewMarginLines = false;
             this.ShowPrintMarginsWarning = false;
             this.ShowPrintStatusDialog = false;
             this.Version = "19.1";
