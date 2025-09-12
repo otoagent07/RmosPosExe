@@ -645,7 +645,7 @@
     <value>3</value>
   </data>
   <data name="btn_HesapDokumu.Text" xml:space="preserve">
-    <value>Hesap Dökümü</value>
+    <value>Hesap Dökümü (F4)</value>
   </data>
   <data name="&gt;&gt;btn_HesapDokumu.Name" xml:space="preserve">
     <value>btn_HesapDokumu</value>

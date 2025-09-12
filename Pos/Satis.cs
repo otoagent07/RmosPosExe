@@ -1186,6 +1186,7 @@ namespace Pos
                         //    }
                         //}
 
+                        string masano = Convert.ToString(bartxt_MasaNo.EditValue ?? Masa_No);
 
                         if (Param.Param_HesapSor)
                         {
@@ -1194,7 +1195,7 @@ namespace Pos
 
                             string kod = dbtools.DegerGetir("select Pkod_otoKur from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='" + btn_Kapatma.Tag + "'");
 
-
+                            hes.Masa_No = masano;
                             hes.look_DovizKod.EditValue = kod;
 
                             hes.Tag = Convert.ToInt32(bartxt_FisNo.EditValue);
@@ -1538,6 +1539,9 @@ namespace Pos
                 }
                 else
                 {
+                    string masano = Convert.ToString(bartxt_MasaNo.EditValue ?? Masa_No);
+
+
                     Hesap hes = new Hesap();
                     hes.look_Kapatma.EditValue = btn_Kapatma.Tag;
 
@@ -1545,7 +1549,7 @@ namespace Pos
                     string kod = dbtools.DegerGetir("select Pkod_otoKur from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='" + btn_Kapatma.Tag + "'");
 
                     hes.look_DovizKod.EditValue = kod;
-
+                    hes.Masa_No = masano;
                     hes.Tag = Convert.ToInt32(bartxt_FisNo.EditValue);
                     hes.tip = "D";
                     hes.ShowDialog();

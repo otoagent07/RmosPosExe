@@ -973,6 +973,11 @@ namespace Pos
 
         private void btn_HesapDokumu_Click(object sender, EventArgs e)
         {
+            hesapdok();
+        }
+
+        public void hesapdok()
+        {
             try
             {
                 if (odemeKodSaatAraligindaKapalimi())
@@ -4096,6 +4101,14 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
         private void chk_AdisyonGR_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Hesap_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                hesapdok();
+            }
         }
     }
 }
