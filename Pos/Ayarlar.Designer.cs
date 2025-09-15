@@ -1314,6 +1314,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.ekranKlavyesiAktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2203,6 +2204,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ekranKlavyesiAktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4237,6 +4239,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.ekranKlavyesiAktif);
             this.xtraTabPage8.Controls.Add(this.gunsonubitissaat);
             this.xtraTabPage8.Controls.Add(this.textEdit205);
             this.xtraTabPage8.Controls.Add(this.textEdit206);
@@ -13096,6 +13099,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // ekranKlavyesiAktif
+            // 
+            resources.ApplyResources(this.ekranKlavyesiAktif, "ekranKlavyesiAktif");
+            this.ekranKlavyesiAktif.Name = "ekranKlavyesiAktif";
+            this.ekranKlavyesiAktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -14026,6 +14035,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ekranKlavyesiAktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15316,5 +15326,6 @@
         private DevExpress.XtraEditors.CheckEdit satisYapma;
         private DevExpress.XtraEditors.TextEdit txtMTakipFont;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.CheckEdit ekranKlavyesiAktif;
     }
 }
