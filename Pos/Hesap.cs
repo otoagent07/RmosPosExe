@@ -1427,6 +1427,8 @@ namespace Pos
                     look_Kapatma.EditValue = null;
                     look_Kapatma.EditValue = look_KapatmaSecili;
 
+                    toplamTutarYaz();
+
                     return;
                 }
 
@@ -1470,6 +1472,8 @@ namespace Pos
 
                 look_Kapatma.EditValue = null;
                 look_Kapatma.EditValue = look_KapatmaSecili;
+
+                toplamTutarYaz();
             }
             catch (Exception ex)
             {
