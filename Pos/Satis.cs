@@ -4975,12 +4975,12 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                 Klavye2 klavye = new Klavye2();
 
-                klavye.txt_Yazi.Text = txt_Not.Text;
+                klavye.txt_Yazi.Text = txt_Filtre.Text;
                 klavye.ShowDialog();
 
                 if (klavye.cikis == true)
                 {
-                    txt_Not.Text = klavye.yazi;
+                    txt_Filtre.Text = klavye.yazi;
                 }
 
                     return;
@@ -5002,7 +5002,16 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         private void txt_Not_Click(object sender, EventArgs e)
         {
-            klavyeac();
+            Klavye2 klavye = new Klavye2();
+
+            klavye.txt_Yazi.Text = txt_Not.Text;
+            klavye.ShowDialog();
+
+            if (klavye.cikis == true)
+            {
+                txt_Not.Text = klavye.yazi;
+            }
+
 
         }
 
