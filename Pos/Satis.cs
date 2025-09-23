@@ -94,7 +94,7 @@ namespace Pos
         string kisiyeSatisAktifmi = "0";
         private void Satis_Load(object sender, EventArgs e)
         {
-           
+
             load();
 
 
@@ -114,7 +114,7 @@ namespace Pos
 
                 buttonList = new List<SimpleButton> { btnYarim, btnBir, btnBirbucuk, btnDouble };
                 SetSelectedButton(btnBir);
-                
+
 
 
                 string deger1 = dbtools.DegerGetir("select top 1 isnull(tutarduzeltplus,0) as tutarduzeltplus from  RmosMuh.dbo.Pos_User where P_Kod='" + User.P_Kod + "'");
@@ -184,9 +184,9 @@ namespace Pos
 
                 btn_Mars.Visible = Departman.Kodlar_Mars;
 
-                if (btn_Mars.Visible==false)
+                if (btn_Mars.Visible == false)
                 {
-                    btn_Siparis.Size = new Size(170,btn_Siparis.Height);
+                    btn_Siparis.Size = new Size(170, btn_Siparis.Height);
                 }
 
                 btn_MiktarDuzelt.Enabled = User.G_Miktarduzelt;
@@ -2097,7 +2097,7 @@ namespace Pos
             }
         }
 
-       
+
         void btn_Urun_Click(object sender, EventArgs e)
         {
             if (Sabitler.otomatikGunsonuKontrol() == false)
@@ -3208,7 +3208,7 @@ namespace Pos
                 ind.indTipi = "Y";
 
             }
-            if (ind.indTipi == "Y" )
+            if (ind.indTipi == "Y")
             {
                 oran = ind.indSayi;
             }
@@ -3488,6 +3488,21 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
         {
             try
             {
+                var aa = gridView1.GetFocusedRowCellValue("Rsat_Id");
+                if (aa == null) return;
+
+
+                int rsat_id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
+                string zayimi = dbtools.DegerGetir($"select isnull(Rsat_Zayi,0) as Rsat_Zayi from Cst_Recete_Satis where Rsat_Id='{rsat_id}'");
+
+                string ikrammi = dbtools.DegerGetir($"select isnull(Rsat_Ikram,0) as Rsat_Ikram  from Cst_Recete_Satis where Rsat_Id='{rsat_id}'");
+
+                if (zayimi == "True" || ikrammi == "True")
+                {
+                    RHMesaj.alertMesaj("İkram veya Zayi de tutar düzelt yapamazsınız !");
+                    return;
+                }
+
                 decimal deger = Convert.ToDecimal(gridColumn4.SummaryItem.SummaryValue);
 
                 //if (deger == 0)
@@ -3526,7 +3541,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
 
                 decimal rectutar = Convert.ToDecimal(dbtools.DegerGetir($"select top 1 Rec_Fiyat from cst_recete where Rec_Genelkod='{recgenelkod}'"));
 
-               int tur = Convert.ToInt32( dbtools.DegerGetir($"Select ISNULL(Kodlar_KategoriFiyatTur,0) as tur From Stok_Kodlar where Kodlar_Sinif = 1 and Kodlar_Kod = '{Departman.Dep_Kodu}'"));
+                int tur = Convert.ToInt32(dbtools.DegerGetir($"Select ISNULL(Kodlar_KategoriFiyatTur,0) as tur From Stok_Kodlar where Kodlar_Sinif = 1 and Kodlar_Kod = '{Departman.Dep_Kodu}'"));
 
                 switch (tur)
                 {
@@ -4629,7 +4644,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
         private void gridControl1_DoubleClick(object sender, EventArgs e)
         {
             var aa = gridView1.GetFocusedRowCellValue("Rsat_Id");
-            if (aa==null)
+            if (aa == null)
             {
                 return;
             }
@@ -5029,13 +5044,13 @@ where  Rsat_Id='" + Rsat_Id + "'";
             {
                 Klavye2 klavye = new Klavye2();
 
-            klavye.txt_Yazi.Text = txt_Not.Text;
-            klavye.ShowDialog();
+                klavye.txt_Yazi.Text = txt_Not.Text;
+                klavye.ShowDialog();
 
-            if (klavye.cikis == true)
-            {
-                txt_Not.Text = klavye.yazi;
-            }
+                if (klavye.cikis == true)
+                {
+                    txt_Not.Text = klavye.yazi;
+                }
             }
 
 

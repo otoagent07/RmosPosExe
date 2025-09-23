@@ -133,6 +133,14 @@ namespace Pos
             buttonsOdeme.Add(btnOdeme10);
             buttonsOdeme.Add(btnOdeme11);
             buttonsOdeme.Add(btnOdeme12);
+
+
+            buttonsOdeme.Add(btnOdeme13);
+            buttonsOdeme.Add(btnOdeme14);
+            buttonsOdeme.Add(btnOdeme15);
+            buttonsOdeme.Add(btnOdeme16);
+            buttonsOdeme.Add(btnOdeme17);
+            buttonsOdeme.Add(btnOdeme18);
         }
         string yaziciAd = "";
 
