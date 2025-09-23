@@ -588,22 +588,27 @@ namespace Pos.Class
                         }
 
 
-                        if (siparis == null) // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
-                        {
-                            siparis = new Print.Siparis();
-                            xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
+                        //if (siparis == null) // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
+                        //{
+                        //    siparis = new Print.Siparis();
+                        //    xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
 
-                            siparis.DataSource = null;
-                            siparis.DataSource = yazilacaklar;//dtSiparis;
+                        //    siparis.DataSource = null;
+                        //    siparis.DataSource = yazilacaklar;//dtSiparis;
 
-                        }
-                        else
-                        {
-                            siparis.DataSource = yazilacaklar;//dtSiparis;
-                            siparis.CreateDocument(); // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
+                        //}
+                        //else
+                        //{
+                        //    siparis.DataSource = yazilacaklar;//dtSiparis;
+                        //    siparis.CreateDocument(); // 08.09.2025 de kod hızlanması için yapıldı . oğuz dedi
 
-                        }
+                        //}
 
+                        Print.Siparis siparis = new Print.Siparis();
+                        xtraDizayn.LoadReportStream(Convert.ToString(dtDizayn.Rows[0]["Rapor_Id"]), siparis);
+
+                        siparis.DataSource = null;
+                        siparis.DataSource = yazilacaklar;//dtSiparis;
 
 
                         if (urunbazliprinter != "urunbazliprinter2")

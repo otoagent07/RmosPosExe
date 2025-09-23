@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -260,7 +260,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 182;
+            this.splitContainerControl4.SplitterPosition = 180;
             // 
             // ana_btnUp
             // 
@@ -565,6 +565,7 @@
             // 
             resources.ApplyResources(this.bar_Cari, "bar_Cari");
             this.bar_Cari.Id = 15;
+            this.bar_Cari.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("bar_Cari.ItemAppearance.Normal.Font")));
             this.bar_Cari.ItemAppearance.Normal.Options.UseFont = true;
             this.bar_Cari.ItemInMenuAppearance.Normal.Options.UseFont = true;
             this.bar_Cari.Name = "bar_Cari";
@@ -609,6 +610,10 @@
             this.btnAdresGuncelle.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             resources.ApplyResources(this.btnAdresGuncelle, "btnAdresGuncelle");
             this.btnAdresGuncelle.Id = 17;
+            this.btnAdresGuncelle.ItemAppearance.Normal.BackColor = System.Drawing.Color.Yellow;
+            this.btnAdresGuncelle.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("btnAdresGuncelle.ItemAppearance.Normal.Font")));
+            this.btnAdresGuncelle.ItemAppearance.Normal.Options.UseBackColor = true;
+            this.btnAdresGuncelle.ItemAppearance.Normal.Options.UseFont = true;
             this.btnAdresGuncelle.Name = "btnAdresGuncelle";
             this.btnAdresGuncelle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAdresGuncelle_ItemClick);
             // 
@@ -1355,18 +1360,18 @@
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn6;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn6;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -1605,7 +1610,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(842, 733);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(842, 728);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1630,7 +1635,7 @@
             this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(842, 203);
+            this.layoutControlItem2.Size = new System.Drawing.Size(842, 201);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1639,9 +1644,9 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 270);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 268);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(842, 78);
+            this.layoutControlItem6.Size = new System.Drawing.Size(842, 77);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1649,16 +1654,16 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 348);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 345);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(842, 295);
+            this.layoutControlItem7.Size = new System.Drawing.Size(842, 293);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 643);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 638);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(842, 90);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
