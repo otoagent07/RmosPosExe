@@ -39,14 +39,7 @@
             this.ana_btnDown = new DevExpress.XtraEditors.SimpleButton();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_AltGrup = new System.Windows.Forms.FlowLayoutPanel();
-            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.alt_btnUp = new DevExpress.XtraEditors.SimpleButton();
-            this.alt_btnDown = new DevExpress.XtraEditors.SimpleButton();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemRichTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit();
+            this.rdo_EMiktar = new DevExpress.XtraEditors.RadioGroup();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.txtAdisyon = new DevExpress.XtraBars.BarEditItem();
@@ -78,10 +71,17 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.repositoryItemTextEdit5 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.repositoryItemTextEdit7 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.alt_btnUp = new DevExpress.XtraEditors.SimpleButton();
+            this.alt_btnDown = new DevExpress.XtraEditors.SimpleButton();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemRichTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.rdo_EMiktar = new DevExpress.XtraEditors.RadioGroup();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.btn_1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_2 = new DevExpress.XtraEditors.SimpleButton();
@@ -92,6 +92,11 @@
             this.btn_6 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_7 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_8 = new DevExpress.XtraEditors.SimpleButton();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnYarim = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDouble = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBirbucuk = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBir = new DevExpress.XtraEditors.SimpleButton();
             this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
             this.textEditFisnobirlestir1 = new DevExpress.XtraEditors.TextEdit();
             this.btnFiyatBilgisi = new DevExpress.XtraEditors.SimpleButton();
@@ -174,9 +179,7 @@
             this.splitContainerControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
-            this.splitContainerControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
@@ -186,13 +189,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
+            this.splitContainerControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
             this.tablePanel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFisnobirlestir1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
@@ -294,74 +300,21 @@
             resources.ApplyResources(this.flp_AltGrup, "flp_AltGrup");
             this.flp_AltGrup.Name = "flp_AltGrup";
             // 
-            // splitContainerControl2
+            // rdo_EMiktar
             // 
-            resources.ApplyResources(this.splitContainerControl2, "splitContainerControl2");
-            this.splitContainerControl2.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.None;
-            this.splitContainerControl2.Horizontal = false;
-            this.splitContainerControl2.Name = "splitContainerControl2";
-            this.splitContainerControl2.Panel1.Controls.Add(this.alt_btnUp);
-            resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
-            this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
-            resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 142;
-            // 
-            // alt_btnUp
-            // 
-            resources.ApplyResources(this.alt_btnUp, "alt_btnUp");
-            this.alt_btnUp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("alt_btnUp.ImageOptions.Image")));
-            this.alt_btnUp.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.alt_btnUp.Name = "alt_btnUp";
-            this.alt_btnUp.Click += new System.EventHandler(this.alt_btnUp_Click);
-            // 
-            // alt_btnDown
-            // 
-            resources.ApplyResources(this.alt_btnDown, "alt_btnDown");
-            this.alt_btnDown.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("alt_btnDown.ImageOptions.Image")));
-            this.alt_btnDown.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.alt_btnDown.Name = "alt_btnDown";
-            this.alt_btnDown.Click += new System.EventHandler(this.simpleButton4_Click);
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn6.AppearanceCell.Font")));
-            this.gridColumn6.AppearanceCell.Options.UseFont = true;
-            resources.ApplyResources(this.gridColumn6, "gridColumn6");
-            this.gridColumn6.MinWidth = 24;
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.OptionsColumn.AllowFocus = false;
-            // 
-            // gridColumn10
-            // 
-            resources.ApplyResources(this.gridColumn10, "gridColumn10");
-            this.gridColumn10.FieldName = "Rec_Miktar_Gr";
-            this.gridColumn10.MinWidth = 24;
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.OptionsColumn.AllowFocus = false;
-            // 
-            // gridColumn8
-            // 
-            resources.ApplyResources(this.gridColumn8, "gridColumn8");
-            this.gridColumn8.MinWidth = 24;
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.OptionsColumn.AllowFocus = false;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn2.AppearanceCell.Font")));
-            this.gridColumn2.AppearanceCell.Options.UseFont = true;
-            resources.ApplyResources(this.gridColumn2, "gridColumn2");
-            this.gridColumn2.MinWidth = 24;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.OptionsColumn.AllowFocus = false;
-            // 
-            // repositoryItemRichTextEdit1
-            // 
-            this.repositoryItemRichTextEdit1.Appearance.Options.UseTextOptions = true;
-            this.repositoryItemRichTextEdit1.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.repositoryItemRichTextEdit1.DocumentFormat = DevExpress.XtraRichEdit.DocumentFormat.Html;
-            this.repositoryItemRichTextEdit1.Name = "repositoryItemRichTextEdit1";
-            this.repositoryItemRichTextEdit1.ShowCaretInReadOnly = false;
+            resources.ApplyResources(this.rdo_EMiktar, "rdo_EMiktar");
+            this.rdo_EMiktar.MenuManager = this.barManager1;
+            this.rdo_EMiktar.Name = "rdo_EMiktar";
+            this.rdo_EMiktar.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("rdo_EMiktar.Properties.Appearance.Font")));
+            this.rdo_EMiktar.Properties.Appearance.Options.UseFont = true;
+            this.rdo_EMiktar.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.rdo_EMiktar.Properties.ItemHorzAlignment = DevExpress.XtraEditors.RadioItemHorzAlignment.Near;
+            this.rdo_EMiktar.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items"), resources.GetString("rdo_EMiktar.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items2"), resources.GetString("rdo_EMiktar.Properties.Items3")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items4"), resources.GetString("rdo_EMiktar.Properties.Items5")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items6"), resources.GetString("rdo_EMiktar.Properties.Items7"))});
+            this.rdo_EMiktar.SelectedIndexChanged += new System.EventHandler(this.rdo_EMiktar_SelectedIndexChanged);
             // 
             // barManager1
             // 
@@ -674,6 +627,75 @@
             resources.ApplyResources(this.repositoryItemTextEdit7, "repositoryItemTextEdit7");
             this.repositoryItemTextEdit7.Name = "repositoryItemTextEdit7";
             // 
+            // splitContainerControl2
+            // 
+            resources.ApplyResources(this.splitContainerControl2, "splitContainerControl2");
+            this.splitContainerControl2.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.None;
+            this.splitContainerControl2.Horizontal = false;
+            this.splitContainerControl2.Name = "splitContainerControl2";
+            this.splitContainerControl2.Panel1.Controls.Add(this.alt_btnUp);
+            resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
+            this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
+            resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
+            this.splitContainerControl2.SplitterPosition = 142;
+            // 
+            // alt_btnUp
+            // 
+            resources.ApplyResources(this.alt_btnUp, "alt_btnUp");
+            this.alt_btnUp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("alt_btnUp.ImageOptions.Image")));
+            this.alt_btnUp.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.alt_btnUp.Name = "alt_btnUp";
+            this.alt_btnUp.Click += new System.EventHandler(this.alt_btnUp_Click);
+            // 
+            // alt_btnDown
+            // 
+            resources.ApplyResources(this.alt_btnDown, "alt_btnDown");
+            this.alt_btnDown.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("alt_btnDown.ImageOptions.Image")));
+            this.alt_btnDown.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.alt_btnDown.Name = "alt_btnDown";
+            this.alt_btnDown.Click += new System.EventHandler(this.simpleButton4_Click);
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn6.AppearanceCell.Font")));
+            this.gridColumn6.AppearanceCell.Options.UseFont = true;
+            resources.ApplyResources(this.gridColumn6, "gridColumn6");
+            this.gridColumn6.MinWidth = 24;
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn10
+            // 
+            resources.ApplyResources(this.gridColumn10, "gridColumn10");
+            this.gridColumn10.FieldName = "Rec_Miktar_Gr";
+            this.gridColumn10.MinWidth = 24;
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn8
+            // 
+            resources.ApplyResources(this.gridColumn8, "gridColumn8");
+            this.gridColumn8.MinWidth = 24;
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn2.AppearanceCell.Font")));
+            this.gridColumn2.AppearanceCell.Options.UseFont = true;
+            resources.ApplyResources(this.gridColumn2, "gridColumn2");
+            this.gridColumn2.MinWidth = 24;
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.AllowFocus = false;
+            // 
+            // repositoryItemRichTextEdit1
+            // 
+            this.repositoryItemRichTextEdit1.Appearance.Options.UseTextOptions = true;
+            this.repositoryItemRichTextEdit1.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.repositoryItemRichTextEdit1.DocumentFormat = DevExpress.XtraRichEdit.DocumentFormat.Html;
+            this.repositoryItemRichTextEdit1.Name = "repositoryItemRichTextEdit1";
+            this.repositoryItemRichTextEdit1.ShowCaretInReadOnly = false;
+            // 
             // barEditItem1
             // 
             resources.ApplyResources(this.barEditItem1, "barEditItem1");
@@ -692,8 +714,8 @@
             // 
             // panelControl3
             // 
-            this.panelControl3.Controls.Add(this.rdo_EMiktar);
             this.panelControl3.Controls.Add(this.tablePanel2);
+            this.panelControl3.Controls.Add(this.tableLayoutPanel1);
             this.panelControl3.Controls.Add(this.txtFisnoGit);
             this.panelControl3.Controls.Add(this.textEditFisnobirlestir1);
             this.panelControl3.Controls.Add(this.btnFiyatBilgisi);
@@ -712,22 +734,6 @@
             this.panelControl3.Controls.Add(this.btn_Siparis);
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
-            // 
-            // rdo_EMiktar
-            // 
-            resources.ApplyResources(this.rdo_EMiktar, "rdo_EMiktar");
-            this.rdo_EMiktar.MenuManager = this.barManager1;
-            this.rdo_EMiktar.Name = "rdo_EMiktar";
-            this.rdo_EMiktar.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("rdo_EMiktar.Properties.Appearance.Font")));
-            this.rdo_EMiktar.Properties.Appearance.Options.UseFont = true;
-            this.rdo_EMiktar.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.rdo_EMiktar.Properties.ItemHorzAlignment = DevExpress.XtraEditors.RadioItemHorzAlignment.Near;
-            this.rdo_EMiktar.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items"), resources.GetString("rdo_EMiktar.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items2"), resources.GetString("rdo_EMiktar.Properties.Items3")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items4"), resources.GetString("rdo_EMiktar.Properties.Items5")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(resources.GetString("rdo_EMiktar.Properties.Items6"), resources.GetString("rdo_EMiktar.Properties.Items7"))});
-            this.rdo_EMiktar.SelectedIndexChanged += new System.EventHandler(this.rdo_EMiktar_SelectedIndexChanged);
             // 
             // tablePanel2
             // 
@@ -863,6 +869,47 @@
             this.tablePanel2.SetRow(this.btn_8, 0);
             this.btn_8.Click += new System.EventHandler(this.btn_Miktar_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.btnYarim, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnDouble, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnBirbucuk, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnBir, 1, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // btnYarim
+            // 
+            this.btnYarim.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnYarim.Appearance.Font")));
+            this.btnYarim.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnYarim, "btnYarim");
+            this.btnYarim.Name = "btnYarim";
+            this.btnYarim.Click += new System.EventHandler(this.ButtonSayilar_Click);
+            // 
+            // btnDouble
+            // 
+            this.btnDouble.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDouble.Appearance.Font")));
+            this.btnDouble.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnDouble, "btnDouble");
+            this.btnDouble.Name = "btnDouble";
+            this.btnDouble.Click += new System.EventHandler(this.ButtonSayilar_Click);
+            // 
+            // btnBirbucuk
+            // 
+            this.btnBirbucuk.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnBirbucuk.Appearance.Font")));
+            this.btnBirbucuk.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnBirbucuk, "btnBirbucuk");
+            this.btnBirbucuk.Name = "btnBirbucuk";
+            this.btnBirbucuk.Click += new System.EventHandler(this.ButtonSayilar_Click);
+            // 
+            // btnBir
+            // 
+            this.btnBir.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnBir.Appearance.Font")));
+            this.btnBir.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnBir, "btnBir");
+            this.btnBir.Name = "btnBir";
+            this.btnBir.Click += new System.EventHandler(this.ButtonSayilar_Click);
+            // 
             // txtFisnoGit
             // 
             resources.ApplyResources(this.txtFisnoGit, "txtFisnoGit");
@@ -947,6 +994,7 @@
             // 
             // panelMenu
             // 
+            this.panelMenu.Controls.Add(this.rdo_EMiktar);
             this.panelMenu.Controls.Add(this.btn_Not_Gonder);
             this.panelMenu.Controls.Add(this.btnServisTutarDuzelt);
             this.panelMenu.Controls.Add(this.btnJokerAciklama);
@@ -1716,9 +1764,7 @@
             this.splitContainerControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
-            this.splitContainerControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
@@ -1728,13 +1774,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
+            this.splitContainerControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
             this.tablePanel2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFisnobirlestir1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
@@ -1918,5 +1967,10 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
         private DevExpress.XtraEditors.SimpleButton btn_Not_Gonder;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private DevExpress.XtraEditors.SimpleButton btnYarim;
+        private DevExpress.XtraEditors.SimpleButton btnDouble;
+        private DevExpress.XtraEditors.SimpleButton btnBirbucuk;
+        private DevExpress.XtraEditors.SimpleButton btnBir;
     }
 }

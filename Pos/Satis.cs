@@ -7,6 +7,7 @@ using Pos.Forms;
 using Pos.Models;
 using Pos.Print;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
@@ -106,6 +107,16 @@ namespace Pos
         {
             try
             {
+                btnYarim.Tag = "Y";
+                btnBir.Tag = "T";
+                btnBirbucuk.Tag = "B";
+                btnDouble.Tag = "D";
+
+                buttonList = new List<SimpleButton> { btnYarim, btnBir, btnBirbucuk, btnDouble };
+                SetSelectedButton(btnBir);
+                
+
+
                 string deger1 = dbtools.DegerGetir("select top 1 isnull(tutarduzeltplus,0) as tutarduzeltplus from  RmosMuh.dbo.Pos_User where P_Kod='" + User.P_Kod + "'");
                 tutarduzeltplus = Convert.ToBoolean(deger1);
 
@@ -1721,6 +1732,8 @@ namespace Pos
         private void gridyenile()
         {
             rdo_EMiktar.SelectedIndex = 1;
+            SetSelectedButton(btnBir);
+
 
             gridColumn1.FieldName = "Rec_Ad";
             gridColumn2.FieldName = "Rsat_Miktar";
@@ -4615,6 +4628,11 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
 
         private void gridControl1_DoubleClick(object sender, EventArgs e)
         {
+            var aa = gridView1.GetFocusedRowCellValue("Rsat_Id");
+            if (aa==null)
+            {
+                return;
+            }
             string Rsat_Id = gridView1.GetFocusedRowCellValue("Rsat_Id").ToString();
             string query = @"select top 1 Rsat_Masa,Rsat_OzelMasaAdi,Rsat_Kisi,Rsat_Fisno,Rsat_Aciklama,Rsat_Not,Rec_Ad,Rsat_Miktar,Rsat_Tutar,Rsat_Tarih,Rsat_Acilis,Rsat_Garson from Cst_Recete_Satis 
 left join Cst_Recete on Rsat_Recete=Rec_Genelkod
@@ -5124,6 +5142,36 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                 e.Cache.DrawImage(img, new Rectangle(x, y, img.Width, img.Height));
             }
+        }
+        List<SimpleButton> buttonList;
+
+
+        private void ButtonSayilar_Click(object sender, EventArgs e)
+        {
+            var clickedBtn = sender as SimpleButton;
+            if (clickedBtn != null)
+            {
+                SetSelectedButton(clickedBtn);
+
+            }
+        }
+
+
+        private void SetSelectedButton(SimpleButton selectedButton)
+        {
+            // Önce tümünü resetle
+            foreach (var btn in buttonList)
+            {
+                btn.Appearance.BackColor = SystemColors.Control;
+                btn.Appearance.ForeColor = Color.Black;
+            }
+
+            // Seçili olanı işaretle
+            selectedButton.Appearance.BackColor = Color.DarkGreen;
+            selectedButton.Appearance.ForeColor = Color.White;
+
+            eMiktar = selectedButton.Tag.ToString();
+
         }
 
         /*
