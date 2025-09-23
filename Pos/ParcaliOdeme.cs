@@ -1,9 +1,11 @@
 ﻿using DevExpress.LookAndFeel;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraReports.UI;
 using Newtonsoft.Json;
 using Pos.Class;
 using Pos.Entities;
+using Pos.Print;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -132,6 +134,8 @@ namespace Pos
             buttonsOdeme.Add(btnOdeme11);
             buttonsOdeme.Add(btnOdeme12);
         }
+        string yaziciAd = "";
+
 
         private void ParcaliOdeme_Load(object sender, EventArgs e)
         {
@@ -148,6 +152,13 @@ namespace Pos
 
             altmasaclick(btnAltMasa1);
 
+
+            yaziciAd = dbtools.DegerGetir("Select isnull(Kodlar_parakasa,'') as Kodlar_parakasa From Stok_Kodlar Where Kodlar_Sinif ='01' and Kodlar_Kod='" + Departman.Dep_Kodu + "'");
+
+            if (yaziciAd == "")
+            {
+                btnCekmeceAc.Visible = false;
+            }
         }
 
         private void gridViewAna_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
@@ -1477,6 +1488,22 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
         private void btnYenile_Click(object sender, EventArgs e)
         {
             altmasayenile();
+
+        }
+
+        private void btnCekmeceAc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (yaziciAd == "") return;
+                XtraReport1 report1 = new XtraReport1();
+                report1.PrinterName = yaziciAd;
+                report1.Print();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }

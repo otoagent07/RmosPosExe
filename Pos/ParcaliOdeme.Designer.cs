@@ -110,6 +110,7 @@ namespace Pos
             this.btnOdeme3 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCekmeceAc = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlAna)).BeginInit();
             this.groupControlAna.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAna)).BeginInit();
@@ -304,6 +305,7 @@ namespace Pos
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.btnCekmeceAc);
             this.groupControl2.Controls.Add(this.btnCikis);
             this.groupControl2.Controls.Add(this.btnYenile);
             this.groupControl2.Controls.Add(this.btnAlttanAnaya);
@@ -1048,6 +1050,17 @@ namespace Pos
             this.btnOdeme1.Visible = false;
             this.btnOdeme1.Click += new System.EventHandler(this.btnOdeme1_Click);
             // 
+            // btnCekmeceAc
+            // 
+            this.btnCekmeceAc.ImageOptions.Image = global::Pos.Properties.Resources.kasa;
+            this.btnCekmeceAc.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnCekmeceAc.ImageOptions.SvgImageSize = new System.Drawing.Size(12, 12);
+            this.btnCekmeceAc.Location = new System.Drawing.Point(3, 436);
+            this.btnCekmeceAc.Name = "btnCekmeceAc";
+            this.btnCekmeceAc.Size = new System.Drawing.Size(74, 59);
+            this.btnCekmeceAc.TabIndex = 137;
+            this.btnCekmeceAc.Click += new System.EventHandler(this.btnCekmeceAc_Click);
+            // 
             // ParcaliOdeme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1166,5 +1179,6 @@ namespace Pos
         private DevExpress.XtraEditors.SimpleButton btnCikis;
         private DevExpress.XtraEditors.CheckButton chk_AdisyonGR;
         private DevExpress.XtraEditors.SimpleButton btnYenile;
+        private DevExpress.XtraEditors.SimpleButton btnCekmeceAc;
     }
 }

@@ -296,7 +296,7 @@ namespace Pos
         public static string MyClass = "Main";
         CallerId c = null;
 
-        public static string versiyonno = "v0.5.78";
+        public static string versiyonno = "v0.5.79";
         public void departmanYukleNew()
         {
             try
