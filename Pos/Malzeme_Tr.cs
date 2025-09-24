@@ -237,7 +237,12 @@ namespace Pos
                     s.Rsat_SiparisPr = true;// Convert.ToBoolean(gridView3.GetFocusedRowCellValue("Rsat_SiparisPr"));
                     s.Rsat_AbuyerPr = true;
 
-                    s.Urun_Sat(Convert.ToString(gridView3.GetRowCellValue(index, "Rsat_Recete")), false,recFiyat,urunTransfer:true);
+                    var deger12 = gridView3.GetRowCellValue(index, "Rsat_Recete").ToString();
+                    if (deger12==null)
+                    {
+
+                    }
+                    s.Urun_Sat(Urun_Kodu: deger12, false,recFiyat,urunTransfer:true);
 
                     string rsat_id = Convert.ToInt32(gridView3.GetRowCellValue(index, "Rsat_Id")).ToString();
 

@@ -5175,6 +5175,21 @@ where  Rsat_Id='" + Rsat_Id + "'";
         private void SetSelectedButton(SimpleButton selectedButton)
         {
             // Önce tümünü resetle
+
+            if (buttonList == null)
+            {
+                buttonList = new List<SimpleButton> { btnYarim, btnBir, btnBirbucuk, btnDouble };
+                btnYarim.Tag = "Y";
+                btnBir.Tag = "T";
+                btnBirbucuk.Tag = "B";
+                btnDouble.Tag = "D";
+            }
+
+            if (selectedButton.Tag == null)
+            {
+                selectedButton.Tag = "T";
+            }
+
             foreach (var btn in buttonList)
             {
                 btn.Appearance.BackColor = SystemColors.Control;
