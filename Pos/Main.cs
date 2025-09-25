@@ -845,6 +845,11 @@ namespace Pos
         public static MasaTakip masa_takip;
         private void btnMasaTakip_Click(object sender, EventArgs e)
         {
+            masatakipac();
+        }
+
+        public void masatakipac()
+        {
             if (Sabitler.otomatikGunsonuKontrol() == false)
             {
                 return;
@@ -1560,6 +1565,11 @@ YS_Panel a = new YS_Panel();
 
 
                 // receteAc("asdsad","adsasd",(decimal)65.22);
+
+                if (User.otoMasaEkraniAc)
+                {
+                    masatakipac();
+                }
             }
             catch (Exception ex)
             {

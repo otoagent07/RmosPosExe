@@ -3081,7 +3081,7 @@ namespace Pos
                         + " G_Zayi,G_Ikram,M_KisiSayisi,R_MasaGeri,M_SiparisTekrar,Pda_HesapDok,H_HizliSatis,R_TopluIsle,And_HesapDokum,And_HesapOdeme,And_MalzTransfer,S_Sp_Sil,ExtraFolio, "
                         + " And_Yarim,And_Tam,And_Bucuk,And_Duble,Pos_SubeTrf,Pos_AdisyonPr,Pos_OdemeDegistir,And_SatisSiparisBtn,Pos_ArtiEksi_Aktif,Pos_MasaAnlikDurum,Pos_MasaUrunSil,Pos_IWERep,Pos_KartF_CheckOut,Pos_SatirSilYetkili,Pos_MasaDirekS,Pos_MasaPaketS, "
                         + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman,Pos_KartfIndirimAktif,Pos_ServisPayiDuzelt,Pos_OdenmezIkramPasif," +
-                        "urunIade,ingenicoaktif,tutarduzeltplus,postema,otoDirekSatis,merkezsubeaktif,coklugunsonu,cariTarihGecmisAktif,satisYapma) VALUES( "
+                        "urunIade,ingenicoaktif,tutarduzeltplus,postema,otoDirekSatis,otoMasaEkraniAc,merkezsubeaktif,coklugunsonu,cariTarihGecmisAktif,satisYapma) VALUES( "
                         + " '" + txt_Kul_kod.Text + "','" + txt_Kul_sifre.EditValue + "','" + txt_Kul_ad.EditValue + "','" + txt_Kul_soyad.EditValue + "','" + txt_Kul_Kart.EditValue + "','" + cmb_Kulturu.SelectedIndex.ToString() + "', "
                         + " '" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', "
                         + " '" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "','" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "','" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', "
@@ -3112,6 +3112,7 @@ namespace Pos
                         + " '" + Pos_HesapArti.Checked + "','" + User_AP.Checked + "','" + Pos_OdaKontrol.Checked + "','" + Pos_HesapFisIptal.Checked + "','" + Pos_KartTanimSil.Checked + "','" + backUser + "','" + chk_K_KasaRapor.Checked + "','" + Pos_KartTanimDuzelt.Checked + "','" + Pos_KartTanimTransfer.Checked + "','" + Pos_KartTanimBakiyeTransfer.Checked + "','" + dil + "','" + Pos_Eksileme.Checked + "','" + Pos_XZdepartman.Checked + "','" + Pos_KartfIndirimAktif.Checked + "','" + Pos_ServisPayiDuzelt.Checked + "','" + Pos_OdenmezIkramPasif.Checked
                         + "','" + urunIade.Checked + "','" + ingenicoaktif.Checked + "','" + tutarduzeltplus.Checked + "' ,'" + postema.EditValue + "'" +
                         ",'" + otoDirekSatis.Checked + "' " +
+                        ",'" + otoMasaEkraniAc.Checked + "' " +
                         ",'" + merkezsubeaktif.Checked + "' " +
                         ",'" + coklugunsonu.Checked + "' " +
                         ",'" + cariTarihGecmisAktif.Checked + "' " +
@@ -3169,6 +3170,7 @@ namespace Pos
                         + ",tutarduzeltplus = '" + tutarduzeltplus.Checked + "' "
                         + ",postema = '" + postema.EditValue + "' "
                         + ",otoDirekSatis = '" + otoDirekSatis.Checked + "' "
+                        + ",otoMasaEkraniAc = '" + otoMasaEkraniAc.Checked + "' "
                         + ",merkezsubeaktif = '" + merkezsubeaktif.Checked + "' "
                         + ",coklugunsonu = '" + coklugunsonu.Checked + "' "
                         + ",cariTarihGecmisAktif = '" + cariTarihGecmisAktif.Checked + "' "
@@ -3260,7 +3262,8 @@ namespace Pos
                         ",ISNULL(urunIade,0) as urunIade,ISNULL(ingenicoaktif,0) as ingenicoaktif,ISNULL(tutarduzeltplus,0) as tutarduzeltplus,ISNULL(postema,'Money Twins') as postema,ISNULL(otoDirekSatis,0) as otoDirekSatis,ISNULL(merkezsubeaktif,0) as merkezsubeaktif,ISNULL(coklugunsonu,0) as coklugunsonu" + 
                         "" +
                         ",ISNULL(cariTarihGecmisAktif,0) as cariTarihGecmisAktif"+
-                        ",ISNULL(satisYapma,0) as satisYapma"
+                        ",ISNULL(satisYapma,0) as satisYapma"+
+                        ",ISNULL(otoMasaEkraniAc,0) as otoMasaEkraniAc"
                         + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "' " + Filtre + " ";
                 DataTable dt = dbtools.SelectTable(ss);
 
@@ -3417,6 +3420,7 @@ namespace Pos
                     postema.EditValue = Convert.ToString(dt.Rows[0]["postema"]);
 
                     otoDirekSatis.Checked = Convert.ToBoolean(dt.Rows[0]["otoDirekSatis"]);
+                    otoMasaEkraniAc.Checked = Convert.ToBoolean(dt.Rows[0]["otoMasaEkraniAc"]);
                     merkezsubeaktif.Checked = Convert.ToBoolean(dt.Rows[0]["merkezsubeaktif"]);
                     coklugunsonu.Checked = Convert.ToBoolean(dt.Rows[0]["coklugunsonu"]);
                     cariTarihGecmisAktif.Checked = Convert.ToBoolean(dt.Rows[0]["cariTarihGecmisAktif"]);
@@ -3643,6 +3647,7 @@ namespace Pos
             ingenicoaktif.Checked = false;
             tutarduzeltplus.Checked = false;
             otoDirekSatis.Checked = false;
+            otoMasaEkraniAc.Checked = false;
             merkezsubeaktif.Checked = false;
             coklugunsonu.Checked = false;
             cariTarihGecmisAktif.Checked = false;
@@ -3804,6 +3809,7 @@ namespace Pos
             ingenicoaktif.Checked = true;
             tutarduzeltplus.Checked = true;
             otoDirekSatis.Checked = true;
+            otoMasaEkraniAc.Checked = true;
             merkezsubeaktif.Checked = true;
             coklugunsonu.Checked = true;
             cariTarihGecmisAktif.Checked = true;
