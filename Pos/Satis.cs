@@ -295,6 +295,11 @@ namespace Pos
 
 
                 chk_Yapma.Visible = User.satisYapma;
+
+
+
+                btnSiparisVeHesap.Visible = User.Pos_YS_YetkiReddet; // yeni param açmamak için eklendi
+
             }
             catch (Exception ex)
             {
@@ -1972,9 +1977,9 @@ namespace Pos
                     btn_AltGrup.Click += new EventHandler(btn_AltGrup_Click);
                     flp_AltGrup.Controls.Add(btn_AltGrup);
 
-                    if (i == 0)
+                    if (i == 0 && Param.ekranKlavyesiAktif) // yeni param açmamak için Param.ekranKlavyesiAktif aktif edildi
                     {
-                        //btn_AltGrup.PerformClick();
+                        btn_AltGrup.PerformClick();
                     }
                 }
             }
@@ -5202,6 +5207,39 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
             eMiktar = selectedButton.Tag.ToString();
 
+        }
+
+        private void btnSiparisVeHesap_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                siparisYazdir();
+
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+
+                FisPr pr = new FisPr();
+                if (Param.Param_YeniHesapDkm)
+                {
+                    pr.newHesapDokum(true, fisno, Split, "* * * HESAP DÖKÜM FİŞİ * * *");
+                }
+                else
+                {
+                    pr.HesapDokum(true, fisno, Split);
+                }
+
+                dbtools.execcmd("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
+
+                dbtools.execcmd("update Cst_Recete_Satis set Rsat_Ingenico_Status='1' where Rsat_Fisno='" + fisno + "'");
+
+                if (Param.Param_Hesap_Kilit)
+                {
+                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_Hesap_Kilit = 1 where Rsat_Fisno = '" + fisno + "'");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         /*

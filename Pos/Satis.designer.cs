@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -39,6 +39,10 @@
             this.ana_btnDown = new DevExpress.XtraEditors.SimpleButton();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_AltGrup = new System.Windows.Forms.FlowLayoutPanel();
+            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.alt_btnUp = new DevExpress.XtraEditors.SimpleButton();
+            this.alt_btnDown = new DevExpress.XtraEditors.SimpleButton();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.rdo_EMiktar = new DevExpress.XtraEditors.RadioGroup();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
@@ -71,10 +75,6 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.repositoryItemTextEdit5 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.repositoryItemTextEdit7 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.alt_btnUp = new DevExpress.XtraEditors.SimpleButton();
-            this.alt_btnDown = new DevExpress.XtraEditors.SimpleButton();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -173,12 +173,16 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSiparisVeHesap = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
             this.splitContainerControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
+            this.flp_AltGrup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
+            this.splitContainerControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit6)).BeginInit();
@@ -189,8 +193,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
-            this.splitContainerControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -298,7 +300,45 @@
             // flp_AltGrup
             // 
             resources.ApplyResources(this.flp_AltGrup, "flp_AltGrup");
+            this.flp_AltGrup.Controls.Add(this.rdo_EMiktar);
             this.flp_AltGrup.Name = "flp_AltGrup";
+            // 
+            // splitContainerControl2
+            // 
+            resources.ApplyResources(this.splitContainerControl2, "splitContainerControl2");
+            this.splitContainerControl2.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.None;
+            this.splitContainerControl2.Horizontal = false;
+            this.splitContainerControl2.Name = "splitContainerControl2";
+            this.splitContainerControl2.Panel1.Controls.Add(this.alt_btnUp);
+            resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
+            this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
+            resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
+            this.splitContainerControl2.SplitterPosition = 142;
+            // 
+            // alt_btnUp
+            // 
+            resources.ApplyResources(this.alt_btnUp, "alt_btnUp");
+            this.alt_btnUp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("alt_btnUp.ImageOptions.Image")));
+            this.alt_btnUp.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.alt_btnUp.Name = "alt_btnUp";
+            this.alt_btnUp.Click += new System.EventHandler(this.alt_btnUp_Click);
+            // 
+            // alt_btnDown
+            // 
+            resources.ApplyResources(this.alt_btnDown, "alt_btnDown");
+            this.alt_btnDown.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("alt_btnDown.ImageOptions.Image")));
+            this.alt_btnDown.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.alt_btnDown.Name = "alt_btnDown";
+            this.alt_btnDown.Click += new System.EventHandler(this.simpleButton4_Click);
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn6.AppearanceCell.Font")));
+            this.gridColumn6.AppearanceCell.Options.UseFont = true;
+            resources.ApplyResources(this.gridColumn6, "gridColumn6");
+            this.gridColumn6.MinWidth = 24;
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowFocus = false;
             // 
             // rdo_EMiktar
             // 
@@ -626,43 +666,6 @@
             // 
             resources.ApplyResources(this.repositoryItemTextEdit7, "repositoryItemTextEdit7");
             this.repositoryItemTextEdit7.Name = "repositoryItemTextEdit7";
-            // 
-            // splitContainerControl2
-            // 
-            resources.ApplyResources(this.splitContainerControl2, "splitContainerControl2");
-            this.splitContainerControl2.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.None;
-            this.splitContainerControl2.Horizontal = false;
-            this.splitContainerControl2.Name = "splitContainerControl2";
-            this.splitContainerControl2.Panel1.Controls.Add(this.alt_btnUp);
-            resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
-            this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
-            resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 142;
-            // 
-            // alt_btnUp
-            // 
-            resources.ApplyResources(this.alt_btnUp, "alt_btnUp");
-            this.alt_btnUp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("alt_btnUp.ImageOptions.Image")));
-            this.alt_btnUp.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.alt_btnUp.Name = "alt_btnUp";
-            this.alt_btnUp.Click += new System.EventHandler(this.alt_btnUp_Click);
-            // 
-            // alt_btnDown
-            // 
-            resources.ApplyResources(this.alt_btnDown, "alt_btnDown");
-            this.alt_btnDown.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("alt_btnDown.ImageOptions.Image")));
-            this.alt_btnDown.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.alt_btnDown.Name = "alt_btnDown";
-            this.alt_btnDown.Click += new System.EventHandler(this.simpleButton4_Click);
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.AppearanceCell.Font = ((System.Drawing.Font)(resources.GetObject("gridColumn6.AppearanceCell.Font")));
-            this.gridColumn6.AppearanceCell.Options.UseFont = true;
-            resources.ApplyResources(this.gridColumn6, "gridColumn6");
-            this.gridColumn6.MinWidth = 24;
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.OptionsColumn.AllowFocus = false;
             // 
             // gridColumn10
             // 
@@ -994,7 +997,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.Controls.Add(this.rdo_EMiktar);
+            this.panelMenu.Controls.Add(this.btnSiparisVeHesap);
             this.panelMenu.Controls.Add(this.btn_Not_Gonder);
             this.panelMenu.Controls.Add(this.btnServisTutarDuzelt);
             this.panelMenu.Controls.Add(this.btnJokerAciklama);
@@ -1408,18 +1411,18 @@
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13});
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Column = this.gridColumn6;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule2.Name = "Format0";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue2.Value1 = "";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            this.gridView1.FormatRules.Add(gridFormatRule2);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn6;
+            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue1.Value1 = "";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView1.FormatRules.Add(gridFormatRule1);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -1738,6 +1741,18 @@
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // btnSiparisVeHesap
+            // 
+            resources.ApplyResources(this.btnSiparisVeHesap, "btnSiparisVeHesap");
+            this.btnSiparisVeHesap.Appearance.BackColor = System.Drawing.Color.Blue;
+            this.btnSiparisVeHesap.Appearance.BackColor2 = ((System.Drawing.Color)(resources.GetObject("simpleButton3.Appearance.BackColor2")));
+            this.btnSiparisVeHesap.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.btnSiparisVeHesap.Appearance.Options.UseBackColor = true;
+            this.btnSiparisVeHesap.Appearance.Options.UseFont = true;
+            this.btnSiparisVeHesap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.btnSiparisVeHesap.Name = "btnSiparisVeHesap";
+            this.btnSiparisVeHesap.Click += new System.EventHandler(this.btnSiparisVeHesap_Click);
+            // 
             // Satis
             // 
             resources.ApplyResources(this, "$this");
@@ -1764,6 +1779,9 @@
             this.splitContainerControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
+            this.flp_AltGrup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
+            this.splitContainerControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rdo_EMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit6)).EndInit();
@@ -1774,8 +1792,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
-            this.splitContainerControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
@@ -1972,5 +1988,6 @@
         private DevExpress.XtraEditors.SimpleButton btnDouble;
         private DevExpress.XtraEditors.SimpleButton btnBirbucuk;
         private DevExpress.XtraEditors.SimpleButton btnBir;
+        private DevExpress.XtraEditors.SimpleButton btnSiparisVeHesap;
     }
 }
