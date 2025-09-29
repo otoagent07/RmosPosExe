@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasaTakip));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -96,6 +96,7 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.btnDoluMasalariAc = new DevExpress.XtraEditors.SimpleButton();
             this.btnFisnoTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
             this.btnFilterClear = new DevExpress.XtraEditors.SimpleButton();
@@ -490,9 +491,7 @@
             // 
             // btn_Rapor
             // 
-            this.btn_Rapor.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_Rapor.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Rapor.Appearance.Font")));
-            this.btn_Rapor.Appearance.Options.UseBackColor = true;
             this.btn_Rapor.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Rapor, "btn_Rapor");
             this.btn_Rapor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Rapor.ImageOptions.Image")));
@@ -542,9 +541,7 @@
             // 
             // btn_MasaTransfer
             // 
-            this.btn_MasaTransfer.Appearance.BackColor = System.Drawing.Color.LightGreen;
             this.btn_MasaTransfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MasaTransfer.Appearance.Font")));
-            this.btn_MasaTransfer.Appearance.Options.UseBackColor = true;
             this.btn_MasaTransfer.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_MasaTransfer, "btn_MasaTransfer");
             this.btn_MasaTransfer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_MasaTransfer.ImageOptions.Image")));
@@ -553,9 +550,7 @@
             // 
             // btn_OzelMasa
             // 
-            this.btn_OzelMasa.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
             this.btn_OzelMasa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_OzelMasa.Appearance.Font")));
-            this.btn_OzelMasa.Appearance.Options.UseBackColor = true;
             this.btn_OzelMasa.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_OzelMasa, "btn_OzelMasa");
             this.btn_OzelMasa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OzelMasa.ImageOptions.Image")));
@@ -564,9 +559,7 @@
             // 
             // btn_HesapBak
             // 
-            this.btn_HesapBak.Appearance.BackColor = System.Drawing.Color.DarkGray;
             this.btn_HesapBak.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_HesapBak.Appearance.Font")));
-            this.btn_HesapBak.Appearance.Options.UseBackColor = true;
             this.btn_HesapBak.Appearance.Options.UseFont = true;
             this.btn_HesapBak.Appearance.Options.UseTextOptions = true;
             this.btn_HesapBak.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -668,18 +661,18 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12});
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Column = this.gridColumn10;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn10;
-            gridFormatRule2.Name = "Format0";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue2.Value1 = "";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            this.gridView2.FormatRules.Add(gridFormatRule2);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn10;
+            gridFormatRule1.ColumnApplyTo = this.gridColumn10;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue1.Value1 = "";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView2.FormatRules.Add(gridFormatRule1);
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.CheckBoxSelectorColumnWidth = 35;
@@ -692,6 +685,7 @@
             this.gridView2.RowHeight = 40;
             resources.ApplyResources(this.gridView2, "gridView2");
             this.gridView2.CustomDrawFooterCell += new DevExpress.XtraGrid.Views.Grid.FooterCellCustomDrawEventHandler(this.gridView2_CustomDrawFooterCell);
+            this.gridView2.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView2_RowCellStyle);
             // 
             // gridColumn3
             // 
@@ -810,12 +804,22 @@
             // 
             // panelControl4
             // 
+            this.panelControl4.Controls.Add(this.btnDoluMasalariAc);
             this.panelControl4.Controls.Add(this.btnFisnoTemizle);
             this.panelControl4.Controls.Add(this.txtFisnoGit);
             this.panelControl4.Controls.Add(this.btnFilterClear);
             this.panelControl4.Controls.Add(this.txt_Filtre);
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
+            // 
+            // btnDoluMasalariAc
+            // 
+            this.btnDoluMasalariAc.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDoluMasalariAc.Appearance.Font")));
+            this.btnDoluMasalariAc.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnDoluMasalariAc, "btnDoluMasalariAc");
+            this.btnDoluMasalariAc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDoluMasalariAc.ImageOptions.Image")));
+            this.btnDoluMasalariAc.Name = "btnDoluMasalariAc";
+            this.btnDoluMasalariAc.Click += new System.EventHandler(this.btnDoluMasalariAc_Click);
             // 
             // btnFisnoTemizle
             // 
@@ -1645,5 +1649,6 @@
         private DevExpress.XtraEditors.TextEdit txtFisnoGit;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraEditors.PanelControl panelControl5;
+        private DevExpress.XtraEditors.SimpleButton btnDoluMasalariAc;
     }
 }

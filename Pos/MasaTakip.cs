@@ -1913,7 +1913,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             satis.ShowDialog();
 
 
-            MasaYenile(0);
+            MasaYenile(globalMasa);
 
             if (User.M_SatisRelogin)
             {
@@ -2161,6 +2161,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         }
         private void gridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
+            globalMasa = 0;
 
             Masa_Konum = Convert.ToString(gridView1.GetFocusedRowCellValue("Kod"));
 
@@ -3158,5 +3159,39 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
          
 
         }
+
+        int globalMasa = 0;
+        private void btnDoluMasalariAc_Click(object sender, EventArgs e)
+        {
+            globalMasa = 1;
+            MasaYenile(1);
+        }
+
+        private void gridView2_RowCellStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowCellStyleEventArgs e)
+        {
+            if (e.Column.FieldName == "Rec_Ad") // sadece Rsat_Ad alanı renklenecek
+            {
+                object cellValue = gridView2.GetRowCellValue(e.RowHandle, "Rsat_Tutar");
+
+                if (cellValue == null || cellValue == DBNull.Value)
+                {
+                    e.Appearance.ForeColor = Color.Red;
+                    e.Appearance.Font = new Font(e.Appearance.Font, FontStyle.Bold);
+                }
+                else
+                {
+                    if (decimal.TryParse(cellValue.ToString(), out decimal tutar))
+                    {
+                        if (tutar < 0) // Rsat_Tutar sıfırdan küçükse
+                        {
+                            e.Appearance.ForeColor = Color.Red;
+                            e.Appearance.Font = new Font(e.Appearance.Font, FontStyle.Bold);
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 }
