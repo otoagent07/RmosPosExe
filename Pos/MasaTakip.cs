@@ -470,7 +470,7 @@ namespace Pos
                 }
             }
 
-            MasaYenile(0);
+            MasaYenile(globalMasa);
 
             timer1.Enabled = true;
 
@@ -2021,7 +2021,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
 
-            MasaYenile(0);
+            MasaYenile(globalMasa);
 
 
 
@@ -2214,7 +2214,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             {
                 Relogin();
             }
-            MasaYenile(0);
+            MasaYenile(globalMasa);
             timer1.Enabled = true;
 
 

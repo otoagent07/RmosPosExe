@@ -212,6 +212,9 @@
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
+  <data name="panel1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
   </data>
@@ -648,7 +651,7 @@
     <value>14</value>
   </data>
   <data name="tab_Yuzde.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 406</value>
+    <value>429, 411</value>
   </data>
   <data name="tab_Yuzde.Text" xml:space="preserve">
     <value>Yüzde</value>
@@ -670,438 +673,6 @@
   </data>
   <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis.Name" xml:space="preserve">
-    <value>btn_Cikis</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_Cikis.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txt_Sayi.Name" xml:space="preserve">
-    <value>txt_Sayi</value>
-  </data>
-  <data name="&gt;&gt;txt_Sayi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_Sayi.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;txt_Sayi.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_V.Name" xml:space="preserve">
-    <value>btn_V</value>
-  </data>
-  <data name="&gt;&gt;btn_V.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_V.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_V.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_00.Name" xml:space="preserve">
-    <value>btn_00</value>
-  </data>
-  <data name="&gt;&gt;btn_00.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_00.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_00.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lbl_Baslik.Name" xml:space="preserve">
-    <value>lbl_Baslik</value>
-  </data>
-  <data name="&gt;&gt;lbl_Baslik.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;lbl_Baslik.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;lbl_Baslik.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btn_OK.Name" xml:space="preserve">
-    <value>btn_OK</value>
-  </data>
-  <data name="&gt;&gt;btn_OK.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_OK.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_OK.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btn_0.Name" xml:space="preserve">
-    <value>btn_0</value>
-  </data>
-  <data name="&gt;&gt;btn_0.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_0.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_0.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btn_3.Name" xml:space="preserve">
-    <value>btn_3</value>
-  </data>
-  <data name="&gt;&gt;btn_3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_3.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btn_2.Name" xml:space="preserve">
-    <value>btn_2</value>
-  </data>
-  <data name="&gt;&gt;btn_2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_2.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btn_1.Name" xml:space="preserve">
-    <value>btn_1</value>
-  </data>
-  <data name="&gt;&gt;btn_1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_1.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btn_6.Name" xml:space="preserve">
-    <value>btn_6</value>
-  </data>
-  <data name="&gt;&gt;btn_6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_6.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_6.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;btn_5.Name" xml:space="preserve">
-    <value>btn_5</value>
-  </data>
-  <data name="&gt;&gt;btn_5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_5.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_5.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;btn_4.Name" xml:space="preserve">
-    <value>btn_4</value>
-  </data>
-  <data name="&gt;&gt;btn_4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_4.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_4.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;btn_9.Name" xml:space="preserve">
-    <value>btn_9</value>
-  </data>
-  <data name="&gt;&gt;btn_9.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_9.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_9.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;btn_8.Name" xml:space="preserve">
-    <value>btn_8</value>
-  </data>
-  <data name="&gt;&gt;btn_8.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_8.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_8.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;btn_7.Name" xml:space="preserve">
-    <value>btn_7</value>
-  </data>
-  <data name="&gt;&gt;btn_7.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_7.Parent" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;btn_7.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="tab_Tutar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 406</value>
-  </data>
-  <data name="tab_Tutar.Text" xml:space="preserve">
-    <value>Tutar</value>
-  </data>
-  <data name="&gt;&gt;tab_Tutar.Name" xml:space="preserve">
-    <value>tab_Tutar</value>
-  </data>
-  <data name="&gt;&gt;tab_Tutar.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_Tutar.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_Tutar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;simpleButton1.Name" xml:space="preserve">
-    <value>simpleButton1</value>
-  </data>
-  <data name="&gt;&gt;simpleButton1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton1.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txt_ManuelYuzde.Name" xml:space="preserve">
-    <value>txt_ManuelYuzde</value>
-  </data>
-  <data name="&gt;&gt;txt_ManuelYuzde.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txt_ManuelYuzde.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;txt_ManuelYuzde.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.Name" xml:space="preserve">
-    <value>simpleButton2</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;simpleButton4.Name" xml:space="preserve">
-    <value>simpleButton4</value>
-  </data>
-  <data name="&gt;&gt;simpleButton4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton4.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
-    <value>labelControl2</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;simpleButton5.Name" xml:space="preserve">
-    <value>simpleButton5</value>
-  </data>
-  <data name="&gt;&gt;simpleButton5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton5.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton5.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;simpleButton6.Name" xml:space="preserve">
-    <value>simpleButton6</value>
-  </data>
-  <data name="&gt;&gt;simpleButton6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton6.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton6.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;simpleButton7.Name" xml:space="preserve">
-    <value>simpleButton7</value>
-  </data>
-  <data name="&gt;&gt;simpleButton7.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton7.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton7.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;simpleButton8.Name" xml:space="preserve">
-    <value>simpleButton8</value>
-  </data>
-  <data name="&gt;&gt;simpleButton8.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton8.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton8.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;simpleButton9.Name" xml:space="preserve">
-    <value>simpleButton9</value>
-  </data>
-  <data name="&gt;&gt;simpleButton9.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton9.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton9.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;simpleButton10.Name" xml:space="preserve">
-    <value>simpleButton10</value>
-  </data>
-  <data name="&gt;&gt;simpleButton10.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton10.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton10.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;simpleButton11.Name" xml:space="preserve">
-    <value>simpleButton11</value>
-  </data>
-  <data name="&gt;&gt;simpleButton11.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton11.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton11.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;simpleButton12.Name" xml:space="preserve">
-    <value>simpleButton12</value>
-  </data>
-  <data name="&gt;&gt;simpleButton12.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton12.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton12.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;simpleButton13.Name" xml:space="preserve">
-    <value>simpleButton13</value>
-  </data>
-  <data name="&gt;&gt;simpleButton13.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton13.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton13.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;simpleButton14.Name" xml:space="preserve">
-    <value>simpleButton14</value>
-  </data>
-  <data name="&gt;&gt;simpleButton14.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton14.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton14.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;simpleButton15.Name" xml:space="preserve">
-    <value>simpleButton15</value>
-  </data>
-  <data name="&gt;&gt;simpleButton15.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;simpleButton15.Parent" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;simpleButton15.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="tab_MY.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 406</value>
-  </data>
-  <data name="tab_MY.Text" xml:space="preserve">
-    <value>Manuel Yuzde</value>
-  </data>
-  <data name="&gt;&gt;tab_MY.Name" xml:space="preserve">
-    <value>tab_MY</value>
-  </data>
-  <data name="&gt;&gt;tab_MY.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_MY.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_MY.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="btn_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 24pt, style=Bold</value>
@@ -1637,6 +1208,24 @@
   <data name="&gt;&gt;btn_7.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="tab_Tutar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 411</value>
+  </data>
+  <data name="tab_Tutar.Text" xml:space="preserve">
+    <value>Tutar</value>
+  </data>
+  <data name="&gt;&gt;tab_Tutar.Name" xml:space="preserve">
+    <value>tab_Tutar</value>
+  </data>
+  <data name="&gt;&gt;tab_Tutar.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_Tutar.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_Tutar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 24pt, style=Bold</value>
   </data>
@@ -2168,6 +1757,36 @@
   </data>
   <data name="&gt;&gt;simpleButton15.ZOrder" xml:space="preserve">
     <value>15</value>
+  </data>
+  <data name="tab_MY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 411</value>
+  </data>
+  <data name="tab_MY.Text" xml:space="preserve">
+    <value>Manuel Yuzde</value>
+  </data>
+  <data name="&gt;&gt;tab_MY.Name" xml:space="preserve">
+    <value>tab_MY</value>
+  </data>
+  <data name="&gt;&gt;tab_MY.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_MY.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_MY.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="chk_MY.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12.25pt, style=Bold</value>

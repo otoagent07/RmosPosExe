@@ -2161,7 +2161,6 @@ namespace Pos
             // Font ve brush ayarları
             Font font = new Font("Arial", 10, FontStyle.Bold);
             Brush textBrush = new SolidBrush(Color.Red);
-            Brush backBrush = new SolidBrush(Color.FromArgb(200, 255, 255, 255)); // Yarı şeffaf beyaz arka plan
             
             // Metin boyutunu hesapla
             SizeF textSize = e.Graphics.MeasureString(miktarText, font);
@@ -2170,17 +2169,12 @@ namespace Pos
             int x = btn.Width - (int)textSize.Width - 5;
             int y = 5;
             
-            // Arka plan dikdörtgeni çiz
-            Rectangle backRect = new Rectangle(x - 2, y - 1, (int)textSize.Width + 4, (int)textSize.Height + 2);
-            e.Graphics.FillRectangle(backBrush, backRect);
-            
-            // Metni çiz
+            // Metni çiz (transparent arka plan)
             e.Graphics.DrawString(miktarText, font, textBrush, x, y);
             
             // Kaynakları temizle
             font.Dispose();
             textBrush.Dispose();
-            backBrush.Dispose();
         }
 
         void btn_Urun_Click(object sender, EventArgs e)

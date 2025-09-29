@@ -33,6 +33,8 @@
             this.chk_Tutar = new DevExpress.XtraEditors.CheckButton();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tab_Yuzde = new DevExpress.XtraTab.XtraTabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btn_Y_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Y_80 = new DevExpress.XtraEditors.SimpleButton();
@@ -82,16 +84,14 @@
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
             this.chk_MY = new DevExpress.XtraEditors.CheckButton();
-            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Yuzde.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tab_Tutar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Sayi.Properties)).BeginInit();
             this.tab_MY.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ManuelYuzde.Properties)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chk_Yuzde
@@ -144,6 +144,22 @@
             this.tab_Yuzde.Controls.Add(this.btn_Y_5);
             this.tab_Yuzde.Name = "tab_Yuzde";
             resources.ApplyResources(this.tab_Yuzde, "tab_Yuzde");
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.simpleButton16);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // simpleButton16
+            // 
+            this.simpleButton16.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton16.Appearance.Font")));
+            this.simpleButton16.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton16, "simpleButton16");
+            this.simpleButton16.Name = "simpleButton16";
+            this.simpleButton16.Tag = "12,5";
+            this.simpleButton16.Click += new System.EventHandler(this.btn_Y_Click);
             // 
             // labelControl1
             // 
@@ -599,22 +615,6 @@
             this.chk_MY.Name = "chk_MY";
             this.chk_MY.CheckedChanged += new System.EventHandler(this.chk_Secim_CheckedChanged);
             // 
-            // simpleButton16
-            // 
-            this.simpleButton16.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton16.Appearance.Font")));
-            this.simpleButton16.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.simpleButton16, "simpleButton16");
-            this.simpleButton16.Name = "simpleButton16";
-            this.simpleButton16.Tag = "12,5";
-            this.simpleButton16.Click += new System.EventHandler(this.btn_Y_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel1.Controls.Add(this.simpleButton16);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
             // Indirim
             // 
             resources.ApplyResources(this, "$this");
@@ -630,13 +630,13 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.tab_Yuzde.ResumeLayout(false);
             this.tab_Yuzde.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.tab_Tutar.ResumeLayout(false);
             this.tab_Tutar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Sayi.Properties)).EndInit();
             this.tab_MY.ResumeLayout(false);
             this.tab_MY.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ManuelYuzde.Properties)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
