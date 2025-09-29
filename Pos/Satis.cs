@@ -1797,6 +1797,14 @@ namespace Pos
 
             gridControl1.DataSource = dtCloned;
 
+            // flp_Urun kontrollerini yeniden çizdir (satılan miktar overlay'i için)
+            foreach (Control control in flp_Urun.Controls)
+            {
+                if (control is SimpleButton)
+                {
+                    control.Invalidate();
+                }
+            }
 
             //gridView1.BestFitColumns();
 
@@ -2097,11 +2105,83 @@ namespace Pos
 
                     btn_Urun.Click += new EventHandler(btn_Urun_Click);
 
+                    // Satılan miktar overlay'i ekle
+                    btn_Urun.Paint += new PaintEventHandler(btn_Urun_Paint);
+
                     flp_Urun.Controls.Add(btn_Urun);
                 }
             }
         }
 
+        // Satılan miktarı hesaplayan metod
+        private decimal GetSatilanMiktar(string recGenelkod)
+        {
+            try
+            {
+                if (gridControl1.DataSource == null) return 0;
+
+                DataTable dt = (DataTable)gridControl1.DataSource;
+                decimal toplamMiktar = 0;
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (row["Rsat_Recete"].ToString() == recGenelkod)
+                    {
+                        decimal miktar = 0;
+                        if (decimal.TryParse(row["Rsat_Miktar"].ToString(), out miktar))
+                        {
+                            toplamMiktar += miktar;
+                        }
+                    }
+                }
+
+                return toplamMiktar;
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
+        // SimpleButton üzerine satılan miktarı çizen Paint event'i
+        private void btn_Urun_Paint(object sender, PaintEventArgs e)
+        {
+            SimpleButton btn = sender as SimpleButton;
+            if (btn == null) return;
+
+            string recGenelkod = btn.Tag?.ToString();
+            if (string.IsNullOrEmpty(recGenelkod)) return;
+
+            decimal satilanMiktar = GetSatilanMiktar(recGenelkod);
+            if (satilanMiktar <= 0) return;
+
+            // Sağ üst köşeye miktar yazısı çiz
+            string miktarText = "x" + satilanMiktar.ToString("0");
+            
+            // Font ve brush ayarları
+            Font font = new Font("Arial", 10, FontStyle.Bold);
+            Brush textBrush = new SolidBrush(Color.Red);
+            Brush backBrush = new SolidBrush(Color.FromArgb(200, 255, 255, 255)); // Yarı şeffaf beyaz arka plan
+            
+            // Metin boyutunu hesapla
+            SizeF textSize = e.Graphics.MeasureString(miktarText, font);
+            
+            // Sağ üst köşe pozisyonu
+            int x = btn.Width - (int)textSize.Width - 5;
+            int y = 5;
+            
+            // Arka plan dikdörtgeni çiz
+            Rectangle backRect = new Rectangle(x - 2, y - 1, (int)textSize.Width + 4, (int)textSize.Height + 2);
+            e.Graphics.FillRectangle(backBrush, backRect);
+            
+            // Metni çiz
+            e.Graphics.DrawString(miktarText, font, textBrush, x, y);
+            
+            // Kaynakları temizle
+            font.Dispose();
+            textBrush.Dispose();
+            backBrush.Dispose();
+        }
 
         void btn_Urun_Click(object sender, EventArgs e)
         {
