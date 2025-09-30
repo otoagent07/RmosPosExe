@@ -60,6 +60,7 @@
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btnGelAl = new DevExpress.XtraEditors.SimpleButton();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.labelKaraliste = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.contextMenuStrip_LogRapor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -126,7 +127,6 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
-            this.gridView1.OptionsView.ShowViewCaption = true;
             resources.ApplyResources(this.gridView1, "gridView1");
             this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
@@ -291,6 +291,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelKaraliste);
             this.panel1.Controls.Add(this.lbl_Tel);
             this.panel1.Controls.Add(this.labelDakika);
             this.panel1.Controls.Add(this.btn_Cikis);
@@ -328,6 +329,15 @@
             resources.ApplyResources(this.gridColumn14, "gridColumn14");
             this.gridColumn14.FieldName = "Cari_KaraListede";
             this.gridColumn14.Name = "gridColumn14";
+            // 
+            // labelKaraliste
+            // 
+            this.labelKaraliste.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
+            this.labelKaraliste.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelKaraliste.Appearance.Options.UseFont = true;
+            this.labelKaraliste.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.labelKaraliste, "labelKaraliste");
+            this.labelKaraliste.Name = "labelKaraliste";
             // 
             // CallerCallCenter
             // 
@@ -385,5 +395,6 @@
         private System.Windows.Forms.Label labelDakika;
         private DevExpress.XtraEditors.SimpleButton btnGelAl;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private DevExpress.XtraEditors.LabelControl labelKaraliste;
     }
 }
