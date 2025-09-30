@@ -59,6 +59,7 @@
             this.labelDakika = new System.Windows.Forms.Label();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btnGelAl = new DevExpress.XtraEditors.SimpleButton();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.contextMenuStrip_LogRapor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -120,7 +121,8 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12,
-            this.gridColumn13});
+            this.gridColumn13,
+            this.gridColumn14});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -321,6 +323,12 @@
             this.btnGelAl.Name = "btnGelAl";
             this.btnGelAl.Click += new System.EventHandler(this.btnGelAl_Click_1);
             // 
+            // gridColumn14
+            // 
+            resources.ApplyResources(this.gridColumn14, "gridColumn14");
+            this.gridColumn14.FieldName = "Cari_KaraListede";
+            this.gridColumn14.Name = "gridColumn14";
+            // 
             // CallerCallCenter
             // 
             resources.ApplyResources(this, "$this");
@@ -376,5 +384,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelDakika;
         private DevExpress.XtraEditors.SimpleButton btnGelAl;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
     }
 }
