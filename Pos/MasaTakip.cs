@@ -342,6 +342,9 @@ namespace Pos
                 bar_Direksatis.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
 
+
+            sagtik();
+
         }
 
 
@@ -716,7 +719,8 @@ OPTION (MAXDOP 1, RECOMPILE);";
 		union all
 		
 		select MIN(Rsat_Id),'',Pkod_Ad,Pkod_Ad,0,'',
-		sum(Rsat_Tutar) * -1*0,sum(Rsat_Doviztutar) * -1,'',min(Rsat_Ba),
+		sum(Rsat_Tutar) * -1 -- *0
+        ,sum(Rsat_Doviztutar) * -1,'',min(Rsat_Ba),
 		'','',0,'false',0,Null,null,0,null,0,0,'',0,0
 		from Cst_Recete_Satis satis2
 		left join Pos_Kodlar on Rsat_Kapatma = Pkod_Kod and Pkod_Sinif = '11'
@@ -1096,7 +1100,8 @@ OPTION (MAXDOP 1, RECOMPILE);";
 		union all
 		
 		select MIN(Rsat_Id),'',Pkod_Ad,Pkod_Ad,0,'',
-		sum(Rsat_Tutar) * -1*0,sum(Rsat_Doviztutar) * -1,'',min(Rsat_Ba),
+		sum(Rsat_Tutar) * -1 -- *0
+   ,sum(Rsat_Doviztutar) * -1,'',min(Rsat_Ba),
 		'','',0,'false',0,Null,null,0,null,0,0,'',0,0
 		from Cst_Recete_Satis satis2
 		left join Pos_Kodlar on Rsat_Kapatma = Pkod_Kod and Pkod_Sinif = '11'
