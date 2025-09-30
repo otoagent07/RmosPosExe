@@ -603,13 +603,17 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
 
             Bakiye = Bakiye * kur;
 
-            return Fronttools.SelectTable("select Kodlar_Kod as Mkodlar_Kod,Kodlar_Ad as Mkodlar_Ad,ISNULL(" + Param.Doviz_Turu + ",0) as Kur, "
+            string query = "select Kodlar_Kod as Mkodlar_Kod,Kodlar_Ad as Mkodlar_Ad,ISNULL(" + Param.Doviz_Turu + ",0) as Kur, "
                 + "convert(decimal(18,2),(" + Bakiye.ToString().Replace(",", ".") + " / NULLIF(ISNULL(" + Param.Doviz_Turu + ",0),0))) as Doviz "
                 + " from Kodlar "
                 + " left join Kurlar on Kurlar_Kodu = Kodlar_Kod  and Convert(date,Kurlar_Tarih,105) = '" + Param.Tarih.Date.ToString("yyyy-MM-dd") + "' and Kurlar_Cesit = '" + kur_cesit + "' "
                 + " where Kodlar_Sinif = '02'"
                 + " and Doviz_Alis > 0"
-                + " order by Kodlar_Kod");
+                + " order by Kodlar_Kod";
+
+            DataTable data  = Fronttools.SelectTable(query);
+            return data;
+
         }
 
         public static DataTable Doviz_DagilimFront2(decimal Bakiye, string KurkoDu)
