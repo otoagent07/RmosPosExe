@@ -4253,6 +4253,12 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
                     {
                         dagilimTutar = Convert.ToDecimal(hsp.xr_KalanToplamTr.Text); // 07.05.2024 tarihinde ramo ekledi
                     }
+
+                    if (dagilimTutar==0)
+                    {
+                        dagilimTutar = Param.Param_Hesap_DovizOzetToplam == true ? Bakiye : B;
+                    }
+
                     if (Param.Kurlar_Nerden == 0)
                     {
                         dtDovizDagilim = Fis_Islem.Doviz_DagilimFront(dagilimTutar);
