@@ -121,6 +121,10 @@ ALTER TABLE RmosMuh..Pos_User ALTER COLUMN P_Bindirim_Yuzde int;
 
 
 IF COL_LENGTH('Pos_Cari', 'Cari_indirimOran') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_indirimOran decimal(18, 2) END;
+
+IF COL_LENGTH('Pos_Cari', 'Cari_KaraListede ') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_KaraListede bit END;
+
+
 IF COL_LENGTH('Pos_FolioParam', 'hizmetBedeliAktif') IS NULL BEGIN ALTER TABLE Pos_FolioParam ADD hizmetBedeliAktif bit END;
 
 IF COL_LENGTH('Cst_Recete_Satis', 'latitude') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD latitude nvarchar(200) END;
