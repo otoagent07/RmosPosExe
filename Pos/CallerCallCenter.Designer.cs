@@ -48,6 +48,7 @@
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_CariEkle = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Satis = new DevExpress.XtraEditors.SimpleButton();
@@ -56,11 +57,10 @@
             this.btn_AcikAdres = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelKaraliste = new DevExpress.XtraEditors.LabelControl();
             this.labelDakika = new System.Windows.Forms.Label();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btnGelAl = new DevExpress.XtraEditors.SimpleButton();
-            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.labelKaraliste = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.contextMenuStrip_LogRapor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -222,6 +222,12 @@
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.OptionsColumn.AllowFocus = false;
             // 
+            // gridColumn14
+            // 
+            resources.ApplyResources(this.gridColumn14, "gridColumn14");
+            this.gridColumn14.FieldName = "Cari_KaraListede";
+            this.gridColumn14.Name = "gridColumn14";
+            // 
             // btn_CariEkle
             // 
             resources.ApplyResources(this.btn_CariEkle, "btn_CariEkle");
@@ -295,8 +301,18 @@
             this.panel1.Controls.Add(this.lbl_Tel);
             this.panel1.Controls.Add(this.labelDakika);
             this.panel1.Controls.Add(this.btn_Cikis);
+            this.panel1.Controls.Add(this.btn_CariEkle);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // labelKaraliste
+            // 
+            this.labelKaraliste.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelKaraliste.Appearance.Font")));
+            this.labelKaraliste.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelKaraliste.Appearance.Options.UseFont = true;
+            this.labelKaraliste.Appearance.Options.UseForeColor = true;
+            resources.ApplyResources(this.labelKaraliste, "labelKaraliste");
+            this.labelKaraliste.Name = "labelKaraliste";
             // 
             // labelDakika
             // 
@@ -309,7 +325,6 @@
             this.panelControl2.Controls.Add(this.btn_Satis);
             this.panelControl2.Controls.Add(this.btn_CariDuzenle);
             this.panelControl2.Controls.Add(this.btn_AcikAdres);
-            this.panelControl2.Controls.Add(this.btn_CariEkle);
             resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Name = "panelControl2";
             // 
@@ -324,28 +339,13 @@
             this.btnGelAl.Name = "btnGelAl";
             this.btnGelAl.Click += new System.EventHandler(this.btnGelAl_Click_1);
             // 
-            // gridColumn14
-            // 
-            resources.ApplyResources(this.gridColumn14, "gridColumn14");
-            this.gridColumn14.FieldName = "Cari_KaraListede";
-            this.gridColumn14.Name = "gridColumn14";
-            // 
-            // labelKaraliste
-            // 
-            this.labelKaraliste.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
-            this.labelKaraliste.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelKaraliste.Appearance.Options.UseFont = true;
-            this.labelKaraliste.Appearance.Options.UseForeColor = true;
-            resources.ApplyResources(this.labelKaraliste, "labelKaraliste");
-            this.labelKaraliste.Name = "labelKaraliste";
-            // 
             // CallerCallCenter
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panelControl2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CallerCallCenter";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CallerCallCenter_FormClosed);
             this.Load += new System.EventHandler(this.CallerCallCenter_Load);

@@ -296,7 +296,7 @@ namespace Pos
         public static string MyClass = "Main";
         CallerId c = null;
 
-        public static string versiyonno = "v0.5.84";
+        public static string versiyonno = "v0.5.85";
         public void departmanYukleNew()
         {
             try
@@ -725,7 +725,7 @@ namespace Pos
 
                 btnMasaTakip.Enabled = User.M_Masatakip;
                 btnDirekSatis.Enabled = User.D_Direksatis;
-                //btnRaporlar.Enabled = User.R_Raporlar;
+                btnRaporlar.Enabled = User.R_Raporlar;
                 btnAyarlar.Enabled = User.A_Ayarlar;
                 btnGunSonu.Enabled = User.P_Gunsonu;
                 btnKasa.Enabled = User.K_Kasa;

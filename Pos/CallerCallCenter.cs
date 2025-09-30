@@ -70,7 +70,7 @@ namespace Pos
             }
 
             labelDakika.Text = "";
-
+            karalisteKontrol();
 
             btnGelAl.Enabled = true;
         }
@@ -79,8 +79,8 @@ namespace Pos
         {
             string data = @"
         select Cari_Id,Cari_Kod,Cari_Ad,Cari_Tel,ISNULL(Cari_Adres1,'') as Cari_Adres1,ISNULL(Cari_Adres2,'') as Cari_Adres2, ISNULL(Cari_Adres3,'') as Cari_Adres3,
-        	 il.Adres_Kod as ilKod,il.Adres_Ad as ilAd,ilce.Adres_Kod as ilceKod, ilce.Adres_Ad as ilceAd,mah.Adres_Kod as mahKod, mah.Adres_Ad as mahAd,
-        	 sube.Pkod_Kod as subeKod, sube.Pkod_Ad as subeAd
+         	 il.Adres_Kod as ilKod,il.Adres_Ad as ilAd,ilce.Adres_Kod as ilceKod, ilce.Adres_Ad as ilceAd,mah.Adres_Kod as mahKod, mah.Adres_Ad as mahAd,
+         	 sube.Pkod_Kod as subeKod, sube.Pkod_Ad as subeAd,ISNULL(Cari_KaraListede,0) as Cari_KaraListede
         from Pos_Cari as cari
         left join Pos_Adres as mah on cari.Cari_Mahalle = mah.Adres_Kod and mah.Adres_Sinif = '26'
         left join Pos_Adres as ilce on cari.Cari_Ilce = ilce.Adres_Kod and ilce.Adres_Sinif = '25'
@@ -107,6 +107,7 @@ namespace Pos
             newDt.Columns.Add("mahAd", typeof(string));
             newDt.Columns.Add("subeKod", typeof(string));
             newDt.Columns.Add("subeAd", typeof(string));
+            newDt.Columns.Add("Cari_KaraListede", typeof(bool));
 
             // Mevcut tablodaki her satır için 3 adresi ayrı satırlar olarak ekle
             foreach (DataRow row in dt.Rows)
@@ -123,6 +124,7 @@ namespace Pos
                 string mahAd = row["mahAd"].ToString();
                 string subeKod = row["subeKod"].ToString();
                 string subeAd = row["subeAd"].ToString();
+                bool cariKaraListede = Convert.ToBoolean(row["Cari_KaraListede"]);
 
                 string[] adresler = { row["Cari_Adres1"].ToString(), row["Cari_Adres2"].ToString(), row["Cari_Adres3"].ToString() };
 
@@ -144,6 +146,7 @@ namespace Pos
                         newRow["mahAd"] = mahAd;
                         newRow["subeKod"] = subeKod;
                         newRow["subeAd"] = subeAd;
+                        newRow["Cari_KaraListede"] = cariKaraListede;
 
                         newDt.Rows.Add(newRow);
                     }
@@ -408,8 +411,8 @@ namespace Pos
 
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-
             dakikayaz();
+            karalisteKontrol();
         }
 
         public void dakikayaz()
@@ -437,9 +440,32 @@ namespace Pos
             }
         }
 
+        public void karalisteKontrol()
+        {
+            try
+            {
+                if (gridView1.RowCount > 0)
+                {
+                    var karaListeValue = gridView1.GetFocusedRowCellValue("Cari_KaraListede");
+                    bool isKaraListede = karaListeValue != null && karaListeValue != DBNull.Value && Convert.ToBoolean(karaListeValue);
+                    
+                    labelKaraliste.Visible = isKaraListede;
+                }
+                else
+                {
+                    labelKaraliste.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                labelKaraliste.Visible = false;
+            }
+        }
+
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             dakikayaz();
+            karalisteKontrol();
         }
 
         private void btnGelAl_Click(object sender, EventArgs e)
