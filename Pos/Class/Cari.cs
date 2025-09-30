@@ -27,6 +27,7 @@ namespace Pos.Class
         public string Cari_Ilce { get; set; }
         public string Cari_Mahalle { get; set; }
         public string Cari_Tel2 { get; set; }
+        public bool Cari_KaraListede { get; set; }
         public static Cari Cari_Getir(string Kod)
         {
             Cari c = new Cari();
@@ -65,6 +66,7 @@ namespace Pos.Class
                 c.Cari_Ilce = Convert.ToString(dt.Rows[0]["Cari_Ilce"]);
                 c.Cari_Mahalle = Convert.ToString(dt.Rows[0]["Cari_Mahalle"]);
                 c.Cari_Tel2 = Convert.ToString(dt.Rows[0]["Cari_Tel2"]);
+                c.Cari_KaraListede = Convert.ToBoolean(dt.Rows[0]["Cari_KaraListede"]);
 
                 return c;
             }
@@ -103,6 +105,7 @@ namespace Pos.Class
                 c.Cari_Il = Convert.ToString(dt.Rows[0]["Cari_Il"]);
                 c.Cari_Ilce = Convert.ToString(dt.Rows[0]["Cari_Ilce"]);
                 c.Cari_Mahalle = Convert.ToString(dt.Rows[0]["Cari_Mahalle"]);
+                c.Cari_KaraListede = Convert.ToBoolean(dt.Rows[0]["Cari_KaraListede"]);
 
                 return c;
             }

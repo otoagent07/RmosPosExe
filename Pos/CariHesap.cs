@@ -204,13 +204,13 @@ namespace Pos
                     if (dt.Rows.Count < 1)
                     {
                         int id = Convert.ToInt32(dbtools.DegerGetir("INSERT INTO dbo.Pos_Cari (Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3,Cari_Funvan,Cari_Funvan2, "
-                            + " Cari_Fadres1,Cari_Fadres2,Cari_Vergidarie,Cari_Vergino,Cari_Mail,Cari_Kart,Cari_Tel2,Cari_Email,Cari_Tip,Cari_Limit,Cari_LimitTutar,Cari_Il,cari_Ilce,Cari_Mahalle,Cari_MuhasebeKodu,Cari_Aktif,Cari_DogumTar,Cari_indirimOran,adressecenek) " +
+                            + " Cari_Fadres1,Cari_Fadres2,Cari_Vergidarie,Cari_Vergino,Cari_Mail,Cari_Kart,Cari_Tel2,Cari_Email,Cari_Tip,Cari_Limit,Cari_LimitTutar,Cari_Il,cari_Ilce,Cari_Mahalle,Cari_MuhasebeKodu,Cari_Aktif,Cari_DogumTar,Cari_indirimOran,adressecenek,Cari_KaraListede) " +
                             "VALUES ( '" + txt_Cari_Kod.EditValue + "','" + txt_Cari_Ad.EditValue + "','" + txt_Cari_Soyad.EditValue + "','" + txt_Cari_Telefon.EditValue + "', "
                             + " '" + txt_Cari_Adres1.EditValue + "','" + txt_Cari_Adres2.EditValue + "','" + txt_Cari_Adres3.EditValue + "','" + txt_Cari_F_Unvan.EditValue + "','" + txt_Cari_F_Unvan2.EditValue + "','" + txt_Cari_F_Adres1.EditValue + "','" + txt_Cari_F_Adres2.EditValue + "','" + txt_Cari_F_Vergidaire.EditValue + "', "
                             + " '" + txt_Cari_F_Vergino.EditValue + "','" + txt_Cari_F_Mail.EditValue + "', '" + txt_Cari_Kart_No.EditValue + "','" + txt_Cari_Telefon2.EditValue + "','" + txt_Cari_Email.EditValue + "','" + Convert.ToString(look_Cari_Tip.EditValue) + "', "
                             + " '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "','" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "','" + Convert.ToString(look_Cari_Il.EditValue) + "','" + Convert.ToString(look_Cari_Ilce.EditValue)
                             + "','" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
-                            + " '" + look_CariMuh.EditValue + "','" + Cari_Aktif.Checked + "','" + Cari_DogumTar.EditValue + "','" + indirimDec + "','" + getAdresSecenek() + "')  " +
+                            + " '" + look_CariMuh.EditValue + "','" + Cari_Aktif.Checked + "','" + Cari_DogumTar.EditValue + "','" + indirimDec + "','" + getAdresSecenek() + "','" + Convert.ToBoolean(chk_Cari_KaraListede.Checked) + "')  " +
                             "select SCOPE_IDENTITY()"));
 
                         if (txt_Cari_Kod.Text.Length == 0)
@@ -252,7 +252,7 @@ namespace Pos
                         + " Cari_Limit = '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "',Cari_LimitTutar = '" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "',Cari_Il = '" + Convert.ToString(look_Cari_Il.EditValue) + "', "
                         + " Cari_Ilce = '" + Convert.ToString(look_Cari_Ilce.EditValue) + "',Cari_Mahalle = '" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
                         + " Cari_MuhasebeKodu = '" + look_CariMuh.EditValue + "', Cari_Aktif = '" + Cari_Aktif.Checked + "',Cari_Funvan2='" + txt_Cari_F_Unvan2.EditValue + "', "
-                        + " Cari_DogumTar = '" + Cari_DogumTar.DateTime.Date + "', Cari_indirimOran = '" + indirimDec + "', adressecenek = '" + getAdresSecenek() + "' where  Cari_Kod = '" + txt_Cari_Kod.EditValue + "' ");
+                        + " Cari_DogumTar = '" + Cari_DogumTar.DateTime.Date + "', Cari_indirimOran = '" + indirimDec + "', adressecenek = '" + getAdresSecenek() + "', Cari_KaraListede = '" + Convert.ToBoolean(chk_Cari_KaraListede.Checked) + "' where  Cari_Kod = '" + txt_Cari_Kod.EditValue + "' ");
 
                         Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_CariTanim, Log.Log_Islem.Duzelt, txt_Cari_Kod.EditValue + " Kod ile Cari Duzeltildi.", String.Empty, String.Empty);
 
@@ -294,12 +294,12 @@ namespace Pos
                 if (dt.Rows.Count < 1)
                 {
                     int id = Convert.ToInt32(dbtools.DegerGetir("INSERT INTO dbo.Pos_Cari (Cari_Kod,Cari_Ad,Cari_Soyad,Cari_Tel,Cari_Adres1,Cari_Adres2,Cari_Adres3,Cari_Funvan, "
-                        + " Cari_Fadres1,Cari_Fadres2,Cari_Vergidarie,Cari_Vergino,Cari_Mail,Cari_Kart,Cari_Tel2,Cari_Email,Cari_Tip,Cari_Limit,Cari_LimitTutar,Cari_Il,cari_Ilce,Cari_Mahalle,Cari_MuhasebeKodu,Cari_Aktif,Cari_indirimOran,adressecenek) VALUES ( '" + txt_Cari_Kod.EditValue + "','" + txt_Cari_Ad.EditValue + "','" + txt_Cari_Soyad.EditValue + "','" + txt_Cari_Telefon.EditValue + "', "
+                        + " Cari_Fadres1,Cari_Fadres2,Cari_Vergidarie,Cari_Vergino,Cari_Mail,Cari_Kart,Cari_Tel2,Cari_Email,Cari_Tip,Cari_Limit,Cari_LimitTutar,Cari_Il,cari_Ilce,Cari_Mahalle,Cari_MuhasebeKodu,Cari_Aktif,Cari_indirimOran,adressecenek,Cari_KaraListede) VALUES ( '" + txt_Cari_Kod.EditValue + "','" + txt_Cari_Ad.EditValue + "','" + txt_Cari_Soyad.EditValue + "','" + txt_Cari_Telefon.EditValue + "', "
                         + " '" + txt_Cari_Adres1.EditValue + "','" + txt_Cari_Adres2.EditValue + "','" + txt_Cari_Adres3.EditValue + "','" + txt_Cari_F_Unvan.EditValue + "','" + txt_Cari_F_Adres1.EditValue + "','" + txt_Cari_F_Adres2.EditValue + "','" + txt_Cari_F_Vergidaire.EditValue + "', "
                         + " '" + txt_Cari_F_Vergino.EditValue + "','" + txt_Cari_F_Mail.EditValue + "', '" + txt_Cari_Kart_No.EditValue + "','" + txt_Cari_Telefon2.EditValue + "','" + txt_Cari_Email.EditValue + "','" + Convert.ToString(look_Cari_Tip.EditValue) + "', "
                         + " '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "','" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "','" + Convert.ToString(look_Cari_Il.EditValue) + "','" + Convert.ToString(look_Cari_Ilce.EditValue)
                         + "','" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
-                        + " '" + look_CariMuh.EditValue + "','" + Cari_Aktif.Checked + "','" + indirimDec + "','" + getAdresSecenek() + "')  " +
+                        + " '" + look_CariMuh.EditValue + "','" + Cari_Aktif.Checked + "','" + indirimDec + "','" + getAdresSecenek() + "','" + Convert.ToBoolean(chk_Cari_KaraListede.Checked) + "')  " +
                         "select SCOPE_IDENTITY()"));
 
                     if (txt_Cari_Kod.Text.Length == 0)
@@ -321,7 +321,7 @@ namespace Pos
                     + " Cari_Limit = '" + Convert.ToBoolean(chk_Cari_limit.Checked) + "',Cari_LimitTutar = '" + spn_Cari_Limit.Value.ToString().Replace(",", ".") + "',Cari_Il = '" + Convert.ToString(look_Cari_Il.EditValue) + "', "
                     + " Cari_Ilce = '" + Convert.ToString(look_Cari_Ilce.EditValue) + "',Cari_Mahalle = '" + Convert.ToString(look_Cari_Mahalle.EditValue) + "', "
                     + " Cari_MuhasebeKodu = '" + look_CariMuh.EditValue + "', Cari_Aktif = '" + Cari_Aktif.Checked
-                    + "', Cari_indirimOran = '" + indirimDec + "', adressecenek = '" + getAdresSecenek() + "' where  Cari_Kod = '" + txt_Cari_Kod.EditValue + "' ");
+                    + "', Cari_indirimOran = '" + indirimDec + "', adressecenek = '" + getAdresSecenek() + "', Cari_KaraListede = '" + Convert.ToBoolean(chk_Cari_KaraListede.Checked) + "' where  Cari_Kod = '" + txt_Cari_Kod.EditValue + "' ");
 
                     Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_CariTanim, Log.Log_Islem.Duzelt, txt_Cari_Kod.EditValue + " Kod ile Cari Duzeltildi.", String.Empty, String.Empty);
 
@@ -387,6 +387,7 @@ namespace Pos
             gridColumn35.FieldName = "Cari_Ilce";
             gridColumn54.FieldName = "Cari_Mahalle";
             gridColumn55.FieldName = "Cari_MuhasebeKodu";
+            gridColumn81.FieldName = "Cari_KaraListede";
 
             string filtre = "";
             if (!string.IsNullOrEmpty(CariKod)) filtre = " Where Cari_Kod = '" + CariKod + "'";
@@ -421,6 +422,7 @@ namespace Pos
       , ISNULL(Cari_YS_CustomerID, '')      as Cari_YS_CustomerID
       , ISNULL(Cari_Funvan2, '')            as Cari_Funvan2
       , ISNULL(Cari_DogumTar, getdate())    as Cari_DogumTar
+      , ISNULL(Cari_KaraListede, 0)         as Cari_KaraListede
   FROM [dbo].[Pos_Cari] " + filtre + " order by Cari_Kod");
             grd_Cari.DataSource = dt;
 
@@ -1088,6 +1090,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
             gridColumn54.FieldName = "Cari_Mahalle";
             gridColumn55.FieldName = "Cari_MuhasebeKodu";
             gridColumn80.FieldName = "Cari_indirimOran";
+            gridColumn81.FieldName = "Cari_KaraListede";
 
             DataTable dt = dbtools.SelectTable(@"
         SELECT ISNULL(Cari_Id,0)            as Cari_Id
@@ -1120,7 +1123,8 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
       , ISNULL(Cari_Funvan2, '')            as Cari_Funvan2
       , ISNULL(Cari_DogumTar, getdate())    as Cari_DogumTar
       , ISNULL(Cari_indirimOran,0)          as Cari_indirimOran
-, ISNULL(adressecenek,1)          as adressecenek
+      , ISNULL(adressecenek,1)              as adressecenek
+      , ISNULL(Cari_KaraListede, 0)         as Cari_KaraListede
   FROM [dbo].[Pos_Cari] order by Cari_Kod");
 
 
@@ -1485,6 +1489,9 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari");
 
                     txtIndOran.EditValue = gridView8.GetFocusedRowCellValue("Cari_indirimOran").ToString();
 
+                    // Cari_KaraListede handling - null ise false olacak
+                    var karaListeValue = gridView8.GetFocusedRowCellValue("Cari_KaraListede");
+                    chk_Cari_KaraListede.Checked = karaListeValue == null || karaListeValue == DBNull.Value ? false : Convert.ToBoolean(karaListeValue);
 
                     int secenek = Convert.ToInt32(gridView8.GetFocusedRowCellValue("adressecenek").ToString());
                     if (secenek==1) adres1Aktif.Checked = true;
@@ -2000,7 +2007,8 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
       , ISNULL(Cari_Funvan2, '')            as Cari_Funvan2
       , ISNULL(Cari_DogumTar, getdate())    as Cari_DogumTar
       , ISNULL(Cari_indirimOran,0)          as Cari_indirimOran
-      , ISNULL(adressecenek,1)          as adressecenek
+      , ISNULL(adressecenek,1)              as adressecenek
+      , ISNULL(Cari_KaraListede, 0)         as Cari_KaraListede
   FROM [dbo].[Pos_Cari] where Cari_Kod='{txt_Cari_Kod.Text}'");
 
                 if (dt == null || dt.Rows.Count == 0)
@@ -2032,6 +2040,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                     look_CariMuh.EditValue = "";
                     Cari_DogumTar.EditValue = "";
                     txtIndOran.EditValue = "";
+                    chk_Cari_KaraListede.Checked = false;
                     return;
                 }
 
@@ -2074,6 +2083,11 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
 
                 Cari_DogumTar.EditValue = Convert.ToString(dt.Rows[0]["Cari_DogumTar"].ToString());
                 txtIndOran.EditValue = dt.Rows[0]["Cari_indirimOran"].ToString();
+                
+                // Cari_KaraListede handling - null ise false olacak
+                var karaListeValue = dt.Rows[0]["Cari_KaraListede"];
+                chk_Cari_KaraListede.Checked = karaListeValue == null || karaListeValue == DBNull.Value ? false : Convert.ToBoolean(karaListeValue);
+                
                 int secenek = Convert.ToInt32(dt.Rows[0]["adressecenek"].ToString());
                 if (secenek == 1) adres1Aktif.Checked = true;
                 if (secenek == 2) adres2Aktif.Checked = true;
