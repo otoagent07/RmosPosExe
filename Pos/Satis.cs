@@ -2159,8 +2159,8 @@ namespace Pos
             string miktarText = "x" + satilanMiktar.ToString("0");
             
             // Font ve brush ayarları
-            Font font = new Font("Arial", 10, FontStyle.Bold);
-            Brush textBrush = new SolidBrush(Color.Red);
+            Font font = new Font("Arial", 12, FontStyle.Bold);
+            Brush textBrush = new SolidBrush(Color.Black);
             
             // Metin boyutunu hesapla
             SizeF textSize = e.Graphics.MeasureString(miktarText, font);
