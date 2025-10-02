@@ -350,8 +350,10 @@ and Kurlar_Cesit=(select top 1 Fis_Doviz_me from Fishrk)";
                     tutar = doviztutar * kur;
                     //}
                 }
-               
-                if ((Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1 && mevcutTutar != 0) || Math.Abs(mevcutTutar - tutar) <=(decimal)5.0) // 0.2 -> 12.08.2025 de fatih istedi
+
+                // 02.10.2025 de samet bey istediği için Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1 yorum yapıldı
+                if (( mevcutTutar != 0) || Math.Abs(mevcutTutar - tutar) <=(decimal)5.0) // 0.2 -> 12.08.2025 de fatih istedi
+                //if ((Param.Calisma_Sekli == 1 && Param.Tesis_Tipi == 1 && mevcutTutar != 0) || Math.Abs(mevcutTutar - tutar) <=(decimal)5.0) // 0.2 -> 12.08.2025 de fatih istedi
                 {
                     tutar = StatikSinif.getTutarKontrol(tutar, mevcutTutar);
                 }

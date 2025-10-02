@@ -572,7 +572,7 @@ Select InstanceNames from @GetInstances ";
         public static decimal getTutarKontrol(decimal girilenDeger, decimal mevcutDeger)
         {
             decimal fark = mevcutDeger - girilenDeger;
-            if (Math.Abs(fark) <= (decimal)0.2)
+            if (Math.Abs(fark) <= (decimal)0.9) // 0.9 idi samet bey ile iştarese sonucu 0.9 a çıkarıldı. tarih : 02.10.2025
             {
                 girilenDeger = mevcutDeger;
             }
