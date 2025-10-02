@@ -884,6 +884,19 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                     return;
                 }
 
+                // Get payment type data (Pkod_Odano, Pkod_Folio, Pkod_Odenmez)
+                string pkodOdano = "";
+                string pkodFolio = "";
+                string pkodOdenmez = "";
+                
+                DataTable dtOda = dbtools.SelectTable("select case when isnull(Pkod_Tekoda,0) = 1 then Pkod_Odano else '' end as Pkod_Odano from Pos_Kodlar where Pkod_Sinif = '11' and Pkod_Kod = '" + odemetip + "'");
+                if (dtOda.Rows.Count > 0)
+                {
+                    pkodOdano = Convert.ToString(dtOda.Rows[0]["Pkod_Odano"]);
+                    pkodFolio = Fronttools.DegerGetir($"select top 1 Kumhrk_Rez_id from Kumhrk where Kumhrk_Oda='{pkodOdano}' and Kumhrk_Rez_id=(select top 1 Rez_Id from rez where Rez_Odano='{pkodOdano}' and Rez_R_I_H='I')");
+                    pkodOdenmez = pkodOdano;
+                }
+
                 int rsatId = Convert.ToInt32(dataTable.Rows[0]["Rsat_Id"].ToString());
 
                 RmosMerkez21Entities db = new RmosMerkez21Entities(dbtools.server, dbtools.database, dbtools.users, dbtools.pwd);
@@ -941,6 +954,11 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                         nesne.Rsat_Tutar = fiyat;
                         nesne.Rsat_Doviztutar = fiyat;
                         //nesne.Rsat_Fisno = 0;
+                        
+                        // Set payment type specific values from Pkod_Odano for ara odeme
+                        nesne.Rsat_Odenmez = pkodOdenmez;
+                        nesne.Rsat_Odano = pkodOdano;
+                        nesne.Rsat_Folio = pkodFolio != "" ? Convert.ToInt32(pkodFolio) : (int?)null;
                     }
                     else
                     {
@@ -977,6 +995,11 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                     nesne.Rsat_Indoran = null;
                     nesne.Rsat_Onbdep = null;
                     nesne.Rsat_OzelMasaAdi = null;
+                    
+                    // Set payment type specific values from Pkod_Odano
+                    nesne.Rsat_Odenmez = pkodOdenmez;
+                    nesne.Rsat_Odano = pkodOdano;
+                    nesne.Rsat_Folio = pkodFolio != "" ? Convert.ToInt32(pkodFolio) : (int?)null;
 
 
                     nesne.Rsat_Fisno = fisno;
@@ -1029,6 +1052,11 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                     if (yazdirilsinmi)
                     {
                         yaziciyaGonder(nesne.Rsat_Fisno.Value);
+                    }
+
+                    if (pkodOdano!="")
+                    {
+                        dbtools.execcmdR($"exec Pos_Satis_Onburo @Tarih='{Param.Tarih.Date.ToString("yyyy-MM-dd")}',@Fisno=N'{fisno}',@FolioKartNo=default,@FolioKartId=0");
                     }
 
                     //if (araodememi == false)
