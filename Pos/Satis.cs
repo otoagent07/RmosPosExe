@@ -4737,7 +4737,8 @@ where  Rsat_Id='" + Rsat_Id + "'";
             DataTable dtDizayn = dbtools.SelectTable("select Rapor_Id From Rapor_Dizayn where Rapor_Kod = 'URUN'");
             if (dtDizayn.Rows.Count < 1)
             {
-                RHMesaj.MyMessageInformation("Ürün Printer Dizaynı Yapılmamış...\nAyarlar-> Printer Ayarları -> Adisyon Fatura -> Ürün Dizayn");
+                //Oğuzhan Mendi Yaşlı Kullanıcılar Sistem Çalışmıyor diye uyarıyı kaldırdı
+               // RHMesaj.MyMessageInformation("Ürün Printer Dizaynı Yapılmamış...\nAyarlar-> Printer Ayarları -> Adisyon Fatura -> Ürün Dizayn");
                 return;
             }
 
