@@ -2549,28 +2549,41 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         public void satisGit()
         {
-            if (StatikSinif.masaMusaitmi(Masa_No) == false) return;
-            if (StatikSinif.sadeceKendiMasanaGir(bartxt_FisNo.EditValue.ToString()) == false) return;
+            string fisno = bartxt_FisNo.EditValue.ToString();
 
-            string parcaliAktif = dbtools.DegerGetir("select count(*) as toplam from Pos_Param where ISNULL(Param_ParcaliMasaAktif,0)=1");
-
-            if (parcaliAktif.Equals("1"))
+            if (Param.satisdaOzelMasa && (fisno == "" || fisno == "0"))
             {
-                string query = "select count(*) as toplam from Pos_Masa where Masa_Depart='" + Departman.Dep_Kodu + "' and Masa_Durum='1' and Masa_No like '" + Masa_No + "[_]%' ";
-                string parcalimi = dbtools.DegerGetir(query);
+                OzelMasa();
 
-                if (!parcalimi.Equals("0"))
+            }
+            else
+            {
+                if (StatikSinif.masaMusaitmi(Masa_No) == false) return;
+                if (StatikSinif.sadeceKendiMasanaGir(bartxt_FisNo.EditValue.ToString()) == false) return;
+
+                string parcaliAktif = dbtools.DegerGetir("select count(*) as toplam from Pos_Param where ISNULL(Param_ParcaliMasaAktif,0)=1");
+
+                if (parcaliAktif.Equals("1"))
                 {
-                    RHMesaj.MyMessageInformation("Masa parçalanmıştır. Ana masaya giremezsiniz!");
-                    return;
+                    string query = "select count(*) as toplam from Pos_Masa where Masa_Depart='" + Departman.Dep_Kodu + "' and Masa_Durum='1' and Masa_No like '" + Masa_No + "[_]%' ";
+                    string parcalimi = dbtools.DegerGetir(query);
+
+                    if (!parcalimi.Equals("0"))
+                    {
+                        RHMesaj.MyMessageInformation("Masa parçalanmıştır. Ana masaya giremezsiniz!");
+                        return;
+                    }
                 }
+
+
+
+                Satis();
+                Main.a.Listele(0);
+                txt_Filtre.Text = "";
             }
 
 
-
-            Satis();
-            Main.a.Listele(0);
-            txt_Filtre.Text = "";
+          
         }
 
         private void bar_PaketSatis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

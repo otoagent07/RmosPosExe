@@ -107,6 +107,11 @@ namespace Pos
         {
             try
             {
+                if (Param.satisdaOzelMasa)
+                {
+
+                }
+
                 btnYarim.Tag = "Y";
                 btnBir.Tag = "T";
                 btnBirbucuk.Tag = "B";

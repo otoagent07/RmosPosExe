@@ -471,6 +471,7 @@ BEGIN EXEC('
         {
             try
             {
+                if (Masa_No == "") return true;
                 if (Param.masamusait == false)
                 {
                     return true;
