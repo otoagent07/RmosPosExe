@@ -184,6 +184,7 @@ namespace Pos.Class
         public static bool ingenico2 { get; set; }
         public static bool ekranKlavyesiAktif { get; set; }
         public static bool ingenicoOdemeAtmasin { get; set; }
+        public static bool satisdaOzelMasa { get; set; }
         public static bool masatrTutSurukle { get; set; }
         public static bool servispayFooterda { get; set; }
         public static bool servispayOdenmezIkramSil { get; set; }
@@ -256,6 +257,7 @@ namespace Pos.Class
                         ",ISNULL(ingenico2,0) as ingenico2 " +
                         ",ISNULL(ekranKlavyesiAktif,0) as ekranKlavyesiAktif " +
                         ",ISNULL(ingenicoOdemeAtmasin,0) as ingenicoOdemeAtmasin " +
+                        ",ISNULL(satisdaOzelMasa,0) as satisdaOzelMasa " +
                         ",ISNULL(Param_StokAnlikAtmasin,0) as Param_StokAnlikAtmasin " +
                         ",ISNULL(masatakipKonumYukseklik,341) as masatakipKonumYukseklik " +
                         ",ISNULL(gunsonubitissaat,'11:11') as gunsonubitissaat " +
@@ -462,6 +464,7 @@ namespace Pos.Class
                     ingenico2 = Convert.ToBoolean(dt.Rows[0]["ingenico2"]);
                     ekranKlavyesiAktif = Convert.ToBoolean(dt.Rows[0]["ekranKlavyesiAktif"]);
                     ingenicoOdemeAtmasin = Convert.ToBoolean(dt.Rows[0]["ingenicoOdemeAtmasin"]);
+                    satisdaOzelMasa = Convert.ToBoolean(dt.Rows[0]["satisdaOzelMasa"]);
                     hesapFisQrFisno = Convert.ToBoolean(dt.Rows[0]["hesapFisQrFisno"]);
                     masatrTutSurukle = Convert.ToBoolean(dt.Rows[0]["masatrTutSurukle"]);
                     servispayFooterda = Convert.ToBoolean(dt.Rows[0]["servispayFooterda"]);

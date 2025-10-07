@@ -434,6 +434,7 @@ namespace Pos
                 ingenico2.Checked = Param.ingenico2;
                 ekranKlavyesiAktif.Checked = Param.ekranKlavyesiAktif;
                 ingenicoOdemeAtmasin.Checked = Param.ingenicoOdemeAtmasin;
+                satisdaOzelMasa.Checked = Param.satisdaOzelMasa;
                 Param_StokAnlikAtmasin.Checked = Param.Param_StokAnlikAtmasin;
 
 
@@ -1301,6 +1302,7 @@ namespace Pos
                     + "','" + ingenico2.Checked + "'"
                     + "','" + ekranKlavyesiAktif.Checked + "'"
                     + "','" + ingenicoOdemeAtmasin.Checked + "'"
+                    + "','" + satisdaOzelMasa.Checked + "'"
                     + "','" + Param_StokAnlikAtmasin.Checked + "'"
                     + "','" + masatakipKonumYukseklik.Text + "'"
                     + "','" + gunsonubitissaat.Text + "'"
@@ -1356,6 +1358,7 @@ namespace Pos
                        + "',ingenico2 = '" + ingenico2.Checked + "'"
                        + ",ekranKlavyesiAktif = '" + ekranKlavyesiAktif.Checked + "'"
                        + ",ingenicoOdemeAtmasin = '" + ingenicoOdemeAtmasin.Checked + "'"
+                       + ",satisdaOzelMasa = '" + satisdaOzelMasa.Checked + "'"
                        + ",Param_StokAnlikAtmasin = '" + Param_StokAnlikAtmasin.Checked + "'"
                        + ",masatakipKonumYukseklik = '" + masatakipKonumYukseklik.Text + "'"
                        + ",gunsonubitissaat = '" + gunsonubitissaat.Text + "'"

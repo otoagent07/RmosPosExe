@@ -186,6 +186,7 @@ IF COL_LENGTH('Pos_Param', 'merkezaktif') IS NULL BEGIN ALTER TABLE Pos_Param AD
 IF COL_LENGTH('Pos_Param', 'ingenico2') IS NULL BEGIN ALTER TABLE Pos_Param ADD ingenico2 bit END;
 IF COL_LENGTH('Pos_Param', 'ekranKlavyesiAktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD ekranKlavyesiAktif bit END;
 IF COL_LENGTH('Pos_Param', 'ingenicoOdemeAtmasin') IS NULL BEGIN ALTER TABLE Pos_Param ADD ingenicoOdemeAtmasin bit END;
+IF COL_LENGTH('Pos_Param', 'satisdaOzelMasa') IS NULL BEGIN ALTER TABLE Pos_Param ADD satisdaOzelMasa bit END;
 
 
 
