@@ -20,7 +20,13 @@ namespace Pos
             this.BringToFront();
             this.dataTable = data;
         }
-
+        string aciklamatext = "";
+        public Klavye2(string aciklama)
+        {
+            InitializeComponent();
+            this.BringToFront();
+            aciklamatext = aciklama;
+        }
         int neredenGeldim = 0;
         public Klavye2(int neredenGeldim)
         {
@@ -114,7 +120,7 @@ namespace Pos
         public string baslik = "";
         private void Klavye2_Load(object sender, EventArgs e)
         {
-            txtBaslik.Text = "";
+            txtBaslik.Text = aciklamatext;
             flowLayoutPanel1.AutoScroll = true;
 
             if (this.Tag != null && this.Tag.ToString().Equals("FISIPTAL"))

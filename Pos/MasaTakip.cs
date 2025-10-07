@@ -2105,7 +2105,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
 
             timer1.Enabled = false;
-            Klavye2 klavye = new Klavye2();
+            Klavye2 klavye = new Klavye2(aciklama:"Lütfen özel masa adını giriniz...");
             klavye.Fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
 
             string fisno = bartxt_FisNo.EditValue.ToString();

@@ -122,14 +122,14 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Space.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 321</value>
+    <value>282, 340</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Space.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Space.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 53</value>
+    <value>346, 53</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Space.TabIndex" type="System.Int32, mscorlib">
@@ -154,13 +154,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Nokta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>643, 264</value>
+    <value>772, 283</value>
   </data>
   <data name="Nokta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Nokta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Nokta.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -184,13 +184,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_Ç.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 264</value>
+    <value>702, 283</value>
   </data>
   <data name="Btn_Ç.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_Ç.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_Ç.TabIndex" type="System.Int32, mscorlib">
     <value>142</value>
@@ -214,13 +214,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_Ö.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 264</value>
+    <value>632, 283</value>
   </data>
   <data name="Btn_Ö.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_Ö.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_Ö.TabIndex" type="System.Int32, mscorlib">
     <value>141</value>
@@ -244,13 +244,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_M.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 264</value>
+    <value>562, 283</value>
   </data>
   <data name="Btn_M.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_M.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_M.TabIndex" type="System.Int32, mscorlib">
     <value>140</value>
@@ -274,13 +274,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_N.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 264</value>
+    <value>492, 283</value>
   </data>
   <data name="Btn_N.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_N.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_N.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
@@ -304,13 +304,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_B.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 264</value>
+    <value>422, 283</value>
   </data>
   <data name="Btn_B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_B.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_B.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
@@ -334,13 +334,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_V.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 264</value>
+    <value>352, 283</value>
   </data>
   <data name="Btn_V.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_V.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_V.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>
@@ -364,13 +364,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_C.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 264</value>
+    <value>282, 283</value>
   </data>
   <data name="Btn_C.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_C.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_C.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>
@@ -394,13 +394,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_X.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 264</value>
+    <value>212, 283</value>
   </data>
   <data name="Btn_X.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_X.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_X.TabIndex" type="System.Int32, mscorlib">
     <value>135</value>
@@ -424,13 +424,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_Z.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 264</value>
+    <value>142, 283</value>
   </data>
   <data name="Btn_Z.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_Z.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_Z.TabIndex" type="System.Int32, mscorlib">
     <value>134</value>
@@ -454,13 +454,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_İ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>673, 207</value>
+    <value>808, 226</value>
   </data>
   <data name="Btn_İ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_İ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_İ.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -484,13 +484,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_Ş.Location" type="System.Drawing.Point, System.Drawing">
-    <value>615, 207</value>
+    <value>738, 226</value>
   </data>
   <data name="Btn_Ş.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_Ş.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_Ş.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -514,13 +514,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_L.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 207</value>
+    <value>668, 226</value>
   </data>
   <data name="Btn_L.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_L.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_L.TabIndex" type="System.Int32, mscorlib">
     <value>131</value>
@@ -544,13 +544,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_K.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 207</value>
+    <value>598, 226</value>
   </data>
   <data name="Btn_K.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_K.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_K.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
@@ -574,13 +574,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_J.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 207</value>
+    <value>528, 226</value>
   </data>
   <data name="Btn_J.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_J.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_J.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -604,13 +604,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_H.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 207</value>
+    <value>458, 226</value>
   </data>
   <data name="Btn_H.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_H.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_H.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -634,13 +634,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_G.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 207</value>
+    <value>388, 226</value>
   </data>
   <data name="Btn_G.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_G.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_G.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
@@ -664,13 +664,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_F.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 207</value>
+    <value>318, 226</value>
   </data>
   <data name="Btn_F.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_F.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_F.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -694,13 +694,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 207</value>
+    <value>248, 226</value>
   </data>
   <data name="Btn_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_D.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -724,13 +724,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_S.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 207</value>
+    <value>178, 226</value>
   </data>
   <data name="Btn_S.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_S.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_S.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
@@ -754,13 +754,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_A.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 207</value>
+    <value>108, 226</value>
   </data>
   <data name="Btn_A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_A.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_A.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>
@@ -784,13 +784,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_Ü.Location" type="System.Drawing.Point, System.Drawing">
-    <value>702, 150</value>
+    <value>842, 169</value>
   </data>
   <data name="Btn_Ü.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_Ü.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_Ü.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -814,13 +814,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_Ğ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>643, 150</value>
+    <value>772, 169</value>
   </data>
   <data name="Btn_Ğ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_Ğ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_Ğ.TabIndex" type="System.Int32, mscorlib">
     <value>121</value>
@@ -844,13 +844,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 150</value>
+    <value>702, 169</value>
   </data>
   <data name="Btn_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_P.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
@@ -874,13 +874,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_O.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 150</value>
+    <value>632, 169</value>
   </data>
   <data name="Btn_O.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_O.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_O.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -904,13 +904,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_I.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 150</value>
+    <value>562, 169</value>
   </data>
   <data name="Btn_I.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_I.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_I.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -934,13 +934,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_U.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 150</value>
+    <value>492, 169</value>
   </data>
   <data name="Btn_U.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_U.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_U.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -964,13 +964,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_Y.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 150</value>
+    <value>422, 169</value>
   </data>
   <data name="Btn_Y.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_Y.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_Y.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -994,13 +994,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_T.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 150</value>
+    <value>352, 169</value>
   </data>
   <data name="Btn_T.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_T.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_T.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
@@ -1024,13 +1024,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_R.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 150</value>
+    <value>282, 169</value>
   </data>
   <data name="Btn_R.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_R.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_R.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
@@ -1054,13 +1054,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_E.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 150</value>
+    <value>212, 169</value>
   </data>
   <data name="Btn_E.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_E.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_E.TabIndex" type="System.Int32, mscorlib">
     <value>113</value>
@@ -1084,13 +1084,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_W.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 150</value>
+    <value>142, 169</value>
   </data>
   <data name="Btn_W.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_W.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_W.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -1114,13 +1114,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_Q.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 150</value>
+    <value>72, 169</value>
   </data>
   <data name="Btn_Q.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_Q.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_Q.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
@@ -1144,13 +1144,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Back_Space.Location" type="System.Drawing.Point, System.Drawing">
-    <value>615, 93</value>
+    <value>738, 112</value>
   </data>
   <data name="Back_Space.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Back_Space.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 53</value>
+    <value>169, 53</value>
   </data>
   <data name="Back_Space.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -1174,13 +1174,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 93</value>
+    <value>668, 112</value>
   </data>
   <data name="Btn_0.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_0.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -1204,13 +1204,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 93</value>
+    <value>598, 112</value>
   </data>
   <data name="Btn_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_9.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -1234,13 +1234,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 93</value>
+    <value>528, 112</value>
   </data>
   <data name="Btn_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_8.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -1264,13 +1264,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 93</value>
+    <value>458, 112</value>
   </data>
   <data name="Btn_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_7.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -1294,13 +1294,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 93</value>
+    <value>388, 112</value>
   </data>
   <data name="Btn_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_6.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -1324,13 +1324,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 93</value>
+    <value>318, 112</value>
   </data>
   <data name="Btn_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_5.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -1354,13 +1354,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 93</value>
+    <value>248, 112</value>
   </data>
   <data name="Btn_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_4.TabIndex" type="System.Int32, mscorlib">
     <value>103</value>
@@ -1384,13 +1384,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 93</value>
+    <value>178, 112</value>
   </data>
   <data name="Btn_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_3.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -1414,13 +1414,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 93</value>
+    <value>108, 112</value>
   </data>
   <data name="Btn_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_2.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
@@ -1444,13 +1444,13 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="Btn_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 93</value>
+    <value>38, 112</value>
   </data>
   <data name="Btn_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 2, 1, 2</value>
   </data>
   <data name="Btn_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+    <value>65, 53</value>
   </data>
   <data name="Btn_1.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
@@ -1519,13 +1519,13 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>673, 32</value>
+    <value>808, 51</value>
   </data>
   <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 39</value>
+    <value>101, 39</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>146</value>
@@ -1601,13 +1601,13 @@
 </value>
   </data>
   <data name="btn_OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 32</value>
+    <value>678, 51</value>
   </data>
   <data name="btn_OK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 39</value>
+    <value>126, 39</value>
   </data>
   <data name="btn_OK.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -1628,7 +1628,7 @@
     <value>5</value>
   </data>
   <data name="txt_Yazi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 31</value>
+    <value>14, 50</value>
   </data>
   <data name="txt_Yazi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1646,7 +1646,7 @@
     <value>True</value>
   </data>
   <data name="txt_Yazi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>549, 57</value>
+    <value>659, 57</value>
   </data>
   <data name="txt_Yazi.TabIndex" type="System.Int32, mscorlib">
     <value>147</value>
@@ -1670,7 +1670,7 @@
     <value>Tahoma, 14.25pt, style=Bold</value>
   </data>
   <data name="txtBaslik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 3</value>
+    <value>277, 19</value>
   </data>
   <data name="txtBaslik.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -1702,8 +1702,11 @@
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>768, 139</value>
+    <value>922, 139</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>149</value>
@@ -1726,8 +1729,11 @@
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 139</value>
   </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>768, 398</value>
+    <value>922, 398</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>150</value>
@@ -1748,10 +1754,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>5, 13</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>768, 537</value>
+    <value>922, 537</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
