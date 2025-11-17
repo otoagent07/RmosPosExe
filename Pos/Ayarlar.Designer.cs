@@ -277,6 +277,7 @@
             this.Param_LimitFolio = new DevExpress.XtraEditors.CheckEdit();
             this.chk_SiparisSayi = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
+            this.satisdaOzelMasa = new DevExpress.XtraEditors.CheckEdit();
             this.ingenicoOdemeAtmasin = new DevExpress.XtraEditors.CheckEdit();
             this.ekranKlavyesiAktif = new DevExpress.XtraEditors.CheckEdit();
             this.gunsonubitissaat = new DevExpress.XtraEditors.TextEdit();
@@ -1317,7 +1318,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.satisdaOzelMasa = new DevExpress.XtraEditors.CheckEdit();
+            this.kapaliMasayaGir = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1507,6 +1508,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.satisdaOzelMasa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenicoOdemeAtmasin.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ekranKlavyesiAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunsonubitissaat.Properties)).BeginInit();
@@ -2210,7 +2212,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.satisdaOzelMasa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kapaliMasayaGir.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4293,6 +4295,12 @@
             this.xtraTabPage8.Controls.Add(this.Param_PaketKucukEkran);
             resources.ApplyResources(this.xtraTabPage8, "xtraTabPage8");
             this.xtraTabPage8.Name = "xtraTabPage8";
+            // 
+            // satisdaOzelMasa
+            // 
+            resources.ApplyResources(this.satisdaOzelMasa, "satisdaOzelMasa");
+            this.satisdaOzelMasa.Name = "satisdaOzelMasa";
+            this.satisdaOzelMasa.Properties.Caption = resources.GetString("satisdaOzelMasa.Properties.Caption");
             // 
             // ingenicoOdemeAtmasin
             // 
@@ -11868,6 +11876,7 @@
             // 
             // xtraTabPage7
             // 
+            this.xtraTabPage7.Controls.Add(this.kapaliMasayaGir);
             this.xtraTabPage7.Controls.Add(this.cariTarihGecmisAktif);
             this.xtraTabPage7.Controls.Add(this.coklugunsonu);
             this.xtraTabPage7.Controls.Add(this.merkezsubeaktif);
@@ -13127,11 +13136,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // satisdaOzelMasa
+            // kapaliMasayaGir
             // 
-            resources.ApplyResources(this.satisdaOzelMasa, "satisdaOzelMasa");
-            this.satisdaOzelMasa.Name = "satisdaOzelMasa";
-            this.satisdaOzelMasa.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            resources.ApplyResources(this.kapaliMasayaGir, "kapaliMasayaGir");
+            this.kapaliMasayaGir.Name = "kapaliMasayaGir";
+            this.kapaliMasayaGir.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -13335,6 +13344,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Param_LimitFolio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_SiparisSayi.Properties)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.satisdaOzelMasa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenicoOdemeAtmasin.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ekranKlavyesiAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunsonubitissaat.Properties)).EndInit();
@@ -14066,7 +14076,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.satisdaOzelMasa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kapaliMasayaGir.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15361,5 +15371,6 @@
         private DevExpress.XtraEditors.CheckEdit ingenicoOdemeAtmasin;
         private DevExpress.XtraEditors.CheckEdit otoMasaEkraniAc;
         private DevExpress.XtraEditors.CheckEdit satisdaOzelMasa;
+        private DevExpress.XtraEditors.CheckEdit kapaliMasayaGir;
     }
 }
