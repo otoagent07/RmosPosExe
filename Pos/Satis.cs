@@ -2882,10 +2882,25 @@ namespace Pos
 
         string Merkez_Sube = String.Empty;
         string Merkez_Sube_Kod = String.Empty;
+
+        bool siparisYazdiriliyor = false;
         private void btn_Siparis_Click(object sender, EventArgs e)
         {
+            Color eskiRenk = Color.Blue;
             try
             {
+
+                if (siparisYazdiriliyor)
+                {
+                    return;
+                }
+                Cursor.Current = Cursors.WaitCursor;
+
+                // Eski rengi sakla ve soluk gri yap
+                eskiRenk = btn_Siparis.Appearance.BackColor;
+                btn_Siparis.Appearance.BackColor = Color.LightGray;
+
+                siparisYazdiriliyor = true;
 
                 int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
 
@@ -2912,9 +2927,11 @@ namespace Pos
             }
             finally
             {
-
+                Cursor.Current = Cursors.Default;
+                siparisYazdiriliyor = false;
+                btn_Siparis.Appearance.BackColor = eskiRenk;
             }
-           
+
 
         }
 
@@ -4097,7 +4114,8 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
                 sonuc = pr.ZayiPr(Convert.ToInt32(bartxt_FisNo.EditValue), false, Split, "   * * * ZAYİ FISI * * *   ", "", "", true);
 
 
-                dbtools.execcmd(@"update Cst_Recete_Satis set Rsat_SiparisPr = 1,Rsat_Zayi = 1,Rsat_Kdv = 0,Rsat_Kdvoran= NULL  where Rsat_Id = '" + Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")) + "'");
+                //Rsat_Kdvoran= NULL
+                dbtools.execcmd(@"update Cst_Recete_Satis set Rsat_SiparisPr = 1,Rsat_Zayi = 1,Rsat_Kdv = 0  where Rsat_Id = '" + Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")) + "'");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Zayi, Log.Log_Islem.Duzelt, "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Zayi Alındı", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
 
