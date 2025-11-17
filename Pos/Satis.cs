@@ -5389,6 +5389,8 @@ where  Rsat_Id='" + Rsat_Id + "'";
                     RHMesaj.alertMesaj("Yazdırılmış Satır silme yetkiniz yoktur.");
                     return;
                 }
+                
+
 
                 if (gridView1.GetFocusedRowCellValue("Rsat_Id") == null || Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty)
                 {
@@ -5399,6 +5401,14 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 string recgenelkod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
                 if (recgenelkod == null || recgenelkod == "")
                 {
+                    return;
+                }
+
+                string Rsat_SiparisPr = gridView1.GetFocusedRowCellValue("Rsat_SiparisPr").ToString();
+
+                if (Rsat_SiparisPr != "true")
+                {
+                    RHMesaj.alertMesaj("Sadece yazdırılmış sipariş için geçerlidir.");
                     return;
                 }
 
