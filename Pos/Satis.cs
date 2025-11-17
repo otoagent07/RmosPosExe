@@ -5384,7 +5384,11 @@ where  Rsat_Id='" + Rsat_Id + "'";
         {
             try
             {
-                
+                if (User.G_Satirsil_Y == false) // 
+                {
+                    RHMesaj.alertMesaj("Yazdırılmış Satır silme yetkiniz yoktur.");
+                    return;
+                }
 
                 if (gridView1.GetFocusedRowCellValue("Rsat_Id") == null || Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty)
                 {
@@ -5413,7 +5417,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 if (Param.Satis_YarimTam)
                 {
 
-                    decimal bbTutar = 0, doubletutar = 0, ytutar=0;
+                    decimal bbTutar = 0, doubletutar = 0, ytutar = 0;
                     if (dataTable.Rows.Count == 0)
                     {
                         return;
@@ -5428,7 +5432,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                     // Parametre aktif değilse çarpma işlemi yap
 
-                    if (bbTutar == 0 || doubletutar == 0 || ytutar==0)
+                    if (bbTutar == 0 || doubletutar == 0 || ytutar == 0)
                     {
                         if (eMiktar == "B")
                         {
