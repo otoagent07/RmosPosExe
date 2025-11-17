@@ -3598,7 +3598,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
             tutarDuzelt();
         }
 
-        public void tutarDuzelt()
+        public void tutarDuzelt(bool miktarbazlimi=false)
         {
             try
             {
@@ -3685,7 +3685,16 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
                     return;
                 }
 
+                if (miktarbazlimi)
+                {
+                    decimal eskiMiktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                    tutar = tutar * eskiMiktar;
+                }
+                
+
                 Fis_Islem.Tutar_Duzelt(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), tutar);
+
+
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Tutar_Duzelt, Log.Log_Islem.Duzelt, Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + "'nın Fiyatı " + eskitutar + " iken " + tutar.ToString() + " ile Değişti", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")));
                 Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
                 gridyenile();
@@ -4823,12 +4832,15 @@ where  Rsat_Id='" + Rsat_Id + "'";
             {
                 int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
 
-                string odemevarmi = dbtools.DegerGetir(" select top 1 count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + fisno + "' and Rsat_Ba='A'");
-                if (odemevarmi != "0")
-                {
-                    MessageBox.Show(res_man.GetString("Ödemeler veya İndirimler Silinemez.."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    return;
-                }
+                // Toplu Silde Ödeme varken silmiyordu. Oğuzhan mendi 17.11.2025
+
+                //string odemevarmi = dbtools.DegerGetir(" select top 1 count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + fisno + "' and Rsat_Ba='A'");
+               
+                //if (odemevarmi != "0")
+                //{
+                //    MessageBox.Show(res_man.GetString("Ödemeler veya İndirimler Silinemez.."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //    return;
+                //}
 
 
                 string yazdirilmamisSiparisVarmi = dbtools.DegerGetir("select top 1 count(Rsat_SiparisPr) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + fisno + "' and Rsat_SiparisPr='1' ");
@@ -5351,6 +5363,21 @@ where  Rsat_Id='" + Rsat_Id + "'";
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btn_TutarduzeltMiktar_Click(object sender, EventArgs e)
+        {
+            tutarDuzelt(true);
+        }
+
+        private void btnBirbucuk_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDouble_DoubleClick(object sender, EventArgs e)
+        {
+
         }
 
         /*

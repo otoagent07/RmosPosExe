@@ -1877,18 +1877,21 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         private void Satis_Yap()
         {
             int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
-            if (Param.Param_Hesap_Kilit)
-            {
-                if (fisno > 0)
+
+            
+                if (Param.Param_Hesap_Kilit && User.kapaliMasayaGir == false)
                 {
-                    bool Rsat_Hesap_Kilit = Convert.ToBoolean(dbtools.DegerGetir("select top 1 ISNULL(Rsat_Hesap_Kilit,0) from Cst_Recete_Satis where Rsat_Fisno = " + fisno));
-                    if (Rsat_Hesap_Kilit)
+                    if (fisno > 0)
                     {
-                        MessageBox.Show(res_man.GetString("Masa Satışa Kapalı..."), "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                        return;
+                        bool Rsat_Hesap_Kilit = Convert.ToBoolean(dbtools.DegerGetir("select top 1 ISNULL(Rsat_Hesap_Kilit,0) from Cst_Recete_Satis where Rsat_Fisno = " + fisno));
+                        if (Rsat_Hesap_Kilit)
+                        {
+                            MessageBox.Show(res_man.GetString("Masa Satışa Kapalı..."), "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                            return;
+                        }
                     }
                 }
-            }
+          
 
             if (Param.Param_Masaacan_Garson && !User.M_BaskaMasa)
             {
