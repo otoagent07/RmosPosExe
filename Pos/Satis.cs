@@ -2884,24 +2884,37 @@ namespace Pos
         string Merkez_Sube_Kod = String.Empty;
         private void btn_Siparis_Click(object sender, EventArgs e)
         {
-            int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
-
-            siparisYazdir();
-
-
-            // 21.02.2025 tarihinde hızlı satışta QR Hesap dökmek için eklendi, QR'la ilintili olarak masa takipde qr okutulunca verilen masa bilgisi bulunamadı
-            //parametrede HesapFisQR'a bakacak şekilde false ye çekildi.
-            if (Param.hesapFisQrFisno && Convert.ToString(this.Tag) == "D")
+            try
             {
-                FisPr pr = new FisPr();
-                if (Param.Param_YeniHesapDkm)
-                {
-                    pr.newHesapDokum(true, fisno, Split, "* * * HESAP DÖKÜM FİŞİ * * *");
-                }
 
-                Bilgileri_Doldur();
+                int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+
+                siparisYazdir();
+
+
+                // 21.02.2025 tarihinde hızlı satışta QR Hesap dökmek için eklendi, QR'la ilintili olarak masa takipde qr okutulunca verilen masa bilgisi bulunamadı
+                //parametrede HesapFisQR'a bakacak şekilde false ye çekildi.
+                if (Param.hesapFisQrFisno && Convert.ToString(this.Tag) == "D")
+                {
+                    FisPr pr = new FisPr();
+                    if (Param.Param_YeniHesapDkm)
+                    {
+                        pr.newHesapDokum(true, fisno, Split, "* * * HESAP DÖKÜM FİŞİ * * *");
+                    }
+
+                    Bilgileri_Doldur();
+
+                }
+            }
+            catch (Exception ex)
+            {
 
             }
+            finally
+            {
+
+            }
+           
 
         }
 

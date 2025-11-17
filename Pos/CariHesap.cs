@@ -2118,5 +2118,7 @@ group by Rec_Ad,Rsat_Fisno,Rsat_Masa,Rsat_Tarih,Rsat_Emiktar,Rsat_Cari";
                 pr.HesapDokum(true, aa, 0);
             }
         }
+
+       
     }
 }

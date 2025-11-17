@@ -113,7 +113,9 @@
             // 
             // btn_Cikis
             // 
+            this.btn_Cikis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
+            this.btn_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cikis.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
@@ -122,7 +124,9 @@
             // 
             // btn_Print
             // 
+            this.btn_Print.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
             this.btn_Print.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Print.Appearance.Font")));
+            this.btn_Print.Appearance.Options.UseBackColor = true;
             this.btn_Print.Appearance.Options.UseFont = true;
             this.btn_Print.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Print.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Print, "btn_Print");
@@ -401,9 +405,9 @@
             // 
             // btnGoruntule
             // 
-            this.btnGoruntule.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
+            this.btnGoruntule.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnGoruntule.Appearance.Font")));
             this.btnGoruntule.Appearance.Options.UseFont = true;
-            this.btnGoruntule.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.btnGoruntule.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGoruntule.ImageOptions.Image")));
             resources.ApplyResources(this.btnGoruntule, "btnGoruntule");
             this.btnGoruntule.Name = "btnGoruntule";
             this.btnGoruntule.Click += new System.EventHandler(this.btnGoruntule_Click);

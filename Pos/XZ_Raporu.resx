@@ -231,7 +231,7 @@
     <value>57</value>
   </data>
   <data name="btn_Print.Text" xml:space="preserve">
-    <value>Print</value>
+    <value>YAZDIR </value>
   </data>
   <data name="&gt;&gt;btn_Print.Name" xml:space="preserve">
     <value>btn_Print</value>
@@ -1390,25 +1390,25 @@
   <data name="&gt;&gt;chk_servispayi.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="simpleButton3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnGoruntule.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="simpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnGoruntule.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="btnGoruntule.Location" type="System.Drawing.Point, System.Drawing">
