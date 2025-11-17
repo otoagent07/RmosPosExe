@@ -5428,7 +5428,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                     // Parametre aktif değilse çarpma işlemi yap
 
-                    if (bbTutar == 0 || doubletutar == 0)
+                    if (bbTutar == 0 || doubletutar == 0 || ytutar==0)
                     {
                         if (eMiktar == "B")
                         {
@@ -5504,6 +5504,8 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 dbtools.execcmd(updateQuery);
 
                 gridyenile();
+
+                RHMesaj.alertMesaj("Fiyat Değişti");
             }
             catch (Exception ex)
             {
