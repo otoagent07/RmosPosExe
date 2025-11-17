@@ -702,7 +702,9 @@
             // 
             // btn_OK
             // 
+            this.btn_OK.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btn_OK.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_OK.Appearance.Font")));
+            this.btn_OK.Appearance.Options.UseBackColor = true;
             this.btn_OK.Appearance.Options.UseFont = true;
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
             resources.ApplyResources(this.btn_OK, "btn_OK");
@@ -722,7 +724,9 @@
             // 
             // btn_Cikis
             // 
+            this.btn_Cikis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
+            this.btn_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cikis.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
@@ -743,7 +747,9 @@
             // 
             // btn_CariEkle
             // 
+            this.btn_CariEkle.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
             this.btn_CariEkle.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_CariEkle.Appearance.Font")));
+            this.btn_CariEkle.Appearance.Options.UseBackColor = true;
             this.btn_CariEkle.Appearance.Options.UseFont = true;
             this.btn_CariEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_CariEkle.ImageOptions.Image")));
             resources.ApplyResources(this.btn_CariEkle, "btn_CariEkle");

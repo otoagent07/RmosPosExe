@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="gridColumn8.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 15.75pt, style=Bold</value>
@@ -145,7 +145,7 @@
     <value>0</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>718, 261</value>
+    <value>720, 263</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -237,10 +237,10 @@
 </value>
   </data>
   <data name="btn_Transfer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="btn_Transfer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 96</value>
+    <value>138, 96</value>
   </data>
   <data name="btn_Transfer.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -283,10 +283,10 @@
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 548</value>
+    <value>2, 549</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 96</value>
+    <value>138, 96</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -310,10 +310,10 @@
     <value>109, 6</value>
   </data>
   <data name="txt_Masano.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
+    <value>Tahoma, 15pt, style=Bold</value>
   </data>
   <data name="txt_Masano.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 28</value>
+    <value>167, 32</value>
   </data>
   <data name="txt_Masano.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>

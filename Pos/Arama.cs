@@ -707,6 +707,11 @@ namespace Pos
                 txt_Arama.Text = kartnom;
                 btn_OK.PerformClick();
             }
+
+            if (Param.Tesis_Tipi==1)
+            {
+                chk_Ad.Checked = true;
+            }
         }
     }
 }

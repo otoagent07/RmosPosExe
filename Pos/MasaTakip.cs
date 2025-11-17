@@ -2239,10 +2239,13 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             Relogin();
             textDegis();
+
         }
 
         private void Relogin()
         {
+            flp_Masa.Visible = false;
+
             frmLogin login = new frmLogin();
             login.ShowDialog();
             if (login.Cikis)
@@ -2253,6 +2256,9 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             Bilgileri_Doldur();
 
             loadYukle();
+
+            flp_Masa.Visible = true;
+
         }
 
         CheckButton btnSecilen;

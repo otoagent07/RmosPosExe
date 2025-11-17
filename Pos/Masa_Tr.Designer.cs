@@ -140,7 +140,9 @@
             // 
             // btn_Transfer
             // 
+            this.btn_Transfer.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
             this.btn_Transfer.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Transfer.Appearance.Font")));
+            this.btn_Transfer.Appearance.Options.UseBackColor = true;
             this.btn_Transfer.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Transfer, "btn_Transfer");
             this.btn_Transfer.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Transfer.ImageOptions.SvgImage")));
@@ -149,7 +151,9 @@
             // 
             // btn_Cikis
             // 
+            this.btn_Cikis.Appearance.BackColor = System.Drawing.Color.Red;
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
+            this.btn_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_Cikis.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
             this.btn_Cikis.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
