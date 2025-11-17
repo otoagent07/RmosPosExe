@@ -889,6 +889,7 @@
             resources.ApplyResources(this.btnYarim, "btnYarim");
             this.btnYarim.Name = "btnYarim";
             this.btnYarim.Click += new System.EventHandler(this.ButtonSayilar_Click);
+            this.btnYarim.DoubleClick += new System.EventHandler(this.btnYarim_DoubleClick);
             // 
             // btnDouble
             // 
@@ -915,6 +916,7 @@
             resources.ApplyResources(this.btnBir, "btnBir");
             this.btnBir.Name = "btnBir";
             this.btnBir.Click += new System.EventHandler(this.ButtonSayilar_Click);
+            this.btnBir.DoubleClick += new System.EventHandler(this.btnBir_DoubleClick);
             // 
             // txtFisnoGit
             // 

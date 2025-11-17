@@ -5384,36 +5384,141 @@ where  Rsat_Id='" + Rsat_Id + "'";
         {
             try
             {
-                if (eMiktar=="Y" || eMiktar =="T")
+                
+
+                if (gridView1.GetFocusedRowCellValue("Rsat_Id") == null || Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty)
                 {
                     return;
                 }
+
+                int rsatId = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id"));
                 string recgenelkod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
                 if (recgenelkod == null || recgenelkod == "")
                 {
                     return;
                 }
+
+                // Mevcut satır bilgilerini al
+                decimal mevcutTutar = 0;
+                decimal miktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                decimal kdvoran = Convert.ToDecimal(dbtools.DegerGetir($"select top 1 Rsat_Kdvoran from Cst_Recete_Satis where Rsat_Id='{rsatId}'"));
+
+                decimal yeniTutar = 0;
+
+                string q = $@"select isnull(Rec_Yarim,Rec_Fiyat) as Rec_Yarim,Rec_Fiyat,isnull(Rec_Birbucuk,Rec_Fiyat) as Rec_Birbucuk,isnull(Rec_Duble,Rec_Fiyat) as Rec_Duble from Cst_Recete where Rec_Genelkod='{recgenelkod}'";
+                DataTable dataTable = dbtools.SelectTableR(q);
+
+                mevcutTutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Fiyat"].ToString());
+
                 if (Param.Satis_YarimTam)
                 {
-                    // bu parametre aktif se 
-                    string q = $@"select isnull(Rec_Birbucuk,Rec_Fiyat) as Rec_Birbucuk,isnull(Rec_Duble,Rec_Fiyat) as Rec_Duble from Cst_Recete where Rec_Genelkod='{recgenelkod}'";
-                    DataTable dataTable = dbtools.SelectTableR(q);
-                    decimal Rec_Birbucuk = Convert.ToDecimal(dataTable.Rows[0]["Rec_Birbucuk"].ToString());
-                    decimal Rec_Duble = Convert.ToDecimal(dataTable.Rows[0]["Rec_Duble"].ToString());
 
-                    if (Rec_Birbucuk == 0 || Rec_Duble == 0)
+                    decimal bbTutar = 0, doubletutar = 0, ytutar=0;
+                    if (dataTable.Rows.Count == 0)
                     {
                         return;
                     }
+
+
+                    bbTutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Birbucuk"].ToString());
+                    doubletutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Duble"].ToString());
+                    ytutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Yarim"].ToString());
+
+
+
+                    // Parametre aktif değilse çarpma işlemi yap
+
+                    if (bbTutar == 0 || doubletutar == 0)
+                    {
+                        if (eMiktar == "B")
+                        {
+                            mevcutTutar = mevcutTutar * 1.5m;
+                        }
+                        else if (eMiktar == "D")
+                        {
+                            mevcutTutar = mevcutTutar * 2m;
+                        }
+                        else if (eMiktar == "Y")
+                        {
+                            mevcutTutar = mevcutTutar * 0.5m;
+                        }
+                        else if (eMiktar == "T")
+                        {
+                        }
+                    }
+                    else
+                    {
+                        if (eMiktar == "B")
+                        {
+                            mevcutTutar = bbTutar;
+                        }
+                        else if (eMiktar == "D")
+                        {
+                            mevcutTutar = doubletutar;
+                        }
+                        else if (eMiktar == "Y")
+                        {
+                            mevcutTutar = ytutar;
+                        }
+                        else if (eMiktar == "T")
+                        {
+                        }
+                    }
+
+
+                    yeniTutar = mevcutTutar * miktar;
+                }
+                else
+                {
+                    // Parametre aktif değilse çarpma işlemi yap
+                    if (eMiktar == "B")
+                    {
+                        mevcutTutar = mevcutTutar * 1.5m;
+                        yeniTutar = mevcutTutar * 1.5m;
+                    }
+                    else if (eMiktar == "D")
+                    {
+                        mevcutTutar = mevcutTutar * 2m;
+                        yeniTutar = mevcutTutar * 2m;
+                    }
+                    else if (eMiktar == "Y")
+                    {
+                        mevcutTutar = mevcutTutar * 0.5m;
+                        yeniTutar = mevcutTutar * 0.5m;
+                    }
                 }
 
+                // KDV hesaplamaları
+                decimal yeniNet = (yeniTutar * 100) / (100 + kdvoran);
+                decimal yeniKdv = yeniTutar - yeniNet;
 
+                string updateQuery = $@"update Cst_Recete_Satis set 
+                        Rsat_Emiktar = '{eMiktar}',
+                        Rsat_Fiyat = '{yeniTutar.ToString().Replace(",", ".")}',
+                        Rsat_Tutar = '{yeniTutar.ToString().Replace(",", ".")}',
+                        Rsat_Net = '{yeniNet.ToString().Replace(",", ".")}',
+                        Rsat_Kdv = '{yeniKdv.ToString().Replace(",", ".")}',
+                        Rsat_Doviztutar = '{yeniTutar.ToString().Replace(",", ".")}'
+                        where Rsat_Id = '{rsatId}'";
 
+                dbtools.execcmd(updateQuery);
+
+                gridyenile();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnBir_DoubleClick(object sender, EventArgs e)
+        {
+            emiktarChange();
+        }
+
+        private void btnYarim_DoubleClick(object sender, EventArgs e)
+        {
+            emiktarChange();
         }
 
         /*
