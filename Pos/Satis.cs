@@ -2162,21 +2162,21 @@ namespace Pos
 
             // Sağ üst köşeye miktar yazısı çiz
             string miktarText = "x" + satilanMiktar.ToString("0");
-            
+
             // Font ve brush ayarları
             Font font = new Font("Arial", 12, FontStyle.Bold);
             Brush textBrush = new SolidBrush(Color.Black);
-            
+
             // Metin boyutunu hesapla
             SizeF textSize = e.Graphics.MeasureString(miktarText, font);
-            
+
             // Sağ üst köşe pozisyonu
             int x = btn.Width - (int)textSize.Width - 5;
             int y = 5;
-            
+
             // Metni çiz (transparent arka plan)
             e.Graphics.DrawString(miktarText, font, textBrush, x, y);
-            
+
             // Kaynakları temizle
             font.Dispose();
             textBrush.Dispose();
@@ -3598,7 +3598,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
             tutarDuzelt();
         }
 
-        public void tutarDuzelt(bool miktarbazlimi=false)
+        public void tutarDuzelt(bool miktarbazlimi = false)
         {
             try
             {
@@ -3690,7 +3690,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
                     decimal eskiMiktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
                     tutar = tutar * eskiMiktar;
                 }
-                
+
 
                 Fis_Islem.Tutar_Duzelt(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), tutar);
 
@@ -4783,7 +4783,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
             if (dtDizayn.Rows.Count < 1)
             {
                 //Oğuzhan Mendi Yaşlı Kullanıcılar Sistem Çalışmıyor diye uyarıyı kaldırdı
-               // RHMesaj.MyMessageInformation("Ürün Printer Dizaynı Yapılmamış...\nAyarlar-> Printer Ayarları -> Adisyon Fatura -> Ürün Dizayn");
+                // RHMesaj.MyMessageInformation("Ürün Printer Dizaynı Yapılmamış...\nAyarlar-> Printer Ayarları -> Adisyon Fatura -> Ürün Dizayn");
                 return;
             }
 
@@ -4835,7 +4835,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
                 // Toplu Silde Ödeme varken silmiyordu. Oğuzhan mendi 17.11.2025
 
                 //string odemevarmi = dbtools.DegerGetir(" select top 1 count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='" + fisno + "' and Rsat_Ba='A'");
-               
+
                 //if (odemevarmi != "0")
                 //{
                 //    MessageBox.Show(res_man.GetString("Ödemeler veya İndirimler Silinemez.."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -5372,12 +5372,48 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         private void btnBirbucuk_DoubleClick(object sender, EventArgs e)
         {
-
+            emiktarChange();
         }
 
         private void btnDouble_DoubleClick(object sender, EventArgs e)
         {
+            emiktarChange();
+        }
 
+        public void emiktarChange()
+        {
+            try
+            {
+                if (eMiktar=="Y" || eMiktar =="T")
+                {
+                    return;
+                }
+                string recgenelkod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
+                if (recgenelkod == null || recgenelkod == "")
+                {
+                    return;
+                }
+                if (Param.Satis_YarimTam)
+                {
+                    // bu parametre aktif se 
+                    string q = $@"select isnull(Rec_Birbucuk,Rec_Fiyat) as Rec_Birbucuk,isnull(Rec_Duble,Rec_Fiyat) as Rec_Duble from Cst_Recete where Rec_Genelkod='{recgenelkod}'";
+                    DataTable dataTable = dbtools.SelectTableR(q);
+                    decimal Rec_Birbucuk = Convert.ToDecimal(dataTable.Rows[0]["Rec_Birbucuk"].ToString());
+                    decimal Rec_Duble = Convert.ToDecimal(dataTable.Rows[0]["Rec_Duble"].ToString());
+
+                    if (Rec_Birbucuk == 0 || Rec_Duble == 0)
+                    {
+                        return;
+                    }
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         /*
