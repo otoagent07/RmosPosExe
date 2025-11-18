@@ -2165,7 +2165,7 @@ namespace Pos
 
             // Font ve brush ayarları
             Font font = new Font("Arial", 12, FontStyle.Bold);
-            Brush textBrush = new SolidBrush(Color.Black);
+            Brush textBrush = new SolidBrush(Color.Blue);
 
             // Metin boyutunu hesapla
             SizeF textSize = e.Graphics.MeasureString(miktarText, font);
@@ -3424,6 +3424,10 @@ namespace Pos
 
 
                 decimal Sil_Miktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+                decimal bolMiktar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Miktar"));
+
+
+
                 if (Sil_Miktar > 1 && Convert.ToInt32(dbtools.DegerGetir("SELECT COUNT(*) FROM Cst_Recete_Satis WITH(NOLOCK) WHERE Rsat_Id = " + Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")) + " AND ISNULL(Rsat_AdisyonPr,0) = 0")) > 0)
                 {
                     Klavye1 klv = new Klavye1();
@@ -3491,7 +3495,9 @@ namespace Pos
                     }
                 }
 
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")));
+                decimal tutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar"))/ bolMiktar;
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, tutar); ;
 
 
 

@@ -762,6 +762,8 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                     con.Close();
                     gridControl16.DataSource = dt;
                     gridView16.BestFitColumns();
+
+                    aa
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_reskullanim)
                 {
