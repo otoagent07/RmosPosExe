@@ -763,7 +763,8 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                     gridControl16.DataSource = dt;
                     gridView16.BestFitColumns();
 
-                    aa
+                    gridviewCountYaz(gridView16, "Tutar");
+
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_reskullanim)
                 {

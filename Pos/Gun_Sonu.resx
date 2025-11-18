@@ -346,7 +346,7 @@
     <value>6</value>
   </data>
   <data name="btn_Gunsonu.Text" xml:space="preserve">
-    <value>Gün Sonu</value>
+    <value>Gün Sonu'nu Başlat</value>
   </data>
   <data name="&gt;&gt;btn_Gunsonu.Name" xml:space="preserve">
     <value>btn_Gunsonu</value>

@@ -106,10 +106,10 @@
             this.txtKisiyeSatisSayac = new DevExpress.XtraEditors.TextEdit();
             this.btnKisiyeSatisYap = new DevExpress.XtraEditors.SimpleButton();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btn_TutarduzeltMiktar = new DevExpress.XtraEditors.SimpleButton();
             this.btnSiparisVeHesap = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Not_Gonder = new DevExpress.XtraEditors.SimpleButton();
             this.btnServisTutarDuzelt = new DevExpress.XtraEditors.SimpleButton();
-            this.btnJokerAciklama = new DevExpress.XtraEditors.SimpleButton();
             this.btnTopluSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_SpSil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_FarkliMiktar = new DevExpress.XtraEditors.SimpleButton();
@@ -152,6 +152,7 @@
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Siparis = new DevExpress.XtraEditors.SimpleButton();
+            this.btnJokerAciklama = new DevExpress.XtraEditors.SimpleButton();
             this.chk_Yapma = new DevExpress.XtraEditors.CheckButton();
             this.btn_Aciklama = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -174,7 +175,6 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_TutarduzeltMiktar = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -1017,6 +1017,15 @@
             resources.ApplyResources(this.panelMenu, "panelMenu");
             this.panelMenu.Name = "panelMenu";
             // 
+            // btn_TutarduzeltMiktar
+            // 
+            this.btn_TutarduzeltMiktar.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_TutarduzeltMiktar.Appearance.Font")));
+            this.btn_TutarduzeltMiktar.Appearance.Options.UseFont = true;
+            this.btn_TutarduzeltMiktar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_TutarduzeltMiktar.ImageOptions.Image")));
+            resources.ApplyResources(this.btn_TutarduzeltMiktar, "btn_TutarduzeltMiktar");
+            this.btn_TutarduzeltMiktar.Name = "btn_TutarduzeltMiktar";
+            this.btn_TutarduzeltMiktar.Click += new System.EventHandler(this.btn_TutarduzeltMiktar_Click);
+            // 
             // btnSiparisVeHesap
             // 
             resources.ApplyResources(this.btnSiparisVeHesap, "btnSiparisVeHesap");
@@ -1048,17 +1057,6 @@
             resources.ApplyResources(this.btnServisTutarDuzelt, "btnServisTutarDuzelt");
             this.btnServisTutarDuzelt.Name = "btnServisTutarDuzelt";
             this.btnServisTutarDuzelt.Click += new System.EventHandler(this.btnServisTutarDuzelt_Click);
-            // 
-            // btnJokerAciklama
-            // 
-            this.btnJokerAciklama.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnJokerAciklama.Appearance.Font")));
-            this.btnJokerAciklama.Appearance.Options.UseFont = true;
-            this.btnJokerAciklama.Appearance.Options.UseTextOptions = true;
-            this.btnJokerAciklama.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.btnJokerAciklama.ImageOptions.Image = global::Pos.Properties.Resources.printerCancel;
-            resources.ApplyResources(this.btnJokerAciklama, "btnJokerAciklama");
-            this.btnJokerAciklama.Name = "btnJokerAciklama";
-            this.btnJokerAciklama.Click += new System.EventHandler(this.simpleButton4_Click_1);
             // 
             // btnTopluSil
             // 
@@ -1564,6 +1562,17 @@
             this.btn_Siparis.Name = "btn_Siparis";
             this.btn_Siparis.Click += new System.EventHandler(this.btn_Siparis_Click);
             // 
+            // btnJokerAciklama
+            // 
+            this.btnJokerAciklama.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnJokerAciklama.Appearance.Font")));
+            this.btnJokerAciklama.Appearance.Options.UseFont = true;
+            this.btnJokerAciklama.Appearance.Options.UseTextOptions = true;
+            this.btnJokerAciklama.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.btnJokerAciklama.ImageOptions.Image = global::Pos.Properties.Resources.printerCancel;
+            resources.ApplyResources(this.btnJokerAciklama, "btnJokerAciklama");
+            this.btnJokerAciklama.Name = "btnJokerAciklama";
+            this.btnJokerAciklama.Click += new System.EventHandler(this.simpleButton4_Click_1);
+            // 
             // chk_Yapma
             // 
             this.chk_Yapma.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("chk_Yapma.Appearance.Font")));
@@ -1758,15 +1767,6 @@
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // btn_TutarduzeltMiktar
-            // 
-            this.btn_TutarduzeltMiktar.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton3.Appearance.Font")));
-            this.btn_TutarduzeltMiktar.Appearance.Options.UseFont = true;
-            this.btn_TutarduzeltMiktar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            resources.ApplyResources(this.btn_TutarduzeltMiktar, "btn_TutarduzeltMiktar");
-            this.btn_TutarduzeltMiktar.Name = "btn_TutarduzeltMiktar";
-            this.btn_TutarduzeltMiktar.Click += new System.EventHandler(this.btn_TutarduzeltMiktar_Click);
             // 
             // Satis
             // 
