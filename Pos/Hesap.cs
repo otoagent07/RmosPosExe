@@ -114,6 +114,8 @@ namespace Pos
             try
             {
 
+                btnYenile.Visible = Param.Param_GetirTest;
+
 
                 if (Param.Calisma_Sekli == 1) // 24.07.2025 tarihinde tropic restoran dövizli çalışma. kur farkı için . fatih şahin eklettirdi.
                 {
@@ -4113,6 +4115,11 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
             {
                 hesapdok();
             }
+        }
+
+        private void btnYenile_Click(object sender, EventArgs e)
+        {
+            gridyenile();
         }
     }
 }

@@ -125,6 +125,7 @@
             this.btnPavoKapat = new DevExpress.XtraEditors.SimpleButton();
             this.btnIkinciEkranScrollUp = new DevExpress.XtraEditors.SimpleButton();
             this.btnIkinciEkranScrollDown = new DevExpress.XtraEditors.SimpleButton();
+            this.btnYenile = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Hesapno.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -1087,11 +1088,24 @@
             this.btnIkinciEkranScrollDown.Name = "btnIkinciEkranScrollDown";
             this.btnIkinciEkranScrollDown.Click += new System.EventHandler(this.btnIkinciEkranScrollDown_Click);
             // 
+            // btnYenile
+            // 
+            this.btnYenile.Appearance.BackColor = System.Drawing.Color.Fuchsia;
+            this.btnYenile.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnYenile.Appearance.Font")));
+            this.btnYenile.Appearance.Options.UseBackColor = true;
+            this.btnYenile.Appearance.Options.UseFont = true;
+            this.btnYenile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYenile.ImageOptions.Image")));
+            this.btnYenile.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            resources.ApplyResources(this.btnYenile, "btnYenile");
+            this.btnYenile.Name = "btnYenile";
+            this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
+            // 
             // Hesap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btnYenile);
             this.Controls.Add(this.btnIkinciEkranScrollDown);
             this.Controls.Add(this.btnIkinciEkranScrollUp);
             this.Controls.Add(this.btnPavoKapat);
@@ -1298,5 +1312,6 @@
         private DevExpress.XtraEditors.SimpleButton btnPavoKapat;
         private DevExpress.XtraEditors.SimpleButton btnIkinciEkranScrollUp;
         private DevExpress.XtraEditors.SimpleButton btnIkinciEkranScrollDown;
+        private DevExpress.XtraEditors.SimpleButton btnYenile;
     }
 }
