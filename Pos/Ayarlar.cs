@@ -3084,7 +3084,7 @@ namespace Pos
                         + " G_Zayi,G_Ikram,M_KisiSayisi,R_MasaGeri,M_SiparisTekrar,Pda_HesapDok,H_HizliSatis,R_TopluIsle,And_HesapDokum,And_HesapOdeme,And_MalzTransfer,S_Sp_Sil,ExtraFolio, "
                         + " And_Yarim,And_Tam,And_Bucuk,And_Duble,Pos_SubeTrf,Pos_AdisyonPr,Pos_OdemeDegistir,And_SatisSiparisBtn,Pos_ArtiEksi_Aktif,Pos_MasaAnlikDurum,Pos_MasaUrunSil,Pos_IWERep,Pos_KartF_CheckOut,Pos_SatirSilYetkili,Pos_MasaDirekS,Pos_MasaPaketS, "
                         + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman,Pos_KartfIndirimAktif,Pos_ServisPayiDuzelt,Pos_OdenmezIkramPasif," +
-                        "urunIade,ingenicoaktif,tutarduzeltplus,postema,otoDirekSatis,otoMasaEkraniAc,merkezsubeaktif,coklugunsonu,cariTarihGecmisAktif,kapaliMasayaGir,satisYapma) VALUES( "
+                        "urunIade,ingenicoaktif,tutarduzeltplus,postema,otoDirekSatis,otoMasaEkraniAc,merkezsubeaktif,coklugunsonu,cariTarihGecmisAktif,kapaliMasayaGir,Pos_AcikmasalariGizle,satisYapma) VALUES( "
                         + " '" + txt_Kul_kod.Text + "','" + txt_Kul_sifre.EditValue + "','" + txt_Kul_ad.EditValue + "','" + txt_Kul_soyad.EditValue + "','" + txt_Kul_Kart.EditValue + "','" + cmb_Kulturu.SelectedIndex.ToString() + "', "
                         + " '" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', "
                         + " '" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "','" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "','" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', "
@@ -3120,6 +3120,7 @@ namespace Pos
                         ",'" + coklugunsonu.Checked + "' " +
                         ",'" + cariTarihGecmisAktif.Checked + "' " +
                         ",'" + kapaliMasayaGir.Checked + "' " +
+                        ",'" + Pos_AcikmasalariGizle.Checked + "' " +
                         ",'" + satisYapma.Checked + "' " +
 
                         ") ");
@@ -3179,6 +3180,7 @@ namespace Pos
                         + ",coklugunsonu = '" + coklugunsonu.Checked + "' "
                         + ",cariTarihGecmisAktif = '" + cariTarihGecmisAktif.Checked + "' "
                         + ",kapaliMasayaGir = '" + kapaliMasayaGir.Checked + "' "
+                        + ",Pos_AcikmasalariGizle = '" + Pos_AcikmasalariGizle.Checked + "' "
                          + ",satisYapma = '" + satisYapma.Checked + "' "
 
                         + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
@@ -3268,6 +3270,7 @@ namespace Pos
                         "" +
                         ",ISNULL(cariTarihGecmisAktif,0) as cariTarihGecmisAktif"+
                         ",ISNULL(kapaliMasayaGir,0) as kapaliMasayaGir"+
+                        ",ISNULL(Pos_AcikmasalariGizle,0) as Pos_AcikmasalariGizle"+
                         ",ISNULL(satisYapma,0) as satisYapma"+
                         ",ISNULL(otoMasaEkraniAc,0) as otoMasaEkraniAc"
                         + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "' " + Filtre + " ";
@@ -3431,6 +3434,7 @@ namespace Pos
                     coklugunsonu.Checked = Convert.ToBoolean(dt.Rows[0]["coklugunsonu"]);
                     cariTarihGecmisAktif.Checked = Convert.ToBoolean(dt.Rows[0]["cariTarihGecmisAktif"]);
                     kapaliMasayaGir.Checked = Convert.ToBoolean(dt.Rows[0]["kapaliMasayaGir"]);
+                    Pos_AcikmasalariGizle.Checked = Convert.ToBoolean(dt.Rows[0]["Pos_AcikmasalariGizle"]);
                     satisYapma.Checked = Convert.ToBoolean(dt.Rows[0]["satisYapma"]);
 
 
@@ -3659,6 +3663,7 @@ namespace Pos
             coklugunsonu.Checked = false;
             cariTarihGecmisAktif.Checked = false;
             kapaliMasayaGir.Checked = false;
+            Pos_AcikmasalariGizle.Checked = false;
             satisYapma.Checked = false;
 
         }
@@ -3822,6 +3827,7 @@ namespace Pos
             coklugunsonu.Checked = true;
             cariTarihGecmisAktif.Checked = true;
             kapaliMasayaGir.Checked = true;
+            Pos_AcikmasalariGizle.Checked = true;
             satisYapma.Checked = true;
             //Pos_FixMenu.Checked = true;
             //Pos_HesapArti.Checked = true;

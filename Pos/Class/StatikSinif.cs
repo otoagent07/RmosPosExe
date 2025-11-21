@@ -211,6 +211,7 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_OdenmezIkramPasif') IS NULL BEGIN ALT
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'coklugunsonu') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [coklugunsonu] bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'cariTarihGecmisAktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [cariTarihGecmisAktif] bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'kapaliMasayaGir') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [kapaliMasayaGir] bit END;
+IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_AcikmasalariGizle') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [Pos_AcikmasalariGizle] bit END;
 
 
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'ingenicoaktif') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD [ingenicoaktif] bit END;

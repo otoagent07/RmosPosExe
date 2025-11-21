@@ -172,6 +172,7 @@ namespace Pos.Class
         public static bool servisPayiKdvOran { get; set; }
         public static bool coklugunsonu { get; set; }
         public static bool kapaliMasayaGir { get; set; }
+        public static bool Pos_AcikmasalariGizle { get; set; }
 
 
 
@@ -231,6 +232,7 @@ namespace Pos.Class
                     + ", ISNULL(merkezsubeaktif,0) as merkezsubeaktif "
                     + ", ISNULL(coklugunsonu,0) as coklugunsonu "
                     + ", ISNULL(kapaliMasayaGir,0) as kapaliMasayaGir "
+                    + ", ISNULL(Pos_AcikmasalariGizle,0) as Pos_AcikmasalariGizle "
                     + ", ISNULL(satisYapma,0) as satisYapma "
 
                     + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + P_Kod + "'");
@@ -361,6 +363,7 @@ namespace Pos.Class
                 merkezsubeaktif = Convert.ToBoolean(dt.Rows[0]["merkezsubeaktif"]);
                 coklugunsonu = Convert.ToBoolean(dt.Rows[0]["coklugunsonu"]);
                 kapaliMasayaGir = Convert.ToBoolean(dt.Rows[0]["kapaliMasayaGir"]);
+                Pos_AcikmasalariGizle = Convert.ToBoolean(dt.Rows[0]["Pos_AcikmasalariGizle"]);
 
             }
 
