@@ -5430,8 +5430,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                 mevcutTutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Fiyat"].ToString());
 
-                if (Param.Satis_YarimTam)
-                {
+               
 
                     decimal bbTutar = 0, doubletutar = 0, ytutar = 0;
                     if (dataTable.Rows.Count == 0)
@@ -5487,26 +5486,25 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
 
                     yeniTutar = mevcutTutar * miktar;
-                }
-                else
-                {
-                    // Parametre aktif değilse çarpma işlemi yap
-                    if (eMiktar == "B")
-                    {
-                        mevcutTutar = mevcutTutar * 1.5m;
-                        yeniTutar = mevcutTutar * 1.5m;
-                    }
-                    else if (eMiktar == "D")
-                    {
-                        mevcutTutar = mevcutTutar * 2m;
-                        yeniTutar = mevcutTutar * 2m;
-                    }
-                    else if (eMiktar == "Y")
-                    {
-                        mevcutTutar = mevcutTutar * 0.5m;
-                        yeniTutar = mevcutTutar * 0.5m;
-                    }
-                }
+                //else
+                //{
+                //    // Parametre aktif değilse çarpma işlemi yap
+                //    if (eMiktar == "B")
+                //    {
+                //        mevcutTutar = mevcutTutar * 1.5m;
+                //        yeniTutar = mevcutTutar * 1.5m;
+                //    }
+                //    else if (eMiktar == "D")
+                //    {
+                //        mevcutTutar = mevcutTutar * 2m;
+                //        yeniTutar = mevcutTutar * 2m;
+                //    }
+                //    else if (eMiktar == "Y")
+                //    {
+                //        mevcutTutar = mevcutTutar * 0.5m;
+                //        yeniTutar = mevcutTutar * 0.5m;
+                //    }
+                //}
 
                 // KDV hesaplamaları
                 decimal yeniNet = (yeniTutar * 100) / (100 + kdvoran);

@@ -41,6 +41,12 @@ namespace Pos
             {
                 dateTarih.ReadOnly = false;
             }
+
+
+            if (Param.Param_GetirOtomatikOnay) // gün sonu otomatik index i Param_GetirOtomatikOnay buna koyduk buna bağladık
+            {
+                txt_Gunsonusifre.Text = "GUNSONU";
+            }
         }
 
         private void gridyenile()

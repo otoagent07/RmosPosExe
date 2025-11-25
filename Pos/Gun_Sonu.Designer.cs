@@ -152,7 +152,9 @@
             // 
             // btn_Gunsonu
             // 
+            this.btn_Gunsonu.Appearance.BackColor = System.Drawing.Color.Aqua;
             this.btn_Gunsonu.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Gunsonu.Appearance.Font")));
+            this.btn_Gunsonu.Appearance.Options.UseBackColor = true;
             this.btn_Gunsonu.Appearance.Options.UseFont = true;
             this.btn_Gunsonu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Gunsonu.ImageOptions.SvgImage")));
             resources.ApplyResources(this.btn_Gunsonu, "btn_Gunsonu");
