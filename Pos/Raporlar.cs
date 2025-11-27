@@ -153,7 +153,10 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                 chk_Ana.Checked = false;
                 chk_Alt.Checked = false;
                 btn_Detay.Visibility = User.R_Detay == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+
                 btn_XZ.Visibility = User.R_XZ == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+
+
                 btn_Mahsupkes.Visibility = User.R_Mahsupkes == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
                 btn_Fisiptal.Visibility = User.R_Fisiptal == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
                 btn_MasaGeri.Visibility = Param.RaporMasa_Geri == false ? DevExpress.XtraBars.BarItemVisibility.Never :
