@@ -65,6 +65,7 @@
             this.btn_OdemeTipi = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Fisiptal = new DevExpress.XtraBars.BarButtonItem();
             this.btn_TopluIsleme = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_XZ2 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -431,7 +432,6 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.btnXzRapor2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -614,7 +614,7 @@
             this.btn_Detay,
             this.btn_XZ,
             this.btn_FisLog,
-            this.btnXzRapor2});
+            this.btn_XZ2});
             this.barManager1.MaxItemId = 25;
             this.barManager1.StatusBar = this.bar3;
             // 
@@ -637,7 +637,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barSubItem1, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barSubItem2, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btn_TopluIsleme, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnXzRapor2, true)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btn_XZ2, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar3.OptionsBar.AllowQuickCustomization = false;
             this.bar3.OptionsBar.DrawDragBorder = false;
             this.bar3.OptionsBar.UseWholeRow = true;
@@ -814,6 +814,15 @@
             this.btn_TopluIsleme.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_TopluIsleme.Name = "btn_TopluIsleme";
             this.btn_TopluIsleme.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TopluIsleme_ItemClick);
+            // 
+            // btn_XZ2
+            // 
+            resources.ApplyResources(this.btn_XZ2, "btn_XZ2");
+            this.btn_XZ2.Id = 24;
+            this.btn_XZ2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXzRapor2.ImageOptions.Image")));
+            this.btn_XZ2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnXzRapor2.ImageOptions.LargeImage")));
+            this.btn_XZ2.Name = "btn_XZ2";
+            this.btn_XZ2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_XZ2_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -4681,14 +4690,6 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
-            // btnXzRapor2
-            // 
-            resources.ApplyResources(this.btnXzRapor2, "btnXzRapor2");
-            this.btnXzRapor2.Id = 24;
-            this.btnXzRapor2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.btnXzRapor2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
-            this.btnXzRapor2.Name = "btnXzRapor2";
-            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -5206,6 +5207,6 @@
         private DevExpress.XtraEditors.SimpleButton btnMasaTransf;
         private DevExpress.XtraEditors.SimpleButton btnIndirimMasa;
         private DevExpress.XtraEditors.SimpleButton btnUrunTransf;
-        private DevExpress.XtraBars.BarButtonItem btnXzRapor2;
+        private DevExpress.XtraBars.BarButtonItem btn_XZ2;
     }
 }

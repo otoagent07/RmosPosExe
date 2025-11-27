@@ -154,8 +154,10 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                 chk_Alt.Checked = false;
                 btn_Detay.Visibility = User.R_Detay == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
 
-                btn_XZ.Visibility = User.R_XZ == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
+                btn_XZ.Visibility = DevExpress.XtraBars.BarItemVisibility.Never; // btn_XZ2 olarak değiştirildi
 
+
+                btn_XZ2.Visibility = User.R_XZ == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
 
                 btn_Mahsupkes.Visibility = User.R_Mahsupkes == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
                 btn_Fisiptal.Visibility = User.R_Fisiptal == false ? DevExpress.XtraBars.BarItemVisibility.Never : DevExpress.XtraBars.BarItemVisibility.Always;
@@ -2133,6 +2135,13 @@ where Log_Islem='Kaydet'
             gridView9.Columns.Clear();
 
             gridControl9.DataSource = data;
+        }
+
+        private void btn_XZ2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XZ_Raporu xz = new XZ_Raporu();
+            xz.setDepartman = Convert.ToString(cmb_Departman.EditValue);
+            xz.ShowDialog();
         }
     }
 }
