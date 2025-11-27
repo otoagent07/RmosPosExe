@@ -6689,6 +6689,8 @@ Select InstanceNames from @GetInstances ";
             }
         }
 
+        
+
         private void gridyenile_SubeAdres()
         {
             gridControl21.DataSource = dbtools.SelectTable(@"

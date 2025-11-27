@@ -1038,6 +1038,7 @@
             this.btn_Kul_TumYetki = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.Pos_AcikmasalariGizle = new DevExpress.XtraEditors.CheckEdit();
             this.satisYapma = new DevExpress.XtraEditors.CheckEdit();
             this.otoMasaEkraniAc = new DevExpress.XtraEditors.CheckEdit();
             this.otoDirekSatis = new DevExpress.XtraEditors.CheckEdit();
@@ -1319,7 +1320,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.Pos_AcikmasalariGizle = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1995,6 +1995,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_AcikmasalariGizle.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.satisYapma.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoMasaEkraniAc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoDirekSatis.Properties)).BeginInit();
@@ -2214,7 +2215,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pos_AcikmasalariGizle.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -10996,6 +10996,12 @@
             resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             this.xtraTabPage1.Name = "xtraTabPage1";
             // 
+            // Pos_AcikmasalariGizle
+            // 
+            resources.ApplyResources(this.Pos_AcikmasalariGizle, "Pos_AcikmasalariGizle");
+            this.Pos_AcikmasalariGizle.Name = "Pos_AcikmasalariGizle";
+            this.Pos_AcikmasalariGizle.Properties.Caption = resources.GetString("Pos_AcikmasalariGizle.Properties.Caption");
+            // 
             // satisYapma
             // 
             resources.ApplyResources(this.satisYapma, "satisYapma");
@@ -13145,12 +13151,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // Pos_AcikmasalariGizle
-            // 
-            resources.ApplyResources(this.Pos_AcikmasalariGizle, "Pos_AcikmasalariGizle");
-            this.Pos_AcikmasalariGizle.Name = "Pos_AcikmasalariGizle";
-            this.Pos_AcikmasalariGizle.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13860,6 +13860,7 @@
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pos_AcikmasalariGizle.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.satisYapma.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoMasaEkraniAc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.otoDirekSatis.Properties)).EndInit();
@@ -14086,7 +14087,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pos_AcikmasalariGizle.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

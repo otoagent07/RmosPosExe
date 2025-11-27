@@ -64,6 +64,7 @@ namespace Pos
             if (User.Pos_AdisyonPr)
             {
                 barSubItem3.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                btn_XZ2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
 
             //gridyenile();
