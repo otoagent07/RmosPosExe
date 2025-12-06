@@ -619,7 +619,11 @@ namespace Pos
                 lbl_Masaadi.Text = Convert.ToString(dt.Rows[0]["Rsat_Masa"]);
                 lbl_KisiSayisi.Text = Convert.ToString(dt.Rows[0]["Rsat_Kisi"]);
             }
-            Main.a.Listele(Convert.ToInt32(this.Tag));
+
+            if (Param.ikinciEkranAktif)
+            {
+                Main.satislistesi_ikinci_ekran.Listele(Convert.ToInt32(this.Tag));
+            }
 
             if (urunBazli == false)
             {
@@ -1977,7 +1981,11 @@ namespace Pos
                 dbtools.execcmd("Update Cst_Recete_Satis Set Rsat_Ingenico_Status = 5 Where Rsat_Fisno = '" + fis_no + "'");
             }
 
-            Main.a.Listele(0);
+            if (Param.ikinciEkranAktif)
+            {
+                Main.satislistesi_ikinci_ekran.Listele(0);
+            }
+
 
 
             parcalimi();
@@ -4072,12 +4080,12 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
         private void btnIkinciEkranScrollUp_Click(object sender, EventArgs e)
         {
-            Main.a.layoutView1.MovePrev();
+            Main.satislistesi_ikinci_ekran.layoutView1.MovePrev();
         }
 
         private void btnIkinciEkranScrollDown_Click(object sender, EventArgs e)
         {
-            Main.a.layoutView1.MoveNext();
+            Main.satislistesi_ikinci_ekran.layoutView1.MoveNext();
 
         }
 

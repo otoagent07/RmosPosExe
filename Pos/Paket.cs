@@ -1464,7 +1464,7 @@ order by Caller_Id desc";
             sat.ShowDialog();
 
           
-            Main.a.Listele(0);
+            Main.satislistesi_ikinci_ekran.Listele(0);
         }
 
         private void btnKuryeOzet_Click(object sender, EventArgs e)

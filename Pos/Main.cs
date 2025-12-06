@@ -45,7 +45,7 @@ namespace Pos
         SimpleTcpClient client;
         public bool isLogin { get; set; }
 
-        public static SatisListesi a = new SatisListesi();
+        public static SatisListesi satislistesi_ikinci_ekran = null;
 
         //int m_type = 0;
 
@@ -422,8 +422,8 @@ namespace Pos
 
                 if (System.Windows.Forms.Screen.AllScreens.Length > 1 && Param.ikinciEkranAktif == false)
                 {
-                    Main.a.Location = Screen.AllScreens[1].Bounds.Location; // 1 di orjinali
-                    Main.a.Show();
+                    Main.satislistesi_ikinci_ekran.Location = Screen.AllScreens[1].Bounds.Location; // 1 di orjinali
+                    Main.satislistesi_ikinci_ekran.Show();
                 }
 
 
@@ -981,7 +981,10 @@ namespace Pos
                 groupControl4.Visible = true;
                 Anlik();
             }
-            Main.a.Listele(0);
+            if (Param.ikinciEkranAktif)
+            {
+                Main.satislistesi_ikinci_ekran.Listele(0);
+            }
         }
         private void btnRaporlar_Click(object sender, EventArgs e)
         {
@@ -1536,7 +1539,10 @@ YS_Panel a = new YS_Panel();
             try
             {
 
-
+                if (Param.ikinciEkranAktif)
+                {
+                    satislistesi_ikinci_ekran = new SatisListesi();
+                }
                 dbtools.execcmdR("exec defaultParametre");
 
                 StatikModel.wait_loadingKapat();
@@ -1570,6 +1576,7 @@ YS_Panel a = new YS_Panel();
                 {
                     masatakipac();
                 }
+
             }
             catch (Exception ex)
             {

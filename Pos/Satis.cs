@@ -237,7 +237,7 @@ namespace Pos
                 //SatisListesi a = new SatisListesi();
 
                 int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
-                Main.a.Listele(fisno);
+                Main.satislistesi_ikinci_ekran.Listele(fisno);
 
                 //dbtools.execcmd("update Pos_Masa set Masa_Durum='1' where Masa_No='"+Masa_No+"' and Masa_Depart='" + Departman.Dep_Kodu+"'");
 
@@ -1834,7 +1834,7 @@ namespace Pos
             }
             SiparisKontrol();
 
-            Main.a.Listele(Convert.ToInt32(bartxt_FisNo.EditValue));
+            Main.satislistesi_ikinci_ekran.Listele(Convert.ToInt32(bartxt_FisNo.EditValue));
 
 
             barkodFocuslan();
