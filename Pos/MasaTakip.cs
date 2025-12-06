@@ -992,7 +992,10 @@ OPTION (MAXDOP 1, RECOMPILE);";
                 bartxt_BosMasa.EditValue = Convert.ToString(dtBilgi.Rows[0]["Sayi"]);
                 bartxt_DoluMasa.EditValue = dtBilgi.Rows.Count > 1 ? Convert.ToString(dtBilgi.Rows[1]["Sayi"]) : "0";
 
-                Main.satislistesi_ikinci_ekran.Listele(0);
+                if (Param.ikinciEkranAktif)
+                {
+                    Main.satislistesi_ikinci_ekran.Listele(0);
+                }
 
             }
             catch (Exception ex)
@@ -1400,7 +1403,10 @@ OPTION (MAXDOP 1, RECOMPILE);";
                 bartxt_BosMasa.EditValue = Convert.ToString(dtBilgi.Rows[0]["Sayi"]);
                 bartxt_DoluMasa.EditValue = dtBilgi.Rows.Count > 1 ? Convert.ToString(dtBilgi.Rows[1]["Sayi"]) : "0";
 
-                Main.satislistesi_ikinci_ekran.Listele(0);
+                if (Param.ikinciEkranAktif)
+                {
+                    Main.satislistesi_ikinci_ekran.Listele(0);
+                }
             }
             catch (Exception ex)
             {
@@ -1576,7 +1582,10 @@ OPTION (MAXDOP 1, RECOMPILE);";
 
                 bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + Masa_No + "'"));
 
-                Main.satislistesi_ikinci_ekran.Listele(Convert.ToInt32(bartxt_FisNo.EditValue));
+                if (Param.ikinciEkranAktif)
+                {
+                    Main.satislistesi_ikinci_ekran.Listele(Convert.ToInt32(bartxt_FisNo.EditValue));
+                }
 
 
                 //Masa_Durum = Convert.ToInt32(dbtools.DegerGetir("select isnull(Masa_Durum,0) from Pos_Masa WITH(NOLOCK) where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Masa_No + "'"));
@@ -2510,7 +2519,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             Raporlar r = new Raporlar();
             r.ShowDialog();
             MasaYenile(0);
-            Main.satislistesi_ikinci_ekran.Listele(0);
+            if (Param.ikinciEkranAktif)
+            {
+                Main.satislistesi_ikinci_ekran.Listele(0);
+            }
         }
 
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -2546,7 +2558,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             string fisno = Convert.ToInt32(bartxt_FisNo.EditValue).ToString();
 
             HesapBak(fisno);
-            Main.satislistesi_ikinci_ekran.Listele(0);
+            if (Param.ikinciEkranAktif)
+            {
+                Main.satislistesi_ikinci_ekran.Listele(0);
+            }
 
             txt_Filtre.Text = "";
         }
@@ -2587,7 +2602,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
                 Satis();
-                Main.satislistesi_ikinci_ekran.Listele(0);
+                if (Param.ikinciEkranAktif)
+                {
+                    Main.satislistesi_ikinci_ekran.Listele(0);
+                }
                 txt_Filtre.Text = "";
             }
 
@@ -3152,7 +3170,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
                 gridyenile(fisno);
                 HesapBak(fisno + "");
-                Main.satislistesi_ikinci_ekran.Listele(0);
+                if (Param.ikinciEkranAktif)
+                {
+                    Main.satislistesi_ikinci_ekran.Listele(0);
+                }
 
                 fisnotemizle();
             }

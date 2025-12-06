@@ -295,7 +295,10 @@ namespace Pos
                 DataTable dtBilgi = dbtools.SelectTable("select COUNT(Masa_Durum) as Sayi,MIN(Masa_Durum) as Durum from Pos_Masa WITH(NOLOCK) where Masa_Depart = '" + Departman.Dep_Kodu + "' group by Masa_Durum order by Masa_Durum");
 
 
-                Main.satislistesi_ikinci_ekran.Listele(0);
+                if (Param.ikinciEkranAktif)
+                {
+                    Main.satislistesi_ikinci_ekran.Listele(0);
+                }
             }
             catch (Exception ex)
             {
@@ -321,7 +324,10 @@ namespace Pos
 
             int fisno = Convert.ToInt32(dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + Masa_No + "'"));
 
-            Main.satislistesi_ikinci_ekran.Listele(fisno);
+            if (Param.ikinciEkranAktif)
+            {
+                Main.satislistesi_ikinci_ekran.Listele(fisno);
+            }
 
 
             // satış ekranı yenileme

@@ -233,6 +233,10 @@ IF COL_LENGTH('Pos_Param', 'cariindirimAktif') IS NULL BEGIN ALTER TABLE Pos_Par
 IF COL_LENGTH('Pos_Param', 'masatakiphesappasif') IS NULL BEGIN ALTER TABLE Pos_Param ADD masatakiphesappasif bit END;
 IF COL_LENGTH('Pos_Param', 'satirsilfiscikmasinaktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD satirsilfiscikmasinaktif bit END;
 IF COL_LENGTH('Pos_Param', 'hesapkapatfiscikmasinaktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD hesapkapatfiscikmasinaktif bit END;
+IF COL_LENGTH('Pos_Param', 'otoMasaEkraniAc') IS NULL BEGIN ALTER TABLE Pos_Param ADD otoMasaEkraniAc bit END;
+
+
+
 IF COL_LENGTH('Pos_Param', 'kisivegarsonbirkeresoraktif') IS NULL BEGIN ALTER TABLE Pos_Param ADD kisivegarsonbirkeresoraktif bit END;
 IF COL_LENGTH('Pos_Param', 'yazdirilmamissiparis') IS NULL BEGIN ALTER TABLE Pos_Param ADD yazdirilmamissiparis bit END;
 IF COL_LENGTH('Pos_Param', 'masamusait') IS NULL BEGIN ALTER TABLE Pos_Param ADD masamusait bit END;
