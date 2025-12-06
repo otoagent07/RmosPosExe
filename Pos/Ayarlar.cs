@@ -424,6 +424,7 @@ namespace Pos
                 masatakiphesappasif.Checked = Param.masatakiphesappasif;
                 kisivegarsonbirkeresoraktif.Checked = Param.kisivegarsonbirkeresoraktif;
                 satirsilfiscikmasinaktif.Checked = Param.satirsilfiscikmasinaktif;
+                hesapkapatfiscikmasinaktif.Checked = Param.hesapkapatfiscikmasinaktif;
                 onburoikramsifiryazaktif.Checked = Param.onburoikramsifiryazaktif;
                 cariindirimAktif.Checked = Param.cariindirimAktif;
                 hesapFisQr.Checked = Param.hesapFisQr;
@@ -1269,7 +1270,7 @@ namespace Pos
                     + " Param_OzelMasaSiralama,Param_HesapFisiDokum,Param_HspFontAlgilama,Param_AdisyonFolioAdi,Param_FullPos,Param_CikisKapa,Param_DirekAdisyonZor,Param_DirekAdisyonPrSor,Param_KGAlgilama,Param_ExtraFolioAcma,Param_SiparisAna,Param_iadeKontrol,Param_iadeLimit, Pos_HesapDkmRenk, Param_AdisyonDegis, Param_AdisyonIndAd,Param_SiparisTutar,Param_AnaEkranCiro,Param_MasaTakipCiro,Param_AcilisCekSil,Param_CariAdSoyad,Param_OdenmezAc, "
                     + " Param_SatirSil,Param_SatirSilUser,Param_MasaTakipMenu,Param_ParaUstuIngenico,Param_SatisTabloGonderi, Param_SatisTabloID, Param_SatisTabloAktif, Param_AcilistaMenu,Param_IngenicoSPR,Param_SiparisFisFont,Param_HizliSatisCekAc,Param_KartfGBCheckOut, "
                     + " Param_YeniHesapDkm,Param_YeniSiparisDkm,Param_OdaKrediCompOdenmez,Param_KurTransfer,Param_CallCenterPaket, "
-                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif,otomatikOdenmez,mobilCallerIdAktif,mobileCallerIdMacAdres,hesapFisQrFisno,paketotohesapkapat,sepetaktif,merkezaktif,ingenico2,ekranKlavyesiAktif,ingenicoOdemeAtmasin,Param_StokAnlikAtmasin,masatakipKonumYukseklik,gunsonubitissaat )"
+                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif,otomatikOdenmez,mobilCallerIdAktif,mobileCallerIdMacAdres,hesapFisQrFisno,paketotohesapkapat,sepetaktif,merkezaktif,ingenico2,ekranKlavyesiAktif,ingenicoOdemeAtmasin,Param_StokAnlikAtmasin,masatakipKonumYukseklik,gunsonubitissaat,hesapkapatfiscikmasinaktif )"
 
                     + " VALUES ( "
                     + " '1', '" + txt_Prm_Tesis_Adi.Text + "', '" + Convert.ToBoolean(chk_Prm_Onburo.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Cost.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Muh.Checked) + "','" + rdo_Prm_Calisma.SelectedIndex + "','" + rdo_Prm_Tarih_Nereden.SelectedIndex + "', "
@@ -1306,6 +1307,7 @@ namespace Pos
                     + "','" + Param_StokAnlikAtmasin.Checked + "'"
                     + "','" + masatakipKonumYukseklik.Text + "'"
                     + "','" + gunsonubitissaat.Text + "'"
+                    + "','" + hesapkapatfiscikmasinaktif.Checked + "'"
                     + "" + ""
                     + "  )");
 
@@ -1362,6 +1364,7 @@ namespace Pos
                        + ",Param_StokAnlikAtmasin = '" + Param_StokAnlikAtmasin.Checked + "'"
                        + ",masatakipKonumYukseklik = '" + masatakipKonumYukseklik.Text + "'"
                        + ",gunsonubitissaat = '" + gunsonubitissaat.Text + "'"
+                       + ",hesapkapatfiscikmasinaktif = '" + hesapkapatfiscikmasinaktif.Checked + "'"
                        + " where Param_Id = '1' ";
                 dbtools.execcmdR(q);
 

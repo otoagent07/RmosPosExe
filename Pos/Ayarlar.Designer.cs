@@ -1320,6 +1320,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.hesapkapatfiscikmasinaktif = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2215,6 +2216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hesapkapatfiscikmasinaktif.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4249,6 +4251,7 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.hesapkapatfiscikmasinaktif);
             this.xtraTabPage8.Controls.Add(this.satisdaOzelMasa);
             this.xtraTabPage8.Controls.Add(this.ingenicoOdemeAtmasin);
             this.xtraTabPage8.Controls.Add(this.ekranKlavyesiAktif);
@@ -13151,6 +13154,12 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // hesapkapatfiscikmasinaktif
+            // 
+            resources.ApplyResources(this.hesapkapatfiscikmasinaktif, "hesapkapatfiscikmasinaktif");
+            this.hesapkapatfiscikmasinaktif.Name = "hesapkapatfiscikmasinaktif";
+            this.hesapkapatfiscikmasinaktif.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -14087,6 +14096,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hesapkapatfiscikmasinaktif.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15383,5 +15393,6 @@
         private DevExpress.XtraEditors.CheckEdit satisdaOzelMasa;
         private DevExpress.XtraEditors.CheckEdit kapaliMasayaGir;
         private DevExpress.XtraEditors.CheckEdit Pos_AcikmasalariGizle;
+        private DevExpress.XtraEditors.CheckEdit hesapkapatfiscikmasinaktif;
     }
 }

@@ -174,6 +174,7 @@ namespace Pos.Class
         public static bool masatakiphesappasif { get; set; }
         public static bool kisivegarsonbirkeresoraktif { get; set; }
         public static bool satirsilfiscikmasinaktif { get; set; }
+        public static bool hesapkapatfiscikmasinaktif { get; set; }
         public static bool onburoikramsifiryazaktif { get; set; }
         public static bool cariindirimAktif { get; set; }
         public static bool hesapFisQr { get; set; }
@@ -246,6 +247,7 @@ namespace Pos.Class
                         ",ISNULL(masatakiphesappasif,0) as masatakiphesappasif  " +
                         ",ISNULL(kisivegarsonbirkeresoraktif,0) as kisivegarsonbirkeresoraktif  " +
                         ",ISNULL(satirsilfiscikmasinaktif,0) as satirsilfiscikmasinaktif  " +
+                        ",ISNULL(hesapkapatfiscikmasinaktif,0) as hesapkapatfiscikmasinaktif  " +
                         ",ISNULL(onburoikramsifiryazaktif,0) as onburoikramsifiryazaktif  " +
                         ",ISNULL(cariindirimAktif,0) as cariindirimAktif,ISNULL(hesapFisQr,0) as hesapFisQr,ISNULL(paketotohesapkapat,0) as paketotohesapkapat,ISNULL(hesapFisQrFisno,0) as hesapFisQrFisno,ISNULL(masatrTutSurukle,0) as masatrTutSurukle,isnull(tipboxReceteKod,'') as tipboxReceteKod  ,ISNULL(servispayFooterda,0) as servispayFooterda,ISNULL(servispayOdenmezIkramSil,0) as servispayOdenmezIkramSil,ISNULL(siparisTekrarPrintName,'') as siparisTekrarPrintName,ISNULL(tumPrinter,0) as tumPrinter,ISNULL(urunAdinaOdaklan,0) as urunAdinaOdaklan" +
                         ",ISNULL(ikinciEkranAktif,0) as ikinciEkranAktif " +
@@ -455,6 +457,7 @@ namespace Pos.Class
                     masatakiphesappasif = Convert.ToBoolean(dt.Rows[0]["masatakiphesappasif"]);
                     kisivegarsonbirkeresoraktif = Convert.ToBoolean(dt.Rows[0]["kisivegarsonbirkeresoraktif"]);
                     satirsilfiscikmasinaktif = Convert.ToBoolean(dt.Rows[0]["satirsilfiscikmasinaktif"]);
+                    hesapkapatfiscikmasinaktif = Convert.ToBoolean(dt.Rows[0]["hesapkapatfiscikmasinaktif"]);
                     onburoikramsifiryazaktif = Convert.ToBoolean(dt.Rows[0]["onburoikramsifiryazaktif"]);
                     cariindirimAktif = Convert.ToBoolean(dt.Rows[0]["cariindirimAktif"]);
                     hesapFisQr = Convert.ToBoolean(dt.Rows[0]["hesapFisQr"]);
