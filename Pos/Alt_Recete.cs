@@ -3,6 +3,7 @@ using Pos.Class;
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pos
@@ -48,16 +49,41 @@ namespace Pos
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
+                    // Parse Kodlar_Size (format: "120;55")
+                    string size = Convert.ToString(dt.Rows[i]["Kodlar_Size"]) == "" ? "100;40" : Convert.ToString(dt.Rows[i]["Kodlar_Size"]);
+                    string[] sizeArray = size.Split(';');
+
+                    // Parse Kodlar_Font (format: "Tahoma; 9pt; style=Bold")
+                    Font mfont = new System.Drawing.Font("Tahoma", 8F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(162)));
+                    string font = Convert.ToString(dt.Rows[i]["Kodlar_Font"]);
+                    if (font != "")
+                    {
+                        System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
+                        mfont = (Font)converter.ConvertFromString(font);
+                    }
+
+                    // Parse Rec_Color (format: "#C0C0C0")
+                    string recColor = Convert.ToString(dt.Rows[i]["Rec_Color"]);
+                    Color backColor = Color.Empty;
+                    if (recColor != "")
+                    {
+                        backColor = ColorTranslator.FromHtml(recColor);
+                    }
+
                     SimpleButton btn_AltRecete = new SimpleButton();
-                    btn_AltRecete.Size = new System.Drawing.Size(100, 40);
+                    btn_AltRecete.Size = new System.Drawing.Size(Convert.ToInt32(sizeArray[0]), Convert.ToInt32(sizeArray[1]));
                     btn_AltRecete.TabIndex = 0;
                     btn_AltRecete.TabStop = false;
                     btn_AltRecete.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
                     btn_AltRecete.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
                     btn_AltRecete.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-                    btn_AltRecete.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+                    btn_AltRecete.Font = mfont;
                     btn_AltRecete.Appearance.Options.UseBackColor = true;
-
+                    if (backColor != Color.Empty)
+                    {
+                        btn_AltRecete.Appearance.BackColor = backColor;
+                    }
+                    btn_AltRecete.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
 
                     if (Param.Calisma_Sekli == 0) btn_AltRecete.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Fiyat"]);
                     if (Param.Calisma_Sekli == 1) btn_AltRecete.Text = Convert.ToString(dt.Rows[i]["Rec_Ad"]) + "\n" + Convert.ToString(dt.Rows[i]["Rec_Dovifiyat"]);
@@ -81,5 +107,7 @@ namespace Pos
             altReceteKodu = "";
             this.Close();
         }
+
+       
     }
 }
