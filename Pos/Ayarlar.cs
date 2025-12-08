@@ -272,6 +272,7 @@ namespace Pos
 
 
             pavoyukle();
+            bekoyukle();
         }
 
         public void pavoyukle()
@@ -305,6 +306,38 @@ namespace Pos
 
             // İsteğe bağlı: Varsayılan değer ata
         }
+        public void bekoyukle()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Id", typeof(int));
+            dt.Columns.Add("Ad", typeof(string));
+
+            // Verileri ekle — OdemeTipi listesindeki değerler
+            dt.Rows.Add(1, "Nakit");
+            dt.Rows.Add(2, "Çek");
+            dt.Rows.Add(3, "Kredi Kartı");
+            dt.Rows.Add(7, "Yemek Kartı");
+            dt.Rows.Add(8, "Ödemesiz");
+            dt.Rows.Add(9, "İkram");
+            dt.Rows.Add(11, "Puan");
+            dt.Rows.Add(12, "EPOS Ödeme");
+            dt.Rows.Add(13, "Mobil Ödeme");
+            dt.Rows.Add(14, "E-Para Ödeme");
+            dt.Rows.Add(15, "Bağış");
+            dt.Rows.Add(16, "Bond ile Ödeme");
+            dt.Rows.Add(17, "Açık Hesap");
+            dt.Rows.Add(18, "Para Transferi");
+            dt.Rows.Add(19, "Ulaşım Kartı");
+            dt.Rows.Add(20, "Hediye Kartı");
+
+            // LookUpEdit'e bağla
+            lookUpEditBekoOdeme.Properties.DataSource = dt;
+            lookUpEditBekoOdeme.Properties.ValueMember = "Id";
+            lookUpEditBekoOdeme.Properties.DisplayMember = "Ad";
+
+            // İsteğe bağlı: Varsayılan değer ata
+        }
+
         public void tabParametreler()
         {
             try
@@ -1914,12 +1947,12 @@ namespace Pos
             DataTable dt = dbtools.SelectTable("select * from Pos_Kodlar where Pkod_Kod = '" + txt_Odeme_Kod.EditValue + "' and Pkod_Sinif = '11' ");
             if (dt.Rows.Count < 1)
             { // System.Drawing.ColorTranslator.ToHtml(clr_Masakon_Bos.Color)
-                dbtools.execcmdR("INSERT INTO Pos_Kodlar (Pkod_Kod,Pkod_Ad,Pkod_Sinif,Pkod_Kasagiris,Pkod_Kasacikis,Pkod_Tekoda,Pkod_Odano,Pkod_Ozelkod,Pkod_Fatura,Pkod_OnBuroKapatma,Pkod_OnBuroKapatma_Departman,Pkod_FisTipi,Pkod_PaketNot,Pkod_DirekBakiye,Pkod_MuhasebeAktif,Pkod_MuhasebeBorc,Pkod_MuhasebeAlacak,Pkod_AdisyonPr,Pkod_YKasaid,Pkod_banka,Pkod_YS_OdemeID,Pkod_OdemeBtnRenk,Pkod_IWEPayment,Pkod_Sira,Pkod_Dep,Pkod_otoKur,hesapDokTutarSifir,saatAralikDurdur,Pkod_E_Adisyon,pavoOdemeKod,Pkod_OdemeAktif) VALUES ( "
+                dbtools.execcmdR("INSERT INTO Pos_Kodlar (Pkod_Kod,Pkod_Ad,Pkod_Sinif,Pkod_Kasagiris,Pkod_Kasacikis,Pkod_Tekoda,Pkod_Odano,Pkod_Ozelkod,Pkod_Fatura,Pkod_OnBuroKapatma,Pkod_OnBuroKapatma_Departman,Pkod_FisTipi,Pkod_PaketNot,Pkod_DirekBakiye,Pkod_MuhasebeAktif,Pkod_MuhasebeBorc,Pkod_MuhasebeAlacak,Pkod_AdisyonPr,Pkod_YKasaid,Pkod_banka,Pkod_YS_OdemeID,Pkod_OdemeBtnRenk,Pkod_IWEPayment,Pkod_Sira,Pkod_Dep,Pkod_otoKur,hesapDokTutarSifir,saatAralikDurdur,Pkod_E_Adisyon,pavoOdemeKod,Pkod_OdemeAktif,lookUpEditBekoOdeme) VALUES ( "
                     + " '" + txt_Odeme_Kod.EditValue + "','" + txt_Odeme_Ad.EditValue + "','11','" + Convert.ToBoolean(chk_Odeme_Kasa_Giris.Checked) + "', "
                     + " '" + Convert.ToBoolean(chk_Odeme_Kasa_Cikis.Checked) + "', '" + Convert.ToBoolean(Chk_Odeme_TekOda.Checked) + "','" + txt_Odeme_Odano.EditValue + "','" + rdo_Odeme_OzelKod.SelectedIndex + "', '" + Convert.ToBoolean(chk_Odeme_Fatura.Checked) + "', "
                     + " '" + Convert.ToBoolean(chk_Prm_OnBuroKapatma.Checked) + "', '" + look_Odeme_OnbDepartman.EditValue + "','" + look_Odeme_FisTipi.EditValue + "','" + Convert.ToBoolean(chk_Odeme_paketNot.Checked) + "','" + Pkod_DirekBakiye.Checked + "', "
                     + " '" + Pkod_MuhasebeAktif.Checked + "', '" + Pkod_MuhasebeBorc.EditValue + "', '" + Pkod_MuhasebeAlacak.EditValue + "','" + Pkod_AdisyonPr.Checked + "', "
-                    + " '" + look_Ykkodu.EditValue + "','" + look_Bankakodu.EditValue + "', '" + Pkod_YS_OdemeID.EditValue + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OdemeBtnRenk.Color) + "','" + Pkod_IWEPayment.EditValue + "','" + odeme_Sira.EditValue + "','" + Pkod_Dep.EditValue + "','" + lookUpOtoKurSec.EditValue + "','" + hesapDokTutarSifir.Checked + "','" + txtsaatAralikDurdur.Text + "','" + Pkod_E_Adisyon.Checked + "','" + lookUpEditPavoOdeme.EditValue + "','" + Convert.ToBoolean(checkEditOdemeTipAktif.Checked) + "' )");
+                    + " '" + look_Ykkodu.EditValue + "','" + look_Bankakodu.EditValue + "', '" + Pkod_YS_OdemeID.EditValue + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OdemeBtnRenk.Color) + "','" + Pkod_IWEPayment.EditValue + "','" + odeme_Sira.EditValue + "','" + Pkod_Dep.EditValue + "','" + lookUpOtoKurSec.EditValue + "','" + hesapDokTutarSifir.Checked + "','" + txtsaatAralikDurdur.Text + "','" + Pkod_E_Adisyon.Checked + "','" + lookUpEditPavoOdeme.EditValue + "','" + Convert.ToBoolean(checkEditOdemeTipAktif.Checked) + "','"+ lookUpEditBekoOdeme .EditValue+ "' )");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_OdemeKodu, Log.Log_Islem.Kaydet, txt_Odeme_Kod.EditValue + " Kodlu " + txt_Odeme_Ad.EditValue + " Adlı Odeme Kodu Kaydedildi", String.Empty, String.Empty);
             }
@@ -1937,6 +1970,7 @@ namespace Pos
                 + " ,Pkod_E_Adisyon = '" + Pkod_E_Adisyon.Checked + "' "
                 + " ,pavoOdemeKod = '" + lookUpEditPavoOdeme.EditValue + "' "
                 + " ,Pkod_OdemeAktif = '" + Convert.ToBoolean(checkEditOdemeTipAktif.Checked) + "' "
+                + " ,bekoOdemeKod = '" + lookUpEditBekoOdeme.EditValue + "' "
                 + " where Pkod_Kod = '" + txt_Odeme_Kod.EditValue + "' and Pkod_Sinif = '11'");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_OdemeKodu, Log.Log_Islem.Duzelt, txt_Odeme_Kod.EditValue + " Kodlu " + txt_Odeme_Ad.EditValue + " Adlı Odeme Kodu Duzeltildi", String.Empty, String.Empty);
@@ -2038,6 +2072,7 @@ namespace Pos
 
 
                     string pavo = Convert.ToString(gridView2.GetFocusedRowCellValue("pavoOdemeKod"));
+                    string beko = Convert.ToString(gridView2.GetFocusedRowCellValue("bekoOdemeKod"));
 
                     if (pavo == "")
                     {
@@ -2048,6 +2083,17 @@ namespace Pos
                         lookUpEditPavoOdeme.EditValue = Convert.ToInt32(pavo);
 
                     }
+
+                    if (beko == "")
+                    {
+                        lookUpEditBekoOdeme.EditValue = null;
+                    }
+                    else
+                    {
+                        lookUpEditBekoOdeme.EditValue = Convert.ToInt32(beko);
+
+                    }
+
 
                     try
                     {

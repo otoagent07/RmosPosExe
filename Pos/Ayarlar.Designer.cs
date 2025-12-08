@@ -1323,6 +1323,7 @@
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.textEdit207 = new DevExpress.XtraEditors.TextEdit();
             this.lookUpEditBekoOdeme = new DevExpress.XtraEditors.LookUpEdit();
+            this.gridColumn180 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -8322,7 +8323,8 @@
             this.gridColumn168,
             this.gridColumn175,
             this.gridColumn177,
-            this.gridColumn179});
+            this.gridColumn179,
+            this.gridColumn180});
             this.gridView2.GridControl = this.grd_Odeme;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ColumnAutoWidth = false;
@@ -13186,6 +13188,12 @@
             this.lookUpEditBekoOdeme.Properties.DropDownRows = 27;
             this.lookUpEditBekoOdeme.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
             // 
+            // gridColumn180
+            // 
+            resources.ApplyResources(this.gridColumn180, "gridColumn180");
+            this.gridColumn180.FieldName = "bekoOdemeKod";
+            this.gridColumn180.Name = "gridColumn180";
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -15424,5 +15432,6 @@
         private DevExpress.XtraEditors.CheckEdit hesapkapatfiscikmasinaktif;
         private DevExpress.XtraEditors.TextEdit textEdit207;
         private DevExpress.XtraEditors.LookUpEdit lookUpEditBekoOdeme;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn180;
     }
 }

@@ -343,6 +343,7 @@ IF COL_LENGTH('Pos_Kodlar', 'hesapDokTutarSifir') IS NULL BEGIN ALTER TABLE Pos_
 IF COL_LENGTH('Pos_Kodlar', 'saatAralikDurdur') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD saatAralikDurdur nvarchar(500) END;
 
 IF COL_LENGTH('Pos_Kodlar', 'pavoOdemeKod') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD pavoOdemeKod int END;
+IF COL_LENGTH('Pos_Kodlar', 'bekoOdemeKod') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD bekoOdemeKod int END;
 
 IF COL_LENGTH('Pos_Cari', 'Cari_TrendyolId') IS NULL BEGIN ALTER TABLE Pos_Cari ADD Cari_TrendyolId int END;
 
