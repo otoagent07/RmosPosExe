@@ -14,6 +14,7 @@ namespace Pos
         public string ustReceteAdi { get; set; }
         public string altReceteKodu { get; set; }
         public Action<string> UrunSatAction { get; set; }
+        public Func<string, decimal> GetSatilanMiktarAction { get; set; }
         
         public Alt_Recete()
         {
@@ -91,6 +92,10 @@ namespace Pos
                     btn_AltRecete.Tag = Convert.ToString(dt.Rows[i]["Rec_Genelkod"]);
 
                     btn_AltRecete.Click += new EventHandler(btn_AltRecete_Click);
+                    
+                    // Satılan miktar overlay'i ekle
+                    btn_AltRecete.Paint += new PaintEventHandler(btn_AltRecete_Paint);
+                    
                     flp_Altrecete.Controls.Add(btn_AltRecete);
                 }
             }
@@ -105,12 +110,84 @@ namespace Pos
             {
                 UrunSatAction(receteKodu);
             }
+            
+            // Butonları yeniden çizdir (satılan miktar overlay'i için)
+            foreach (Control control in flp_Altrecete.Controls)
+            {
+                if (control is SimpleButton)
+                {
+                    control.Invalidate();
+                }
+            }
+        }
+
+        // Satılan miktarı hesaplayan metod
+        private decimal GetSatilanMiktar(string recGenelkod)
+        {
+            try
+            {
+                if (GetSatilanMiktarAction != null)
+                {
+                    return GetSatilanMiktarAction(recGenelkod);
+                }
+                return 0;
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
+        // SimpleButton üzerine satılan miktarı çizen Paint event'i
+        private void btn_AltRecete_Paint(object sender, PaintEventArgs e)
+        {
+            SimpleButton btn = sender as SimpleButton;
+            if (btn == null) return;
+
+            string recGenelkod = btn.Tag?.ToString();
+            if (string.IsNullOrEmpty(recGenelkod)) return;
+
+            decimal satilanMiktar = GetSatilanMiktar(recGenelkod);
+            if (satilanMiktar <= 0) return;
+
+            // Sağ üst köşeye miktar yazısı çiz
+            string miktarText = "x" + satilanMiktar.ToString("0");
+
+            // Font ve brush ayarları
+            Font font = new Font("Arial", 12, FontStyle.Bold);
+            Brush textBrush = new SolidBrush(Color.Blue);
+
+            // Metin boyutunu hesapla
+            SizeF textSize = e.Graphics.MeasureString(miktarText, font);
+
+            // Sağ üst köşe pozisyonu
+            int x = btn.Width - (int)textSize.Width - 5;
+            int y = 5;
+
+            // Metni çiz (transparent arka plan)
+            e.Graphics.DrawString(miktarText, font, textBrush, x, y);
+
+            // Kaynakları temizle
+            font.Dispose();
+            textBrush.Dispose();
         }
 
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
             altReceteKodu = "";
             this.Close();
+        }
+
+        // Butonları yeniden çizdir (satılan miktar overlay'i için)
+        public void ButonlariYenidenCiz()
+        {
+            foreach (Control control in flp_Altrecete.Controls)
+            {
+                if (control is SimpleButton)
+                {
+                    control.Invalidate();
+                }
+            }
         }
 
        

@@ -2125,7 +2125,7 @@ namespace Pos
         }
 
         // Satılan miktarı hesaplayan metod
-        private decimal GetSatilanMiktar(string recGenelkod)
+        public decimal GetSatilanMiktar(string recGenelkod)
         {
             try
             {
@@ -2211,11 +2211,18 @@ namespace Pos
                 Alt_Recete alt = new Alt_Recete();
                 alt.ustReceteKodu = btn_Urun.Tag.ToString();
                 alt.ustReceteAdi = btn_Urun.Text.Split('\n')[0].ToString();
+                Alt_Recete altFormRef = alt; // Form referansını sakla
                 alt.UrunSatAction = (receteKodu) =>
                 {
                     Urun_Sat(receteKodu);
                     SiparisKontrol();
+                    // Alt_Recete formundaki butonları yeniden çizdir
+                    if (altFormRef != null && !altFormRef.IsDisposed)
+                    {
+                        altFormRef.ButonlariYenidenCiz();
+                    }
                 };
+                alt.GetSatilanMiktarAction = (recGenelkod) => GetSatilanMiktar(recGenelkod);
                 alt.Owner = this;
                 alt.FormClosed += (s, args) =>
                 {
