@@ -6771,7 +6771,7 @@ Sıfır Yap</value>
   <data name="hesapkapatfiscikmasinaktif.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 3, 1, 3</value>
   </data>
-  <data name="checkEdit2.Properties.Caption" xml:space="preserve">
+  <data name="hesapkapatfiscikmasinaktif.Properties.Caption" xml:space="preserve">
     <value>Hesap Kapatınca Fiş Çıkmasın Aktif</value>
   </data>
   <data name="hesapkapatfiscikmasinaktif.Size" type="System.Drawing.Size, System.Drawing">
@@ -17718,6 +17718,117 @@ Sıfır Yap</value>
   <data name="&gt;&gt;tab_Print_Adisyon.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="textEdit207.EditValue" xml:space="preserve">
+    <value>Pavo Ödeme</value>
+  </data>
+  <data name="textEdit207.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 123</value>
+  </data>
+  <data name="textEdit207.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="textEdit207.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
+  </data>
+  <data name="textEdit207.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="&gt;&gt;textEdit207.Name" xml:space="preserve">
+    <value>textEdit207</value>
+  </data>
+  <data name="&gt;&gt;textEdit207.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit207.Parent" xml:space="preserve">
+    <value>tab_OdemeKodlari</value>
+  </data>
+  <data name="&gt;&gt;textEdit207.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lookUpEditBekoOdeme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 123</value>
+  </data>
+  <data name="lookUpEditBekoOdeme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v19.1">
+    <value>Combo</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns1" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lookUpEdit1.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns9" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns10" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns11" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lookUpEdit1.Properties.Columns14" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v19.1">
+    <value>None</value>
+  </data>
+  <data name="lookUpEdit1.Properties.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
+    <value>Default</value>
+  </data>
+  <data name="lookUpEdit1.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lookUpEditBekoOdeme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="lookUpEditBekoOdeme.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="&gt;&gt;lookUpEditBekoOdeme.Name" xml:space="preserve">
+    <value>lookUpEditBekoOdeme</value>
+  </data>
+  <data name="&gt;&gt;lookUpEditBekoOdeme.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lookUpEditBekoOdeme.Parent" xml:space="preserve">
+    <value>tab_OdemeKodlari</value>
+  </data>
+  <data name="&gt;&gt;lookUpEditBekoOdeme.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="checkEditOdemeTipAktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>169, 252</value>
   </data>
@@ -17743,7 +17854,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;checkEditOdemeTipAktif.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="textEdit196.EditValue" xml:space="preserve">
     <value>Pavo Ödeme</value>
@@ -17770,7 +17881,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit196.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lookUpEditPavoOdeme.Location" type="System.Drawing.Point, System.Drawing">
     <value>685, 225</value>
@@ -17854,7 +17965,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;lookUpEditPavoOdeme.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="Pkod_E_Adisyon.Location" type="System.Drawing.Point, System.Drawing">
     <value>685, 252</value>
@@ -17881,7 +17992,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;Pkod_E_Adisyon.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="txtsaatAralikDurdur.EditValue" xml:space="preserve">
     <value />
@@ -17908,7 +18019,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;txtsaatAralikDurdur.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="lookUpOtoKurSec.Location" type="System.Drawing.Point, System.Drawing">
     <value>685, 201</value>
@@ -17938,7 +18049,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;lookUpOtoKurSec.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="textEdit195.EditValue" xml:space="preserve">
     <value>Saatten aralığında çalışmasın(10:00-12:00)</value>
@@ -17965,7 +18076,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit195.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="textEdit191.EditValue" xml:space="preserve">
     <value>Oto Kur Seç</value>
@@ -17992,7 +18103,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit191.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="textEdit184.EditValue" xml:space="preserve">
     <value>Departman</value>
@@ -18019,7 +18130,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit184.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="odeme_Sira.EditValue" type="System.Decimal, mscorlib">
     <value>0</value>
@@ -18046,7 +18157,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;odeme_Sira.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="textEdit181.EditValue" xml:space="preserve">
     <value>Konum Sıra</value>
@@ -18073,7 +18184,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit181.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="textEdit180.EditValue" xml:space="preserve">
     <value>IWE Ödeme</value>
@@ -18100,7 +18211,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit180.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="Pkod_IWEPayment.Location" type="System.Drawing.Point, System.Drawing">
     <value>685, 149</value>
@@ -18184,7 +18295,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;Pkod_IWEPayment.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="Pkod_OdemeBtnRenk.EditValue" type="System.Drawing.Color, System.Drawing">
     <value />
@@ -18214,7 +18325,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;Pkod_OdemeBtnRenk.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="textEdit175.EditValue" xml:space="preserve">
     <value>KK Banka</value>
@@ -18241,7 +18352,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit175.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="look_Bankakodu.Location" type="System.Drawing.Point, System.Drawing">
     <value>413, 175</value>
@@ -18271,7 +18382,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;look_Bankakodu.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="textEdit179.EditValue" xml:space="preserve">
     <value>Button Renk</value>
@@ -18298,7 +18409,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit179.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="textEdit177.EditValue" xml:space="preserve">
     <value>YS Odeme ID</value>
@@ -18325,7 +18436,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit177.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="Pkod_YS_OdemeID.Location" type="System.Drawing.Point, System.Drawing">
     <value>413, 201</value>
@@ -18409,7 +18520,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;Pkod_YS_OdemeID.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="textEdit174.EditValue" xml:space="preserve">
     <value>Ingenico Kodu</value>
@@ -18436,7 +18547,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit174.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="look_Ykkodu.Location" type="System.Drawing.Point, System.Drawing">
     <value>413, 149</value>
@@ -18466,7 +18577,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;look_Ykkodu.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="Pkod_AdisyonPr.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 252</value>
@@ -18493,7 +18604,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;Pkod_AdisyonPr.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="Pkod_MuhasebeAktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 27</value>
@@ -18766,7 +18877,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;groupControl9.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="Pkod_DirekBakiye.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 252</value>
@@ -18793,7 +18904,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;Pkod_DirekBakiye.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="chk_Odeme_paketNot.Location" type="System.Drawing.Point, System.Drawing">
     <value>762, 252</value>
@@ -18820,7 +18931,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;chk_Odeme_paketNot.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="look_Odeme_FisTipi.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 149</value>
@@ -18850,7 +18961,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;look_Odeme_FisTipi.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="textEdit41.EditValue" xml:space="preserve">
     <value>Fis Tipi</value>
@@ -18877,7 +18988,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit41.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="look_Odeme_OnbDepartman.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 175</value>
@@ -18907,7 +19018,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;look_Odeme_OnbDepartman.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="chk_Prm_OnBuroKapatma.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 175</value>
@@ -18934,7 +19045,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;chk_Prm_OnBuroKapatma.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="hesapDokTutarSifir.Location" type="System.Drawing.Point, System.Drawing">
     <value>550, 252</value>
@@ -18961,7 +19072,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;hesapDokTutarSifir.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>31</value>
   </data>
   <data name="chk_Odeme_Fatura.Location" type="System.Drawing.Point, System.Drawing">
     <value>442, 252</value>
@@ -18988,7 +19099,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;chk_Odeme_Fatura.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>32</value>
   </data>
   <data name="text_Baslik.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -19024,7 +19135,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;text_Baslik.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>33</value>
   </data>
   <data name="rdo_Odeme_OzelKod.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 92</value>
@@ -19117,7 +19228,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;rdo_Odeme_OzelKod.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>34</value>
   </data>
   <data name="btn_Odeme_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -19147,7 +19258,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;btn_Odeme_Cikis.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>35</value>
   </data>
   <data name="btn_Odeme_Sil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -19177,7 +19288,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;btn_Odeme_Sil.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>36</value>
   </data>
   <data name="btn_Odeme_Kaydet.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -19207,7 +19318,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;btn_Odeme_Kaydet.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>37</value>
   </data>
   <data name="grd_Odeme.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -19423,7 +19534,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;grd_Odeme.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>38</value>
   </data>
   <data name="Chk_Odeme_TekOda.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 200</value>
@@ -19450,7 +19561,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;Chk_Odeme_TekOda.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>39</value>
   </data>
   <data name="chk_Odeme_Kasa_Cikis.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 252</value>
@@ -19477,7 +19588,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;chk_Odeme_Kasa_Cikis.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>40</value>
   </data>
   <data name="chk_Odeme_Kasa_Giris.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 252</value>
@@ -19504,7 +19615,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;chk_Odeme_Kasa_Giris.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>41</value>
   </data>
   <data name="txt_Odeme_Odano.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 201</value>
@@ -19528,7 +19639,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;txt_Odeme_Odano.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>42</value>
   </data>
   <data name="txt_Odeme_Ad.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 66</value>
@@ -19552,7 +19663,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;txt_Odeme_Ad.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>43</value>
   </data>
   <data name="textEdit27.EditValue" xml:space="preserve">
     <value>Adı</value>
@@ -19579,7 +19690,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit27.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>44</value>
   </data>
   <data name="txt_Odeme_Kod.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 40</value>
@@ -19603,7 +19714,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;txt_Odeme_Kod.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>45</value>
   </data>
   <data name="textEdit28.EditValue" xml:space="preserve">
     <value>Kodu</value>
@@ -19630,7 +19741,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;textEdit28.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>46</value>
   </data>
   <data name="Pkod_Dep.Location" type="System.Drawing.Point, System.Drawing">
     <value>685, 175</value>
@@ -19660,7 +19771,7 @@ Sıfır Yap</value>
     <value>tab_OdemeKodlari</value>
   </data>
   <data name="&gt;&gt;Pkod_Dep.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>47</value>
   </data>
   <data name="tab_OdemeKodlari.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 3, 1, 3</value>
