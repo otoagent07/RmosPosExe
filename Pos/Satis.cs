@@ -2211,11 +2211,17 @@ namespace Pos
                 Alt_Recete alt = new Alt_Recete();
                 alt.ustReceteKodu = btn_Urun.Tag.ToString();
                 alt.ustReceteAdi = btn_Urun.Text.Split('\n')[0].ToString();
-                alt.ShowDialog();
-                if (Convert.ToString(alt.altReceteKodu) != "")
+                alt.UrunSatAction = (receteKodu) =>
                 {
-                    Urun_Sat(alt.altReceteKodu);
-                }
+                    Urun_Sat(receteKodu);
+                    SiparisKontrol();
+                };
+                alt.Owner = this;
+                alt.FormClosed += (s, args) =>
+                {
+                    alt.Dispose();
+                };
+                alt.Show();
             }
             else
             {

@@ -13,6 +13,7 @@ namespace Pos
         public string ustReceteKodu { get; set; }
         public string ustReceteAdi { get; set; }
         public string altReceteKodu { get; set; }
+        public Action<string> UrunSatAction { get; set; }
         
         public Alt_Recete()
         {
@@ -98,8 +99,12 @@ namespace Pos
         void btn_AltRecete_Click(object sender, EventArgs e)
         {
             SimpleButton btn_Urun = (SimpleButton)sender;
-            altReceteKodu = btn_Urun.Tag.ToString();
-            this.Close();
+            string receteKodu = btn_Urun.Tag.ToString();
+            
+            if (UrunSatAction != null)
+            {
+                UrunSatAction(receteKodu);
+            }
         }
 
         private void btn_Cikis_Click(object sender, EventArgs e)
