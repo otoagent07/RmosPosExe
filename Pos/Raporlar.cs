@@ -67,6 +67,9 @@ namespace Pos
                 btn_XZ2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
 
+            tab_Log.PageVisible = User.kapaliMasayaGir;
+
+
             //gridyenile();
         }
 
