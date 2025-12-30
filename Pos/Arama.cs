@@ -93,7 +93,18 @@ namespace Pos
             }
 
             txt_Arama.Focus();
+
+
+           var odenmezVeyaIkrammi = dbtools.DegerGetir($"select top 1 pkod_ozelkod from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='{KapatmaKodu}'");
+
+            if (odenmezVeyaIkrammi == "2" || odenmezVeyaIkrammi == "3")
+            {
+                odenmezVeyaIkram = true;
+            }
+
         }
+
+        public bool odenmezVeyaIkram = false;
 
         private void btn_Cikis_Click(object sender, EventArgs e)
         {
@@ -335,7 +346,15 @@ namespace Pos
                 if (Departman.Kodlar_AndPos_NFC == true) //  && User.ExtraFolio == false
                 {
                     gridColumn14.Visible = true;
-                    string sorgu = @"select Rez_Id,
+
+                    string filtreOdenmez = " Kodlar.Kodlar_Comp_muaf_10 = 0 and ";
+
+                    if (odenmezVeyaIkram)
+                    {
+                        filtreOdenmez = " Kodlar.Kodlar_Comp_muaf_10 = 1 and ";
+                    }
+
+                    string sorgu = $@"select Rez_Id,
                                     Rez_Odano,
                                     Rez_Adi_1 ,
                                     Rez_Adi_2, 
@@ -353,7 +372,11 @@ namespace Pos
                                     FROM Rez WITH(NOLOCK) 
                                     left join Acenta WITH(NOLOCK) on Rez_Macenta = Acenta.Ac_Kodu 
                                     left join Kodlar WITH(NOLOCK) on Kodlar_Sinif = '10' and Rez_Odeme = Kodlar_Kod 
-                                    left join KartF on  CardF_RezID = Rez_Id WHERE  Rez_R_I_H = 'I' " + filtre;
+                                    left join KartF on  CardF_RezID = Rez_Id 
+                                    WHERE
+                                    isnull(rez.Rez_Master_detay,'') <> '' and 
+                                    {filtreOdenmez}
+                                    Rez_R_I_H = 'I' " + filtre;
 
 
                     gridControl1.DataSource = Fronttools.SelectTable(sorgu);
@@ -379,7 +402,14 @@ namespace Pos
                         filtre = " and Rez_Adi_2 like N'" + txt_Arama.Text + "%' ";
                     }
 
-                    string sorgu = @"select Rez_Id,
+                    string filtreOdenmez = " Kodlar.Kodlar_Comp_muaf_10 = 0 and";
+
+                    if (odenmezVeyaIkram)
+                    {
+                        filtreOdenmez = " Kodlar.Kodlar_Comp_muaf_10 = 1 and";
+                    }
+
+                    string sorgu = $@"select Rez_Id,
                                     Rez_Odano,
                                     Rez_Adi_1 ,
                                     Rez_Adi_2, 
@@ -395,7 +425,12 @@ namespace Pos
                                     Kodlar_Ad  
                                     FROM Rez WITH(NOLOCK) 
                                     left join Acenta WITH(NOLOCK) on Rez_Macenta = Acenta.Ac_Kodu 
-                                    left join Kodlar WITH(NOLOCK) on Kodlar_Sinif = '10' and Rez_Odeme = Kodlar_Kod where rez.Rez_R_I_H='I' " + filtre;
+                                    left join Kodlar WITH(NOLOCK) on Kodlar_Sinif = '10' and Rez_Odeme = Kodlar_Kod 
+
+                                    where
+                                    {filtreOdenmez}
+                                    isnull(rez.Rez_Master_detay,'') <> '' and
+                                    rez.Rez_R_I_H='I' " + filtre;
 
 
 
