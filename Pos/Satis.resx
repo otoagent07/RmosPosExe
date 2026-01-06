@@ -403,11 +403,255 @@
   <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="txtAdisyon.Caption" xml:space="preserve">
+    <value>Adisyon</value>
+  </data>
+  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtAdisyon.EditWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="txtAdisyon.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_FisNo.Caption" xml:space="preserve">
+    <value>Fis No : </value>
+  </data>
+  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_MusTipi.Caption" xml:space="preserve">
+    <value>Müs Tipi : </value>
+  </data>
+  <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_MusTipi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_OdaNo.Caption" xml:space="preserve">
+    <value>Oda No : </value>
+  </data>
+  <data name="repositoryItemTextEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_OdaNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_Garson.Caption" xml:space="preserve">
+    <value>Garson : </value>
+  </data>
+  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_Garson.EditWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="bartxt_Garson.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnMasaSec.Caption" xml:space="preserve">
+    <value>MASA SEÇ</value>
+  </data>
+  <data name="btnMasaSec.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABF0RVh0VGl0
+        bGUARG93bjtBcnJvdzu9/IJYAAACoklEQVQ4T22Ta0iTYRTHHy9ZSkb0xb4E4T5oRjdjkEXoUCIwSnF2
+        EcnQNLtBhV3mZVsrL4jzurAwbxmjcn3wtqnJ5hIvLR1hfancZupMUTMvo+Uc/zhjRnMdOLyH5/zPj3PO
+        87wMAFtnHowxT8aY9zr3cub+mqN2DSCR69l9uZ5CL2G9rlPYMISc+vfIqtNBUP0O18s0bwh0qUjNUgoo
+        XAe4UzXA5lbsFG648agXcyt2F08QKUnoQxq+oMUdcKuyj81aVynceK28BzPWVXRNWdD13YLBH1aczm4l
+        4aYZ6yqLvd3kBqCZfaiYMeafLu3G9C8bWr8tOrx32oK4u80k3MoY83XqPP8F+Fwp1SK9WIu0om5cLFTD
+        bLFB8WUeis/zUI8tIUHcgbNCFeKzVeBntjm6cQHEZLxUvu4fxejCb4wtrji84eMMGoZnoTIsQGX46cjJ
+        1V9x6JysnbpwGYF7MiM4Mad56ZV+GqVvJyDrN+OxbgpPdFOo6J2EVDuOCu0YotLqlzhhySF0Wy5LpC4i
+        zlfcE1X3QdYzAbHSCLHSBJHSCFGbESWacSTltmNvtETg3IHrLTgfyebw5OrBOo0BD1Qm5LQYHC5RmiBu
+        HMaBGOkQLdm5dFcAL/UZfbxDeFcPx2U02moHzMhsHkFW0wiKu0bBS6mx7eReOEKaPSdKHDUugKNJNWtd
+        +IbGFJTSKPkdJuSqTEjK70RwZHYZY8yPNLuOS90BYYlP2YdJC4WeWwKCA7jxMmOVxgSh4hN2Rxea/LZx
+        tlNuyLzMgo4VuAO4ZyqZ3rzMSEALDQy7zOfffGGPSq217ziYzKczypFzIvPcAaFxMrY/Vsb2nSpfG8U/
+        KEoiDwwXPHcuzoPDy2McXi7jRDx0B/zH6PelZ0tzU+xmVPsHgG+6BRuUdUMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnMasaSec.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABF0RVh0VGl0
+        bGUARG93bjtBcnJvdzu9/IJYAAAGwUlEQVRYR8WWe1BTVx7Hj22ttdq1urOt/zh12v7hWOv0Mba7bUdb
+        nTp9rba749KXrV0rLi0VfLT4ABSIWjvQ1SJCYZUtpZAQAuGR8AgqVAFFgYAh5IGAvMnLYCAgSfx2fif3
+        OtqOQrad7pn5zuTeyf19P+ec7+/cywCw/6d+ceP31s0Xkx9TbqPbjv8VgArfIejOCUT/uSXIpAD25zaz
+        fXJSE9srb6Jbd0hk2tK9Mi0ksiZIZFrESf2K5WpEbHYjYrIaEJ70Y5kAMiX8yCkWluRXQAB7c5rYqPca
+        c3uv0SXN5s44WSPc3muCfBjx+jDsuVkujw9hSaeo0FR6buiqlzmvelnoN1WBAcTJtNzc7fWJAFP3ZDXC
+        NuZF5cAI18m+ERzvG0FF7zA0PS6Udbmgc4wiNLGKCk2jVXOOeRkp5GBlYAAxWY1s2OPjEgDujs6sx+Co
+        Fyf6hnG8dxgVvS6Ud7tQ1u1C6aUrUHcOodk2ipBDlVToHgJwjHmYfdTDghNOBAawO7PhRgAK1bTIjPPo
+        d3u4KTfuuiIYX4GqfQhFF52ot4wgOOEkFZpOz9lGPczq9rD1X2kCA4jMOM9cHh9zjV8HuGdHeh36Rsa5
+        aUnnEFQdQyhud6LwohMFbZehNF1GXf8wPv5KQ4XuFYM4MDLO1u0rDwhA7Gex7e6ighFHz6LLdRXFwmwL
+        BON8kwMKowO5Bjtqel1Yt6+cCt0nBFFsy+utOREATzztubCMNJOZjLHZW7+tRbvzKpRmB/JMDuRxUwfk
+        rXbk6G2Q6qyounQFa+NKqdCfGGOzBBB6njJBE5kyGYC7t6aeARluSanB5pQahCdXc5kvj/GZkqlMb4Os
+        xYZsnRU/NFuQ2WRBRbsTIf+uwsav/QpOqOSZ2BDPc8GDOREAD9ymb6qKqg0W2NweWN3jXBb3OFrtbkh1
+        NmRdsCLrggWZzYP4XjuI7xoHkN4wgBKTA3qrG11DY+h0jqHj8hhU9T34R5SyVAzmRAC8519bL1kQkVo7
+        ojE7rs9QnOX3TYPI0FqQ0TiI/zYM4Fh9P/5zrh9pdf349mwfkmt7kFTTg8PV3Th2phcf7C1zL3lj0yLh
+        bJhwC2hQBqZ/EKPYkaDUIeNcH9LO9XEzUnp9P46e9yutro+bppzpxZGaHiRV9yDxVDcSTnbi4MlLCE+t
+        xauhx6KFHFDdm/xuBcBXYfbc+XPWH9BcyKjuQvzxDnypacfBykt8Zoere3CkltSLxNPdOFjVhYQTnfiy
+        vB0xxWbEqszYX2jEqq1y/Yz75z4ghHpSXSAOysL0lesPLN+SXO2jpZSUtHHFqS8irqQNsWq/YlRm7CEV
+        mRBdZEJUoQnxFe14J1bte3pVxErG2AyhHh+TBSBaaps/rNkhSzuQp0O8poMbkSE3LTZjd7EZ0cWisRGR
+        BSZI1G0ITz2LlzakpVP7ii+mgADel/CTi3fEw0+unL9WUjqYXNnJAaIL/bMURaa7lEbsVBoRqTQittCA
+        V8OklrmP/uURsfWWh2Rfrz0pgHf2lLKGHhf9pODMXPHPr9d9drga8RUdiCwwYpcgMt2Zb8AOUp6Bb8nb
+        MWo8tXp3MK0ereIJs4Mt3ZAZGMCaKDWr6xqin/xgYoz98Y3N2ZoYuQ67i0zccHu+EdvzDIhQtCJCYcCu
+        fBPCjp7Dc2tT6NVHweNtV2aws+c/+i4wgL/tVLGajiEuYStmLHjhvSVB0SXu/eo2bFf4jb9QtOLzXD0+
+        l+sRlW/Aik+zR+c9sfpZse1KWu1M3Wpnf/6Q4hAAwOqIInbqopP92O6kS96WFKilHx6K25h4GlFKE7bJ
+        9diWo8fWHD1f/qC4ciz+q2Q/rZYYvKIWKyvUWdkz7x4LDOD1bUpGeydKbMtpM+fMezk0W79d2swBtsha
+        OMBn6fVY8m6ycer0WQ+JR26BzsqUOivLa7awp4JSAwN4ZXM+0xgdXOUGO6N9FAI5a+GKT1e9tUvlo20I
+        k+rwhVyP5Z9k+R5a8v6bjLH7xbceGSuaLEyhtbAn1qQEBvBymILR/pFUejtTtXIA2goK1oPPvpeY+dGh
+        09gsbUHQPg0WviahPpsrBk+utbBcrYXJGv1a/PcjgQEsD81lxS02VqSz8T0svGAVAXhbzp63eNGLIdnW
+        TZnNeDoo2TbzgQWP33DeT/EbDzJpg1+L3goQ4MVPctiyEDlbFpLDlv1LxpZuzGFLN8pECArYnMdejwx+
+        foMU818Io56fIwZv0ZuHmajHblBAALcZ4qcanQ30xSN++fDP8BuP3FuNXwtAg0zEdwXNmoduMuY0fgsA
+        cYimkzIWx88BfgLDjrGm5yiGDgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnMasaSec.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 35</value>
+  </data>
+  <data name="bartxt_MasaNo.Caption" xml:space="preserve">
+    <value>Masa No : </value>
+  </data>
+  <data name="repositoryItemTextEdit4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bartxt_MasaNo.EditWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="bartxt_MasaNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_Kisi.Caption" xml:space="preserve">
+    <value>Kisi : </value>
+  </data>
+  <data name="bartxt_Kisi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bartxt_AcilisSaat.Caption" xml:space="preserve">
+    <value>Açılış Saat : </value>
+  </data>
+  <data name="bartxt_AcilisSaat.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bar_Tarih.Caption" xml:space="preserve">
+    <value>Tarih : </value>
+  </data>
+  <data name="bar_Tarih.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bar_Cari.Caption" xml:space="preserve">
+    <value>Cari Bilgisi : </value>
+  </data>
+  <data name="bar_Cari.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 9.75pt, style=Bold</value>
+  </data>
   <data name="bar2.Text" xml:space="preserve">
     <value>Main menu</value>
   </data>
   <data name="bar3.BarAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="bartxt_Kul.Caption" xml:space="preserve">
+    <value>Kullanıcı : </value>
+  </data>
+  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 7pt, style=Bold</value>
+  </data>
+  <data name="bartxt_Dep.Caption" xml:space="preserve">
+    <value>Departman : </value>
+  </data>
+  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 7pt, style=Bold</value>
+  </data>
+  <data name="btnAdresGuncelle.Caption" xml:space="preserve">
+    <value>Adres Güncelleme</value>
+  </data>
+  <data name="btnAdresGuncelle.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 9pt, style=Bold</value>
+  </data>
+  <data name="btnYenile.Caption" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="btnYenile.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACN0RVh0VGl0
+        bGUAQ29udmVydDtSZXBlYXQ7QXJyb3c7RXhjaGFuZ2V2I2jSAAADLElEQVQ4T3WTeTAUUBzHf0rKUbpc
+        WyZiolEtydGSzcooYVSTCZXS6ljWXY4tR+VYFSMVraOcI5Khu0WHI2WmP5SYTIOGYeQP9E87NfNtntnd
+        TDO9mTfvvfm+3+f33u/7HhERXXrsSRcfeVJ68y5Ka/agVNabPJi06EKjOxLv8Z+GZNjZsDURaSTV8ZlG
+        AOZGSml0p1nFWzbVIKIFRKSp3KyXcM8N74ZlyGzy+xl+20lq58UxUOoaakBinRsbFgSnczniEmdR9F1e
+        Q2wFbyim0uVXTAUPw9NlGJt5hMrOSIhLXUYCL24JYgnUABYcVuDgHl7s1HxLfgIvPubg83gtxn+8QO9o
+        FfompegaSUDr17No6U/DvgwrFqmjAmgczuJyI2S8V3XdyXjZfwWZtQE4kmUPzzgziAp5kH8R4U73Xohu
+        2cIxxHBso++KECLSUgEWHr3Kzc5/EoyadjEOZ9hPup5em+8QbOK1ykx7rW/qBiRWb4NrmLFig49+/nIz
+        LWMWPL8Gi4KyN38o6whGaK4ttgvXpBDREgZmx/SWWMJiz9KXRnba24mIFXAFES1lugqgtfe8pcJbYgHv
+        ZEts2m2wnoi0lZ1l0iEiXZ7/Sauo252ILOpAYGqzgkFUAGYby6hLRPo+py5vjShokUfL3jJVT2mZXuD5
+        ysyshl6Utg7AfGdcH9urLiLbZCs4aCCUNl1NKu9WNHwYh6jgNYzMbSx9wnP9DkmqZfGy9qn8Z/0ISKnH
+        GqewwvkuaAalVAWKrrd9K5QPonXoB2o+TSO+pAuhV+SILuqA9MFHFL8ZxrGcp7AQxPestPZhD0dTBVgi
+        vNaKh5+mcH9gBjfff0de1ySqesbxfHAWZe0jiC/thFdUOUxdxG2rbQ7sV175rwuC0LwQ/3P1Y+KSHkhf
+        TUD6egK7o2rB3Z/ze+Oe1FEzfuxzjsNxybJ1rlZEtFh5bfVfYAstjvUOE/6x6zf8EhsV0TV9EJypZipz
+        RGXbnLWN/TNk5BAxF6h+yp4RNWxgbuhY84UuvCM323cIy5m63FwgIVN+AnF4cWTsHEWGjmIy/Bcwr7HT
+        sF/IMuor5/9tDPAH30J0X0PRUFMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnYenile.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        fwB32upHln+ZfgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnYenile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
   </data>
   <data name="bar3.Text" xml:space="preserve">
     <value>Status bar</value>
@@ -520,6 +764,27 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1131, 828</value>
   </data>
+  <data name="flp_Kapatma.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flp_Kapatma.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="flp_Kapatma.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>725, 87</value>
+  </data>
+  <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="flp_Kapatma.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;flp_Kapatma.Name" xml:space="preserve">
     <value>flp_Kapatma</value>
   </data>
@@ -531,6 +796,114 @@
   </data>
   <data name="&gt;&gt;flp_Kapatma.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>BAKİYE</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnBakiye.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="btnBakiye.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="btnBakiye.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btnBakiye.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 50</value>
+  </data>
+  <data name="btnBakiye.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnBakiye.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnBakiye.Name" xml:space="preserve">
+    <value>btnBakiye</value>
+  </data>
+  <data name="&gt;&gt;btnBakiye.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnBakiye.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnBakiye.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnJokerAciklama.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnJokerAciklama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 57</value>
+  </data>
+  <data name="btnJokerAciklama.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btnJokerAciklama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 23</value>
+  </data>
+  <data name="btnJokerAciklama.TabIndex" type="System.Int32, mscorlib">
+    <value>165</value>
+  </data>
+  <data name="btnJokerAciklama.Text" xml:space="preserve">
+    <value>Joker Aciklama</value>
+  </data>
+  <data name="&gt;&gt;btnJokerAciklama.Name" xml:space="preserve">
+    <value>btnJokerAciklama</value>
+  </data>
+  <data name="&gt;&gt;btnJokerAciklama.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnJokerAciklama.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btnJokerAciklama.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>725, 0</value>
+  </data>
+  <data name="panelControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 87</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
   <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
     <value>panelControl1</value>
@@ -568,6 +941,24 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="flp_UrunGrup.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flp_UrunGrup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flp_UrunGrup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="flp_UrunGrup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="flp_UrunGrup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 69</value>
+  </data>
+  <data name="flp_UrunGrup.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
   <data name="&gt;&gt;flp_UrunGrup.Name" xml:space="preserve">
     <value>flp_UrunGrup</value>
   </data>
@@ -580,6 +971,27 @@
   <data name="&gt;&gt;flp_UrunGrup.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="chk_Yapma.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_Yapma.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="chk_Yapma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>719, 2</value>
+  </data>
+  <data name="chk_Yapma.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="chk_Yapma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 69</value>
+  </data>
+  <data name="chk_Yapma.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="chk_Yapma.Text" xml:space="preserve">
+    <value>Yapma</value>
+  </data>
   <data name="&gt;&gt;chk_Yapma.Name" xml:space="preserve">
     <value>chk_Yapma</value>
   </data>
@@ -591,6 +1003,27 @@
   </data>
   <data name="&gt;&gt;chk_Yapma.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btn_Aciklama.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Aciklama.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btn_Aciklama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 2</value>
+  </data>
+  <data name="btn_Aciklama.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_Aciklama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 69</value>
+  </data>
+  <data name="btn_Aciklama.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="btn_Aciklama.Text" xml:space="preserve">
+    <value>Açıklama</value>
   </data>
   <data name="&gt;&gt;btn_Aciklama.Name" xml:space="preserve">
     <value>btn_Aciklama</value>
@@ -748,6 +1181,18 @@
   <data name="layoutControlGroup1.CustomizationFormText" xml:space="preserve">
     <value>layoutControlGroup1</value>
   </data>
+  <data name="layoutControlItem1.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="layoutControlItem2.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="layoutControlItem6.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem6</value>
+  </data>
+  <data name="layoutControlItem7.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
   <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>844, 732</value>
   </data>
@@ -772,6 +1217,27 @@
   <data name="tablePanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="btn_1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 3</value>
+  </data>
+  <data name="btn_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_1.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="btn_1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;btn_1.Name" xml:space="preserve">
     <value>btn_1</value>
   </data>
@@ -783,6 +1249,27 @@
   </data>
   <data name="&gt;&gt;btn_1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btn_2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 3</value>
+  </data>
+  <data name="btn_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_2.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="btn_2.Text" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;btn_2.Name" xml:space="preserve">
     <value>btn_2</value>
@@ -796,6 +1283,27 @@
   <data name="&gt;&gt;btn_2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btn_3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 3</value>
+  </data>
+  <data name="btn_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_3.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="btn_3.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;btn_3.Name" xml:space="preserve">
     <value>btn_3</value>
   </data>
@@ -807,6 +1315,27 @@
   </data>
   <data name="&gt;&gt;btn_3.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="btn_4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 3</value>
+  </data>
+  <data name="btn_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_4.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="btn_4.Text" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;btn_4.Name" xml:space="preserve">
     <value>btn_4</value>
@@ -820,6 +1349,27 @@
   <data name="&gt;&gt;btn_4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="btn_5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 3</value>
+  </data>
+  <data name="btn_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_5.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="btn_5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;btn_5.Name" xml:space="preserve">
     <value>btn_5</value>
   </data>
@@ -831,6 +1381,27 @@
   </data>
   <data name="&gt;&gt;btn_5.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="btn_9.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 3</value>
+  </data>
+  <data name="btn_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_9.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="btn_9.Text" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;btn_9.Name" xml:space="preserve">
     <value>btn_9</value>
@@ -844,6 +1415,27 @@
   <data name="&gt;&gt;btn_9.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btn_6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 3</value>
+  </data>
+  <data name="btn_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_6.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="btn_6.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="&gt;&gt;btn_6.Name" xml:space="preserve">
     <value>btn_6</value>
   </data>
@@ -856,6 +1448,27 @@
   <data name="&gt;&gt;btn_6.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="btn_7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 3</value>
+  </data>
+  <data name="btn_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_7.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="btn_7.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;btn_7.Name" xml:space="preserve">
     <value>btn_7</value>
   </data>
@@ -867,6 +1480,27 @@
   </data>
   <data name="&gt;&gt;btn_7.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="btn_8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btn_8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 3</value>
+  </data>
+  <data name="btn_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="btn_8.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="btn_8.Text" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;btn_8.Name" xml:space="preserve">
     <value>btn_8</value>
@@ -910,6 +1544,24 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="btnYarim.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="btnYarim.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnYarim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="btnYarim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 31</value>
+  </data>
+  <data name="btnYarim.TabIndex" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="btnYarim.Text" xml:space="preserve">
+    <value>YARIM</value>
+  </data>
   <data name="&gt;&gt;btnYarim.Name" xml:space="preserve">
     <value>btnYarim</value>
   </data>
@@ -921,6 +1573,24 @@
   </data>
   <data name="&gt;&gt;btnYarim.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnDouble.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="btnDouble.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnDouble.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 3</value>
+  </data>
+  <data name="btnDouble.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 31</value>
+  </data>
+  <data name="btnDouble.TabIndex" type="System.Int32, mscorlib">
+    <value>156</value>
+  </data>
+  <data name="btnDouble.Text" xml:space="preserve">
+    <value>DUBLE</value>
   </data>
   <data name="&gt;&gt;btnDouble.Name" xml:space="preserve">
     <value>btnDouble</value>
@@ -934,6 +1604,24 @@
   <data name="&gt;&gt;btnDouble.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btnBirbucuk.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="btnBirbucuk.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnBirbucuk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 3</value>
+  </data>
+  <data name="btnBirbucuk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 31</value>
+  </data>
+  <data name="btnBirbucuk.TabIndex" type="System.Int32, mscorlib">
+    <value>155</value>
+  </data>
+  <data name="btnBirbucuk.Text" xml:space="preserve">
+    <value>B.BUCUK</value>
+  </data>
   <data name="&gt;&gt;btnBirbucuk.Name" xml:space="preserve">
     <value>btnBirbucuk</value>
   </data>
@@ -945,6 +1633,24 @@
   </data>
   <data name="&gt;&gt;btnBirbucuk.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="btnBir.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="btnBir.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btnBir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 3</value>
+  </data>
+  <data name="btnBir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 31</value>
+  </data>
+  <data name="btnBir.TabIndex" type="System.Int32, mscorlib">
+    <value>154</value>
+  </data>
+  <data name="btnBir.Text" xml:space="preserve">
+    <value>BİR</value>
   </data>
   <data name="&gt;&gt;btnBir.Name" xml:space="preserve">
     <value>btnBir</value>
@@ -1107,6 +1813,49 @@
   <data name="&gt;&gt;btnFiyatBilgisi.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="btnTemizleKisiyeSatis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnTemizleKisiyeSatis.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="btnTemizleKisiyeSatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAMdEVYdFRpdGxlAFJlc2V0O2TPgGkAAAOFSURBVDhP
+        dVN/UNNlGH8i0bxDZlcZJANhSFOUhk6BDRnIgBzzrpPJGmyJGinUnJSzPOBwCGMw0eBgTX50mqH80A5J
+        BReEcafYj2NewI2WpFY7O5QIUs8x6tN9v80/7K7n7nPv3fu+z+f5PM/7foj+P54iIp//gNl7MoynJVTR
+        lkSV7RvJfCaZTdxbGbO4puvV0vruTdc+uiSbs9pkc5Ye2TVL9yZDoSWew9xp7Eunxj45UVGTiGbmBunR
+        3w4m2eeAVSRt/kL1a/9IBW5MnMO0e4jF+EQXBhxV+OSy5pfqDqmUuXvMJiMqqBXSlOcym6yrFiotnWqM
+        uk5hZm4Qv3u+xF13D+65bZjyfIU///oWP9xpR/vVPBzuSMlk29pVEcXKlr/JCyxqkD742tmAiUcX0DdS
+        DuNJBVSFq1kYT2biuqsOk7O9GHW1oPHS6w+05esCSF3MZwiezj7AP3y8RwfXw3YM3ixDQU2CW/ZOiD5e
+        FcgTKwN4KbuDDuVVij29w6WYcJ+HzW5A2aeJVaTYx2MI5m/dFz7SNbQHjmkzajtVyNwfsZ+IfL2TZzBf
+        rgs1mNuU+Ol+A+y3rTh4QjLMJC8gIs5mbcjMOedmfP5zMvQWCZZHPxvoPfP5w3OFbTNBEbRMeyQOY9PV
+        GJu0oqgpfpZ2G4VT+SYh3q5ah9OOWLTeEKCwIQl7j8ag4GjsfakyjHPX3csOOU3FC9bXSTDw23ZcvPka
+        3quLnaENWQHvlzSn4fqkCa0/CtHijIT93iE09eRge7GgjJHubWFBrmGN4dhFNdrGBWgcjEV+5doRWvSc
+        Lycx58VbtVcicNyxEifGVsD63UrsLI2+vTTcf4kgIeAFUTp3WbZ+lb6kKc39mf0NtDhXw3QmHuoPVn3I
+        SPONTueosw5y8fEon0WB5RWk74zQSDJC1u8oEczuMYtwpCMDZ4dycXZ8I8y2SLxVvuahSL40jB0OEfmt
+        z1jcX9wZDGP3y9ii5fcT0RKFbkX/qavbMODSofuWCq1OMYwX+NhlikKqJjSXbU+41Z8hmceLXRiTkve8
+        R1Mc6RGmvhSXnBWqyTfFoNkeh9pvwmE4z4PWwoPi3eV3xFuClET0DFt8rWLRYxULo+R+9anbwuqJyD8l
+        h1e8IZP7fWJ2MJLUwZCouMPijKAaLt8/6PH/SN0R+q8jvcHYlXl3BvO8K8POuI+Bn7fqE7b+B0/Omuug
+        FtVCAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnTemizleKisiyeSatis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 2</value>
+  </data>
+  <data name="btnTemizleKisiyeSatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btnTemizleKisiyeSatis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 22</value>
+  </data>
+  <data name="btnTemizleKisiyeSatis.TabIndex" type="System.Int32, mscorlib">
+    <value>168</value>
+  </data>
+  <data name="btnTemizleKisiyeSatis.Text" xml:space="preserve">
+    <value>F1</value>
+  </data>
   <data name="&gt;&gt;btnTemizleKisiyeSatis.Name" xml:space="preserve">
     <value>btnTemizleKisiyeSatis</value>
   </data>
@@ -1118,6 +1867,24 @@
   </data>
   <data name="&gt;&gt;btnTemizleKisiyeSatis.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="txtKisiyeSatis.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="txtKisiyeSatis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 2</value>
+  </data>
+  <data name="txtKisiyeSatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="txtKisiyeSatis.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="txtKisiyeSatis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="txtKisiyeSatis.TabIndex" type="System.Int32, mscorlib">
+    <value>166</value>
   </data>
   <data name="&gt;&gt;txtKisiyeSatis.Name" xml:space="preserve">
     <value>txtKisiyeSatis</value>
@@ -1131,6 +1898,27 @@
   <data name="&gt;&gt;txtKisiyeSatis.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="txtKisiyeSatisSayac.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="txtKisiyeSatisSayac.EditValue" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtKisiyeSatisSayac.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 2</value>
+  </data>
+  <data name="txtKisiyeSatisSayac.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="txtKisiyeSatisSayac.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="txtKisiyeSatisSayac.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 22</value>
+  </data>
+  <data name="txtKisiyeSatisSayac.TabIndex" type="System.Int32, mscorlib">
+    <value>169</value>
+  </data>
   <data name="&gt;&gt;txtKisiyeSatisSayac.Name" xml:space="preserve">
     <value>txtKisiyeSatisSayac</value>
   </data>
@@ -1142,6 +1930,24 @@
   </data>
   <data name="&gt;&gt;txtKisiyeSatisSayac.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="btnKisiyeSatisYap.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="btnKisiyeSatisYap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="btnKisiyeSatisYap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btnKisiyeSatisYap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="btnKisiyeSatisYap.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnKisiyeSatisYap.Text" xml:space="preserve">
+    <value>Kişiye Satış</value>
   </data>
   <data name="&gt;&gt;btnKisiyeSatisYap.Name" xml:space="preserve">
     <value>btnKisiyeSatisYap</value>
@@ -1179,6 +1985,41 @@
   <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btn_TutarduzeltMiktar.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_TutarduzeltMiktar.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAidEVYdFRpdGxlAEZpbmFuY2lhbDtEb2xsYXI7TW9u
+        ZXk7Qm9vazuCQ/4SAAAC0klEQVQ4T3WTaUgUQBhAVy2163cQlbtblmVEmaUEHZiWeJW6mqWYR+tV3qWt
+        WC4pClnmVWpkZpu13ZarUGYHtD9KSzvw2tUSoogOxcoOzBdj/liVBh4DM7wHw/BJAMnYMpNIJOYTsPgP
+        4s5s1B0LmBXpFPdLGgIQFNcHUlwv9gCKdQEUjVGoU1BYp6Cg1v+BCJkGzI/X+aF/eYORkRGGh//w6/cw
+        Qz9/8/X7TwYGf/BpYIgPn7/x/tMgWee2CGmKacAi96o7aRXOpFU4sb/ciX1lTqSeXDNKyonVJJc6klSy
+        isQSB9JOrRPSVNPAlBytG70DF0bp6f+Hsb8GY//5MTQYv2gwfDlHStlaIVmOC6g1G+n6XE3T61iaXsdw
+        tzcG78T5eCfOo7Enikajkjs9Sh6/VZNQvEZIVqaBqapKZ9o/lnPbGMm1thDijq4kUCUnLMeOUPUS8i67
+        0NC9C32fipj85ZMD+8sdaXmXj64rlOTS1fim2rDzkC0NbRkUXFFwoGIjt7ujaTTEE5m7VEjWpgHL5FIH
+        9H1qLr9QcLBqA0EZcoKzFhKcZUfeJXfuGdLRdSpHCc+2E9I004BVfNEKHvSmo33uS+2rMPK0XoSoF7M9
+        Q47vPhsisu2pafWmtj2UUPWiyYG4Y8u4Y0igptWH7So5udpN1DyKJDBdSsABKTsO2nKzPZyrL4MIPrRA
+        SNNNA9ZRR+yp61CieeZBZtV6wrLtcYuejWf8HPYedeSiPhZdh5KLz/0JypQLaYZpYFpE7mKuvwqh+qk7
+        V14E0WhIYmvKXLalzuXhm0x0nVGcf+aFptWHQJVUSDPHBXYdtkXb5k9VsxtVza6caXalrmM3+r7D3OqI
+        pPLJJk4/ceFsizuK9PmTApZ+qbJ7vslStiVJ2ZooxSdehvdeKV57ZHjGyfCMleERI8MjWsbmcBsxTOO+
+        UYynlXiXKE9g1gTEmbVwhPsXA3wSc8VKPOQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btn_TutarduzeltMiktar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 86</value>
+  </data>
+  <data name="btn_TutarduzeltMiktar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 35</value>
+  </data>
+  <data name="btn_TutarduzeltMiktar.TabIndex" type="System.Int32, mscorlib">
+    <value>168</value>
+  </data>
+  <data name="btn_TutarduzeltMiktar.Text" xml:space="preserve">
+    <value>Miktar Bazlı 
+Tutar Düzelt</value>
+  </data>
   <data name="&gt;&gt;btn_TutarduzeltMiktar.Name" xml:space="preserve">
     <value>btn_TutarduzeltMiktar</value>
   </data>
@@ -1190,6 +2031,50 @@
   </data>
   <data name="&gt;&gt;btn_TutarduzeltMiktar.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnSiparisVeHesap.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="btnSiparisVeHesap.Appearance.BackColor2" type="System.Drawing.Color, System.Drawing">
+    <value>Blue</value>
+  </data>
+  <data name="btnSiparisVeHesap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnSiparisVeHesap.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAx0RVh0VGl0
+        bGUAUHJpbnQ7yDYy6gAAAstJREFUOE99k91L01EYx4+WpGamvUC33fQHlNKVaC3Ji5lCKqJYqWBpYDot
+        RWdivhvzHcUEFyp0F0miSTZzIZo6tTtLMnXtxb3o3n6bm9u+8RwalBce+HAO5/d8v885z+85DAALwBgL
+        6hpWzfSMrqJndIXTPbqCrhEVp33o6yxj7OR/miMGJ7qGVfD5/fD5/PASXj8OvX54Dn2QyZco6NRxBiGy
+        oUUuMllcMO47Ydx3wbAv4MDjReurBQoKO6LhI4iyM8bCWwcXeDa9WYDe7IDOLEBnEuB0HaKxb44U0XQN
+        xlhwQBzcPKBM7B79tpwn6UVR9WscuL3QGu3QGBzQGGxQG+ywC27kS/qRWdAMmVy1UtMxmfQ3KQvpHFnb
+        1ZsEZBQ0IU/SD4fTA7Xehm29FTs6K7Z1VuzZDpBd1A5xdhW0BgEtg0sGxlgoGYTK5KugIc6qQlZhO6wO
+        N7a0FvzSWLCp2edQPe7mNUGUUsJj6/sW6TqnySC8aWAZHo8PaQ9qIEothyilHKI7RBluEskS3BBLkCCW
+        IDmzjMdKO3g9IskgorZnHlaHBx8UKiSlPcF1US5iE3IRE38f1+Lv4WpcDmLicnBLXISJ6UVYBTeetsyS
+        QRQZRFa+VEK3J+CnzoZNjh2bGhs2NXa+F9jns8YGrVlA8YtpMjhHBlGljQr80FixtmFCbFLVsaxuGLG+
+        Y0WhdIoMzpNB9OPnH7H83QTFihr1vXOw2NxomPqNukk1pONqPBvbgtni4t+ml7awtG5EfsUEGVzgNch4
+        JJ/LLn6D9Idy1HYpeRfWjO+g6v0OKt5tQ/J2C4Y9J2o7lUhMb8DtzFYkpErnA0WkZqDFRcbYZansM3b3
+        nNg1CxzqD73JwbuxWjZDWa8wxi4xxs7yjjzS12GldePKyrZPqGxTgM+tARQoqRv7Qv/+uMdEp4n4W126
+        H0EnI2h9hmL+1fwBk15uVquRqDwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnSiparisVeHesap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 160</value>
+  </data>
+  <data name="btnSiparisVeHesap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btnSiparisVeHesap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 31</value>
+  </data>
+  <data name="btnSiparisVeHesap.TabIndex" type="System.Int32, mscorlib">
+    <value>167</value>
+  </data>
+  <data name="btnSiparisVeHesap.Text" xml:space="preserve">
+    <value>Sipariş Yazdır
+ve Hesap Dök
+</value>
   </data>
   <data name="&gt;&gt;btnSiparisVeHesap.Name" xml:space="preserve">
     <value>btnSiparisVeHesap</value>
@@ -1203,6 +2088,38 @@
   <data name="&gt;&gt;btnSiparisVeHesap.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btn_Not_Gonder.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Not_Gonder.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
+        bGUAVG9vbHRpcDtDaGFydDtMYWJlbDtDbG91ZDtOb3RlO0hpbnQ7VGlwu/uFlQAAAnRJREFUOE+Nk0lM
+        U1EUhk8AZ0TAAZduJS50g2FICNG40I1uWBg0gkrBIGIKlTAJtMTARmM1EgJSqHSEKqkoU8JbCFQqlBYI
+        KBWsloAtNUYj7e43970rozEuvvznvHfPl7O4l4gojIgiiGgbZzsR7eDsJKJdRLSbs4eIIjnsXxhVG8cF
+        VbsLKvMExwmV2QWVyQml2QklS6MT1aZxVBvHUWV0oMrgQIlmcEiUlrc5MPYthLFACKOBEN4xlkOwL4cw
+        IhKU8Afx1h+EzR/EsG8Fxa12ENE+Kmq2Y8S/Au3kMrSTgf+i1/MTBQ1DTBBDNx6/weDCLzSO+Tk+KUfX
+        9z7eS2l1f8f1BwIT7KeM2n70zf+A2rYI9fBXkYc811iE2rZW6yYCSFe+YoIDlK7swYupAGr6PqNO+ILa
+        AS/qBrwbslbwok6QUtnrQf3QEs6XWZngIF2o6ILe4UOpdR6l1jlUvPyEu689IlXdrJYo75pHiXVO5L6w
+        gLOK50xwiM4Vd6JpeAmFFjcKO9yQd0gpwr5x5BxW13R7cPq2mQni6IzcArXgRb7hvYRpZrW+uZozYv2n
+        L+v8iNQ8AxMcprR8E+71eKCwuKFod+OOZRZF7W7xYO6zaRGZVsp8/QwKzbOQmz4gKadN2iDxWrOQkqtH
+        So4OyQyZDomyNqQV6CHTTCNLM4UszQSyWyaRWmBAwlWtyImLj2xEFE38rkfxJoaIYtlqUccy60/JO5DZ
+        5MKVJheSclqxN/7SUyI6Iq4unY+gysrKLfAHFh138lZDcp4OCdktiDya0SheHKLwDWc3D2+SxEYflz2J
+        jL9c/7fhfwq4JHzdU94yzPgN2UI8kURzMWwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btn_Not_Gonder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 160</value>
+  </data>
+  <data name="btn_Not_Gonder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 31</value>
+  </data>
+  <data name="btn_Not_Gonder.TabIndex" type="System.Int32, mscorlib">
+    <value>166</value>
+  </data>
+  <data name="btn_Not_Gonder.Text" xml:space="preserve">
+    <value>Not Gönder</value>
+  </data>
   <data name="&gt;&gt;btn_Not_Gonder.Name" xml:space="preserve">
     <value>btn_Not_Gonder</value>
   </data>
@@ -1214,6 +2131,44 @@
   </data>
   <data name="&gt;&gt;btn_Not_Gonder.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="btnServisTutarDuzelt.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnServisTutarDuzelt.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACN0RVh0VGl0
+        bGUARnVuY3Rpb25zRmluYW5jaWFsO0Z1bmN0aW9ucztS7vroAAAC0klEQVQ4T3WTaUgUQBhAVy2163cQ
+        lbtblmVEmaUEHZiWeJW6mqWYR+tV3qWtWC4pClnmVWpkZpu13ZarUGYHtD9KSzvw2tUSoogOxcoOzBdj
+        /liVBh4DM7wHw/BJAMnYMpNIJOYTsPgP4s5s1B0LmBXpFPdLGgIQFNcHUlwv9gCKdQEUjVGoU1BYp6Cg
+        1v+BCJkGzI/X+aF/eYORkRGGh//w6/cwQz9/8/X7TwYGf/BpYIgPn7/x/tMgWee2CGmKacAi96o7aRXO
+        pFU4sb/ciX1lTqSeXDNKyonVJJc6klSyisQSB9JOrRPSVNPAlBytG70DF0bp6f+Hsb8GY//5MTQYv2gw
+        fDlHStlaIVmOC6g1G+n6XE3T61iaXsdwtzcG78T5eCfOo7Enikajkjs9Sh6/VZNQvEZIVqaBqapKZ9o/
+        lnPbGMm1thDijq4kUCUnLMeOUPUS8i670NC9C32fipj85ZMD+8sdaXmXj64rlOTS1fim2rDzkC0NbRkU
+        XFFwoGIjt7ujaTTEE5m7VEjWpgHL5FIH9H1qLr9QcLBqA0EZcoKzFhKcZUfeJXfuGdLRdSpHCc+2E9I0
+        04BVfNEKHvSmo33uS+2rMPK0XoSoF7M9Q47vPhsisu2pafWmtj2UUPWiyYG4Y8u4Y0igptWH7So5udpN
+        1DyKJDBdSsABKTsO2nKzPZyrL4MIPrRASNNNA9ZRR+yp61CieeZBZtV6wrLtcYuejWf8HPYedeSiPhZd
+        h5KLz/0JypQLaYZpYFpE7mKuvwqh+qk7V14E0WhIYmvKXLalzuXhm0x0nVGcf+aFptWHQJVUSDPHBXYd
+        tkXb5k9VsxtVza6caXalrmM3+r7D3OqIpPLJJk4/ceFsizuK9PmTApZ+qbJ7vslStiVJ2ZooxSdehvde
+        KV57ZHjGyfCMleERI8MjWsbmcBsxTOO+UYynlXiXKE9g1gTEmbVwhPsXA3wSc8VKPOQAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btnServisTutarDuzelt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 86</value>
+  </data>
+  <data name="btnServisTutarDuzelt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btnServisTutarDuzelt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 33</value>
+  </data>
+  <data name="btnServisTutarDuzelt.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="btnServisTutarDuzelt.Text" xml:space="preserve">
+    <value>Ser.P Tutar
+Düzelt</value>
   </data>
   <data name="&gt;&gt;btnServisTutarDuzelt.Name" xml:space="preserve">
     <value>btnServisTutarDuzelt</value>
@@ -1227,6 +2182,58 @@
   <data name="&gt;&gt;btnServisTutarDuzelt.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="btnTopluSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnTopluSil.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="btnTopluSil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 3</value>
+  </data>
+  <data name="btnTopluSil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btnTopluSil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 38</value>
+  </data>
+  <data name="btnTopluSil.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="btnTopluSil.Text" xml:space="preserve">
+    <value>Toplu Sil</value>
+  </data>
   <data name="&gt;&gt;btnTopluSil.Name" xml:space="preserve">
     <value>btnTopluSil</value>
   </data>
@@ -1238,6 +2245,27 @@
   </data>
   <data name="&gt;&gt;btnTopluSil.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="btn_SpSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_SpSil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 47</value>
+  </data>
+  <data name="btn_SpSil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_SpSil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 35</value>
+  </data>
+  <data name="btn_SpSil.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="btn_SpSil.Text" xml:space="preserve">
+    <value>SP Sil</value>
+  </data>
+  <data name="btn_SpSil.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;btn_SpSil.Name" xml:space="preserve">
     <value>btn_SpSil</value>
@@ -1251,6 +2279,24 @@
   <data name="&gt;&gt;btn_SpSil.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btn_FarkliMiktar.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="btn_FarkliMiktar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="btn_FarkliMiktar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_FarkliMiktar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 38</value>
+  </data>
+  <data name="btn_FarkliMiktar.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="btn_FarkliMiktar.Text" xml:space="preserve">
+    <value>Farklı Miktar Sat</value>
+  </data>
   <data name="&gt;&gt;btn_FarkliMiktar.Name" xml:space="preserve">
     <value>btn_FarkliMiktar</value>
   </data>
@@ -1262,6 +2308,41 @@
   </data>
   <data name="&gt;&gt;btn_FarkliMiktar.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="btn_Arti.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Arti.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAB2
+        oAAAdqABgrpKUAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAAAw1JREFUOE+lk2lI
+        VFEcxYfuu5XQzJs3S6Qtai5laqWlUpm2iS1mZWZkbqnPZRqbFpf6p6W2mBVSgfZFC62URMsWaNEirEAq
+        LYpKCo2SVmmHKKg58YT84IdBmgP3y+XPj3PP/1yVyoaMZUNln0tO1sAWDwRe9cCkc05WQwmXB84NWsay
+        oURfTGiwVvedrb2Z0JdwGjg3aBkOcsr/nIWzOImGP9XIfZ8O/R57gPs5bf9oRv3vY6j5WQFLTyL0xfYA
+        93HKfpeKqh+HUP5tH9K6YqArtAOoPM/cE4cjX/dg/8cCJHQug67AHuAuTqndq1DSSyh8uxmrHy2EtF2w
+        DTSUctlwgJOhlJOyQf1eTvrdnHTFnHRFvDm+MxL5byzIfZWOFR1zIW0TmqVcgbTZAmk3C6TdJJBoEUjM
+        YiSamKzybnK05vVmIOd9Gja+WQfTq1gorhKfL0Ps0yXI6k7AphcpMD2Pw9pHEZh/cxpCbkzBrBZvBF32
+        xLSLbpjS5AzvhtEwFg2zqpSL6l/lqPpxuC/4g592YveHPBQornoyYOlOQsazNVj3JAprH0Yguj0MkXdC
+        sej2DCxonY6Qa5Mx44pXH3hksQNUfk0uqPhe2h980bts0GsztryUYe5KgNwZg8THy7HmwSKsbJ+PiLZg
+        hN8Kwtwbfghu8UHQpQnwvzAevmfGwrhjOFSetUbIXauQ/CwK8U+XYvXDcETdn4fIeyFY3DYT0R0LEHM/
+        HMvvzkFYawACLrrDr8kVvo1jMem0EzxPjYRbtR4ulVpIudyq0u3kaUq3dDsEkvIFkkggaZtAUp5A2hyh
+        OfiaD5a2ze5z5X9+PEQzaxbXM9JkMtKkM9KkMdKkMlInM1InMtv/XNlg4OUJCLsZgNDrU+HbOA5iJrNd
+        G1sSLYz8z7v2B+9V5wjF1cC5QUs0M1Ky+he8e40RGtkeoInRxLpR/T1Tglen2AFUnudWo4dXvSM8ao0Y
+        c1QNdZI9QJmRc6UItxMGOB/XYtQhB4yIH/L/QHUyk6UcbtXlcUjZAsQNzDoidojNavwFJYOQiYaeK3sA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btn_Arti.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 5</value>
+  </data>
+  <data name="btn_Arti.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_Arti.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 25</value>
+  </data>
+  <data name="btn_Arti.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
   </data>
   <data name="&gt;&gt;btn_Arti.Name" xml:space="preserve">
     <value>btn_Arti</value>
@@ -1275,6 +2356,24 @@
   <data name="&gt;&gt;btn_Arti.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="chk_Fix.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_Fix.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 47</value>
+  </data>
+  <data name="chk_Fix.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="chk_Fix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 35</value>
+  </data>
+  <data name="chk_Fix.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="chk_Fix.Text" xml:space="preserve">
+    <value>Fix Menu</value>
+  </data>
   <data name="&gt;&gt;chk_Fix.Name" xml:space="preserve">
     <value>chk_Fix</value>
   </data>
@@ -1286,6 +2385,24 @@
   </data>
   <data name="&gt;&gt;chk_Fix.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="chk_Eksi.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chk_Eksi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 45</value>
+  </data>
+  <data name="chk_Eksi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="chk_Eksi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 35</value>
+  </data>
+  <data name="chk_Eksi.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="chk_Eksi.Text" xml:space="preserve">
+    <value>Eksileme</value>
   </data>
   <data name="&gt;&gt;chk_Eksi.Name" xml:space="preserve">
     <value>chk_Eksi</value>
@@ -1299,6 +2416,38 @@
   <data name="&gt;&gt;chk_Eksi.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="btnRelogin.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABZ0RVh0VGl0
+        bGUAUGVvcGxlO0Fzc2lnbjtNZR/FY3oAAAMwSURBVDhPdVJ5SNNxHP2klVeaHXbg1Mqract02eFByjya
+        lbPLzXC1bGWZRLBQXFn+yll22IGusuU8yAq1AzS0qZijjJVGagWWZmTSYcMi7LJe/Nb6R+wD758v773P
+        5/F9BID+ByIac2Onr7Ap3b9Zr+T31+9Z8KN8C/c+E+2SQESWJs5I0QgDywo5t/9xUervO8cT0XEpDY2q
+        tWAiXL4SkZWZM+qMMWO8er3H0M19IlzftxpH4ubhnDQAacEzvxCRnclAXsIneUkAyYv/ghVuKfKHTON3
+        jitwcrh6MKW9OkeOobcGvLuXjwLpYiQvnF5JRDb3lW5ESVp/+vKz899WCyIaJyv0Q03HCSQV+hsEYu+g
+        9hrt8FDfXXxoPga1lP+L42jNY+PdTXclkhXOZ8UWklO+AqmaVy1V894kqudh8HsrWnoLkHxh6UCZRmF8
+        /UiHhyUZYGJm9RDRTCbMiep3O5vyWkhO+WSmFIeg/mkBeoy3YfxmwMevLWj7wEDXkwpFaRjOanegInsT
+        1Imc55uX2Huxl5oujlN5Ru4qDht+NajD+6EmdA0Woe1dNppe70RNtxhX2kUQq7yh0W5D3y0FXpZLULnN
+        +YdGPLksQ+DApTW5Xi1VbQp0DuQhv2E5IhUciHLcca0rDmcawyFUuENXpcSgoRDGm8kYKI3Cx6p4tOYG
+        o0Dk0EUilfun1v5j0PVuRWjqDHgKHeJjstyQd0OCFTu80VyuRG9dHoz60+g7uQDPsn3QwXBhyPRB3nI7
+        kDBr1ud7fQyuPFmJ6AwXzF87aWOUkgO/hCk4UBmMjNIwRKVxftef34ujEbZQhdu8OLTMpjMzxKo2falV
+        LkWkOxu0ehm0j8LB1AQgNms2YvfPwUX9BjS8TEFaxVwEJk1+QETTiMjejAlEZMu2kQJlU1eJc7jDGkMk
+        zrTwUdQmQF33dtR2b8VpfRAECqdfcyLsYoloLPtlo9SdrBclTTksVHKguOwJps4LWbUeSC1zRXDKJHjE
+        2Oaat7FFG9WAbZ+N72r7NXyZY2Og3HGABU8yodE11HqdWWwxkWdpIo9mwA7rzhbDjogmmsHmZN9Mm//N
+        SIM/kOXbSVEOzyAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnRelogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 86</value>
+  </data>
+  <data name="btnRelogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btnRelogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 35</value>
+  </data>
+  <data name="btnRelogin.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
   <data name="&gt;&gt;btnRelogin.Name" xml:space="preserve">
     <value>btnRelogin</value>
   </data>
@@ -1310,6 +2459,37 @@
   </data>
   <data name="&gt;&gt;btnRelogin.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="btn_Eksi.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_Eksi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAAAhZJREFUOE/l0t1L
+        U3EYB/BR7LKzc7zQaDUFK8zQvfz2Ephr7w3CwFzT1QmaZ/uZOuwfiIgyStNudDubYhcRldimNUEQ7AXD
+        WRatNOuuu14GJ/d6/Y3NIOhf8Aufi4cvPDfPI5PtvNz3deyKthyj01YLjZ+y0tk2G0222+mC10kXfS66
+        eM5Fn5930xe8my6V5y4nXfA6aPKMlc622+jMaQd9eLKV3rO0eCoLn3jaTBtn7ZCuCfg9KCB3K4D8kIDC
+        cDeKdwSURoIojQZRuhtAYURAfrgbudsCsjeDkG4EsHU1iMwVP5Y9Lox2dshlcbfZlHYexI8uHTK8GpJf
+        jWxAjVyPGoU+DYr9OhRCWuRDWmT71Ni61FzppYsaZHgNfno1+OY5ilfHD2HIbpbLHjlspnXrYfzidZD8
+        BmSDRuR7DSiEdCgOEJQu6/8iKA0QFPoJ8r16ZKkekp8gw+vw3afFS1sjrlta5bIHLrdpqb4K6w0KpJuq
+        8EnDYYNw2NSz+Grktpn++WJUYNPA4DNh8VHHIt3M4UMji/kj+zB4wiyXJXpCTTGVEo+rGczsZZBQMpg7
+        wOCZag/ma8uYimSdAsnabU9VLOb2c0goWcRrWEzXcJhqqJciF/jdlcOsTE3WvZ4QyWp0krwpEydIKiyS
+        1LhIVsYjZC0cJe8jsYq1cIykxqIkNRYjq2GRvBOj5G1UJMuiWP3fA+2U/AGklyVVblP4FAAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="btn_Eksi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 40</value>
+  </data>
+  <data name="btn_Eksi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="btn_Eksi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 25</value>
+  </data>
+  <data name="btn_Eksi.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
   </data>
   <data name="&gt;&gt;btn_Eksi.Name" xml:space="preserve">
     <value>btn_Eksi</value>
@@ -2126,6 +3306,18 @@ Düzelt</value>
   <metadata name="contextMenuSagTik.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>198, 11</value>
   </metadata>
+  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
+    <value>Grid Dizayn Kaydet</value>
+  </data>
+  <data name="btnGridDizaynTemizle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="btnGridDizaynTemizle.Text" xml:space="preserve">
+    <value>Grid Dizayn Temizle</value>
+  </data>
   <data name="contextMenuSagTik.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 56</value>
   </data>
@@ -2867,252 +4059,8 @@ Yazdır
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="bartxt_Kul.Caption" xml:space="preserve">
-    <value>Kullanıcı : </value>
-  </data>
-  <data name="bartxt_Kul.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 7pt, style=Bold</value>
-  </data>
-  <data name="bartxt_Dep.Caption" xml:space="preserve">
-    <value>Departman : </value>
-  </data>
-  <data name="bartxt_Dep.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 7pt, style=Bold</value>
-  </data>
-  <data name="bartxt_FisNo.Caption" xml:space="preserve">
-    <value>Fis No : </value>
-  </data>
-  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_FisNo.EditWidth" type="System.Int32, mscorlib">
-    <value>129</value>
-  </data>
-  <data name="bartxt_FisNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_MusTipi.Caption" xml:space="preserve">
-    <value>Müs Tipi : </value>
-  </data>
-  <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_MusTipi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_OdaNo.Caption" xml:space="preserve">
-    <value>Oda No : </value>
-  </data>
-  <data name="repositoryItemTextEdit2.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_OdaNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_Garson.Caption" xml:space="preserve">
-    <value>Garson : </value>
-  </data>
-  <data name="repositoryItemTextEdit3.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_Garson.EditWidth" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="bartxt_Garson.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_MasaNo.Caption" xml:space="preserve">
-    <value>Masa No : </value>
-  </data>
-  <data name="repositoryItemTextEdit4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="repositoryItemTextEdit4.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="bartxt_MasaNo.EditWidth" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="bartxt_MasaNo.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="txtAdisyon.Caption" xml:space="preserve">
-    <value>Adisyon</value>
-  </data>
-  <data name="repositoryItemTextEdit6.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtAdisyon.EditWidth" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="txtAdisyon.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_Kisi.Caption" xml:space="preserve">
-    <value>Kisi : </value>
-  </data>
-  <data name="bartxt_Kisi.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bartxt_AcilisSaat.Caption" xml:space="preserve">
-    <value>Açılış Saat : </value>
-  </data>
-  <data name="bartxt_AcilisSaat.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bar_Tarih.Caption" xml:space="preserve">
-    <value>Tarih : </value>
-  </data>
-  <data name="bar_Tarih.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bar_Cari.Caption" xml:space="preserve">
-    <value>Cari Bilgisi : </value>
-  </data>
-  <data name="bar_Cari.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Black, 9.75pt, style=Bold</value>
-  </data>
-  <data name="btnYenile.Caption" xml:space="preserve">
-    <value>Yenile</value>
-  </data>
-  <data name="btnYenile.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACN0RVh0VGl0
-        bGUAQ29udmVydDtSZXBlYXQ7QXJyb3c7RXhjaGFuZ2V2I2jSAAADLElEQVQ4T3WTeTAUUBzHf0rKUbpc
-        WyZiolEtydGSzcooYVSTCZXS6ljWXY4tR+VYFSMVraOcI5Khu0WHI2WmP5SYTIOGYeQP9E87NfNtntnd
-        TDO9mTfvvfm+3+f33u/7HhERXXrsSRcfeVJ68y5Ka/agVNabPJi06EKjOxLv8Z+GZNjZsDURaSTV8ZlG
-        AOZGSml0p1nFWzbVIKIFRKSp3KyXcM8N74ZlyGzy+xl+20lq58UxUOoaakBinRsbFgSnczniEmdR9F1e
-        Q2wFbyim0uVXTAUPw9NlGJt5hMrOSIhLXUYCL24JYgnUABYcVuDgHl7s1HxLfgIvPubg83gtxn+8QO9o
-        FfompegaSUDr17No6U/DvgwrFqmjAmgczuJyI2S8V3XdyXjZfwWZtQE4kmUPzzgziAp5kH8R4U73Xohu
-        2cIxxHBso++KECLSUgEWHr3Kzc5/EoyadjEOZ9hPup5em+8QbOK1ykx7rW/qBiRWb4NrmLFig49+/nIz
-        LWMWPL8Gi4KyN38o6whGaK4ttgvXpBDREgZmx/SWWMJiz9KXRnba24mIFXAFES1lugqgtfe8pcJbYgHv
-        ZEts2m2wnoi0lZ1l0iEiXZ7/Sauo252ILOpAYGqzgkFUAGYby6hLRPo+py5vjShokUfL3jJVT2mZXuD5
-        ysyshl6Utg7AfGdcH9urLiLbZCs4aCCUNl1NKu9WNHwYh6jgNYzMbSx9wnP9DkmqZfGy9qn8Z/0ISKnH
-        GqewwvkuaAalVAWKrrd9K5QPonXoB2o+TSO+pAuhV+SILuqA9MFHFL8ZxrGcp7AQxPestPZhD0dTBVgi
-        vNaKh5+mcH9gBjfff0de1ySqesbxfHAWZe0jiC/thFdUOUxdxG2rbQ7sV175rwuC0LwQ/3P1Y+KSHkhf
-        TUD6egK7o2rB3Z/ze+Oe1FEzfuxzjsNxybJ1rlZEtFh5bfVfYAstjvUOE/6x6zf8EhsV0TV9EJypZipz
-        RGXbnLWN/TNk5BAxF6h+yp4RNWxgbuhY84UuvCM323cIy5m63FwgIVN+AnF4cWTsHEWGjmIy/Bcwr7HT
-        sF/IMuor5/9tDPAH30J0X0PRUFMAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnYenile.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        fwB32upHln+ZfgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnYenile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 0</value>
-  </data>
-  <data name="btnAdresGuncelle.Caption" xml:space="preserve">
-    <value>Adres Güncelleme</value>
-  </data>
-  <data name="btnAdresGuncelle.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Black, 9pt, style=Bold</value>
-  </data>
   <data name="barButtonItem2.Caption" xml:space="preserve">
     <value>barButtonItem2</value>
-  </data>
-  <data name="btnMasaSec.Caption" xml:space="preserve">
-    <value>MASA SEÇ</value>
-  </data>
-  <data name="btnMasaSec.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABF0RVh0VGl0
-        bGUARG93bjtBcnJvdzu9/IJYAAACoklEQVQ4T22Ta0iTYRTHHy9ZSkb0xb4E4T5oRjdjkEXoUCIwSnF2
-        EcnQNLtBhV3mZVsrL4jzurAwbxmjcn3wtqnJ5hIvLR1hfancZupMUTMvo+Uc/zhjRnMdOLyH5/zPj3PO
-        87wMAFtnHowxT8aY9zr3cub+mqN2DSCR69l9uZ5CL2G9rlPYMISc+vfIqtNBUP0O18s0bwh0qUjNUgoo
-        XAe4UzXA5lbsFG648agXcyt2F08QKUnoQxq+oMUdcKuyj81aVynceK28BzPWVXRNWdD13YLBH1aczm4l
-        4aYZ6yqLvd3kBqCZfaiYMeafLu3G9C8bWr8tOrx32oK4u80k3MoY83XqPP8F+Fwp1SK9WIu0om5cLFTD
-        bLFB8WUeis/zUI8tIUHcgbNCFeKzVeBntjm6cQHEZLxUvu4fxejCb4wtrji84eMMGoZnoTIsQGX46cjJ
-        1V9x6JysnbpwGYF7MiM4Mad56ZV+GqVvJyDrN+OxbgpPdFOo6J2EVDuOCu0YotLqlzhhySF0Wy5LpC4i
-        zlfcE1X3QdYzAbHSCLHSBJHSCFGbESWacSTltmNvtETg3IHrLTgfyebw5OrBOo0BD1Qm5LQYHC5RmiBu
-        HMaBGOkQLdm5dFcAL/UZfbxDeFcPx2U02moHzMhsHkFW0wiKu0bBS6mx7eReOEKaPSdKHDUugKNJNWtd
-        +IbGFJTSKPkdJuSqTEjK70RwZHYZY8yPNLuOS90BYYlP2YdJC4WeWwKCA7jxMmOVxgSh4hN2Rxea/LZx
-        tlNuyLzMgo4VuAO4ZyqZ3rzMSEALDQy7zOfffGGPSq217ziYzKczypFzIvPcAaFxMrY/Vsb2nSpfG8U/
-        KEoiDwwXPHcuzoPDy2McXi7jRDx0B/zH6PelZ0tzU+xmVPsHgG+6BRuUdUMAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnMasaSec.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABF0RVh0VGl0
-        bGUARG93bjtBcnJvdzu9/IJYAAAGwUlEQVRYR8WWe1BTVx7Hj22ttdq1urOt/zh12v7hWOv0Mba7bUdb
-        nTp9rba749KXrV0rLi0VfLT4ABSIWjvQ1SJCYZUtpZAQAuGR8AgqVAFFgYAh5IGAvMnLYCAgSfx2fif3
-        OtqOQrad7pn5zuTeyf19P+ec7+/cywCw/6d+ceP31s0Xkx9TbqPbjv8VgArfIejOCUT/uSXIpAD25zaz
-        fXJSE9srb6Jbd0hk2tK9Mi0ksiZIZFrESf2K5WpEbHYjYrIaEJ70Y5kAMiX8yCkWluRXQAB7c5rYqPca
-        c3uv0SXN5s44WSPc3muCfBjx+jDsuVkujw9hSaeo0FR6buiqlzmvelnoN1WBAcTJtNzc7fWJAFP3ZDXC
-        NuZF5cAI18m+ERzvG0FF7zA0PS6Udbmgc4wiNLGKCk2jVXOOeRkp5GBlYAAxWY1s2OPjEgDujs6sx+Co
-        Fyf6hnG8dxgVvS6Ud7tQ1u1C6aUrUHcOodk2ipBDlVToHgJwjHmYfdTDghNOBAawO7PhRgAK1bTIjPPo
-        d3u4KTfuuiIYX4GqfQhFF52ot4wgOOEkFZpOz9lGPczq9rD1X2kCA4jMOM9cHh9zjV8HuGdHeh36Rsa5
-        aUnnEFQdQyhud6LwohMFbZehNF1GXf8wPv5KQ4XuFYM4MDLO1u0rDwhA7Gex7e6ighFHz6LLdRXFwmwL
-        BON8kwMKowO5Bjtqel1Yt6+cCt0nBFFsy+utOREATzztubCMNJOZjLHZW7+tRbvzKpRmB/JMDuRxUwfk
-        rXbk6G2Q6qyounQFa+NKqdCfGGOzBBB6njJBE5kyGYC7t6aeARluSanB5pQahCdXc5kvj/GZkqlMb4Os
-        xYZsnRU/NFuQ2WRBRbsTIf+uwsav/QpOqOSZ2BDPc8GDOREAD9ymb6qKqg0W2NweWN3jXBb3OFrtbkh1
-        NmRdsCLrggWZzYP4XjuI7xoHkN4wgBKTA3qrG11DY+h0jqHj8hhU9T34R5SyVAzmRAC8519bL1kQkVo7
-        ojE7rs9QnOX3TYPI0FqQ0TiI/zYM4Fh9P/5zrh9pdf349mwfkmt7kFTTg8PV3Th2phcf7C1zL3lj0yLh
-        bJhwC2hQBqZ/EKPYkaDUIeNcH9LO9XEzUnp9P46e9yutro+bppzpxZGaHiRV9yDxVDcSTnbi4MlLCE+t
-        xauhx6KFHFDdm/xuBcBXYfbc+XPWH9BcyKjuQvzxDnypacfBykt8Zoere3CkltSLxNPdOFjVhYQTnfiy
-        vB0xxWbEqszYX2jEqq1y/Yz75z4ghHpSXSAOysL0lesPLN+SXO2jpZSUtHHFqS8irqQNsWq/YlRm7CEV
-        mRBdZEJUoQnxFe14J1bte3pVxErG2AyhHh+TBSBaaps/rNkhSzuQp0O8poMbkSE3LTZjd7EZ0cWisRGR
-        BSZI1G0ITz2LlzakpVP7ii+mgADel/CTi3fEw0+unL9WUjqYXNnJAaIL/bMURaa7lEbsVBoRqTQittCA
-        V8OklrmP/uURsfWWh2Rfrz0pgHf2lLKGHhf9pODMXPHPr9d9drga8RUdiCwwYpcgMt2Zb8AOUp6Bb8nb
-        MWo8tXp3MK0ereIJs4Mt3ZAZGMCaKDWr6xqin/xgYoz98Y3N2ZoYuQ67i0zccHu+EdvzDIhQtCJCYcCu
-        fBPCjp7Dc2tT6NVHweNtV2aws+c/+i4wgL/tVLGajiEuYStmLHjhvSVB0SXu/eo2bFf4jb9QtOLzXD0+
-        l+sRlW/Aik+zR+c9sfpZse1KWu1M3Wpnf/6Q4hAAwOqIInbqopP92O6kS96WFKilHx6K25h4GlFKE7bJ
-        9diWo8fWHD1f/qC4ciz+q2Q/rZYYvKIWKyvUWdkz7x4LDOD1bUpGeydKbMtpM+fMezk0W79d2swBtsha
-        OMBn6fVY8m6ycer0WQ+JR26BzsqUOivLa7awp4JSAwN4ZXM+0xgdXOUGO6N9FAI5a+GKT1e9tUvlo20I
-        k+rwhVyP5Z9k+R5a8v6bjLH7xbceGSuaLEyhtbAn1qQEBvBymILR/pFUejtTtXIA2goK1oPPvpeY+dGh
-        09gsbUHQPg0WviahPpsrBk+utbBcrYXJGv1a/PcjgQEsD81lxS02VqSz8T0svGAVAXhbzp63eNGLIdnW
-        TZnNeDoo2TbzgQWP33DeT/EbDzJpg1+L3goQ4MVPctiyEDlbFpLDlv1LxpZuzGFLN8pECArYnMdejwx+
-        foMU818Io56fIwZv0ZuHmajHblBAALcZ4qcanQ30xSN++fDP8BuP3FuNXwtAg0zEdwXNmoduMuY0fgsA
-        cYimkzIWx88BfgLDjrGm5yiGDgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnMasaSec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 35</value>
   </data>
   <data name="repositoryItemTextEdit5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3151,7 +4099,7 @@ Yazdır
     <value>Double</value>
   </data>
   <data name="rdo_EMiktar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 25</value>
+    <value>49, 25</value>
   </data>
   <data name="rdo_EMiktar.TabIndex" type="System.Int32, mscorlib">
     <value>152</value>
@@ -3423,1398 +4371,6 @@ Yazdır
   </data>
   <data name="barEditItem1.ItemAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btn_1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 3</value>
-  </data>
-  <data name="btn_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_1.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="btn_1.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_1.Name" xml:space="preserve">
-    <value>btn_1</value>
-  </data>
-  <data name="&gt;&gt;btn_1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_1.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_2.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 3</value>
-  </data>
-  <data name="btn_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_2.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="btn_2.Text" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_2.Name" xml:space="preserve">
-    <value>btn_2</value>
-  </data>
-  <data name="&gt;&gt;btn_2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_2.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_3.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 3</value>
-  </data>
-  <data name="btn_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_3.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
-  </data>
-  <data name="btn_3.Text" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btn_3.Name" xml:space="preserve">
-    <value>btn_3</value>
-  </data>
-  <data name="&gt;&gt;btn_3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_3.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btn_4.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 3</value>
-  </data>
-  <data name="btn_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_4.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="btn_4.Text" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btn_4.Name" xml:space="preserve">
-    <value>btn_4</value>
-  </data>
-  <data name="&gt;&gt;btn_4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_4.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btn_5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 3</value>
-  </data>
-  <data name="btn_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_5.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
-  </data>
-  <data name="btn_5.Text" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btn_5.Name" xml:space="preserve">
-    <value>btn_5</value>
-  </data>
-  <data name="&gt;&gt;btn_5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_5.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btn_9.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 3</value>
-  </data>
-  <data name="btn_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_9.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="btn_9.Text" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btn_9.Name" xml:space="preserve">
-    <value>btn_9</value>
-  </data>
-  <data name="&gt;&gt;btn_9.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_9.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_9.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btn_6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 3</value>
-  </data>
-  <data name="btn_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_6.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
-  </data>
-  <data name="btn_6.Text" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btn_6.Name" xml:space="preserve">
-    <value>btn_6</value>
-  </data>
-  <data name="&gt;&gt;btn_6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_6.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_6.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btn_7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 3</value>
-  </data>
-  <data name="btn_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_7.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="btn_7.Text" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btn_7.Name" xml:space="preserve">
-    <value>btn_7</value>
-  </data>
-  <data name="&gt;&gt;btn_7.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_7.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_7.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="btn_8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt, style=Bold</value>
-  </data>
-  <data name="btn_8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btn_8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 3</value>
-  </data>
-  <data name="btn_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
-  </data>
-  <data name="btn_8.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="btn_8.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btn_8.Name" xml:space="preserve">
-    <value>btn_8</value>
-  </data>
-  <data name="&gt;&gt;btn_8.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_8.Parent" xml:space="preserve">
-    <value>tablePanel2</value>
-  </data>
-  <data name="&gt;&gt;btn_8.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="btnYarim.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="btnYarim.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btnYarim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="btnYarim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 31</value>
-  </data>
-  <data name="btnYarim.TabIndex" type="System.Int32, mscorlib">
-    <value>153</value>
-  </data>
-  <data name="btnYarim.Text" xml:space="preserve">
-    <value>YARIM</value>
-  </data>
-  <data name="&gt;&gt;btnYarim.Name" xml:space="preserve">
-    <value>btnYarim</value>
-  </data>
-  <data name="&gt;&gt;btnYarim.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnYarim.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnYarim.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnDouble.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="btnDouble.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btnDouble.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 3</value>
-  </data>
-  <data name="btnDouble.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 31</value>
-  </data>
-  <data name="btnDouble.TabIndex" type="System.Int32, mscorlib">
-    <value>156</value>
-  </data>
-  <data name="btnDouble.Text" xml:space="preserve">
-    <value>DUBLE</value>
-  </data>
-  <data name="&gt;&gt;btnDouble.Name" xml:space="preserve">
-    <value>btnDouble</value>
-  </data>
-  <data name="&gt;&gt;btnDouble.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnDouble.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnDouble.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnBirbucuk.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="btnBirbucuk.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btnBirbucuk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 3</value>
-  </data>
-  <data name="btnBirbucuk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 31</value>
-  </data>
-  <data name="btnBirbucuk.TabIndex" type="System.Int32, mscorlib">
-    <value>155</value>
-  </data>
-  <data name="btnBirbucuk.Text" xml:space="preserve">
-    <value>B.BUCUK</value>
-  </data>
-  <data name="&gt;&gt;btnBirbucuk.Name" xml:space="preserve">
-    <value>btnBirbucuk</value>
-  </data>
-  <data name="&gt;&gt;btnBirbucuk.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnBirbucuk.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnBirbucuk.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnBir.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="btnBir.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btnBir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 3</value>
-  </data>
-  <data name="btnBir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 31</value>
-  </data>
-  <data name="btnBir.TabIndex" type="System.Int32, mscorlib">
-    <value>154</value>
-  </data>
-  <data name="btnBir.Text" xml:space="preserve">
-    <value>BİR</value>
-  </data>
-  <data name="&gt;&gt;btnBir.Name" xml:space="preserve">
-    <value>btnBir</value>
-  </data>
-  <data name="&gt;&gt;btnBir.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnBir.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnBir.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnTemizleKisiyeSatis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnTemizleKisiyeSatis.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="btnTemizleKisiyeSatis.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAMdEVYdFRpdGxlAFJlc2V0O2TPgGkAAAOFSURBVDhP
-        dVN/UNNlGH8i0bxDZlcZJANhSFOUhk6BDRnIgBzzrpPJGmyJGinUnJSzPOBwCGMw0eBgTX50mqH80A5J
-        BReEcafYj2NewI2WpFY7O5QIUs8x6tN9v80/7K7n7nPv3fu+z+f5PM/7foj+P54iIp//gNl7MoynJVTR
-        lkSV7RvJfCaZTdxbGbO4puvV0vruTdc+uiSbs9pkc5Ye2TVL9yZDoSWew9xp7Eunxj45UVGTiGbmBunR
-        3w4m2eeAVSRt/kL1a/9IBW5MnMO0e4jF+EQXBhxV+OSy5pfqDqmUuXvMJiMqqBXSlOcym6yrFiotnWqM
-        uk5hZm4Qv3u+xF13D+65bZjyfIU///oWP9xpR/vVPBzuSMlk29pVEcXKlr/JCyxqkD742tmAiUcX0DdS
-        DuNJBVSFq1kYT2biuqsOk7O9GHW1oPHS6w+05esCSF3MZwiezj7AP3y8RwfXw3YM3ixDQU2CW/ZOiD5e
-        FcgTKwN4KbuDDuVVij29w6WYcJ+HzW5A2aeJVaTYx2MI5m/dFz7SNbQHjmkzajtVyNwfsZ+IfL2TZzBf
-        rgs1mNuU+Ol+A+y3rTh4QjLMJC8gIs5mbcjMOedmfP5zMvQWCZZHPxvoPfP5w3OFbTNBEbRMeyQOY9PV
-        GJu0oqgpfpZ2G4VT+SYh3q5ah9OOWLTeEKCwIQl7j8ag4GjsfakyjHPX3csOOU3FC9bXSTDw23ZcvPka
-        3quLnaENWQHvlzSn4fqkCa0/CtHijIT93iE09eRge7GgjJHubWFBrmGN4dhFNdrGBWgcjEV+5doRWvSc
-        Lycx58VbtVcicNyxEifGVsD63UrsLI2+vTTcf4kgIeAFUTp3WbZ+lb6kKc39mf0NtDhXw3QmHuoPVn3I
-        SPONTueosw5y8fEon0WB5RWk74zQSDJC1u8oEczuMYtwpCMDZ4dycXZ8I8y2SLxVvuahSL40jB0OEfmt
-        z1jcX9wZDGP3y9ii5fcT0RKFbkX/qavbMODSofuWCq1OMYwX+NhlikKqJjSXbU+41Z8hmceLXRiTkve8
-        R1Mc6RGmvhSXnBWqyTfFoNkeh9pvwmE4z4PWwoPi3eV3xFuClET0DFt8rWLRYxULo+R+9anbwuqJyD8l
-        h1e8IZP7fWJ2MJLUwZCouMPijKAaLt8/6PH/SN0R+q8jvcHYlXl3BvO8K8POuI+Bn7fqE7b+B0/Omuug
-        FtVCAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnTemizleKisiyeSatis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 2</value>
-  </data>
-  <data name="btnTemizleKisiyeSatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btnTemizleKisiyeSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 22</value>
-  </data>
-  <data name="btnTemizleKisiyeSatis.TabIndex" type="System.Int32, mscorlib">
-    <value>168</value>
-  </data>
-  <data name="btnTemizleKisiyeSatis.Text" xml:space="preserve">
-    <value>F1</value>
-  </data>
-  <data name="&gt;&gt;btnTemizleKisiyeSatis.Name" xml:space="preserve">
-    <value>btnTemizleKisiyeSatis</value>
-  </data>
-  <data name="&gt;&gt;btnTemizleKisiyeSatis.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnTemizleKisiyeSatis.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;btnTemizleKisiyeSatis.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtKisiyeSatis.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="txtKisiyeSatis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 2</value>
-  </data>
-  <data name="txtKisiyeSatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="txtKisiyeSatis.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="txtKisiyeSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 22</value>
-  </data>
-  <data name="txtKisiyeSatis.TabIndex" type="System.Int32, mscorlib">
-    <value>166</value>
-  </data>
-  <data name="&gt;&gt;txtKisiyeSatis.Name" xml:space="preserve">
-    <value>txtKisiyeSatis</value>
-  </data>
-  <data name="&gt;&gt;txtKisiyeSatis.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtKisiyeSatis.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;txtKisiyeSatis.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtKisiyeSatisSayac.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="txtKisiyeSatisSayac.EditValue" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtKisiyeSatisSayac.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 2</value>
-  </data>
-  <data name="txtKisiyeSatisSayac.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="txtKisiyeSatisSayac.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="txtKisiyeSatisSayac.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 22</value>
-  </data>
-  <data name="txtKisiyeSatisSayac.TabIndex" type="System.Int32, mscorlib">
-    <value>169</value>
-  </data>
-  <data name="&gt;&gt;txtKisiyeSatisSayac.Name" xml:space="preserve">
-    <value>txtKisiyeSatisSayac</value>
-  </data>
-  <data name="&gt;&gt;txtKisiyeSatisSayac.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;txtKisiyeSatisSayac.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;txtKisiyeSatisSayac.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnKisiyeSatisYap.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="btnKisiyeSatisYap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="btnKisiyeSatisYap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btnKisiyeSatisYap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 22</value>
-  </data>
-  <data name="btnKisiyeSatisYap.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnKisiyeSatisYap.Text" xml:space="preserve">
-    <value>Kişiye Satış</value>
-  </data>
-  <data name="&gt;&gt;btnKisiyeSatisYap.Name" xml:space="preserve">
-    <value>btnKisiyeSatisYap</value>
-  </data>
-  <data name="&gt;&gt;btnKisiyeSatisYap.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnKisiyeSatisYap.Parent" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;btnKisiyeSatisYap.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btn_TutarduzeltMiktar.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btn_TutarduzeltMiktar.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAidEVYdFRpdGxlAEZpbmFuY2lhbDtEb2xsYXI7TW9u
-        ZXk7Qm9vazuCQ/4SAAAC0klEQVQ4T3WTaUgUQBhAVy2163cQlbtblmVEmaUEHZiWeJW6mqWYR+tV3qWt
-        WC4pClnmVWpkZpu13ZarUGYHtD9KSzvw2tUSoogOxcoOzBdj/liVBh4DM7wHw/BJAMnYMpNIJOYTsPgP
-        4s5s1B0LmBXpFPdLGgIQFNcHUlwv9gCKdQEUjVGoU1BYp6Cg1v+BCJkGzI/X+aF/eYORkRGGh//w6/cw
-        Qz9/8/X7TwYGf/BpYIgPn7/x/tMgWee2CGmKacAi96o7aRXOpFU4sb/ciX1lTqSeXDNKyonVJJc6klSy
-        isQSB9JOrRPSVNPAlBytG70DF0bp6f+Hsb8GY//5MTQYv2gwfDlHStlaIVmOC6g1G+n6XE3T61iaXsdw
-        tzcG78T5eCfOo7Enikajkjs9Sh6/VZNQvEZIVqaBqapKZ9o/lnPbGMm1thDijq4kUCUnLMeOUPUS8i67
-        0NC9C32fipj85ZMD+8sdaXmXj64rlOTS1fim2rDzkC0NbRkUXFFwoGIjt7ujaTTEE5m7VEjWpgHL5FIH
-        9H1qLr9QcLBqA0EZcoKzFhKcZUfeJXfuGdLRdSpHCc+2E9I004BVfNEKHvSmo33uS+2rMPK0XoSoF7M9
-        Q47vPhsisu2pafWmtj2UUPWiyYG4Y8u4Y0igptWH7So5udpN1DyKJDBdSsABKTsO2nKzPZyrL4MIPrRA
-        SNNNA9ZRR+yp61CieeZBZtV6wrLtcYuejWf8HPYedeSiPhZdh5KLz/0JypQLaYZpYFpE7mKuvwqh+qk7
-        V14E0WhIYmvKXLalzuXhm0x0nVGcf+aFptWHQJVUSDPHBXYdtkXb5k9VsxtVza6caXalrmM3+r7D3OqI
-        pPLJJk4/ceFsizuK9PmTApZ+qbJ7vslStiVJ2ZooxSdehvdeKV57ZHjGyfCMleERI8MjWsbmcBsxTOO+
-        UYynlXiXKE9g1gTEmbVwhPsXA3wSc8VKPOQAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btn_TutarduzeltMiktar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 86</value>
-  </data>
-  <data name="btn_TutarduzeltMiktar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 35</value>
-  </data>
-  <data name="btn_TutarduzeltMiktar.TabIndex" type="System.Int32, mscorlib">
-    <value>168</value>
-  </data>
-  <data name="btn_TutarduzeltMiktar.Text" xml:space="preserve">
-    <value>Miktar Bazlı 
-Tutar Düzelt</value>
-  </data>
-  <data name="&gt;&gt;btn_TutarduzeltMiktar.Name" xml:space="preserve">
-    <value>btn_TutarduzeltMiktar</value>
-  </data>
-  <data name="&gt;&gt;btn_TutarduzeltMiktar.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_TutarduzeltMiktar.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btn_TutarduzeltMiktar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSiparisVeHesap.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="btnSiparisVeHesap.Appearance.BackColor2" type="System.Drawing.Color, System.Drawing">
-    <value>Blue</value>
-  </data>
-  <data name="btnSiparisVeHesap.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnSiparisVeHesap.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAx0RVh0VGl0
-        bGUAUHJpbnQ7yDYy6gAAAstJREFUOE99k91L01EYx4+WpGamvUC33fQHlNKVaC3Ji5lCKqJYqWBpYDot
-        RWdivhvzHcUEFyp0F0miSTZzIZo6tTtLMnXtxb3o3n6bm9u+8RwalBce+HAO5/d8v885z+85DAALwBgL
-        6hpWzfSMrqJndIXTPbqCrhEVp33o6yxj7OR/miMGJ7qGVfD5/fD5/PASXj8OvX54Dn2QyZco6NRxBiGy
-        oUUuMllcMO47Ydx3wbAv4MDjReurBQoKO6LhI4iyM8bCWwcXeDa9WYDe7IDOLEBnEuB0HaKxb44U0XQN
-        xlhwQBzcPKBM7B79tpwn6UVR9WscuL3QGu3QGBzQGGxQG+ywC27kS/qRWdAMmVy1UtMxmfQ3KQvpHFnb
-        1ZsEZBQ0IU/SD4fTA7Xehm29FTs6K7Z1VuzZDpBd1A5xdhW0BgEtg0sGxlgoGYTK5KugIc6qQlZhO6wO
-        N7a0FvzSWLCp2edQPe7mNUGUUsJj6/sW6TqnySC8aWAZHo8PaQ9qIEothyilHKI7RBluEskS3BBLkCCW
-        IDmzjMdKO3g9IskgorZnHlaHBx8UKiSlPcF1US5iE3IRE38f1+Lv4WpcDmLicnBLXISJ6UVYBTeetsyS
-        QRQZRFa+VEK3J+CnzoZNjh2bGhs2NXa+F9jns8YGrVlA8YtpMjhHBlGljQr80FixtmFCbFLVsaxuGLG+
-        Y0WhdIoMzpNB9OPnH7H83QTFihr1vXOw2NxomPqNukk1pONqPBvbgtni4t+ml7awtG5EfsUEGVzgNch4
-        JJ/LLn6D9Idy1HYpeRfWjO+g6v0OKt5tQ/J2C4Y9J2o7lUhMb8DtzFYkpErnA0WkZqDFRcbYZansM3b3
-        nNg1CxzqD73JwbuxWjZDWa8wxi4xxs7yjjzS12GldePKyrZPqGxTgM+tARQoqRv7Qv/+uMdEp4n4W126
-        H0EnI2h9hmL+1fwBk15uVquRqDwAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnSiparisVeHesap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 160</value>
-  </data>
-  <data name="btnSiparisVeHesap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btnSiparisVeHesap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 31</value>
-  </data>
-  <data name="btnSiparisVeHesap.TabIndex" type="System.Int32, mscorlib">
-    <value>167</value>
-  </data>
-  <data name="btnSiparisVeHesap.Text" xml:space="preserve">
-    <value>Sipariş Yazdır
-ve Hesap Dök
-</value>
-  </data>
-  <data name="&gt;&gt;btnSiparisVeHesap.Name" xml:space="preserve">
-    <value>btnSiparisVeHesap</value>
-  </data>
-  <data name="&gt;&gt;btnSiparisVeHesap.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnSiparisVeHesap.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnSiparisVeHesap.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_Not_Gonder.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.25pt, style=Bold</value>
-  </data>
-  <data name="btn_Not_Gonder.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAC10RVh0VGl0
-        bGUAVG9vbHRpcDtDaGFydDtMYWJlbDtDbG91ZDtOb3RlO0hpbnQ7VGlwu/uFlQAAAnRJREFUOE+Nk0lM
-        U1EUhk8AZ0TAAZduJS50g2FICNG40I1uWBg0gkrBIGIKlTAJtMTARmM1EgJSqHSEKqkoU8JbCFQqlBYI
-        KBWsloAtNUYj7e43970rozEuvvznvHfPl7O4l4gojIgiiGgbZzsR7eDsJKJdRLSbs4eIIjnsXxhVG8cF
-        VbsLKvMExwmV2QWVyQml2QklS6MT1aZxVBvHUWV0oMrgQIlmcEiUlrc5MPYthLFACKOBEN4xlkOwL4cw
-        IhKU8Afx1h+EzR/EsG8Fxa12ENE+Kmq2Y8S/Au3kMrSTgf+i1/MTBQ1DTBBDNx6/weDCLzSO+Tk+KUfX
-        9z7eS2l1f8f1BwIT7KeM2n70zf+A2rYI9fBXkYc811iE2rZW6yYCSFe+YoIDlK7swYupAGr6PqNO+ILa
-        AS/qBrwbslbwok6QUtnrQf3QEs6XWZngIF2o6ILe4UOpdR6l1jlUvPyEu689IlXdrJYo75pHiXVO5L6w
-        gLOK50xwiM4Vd6JpeAmFFjcKO9yQd0gpwr5x5BxW13R7cPq2mQni6IzcArXgRb7hvYRpZrW+uZozYv2n
-        L+v8iNQ8AxMcprR8E+71eKCwuKFod+OOZRZF7W7xYO6zaRGZVsp8/QwKzbOQmz4gKadN2iDxWrOQkqtH
-        So4OyQyZDomyNqQV6CHTTCNLM4UszQSyWyaRWmBAwlWtyImLj2xEFE38rkfxJoaIYtlqUccy60/JO5DZ
-        5MKVJheSclqxN/7SUyI6Iq4unY+gysrKLfAHFh138lZDcp4OCdktiDya0SheHKLwDWc3D2+SxEYflz2J
-        jL9c/7fhfwq4JHzdU94yzPgN2UI8kURzMWwAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btn_Not_Gonder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 160</value>
-  </data>
-  <data name="btn_Not_Gonder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 31</value>
-  </data>
-  <data name="btn_Not_Gonder.TabIndex" type="System.Int32, mscorlib">
-    <value>166</value>
-  </data>
-  <data name="btn_Not_Gonder.Text" xml:space="preserve">
-    <value>Not Gönder</value>
-  </data>
-  <data name="&gt;&gt;btn_Not_Gonder.Name" xml:space="preserve">
-    <value>btn_Not_Gonder</value>
-  </data>
-  <data name="&gt;&gt;btn_Not_Gonder.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Not_Gonder.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btn_Not_Gonder.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnServisTutarDuzelt.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnServisTutarDuzelt.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACN0RVh0VGl0
-        bGUARnVuY3Rpb25zRmluYW5jaWFsO0Z1bmN0aW9ucztS7vroAAAC0klEQVQ4T3WTaUgUQBhAVy2163cQ
-        lbtblmVEmaUEHZiWeJW6mqWYR+tV3qWtWC4pClnmVWpkZpu13ZarUGYHtD9KSzvw2tUSoogOxcoOzBdj
-        /liVBh4DM7wHw/BJAMnYMpNIJOYTsPgP4s5s1B0LmBXpFPdLGgIQFNcHUlwv9gCKdQEUjVGoU1BYp6Cg
-        1v+BCJkGzI/X+aF/eYORkRGGh//w6/cwQz9/8/X7TwYGf/BpYIgPn7/x/tMgWee2CGmKacAi96o7aRXO
-        pFU4sb/ciX1lTqSeXDNKyonVJJc6klSyisQSB9JOrRPSVNPAlBytG70DF0bp6f+Hsb8GY//5MTQYv2gw
-        fDlHStlaIVmOC6g1G+n6XE3T61iaXsdwtzcG78T5eCfOo7Enikajkjs9Sh6/VZNQvEZIVqaBqapKZ9o/
-        lnPbGMm1thDijq4kUCUnLMeOUPUS8i670NC9C32fipj85ZMD+8sdaXmXj64rlOTS1fim2rDzkC0NbRkU
-        XFFwoGIjt7ujaTTEE5m7VEjWpgHL5FIH9H1qLr9QcLBqA0EZcoKzFhKcZUfeJXfuGdLRdSpHCc+2E9I0
-        04BVfNEKHvSmo33uS+2rMPK0XoSoF7M9Q47vPhsisu2pafWmtj2UUPWiyYG4Y8u4Y0igptWH7So5udpN
-        1DyKJDBdSsABKTsO2nKzPZyrL4MIPrRASNNNA9ZRR+yp61CieeZBZtV6wrLtcYuejWf8HPYedeSiPhZd
-        h5KLz/0JypQLaYZpYFpE7mKuvwqh+qk7V14E0WhIYmvKXLalzuXhm0x0nVGcf+aFptWHQJVUSDPHBXYd
-        tkXb5k9VsxtVza6caXalrmM3+r7D3OqIpPLJJk4/ceFsizuK9PmTApZ+qbJ7vslStiVJ2ZooxSdehvde
-        KV57ZHjGyfCMleERI8MjWsbmcBsxTOO+UYynlXiXKE9g1gTEmbVwhPsXA3wSc8VKPOQAAAAASUVORK5C
-        YII=
-</value>
-  </data>
-  <data name="btnServisTutarDuzelt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 86</value>
-  </data>
-  <data name="btnServisTutarDuzelt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btnServisTutarDuzelt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 33</value>
-  </data>
-  <data name="btnServisTutarDuzelt.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="btnServisTutarDuzelt.Text" xml:space="preserve">
-    <value>Ser.P Tutar
-Düzelt</value>
-  </data>
-  <data name="&gt;&gt;btnServisTutarDuzelt.Name" xml:space="preserve">
-    <value>btnServisTutarDuzelt</value>
-  </data>
-  <data name="&gt;&gt;btnServisTutarDuzelt.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnServisTutarDuzelt.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnServisTutarDuzelt.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnTopluSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnTopluSil.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="btnTopluSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 3</value>
-  </data>
-  <data name="btnTopluSil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btnTopluSil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 38</value>
-  </data>
-  <data name="btnTopluSil.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="btnTopluSil.Text" xml:space="preserve">
-    <value>Toplu Sil</value>
-  </data>
-  <data name="&gt;&gt;btnTopluSil.Name" xml:space="preserve">
-    <value>btnTopluSil</value>
-  </data>
-  <data name="&gt;&gt;btnTopluSil.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnTopluSil.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnTopluSil.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btn_SpSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btn_SpSil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 47</value>
-  </data>
-  <data name="btn_SpSil.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_SpSil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 35</value>
-  </data>
-  <data name="btn_SpSil.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="btn_SpSil.Text" xml:space="preserve">
-    <value>SP Sil</value>
-  </data>
-  <data name="btn_SpSil.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btn_SpSil.Name" xml:space="preserve">
-    <value>btn_SpSil</value>
-  </data>
-  <data name="&gt;&gt;btn_SpSil.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_SpSil.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btn_SpSil.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btn_FarkliMiktar.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8pt, style=Bold</value>
-  </data>
-  <data name="btn_FarkliMiktar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="btn_FarkliMiktar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_FarkliMiktar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 38</value>
-  </data>
-  <data name="btn_FarkliMiktar.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="btn_FarkliMiktar.Text" xml:space="preserve">
-    <value>Farklı Miktar Sat</value>
-  </data>
-  <data name="&gt;&gt;btn_FarkliMiktar.Name" xml:space="preserve">
-    <value>btn_FarkliMiktar</value>
-  </data>
-  <data name="&gt;&gt;btn_FarkliMiktar.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_FarkliMiktar.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btn_FarkliMiktar.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btn_Arti.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btn_Arti.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAB2
-        oAAAdqABgrpKUAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAAAw1JREFUOE+lk2lI
-        VFEcxYfuu5XQzJs3S6Qtai5laqWlUpm2iS1mZWZkbqnPZRqbFpf6p6W2mBVSgfZFC62URMsWaNEirEAq
-        LYpKCo2SVmmHKKg58YT84IdBmgP3y+XPj3PP/1yVyoaMZUNln0tO1sAWDwRe9cCkc05WQwmXB84NWsay
-        oURfTGiwVvedrb2Z0JdwGjg3aBkOcsr/nIWzOImGP9XIfZ8O/R57gPs5bf9oRv3vY6j5WQFLTyL0xfYA
-        93HKfpeKqh+HUP5tH9K6YqArtAOoPM/cE4cjX/dg/8cCJHQug67AHuAuTqndq1DSSyh8uxmrHy2EtF2w
-        DTSUctlwgJOhlJOyQf1eTvrdnHTFnHRFvDm+MxL5byzIfZWOFR1zIW0TmqVcgbTZAmk3C6TdJJBoEUjM
-        YiSamKzybnK05vVmIOd9Gja+WQfTq1gorhKfL0Ps0yXI6k7AphcpMD2Pw9pHEZh/cxpCbkzBrBZvBF32
-        xLSLbpjS5AzvhtEwFg2zqpSL6l/lqPpxuC/4g592YveHPBQornoyYOlOQsazNVj3JAprH0Yguj0MkXdC
-        sej2DCxonY6Qa5Mx44pXH3hksQNUfk0uqPhe2h980bts0GsztryUYe5KgNwZg8THy7HmwSKsbJ+PiLZg
-        hN8Kwtwbfghu8UHQpQnwvzAevmfGwrhjOFSetUbIXauQ/CwK8U+XYvXDcETdn4fIeyFY3DYT0R0LEHM/
-        HMvvzkFYawACLrrDr8kVvo1jMem0EzxPjYRbtR4ulVpIudyq0u3kaUq3dDsEkvIFkkggaZtAUp5A2hyh
-        OfiaD5a2ze5z5X9+PEQzaxbXM9JkMtKkM9KkMdKkMlInM1InMtv/XNlg4OUJCLsZgNDrU+HbOA5iJrNd
-        G1sSLYz8z7v2B+9V5wjF1cC5QUs0M1Ky+he8e40RGtkeoInRxLpR/T1Tglen2AFUnudWo4dXvSM8ao0Y
-        c1QNdZI9QJmRc6UItxMGOB/XYtQhB4yIH/L/QHUyk6UcbtXlcUjZAsQNzDoidojNavwFJYOQiYaeK3sA
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btn_Arti.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 5</value>
-  </data>
-  <data name="btn_Arti.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_Arti.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 25</value>
-  </data>
-  <data name="btn_Arti.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="&gt;&gt;btn_Arti.Name" xml:space="preserve">
-    <value>btn_Arti</value>
-  </data>
-  <data name="&gt;&gt;btn_Arti.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Arti.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btn_Arti.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chk_Fix.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="chk_Fix.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 47</value>
-  </data>
-  <data name="chk_Fix.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="chk_Fix.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 35</value>
-  </data>
-  <data name="chk_Fix.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
-  </data>
-  <data name="chk_Fix.Text" xml:space="preserve">
-    <value>Fix Menu</value>
-  </data>
-  <data name="&gt;&gt;chk_Fix.Name" xml:space="preserve">
-    <value>chk_Fix</value>
-  </data>
-  <data name="&gt;&gt;chk_Fix.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;chk_Fix.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;chk_Fix.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="chk_Eksi.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="chk_Eksi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 45</value>
-  </data>
-  <data name="chk_Eksi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="chk_Eksi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 35</value>
-  </data>
-  <data name="chk_Eksi.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="chk_Eksi.Text" xml:space="preserve">
-    <value>Eksileme</value>
-  </data>
-  <data name="&gt;&gt;chk_Eksi.Name" xml:space="preserve">
-    <value>chk_Eksi</value>
-  </data>
-  <data name="&gt;&gt;chk_Eksi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;chk_Eksi.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;chk_Eksi.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="btnRelogin.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABZ0RVh0VGl0
-        bGUAUGVvcGxlO0Fzc2lnbjtNZR/FY3oAAAMwSURBVDhPdVJ5SNNxHP2klVeaHXbg1Mqract02eFByjya
-        lbPLzXC1bGWZRLBQXFn+yll22IGusuU8yAq1AzS0qZijjJVGagWWZmTSYcMi7LJe/Nb6R+wD758v773P
-        5/F9BID+ByIac2Onr7Ap3b9Zr+T31+9Z8KN8C/c+E+2SQESWJs5I0QgDywo5t/9xUervO8cT0XEpDY2q
-        tWAiXL4SkZWZM+qMMWO8er3H0M19IlzftxpH4ubhnDQAacEzvxCRnclAXsIneUkAyYv/ghVuKfKHTON3
-        jitwcrh6MKW9OkeOobcGvLuXjwLpYiQvnF5JRDb3lW5ESVp/+vKz899WCyIaJyv0Q03HCSQV+hsEYu+g
-        9hrt8FDfXXxoPga1lP+L42jNY+PdTXclkhXOZ8UWklO+AqmaVy1V894kqudh8HsrWnoLkHxh6UCZRmF8
-        /UiHhyUZYGJm9RDRTCbMiep3O5vyWkhO+WSmFIeg/mkBeoy3YfxmwMevLWj7wEDXkwpFaRjOanegInsT
-        1Imc55uX2Huxl5oujlN5Ru4qDht+NajD+6EmdA0Woe1dNppe70RNtxhX2kUQq7yh0W5D3y0FXpZLULnN
-        +YdGPLksQ+DApTW5Xi1VbQp0DuQhv2E5IhUciHLcca0rDmcawyFUuENXpcSgoRDGm8kYKI3Cx6p4tOYG
-        o0Dk0EUilfun1v5j0PVuRWjqDHgKHeJjstyQd0OCFTu80VyuRG9dHoz60+g7uQDPsn3QwXBhyPRB3nI7
-        kDBr1ud7fQyuPFmJ6AwXzF87aWOUkgO/hCk4UBmMjNIwRKVxftef34ujEbZQhdu8OLTMpjMzxKo2falV
-        LkWkOxu0ehm0j8LB1AQgNms2YvfPwUX9BjS8TEFaxVwEJk1+QETTiMjejAlEZMu2kQJlU1eJc7jDGkMk
-        zrTwUdQmQF33dtR2b8VpfRAECqdfcyLsYoloLPtlo9SdrBclTTksVHKguOwJps4LWbUeSC1zRXDKJHjE
-        2Oaat7FFG9WAbZ+N72r7NXyZY2Og3HGABU8yodE11HqdWWwxkWdpIo9mwA7rzhbDjogmmsHmZN9Mm//N
-        SIM/kOXbSVEOzyAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnRelogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 86</value>
-  </data>
-  <data name="btnRelogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btnRelogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 35</value>
-  </data>
-  <data name="btnRelogin.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;btnRelogin.Name" xml:space="preserve">
-    <value>btnRelogin</value>
-  </data>
-  <data name="&gt;&gt;btnRelogin.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnRelogin.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btnRelogin.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="btn_Eksi.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btn_Eksi.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAAAhZJREFUOE/l0t1L
-        U3EYB/BR7LKzc7zQaDUFK8zQvfz2Ephr7w3CwFzT1QmaZ/uZOuwfiIgyStNudDubYhcRldimNUEQ7AXD
-        WRatNOuuu14GJ/d6/Y3NIOhf8Aufi4cvPDfPI5PtvNz3deyKthyj01YLjZ+y0tk2G0222+mC10kXfS66
-        eM5Fn5930xe8my6V5y4nXfA6aPKMlc622+jMaQd9eLKV3rO0eCoLn3jaTBtn7ZCuCfg9KCB3K4D8kIDC
-        cDeKdwSURoIojQZRuhtAYURAfrgbudsCsjeDkG4EsHU1iMwVP5Y9Lox2dshlcbfZlHYexI8uHTK8GpJf
-        jWxAjVyPGoU+DYr9OhRCWuRDWmT71Ni61FzppYsaZHgNfno1+OY5ilfHD2HIbpbLHjlspnXrYfzidZD8
-        BmSDRuR7DSiEdCgOEJQu6/8iKA0QFPoJ8r16ZKkekp8gw+vw3afFS1sjrlta5bIHLrdpqb4K6w0KpJuq
-        8EnDYYNw2NSz+Grktpn++WJUYNPA4DNh8VHHIt3M4UMji/kj+zB4wiyXJXpCTTGVEo+rGczsZZBQMpg7
-        wOCZag/ma8uYimSdAsnabU9VLOb2c0goWcRrWEzXcJhqqJciF/jdlcOsTE3WvZ4QyWp0krwpEydIKiyS
-        1LhIVsYjZC0cJe8jsYq1cIykxqIkNRYjq2GRvBOj5G1UJMuiWP3fA+2U/AGklyVVblP4FAAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <data name="btn_Eksi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 40</value>
-  </data>
-  <data name="btn_Eksi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_Eksi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 25</value>
-  </data>
-  <data name="btn_Eksi.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="&gt;&gt;btn_Eksi.Name" xml:space="preserve">
-    <value>btn_Eksi</value>
-  </data>
-  <data name="&gt;&gt;btn_Eksi.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Eksi.Parent" xml:space="preserve">
-    <value>panelMenu</value>
-  </data>
-  <data name="&gt;&gt;btn_Eksi.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
-  </data>
-  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
-    <value>Grid Dizayn Kaydet</value>
-  </data>
-  <data name="btnGridDizaynTemizle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
-  </data>
-  <data name="btnGridDizaynTemizle.Text" xml:space="preserve">
-    <value>Grid Dizayn Temizle</value>
-  </data>
-  <data name="btnJokerAciklama.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnJokerAciklama.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 57</value>
-  </data>
-  <data name="btnJokerAciklama.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btnJokerAciklama.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 23</value>
-  </data>
-  <data name="btnJokerAciklama.TabIndex" type="System.Int32, mscorlib">
-    <value>165</value>
-  </data>
-  <data name="btnJokerAciklama.Text" xml:space="preserve">
-    <value>Joker Aciklama</value>
-  </data>
-  <data name="&gt;&gt;btnJokerAciklama.Name" xml:space="preserve">
-    <value>btnJokerAciklama</value>
-  </data>
-  <data name="&gt;&gt;btnJokerAciklama.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnJokerAciklama.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnJokerAciklama.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chk_Yapma.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="chk_Yapma.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="chk_Yapma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 2</value>
-  </data>
-  <data name="chk_Yapma.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="chk_Yapma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 69</value>
-  </data>
-  <data name="chk_Yapma.TabIndex" type="System.Int32, mscorlib">
-    <value>117</value>
-  </data>
-  <data name="chk_Yapma.Text" xml:space="preserve">
-    <value>Yapma</value>
-  </data>
-  <data name="&gt;&gt;chk_Yapma.Name" xml:space="preserve">
-    <value>chk_Yapma</value>
-  </data>
-  <data name="&gt;&gt;chk_Yapma.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;chk_Yapma.Parent" xml:space="preserve">
-    <value>panelControl7</value>
-  </data>
-  <data name="&gt;&gt;chk_Yapma.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_Aciklama.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btn_Aciklama.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="btn_Aciklama.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 2</value>
-  </data>
-  <data name="btn_Aciklama.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btn_Aciklama.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 69</value>
-  </data>
-  <data name="btn_Aciklama.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
-  </data>
-  <data name="btn_Aciklama.Text" xml:space="preserve">
-    <value>Açıklama</value>
-  </data>
-  <data name="&gt;&gt;btn_Aciklama.Name" xml:space="preserve">
-    <value>btn_Aciklama</value>
-  </data>
-  <data name="&gt;&gt;btn_Aciklama.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btn_Aciklama.Parent" xml:space="preserve">
-    <value>panelControl7</value>
-  </data>
-  <data name="&gt;&gt;btn_Aciklama.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="flp_Kapatma.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="flp_Kapatma.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="flp_Kapatma.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>725, 87</value>
-  </data>
-  <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
-    <value>148</value>
-  </data>
-  <data name="flp_Kapatma.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;flp_Kapatma.Name" xml:space="preserve">
-    <value>flp_Kapatma</value>
-  </data>
-  <data name="&gt;&gt;flp_Kapatma.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flp_Kapatma.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;flp_Kapatma.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnBakiye.Name" xml:space="preserve">
-    <value>btnBakiye</value>
-  </data>
-  <data name="&gt;&gt;btnBakiye.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnBakiye.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnBakiye.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnJokerAciklama.Name" xml:space="preserve">
-    <value>btnJokerAciklama</value>
-  </data>
-  <data name="&gt;&gt;btnJokerAciklama.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnJokerAciklama.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnJokerAciklama.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>725, 0</value>
-  </data>
-  <data name="panelControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 87</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 16</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>BAKİYE</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnBakiye.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="btnBakiye.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="btnBakiye.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="btnBakiye.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 50</value>
-  </data>
-  <data name="btnBakiye.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnBakiye.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnBakiye.Name" xml:space="preserve">
-    <value>btnBakiye</value>
-  </data>
-  <data name="&gt;&gt;btnBakiye.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;btnBakiye.Parent" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;btnBakiye.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="flp_UrunGrup.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="flp_UrunGrup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flp_UrunGrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="flp_UrunGrup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="flp_UrunGrup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>717, 69</value>
-  </data>
-  <data name="flp_UrunGrup.TabIndex" type="System.Int32, mscorlib">
-    <value>118</value>
-  </data>
-  <data name="&gt;&gt;flp_UrunGrup.Name" xml:space="preserve">
-    <value>flp_UrunGrup</value>
-  </data>
-  <data name="&gt;&gt;flp_UrunGrup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flp_UrunGrup.Parent" xml:space="preserve">
-    <value>panelControl7</value>
-  </data>
-  <data name="&gt;&gt;flp_UrunGrup.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="layoutControlItem1.CustomizationFormText" xml:space="preserve">
-    <value>layoutControlItem1</value>
-  </data>
-  <data name="layoutControlItem2.CustomizationFormText" xml:space="preserve">
-    <value>layoutControlItem2</value>
-  </data>
-  <data name="layoutControlItem6.CustomizationFormText" xml:space="preserve">
-    <value>layoutControlItem6</value>
-  </data>
-  <data name="layoutControlItem7.CustomizationFormText" xml:space="preserve">
-    <value>layoutControlItem7</value>
   </data>
   <data name="barButtonItem1.Caption" xml:space="preserve">
     <value>Yenile</value>

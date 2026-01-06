@@ -214,7 +214,7 @@ namespace Pos
                 btn_Eksi.Visible = User.Pos_ArtiEksi_Aktif;
 
 
-                rdo_EMiktar.Visible = User.Pos_YarimDubleAlan;
+                //rdo_EMiktar.Visible = User.Pos_YarimDubleAlan;
 
 
 
