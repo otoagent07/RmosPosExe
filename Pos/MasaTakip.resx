@@ -800,7 +800,7 @@
     <value>2, 2</value>
   </data>
   <data name="btnParcaliOdemeEski.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 50</value>
+    <value>104, 39</value>
   </data>
   <data name="btnParcaliOdemeEski.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>

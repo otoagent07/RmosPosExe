@@ -68,7 +68,24 @@ namespace Pos
 
             satisFontTipi = dbtools.DegerGetir("select top 1 Pkod_Font from Pos_Kodlar where  Pkod_Sinif = '17' and Pkod_Kod = 'MARS'");
 
-
+            // gridView2 için font ayarlama
+            if (!string.IsNullOrEmpty(satisFontTipi))
+            {
+                try
+                {
+                    System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
+                    Font gridFont = (Font)converter.ConvertFromString(satisFontTipi);
+                    if (gridFont != null)
+                    {
+                        gridView2.Appearance.Row.Font = gridFont;
+                        //gridView2.Appearance.HeaderPanel.Font = gridFont;
+                    }
+                }
+                catch
+                {
+                    // Font parse edilemezse varsayılan font kullanılır
+                }
+            }
 
             if (Sabitler.otomatikGunsonuKontrol() == false)
             {
