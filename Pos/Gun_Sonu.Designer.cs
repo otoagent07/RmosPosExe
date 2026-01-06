@@ -65,6 +65,7 @@
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btn_XZ2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
@@ -412,11 +413,23 @@
             this.gridColumn14.FieldName = "Tutar";
             this.gridColumn14.Name = "gridColumn14";
             // 
+            // btn_XZ2
+            // 
+            this.btn_XZ2.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
+            this.btn_XZ2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
+            this.btn_XZ2.Appearance.Options.UseBackColor = true;
+            this.btn_XZ2.Appearance.Options.UseFont = true;
+            this.btn_XZ2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_XZ2.ImageOptions.Image")));
+            resources.ApplyResources(this.btn_XZ2, "btn_XZ2");
+            this.btn_XZ2.Name = "btn_XZ2";
+            this.btn_XZ2.Click += new System.EventHandler(this.btn_XZ2_Click);
+            // 
             // Gun_Sonu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.btn_XZ2);
             this.Controls.Add(this.gridControlMuh);
             this.Controls.Add(this.gridControlCariRap3);
             this.Controls.Add(this.simpleButton1);
@@ -490,5 +503,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private DevExpress.XtraEditors.SimpleButton btn_XZ2;
     }
 }

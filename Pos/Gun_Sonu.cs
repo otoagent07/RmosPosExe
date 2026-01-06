@@ -47,6 +47,19 @@ namespace Pos
             {
                 txt_Gunsonusifre.Text = "GUNSONU";
             }
+
+
+
+
+            btn_XZ2.Visible = User.R_XZ ;
+
+
+
+            if (User.Pos_AdisyonPr)
+            {
+
+                btn_XZ2.Visible = false;
+            }
         }
 
         private void gridyenile()
@@ -1444,6 +1457,12 @@ GROUP BY s.Kodlar_Ad,s.Kodlar_Kod,ss.Kodlar_Ad,Rsat_Departman  ORDER BY s.Kodlar
             }
         }
 
+        private void btn_XZ2_Click(object sender, EventArgs e)
+        {
+            XZ_Raporu xz = new XZ_Raporu();
+            xz.setDepartman = Convert.ToString(Departman.Dep_Kodu);
+            xz.ShowDialog();
 
+        }
     }
 }

@@ -106,7 +106,11 @@ namespace Pos
             sagtik();
 
 
-            
+            btnMasaKilitAc.Enabled = User.M_MasaAc;
+            btnKilitAc2.Visible = User.M_MasaAc;
+
+
+
         }
 
         public void sagtik()
@@ -2914,6 +2918,11 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
         private void btnMasaKilitAc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            kilitac();
+        }
+
+        public  void kilitac()
+        {
             int Fisno = Convert.ToInt32(bartxt_FisNo.EditValue.ToString());
             if (Fisno > 0)
             {
@@ -3264,6 +3273,9 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
         }
 
-
+        private void btnKilitAc2_Click(object sender, EventArgs e)
+        {
+            kilitac();
+        }
     }
 }
