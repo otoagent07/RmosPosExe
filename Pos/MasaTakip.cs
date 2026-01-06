@@ -61,9 +61,13 @@ namespace Pos
         private bool isDragging = false;
         private Point dragStartPoint;
 
+
+        string satisFontTipi = "Tahoma; 8,25pt";//"Courier New; 8,25pt; style=Bold";
         private void MasaTakip_Load(object sender, EventArgs e)
         {
-         
+
+            satisFontTipi = dbtools.DegerGetir("select top 1 Pkod_Font from Pos_Kodlar where  Pkod_Sinif = '17' and Pkod_Kod = 'MARS'");
+
 
 
             if (Sabitler.otomatikGunsonuKontrol() == false)
