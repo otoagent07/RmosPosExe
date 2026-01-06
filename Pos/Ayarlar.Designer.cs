@@ -699,6 +699,8 @@
             this.btn_Print_Fatura = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Print_Adisyon = new DevExpress.XtraEditors.SimpleButton();
             this.tab_OdemeKodlari = new DevExpress.XtraTab.XtraTabPage();
+            this.textEdit207 = new DevExpress.XtraEditors.TextEdit();
+            this.lookUpEditBekoOdeme = new DevExpress.XtraEditors.LookUpEdit();
             this.checkEditOdemeTipAktif = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit196 = new DevExpress.XtraEditors.TextEdit();
             this.lookUpEditPavoOdeme = new DevExpress.XtraEditors.LookUpEdit();
@@ -768,6 +770,7 @@
             this.gridColumn175 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn177 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn179 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn180 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Chk_Odeme_TekOda = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme_Kasa_Cikis = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme_Kasa_Giris = new DevExpress.XtraEditors.CheckEdit();
@@ -1321,9 +1324,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.textEdit207 = new DevExpress.XtraEditors.TextEdit();
-            this.lookUpEditBekoOdeme = new DevExpress.XtraEditors.LookUpEdit();
-            this.gridColumn180 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1788,6 +1788,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.tab_OdemeKodlari.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit207.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditBekoOdeme.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditOdemeTipAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit196.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditPavoOdeme.Properties)).BeginInit();
@@ -2220,8 +2222,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit207.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditBekoOdeme.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -7947,6 +7947,26 @@
             resources.ApplyResources(this.tab_OdemeKodlari, "tab_OdemeKodlari");
             this.tab_OdemeKodlari.Name = "tab_OdemeKodlari";
             // 
+            // textEdit207
+            // 
+            resources.ApplyResources(this.textEdit207, "textEdit207");
+            this.textEdit207.Name = "textEdit207";
+            this.textEdit207.Properties.ReadOnly = true;
+            this.textEdit207.TabStop = false;
+            // 
+            // lookUpEditBekoOdeme
+            // 
+            this.lookUpEditBekoOdeme.EnterMoveNextControl = true;
+            resources.ApplyResources(this.lookUpEditBekoOdeme, "lookUpEditBekoOdeme");
+            this.lookUpEditBekoOdeme.Name = "lookUpEditBekoOdeme";
+            this.lookUpEditBekoOdeme.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEditBekoOdeme.Properties.Buttons"))))});
+            this.lookUpEditBekoOdeme.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditBekoOdeme.Properties.Columns"), resources.GetString("lookUpEditBekoOdeme.Properties.Columns1"), ((int)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns2"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns3"))), resources.GetString("lookUpEditBekoOdeme.Properties.Columns4"), ((bool)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns5"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns6"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns7"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns8")))),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEditBekoOdeme.Properties.Columns9"), resources.GetString("lookUpEditBekoOdeme.Properties.Columns10"), ((int)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns11"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns12"))), resources.GetString("lookUpEditBekoOdeme.Properties.Columns13"), ((bool)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns14"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns15"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns16"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEditBekoOdeme.Properties.Columns17"))))});
+            this.lookUpEditBekoOdeme.Properties.DropDownRows = 27;
+            this.lookUpEditBekoOdeme.Properties.NullText = resources.GetString("lookUpEditBekoOdeme.Properties.NullText");
+            // 
             // checkEditOdemeTipAktif
             // 
             resources.ApplyResources(this.checkEditOdemeTipAktif, "checkEditOdemeTipAktif");
@@ -8499,6 +8519,12 @@
             resources.ApplyResources(this.gridColumn179, "gridColumn179");
             this.gridColumn179.FieldName = "Pkod_OdemeAktif";
             this.gridColumn179.Name = "gridColumn179";
+            // 
+            // gridColumn180
+            // 
+            resources.ApplyResources(this.gridColumn180, "gridColumn180");
+            this.gridColumn180.FieldName = "bekoOdemeKod";
+            this.gridColumn180.Name = "gridColumn180";
             // 
             // Chk_Odeme_TekOda
             // 
@@ -13168,32 +13194,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // textEdit207
-            // 
-            resources.ApplyResources(this.textEdit207, "textEdit207");
-            this.textEdit207.Name = "textEdit207";
-            this.textEdit207.Properties.ReadOnly = true;
-            this.textEdit207.TabStop = false;
-            // 
-            // lookUpEditBekoOdeme
-            // 
-            this.lookUpEditBekoOdeme.EnterMoveNextControl = true;
-            resources.ApplyResources(this.lookUpEditBekoOdeme, "lookUpEditBekoOdeme");
-            this.lookUpEditBekoOdeme.Name = "lookUpEditBekoOdeme";
-            this.lookUpEditBekoOdeme.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
-            this.lookUpEditBekoOdeme.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns"), resources.GetString("lookUpEdit1.Properties.Columns1"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns2"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns3"))), resources.GetString("lookUpEdit1.Properties.Columns4"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns5"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns6"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEdit1.Properties.Columns7"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEdit1.Properties.Columns8")))),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo(resources.GetString("lookUpEdit1.Properties.Columns9"), resources.GetString("lookUpEdit1.Properties.Columns10"), ((int)(resources.GetObject("lookUpEdit1.Properties.Columns11"))), ((DevExpress.Utils.FormatType)(resources.GetObject("lookUpEdit1.Properties.Columns12"))), resources.GetString("lookUpEdit1.Properties.Columns13"), ((bool)(resources.GetObject("lookUpEdit1.Properties.Columns14"))), ((DevExpress.Utils.HorzAlignment)(resources.GetObject("lookUpEdit1.Properties.Columns15"))), ((DevExpress.Data.ColumnSortOrder)(resources.GetObject("lookUpEdit1.Properties.Columns16"))), ((DevExpress.Utils.DefaultBoolean)(resources.GetObject("lookUpEdit1.Properties.Columns17"))))});
-            this.lookUpEditBekoOdeme.Properties.DropDownRows = 27;
-            this.lookUpEditBekoOdeme.Properties.NullText = resources.GetString("lookUpEdit1.Properties.NullText");
-            // 
-            // gridColumn180
-            // 
-            resources.ApplyResources(this.gridColumn180, "gridColumn180");
-            this.gridColumn180.FieldName = "bekoOdemeKod";
-            this.gridColumn180.Name = "gridColumn180";
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13683,6 +13683,8 @@
             this.panelControl1.ResumeLayout(false);
             this.tab_OdemeKodlari.ResumeLayout(false);
             this.tab_OdemeKodlari.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit207.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditBekoOdeme.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEditOdemeTipAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit196.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditPavoOdeme.Properties)).EndInit();
@@ -14131,8 +14133,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit207.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditBekoOdeme.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

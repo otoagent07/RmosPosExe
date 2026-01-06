@@ -194,23 +194,31 @@ namespace Pos
                     btn_Siparis.Size = new Size(170, btn_Siparis.Height);
                 }
 
-                btn_MiktarDuzelt.Enabled = User.G_Miktarduzelt;
-                btn_Tutarduzelt.Enabled = User.G_Tutarduzelt;
+                btn_MiktarDuzelt.Visible = User.G_Miktarduzelt;
+                btn_Tutarduzelt.Visible = User.G_Tutarduzelt;
+                btn_TutarduzeltMiktar.Visible = User.G_Tutarduzelt;
+
+
+                btnServisTutarDuzelt.Visible = User.G_Tutarduzelt;
+
                 btn_SatirSil.Enabled = User.G_Satirsil;
-                btnTopluSil.Enabled = User.G_Satirsil;
-                btn_Indirim.Enabled = User.G_Indirim_Satis;
-                btn_Zayi.Enabled = User.G_Zayi;
-                btnJokerAciklama.Enabled = User.G_Zayi;
-                btn_Ikram.Enabled = User.G_Ikram;
-                btn_SpSil.Enabled = User.S_Sp_Sil;
-                btn_Arti.Enabled = User.Pos_ArtiEksi_Aktif;
-                btn_Eksi.Enabled = User.Pos_ArtiEksi_Aktif;
-                rdo_EMiktar.Enabled = User.Pos_YarimDubleAlan;
+                btnTopluSil.Visible = User.G_Satirsil;
+                btn_Indirim.Visible = User.G_Indirim_Satis;
+                btn_Zayi.Visible = User.G_Zayi;
+                btnJokerAciklama.Visible = User.G_Zayi;
+                btn_Ikram.Visible = User.G_Ikram;
+                btn_SpSil.Visible = User.S_Sp_Sil;
+
+
+                btn_Arti.Visible = User.Pos_ArtiEksi_Aktif;
+                btn_Eksi.Visible = User.Pos_ArtiEksi_Aktif;
+
+
+                rdo_EMiktar.Visible = User.Pos_YarimDubleAlan;
 
 
 
-                chk_Eksi.Enabled = getEksileme();
-                chk_Eksi.Visible = chk_Eksi.Enabled;
+                chk_Eksi.Visible = getEksileme();
 
 
                 if (Param.Param_CallerID)

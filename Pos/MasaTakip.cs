@@ -345,6 +345,9 @@ namespace Pos
 
             sagtik();
 
+
+
+            panelControl2.Visible = User.M_Hesapkapatma;
         }
 
 
