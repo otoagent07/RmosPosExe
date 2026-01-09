@@ -316,6 +316,9 @@ namespace Pos
 
                 btnSiparisVeHesap.Visible = User.Pos_YS_YetkiReddet; // yeni param açmamak için eklendi
 
+
+
+                panelControlBarkod.Visible = !Param.Param_PaketKucukEkran;
             }
             catch (Exception ex)
             {

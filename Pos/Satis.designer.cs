@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -175,6 +175,7 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txt_EkNot = new DevExpress.XtraEditors.MemoEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.panelControlBarkod = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
             this.splitContainerControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
@@ -241,6 +242,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlBarkod)).BeginInit();
+            this.panelControlBarkod.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerControl3
@@ -712,6 +715,7 @@
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.panelControl3);
+            this.panelControl2.Controls.Add(this.panelControlBarkod);
             resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl2_Paint);
@@ -720,19 +724,10 @@
             // 
             this.panelControl3.Controls.Add(this.tablePanel2);
             this.panelControl3.Controls.Add(this.tableLayoutPanel1);
-            this.panelControl3.Controls.Add(this.txtFisnoGit);
-            this.panelControl3.Controls.Add(this.textEditFisnobirlestir1);
-            this.panelControl3.Controls.Add(this.btnFiyatBilgisi);
-            this.panelControl3.Controls.Add(this.panelControl4);
             this.panelControl3.Controls.Add(this.panelMenu);
-            this.panelControl3.Controls.Add(this.simpleButton1);
             this.panelControl3.Controls.Add(this.panelControl6);
             this.panelControl3.Controls.Add(this.btn_Mars);
             this.panelControl3.Controls.Add(this.txt_Not);
-            this.panelControl3.Controls.Add(this.txt_Barkod);
-            this.panelControl3.Controls.Add(this.textEdit1);
-            this.panelControl3.Controls.Add(this.textEdit13);
-            this.panelControl3.Controls.Add(this.txt_Filtre);
             this.panelControl3.Controls.Add(this.gridControl1);
             this.panelControl3.Controls.Add(this.btn_Cikis);
             this.panelControl3.Controls.Add(this.btn_Siparis);
@@ -943,12 +938,12 @@
             // 
             // btnFiyatBilgisi
             // 
-            resources.ApplyResources(this.btnFiyatBilgisi, "btnFiyatBilgisi");
             this.btnFiyatBilgisi.Appearance.BackColor = System.Drawing.Color.Indigo;
             this.btnFiyatBilgisi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnFiyatBilgisi.Appearance.Font")));
             this.btnFiyatBilgisi.Appearance.Options.UseBackColor = true;
             this.btnFiyatBilgisi.Appearance.Options.UseFont = true;
             this.btnFiyatBilgisi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFiyatBilgisi.ImageOptions.Image")));
+            resources.ApplyResources(this.btnFiyatBilgisi, "btnFiyatBilgisi");
             this.btnFiyatBilgisi.Name = "btnFiyatBilgisi";
             this.btnFiyatBilgisi.Click += new System.EventHandler(this.btnFiyatBilgisi_Click);
             // 
@@ -1144,9 +1139,9 @@
             // 
             // simpleButton1
             // 
-            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
             this.simpleButton1.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
@@ -1426,18 +1421,18 @@
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn6;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn6;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -1768,6 +1763,20 @@
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // panelControlBarkod
+            // 
+            this.panelControlBarkod.Controls.Add(this.btnFiyatBilgisi);
+            this.panelControlBarkod.Controls.Add(this.txt_Filtre);
+            this.panelControlBarkod.Controls.Add(this.panelControl4);
+            this.panelControlBarkod.Controls.Add(this.txtFisnoGit);
+            this.panelControlBarkod.Controls.Add(this.textEdit13);
+            this.panelControlBarkod.Controls.Add(this.textEditFisnobirlestir1);
+            this.panelControlBarkod.Controls.Add(this.textEdit1);
+            this.panelControlBarkod.Controls.Add(this.txt_Barkod);
+            this.panelControlBarkod.Controls.Add(this.simpleButton1);
+            resources.ApplyResources(this.panelControlBarkod, "panelControlBarkod");
+            this.panelControlBarkod.Name = "panelControlBarkod";
+            // 
             // Satis
             // 
             resources.ApplyResources(this, "$this");
@@ -1855,6 +1864,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EkNot.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlBarkod)).EndInit();
+            this.panelControlBarkod.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2005,5 +2016,6 @@
         private DevExpress.XtraEditors.SimpleButton btnBir;
         private DevExpress.XtraEditors.SimpleButton btnSiparisVeHesap;
         private DevExpress.XtraEditors.SimpleButton btn_TutarduzeltMiktar;
+        private DevExpress.XtraEditors.PanelControl panelControlBarkod;
     }
 }
