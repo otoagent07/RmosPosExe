@@ -95,8 +95,8 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panelControlMasaFis = new DevExpress.XtraEditors.PanelControl();
             this.btnDoluMasalariAc = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControlMasaFis = new DevExpress.XtraEditors.PanelControl();
             this.btnFisnoTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
             this.btnFilterClear = new DevExpress.XtraEditors.SimpleButton();
@@ -804,15 +804,6 @@
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
-            // panelControlMasaFis
-            // 
-            this.panelControlMasaFis.Controls.Add(this.btnFisnoTemizle);
-            this.panelControlMasaFis.Controls.Add(this.txtFisnoGit);
-            this.panelControlMasaFis.Controls.Add(this.btnFilterClear);
-            this.panelControlMasaFis.Controls.Add(this.txt_Filtre);
-            resources.ApplyResources(this.panelControlMasaFis, "panelControlMasaFis");
-            this.panelControlMasaFis.Name = "panelControlMasaFis";
-            // 
             // btnDoluMasalariAc
             // 
             this.btnDoluMasalariAc.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnDoluMasalariAc.Appearance.Font")));
@@ -821,6 +812,15 @@
             this.btnDoluMasalariAc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDoluMasalariAc.ImageOptions.Image")));
             this.btnDoluMasalariAc.Name = "btnDoluMasalariAc";
             this.btnDoluMasalariAc.Click += new System.EventHandler(this.btnDoluMasalariAc_Click);
+            // 
+            // panelControlMasaFis
+            // 
+            this.panelControlMasaFis.Controls.Add(this.btnFisnoTemizle);
+            this.panelControlMasaFis.Controls.Add(this.txtFisnoGit);
+            this.panelControlMasaFis.Controls.Add(this.btnFilterClear);
+            this.panelControlMasaFis.Controls.Add(this.txt_Filtre);
+            resources.ApplyResources(this.panelControlMasaFis, "panelControlMasaFis");
+            this.panelControlMasaFis.Name = "panelControlMasaFis";
             // 
             // btnFisnoTemizle
             // 
