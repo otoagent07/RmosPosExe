@@ -110,7 +110,7 @@ namespace Pos
             btnKilitAc2.Visible = User.M_MasaAc;
 
 
-
+            panelControlMasaFis.Visible = !Param.Param_PaketKucukEkran;
         }
 
         public void sagtik()

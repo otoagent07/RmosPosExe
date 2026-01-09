@@ -95,7 +95,7 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControlMasaFis = new DevExpress.XtraEditors.PanelControl();
             this.btnDoluMasalariAc = new DevExpress.XtraEditors.SimpleButton();
             this.btnFisnoTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
@@ -184,8 +184,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlMasaFis)).BeginInit();
+            this.panelControlMasaFis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
@@ -582,7 +582,8 @@
             // 
             this.panelControl1.Controls.Add(this.gridControl2);
             this.panelControl1.Controls.Add(this.gridControl1);
-            this.panelControl1.Controls.Add(this.panelControl4);
+            this.panelControl1.Controls.Add(this.btnDoluMasalariAc);
+            this.panelControl1.Controls.Add(this.panelControlMasaFis);
             resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.Name = "panelControl1";
             // 
@@ -803,15 +804,14 @@
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
-            // panelControl4
+            // panelControlMasaFis
             // 
-            this.panelControl4.Controls.Add(this.btnDoluMasalariAc);
-            this.panelControl4.Controls.Add(this.btnFisnoTemizle);
-            this.panelControl4.Controls.Add(this.txtFisnoGit);
-            this.panelControl4.Controls.Add(this.btnFilterClear);
-            this.panelControl4.Controls.Add(this.txt_Filtre);
-            resources.ApplyResources(this.panelControl4, "panelControl4");
-            this.panelControl4.Name = "panelControl4";
+            this.panelControlMasaFis.Controls.Add(this.btnFisnoTemizle);
+            this.panelControlMasaFis.Controls.Add(this.txtFisnoGit);
+            this.panelControlMasaFis.Controls.Add(this.btnFilterClear);
+            this.panelControlMasaFis.Controls.Add(this.txt_Filtre);
+            resources.ApplyResources(this.panelControlMasaFis, "panelControlMasaFis");
+            this.panelControlMasaFis.Name = "panelControlMasaFis";
             // 
             // btnDoluMasalariAc
             // 
@@ -1506,8 +1506,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlMasaFis)).EndInit();
+            this.panelControlMasaFis.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
@@ -1633,7 +1633,7 @@
         private System.Windows.Forms.FlowLayoutPanel flp_Kapatma;
         private DevExpress.XtraBars.BarButtonItem bar_OzelMasa;
         private DevExpress.XtraBars.BarButtonItem bar_OdaKontrol;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
+        private DevExpress.XtraEditors.PanelControl panelControlMasaFis;
         private DevExpress.XtraEditors.TextEdit txt_Filtre;
         private DevExpress.XtraEditors.SimpleButton btnFilterClear;
         public DevExpress.XtraBars.BarEditItem bartxt_FisNo;
