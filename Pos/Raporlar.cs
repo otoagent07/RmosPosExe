@@ -340,6 +340,13 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                     {
                         bandedGridView1.RestoreLayoutFromXml(fileName);
                     }
+                    // XML restore işleminden sonra footer ayarını tekrar uygula
+
+                    if (User.Pos_AcikmasalariGizle)
+                    { 
+                        bandedGridView1.OptionsView.ShowFooter = false;
+
+                    }
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Satis)
                 {
