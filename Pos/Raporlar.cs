@@ -400,31 +400,36 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                     }
 
                     // Pos_AcikmasalariGizle parametresi kontrolü - Açık masaları gizle
+                    //if (User.Pos_AcikmasalariGizle) // 21.01.2026 da yorum satırı yapıldı.
+                    //{
+                    //    try
+                    //    {
+                    //        if (dt.Rows.Count > 0)
+                    //        {
+                    //            // Rsat_Durum = "Açık" olan satırları bul ve sil
+                    //            for (int i = dt.Rows.Count - 1; i >= 0; i--)
+                    //            {
+                    //                if (dt.Rows[i]["Rsat_Durum"] != null && dt.Rows[i]["Rsat_Durum"].ToString().Equals("Acik", StringComparison.OrdinalIgnoreCase))
+                    //                {
+                    //                    dt.Rows[i].Delete();
+                    //                }
+                    //            }
+                    //            dt.AcceptChanges();
+                    //            gridControl11.DataSource = dt;
+                    //        }
+                    //    }
+                    //    catch (Exception ex)
+                    //    {
+                    //        MessageBox.Show("Açık masaları gizleme hatası \n" + ex.Message);
+                    //    }
+                    //}
+
+
                     if (User.Pos_AcikmasalariGizle)
                     {
-                        try
-                        {
-                            if (dt.Rows.Count > 0)
-                            {
-                                // Rsat_Durum = "Açık" olan satırları bul ve sil
-                                for (int i = dt.Rows.Count - 1; i >= 0; i--)
-                                {
-                                    if (dt.Rows[i]["Rsat_Durum"] != null && dt.Rows[i]["Rsat_Durum"].ToString().Equals("Acik", StringComparison.OrdinalIgnoreCase))
-                                    {
-                                        dt.Rows[i].Delete();
-                                    }
-                                }
-                                dt.AcceptChanges();
-                                gridControl11.DataSource = dt;
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("Açık masaları gizleme hatası \n" + ex.Message);
-                        }
-                    }
 
-                    Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
+                    }
+                        Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Iptalcekraporu)
                 {
