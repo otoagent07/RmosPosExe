@@ -75,7 +75,7 @@ namespace Pos
 
             if (User.Pos_AcikmasalariGizle)
             {
-
+                aa
             }
 
         }

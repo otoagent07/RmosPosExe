@@ -172,7 +172,7 @@ namespace Pos.Class
         public static bool servisPayiKdvOran { get; set; }
         public static bool coklugunsonu { get; set; }
         public static bool kapaliMasayaGir { get; set; }
-        public static bool Pos_AcikmasalariGizle { get; set; }
+        public static bool Pos_AcikmasalariGizle { get; set; } // bu parametre kullanılmadığı için "Ciro Görmesin" olarak kullandık.
 
 
 
