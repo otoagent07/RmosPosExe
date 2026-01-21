@@ -1059,6 +1059,9 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                         dbtools.execcmdR($"exec Pos_Satis_Onburo @Tarih='{Param.Tarih.Date.ToString("yyyy-MM-dd")}',@Fisno=N'{fisno}',@FolioKartNo=default,@FolioKartId=0");
                     }
 
+
+                    // 21.01.2026 da kisi sayıları fazla çıktığı için alt masalarinkiler sıfırlandi
+                    dbtools.execcmdR("update Cst_Recete_Satis set Rsat_Kisi=0 where Rsat_Fisno='"+ nesne.Rsat_Fisno + "'");
                     //if (araodememi == false)
                     //{
                     //    this.Close();
