@@ -71,6 +71,13 @@ namespace Pos
 
 
             //gridyenile();
+
+
+            if (User.Pos_AcikmasalariGizle)
+            {
+
+            }
+
         }
 
         public void loadyukle()
@@ -425,10 +432,7 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                     //}
 
 
-                    if (User.Pos_AcikmasalariGizle)
-                    {
-
-                    }
+                    
                         Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Iptalcekraporu)
