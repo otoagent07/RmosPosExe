@@ -75,7 +75,13 @@ namespace Pos
 
             if (User.Pos_AcikmasalariGizle)
             {
-                aa
+                gridView11.OptionsView.ShowFooter = false;
+                bandedGridView1.OptionsView.ShowFooter = false;
+                gridView3.OptionsView.ShowFooter = false;
+                gridView7.OptionsView.ShowFooter = false;
+                gridView13.OptionsView.ShowFooter = false;
+                tab_muhasebe.PageVisible = false;
+                tab_AylikGenelRapor.PageVisible = false;
             }
 
         }

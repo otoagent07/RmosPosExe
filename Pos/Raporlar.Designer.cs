@@ -819,8 +819,8 @@
             // 
             resources.ApplyResources(this.btn_XZ2, "btn_XZ2");
             this.btn_XZ2.Id = 24;
-            this.btn_XZ2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXzRapor2.ImageOptions.Image")));
-            this.btn_XZ2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnXzRapor2.ImageOptions.LargeImage")));
+            this.btn_XZ2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_XZ2.ImageOptions.Image")));
+            this.btn_XZ2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_XZ2.ImageOptions.LargeImage")));
             this.btn_XZ2.Name = "btn_XZ2";
             this.btn_XZ2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_XZ2_ItemClick);
             // 
