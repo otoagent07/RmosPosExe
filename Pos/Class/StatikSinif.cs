@@ -101,6 +101,11 @@ IF COL_LENGTH('Cst_Recete_Satis', 'PavoDurum') IS NULL BEGIN ALTER TABLE Cst_Rec
 
 IF COL_LENGTH('Cst_Recete_Satis', 'deger1') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD deger1 nvarchar(3500) END;
 
+
+IF COL_LENGTH('Cst_Recete_Satis', 'bekoDurum') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD bekoDurum int END;
+IF COL_LENGTH('Cst_Recete_Satis', 'bekoAciklama') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD bekoAciklama nvarchar(MAX) END;
+
+
 IF COL_LENGTH('Pos_Param', 'tipboxReceteKod') IS NULL BEGIN ALTER TABLE Pos_Param ADD tipboxReceteKod nvarchar(200) END;
 
 IF COL_LENGTH('Pos_Param', 'gunsonubitissaat') IS NULL BEGIN ALTER TABLE Pos_Param ADD gunsonubitissaat nvarchar(200) END;
@@ -249,6 +254,11 @@ IF COL_LENGTH('RmosMuh.dbo.Pos_User_XZ', 'servisPayiKdvOran') IS NULL BEGIN ALTE
 
 
 IF COL_LENGTH('Stok_Kodlar', 'Kodlar_parakasa') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_parakasa nvarchar(200) END;
+
+
+IF COL_LENGTH('Stok_Kodlar', 'Kodlar_Beko') IS NULL BEGIN ALTER TABLE Stok_Kodlar ADD Kodlar_Beko bit END;
+
+
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_Eksileme') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_Eksileme bit END;
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_XZdepartman') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_XZdepartman bit END;
 ALTER TABLE GetirYemek_Option ALTER COLUMN  GOption_price    decimal(18, 2)

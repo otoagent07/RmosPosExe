@@ -76,6 +76,7 @@ namespace Pos.Class
         public static string Kodlar_Ingenico_IP { get; set; }
         public static int Kodlar_Ingenico_Port { get; set; }
 
+        public static bool Kodlar_Beko { get; set; }
 
 
 
@@ -96,7 +97,8 @@ namespace Pos.Class
                     + " ISNULL(Kodlar_SmsBaslik,'') as Kodlar_SmsBaslik, ISNULL(Kodlar_SmsKadi,'') as Kodlar_SmsKadi, ISNULL(Kodlar_SmsSifre,'') as Kodlar_SmsSifre, "
                     + " ISNULL(Kodlar_Getir_appSecretKey,'') as Kodlar_Getir_appSecretKey , ISNULL(Kodlar_Getir_restaurantSecretKey,'') as Kodlar_Getir_restaurantSecretKey, "
                     + " ISNULL(Kodlar_Ingenico_IP,'127.0.0.1') as Kodlar_Ingenico_IP, ISNULL(Kodlar_Ingenico_Port,'8910') as Kodlar_Ingenico_Port, "
-                    + " ISNULL(Kodlar_Getir_AP,0) as Kodlar_Getir_AP "
+                    + " ISNULL(Kodlar_Getir_AP,0) as Kodlar_Getir_AP,"
+                    + " ISNULL(Kodlar_Beko,0) as Kodlar_Beko "
                     + " from Stok_Kodlar with(nolock) "
                     + " left join Muh_Kodlar on Kodlar_Sirket = Mkodlar_Kod and Mkodlar_Sinif = '07' "
                     + " where  Kodlar_Sinif = '01' and Kodlar_Kod = '" + Dep_Kodu + "'");
@@ -148,6 +150,7 @@ namespace Pos.Class
                 Kodlar_YSMac = Convert.ToString(dt.Rows[0]["Kodlar_YSMac"]);
 
                 Kodlar_SmsAktif = Convert.ToBoolean(dt.Rows[0]["Kodlar_SmsAktif"]);
+                Kodlar_Beko = Convert.ToBoolean(dt.Rows[0]["Kodlar_Beko"]);
                 Kodlar_SmsBaslik = Convert.ToString(dt.Rows[0]["Kodlar_SmsBaslik"]);
                 Kodlar_SmsKadi = Convert.ToString(dt.Rows[0]["Kodlar_SmsKadi"]);
                 Kodlar_SmsSifre = Convert.ToString(dt.Rows[0]["Kodlar_SmsSifre"]);

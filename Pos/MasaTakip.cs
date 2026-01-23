@@ -2893,6 +2893,17 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
 
+                if (Departman.Kodlar_Beko)
+                {
+                    int bekotoplamSatir = Convert.ToInt32( dbtools.DegerGetir($@"select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Ba='B'"));
+                    if (bekotoplamSatir>60)
+                    {
+                        RHMesaj.alertMesaj($"Fişno: {fisno} Beko yazar kasaya gönderilemedi!. Max 60 Kalem ürün olmalıdır.");
+                        return;
+                    }
+                    RHMesaj.alertMesaj($"Fişno: {fisno} Beko yazar kasaya gönderildi.");
+                }
+
 
             }
             catch (Exception ex)
