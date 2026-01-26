@@ -2169,5 +2169,39 @@ where Log_Islem='Kaydet'
             xz.setDepartman = Convert.ToString(cmb_Departman.EditValue);
             xz.ShowDialog();
         }
+
+        private void gridView11_RowCellStyle(object sender, RowCellStyleEventArgs e)
+        {
+            if (e.RowHandle >= 0)
+            {
+                GridView View = sender as GridView;
+                if (e.Column.FieldName == "bekoDurum"|| e.Column.FieldName == "bekoAciklama" || e.Column.FieldName == "bekoId")
+                {
+                    string bekoDurum = View.GetRowCellDisplayText(e.RowHandle, View.Columns["bekoDurum"]);
+
+                    switch (bekoDurum)
+                    {
+                        case "0":
+                            break;
+                        case "1": // hesap dökülmüş turuncu
+                            e.Appearance.BackColor = Color.DarkOrange;
+                            e.Appearance.ForeColor = Color.White;
+                            break;
+                        case "2": // hesap kapanmış
+                            e.Appearance.BackColor = Color.DarkGreen;
+                            e.Appearance.ForeColor = Color.White;
+                            break;
+                        case "3":
+                            e.Appearance.BackColor = Color.Red;
+                            e.Appearance.ForeColor = Color.White;
+                            break;
+                        default:
+                            break;
+                    }
+                  
+                }
+            }
+
+        }
     }
 }

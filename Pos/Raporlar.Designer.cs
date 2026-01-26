@@ -1547,6 +1547,7 @@
             this.gridView11.OptionsView.ShowGroupPanel = false;
             this.gridView11.RowHeight = 25;
             this.gridView11.CustomDrawFooterCell += new DevExpress.XtraGrid.Views.Grid.FooterCellCustomDrawEventHandler(this.gridView11_CustomDrawFooterCell);
+            this.gridView11.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView11_RowCellStyle);
             this.gridView11.DoubleClick += new System.EventHandler(this.gridView11_DoubleClick);
             // 
             // bandedGridColumn42
