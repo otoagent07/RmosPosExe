@@ -104,6 +104,7 @@ IF COL_LENGTH('Cst_Recete_Satis', 'deger1') IS NULL BEGIN ALTER TABLE Cst_Recete
 
 IF COL_LENGTH('Cst_Recete_Satis', 'bekoDurum') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD bekoDurum int END;
 IF COL_LENGTH('Cst_Recete_Satis', 'bekoAciklama') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD bekoAciklama nvarchar(MAX) END;
+IF COL_LENGTH('Cst_Recete_Satis', 'bekoId') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD bekoId nvarchar(MAX) END;
 
 
 IF COL_LENGTH('Pos_Param', 'tipboxReceteKod') IS NULL BEGIN ALTER TABLE Pos_Param ADD tipboxReceteKod nvarchar(200) END;

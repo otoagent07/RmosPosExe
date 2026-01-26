@@ -183,6 +183,9 @@
             this.gridColumn140 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn144 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn147 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn148 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn149 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn150 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tab_Genelrapor = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStripGenelCek = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -1503,7 +1506,10 @@
             this.gridColumn139,
             this.gridColumn140,
             this.gridColumn144,
-            this.gridColumn147});
+            this.gridColumn147,
+            this.gridColumn148,
+            this.gridColumn149,
+            this.gridColumn150});
             gridFormatRule1.Column = this.bandedGridColumn41;
             gridFormatRule1.Name = "Format0";
             formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.Red;
@@ -2074,6 +2080,27 @@
             this.gridColumn147.MinWidth = 21;
             this.gridColumn147.Name = "gridColumn147";
             this.gridColumn147.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn148
+            // 
+            resources.ApplyResources(this.gridColumn148, "gridColumn148");
+            this.gridColumn148.FieldName = "bekoDurum";
+            this.gridColumn148.Name = "gridColumn148";
+            this.gridColumn148.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn149
+            // 
+            resources.ApplyResources(this.gridColumn149, "gridColumn149");
+            this.gridColumn149.FieldName = "bekoAciklama";
+            this.gridColumn149.Name = "gridColumn149";
+            this.gridColumn149.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn150
+            // 
+            resources.ApplyResources(this.gridColumn150, "gridColumn150");
+            this.gridColumn150.FieldName = "bekoId";
+            this.gridColumn150.Name = "gridColumn150";
+            this.gridColumn150.OptionsColumn.AllowFocus = false;
             // 
             // tab_Genelrapor
             // 
@@ -5208,5 +5235,8 @@
         private DevExpress.XtraEditors.SimpleButton btnIndirimMasa;
         private DevExpress.XtraEditors.SimpleButton btnUrunTransf;
         private DevExpress.XtraBars.BarButtonItem btn_XZ2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn148;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn149;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn150;
     }
 }
