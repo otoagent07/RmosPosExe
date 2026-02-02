@@ -197,6 +197,11 @@ IF COL_LENGTH('Pos_Param', 'satisdaOzelMasa') IS NULL BEGIN ALTER TABLE Pos_Para
 
 
 IF COL_LENGTH('Pos_Param', 'hesapFisQrFisno') IS NULL BEGIN ALTER TABLE Pos_Param ADD hesapFisQrFisno bit END;
+
+
+IF COL_LENGTH('Pos_Param', 'bekoFaturaKesimLimit') IS NULL BEGIN ALTER TABLE Pos_Param ADD bekoFaturaKesimLimit  decimal(18, 2) END;
+
+
 IF COL_LENGTH('Pos_Param', 'masatrTutSurukle') IS NULL BEGIN ALTER TABLE Pos_Param ADD masatrTutSurukle bit END;
 IF COL_LENGTH('Pos_Param', 'servispayFooterda') IS NULL BEGIN ALTER TABLE Pos_Param ADD servispayFooterda bit END;
 
