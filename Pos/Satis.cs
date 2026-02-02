@@ -98,6 +98,17 @@ namespace Pos
 
         private void Satis_Load(object sender, EventArgs e)
         {
+            
+
+
+            load();
+
+            gridstyle();
+
+        }
+
+        public void gridstyle()
+        {
             satisFontTipi = dbtools.DegerGetir("select top 1 Pkod_Font from Pos_Kodlar where  Pkod_Sinif = '17' and Pkod_Kod = 'MARS'");
 
             // gridView2 için font ayarlama
@@ -118,12 +129,6 @@ namespace Pos
                     // Font parse edilemezse varsayılan font kullanılır
                 }
             }
-
-
-            load();
-
-
-
         }
 
         public bool urunleriYenile = true;
