@@ -157,8 +157,8 @@
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.flp_Kapatma = new System.Windows.Forms.FlowLayoutPanel();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
-            this.btnKilitAc2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnParcaliOdemeEski = new DevExpress.XtraEditors.SimpleButton();
+            this.btnKilitAc2 = new DevExpress.XtraEditors.SimpleButton();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
@@ -1398,15 +1398,6 @@
             resources.ApplyResources(this.panelControl5, "panelControl5");
             this.panelControl5.Name = "panelControl5";
             // 
-            // btnKilitAc2
-            // 
-            this.btnKilitAc2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnKilitAc2.Appearance.Font")));
-            this.btnKilitAc2.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btnKilitAc2, "btnKilitAc2");
-            this.btnKilitAc2.ImageOptions.Image = global::Pos.Properties.Resources.lock2;
-            this.btnKilitAc2.Name = "btnKilitAc2";
-            this.btnKilitAc2.Click += new System.EventHandler(this.btnKilitAc2_Click);
-            // 
             // btnParcaliOdemeEski
             // 
             this.btnParcaliOdemeEski.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
@@ -1417,6 +1408,15 @@
             this.btnParcaliOdemeEski.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnParcaliOdemeEski.ImageOptions.Image")));
             this.btnParcaliOdemeEski.Name = "btnParcaliOdemeEski";
             this.btnParcaliOdemeEski.Click += new System.EventHandler(this.btnParcaliOdemeEski_Click);
+            // 
+            // btnKilitAc2
+            // 
+            this.btnKilitAc2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnKilitAc2.Appearance.Font")));
+            this.btnKilitAc2.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btnKilitAc2, "btnKilitAc2");
+            this.btnKilitAc2.ImageOptions.Image = global::Pos.Properties.Resources.lock2;
+            this.btnKilitAc2.Name = "btnKilitAc2";
+            this.btnKilitAc2.Click += new System.EventHandler(this.btnKilitAc2_Click);
             // 
             // barButtonItem3
             // 

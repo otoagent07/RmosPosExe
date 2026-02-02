@@ -1093,7 +1093,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                     return;
                 }
 
-
+                iptalfisyazdir(Fisno,iptalSebep);
 
                 SqlConnection con = dbtools.conn;
                 if (con.State == ConnectionState.Closed) con.Open();
@@ -1124,6 +1124,43 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 MessageBox.Show(res_man.GetString("Sadece Genel Çek Raporundan Fişi İptal Edebilirsiniz..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+        }
+
+        public void iptalfisyazdir(string fisno,string neden)
+        {
+            DataTable dataTable = dbtools.SelectTableR(@" select Rsat_Miktar ,Cst_Recete.Rec_Ad ,Rsat_Id,Rsat_Tutar from Cst_Recete_Satis
+ left join cst_recete  on Cst_Recete.Rec_Genelkod=Rsat_Recete
+ where Rsat_Fisno='" + fisno + "' and Rsat_Ba<>'A'");
+
+            foreach (DataRow item in dataTable.Rows)
+            {
+                decimal miktar = Convert.ToDecimal(item["Rsat_Miktar"].ToString());
+                int Rsat_Id = Convert.ToInt32(item["Rsat_Id"].ToString());
+                string Rec_Ad = item["Rec_Ad"].ToString();
+                decimal Rsat_Tutar = Convert.ToDecimal(item["Rsat_Tutar"].ToString());
+                string yazdirilmissa = "Yazdırılmamış";
+                if (Departman.Siparis)
+                {
+                    FisPr fis = new FisPr();
+                    string sonuc = fis.newIptalPr(Rsat_Id, miktar);
+                    if (fis.yazdirilmismi)
+                    {
+                        yazdirilmissa = "Yazdırılmış";
+                    }
+                    if (sonuc != "OK")
+                    {
+                        MessageBox.Show(sonuc);
+                    }
+                }
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Rec_Ad + " Miktar : " + miktar + " Silindi", Convert.ToString(fisno), Rsat_Id.ToString(), Rec_Ad, miktar, neden, Rsat_Tutar);
+
+                Fis_Islem.Satir_Sil(Rsat_Id, miktar);
+
+
+                
+            }
+
         }
 
         public void merkezeiptalcekgonder(string Fisno)
