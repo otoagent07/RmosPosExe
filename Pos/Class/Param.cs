@@ -263,7 +263,7 @@ namespace Pos.Class
                         ",ISNULL(Param_StokAnlikAtmasin,0) as Param_StokAnlikAtmasin " +
                         ",ISNULL(masatakipKonumYukseklik,341) as masatakipKonumYukseklik " +
                         ",ISNULL(gunsonubitissaat,'11:11') as gunsonubitissaat " +
-                        ",ISNULL(NULLIF(NULLIF(CAST(bekoFaturaKesimLimit AS VARCHAR), '0'), ''), '12000') AS bekoFaturaKesimLimit " +
+                        ",ISNULL(bekoFaturaKesimLimit, 12000) AS bekoFaturaKesimLimit " +
                          " from Pos_Param where Param_Id = '1' ";
                 DataTable dt = dbtools.SelectTable(query);
 
