@@ -1393,8 +1393,8 @@
             // 
             // panelControl5
             // 
-            this.panelControl5.Controls.Add(this.btnKilitAc2);
             this.panelControl5.Controls.Add(this.btnParcaliOdemeEski);
+            this.panelControl5.Controls.Add(this.btnKilitAc2);
             resources.ApplyResources(this.panelControl5, "panelControl5");
             this.panelControl5.Name = "panelControl5";
             // 
