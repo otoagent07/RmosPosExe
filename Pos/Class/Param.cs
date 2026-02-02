@@ -94,6 +94,7 @@ namespace Pos.Class
         public static int Param_DataBits { get; set; }
         public static string Param_Parity { get; set; }
         public static decimal Param_StopBits { get; set; }
+        public static decimal bekoFaturaKesimLimit { get; set; }
         public static string Param_FlowControl { get; set; }
         public static string tipboxReceteKod { get; set; }
         public static string siparisTekrarPrintName { get; set; }
@@ -201,8 +202,7 @@ namespace Pos.Class
         {
             try
             {
-
-                DataTable dt = dbtools.SelectTable("select isnull(Param_Onburo,0) as Param_Onburo2,isnull(Param_Cost,0) as Param_Cost2,isnull(Param_Muh,0) as Param_Muh2, "
+                string query = "select isnull(Param_Onburo,0) as Param_Onburo2,isnull(Param_Cost,0) as Param_Cost2,isnull(Param_Muh,0) as Param_Muh2, "
                         + " isnull(Param_Tar_Nere,0) as Param_Tar_Nere2,isnull(Param_Kur_Nere,0) as Param_Kur_Nere2,isnull(Param_Limittip,0) as Param_Limittip2, "
                         + " isnull(Param_Balance,0) as Param_Balance2,isnull(Param_Fis_Dovizli,0) as Param_Fis_Dovizli2,isnull(Param_Tesistip,0) as Param_Tesistip2, "
                         + " isnull(Param_Tarih,getdate()) as Param_Tarih2,Param_Dovizkod,isnull(Param_Kur,0) as Param_Kur2,isnull(Param_Yansit,0) as Param_Yansit2, "
@@ -263,7 +263,9 @@ namespace Pos.Class
                         ",ISNULL(Param_StokAnlikAtmasin,0) as Param_StokAnlikAtmasin " +
                         ",ISNULL(masatakipKonumYukseklik,341) as masatakipKonumYukseklik " +
                         ",ISNULL(gunsonubitissaat,'11:11') as gunsonubitissaat " +
-                         " from Pos_Param where Param_Id = '1' ");
+                        ",ISNULL(NULLIF(NULLIF(CAST(bekoFaturaKesimLimit AS VARCHAR), '0'), ''), '12000') AS bekoFaturaKesimLimit " +
+                         " from Pos_Param where Param_Id = '1' ";
+                DataTable dt = dbtools.SelectTable(query);
 
                 DataTable dtMac = dbtools.SelectTable("SELECT  isnull(P_Tek,0) as P_Tek, P_Mac, P_Dep, ISNULL(P_Sabitkonum,0) as P_Sabitkonum, P_Sabitkonumkodu   FROM  Rmosmuh.dbo.P_Bilg WHERE P_Mac='" + dbtools.MacAdresi() + "'");
 
@@ -364,6 +366,11 @@ namespace Pos.Class
                     Param_DataBits = Convert.ToInt32(dt.Rows[0]["Param_DataBits"]);
                     Param_Parity = Convert.ToString(dt.Rows[0]["Param_Parity"]);
                     Param_StopBits = Convert.ToDecimal(dt.Rows[0]["Param_StopBits"]);
+
+
+                    bekoFaturaKesimLimit = Convert.ToDecimal(dt.Rows[0]["bekoFaturaKesimLimit"]);
+
+
                     Param_FlowControl = Convert.ToString(dt.Rows[0]["Param_FlowControl"]);
 
                     Param_bSizeH = Convert.ToInt32(dt.Rows[0]["Param_bSizeH"]);

@@ -381,7 +381,6 @@ namespace Pos
                 Terazi_Comport.Text = Param.Param_ComPort;
                 Terazi_BaodRate.Text = Convert.ToString(Param.Param_BaudRate);
                 Terazi_DataBits.Text = Convert.ToString(Param.Param_DataBits);
-                Terazi_StopBits.Text = Param.Param_StopBits.ToString().Replace(",", ".");
                 Terazi_Parity.Text = Convert.ToString(Param.Param_Parity);
                 Terazi_FlowControl.Text = Param.Param_FlowControl;
                 txt_Yukseklik.Text = Param.Param_bSizeH.ToString();
@@ -390,6 +389,14 @@ namespace Pos
 
 
                 masatakipKonumYukseklik.Text = Param.masatakipKonumYukseklik.ToString();
+
+
+                Terazi_StopBits.Text = Param.Param_StopBits.ToString().Replace(",", ".");
+                bekoFaturaKesimLimit.Text = Param.bekoFaturaKesimLimit.ToString().Replace(",", ".");
+
+
+
+
                 mobileCallerIdMacAdres.Text = Param.mobileCallerIdMacAdres.ToString();
                 txt_Genişlik.Text = Param.Param_bSizeW.ToString();
                 chk_SatisArama.Checked = Param.Param_SatisArama;
@@ -1303,7 +1310,7 @@ namespace Pos
                     + " Param_OzelMasaSiralama,Param_HesapFisiDokum,Param_HspFontAlgilama,Param_AdisyonFolioAdi,Param_FullPos,Param_CikisKapa,Param_DirekAdisyonZor,Param_DirekAdisyonPrSor,Param_KGAlgilama,Param_ExtraFolioAcma,Param_SiparisAna,Param_iadeKontrol,Param_iadeLimit, Pos_HesapDkmRenk, Param_AdisyonDegis, Param_AdisyonIndAd,Param_SiparisTutar,Param_AnaEkranCiro,Param_MasaTakipCiro,Param_AcilisCekSil,Param_CariAdSoyad,Param_OdenmezAc, "
                     + " Param_SatirSil,Param_SatirSilUser,Param_MasaTakipMenu,Param_ParaUstuIngenico,Param_SatisTabloGonderi, Param_SatisTabloID, Param_SatisTabloAktif, Param_AcilistaMenu,Param_IngenicoSPR,Param_SiparisFisFont,Param_HizliSatisCekAc,Param_KartfGBCheckOut, "
                     + " Param_YeniHesapDkm,Param_YeniSiparisDkm,Param_OdaKrediCompOdenmez,Param_KurTransfer,Param_CallCenterPaket, "
-                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif,otomatikOdenmez,mobilCallerIdAktif,mobileCallerIdMacAdres,hesapFisQrFisno,paketotohesapkapat,sepetaktif,merkezaktif,ingenico2,ekranKlavyesiAktif,ingenicoOdemeAtmasin,Param_StokAnlikAtmasin,masatakipKonumYukseklik,gunsonubitissaat,hesapkapatfiscikmasinaktif )"
+                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif,otomatikOdenmez,mobilCallerIdAktif,mobileCallerIdMacAdres,hesapFisQrFisno,paketotohesapkapat,sepetaktif,merkezaktif,ingenico2,ekranKlavyesiAktif,ingenicoOdemeAtmasin,Param_StokAnlikAtmasin,masatakipKonumYukseklik,gunsonubitissaat,hesapkapatfiscikmasinaktif,bekoFaturaKesimLimit )"
 
                     + " VALUES ( "
                     + " '1', '" + txt_Prm_Tesis_Adi.Text + "', '" + Convert.ToBoolean(chk_Prm_Onburo.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Cost.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Muh.Checked) + "','" + rdo_Prm_Calisma.SelectedIndex + "','" + rdo_Prm_Tarih_Nereden.SelectedIndex + "', "
@@ -1341,6 +1348,7 @@ namespace Pos
                     + "','" + masatakipKonumYukseklik.Text + "'"
                     + "','" + gunsonubitissaat.Text + "'"
                     + "','" + hesapkapatfiscikmasinaktif.Checked + "'"
+                    + "','" + bekoFaturaKesimLimit.Text + "'"
                     + "" + ""
                     + "  )");
 
@@ -1398,6 +1406,7 @@ namespace Pos
                        + ",masatakipKonumYukseklik = '" + masatakipKonumYukseklik.Text + "'"
                        + ",gunsonubitissaat = '" + gunsonubitissaat.Text + "'"
                        + ",hesapkapatfiscikmasinaktif = '" + hesapkapatfiscikmasinaktif.Checked + "'"
+                       + ",bekoFaturaKesimLimit = '" + bekoFaturaKesimLimit.Text + "'"
                        + " where Param_Id = '1' ";
                 dbtools.execcmdR(q);
 
