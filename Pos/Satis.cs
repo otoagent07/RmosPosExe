@@ -1,4 +1,4 @@
-﻿using DevExpress.XtraEditors;
+using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraReports.UI;
 using Pos.Class;
@@ -98,37 +98,43 @@ namespace Pos
 
         private void Satis_Load(object sender, EventArgs e)
         {
-            
-
-
             load();
-
-            gridstyle();
-
         }
 
         public void gridstyle()
         {
             satisFontTipi = dbtools.DegerGetir("select top 1 Pkod_Font from Pos_Kodlar where  Pkod_Sinif = '17' and Pkod_Kod = 'MARS'");
-
-            // gridView2 için font ayarlama
+            Font gridFont = null;
             if (!string.IsNullOrEmpty(satisFontTipi))
             {
                 try
                 {
                     System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
-                    Font gridFont = (Font)converter.ConvertFromString(satisFontTipi);
+                     gridFont = (Font)converter.ConvertFromString(satisFontTipi);
                     if (gridFont != null)
                     {
                         gridView1.Appearance.Row.Font = gridFont;
                         //gridView2.Appearance.HeaderPanel.Font = gridFont;
                     }
+
+
+                    gridView1.Appearance.Row.Font = gridFont;
+                    gridView1.Appearance.Row.Options.UseFont = true;
+                    foreach (DevExpress.XtraGrid.Columns.GridColumn col in gridView1.Columns)
+                    {
+                        col.AppearanceCell.Font = gridFont;
+                        col.AppearanceCell.Options.UseFont = true;
+                    }
+
+
                 }
                 catch
                 {
                     // Font parse edilemezse varsayılan font kullanılır
                 }
             }
+
+           
         }
 
         public bool urunleriYenile = true;
@@ -349,6 +355,8 @@ namespace Pos
 
 
                 panelControlBarkod.Visible = !Param.Param_PaketKucukEkran;
+
+                gridstyle();
             }
             catch (Exception ex)
             {
