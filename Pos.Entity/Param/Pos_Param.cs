@@ -79,7 +79,7 @@ namespace Pos.Entity.Param
 
         public bool? Param_Pda_HotelSu { get; set; }
 
-        public bool? Param_Yarim_Tam { get; set; }
+        public bool? Param_Yarim_Tam { get; set; } // Çek iptalde iptal fişi yazdırmak için kullanıyoruz
 
         public string Param_FullComp { get; set; }
 

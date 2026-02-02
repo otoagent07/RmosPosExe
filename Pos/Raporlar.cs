@@ -1128,6 +1128,12 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
 
         public void iptalfisyazdir(string fisno,string neden)
         {
+
+            if (Param.Satis_YarimTam==false)
+            {
+                return;
+            }
+
             DataTable dataTable = dbtools.SelectTableR(@" select Rsat_Miktar ,Cst_Recete.Rec_Ad ,Rsat_Id,Rsat_Tutar from Cst_Recete_Satis
  left join cst_recete  on Cst_Recete.Rec_Genelkod=Rsat_Recete
  where Rsat_Fisno='" + fisno + "' and Rsat_Ba<>'A'");
