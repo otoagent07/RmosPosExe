@@ -1324,8 +1324,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.bekoFaturaKesimLimit = new DevExpress.XtraEditors.SpinEdit();
             this.textEdit208 = new DevExpress.XtraEditors.TextEdit();
+            this.bekoFaturaKesimLimit = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2224,8 +2224,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bekoFaturaKesimLimit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit208.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bekoFaturaKesimLimit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4260,8 +4260,8 @@
             // 
             // xtraTabPage8
             // 
-            this.xtraTabPage8.Controls.Add(this.textEdit208);
             this.xtraTabPage8.Controls.Add(this.bekoFaturaKesimLimit);
+            this.xtraTabPage8.Controls.Add(this.textEdit208);
             this.xtraTabPage8.Controls.Add(this.hesapkapatfiscikmasinaktif);
             this.xtraTabPage8.Controls.Add(this.satisdaOzelMasa);
             this.xtraTabPage8.Controls.Add(this.ingenicoOdemeAtmasin);
@@ -13200,22 +13200,17 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // bekoFaturaKesimLimit
-            // 
-            resources.ApplyResources(this.bekoFaturaKesimLimit, "bekoFaturaKesimLimit");
-            this.bekoFaturaKesimLimit.Name = "bekoFaturaKesimLimit";
-            this.bekoFaturaKesimLimit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.bekoFaturaKesimLimit.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.bekoFaturaKesimLimit.Properties.Mask.EditMask = resources.GetString("spinEdit2.Properties.Mask.EditMask");
-            this.bekoFaturaKesimLimit.Properties.NullText = resources.GetString("spinEdit2.Properties.NullText");
-            // 
             // textEdit208
             // 
             resources.ApplyResources(this.textEdit208, "textEdit208");
             this.textEdit208.Name = "textEdit208";
             this.textEdit208.Properties.ReadOnly = true;
             this.textEdit208.TabStop = false;
+            // 
+            // bekoFaturaKesimLimit
+            // 
+            resources.ApplyResources(this.bekoFaturaKesimLimit, "bekoFaturaKesimLimit");
+            this.bekoFaturaKesimLimit.Name = "bekoFaturaKesimLimit";
             // 
             // Ayarlar
             // 
@@ -14156,8 +14151,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bekoFaturaKesimLimit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit208.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bekoFaturaKesimLimit.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15459,6 +15454,6 @@
         private DevExpress.XtraEditors.LookUpEdit lookUpEditBekoOdeme;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn180;
         private DevExpress.XtraEditors.TextEdit textEdit208;
-        public DevExpress.XtraEditors.SpinEdit bekoFaturaKesimLimit;
+        private DevExpress.XtraEditors.TextEdit bekoFaturaKesimLimit;
     }
 }
