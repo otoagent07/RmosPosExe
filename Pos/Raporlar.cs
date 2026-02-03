@@ -1161,7 +1161,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Rec_Ad + " Miktar : " + miktar + " Silindi", Convert.ToString(fisno), Rsat_Id.ToString(), Rec_Ad, miktar, neden, Rsat_Tutar);
 
-                Fis_Islem.Satir_Sil(Rsat_Id, miktar);
+                //Fis_Islem.Satir_Sil(Rsat_Id, miktar);
 
 
                 

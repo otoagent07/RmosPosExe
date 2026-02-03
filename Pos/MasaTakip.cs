@@ -65,7 +65,12 @@ namespace Pos
         string satisFontTipi = "Tahoma; 8,25pt";//"Courier New; 8,25pt; style=Bold";
         private void MasaTakip_Load(object sender, EventArgs e)
         {
-
+            foreach (Control ctrl in tablePanel1.Controls)
+            {
+                ctrl.Margin = Padding.Empty;
+            }
+            tablePanel1.AutoSize = false;
+            tablePanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             satisFontTipi = dbtools.DegerGetir("select top 1 Pkod_Font from Pos_Kodlar where  Pkod_Sinif = '17' and Pkod_Kod = 'MARS'");
 
             // gridView2 için font ayarlama
