@@ -422,6 +422,11 @@ namespace Pos
 
                 if (System.Windows.Forms.Screen.AllScreens.Length > 1 && Param.ikinciEkranAktif == false)
                 {
+                    if (Main.satislistesi_ikinci_ekran==null)
+                    {
+                        Main.satislistesi_ikinci_ekran = new SatisListesi();
+                    }
+
                     Main.satislistesi_ikinci_ekran.Location = Screen.AllScreens[1].Bounds.Location; // 1 di orjinali
                     Main.satislistesi_ikinci_ekran.Show();
                 }
@@ -1539,10 +1544,13 @@ YS_Panel a = new YS_Panel();
             try
             {
 
-                if (Param.ikinciEkranAktif)
-                {
-                    satislistesi_ikinci_ekran = new SatisListesi();
-                }
+                satislistesi_ikinci_ekran = new SatisListesi();
+
+
+                //if (Param.ikinciEkranAktif)
+                //{
+                //    satislistesi_ikinci_ekran = new SatisListesi();
+                //}
                 dbtools.execcmdR("exec defaultParametre");
 
                 StatikModel.wait_loadingKapat();
