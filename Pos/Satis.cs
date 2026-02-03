@@ -3370,6 +3370,16 @@ namespace Pos
                 return;
             }
 
+            DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'IN%' -- indirim");
+
+            string neden = "";
+            if (Departman.Kodlar_YazSipNedSor)
+            {
+                Klavye2 klv = new Klavye2(data: dataTable);
+                klv.ShowDialog();
+                neden = klv.yazi == null ? "" : klv.yazi;
+            }
+
             decimal tutar = 0, doviztutar = 0, oran = 0;
             if (ind.indTipi == "T")
             {
@@ -3404,6 +3414,9 @@ namespace Pos
                 Fis_Islem.ServisPayi(Convert.ToInt32(bartxt_FisNo.EditValue));
                 gridyenile();
             }
+
+         
+
         }
 
 

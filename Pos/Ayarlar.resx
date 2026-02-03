@@ -32256,7 +32256,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>1, 3, 1, 3</value>
   </data>
   <data name="labelControl16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 104</value>
+    <value>202, 117</value>
   </data>
   <data name="labelControl16.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
@@ -32270,6 +32270,7 @@ AC -&gt; AÇIKLAMA
 ZZ -&gt; ZAYİ
 P &gt; PAKET AÇIKLAMA
 SP -&gt; SERVİS PAYI SİL AÇIKLAMA
+FP -&gt; FİŞ İPTAL AÇIKLAMA
 </value>
   </data>
   <data name="&gt;&gt;labelControl16.Name" xml:space="preserve">

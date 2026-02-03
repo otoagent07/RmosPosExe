@@ -1084,7 +1084,9 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                         return;
                     }
                 }
-                Klavye2 klavye = new Klavye2();
+                DataTable dataTable = dbtools.SelectTableR("select Pkod_Ad from Pos_Kodlar where Pkod_Sinif='23' and Pkod_Kod like 'FP%' -- ürün iptal");
+
+                Klavye2 klavye = new Klavye2(data: dataTable);
                 klavye.Tag = "FISIPTAL";
                 klavye.ShowDialog();
                 iptalSebep = klavye.yazi;
