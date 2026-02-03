@@ -312,7 +312,7 @@ FROM
     Pos_Carihrk AS hrk 
 LEFT JOIN 
     Pos_Cari AS cari 
-    ON CONVERT(VARCHAR(500), cari.Cari_Id) = hrk.Chrk_Cari 
+    ON CONVERT(VARCHAR(500), cari.Cari_Kod) = hrk.Chrk_Cari 
 WHERE 
     Chrk_Tarih BETWEEN '{basTar}' AND '{bitTar}' 
 GROUP BY 

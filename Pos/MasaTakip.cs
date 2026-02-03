@@ -218,7 +218,12 @@ namespace Pos
 
         public void textDegis()
         {
-            this.Text = $"Masa Takip   {Main.versiyonno}   - [{dbtools.database}] -    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}" + "   " + "Kullanici :" + $"{User.P_Ad} {User.P_Soyad}";
+            string bekoAktifText = "";
+            if (Departman.Kodlar_Beko == true)
+            {
+                bekoAktifText = "Beko Yazarkasa Aktif";
+            }
+            this.Text = $"Masa Takip   {Main.versiyonno}   - [{dbtools.database}] -    Çalışma Tarihi : {Param.Tarih.ToShortDateString()}" + "   " + "Kullanici :" + $"{User.P_Ad} {User.P_Soyad} " + $"  - {bekoAktifText}";
         }
 
 
