@@ -102,7 +102,7 @@ namespace Pos
                 if (indSayi > User.P_Indirim_Yuzde)
                 {
                     MessageBox.Show("Max Indirim Yuzdesini Aştınız...");
-                   // MessageBox.Show(res_man.GetString("Max Indirim Yuzdesini Aştınız..."));
+                    // MessageBox.Show(res_man.GetString("Max Indirim Yuzdesini Aştınız..."));
                     return;
                 }
             }
@@ -167,7 +167,7 @@ namespace Pos
 
             }
 
-            if (xtraTabControl1.SelectedTabPage.Name== "tab_Tutar")
+            if (xtraTabControl1.SelectedTabPage.Name == "tab_Tutar")
             {
                 indSayi = Convert.ToDecimal(txt_Sayi.Text);
                 degergirildi = true;
@@ -176,7 +176,7 @@ namespace Pos
             }
 
             decimal oran = (Convert.ToDecimal(txt_Sayi.Text) / tutar) * 100;
-         
+
             if (oran > User.P_Indirim_Yuzde)
             {
                 MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran.ToString());
@@ -197,7 +197,7 @@ namespace Pos
             {
                 if (Convert.ToDecimal(txt_ManuelYuzde.Text) > User.P_Indirim_Yuzde)
                 {
-                    MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" +"Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() );
+                    MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString());
                     return;
                 }
             }
@@ -231,6 +231,16 @@ namespace Pos
             indTipi = String.Empty;
             indSayi = 0;
             this.Close();
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txt_Sayi.Text = "";
+        }
+
+        private void btnTemizleManuelYuzde_Click(object sender, EventArgs e)
+        {
+            txt_ManuelYuzde.Text = "";
         }
     }
 }

@@ -84,6 +84,8 @@
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
             this.chk_MY = new DevExpress.XtraEditors.CheckButton();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
+            this.btnTemizleManuelYuzde = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tab_Yuzde.SuspendLayout();
@@ -289,6 +291,7 @@
             // 
             // tab_Tutar
             // 
+            this.tab_Tutar.Controls.Add(this.btnTemizle);
             this.tab_Tutar.Controls.Add(this.btn_Cikis);
             this.tab_Tutar.Controls.Add(this.txt_Sayi);
             this.tab_Tutar.Controls.Add(this.btn_V);
@@ -448,6 +451,7 @@
             // 
             // tab_MY
             // 
+            this.tab_MY.Controls.Add(this.btnTemizleManuelYuzde);
             this.tab_MY.Controls.Add(this.simpleButton1);
             this.tab_MY.Controls.Add(this.txt_ManuelYuzde);
             this.tab_MY.Controls.Add(this.simpleButton2);
@@ -615,6 +619,28 @@
             this.chk_MY.Name = "chk_MY";
             this.chk_MY.CheckedChanged += new System.EventHandler(this.chk_Secim_CheckedChanged);
             // 
+            // btnTemizle
+            // 
+            this.btnTemizle.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnTemizle.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton17.Appearance.Font")));
+            this.btnTemizle.Appearance.Options.UseBackColor = true;
+            this.btnTemizle.Appearance.Options.UseFont = true;
+            this.btnTemizle.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            resources.ApplyResources(this.btnTemizle, "btnTemizle");
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
+            // btnTemizleManuelYuzde
+            // 
+            this.btnTemizleManuelYuzde.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnTemizleManuelYuzde.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton17.Appearance.Font")));
+            this.btnTemizleManuelYuzde.Appearance.Options.UseBackColor = true;
+            this.btnTemizleManuelYuzde.Appearance.Options.UseFont = true;
+            this.btnTemizleManuelYuzde.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            resources.ApplyResources(this.btnTemizleManuelYuzde, "btnTemizleManuelYuzde");
+            this.btnTemizleManuelYuzde.Name = "btnTemizleManuelYuzde";
+            this.btnTemizleManuelYuzde.Click += new System.EventHandler(this.btnTemizleManuelYuzde_Click);
+            // 
             // Indirim
             // 
             resources.ApplyResources(this, "$this");
@@ -698,5 +724,7 @@
         private DevExpress.XtraEditors.CheckButton chk_MY;
         private DevExpress.XtraEditors.SimpleButton simpleButton16;
         private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.SimpleButton btnTemizle;
+        private DevExpress.XtraEditors.SimpleButton btnTemizleManuelYuzde;
     }
 }

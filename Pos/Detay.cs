@@ -118,6 +118,11 @@ where Rsat_Fisno='{spn_Fisno.EditValue.ToString()}'";
             {
                 pr.HesapDokum(true, Convert.ToInt32(spn_Fisno.Text), 0);
             }
+
+            string aciklama = "Fisno : " + spn_Fisno.Text + " . HESAP DÖKÜM FİŞİ ALINDI. ";
+
+            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(spn_Fisno.Text), "");
+
         }
 
         private void btnAdisyonR_Click(object sender, EventArgs e)

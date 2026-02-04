@@ -1129,6 +1129,10 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
                 FisPr pr = new FisPr();
                 string cevap = pr.newHesapDokum(true, fisno, Split, "* * * HESAP KAPATMA FİŞİ * * *", parcalimi: true, parcamasano: altmasano);
 
+                string aciklama = "Fisno : " + fisno + " . HESAP DÖKÜM FİŞİ ALINDI. ";
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(fisno), "");
+
                 dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Ingenico_Status=1 where Rsat_Fisno={fisno}");
 
 

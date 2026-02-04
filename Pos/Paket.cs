@@ -375,6 +375,11 @@ namespace Pos
 
                 //dbtools.execcmd("update Cst_Recete_Satis set Rsat_Ingenico_Status='1' where Rsat_Fisno='" + Fisno + "'");
 
+                string aciklama = "Fisno : " + Fisno + " . PAKET FİŞİ ALINDI. ";
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(Fisno), "");
+
+
                 dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Ingenico_Status=1 where Rsat_Fisno={Fisno}");
 
 
@@ -1125,6 +1130,9 @@ order by Caller_Id desc";
                 pr.HesapDokum(true, fisno, 0);
             }
 
+            string aciklama = "Fisno : " + fisno + " . HESAP DÖKÜM FİŞİ ALINDI. ";
+
+            Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(fisno), "");
 
             dbtools.execcmdR($"update Cst_Recete_Satis set Rsat_Ingenico_Status=1 where Rsat_Fisno={fisno}");
 
@@ -1148,6 +1156,9 @@ order by Caller_Id desc";
 
                 FisPr pr = new FisPr();
                 string sonuc = pr.PaketPr(Fisno, " * * * PAKET FİSİ * * * ");
+                string aciklama = "Fisno : " + Fisno + " . PAKET FİŞİ ALINDI. ";
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(Fisno), "");
                 if (sonuc != "OK")
                 {
                     MessageBox.Show(sonuc);

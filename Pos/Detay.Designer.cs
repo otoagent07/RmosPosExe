@@ -83,7 +83,9 @@
             // 
             // btn_Fispr
             // 
+            this.btn_Fispr.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
             this.btn_Fispr.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Fispr.Appearance.Font")));
+            this.btn_Fispr.Appearance.Options.UseBackColor = true;
             this.btn_Fispr.Appearance.Options.UseFont = true;
             this.btn_Fispr.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Fispr.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Fispr, "btn_Fispr");
@@ -92,7 +94,9 @@
             // 
             // btn_Adisyonpr
             // 
+            this.btn_Adisyonpr.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
             this.btn_Adisyonpr.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Adisyonpr.Appearance.Font")));
+            this.btn_Adisyonpr.Appearance.Options.UseBackColor = true;
             this.btn_Adisyonpr.Appearance.Options.UseFont = true;
             this.btn_Adisyonpr.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Adisyonpr.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Adisyonpr, "btn_Adisyonpr");
@@ -193,7 +197,9 @@
             // 
             // btn_Cikis
             // 
+            this.btn_Cikis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
+            this.btn_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cikis.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
@@ -213,7 +219,9 @@
             // 
             // btnHesapDokum
             // 
+            this.btnHesapDokum.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
             this.btnHesapDokum.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnHesapDokum.Appearance.Font")));
+            this.btnHesapDokum.Appearance.Options.UseBackColor = true;
             this.btnHesapDokum.Appearance.Options.UseFont = true;
             this.btnHesapDokum.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapDokum.ImageOptions.Image")));
             resources.ApplyResources(this.btnHesapDokum, "btnHesapDokum");
@@ -222,6 +230,8 @@
             // 
             // btnAdisyonR
             // 
+            this.btnAdisyonR.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnAdisyonR.Appearance.Options.UseBackColor = true;
             this.btnAdisyonR.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdisyonR.ImageOptions.Image")));
             resources.ApplyResources(this.btnAdisyonR, "btnAdisyonR");
             this.btnAdisyonR.Name = "btnAdisyonR";
@@ -229,6 +239,8 @@
             // 
             // btnAdisyonG
             // 
+            this.btnAdisyonG.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
+            this.btnAdisyonG.Appearance.Options.UseBackColor = true;
             this.btnAdisyonG.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdisyonG.ImageOptions.Image")));
             resources.ApplyResources(this.btnAdisyonG, "btnAdisyonG");
             this.btnAdisyonG.Name = "btnAdisyonG";

@@ -2884,6 +2884,10 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                     pr.HesapDokum(true, fisno, Split);
                 }
 
+                string aciklama = "Fisno : " + fisno + " . HESAP DÖKÜM FİŞİ ALINDI. " ;
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(fisno), "");
+
                 dbtools.execcmd("update Pos_Masa set Masa_Durum = '2' where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "'");
 
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Ingenico_Status='1' where Rsat_Fisno='" + fisno + "'");
@@ -2914,6 +2918,8 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                     RHMesaj.alertMesaj($"Fişno: {fisno} Beko yazar kasaya gönderildi.");
                 }
 
+
+               
 
             }
             catch (Exception ex)

@@ -5441,6 +5441,10 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Ingenico_Status='1' where Rsat_Fisno='" + fisno + "'");
 
+                string aciklama = "Fisno : " + fisno + " . HESAP DÖKÜM FİŞİ ALINDI. ";
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(fisno), "");
+
                 if (Param.Param_Hesap_Kilit)
                 {
                     dbtools.execcmd("update Cst_Recete_Satis set Rsat_Hesap_Kilit = 1 where Rsat_Fisno = '" + fisno + "'");
