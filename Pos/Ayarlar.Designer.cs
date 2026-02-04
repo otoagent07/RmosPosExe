@@ -1326,6 +1326,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.Pkod_OnburoLimitKontrolYapma = new DevExpress.XtraEditors.CheckEdit();
+            this.gridColumn181 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2226,6 +2228,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pkod_OnburoLimitKontrolYapma.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -7916,6 +7919,7 @@
             // 
             this.tab_OdemeKodlari.Controls.Add(this.textEdit207);
             this.tab_OdemeKodlari.Controls.Add(this.lookUpEditBekoOdeme);
+            this.tab_OdemeKodlari.Controls.Add(this.Pkod_OnburoLimitKontrolYapma);
             this.tab_OdemeKodlari.Controls.Add(this.checkEditOdemeTipAktif);
             this.tab_OdemeKodlari.Controls.Add(this.textEdit196);
             this.tab_OdemeKodlari.Controls.Add(this.lookUpEditPavoOdeme);
@@ -8362,7 +8366,8 @@
             this.gridColumn175,
             this.gridColumn177,
             this.gridColumn179,
-            this.gridColumn180});
+            this.gridColumn180,
+            this.gridColumn181});
             this.gridView2.GridControl = this.grd_Odeme;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ColumnAutoWidth = false;
@@ -13212,6 +13217,18 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // Pkod_OnburoLimitKontrolYapma
+            // 
+            resources.ApplyResources(this.Pkod_OnburoLimitKontrolYapma, "Pkod_OnburoLimitKontrolYapma");
+            this.Pkod_OnburoLimitKontrolYapma.Name = "Pkod_OnburoLimitKontrolYapma";
+            this.Pkod_OnburoLimitKontrolYapma.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
+            // gridColumn181
+            // 
+            resources.ApplyResources(this.gridColumn181, "gridColumn181");
+            this.gridColumn181.FieldName = "Pkod_OnburoLimitKontrolYapma";
+            this.gridColumn181.Name = "gridColumn181";
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -14153,6 +14170,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pkod_OnburoLimitKontrolYapma.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15455,5 +15473,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn180;
         private DevExpress.XtraEditors.TextEdit textEdit208;
         private DevExpress.XtraEditors.TextEdit bekoFaturaKesimLimit;
+        private DevExpress.XtraEditors.CheckEdit Pkod_OnburoLimitKontrolYapma;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn181;
     }
 }

@@ -146,6 +146,7 @@ IF COL_LENGTH('Pos_Kodlar', 'tumPrinter') IS NULL BEGIN ALTER TABLE Pos_Kodlar A
 
 
 IF COL_LENGTH('Pos_Kodlar', 'Pkod_OdemeAktif') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD Pkod_OdemeAktif bit END;
+IF COL_LENGTH('Pos_Kodlar', 'Pkod_OnburoLimitKontrolYapma') IS NULL BEGIN ALTER TABLE Pos_Kodlar ADD Pkod_OnburoLimitKontrolYapma bit END;
 
 
 IF COL_LENGTH('Pos_CallerId', 'Caller_Durum') IS NULL BEGIN ALTER TABLE Pos_CallerId ADD Caller_Durum int END;
