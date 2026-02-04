@@ -213,7 +213,7 @@ namespace Pos
                 btn_Yazdirkapat.Enabled = User.G_Yazdirkapat;
                 btn_Yazdirmadankapat.Enabled = User.G_Yazdirmadankapat;
                 btn_Bindirim.Enabled = User.G_Bindirim;
-                btnTipBox.Enabled = User.G_Bindirim;
+                btnTipBox.Enabled = User.M_HesapTr;
                 btnIngenicoKapat.Visible = Departman.Kodlar_Ingenico;
                 // simpleButton2.Visible = Departman.Kodlar_Ingenico;
                 chk_AdisyonGR.Visible = true;// User.Pos_AdisyonPr;
@@ -1536,7 +1536,7 @@ namespace Pos
 
 
 
-            Indirim ind = new Indirim();
+            Indirim ind = new Indirim(txt_Odemetutari.Text);
             ind.Tag = "I";
             ind.tutar = Convert.ToDecimal(gridColumn4.SummaryText);
             ind.ShowDialog();

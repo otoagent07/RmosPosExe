@@ -3360,7 +3360,7 @@ namespace Pos
 
 
 
-            Indirim ind = new Indirim();
+            Indirim ind = new Indirim(deger.ToString());
             ind.Tag = "I";
             ind.tutar = Convert.ToDecimal(gridColumn4.SummaryItem.SummaryValue);
             ind.ShowDialog();

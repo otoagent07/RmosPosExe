@@ -23,16 +23,22 @@ namespace Pos
         public decimal tutar = 0;
 
         public decimal toplamTutar = 0;
-
-        public Indirim()
+        string hesapTutar = "";
+        public Indirim(string hesapTutar = "")
         {
             InitializeComponent();
+            this.hesapTutar = hesapTutar;
         }
 
         private void Indirim_Load(object sender, EventArgs e)
         {
             this.BringToFront();
             xtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
+
+            if (hesapTutar!="")
+            {
+                this.Text = "Hesap Toplam Tutar : " + hesapTutar;
+            }
         }
 
         private void chk_Secim_CheckedChanged(object sender, EventArgs e)

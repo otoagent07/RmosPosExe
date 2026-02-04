@@ -1228,7 +1228,7 @@ where Rsat_Durum='A' and Rsat_Masa='" + altmasano + "' order by Rsat_Id";
         {
             try
             {
-                Indirim ind = new Indirim();
+                Indirim ind = new Indirim(txtOdemeTutar.Text);
                 ind.Tag = "I";
                 ind.tutar = Convert.ToDecimal(txtOdemeTutar.Text);
                 ind.ShowDialog();
