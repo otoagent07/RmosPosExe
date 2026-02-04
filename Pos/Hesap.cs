@@ -86,18 +86,18 @@ namespace Pos
 
         public bool otoYazdirmadanKapat = false;
 
-
+        DataTable dtKapatma = null;
         public void lookKapatmaYukle()
         {
-            DataTable dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43, @Dep_Kodu = '" + Departman.Dep_Kodu + "'");
+            dtKapatma = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43, @Dep_Kodu = '" + Departman.Dep_Kodu + "'");
 
-            if (dt == null || dt.Rows.Count < 1)
+            if (dtKapatma == null || dtKapatma.Rows.Count < 1)
             {
-                dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43");
+                dtKapatma = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43");
             }
 
-            dt = Sabitler.getOdemeKodlari(dt);
-            look_Kapatma.Properties.DataSource = dt;
+            dtKapatma = Sabitler.getOdemeKodlari(dtKapatma);
+            look_Kapatma.Properties.DataSource = dtKapatma;
 
             look_Kapatma.Properties.DisplayMember = "Pkod_Ad";
             look_Kapatma.Properties.ValueMember = "Pkod_Kod";
@@ -842,6 +842,20 @@ namespace Pos
                 return true;
             }
 
+
+            var kolonDegeri = look_Kapatma.GetColumnValue("Pkod_OnburoLimitKontrolYapma");
+            if (kolonDegeri != null)
+            {
+                var Pkod_OnburoLimitKontrolYapma = Convert.ToBoolean(kolonDegeri.ToString());
+                if (Pkod_OnburoLimitKontrolYapma)
+                {
+                    return true;
+                }
+            }
+
+
+
+
             if (Fronttools.Folio_LimitBakiye_Bul(masterFolio_A))    //Folio içinde Limit Bakiyeden Bulunacak
             {
                 string bilgi = lbl_Bilgi.Text;
@@ -1256,7 +1270,7 @@ namespace Pos
 
                 if (Param.Tesis_Tipi == 0)
                 {
-                    if (!LimitKontrol())
+                    if (LimitKontrol() == false)
                     {
                         return false;
                     }
