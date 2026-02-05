@@ -773,12 +773,15 @@ namespace Pos
                 if (Departman.Kodlar_AndPos_NFC && (Convert.ToString(this.Tag) != "H" || Convert.ToString(this.Tag) == "D"))
                 {
                     //panelControl2.Width = this.Width / 4;
-                    NFCBodrum();
+                    var cikismi = NFCBodrum();
 
                     Kapatma_Yenile();
                     gridyenile();
 
-                    flp_Kapatma.Visible = true;
+
+                    flp_Kapatma.Visible = cikismi;
+
+
                     layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
                     barkodFocuslan();
                     txtAdisyon.EditValue = "";
@@ -931,11 +934,15 @@ namespace Pos
 
             if (ara.Cikis)
             {
-                if (Param.Tesis_Tipi == 0)
-                {
-                    this.Close();
-                }
+                //if (Param.Tesis_Tipi == 0)
+                //{
+                //   this.Close(); // 05.02.2026 yilmaz bey yorum yaptık
+                //}
                 return false;
+
+
+
+
             }
 
 
@@ -3208,7 +3215,7 @@ namespace Pos
             }
             else
             {
-                MessageBox.Show(res_man.GetString("Hesap Bulunamadı..."));
+                RHMesaj.alertMesaj(res_man.GetString("Hesap Bulunamadı..."));
                 return;
             }
 
