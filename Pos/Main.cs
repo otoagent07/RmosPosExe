@@ -464,6 +464,8 @@ namespace Pos
                     timerTrendyol.Enabled = false;
                     barButtonItem6.Enabled = false;
                 }
+
+                ButonYetkiYukle();
             }
             catch (Exception ex)
             {
@@ -563,12 +565,7 @@ namespace Pos
                 pavoController.pavon86KablosuzPairing();
 
 
-                barButtonItem2.Enabled = Param.Param_CallerID;
-                barButtonItem3.Enabled = Param.Param_CallerID;
-                simpleButton4.Enabled = Param.Param_CallerID;
-
-                simpleButton1.Enabled = User.merkezsubeaktif;
-
+                ButonYetkiYukle();
             }
             catch (Exception ex)
             {
@@ -577,6 +574,15 @@ namespace Pos
 
         }
 
+        public void ButonYetkiYukle()
+        {
+
+            barButtonItem2.Enabled = Param.Param_CallerID;
+            barButtonItem3.Enabled = Param.Param_CallerID;
+            simpleButton4.Enabled = Param.Param_CallerID;
+
+            simpleButton1.Enabled = User.merkezsubeaktif;
+        }
 
         public void entegreAyarlarYenile()
         {
