@@ -329,6 +329,12 @@ namespace Pos
             dt.Rows.Add(18, "Para Transferi");
             dt.Rows.Add(19, "Ulaşım Kartı");
             dt.Rows.Add(20, "Hediye Kartı");
+            dt.Rows.Add(1001, "EDENRED");
+            dt.Rows.Add(1002, "MULTINET");
+            dt.Rows.Add(1003, "SETCARD");
+            dt.Rows.Add(1004, "SODEXO");
+            dt.Rows.Add(1005, "TOKENFLEX");
+         
 
             // LookUpEdit'e bağla
             lookUpEditBekoOdeme.Properties.DataSource = dt;
@@ -584,6 +590,13 @@ namespace Pos
             dts.Rows.Add("4", "Banka_Kartı");
             dts.Rows.Add("8", "YemekÇeki");
             dts.Rows.Add("0", "Indirim");
+            dts.Rows.Add("52634", "Metropol");
+            dts.Rows.Add("52619", "Global y.ç.");
+            dts.Rows.Add("52613", "Multinet ");
+            dts.Rows.Add("22973", "Sodexo ");
+            dts.Rows.Add("52654", "Paye  ");
+            dts.Rows.Add("52649", "SetCard ");
+            dts.Rows.Add("52661", "Paycel QR");
 
             Pkod_IWEPayment.Properties.DataSource = dts;
             Pkod_IWEPayment.Properties.DisplayMember = "Ad";

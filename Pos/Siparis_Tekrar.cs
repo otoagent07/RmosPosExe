@@ -75,6 +75,9 @@ where Rsat_Fisno = '" + Convert.ToInt32(this.Tag) + "' and CONVERT(varchar(5),Rs
                 {
                     MessageBox.Show(sonuc);
                 }
+
+                dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Id in (" + ids.Substring(0, ids.Length - 1) + ")");
+
             }
         }
 

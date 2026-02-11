@@ -65,7 +65,9 @@
             // btn_Cikis
             // 
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
+            this.btn_Cikis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
+            this.btn_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cikis.ImageOptions.SvgImage")));
             this.btn_Cikis.Name = "btn_Cikis";
@@ -84,7 +86,9 @@
             // 
             // btn_SiparisTekrar
             // 
+            this.btn_SiparisTekrar.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
             this.btn_SiparisTekrar.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_SiparisTekrar.Appearance.Font")));
+            this.btn_SiparisTekrar.Appearance.Options.UseBackColor = true;
             this.btn_SiparisTekrar.Appearance.Options.UseFont = true;
             this.btn_SiparisTekrar.Appearance.Options.UseTextOptions = true;
             this.btn_SiparisTekrar.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -152,7 +156,9 @@
             // 
             // btn_Tekrargonder
             // 
+            this.btn_Tekrargonder.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
             this.btn_Tekrargonder.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Tekrargonder.Appearance.Font")));
+            this.btn_Tekrargonder.Appearance.Options.UseBackColor = true;
             this.btn_Tekrargonder.Appearance.Options.UseFont = true;
             this.btn_Tekrargonder.Appearance.Options.UseTextOptions = true;
             this.btn_Tekrargonder.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -163,7 +169,9 @@
             // 
             // btn_GarsonDegistir
             // 
+            this.btn_GarsonDegistir.Appearance.BackColor = System.Drawing.Color.Gray;
             this.btn_GarsonDegistir.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_GarsonDegistir.Appearance.Font")));
+            this.btn_GarsonDegistir.Appearance.Options.UseBackColor = true;
             this.btn_GarsonDegistir.Appearance.Options.UseFont = true;
             this.btn_GarsonDegistir.Appearance.Options.UseTextOptions = true;
             this.btn_GarsonDegistir.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -174,7 +182,9 @@
             // 
             // btn_Not_Gonder
             // 
+            this.btn_Not_Gonder.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
             this.btn_Not_Gonder.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Not_Gonder.Appearance.Font")));
+            this.btn_Not_Gonder.Appearance.Options.UseBackColor = true;
             this.btn_Not_Gonder.Appearance.Options.UseFont = true;
             this.btn_Not_Gonder.Appearance.Options.UseTextOptions = true;
             this.btn_Not_Gonder.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -284,7 +294,9 @@
             // 
             // btnParcaliMasa
             // 
+            this.btnParcaliMasa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnParcaliMasa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnParcaliMasa.Appearance.Font")));
+            this.btnParcaliMasa.Appearance.Options.UseBackColor = true;
             this.btnParcaliMasa.Appearance.Options.UseFont = true;
             this.btnParcaliMasa.Appearance.Options.UseTextOptions = true;
             this.btnParcaliMasa.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;

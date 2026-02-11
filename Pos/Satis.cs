@@ -3585,7 +3585,7 @@ namespace Pos
 
                 decimal tutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar"))/ bolMiktar;
 
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, tutar); ;
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, tutar,urunad: Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad"))); 
 
 
 

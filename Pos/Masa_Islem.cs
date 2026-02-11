@@ -84,6 +84,7 @@ namespace Pos
                 {
                     MessageBox.Show(sonuc);
                 }
+                dbtools.execcmd($"update Cst_Recete_Satis set Rsat_SiparisPr = 1 where Rsat_Fisno={Fisno}");
             }
         }
 
