@@ -51,7 +51,7 @@ namespace Pos
 
         public Main()
         {
-          
+
             InitializeComponent();
         }
 
@@ -422,7 +422,7 @@ namespace Pos
 
                 if (System.Windows.Forms.Screen.AllScreens.Length > 1 && Param.ikinciEkranAktif == false)
                 {
-                    if (Main.satislistesi_ikinci_ekran==null)
+                    if (Main.satislistesi_ikinci_ekran == null)
                     {
                         Main.satislistesi_ikinci_ekran = new SatisListesi();
                     }
@@ -432,7 +432,7 @@ namespace Pos
                 }
 
 
-                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] "+versiyonno; // aaaa ss
+                this.Text = "RMOS Ultimate POS [" + dbtools.database + "] " + versiyonno; // aaaa ss
 
 
 
@@ -503,7 +503,7 @@ namespace Pos
                 //    this.Close();
                 //}
 
-         
+
                 macadresim = dbtools.MacAdresi();
                 this.BringToFront();
                 isLogin = false;
@@ -567,7 +567,7 @@ namespace Pos
                 barButtonItem3.Enabled = Param.Param_CallerID;
                 simpleButton4.Enabled = Param.Param_CallerID;
 
-
+                simpleButton1.Enabled = User.merkezsubeaktif;
 
             }
             catch (Exception ex)
