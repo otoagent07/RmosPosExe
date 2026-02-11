@@ -242,6 +242,7 @@ namespace Pos
                 uyariForm.TopMost = true;
                 uyariForm.ShowDialog();
 
+                //RHMesaj.alertMesaj("Günsonu Işlemi Tamamlandı...");
 
                 if (Param.Param_GetirOtomatikOnay)
                 {
@@ -251,7 +252,9 @@ namespace Pos
                 }
 
                 tumverileriSil();
+
                 Application.Exit();
+                //Program.main.Close();
 
             }
             catch (Exception ex)
@@ -794,7 +797,7 @@ GROUP BY s.Kodlar_Ad,s.Kodlar_Kod,ss.Kodlar_Ad,Rsat_Departman  ORDER BY s.Kodlar
                             ss.Credentials = new NetworkCredential(Mail_Adres, Mail_Parola);
                             ss.Send(ePosta);
 
-                            RHMesaj.MyMessageInformation("Mail gönderme başarılı...");
+                            RHMesaj.alertMesaj("Mail gönderme başarılı...");
                         }
                         catch (Exception err)
                         {
