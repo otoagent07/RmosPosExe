@@ -119,14 +119,15 @@ namespace Pos
             string kasaRapor = pr.KasaGunlukOzetString(r.date_Tarih1.DateTime, r.date_Tarih1.DateTime);
             Rapor_Kasa raporKasa = new Rapor_Kasa();
             raporKasa.xrLabel1.Text = kasaRapor;
-            raporKasa.txtTarih.Text = "Tarih :" + Param.Tarih.ToString("dd.MM.yyyy");
+            //raporKasa.txtTarih.Text = "Tarih :" + Param.Tarih.ToString("dd.MM.yyyy");
+            raporKasa.txtTarih.Text = "Tarih :" + r.date_Tarih1.DateTime.ToString("dd.MM.yyyy");
             raporKasa.ShowPreview();
 
             cariRapGoster(false);
 
 
 
-            g.muhasebeRapor(false);
+            g.muhasebeRapor(false, r.date_Tarih1.DateTime.ToString("yyyy-MM-dd"));
             this.Close();
         }
 
@@ -159,7 +160,7 @@ FROM
     Pos_Carihrk AS hrk 
 LEFT JOIN 
     Pos_Cari AS cari 
-    ON CONVERT(VARCHAR(500), cari.Cari_Id) = hrk.Chrk_Cari 
+    ON CONVERT(VARCHAR(500), cari.Cari_Kod) = hrk.Chrk_Cari 
 WHERE 
     Chrk_Tarih BETWEEN '{basTar}' AND '{bitTar}' 
 GROUP BY 

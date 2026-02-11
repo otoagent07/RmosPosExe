@@ -222,7 +222,7 @@ namespace Pos
 
 
                 string cariBakiyeKontrolPath = cariRapGoster(true);
-                var muhrapor1 = muhasebeRapor(true);
+                var muhrapor1 = muhasebeRapor(true, dateTarih.DateTime.ToString("yyyy-MM-dd"));
                 //Mail Gönder
 
                 loadingKapat();
@@ -379,13 +379,18 @@ GROUP BY
         }
 
 
-        public MuhasebeRapor muhasebeRapor(bool mailGitsin = true)
+        public MuhasebeRapor muhasebeRapor(bool mailGitsin = true ,string tarih=null)
         {
             MuhasebeRapor rapor = new MuhasebeRapor();
 
             try
             {
-                string tarih = Param.Tarih.ToString("yyyy-MM-dd");
+                if (tarih==null)
+                {
+                    tarih = Param.Tarih.ToString("yyyy-MM-dd");
+                }
+
+               // string tarih = Param.Tarih.ToString("yyyy-MM-dd");
                 string query = @"declare @Fis_Tutar decimal(18,2) = (select SUM(Satis.Rsat_Tutar)   
 FROM Cst_Recete_Satis as satis WITH(NOLOCK) 
 LEFT JOIN Pos_Kodlar as  kodlar WITH(NOLOCK) ON Rsat_Kapatma = kodlar.Pkod_Kod and kodlar.Pkod_Sinif = '11' and Pkod_Ozelkod <> '4'
@@ -660,7 +665,8 @@ GROUP BY s.Kodlar_Ad,s.Kodlar_Kod,ss.Kodlar_Ad,Rsat_Departman  ORDER BY s.Kodlar
                             string kasaRapor = pr.KasaGunlukOzetString(tarih, tarih);
                             Rapor_Kasa raporKasa = new Rapor_Kasa();
                             raporKasa.xrLabel1.Text = kasaRapor;
-                            raporKasa.txtTarih.Text = "Tarih :" + Param.Tarih.ToString("dd.MM.yyyy");
+                            //raporKasa.txtTarih.Text = "Tarih :" + Param.Tarih.ToString("dd.MM.yyyy");
+                            raporKasa.txtTarih.Text = "Tarih :" + tarih.ToString("dd.MM.yyyy");
                             MemoryStream memKasa = new MemoryStream();
                             raporKasa.ExportToPdf(memKasa);
                             memKasa.Seek(0, System.IO.SeekOrigin.Begin);

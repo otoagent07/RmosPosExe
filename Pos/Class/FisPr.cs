@@ -7158,8 +7158,14 @@ order by Pkod_Kod";
             string sql2 = "select Pkasa_Kod,Pkod_Ad,SUM(Pkasa_Tutar) as Pkasa_Tutar "
                 + " from Pos_Kasahrk WITH(NOLOCK) "
                 + " LEFT JOIN Pos_Kodlar ON Pkasa_Kod = Pkod_Kod and Pkod_Sinif = '22' "
-                + " where convert(date,Pkasa_Tarih) = '" + Param.Tarih + "'  and #AAA "
+                + " where convert(date,Pkasa_Tarih) = '" + basTar + "'  and #AAA "
                 + " group by Pkasa_Kod,Pkod_Ad";
+
+            //string sql2 = "select Pkasa_Kod,Pkod_Ad,SUM(Pkasa_Tutar) as Pkasa_Tutar "
+            //  + " from Pos_Kasahrk WITH(NOLOCK) "
+            //  + " LEFT JOIN Pos_Kodlar ON Pkasa_Kod = Pkod_Kod and Pkod_Sinif = '22' "
+            //  + " where convert(date,Pkasa_Tarih) = '" + Param.Tarih + "'  and #AAA "
+            //  + " group by Pkasa_Kod,Pkod_Ad";
 
             DataTable dt4 = dbtools.SelectTable(sql2.Replace("#AAA", " Pkasa_GC = 'G' and Pkod_Kasagiris = 1 "));
             DataTable dt3 = dbtools.SelectTable(sql2.Replace("#AAA", " Pkasa_GC = 'C' and Pkod_Kasacikis = 1 "));
