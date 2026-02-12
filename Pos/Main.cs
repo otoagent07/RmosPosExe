@@ -1,4 +1,4 @@
-﻿using DevExpress.LookAndFeel;
+using DevExpress.LookAndFeel;
 using DevExpress.XtraBars.Alerter;
 using DevExpress.XtraReports.UI;
 using Newtonsoft.Json;
@@ -1149,7 +1149,7 @@ namespace Pos
                     MessageBox.Show(err.Message);
                 }
             }
-            if (e.KeyCode == Keys.F4)
+            if (e.KeyCode == Keys.F4 && !e.Alt)
             {
                 try
                 {
