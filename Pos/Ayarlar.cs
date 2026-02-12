@@ -334,7 +334,7 @@ namespace Pos
             dt.Rows.Add(1003, "SETCARD");
             dt.Rows.Add(1004, "SODEXO");
             dt.Rows.Add(1005, "TOKENFLEX");
-         
+
 
             // LookUpEdit'e bağla
             lookUpEditBekoOdeme.Properties.DataSource = dt;
@@ -1977,8 +1977,8 @@ namespace Pos
                     + " '" + look_Ykkodu.EditValue + "','" + look_Bankakodu.EditValue + "', '" + Pkod_YS_OdemeID.EditValue + "','" + System.Drawing.ColorTranslator.ToHtml(Pkod_OdemeBtnRenk.Color) + "','" + Pkod_IWEPayment.EditValue + "','" + odeme_Sira.EditValue + "','" + Pkod_Dep.EditValue + "','" + lookUpOtoKurSec.EditValue + "','" + hesapDokTutarSifir.Checked + "','" + txtsaatAralikDurdur.Text + "','"
                     + Pkod_E_Adisyon.Checked + "','"
                     + lookUpEditPavoOdeme.EditValue + "','"
-                    + Convert.ToBoolean(checkEditOdemeTipAktif.Checked) + "','" 
-                    + Convert.ToBoolean(Pkod_OnburoLimitKontrolYapma.Checked) + "','" 
+                    + Convert.ToBoolean(checkEditOdemeTipAktif.Checked) + "','"
+                    + Convert.ToBoolean(Pkod_OnburoLimitKontrolYapma.Checked) + "','"
                     + lookUpEditBekoOdeme.EditValue + "' )");
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_OdemeKodu, Log.Log_Islem.Kaydet, txt_Odeme_Kod.EditValue + " Kodlu " + txt_Odeme_Ad.EditValue + " Adlı Odeme Kodu Kaydedildi", String.Empty, String.Empty);
@@ -5891,6 +5891,7 @@ order by mah.Adres_Ad");
                     Param_AcilisCekSil.Visible = true;
                     btnTumunuSilPrint.Visible = true;
                     chk_Kul_SiparisTekrar.Visible = true;
+                    btnPasifleriSil.Visible = true;
                 }
             }
         }
@@ -6547,7 +6548,7 @@ Select InstanceNames from @GetInstances ";
 
             if (result == DialogResult.Yes)
             {
-                dbtools.execcmdR("Update Cst_Recete set Rec_Sira=0");
+                dbtools.execcmdR("Update Cst_Recete set Rec_Sira=1");
                 MessageBox.Show("Başarılı");
             }
             else
@@ -6770,7 +6771,30 @@ Select InstanceNames from @GetInstances ";
             }
         }
 
+        private void btnPasifleriSil_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Tüm Pasif Olan Reçeteler Detaylarıyla Silinicek ?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+
+                dbtools.execcmdR(@"delete Cst_Recete_Detay
+                         from Cst_Recete_Detay
+                         left join Cst_Recete on Rec_Genelkod=Detay_Recete
+                         where rec_pasif=1
+                         ");
+                dbtools.execcmdR(@"delete Cst_Recete from Cst_Recete where rec_pasif=1");
+
+
+                MessageBox.Show("Başarılı");
+            }
+            else
+            {
+                MessageBox.Show("İptal edildi.");
+
+
+            }
+        }
 
         private void gridyenile_SubeAdres()
         {
