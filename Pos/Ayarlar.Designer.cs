@@ -1329,6 +1329,7 @@
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.btnPasifleriSil = new DevExpress.XtraEditors.SimpleButton();
+            this.logRaporGor = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2230,6 +2231,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logRaporGor.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -11965,6 +11967,7 @@
             // 
             // xtraTabPage7
             // 
+            this.xtraTabPage7.Controls.Add(this.logRaporGor);
             this.xtraTabPage7.Controls.Add(this.kapaliMasayaGir);
             this.xtraTabPage7.Controls.Add(this.cariTarihGecmisAktif);
             this.xtraTabPage7.Controls.Add(this.coklugunsonu);
@@ -13240,6 +13243,12 @@
             this.btnPasifleriSil.Name = "btnPasifleriSil";
             this.btnPasifleriSil.Click += new System.EventHandler(this.btnPasifleriSil_Click);
             // 
+            // logRaporGor
+            // 
+            resources.ApplyResources(this.logRaporGor, "logRaporGor");
+            this.logRaporGor.Name = "logRaporGor";
+            this.logRaporGor.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -14182,6 +14191,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logRaporGor.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15487,5 +15497,6 @@
         private DevExpress.XtraEditors.CheckEdit Pkod_OnburoLimitKontrolYapma;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn181;
         private DevExpress.XtraEditors.SimpleButton btnPasifleriSil;
+        private DevExpress.XtraEditors.CheckEdit logRaporGor;
     }
 }

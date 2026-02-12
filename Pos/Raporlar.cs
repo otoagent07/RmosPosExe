@@ -61,13 +61,15 @@ namespace Pos
 
             radioGroupMerkezSube.Visible = User.merkezsubeaktif;
 
+            tab_Log.PageVisible = User.logRaporGor;
             if (User.Pos_AdisyonPr)
             {
                 barSubItem3.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
                 btn_XZ2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                tab_Log.PageVisible = false;
             }
 
-            tab_Log.PageVisible = User.kapaliMasayaGir;
+           
 
 
             //gridyenile();
