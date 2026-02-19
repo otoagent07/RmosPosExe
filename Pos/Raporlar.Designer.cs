@@ -128,6 +128,7 @@
             this.raporDizaynıKaydetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tarihDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kişiSayısıDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnOnburoIadeYap = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView11 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.bandedGridColumn42 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn43 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -435,7 +436,6 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.btnOnburoIadeYap = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -1440,6 +1440,12 @@
             this.kişiSayısıDeğiştirToolStripMenuItem.Name = "kişiSayısıDeğiştirToolStripMenuItem";
             resources.ApplyResources(this.kişiSayısıDeğiştirToolStripMenuItem, "kişiSayısıDeğiştirToolStripMenuItem");
             this.kişiSayısıDeğiştirToolStripMenuItem.Click += new System.EventHandler(this.kişiSayısıDeğiştirToolStripMenuItem_Click);
+            // 
+            // btnOnburoIadeYap
+            // 
+            this.btnOnburoIadeYap.Name = "btnOnburoIadeYap";
+            resources.ApplyResources(this.btnOnburoIadeYap, "btnOnburoIadeYap");
+            this.btnOnburoIadeYap.Click += new System.EventHandler(this.btnOnburoIadeYap_Click);
             // 
             // gridView11
             // 
@@ -4501,12 +4507,6 @@
             // 
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
-            // 
-            // btnOnburoIadeYap
-            // 
-            this.btnOnburoIadeYap.Name = "btnOnburoIadeYap";
-            resources.ApplyResources(this.btnOnburoIadeYap, "btnOnburoIadeYap");
-            this.btnOnburoIadeYap.Click += new System.EventHandler(this.btnOnburoIadeYap_Click);
             // 
             // Raporlar
             // 

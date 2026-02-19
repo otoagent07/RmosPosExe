@@ -2405,8 +2405,14 @@ WHERE
 	AND r.Rez_R_I_H = 'I';";
 
 
-                dbtools.execcmd(query);
+                dbtools.execcmdR(query);
 
+               var tltutar =  Param.Doviz_Kuru * tutarGirForm.tutar;
+                var tltutarstr = tltutar.ToString().Replace(",",".");
+
+                string indirimQuery = $@"exec Pos_Manuel_Indirim @Fisno={fisno},@Ind_Tip=N'T',@Ind_Tutar=N'{tltutarstr}',@Ind_Doviztutar=N'{girilenIadeTutar}',@Ind_Oran=N'0',@Ind_Turu=N'MANUEL',@Split=0,@Ind_User=N'{User.P_Kod}',@aciklama=N''";
+
+                dbtools.execcmdR(indirimQuery);
                 MessageBox.Show("IADE BAŞARILI ÖNBÜRODAN KONTROL EDİNİZ!");
             }
             catch (Exception ex)
