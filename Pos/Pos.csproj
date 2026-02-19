@@ -435,6 +435,12 @@
     <Compile Include="Forms\ConfirmationForm.Designer.cs">
       <DependentUpon>ConfirmationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TutarGirForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TutarGirForm.Designer.cs">
+      <DependentUpon>TutarGirForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UyariForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1479,6 +1485,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConfirmationForm.ru.resx">
       <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TutarGirForm.resx">
+      <DependentUpon>TutarGirForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UyariForm.resx">
       <DependentUpon>UyariForm.cs</DependentUpon>

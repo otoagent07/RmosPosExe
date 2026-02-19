@@ -2250,5 +2250,10 @@ where Log_Islem='Kaydet'
             }
 
         }
+
+        private void btnOnburoIadeYap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
