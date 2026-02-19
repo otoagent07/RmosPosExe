@@ -2276,10 +2276,135 @@ where Log_Islem='Kaydet'
                     return;
                 }
 
+                string frontDb = Fronttools.database.ToString();
+
+                string girilenIadeTutar = tutarGirForm.tutar.ToString().Replace(",",".");
+
+                string query = $@"INSERT INTO {frontDb}.dbo.Kumhrk
+(
+	Kumhrk_Tarih,
+	Kumhrk_Rez_id,
+	Kumhrk_Oda,
+	Kumhrk_Dep_kodu,
+	Kumhrk_Ba,
+	Kumhrk_Bfd,
+	Kumhrk_Me,
+	Kumhrk_Re,
+	Kumhrk_Tipi,
+	Kumhrk_Doviz_kodu,
+	Kumhrk_Kur,
+	Kumhrk_Doviz_tutar,
+	Kumhrk_Tutar,
+	Kumhrk_Def_doviz,
+	Kumhrk_Odenmez,
+	Kumhrk_Eski_folio,
+	Kumhrk_Zaman,
+	Kumhrk_Kartno,
+	Kumhrk_Kart_id,
+	Kumhrk_Cekno,
+	Kumhrk_Aciklama,
+	Kumhrk_Safe_no,
+	Kumhrk_Nakit_kredi,
+	Kumhrk_Posting_kodu,
+	Kumhrk_Pos_no,
+	Kumhrk_Fatura_eh,
+	Kumhrk_Fatura_Id,
+	Kumhrk_Fatura_no,
+	Kumhrk_Rezkira_id,
+	Kumhrk_Kulanici_id,
+	Kumhrk_Kulanici_kodu,
+	Kumhrk_Sirket,
+	Kumhrk_Otel,
+	Kumhrk_Yil_kodu,
+	Kumhrk_Tel_id,
+	Kumhrk_Foltr_eh,
+	Kumhrk_Eski_oda,
+	Kumhrk_Sistem_tarihi,
+	Kumhrk_Sistem_unv,
+	Kumhrk_Fatura_kesildi_eh,
+	Kumhrk_Fatura_bolum,
+	Kumhrk_Pm_eh,
+	Kumhrk_Islem_tarihi,
+	Kumhrk_Yazarkasa_10,
+	Kumhrk_Gunluk_aylik,
+	Kum_Konver_oran,
+	Kum_Konver,
+	Kum_Konver_matrah,
+	Kumhrk_Kdvyuzde,
+	Kumhrk_Kdvsiz,
+	Kumhrk_Doviz_kdvsiz
+)
+SELECT TOP 1
+	k.Kumhrk_Tarih,
+	k.Kumhrk_Rez_id,
+	k.Kumhrk_Oda,
+	k.Kumhrk_Dep_kodu,
+	'A',
+	'I',
+	k.Kumhrk_Me,
+	k.Kumhrk_Re,
+	k.Kumhrk_Tipi,
+	k.Kumhrk_Doviz_kodu,
+	k.Kumhrk_Kur,
+	-{girilenIadeTutar},
+	-{girilenIadeTutar},
+	k.Kumhrk_Def_doviz*-1,
+	k.Kumhrk_Odenmez,
+	k.Kumhrk_Eski_folio,
+	k.Kumhrk_Zaman,
+	k.Kumhrk_Kartno,
+	k.Kumhrk_Kart_id,
+	k.Kumhrk_Cekno,
+	k.Kumhrk_Aciklama,
+	k.Kumhrk_Safe_no,
+	k.Kumhrk_Nakit_kredi,
+	k.Kumhrk_Posting_kodu,
+	k.Kumhrk_Pos_no,
+	k.Kumhrk_Fatura_eh,
+	k.Kumhrk_Fatura_Id,
+	k.Kumhrk_Fatura_no,
+	k.Kumhrk_Rezkira_id,
+	k.Kumhrk_Kulanici_id,
+	k.Kumhrk_Kulanici_kodu,
+	k.Kumhrk_Sirket,
+	k.Kumhrk_Otel,
+	k.Kumhrk_Yil_kodu,
+	k.Kumhrk_Tel_id,
+	k.Kumhrk_Foltr_eh,
+	k.Kumhrk_Eski_oda,
+	k.Kumhrk_Sistem_tarihi,
+	k.Kumhrk_Sistem_unv,
+	k.Kumhrk_Fatura_kesildi_eh,
+	k.Kumhrk_Fatura_bolum,
+	k.Kumhrk_Pm_eh,
+	k.Kumhrk_Islem_tarihi,
+	k.Kumhrk_Yazarkasa_10,
+	k.Kumhrk_Gunluk_aylik,
+	k.Kum_Konver_oran,
+	k.Kum_Konver,
+	k.Kum_Konver_matrah,
+	k.Kumhrk_Kdvyuzde,
+	k.Kumhrk_Kdvsiz,
+	k.Kumhrk_Doviz_kdvsiz
+FROM {frontDb}.dbo.Kumhrk k
+LEFT JOIN {frontDb}.dbo.rez r 
+	ON r.Rez_Id = k.Kumhrk_Rez_id
+WHERE 
+	k.Kumhrk_Cekno = '{fisno}'
+	AND k.Kumhrk_Oda = (
+		SELECT TOP 1 Rsat_Odano 
+		FROM Cst_Recete_Satis
+		WHERE Rsat_Fisno = '{fisno}'
+		AND Rsat_Odano <> ''
+		AND Rsat_Odano IS NOT NULL
+	)
+	AND k.Kumhrk_Ba = 'B'
+	AND r.Rez_R_I_H = 'I';";
 
 
+                dbtools.execcmd(query);
 
-
+                MessageBox.Show("IADE BAŞARILI ÖNBÜRODAN KONTROL EDİNİZ!");
             }
             catch (Exception ex)
             {
