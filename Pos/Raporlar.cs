@@ -453,6 +453,16 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
 
 
                     Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
+
+
+
+
+                    string fileName = getSatisDizaynPath2();
+                    if (File.Exists(fileName))
+                    {
+                        gridView11.RestoreLayoutFromXml(fileName);
+                    }
+
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Iptalcekraporu)
                 {
@@ -1835,6 +1845,12 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             }
             return klasorAd + @"\" + User.P_Kod + "_GenelCek.xml";
         }
+
+
+
+       
+
+
         private void btnIptalGridDizanyKaydet_Click(object sender, EventArgs e)
         {
             try
@@ -2418,6 +2434,54 @@ WHERE
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void satisRaporDizaynKaydet2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                gridView11.SaveLayoutToXml(getSatisDizaynPath2());
+                MessageBox.Show("Grid Dizayn Kaydedildi");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("HATA ! " + ex.Message);
+            }
+        }
+
+        public string getSatisDizaynPath2()
+        {
+            string klasorAd = "GridDizaynPos";
+            if (!Directory.Exists(klasorAd))
+            {
+                Directory.CreateDirectory(klasorAd);
+            }
+            return klasorAd + @"\" + User.P_Kod + "_Satis2.xml";
+        }
+
+        private void satisRaporDizaynTemizle2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!RHMesaj.MyMessageConfirmation("\"" + User.P_Kod + "\" Kullanıcısına Ait Grid Dizayn'ı Silmek İstediğinize Emin misiniz ?"))
+                {
+                    return;
+                }
+                string path = getSatisDizaynPath2();
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                    RHMesaj.alertMesaj("Grid Dizayn Temizlendi");
+                }
+                else
+                {
+                    RHMesaj.alertMesaj("Grid Dizayn BULUNAMADI! \n " + path);
+                }
+            }
+            catch (Exception ex)
+            {
+                RHMesaj.MyMessageError(MyClass, "satisRaporDizaynTemizle2_Click", "", ex);
             }
         }
     }

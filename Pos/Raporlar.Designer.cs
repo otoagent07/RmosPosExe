@@ -436,6 +436,8 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.satisRaporDizaynKaydet2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.satisRaporDizaynTemizle2 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -1419,7 +1421,9 @@
             this.raporDizaynıKaydetToolStripMenuItem,
             this.tarihDeğiştirToolStripMenuItem,
             this.kişiSayısıDeğiştirToolStripMenuItem,
-            this.btnOnburoIadeYap});
+            this.btnOnburoIadeYap,
+            this.satisRaporDizaynKaydet2,
+            this.satisRaporDizaynTemizle2});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             resources.ApplyResources(this.contextMenuStrip2, "contextMenuStrip2");
             // 
@@ -4508,6 +4512,18 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
+            // satisRaporDizaynKaydet2
+            // 
+            this.satisRaporDizaynKaydet2.Name = "satisRaporDizaynKaydet2";
+            resources.ApplyResources(this.satisRaporDizaynKaydet2, "satisRaporDizaynKaydet2");
+            this.satisRaporDizaynKaydet2.Click += new System.EventHandler(this.satisRaporDizaynKaydet2_Click);
+            // 
+            // satisRaporDizaynTemizle2
+            // 
+            this.satisRaporDizaynTemizle2.Name = "satisRaporDizaynTemizle2";
+            resources.ApplyResources(this.satisRaporDizaynTemizle2, "satisRaporDizaynTemizle2");
+            this.satisRaporDizaynTemizle2.Click += new System.EventHandler(this.satisRaporDizaynTemizle2_Click);
+            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -5030,5 +5046,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn149;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn150;
         private System.Windows.Forms.ToolStripMenuItem btnOnburoIadeYap;
+        private System.Windows.Forms.ToolStripMenuItem satisRaporDizaynKaydet2;
+        private System.Windows.Forms.ToolStripMenuItem satisRaporDizaynTemizle2;
     }
 }
