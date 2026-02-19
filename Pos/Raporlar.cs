@@ -6,6 +6,7 @@ using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
 using DevExpress.XtraSplashScreen;
 using Pos.Class;
+using Pos.Forms;
 using Pos.Models;
 using Pos.Print;
 using System;
@@ -37,7 +38,7 @@ namespace Pos
         public bool merkezAktifmi = false;
         private void Raporlar_Load(object sender, EventArgs e)
         {
-           
+
             string q2 = $@"select
                                        Pkod_SubeMac as [SubeMac],
                                         Pkod_Server as [Server],
@@ -69,7 +70,7 @@ namespace Pos
                 tab_Log.PageVisible = false;
             }
 
-           
+
 
 
             //gridyenile();
@@ -345,7 +346,7 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                     // XML restore işleminden sonra footer ayarını tekrar uygula
 
                     if (User.Pos_AcikmasalariGizle)
-                    { 
+                    {
                         bandedGridView1.OptionsView.ShowFooter = false;
 
                     }
@@ -447,8 +448,8 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                     //}
 
 
-                    
-                        Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
+
+                    Rapor_Tipi.ItemIndex = Rapor_Tipi.Properties.GetDataSourceRowIndex("Diz_Id", Param.Param_Rapor_Design);
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Iptalcekraporu)
                 {
@@ -1097,7 +1098,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                     return;
                 }
 
-                iptalfisyazdir(Fisno,iptalSebep);
+                iptalfisyazdir(Fisno, iptalSebep);
 
                 SqlConnection con = dbtools.conn;
                 if (con.State == ConnectionState.Closed) con.Open();
@@ -1130,10 +1131,10 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
             }
         }
 
-        public void iptalfisyazdir(string fisno,string neden)
+        public void iptalfisyazdir(string fisno, string neden)
         {
 
-            if (Param.Satis_YarimTam==false)
+            if (Param.Satis_YarimTam == false)
             {
                 return;
             }
@@ -1168,7 +1169,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 //Fis_Islem.Satir_Sil(Rsat_Id, miktar);
 
 
-                
+
             }
 
         }
@@ -1238,7 +1239,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
                 }
                 detay.masano = gridView11.GetFocusedRowCellValue("Masa_No").ToString();
 
-                
+
                 detay.ShowDialog();
             }
             else if (xtraTabControl1.SelectedTabPage == tab_Iptalcekraporu)
@@ -2222,7 +2223,7 @@ where Log_Islem='Kaydet'
             if (e.RowHandle >= 0)
             {
                 GridView View = sender as GridView;
-                if (e.Column.FieldName == "bekoDurum"|| e.Column.FieldName == "bekoAciklama" || e.Column.FieldName == "bekoId")
+                if (e.Column.FieldName == "bekoDurum" || e.Column.FieldName == "bekoAciklama" || e.Column.FieldName == "bekoId")
                 {
                     string bekoDurum = View.GetRowCellDisplayText(e.RowHandle, View.Columns["bekoDurum"]);
 
@@ -2245,7 +2246,7 @@ where Log_Islem='Kaydet'
                         default:
                             break;
                     }
-                  
+
                 }
             }
 
@@ -2253,7 +2254,24 @@ where Log_Islem='Kaydet'
 
         private void btnOnburoIadeYap_Click(object sender, EventArgs e)
         {
+            try
+            {
+                TutarGirForm tutarGirForm = new TutarGirForm();
+                tutarGirForm.ShowDialog();
 
+
+                if (tutarGirForm.tutar == 0 || tutarGirForm.vazgec == true)
+                {
+                    RHMesaj.alertMesaj("VAZGEÇİLDİ");
+                    return;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
