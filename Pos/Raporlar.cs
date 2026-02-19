@@ -2431,7 +2431,7 @@ WHERE
                 dbtools.execcmdR(indirimQuery);
 
 
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.UrunIade, Log.Log_Islem.UrunIade, "Önbüro iade yapıldı Fisno:" +fisno , "","");
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.UrunIade, Log.Log_Islem.UrunIade, "Önbüro iade yapıldı Fisno:" +fisno+" ... Girilen iade tutarı : "+ girilenIadeTutar, "","");
 
 
                 MessageBox.Show("IADE BAŞARILI ÖNBÜRODAN KONTROL EDİNİZ!");
