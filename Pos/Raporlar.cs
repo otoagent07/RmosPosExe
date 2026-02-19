@@ -2266,6 +2266,19 @@ where Log_Islem='Kaydet'
                     return;
                 }
 
+                var fisno = Convert.ToInt32(gridView11.GetFocusedRowCellValue("Rsat_Fisno"));
+                var Rsat_Brut = Convert.ToDecimal(gridView11.GetFocusedRowCellValue("Rsat_Brut"));
+
+
+                if (tutarGirForm.tutar>Rsat_Brut )
+                {
+                    MessageBox.Show("İADE TUTARI, TOPLAM TUTARDAN BÜYÜK OLAMAZ !");
+                    return;
+                }
+
+
+
+
 
             }
             catch (Exception ex)
