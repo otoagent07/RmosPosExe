@@ -513,10 +513,10 @@
   <data name="xtraTabControl3.MultiLine" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v19.1">
     <value>True</value>
   </data>
-  <data name="simpleButton22.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnPasifleriSil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="simpleButton22.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPasifleriSil.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACF0RVh0VGl0
         bGUAQXBwbHk7T0s7Q2hlY2s7QmFycztSaWJib247ZGPIaAAAA6dJREFUOE9Nk39Q03UYxx/TZQZXQafW
@@ -30110,13 +30110,40 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
   <data name="&gt;&gt;xtraTabPage4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="onburoRaporIade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 140</value>
+  </data>
+  <data name="onburoRaporIade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 3</value>
+  </data>
+  <data name="checkEdit2.Properties.Caption" xml:space="preserve">
+    <value>Önbüro Rapor İade</value>
+  </data>
+  <data name="onburoRaporIade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 19</value>
+  </data>
+  <data name="onburoRaporIade.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="&gt;&gt;onburoRaporIade.Name" xml:space="preserve">
+    <value>onburoRaporIade</value>
+  </data>
+  <data name="&gt;&gt;onburoRaporIade.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;onburoRaporIade.Parent" xml:space="preserve">
+    <value>xtraTabPage7</value>
+  </data>
+  <data name="&gt;&gt;onburoRaporIade.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="logRaporGor.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 115</value>
   </data>
   <data name="logRaporGor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
-  <data name="checkEdit2.Properties.Caption" xml:space="preserve">
+  <data name="logRaporGor.Properties.Caption" xml:space="preserve">
     <value>Log Rapor Gor</value>
   </data>
   <data name="logRaporGor.Size" type="System.Drawing.Size, System.Drawing">
@@ -30135,7 +30162,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;logRaporGor.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="kapaliMasayaGir.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 90</value>
@@ -30162,7 +30189,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;kapaliMasayaGir.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="cariTarihGecmisAktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 64</value>
@@ -30192,7 +30219,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;cariTarihGecmisAktif.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="coklugunsonu.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 40</value>
@@ -30224,7 +30251,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;coklugunsonu.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="merkezsubeaktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 15</value>
@@ -30254,7 +30281,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;merkezsubeaktif.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="lookUpEditHesapDokYazici.Location" type="System.Drawing.Point, System.Drawing">
     <value>634, 14</value>
@@ -30287,7 +30314,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;lookUpEditHesapDokYazici.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="Pos_OdenmezIkramPasif.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 289</value>
@@ -30314,7 +30341,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_OdenmezIkramPasif.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="Pos_HesapFisIptal.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 264</value>
@@ -30341,7 +30368,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_HesapFisIptal.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="Pos_OdaKontrol.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 239</value>
@@ -30368,7 +30395,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_OdaKontrol.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="Pos_ReceteTanimlama.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 214</value>
@@ -30395,7 +30422,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_ReceteTanimlama.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="Pos_MasaPaketS.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 64</value>
@@ -30422,7 +30449,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_MasaPaketS.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="Pos_MasaDirekS.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 40</value>
@@ -30449,7 +30476,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_MasaDirekS.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="Pos_YS_YetkiReddet.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 189</value>
@@ -30476,7 +30503,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_YS_YetkiReddet.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Pos_KartF_CheckOut.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 165</value>
@@ -30503,7 +30530,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_KartF_CheckOut.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="Pos_IWERep.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 140</value>
@@ -30530,7 +30557,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_IWERep.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="Pos_MasaUrunSil.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 115</value>
@@ -30557,7 +30584,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_MasaUrunSil.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="Pos_MasaAnlikDurum.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 90</value>
@@ -30584,7 +30611,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_MasaAnlikDurum.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="Pos_ArtiEksi_Aktif.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 15</value>
@@ -30611,7 +30638,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage7</value>
   </data>
   <data name="&gt;&gt;Pos_ArtiEksi_Aktif.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="xtraTabPage7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>

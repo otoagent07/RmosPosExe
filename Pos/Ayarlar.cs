@@ -3165,7 +3165,7 @@ namespace Pos
                         + " G_Zayi,G_Ikram,M_KisiSayisi,R_MasaGeri,M_SiparisTekrar,Pda_HesapDok,H_HizliSatis,R_TopluIsle,And_HesapDokum,And_HesapOdeme,And_MalzTransfer,S_Sp_Sil,ExtraFolio, "
                         + " And_Yarim,And_Tam,And_Bucuk,And_Duble,Pos_SubeTrf,Pos_AdisyonPr,Pos_OdemeDegistir,And_SatisSiparisBtn,Pos_ArtiEksi_Aktif,Pos_MasaAnlikDurum,Pos_MasaUrunSil,Pos_IWERep,Pos_KartF_CheckOut,Pos_SatirSilYetkili,Pos_MasaDirekS,Pos_MasaPaketS, "
                         + " Pos_YS_YetkiReddet,Pos_YarimDubleAlan,Pos_ReceteTanimlama,Pos_FixMenu,Pos_HesapArti,User_AP,Pos_OdaKontrol,Pos_HesapFisIptal,Pos_KartTanimSil,U_BackUser,chk_K_KasaRapor,Pos_KartTanimDuzelt,Pos_KartTanimTransfer,Pos_KartTanimBakiyeTransfer,Pos_dil,Pos_Eksileme,Pos_XZdepartman,Pos_KartfIndirimAktif,Pos_ServisPayiDuzelt,Pos_OdenmezIkramPasif," +
-                        "urunIade,ingenicoaktif,tutarduzeltplus,postema,otoDirekSatis,otoMasaEkraniAc,merkezsubeaktif,coklugunsonu,cariTarihGecmisAktif,kapaliMasayaGir,Pos_AcikmasalariGizle,satisYapma,logRaporGor) VALUES( "
+                        "urunIade,ingenicoaktif,tutarduzeltplus,postema,otoDirekSatis,otoMasaEkraniAc,merkezsubeaktif,coklugunsonu,cariTarihGecmisAktif,kapaliMasayaGir,Pos_AcikmasalariGizle,satisYapma,logRaporGor,onburoRaporIade) VALUES( "
                         + " '" + txt_Kul_kod.Text + "','" + txt_Kul_sifre.EditValue + "','" + txt_Kul_ad.EditValue + "','" + txt_Kul_soyad.EditValue + "','" + txt_Kul_Kart.EditValue + "','" + cmb_Kulturu.SelectedIndex.ToString() + "', "
                         + " '" + Convert.ToBoolean(chk_G_Miktarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Tutarduzelt.Checked) + "','" + Convert.ToBoolean(chk_G_Satirsil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimsatis.Checked) + "', "
                         + " '" + Convert.ToBoolean(chk_G_Hesapdokum.Checked) + "','" + Convert.ToBoolean(chk_G_Odemeal.Checked) + "','" + Convert.ToBoolean(chk_G_Odemesil.Checked) + "','" + Convert.ToBoolean(chk_G_Indirimhesap.Checked) + "', "
@@ -3204,6 +3204,7 @@ namespace Pos
                         ",'" + Pos_AcikmasalariGizle.Checked + "' " +
                         ",'" + satisYapma.Checked + "' " +
                         ",'" + logRaporGor.Checked + "' " +
+                        ",'" + onburoRaporIade.Checked + "' " +
 
                         ") ");
 
@@ -3265,6 +3266,7 @@ namespace Pos
                         + ",Pos_AcikmasalariGizle = '" + Pos_AcikmasalariGizle.Checked + "' "
                          + ",satisYapma = '" + satisYapma.Checked + "' "
                          + ",logRaporGor = '" + logRaporGor.Checked + "' "
+                         + ",onburoRaporIade = '" + onburoRaporIade.Checked + "' "
 
                         + " where P_Kod = '" + txt_Kul_kod.Text + "' ");
 
@@ -3356,7 +3358,8 @@ namespace Pos
                         ",ISNULL(Pos_AcikmasalariGizle,0) as Pos_AcikmasalariGizle" +
                         ",ISNULL(satisYapma,0) as satisYapma" +
                         ",ISNULL(otoMasaEkraniAc,0) as otoMasaEkraniAc"+
-                        ",ISNULL(logRaporGor,0) as logRaporGor"
+                        ",ISNULL(logRaporGor,0) as logRaporGor"+
+                        ",ISNULL(onburoRaporIade,0) as onburoRaporIade"
                         + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "' " + Filtre + " ";
                 DataTable dt = dbtools.SelectTable(ss);
 
@@ -3521,6 +3524,7 @@ namespace Pos
                     Pos_AcikmasalariGizle.Checked = Convert.ToBoolean(dt.Rows[0]["Pos_AcikmasalariGizle"]);
                     satisYapma.Checked = Convert.ToBoolean(dt.Rows[0]["satisYapma"]);
                     logRaporGor.Checked = Convert.ToBoolean(dt.Rows[0]["logRaporGor"]);
+                    onburoRaporIade.Checked = Convert.ToBoolean(dt.Rows[0]["onburoRaporIade"]);
 
 
 
@@ -3751,6 +3755,7 @@ namespace Pos
             Pos_AcikmasalariGizle.Checked = false;
             satisYapma.Checked = false;
             logRaporGor.Checked = false;
+            onburoRaporIade.Checked = false;
 
         }
 
@@ -3916,6 +3921,7 @@ namespace Pos
             Pos_AcikmasalariGizle.Checked = true;
             satisYapma.Checked = true;
             logRaporGor.Checked = true;
+            onburoRaporIade.Checked = true;
             //Pos_FixMenu.Checked = true;
             //Pos_HesapArti.Checked = true;
 

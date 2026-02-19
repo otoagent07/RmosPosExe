@@ -173,6 +173,7 @@ namespace Pos.Class
         public static bool coklugunsonu { get; set; }
         public static bool kapaliMasayaGir { get; set; }
         public static bool logRaporGor { get; set; }
+        public static bool onburoRaporIade { get; set; }
         public static bool Pos_AcikmasalariGizle { get; set; } // bu parametre kullanılmadığı için "Ciro Görmesin" olarak kullandık.
 
 
@@ -234,6 +235,7 @@ namespace Pos.Class
                     + ", ISNULL(coklugunsonu,0) as coklugunsonu "
                     + ", ISNULL(kapaliMasayaGir,0) as kapaliMasayaGir "
                     + ", ISNULL(logRaporGor,0) as logRaporGor "
+                    + ", ISNULL(onburoRaporIade,0) as onburoRaporIade "
                     + ", ISNULL(Pos_AcikmasalariGizle,0) as Pos_AcikmasalariGizle "
                     + ", ISNULL(satisYapma,0) as satisYapma "
 
@@ -366,6 +368,7 @@ namespace Pos.Class
                 coklugunsonu = Convert.ToBoolean(dt.Rows[0]["coklugunsonu"]);
                 kapaliMasayaGir = Convert.ToBoolean(dt.Rows[0]["kapaliMasayaGir"]);
                 logRaporGor = Convert.ToBoolean(dt.Rows[0]["logRaporGor"]);
+                onburoRaporIade = Convert.ToBoolean(dt.Rows[0]["onburoRaporIade"]);
                 Pos_AcikmasalariGizle = Convert.ToBoolean(dt.Rows[0]["Pos_AcikmasalariGizle"]);
 
             }

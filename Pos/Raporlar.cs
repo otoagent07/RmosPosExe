@@ -87,6 +87,9 @@ namespace Pos
                 tab_AylikGenelRapor.PageVisible = false;
             }
 
+
+
+            btnOnburoIadeYap.Visible = User.onburoRaporIade;
         }
 
         public void loadyukle()

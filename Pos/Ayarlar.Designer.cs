@@ -87,6 +87,7 @@
             this.btn_Prm_Kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnPasifleriSil = new DevExpress.XtraEditors.SimpleButton();
             this.Param_StokAnlikAtmasin = new DevExpress.XtraEditors.CheckEdit();
             this.btnIndexYenile = new DevExpress.XtraEditors.SimpleButton();
             this.btnRecAlfebetik = new DevExpress.XtraEditors.SimpleButton();
@@ -1179,6 +1180,7 @@
             this.chk_Servis = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
+            this.logRaporGor = new DevExpress.XtraEditors.CheckEdit();
             this.kapaliMasayaGir = new DevExpress.XtraEditors.CheckEdit();
             this.cariTarihGecmisAktif = new DevExpress.XtraEditors.CheckEdit();
             this.coklugunsonu = new DevExpress.XtraEditors.CheckEdit();
@@ -1328,8 +1330,7 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.btnPasifleriSil = new DevExpress.XtraEditors.SimpleButton();
-            this.logRaporGor = new DevExpress.XtraEditors.CheckEdit();
+            this.onburoRaporIade = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2143,6 +2144,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).BeginInit();
             this.xtraTabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logRaporGor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kapaliMasayaGir.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cariTarihGecmisAktif.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coklugunsonu.Properties)).BeginInit();
@@ -2231,7 +2233,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logRaporGor.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onburoRaporIade.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -2815,6 +2817,15 @@
             this.xtraTabPage5.Controls.Add(this.chk_Prm_MiktarDuzelt);
             resources.ApplyResources(this.xtraTabPage5, "xtraTabPage5");
             this.xtraTabPage5.Name = "xtraTabPage5";
+            // 
+            // btnPasifleriSil
+            // 
+            this.btnPasifleriSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnPasifleriSil.Appearance.Font")));
+            this.btnPasifleriSil.Appearance.Options.UseFont = true;
+            this.btnPasifleriSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPasifleriSil.ImageOptions.Image")));
+            resources.ApplyResources(this.btnPasifleriSil, "btnPasifleriSil");
+            this.btnPasifleriSil.Name = "btnPasifleriSil";
+            this.btnPasifleriSil.Click += new System.EventHandler(this.btnPasifleriSil_Click);
             // 
             // Param_StokAnlikAtmasin
             // 
@@ -11967,6 +11978,7 @@
             // 
             // xtraTabPage7
             // 
+            this.xtraTabPage7.Controls.Add(this.onburoRaporIade);
             this.xtraTabPage7.Controls.Add(this.logRaporGor);
             this.xtraTabPage7.Controls.Add(this.kapaliMasayaGir);
             this.xtraTabPage7.Controls.Add(this.cariTarihGecmisAktif);
@@ -11987,6 +11999,12 @@
             this.xtraTabPage7.Controls.Add(this.Pos_ArtiEksi_Aktif);
             resources.ApplyResources(this.xtraTabPage7, "xtraTabPage7");
             this.xtraTabPage7.Name = "xtraTabPage7";
+            // 
+            // logRaporGor
+            // 
+            resources.ApplyResources(this.logRaporGor, "logRaporGor");
+            this.logRaporGor.Name = "logRaporGor";
+            this.logRaporGor.Properties.Caption = resources.GetString("logRaporGor.Properties.Caption");
             // 
             // kapaliMasayaGir
             // 
@@ -13234,20 +13252,11 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // btnPasifleriSil
+            // onburoRaporIade
             // 
-            this.btnPasifleriSil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton22.Appearance.Font")));
-            this.btnPasifleriSil.Appearance.Options.UseFont = true;
-            this.btnPasifleriSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton22.ImageOptions.Image")));
-            resources.ApplyResources(this.btnPasifleriSil, "btnPasifleriSil");
-            this.btnPasifleriSil.Name = "btnPasifleriSil";
-            this.btnPasifleriSil.Click += new System.EventHandler(this.btnPasifleriSil_Click);
-            // 
-            // logRaporGor
-            // 
-            resources.ApplyResources(this.logRaporGor, "logRaporGor");
-            this.logRaporGor.Name = "logRaporGor";
-            this.logRaporGor.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
+            resources.ApplyResources(this.onburoRaporIade, "onburoRaporIade");
+            this.onburoRaporIade.Name = "onburoRaporIade";
+            this.onburoRaporIade.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
             // 
             // Ayarlar
             // 
@@ -14096,6 +14105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).EndInit();
             this.xtraTabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logRaporGor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kapaliMasayaGir.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cariTarihGecmisAktif.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coklugunsonu.Properties)).EndInit();
@@ -14191,7 +14201,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logRaporGor.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onburoRaporIade.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15498,5 +15508,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn181;
         private DevExpress.XtraEditors.SimpleButton btnPasifleriSil;
         private DevExpress.XtraEditors.CheckEdit logRaporGor;
+        private DevExpress.XtraEditors.CheckEdit onburoRaporIade;
     }
 }
