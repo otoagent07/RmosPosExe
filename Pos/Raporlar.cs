@@ -2429,6 +2429,11 @@ WHERE
                 string indirimQuery = $@"exec Pos_Manuel_Indirim @Fisno={fisno},@Ind_Tip=N'T',@Ind_Tutar=N'{tltutarstr}',@Ind_Doviztutar=N'{girilenIadeTutar}',@Ind_Oran=N'0',@Ind_Turu=N'MANUEL',@Split=0,@Ind_User=N'{User.P_Kod}',@aciklama=N''";
 
                 dbtools.execcmdR(indirimQuery);
+
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.UrunIade, Log.Log_Islem.UrunIade, "Önbüro iade yapıldı Fisno:" +fisno , "","");
+
+
                 MessageBox.Show("IADE BAŞARILI ÖNBÜRODAN KONTROL EDİNİZ!");
             }
             catch (Exception ex)
