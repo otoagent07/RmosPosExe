@@ -2267,10 +2267,10 @@ where Log_Islem='Kaydet'
                 }
 
                 var fisno = Convert.ToInt32(gridView11.GetFocusedRowCellValue("Rsat_Fisno"));
-                var Rsat_Brut = Convert.ToDecimal(gridView11.GetFocusedRowCellValue("Rsat_Brut"));
+                var Rsat_Dovizbrut = Convert.ToDecimal(gridView11.GetFocusedRowCellValue("Rsat_Dovizbrut"));
 
 
-                if (tutarGirForm.tutar>Rsat_Brut )
+                if (tutarGirForm.tutar> Rsat_Dovizbrut)
                 {
                     MessageBox.Show("İADE TUTARI, TOPLAM TUTARDAN BÜYÜK OLAMAZ !");
                     return;
@@ -2347,8 +2347,8 @@ SELECT TOP 1
 	k.Kumhrk_Doviz_kodu,
 	k.Kumhrk_Kur,
 	-{girilenIadeTutar},
+	({girilenIadeTutar}*k.Kumhrk_Kur)*-1,
 	-{girilenIadeTutar},
-	k.Kumhrk_Def_doviz*-1,
 	k.Kumhrk_Odenmez,
 	k.Kumhrk_Eski_folio,
 	k.Kumhrk_Zaman,
@@ -2398,7 +2398,7 @@ WHERE
 		AND Rsat_Odano <> ''
 		AND Rsat_Odano IS NOT NULL
 	)
-	AND k.Kumhrk_Ba = 'B'
+	AND k.Kumhrk_Ba = 'A'
 	AND r.Rez_R_I_H = 'I';";
 
 
