@@ -2358,7 +2358,7 @@ SELECT TOP 1
 	k.Kumhrk_Rez_id,
 	k.Kumhrk_Oda,
 	k.Kumhrk_Dep_kodu,
-	'A',
+	'B',
 	'I',
 	k.Kumhrk_Me,
 	k.Kumhrk_Re,
