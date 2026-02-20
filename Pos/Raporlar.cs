@@ -2417,7 +2417,7 @@ WHERE
 		AND Rsat_Odano <> ''
 		AND Rsat_Odano IS NOT NULL
 	)
-	AND k.Kumhrk_Ba = 'A'
+	AND k.Kumhrk_Ba = 'B'
 	AND r.Rez_R_I_H = 'I';";
 
 
