@@ -429,6 +429,12 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\SatisController.cs" />
+    <Compile Include="Forms\BekoEfaturaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BekoEfaturaForm.Designer.cs">
+      <DependentUpon>BekoEfaturaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ConfirmationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1473,6 +1479,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\adminForms.resx">
       <DependentUpon>adminForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BekoEfaturaForm.resx">
+      <DependentUpon>BekoEfaturaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConfirmationForm.bin.resx">
       <DependentUpon>ConfirmationForm.cs</DependentUpon>
