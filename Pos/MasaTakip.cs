@@ -2874,6 +2874,11 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
                 pavoController.sendPaymentLink(fisno + "");
 
+
+
+
+
+
                 FisPr pr = new FisPr();
                 if (Param.Param_YeniHesapDkm)
                 {
@@ -2909,8 +2914,17 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
                 if (Departman.Kodlar_Beko)
                 {
+
+                    var toplamtutar = Convert.ToDecimal(dbtools.DegerGetir($@"select sum(Rsat_Tutar) as toplam from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Ba='B'"));
+
+                    if (toplamtutar > 12000)
+                    {
+                        BekoEfaturaForm bekoEfaturaForm = new BekoEfaturaForm(Convert.ToInt32(fisno));
+                        bekoEfaturaForm.ShowDialog();
+                    }
+
                     int bekotoplamSatir = Convert.ToInt32( dbtools.DegerGetir($@"select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Ba='B'"));
-                    if (bekotoplamSatir>60)
+                    if (bekotoplamSatir>150)
                     {
                         RHMesaj.alertMesaj($"Fişno: {fisno} Beko yazar kasaya gönderilemedi!. Max 60 Kalem ürün olmalıdır.");
                         return;
