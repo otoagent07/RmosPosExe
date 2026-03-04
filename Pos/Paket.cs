@@ -1477,7 +1477,7 @@ order by Caller_Id desc";
             sat.ShowDialog();
 
 
-            if (Param.ikinciEkranAktif)
+            if (Param.ikinciEkranAktif==false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }

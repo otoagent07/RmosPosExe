@@ -422,10 +422,10 @@ namespace Pos
 
                 if (System.Windows.Forms.Screen.AllScreens.Length > 1 && Param.ikinciEkranAktif == false)
                 {
-                    if (Main.satislistesi_ikinci_ekran == null)
-                    {
-                        Main.satislistesi_ikinci_ekran = new SatisListesi();
-                    }
+                    //if (Main.satislistesi_ikinci_ekran == null)
+                    //{
+                    //    Main.satislistesi_ikinci_ekran = new SatisListesi();
+                    //}
 
                     Main.satislistesi_ikinci_ekran.Location = Screen.AllScreens[1].Bounds.Location; // 1 di orjinali
                     Main.satislistesi_ikinci_ekran.Show();
@@ -504,6 +504,8 @@ namespace Pos
                 //{
                 //    this.Close();
                 //}
+
+                Main.satislistesi_ikinci_ekran = new SatisListesi();
 
 
                 macadresim = dbtools.MacAdresi();
@@ -992,7 +994,7 @@ namespace Pos
                 groupControl4.Visible = true;
                 Anlik();
             }
-            if (Param.ikinciEkranAktif)
+            if (Param.ikinciEkranAktif==false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }
@@ -1550,7 +1552,6 @@ YS_Panel a = new YS_Panel();
             try
             {
 
-                satislistesi_ikinci_ekran = new SatisListesi();
 
 
                 //if (Param.ikinciEkranAktif)

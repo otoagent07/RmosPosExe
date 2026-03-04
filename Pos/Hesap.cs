@@ -621,7 +621,7 @@ namespace Pos
                 lbl_KisiSayisi.Text = Convert.ToString(dt.Rows[0]["Rsat_Kisi"]);
             }
 
-            if (Param.ikinciEkranAktif)
+            if (Param.ikinciEkranAktif == false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(Convert.ToInt32(this.Tag));
             }
@@ -1038,7 +1038,7 @@ namespace Pos
 
                 hesapDokum(sifirmi);
 
-         
+
 
             }
             catch (Exception ex)
@@ -2018,7 +2018,7 @@ namespace Pos
                 dbtools.execcmd("Update Cst_Recete_Satis Set Rsat_Ingenico_Status = 5 Where Rsat_Fisno = '" + fis_no + "'");
             }
 
-            if (Param.ikinciEkranAktif)
+            if (Param.ikinciEkranAktif==false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }

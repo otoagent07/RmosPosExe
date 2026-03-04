@@ -110,7 +110,7 @@ namespace Pos
                 try
                 {
                     System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(typeof(Font));
-                     gridFont = (Font)converter.ConvertFromString(satisFontTipi);
+                    gridFont = (Font)converter.ConvertFromString(satisFontTipi);
                     if (gridFont != null)
                     {
                         gridView1.Appearance.Row.Font = gridFont;
@@ -134,7 +134,7 @@ namespace Pos
                 }
             }
 
-           
+
         }
 
         public bool urunleriYenile = true;
@@ -281,7 +281,7 @@ namespace Pos
                 //SatisListesi a = new SatisListesi();
 
                 int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
-                if (Param.ikinciEkranAktif)
+                if (Param.ikinciEkranAktif==false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(fisno);
                 }
@@ -1459,7 +1459,7 @@ namespace Pos
 
                     // Ödemesi Alınıyor...
                     bool etiketim = true;
-                etiket:
+                    etiket:
                     decimal tutar, doviztutar;
                     if (Param.Calisma_Sekli == 1)       //Döviz
                     {
@@ -1893,7 +1893,7 @@ namespace Pos
             }
             SiparisKontrol();
 
-            if (Param.ikinciEkranAktif)
+            if (Param.ikinciEkranAktif == false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(Convert.ToInt32(bartxt_FisNo.EditValue));
             }
@@ -3422,7 +3422,7 @@ namespace Pos
                 gridyenile();
             }
 
-         
+
 
         }
 
@@ -3583,9 +3583,9 @@ namespace Pos
                     }
                 }
 
-                decimal tutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar"))/ bolMiktar;
+                decimal tutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")) / bolMiktar;
 
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, tutar,urunad: Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad"))); 
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Satir_Sil, Log.Log_Islem.Sil, yazdirilmissa + " Sipariş-> " + "Recete : " + Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")) + " Miktar : " + Sil_Miktar + " Silindi", Convert.ToString(bartxt_FisNo.EditValue), Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")), Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")), Sil_Miktar, neden, tutar, urunad: Convert.ToString(gridView1.GetFocusedRowCellValue("Rec_Ad")));
 
 
 
@@ -5487,7 +5487,7 @@ where  Rsat_Id='" + Rsat_Id + "'";
                     RHMesaj.alertMesaj("Yazdırılmış Satır silme yetkiniz yoktur.");
                     return;
                 }
-                
+
 
 
                 if (gridView1.GetFocusedRowCellValue("Rsat_Id") == null || Convert.ToString(gridView1.GetFocusedRowCellValue("Rsat_Id")) == String.Empty)
@@ -5522,62 +5522,62 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
                 mevcutTutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Fiyat"].ToString());
 
-               
 
-                    decimal bbTutar = 0, doubletutar = 0, ytutar = 0;
-                    if (dataTable.Rows.Count == 0)
+
+                decimal bbTutar = 0, doubletutar = 0, ytutar = 0;
+                if (dataTable.Rows.Count == 0)
+                {
+                    return;
+                }
+
+
+                bbTutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Birbucuk"].ToString());
+                doubletutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Duble"].ToString());
+                ytutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Yarim"].ToString());
+
+
+
+                // Parametre aktif değilse çarpma işlemi yap
+
+                if (bbTutar == 0 || doubletutar == 0 || ytutar == 0)
+                {
+                    if (eMiktar == "B")
                     {
-                        return;
+                        mevcutTutar = mevcutTutar * 1.5m;
                     }
-
-
-                    bbTutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Birbucuk"].ToString());
-                    doubletutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Duble"].ToString());
-                    ytutar = Convert.ToDecimal(dataTable.Rows[0]["Rec_Yarim"].ToString());
-
-
-
-                    // Parametre aktif değilse çarpma işlemi yap
-
-                    if (bbTutar == 0 || doubletutar == 0 || ytutar == 0)
+                    else if (eMiktar == "D")
                     {
-                        if (eMiktar == "B")
-                        {
-                            mevcutTutar = mevcutTutar * 1.5m;
-                        }
-                        else if (eMiktar == "D")
-                        {
-                            mevcutTutar = mevcutTutar * 2m;
-                        }
-                        else if (eMiktar == "Y")
-                        {
-                            mevcutTutar = mevcutTutar * 0.5m;
-                        }
-                        else if (eMiktar == "T")
-                        {
-                        }
+                        mevcutTutar = mevcutTutar * 2m;
                     }
-                    else
+                    else if (eMiktar == "Y")
                     {
-                        if (eMiktar == "B")
-                        {
-                            mevcutTutar = bbTutar;
-                        }
-                        else if (eMiktar == "D")
-                        {
-                            mevcutTutar = doubletutar;
-                        }
-                        else if (eMiktar == "Y")
-                        {
-                            mevcutTutar = ytutar;
-                        }
-                        else if (eMiktar == "T")
-                        {
-                        }
+                        mevcutTutar = mevcutTutar * 0.5m;
                     }
+                    else if (eMiktar == "T")
+                    {
+                    }
+                }
+                else
+                {
+                    if (eMiktar == "B")
+                    {
+                        mevcutTutar = bbTutar;
+                    }
+                    else if (eMiktar == "D")
+                    {
+                        mevcutTutar = doubletutar;
+                    }
+                    else if (eMiktar == "Y")
+                    {
+                        mevcutTutar = ytutar;
+                    }
+                    else if (eMiktar == "T")
+                    {
+                    }
+                }
 
 
-                    yeniTutar = mevcutTutar * miktar;
+                yeniTutar = mevcutTutar * miktar;
                 //else
                 //{
                 //    // Parametre aktif değilse çarpma işlemi yap

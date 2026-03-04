@@ -295,7 +295,7 @@ namespace Pos
                 DataTable dtBilgi = dbtools.SelectTable("select COUNT(Masa_Durum) as Sayi,MIN(Masa_Durum) as Durum from Pos_Masa WITH(NOLOCK) where Masa_Depart = '" + Departman.Dep_Kodu + "' group by Masa_Durum order by Masa_Durum");
 
 
-                if (Param.ikinciEkranAktif)
+                if (Param.ikinciEkranAktif==false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
@@ -324,7 +324,7 @@ namespace Pos
 
             int fisno = Convert.ToInt32(dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + Masa_No + "'"));
 
-            if (Param.ikinciEkranAktif)
+            if (Param.ikinciEkranAktif==false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(fisno);
             }

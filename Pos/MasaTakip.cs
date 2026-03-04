@@ -1030,7 +1030,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
                 bartxt_BosMasa.EditValue = Convert.ToString(dtBilgi.Rows[0]["Sayi"]);
                 bartxt_DoluMasa.EditValue = dtBilgi.Rows.Count > 1 ? Convert.ToString(dtBilgi.Rows[1]["Sayi"]) : "0";
 
-                if (Param.ikinciEkranAktif)
+                if (Param.ikinciEkranAktif==false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
@@ -1441,7 +1441,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
                 bartxt_BosMasa.EditValue = Convert.ToString(dtBilgi.Rows[0]["Sayi"]);
                 bartxt_DoluMasa.EditValue = dtBilgi.Rows.Count > 1 ? Convert.ToString(dtBilgi.Rows[1]["Sayi"]) : "0";
 
-                if (Param.ikinciEkranAktif)
+                if (Param.ikinciEkranAktif==false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
@@ -1620,7 +1620,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
 
                 bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + Masa_No + "'"));
 
-                if (Param.ikinciEkranAktif)
+                if (Param.ikinciEkranAktif==false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(Convert.ToInt32(bartxt_FisNo.EditValue));
                 }
@@ -2557,7 +2557,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             Raporlar r = new Raporlar();
             r.ShowDialog();
             MasaYenile(0);
-            if (Param.ikinciEkranAktif)
+            if (Param.ikinciEkranAktif==false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }
@@ -2596,7 +2596,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             string fisno = Convert.ToInt32(bartxt_FisNo.EditValue).ToString();
 
             HesapBak(fisno);
-            if (Param.ikinciEkranAktif)
+            if (Param.ikinciEkranAktif==false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }
@@ -2640,7 +2640,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
                 Satis();
-                if (Param.ikinciEkranAktif)
+                if (Param.ikinciEkranAktif==false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
@@ -3244,7 +3244,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
                 gridyenile(fisno);
                 HesapBak(fisno + "");
-                if (Param.ikinciEkranAktif)
+                if (Param.ikinciEkranAktif==false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
