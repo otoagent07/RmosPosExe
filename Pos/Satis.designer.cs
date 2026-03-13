@@ -272,7 +272,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 181;
+            this.splitContainerControl4.SplitterPosition = 185;
             // 
             // ana_btnUp
             // 
@@ -644,7 +644,7 @@
             resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 143;
+            this.splitContainerControl2.SplitterPosition = 146;
             // 
             // alt_btnUp
             // 
@@ -715,6 +715,7 @@
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.panelControl3);
+            this.panelControl2.Controls.Add(this.panelControl4);
             this.panelControl2.Controls.Add(this.panelControlBarkod);
             resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Name = "panelControl2";
@@ -1427,7 +1428,6 @@
             // 
             this.panelControlBarkod.Controls.Add(this.btnFiyatBilgisi);
             this.panelControlBarkod.Controls.Add(this.txt_Filtre);
-            this.panelControlBarkod.Controls.Add(this.panelControl4);
             this.panelControlBarkod.Controls.Add(this.txtFisnoGit);
             this.panelControlBarkod.Controls.Add(this.textEdit13);
             this.panelControlBarkod.Controls.Add(this.textEditFisnobirlestir1);
@@ -1697,7 +1697,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(844, 732);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(846, 736);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1709,7 +1709,7 @@
             this.layoutControlItem1.MinSize = new System.Drawing.Size(241, 66);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(844, 68);
+            this.layoutControlItem1.Size = new System.Drawing.Size(846, 68);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1722,7 +1722,7 @@
             this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(844, 202);
+            this.layoutControlItem2.Size = new System.Drawing.Size(846, 203);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1731,9 +1731,9 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 270);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 271);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(844, 77);
+            this.layoutControlItem6.Size = new System.Drawing.Size(846, 77);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
@@ -1741,18 +1741,18 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 347);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 348);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(844, 294);
+            this.layoutControlItem7.Size = new System.Drawing.Size(846, 296);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 641);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 644);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(844, 91);
+            this.layoutControlItem3.Size = new System.Drawing.Size(846, 92);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             this.layoutControlItem3.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
