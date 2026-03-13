@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Satis));
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
             this.flp_Urun = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainerControl4 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -139,14 +139,14 @@
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Siparis = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControlBarkod = new DevExpress.XtraEditors.PanelControl();
-            this.btnFiyatBilgisi = new DevExpress.XtraEditors.SimpleButton();
-            this.txt_Filtre = new DevExpress.XtraEditors.TextEdit();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.btnTemizleKisiyeSatis = new DevExpress.XtraEditors.SimpleButton();
             this.txtKisiyeSatis = new DevExpress.XtraEditors.TextEdit();
             this.txtKisiyeSatisSayac = new DevExpress.XtraEditors.TextEdit();
             this.btnKisiyeSatisYap = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControlBarkod = new DevExpress.XtraEditors.PanelControl();
+            this.btnFiyatBilgisi = new DevExpress.XtraEditors.SimpleButton();
+            this.txt_Filtre = new DevExpress.XtraEditors.TextEdit();
             this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
             this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
             this.textEditFisnobirlestir1 = new DevExpress.XtraEditors.TextEdit();
@@ -212,13 +212,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.contextMenuSagTik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControlBarkod)).BeginInit();
-            this.panelControlBarkod.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatisSayac.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlBarkod)).BeginInit();
+            this.panelControlBarkod.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFisnobirlestir1.Properties)).BeginInit();
@@ -715,8 +715,8 @@
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.panelControl3);
-            this.panelControl2.Controls.Add(this.panelControl4);
             this.panelControl2.Controls.Add(this.panelControlBarkod);
+            this.panelControl2.Controls.Add(this.panelControl4);
             resources.ApplyResources(this.panelControl2, "panelControl2");
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl2_Paint);
@@ -1288,18 +1288,18 @@
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13});
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn6;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn6;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
-            formatConditionRuleValue1.Value1 = "";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn6;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn6;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue2.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue2.Value1 = "";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ColumnAutoWidth = false;
@@ -1424,44 +1424,6 @@
             this.btn_Siparis.Name = "btn_Siparis";
             this.btn_Siparis.Click += new System.EventHandler(this.btn_Siparis_Click);
             // 
-            // panelControlBarkod
-            // 
-            this.panelControlBarkod.Controls.Add(this.btnFiyatBilgisi);
-            this.panelControlBarkod.Controls.Add(this.txt_Filtre);
-            this.panelControlBarkod.Controls.Add(this.txtFisnoGit);
-            this.panelControlBarkod.Controls.Add(this.textEdit13);
-            this.panelControlBarkod.Controls.Add(this.textEditFisnobirlestir1);
-            this.panelControlBarkod.Controls.Add(this.textEdit1);
-            this.panelControlBarkod.Controls.Add(this.txt_Barkod);
-            this.panelControlBarkod.Controls.Add(this.simpleButton1);
-            resources.ApplyResources(this.panelControlBarkod, "panelControlBarkod");
-            this.panelControlBarkod.Name = "panelControlBarkod";
-            // 
-            // btnFiyatBilgisi
-            // 
-            this.btnFiyatBilgisi.Appearance.BackColor = System.Drawing.Color.Indigo;
-            this.btnFiyatBilgisi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnFiyatBilgisi.Appearance.Font")));
-            this.btnFiyatBilgisi.Appearance.Options.UseBackColor = true;
-            this.btnFiyatBilgisi.Appearance.Options.UseFont = true;
-            this.btnFiyatBilgisi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFiyatBilgisi.ImageOptions.Image")));
-            resources.ApplyResources(this.btnFiyatBilgisi, "btnFiyatBilgisi");
-            this.btnFiyatBilgisi.Name = "btnFiyatBilgisi";
-            this.btnFiyatBilgisi.Click += new System.EventHandler(this.btnFiyatBilgisi_Click);
-            // 
-            // txt_Filtre
-            // 
-            resources.ApplyResources(this.txt_Filtre, "txt_Filtre");
-            this.txt_Filtre.Name = "txt_Filtre";
-            this.txt_Filtre.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.txt_Filtre.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_Filtre.Properties.Appearance.Font")));
-            this.txt_Filtre.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.txt_Filtre.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_Filtre.Properties.Appearance.Options.UseFont = true;
-            this.txt_Filtre.Properties.Appearance.Options.UseForeColor = true;
-            this.txt_Filtre.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_Filtre.EditValueChanged += new System.EventHandler(this.txt_Filtre_EditValueChanged);
-            this.txt_Filtre.Click += new System.EventHandler(this.txt_Filtre_Click);
-            // 
             // panelControl4
             // 
             this.panelControl4.Controls.Add(this.btnTemizleKisiyeSatis);
@@ -1509,6 +1471,44 @@
             resources.ApplyResources(this.btnKisiyeSatisYap, "btnKisiyeSatisYap");
             this.btnKisiyeSatisYap.Name = "btnKisiyeSatisYap";
             this.btnKisiyeSatisYap.Click += new System.EventHandler(this.btnKisiyeSatisYap_Click);
+            // 
+            // panelControlBarkod
+            // 
+            this.panelControlBarkod.Controls.Add(this.btnFiyatBilgisi);
+            this.panelControlBarkod.Controls.Add(this.txt_Filtre);
+            this.panelControlBarkod.Controls.Add(this.txtFisnoGit);
+            this.panelControlBarkod.Controls.Add(this.textEdit13);
+            this.panelControlBarkod.Controls.Add(this.textEditFisnobirlestir1);
+            this.panelControlBarkod.Controls.Add(this.textEdit1);
+            this.panelControlBarkod.Controls.Add(this.txt_Barkod);
+            this.panelControlBarkod.Controls.Add(this.simpleButton1);
+            resources.ApplyResources(this.panelControlBarkod, "panelControlBarkod");
+            this.panelControlBarkod.Name = "panelControlBarkod";
+            // 
+            // btnFiyatBilgisi
+            // 
+            this.btnFiyatBilgisi.Appearance.BackColor = System.Drawing.Color.Indigo;
+            this.btnFiyatBilgisi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnFiyatBilgisi.Appearance.Font")));
+            this.btnFiyatBilgisi.Appearance.Options.UseBackColor = true;
+            this.btnFiyatBilgisi.Appearance.Options.UseFont = true;
+            this.btnFiyatBilgisi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFiyatBilgisi.ImageOptions.Image")));
+            resources.ApplyResources(this.btnFiyatBilgisi, "btnFiyatBilgisi");
+            this.btnFiyatBilgisi.Name = "btnFiyatBilgisi";
+            this.btnFiyatBilgisi.Click += new System.EventHandler(this.btnFiyatBilgisi_Click);
+            // 
+            // txt_Filtre
+            // 
+            resources.ApplyResources(this.txt_Filtre, "txt_Filtre");
+            this.txt_Filtre.Name = "txt_Filtre";
+            this.txt_Filtre.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txt_Filtre.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_Filtre.Properties.Appearance.Font")));
+            this.txt_Filtre.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.txt_Filtre.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_Filtre.Properties.Appearance.Options.UseFont = true;
+            this.txt_Filtre.Properties.Appearance.Options.UseForeColor = true;
+            this.txt_Filtre.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txt_Filtre.EditValueChanged += new System.EventHandler(this.txt_Filtre_EditValueChanged);
+            this.txt_Filtre.Click += new System.EventHandler(this.txt_Filtre_Click);
             // 
             // txtFisnoGit
             // 
@@ -1833,13 +1833,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             this.contextMenuSagTik.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControlBarkod)).EndInit();
-            this.panelControlBarkod.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKisiyeSatisSayac.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControlBarkod)).EndInit();
+            this.panelControlBarkod.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFisnobirlestir1.Properties)).EndInit();
