@@ -128,7 +128,7 @@
     <value>1</value>
   </data>
   <data name="gridColumn17.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDirektSatis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
@@ -175,14 +175,14 @@
 </value>
   </data>
   <data name="btnDirektSatis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 23</value>
+    <value>614, 23</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnDirektSatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btnDirektSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 47</value>
+    <value>100, 47</value>
   </data>
   <data name="btnDirektSatis.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -210,13 +210,13 @@ Satış</value>
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="labelSecili.Location" type="System.Drawing.Point, System.Drawing">
-    <value>548, 0</value>
+    <value>658, 0</value>
   </data>
   <data name="labelSecili.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="labelSecili.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>96, 16</value>
   </data>
   <data name="labelSecili.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -287,13 +287,13 @@ Satış</value>
 </value>
   </data>
   <data name="chk_PaketciAtanmayanlar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 23</value>
+    <value>113, 23</value>
   </data>
   <data name="chk_PaketciAtanmayanlar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_PaketciAtanmayanlar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 47</value>
+    <value>118, 47</value>
   </data>
   <data name="chk_PaketciAtanmayanlar.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -368,13 +368,13 @@ Satış</value>
 </value>
   </data>
   <data name="chk_PaketciAtananlar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 23</value>
+    <value>238, 23</value>
   </data>
   <data name="chk_PaketciAtananlar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_PaketciAtananlar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 47</value>
+    <value>118, 47</value>
   </data>
   <data name="chk_PaketciAtananlar.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -439,13 +439,13 @@ Satış</value>
 </value>
   </data>
   <data name="simpleButton11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>735, 26</value>
+    <value>882, 26</value>
   </data>
   <data name="simpleButton11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 47</value>
+    <value>122, 47</value>
   </data>
   <data name="simpleButton11.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -486,13 +486,13 @@ Satış</value>
 </value>
   </data>
   <data name="btn_Cikis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>654, 27</value>
+    <value>785, 27</value>
   </data>
   <data name="btn_Cikis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_Cikis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 47</value>
+    <value>90, 47</value>
   </data>
   <data name="btn_Cikis.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -516,13 +516,13 @@ Satış</value>
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_KapaliPaket.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 23</value>
+    <value>521, 23</value>
   </data>
   <data name="chk_KapaliPaket.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_KapaliPaket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 47</value>
+    <value>89, 47</value>
   </data>
   <data name="chk_KapaliPaket.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -547,13 +547,13 @@ Satış</value>
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_KayitliTel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>375, 23</value>
+    <value>450, 23</value>
   </data>
   <data name="chk_KayitliTel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_KayitliTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 47</value>
+    <value>64, 47</value>
   </data>
   <data name="chk_KayitliTel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -578,13 +578,13 @@ Tel No</value>
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_CallerId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 23</value>
+    <value>361, 23</value>
   </data>
   <data name="chk_CallerId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_CallerId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 47</value>
+    <value>83, 47</value>
   </data>
   <data name="chk_CallerId.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -608,13 +608,13 @@ Tel No</value>
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="chk_PaketSatis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 23</value>
+    <value>11, 23</value>
   </data>
   <data name="chk_PaketSatis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="chk_PaketSatis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 47</value>
+    <value>95, 47</value>
   </data>
   <data name="chk_PaketSatis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -644,7 +644,7 @@ Tel No</value>
     <value>2, 3, 2, 3</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>851, 79</value>
+    <value>1102, 79</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -673,21 +673,231 @@ Tel No</value>
   <data name="xtraTabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>tab_Paket</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tab_Paket</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+    <value>tab_Paket</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>tab_Paket</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tab_Paket.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="tab_Paket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1015, 610</value>
+  </data>
+  <data name="tab_Paket.Text" xml:space="preserve">
+    <value>Paket Satış</value>
+  </data>
+  <data name="&gt;&gt;tab_Paket.Name" xml:space="preserve">
+    <value>tab_Paket</value>
+  </data>
+  <data name="&gt;&gt;tab_Paket.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_Paket.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_Paket.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1102, 638</value>
+  </data>
+  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gridControl4.Name" xml:space="preserve">
+    <value>gridControl4</value>
+  </data>
+  <data name="&gt;&gt;gridControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl4.Parent" xml:space="preserve">
+    <value>tab_CallerId</value>
+  </data>
+  <data name="&gt;&gt;gridControl4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
+    <value>tab_CallerId</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tab_CallerId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="tab_CallerId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1015, 610</value>
+  </data>
+  <data name="tab_CallerId.Text" xml:space="preserve">
+    <value>Caller Id</value>
+  </data>
+  <data name="&gt;&gt;tab_CallerId.Name" xml:space="preserve">
+    <value>tab_CallerId</value>
+  </data>
+  <data name="&gt;&gt;tab_CallerId.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_CallerId.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_CallerId.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gridControl3.Name" xml:space="preserve">
+    <value>gridControl3</value>
+  </data>
+  <data name="&gt;&gt;gridControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl3.Parent" xml:space="preserve">
+    <value>tab_KayitliTel</value>
+  </data>
+  <data name="&gt;&gt;gridControl3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tab_KayitliTel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="tab_KayitliTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1015, 610</value>
+  </data>
+  <data name="tab_KayitliTel.Text" xml:space="preserve">
+    <value>Kayıtlı Tel No</value>
+  </data>
+  <data name="&gt;&gt;tab_KayitliTel.Name" xml:space="preserve">
+    <value>tab_KayitliTel</value>
+  </data>
+  <data name="&gt;&gt;tab_KayitliTel.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_KayitliTel.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_KayitliTel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gridControlTest.Name" xml:space="preserve">
+    <value>gridControlTest</value>
+  </data>
+  <data name="&gt;&gt;gridControlTest.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControlTest.Parent" xml:space="preserve">
+    <value>tab_KapaliPaket</value>
+  </data>
+  <data name="&gt;&gt;gridControlTest.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
+    <value>gridControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
+    <value>tab_KapaliPaket</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
+    <value>tab_KapaliPaket</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tab_KapaliPaket.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="tab_KapaliPaket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1096, 610</value>
+  </data>
+  <data name="tab_KapaliPaket.Text" xml:space="preserve">
+    <value>Kapalı Paketler</value>
+  </data>
+  <data name="&gt;&gt;tab_KapaliPaket.Name" xml:space="preserve">
+    <value>tab_KapaliPaket</value>
+  </data>
+  <data name="&gt;&gt;tab_KapaliPaket.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tab_KapaliPaket.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tab_KapaliPaket.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="contextMenuStrip_LogRapor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>224, 17</value>
   </metadata>
-  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
-    <value>Grid Dizayn Kaydet</value>
-  </data>
-  <data name="btnGridDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
-  </data>
-  <data name="btnGridDizaynSil.Text" xml:space="preserve">
-    <value>Grid Dizayn Sil</value>
-  </data>
   <data name="contextMenuStrip_LogRapor.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 48</value>
   </data>
@@ -701,10 +911,10 @@ Tel No</value>
     <value>Fill</value>
   </data>
   <data name="gridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 61</value>
+    <value>128, 61</value>
   </data>
   <data name="gridView1.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -725,7 +935,7 @@ Tel No</value>
     <value>1</value>
   </data>
   <data name="gridColumn51.Width" type="System.Int32, mscorlib">
-    <value>49</value>
+    <value>59</value>
   </data>
   <data name="gridColumn1.Caption" xml:space="preserve">
     <value>Tarih</value>
@@ -746,13 +956,13 @@ Tel No</value>
     <value>2</value>
   </data>
   <data name="gridColumn1.Width" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>47</value>
   </data>
   <data name="gridColumn2.Caption" xml:space="preserve">
     <value>Masa No</value>
   </data>
   <data name="gridColumn2.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn3.Caption" xml:space="preserve">
     <value>Masa Ad</value>
@@ -764,7 +974,7 @@ Tel No</value>
     <value>3</value>
   </data>
   <data name="gridColumn3.Width" type="System.Int32, mscorlib">
-    <value>32</value>
+    <value>38</value>
   </data>
   <data name="gridColumn4.Caption" xml:space="preserve">
     <value>Fisno</value>
@@ -776,13 +986,13 @@ Tel No</value>
     <value>4</value>
   </data>
   <data name="gridColumn4.Width" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>56</value>
   </data>
   <data name="gridColumn5.Caption" xml:space="preserve">
     <value>Cari Kod</value>
   </data>
   <data name="gridColumn5.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn6.Caption" xml:space="preserve">
     <value>Ad Soyad</value>
@@ -794,7 +1004,7 @@ Tel No</value>
     <value>5</value>
   </data>
   <data name="gridColumn6.Width" type="System.Int32, mscorlib">
-    <value>56</value>
+    <value>67</value>
   </data>
   <data name="gridColumn7.Caption" xml:space="preserve">
     <value>Adres</value>
@@ -806,7 +1016,7 @@ Tel No</value>
     <value>6</value>
   </data>
   <data name="gridColumn7.Width" type="System.Int32, mscorlib">
-    <value>222</value>
+    <value>266</value>
   </data>
   <data name="gridColumn8.Caption" xml:space="preserve">
     <value>Tutar</value>
@@ -818,13 +1028,13 @@ Tel No</value>
     <value>7</value>
   </data>
   <data name="gridColumn8.Width" type="System.Int32, mscorlib">
-    <value>46</value>
+    <value>55</value>
   </data>
   <data name="gridColumn9.Caption" xml:space="preserve">
     <value>Paketçi Kod</value>
   </data>
   <data name="gridColumn9.Width" type="System.Int32, mscorlib">
-    <value>136</value>
+    <value>163</value>
   </data>
   <data name="gridColumn10.Caption" xml:space="preserve">
     <value>Paketçi</value>
@@ -836,25 +1046,25 @@ Tel No</value>
     <value>8</value>
   </data>
   <data name="gridColumn10.Width" type="System.Int32, mscorlib">
-    <value>44</value>
+    <value>53</value>
   </data>
   <data name="gridColumn46.Caption" xml:space="preserve">
     <value>Rsat_Sube</value>
   </data>
   <data name="gridColumn46.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn47.Caption" xml:space="preserve">
     <value>Sube</value>
   </data>
   <data name="gridColumn47.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn48.Caption" xml:space="preserve">
     <value>Sube Durum</value>
   </data>
   <data name="gridColumn48.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn52.Caption" xml:space="preserve">
     <value>Sıra No</value>
@@ -866,13 +1076,13 @@ Tel No</value>
     <value>10</value>
   </data>
   <data name="gridColumn52.Width" type="System.Int32, mscorlib">
-    <value>46</value>
+    <value>55</value>
   </data>
   <data name="gridColumn53.Caption" xml:space="preserve">
     <value>E.Sipariş No</value>
   </data>
   <data name="gridColumn53.Width" type="System.Int32, mscorlib">
-    <value>45</value>
+    <value>54</value>
   </data>
   <data name="gridColumn54.Caption" xml:space="preserve">
     <value>Ödeme Tip</value>
@@ -884,7 +1094,7 @@ Tel No</value>
     <value>9</value>
   </data>
   <data name="gridColumn54.Width" type="System.Int32, mscorlib">
-    <value>50</value>
+    <value>60</value>
   </data>
   <data name="gridColumn57.Caption" xml:space="preserve">
     <value>Cari_Tel</value>
@@ -896,7 +1106,7 @@ Tel No</value>
     <value>11</value>
   </data>
   <data name="gridColumn57.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn63.Caption" xml:space="preserve">
     <value>Dakika</value>
@@ -908,7 +1118,7 @@ Tel No</value>
     <value>12</value>
   </data>
   <data name="gridColumn63.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn66.Caption" xml:space="preserve">
     <value>BasDk</value>
@@ -920,13 +1130,13 @@ Tel No</value>
     <value>13</value>
   </data>
   <data name="gridColumn66.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>638, 554</value>
+    <value>762, 549</value>
   </data>
   <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -943,56 +1153,17 @@ Tel No</value>
   <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="gridControlSon5Call.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="btnGridDizaynKaydet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
   </data>
-  <data name="gridControlSon5Call.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+  <data name="btnGridDizaynKaydet.Text" xml:space="preserve">
+    <value>Grid Dizayn Kaydet</value>
   </data>
-  <data name="gridControlSon5Call.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 325</value>
+  <data name="btnGridDizaynSil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 22</value>
   </data>
-  <data name="gridViewSon5Call.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="gridColumn58.Caption" xml:space="preserve">
-    <value>Tel</value>
-  </data>
-  <data name="gridColumn58.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn58.VisibleIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridColumn58.Width" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
-  <data name="gridColumn62.Caption" xml:space="preserve">
-    <value>Ad</value>
-  </data>
-  <data name="gridColumn62.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn62.VisibleIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="gridColumn62.Width" type="System.Int32, mscorlib">
-    <value>124</value>
-  </data>
-  <data name="gridColumn59.Caption" xml:space="preserve">
-    <value>Cari Kod</value>
-  </data>
-  <data name="gridColumn59.Width" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="gridControlSon5Call.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="gridControlSon5Call.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 229</value>
-  </data>
-  <data name="gridControlSon5Call.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="btnGridDizaynSil.Text" xml:space="preserve">
+    <value>Grid Dizayn Sil</value>
   </data>
   <data name="&gt;&gt;gridControlSon5Call.Name" xml:space="preserve">
     <value>gridControlSon5Call</value>
@@ -1005,63 +1176,6 @@ Tel No</value>
   </data>
   <data name="&gt;&gt;gridControlSon5Call.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="gridControl5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="gridControl5.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="gridControl5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="gridView5.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
-  </data>
-  <data name="gridView5.Appearance.HeaderPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="gridView5.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="gridColumn60.Caption" xml:space="preserve">
-    <value>Center_Id</value>
-  </data>
-  <data name="gridColumn60.Width" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="gridColumn61.Caption" xml:space="preserve">
-    <value>Center_Data</value>
-  </data>
-  <data name="gridColumn61.Width" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="gridColumn49.Caption" xml:space="preserve">
-    <value>Data</value>
-  </data>
-  <data name="gridColumn49.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gridColumn49.VisibleIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridColumn49.Width" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="gridColumn50.Caption" xml:space="preserve">
-    <value>Center_Cari</value>
-  </data>
-  <data name="gridColumn50.Width" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="gridControl5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="gridControl5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 325</value>
-  </data>
-  <data name="gridControl5.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;gridControl5.Name" xml:space="preserve">
     <value>gridControl5</value>
@@ -1085,7 +1199,7 @@ Tel No</value>
     <value>2, 3, 2, 3</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 554</value>
+    <value>128, 549</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1102,6 +1216,189 @@ Tel No</value>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="gridControlSon5Call.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridControlSon5Call.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="gridControlSon5Call.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 325</value>
+  </data>
+  <data name="gridViewSon5Call.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="gridColumn58.Caption" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="gridColumn58.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn58.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn58.Width" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="gridColumn62.Caption" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="gridColumn62.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn62.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn62.Width" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="gridColumn59.Caption" xml:space="preserve">
+    <value>Cari Kod</value>
+  </data>
+  <data name="gridColumn59.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="gridControlSon5Call.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="gridControlSon5Call.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 224</value>
+  </data>
+  <data name="gridControlSon5Call.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;gridControlSon5Call.Name" xml:space="preserve">
+    <value>gridControlSon5Call</value>
+  </data>
+  <data name="&gt;&gt;gridControlSon5Call.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControlSon5Call.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;gridControlSon5Call.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gridControl5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gridControl5.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="gridControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridView5.Appearance.FooterPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="gridView5.Appearance.HeaderPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="gridView5.Appearance.Row.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="gridColumn60.Caption" xml:space="preserve">
+    <value>Center_Id</value>
+  </data>
+  <data name="gridColumn60.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="gridColumn61.Caption" xml:space="preserve">
+    <value>Center_Data</value>
+  </data>
+  <data name="gridColumn61.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="gridColumn49.Caption" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="gridColumn49.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn49.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn49.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="gridColumn50.Caption" xml:space="preserve">
+    <value>Center_Cari</value>
+  </data>
+  <data name="gridColumn50.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="gridControl5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="gridControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 325</value>
+  </data>
+  <data name="gridControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;gridControl5.Name" xml:space="preserve">
+    <value>gridControl5</value>
+  </data>
+  <data name="&gt;&gt;gridControl5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControl5.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;gridControl5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.Name" xml:space="preserve">
+    <value>flp_Kapatma</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;flp_Kapatma.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;simpleButton4.Name" xml:space="preserve">
+    <value>simpleButton4</value>
+  </data>
+  <data name="&gt;&gt;simpleButton4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton4.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;simpleButton4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 61</value>
+  </data>
+  <data name="panelControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 549</value>
+  </data>
+  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+    <value>tab_Paket</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="flp_Kapatma.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1109,13 +1406,13 @@ Tel No</value>
     <value>Fill</value>
   </data>
   <data name="flp_Kapatma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 53</value>
+    <value>2, 52</value>
   </data>
   <data name="flp_Kapatma.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="flp_Kapatma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 498</value>
+    <value>121, 495</value>
   </data>
   <data name="flp_Kapatma.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1182,13 +1479,13 @@ Tel No</value>
 </value>
   </data>
   <data name="simpleButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="simpleButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 50</value>
+    <value>121, 50</value>
   </data>
   <data name="simpleButton4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1208,32 +1505,164 @@ Tel No</value>
   <data name="&gt;&gt;simpleButton4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
+  <data name="&gt;&gt;simpleButton13.Name" xml:space="preserve">
+    <value>simpleButton13</value>
   </data>
-  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>745, 61</value>
+  <data name="&gt;&gt;simpleButton13.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="panelControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+  <data name="&gt;&gt;simpleButton13.Parent" xml:space="preserve">
+    <value>panelControl1</value>
   </data>
-  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 554</value>
+  <data name="&gt;&gt;simpleButton13.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btn_Yenile.Name" xml:space="preserve">
+    <value>btn_Yenile</value>
+  </data>
+  <data name="&gt;&gt;btn_Yenile.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_Yenile.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btn_Yenile.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
-    <value>panelControl2</value>
+  <data name="&gt;&gt;dateTarih2.Name" xml:space="preserve">
+    <value>dateTarih2</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+  <data name="&gt;&gt;dateTarih2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dateTarih2.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;dateTarih2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dateTarih1.Name" xml:space="preserve">
+    <value>dateTarih1</value>
+  </data>
+  <data name="&gt;&gt;dateTarih1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dateTarih1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;dateTarih1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Name" xml:space="preserve">
+    <value>textEdit6</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Name" xml:space="preserve">
+    <value>textEdit5</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;simpleButton10.Name" xml:space="preserve">
+    <value>simpleButton10</value>
+  </data>
+  <data name="&gt;&gt;simpleButton10.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton10.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton10.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;simpleButton3.Name" xml:space="preserve">
+    <value>simpleButton3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton3.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Name" xml:space="preserve">
+    <value>simpleButton2</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Name" xml:space="preserve">
+    <value>simpleButton1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_PaketPr.Name" xml:space="preserve">
+    <value>btn_PaketPr</value>
+  </data>
+  <data name="&gt;&gt;btn_PaketPr.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_PaketPr.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;btn_PaketPr.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1015, 61</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
     <value>tab_Paket</value>
   </data>
-  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="simpleButton13.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -1265,13 +1694,13 @@ Tel No</value>
 </value>
   </data>
   <data name="simpleButton13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 7</value>
+    <value>292, 7</value>
   </data>
   <data name="simpleButton13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 50</value>
+    <value>102, 50</value>
   </data>
   <data name="simpleButton13.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -1313,13 +1742,13 @@ Tel No</value>
 </value>
   </data>
   <data name="btn_Yenile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 4</value>
+    <value>587, 4</value>
   </data>
   <data name="btn_Yenile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_Yenile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 50</value>
+    <value>79, 50</value>
   </data>
   <data name="btn_Yenile.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -1343,7 +1772,7 @@ Tel No</value>
     <value />
   </data>
   <data name="dateTarih2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 32</value>
+    <value>467, 32</value>
   </data>
   <data name="dateTarih2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1357,7 +1786,7 @@ Tel No</value>
     <value>DateTimeAdvancingCaret</value>
   </data>
   <data name="dateTarih2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 22</value>
+    <value>114, 22</value>
   </data>
   <data name="dateTarih2.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -1378,7 +1807,7 @@ Tel No</value>
     <value />
   </data>
   <data name="dateTarih1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 5</value>
+    <value>467, 5</value>
   </data>
   <data name="dateTarih1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -1390,7 +1819,7 @@ Tel No</value>
     <value>DateTimeAdvancingCaret</value>
   </data>
   <data name="dateTarih1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 22</value>
+    <value>114, 22</value>
   </data>
   <data name="dateTarih1.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
@@ -1411,13 +1840,13 @@ Tel No</value>
     <value>Bit.Tar.</value>
   </data>
   <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 32</value>
+    <value>401, 32</value>
   </data>
   <data name="textEdit6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
+    <value>62, 22</value>
   </data>
   <data name="textEdit6.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
@@ -1438,13 +1867,13 @@ Tel No</value>
     <value>Baş.Tar.</value>
   </data>
   <data name="textEdit5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 5</value>
+    <value>401, 5</value>
   </data>
   <data name="textEdit5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="textEdit5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
+    <value>62, 22</value>
   </data>
   <data name="textEdit5.TabIndex" type="System.Int32, mscorlib">
     <value>113</value>
@@ -1510,13 +1939,13 @@ Tel No</value>
 </value>
   </data>
   <data name="simpleButton10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>561, 4</value>
+    <value>673, 4</value>
   </data>
   <data name="simpleButton10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 49</value>
+    <value>82, 49</value>
   </data>
   <data name="simpleButton10.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -1572,13 +2001,13 @@ Tel No</value>
 </value>
   </data>
   <data name="simpleButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>634, 3</value>
+    <value>761, 3</value>
   </data>
   <data name="simpleButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
+    <value>120, 50</value>
   </data>
   <data name="simpleButton3.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -1640,13 +2069,13 @@ Değiştir</value>
 </value>
   </data>
   <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 5</value>
+    <value>101, 5</value>
   </data>
   <data name="simpleButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 50</value>
+    <value>89, 50</value>
   </data>
   <data name="simpleButton2.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
@@ -1707,13 +2136,13 @@ Paket</value>
 </value>
   </data>
   <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 5</value>
+    <value>5, 5</value>
   </data>
   <data name="simpleButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 50</value>
+    <value>89, 50</value>
   </data>
   <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
@@ -1788,13 +2217,13 @@ Ekle</value>
 </value>
   </data>
   <data name="btn_PaketPr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 7</value>
+    <value>197, 7</value>
   </data>
   <data name="btn_PaketPr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_PaketPr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 50</value>
+    <value>89, 50</value>
   </data>
   <data name="btn_PaketPr.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1815,65 +2244,11 @@ Fişi</value>
   <data name="&gt;&gt;btn_PaketPr.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>849, 61</value>
-  </data>
-  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
-    <value>panelControl1</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
-    <value>tab_Paket</value>
-  </data>
-  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tab_Paket.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="tab_Paket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>849, 615</value>
-  </data>
-  <data name="tab_Paket.Text" xml:space="preserve">
-    <value>Paket Satış</value>
-  </data>
-  <data name="&gt;&gt;tab_Paket.Name" xml:space="preserve">
-    <value>tab_Paket</value>
-  </data>
-  <data name="&gt;&gt;tab_Paket.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_Paket.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_Paket.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>851, 638</value>
-  </data>
-  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="gridControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="gridControl4.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="gridControl4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 62</value>
@@ -1897,7 +2272,7 @@ Fişi</value>
     <value>0</value>
   </data>
   <data name="gridColumn41.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn42.Caption" xml:space="preserve">
     <value>Telno</value>
@@ -1909,7 +2284,7 @@ Fişi</value>
     <value>1</value>
   </data>
   <data name="gridColumn42.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn43.Caption" xml:space="preserve">
     <value>Cari Kod</value>
@@ -1921,7 +2296,7 @@ Fişi</value>
     <value>2</value>
   </data>
   <data name="gridColumn43.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn44.Caption" xml:space="preserve">
     <value>Ad Soyad</value>
@@ -1933,7 +2308,7 @@ Fişi</value>
     <value>3</value>
   </data>
   <data name="gridColumn44.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn45.Caption" xml:space="preserve">
     <value>Adres</value>
@@ -1945,13 +2320,13 @@ Fişi</value>
     <value>4</value>
   </data>
   <data name="gridColumn45.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridControl4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="gridControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 544</value>
+    <value>1015, 548</value>
   </data>
   <data name="gridControl4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1967,6 +2342,69 @@ Fişi</value>
   </data>
   <data name="&gt;&gt;gridControl4.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;simpleButton12.Name" xml:space="preserve">
+    <value>simpleButton12</value>
+  </data>
+  <data name="&gt;&gt;simpleButton12.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton12.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;simpleButton12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dateEdit2.Name" xml:space="preserve">
+    <value>dateEdit2</value>
+  </data>
+  <data name="&gt;&gt;dateEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dateEdit2.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;dateEdit2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Name" xml:space="preserve">
+    <value>textEdit2</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.Parent" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1015, 62</value>
+  </data>
+  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
+    <value>panelControl4</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
+    <value>tab_CallerId</value>
+  </data>
+  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="simpleButton12.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -1992,13 +2430,13 @@ Fişi</value>
 </value>
   </data>
   <data name="simpleButton12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 6</value>
+    <value>274, 6</value>
   </data>
   <data name="simpleButton12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 50</value>
+    <value>143, 50</value>
   </data>
   <data name="simpleButton12.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2022,7 +2460,7 @@ Fişi</value>
     <value />
   </data>
   <data name="dateEdit2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 5</value>
+    <value>125, 5</value>
   </data>
   <data name="dateEdit2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -2034,7 +2472,7 @@ Fişi</value>
     <value>Combo</value>
   </data>
   <data name="dateEdit2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 26</value>
+    <value>143, 26</value>
   </data>
   <data name="dateEdit2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2064,7 +2502,7 @@ Fişi</value>
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="textEdit2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 24</value>
+    <value>122, 24</value>
   </data>
   <data name="textEdit2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2081,59 +2519,11 @@ Fişi</value>
   <data name="&gt;&gt;textEdit2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panelControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelControl4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="panelControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 62</value>
-  </data>
-  <data name="panelControl4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Name" xml:space="preserve">
-    <value>panelControl4</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.Parent" xml:space="preserve">
-    <value>tab_CallerId</value>
-  </data>
-  <data name="&gt;&gt;panelControl4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tab_CallerId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="tab_CallerId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 606</value>
-  </data>
-  <data name="tab_CallerId.Text" xml:space="preserve">
-    <value>Caller Id</value>
-  </data>
-  <data name="&gt;&gt;tab_CallerId.Name" xml:space="preserve">
-    <value>tab_CallerId</value>
-  </data>
-  <data name="&gt;&gt;tab_CallerId.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_CallerId.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_CallerId.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="gridControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="gridControl3.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="gridControl3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -2157,7 +2547,7 @@ Fişi</value>
     <value>0</value>
   </data>
   <data name="gridColumn35.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn36.Caption" xml:space="preserve">
     <value>Tel2</value>
@@ -2169,7 +2559,7 @@ Fişi</value>
     <value>1</value>
   </data>
   <data name="gridColumn36.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn37.Caption" xml:space="preserve">
     <value>Kod</value>
@@ -2181,7 +2571,7 @@ Fişi</value>
     <value>2</value>
   </data>
   <data name="gridColumn37.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn38.Caption" xml:space="preserve">
     <value>Ad</value>
@@ -2193,7 +2583,7 @@ Fişi</value>
     <value>3</value>
   </data>
   <data name="gridColumn38.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn39.Caption" xml:space="preserve">
     <value>Soyad</value>
@@ -2205,7 +2595,7 @@ Fişi</value>
     <value>4</value>
   </data>
   <data name="gridColumn39.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn40.Caption" xml:space="preserve">
     <value>Adres</value>
@@ -2217,13 +2607,13 @@ Fişi</value>
     <value>5</value>
   </data>
   <data name="gridColumn40.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridControl3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="gridControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 606</value>
+    <value>1015, 610</value>
   </data>
   <data name="gridControl3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2240,38 +2630,17 @@ Fişi</value>
   <data name="&gt;&gt;gridControl3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tab_KayitliTel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="tab_KayitliTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 606</value>
-  </data>
-  <data name="tab_KayitliTel.Text" xml:space="preserve">
-    <value>Kayıtlı Tel No</value>
-  </data>
-  <data name="&gt;&gt;tab_KayitliTel.Name" xml:space="preserve">
-    <value>tab_KayitliTel</value>
-  </data>
-  <data name="&gt;&gt;tab_KayitliTel.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_KayitliTel.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_KayitliTel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="gridControlTest.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="gridControlTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 210</value>
+    <value>11, 210</value>
   </data>
   <data name="gridControlTest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="gridControlTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 64</value>
+    <value>41, 64</value>
   </data>
   <data name="gridControlTest.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2295,7 +2664,7 @@ Fişi</value>
     <value>Fill</value>
   </data>
   <data name="gridControl2.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 71</value>
@@ -2322,13 +2691,13 @@ Fişi</value>
     <value>2</value>
   </data>
   <data name="gridColumn11.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn12.Caption" xml:space="preserve">
     <value>Dep Kod</value>
   </data>
   <data name="gridColumn12.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn13.Caption" xml:space="preserve">
     <value>Dep Ad</value>
@@ -2340,13 +2709,13 @@ Fişi</value>
     <value>3</value>
   </data>
   <data name="gridColumn13.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn14.Caption" xml:space="preserve">
     <value>Masa No</value>
   </data>
   <data name="gridColumn14.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn15.Caption" xml:space="preserve">
     <value>Masa Ad</value>
@@ -2358,7 +2727,7 @@ Fişi</value>
     <value>4</value>
   </data>
   <data name="gridColumn15.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn16.Caption" xml:space="preserve">
     <value>Tutar</value>
@@ -2379,7 +2748,7 @@ Fişi</value>
     <value>5</value>
   </data>
   <data name="gridColumn16.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn18.Caption" xml:space="preserve">
     <value>Fisno</value>
@@ -2391,13 +2760,13 @@ Fişi</value>
     <value>6</value>
   </data>
   <data name="gridColumn18.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn19.Caption" xml:space="preserve">
     <value>Cari Kod</value>
   </data>
   <data name="gridColumn19.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn20.Caption" xml:space="preserve">
     <value>Ad Soyad</value>
@@ -2409,7 +2778,7 @@ Fişi</value>
     <value>7</value>
   </data>
   <data name="gridColumn20.Width" type="System.Int32, mscorlib">
-    <value>108</value>
+    <value>130</value>
   </data>
   <data name="gridColumn21.Caption" xml:space="preserve">
     <value>Tel</value>
@@ -2421,7 +2790,7 @@ Fişi</value>
     <value>8</value>
   </data>
   <data name="gridColumn21.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn22.Caption" xml:space="preserve">
     <value>Adres</value>
@@ -2433,13 +2802,13 @@ Fişi</value>
     <value>9</value>
   </data>
   <data name="gridColumn22.Width" type="System.Int32, mscorlib">
-    <value>193</value>
+    <value>232</value>
   </data>
   <data name="gridColumn23.Caption" xml:space="preserve">
     <value>Paketçi Kod</value>
   </data>
   <data name="gridColumn23.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn24.Caption" xml:space="preserve">
     <value>Paketçi</value>
@@ -2451,7 +2820,7 @@ Fişi</value>
     <value>10</value>
   </data>
   <data name="gridColumn24.Width" type="System.Int32, mscorlib">
-    <value>95</value>
+    <value>114</value>
   </data>
   <data name="gridColumn25.Caption" xml:space="preserve">
     <value>Acilis</value>
@@ -2463,7 +2832,7 @@ Fişi</value>
     <value>11</value>
   </data>
   <data name="gridColumn25.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn26.Caption" xml:space="preserve">
     <value>Kapanis</value>
@@ -2475,7 +2844,7 @@ Fişi</value>
     <value>12</value>
   </data>
   <data name="gridColumn26.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn27.Caption" xml:space="preserve">
     <value>Indirim</value>
@@ -2496,7 +2865,7 @@ Fişi</value>
     <value>13</value>
   </data>
   <data name="gridColumn27.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn28.Caption" xml:space="preserve">
     <value>NAKIT</value>
@@ -2517,7 +2886,7 @@ Fişi</value>
     <value>14</value>
   </data>
   <data name="gridColumn28.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn29.Caption" xml:space="preserve">
     <value>KREDI</value>
@@ -2538,7 +2907,7 @@ Fişi</value>
     <value>20</value>
   </data>
   <data name="gridColumn29.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn30.Caption" xml:space="preserve">
     <value>ODENMEZ</value>
@@ -2559,7 +2928,7 @@ Fişi</value>
     <value>18</value>
   </data>
   <data name="gridColumn30.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn31.Caption" xml:space="preserve">
     <value>IKRAM</value>
@@ -2580,7 +2949,7 @@ Fişi</value>
     <value>19</value>
   </data>
   <data name="gridColumn31.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn32.Caption" xml:space="preserve">
     <value>CARI</value>
@@ -2601,7 +2970,7 @@ Fişi</value>
     <value>16</value>
   </data>
   <data name="gridColumn32.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn33.Caption" xml:space="preserve">
     <value>KK</value>
@@ -2622,7 +2991,7 @@ Fişi</value>
     <value>15</value>
   </data>
   <data name="gridColumn33.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn34.Caption" xml:space="preserve">
     <value>YEMEKCEKI</value>
@@ -2643,7 +3012,7 @@ Fişi</value>
     <value>17</value>
   </data>
   <data name="gridColumn34.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn55.Caption" xml:space="preserve">
     <value>ONLINE</value>
@@ -2664,7 +3033,7 @@ Fişi</value>
     <value>21</value>
   </data>
   <data name="gridColumn55.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn56.Caption" xml:space="preserve">
     <value>HAVALE</value>
@@ -2685,7 +3054,7 @@ Fişi</value>
     <value>22</value>
   </data>
   <data name="gridColumn56.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn64.Caption" xml:space="preserve">
     <value>Sıra No</value>
@@ -2697,7 +3066,7 @@ Fişi</value>
     <value>23</value>
   </data>
   <data name="gridColumn64.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridColumn65.Caption" xml:space="preserve">
     <value>Tip</value>
@@ -2709,13 +3078,13 @@ Fişi</value>
     <value>0</value>
   </data>
   <data name="gridColumn65.Width" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>74</value>
   </data>
   <data name="gridControl2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 535</value>
+    <value>1096, 539</value>
   </data>
   <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2732,17 +3101,233 @@ Fişi</value>
   <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;btnOdemeTipiDegistir.Name" xml:space="preserve">
+    <value>btnOdemeTipiDegistir</value>
+  </data>
+  <data name="&gt;&gt;btnOdemeTipiDegistir.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnOdemeTipiDegistir.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;btnOdemeTipiDegistir.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnKuryeOzet.Name" xml:space="preserve">
+    <value>btnKuryeOzet</value>
+  </data>
+  <data name="&gt;&gt;btnKuryeOzet.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnKuryeOzet.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;btnKuryeOzet.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton14.Name" xml:space="preserve">
+    <value>simpleButton14</value>
+  </data>
+  <data name="&gt;&gt;simpleButton14.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton14.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton14.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;simpleButton9.Name" xml:space="preserve">
+    <value>simpleButton9</value>
+  </data>
+  <data name="&gt;&gt;simpleButton9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton9.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton8.Name" xml:space="preserve">
+    <value>simpleButton8</value>
+  </data>
+  <data name="&gt;&gt;simpleButton8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton8.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;simpleButton7.Name" xml:space="preserve">
+    <value>simpleButton7</value>
+  </data>
+  <data name="&gt;&gt;simpleButton7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton7.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;simpleButton5.Name" xml:space="preserve">
+    <value>simpleButton5</value>
+  </data>
+  <data name="&gt;&gt;simpleButton5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton5.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;simpleButton6.Name" xml:space="preserve">
+    <value>simpleButton6</value>
+  </data>
+  <data name="&gt;&gt;simpleButton6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton6.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;simpleButton6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;look_Paketci.Name" xml:space="preserve">
+    <value>look_Paketci</value>
+  </data>
+  <data name="&gt;&gt;look_Paketci.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;look_Paketci.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;look_Paketci.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;chk_Kapali.Name" xml:space="preserve">
+    <value>chk_Kapali</value>
+  </data>
+  <data name="&gt;&gt;chk_Kapali.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_Kapali.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;chk_Kapali.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;chk_Acik.Name" xml:space="preserve">
+    <value>chk_Acik</value>
+  </data>
+  <data name="&gt;&gt;chk_Acik.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_Acik.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;chk_Acik.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;chk_TekPaket.Name" xml:space="preserve">
+    <value>chk_TekPaket</value>
+  </data>
+  <data name="&gt;&gt;chk_TekPaket.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_TekPaket.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;chk_TekPaket.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;dateEdit1.Name" xml:space="preserve">
+    <value>dateEdit1</value>
+  </data>
+  <data name="&gt;&gt;dateEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dateEdit1.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;dateEdit1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
+    <value>textEdit1</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="panelControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1096, 71</value>
+  </data>
+  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
+    <value>tab_KapaliPaket</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="btnKuryeOzet.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
+  <data name="btnKuryeOzet.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAcdEVYdFRpdGxlAFRlYW07UGVvcGxlO0dyb3VwO1VzZXKTe2BJAAADa0lEQVQ4T32Qa0yTdxSH
+        /3WG26DvK4nGMLPNoRDGCorUKkwrCrTSl/ettjgSKIxUgkjBCqNpt7bWBayjyE1aquvYRF0XmVwyOhqx
+        MmSwTCKC95Ut2eXLxr5siRanuN9CWYyJCSf5fTnPOU9ODgFAZDIZUUqVhOM4Xm5uLo9hGB7LsrylmFgs
+        JhRFEbIwJJVKl3WpN5b0VqTe7a9MnXOXbbjvKEiqYRjmpaXYMwGXy4W6VIKHX+kl/051lGDcyqJFGY8q
+        ZnPMUsxqtS4KWBkb1aRMeHzNXQ/PcRW8rdW4UF8x/9uvvxyanZ0tH2wzzN8bdmPQVoLOsjSYJa89UeRI
+        VgUvMLkyiFwuj7Tv3/X9fW875vwDmOwyYPhIZmDsSPrfvtqU+W7t9kejXfUI+L/GWHMhzIzgKsdxK54J
+        FApFmKM6XzvaocWDm270VKRgulODkcZC3Dqvw5V6Beoka/HX5Hn06bKhY0VVHMdFBAUURfFiY2NDdkvS
+        E1veyw54HSY49q1Hv5FDr3EPjsvfglOVAoP4VXjsRhwtFQa2i0VJcXFxoQu7hKbp8JrmbWqLK/Pu0JQV
+        Uz/1oK08A32WQgR+v4Y/xtthV4lg0+Tguv9L9H6nx6EG4b2CmsQymqajyAenxFdOe4rgu12H7olSeG5Y
+        cHH4GPrM+/DwZx/+vGpDR1EqLl6qQ/+EAR9fzoPLq0JN61YotWtHiO5k2tPu8SrYB/fiRF82GnslOOMx
+        oLVWiuvnTBix5eNo8UZ8fskcZOYzaah1CqF3isBpYp6SovcT24uNb06rjck/WOz5D9rOHobtk/J/Djek
+        zzfpdsBatQWlpk1PGjsPzrWe1ULfJJ9TVK6fkahX39pZsMoZ/AFN03yKolZIi97YUN4scOtdwkf9kwcw
+        MH0QnWMy2H078e6H6x7LKmIuCHZEb+Hz+SvpxYogFoslGELI8sqTgjuffvMOLs9oMOgvxWcTWegY3wr7
+        tyI4RtNgPrcZ4uJoPyEkXJTPX9x7ThCiboiHc4hFy9DbOOZJxonhZNh8Aph64qH/Yh00p1+HMC8KhJDI
+        ZCb8BcHyvdVrzKz2lYEczeqbWWUrZzL2R2ObioYoj/px057I20m7w70JmWEfEULCErJCXhDwFiSEkFBC
+        SAQh5GVCSNRzify/v8CXJexaFPwH6rXSV7sSTWUAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnKuryeOzet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>791, 11</value>
+    <value>933, 11</value>
   </data>
   <data name="btnKuryeOzet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="btnKuryeOzet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 50</value>
+    <value>57, 50</value>
   </data>
   <data name="btnKuryeOzet.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -2761,7 +3346,7 @@ Fişi</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;btnKuryeOzet.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="simpleButton14.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.25pt, style=Bold</value>
@@ -2810,13 +3395,13 @@ Fişi</value>
 </value>
   </data>
   <data name="simpleButton14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>714, 11</value>
+    <value>843, 11</value>
   </data>
   <data name="simpleButton14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 50</value>
+    <value>85, 50</value>
   </data>
   <data name="simpleButton14.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -2835,7 +3420,7 @@ Fişi</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;simpleButton14.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="simpleButton9.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2867,13 +3452,13 @@ Fişi</value>
 </value>
   </data>
   <data name="simpleButton9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>640, 12</value>
+    <value>755, 12</value>
   </data>
   <data name="simpleButton9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 50</value>
+    <value>83, 50</value>
   </data>
   <data name="simpleButton9.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2891,7 +3476,7 @@ Fişi</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;simpleButton9.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="simpleButton8.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2947,13 +3532,13 @@ Fişi</value>
 </value>
   </data>
   <data name="simpleButton8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>569, 11</value>
+    <value>669, 11</value>
   </data>
   <data name="simpleButton8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 50</value>
+    <value>79, 50</value>
   </data>
   <data name="simpleButton8.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2971,7 +3556,7 @@ Fişi</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;simpleButton8.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="simpleButton7.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3016,13 +3601,13 @@ Fişi</value>
 </value>
   </data>
   <data name="simpleButton7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 12</value>
+    <value>586, 12</value>
   </data>
   <data name="simpleButton7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 50</value>
+    <value>75, 50</value>
   </data>
   <data name="simpleButton7.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3041,7 +3626,7 @@ Detay</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;simpleButton7.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="simpleButton5.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3096,13 +3681,13 @@ Detay</value>
 </value>
   </data>
   <data name="simpleButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>408, 11</value>
+    <value>490, 11</value>
   </data>
   <data name="simpleButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 50</value>
+    <value>89, 50</value>
   </data>
   <data name="simpleButton5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3121,7 +3706,7 @@ Değiştir</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;simpleButton5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="simpleButton6.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -3169,13 +3754,13 @@ Değiştir</value>
 </value>
   </data>
   <data name="simpleButton6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 11</value>
+    <value>399, 11</value>
   </data>
   <data name="simpleButton6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
   </data>
   <data name="simpleButton6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 50</value>
+    <value>83, 50</value>
   </data>
   <data name="simpleButton6.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3194,10 +3779,10 @@ Başlat</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;simpleButton6.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="look_Paketci.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 38</value>
+    <value>125, 38</value>
   </data>
   <data name="look_Paketci.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -3248,7 +3833,7 @@ Başlat</value>
     <value />
   </data>
   <data name="look_Paketci.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 26</value>
+    <value>143, 26</value>
   </data>
   <data name="look_Paketci.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3263,13 +3848,13 @@ Başlat</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;look_Paketci.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="chk_Kapali.EditValue" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chk_Kapali.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 42</value>
+    <value>274, 42</value>
   </data>
   <data name="chk_Kapali.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -3281,7 +3866,7 @@ Başlat</value>
     <value>Kapalı Çekler</value>
   </data>
   <data name="chk_Kapali.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="chk_Kapali.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3296,10 +3881,10 @@ Başlat</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;chk_Kapali.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="chk_Acik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 6</value>
+    <value>274, 6</value>
   </data>
   <data name="chk_Acik.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -3311,7 +3896,7 @@ Başlat</value>
     <value>Açık Çekler</value>
   </data>
   <data name="chk_Acik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="chk_Acik.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3326,7 +3911,7 @@ Başlat</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;chk_Acik.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="chk_TekPaket.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 42</value>
@@ -3341,7 +3926,7 @@ Başlat</value>
     <value>Tek Paketçi</value>
   </data>
   <data name="chk_TekPaket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="chk_TekPaket.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3356,13 +3941,13 @@ Başlat</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;chk_TekPaket.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="dateEdit1.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="dateEdit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 5</value>
+    <value>125, 5</value>
   </data>
   <data name="dateEdit1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -3374,7 +3959,7 @@ Başlat</value>
     <value>Combo</value>
   </data>
   <data name="dateEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 26</value>
+    <value>143, 26</value>
   </data>
   <data name="dateEdit1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3389,7 +3974,7 @@ Başlat</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;dateEdit1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="textEdit1.EditValue" xml:space="preserve">
     <value>Tarih</value>
@@ -3404,7 +3989,7 @@ Başlat</value>
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 24</value>
+    <value>122, 24</value>
   </data>
   <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3419,79 +4004,100 @@ Başlat</value>
     <value>panelControl3</value>
   </data>
   <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="panelControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelControl3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 71</value>
-  </data>
-  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
-    <value>panelControl3</value>
-  </data>
-  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
-    <value>tab_KapaliPaket</value>
-  </data>
-  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tab_KapaliPaket.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="tab_KapaliPaket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 606</value>
-  </data>
-  <data name="tab_KapaliPaket.Text" xml:space="preserve">
-    <value>Kapalı Paketler</value>
-  </data>
-  <data name="&gt;&gt;tab_KapaliPaket.Name" xml:space="preserve">
-    <value>tab_KapaliPaket</value>
-  </data>
-  <data name="&gt;&gt;tab_KapaliPaket.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tab_KapaliPaket.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tab_KapaliPaket.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>13</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="simpleButton15.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnOdemeTipiDegistir.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAfdEVYdFRpdGxlAEN1cnJlbmN5O0RvbGxhcjtCdWNrO0V1cm/480WPAAAKAUlEQVRYR52XB1RU
+        Vx7Gn7uSxKzZrIe1YEFBbLgIASMyiCKIoFKGMoAIuBIRBBlGugjSldAGAshIkTLSpSgaUDozICJ1FKli
+        oQhERYiKIXvOt+c9GUJIzIb9n/Odd+bNO+/73f+997szRG8mg5gtgiAWEATxF4Ig/koQxEKCID4hCOLT
+        WSI/k/fJZxb0pDOInivT4n4QWQD+lCjTqcFC4ucXPKE5afxJureqVGsS3b+Ta8jvTjca6k1noOuK0VBH
+        miG/LVHfL9tHbS1BECJCkKmRSuL9s1yiO/X/BJh+0UJTNckvBZf1ox5lmU2O8IIw0ZWBycFb+PllLSYH
+        SjDekY7hmkD0pB+ZqI/VtZruCgm94P2TLKLzstE8ATJm2i4Se5q2tiPNsGmwzAPvB29jargcP/UXYLIv
+        HZOPkjDZm4TJPi7eP8vDu8cF6C9xhyDBoCjRSUVM2ImHCYbzA5g2X6hDE1/SkWrYNFr7LX4aLsfk01xM
+        9iRgpC4I/Ah93HCh4artNhQ5K4EXRscwPxCTfRkYqgyEgKPPt9eRXkxCPOAYzBuAJP+sJZ7OHiz1xPuh
+        Ykz2peFNezTaUo+hkKmAW54qqPBVQ3WgBsp91VByRgUFp75CS6Il3nbF40nhaTRE6oZML05yQL8x+pjI
+        Eol2UNrczT089a7vKt71puBNexQaYoxxw0kRlX7qqPJTp64VvtPyUUf5ub0oZG7HCM8b461RaIsxfJvC
+        2kUuTHJAvzH6mMj67G6MbuhAiSvePeLizYMIPC12pswrfPei3EcVjRxzjNSF4k1XEoZrQ3AvzgylXrvR
+        me2AiaYgvL7nh55MK1T6azpPL8jfGH1MZP2tNY5+9+WdIEw0B+LHlvOoCdVFmdcelHqpoDHuMN60x2Ci
+        5TzGG30/PHM/Ci8aQjDREoLX9V54WW6LgWvW4AdoVU9Pw7zqC0Gc/ujrpgt4xXNEPH0t1dpbHrtwy10Z
+        15jbcdl4PS4zpmUkibE6D7y+44UxvhtelNpg5MZhDBUdRfW5fX3T25LaEcL18L/q720x9KnxRn+8LLfG
+        eIMPihxkUey0E8UuOzHRFokfBVH4sS0SE21sTLRG4FX1abyodMRwsSWGCo37B/IN8x/nGIYWOe92Jwhi
+        0e8lpnv8TsL9kiLhSoqzg3CJ2/ELQBNbZ/QV/wx+KLFEpMZy5FptQu43m1FgKwOOzhrE6YojTnctLuqI
+        40XpCYzcPIqhQqPRx9n0+MpkLe/YpD03AxKUez3jlcbOJNLgnqA05MZR5LOit/uZu0n/KjH7XuYQrYNh
+        hFPs9hmAxbXntRoGi5kYLbbAWK0HagLVkXN0A7ItN6DCWwWvapwxVuOEV9VOGMrTx7NcvfbW5APu7ASV
+        Ct+U3VNXKu1Q3REGwWAy+sbyIBhIRtXDUKSW2eJMvPKEXchXv0rMlsFQghUtPwOw6HtPtfCOFEuMFlti
+        +JoRergmyLKQQpa5FJINxJF1bBME0WoYytVFE3vPg6hjG738EmhPOTctcH8wGV0vUiB4HoF7/f6489ST
+        UkO/P1qHItD8LBbRhaZwYMsX0U9KzSQmM1JuBkDknMG/pGv8NaeeF1nheT4dw4XG4AXsRYbZeqQfXo8k
+        ujjC9y7HeZroqK/qMk+PSIVnmdUO6P4hDc2Doah74g7+Yxfw+1xg7CYJhpskeH3OlPh9rmgaCEZq6QnY
+        h8vyd2itoBLTLnzbDADZlkX5TOXoRjYdz/P0MJSjjeEic9wJ1kC6qSS4xhLgMiTIHXLxrN+2cnLkHaMJ
+        uNfvh5o+J5R1nkIAdx9OBMvC6bsdlLyTVHE+XRPlXQ6o7HXEnSfnEJGrD+vzW3+VmGRRZ4GylKjoNQel
+        hpaoQxjM1MJAhhaGC03xKMMUt1wVkX5kw0CwmYSP+yWl/zQ+YaPhWQCqHzFR2mmH4/4y+CZABvYh8mBF
+        fg3HSAUc89+Koz5bcCFDA+U99ijrtkNpuzPZhbd6dutmEpP4nkUTQog4qklI5p34uoXno4rHyero56pj
+        IFMLQwUm6Lt65HrIxV23OTeNUffEA1W9jqjosUcQVwP2oXJgRiiAGSGPqvZgCAYSEHXVGKdC5eBxcQ9u
+        d9pQyhcYIzhLHRbnNs4kJnH9pKIQgII4KL1safIRGfZVa/lJnvdO3I9QRjdHGa3RSuHubPnHhY0nUdzx
+        b9xoN0NZtw28EtTgECaHU2FysA+Tg2u0MtJ5ZmgeCEPXaApaBtkofvgN8loZuHJPE/Hl2jjqu/GXxMw7
+        rkCM1fvMhiDJPrWjrZFIYGzxTzPdyksxke6KoW/ydgiXHb/9kInC+wzktGijQGCIqDwGbENkYPutDGyD
+        ZWDpvRF6THGYuK0Hu0AL1x8cRXazLrgN+5HWsB8ptQdh4bOBTEwyGxYQOZayRLblNiLLQobINJeZC0I+
+        RCba5wRBLLEL2zZV1n0KuS26yG4+hKzmgyhqPk4ZW/lvwvEgaVgHScMqcDPMz0pBy2YFzibLI/WuBlLr
+        9yGlfh+S6zRgfk5qfAbgD0oIQi1SMjFtvt06ekNgjcymQ8hsOoCMxgPIadHDrfsucInZCYb7GhiRclsN
+        I7dVMHRdBR2HVUi+o47LlNTAqdgD07MSv3Rg7vE4V9NFdmOxVcCWhis8Mwog/Z4mJRULUbhx5FHV64Ki
+        RhZ8ktQoYwNSLiuh77waSbV7kVirSin0Og1G7uLCNfCnAcgts8jMc0P4hSwNZDfrgdugibS7+2EVsAUa
+        J5bBLV4WyXxtFLXZwNhDHPrOpPlKOLK3I4Gviku8PbjE2w1nzjbQWavJXfDhxJxrOFezpkNkt5GY9PGg
+        LVOZdw2RWq9BzWlAmgY12r3H/glFk39AkfEl9JxWgu60EqaeEsjgWYLD2w1OjQqibivBxHPtWzXLZeIz
+        8z/XcK5mAVCJyXBdF+2ZqITU+v1IqlPHtdZjiMo3AIu9HfrOYqA7icHmggx8L6ujWOCI5DpNXKzahdgq
+        ZZyM2ARd5sog4aE0HwAhxMI1mz8XNfFY1+DLVUYiXxVJtWrIbzPH7U4m6KfFoHdaDKWdjrgmsMIlnhpi
+        KmmIrqSBFbcFuiyx6s1KX5BnwQJd1ooPb51rOFfCOuwlIYQQ2XFIVNLITbyFFSOL78qVEVejgriaXeD3
+        eYH36CxiqmjTxkoIK9kB65D10GauaKIZiZKu1M7SZi6fH4DJmXVCAApCSmHxUm2HVWwTD/FJVqw0AnLl
+        EVGiiOgKGkKLv4ZPlhzsvttILsS3B04uD920czE1clIlD52Igw7L5gfAcBcnqnu8Z0NQialwYInEwZMr
+        /HWYK3jaTLEuXZYYDjHFurQdlldq2i71VDJYsnr2TzPSvKTdiThgv3R+AIZuqwkDl9WEvvMqQt955VwQ
+        YWLO/hdN3iO/o4wP2i+lTIXXeQP8QQlBPqY/rP8CFhW+4q52dYQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnOdemeTipiDegistir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>995, 12</value>
+  </data>
+  <data name="btnOdemeTipiDegistir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="btnOdemeTipiDegistir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 49</value>
+  </data>
+  <data name="btnOdemeTipiDegistir.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="btnOdemeTipiDegistir.Text" xml:space="preserve">
+    <value>ÖDEME
+DEĞİŞTİR
+</value>
+  </data>
+  <data name="&gt;&gt;btnOdemeTipiDegistir.Name" xml:space="preserve">
+    <value>btnOdemeTipiDegistir</value>
+  </data>
+  <data name="&gt;&gt;btnOdemeTipiDegistir.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnOdemeTipiDegistir.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;btnOdemeTipiDegistir.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>5, 13</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>851, 717</value>
+    <value>1102, 717</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>

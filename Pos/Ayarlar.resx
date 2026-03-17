@@ -5035,10 +5035,10 @@ Sıfır Yap</value>
     <value>0, 3, 0, 3</value>
   </data>
   <data name="Param_SiparisFisFont.Properties.Caption" xml:space="preserve">
-    <value>Siparişte Yukarı Fiş No </value>
+    <value>Sipariş Yukarı Fiş No Ve Sipariş Ekranında Sade</value>
   </data>
   <data name="Param_SiparisFisFont.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 19</value>
+    <value>254, 19</value>
   </data>
   <data name="Param_SiparisFisFont.TabIndex" type="System.Int32, mscorlib">
     <value>330</value>
@@ -7605,7 +7605,7 @@ Sıfır Yap</value>
     <value>0, 3, 0, 3</value>
   </data>
   <data name="servispayFooterda.Properties.Caption" xml:space="preserve">
-    <value>Servis Pay Footer Al</value>
+    <value>Servis Pay Footer Al  </value>
   </data>
   <data name="servispayFooterda.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 19</value>
@@ -30116,7 +30116,7 @@ Müşteriye İndirim Tanımlanınca Onu Aktif eder.</value>
   <data name="onburoRaporIade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
-  <data name="checkEdit2.Properties.Caption" xml:space="preserve">
+  <data name="onburoRaporIade.Properties.Caption" xml:space="preserve">
     <value>Önbüro Rapor İade</value>
   </data>
   <data name="onburoRaporIade.Size" type="System.Drawing.Size, System.Drawing">

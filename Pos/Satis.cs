@@ -354,8 +354,9 @@ namespace Pos
 
 
 
-                panelControlBarkod.Visible = !Param.Param_PaketKucukEkran;
+                //panelControlBarkod.Visible = !Param.Param_PaketKucukEkran;
 
+                panelControlBarkod.Visible = !Param.Param_SiparisFisFont;
                 gridstyle();
             }
             catch (Exception ex)

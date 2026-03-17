@@ -89,6 +89,8 @@ namespace Pos
             labelSecili.Text = "";
 
             panel1.Visible = !Param.Param_StokAnlikAtmasin;
+
+            btnOdemeTipiDegistir.Visible = User.Pos_OdemeDegistir;
         }
 
 
@@ -1477,7 +1479,7 @@ order by Caller_Id desc";
             sat.ShowDialog();
 
 
-            if (Param.ikinciEkranAktif==false)
+            if (Param.ikinciEkranAktif == false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }
@@ -1581,6 +1583,46 @@ order by count(distinct Satis.Rsat_Fisno) desc";
                     e.Appearance.ForeColor = Color.Black;
                 }
             }
+        }
+
+        private void btnOdemeTipiDegistir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int Fisno = 0;
+                DateTime Tarih = Param.Tarih;
+
+                Fisno = Convert.ToInt32(gridView2.GetFocusedRowCellValue("Rsat_Fisno"));
+                Tarih = Convert.ToDateTime(gridView2.GetFocusedRowCellValue("Rsat_Tarih"));
+
+
+                if (Tarih.Date != Param.Tarih.Date)
+                {
+                    MessageBox.Show(res_man.GetString("Geçmiş Tarihe Ait Ödeme Bilgileri Değiştirilemez..."), res_man.GetString("Uyarı"));
+                    return;
+                }
+
+                if (Fisno == 0)
+                {
+                    MessageBox.Show(res_man.GetString("Fiş No 0 Olamaz....!"), res_man.GetString("Uyarı"));
+                    return;
+                }
+
+                Hesap h = new Hesap();
+                h.fisno = Fisno;
+                h.Tag = Fisno;
+                h.odemetipiDegistirdenmigeldi = true;
+                h.tip = "O";
+                h.ShowDialog();
+
+                gridyenile_2();
+            }
+            catch (Exception ex)
+            {
+
+                RHMesaj.alertMesaj(ex.Message);
+            }
+
         }
     }
 }

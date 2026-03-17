@@ -1180,6 +1180,7 @@
             this.chk_Servis = new DevExpress.XtraEditors.CheckEdit();
             this.chk_Odeme = new DevExpress.XtraEditors.CheckEdit();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
+            this.onburoRaporIade = new DevExpress.XtraEditors.CheckEdit();
             this.logRaporGor = new DevExpress.XtraEditors.CheckEdit();
             this.kapaliMasayaGir = new DevExpress.XtraEditors.CheckEdit();
             this.cariTarihGecmisAktif = new DevExpress.XtraEditors.CheckEdit();
@@ -1330,7 +1331,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.onburoRaporIade = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2144,6 +2144,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).BeginInit();
             this.xtraTabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.onburoRaporIade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logRaporGor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kapaliMasayaGir.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cariTarihGecmisAktif.Properties)).BeginInit();
@@ -2233,7 +2234,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onburoRaporIade.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -12000,6 +12000,12 @@
             resources.ApplyResources(this.xtraTabPage7, "xtraTabPage7");
             this.xtraTabPage7.Name = "xtraTabPage7";
             // 
+            // onburoRaporIade
+            // 
+            resources.ApplyResources(this.onburoRaporIade, "onburoRaporIade");
+            this.onburoRaporIade.Name = "onburoRaporIade";
+            this.onburoRaporIade.Properties.Caption = resources.GetString("onburoRaporIade.Properties.Caption");
+            // 
             // logRaporGor
             // 
             resources.ApplyResources(this.logRaporGor, "logRaporGor");
@@ -13252,12 +13258,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // onburoRaporIade
-            // 
-            resources.ApplyResources(this.onburoRaporIade, "onburoRaporIade");
-            this.onburoRaporIade.Name = "onburoRaporIade";
-            this.onburoRaporIade.Properties.Caption = resources.GetString("checkEdit2.Properties.Caption");
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -14105,6 +14105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Servis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chk_Odeme.Properties)).EndInit();
             this.xtraTabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.onburoRaporIade.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logRaporGor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kapaliMasayaGir.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cariTarihGecmisAktif.Properties)).EndInit();
@@ -14201,7 +14202,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onburoRaporIade.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

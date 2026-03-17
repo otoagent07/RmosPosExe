@@ -115,7 +115,11 @@ namespace Pos
             btnKilitAc2.Visible = User.M_MasaAc;
 
 
-            panelControlMasaFis.Visible = !Param.Param_PaketKucukEkran;
+            //panelControlMasaFis.Visible = !Param.Param_PaketKucukEkran;
+
+            panelControlMasaFis.Visible = !Param.Param_SiparisFisFont;
+
+            
         }
 
         public void sagtik()
@@ -135,7 +139,7 @@ namespace Pos
             }
 
 
-            
+
 
 
             if (User.P_Gunsonu)
@@ -182,7 +186,7 @@ namespace Pos
             uzak.Show();
         }
 
-       
+
 
         private void Uruntanimlama_click(object sender, EventArgs e)
         {
@@ -1030,7 +1034,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
                 bartxt_BosMasa.EditValue = Convert.ToString(dtBilgi.Rows[0]["Sayi"]);
                 bartxt_DoluMasa.EditValue = dtBilgi.Rows.Count > 1 ? Convert.ToString(dtBilgi.Rows[1]["Sayi"]) : "0";
 
-                if (Param.ikinciEkranAktif==false)
+                if (Param.ikinciEkranAktif == false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
@@ -1441,7 +1445,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
                 bartxt_BosMasa.EditValue = Convert.ToString(dtBilgi.Rows[0]["Sayi"]);
                 bartxt_DoluMasa.EditValue = dtBilgi.Rows.Count > 1 ? Convert.ToString(dtBilgi.Rows[1]["Sayi"]) : "0";
 
-                if (Param.ikinciEkranAktif==false)
+                if (Param.ikinciEkranAktif == false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
@@ -1620,7 +1624,7 @@ OPTION (MAXDOP 1, RECOMPILE);";
 
                 bartxt_FisNo.EditValue = Convert.ToInt32(dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + Masa_No + "'"));
 
-                if (Param.ikinciEkranAktif==false)
+                if (Param.ikinciEkranAktif == false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(Convert.ToInt32(bartxt_FisNo.EditValue));
                 }
@@ -1925,20 +1929,20 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
 
-            
-                if (Param.Param_Hesap_Kilit && User.kapaliMasayaGir == false)
+
+            if (Param.Param_Hesap_Kilit && User.kapaliMasayaGir == false)
+            {
+                if (fisno > 0)
                 {
-                    if (fisno > 0)
+                    bool Rsat_Hesap_Kilit = Convert.ToBoolean(dbtools.DegerGetir("select top 1 ISNULL(Rsat_Hesap_Kilit,0) from Cst_Recete_Satis where Rsat_Fisno = " + fisno));
+                    if (Rsat_Hesap_Kilit)
                     {
-                        bool Rsat_Hesap_Kilit = Convert.ToBoolean(dbtools.DegerGetir("select top 1 ISNULL(Rsat_Hesap_Kilit,0) from Cst_Recete_Satis where Rsat_Fisno = " + fisno));
-                        if (Rsat_Hesap_Kilit)
-                        {
-                            MessageBox.Show(res_man.GetString("Masa Satışa Kapalı..."), "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                            return;
-                        }
+                        MessageBox.Show(res_man.GetString("Masa Satışa Kapalı..."), "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        return;
                     }
                 }
-          
+            }
+
 
             if (Param.Param_Masaacan_Garson && !User.M_BaskaMasa)
             {
@@ -2155,7 +2159,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
 
             timer1.Enabled = false;
-            Klavye2 klavye = new Klavye2(aciklama:"Lütfen özel masa adını giriniz...");
+            Klavye2 klavye = new Klavye2(aciklama: "Lütfen özel masa adını giriniz...");
             klavye.Fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
 
             string fisno = bartxt_FisNo.EditValue.ToString();
@@ -2557,7 +2561,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             Raporlar r = new Raporlar();
             r.ShowDialog();
             MasaYenile(0);
-            if (Param.ikinciEkranAktif==false)
+            if (Param.ikinciEkranAktif == false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }
@@ -2596,7 +2600,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             string fisno = Convert.ToInt32(bartxt_FisNo.EditValue).ToString();
 
             HesapBak(fisno);
-            if (Param.ikinciEkranAktif==false)
+            if (Param.ikinciEkranAktif == false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }
@@ -2640,7 +2644,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
 
                 Satis();
-                if (Param.ikinciEkranAktif==false)
+                if (Param.ikinciEkranAktif == false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
@@ -2648,7 +2652,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             }
 
 
-          
+
         }
 
         private void bar_PaketSatis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -2889,7 +2893,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                     pr.HesapDokum(true, fisno, Split);
                 }
 
-                string aciklama = "Fisno : " + fisno + " . HESAP DÖKÜM FİŞİ ALINDI. " ;
+                string aciklama = "Fisno : " + fisno + " . HESAP DÖKÜM FİŞİ ALINDI. ";
 
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(fisno), "");
 
@@ -2923,8 +2927,8 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                         bekoEfaturaForm.ShowDialog();
                     }
 
-                    int bekotoplamSatir = Convert.ToInt32( dbtools.DegerGetir($@"select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Ba='B'"));
-                    if (bekotoplamSatir>150)
+                    int bekotoplamSatir = Convert.ToInt32(dbtools.DegerGetir($@"select count(*) as toplam from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Ba='B'"));
+                    if (bekotoplamSatir > 150)
                     {
                         RHMesaj.alertMesaj($"Fişno: {fisno} Beko yazar kasaya gönderilemedi!. Max 60 Kalem ürün olmalıdır.");
                         return;
@@ -2933,7 +2937,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 }
 
 
-               
+
 
             }
             catch (Exception ex)
@@ -2962,7 +2966,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             kilitac();
         }
 
-        public  void kilitac()
+        public void kilitac()
         {
             int Fisno = Convert.ToInt32(bartxt_FisNo.EditValue.ToString());
             if (Fisno > 0)
@@ -3244,7 +3248,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
 
                 gridyenile(fisno);
                 HesapBak(fisno + "");
-                if (Param.ikinciEkranAktif==false)
+                if (Param.ikinciEkranAktif == false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(0);
                 }
@@ -3278,7 +3282,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             //flp_Masa.BackgroundImage = Properties.Resources.rmosultimate;
             //flp_Masa.BackgroundImageLayout = ImageLayout.Stretch;
 
-         
+
 
         }
 

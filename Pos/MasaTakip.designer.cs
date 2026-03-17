@@ -279,7 +279,9 @@
             resources.ApplyResources(this.bartxt_Kul, "bartxt_Kul");
             this.bartxt_Kul.Id = 0;
             this.bartxt_Kul.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("bartxt_Kul.ItemAppearance.Normal.Font")));
+            this.bartxt_Kul.ItemAppearance.Normal.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Critical;
             this.bartxt_Kul.ItemAppearance.Normal.Options.UseFont = true;
+            this.bartxt_Kul.ItemAppearance.Normal.Options.UseForeColor = true;
             this.bartxt_Kul.Name = "bartxt_Kul";
             // 
             // bartxt_Dep
@@ -287,7 +289,9 @@
             resources.ApplyResources(this.bartxt_Dep, "bartxt_Dep");
             this.bartxt_Dep.Id = 1;
             this.bartxt_Dep.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("bartxt_Dep.ItemAppearance.Normal.Font")));
+            this.bartxt_Dep.ItemAppearance.Normal.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Information;
             this.bartxt_Dep.ItemAppearance.Normal.Options.UseFont = true;
+            this.bartxt_Dep.ItemAppearance.Normal.Options.UseForeColor = true;
             this.bartxt_Dep.Name = "bartxt_Dep";
             // 
             // bartxt_FisNo
