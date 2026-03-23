@@ -70,7 +70,18 @@ where Rsat_Fisno = '" + Convert.ToInt32(this.Tag) + "' and CONVERT(varchar(5),Rs
 
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_SiparisPr = 0 where Rsat_Id in (" + ids.Substring(0, ids.Length - 1) + ")");
                 FisPr pr = new FisPr();
-                string sonuc = pr.SiparisPr(Convert.ToInt32(this.Tag), false,0);
+                string sonuc;
+                if (Param.Param_YeniSiparisDkm)
+                {
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(this.Tag), false, 0);
+                }
+                else
+                {
+                    sonuc = pr.SiparisPr(Convert.ToInt32(this.Tag), false, 0);
+                }
+
+
+
                 if (sonuc != "OK")
                 {
                     MessageBox.Show(sonuc);

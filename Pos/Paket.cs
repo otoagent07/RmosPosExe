@@ -91,6 +91,7 @@ namespace Pos
             panel1.Visible = !Param.Param_StokAnlikAtmasin;
 
             btnOdemeTipiDegistir.Visible = User.Pos_OdemeDegistir;
+            btnParcaSiparis.Visible = User.M_SiparisTekrar;
         }
 
 
@@ -1623,6 +1624,13 @@ order by count(distinct Satis.Rsat_Fisno) desc";
                 RHMesaj.alertMesaj(ex.Message);
             }
 
+        }
+
+        private void btnParcaSiparis_Click(object sender, EventArgs e)
+        {
+            Siparis_Tekrar tt = new Siparis_Tekrar();
+            tt.Tag = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Fisno"));
+            tt.ShowDialog();
         }
     }
 }

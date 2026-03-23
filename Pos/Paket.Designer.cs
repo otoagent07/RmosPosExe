@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paket));
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnDirektSatis = new DevExpress.XtraEditors.SimpleButton();
@@ -152,6 +152,7 @@
             this.gridColumn64 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn65 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btnOdemeTipiDegistir = new DevExpress.XtraEditors.SimpleButton();
             this.btnKuryeOzet = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
@@ -166,7 +167,7 @@
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnOdemeTipiDegistir = new DevExpress.XtraEditors.SimpleButton();
+            this.btnParcaSiparis = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -671,9 +672,9 @@
             // 
             resources.ApplyResources(this.gridControl5, "gridControl5");
             this.gridControl5.EmbeddedNavigator.Margin = ((System.Windows.Forms.Padding)(resources.GetObject("gridControl5.EmbeddedNavigator.Margin")));
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gridControl5.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gridControl5.MainView = this.gridView5;
             this.gridControl5.Name = "gridControl5";
             this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -758,6 +759,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnParcaSiparis);
             this.panelControl1.Controls.Add(this.simpleButton13);
             this.panelControl1.Controls.Add(this.btn_Yenile);
             this.panelControl1.Controls.Add(this.dateTarih2);
@@ -1173,13 +1175,13 @@
             this.gridColumn56,
             this.gridColumn64,
             this.gridColumn65});
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition2.Appearance.Options.UseBackColor = true;
-            styleFormatCondition2.Column = this.gridColumn17;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Tag = "Acik";
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Column = this.gridColumn17;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
+            styleFormatCondition1.Tag = "Acik";
             this.gridView2.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition2});
+            styleFormatCondition1});
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ColumnAutoWidth = false;
@@ -1482,6 +1484,17 @@
             resources.ApplyResources(this.panelControl3, "panelControl3");
             this.panelControl3.Name = "panelControl3";
             // 
+            // btnOdemeTipiDegistir
+            // 
+            this.btnOdemeTipiDegistir.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnOdemeTipiDegistir.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnOdemeTipiDegistir.Appearance.Font")));
+            this.btnOdemeTipiDegistir.Appearance.Options.UseBackColor = true;
+            this.btnOdemeTipiDegistir.Appearance.Options.UseFont = true;
+            this.btnOdemeTipiDegistir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOdemeTipiDegistir.ImageOptions.Image")));
+            resources.ApplyResources(this.btnOdemeTipiDegistir, "btnOdemeTipiDegistir");
+            this.btnOdemeTipiDegistir.Name = "btnOdemeTipiDegistir";
+            this.btnOdemeTipiDegistir.Click += new System.EventHandler(this.btnOdemeTipiDegistir_Click);
+            // 
             // btnKuryeOzet
             // 
             this.btnKuryeOzet.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -1634,16 +1647,16 @@
             this.timer1.Interval = 75000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnOdemeTipiDegistir
+            // btnParcaSiparis
             // 
-            this.btnOdemeTipiDegistir.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.btnOdemeTipiDegistir.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton15.Appearance.Font")));
-            this.btnOdemeTipiDegistir.Appearance.Options.UseBackColor = true;
-            this.btnOdemeTipiDegistir.Appearance.Options.UseFont = true;
-            this.btnOdemeTipiDegistir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOdemeTipiDegistir.ImageOptions.Image")));
-            resources.ApplyResources(this.btnOdemeTipiDegistir, "btnOdemeTipiDegistir");
-            this.btnOdemeTipiDegistir.Name = "btnOdemeTipiDegistir";
-            this.btnOdemeTipiDegistir.Click += new System.EventHandler(this.btnOdemeTipiDegistir_Click);
+            this.btnParcaSiparis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
+            this.btnParcaSiparis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton15.Appearance.Font")));
+            this.btnParcaSiparis.Appearance.Options.UseBackColor = true;
+            this.btnParcaSiparis.Appearance.Options.UseFont = true;
+            this.btnParcaSiparis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton15.ImageOptions.Image")));
+            resources.ApplyResources(this.btnParcaSiparis, "btnParcaSiparis");
+            this.btnParcaSiparis.Name = "btnParcaSiparis";
+            this.btnParcaSiparis.Click += new System.EventHandler(this.btnParcaSiparis_Click);
             // 
             // Paket
             // 
@@ -1846,5 +1859,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn65;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn66;
         private DevExpress.XtraEditors.SimpleButton btnOdemeTipiDegistir;
+        private DevExpress.XtraEditors.SimpleButton btnParcaSiparis;
     }
 }

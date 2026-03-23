@@ -79,7 +79,16 @@ namespace Pos
             {
                 dbtools.execcmd("exec Pos_Sorgu @Sorgu_Tipi = 14, @Fisno = '" + Fisno + "'");
                 FisPr pr = new FisPr();
-                string sonuc = pr.SiparisPr(Fisno, false, 0);
+                //string sonuc = pr.SiparisPr(Fisno, false, 0);
+                string sonuc;
+                if (Param.Param_YeniSiparisDkm)
+                {
+                    sonuc = pr.newSiparisPr(Convert.ToInt32(this.Tag), false, 0);
+                }
+                else
+                {
+                    sonuc = pr.SiparisPr(Convert.ToInt32(this.Tag), false, 0);
+                }
                 if (sonuc != "OK")
                 {
                     MessageBox.Show(sonuc);
