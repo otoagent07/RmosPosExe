@@ -591,7 +591,7 @@ namespace Pos
 
             simpleButton1.Enabled = User.merkezsubeaktif;
 
-            //if (Param.Param_Paket_Form == false) // paket kapalı ise sakla
+            if (Param.Param_Paket_Form == false) // paket kapalı ise sakla
             {
                 btnPaketAc3.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
