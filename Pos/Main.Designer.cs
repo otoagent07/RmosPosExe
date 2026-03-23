@@ -130,6 +130,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timerMobileCallerId = new System.Windows.Forms.Timer(this.components);
             this.timerSepet = new System.Windows.Forms.Timer(this.components);
+            this.btnPaketAc3 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -270,8 +271,9 @@
             this.barButtonItem10,
             this.barButtonItem11,
             this.barButtonItem12,
-            this.barButtonItem13});
-            this.barManager1.MaxItemId = 35;
+            this.barButtonItem13,
+            this.btnPaketAc3});
+            this.barManager1.MaxItemId = 36;
             this.barManager1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1,
             this.repositoryItemTextEdit2});
@@ -295,7 +297,8 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem7, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem1)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnPaketAc3)});
             this.bar3.OptionsBar.AllowQuickCustomization = false;
             this.bar3.OptionsBar.DrawDragBorder = false;
             this.bar3.OptionsBar.UseWholeRow = true;
@@ -1035,6 +1038,17 @@
             this.timerSepet.Interval = 3000;
             this.timerSepet.Tick += new System.EventHandler(this.timerSepet_Tick);
             // 
+            // btnPaketAc3
+            // 
+            resources.ApplyResources(this.btnPaketAc3, "btnPaketAc3");
+            this.btnPaketAc3.Id = 35;
+            this.btnPaketAc3.ImageOptions.Image = global::Pos.Properties.Resources.sepet25;
+            this.btnPaketAc3.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("barButtonItem14.ItemAppearance.Normal.Font")));
+            this.btnPaketAc3.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnPaketAc3.Name = "btnPaketAc3";
+            this.btnPaketAc3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnPaketAc3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPaketAc3_ItemClick);
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
@@ -1184,5 +1198,6 @@
         public System.Windows.Forms.Timer timerMobileCallerId;
         private DevExpress.XtraEditors.SimpleButton btnSifreDegis;
         public System.Windows.Forms.Timer timerSepet;
+        private DevExpress.XtraBars.BarButtonItem btnPaketAc3;
     }
 }

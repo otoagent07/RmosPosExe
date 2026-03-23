@@ -466,6 +466,7 @@ namespace Pos
                 }
 
                 ButonYetkiYukle();
+
             }
             catch (Exception ex)
             {
@@ -568,6 +569,11 @@ namespace Pos
 
 
                 ButonYetkiYukle();
+
+
+
+
+
             }
             catch (Exception ex)
             {
@@ -584,6 +590,16 @@ namespace Pos
             simpleButton4.Enabled = Param.Param_CallerID;
 
             simpleButton1.Enabled = User.merkezsubeaktif;
+
+            //if (Param.Param_Paket_Form == false) // paket kapalı ise sakla
+            {
+                btnPaketAc3.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            }
+
+            if (User.P_Kulturu == 1) // garson ise sakla
+            {
+                btnPaketAc3.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            }
         }
 
         public void entegreAyarlarYenile()
@@ -994,7 +1010,7 @@ namespace Pos
                 groupControl4.Visible = true;
                 Anlik();
             }
-            if (Param.ikinciEkranAktif==false)
+            if (Param.ikinciEkranAktif == false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }
@@ -2016,6 +2032,15 @@ No Cut Seçili Olsun
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnPaketAc3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+
+
+            Paket p = new Paket();
+            p.ShowDialog();
         }
     }
 }

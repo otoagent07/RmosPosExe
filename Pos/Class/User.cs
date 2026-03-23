@@ -11,7 +11,7 @@ namespace Pos.Class
         public static string P_Ad { get; set; }
         public static string P_Soyad { get; set; }
         public static string P_Kart { get; set; }
-        public static int P_Kulturu { get; set; }
+        public static int P_Kulturu { get; set; } // 1 garson 2 kasiyer 3 yönetici
 
         public static string U_BackUser { get; set; }
 
