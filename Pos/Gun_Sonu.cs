@@ -1470,6 +1470,7 @@ GROUP BY s.Kodlar_Ad,s.Kodlar_Kod,ss.Kodlar_Ad,Rsat_Departman  ORDER BY s.Kodlar
         {
             XZ_Raporu xz = new XZ_Raporu();
             xz.setDepartman = Convert.ToString(Departman.Dep_Kodu);
+            xz.look_Garson.EditValue = User.P_Kod;
             xz.ShowDialog();
 
         }

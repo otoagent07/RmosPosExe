@@ -506,7 +506,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_Cikis;
         private DevExpress.XtraEditors.SimpleButton btn_Print;
         private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.LookUpEdit look_Garson;
         private DevExpress.XtraEditors.RadioGroup rdo_X_Z;
         private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.DateEdit dateTarih;
@@ -545,5 +544,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.CheckEdit chk_servispayi;
         private DevExpress.XtraEditors.SimpleButton btnGoruntule;
+        public DevExpress.XtraEditors.LookUpEdit look_Garson;
     }
 }

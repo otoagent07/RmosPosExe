@@ -94,7 +94,7 @@ namespace Pos
                 filtre = " and Masa_Konum = '" + Convert.ToString(gridView1.GetFocusedRowCellValue("Kod")) + "' ";
             }
 
-            gridControl2.DataSource = dbtools.SelectTable("select Masa_No, Masa_Ad, Masa_Durum,ISNULL(Masa_Ozel,'') as Masa_Ozel from Pos_Masa with(nolock) where Masa_Paket = 0 and Masa_Depart = '" + Departman.Dep_Kodu + "' " + filtre + "  and Masa_No not like '%[_]%' order by Masa_Sirano");
+            gridControl2.DataSource = dbtools.SelectTable($@"select Masa_No, Masa_Ad, Masa_Durum,ISNULL(Masa_Ozel,'') as Masa_Ozel from Pos_Masa with(nolock) where Masa_Paket = 0 and Masa_Depart = '" + Departman.Dep_Kodu + "' " + filtre + "  and Masa_No not like '%[_]%' and Masa_No not like '" + txt_Masano.Text  + "' order by Masa_Sirano");
         }
 
         private void gridyenile_Konumlar()
@@ -558,14 +558,18 @@ namespace Pos
                 gridyenile_KaynakUrun();
                 gridyenile_HedefUrun();
 
-                if (gridView3.RowCount == 0)
-                {
-                    dbtools.execcmd("update Pos_Masa set Masa_Ozel = '' where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(txt_Masano.Text) + "'");
+                // 23.03.2026  M.Oğuzhan Mendi Kodu Kapattı. Transfer Ederken eski masa adını özel masa yapıyor aynı masa'dan 2 tane olmus oluyor.
+               
+                //if (gridView3.RowCount == 0)
+                //{
+                //    dbtools.execcmd("update Pos_Masa set Masa_Ozel = '' where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(txt_Masano.Text) + "'");
 
-                    //dbtools.execcmd("update Pos_Masa set Masa_Ozel = case when ISNULL(Masa_Ozel,'') != '' then '" + txt_MasaOzel.Text + "' end where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "'");
+                //    //dbtools.execcmd("update Pos_Masa set Masa_Ozel = case when ISNULL(Masa_Ozel,'') != '' then '" + txt_MasaOzel.Text + "' end where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "'");
 
-                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_OzelMasaAdi =  '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_Ozel")) + "' where Rsat_Fisno = '" + Fisno + "' and Rsat_Departman ='" + Departman.Dep_Kodu + "'");
-                }
+
+                  
+                //    dbtools.execcmd("update Cst_Recete_Satis set Rsat_OzelMasaAdi =  '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_Ozel")) + "' where Rsat_Fisno = '" + Fisno + "' and Rsat_Departman ='" + Departman.Dep_Kodu + "'");
+                //}
 
 
             }
@@ -631,13 +635,15 @@ namespace Pos
                 gridyenile_KaynakUrun();
                 gridyenile_HedefUrun();
 
+                // 23.03.2026  M.Oğuzhan Mendi Kodu Kapattı. Transfer Ederken eski masa adını özel masa yapıyor aynı masa'dan 2 tane olmus oluyor.
                 if (gridView4.RowCount == 0)
                 {
-                    dbtools.execcmd("update Pos_Masa set Masa_Ozel= '' , Masa_Durum = 0 where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "'");
+                    //dbtools.execcmd("update Pos_Masa set Masa_Ozel= '' , Masa_Durum = 0 where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "'");
+                    dbtools.execcmd("update Pos_Masa set Masa_Durum = 0 where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "'");
 
                     //dbtools.execcmd("update Pos_Masa set Masa_Ozel = case when ISNULL(Masa_Ozel,'') != '' then '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "' end where Masa_Depart = '" + Departman.Dep_Kodu + "' and Masa_No = '" + Convert.ToString(txt_Masano.Text) + "'");
 
-                    dbtools.execcmd("update Cst_Recete_Satis set Rsat_OzelMasaAdi = Case when ISNULL(Rsat_OzelMasaAdi,'') != '' then '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "' end where Rsat_Fisno = '" + Fisno + "' and Rsat_Departman ='" + Departman.Dep_Kodu + "'");
+                    //dbtools.execcmd("update Cst_Recete_Satis set Rsat_OzelMasaAdi = Case when ISNULL(Rsat_OzelMasaAdi,'') != '' then '" + Convert.ToString(gridView2.GetFocusedRowCellValue("Masa_No")) + "' end where Rsat_Fisno = '" + Fisno + "' and Rsat_Departman ='" + Departman.Dep_Kodu + "'");
                 }
 
             }

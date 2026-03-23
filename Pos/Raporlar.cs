@@ -2234,6 +2234,7 @@ where Log_Islem='Kaydet'
         {
             XZ_Raporu xz = new XZ_Raporu();
             xz.setDepartman = Convert.ToString(cmb_Departman.EditValue);
+            xz.look_Garson.EditValue = User.P_Kod;
             xz.ShowDialog();
         }
 
