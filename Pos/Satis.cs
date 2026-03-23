@@ -281,7 +281,7 @@ namespace Pos
                 //SatisListesi a = new SatisListesi();
 
                 int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
-                if (Param.ikinciEkranAktif==false)
+                if (Param.ikinciEkranAktif == false)
                 {
                     Main.satislistesi_ikinci_ekran.Listele(fisno);
                 }
@@ -5632,6 +5632,14 @@ where  Rsat_Id='" + Rsat_Id + "'";
         private void btnYarim_DoubleClick(object sender, EventArgs e)
         {
             emiktarChange();
+        }
+
+        private void txt_Not_Leave(object sender, EventArgs e)
+        {
+           // 23.03.2026 Paketçiler için not yazıp anlık update atma
+            int count = gridView1.RowCount;
+            if (count == 0) return;
+            dbtools.execcmd("update Cst_Recete_Satis set Rsat_Not = '" + txt_Not.Text + "' where Rsat_Fisno = '" + Convert.ToInt32(bartxt_FisNo.EditValue) + "'");
         }
 
         /*

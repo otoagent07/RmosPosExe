@@ -229,6 +229,7 @@
             // 
             resources.ApplyResources(this.gridColumn1, "gridColumn1");
             this.gridColumn1.FieldName = "Rsat_Durum";
+            this.gridColumn1.MinWidth = 17;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowFocus = false;
             // 
@@ -236,6 +237,7 @@
             // 
             resources.ApplyResources(this.gridColumn2, "gridColumn2");
             this.gridColumn2.FieldName = "Rsat_Tarih";
+            this.gridColumn2.MinWidth = 17;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             // 
@@ -243,6 +245,7 @@
             // 
             resources.ApplyResources(this.gridColumn3, "gridColumn3");
             this.gridColumn3.FieldName = "Kodlar_Ad";
+            this.gridColumn3.MinWidth = 17;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowFocus = false;
             // 
@@ -250,6 +253,7 @@
             // 
             resources.ApplyResources(this.gridColumn4, "gridColumn4");
             this.gridColumn4.FieldName = "Rsat_Fisno";
+            this.gridColumn4.MinWidth = 17;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             // 
@@ -257,6 +261,7 @@
             // 
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
             this.gridColumn5.FieldName = "Rsat_Recete";
+            this.gridColumn5.MinWidth = 17;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowFocus = false;
             this.gridColumn5.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
@@ -265,6 +270,7 @@
             // 
             resources.ApplyResources(this.gridColumn6, "gridColumn6");
             this.gridColumn6.FieldName = "Rec_Ad";
+            this.gridColumn6.MinWidth = 17;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowFocus = false;
             this.gridColumn6.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
@@ -273,6 +279,7 @@
             // 
             resources.ApplyResources(this.gridColumn7, "gridColumn7");
             this.gridColumn7.FieldName = "Rsat_Miktar";
+            this.gridColumn7.MinWidth = 17;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowFocus = false;
             this.gridColumn7.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
@@ -283,6 +290,7 @@
             this.gridColumn8.DisplayFormat.FormatString = "N2";
             this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn8.FieldName = "Rsat_Tutar";
+            this.gridColumn8.MinWidth = 17;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowFocus = false;
             this.gridColumn8.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
@@ -291,6 +299,7 @@
             // 
             resources.ApplyResources(this.gridColumn9, "gridColumn9");
             this.gridColumn9.FieldName = "Rsat_Masa";
+            this.gridColumn9.MinWidth = 17;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowFocus = false;
             // 
@@ -335,24 +344,28 @@
             // 
             resources.ApplyResources(this.gridColumn65, "gridColumn65");
             this.gridColumn65.FieldName = "CariId";
+            this.gridColumn65.MinWidth = 17;
             this.gridColumn65.Name = "gridColumn65";
             // 
             // gridColumn66
             // 
             resources.ApplyResources(this.gridColumn66, "gridColumn66");
             this.gridColumn66.FieldName = "Ad";
+            this.gridColumn66.MinWidth = 17;
             this.gridColumn66.Name = "gridColumn66";
             // 
             // gridColumn67
             // 
             resources.ApplyResources(this.gridColumn67, "gridColumn67");
             this.gridColumn67.FieldName = "Soyad";
+            this.gridColumn67.MinWidth = 17;
             this.gridColumn67.Name = "gridColumn67";
             // 
             // gridColumn68
             // 
             resources.ApplyResources(this.gridColumn68, "gridColumn68");
             this.gridColumn68.FieldName = "Bakiye";
+            this.gridColumn68.MinWidth = 17;
             this.gridColumn68.Name = "gridColumn68";
             this.gridColumn68.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn68.Summary"))), resources.GetString("gridColumn68.Summary1"), resources.GetString("gridColumn68.Summary2"))});
@@ -385,24 +398,28 @@
             // 
             resources.ApplyResources(this.gridColumn10, "gridColumn10");
             this.gridColumn10.FieldName = "Aciklama";
+            this.gridColumn10.MinWidth = 17;
             this.gridColumn10.Name = "gridColumn10";
             // 
             // gridColumn11
             // 
             resources.ApplyResources(this.gridColumn11, "gridColumn11");
             this.gridColumn11.FieldName = "Rec_Kdv";
+            this.gridColumn11.MinWidth = 17;
             this.gridColumn11.Name = "gridColumn11";
             // 
             // gridColumn12
             // 
             resources.ApplyResources(this.gridColumn12, "gridColumn12");
             this.gridColumn12.FieldName = "Kdv";
+            this.gridColumn12.MinWidth = 17;
             this.gridColumn12.Name = "gridColumn12";
             // 
             // gridColumn13
             // 
             resources.ApplyResources(this.gridColumn13, "gridColumn13");
             this.gridColumn13.FieldName = "Net";
+            this.gridColumn13.MinWidth = 17;
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn13.Summary"))), resources.GetString("gridColumn13.Summary1"), resources.GetString("gridColumn13.Summary2"))});
@@ -411,12 +428,13 @@
             // 
             resources.ApplyResources(this.gridColumn14, "gridColumn14");
             this.gridColumn14.FieldName = "Tutar";
+            this.gridColumn14.MinWidth = 17;
             this.gridColumn14.Name = "gridColumn14";
             // 
             // btn_XZ2
             // 
             this.btn_XZ2.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
-            this.btn_XZ2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton2.Appearance.Font")));
+            this.btn_XZ2.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_XZ2.Appearance.Font")));
             this.btn_XZ2.Appearance.Options.UseBackColor = true;
             this.btn_XZ2.Appearance.Options.UseFont = true;
             this.btn_XZ2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_XZ2.ImageOptions.Image")));
