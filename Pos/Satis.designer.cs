@@ -92,11 +92,13 @@
             this.btn_6 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_7 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_8 = new DevExpress.XtraEditors.SimpleButton();
+            this.txt_Filtre = new DevExpress.XtraEditors.TextEdit();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnYarim = new DevExpress.XtraEditors.SimpleButton();
             this.btnDouble = new DevExpress.XtraEditors.SimpleButton();
             this.btnBirbucuk = new DevExpress.XtraEditors.SimpleButton();
             this.btnBir = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btn_TutarduzeltMiktar = new DevExpress.XtraEditors.SimpleButton();
             this.btnSiparisVeHesap = new DevExpress.XtraEditors.SimpleButton();
@@ -141,9 +143,7 @@
             this.btn_Siparis = new DevExpress.XtraEditors.SimpleButton();
             this.panelControlBarkod = new DevExpress.XtraEditors.PanelControl();
             this.btnFiyatBilgisi = new DevExpress.XtraEditors.SimpleButton();
-            this.txt_Filtre = new DevExpress.XtraEditors.TextEdit();
             this.txtFisnoGit = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
             this.textEditFisnobirlestir1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Barkod = new DevExpress.XtraEditors.ButtonEdit();
@@ -202,7 +202,9 @@
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
             this.tablePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
             this.panelControl6.SuspendLayout();
@@ -214,9 +216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlBarkod)).BeginInit();
             this.panelControlBarkod.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFisnobirlestir1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Barkod.Properties)).BeginInit();
@@ -871,6 +871,20 @@
             this.tablePanel2.SetRow(this.btn_8, 0);
             this.btn_8.Click += new System.EventHandler(this.btn_Miktar_Click);
             // 
+            // txt_Filtre
+            // 
+            resources.ApplyResources(this.txt_Filtre, "txt_Filtre");
+            this.txt_Filtre.Name = "txt_Filtre";
+            this.txt_Filtre.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txt_Filtre.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_Filtre.Properties.Appearance.Font")));
+            this.txt_Filtre.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.txt_Filtre.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_Filtre.Properties.Appearance.Options.UseFont = true;
+            this.txt_Filtre.Properties.Appearance.Options.UseForeColor = true;
+            this.txt_Filtre.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.txt_Filtre.EditValueChanged += new System.EventHandler(this.txt_Filtre_EditValueChanged);
+            this.txt_Filtre.Click += new System.EventHandler(this.txt_Filtre_Click);
+            // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
@@ -915,6 +929,14 @@
             this.btnBir.Name = "btnBir";
             this.btnBir.Click += new System.EventHandler(this.ButtonSayilar_Click);
             this.btnBir.DoubleClick += new System.EventHandler(this.btnBir_DoubleClick);
+            // 
+            // textEdit13
+            // 
+            resources.ApplyResources(this.textEdit13, "textEdit13");
+            this.textEdit13.Name = "textEdit13";
+            this.textEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit13.Properties.ReadOnly = true;
+            this.textEdit13.TabStop = false;
             // 
             // panelMenu
             // 
@@ -1449,20 +1471,6 @@
             this.btnFiyatBilgisi.Name = "btnFiyatBilgisi";
             this.btnFiyatBilgisi.Click += new System.EventHandler(this.btnFiyatBilgisi_Click);
             // 
-            // txt_Filtre
-            // 
-            resources.ApplyResources(this.txt_Filtre, "txt_Filtre");
-            this.txt_Filtre.Name = "txt_Filtre";
-            this.txt_Filtre.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.txt_Filtre.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txt_Filtre.Properties.Appearance.Font")));
-            this.txt_Filtre.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.txt_Filtre.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_Filtre.Properties.Appearance.Options.UseFont = true;
-            this.txt_Filtre.Properties.Appearance.Options.UseForeColor = true;
-            this.txt_Filtre.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.txt_Filtre.EditValueChanged += new System.EventHandler(this.txt_Filtre_EditValueChanged);
-            this.txt_Filtre.Click += new System.EventHandler(this.txt_Filtre_Click);
-            // 
             // txtFisnoGit
             // 
             resources.ApplyResources(this.txtFisnoGit, "txtFisnoGit");
@@ -1477,14 +1485,6 @@
             this.txtFisnoGit.Properties.NullValuePromptShowForEmptyValue = ((bool)(resources.GetObject("txtFisnoGit.Properties.NullValuePromptShowForEmptyValue")));
             this.txtFisnoGit.Properties.ShowNullValuePromptWhenFocused = true;
             this.txtFisnoGit.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFisnoGit_KeyDown);
-            // 
-            // textEdit13
-            // 
-            resources.ApplyResources(this.textEdit13, "textEdit13");
-            this.textEdit13.Name = "textEdit13";
-            this.textEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit13.Properties.ReadOnly = true;
-            this.textEdit13.TabStop = false;
             // 
             // textEditFisnobirlestir1
             // 
@@ -1824,7 +1824,9 @@
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
             this.tablePanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
@@ -1836,9 +1838,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlBarkod)).EndInit();
             this.panelControlBarkod.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Filtre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFisnoGit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFisnobirlestir1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Barkod.Properties)).EndInit();
