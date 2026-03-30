@@ -2973,7 +2973,12 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             {
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Hesap_Kilit = 0 where Rsat_Fisno = '" + Fisno + "'");
                 dbtools.execcmd("update Pos_Masa set Masa_Durum = '1',Masa_Musait=0 where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "' ");
+                string aciklama = $"Fisno : {Fisno} - {Masa_No.ToString()} nın KİLİTİ AÇILDI ";
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(Fisno), "");
                 MasaYenile(0);
+
+              
             }
         }
 

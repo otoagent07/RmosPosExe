@@ -159,6 +159,9 @@ namespace Pos
             {
                 dbtools.execcmd("update Cst_Recete_Satis set Rsat_Hesap_Kilit = 0 where Rsat_Fisno = '" + Fisno + "'");
                 dbtools.execcmd("update Pos_Masa set Masa_Durum = '1',Masa_Musait=0 where Masa_No = '" + Masa_No + "' and Masa_Depart = '" + Departman.Dep_Kodu + "' ");
+                string aciklama = $"Fisno : {Fisno} - {Masa_No.ToString()} nın KİLİTİ AÇILDI ";
+
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(Fisno), "");
 
                 this.Close();
             }
@@ -518,7 +521,7 @@ namespace Pos
             {
                 string masaNo = item["Masa_No"].ToString();
                 string fisNo = dbtools.DegerGetir("exec Pos_Sorgu @Sorgu_Tipi = 4, @Dep_Kodu = '" + Departman.Dep_Kodu + "',@Masano = '" + masaNo + "'");
-                if (fisNo=="0")
+                if (fisNo == "0")
                 {
                     dbtools.execcmd("Update Pos_Masa Set Masa_NFC = 0, Masa_Durum = 0,Masa_Musait=0 where Masa_Depart = '" + Departman.Dep_Kodu + "'  and Masa_No = '" + masaNo + "'"); // and Masa_NFC = 1
                 }
