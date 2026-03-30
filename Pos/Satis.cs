@@ -172,7 +172,7 @@ namespace Pos
                 if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
                 {
                     panelControl4.Visible = false;
-                    txt_Not.Size = new Size(txt_Not.Size.Width, 35);
+                    txt_Not.Size = new Size(txt_Not.Size.Width, 20);
                     btnMasaSec.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
 
                 }
@@ -303,7 +303,7 @@ namespace Pos
                 if (kisiyeSatisAktifmi == "0" || kisiyeSatisAktifmi.ToLower() == "false")
                 {
                     panelControl4.Visible = false;
-                    txt_Not.Size = new Size(txt_Not.Size.Width, 35);
+                    txt_Not.Size = new Size(txt_Not.Size.Width, 20);
                 }
                 else
                 {
