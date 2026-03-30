@@ -2785,17 +2785,20 @@ namespace Pos
                     btn_UrunGrup.Size = new System.Drawing.Size(Convert.ToInt32(dt.Rows[0]["Pkod_AciklamaG"]), Convert.ToInt32(dt.Rows[0]["Pkod_AciklamaY"]));
                     btn_UrunGrup.TabIndex = 0;
                     btn_UrunGrup.TabStop = false;
-                    btn_UrunGrup.Font = new System.Drawing.Font("Verdana", 7F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(162)));
+                    btn_UrunGrup.Font = new System.Drawing.Font("Tahoma", 8F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(162)));
                     btn_UrunGrup.Appearance.TextOptions.Trimming = DevExpress.Utils.Trimming.Word;
                     btn_UrunGrup.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
                     btn_UrunGrup.Appearance.Options.UseBackColor = true;
-                    btn_UrunGrup.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+                    //btn_UrunGrup.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
                     btn_UrunGrup.Margin = new System.Windows.Forms.Padding(1, 1, 1, 2);
 
                     btn_UrunGrup.Text = Convert.ToString(dt.Rows[i]["Pkod_Ad"]);
                     btn_UrunGrup.Tag = Convert.ToString(dt.Rows[i]["Pkod_Id"]);
 
                     btn_UrunGrup.Click += new EventHandler(btn_UrunGrup_Click);
+
+                    btn_UrunGrup.Appearance.ForeColor = System.Drawing.Color.Black; // yazı görünür olsun
+                    btn_UrunGrup.Appearance.Options.UseForeColor = true;
 
                     flp_UrunGrup.Controls.Add(btn_UrunGrup);
                 }
