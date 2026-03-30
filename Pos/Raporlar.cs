@@ -90,6 +90,13 @@ namespace Pos
 
 
             btnOnburoIadeYap.Visible = User.onburoRaporIade;
+
+            tarihDeğiştirToolStripMenuItem.Visible = false;
+
+            if (User.P_Kod == "RMOS" || User.P_Kod == "999" || User.P_Kod == "RMOSXYZ")
+            {
+                tarihDeğiştirToolStripMenuItem.Visible = true;
+            }
         }
 
         public void loadyukle()
@@ -1848,7 +1855,7 @@ Tarih,RezId,Master_RezId,Odano,KartNo,Pansiyon_Kodu from Pos_ResKullanim");
 
 
 
-       
+
 
 
         private void btnIptalGridDizanyKaydet_Click(object sender, EventArgs e)
@@ -2290,7 +2297,7 @@ where Log_Islem='Kaydet'
                 var Rsat_Dovizbrut = Convert.ToDecimal(gridView11.GetFocusedRowCellValue("Rsat_Dovizbrut"));
 
 
-                if (tutarGirForm.tutar> Rsat_Dovizbrut)
+                if (tutarGirForm.tutar > Rsat_Dovizbrut)
                 {
                     MessageBox.Show("İADE TUTARI, TOPLAM TUTARDAN BÜYÜK OLAMAZ !");
                     return;
@@ -2298,7 +2305,7 @@ where Log_Islem='Kaydet'
 
                 string frontDb = Fronttools.database.ToString();
 
-                string girilenIadeTutar = tutarGirForm.tutar.ToString().Replace(",",".");
+                string girilenIadeTutar = tutarGirForm.tutar.ToString().Replace(",", ".");
 
                 string query = $@"INSERT INTO {frontDb}.dbo.Kumhrk
 (
@@ -2424,15 +2431,15 @@ WHERE
 
                 dbtools.execcmdR(query);
 
-               var tltutar =  Param.Doviz_Kuru * tutarGirForm.tutar;
-                var tltutarstr = tltutar.ToString().Replace(",",".");
+                var tltutar = Param.Doviz_Kuru * tutarGirForm.tutar;
+                var tltutarstr = tltutar.ToString().Replace(",", ".");
 
                 string indirimQuery = $@"exec Pos_Manuel_Indirim @Fisno={fisno},@Ind_Tip=N'T',@Ind_Tutar=N'{tltutarstr}',@Ind_Doviztutar=N'{girilenIadeTutar}',@Ind_Oran=N'0',@Ind_Turu=N'MANUEL',@Split=0,@Ind_User=N'{User.P_Kod}',@aciklama=N''";
 
                 dbtools.execcmdR(indirimQuery);
 
 
-                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.UrunIade, Log.Log_Islem.UrunIade, "Önbüro iade yapıldı Fisno:" +fisno+" ... Girilen iade tutarı : "+ girilenIadeTutar, "","");
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.UrunIade, Log.Log_Islem.UrunIade, "Önbüro iade yapıldı Fisno:" + fisno + " ... Girilen iade tutarı : " + girilenIadeTutar, "", "");
 
 
                 MessageBox.Show("IADE BAŞARILI ÖNBÜRODAN KONTROL EDİNİZ!");

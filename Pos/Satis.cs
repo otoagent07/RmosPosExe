@@ -484,7 +484,16 @@ namespace Pos
 
                     Paketci = Convert.ToString(dt.Rows[0]["Rsat_Paketci"]);
                     bartxt_Garson.EditValue = User.Isim_Getir(Paketci);
+
+
                     bar_Cari.Caption = "Cari Bilgisi : " + mCari.Cari_Ad + " " + mCari.Cari_Soyad + " | \nAdres1 : " + mCari.Cari_Adres1 + " | \nAdres2 : " + mCari.Cari_Adres2 + " | Telefon : " + mCari.Cari_Tel;
+
+
+                    if (bar_Cari.Caption.Length>151)
+                    {
+                        bar_Cari.Caption = bar_Cari.Caption.Substring(0,150);
+                    }
+
 
                 }
                 else
@@ -503,7 +512,15 @@ namespace Pos
                     }
                     else
                     {
+
+
                         bar_Cari.Caption = "Cari Bilgisi : " + mCari.Cari_Ad + " " + mCari.Cari_Soyad + " | \nAdres1 : " + mCari.Cari_Adres1 + " | \nAdres2 : " + mCari.Cari_Adres2 + " | Telefon : " + mCari.Cari_Tel;
+
+                        if (bar_Cari.Caption.Length > 151)
+                        {
+                            bar_Cari.Caption = bar_Cari.Caption.Substring(0, 150);
+                        }
+
                     }
                     bartxt_MusTipi.EditValue = "C";
                     if (!AcikAdres)
