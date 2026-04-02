@@ -1351,6 +1351,7 @@
             this.textEdit226 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit227 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit228 = new DevExpress.XtraEditors.TextEdit();
+            this.btn_MacPr_SilHepsi = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -12334,6 +12335,7 @@
             // 
             // xtraTabPage11
             // 
+            this.xtraTabPage11.Controls.Add(this.btn_MacPr_SilHepsi);
             this.xtraTabPage11.Controls.Add(this.textEdit77);
             this.xtraTabPage11.Controls.Add(this.textEdit113);
             this.xtraTabPage11.Controls.Add(this.cmb_MacPr_Printer);
@@ -12495,7 +12497,9 @@
             // 
             // btn_MacPr_Kaydet
             // 
+            this.btn_MacPr_Kaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btn_MacPr_Kaydet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MacPr_Kaydet.Appearance.Font")));
+            this.btn_MacPr_Kaydet.Appearance.Options.UseBackColor = true;
             this.btn_MacPr_Kaydet.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_MacPr_Kaydet, "btn_MacPr_Kaydet");
             this.btn_MacPr_Kaydet.Name = "btn_MacPr_Kaydet";
@@ -12511,7 +12515,9 @@
             // 
             // btn_MacPr_Sil
             // 
+            this.btn_MacPr_Sil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_MacPr_Sil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MacPr_Sil.Appearance.Font")));
+            this.btn_MacPr_Sil.Appearance.Options.UseBackColor = true;
             this.btn_MacPr_Sil.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_MacPr_Sil, "btn_MacPr_Sil");
             this.btn_MacPr_Sil.Name = "btn_MacPr_Sil";
@@ -12527,7 +12533,9 @@
             // 
             // btn_MacPr_Cikis
             // 
+            this.btn_MacPr_Cikis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
             this.btn_MacPr_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MacPr_Cikis.Appearance.Font")));
+            this.btn_MacPr_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_MacPr_Cikis.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_MacPr_Cikis, "btn_MacPr_Cikis");
             this.btn_MacPr_Cikis.Name = "btn_MacPr_Cikis";
@@ -13493,6 +13501,16 @@
             this.textEdit228.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit228.Properties.ReadOnly = true;
             this.textEdit228.TabStop = false;
+            // 
+            // btn_MacPr_SilHepsi
+            // 
+            this.btn_MacPr_SilHepsi.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btn_MacPr_SilHepsi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton22.Appearance.Font")));
+            this.btn_MacPr_SilHepsi.Appearance.Options.UseBackColor = true;
+            this.btn_MacPr_SilHepsi.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_MacPr_SilHepsi, "btn_MacPr_SilHepsi");
+            this.btn_MacPr_SilHepsi.Name = "btn_MacPr_SilHepsi";
+            this.btn_MacPr_SilHepsi.Click += new System.EventHandler(this.btn_MacPr_SilHepsi_Click);
             // 
             // Ayarlar
             // 
@@ -15785,5 +15803,6 @@
         private DevExpress.XtraEditors.TextEdit txt_Tel_Alici6;
         private DevExpress.XtraEditors.TextEdit txt_Tel_Alici2;
         private DevExpress.XtraEditors.TextEdit txt_Tel_Alici1;
+        private DevExpress.XtraEditors.SimpleButton btn_MacPr_SilHepsi;
     }
 }

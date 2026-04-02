@@ -9723,13 +9723,13 @@ Sıfır Yap</value>
     <value>Tel 10</value>
   </data>
   <data name="textEdit228.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 241</value>
+    <value>345, 241</value>
   </data>
   <data name="textEdit228.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit228.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit228.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -9777,13 +9777,13 @@ Sıfır Yap</value>
     <value>Tel 5</value>
   </data>
   <data name="textEdit227.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 126</value>
+    <value>345, 126</value>
   </data>
   <data name="textEdit227.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit227.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit227.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -9831,13 +9831,13 @@ Sıfır Yap</value>
     <value>Tel 9</value>
   </data>
   <data name="textEdit226.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 218</value>
+    <value>345, 218</value>
   </data>
   <data name="textEdit226.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit226.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit226.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -9885,13 +9885,13 @@ Sıfır Yap</value>
     <value>Tel 4</value>
   </data>
   <data name="textEdit225.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 103</value>
+    <value>345, 103</value>
   </data>
   <data name="textEdit225.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit225.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit225.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -9939,13 +9939,13 @@ Sıfır Yap</value>
     <value>Tel 8</value>
   </data>
   <data name="textEdit224.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 195</value>
+    <value>345, 195</value>
   </data>
   <data name="textEdit224.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit224.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit224.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -9993,13 +9993,13 @@ Sıfır Yap</value>
     <value>Tel 3</value>
   </data>
   <data name="textEdit223.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 80</value>
+    <value>345, 80</value>
   </data>
   <data name="textEdit223.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit223.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit223.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -10047,13 +10047,13 @@ Sıfır Yap</value>
     <value>Tel 7</value>
   </data>
   <data name="textEdit222.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 172</value>
+    <value>345, 172</value>
   </data>
   <data name="textEdit222.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit222.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit222.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -10101,13 +10101,13 @@ Sıfır Yap</value>
     <value>Tel 2</value>
   </data>
   <data name="textEdit221.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 57</value>
+    <value>345, 57</value>
   </data>
   <data name="textEdit221.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit221.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit221.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -10155,13 +10155,13 @@ Sıfır Yap</value>
     <value>Tel 6</value>
   </data>
   <data name="textEdit220.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 149</value>
+    <value>345, 149</value>
   </data>
   <data name="textEdit220.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit220.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit220.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -10254,16 +10254,16 @@ Sıfır Yap</value>
     <value>19</value>
   </data>
   <data name="textEdit218.EditValue" xml:space="preserve">
-    <value>Tel 1</value>
+    <value>Tel 1 (5551111111)</value>
   </data>
   <data name="textEdit218.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 34</value>
+    <value>345, 34</value>
   </data>
   <data name="textEdit218.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="textEdit218.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
+    <value>121, 22</value>
   </data>
   <data name="textEdit218.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -10668,7 +10668,7 @@ Sıfır Yap</value>
     <value>36</value>
   </data>
   <data name="txt_Tel_Alici1.EditValue" xml:space="preserve">
-    <value>rhaber@rmosyazilim.com</value>
+    <value />
   </data>
   <data name="txt_Tel_Alici1.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 34</value>
@@ -31813,6 +31813,36 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
   <data name="xtraTabControl5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
+  <data name="simpleButton22.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btn_MacPr_SilHepsi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 117</value>
+  </data>
+  <data name="btn_MacPr_SilHepsi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 3</value>
+  </data>
+  <data name="btn_MacPr_SilHepsi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 27</value>
+  </data>
+  <data name="btn_MacPr_SilHepsi.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="btn_MacPr_SilHepsi.Text" xml:space="preserve">
+    <value>TOPLU SİL</value>
+  </data>
+  <data name="&gt;&gt;btn_MacPr_SilHepsi.Name" xml:space="preserve">
+    <value>btn_MacPr_SilHepsi</value>
+  </data>
+  <data name="&gt;&gt;btn_MacPr_SilHepsi.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btn_MacPr_SilHepsi.Parent" xml:space="preserve">
+    <value>xtraTabPage11</value>
+  </data>
+  <data name="&gt;&gt;btn_MacPr_SilHepsi.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="textEdit77.EditValue" xml:space="preserve">
     <value>MAC Adresi</value>
   </data>
@@ -31838,7 +31868,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;textEdit77.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="textEdit113.EditValue" xml:space="preserve">
     <value>Recete Ana Grup</value>
@@ -31865,7 +31895,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;textEdit113.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="cmb_MacPr_Printer.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 89</value>
@@ -31892,7 +31922,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;cmb_MacPr_Printer.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="look_MacPr_Anagrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 43</value>
@@ -31928,7 +31958,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;look_MacPr_Anagrup.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="textEdit73.EditValue" xml:space="preserve">
     <value>Printer</value>
@@ -31955,7 +31985,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;textEdit73.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="textEdit115.EditValue" xml:space="preserve">
     <value>Recete Alt Grup</value>
@@ -31982,7 +32012,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;textEdit115.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="grd_MacPr.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -32084,7 +32114,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;grd_MacPr.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="look_MacPr_Altgrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 66</value>
@@ -32120,7 +32150,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;look_MacPr_Altgrup.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="btn_MacPr_Kaydet.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -32150,7 +32180,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;btn_MacPr_Kaydet.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="txt_MacPr_Mac.EditValue" xml:space="preserve">
     <value />
@@ -32177,7 +32207,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;txt_MacPr_Mac.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="btn_MacPr_Sil.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -32207,7 +32237,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;btn_MacPr_Sil.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="textEdit52.EditValue" xml:space="preserve">
     <value>Boş Satır</value>
@@ -32234,7 +32264,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;textEdit52.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="btn_MacPr_Cikis.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -32264,7 +32294,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;btn_MacPr_Cikis.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="spn_MacPr_BosSatir.EditValue" type="System.Decimal, mscorlib">
     <value>0</value>
@@ -32291,7 +32321,7 @@ GEÇMİŞE ASLA DÖNÜLEMEZ.
     <value>xtraTabPage11</value>
   </data>
   <data name="&gt;&gt;spn_MacPr_BosSatir.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="xtraTabPage11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>

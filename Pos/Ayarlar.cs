@@ -178,6 +178,13 @@ namespace Pos
             //lookUpEditSubeCon.Visible = User.merkezsubeaktif;
 
             chk_Kul_SiparisTekrar.Visible = false; // kodda hata oldugu için oğuzhan mendi 14.07.2025 ekledi 
+
+            btn_MacPr_SilHepsi.Visible = false;
+            if (User.P_Kod == "RMOS" || User.P_Kod == "999 " || User.P_Kod == "RMOSXYZ")
+            {
+                btn_MacPr_SilHepsi.Visible = true;
+            }
+
         }
 
 
@@ -1008,12 +1015,27 @@ namespace Pos
         #region Mail Parametreleri
         private void gridyenile_Mail()
         {
-            DataTable dtMail = dbtools.SelectTable("select ISNULL(Mail_Gonder,0) as Mail_Gonder,Mail_Isim,Mail_Adres,Mail_Parola,Mail_Host,Mail_Port,isnull(Mail_SSL,0) as Mail_SSL, "
-                            + " Mail_Alici1,Mail_Alici2,Mail_Alici3,Mail_Alici4,Mail_Alici5, "
-                            + " isnull(Mail_Odeme_Tip,0) as Mail_Odeme_Tip,isnull(Mail_Servis_Paylari,0) as Mail_Servis_Paylari,isnull(Mail_Cari_Ozet,0) as Mail_Cari_Ozet, "
-                            + " isnull(Mail_Odenmez_Ozet,0) as Mail_Odenmez_Ozet,isnull(Mail_Malz_Ozet,0) as Mail_Malz_Ozet,isnull(Mail_Ana_Ozet,0) as Mail_Ana_Ozet, "
-                            + " isnull(Mail_Alt_Ozet,0) as Mail_Alt_Ozet,isnull(Mail_Iptal_Ozet,0) as Mail_Iptal_Ozet, "
-                            + " Mail_Alici6,Mail_Alici7,Mail_Alici8,Mail_Alici9,Mail_Alici10 from Pos_Mail WITH(NOLOCK) where Mail_Id = 1");
+            DataTable dtMail = dbtools.SelectTable(
+    "select ISNULL(Mail_Gonder,0) as Mail_Gonder, Mail_Isim, Mail_Adres, Mail_Parola, Mail_Host, Mail_Port, isnull(Mail_SSL,0) as Mail_SSL, " +
+
+    " Mail_Alici1, Mail_Alici2, Mail_Alici3, Mail_Alici4, Mail_Alici5, " +
+    " Mail_Alici6, Mail_Alici7, Mail_Alici8, Mail_Alici9, Mail_Alici10, " +
+
+    // 📞 TELEFON ALANLARI
+    " Mail_Alici_Tel1, Mail_Alici_Tel2, Mail_Alici_Tel3, Mail_Alici_Tel4, Mail_Alici_Tel5, " +
+    " Mail_Alici_Tel6, Mail_Alici_Tel7, Mail_Alici_Tel8, Mail_Alici_Tel9, Mail_Alici_Tel10, " +
+
+    " isnull(Mail_Odeme_Tip,0) as Mail_Odeme_Tip, " +
+    " isnull(Mail_Servis_Paylari,0) as Mail_Servis_Paylari, " +
+    " isnull(Mail_Cari_Ozet,0) as Mail_Cari_Ozet, " +
+    " isnull(Mail_Odenmez_Ozet,0) as Mail_Odenmez_Ozet, " +
+    " isnull(Mail_Malz_Ozet,0) as Mail_Malz_Ozet, " +
+    " isnull(Mail_Ana_Ozet,0) as Mail_Ana_Ozet, " +
+    " isnull(Mail_Alt_Ozet,0) as Mail_Alt_Ozet, " +
+    " isnull(Mail_Iptal_Ozet,0) as Mail_Iptal_Ozet " +
+
+    " from Pos_Mail WITH(NOLOCK) where Mail_Id = 1"
+);
             if (dtMail.Rows.Count > 0)
             {
                 chk_Mailgonder.Checked = Convert.ToBoolean(dtMail.Rows[0]["Mail_Gonder"]);
@@ -1045,39 +1067,133 @@ namespace Pos
                 txt_Mail_Alici8.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici8"]);
                 txt_Mail_Alici9.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici9"]);
                 txt_Mail_Alici10.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici10"]);
+
+
+
+                txt_Tel_Alici1.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel1"]);
+                txt_Tel_Alici2.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel2"]);
+                txt_Tel_Alici3.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel3"]);
+                txt_Tel_Alici4.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel4"]);
+                txt_Tel_Alici5.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel5"]);
+                txt_Tel_Alici6.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel6"]);
+                txt_Tel_Alici7.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel7"]);
+                txt_Tel_Alici8.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel8"]);
+                txt_Tel_Alici9.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel9"]);
+                txt_Tel_Alici10.Text = Convert.ToString(dtMail.Rows[0]["Mail_Alici_Tel10"]);
             }
         }
+
+        //private void btn_Mail_Kaydet_Click(object sender, EventArgs e)
+        //{
+        //    int sayac = Convert.ToInt32(dbtools.DegerGetir("select count(*) from Pos_Mail WITH(NOLOCK) where Mail_Id = 1"));
+        //    if (sayac > 0)
+        //    {
+        //        dbtools.execcmdR("UPDATE    Pos_Mail SET Mail_Gonder = '" + Convert.ToBoolean(chk_Mailgonder.Checked) + "', Mail_Isim ='" + txt_Mail_Isim.Text + "', Mail_Adres ='" + txt_Mail_Adres.Text + "',  "
+        //                        + "     Mail_Parola ='" + txt_Mail_Parola.Text + "', Mail_Host ='" + txt_Mail_Host.Text + "', Mail_Port ='" + txt_Mail_Port.Text + "', Mail_SSL ='" + Convert.ToBoolean(chk_Mail_SSL.Checked) + "', "
+        //                        + "     Mail_Alici1 ='" + txt_Mail_Alici1.Text + "', Mail_Alici2 ='" + txt_Mail_Alici2.Text + "', Mail_Alici3 ='" + txt_Mail_Alici3.Text + "', "
+        //                        + "     Mail_Alici4 ='" + txt_Mail_Alici4.Text + "', Mail_Alici5 ='" + txt_Mail_Alici5.Text + "', "
+        //                        + "     Mail_Odeme_Tip = '" + Convert.ToBoolean(chk_Mail_Odeme.Checked) + "',Mail_Servis_Paylari = '" + Convert.ToBoolean(chk_Mail_Servis.Checked) + "', "
+        //                        + "     Mail_Cari_Ozet = '" + Convert.ToBoolean(chk_Mail_Cari.Checked) + "',Mail_Odenmez_Ozet = '" + Convert.ToBoolean(chk_Mail_Odenmez.Checked) + "', "
+        //                        + "     Mail_Malz_Ozet = '" + Convert.ToBoolean(chk_Mail_Malzeme.Checked) + "',Mail_Ana_Ozet = '" + Convert.ToBoolean(chk_Mail_Anagrup.Checked) + "', "
+        //                        + "     Mail_Alt_Ozet = '" + Convert.ToBoolean(chk_Mail_Altgrup.Checked) + "',Mail_Iptal_Ozet = '" + Convert.ToBoolean(chk_Mail_Iptal.Checked) + "', "
+        //                        + "     Mail_Alici6 = '" + txt_Mail_Alici6.Text + "', Mail_Alici7 = '" + txt_Mail_Alici7.Text + "', Mail_Alici8 = '" + txt_Mail_Alici8.Text + "', "
+        //                        + "     Mail_Alici9 = '" + txt_Mail_Alici9.Text + "', Mail_Alici10 = '" + txt_Mail_Alici10.Text + "' "
+        //                        + " WHERE Mail_Id = 1");
+        //    }
+        //    else
+        //    {
+        //        dbtools.execcmdR("INSERT INTO Pos_Mail (Mail_Id, Mail_Gonder, Mail_Isim, Mail_Adres, Mail_Parola, Mail_Host, Mail_Port, Mail_SSL, "
+        //                        + "                         Mail_Alici1, Mail_Alici2, Mail_Alici3, Mail_Alici4, Mail_Alici5, "
+        //                        + "                         Mail_Odeme_Tip,Mail_Servis_Paylari,Mail_Cari_Ozet,Mail_Odenmez_Ozet, "
+        //                        + "                         Mail_Malz_Ozet,Mail_Ana_Ozet,Mail_Alt_Ozet,Mail_Iptal_Ozet, "
+        //                        + "                         Mail_Alici6, Mail_Alici7, Mail_Alici8, Mail_Alici9, Mail_Alici10) "
+        //                        + " VALUES     (1,'" + Convert.ToBoolean(chk_Mailgonder.Checked) + "','" + txt_Mail_Isim.Text + "','" + txt_Mail_Adres.Text + "','" + txt_Mail_Parola.Text + "','" + txt_Mail_Host.Text + "','" + txt_Mail_Port.Text + "','" + Convert.ToBoolean(chk_Mail_SSL.Checked) + "', "
+        //                        + " '" + txt_Mail_Alici1.Text + "','" + txt_Mail_Alici2.Text + "','" + txt_Mail_Alici3.Text + "','" + txt_Mail_Alici4.Text + "','" + txt_Mail_Alici5.Text + "', "
+        //                        + " '" + Convert.ToBoolean(chk_Mail_Odeme.Checked) + "','" + Convert.ToBoolean(chk_Mail_Servis.Checked) + "','" + Convert.ToBoolean(chk_Mail_Cari.Checked) + "','" + Convert.ToBoolean(chk_Mail_Odenmez.Checked) + "', "
+        //                        + " '" + Convert.ToBoolean(chk_Mail_Malzeme.Checked) + "','" + Convert.ToBoolean(chk_Mail_Anagrup.Checked) + "','" + Convert.ToBoolean(chk_Mail_Altgrup.Checked) + "','" + Convert.ToBoolean(chk_Mail_Iptal.Checked) + "', "
+        //                        + " '" + txt_Mail_Alici6.Text + "','" + txt_Mail_Alici7.Text + "','" + txt_Mail_Alici8.Text + "','" + txt_Mail_Alici9.Text + "','" + txt_Mail_Alici10.Text + "')");
+        //    }
+        //}
+
 
         private void btn_Mail_Kaydet_Click(object sender, EventArgs e)
         {
             int sayac = Convert.ToInt32(dbtools.DegerGetir("select count(*) from Pos_Mail WITH(NOLOCK) where Mail_Id = 1"));
             if (sayac > 0)
             {
-                dbtools.execcmdR("UPDATE    Pos_Mail SET Mail_Gonder = '" + Convert.ToBoolean(chk_Mailgonder.Checked) + "', Mail_Isim ='" + txt_Mail_Isim.Text + "', Mail_Adres ='" + txt_Mail_Adres.Text + "',  "
-                                + "     Mail_Parola ='" + txt_Mail_Parola.Text + "', Mail_Host ='" + txt_Mail_Host.Text + "', Mail_Port ='" + txt_Mail_Port.Text + "', Mail_SSL ='" + Convert.ToBoolean(chk_Mail_SSL.Checked) + "', "
-                                + "     Mail_Alici1 ='" + txt_Mail_Alici1.Text + "', Mail_Alici2 ='" + txt_Mail_Alici2.Text + "', Mail_Alici3 ='" + txt_Mail_Alici3.Text + "', "
-                                + "     Mail_Alici4 ='" + txt_Mail_Alici4.Text + "', Mail_Alici5 ='" + txt_Mail_Alici5.Text + "', "
-                                + "     Mail_Odeme_Tip = '" + Convert.ToBoolean(chk_Mail_Odeme.Checked) + "',Mail_Servis_Paylari = '" + Convert.ToBoolean(chk_Mail_Servis.Checked) + "', "
-                                + "     Mail_Cari_Ozet = '" + Convert.ToBoolean(chk_Mail_Cari.Checked) + "',Mail_Odenmez_Ozet = '" + Convert.ToBoolean(chk_Mail_Odenmez.Checked) + "', "
-                                + "     Mail_Malz_Ozet = '" + Convert.ToBoolean(chk_Mail_Malzeme.Checked) + "',Mail_Ana_Ozet = '" + Convert.ToBoolean(chk_Mail_Anagrup.Checked) + "', "
-                                + "     Mail_Alt_Ozet = '" + Convert.ToBoolean(chk_Mail_Altgrup.Checked) + "',Mail_Iptal_Ozet = '" + Convert.ToBoolean(chk_Mail_Iptal.Checked) + "', "
-                                + "     Mail_Alici6 = '" + txt_Mail_Alici6.Text + "', Mail_Alici7 = '" + txt_Mail_Alici7.Text + "', Mail_Alici8 = '" + txt_Mail_Alici8.Text + "', "
-                                + "     Mail_Alici9 = '" + txt_Mail_Alici9.Text + "', Mail_Alici10 = '" + txt_Mail_Alici10.Text + "' "
-                                + " WHERE Mail_Id = 1");
+                dbtools.execcmdR("UPDATE Pos_Mail SET " +
+                    " Mail_Gonder = '" + Convert.ToBoolean(chk_Mailgonder.Checked) + "', " +
+                    " Mail_Isim ='" + txt_Mail_Isim.Text + "', " +
+                    " Mail_Adres ='" + txt_Mail_Adres.Text + "', " +
+                    " Mail_Parola ='" + txt_Mail_Parola.Text + "', " +
+                    " Mail_Host ='" + txt_Mail_Host.Text + "', " +
+                    " Mail_Port ='" + txt_Mail_Port.Text + "', " +
+                    " Mail_SSL ='" + Convert.ToBoolean(chk_Mail_SSL.Checked) + "', " +
+
+                    " Mail_Alici1 ='" + txt_Mail_Alici1.Text + "', " +
+                    " Mail_Alici2 ='" + txt_Mail_Alici2.Text + "', " +
+                    " Mail_Alici3 ='" + txt_Mail_Alici3.Text + "', " +
+                    " Mail_Alici4 ='" + txt_Mail_Alici4.Text + "', " +
+                    " Mail_Alici5 ='" + txt_Mail_Alici5.Text + "', " +
+
+                    " Mail_Alici6 = '" + txt_Mail_Alici6.Text + "', " +
+                    " Mail_Alici7 = '" + txt_Mail_Alici7.Text + "', " +
+                    " Mail_Alici8 = '" + txt_Mail_Alici8.Text + "', " +
+                    " Mail_Alici9 = '" + txt_Mail_Alici9.Text + "', " +
+                    " Mail_Alici10 = '" + txt_Mail_Alici10.Text + "', " +
+
+                    // 📞 TELEFONLAR
+                    " Mail_Alici_Tel1 = '" + txt_Tel_Alici1.Text + "', " +
+                    " Mail_Alici_Tel2 = '" + txt_Tel_Alici2.Text + "', " +
+                    " Mail_Alici_Tel3 = '" + txt_Tel_Alici3.Text + "', " +
+                    " Mail_Alici_Tel4 = '" + txt_Tel_Alici4.Text + "', " +
+                    " Mail_Alici_Tel5 = '" + txt_Tel_Alici5.Text + "', " +
+                    " Mail_Alici_Tel6 = '" + txt_Tel_Alici6.Text + "', " +
+                    " Mail_Alici_Tel7 = '" + txt_Tel_Alici7.Text + "', " +
+                    " Mail_Alici_Tel8 = '" + txt_Tel_Alici8.Text + "', " +
+                    " Mail_Alici_Tel9 = '" + txt_Tel_Alici9.Text + "', " +
+                    " Mail_Alici_Tel10 = '" + txt_Tel_Alici10.Text + "', " +
+
+                    " Mail_Odeme_Tip = '" + Convert.ToBoolean(chk_Mail_Odeme.Checked) + "', " +
+                    " Mail_Servis_Paylari = '" + Convert.ToBoolean(chk_Mail_Servis.Checked) + "', " +
+                    " Mail_Cari_Ozet = '" + Convert.ToBoolean(chk_Mail_Cari.Checked) + "', " +
+                    " Mail_Odenmez_Ozet = '" + Convert.ToBoolean(chk_Mail_Odenmez.Checked) + "', " +
+                    " Mail_Malz_Ozet = '" + Convert.ToBoolean(chk_Mail_Malzeme.Checked) + "', " +
+                    " Mail_Ana_Ozet = '" + Convert.ToBoolean(chk_Mail_Anagrup.Checked) + "', " +
+                    " Mail_Alt_Ozet = '" + Convert.ToBoolean(chk_Mail_Altgrup.Checked) + "', " +
+                    " Mail_Iptal_Ozet = '" + Convert.ToBoolean(chk_Mail_Iptal.Checked) + "' " +
+
+                    " WHERE Mail_Id = 1");
             }
             else
             {
-                dbtools.execcmdR("INSERT INTO Pos_Mail (Mail_Id, Mail_Gonder, Mail_Isim, Mail_Adres, Mail_Parola, Mail_Host, Mail_Port, Mail_SSL, "
-                                + "                         Mail_Alici1, Mail_Alici2, Mail_Alici3, Mail_Alici4, Mail_Alici5, "
-                                + "                         Mail_Odeme_Tip,Mail_Servis_Paylari,Mail_Cari_Ozet,Mail_Odenmez_Ozet, "
-                                + "                         Mail_Malz_Ozet,Mail_Ana_Ozet,Mail_Alt_Ozet,Mail_Iptal_Ozet, "
-                                + "                         Mail_Alici6, Mail_Alici7, Mail_Alici8, Mail_Alici9, Mail_Alici10) "
-                                + " VALUES     (1,'" + Convert.ToBoolean(chk_Mailgonder.Checked) + "','" + txt_Mail_Isim.Text + "','" + txt_Mail_Adres.Text + "','" + txt_Mail_Parola.Text + "','" + txt_Mail_Host.Text + "','" + txt_Mail_Port.Text + "','" + Convert.ToBoolean(chk_Mail_SSL.Checked) + "', "
-                                + " '" + txt_Mail_Alici1.Text + "','" + txt_Mail_Alici2.Text + "','" + txt_Mail_Alici3.Text + "','" + txt_Mail_Alici4.Text + "','" + txt_Mail_Alici5.Text + "', "
-                                + " '" + Convert.ToBoolean(chk_Mail_Odeme.Checked) + "','" + Convert.ToBoolean(chk_Mail_Servis.Checked) + "','" + Convert.ToBoolean(chk_Mail_Cari.Checked) + "','" + Convert.ToBoolean(chk_Mail_Odenmez.Checked) + "', "
-                                + " '" + Convert.ToBoolean(chk_Mail_Malzeme.Checked) + "','" + Convert.ToBoolean(chk_Mail_Anagrup.Checked) + "','" + Convert.ToBoolean(chk_Mail_Altgrup.Checked) + "','" + Convert.ToBoolean(chk_Mail_Iptal.Checked) + "', "
-                                + " '" + txt_Mail_Alici6.Text + "','" + txt_Mail_Alici7.Text + "','" + txt_Mail_Alici8.Text + "','" + txt_Mail_Alici9.Text + "','" + txt_Mail_Alici10.Text + "')");
+                dbtools.execcmdR("INSERT INTO Pos_Mail (" +
+                    " Mail_Id, Mail_Gonder, Mail_Isim, Mail_Adres, Mail_Parola, Mail_Host, Mail_Port, Mail_SSL, " +
+                    " Mail_Alici1, Mail_Alici2, Mail_Alici3, Mail_Alici4, Mail_Alici5, " +
+                    " Mail_Alici6, Mail_Alici7, Mail_Alici8, Mail_Alici9, Mail_Alici10, " +
+
+                    // 📞 TELEFONLAR
+                    " Mail_Alici_Tel1, Mail_Alici_Tel2, Mail_Alici_Tel3, Mail_Alici_Tel4, Mail_Alici_Tel5, " +
+                    " Mail_Alici_Tel6, Mail_Alici_Tel7, Mail_Alici_Tel8, Mail_Alici_Tel9, Mail_Alici_Tel10, " +
+
+                    " Mail_Odeme_Tip, Mail_Servis_Paylari, Mail_Cari_Ozet, Mail_Odenmez_Ozet, " +
+                    " Mail_Malz_Ozet, Mail_Ana_Ozet, Mail_Alt_Ozet, Mail_Iptal_Ozet ) " +
+
+                    " VALUES (1, '" + Convert.ToBoolean(chk_Mailgonder.Checked) + "', '" + txt_Mail_Isim.Text + "', '" + txt_Mail_Adres.Text + "', '" + txt_Mail_Parola.Text + "', '" + txt_Mail_Host.Text + "', '" + txt_Mail_Port.Text + "', '" + Convert.ToBoolean(chk_Mail_SSL.Checked) + "', " +
+
+                    " '" + txt_Mail_Alici1.Text + "', '" + txt_Mail_Alici2.Text + "', '" + txt_Mail_Alici3.Text + "', '" + txt_Mail_Alici4.Text + "', '" + txt_Mail_Alici5.Text + "', " +
+                    " '" + txt_Mail_Alici6.Text + "', '" + txt_Mail_Alici7.Text + "', '" + txt_Mail_Alici8.Text + "', '" + txt_Mail_Alici9.Text + "', '" + txt_Mail_Alici10.Text + "', " +
+
+                    // 📞 TELEFON VALUES
+                    " '" + txt_Tel_Alici1.Text + "', '" + txt_Tel_Alici2.Text + "', '" + txt_Tel_Alici3.Text + "', '" + txt_Tel_Alici4.Text + "', '" + txt_Tel_Alici5.Text + "', " +
+                    " '" + txt_Tel_Alici6.Text + "', '" + txt_Tel_Alici7.Text + "', '" + txt_Tel_Alici8.Text + "', '" + txt_Tel_Alici9.Text + "', '" + txt_Tel_Alici10.Text + "', " +
+
+                    " '" + Convert.ToBoolean(chk_Mail_Odeme.Checked) + "', '" + Convert.ToBoolean(chk_Mail_Servis.Checked) + "', '" + Convert.ToBoolean(chk_Mail_Cari.Checked) + "', '" + Convert.ToBoolean(chk_Mail_Odenmez.Checked) + "', " +
+                    " '" + Convert.ToBoolean(chk_Mail_Malzeme.Checked) + "', '" + Convert.ToBoolean(chk_Mail_Anagrup.Checked) + "', '" + Convert.ToBoolean(chk_Mail_Altgrup.Checked) + "', '" + Convert.ToBoolean(chk_Mail_Iptal.Checked) + "' )");
             }
+
+
+            RHMesaj.alertMesaj("KAYDEDİLDİ.");
         }
 
         private void btn_Mail_Cikis_Click(object sender, EventArgs e)
@@ -3357,8 +3473,8 @@ namespace Pos
                         ",ISNULL(kapaliMasayaGir,0) as kapaliMasayaGir" +
                         ",ISNULL(Pos_AcikmasalariGizle,0) as Pos_AcikmasalariGizle" +
                         ",ISNULL(satisYapma,0) as satisYapma" +
-                        ",ISNULL(otoMasaEkraniAc,0) as otoMasaEkraniAc"+
-                        ",ISNULL(logRaporGor,0) as logRaporGor"+
+                        ",ISNULL(otoMasaEkraniAc,0) as otoMasaEkraniAc" +
+                        ",ISNULL(logRaporGor,0) as logRaporGor" +
                         ",ISNULL(onburoRaporIade,0) as onburoRaporIade"
                         + " from Rmosmuh.dbo.Pos_User with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "' " + Filtre + " ";
                 DataTable dt = dbtools.SelectTable(ss);
@@ -6805,6 +6921,18 @@ Select InstanceNames from @GetInstances ";
                 MessageBox.Show("İptal edildi.");
 
 
+            }
+        }
+
+        private void btn_MacPr_SilHepsi_Click(object sender, EventArgs e)
+        {
+            DialogResult c;
+            c = MessageBox.Show("HEPSİNİ SİLMEK İSTEDİĞİNİZE EMİN MİSİNİZ ? ", res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (c == DialogResult.Yes)
+            {
+                dbtools.execcmdR("delete from Pos_Kodlar where Pkod_Sinif = '21'");
+                Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Prm_MacPrint, Log.Log_Islem.Sil, "hepsi Mac :" + txt_MacPr_Mac.EditValue + " Printer :" + cmb_MacPr_Printer.EditValue + " Bos Satir: " + spn_MacPr_BosSatir.Value.ToString() + " Ana:" + look_MacPr_Anagrup.EditValue + " Alt:" + look_MacPr_Altgrup.EditValue + " Silindi.", String.Empty, String.Empty);
+                gridyenile_MacPr();
             }
         }
 
