@@ -2018,7 +2018,7 @@ namespace Pos
                 dbtools.execcmd("Update Cst_Recete_Satis Set Rsat_Ingenico_Status = 5 Where Rsat_Fisno = '" + fis_no + "'");
             }
 
-            if (Param.ikinciEkranAktif==false)
+            if (Param.ikinciEkranAktif == false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
             }
@@ -4094,12 +4094,20 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
                 if (model.success)
                 {
 
-                    FisPr fis = new FisPr();
 
-                    if (Param.Param_YeniHesapDkm) // 21.05.2024 eklendi
+                    // pavo Sonrası Fiş param'a bağlandı. Oğuzhan Mendi.
+                    if (Param.Param_IngenicoSPR == true)
                     {
-                        fis.newHesapDokum(true, Convert.ToInt32(this.Tag), Split, "* * * HESAP DÖKÜM FİŞİ * * *");
+                        FisPr fis = new FisPr();
+                        if (Param.Param_YeniHesapDkm) // 21.05.2024 eklendi
+                        {
+                            fis.newHesapDokum(true, Convert.ToInt32(this.Tag), Split, "* * * HESAP DÖKÜM FİŞİ * * *");
+                        }
+
                     }
+
+
+
 
                     this.Close();
                 }
