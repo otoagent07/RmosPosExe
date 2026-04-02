@@ -446,7 +446,9 @@
             // 
             // btn_Cikis
             // 
+            this.btn_Cikis.Appearance.BackColor = System.Drawing.Color.Red;
             this.btn_Cikis.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Cikis.Appearance.Font")));
+            this.btn_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cikis.ImageOptions.Image")));
             resources.ApplyResources(this.btn_Cikis, "btn_Cikis");
@@ -455,7 +457,9 @@
             // 
             // btn_OK
             // 
+            this.btn_OK.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btn_OK.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_OK.Appearance.Font")));
+            this.btn_OK.Appearance.Options.UseBackColor = true;
             this.btn_OK.Appearance.Options.UseFont = true;
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
             resources.ApplyResources(this.btn_OK, "btn_OK");

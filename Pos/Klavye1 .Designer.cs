@@ -52,7 +52,9 @@
             // 
             // btn_Cikis
             // 
+            this.btn_Cikis.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_Cikis.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_Cikis.Appearance.Options.UseBackColor = true;
             this.btn_Cikis.Appearance.Options.UseFont = true;
             this.btn_Cikis.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btn_Cikis.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Cikis.ImageOptions.SvgImage")));
@@ -117,7 +119,9 @@
             // 
             // btn_OK
             // 
+            this.btn_OK.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btn_OK.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_OK.Appearance.Options.UseBackColor = true;
             this.btn_OK.Appearance.Options.UseFont = true;
             this.btn_OK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_OK.ImageOptions.Image")));
             this.btn_OK.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
@@ -241,7 +245,9 @@
             // 
             // btn_Sil
             // 
+            this.btn_Sil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
             this.btn_Sil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_Sil.Appearance.Options.UseBackColor = true;
             this.btn_Sil.Appearance.Options.UseFont = true;
             this.btn_Sil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sil.ImageOptions.Image")));
             this.btn_Sil.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;

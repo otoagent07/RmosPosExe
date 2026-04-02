@@ -2274,6 +2274,23 @@ where Log_Islem='Kaydet'
                             break;
                     }
 
+
+
+                    string bekoAciklama = View.GetRowCellDisplayText(e.RowHandle, View.Columns["bekoAciklama"]);
+
+                    switch (bekoAciklama)
+                    {
+                        case "0":
+                            break;
+                        case "Masa Geri Alındı.": // hesap dökülmüş turuncu
+                            e.Appearance.BackColor = Color.DodgerBlue;
+                            e.Appearance.ForeColor = Color.White;
+                            break;
+                        
+                        default:
+                            break;
+                    }
+
                 }
             }
 
