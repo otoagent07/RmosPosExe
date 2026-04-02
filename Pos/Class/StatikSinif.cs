@@ -377,6 +377,20 @@ IF COL_LENGTH('Pos_Cari', 'adressecenek') IS NULL BEGIN ALTER TABLE Pos_Cari ADD
 IF COL_LENGTH('RmosMuh.dbo.Pos_User', 'Pos_dil') IS NULL BEGIN ALTER TABLE RmosMuh.dbo.Pos_User ADD Pos_dil nvarchar(50) END;
 
 IF COL_LENGTH('Pos_Kasahrk', 'Pkasa_dep') IS NULL BEGIN ALTER TABLE Pos_Kasahrk ADD Pkasa_dep nvarchar(100) END;
+
+
+
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel1') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel1 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel2') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel2 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel3') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel3 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel4') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel4 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel5') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel5 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel6') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel6 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel7') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel7 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel8') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel8 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel9') IS NULL BEGIN ALTER TABLE Pos_Mail  ADD  Mail_Alici_Tel9 nvarchar(500) END;
+IF COL_LENGTH('Pos_Mail', 'Mail_Alici_Tel10') IS NULL BEGIN ALTER TABLE Pos_Mail ADD Mail_Alici_Tel10 nvarchar(500) END;
+
 ";
 
             return query;

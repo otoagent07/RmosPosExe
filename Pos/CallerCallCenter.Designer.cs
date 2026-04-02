@@ -345,7 +345,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panelControl2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CallerCallCenter";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CallerCallCenter_FormClosed);
             this.Load += new System.EventHandler(this.CallerCallCenter_Load);

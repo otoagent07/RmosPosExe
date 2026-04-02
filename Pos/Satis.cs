@@ -249,7 +249,7 @@ namespace Pos
                 btn_Arti.Visible = User.Pos_ArtiEksi_Aktif;
                 btn_Eksi.Visible = User.Pos_ArtiEksi_Aktif;
 
-
+                btnTipBox.Enabled = User.M_HesapTr;
                 //rdo_EMiktar.Visible = User.Pos_YarimDubleAlan;
 
 
@@ -489,9 +489,9 @@ namespace Pos
                     bar_Cari.Caption = "Cari Bilgisi : " + mCari.Cari_Ad + " " + mCari.Cari_Soyad + " | \nAdres1 : " + mCari.Cari_Adres1 + " | \nAdres2 : " + mCari.Cari_Adres2 + " | Telefon : " + mCari.Cari_Tel;
 
 
-                    if (bar_Cari.Caption.Length>151)
+                    if (bar_Cari.Caption.Length > 151)
                     {
-                        bar_Cari.Caption = bar_Cari.Caption.Substring(0,150);
+                        bar_Cari.Caption = bar_Cari.Caption.Substring(0, 150);
                     }
 
 
@@ -5656,10 +5656,66 @@ where  Rsat_Id='" + Rsat_Id + "'";
 
         private void txt_Not_Leave(object sender, EventArgs e)
         {
-           // 23.03.2026 Paketçiler için not yazıp anlık update atma
+            // 23.03.2026 Paketçiler için not yazıp anlık update atma
             int count = gridView1.RowCount;
             if (count == 0) return;
             dbtools.execcmd("update Cst_Recete_Satis set Rsat_Not = '" + txt_Not.Text + "' where Rsat_Fisno = '" + Convert.ToInt32(bartxt_FisNo.EditValue) + "'");
+        }
+
+        private void btnTipBox_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Param.tipboxReceteKod == "")
+                {
+                    MessageBox.Show(res_man.GetString("Bindirim Recetesi Tanımlı Değil...!"), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                TipboxForm ind = new TipboxForm();
+                ind.Tag = "B";
+                ind.toplamTutar = 0;
+                ind.toplamTutar2 = toplamTutar;
+                ind.ShowDialog();
+
+                decimal tutar = 0, doviztutar = 0, oran = 0;
+                if (ind.indTipi == "T")
+                {
+                    if (Param.Calisma_Sekli == 1)       //Dövizli
+                    {
+                        doviztutar = ind.indSayi;
+                        tutar = doviztutar * Param.Doviz_Kuru;
+                    }
+                    else
+                    {
+                        tutar = ind.indSayi;
+                        doviztutar = tutar / Param.Doviz_Kuru;
+                    }
+                }
+
+
+                if (oran > 0 || tutar > 0)
+                {
+                    int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
+
+                    Fis_Islem.Bindirim_UygulaTipBox(fisno, ind.indTipi, tutar, doviztutar, oran);
+
+                    //  decimal toplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                    string aciklama = "Tip Box UYGULANDI . Fisno:" + fisno + " Masano:" + Masa_No + " Tip Box TUTARI : " + tutar + " BİNDİRİMSİZ TOPLAM TUTAR : " + toplamTutar;
+                    Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.ServisPayi_Uygula, Log.Log_Islem.Kaydet, aciklama, fisno.ToString(), "");
+
+                }
+
+                gridyenile();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         /*

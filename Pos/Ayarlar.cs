@@ -4789,7 +4789,7 @@ namespace Pos
             gridColumn97.FieldName = "Pkod_Ad";
 
 
-            grd_AciklamaItem.DataSource = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad from Pos_Kodlar where Pkod_Sinif = '23' order by Pkod_Kod");
+            grd_AciklamaItem.DataSource = dbtools.SelectTable("select Pkod_Kod,Pkod_Ad from Pos_Kodlar where Pkod_Sinif = '23' order by  Pkod_Id desc");
 
             txt_AciklamaItem_Kod.Text = "";
             txt_AciklamaItem_Ad.Text = "";

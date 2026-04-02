@@ -2251,6 +2251,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\project_16x16.png" />
+    <None Include="Resources\project_32x32.png" />
     <None Include="Resources\printerCancel.png" />
     <None Include="Resources\print_ok.png" />
     <None Include="Resources\kasa.png" />
