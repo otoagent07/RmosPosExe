@@ -264,10 +264,10 @@ namespace Pos
 
                     // özel masa kayboluyordu onu düzelttim 
 
-                    if (txt_Masano.Text != ozelMasaAd)
-                    {
-                        dbtools.execcmd("update Pos_Masa set Masa_Ozel='" + ozelMasaAd + "' where Masa_No='" + masaNo + "' and Masa_No<>'" + ozelMasaAd + "'");
-                    }
+                    //if (txt_Masano.Text != ozelMasaAd)
+                    //{
+                    //    dbtools.execcmd("update Pos_Masa set Masa_Ozel='" + ozelMasaAd + "' where Masa_No='" + masaNo + "' and Masa_No<>'" + ozelMasaAd + "'");
+                    //}
                     //dbtools.execcmd("update Pos_Masa set Masa_Ozel='" + ozelMasaAd + "' where Masa_No='" + masaNo + "' and Masa_No<>'" + ozelMasaAd + "'");
 
 
