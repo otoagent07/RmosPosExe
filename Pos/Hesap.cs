@@ -2438,11 +2438,11 @@ namespace Pos
                 return;
             }
 
-            if (E_AdisyonDurum.Checked && cari_A == "")
-            {
-                MessageBox.Show("E adisyon işaretliyken cari seçili olmak zorunda !");
-                return;
-            }
+            //if (E_AdisyonDurum.Checked && cari_A == "")
+            //{
+            //    MessageBox.Show("E adisyon işaretliyken cari seçili olmak zorunda !");
+            //    return;
+            //}
             yazdirKapat();
             indirimYaz();
 
