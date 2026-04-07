@@ -1678,6 +1678,7 @@ namespace Pos
                 return;
             }
 
+
             if (txt_Hesapno.Text.Length == 0)
             {
                 return;
