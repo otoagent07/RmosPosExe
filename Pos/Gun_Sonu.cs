@@ -113,59 +113,66 @@ namespace Pos
 
         private void btn_Gunsonu_Click(object sender, EventArgs e)
         {
-
-            if (User.coklugunsonu)
+            try
             {
-                dateTarih.ReadOnly = false;
-                if (dateTarih.DateTime <= Param.Tarih)
+                if (User.coklugunsonu)
                 {
-                    MessageBox.Show("Geçmiş tarihe gün sonu yapılamaz ! ");
+                    dateTarih.ReadOnly = false;
+                    if (dateTarih.DateTime <= Param.Tarih)
+                    {
+                        MessageBox.Show("Geçmiş tarihe gün sonu yapılamaz ! ");
+                        return;
+                    }
+
+                    dateTarih.DateTime = dateTarih.DateTime.AddDays(-1);
+                }
+                // paremetrik
+
+
+                if (User.P_Sifre != txt_Kulsifre.Text)
+                {
+                    MessageBox.Show(res_man.GetString("Kullanıcı Şifreniz Yanlış..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
-                dateTarih.DateTime = dateTarih.DateTime.AddDays(-1);
-            }
-            // paremetrik
+                if (txt_Gunsonusifre.Text.ToUpper() != "GUNSONU")
+                {
+                    MessageBox.Show(res_man.GetString("Günsonu Şifreniz Yanlış..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                DataTable dt2 = dbtools.SelectTable("SELECT * FROM Cst_Recete_Satis where Rsat_Durum = 'A' and Rsat_Tarih = '" + Param.Tarih + "' ");
+                if (dt2.Rows.Count > 0 && !Param.Param_Gunsonu_Aktar)
+                {
+                    MessageBox.Show(res_man.GetString("Kapatılmamış Çekler Bulunuyor. Lütfen Bütün Çeklerin Kapalı Olduğuna Emin Olun..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                if (dateTarih.DateTime.AddDays(1).Date > Convert.ToDateTime(dbtools.DegerGetir("select getdate()")).Date)
+                {
+                    var cvp = MessageBox.Show(res_man.GetString("Yeni tarih Sistem Server tarihinden Büyük Olamaz!!!!") + "\n" + res_man.GetString("Devam etmek İstiyor musunuz ?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    if (cvp == DialogResult.No)
+                    {
+                        return;
+                    }
+                }
+
+                Rapor_Tarih r = new Rapor_Tarih();
+                r.ShowDialog();
 
 
-            if (User.P_Sifre != txt_Kulsifre.Text)
-            {
-                MessageBox.Show(res_man.GetString("Kullanıcı Şifreniz Yanlış..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            if (txt_Gunsonusifre.Text.ToUpper() != "GUNSONU")
-            {
-                MessageBox.Show(res_man.GetString("Günsonu Şifreniz Yanlış..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            DataTable dt2 = dbtools.SelectTable("SELECT * FROM Cst_Recete_Satis where Rsat_Durum = 'A' and Rsat_Tarih = '" + Param.Tarih + "' ");
-            if (dt2.Rows.Count > 0 && !Param.Param_Gunsonu_Aktar)
-            {
-                MessageBox.Show(res_man.GetString("Kapatılmamış Çekler Bulunuyor. Lütfen Bütün Çeklerin Kapalı Olduğuna Emin Olun..."), res_man.GetString("Uyarı"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            if (dateTarih.DateTime.AddDays(1).Date > Convert.ToDateTime(dbtools.DegerGetir("select getdate()")).Date)
-            {
-                var cvp = MessageBox.Show(res_man.GetString("Yeni tarih Sistem Server tarihinden Büyük Olamaz!!!!") + "\n" + res_man.GetString("Devam etmek İstiyor musunuz ?"), res_man.GetString("Uyarı"), MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                if (cvp == DialogResult.No)
+                if (r.cikis == false)
                 {
                     return;
                 }
+
+                gunsonuAl(dt2, r);
             }
-
-            Rapor_Tarih r = new Rapor_Tarih();
-            r.ShowDialog();
-
-
-            if (r.cikis == false)
+            catch (Exception ex)
             {
-                return;
+                MessageBox.Show(ex.Message);
             }
-
-            gunsonuAl(dt2, r);
+            
 
         }
 

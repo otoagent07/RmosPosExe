@@ -129,6 +129,8 @@
             this.tarihDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kişiSayısıDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnOnburoIadeYap = new System.Windows.Forms.ToolStripMenuItem();
+            this.satisRaporDizaynKaydet2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.satisRaporDizaynTemizle2 = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView11 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.bandedGridColumn42 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn43 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -156,6 +158,7 @@
             this.bandedGridColumn52 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn53 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn50 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn151 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn51 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn59 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bandedGridColumn60 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -436,8 +439,6 @@
             this.gridControlMuh = new DevExpress.XtraGrid.GridControl();
             this.gridViewMuh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.satisRaporDizaynKaydet2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.satisRaporDizaynTemizle2 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
@@ -1451,6 +1452,18 @@
             resources.ApplyResources(this.btnOnburoIadeYap, "btnOnburoIadeYap");
             this.btnOnburoIadeYap.Click += new System.EventHandler(this.btnOnburoIadeYap_Click);
             // 
+            // satisRaporDizaynKaydet2
+            // 
+            this.satisRaporDizaynKaydet2.Name = "satisRaporDizaynKaydet2";
+            resources.ApplyResources(this.satisRaporDizaynKaydet2, "satisRaporDizaynKaydet2");
+            this.satisRaporDizaynKaydet2.Click += new System.EventHandler(this.satisRaporDizaynKaydet2_Click);
+            // 
+            // satisRaporDizaynTemizle2
+            // 
+            this.satisRaporDizaynTemizle2.Name = "satisRaporDizaynTemizle2";
+            resources.ApplyResources(this.satisRaporDizaynTemizle2, "satisRaporDizaynTemizle2");
+            this.satisRaporDizaynTemizle2.Click += new System.EventHandler(this.satisRaporDizaynTemizle2_Click);
+            // 
             // gridView11
             // 
             this.gridView11.Appearance.FooterPanel.Font = ((System.Drawing.Font)(resources.GetObject("gridView11.Appearance.FooterPanel.Font")));
@@ -1484,6 +1497,7 @@
             this.bandedGridColumn52,
             this.bandedGridColumn53,
             this.bandedGridColumn50,
+            this.gridColumn151,
             this.bandedGridColumn51,
             this.bandedGridColumn59,
             this.bandedGridColumn60,
@@ -1806,6 +1820,12 @@
             this.bandedGridColumn50.OptionsColumn.AllowFocus = false;
             this.bandedGridColumn50.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("bandedGridColumn50.Summary"))), resources.GetString("bandedGridColumn50.Summary1"), resources.GetString("bandedGridColumn50.Summary2"))});
+            // 
+            // gridColumn151
+            // 
+            resources.ApplyResources(this.gridColumn151, "gridColumn151");
+            this.gridColumn151.FieldName = "Rsat_Indoran";
+            this.gridColumn151.Name = "gridColumn151";
             // 
             // bandedGridColumn51
             // 
@@ -4512,18 +4532,6 @@
             resources.ApplyResources(this.panelControl4, "panelControl4");
             this.panelControl4.Name = "panelControl4";
             // 
-            // satisRaporDizaynKaydet2
-            // 
-            this.satisRaporDizaynKaydet2.Name = "satisRaporDizaynKaydet2";
-            resources.ApplyResources(this.satisRaporDizaynKaydet2, "satisRaporDizaynKaydet2");
-            this.satisRaporDizaynKaydet2.Click += new System.EventHandler(this.satisRaporDizaynKaydet2_Click);
-            // 
-            // satisRaporDizaynTemizle2
-            // 
-            this.satisRaporDizaynTemizle2.Name = "satisRaporDizaynTemizle2";
-            resources.ApplyResources(this.satisRaporDizaynTemizle2, "satisRaporDizaynTemizle2");
-            this.satisRaporDizaynTemizle2.Click += new System.EventHandler(this.satisRaporDizaynTemizle2_Click);
-            // 
             // Raporlar
             // 
             resources.ApplyResources(this, "$this");
@@ -5048,5 +5056,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnOnburoIadeYap;
         private System.Windows.Forms.ToolStripMenuItem satisRaporDizaynKaydet2;
         private System.Windows.Forms.ToolStripMenuItem satisRaporDizaynTemizle2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn151;
     }
 }
