@@ -1891,11 +1891,13 @@ namespace Pos
 
         public void yazdirmadankapat()
         {
-            if (E_AdisyonDurum.Checked && cari_A == "")
-            {
-                MessageBox.Show("E adisyon işaretliyken cari seçili olmak zorunda !");
-                return;
-            }
+
+            // özhan muğla bodrum isteği üzerine kapatıldı nedeni : otellerde oda ya kapatamadığımız için
+            //if (E_AdisyonDurum.Checked && cari_A == "")
+            //{
+            //    MessageBox.Show("E adisyon işaretliyken cari seçili olmak zorunda !");
+            //    return;
+            //}
 
 
             if (odemeKodSaatAraligindaKapalimi())
@@ -4173,6 +4175,11 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
         private void btnYenile_Click(object sender, EventArgs e)
         {
             gridyenile();
+        }
+
+        private void E_AdisyonDurum_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
