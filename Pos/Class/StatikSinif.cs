@@ -174,6 +174,9 @@ IF COL_LENGTH('Cst_Recete_Satis', 'paketAtamaTarih') IS NULL BEGIN ALTER TABLE C
 IF COL_LENGTH('Cst_Recete_Satis', 'sepetDurum') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD sepetDurum int END;
 
 
+IF COL_LENGTH('Pos_Rez', 'Rez_Durum') IS NULL BEGIN ALTER TABLE Pos_Rez ADD Rez_Durum int END;
+
+
 
 
 IF COL_LENGTH('Cst_Recete_Satis', 'ustgrup') IS NULL BEGIN ALTER TABLE Cst_Recete_Satis ADD ustgrup nvarchar(200) END;

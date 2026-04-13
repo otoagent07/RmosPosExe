@@ -20,6 +20,7 @@ namespace Pos.Class
         public string Rez_Tel { get; set; }
         public string Rez_Email { get; set; }
         public string Rez_Not { get; set; }
+        public int Rez_Durum{ get; set; } // 0 aktif,1 geldi ,2 gelmedi,3 karaliste
 
 
         public void Rez_Kaydet(Rez r)
@@ -43,6 +44,7 @@ namespace Pos.Class
             com.Parameters.AddWithValue("@Rez_Tel", r.Rez_Tel);
             com.Parameters.AddWithValue("@Rez_Email", r.Rez_Email);
             com.Parameters.AddWithValue("@Rez_Not", r.Rez_Not);
+            com.Parameters.AddWithValue("@Rez_Durum", r.Rez_Durum);
             com.ExecuteNonQuery();
             if (con.State == ConnectionState.Open) con.Close();
         }

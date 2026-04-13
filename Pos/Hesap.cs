@@ -4099,8 +4099,9 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'");
 
 
                     // pavo Sonrası Fiş param'a bağlandı. Oğuzhan Mendi.
-                    if (Param.Param_IngenicoSPR == true)
+                    if (Param.Param_PaketKucukEkran == true)
                     {
+
                         FisPr fis = new FisPr();
                         if (Param.Param_YeniHesapDkm) // 21.05.2024 eklendi
                         {

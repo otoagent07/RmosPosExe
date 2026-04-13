@@ -273,7 +273,7 @@
             resources.ApplyResources(this.splitContainerControl4.Panel1, "splitContainerControl4.Panel1");
             this.splitContainerControl4.Panel2.Controls.Add(this.ana_btnDown);
             resources.ApplyResources(this.splitContainerControl4.Panel2, "splitContainerControl4.Panel2");
-            this.splitContainerControl4.SplitterPosition = 195;
+            this.splitContainerControl4.SplitterPosition = 193;
             // 
             // ana_btnUp
             // 
@@ -645,7 +645,7 @@
             resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
             this.splitContainerControl2.Panel2.Controls.Add(this.alt_btnDown);
             resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
-            this.splitContainerControl2.SplitterPosition = 154;
+            this.splitContainerControl2.SplitterPosition = 152;
             // 
             // alt_btnUp
             // 
@@ -1711,7 +1711,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(846, 768);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(846, 765);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1736,7 +1736,7 @@
             this.layoutControlItem2.MinSize = new System.Drawing.Size(235, 20);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(846, 212);
+            this.layoutControlItem2.Size = new System.Drawing.Size(846, 211);
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
@@ -1745,7 +1745,7 @@
             // 
             this.layoutControlItem6.Control = this.panelControl7;
             resources.ApplyResources(this.layoutControlItem6, "layoutControlItem6");
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 282);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 281);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(846, 80);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
@@ -1755,16 +1755,16 @@
             // 
             this.layoutControlItem7.Control = this.panelControl8;
             resources.ApplyResources(this.layoutControlItem7, "layoutControlItem7");
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 362);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 361);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(846, 310);
+            this.layoutControlItem7.Size = new System.Drawing.Size(846, 308);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.panel1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 672);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 669);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(846, 96);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);

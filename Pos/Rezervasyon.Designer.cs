@@ -45,16 +45,22 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn25 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn27 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn29 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.radioButtonKaraListe = new System.Windows.Forms.RadioButton();
+            this.radioButtonGelmedi = new System.Windows.Forms.RadioButton();
+            this.radioButtonGeldi = new System.Windows.Forms.RadioButton();
+            this.radioButtonAktif = new System.Windows.Forms.RadioButton();
             this.btn_Sil = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Duzelt = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Kaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -87,15 +93,17 @@
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn20 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn23 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn24 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn26 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn28 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn30 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_Excel = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Print = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Listele = new DevExpress.XtraEditors.SimpleButton();
@@ -188,13 +196,16 @@
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12,
-            this.gridColumn25});
+            this.gridColumn25,
+            this.gridColumn27,
+            this.gridColumn29});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowAutoFilterRow = true;
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
+            this.gridView1.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView1_RowCellStyle);
             // 
             // gridColumn1
             // 
@@ -224,6 +235,15 @@
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.OptionsColumn.AllowFocus = false;
             // 
+            // gridColumn7
+            // 
+            resources.ApplyResources(this.gridColumn7, "gridColumn7");
+            this.gridColumn7.FieldName = "Rez_Kisi";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowFocus = false;
+            this.gridColumn7.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn7.Summary"))), resources.GetString("gridColumn7.Summary1"), resources.GetString("gridColumn7.Summary2"))});
+            // 
             // gridColumn5
             // 
             resources.ApplyResources(this.gridColumn5, "gridColumn5");
@@ -237,15 +257,6 @@
             this.gridColumn6.FieldName = "Rez_Soyadi";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowFocus = false;
-            // 
-            // gridColumn7
-            // 
-            resources.ApplyResources(this.gridColumn7, "gridColumn7");
-            this.gridColumn7.FieldName = "Rez_Kisi";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.OptionsColumn.AllowFocus = false;
-            this.gridColumn7.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn7.Summary"))), resources.GetString("gridColumn7.Summary1"), resources.GetString("gridColumn7.Summary2"))});
             // 
             // gridColumn8
             // 
@@ -289,10 +300,28 @@
             this.gridColumn25.Name = "gridColumn25";
             this.gridColumn25.OptionsColumn.AllowFocus = false;
             // 
+            // gridColumn27
+            // 
+            resources.ApplyResources(this.gridColumn27, "gridColumn27");
+            this.gridColumn27.FieldName = "Rez_DurumText";
+            this.gridColumn27.Name = "gridColumn27";
+            this.gridColumn27.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn29
+            // 
+            resources.ApplyResources(this.gridColumn29, "gridColumn29");
+            this.gridColumn29.FieldName = "Rez_Durum";
+            this.gridColumn29.Name = "gridColumn29";
+            this.gridColumn29.OptionsColumn.AllowFocus = false;
+            // 
             // groupControl1
             // 
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.groupControl1.Controls.Add(this.radioButtonKaraListe);
+            this.groupControl1.Controls.Add(this.radioButtonGelmedi);
+            this.groupControl1.Controls.Add(this.radioButtonGeldi);
+            this.groupControl1.Controls.Add(this.radioButtonAktif);
             this.groupControl1.Controls.Add(this.btn_Sil);
             this.groupControl1.Controls.Add(this.btn_Duzelt);
             this.groupControl1.Controls.Add(this.btn_Kaydet);
@@ -320,9 +349,37 @@
             this.groupControl1.Controls.Add(this.textEdit1);
             this.groupControl1.Name = "groupControl1";
             // 
+            // radioButtonKaraListe
+            // 
+            resources.ApplyResources(this.radioButtonKaraListe, "radioButtonKaraListe");
+            this.radioButtonKaraListe.Name = "radioButtonKaraListe";
+            this.radioButtonKaraListe.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonGelmedi
+            // 
+            resources.ApplyResources(this.radioButtonGelmedi, "radioButtonGelmedi");
+            this.radioButtonGelmedi.Name = "radioButtonGelmedi";
+            this.radioButtonGelmedi.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonGeldi
+            // 
+            resources.ApplyResources(this.radioButtonGeldi, "radioButtonGeldi");
+            this.radioButtonGeldi.Name = "radioButtonGeldi";
+            this.radioButtonGeldi.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonAktif
+            // 
+            resources.ApplyResources(this.radioButtonAktif, "radioButtonAktif");
+            this.radioButtonAktif.Checked = true;
+            this.radioButtonAktif.Name = "radioButtonAktif";
+            this.radioButtonAktif.TabStop = true;
+            this.radioButtonAktif.UseVisualStyleBackColor = true;
+            // 
             // btn_Sil
             // 
+            this.btn_Sil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btn_Sil.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Sil.Appearance.Font")));
+            this.btn_Sil.Appearance.Options.UseBackColor = true;
             this.btn_Sil.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Sil, "btn_Sil");
             this.btn_Sil.Name = "btn_Sil";
@@ -330,7 +387,9 @@
             // 
             // btn_Duzelt
             // 
+            this.btn_Duzelt.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
             this.btn_Duzelt.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Duzelt.Appearance.Font")));
+            this.btn_Duzelt.Appearance.Options.UseBackColor = true;
             this.btn_Duzelt.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Duzelt, "btn_Duzelt");
             this.btn_Duzelt.Name = "btn_Duzelt";
@@ -338,7 +397,9 @@
             // 
             // btn_Kaydet
             // 
+            this.btn_Kaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btn_Kaydet.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_Kaydet.Appearance.Font")));
+            this.btn_Kaydet.Appearance.Options.UseBackColor = true;
             this.btn_Kaydet.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.btn_Kaydet, "btn_Kaydet");
             this.btn_Kaydet.Name = "btn_Kaydet";
@@ -587,12 +648,15 @@
             this.gridColumn22,
             this.gridColumn23,
             this.gridColumn24,
-            this.gridColumn26});
+            this.gridColumn26,
+            this.gridColumn28,
+            this.gridColumn30});
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowAutoFilterRow = true;
             this.gridView2.OptionsView.ShowFooter = true;
             this.gridView2.OptionsView.ShowGroupPanel = false;
+            this.gridView2.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.gridView2_RowCellStyle);
             // 
             // gridColumn13
             // 
@@ -622,6 +686,15 @@
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.OptionsColumn.AllowFocus = false;
             // 
+            // gridColumn19
+            // 
+            resources.ApplyResources(this.gridColumn19, "gridColumn19");
+            this.gridColumn19.FieldName = "Rez_Kisi";
+            this.gridColumn19.Name = "gridColumn19";
+            this.gridColumn19.OptionsColumn.AllowFocus = false;
+            this.gridColumn19.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn19.Summary"))), resources.GetString("gridColumn19.Summary1"), resources.GetString("gridColumn19.Summary2"))});
+            // 
             // gridColumn17
             // 
             resources.ApplyResources(this.gridColumn17, "gridColumn17");
@@ -635,15 +708,6 @@
             this.gridColumn18.FieldName = "Rez_Soyadi";
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.OptionsColumn.AllowFocus = false;
-            // 
-            // gridColumn19
-            // 
-            resources.ApplyResources(this.gridColumn19, "gridColumn19");
-            this.gridColumn19.FieldName = "Rez_Kisi";
-            this.gridColumn19.Name = "gridColumn19";
-            this.gridColumn19.OptionsColumn.AllowFocus = false;
-            this.gridColumn19.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(((DevExpress.Data.SummaryItemType)(resources.GetObject("gridColumn19.Summary"))), resources.GetString("gridColumn19.Summary1"), resources.GetString("gridColumn19.Summary2"))});
             // 
             // gridColumn20
             // 
@@ -686,6 +750,19 @@
             this.gridColumn26.FieldName = "Rez_Depad";
             this.gridColumn26.Name = "gridColumn26";
             this.gridColumn26.OptionsColumn.AllowFocus = false;
+            // 
+            // gridColumn28
+            // 
+            resources.ApplyResources(this.gridColumn28, "gridColumn28");
+            this.gridColumn28.FieldName = "Rez_Durum";
+            this.gridColumn28.Name = "gridColumn28";
+            // 
+            // gridColumn30
+            // 
+            resources.ApplyResources(this.gridColumn30, "gridColumn30");
+            this.gridColumn30.FieldName = "Rez_DurumText";
+            this.gridColumn30.Name = "gridColumn30";
+            this.gridColumn30.OptionsColumn.AllowFocus = false;
             // 
             // btn_Excel
             // 
@@ -783,6 +860,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spn_MasaSayisi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spn_KisiSayisi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Not.Properties)).EndInit();
@@ -892,5 +970,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn26;
+        private System.Windows.Forms.RadioButton radioButtonGelmedi;
+        private System.Windows.Forms.RadioButton radioButtonGeldi;
+        private System.Windows.Forms.RadioButton radioButtonAktif;
+        private System.Windows.Forms.RadioButton radioButtonKaraListe;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn27;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn28;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn29;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn30;
     }
 }

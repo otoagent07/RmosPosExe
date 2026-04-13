@@ -361,24 +361,44 @@
             this.btn_Mail_Cikis = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Mail_Kaydet = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit228 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit131 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit227 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit83 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit226 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit130 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit225 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit84 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit224 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit129 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit223 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit85 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit222 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit128 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit221 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit86 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit220 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit127 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici10 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici10 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit218 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici9 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit87 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici5 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici9 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici8 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici5 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici4 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici8 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici7 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici4 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici3 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici7 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici6 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici3 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici2 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici6 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Tel_Alici1 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici2 = new DevExpress.XtraEditors.TextEdit();
             this.txt_Mail_Alici1 = new DevExpress.XtraEditors.TextEdit();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
@@ -1220,6 +1240,7 @@
             this.tab_MacPrint = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControl5 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage11 = new DevExpress.XtraTab.XtraTabPage();
+            this.btn_MacPr_SilHepsi = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit77 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit113 = new DevExpress.XtraEditors.TextEdit();
             this.cmb_MacPr_Printer = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -1331,27 +1352,6 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.txt_Tel_Alici1 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici2 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici6 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici3 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici7 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici4 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici8 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici5 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici9 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit218 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Tel_Alici10 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit220 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit221 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit222 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit223 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit224 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit225 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit226 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit227 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit228 = new DevExpress.XtraEditors.TextEdit();
-            this.btn_MacPr_SilHepsi = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -1620,24 +1620,44 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Mail_Cari.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit228.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit131.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit227.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit83.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit226.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit130.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit225.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit84.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit224.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit129.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit223.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit85.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit222.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit128.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit221.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit86.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit220.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit127.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit218.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit87.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -2255,26 +2275,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit218.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit220.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit221.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit222.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit223.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit224.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit225.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit226.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit227.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit228.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -5019,6 +5019,16 @@
             resources.ApplyResources(this.groupControl5, "groupControl5");
             this.groupControl5.Name = "groupControl5";
             // 
+            // textEdit228
+            // 
+            resources.ApplyResources(this.textEdit228, "textEdit228");
+            this.textEdit228.Name = "textEdit228";
+            this.textEdit228.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit228.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit228.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit228.Properties.ReadOnly = true;
+            this.textEdit228.TabStop = false;
+            // 
             // textEdit131
             // 
             resources.ApplyResources(this.textEdit131, "textEdit131");
@@ -5026,6 +5036,16 @@
             this.textEdit131.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit131.Properties.ReadOnly = true;
             this.textEdit131.TabStop = false;
+            // 
+            // textEdit227
+            // 
+            resources.ApplyResources(this.textEdit227, "textEdit227");
+            this.textEdit227.Name = "textEdit227";
+            this.textEdit227.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit227.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit227.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit227.Properties.ReadOnly = true;
+            this.textEdit227.TabStop = false;
             // 
             // textEdit83
             // 
@@ -5035,6 +5055,16 @@
             this.textEdit83.Properties.ReadOnly = true;
             this.textEdit83.TabStop = false;
             // 
+            // textEdit226
+            // 
+            resources.ApplyResources(this.textEdit226, "textEdit226");
+            this.textEdit226.Name = "textEdit226";
+            this.textEdit226.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit226.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit226.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit226.Properties.ReadOnly = true;
+            this.textEdit226.TabStop = false;
+            // 
             // textEdit130
             // 
             resources.ApplyResources(this.textEdit130, "textEdit130");
@@ -5042,6 +5072,16 @@
             this.textEdit130.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit130.Properties.ReadOnly = true;
             this.textEdit130.TabStop = false;
+            // 
+            // textEdit225
+            // 
+            resources.ApplyResources(this.textEdit225, "textEdit225");
+            this.textEdit225.Name = "textEdit225";
+            this.textEdit225.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit225.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit225.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit225.Properties.ReadOnly = true;
+            this.textEdit225.TabStop = false;
             // 
             // textEdit84
             // 
@@ -5051,6 +5091,16 @@
             this.textEdit84.Properties.ReadOnly = true;
             this.textEdit84.TabStop = false;
             // 
+            // textEdit224
+            // 
+            resources.ApplyResources(this.textEdit224, "textEdit224");
+            this.textEdit224.Name = "textEdit224";
+            this.textEdit224.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit224.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit224.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit224.Properties.ReadOnly = true;
+            this.textEdit224.TabStop = false;
+            // 
             // textEdit129
             // 
             resources.ApplyResources(this.textEdit129, "textEdit129");
@@ -5058,6 +5108,16 @@
             this.textEdit129.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit129.Properties.ReadOnly = true;
             this.textEdit129.TabStop = false;
+            // 
+            // textEdit223
+            // 
+            resources.ApplyResources(this.textEdit223, "textEdit223");
+            this.textEdit223.Name = "textEdit223";
+            this.textEdit223.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit223.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit223.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit223.Properties.ReadOnly = true;
+            this.textEdit223.TabStop = false;
             // 
             // textEdit85
             // 
@@ -5067,6 +5127,16 @@
             this.textEdit85.Properties.ReadOnly = true;
             this.textEdit85.TabStop = false;
             // 
+            // textEdit222
+            // 
+            resources.ApplyResources(this.textEdit222, "textEdit222");
+            this.textEdit222.Name = "textEdit222";
+            this.textEdit222.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit222.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit222.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit222.Properties.ReadOnly = true;
+            this.textEdit222.TabStop = false;
+            // 
             // textEdit128
             // 
             resources.ApplyResources(this.textEdit128, "textEdit128");
@@ -5074,6 +5144,16 @@
             this.textEdit128.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.textEdit128.Properties.ReadOnly = true;
             this.textEdit128.TabStop = false;
+            // 
+            // textEdit221
+            // 
+            resources.ApplyResources(this.textEdit221, "textEdit221");
+            this.textEdit221.Name = "textEdit221";
+            this.textEdit221.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit221.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit221.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit221.Properties.ReadOnly = true;
+            this.textEdit221.TabStop = false;
             // 
             // textEdit86
             // 
@@ -5083,6 +5163,16 @@
             this.textEdit86.Properties.ReadOnly = true;
             this.textEdit86.TabStop = false;
             // 
+            // textEdit220
+            // 
+            resources.ApplyResources(this.textEdit220, "textEdit220");
+            this.textEdit220.Name = "textEdit220";
+            this.textEdit220.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit220.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit220.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit220.Properties.ReadOnly = true;
+            this.textEdit220.TabStop = false;
+            // 
             // textEdit127
             // 
             resources.ApplyResources(this.textEdit127, "textEdit127");
@@ -5091,12 +5181,36 @@
             this.textEdit127.Properties.ReadOnly = true;
             this.textEdit127.TabStop = false;
             // 
+            // txt_Tel_Alici10
+            // 
+            this.txt_Tel_Alici10.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici10, "txt_Tel_Alici10");
+            this.txt_Tel_Alici10.Name = "txt_Tel_Alici10";
+            this.txt_Tel_Alici10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
             // txt_Mail_Alici10
             // 
             this.txt_Mail_Alici10.EnterMoveNextControl = true;
             resources.ApplyResources(this.txt_Mail_Alici10, "txt_Mail_Alici10");
             this.txt_Mail_Alici10.Name = "txt_Mail_Alici10";
             this.txt_Mail_Alici10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
+            // textEdit218
+            // 
+            resources.ApplyResources(this.textEdit218, "textEdit218");
+            this.textEdit218.Name = "textEdit218";
+            this.textEdit218.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.textEdit218.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit218.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit218.Properties.ReadOnly = true;
+            this.textEdit218.TabStop = false;
+            // 
+            // txt_Tel_Alici9
+            // 
+            this.txt_Tel_Alici9.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici9, "txt_Tel_Alici9");
+            this.txt_Tel_Alici9.Name = "txt_Tel_Alici9";
+            this.txt_Tel_Alici9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // textEdit87
             // 
@@ -5106,12 +5220,26 @@
             this.textEdit87.Properties.ReadOnly = true;
             this.textEdit87.TabStop = false;
             // 
+            // txt_Tel_Alici5
+            // 
+            this.txt_Tel_Alici5.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici5, "txt_Tel_Alici5");
+            this.txt_Tel_Alici5.Name = "txt_Tel_Alici5";
+            this.txt_Tel_Alici5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
             // txt_Mail_Alici9
             // 
             this.txt_Mail_Alici9.EnterMoveNextControl = true;
             resources.ApplyResources(this.txt_Mail_Alici9, "txt_Mail_Alici9");
             this.txt_Mail_Alici9.Name = "txt_Mail_Alici9";
             this.txt_Mail_Alici9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
+            // txt_Tel_Alici8
+            // 
+            this.txt_Tel_Alici8.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici8, "txt_Tel_Alici8");
+            this.txt_Tel_Alici8.Name = "txt_Tel_Alici8";
+            this.txt_Tel_Alici8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // txt_Mail_Alici5
             // 
@@ -5120,12 +5248,26 @@
             this.txt_Mail_Alici5.Name = "txt_Mail_Alici5";
             this.txt_Mail_Alici5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
+            // txt_Tel_Alici4
+            // 
+            this.txt_Tel_Alici4.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici4, "txt_Tel_Alici4");
+            this.txt_Tel_Alici4.Name = "txt_Tel_Alici4";
+            this.txt_Tel_Alici4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
             // txt_Mail_Alici8
             // 
             this.txt_Mail_Alici8.EnterMoveNextControl = true;
             resources.ApplyResources(this.txt_Mail_Alici8, "txt_Mail_Alici8");
             this.txt_Mail_Alici8.Name = "txt_Mail_Alici8";
             this.txt_Mail_Alici8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
+            // txt_Tel_Alici7
+            // 
+            this.txt_Tel_Alici7.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici7, "txt_Tel_Alici7");
+            this.txt_Tel_Alici7.Name = "txt_Tel_Alici7";
+            this.txt_Tel_Alici7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // txt_Mail_Alici4
             // 
@@ -5134,12 +5276,26 @@
             this.txt_Mail_Alici4.Name = "txt_Mail_Alici4";
             this.txt_Mail_Alici4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
+            // txt_Tel_Alici3
+            // 
+            this.txt_Tel_Alici3.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici3, "txt_Tel_Alici3");
+            this.txt_Tel_Alici3.Name = "txt_Tel_Alici3";
+            this.txt_Tel_Alici3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
             // txt_Mail_Alici7
             // 
             this.txt_Mail_Alici7.EnterMoveNextControl = true;
             resources.ApplyResources(this.txt_Mail_Alici7, "txt_Mail_Alici7");
             this.txt_Mail_Alici7.Name = "txt_Mail_Alici7";
             this.txt_Mail_Alici7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
+            // txt_Tel_Alici6
+            // 
+            this.txt_Tel_Alici6.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici6, "txt_Tel_Alici6");
+            this.txt_Tel_Alici6.Name = "txt_Tel_Alici6";
+            this.txt_Tel_Alici6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // txt_Mail_Alici3
             // 
@@ -5148,12 +5304,26 @@
             this.txt_Mail_Alici3.Name = "txt_Mail_Alici3";
             this.txt_Mail_Alici3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
+            // txt_Tel_Alici2
+            // 
+            this.txt_Tel_Alici2.EnterMoveNextControl = true;
+            resources.ApplyResources(this.txt_Tel_Alici2, "txt_Tel_Alici2");
+            this.txt_Tel_Alici2.Name = "txt_Tel_Alici2";
+            this.txt_Tel_Alici2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
             // txt_Mail_Alici6
             // 
             this.txt_Mail_Alici6.EnterMoveNextControl = true;
             resources.ApplyResources(this.txt_Mail_Alici6, "txt_Mail_Alici6");
             this.txt_Mail_Alici6.Name = "txt_Mail_Alici6";
             this.txt_Mail_Alici6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            // 
+            // txt_Tel_Alici1
+            // 
+            resources.ApplyResources(this.txt_Tel_Alici1, "txt_Tel_Alici1");
+            this.txt_Tel_Alici1.EnterMoveNextControl = true;
+            this.txt_Tel_Alici1.Name = "txt_Tel_Alici1";
+            this.txt_Tel_Alici1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             // 
             // txt_Mail_Alici2
             // 
@@ -12353,6 +12523,16 @@
             resources.ApplyResources(this.xtraTabPage11, "xtraTabPage11");
             this.xtraTabPage11.Name = "xtraTabPage11";
             // 
+            // btn_MacPr_SilHepsi
+            // 
+            this.btn_MacPr_SilHepsi.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btn_MacPr_SilHepsi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btn_MacPr_SilHepsi.Appearance.Font")));
+            this.btn_MacPr_SilHepsi.Appearance.Options.UseBackColor = true;
+            this.btn_MacPr_SilHepsi.Appearance.Options.UseFont = true;
+            resources.ApplyResources(this.btn_MacPr_SilHepsi, "btn_MacPr_SilHepsi");
+            this.btn_MacPr_SilHepsi.Name = "btn_MacPr_SilHepsi";
+            this.btn_MacPr_SilHepsi.Click += new System.EventHandler(this.btn_MacPr_SilHepsi_Click);
+            // 
             // textEdit77
             // 
             resources.ApplyResources(this.textEdit77, "textEdit77");
@@ -13332,186 +13512,6 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
-            // txt_Tel_Alici1
-            // 
-            resources.ApplyResources(this.txt_Tel_Alici1, "txt_Tel_Alici1");
-            this.txt_Tel_Alici1.EnterMoveNextControl = true;
-            this.txt_Tel_Alici1.Name = "txt_Tel_Alici1";
-            this.txt_Tel_Alici1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // txt_Tel_Alici2
-            // 
-            this.txt_Tel_Alici2.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici2, "txt_Tel_Alici2");
-            this.txt_Tel_Alici2.Name = "txt_Tel_Alici2";
-            this.txt_Tel_Alici2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // txt_Tel_Alici6
-            // 
-            this.txt_Tel_Alici6.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici6, "txt_Tel_Alici6");
-            this.txt_Tel_Alici6.Name = "txt_Tel_Alici6";
-            this.txt_Tel_Alici6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // txt_Tel_Alici3
-            // 
-            this.txt_Tel_Alici3.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici3, "txt_Tel_Alici3");
-            this.txt_Tel_Alici3.Name = "txt_Tel_Alici3";
-            this.txt_Tel_Alici3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // txt_Tel_Alici7
-            // 
-            this.txt_Tel_Alici7.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici7, "txt_Tel_Alici7");
-            this.txt_Tel_Alici7.Name = "txt_Tel_Alici7";
-            this.txt_Tel_Alici7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // txt_Tel_Alici4
-            // 
-            this.txt_Tel_Alici4.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici4, "txt_Tel_Alici4");
-            this.txt_Tel_Alici4.Name = "txt_Tel_Alici4";
-            this.txt_Tel_Alici4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // txt_Tel_Alici8
-            // 
-            this.txt_Tel_Alici8.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici8, "txt_Tel_Alici8");
-            this.txt_Tel_Alici8.Name = "txt_Tel_Alici8";
-            this.txt_Tel_Alici8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // txt_Tel_Alici5
-            // 
-            this.txt_Tel_Alici5.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici5, "txt_Tel_Alici5");
-            this.txt_Tel_Alici5.Name = "txt_Tel_Alici5";
-            this.txt_Tel_Alici5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // txt_Tel_Alici9
-            // 
-            this.txt_Tel_Alici9.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici9, "txt_Tel_Alici9");
-            this.txt_Tel_Alici9.Name = "txt_Tel_Alici9";
-            this.txt_Tel_Alici9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // textEdit218
-            // 
-            resources.ApplyResources(this.textEdit218, "textEdit218");
-            this.textEdit218.Name = "textEdit218";
-            this.textEdit218.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit218.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit218.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit218.Properties.ReadOnly = true;
-            this.textEdit218.TabStop = false;
-            // 
-            // txt_Tel_Alici10
-            // 
-            this.txt_Tel_Alici10.EnterMoveNextControl = true;
-            resources.ApplyResources(this.txt_Tel_Alici10, "txt_Tel_Alici10");
-            this.txt_Tel_Alici10.Name = "txt_Tel_Alici10";
-            this.txt_Tel_Alici10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            // 
-            // textEdit220
-            // 
-            resources.ApplyResources(this.textEdit220, "textEdit220");
-            this.textEdit220.Name = "textEdit220";
-            this.textEdit220.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit220.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit220.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit220.Properties.ReadOnly = true;
-            this.textEdit220.TabStop = false;
-            // 
-            // textEdit221
-            // 
-            resources.ApplyResources(this.textEdit221, "textEdit221");
-            this.textEdit221.Name = "textEdit221";
-            this.textEdit221.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit221.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit221.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit221.Properties.ReadOnly = true;
-            this.textEdit221.TabStop = false;
-            // 
-            // textEdit222
-            // 
-            resources.ApplyResources(this.textEdit222, "textEdit222");
-            this.textEdit222.Name = "textEdit222";
-            this.textEdit222.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit222.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit222.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit222.Properties.ReadOnly = true;
-            this.textEdit222.TabStop = false;
-            // 
-            // textEdit223
-            // 
-            resources.ApplyResources(this.textEdit223, "textEdit223");
-            this.textEdit223.Name = "textEdit223";
-            this.textEdit223.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit223.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit223.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit223.Properties.ReadOnly = true;
-            this.textEdit223.TabStop = false;
-            // 
-            // textEdit224
-            // 
-            resources.ApplyResources(this.textEdit224, "textEdit224");
-            this.textEdit224.Name = "textEdit224";
-            this.textEdit224.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit224.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit224.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit224.Properties.ReadOnly = true;
-            this.textEdit224.TabStop = false;
-            // 
-            // textEdit225
-            // 
-            resources.ApplyResources(this.textEdit225, "textEdit225");
-            this.textEdit225.Name = "textEdit225";
-            this.textEdit225.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit225.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit225.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit225.Properties.ReadOnly = true;
-            this.textEdit225.TabStop = false;
-            // 
-            // textEdit226
-            // 
-            resources.ApplyResources(this.textEdit226, "textEdit226");
-            this.textEdit226.Name = "textEdit226";
-            this.textEdit226.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit226.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit226.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit226.Properties.ReadOnly = true;
-            this.textEdit226.TabStop = false;
-            // 
-            // textEdit227
-            // 
-            resources.ApplyResources(this.textEdit227, "textEdit227");
-            this.textEdit227.Name = "textEdit227";
-            this.textEdit227.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit227.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit227.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit227.Properties.ReadOnly = true;
-            this.textEdit227.TabStop = false;
-            // 
-            // textEdit228
-            // 
-            resources.ApplyResources(this.textEdit228, "textEdit228");
-            this.textEdit228.Name = "textEdit228";
-            this.textEdit228.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textEdit228.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit228.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit228.Properties.ReadOnly = true;
-            this.textEdit228.TabStop = false;
-            // 
-            // btn_MacPr_SilHepsi
-            // 
-            this.btn_MacPr_SilHepsi.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
-            this.btn_MacPr_SilHepsi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton22.Appearance.Font")));
-            this.btn_MacPr_SilHepsi.Appearance.Options.UseBackColor = true;
-            this.btn_MacPr_SilHepsi.Appearance.Options.UseFont = true;
-            resources.ApplyResources(this.btn_MacPr_SilHepsi, "btn_MacPr_SilHepsi");
-            this.btn_MacPr_SilHepsi.Name = "btn_MacPr_SilHepsi";
-            this.btn_MacPr_SilHepsi.Click += new System.EventHandler(this.btn_MacPr_SilHepsi_Click);
-            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -13794,24 +13794,44 @@
             ((System.ComponentModel.ISupportInitialize)(this.chk_Mail_Cari.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit228.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit131.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit227.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit83.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit226.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit130.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit225.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit84.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit224.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit129.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit223.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit85.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit222.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit128.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit221.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit86.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit220.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit127.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit218.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit87.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Mail_Alici1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
@@ -14456,26 +14476,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit218.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Tel_Alici10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit220.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit221.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit222.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit223.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit224.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit225.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit226.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit227.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit228.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

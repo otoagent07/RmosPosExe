@@ -1,6 +1,8 @@
-﻿using DevExpress.XtraPrinting;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraPrinting;
 using Pos.Class;
 using System;
+using System.Drawing;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
@@ -50,6 +52,22 @@ namespace Pos
             txt_Email.Text = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Email"));
             txt_Not.Text = Convert.ToString(gridView1.GetFocusedRowCellValue("Rez_Not"));
 
+
+            int durum = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rez_Durum"));
+
+            switch (durum)
+            {
+                case 0: radioButtonAktif.Checked = true; break;
+                case 1: radioButtonGeldi.Checked = true; break;
+                case 2: radioButtonGelmedi.Checked = true; break;
+                case 3: radioButtonKaraListe.Checked = true; break;
+                default:
+                    radioButtonAktif.Checked = true;
+                    break;
+            }
+
+
+
         }
 
         private void dateEdit1_EditValueChanged(object sender, EventArgs e)
@@ -81,6 +99,15 @@ namespace Pos
             r.Rez_Email = txt_Email.Text;
             r.Rez_Not = txt_Not.Text;
 
+
+            int durum = 0; // 0 aktif,1 geldi ,2 gelmedi,3 karaliste
+            if (radioButtonAktif.Checked) durum = 0;
+            else if (radioButtonGeldi.Checked) durum = 1;
+            else if (radioButtonGelmedi.Checked) durum = 2;
+            else if (radioButtonKaraListe.Checked) durum = 3;
+
+            r.Rez_Durum = durum;
+
             r.Rez_Kaydet(r);
             gridyenile();
 
@@ -109,6 +136,16 @@ namespace Pos
                 r.Rez_Tel = txt_Telefon.Text;
                 r.Rez_Email = txt_Email.Text;
                 r.Rez_Not = txt_Not.Text;
+
+
+                int durum = 0; // 0 aktif,1 geldi ,2 gelmedi,3 karaliste
+                if (radioButtonAktif.Checked) durum = 0;
+                else if (radioButtonGeldi.Checked) durum = 1;
+                else if (radioButtonGelmedi.Checked) durum = 2;
+                else if (radioButtonKaraListe.Checked) durum = 3;
+
+                r.Rez_Durum = durum;
+
 
                 r.Rez_Kaydet(r);
                 gridyenile();
@@ -146,7 +183,8 @@ namespace Pos
             txt_Telefon.Text = String.Empty;
             txt_Email.Text = String.Empty;
             txt_Not.Text = String.Empty;
-        } 
+            radioButtonAktif.Checked = true;
+        }
         #endregion
 
         #region Rezervasyon Raporu
@@ -176,7 +214,7 @@ namespace Pos
 
         private void btn_Excel_Click(object sender, EventArgs e)
         {
-             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             string fName = string.Empty;
             saveFileDialog1.Filter = "Excel Document (*.xls)|*.xls";
             saveFileDialog1.FilterIndex = 0;
@@ -192,9 +230,56 @@ namespace Pos
                     gridControl2.ExportToXls(saveFileDialog1.FileName, opt);
                 }
             }
-        } 
+        }
+
         #endregion
 
+        private void gridView1_RowCellStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowCellStyleEventArgs e)
+        {
+            GridView view = sender as GridView;
 
+            if (e.RowHandle >= 0 )
+            {
+                int durum = Convert.ToInt32(view.GetRowCellValue(e.RowHandle, "Rez_Durum")?.ToString());
+
+
+                switch (durum)
+                {
+                   // case 0: e.Appearance.BackColor = Color.DeepPink; e.Appearance.ForeColor = Color.White; break;
+                    case 1: e.Appearance.BackColor = Color.LimeGreen; e.Appearance.ForeColor = Color.White; break;
+                    case 2: e.Appearance.BackColor = Color.Red; e.Appearance.ForeColor = Color.White; break;
+                    case 3: e.Appearance.BackColor = Color.Gray; e.Appearance.ForeColor = Color.White; break;
+                    default:
+                        radioButtonAktif.Checked = true;
+                        break;
+                }
+
+
+
+            }
+        }
+
+        private void gridView2_RowCellStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowCellStyleEventArgs e)
+        {
+            GridView view = sender as GridView;
+
+            if (e.RowHandle >= 0 )
+            {
+                int durum = Convert.ToInt32(view.GetRowCellValue(e.RowHandle, "Rez_Durum")?.ToString());
+
+
+                switch (durum)
+                {
+                    // case 0: e.Appearance.BackColor = Color.DeepPink; e.Appearance.ForeColor = Color.White; break;
+                    case 1: e.Appearance.BackColor = Color.LimeGreen; e.Appearance.ForeColor = Color.White; break;
+                    case 2: e.Appearance.BackColor = Color.Red; e.Appearance.ForeColor = Color.White; break;
+                    case 3: e.Appearance.BackColor = Color.Gray; e.Appearance.ForeColor = Color.White; break;
+                    default:
+                        radioButtonAktif.Checked = true;
+                        break;
+                }
+
+            }
+        }
     }
 }
