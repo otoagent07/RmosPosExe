@@ -1684,10 +1684,10 @@ namespace Pos
                 return;
             }
 
-            if (musTipi_A != String.Empty)
-            {
-                return;
-            }
+            //if (musTipi_A != String.Empty) // 15.04.2026 DA ODA BULAMADIĞI İÇİN YORUM YAPILDI
+            //{
+            //    return;
+            //}
 
             HesapBul ara = new HesapBul();
             ara.data = txt_Hesapno.Text;
