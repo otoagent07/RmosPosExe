@@ -54,6 +54,9 @@ namespace Pos
                 PavoController pavoController = new PavoController();
                 pavoController.pavon86KabloluPairing();
                 pavoController.pavon86KablosuzPairing();
+
+
+
             }
             else
             {

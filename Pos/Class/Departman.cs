@@ -8,6 +8,7 @@ namespace Pos.Class
     {
         public static string Dep_Kodu { get; set; }
         public static string Dep_Adi { get; set; }
+        public static string onburoFrontDbName { get; set; } // 15.04.2026 tarihinde önbüro adresi artık bu olacak şekilde ekledik
         public static int Sorgu_Sekli { get; set; }
         public static bool Siparis { get; set; }
         public static bool Adisyon { get; set; }
@@ -84,7 +85,7 @@ namespace Pos.Class
         {
             string sonuc;
 
-            DataTable dt = dbtools.SelectTable("select Kodlar_Ad,isnull(Kodlar_Sorgu,0) as Kodlar_Sorgu, isnull(Kodlar_Siparis,0) as Kodlar_Siparis, isnull(Kodlar_Adisyon,0) as Kodlar_Adisyon, "
+            DataTable dt = dbtools.SelectTable("select Mkodlar_Sirket_DB as onburoFrontDbName,Kodlar_Ad,isnull(Kodlar_Sorgu,0) as Kodlar_Sorgu, isnull(Kodlar_Siparis,0) as Kodlar_Siparis, isnull(Kodlar_Adisyon,0) as Kodlar_Adisyon, "
                     + " isnull(Kodlar_Fatura,0) as Kodlar_Fatura, isnull(Kodlar_Kdv,0) as Kodlar_Kdv, isnull(Kodlar_Kisi,0) as Kodlar_Kisi, isnull(Kodlar_IlkSiparis,0) as Kodlar_IlkSiparis, "
                     + " isnull(Kodlar_Aktif_Kur,0) as Kodlar_Aktif_Kur, isnull(Kodlar_Garson,0) as Kodlar_Garson,isnull(Kodlar_Hesap_Adisyon,0) as Kodlar_Hesap_Adisyon2, "
                     + " Mkodlar_Ad,MKodlar_P_DovizCins,MKodlar_P_DovizTuru,MKodlar_P_OtelKodu,MKodlar_P_SirketKodu, "
@@ -117,6 +118,13 @@ namespace Pos.Class
                 Kodlar_Hesap_Adisyon = Convert.ToBoolean(dt.Rows[0]["Kodlar_Hesap_Adisyon2"]);
                 Dep_Adi = Convert.ToString(dt.Rows[0]["Kodlar_Ad"]);
                 Sube_Ad = Convert.ToString(dt.Rows[0]["Mkodlar_Ad"]);
+
+
+                onburoFrontDbName = Convert.ToString(dt.Rows[0]["onburoFrontDbName"]);
+
+
+                Fronttools.conyenile(onburoFrontDbName); // 15.04.2026 eklendi.
+
 
                 MKodlar_P_DovizCins = Convert.ToString(dt.Rows[0]["MKodlar_P_DovizCins"]);
                 MKodlar_P_DovizTuru = Convert.ToString(dt.Rows[0]["MKodlar_P_DovizTuru"]);

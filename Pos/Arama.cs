@@ -516,7 +516,8 @@ namespace Pos
             gridColumn11.Visible = false;
             gridColumn12.Visible = false;
 
-            gridControl1.DataSource = Fronttools.SelectTable("select Kimlik_Id,Kimlik_Ad,Kimlik_Soyad,Kimlik_Kart,Kart_Turu from Previl with(nolock) where Len(Kart_Turu) > 0 " + filtre);
+            string query = $@"select Kimlik_Id,Kimlik_Ad,Kimlik_Soyad,Kimlik_Kart,Kart_Turu from Previl with(nolock) where Len(Kart_Turu) > 0 " + filtre;
+            gridControl1.DataSource = Fronttools.SelectTable(query);
             gridView1.BestFitColumns();
         }
 

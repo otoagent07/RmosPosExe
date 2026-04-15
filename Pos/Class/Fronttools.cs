@@ -34,6 +34,27 @@ namespace Pos.Class
         public static string Sirket_Kodu;
 
 
+        public static void conyenile(string database)
+        {
+            try
+            {
+                connstr = "Data Source='" + server + "';Initial Catalog=" + database + "; Persist Security Info=True;uid='" + users + "'; pwd='" + pwd + "'";
+                conn = new SqlConnection(connstr);
+
+                if (conn.State != ConnectionState.Closed)
+                {
+                    conn.Close();
+                }
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fronttools.conyenile metodunda hata " + ex.Message);
+            }
+           
+
+        }
+
         public static bool execcmd(String cmds)
         {
             string filter = (Langs.Default.Dil == "tr-TR" ? "set dateformat dmy ; " : "");
