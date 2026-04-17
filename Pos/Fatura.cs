@@ -548,7 +548,8 @@ namespace Pos
             //ara.Odeme_Ozelkod = 5;
             ara.ShowDialog();
 
-            DataTable dt = dbtools.SelectTable("select * from Pos_Cari WITH(NOLOCK) where Cari_Kod = '" + ara.Cari_Kod + "' and ISNULL(Cari_Aktif,1) = 1 ");
+            string q1 = $@"select* from Pos_Cari WITH(NOLOCK) where Cari_Kod = '{ara.Cari_Kod }' and ISNULL(Cari_Aktif,1) = 1 ";
+            DataTable dt = dbtools.SelectTable(q1);
             if (dt.Rows.Count > 0)
             {
                 PFat_Ad.Text = Convert.ToString(dt.Rows[0]["Cari_Funvan"]);
