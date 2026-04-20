@@ -411,6 +411,7 @@ namespace Pos
 
 
                 mobileCallerIdMacAdres.Text = Param.mobileCallerIdMacAdres.ToString();
+                sepetMacId.Text = Param.sepetMacId.ToString();
                 txt_Genişlik.Text = Param.Param_bSizeW.ToString();
                 chk_SatisArama.Checked = Param.Param_SatisArama;
                 chk_HesapSor.Checked = Param.Param_HesapSor;
@@ -1439,7 +1440,7 @@ namespace Pos
                     + " Param_OzelMasaSiralama,Param_HesapFisiDokum,Param_HspFontAlgilama,Param_AdisyonFolioAdi,Param_FullPos,Param_CikisKapa,Param_DirekAdisyonZor,Param_DirekAdisyonPrSor,Param_KGAlgilama,Param_ExtraFolioAcma,Param_SiparisAna,Param_iadeKontrol,Param_iadeLimit, Pos_HesapDkmRenk, Param_AdisyonDegis, Param_AdisyonIndAd,Param_SiparisTutar,Param_AnaEkranCiro,Param_MasaTakipCiro,Param_AcilisCekSil,Param_CariAdSoyad,Param_OdenmezAc, "
                     + " Param_SatirSil,Param_SatirSilUser,Param_MasaTakipMenu,Param_ParaUstuIngenico,Param_SatisTabloGonderi, Param_SatisTabloID, Param_SatisTabloAktif, Param_AcilistaMenu,Param_IngenicoSPR,Param_SiparisFisFont,Param_HizliSatisCekAc,Param_KartfGBCheckOut, "
                     + " Param_YeniHesapDkm,Param_YeniSiparisDkm,Param_OdaKrediCompOdenmez,Param_KurTransfer,Param_CallCenterPaket, "
-                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif,otomatikOdenmez,mobilCallerIdAktif,mobileCallerIdMacAdres,hesapFisQrFisno,paketotohesapkapat,sepetaktif,merkezaktif,ingenico2,ekranKlavyesiAktif,ingenicoOdemeAtmasin,Param_StokAnlikAtmasin,masatakipKonumYukseklik,gunsonubitissaat,hesapkapatfiscikmasinaktif,bekoFaturaKesimLimit )"
+                    + " Param_PaketDipTotal,Param_HesapKapamaAds,Param_HesapDkmAciklama,Param_OzelMasaRengi,Param_RezMasaRengi,Param_AndroGeriYazdir,Param_PaketKucukEkran,Param_GetirTest,Param_GetirOtomatikOnay,Param_SatisCikisButton,Param_nfcBarkodAktif,Param_ParcaliMasaAktif,yazdirilmamissiparis,masamusait,masatakiphesappasif,kisivegarsonbirkeresoraktif,satirsilfiscikmasinaktif,onburoikramsifiryazaktif,kartnoSayisi,cariindirimAktif,tipboxReceteKod,hesapFisQr,masatrTutSurukle,servispayFooterda,servispayOdenmezIkramSil,siparisTekrarPrintName,tumPrinter,urunAdinaOdaklan,ikinciEkranAktif,otomatikOdenmez,mobilCallerIdAktif,mobileCallerIdMacAdres,hesapFisQrFisno,paketotohesapkapat,sepetaktif,merkezaktif,ingenico2,ekranKlavyesiAktif,ingenicoOdemeAtmasin,Param_StokAnlikAtmasin,masatakipKonumYukseklik,gunsonubitissaat,hesapkapatfiscikmasinaktif,bekoFaturaKesimLimit,sepetMacId )"
 
                     + " VALUES ( "
                     + " '1', '" + txt_Prm_Tesis_Adi.Text + "', '" + Convert.ToBoolean(chk_Prm_Onburo.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Cost.Checked) + "', '" + Convert.ToBoolean(chk_Prm_Muh.Checked) + "','" + rdo_Prm_Calisma.SelectedIndex + "','" + rdo_Prm_Tarih_Nereden.SelectedIndex + "', "
@@ -1478,6 +1479,7 @@ namespace Pos
                     + "','" + gunsonubitissaat.Text + "'"
                     + "','" + hesapkapatfiscikmasinaktif.Checked + "'"
                     + "','" + bekoFaturaKesimLimit.Text + "'"
+                    + "','" + sepetMacId.Text + "'"
                     + "" + ""
                     + "  )");
 
@@ -1536,6 +1538,7 @@ namespace Pos
                        + ",gunsonubitissaat = '" + gunsonubitissaat.Text + "'"
                        + ",hesapkapatfiscikmasinaktif = '" + hesapkapatfiscikmasinaktif.Checked + "'"
                        + ",bekoFaturaKesimLimit = '" + bekoFaturaKesimLimit.Text + "'"
+                       + ",sepetMacId = '" + sepetMacId.Text + "'"
                        + " where Param_Id = '1' ";
                 dbtools.execcmdR(q);
 
@@ -1556,7 +1559,9 @@ namespace Pos
 
             Param.Param_Yukle();
 
-            RHMesaj.MyMessage("Güncellendi !");
+           // RHMesaj.MyMessage("Güncellendi !");
+
+            RHMesaj.alertMesaj("Güncellendi !");
         }
 
         private void btn_Prm_Cikis_Click(object sender, EventArgs e)

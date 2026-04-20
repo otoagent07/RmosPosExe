@@ -118,6 +118,8 @@ IF COL_LENGTH('Pos_Param', 'siparisTekrarPrintName') IS NULL BEGIN ALTER TABLE P
 
 IF COL_LENGTH('Pos_Param', 'mobileCallerIdMacAdres') IS NULL BEGIN ALTER TABLE Pos_Param ADD mobileCallerIdMacAdres nvarchar(500) END;
 
+IF COL_LENGTH('Pos_Param', 'sepetMacId') IS NULL BEGIN ALTER TABLE Pos_Param ADD sepetMacId nvarchar(500) END;
+
 IF COL_LENGTH('Pos_Param', 'masatakipKonumYukseklik') IS NULL BEGIN ALTER TABLE Pos_Param ADD masatakipKonumYukseklik nvarchar(500) END;
 
 ALTER TABLE Pos_Log ALTER COLUMN Log_Recete VARCHAR(3500);

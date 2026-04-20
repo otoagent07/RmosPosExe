@@ -101,6 +101,7 @@ namespace Pos.Class
         public static string gunsonubitissaat { get; set; }
         public static string masatakipKonumYukseklik { get; set; }
         public static string mobileCallerIdMacAdres { get; set; }
+        public static string sepetMacId { get; set; }
         public static int Param_bSizeW { get; set; }
         public static int Param_bSizeH { get; set; }
         public static bool Param_SatisArama { get; set; }
@@ -254,6 +255,7 @@ namespace Pos.Class
                         ",ISNULL(otomatikOdenmez,0) as otomatikOdenmez " +
                         ",ISNULL(mobilCallerIdAktif,0) as mobilCallerIdAktif " +
                         ",ISNULL(mobileCallerIdMacAdres,'') as mobileCallerIdMacAdres " +
+                        ",ISNULL(sepetMacId,'') as sepetMacId " +
                         ",ISNULL(sepetaktif,0) as sepetaktif " +
                         ",ISNULL(merkezaktif,0) as merkezaktif " +
                         ",ISNULL(ingenico2,0) as ingenico2 " +
@@ -490,6 +492,7 @@ namespace Pos.Class
                     siparisTekrarPrintName = Convert.ToString(dt.Rows[0]["siparisTekrarPrintName"]);
                     gunsonubitissaat = Convert.ToString(dt.Rows[0]["gunsonubitissaat"]);
                     mobileCallerIdMacAdres = Convert.ToString(dt.Rows[0]["mobileCallerIdMacAdres"]);
+                    sepetMacId = Convert.ToString(dt.Rows[0]["sepetMacId"]);
                     Param_StokAnlikAtmasin = Convert.ToBoolean(dt.Rows[0]["Param_StokAnlikAtmasin"]);
                     masatakipKonumYukseklik = Convert.ToString(dt.Rows[0]["masatakipKonumYukseklik"]);
 

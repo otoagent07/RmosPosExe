@@ -119,7 +119,7 @@ namespace Pos
 
             panelControlMasaFis.Visible = !Param.Param_SiparisFisFont;
 
-            
+
         }
 
         public void sagtik()
@@ -2381,7 +2381,14 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             Raporlar r = new Raporlar();
             r.ShowDialog();
+
             MasaYenile(0);
+
+            if (User.M_SatisRelogin)
+            {
+                Relogin();
+            }
+
         }
 
         private void btn_MalzemeTransfer_Click(object sender, EventArgs e)
@@ -2560,10 +2567,15 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
         {
             Raporlar r = new Raporlar();
             r.ShowDialog();
+
             MasaYenile(0);
             if (Param.ikinciEkranAktif == false)
             {
                 Main.satislistesi_ikinci_ekran.Listele(0);
+            }
+            if (User.M_SatisRelogin)
+            {
+                Relogin();
             }
         }
 
@@ -2978,7 +2990,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
                 Log.Log_Kaydet(Log.Log_Program.Pos, Log.Log_Bolum.Hesap, Log.Log_Islem.Kaydet, aciklama, Convert.ToString(Fisno), "");
                 MasaYenile(0);
 
-              
+
             }
         }
 

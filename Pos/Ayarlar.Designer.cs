@@ -1352,6 +1352,8 @@
             this.textEdit173 = new DevExpress.XtraEditors.TextEdit();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.sepetMacId = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit210 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -2275,6 +2277,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sepetMacId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit210.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -4319,6 +4323,8 @@
             // 
             // xtraTabPage8
             // 
+            this.xtraTabPage8.Controls.Add(this.sepetMacId);
+            this.xtraTabPage8.Controls.Add(this.textEdit210);
             this.xtraTabPage8.Controls.Add(this.bekoFaturaKesimLimit);
             this.xtraTabPage8.Controls.Add(this.textEdit208);
             this.xtraTabPage8.Controls.Add(this.hesapkapatfiscikmasinaktif);
@@ -13512,6 +13518,18 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             // 
+            // sepetMacId
+            // 
+            resources.ApplyResources(this.sepetMacId, "sepetMacId");
+            this.sepetMacId.Name = "sepetMacId";
+            // 
+            // textEdit210
+            // 
+            resources.ApplyResources(this.textEdit210, "textEdit210");
+            this.textEdit210.Name = "textEdit210";
+            this.textEdit210.Properties.ReadOnly = true;
+            this.textEdit210.TabStop = false;
+            // 
             // Ayarlar
             // 
             resources.ApplyResources(this, "$this");
@@ -14476,6 +14494,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit171.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit172.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit173.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sepetMacId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit210.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -15804,5 +15824,7 @@
         private DevExpress.XtraEditors.TextEdit txt_Tel_Alici2;
         private DevExpress.XtraEditors.TextEdit txt_Tel_Alici1;
         private DevExpress.XtraEditors.SimpleButton btn_MacPr_SilHepsi;
+        private DevExpress.XtraEditors.TextEdit sepetMacId;
+        private DevExpress.XtraEditors.TextEdit textEdit210;
     }
 }

@@ -296,7 +296,7 @@ namespace Pos
         public static string MyClass = "Main";
         CallerId c = null;
 
-        public static string versiyonno = "v0.7.1";
+        public static string versiyonno = "v0.7.2";
         public void departmanYukleNew()
         {
             try
@@ -547,7 +547,8 @@ namespace Pos
 
                 if (Param.sepetaktif)
                 {
-                    string paramMac = Param.mobileCallerIdMacAdres.ToString();
+                   // string paramMac = Param.mobileCallerIdMacAdres.ToString();
+                    string paramMac = Param.sepetMacId.ToString();
                     if (macadresim == paramMac)
                     {
                         timerSepet.Enabled = true;
