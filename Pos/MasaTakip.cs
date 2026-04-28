@@ -310,6 +310,8 @@ namespace Pos
                 };
 
 
+                btnKilitAc2.Visible = User.M_MasaAc;
+
             }
             catch (Exception ex)
             {
@@ -387,6 +389,13 @@ namespace Pos
 
 
             panelControl2.Visible = User.M_Hesapkapatma;
+
+
+            //28.04.2026 RESMİ KULLANICDA MASA TAKİP'de Ödeme tipleri gözükmez.
+            if (User.Pos_AdisyonPr == true)
+            {
+                panelControl2.Visible = false;
+            }
         }
 
 
@@ -2309,6 +2318,7 @@ and Rsat_Departman = '" + Departman.Dep_Kodu + "'";
             loadYukle();
 
             flp_Masa.Visible = true;
+           
 
         }
 

@@ -637,6 +637,7 @@ namespace Pos
                 }
 
                 txt_Odemetutari.EditValue = toplamTutar;
+
                 //txt_Odemetutari.Text = toplamTutar.ToString();
 
             }
@@ -1185,6 +1186,17 @@ namespace Pos
         {
             araOdemeAl(true);
 
+            try
+            {
+                decimal mevcutToplamTutar = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+                txt_Odemetutari.EditValue = mevcutToplamTutar;
+            }
+            catch (Exception ex)
+            {
+
+            }
+         
+
         }
 
         public void araOdemeAl(bool araodeme)
@@ -1450,6 +1462,41 @@ namespace Pos
 
         private void btn_Odemesil_Click(object sender, EventArgs e)
         {
+            odemesil();
+            resmiOdemeHesapKontrol();
+        }
+
+
+        public void resmiOdemeHesapKontrol() // 28.04.2026 oguzhan mendi maliden ceza yememek için
+        {
+            try
+            {
+
+                if (User.Pos_AdisyonPr == true)
+                {
+                    btn_Yazdirkapat.Enabled = false;
+                    btn_Yazdirmadankapat.Enabled = false;
+
+
+                    decimal toplamTutar23 = Convert.ToDecimal(gridView1.Columns["Rsat_Tutar"].SummaryItem.SummaryValue);
+
+                    btn_Yazdirkapat.Enabled = toplamTutar23 == 0 ? true : false;
+                    btn_Yazdirmadankapat.Enabled = toplamTutar23 == 0 ? true : false;
+
+                    btn_Odemeal.Visible = false;
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        public void odemesil()
+        {
             try
             {
                 //Manuel İndirimlerin  Silinmesi
@@ -1526,8 +1573,8 @@ namespace Pos
             {
 
             }
-        }
 
+        }
         private void btn_Indirim_Click(object sender, EventArgs e)
         {
             //if (Param.Param_Yuvarla != "" && Convert.ToDecimal(Param.Param_Yuv_Sayi) > 0)
@@ -2515,7 +2562,9 @@ namespace Pos
 
                 Kapatma_Tekoda();
 
-
+                #region  28.04.2026 Resmi Kullanıcıda tutar 0 ise kapatabilir kodu.
+                resmiOdemeHesapKontrol();
+                #endregion
 
 
             }
