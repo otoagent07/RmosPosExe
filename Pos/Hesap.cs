@@ -2562,12 +2562,12 @@ namespace Pos
                 chk_AdisyonGR.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_AdisyonPr"]);
                 E_AdisyonDurum.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_E_Adisyon"]);
 
-                if (E_AdisyonDurum.Checked && Param.Tesis_Tipi == 1) // aram.Tesis_Tipi  sıfır ise önbüro
+                if (E_AdisyonDurum.Checked && Param.Tesis_Tipi == 1) // Tesis_Tipi  sıfır ise önbüro
                 {
                     checkEditOtoCari.Checked = E_AdisyonDurum.Checked;
                 }
 
-                if (Param.Tesis_Tipi == 0)
+                if (Param.Tesis_Tipi == 0) // Tesis_Tipi  sıfır ise önbürodur ve onburo ise otomatik cari işimiz yok dendi özhan muğla
                 {
                     checkEditOtoCari.Visible = false;
                 }
