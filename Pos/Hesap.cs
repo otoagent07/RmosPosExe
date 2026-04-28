@@ -2562,9 +2562,14 @@ namespace Pos
                 chk_AdisyonGR.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_AdisyonPr"]);
                 E_AdisyonDurum.Checked = Convert.ToBoolean(dtOda.Rows[0]["Pkod_E_Adisyon"]);
 
-                if (E_AdisyonDurum.Checked)
+                if (E_AdisyonDurum.Checked && Param.Tesis_Tipi == 1) // aram.Tesis_Tipi  sıfır ise önbüro
                 {
                     checkEditOtoCari.Checked = E_AdisyonDurum.Checked;
+                }
+
+                if (Param.Tesis_Tipi == 0)
+                {
+                    checkEditOtoCari.Visible = false;
                 }
 
             }
@@ -3742,9 +3747,11 @@ namespace Pos
 
                 if (dataTable == null || dataTable.Rows.Count == 0)
                 {
-                    MessageBox.Show("Cari_Vergino->11111111111 haneli Cari(C) Açınız! ");
+                    //MessageBox.Show("Cari_Vergino->11111111111 haneli Cari(C) Açınız! ");
                     return;
                 }
+
+
                 cari_A = dataTable.Rows[0]["Cari_Kod"].ToString();
                 musTipi_A = dataTable.Rows[0]["Cari_Tip"].ToString();
 
