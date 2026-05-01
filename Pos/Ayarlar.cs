@@ -3150,7 +3150,7 @@ namespace Pos
                     return;
                 }
 
-                if (txt_Kul_kod.Text.Length > 9) // 01.05.2026 da ozhan istedi.
+                if (txt_Kul_kod.Text.Length > 9) // 01.05.2026 da ozhan istedi. onburoda hata oluomus
                 {
                     MessageBox.Show("Kullanıcı Kodu 10 haneden büyük olamaz!");
                     txt_Kul_kod.Focus();
