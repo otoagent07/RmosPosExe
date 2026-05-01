@@ -3150,6 +3150,14 @@ namespace Pos
                     return;
                 }
 
+                if (txt_Kul_kod.Text.Length > 9) // 01.05.2026 da ozhan istedi.
+                {
+                    MessageBox.Show("Kullanıcı Kodu 10 haneden büyük olamaz!");
+                    txt_Kul_kod.Focus();
+                    return;
+                }
+
+
                 #region XZ Rapor Ayarları
                 DataTable dtXZ = dbtools.SelectTable("select * from Rmosmuh.dbo.Pos_User_XZ with(nolock) where P_Kod = '" + txt_Kul_kod.Text + "'");
                 if (dtXZ.Rows.Count < 1)
