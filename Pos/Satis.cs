@@ -3433,8 +3433,23 @@ namespace Pos
                 oran = ind.indSayi;
             }
 
+
+
             if (oran > 0 || tutar > 0)
             {
+
+
+                decimal toplamTutar23 = Convert.ToDecimal(gridColumn4.SummaryItem.SummaryValue);
+                decimal oran23 = (tutar / toplamTutar23) * 100;
+
+                if (oran23 > User.P_Indirim_Yuzde)
+                {
+                    MessageBox.Show("Max Indirim Yuzdesini Aştınız..." + "\n" + "Max İndirim Yüzdeniz : %" + User.P_Indirim_Yuzde.ToString() + "\n" + "Şuan ki İndirim Oranı : %" + oran23.ToString("n2"));
+                    return;
+                }
+
+
+
                 int fisno = Convert.ToInt32(bartxt_FisNo.EditValue);
                 dbtools.execcmdR($"delete from Cst_Recete_Satis where Rsat_Fisno='{fisno}' and Rsat_Indkodu='MANUEL'");
                 Fis_Islem.Manuel_Indirim(fisno, ind.indTipi, tutar, doviztutar, oran, Split);
