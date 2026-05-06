@@ -73,7 +73,7 @@ namespace Pos.Class
         public static bool Param_Tum_Paket { get; set; }
         public static bool Param_Siparis_Uyari { get; set; }
         public static bool Param_Hesap_Kilit { get; set; }
-        public static bool Param_Masaacan_Garson { get; set; }
+        public static bool Param_Masaacan_Garson { get; set; } // bu param kullanılmadığı için -> Hesap Arama Comp ve Self Göstersin olarak kullanıldı
         public static string Param_Adres1 { get; set; }
         public static string Param_Adres2 { get; set; }
         public static string Param_Adres3 { get; set; }

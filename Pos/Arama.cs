@@ -95,7 +95,7 @@ namespace Pos
             txt_Arama.Focus();
 
 
-           var odenmezVeyaIkrammi = dbtools.DegerGetir($"select top 1 pkod_ozelkod from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='{KapatmaKodu}'");
+            var odenmezVeyaIkrammi = dbtools.DegerGetir($"select top 1 pkod_ozelkod from Pos_Kodlar where Pkod_Sinif='11' and Pkod_Kod='{KapatmaKodu}'");
 
             if (odenmezVeyaIkrammi == "2" || odenmezVeyaIkrammi == "3")
             {
@@ -228,7 +228,7 @@ namespace Pos
             {
                 Arama_Yap();
             }
-            
+
         }
 
         private void Arama_Yap()
@@ -291,10 +291,17 @@ namespace Pos
                     filtre = " and Rez_Adi_2 like N'" + txt_Arama.Text + "%' ";
                 }
 
-                if (ozelKapatmakodu == "2" || ozelKapatmakodu == "3") //Odenmez Ikram Kontrolü
+
+                if (Param.Param_Masaacan_Garson == false) // bu param kullanılmadığı için -> Hesap Arama Comp ve Self Göstersin olarak kullanıldı
                 {
-                    filtre += " and ISNULL(Kodlar_Comp_muaf_10,0) = 1 ";
+                    if (ozelKapatmakodu == "2" || ozelKapatmakodu == "3") //Odenmez Ikram Kontrolü
+                    {
+                        filtre += " and ISNULL(Kodlar_Comp_muaf_10,0) = 1 ";
+                    }
                 }
+
+               
+
 
                 if (Param.Param_Extre_Cikmasin)
                 {
@@ -354,6 +361,11 @@ namespace Pos
                         filtreOdenmez = " Kodlar.Kodlar_Comp_muaf_10 = 1 and ";
                     }
 
+                    if (Param.Param_Masaacan_Garson) // bu param kullanılmadığı için -> Hesap Arama Comp ve Self Göstersin olarak kullanıldı
+                    {
+                        filtreOdenmez = "";
+                    }
+
                     string sorgu = $@"select Rez_Id,
                                     Rez_Odano,
                                     Rez_Adi_1 ,
@@ -403,11 +415,16 @@ namespace Pos
                     }
 
                     string filtreOdenmez = " Kodlar.Kodlar_Comp_muaf_10 = 0 and";
-
                     if (odenmezVeyaIkram)
                     {
                         filtreOdenmez = " Kodlar.Kodlar_Comp_muaf_10 = 1 and";
                     }
+
+                    if (Param.Param_Masaacan_Garson) // bu param kullanılmadığı için -> Hesap Arama Comp ve Self Göstersin olarak kullanıldı
+                    {
+                        filtreOdenmez = "";
+                    }
+
 
                     string sorgu = $@"select Rez_Id,
                                     Rez_Odano,
@@ -744,7 +761,7 @@ namespace Pos
                 btn_OK.PerformClick();
             }
 
-            if (Param.Tesis_Tipi==1)
+            if (Param.Tesis_Tipi == 1)
             {
                 chk_Ad.Checked = true;
             }

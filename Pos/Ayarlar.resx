@@ -786,7 +786,7 @@ Sıfır Yap</value>
     <value>0, 3, 0, 3</value>
   </data>
   <data name="chk_Prm_MasaacanGarson.Properties.Caption" xml:space="preserve">
-    <value>Sadece Masayı Açan Garson Satış Yapsın</value>
+    <value>Hesap Arama Comp ve Self Göstersin</value>
   </data>
   <data name="chk_Prm_MasaacanGarson.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 19</value>
