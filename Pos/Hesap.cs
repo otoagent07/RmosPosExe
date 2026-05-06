@@ -3786,6 +3786,7 @@ namespace Pos
         {
             ParcaliOdeme parcaliOdeme = new ParcaliOdeme(this.Tag.ToString(), Masa_No);
             parcaliOdeme.ShowDialog();
+            gridyenile();
         }
 
         private void checkEditOtoCari_CheckedChanged(object sender, EventArgs e)
