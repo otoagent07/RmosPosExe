@@ -1826,6 +1826,7 @@
             resources.ApplyResources(this.gridColumn151, "gridColumn151");
             this.gridColumn151.FieldName = "Rsat_Indoran";
             this.gridColumn151.Name = "gridColumn151";
+            this.gridColumn151.OptionsColumn.AllowFocus = false;
             // 
             // bandedGridColumn51
             // 

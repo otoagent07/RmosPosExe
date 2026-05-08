@@ -3603,20 +3603,32 @@ namespace Pos
                 }
 
                 string yazdirilmissa = "Yazdırılmamış";
+
+                string gridReceteKod = gridView1.GetFocusedRowCellValue("Rsat_Recete").ToString();
+
                 if (Departman.Siparis && Param.satirsilfiscikmasinaktif == false)
                 {
-                    FisPr fis = new FisPr();
-                    string sonuc = fis.newIptalPr(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), Sil_Miktar);
+
+                    if (Param.tipboxReceteKod == gridReceteKod)
+                    {
+
+                    }
+                    else
+                    {
+                        FisPr fis = new FisPr();
+                        string sonuc = fis.newIptalPr(Convert.ToInt32(gridView1.GetFocusedRowCellValue("Rsat_Id")), Sil_Miktar);
 
 
-                    if (fis.yazdirilmismi)
-                    {
-                        yazdirilmissa = "Yazdırılmış";
+                        if (fis.yazdirilmismi)
+                        {
+                            yazdirilmissa = "Yazdırılmış";
+                        }
+                        if (sonuc != "OK")
+                        {
+                            MessageBox.Show(sonuc);
+                        }
                     }
-                    if (sonuc != "OK")
-                    {
-                        MessageBox.Show(sonuc);
-                    }
+
                 }
 
                 decimal tutar = Convert.ToDecimal(gridView1.GetFocusedRowCellValue("Rsat_Tutar")) / bolMiktar;

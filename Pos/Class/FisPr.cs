@@ -3889,6 +3889,11 @@ from GetirYemek_Order where ID='" + GetirYemek_Order_ID + "'";
 
                 int dtSatirsay = dtHesap.Rows.Count;
 
+                if (dtSatirsay==0)
+                {
+                    MessageBox.Show("Ürün bulunamadı...! \nReçete de ürün yazdırılmasın işaretli olabilir.");
+                    return "Ok";
+                }
 
 
 

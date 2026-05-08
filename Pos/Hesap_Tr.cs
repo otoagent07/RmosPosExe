@@ -38,7 +38,7 @@ namespace Pos
 
         private void gridyenile2()
         {
-            gridControl2.DataSource = dbtools.SelectTable("select Masa_No,Masa_Ad,Masa_Durum,Masa_Ozel from Pos_Masa WITH(NOLOCK) Where Masa_Depart = '" + Convert.ToString(gridView1.GetFocusedRowCellValue("Kodlar_Kod")) + "' order by Masa_No");
+            gridControl2.DataSource = dbtools.SelectTable("select Masa_No,Masa_Ad,Masa_Durum,Masa_Ozel from Pos_Masa WITH(NOLOCK) Where Masa_Depart = '" + Convert.ToString(gridView1.GetFocusedRowCellValue("Kodlar_Kod")) + "' order by Masa_Sirano");
         }
 
         private void btn_Transfer_Click(object sender, EventArgs e)
