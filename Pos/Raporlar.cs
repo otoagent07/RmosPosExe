@@ -21,6 +21,8 @@ using System.Net.Mail;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
+using System.Xml.Linq;
+
 namespace Pos
 {
     // 21.09.2022 Dil için -> Formdan ->  Engilis united states seçildi -> kaydet ve defaulta geri çekmeyi unutma
@@ -97,6 +99,23 @@ namespace Pos
             {
                 tarihDeğiştirToolStripMenuItem.Visible = true;
             }
+
+
+
+            string fileName = getSatisDizaynPath2();
+            if (File.Exists(fileName))
+            {
+                gridView11.RestoreLayoutFromXml(fileName);
+                // XML'den konum oku
+                XDocument doc = XDocument.Load(fileName);
+
+                var konum = doc.Root.Element("SeciliKonum");
+
+                if (konum != null)
+                    cmb_Konum.EditValue = konum.Value;
+
+            }
+
         }
 
         public void loadyukle()
@@ -464,12 +483,15 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
 
 
 
-                    string fileName = getSatisDizaynPath2();
-                    if (File.Exists(fileName))
-                    {
-                        gridView11.RestoreLayoutFromXml(fileName);
-                    }
+                    //string fileName = getSatisDizaynPath2();
+                    //if (File.Exists(fileName))
+                    //{
+                    //    gridView11.RestoreLayoutFromXml(fileName);
+                    //}
 
+
+
+                   
                 }
                 if (xtraTabControl1.SelectedTabPage == tab_Iptalcekraporu)
                 {
@@ -856,6 +878,8 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
 
 
                 }
+
+                
             }
             catch (Exception ex)
             {
@@ -863,6 +887,8 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                 RHMesaj.MyMessageError(MyClass, "gridyenile", "", ex);
             }
             loadingKapat();
+
+
         }
 
         public void lograpor()
@@ -2467,16 +2493,42 @@ WHERE
             }
         }
 
+        //private void satisRaporDizaynKaydet2_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        gridView11.SaveLayoutToXml(getSatisDizaynPath2());
+        //        MessageBox.Show("Grid Dizayn Kaydedildi");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("HATA ! " + ex.Message);
+        //    }
+        //}
+
+        
         private void satisRaporDizaynKaydet2_Click(object sender, EventArgs e)
         {
             try
             {
-                gridView11.SaveLayoutToXml(getSatisDizaynPath2());
-                MessageBox.Show("Grid Dizayn Kaydedildi");
+                string path = getSatisDizaynPath2();
+
+                // Grid layout kaydet
+                gridView11.SaveLayoutToXml(path);
+
+                // XML içine konum yaz
+                XDocument doc = XDocument.Load(path);
+
+                doc.Root.Add(new XElement("SeciliKonum",
+                    cmb_Konum.EditValue?.ToString()));
+
+                doc.Save(path);
+
+                MessageBox.Show("Kaydedildi");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("HATA ! " + ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
