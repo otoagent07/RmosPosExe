@@ -4338,7 +4338,7 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
                     //dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Miktar = '" + Convert.ToString(klv.sayi).Replace(",", ".") + "',Rsat_Net = 0,Rsat_Kdv = 0,Rsat_Tutar = 0,Rsat_Fiyat='" + recfiyat.ToString().Replace(",", ".") + "', Rsat_Doviztutar = 0,Rsat_SiparisPr = 1,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
 
                     // 13.08.2024 tarihinde ürün transfer fiyat atıyor diye rsat_fiyat da sıfırlandı
-                    dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Miktar = '" + Convert.ToString(klv.sayi).Replace(",", ".") + "',Rsat_Net = 0,Rsat_Kdv = 0,Rsat_Tutar = 0,Rsat_Fiyat=0, Rsat_Doviztutar = 0,Rsat_SiparisPr = 1,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
+                    dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Miktar = '" + Convert.ToString(klv.sayi).Replace(",", ".") + "',Rsat_Net = 0,Rsat_Kdv = 0,Rsat_Tutar = 0,Rsat_Fiyat=0, Rsat_Doviztutar = 0,Rsat_Tutar2 = '"+ recfiyat.ToString().Replace(',','.') + "',Rsat_SiparisPr = 1,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
 
 
                     Miktar = miktar - klv.sayi;
@@ -4360,7 +4360,10 @@ from Cst_Recete_Satis as satis where Rsat_Id='" + satirId + @"'";
                     ikramlogmiktar = 1;
                     neden = klv2.yazi;
 
-                    dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Tutar = 0,Rsat_Net=0, Rsat_Doviztutar = 0,Rsat_Kdv = 0,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
+
+                    decimal recfiyat = Convert.ToDecimal(dbtools.DegerGetir("select Rec_Fiyat from Cst_Recete where Rec_Genelkod=(select Rsat_Recete from Cst_Recete_Satis where Rsat_Id='" + Id + "')")) * 1;
+
+                    dbtools.execcmd("Update Cst_Recete_Satis set Rsat_Tutar = 0,Rsat_Tutar2 = '" + recfiyat.ToString().Replace(',', '.') + "',Rsat_Net=0, Rsat_Doviztutar = 0,Rsat_Kdv = 0,Rsat_Ikram = 1,Rsat_IkramNeden = '" + klv2.yazi + "' where Rsat_Id = '" + Id + "'");
                 }
 
                 try
