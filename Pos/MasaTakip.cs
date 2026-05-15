@@ -403,8 +403,8 @@ namespace Pos
 
         private void Kapatma_Yenile()
         {
-
-            DataTable dt = dbtools.SelectTable("exec Pos_Sorgu @Sorgu_Tipi = 43, @Dep_Kodu = '" + Departman.Dep_Kodu + "'");
+            string q = "exec Pos_Sorgu @Sorgu_Tipi = 43, @Dep_Kodu = '" + Departman.Dep_Kodu + "'";
+            DataTable dt = dbtools.SelectTable(q);
 
 
 
