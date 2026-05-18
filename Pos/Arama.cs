@@ -10,7 +10,7 @@ namespace Pos
 {
     public partial class Arama : XtraForm
     {
-        // naber mustafa
+        // naber mustafa asd
         public string KapatmaKodu { get; set; }
         public int Odeme_Ozelkod { get; set; }
         CheckButton chk_MusTipi = null;
