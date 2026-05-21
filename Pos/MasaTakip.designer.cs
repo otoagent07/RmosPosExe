@@ -164,6 +164,7 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit3)).BeginInit();
@@ -670,7 +671,8 @@
             this.gridColumn8,
             this.gridColumn10,
             this.gridColumn11,
-            this.gridColumn12});
+            this.gridColumn12,
+            this.gridColumn13});
             gridFormatRule1.ApplyToRow = true;
             gridFormatRule1.Column = this.gridColumn10;
             gridFormatRule1.ColumnApplyTo = this.gridColumn10;
@@ -1468,6 +1470,13 @@
             this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem6.Name = "barButtonItem6";
             // 
+            // gridColumn13
+            // 
+            resources.ApplyResources(this.gridColumn13, "gridColumn13");
+            this.gridColumn13.FieldName = "Rsat_Satissaat";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.OptionsColumn.AllowFocus = false;
+            // 
             // MasaTakip
             // 
             resources.ApplyResources(this, "$this");
@@ -1686,5 +1695,6 @@
         private DevExpress.XtraEditors.SimpleButton btnDoluMasalariAc;
         private DevExpress.XtraEditors.SimpleButton btnKilitAc2;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
     }
 }

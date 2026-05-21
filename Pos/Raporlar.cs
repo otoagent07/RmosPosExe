@@ -290,6 +290,7 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
             try
             {
                 dt.Columns.Add("Servis Payı", typeof(string));
+            
                 bool varmi = false;
                 foreach (GridColumn item in gridView11.Columns)
                 {
@@ -302,15 +303,21 @@ from RmosMuh.dbo.Pos_User where P_Kulturu <> 4 ORDER BY
                 foreach (DataRow item in dt.Rows)
                 {
                     DataTable dataTable = dbtools.SelectTableR("select Rsat_Recete,Rsat_Fisno,Rsat_Tutar from Cst_Recete_Satis where Rsat_Fisno='" + item["Rsat_Fisno"].ToString() + "'");
+                  
+
                     foreach (DataRow rec in dataTable.Rows)
                     {
                         if (rec["Rsat_Recete"].ToString().Equals(Param.Param_Bindirim))
                         {
                             item["Servis Payı"] = rec["Rsat_Tutar"].ToString();
+                            //  
                             break;
                         }
                     }
                 }
+
+                //Sadece OkunaBilsin diye ekledik. 21.05.2026 Oğuzhan Mendi.
+                dt.Columns["Servis Payı"].ReadOnly = true;
             }
             catch (Exception ex)
             {

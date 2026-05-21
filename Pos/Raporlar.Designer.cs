@@ -2075,7 +2075,7 @@
             resources.ApplyResources(this.gridColumn150, "gridColumn150");
             this.gridColumn150.FieldName = "bekoId";
             this.gridColumn150.Name = "gridColumn150";
-            this.gridColumn150.OptionsColumn.AllowFocus = false;
+            this.gridColumn150.OptionsColumn.ReadOnly = true;
             // 
             // tab_Genelrapor
             // 
