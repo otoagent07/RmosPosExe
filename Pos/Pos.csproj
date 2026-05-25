@@ -1618,7 +1618,6 @@
     <EmbeddedResource Include="Print\KuryeOzet.resx">
       <DependentUpon>KuryeOzet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="SifreDegistirForm.resx">
       <DependentUpon>SifreDegistirForm.cs</DependentUpon>
     </EmbeddedResource>
