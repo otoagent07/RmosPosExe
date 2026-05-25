@@ -2534,6 +2534,11 @@ namespace Pos
                         klv.Tag = "TUTARDUZELT";
                         klv.ShowDialog();
 
+                        if (klv.iptal) // oğuzhan mendi 25 mayıs 2026 da eklettirdi.
+                        {
+                            return;
+                        }
+
                         Rsat_Tutar = klv.sayi;
                         Rsat_Net = (Rsat_Tutar * 100) / (100 + Rec_Kdv);
                         Rsat_Kdv = Rsat_Tutar - Rsat_Net;
