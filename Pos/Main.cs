@@ -39,6 +39,8 @@ namespace Pos
 {
     /*
      2024-02-29 tarihinde pos un içine RmosIngenicoGMP klasörünü atılmıştır. bu klasör ingenico bağlantısı içindir
+
+    asdasd
      */
     public partial class Main : DevExpress.XtraEditors.XtraForm
     {
